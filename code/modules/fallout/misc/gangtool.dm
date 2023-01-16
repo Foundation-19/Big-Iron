@@ -25,7 +25,7 @@
 /obj/item/device/gangtool/attack_self(mob/user)
 	var/datum/gang/GA = user.gang
 	if(!GA || GA.leader != user || GA != gang)
-		to_chat(user, span_warning("Underground suppliers refuse to talk with you!"))
+		to_chat(user, "<span class='warning'>Underground suppliers refuse to talk with you!</span>")
 		return
 
 	var/dat
@@ -71,7 +71,7 @@
 /obj/item/device/gangtool/Topic(href, href_list)
 	var/datum/gang/GA = usr.gang
 	if(!GA || GA.leader != usr)
-		to_chat(usr, span_warning("Underground suppliers refuse to talk with you!"))
+		to_chat(usr, "<span class='warning'>Underground suppliers refuse to talk with you!</span>")
 		return
 
 	add_fingerprint(usr)
@@ -91,30 +91,38 @@
 
 /* Converting currency to the gang influence */
 /obj/item/device/gangtool/proc/add_caps(obj/item/I)
-	var/inserted_value
 	if(istype(I, /obj/item/stack/f13Cash/ncr))
 		var/obj/item/stack/f13Cash/ncr/currency = I
-		inserted_value = currency.amount * CASH_NCR_GANG
+		var/inserted_value = currency.amount * CASH_NCR_GANG
 		gang.influence += inserted_value
 		I.use(currency.amount)
+		playsound(src, 'sound/items/change_jaws.ogg', 60, 1)
+		to_chat(usr, "You gain [inserted_value] gang influence by bribing underground suppliers.")
+		attack_self(usr)
 	else if(istype(I, /obj/item/stack/f13Cash/denarius))
 		var/obj/item/stack/f13Cash/denarius/currency = I
-		inserted_value = currency.amount * CASH_DEN_GANG
+		var/inserted_value = currency.amount * CASH_DEN_GANG
 		gang.influence += inserted_value
 		I.use(currency.amount)
+		playsound(src, 'sound/items/change_jaws.ogg', 60, 1)
+		to_chat(usr, "You gain [inserted_value] gang influence by bribing underground suppliers.")
+		attack_self(usr)
 	else if(istype(I, /obj/item/stack/f13Cash/aureus))
 		var/obj/item/stack/f13Cash/aureus/currency = I
-		inserted_value = currency.amount * CASH_AUR_GANG
+		var/inserted_value = currency.amount * CASH_AUR_GANG
 		gang.influence += inserted_value
 		I.use(currency.amount)
+		playsound(src, 'sound/items/change_jaws.ogg', 60, 1)
+		to_chat(usr, "You gain [inserted_value] gang influence by bribing underground suppliers.")
+		attack_self(usr)
 	else if(istype(I, /obj/item/stack/f13Cash))
 		var/obj/item/stack/f13Cash/currency = I
-		inserted_value = currency.amount * CASH_CAP_GANG
+		var/inserted_value = currency.amount * CASH_CAP_GANG
 		gang.influence += inserted_value
 		I.use(currency.amount)
+		playsound(src, 'sound/items/change_jaws.ogg', 60, 1)
+		to_chat(usr, "You gain [inserted_value] gang influence by bribing underground suppliers.")
+		attack_self(usr)
 	else
 		to_chat(usr, "Invalid currency! Do not try our patience!")
 		return
-	playsound(src, 'sound/items/change_jaws.ogg', 60, 1)
-	to_chat(usr, "You gain [inserted_value] gang influence by bribing underground suppliers.")
-	attack_self(usr)
