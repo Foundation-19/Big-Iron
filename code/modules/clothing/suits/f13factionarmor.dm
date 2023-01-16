@@ -386,15 +386,6 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
-/obj/item/clothing/suit/armor/f13/utilityvest/logisticsofficer //same as his beret
-	name = "logistics officer utility vest"
-	desc = "A practical and armored vest with pockets for tools and such."
-	armor = list("melee" = 15, "bullet" = 30, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 55)
-
-/obj/item/clothing/suit/armor/f13/utilityvest/logisticsofficer/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
 /obj/item/clothing/suit/armor/f13/ncrarmor
 	name = "NCR patrol vest"
 	desc = "A standard issue NCR Infantry vest."
