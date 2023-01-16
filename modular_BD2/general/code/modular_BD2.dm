@@ -29,7 +29,7 @@
 /obj/item/stack/ore/coal // turns to coke when heated in a Furnace or ORM
 	name = "coal"
 	desc = "Pure coal needs heat-processing to become good fuel."
-	icon = 'modular_atom/general/icons/stackable_items.dmi'
+	icon = 'modular_BD2/general/icons/stackable_items.dmi'
 	icon_state = "ore_coal"
 	singular_name = "lump of coal"
 	points = 2
@@ -42,7 +42,7 @@
 	name = "coke"
 	desc = "Coke is what you get when you heat-treat coal. It's a good fuel for burning."
 	singular_name = "bag of coke"
-	icon = 'modular_atom/general/icons/stackable_items.dmi'
+	icon = 'modular_BD2/general/icons/stackable_items.dmi'
 	icon_state = "sheet_coke"
 	custom_materials = null
 	throwforce = 2
@@ -99,7 +99,7 @@ UPDATED CODE TO ALLOW FOR COKE AS FUEL
 	..()
 */
 /* Added
-	icon = 'modular_atom/icons/stackable_items.dmi'
+	icon = 'modular_BD2/general/icons/stackable_items.dmi'
 to the below
 /obj/item/stack/sheet/gold
 /obj/item/stack/sheet/silver
@@ -135,7 +135,7 @@ to the below
 /obj/machinery/autolathe/manual
 	name = "manual lathe"
 	desc = "Produce simple items with manually cranked tools."
-	icon = 'modular_atom/icons/autolathe_primitive.dmi'
+	icon = 'modular_BD2/general/icons/autolathe_primitive.dmi'
 	icon_state = "autolathe"
 	use_power = NO_POWER_USE
 	circuit = /obj/item/circuitboard/machine/autolathe/manual
@@ -354,7 +354,7 @@ to the below
 /obj/machinery/autolathe/military
 	name = "military autolathe"
 	desc = "Ancient technology, still works."
-	icon = 'modular_atom/icons/autolathe_military.dmi'
+	icon = 'modular_BD2/general/icons/autolathe_military.dmi'
 	circuit = /obj/item/circuitboard/machine/autolathe/military
 
 /obj/item/circuitboard/machine/autolathe/military
@@ -365,7 +365,7 @@ to the below
 
 /obj/machinery/autolathe/ammo
 	name = "reloading bench"
-	icon = 'modular_atom/icons/ammo_lathe.dmi'
+	icon = 'modular_BD2/general/icons/ammo_lathe.dmi'
 
 /obj/machinery/autolathe/ammo/attackby(obj/item/O, mob/user, params)
 	if(!busy && !stat)
@@ -448,9 +448,9 @@ to the below
 /obj/item/screwdriver/basic
 	name = "basic screwdriver"
 	desc = "Shoddy workmanship, but the tool is fully functional."
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "screwdriver_basic"
 	item_state = "screwdriver_basic"
 	toolspeed = 1.1
@@ -459,9 +459,9 @@ to the below
 /obj/item/wrench/basic
 	name = "wrench (basic)"
 	desc = "No movable parts, just a simple wrench."
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "wrench_basic"
 	item_state = "wrench_basic"
 	toolspeed = 1.2
@@ -469,9 +469,9 @@ to the below
 /obj/item/crowbar/basic
 	name = "crowbar"
 	desc = "Made of poor quality steel and has a rough finish, but it does get the job done."
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "crowbar_basic"
 	item_state = "crowbar_basic"
 	toolspeed = 1.5
@@ -479,9 +479,9 @@ to the below
 /obj/item/wirecutters/basic
 	name = "basic wirecutters"
 	desc = "Almost sharp cutters, maded of various bits of scrap metal."
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "wirecutters_basic"
 	item_state = "wirecutters_basic"
 	toolspeed = 1.3
@@ -490,9 +490,9 @@ to the below
 /obj/item/weldingtool/basic
 	name = "basic welding tool"
 	desc = "Has some small fuel leaks and looks like its just some rusty piece of junk, but somehow it works."
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "welder_basic"
 	item_state = "welder_basic"
 	toolspeed = 1.1
@@ -503,9 +503,9 @@ to the below
 /obj/item/wirecutters/prewar
 	name = "wirecutters (prewar)"
 	desc = "High quality steel and precise mechanism."
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "wirecutters_prewar"
 	item_state = "wirecutters_prewar"
 	toolspeed = 0.4
@@ -514,9 +514,9 @@ to the below
 /obj/item/wrench/prewar // obsolete due to power drill
 	name = "wrench (prewar)"
 	desc = "An torque locking tool thats very good for wrenching."
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "wrench_prewar"
 	item_state = "wrench_prewar"
 	toolspeed = 0.5
@@ -524,9 +524,9 @@ to the below
 /obj/item/screwdriver/prewar
 	name = "screwdriver (prewar)"
 	desc = "Polymer handle, blackened steel finish, its a high-quality tool for sure.""
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "screwdriver_prewar"
 	item_state = "screwdriver_prewar"
 	toolspeed = 0.5
@@ -535,33 +535,33 @@ to the below
 /obj/item/crowbar/prewar
 	name = "crowbar (prewar)"
 	desc = "Heat-resistant powder coating, smooth steel surfaces, its a high-quality tool for sure.""
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "crowbar_prewar"
 	item_state = "crowbar_prewar"
 	toolspeed = 0.8
 
 /obj/item/screwdriver/power // obsolete due to power drill
-	icon = 'modular_atom/icons/tools.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
 	icon_state = "drill_screw"
 	item_state = "drill"
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 
 /obj/item/wrench/power
-	icon = 'modular_atom/icons/tools.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
 	icon_state = "drill_bolt"
 	item_state = "drill"
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 
 /obj/item/weldingtool/prewar
 	name = "welding tool (pre-war)"
 	desc = "Comfortable grip, large tank and precise cutting."
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "welder_prewar"
 	item_state = "welder_prewar"
 	toolspeed = 0.7
@@ -570,9 +570,9 @@ to the below
 /obj/item/metaldetector
 	name = "metal detector"
 	desc = "Detects buried metals in a 50 metre radius when activated."
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "metaldetect"
 
 
@@ -590,7 +590,7 @@ to the below
 /obj/machinery/workbench/forge // should be repathed to worbench/metal
 	name = "metalworking bench"
 	desc = "A workbench with a drill press, a makeshift blowtorch setup, and various tools for making crude weapons and tools."
-	icon = 'modular_atom/blacksmith/icons/workbench64x32.dmi'
+	icon = 'modular_BD2/blacksmith/icons/workbench64x32.dmi'
 	icon_state = "bench_metal"
 
 
@@ -598,7 +598,7 @@ to the below
 
 /obj/machinery/workbench
 	desc = "A basic workbench with a full set of tools for simple to intermediate projects."
-	icon = 'modular_atom/icons/workbench.dmi'
+	icon = 'modular_BD2/general/icons/workbench.dmi'
 	machine_tool_behaviour = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER, TOOL_WIRECUTTER, TOOL_WRENCH)
 	drag_delay = 0.4 SECONDS // Heavy, slow to drag
 
@@ -607,7 +607,7 @@ to the below
 
 /obj/machinery/workbench/advanced
 	desc = "A large and advanced pre-war workbench to tackle any project! Comes with a full set of basic tools and a digital multitool."
-	icon = 'modular_atom/icons/workbench.dmi'
+	icon = 'modular_BD2/general/icons/workbench.dmi'
 	machine_tool_behaviour = list(TOOL_AWORKBENCH, TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER, TOOL_WIRECUTTER, TOOL_WRENCH, TOOL_MULTITOOL)
 
 */
@@ -624,7 +624,7 @@ to the below
 /* Copied to base code
 
 /obj/structure/closet/crate/basic
-	icon = 'modular_atom/icons/crates.dmi'
+	icon = 'modular_BD2/general/icons/crates.dmi'
 
 // ------------ CRATES ------------------ 
 
@@ -635,9 +635,9 @@ to the below
 	material_drop = /obj/item/stack/sheet/hay
 
 /obj/structure/closet/crate/footchest
-	icon = 'modular_atom/icons/crates.dmi'
-	open_sound = 'modular_atom/sound/creak.ogg'
-	close_sound = 'modular_atom/sound/creak.ogg'
+	icon = 'modular_BD2/general/icons/crates.dmi'
+	open_sound = 'modular_BD2/sound/creak.ogg'
+	close_sound = 'modular_BD2/sound/creak.ogg'
 	dense_when_open = FALSE
 */
 
@@ -657,9 +657,9 @@ to the below
 /obj/item/storage/toolbox/prewar
 	name = "toolbox (pre-war)"
 	desc = "Plastic toolbox, made long ago."
-	icon = 'modular_atom/icons/tools.dmi'
-	righthand_file = 'modular_atom/icons/righthand.dmi'
-	lefthand_file = 'modular_atom/icons/lefthand.dmi'
+	icon = 'modular_BD2/general/icons/tools.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "toolbox_prewar"
 	item_state = "toolbox_prewar"
 	custom_materials = list(/datum/material/plastic = 500)
@@ -682,7 +682,7 @@ to the below
 		user.visible_message("[user] begins filling the[src] with Abraxo solution.", \
 				span_notice("You begin filling he [src] with Abraxo. Smells nice."), \
 				span_italic("You hear faint bubbling sounds."))
-		playsound(get_turf(src), 'modular_atom/sound/abraxo.ogg', 100, TRUE)
+		playsound(get_turf(src), 'modular_BD2/sound/abraxo.ogg', 100, TRUE)
 		if(!do_after(user, 40, TRUE, src))
 			return
 		new /obj/item/reagent_containers/spray/cleaner(drop_location())
@@ -693,7 +693,7 @@ to the below
 
 /obj/item/reagent_containers/spray/empty
 	desc = "A spray bottle, with an unscrewable top. Meant to be filled with Abraxo for superior cleanliness."
-	icon = 'modular_atom/icons/cleaning.dmi'
+	icon = 'modular_BD2/general/icons/cleaning.dmi'
 
 
 // ------------------------------- MATCHBOX FIX ------------------------------
