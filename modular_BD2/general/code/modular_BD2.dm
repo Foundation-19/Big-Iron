@@ -29,7 +29,7 @@
 /obj/item/stack/ore/coal // turns to coke when heated in a Furnace or ORM
 	name = "coal"
 	desc = "Pure coal needs heat-processing to become good fuel."
-	icon = 'modular_atom/icons/stackable_items.dmi'
+	icon = 'modular_atom/general/icons/stackable_items.dmi'
 	icon_state = "ore_coal"
 	singular_name = "lump of coal"
 	points = 2
@@ -42,7 +42,7 @@
 	name = "coke"
 	desc = "Coke is what you get when you heat-treat coal. It's a good fuel for burning."
 	singular_name = "bag of coke"
-	icon = 'modular_atom/icons/stackable_items.dmi'
+	icon = 'modular_atom/general/icons/stackable_items.dmi'
 	icon_state = "sheet_coke"
 	custom_materials = null
 	throwforce = 2

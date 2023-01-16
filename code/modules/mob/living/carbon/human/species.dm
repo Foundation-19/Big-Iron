@@ -480,7 +480,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			var/fhair_file = S.icon
 			if(fextensions[fhair_state+dynamic_fhair_suffix])
 				fhair_state += dynamic_fhair_suffix
-				fhair_file = 'icons/mob/facialhair_extensions.dmi'
+				fhair_file = 'icons/mob/facial_hair_extensions.dmi'
 
 			var/mutable_appearance/facial_overlay = mutable_appearance(fhair_file, fhair_state, -HAIR_LAYER)
 
