@@ -13,7 +13,6 @@
 	icon_grow = "apple-grow"
 	icon_dead = "apple-dead"
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
-	mutatelist = list(/obj/item/seeds/apple/gold)
 	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
 
 /obj/item/reagent_containers/food/snacks/grown/apple
@@ -28,6 +27,7 @@
 	tastes = list("apple" = 1)
 	distill_reagent = /datum/reagent/consumable/ethanol/hcider
 
+/*
 // Gold Apple
 /obj/item/seeds/apple/gold
 	name = "pack of golden apple seeds"
@@ -50,3 +50,5 @@
 	filling_color = "#FFD700"
 	distill_reagent = null
 	wine_power = 50
+
+*/
