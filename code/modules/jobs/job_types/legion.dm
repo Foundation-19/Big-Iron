@@ -842,9 +842,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
 
-	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION1, ACCESS_LEGION2)
-	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION1, ACCESS_LEGION2)
-
 	loadout_options = list(
 		/datum/outfit/loadout/servant,		// food -> medical -> clean
 		/datum/outfit/loadout/worker,		// farm -> mine -> clean
@@ -860,7 +857,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	uniform	= /obj/item/clothing/under/f13/legauxilia
 	backpack = /obj/item/storage/backpack/satchel/leather
 	l_pocket = /obj/item/flashlight/lantern
-	box_two = /obj/item/storage/survivalkit/medical/legion
 	shoes = null
 	backpack_contents = list(
 		/obj/item/clothing/glasses/welding = 1,
@@ -879,7 +875,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/book/granter/trait/lowsurgery = 1,
 		/obj/item/reagent_containers/food/condiment/flour = 2,
 		/obj/item/soap/homemade = 1,
-		/obj/item/melee/onehanded/straight_razor = 1
+		/obj/item/razor = 1
 		)
 
 /datum/outfit/loadout/worker
@@ -900,8 +896,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/seeds/onion = 2,
 		/obj/item/seeds/soya = 2,
 		/obj/item/seeds/potato = 2,
-		/obj/item/seeds/sugarcane = 2,
-		/obj/item/seeds/olive = 2,
+		/obj/item/seeds/sugarcane = 2
 		)
 
 /datum/outfit/loadout/treasurer
@@ -914,20 +909,18 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/folder/red = 1,
 		/obj/item/paper/natural = 2,
 		/obj/item/pen/fountain = 1,
-		/obj/item/storage/bag/money/small/legion = 1,
-		/obj/item/blacksmith/ingot/gold = 1,
+		/obj/item/storage/bag/money/small/legion = 1
 		)
 
 /datum/outfit/loadout/blacksmith
 	name = "Blacksmith"
 	shoes = /obj/item/clothing/shoes/f13/military/plated
-	mask = /obj/item/clothing/mask/bandana/legion/dark
+	mask = /obj/item/clothing/mask/bandana/legion
 	backpack_contents = list(
 		/obj/item/clothing/under/f13/legskirt = 1,
 		/obj/item/storage/belt/utility/waster/forgemaster = 1,
 		/obj/item/clothing/neck/apron/labor/forge = 1,
 		/obj/item/clothing/gloves/legion/forgemaster = 1,
-		/obj/item/blacksmith/ingot/iron = 2,
 		/obj/item/stack/sheet/mineral/wood/twenty = 1,
 		/obj/item/twohanded/chainsaw = 1
 		)
@@ -939,7 +932,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/clothing/under/f13/legauxiliaf = 1,
 		/obj/item/defibrillator/primitive = 1,
-		/obj/item/clothing/neck/apron/medicus_legion = 1,
+		/obj/item/clothing/neck/apron/medicus = 1,
 		/obj/item/clothing/gloves/f13/crudemedical = 1,
 		/obj/item/storage/belt/medical/primitive = 1,
 		/obj/item/book/granter/trait/midsurgery = 1,

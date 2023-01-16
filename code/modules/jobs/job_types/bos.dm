@@ -139,7 +139,7 @@ Head Scribe
 /datum/job/bos/f13headscribe
 	title = "Head Scribe"
 	flag = F13HEADSCRIBE
-	display_order = JOB_DISPLAY_ORDER_HEADPSCRIBE
+	display_order = JOB_DISPLAY_ORDER_HEADSCRIBE
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
@@ -185,7 +185,7 @@ Head Knight
 /datum/job/bos/f13headknight
 	title = "Head Knight"
 	flag = F13HEADKNIGHT
-	display_order = JOB_DISPLAY_ORDER_HEADPKNIGHT
+	display_order = JOB_DISPLAY_ORDER_HEADKNIGHT
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1

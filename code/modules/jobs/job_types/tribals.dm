@@ -1,4 +1,4 @@
-/datum/job/tribals //do NOT use this for anything, it's just to store faction datums
+/*/datum/job/tribals //do NOT use this for anything, it's just to store faction datums
 	department_flag = TRIBAL
 	selection_color = "#ffeeaa"
 	exp_type = EXP_TYPE_TRIBAL
@@ -33,7 +33,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal_pa)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal_pa_helmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalradio)
-/*
+
 /*
 Tribal Chief
 */
