@@ -255,9 +255,8 @@ Paladin
 	)
 
 	outfit = /datum/outfit/job/bos/f13paladin
-
-	access = list(ACCESS_BOS)
-	minimal_access = list(ACCESS_BOS)
+	access = list(ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_PUBLIC)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
