@@ -171,12 +171,12 @@
 	subcategory = CAT_PASTRY
 
 /datum/crafting_recipe/food/goldenappletart
-	name = "Golden apple tart"
+	name = "Apple tart"
 	reqs = list(
 		/datum/reagent/consumable/milk = 5,
 		/datum/reagent/consumable/sugar = 5,
 		/obj/item/reagent_containers/food/snacks/pie/plain = 1,
-		/obj/item/reagent_containers/food/snacks/grown/apple/gold = 1
+		/obj/item/reagent_containers/food/snacks/grown/apple = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/pie/appletart
 	subcategory = CAT_PIE
