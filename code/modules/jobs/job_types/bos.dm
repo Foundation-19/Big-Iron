@@ -2,13 +2,18 @@
 	department_flag = BOS
 	selection_color = "#95a5a6"
 	faction = FACTION_BROTHERHOOD
-	exp_type = EXP_TYPE_FALLOUT
+	exp_type = EXP_TYPE_BROTHERHOOD
 
 	access = list(ACCESS_BOS)
 	minimal_access = list(ACCESS_BOS)
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
-	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Acquire blueprints for research and preservation", "Leadership recommends the following goal for this week: Acquire or confiscate dangerous tech by any means necessary.")
+
+	objectivesList = list(
+		"The High Elders recommend the following goal for this week: Establish an outpost at the radio tower and monitor frequencies",
+		"The High Elders recommend the following goal for this week: Study technology that can benefit our cause",
+		"The High Elders recommend the following goal for this week: Acquire or confiscate dangerous technology, adhering to the Codex"
+		)
 
 /datum/outfit/job/bos
 	name = "bosdatums"
@@ -42,14 +47,15 @@ Elder
 /datum/job/bos/f13elder
 	title = "Elder"
 	flag = F13ELDER
+	display_order = JOB_DISPLAY_ORDER_ELDER
+	exp_type = EXP_TYPE_BROTHERHOODCOMMAND
 	head_announce = list("Security")
-	supervisors = "the High Elders"
 	req_admin_notify = 1
-
-	exp_requirements = 3000
-
 	total_positions = 0
 	spawn_positions = 0
+	description = "You are the Elder of this local chapter of the Brotherhood of Steel. You may be a veteran of warfare, an experienced commander or even a genius Scribe, and you command all the men within this bunker. Your main goals are to lead the Brotherhood, to solve conflicts inbetween castes and to manage the Head Paladin, Head Knight and Head Scribe."
+	supervisors = "the High Elders"
+	exp_requirements = 3000
 
 	outfit = /datum/outfit/job/bos/f13elder
 
@@ -60,23 +66,16 @@ Elder
 	name = "Elder"
 	jobtype = /datum/job/bos/f13elder
 	suit =	/obj/item/clothing/suit/f13/elder
-	glasses =	/obj/item/clothing/glasses/night
+	glasses = /obj/item/clothing/glasses/sunglasses
 	accessory =	/obj/item/clothing/accessory/bos/elder
-	suit_store =	/obj/item/gun/energy/laser/laer
+	suit_store = /obj/item/gun/energy/laser/pistol
 	neck =	/obj/item/clothing/neck/mantle/bos/right
 	ears = /obj/item/radio/headset/headset_bos/command
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/gun/ballistic/automatic/pistol/n99 = 1
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/melee/onehanded/knife/hunting = 1
 	)
 
-/datum/outfit/job/bos/f13elder/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 
 /*
 Head Paladin
@@ -85,13 +84,13 @@ Head Paladin
 /datum/job/bos/f13headpaladin
 	title = "Head Paladin"
 	flag = F13HEADPALADIN
+	display_order = JOB_DISPLAY_ORDER_HEADPALADIN
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the acting field commander until the Brotherhood regains its strength enough to place an Elder for the bunker. You are a veteran of many battles and sorties in pursuit of Brotherhood goals; your only weakness may just be your hubris. Your main goals are defense of the Chapter and surveillance of the surrounding region for technology."
 	supervisors = "the Elder"
 	exp_requirements = 1500
-	exp_type = EXP_TYPE_BROTHERHOOD
 
 	outfit = /datum/outfit/job/bos/f13headpaladin
 
@@ -140,13 +139,13 @@ Head Scribe
 /datum/job/bos/f13headscribe
 	title = "Head Scribe"
 	flag = F13HEADSCRIBE
+	display_order = JOB_DISPLAY_ORDER_HEADSCRIBE
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the foremost experienced scribe remaining in this bunker. Your role is to ensure the safekeeping and proper usage of technology within the Brotherhood. You are also the lead medical expert in this Chapter. Delegate your tasks to your Scribes."
 	supervisors = "the Elder"
 	exp_requirements = 1500
-
 
 	outfit = /datum/outfit/job/bos/f13headscribe
 
@@ -186,19 +185,18 @@ Head Knight
 /datum/job/bos/f13headknight
 	title = "Head Knight"
 	flag = F13HEADKNIGHT
+	display_order = JOB_DISPLAY_ORDER_HEADKNIGHT
 	head_announce = list("Security")
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the Head Knight, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
 	supervisors = "the Elder"
 	exp_requirements = 1500
-	exp_type = EXP_TYPE_BROTHERHOOD
 
 	outfit = /datum/outfit/job/bos/f13headknight
 
 	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
 	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
-
 
 /datum/outfit/job/bos/f13headknight
 	name = "Head Knight"
@@ -243,17 +241,18 @@ Senior Paladin
 /datum/job/bos/f13seniorpaladin
 	title = "Senior Paladin"
 	flag = F13SENIORPALADIN
+	display_order = JOB_DISPLAY_ORDER_SENIORPALADIN
 	total_positions = 1
 	spawn_positions = 1
 	description = "As the Chapter's senior offensive warrior, you have proven your service and dedication to the Brotherhood over your time as a Paladin. As your skills gained, however, you were deigned to be more useful as a commander and trainer. Your job is to coordinate the Paladins and ensure they work as a team, instilling discipline as you go."
 	supervisors = "the Head Paladin"
 	exp_requirements = 1000
-	exp_type = EXP_TYPE_BROTHERHOOD
 
 	outfit = /datum/outfit/job/bos/f13seniorpaladin
 
 	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
 	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
+	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/bos,
@@ -298,12 +297,12 @@ Paladin
 /datum/job/bos/f13paladin
 	title = "Paladin"
 	flag = F13PALADIN
+	display_order = JOB_DISPLAY_ORDER_PALADIN
 	total_positions = 1
 	spawn_positions = 1
 	description = "You answer directly to the Senior Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
-	supervisors = "the Head Paladin"
+	supervisors = "the Senior Paladin"
 	exp_requirements = 1000
-	exp_type = EXP_TYPE_BROTHERHOOD
 
 	loadout_options = list(
 	/datum/outfit/loadout/paladina, //Regular armor
@@ -314,6 +313,7 @@ Paladin
 
 	access = list(ACCESS_BOS)
 	minimal_access = list(ACCESS_BOS)
+	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/bos,
@@ -374,6 +374,7 @@ Senior Scribe
 /datum/job/bos/f13seniorscribe
 	title = "Senior Scribe"
 	flag = F13SENIORSCRIBE
+	display_order = JOB_DISPLAY_ORDER_SENIORSCRIBE
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the bunker's seniormost medical and scientific expert in the bunker, sans the Head Scribe themselves. You are trained in both medicine and engineering, while also having extensive studies of the old world to assist in pinpointing what technology would be useful to the Brotherhood and its interests."
@@ -384,6 +385,7 @@ Senior Scribe
 
 	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
 	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
+	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/bos,
@@ -427,12 +429,11 @@ Scribe
 /datum/job/bos/f13scribe
 	title = "Scribe"
 	flag = F13SCRIBE
-	total_positions = 3
-	spawn_positions = 3
+	display_order = JOB_DISPLAY_ORDER_SCRIBE
+	total_positions = 2
+	spawn_positions = 2
 	description = "You answer directly to the Senior Scribe, tasked with researching and reverse-engineering recovered technologies from the old world, while maintaining the brotherhoods scientific archives. You may also be given a trainee to assign duties to."
-	supervisors = "the Senior Scribe and Head Scribe"
-
-
+	supervisors = "the Senior Scribe"
 	exp_requirements = 600
 
 	loadout_options = list(
@@ -444,6 +445,7 @@ Scribe
 
 	access = list(ACCESS_ROBOTICS, ACCESS_BOS)
 	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS)
+	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/bos,
@@ -499,6 +501,7 @@ Senior Knight
 /datum/job/bos/f13seniorknight
 	title = "Senior Knight"
 	flag = F13SENIORKNIGHT
+	display_order = JOB_DISPLAY_ORDER_SENIORKNIGHT
 	total_positions = 2
 	spawn_positions = 2
 	description = "You report directly to the Head Knight. You are the Brotherhood Senior Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
@@ -509,6 +512,7 @@ Senior Knight
 
 	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
 	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
+	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/bos,
@@ -535,7 +539,7 @@ Senior Knight
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/stock_parts/cell/ammo/mfc=2,
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2
 		)
@@ -559,10 +563,11 @@ Knight
 /datum/job/bos/f13knight
 	title = "Knight"
 	flag = F13KNIGHT
-	total_positions = 4
-	spawn_positions = 4
-	description = " You are the Brotherhood Knight, the veritable lifeblood of your organization. You are a versatile and adaptably trained person: from your primary duties of weapon & armor repair to basic combat, survival and stealth skills, the only thing you lack is proper experience. You are also in charge of Initiates."
-	supervisors = "the Senior Knight and Head Knight"
+	display_order = JOB_DISPLAY_ORDER_KNIGHT
+	total_positions = 3
+	spawn_positions = 3
+	description = "You are the Brotherhood Knight, the veritable lifeblood of your organization. You are a versatile and adaptably trained person: from your primary duties of weapon & armor repair to basic combat, survival and stealth skills, the only thing you lack is proper experience. You are also in charge of Initiates."
+	supervisors = "the Senior Knight"
 	exp_requirements = 600
 
 	loadout_options = list(
@@ -632,12 +637,11 @@ Initiate
 /datum/job/bos/f13initiate
 	title = "Initiate"
 	flag = F13INITIATE
-	total_positions = 3
-	spawn_positions = 3
+	display_order = JOB_DISPLAY_ORDER_INITIATE
+	total_positions = 4
+	spawn_positions = 4
 	description = "Either recently inducted or born into the Brotherhood, you have since proven yourself worthy of assignment to the Chapter. You are to assist your superiors and receive training how they deem fit. You are NEVER allowed to leave the bunker without the direct supervision of a superior; doing so may result in exile or transferrence back the Valley."
 	supervisors = "the Scribes, Knights or Paladins"
-	exp_requirements = 0
-	exp_type = EXP_TYPE_FALLOUT
 
 	loadout_options = list(
 	/datum/outfit/loadout/initiatek, //AEP7 and Engibelt with combat armor, no helmet
@@ -648,6 +652,7 @@ Initiate
 
 	access = list(ACCESS_BOS)
 	minimal_access = list(ACCESS_BOS)
+	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/bos,
@@ -706,10 +711,11 @@ Off-Duty
 /datum/job/bos/f13offdutybos
 	title = "BoS Off-Duty"
 	flag = F13OFFDUTYBOS
-	total_positions = 5
-	spawn_positions = 5
+	display_order = JOB_DISPLAY_ORDER_OFFDUTYBOS
+	total_positions = 4
+	spawn_positions = 4
 	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties of the bunker, and you may spend your time doing whatever you please, within reason. However, you may not leave the bunker, and you may not get in the way of on-duty personnel. Do not pull rank or give orders. Should the bunker be attacked, you are expected NOT to participate in the fighting, and must instead head to the lower levels for safety (i.e. despawn yourself at the matrix point)."
-	supervisors = "your superior rank"
+	supervisors = "Everyone else"
 	exp_requirements = 300
 
 	outfit = /datum/outfit/job/bos/f13offdutybos

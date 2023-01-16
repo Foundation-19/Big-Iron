@@ -640,15 +640,15 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	name = "Legion Slavemaster"
 
 /obj/effect/landmark/start/f13/explorer
-	name = "Legion Scout"
-	icon_state = "Legionary"
-
-/obj/effect/landmark/start/f13/venator
 	name = "Legion Explorer"
 	icon_state = "Legionary"
 
+/obj/effect/landmark/start/f13/venator
+	name = "Legion FUCK YOU"
+	icon_state = "Legionary"
+
 /obj/effect/landmark/start/f13/auxilia
-	name = "Legion Auxilia"
+	name = "Camp Follower"
 	icon_state = "Auxilla"
 
 /obj/effect/landmark/start/f13/campfollower
