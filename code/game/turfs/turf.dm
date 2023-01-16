@@ -49,6 +49,8 @@
 	var/base_opacity = FALSE
 	///Lazylist of movable atoms providing opacity sources.
 	var/list/atom/movable/opacity_sources
+	///whether or not this turf forces movables on it to have no gravity (unless they themselves have forced gravity)
+	var/force_no_gravity = FALSE
 
 
 /turf/vv_edit_var(var_name, var_value)
@@ -100,7 +102,7 @@
 				smooth_sunlight_border()
 
 	if(requires_activation)
-		CALCULATE_ADJACENT_TURFS(src)
+		ImmediateCalculateAdjacentTurfs()
 
 	if (light_power && light_range)
 		update_light()
@@ -118,12 +120,6 @@
 	set_custom_materials(custom_materials)
 
 	ComponentInitialize()
-	if(isopenturf(src))
-		var/turf/open/O = src
-		__auxtools_update_turf_temp_info(isspaceturf(get_z_base_turf()) && !O.planetary_atmos)
-	else
-		update_air_ref(-1)
-		__auxtools_update_turf_temp_info(isspaceturf(get_z_base_turf()))
 
 	return INITIALIZE_HINT_NORMAL
 
@@ -135,7 +131,7 @@
 
 
 /turf/proc/Initialize_Atmos(times_fired)
-	CALCULATE_ADJACENT_TURFS(src)
+	ImmediateCalculateAdjacentTurfs()
 
 /turf/Destroy(force)
 	. = QDEL_HINT_IWILLGC

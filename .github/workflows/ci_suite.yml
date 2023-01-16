@@ -71,8 +71,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: 'Putnam3145/auxmos'
-          ref: '6be702ec36d8024bfb93b4277004a9a755f5e92e'
+          repository: 'sunset-wasteland/auxmos'
+          ref: 'v2.3.1'
           path: 'auxmos'
 
       - name: Cache cargo registry
@@ -125,6 +125,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     name: Integration Tests
     runs-on: ubuntu-20.04
+    timeout-minutes: 30
     services:
       mysql:
         image: mysql:latest
