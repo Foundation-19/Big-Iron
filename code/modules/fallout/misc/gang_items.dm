@@ -55,6 +55,9 @@
 /datum/gang_item/clothing
 	category = "Purchase Clothes:"
 
+// ---------------------------
+//Great Khans stuff was moved into PAPA in there khamp
+
 //Raider gangs
 
 /datum/gang_item/clothing/prostitute_dress
@@ -134,7 +137,7 @@
 /datum/gang_item/weapon/shuriken
 	name = "Shuriken"
 	id = "shuriken"
-	cost = 30
+	cost = 100
 	item_path = /obj/item/throwing_star
 
 /datum/gang_item/weapon/switchblade
@@ -237,21 +240,19 @@
 
 /datum/gang_item/equipment/stinger
 	name = "Stinger"
-	id = "stinger"
 	cost = 75
 	item_path = /obj/item/grenade/f13/stinger
 
 /datum/gang_item/equipment/he
-	name = "stick of dynamite"
-	id = "dynamite"
-	cost = 75
-	item_path = /obj/item/grenade/f13/anarchist/dynamite
+	name = "High Explosive Grenade"
+	cost = 100
+	item_path = /obj/item/grenade/f13/explosive
 
 /datum/gang_item/equipment/greatkhanheadset
 	name = "Great Khan Headset"
-	id = "khanheadset"
 	cost = 10 
 	item_path = /obj/item/radio/headset/headset_khans
+
 
 ///////////////////
 //EQUIPMENT
@@ -273,7 +274,7 @@
 	desc = "Rule the underworld like the Den Mob of old."
 
 /obj/item/storage/box/bundledenboss/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/assault_carbine/policerifle(src)
+	new /obj/item/gun/ballistic/automatic/assault_carbine/worn(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
@@ -297,7 +298,7 @@
 	new /obj/item/grenade/frag(src)
 	new /obj/item/grenade/plastic/c4(src)
 	new /obj/item/grenade/plastic/c4(src)
-	new /obj/item/grenade/f13/explosive(src)
+	new /obj/item/grenade/syndieminibomb/concussion(src)
 	new /obj/item/clothing/suit/bomb_suit(src)
 
 /datum/gang_item/equipment/bundlegunner
@@ -314,7 +315,7 @@
 	new /obj/item/gun/ballistic/automatic/smg/greasegun(src)
 	new /obj/item/ammo_box/magazine/greasegun(src)
 	new /obj/item/clothing/head/helmet/armyhelmet(src)
-	new /obj/item/storage/belt/fannypack(src)
+	new /obj/item/storage/belt(src)
 	new /obj/item/clothing/under/f13/army(src)
 	new /obj/item/gun/ballistic/automatic/pistol/m1911(src)
 	new /obj/item/grenade/frag(src)
@@ -334,4 +335,4 @@
 	new /obj/item/ammo_box/a357box/ricochet(src)
 	new /obj/item/gun/ballistic/revolver/colt357(src)
 	new /obj/item/clothing/head/f13/ranger_hat(src)
-	new /obj/item/clothing/suit/armor/light/leather/leathercoat(src)
+	new /obj/item/clothing/suit/armor/f13/leather_jacket/combat/coat(src)
