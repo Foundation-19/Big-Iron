@@ -267,9 +267,6 @@ Paladin
 		/datum/matchmaking_pref/mentor = list(
 			/datum/job/bos/f13initiate,
 		),
-		/datum/matchmaking_pref/disciple = list(
-			/datum/job/bos/f13seniorpaladin,
-		),
 	)
 
 /datum/outfit/job/bos/f13paladin
@@ -345,9 +342,6 @@ Scribe
 		/datum/matchmaking_pref/mentor = list(
 			/datum/job/bos/f13initiate,
 		),
-		/datum/matchmaking_pref/disciple = list(
-			/datum/job/bos/f13seniorscribe,
-		),
 	)
 
 /datum/outfit/job/bos/f13scribe
@@ -375,7 +369,7 @@ Scribe
 		/obj/item/clothing/accessory/bos/scribe = 1
 		)
 		
-/datum/outfit/oadout/scribec
+/datum/outfit/loadout/scribec
 	name = "Senior Scribe"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/seniorscribe = 1
