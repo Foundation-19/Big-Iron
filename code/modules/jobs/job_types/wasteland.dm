@@ -21,8 +21,8 @@
 
 	outfit = /datum/outfit/job/wasteland/f13pusher
 
-	access = list(ACCESS_KHAN)
-	minimal_access = list(ACCESS_KHAN)
+	access = list(ACCESS_KHAN, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_KHAN, ACCESS_PUBLIC)
 
 	loadout_options = list(
 		/datum/outfit/loadout/khanenforcer,
@@ -132,8 +132,8 @@ Raider
 
 	outfit = /datum/outfit/job/wasteland/f13raider
 
-	access = list()
-	minimal_access = list()
+	access = list(ACCESS_RAIDER, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_RAIDER, ACCESS_PUBLIC)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/wasteland/f13pusher,
@@ -456,8 +456,8 @@ Raider
 
 	outfit = /datum/outfit/job/wasteland/f13wastelander
 
-	access = list()		//we can expand on this and make alterations as people suggest different loadouts
-	minimal_access = list()
+	access = list(ACCESS_WASTER, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_WASTER, ACCESS_PUBLIC)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/wasteland/f13wastelander,
@@ -677,8 +677,8 @@ Raider
 
 	outfit = /datum/outfit/job/wasteland/f13tribal
 
-	access = list()
-	minimal_access = list()
+	access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
 
 	loadout_options = list(
 	/datum/outfit/loadout/brawler,

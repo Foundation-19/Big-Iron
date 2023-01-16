@@ -157,46 +157,42 @@
 	switch(code)
 		if(0)
 			return get_all_accesses()
-		if(1) //station general
-			return list(ACCESS_KITCHEN,ACCESS_BAR, ACCESS_HYDROPONICS, ACCESS_JANITOR, ACCESS_CHAPEL_OFFICE, ACCESS_CREMATORIUM, ACCESS_LIBRARY, ACCESS_THEATRE, ACCESS_LAWYER, ACCESS_NCROFFDUTY)
-		if(2) //security
-			return list(ACCESS_SEC_DOORS, ACCESS_WEAPONS, ACCESS_SECURITY, ACCESS_BRIG, ACCESS_ARMORY, ACCESS_FORENSICS_LOCKERS, ACCESS_COURT, ACCESS_HOS, ACCESS_LEGION, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_BOS, ACCESS_ENCLAVE)
-		if(3) //medbay
-			return list(ACCESS_MEDICAL, ACCESS_GENETICS, ACCESS_CLONING, ACCESS_MORGUE, ACCESS_CHEMISTRY, ACCESS_VIROLOGY, ACCESS_SURGERY, ACCESS_CMO, ACCESS_FOLLOWER, ACCESS_CLINIC)
-		if(4) //research
-			return list(ACCESS_FOLLOWER, ACCESS_RESEARCH, ACCESS_TOX, ACCESS_TOX_STORAGE, ACCESS_GENETICS, ACCESS_ROBOTICS, ACCESS_XENOBIOLOGY, ACCESS_MINISAT, ACCESS_RD, ACCESS_NETWORK)
-		if(5) //engineering and maintenance
-			return list(ACCESS_CONSTRUCTION, ACCESS_MAINT_TUNNELS, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_TECH_STORAGE, ACCESS_ATMOSPHERICS, ACCESS_TCOMSAT, ACCESS_MINISAT, ACCESS_CE)
-		if(6) //supply
-			return list(ACCESS_MAILSORTING, ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_VAULT)
-		if(7) //command
-			return list(ACCESS_HEADS, ACCESS_RC_ANNOUNCE, ACCESS_KEYCARD_AUTH, ACCESS_CHANGE_IDS, ACCESS_AI_UPLOAD, ACCESS_TELEPORTER, ACCESS_EVA, ACCESS_GATEWAY, ACCESS_ALL_PERSONAL_LOCKERS, ACCESS_HOP, ACCESS_CAPTAIN, ACCESS_VAULT)
+		if(1) //NCR Access
+			return list(ACCESS_NCROFFDUTY, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR3, ACCESS_NCR4, ACCESS_NCRR)
+		if(2) //Legion Access
+			return list(ACCESS_LEGION, ACCESS_LEGION1, ACCESS_LEGION2, ACCESS_LEGION3, ACCESS_LEGION4)
+		if(3) //BoS Access
+			return list(ACCESS_BOS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_BOS4)
+		if(4) //Enclave
+			return list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_ENCLAVE3, ACCESS_ENCLAVE4)
+		if(5) //Town
+			return list(ACCESS_TOWN, ACCESS_TOWN_CIV, ACCESS_TOWN_BAR, ACCESS_TOWN_MERCH, ACCESS_TOWN_PROSP, ACCESS_TOWN_SCIENCE, ACCESS_TOWN_DOC, ACCESS_TOWN_SEC, ACCESS_TOWN_HOS, ACCESS_TOWN_COMMAND, ACCESS_DEN)
+		if(6) //Wasteland
+			return list(ACCESS_PUBLIC, ACCESS_KHAN, ACCESS_TRIBE, ACCESS_RAIDER, ACCESS_WASTER)
 
 /proc/get_region_accesses_name(code)
 	switch(code)
 		if(0)
 			return "All"
-		if(1) //station general
-			return "General"
-		if(2) //security
-			return "Security"
-		if(3) //medbay
-			return "Medbay"
-		if(4) //research
-			return "Research"
-		if(5) //engineering and maintenance
-			return "Engineering"
-		if(6) //supply
-			return "Supply"
-		if(7) //command
-			return "Command"
-
+		if(1) //NCR Access
+			return "NCR"
+		if(2) //Legion Access
+			return "Legion"
+		if(3) //BoS Access
+			return "BoS"
+		if(4) //Enclave
+			return "Enclave"
+		if(5) //Town
+			return "Eastwood"
+		if(6) //Wasteland
+			return "Wasteland"
+	
 /proc/get_access_desc(A)
 	switch(A)
 		if(ACCESS_CARGO)
 			return "Cargo Bay"
 		if(ACCESS_CARGO_BOT)
-			return "Oasis Shop"
+			return "Delivery Chutes"
 		if(ACCESS_SECURITY)
 			return "Security Equipment"
 		if(ACCESS_BRIG)
@@ -312,7 +308,7 @@
 		if(ACCESS_TCOMSAT)
 			return "Telecommunications"
 		if(ACCESS_GATEWAY)
-			return "Oasis Police Department"
+			return "Gateway"
 		if(ACCESS_SEC_DOORS)
 			return "Security SubDepartment Doors"
 		if(ACCESS_ENTER_GENPOP)
@@ -330,11 +326,11 @@
 		if(ACCESS_CLONING)
 			return "Cloning Room"
 		if(ACCESS_BOS)
-			return "BOS Access"
+			return "BoS Clearance 0"
 		if(ACCESS_LEGION)
-			return "Legion Access"
+			return "Legion General Access"
 		if(ACCESS_NCR)
-			return "NCR Military"
+			return "NCR Clearance 0"
 		if(ACCESS_NCR_ARMORY)
 			return "NCR Armory"
 		if(ACCESS_NCROFFDUTY)
@@ -342,9 +338,75 @@
 		if(ACCESS_FOLLOWER)
 			return "Follower Access"
 		if(ACCESS_ENCLAVE)
-			return "Enclave Access"
-		if(ACCESS_CLINIC)
-			return "Oasis Clinic"
+			return "Enclave Clearance 0"
+		if(ACCESS_KHAN)
+			return "Great Khans Access"
+		if(ACCESS_NCR1)
+			return "NCR Clearance 1"
+		if(ACCESS_NCR2)
+			return "NCR Clearance 2"
+		if(ACCESS_NCR3)
+			return "NCR Clearance 3"
+		if(ACCESS_NCR4)
+			return "NCR Clearance 4"
+		if(ACCESS_NCRR)
+			return "Ranger Clearance"
+		if(ACCESS_LEGION1)
+			return "Legion Slave Access"
+		if(ACCESS_LEGION2)
+			return "Legion Military Access"
+		if(ACCESS_LEGION3)
+			return "Legion Decanii Access"
+		if(ACCESS_LEGION4)
+			return "Legion Command Access"
+		if(ACCESS_BOS1)
+			return "BoS Clearance 1"
+		if(ACCESS_BOS2)
+			return "BoS Clearance 2"
+		if(ACCESS_BOS3)
+			return "BoS Clearance 3"
+		if(ACCESS_BOS4)
+			return "BoS Clearance 4"
+		if(ACCESS_ENCLAVE1)
+			return "Enclave Clearance 1"
+		if(ACCESS_ENCLAVE2)
+			return "Enclave Clearance 2"
+		if(ACCESS_ENCLAVE3)
+			return "Enclave Clearance 3"
+		if(ACCESS_ENCLAVE4)
+			return "Enclave Clearance 4"
+		if(ACCESS_TOWN)
+			return "Town General Access"
+		if(ACCESS_TOWN_CIV)
+			return "Town Civilian Access"
+		if(ACCESS_TOWN_BAR)
+			return "Town Bar Access"
+		if(ACCESS_TOWN_MERCH)
+			return "Town Merchant Access"
+		if(ACCESS_TOWN_PROSP)
+			return "Town Prospector Access"
+		if(ACCESS_TOWN_PREACH)
+			return "Town Preacher Access"
+		if(ACCESS_TOWN_SCIENCE)
+			return "Town Researcher Access"
+		if(ACCESS_TOWN_DOC)
+			return "Town Doctor Access"
+		if(ACCESS_TOWN_SEC)
+			return "Town Security Access"
+		if(ACCESS_TOWN_HOS)
+			return "Provost Marshal Access"
+		if(ACCESS_TOWN_COMMAND)
+			return "Mayor Access"
+		if(ACCESS_DEN)
+			return "Desperados Access"
+		if(ACCESS_PUBLIC)
+			return "Public Access"
+		if(ACCESS_TRIBE)
+			return "Tribal Access"
+		if(ACCESS_RAIDER)
+			return "Raider Access"
+		if(ACCESS_WASTER)
+			return "Wastelander Access"
 
 /proc/get_centcom_access_desc(A)
 	switch(A)
@@ -369,47 +431,51 @@
 
 /* NCR */
 /proc/get_all_ncr_access()
-	return list(ACCESS_NCROFFDUTY, ACCESS_NCR, ACCESS_NCR_ARMORY)
+	return list(ACCESS_NCROFFDUTY, ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1)
 
 /proc/get_ncr_access_desc(A)
 	switch(A)
 		if(ACCESS_NCROFFDUTY)
 			return "NCR Civilian"
 		if(ACCESS_NCR)
-			return "NCR Military"
+			return "NCR Clearance 0"
 		if(ACCESS_NCR_ARMORY)
 			return "NCR Armory"
+		if(ACCESS_NCR1)
+			return "NCR Clearance 1"
 
 /* Legion */
 /proc/get_all_legion_access()
-	return list(ACCESS_LEGION)
+	return list(ACCESS_LEGION, ACCESS_LEGION1)
 
 /proc/get_legion_access_desc(A)
 	switch(A)
 		if(ACCESS_LEGION)
-			return "Legion Access"
+			return "Legion General Access"
+		if(ACCESS_LEGION1)
+			return "Legion Slave Access"
 
 /* Enclave */
 /proc/get_all_enclave_access()
-	return list(ACCESS_ENCLAVE)
+	return list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1)
 
 /proc/get_enclave_access_desc(A)
 	switch(A)
 		if(ACCESS_ENCLAVE)
-			return "Enclave Access"
+			return "Enclave Clearance 0"
 
 /* Brotherhood of Steel */
 /proc/get_all_bos_access()
 	return list(
 				ACCESS_BOS, ACCESS_BROTHERHOOD_COMMAND, ACCESS_ROBOTICS,
 				ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS,
-				ACCESS_MINERAL_STOREROOM, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS,
+				ACCESS_MINERAL_STOREROOM, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS, ACCESS_BOS1
 				)
 
 /proc/get_bos_access_desc(A)
 	switch(A)
 		if(ACCESS_BOS)
-			return "Brotherhood of Steel Access"
+			return "BoS Clearance 0"
 		if(ACCESS_BROTHERHOOD_COMMAND)
 			return "Brotherhood of Steel Command Access"
 		if(ACCESS_ROBOTICS)
@@ -422,18 +488,41 @@
 			return "Hydroponics"
 		if(ACCESS_MINERAL_STOREROOM)
 			return "Mineral Storage"
-		if(ACCESS_KITCHEN)
-			return "Kitchen"
-		if(ACCESS_BAR)
-			return "Bar"
-		if(ACCESS_SECURITY)
-			return "Security"
+		if(ACCESS_BOS1)
+			return "BoS Clearance 1"
+
+/* Eastwood */
+/proc/get_all_town_access()
+	return list(ACCESS_TOWN, ACCESS_TOWN_CIV, ACCESS_TOWN_BAR, ACCESS_TOWN_DOC, ACCESS_TOWN_SCIENCE, ACCESS_TOWN_MERCH, ACCESS_TOWN_PREACH, ACCESS_TOWN_HOS, ACCESS_TOWN_SEC)
+
+/proc/get_town_access_desc(A)
+	switch(A)
+		if(ACCESS_TOWN)
+			return "Town General Access"
+		if(ACCESS_TOWN_CIV)
+			return "Town Civilian Access"
+		if(ACCESS_TOWN_BAR)
+			return "Town Bar Access"
+		if(ACCESS_TOWN_MERCH)
+			return "Town Merchant Access"
+		if(ACCESS_TOWN_PROSP)
+			return "Town Prospector Access"
+		if(ACCESS_TOWN_PREACH)
+			return "Town Preacher Access"
+		if(ACCESS_TOWN_SCIENCE)
+			return "Town Researcher Access"
+		if(ACCESS_TOWN_DOC)
+			return "Town Doctor Access"
+		if(ACCESS_TOWN_SEC)
+			return "Town Security Access"
+		if(ACCESS_TOWN_HOS)
+			return "Provost Marshal Access"
 
 /proc/get_all_jobs()
 	return list("Centurion", "NCR Captain", "Overseer", "Sheriff",
-				"Sentinel", "Senior Paladin", "Paladin", "Knight-Captain", "Senior Knight", "Knight", "Head Scribe", "Senior Scribe", "Scribe", "Initiate",
+				"Head Paladin", "Senior Paladin", "Paladin", "Knight-Captain", "Senior Knight", "Knight", "Head Scribe", "Senior Scribe", "Scribe", "Initiate",
 				"Veteran Decanus", "Vexillarius", "Decanus", "Veteran Legionnaire", "Prime Legionnaire",
-				"NCR Lieutenant", "NCR Medical Officer", "NCR Sergeant First Class", "NCR Sergeant", ,"NCR Corporal", "NCR Combat Medic", "NCR Combat Engineer", "NCR Trooper",
+				"NCR Lieutenant", "NCR Sergeant", ,"NCR Corporal", "NCR Combat Medic", "NCR Combat Engineer", "NCR Trooper",
 				"NCR Veteran Ranger", "NCR Patrol Ranger", "NCR Recon Ranger",
 				"NCR Scout", "NCR Scout Sergeant", "NCR Scout Lieutenant",
 				"Chief of Security", "Vault-tec Doctor", "Vault-tec Scientist",

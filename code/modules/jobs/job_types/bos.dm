@@ -4,8 +4,8 @@
 	faction = FACTION_BROTHERHOOD
 	exp_type = EXP_TYPE_BROTHERHOOD
 
-	access = list(ACCESS_BOS)
-	minimal_access = list(ACCESS_BOS)
+	access = list(ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_PUBLIC)
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals, and cruel torture or experiments on the minds or bodies of prisoners."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
 
@@ -51,16 +51,16 @@ Elder
 	exp_type = EXP_TYPE_BROTHERHOODCOMMAND
 	head_announce = list("Security")
 	req_admin_notify = 1
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the Elder of this local chapter of the Brotherhood of Steel. You may be a veteran of warfare, an experienced commander or even a genius Scribe, and you command all the men within this bunker. Your main goals are to lead the Brotherhood, to solve conflicts inbetween castes and to manage the Head Paladin, Head Knight and Head Scribe."
 	supervisors = "the High Elders"
 	exp_requirements = 3000
 
 	outfit = /datum/outfit/job/bos/f13elder
 
-	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
-	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_CHANGE_IDS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_BOS4, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_MINERAL_STOREROOM, ACCESS_CHANGE_IDS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_BOS4, ACCESS_PUBLIC)
 
 /datum/outfit/job/bos/f13elder
 	name = "Elder"
@@ -94,8 +94,8 @@ Head Paladin
 
 	outfit = /datum/outfit/job/bos/f13headpaladin
 
-	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
-	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS, ACCESS_CHANGE_IDS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_BOS4, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS, ACCESS_CHANGE_IDS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_BOS4, ACCESS_PUBLIC)
 
 /datum/outfit/job/bos/f13headpaladin
 	name = "Head Paladin"
@@ -149,8 +149,8 @@ Head Scribe
 
 	outfit = /datum/outfit/job/bos/f13headscribe
 
-	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
-	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_CHANGE_IDS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_BOS4, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_CHANGE_IDS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_BOS4, ACCESS_PUBLIC)
 
 /datum/outfit/job/bos/f13headscribe
 	name = "Head Scribe"
@@ -195,8 +195,10 @@ Head Knight
 
 	outfit = /datum/outfit/job/bos/f13headknight
 
-	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
-	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS)
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_PUBLIC)
 
 /datum/outfit/job/bos/f13headknight
 	name = "Head Knight"
@@ -241,10 +243,10 @@ Paladin
 	title = "Paladin"
 	flag = F13PALADIN
 	display_order = JOB_DISPLAY_ORDER_PALADIN
-	total_positions = 2
-	spawn_positions = 2
-	description = "You answer directly to the Head Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
-	supervisors = "the Head Paladin"
+	total_positions = 1
+	spawn_positions = 1
+	description = "You answer directly to the Senior Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
+	supervisors = "the Senior Paladin"
 	exp_requirements = 1000
 
 	loadout_options = list(
@@ -254,8 +256,8 @@ Paladin
 
 	outfit = /datum/outfit/job/bos/f13paladin
 
-	access = list(ACCESS_BOS)
-	minimal_access = list(ACCESS_BOS)
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_PUBLIC)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -267,12 +269,16 @@ Paladin
 		/datum/matchmaking_pref/mentor = list(
 			/datum/job/bos/f13initiate,
 		),
+		/datum/matchmaking_pref/disciple = list(
+			/datum/job/bos/f13seniorpaladin,
+		),
 	)
 
 /datum/outfit/job/bos/f13paladin
 	name =	"Paladin"
 	jobtype =	/datum/job/bos/f13paladin
 	uniform =	/obj/item/clothing/under/f13/recon
+	accessory =	/obj/item/clothing/accessory/bos/paladin
 	mask =	/obj/item/clothing/mask/gas/sechailer
 	belt =	/obj/item/storage/belt/military/assault
 	neck =	/obj/item/clothing/neck/mantle/bos/paladin
@@ -281,23 +287,22 @@ Paladin
 	)
 
 /datum/outfit/loadout/paladina
-	name = "Paladin"
+	name = "Frontline Paladin"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer9 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
-		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
-		/obj/item/clothing/accessory/bos/paladin = 1
+		/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos = 1,
+		/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos = 1
 		)
 
 /datum/outfit/loadout/paladinb
-	name = "Senior Paladin"
+	name = "Scout Paladin"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer9 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
-		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
-		/obj/item/clothing/accessory/bos/seniorpaladin = 1
+		/obj/item/binoculars = 1,
+		/obj/item/clothing/suit/armor/f13/power_armor/t45d/scout = 1,
+		/obj/item/clothing/head/helmet/f13/power_armor/t45d/scout = 1
 		)
 
 /datum/outfit/job/bos/f13paladin/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -306,7 +311,7 @@ Paladin
 		return
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	
+
 /*
 Scribe
 */
@@ -323,14 +328,13 @@ Scribe
 
 	loadout_options = list(
 	/datum/outfit/loadout/scribea,
-	/datum/outfit/loadout/scribeb,
-	/datum/outfit/loadout/scribec
+	/datum/outfit/loadout/scribeb
 	)
 
 	outfit = /datum/outfit/job/bos/f13scribe
 
-	access = list(ACCESS_ROBOTICS, ACCESS_BOS)
-	minimal_access = list(ACCESS_ROBOTICS, ACCESS_BOS)
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -341,6 +345,9 @@ Scribe
 		),
 		/datum/matchmaking_pref/mentor = list(
 			/datum/job/bos/f13initiate,
+		),
+		/datum/matchmaking_pref/disciple = list(
+			/datum/job/bos/f13seniorscribe,
 		),
 	)
 
@@ -368,12 +375,6 @@ Scribe
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/scribe = 1
 		)
-		
-/datum/outfit/loadout/scribec
-	name = "Senior Scribe"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/seniorscribe = 1
-		)
 
 /datum/outfit/job/bos/f13scribe/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -399,8 +400,8 @@ Senior Knight
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
 
-	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
-	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS)
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_PUBLIC)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -466,8 +467,8 @@ Knight
 
 	outfit = /datum/outfit/job/bos/f13knight
 
-	access = list(ACCESS_BOS)
-	minimal_access = list(ACCESS_BOS)
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/bos,
@@ -539,8 +540,8 @@ Initiate
 
 	outfit = /datum/outfit/job/bos/f13initiate
 
-	access = list(ACCESS_BOS)
-	minimal_access = list(ACCESS_BOS)
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -595,7 +596,7 @@ Initiate
 
 /*
 Off-Duty
-
+*/
 
 /datum/job/bos/f13offdutybos
 	title = "BoS Off-Duty"
@@ -622,4 +623,3 @@ Off-Duty
 		/obj/item/encryptionkey/headset_bos = 1,
 		/obj/item/melee/onehanded/knife/survival = 1
 		)
-*/
