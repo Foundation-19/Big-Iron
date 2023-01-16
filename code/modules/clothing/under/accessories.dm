@@ -522,24 +522,6 @@
 	item_color = "secondlieutenantrank"
 	minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/armband/med/ncr
-	name = "Medical Personnel armband"
-	desc = "An armband worn by NCR medical personnel. This one is white."
-
-/obj/item/clothing/accessory/ncr/FSGT
-	name = "(E-7) Sergeant First Class rank pins"
-	desc = "A trooper holding the rank of Sergeant First Class should wear this."
-	icon_state = "ncrenlisted"
-	item_color = "ncrenlisted"
-	minimize_when_attached = TRUE
-
-/obj/item/clothing/accessory/ncr/SSGT
-	name = "(E-6) Staff Sergeant rank pins"
-	desc = "A trooper holding the rank of Staff Sergeant should wear this."
-	icon_state = "ncrenlisted"
-	item_color = "ncrenlisted"
-	minimize_when_attached = TRUE
-
 /obj/item/clothing/accessory/ncr/SGT
 	name = "(E-5) Sergeant rank pins"
 	desc = "A trooper holding the rank of Sergeant should wear this."
@@ -548,26 +530,22 @@
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/armband/engine/ncr
-	name = "engineering armband (E-5 Engineer)"
+	name = "Engineering Personnel armband (E-4 Engineer)"
 	desc = "An armband worn by NCR Engineers to display their rank and speciality. This one is orange with a reflective strip!"
+
+/obj/item/clothing/accessory/armband/med/ncr
+	name = "Medical Personnel armband (E-4 Medic)"
+	desc = "An armband worn by NCR Medics to display their rank and speciality. This one is white."
+
+/obj/item/clothing/accessory/armband/black
+	name = "Military Police armband"
+	desc = "An armband issued to NCR Military Police, signifying their alignment with NCRMP rather than the typical chain of command."
+	icon_state = "blackband"
+	item_color = "blackband"
 
 /obj/item/clothing/accessory/ncr/CPL
 	name = "(E-4) Corporal rank pins"
 	desc = "A Corporal should wear this."
-	icon_state = "ncrenlisted"
-	item_color = "ncrenlisted"
-	minimize_when_attached = TRUE
-
-/obj/item/clothing/accessory/ncr/MCPL
-	name = "(E-4E) Master Corporal rank pins"
-	desc = "A Master Corporal should wear this."
-	icon_state = "ncrenlisted"
-	item_color = "ncrenlisted"
-	minimize_when_attached = TRUE
-
-/obj/item/clothing/accessory/ncr/SPC
-	name = "(E-4) Specialist rank pins"
-	desc = "A Specialist should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
@@ -585,52 +563,6 @@
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
-
-/obj/item/clothing/accessory/armband/black
-	name = "MP's armband"
-	desc = "An armband issued to NCR Military Police, signifying their alignment with NCROSI rather than the typical chain of command."
-	icon_state = "blackband"
-	item_color = "blackband"
-
-/obj/item/clothing/accessory/ranger
-	name = "'Ranger' rank pins"
-	desc = "A ranger should wear this."
-	icon_state = "ncrenlisted"
-	item_color = "ncrenlisted"
-
-/obj/item/clothing/accessory/ranger/SGT
-	name = "'Ranger-Sergeant' rank pins"
-	desc = "A Ranger-Sergeant should wear this."
-
-/obj/item/clothing/accessory/ranger/LT
-	name = "'Ranger-Lieutenant' rank pins"
-	desc = "A Ranger-Lieutenant should wear this."
-	icon_state = "lieutenantrank"
-	item_color = "lieutenantrank"
-
-/obj/item/clothing/accessory/ranger/CPT
-	name = "'Ranger-Captain' rank pins"
-	desc = "A Ranger-Captain should wear this."
-	icon_state = "captainrank"
-	item_color = "captainrank"
-
-/obj/item/clothing/accessory/ranger/MAJ
-	name = "'Ranger-Major' rank pins"
-	desc = "A Ranger-Major should wear this."
-	icon_state = "majorrank"
-	item_color = "majorrank"
-
-/obj/item/clothing/accessory/ranger/ACR
-	name = "'Assistant-Chief Ranger' rank pins"
-	desc = "An Assistant-Chief Ranger should wear this."
-	icon_state = "colonelrank" //TO-DO: Add a new sprite
-	item_color = "colonelrank"
-
-/obj/item/clothing/accessory/ranger/CR
-	name = "'Chief Ranger' rank pins"
-	desc = "A Chief Ranger should wear this."
-	icon_state = "colonelrank" //TO-DO: Add a new sprite
-	item_color = "colonelrank"
 
 /* Enclave ranks */
 // Bunker duty

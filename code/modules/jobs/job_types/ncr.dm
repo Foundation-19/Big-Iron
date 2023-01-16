@@ -681,7 +681,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	glasses = /obj/item/clothing/glasses/sunglasses
 	belt = /obj/item/storage/belt/military/assault/ncr/engineer
 	gloves = /obj/item/clothing/gloves/color/yellow
-	accessory =	/obj/item/clothing/accessory/ncr/SPC
+	accessory =	/obj/item/clothing/accessory/armband/engine/ncr
 	belt = null
 	backpack_contents = list(
 		/obj/item/shovel/trench = 1,
