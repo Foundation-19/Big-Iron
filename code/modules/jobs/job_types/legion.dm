@@ -855,7 +855,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/job/CaesarsLegion/f13campfollower
 	name = "Camp Follower"
-	id = /obj/item/card/id/dogtag/legion/follower
+	id = /obj/item/card/id/dogtag/follower
 	ears = /obj/item/radio/headset/headset_legion
 	uniform	= /obj/item/clothing/under/f13/legauxilia
 	backpack = /obj/item/storage/backpack/satchel/leather
@@ -878,14 +878,12 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/smelling_salts = 1,
 		/obj/item/book/granter/trait/lowsurgery = 1,
 		/obj/item/reagent_containers/food/condiment/flour = 2,
-		/obj/item/reagent_containers/pill/consumable/hydra = 1,
 		/obj/item/soap/homemade = 1,
 		/obj/item/melee/onehanded/straight_razor = 1
 		)
 
 /datum/outfit/loadout/worker
 	name = "Worker"
-	suit = /obj/item/clothing/suit/armor/outfit/slavelabor
 	uniform = /obj/item/clothing/under/f13/legslave
 	shoes =	/obj/item/clothing/shoes/f13/rag
 	r_hand = /obj/item/flashlight/flare/torch
@@ -908,9 +906,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/treasurer
 	name = "Treasurer"
-	head = /obj/item/clothing/head/f13/servant/auxilia
-	neck = /obj/item/clothing/neck/mantle/legion/treasurer
-	shoes = /obj/item/clothing/shoes/sandals_leather
+	head = /obj/item/clothing/head/f13/auxilia
+	neck = /obj/item/clothing/neck/mantle/treasurer
+	shoes = /obj/item/clothing/shoes/sandal
 	backpack_contents = list(
 		/obj/item/clothing/under/f13/legauxiliaf = 1,
 		/obj/item/folder/red = 1,
@@ -926,9 +924,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	mask = /obj/item/clothing/mask/bandana/legion/dark
 	backpack_contents = list(
 		/obj/item/clothing/under/f13/legskirt = 1,
-		/obj/item/storage/belt/utility/waster/blacksmith = 1,
-		/obj/item/clothing/neck/apron/labor/blacksmith_legion = 1,
-		/obj/item/clothing/gloves/blacksmith_mittens = 1,
+		/obj/item/storage/belt/utility/waster/forgemaster = 1,
+		/obj/item/clothing/neck/apron/labor/forge = 1,
+		/obj/item/clothing/gloves/legion/forgemaster = 1,
 		/obj/item/blacksmith/ingot/iron = 2,
 		/obj/item/stack/sheet/mineral/wood/twenty = 1,
 		/obj/item/twohanded/chainsaw = 1
@@ -936,7 +934,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/medicus
 	name = "Medicus"
-	head = /obj/item/clothing/head/f13/servant/auxilia
+	head = /obj/item/clothing/head/f13/auxilia
 	shoes = /obj/item/clothing/shoes/f13/military/legion
 	backpack_contents = list(
 		/obj/item/clothing/under/f13/legauxiliaf = 1,

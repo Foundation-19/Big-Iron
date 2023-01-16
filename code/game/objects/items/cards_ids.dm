@@ -1073,12 +1073,12 @@
 	item_state = "card-id_leg2"
 	assignment = "centurion medallion"
 
-/obj/item/card/id/dogtag/legpriest
-	name = "priestess medallion"
-	desc = "A golden disc awarded to the trusted spiritual guide to the nearby Legion."
-	icon_state = "legionmedallioncent"
-	item_state = "card-id_leg2"
-	assignment = "priestess medallion"
+/obj/item/card/id/dogtag/follower
+	name = "follower medallion"
+	desc = "A silver disc given to Camp Followers of Caesar's Legion."
+	icon_state = "legionmedallionveteran"
+	item_state = "card-id_leg"
+	assignment = "auxilia medallion"
 
 /obj/item/card/id/dogtag/legorator
 	name = "orator medallion"
