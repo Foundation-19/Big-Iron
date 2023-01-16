@@ -588,52 +588,47 @@
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
+							"NCR Veteran Ranger", 
+							"NCR Ranger",
 							"NCR Medical Officer",
-							"NCR Veteran Ranger",
-							"NCR Lieutenant",
 							"NCR Heavy Trooper",
-							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Military Police",
 							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Ranger"
+							"NCR Off-Duty"
 						)
 
 /datum/gear/uniform/ncr_shorts
-	name = "NCR Rhodesian shorts"
+	name = "NCR fatigue shorts"
 	path = /obj/item/clothing/under/f13/ncr/ncr_shorts
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	restricted_desc = "NCR"
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
+							"NCR Veteran Ranger", 
+							"NCR Ranger",
 							"NCR Medical Officer",
-							"NCR Veteran Ranger",
-							"NCR Lieutenant",
 							"NCR Heavy Trooper",
-							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Military Police",
 							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Ranger"
+							"NCR Off-Duty"
 						)
 
 /datum/gear/uniform/ncr_officer_dress
 	name = "NCR Officer Dress"
 	path = /obj/item/clothing/under/f13/ncr_female_officer
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
-	restricted_desc = "NCR"
+	restricted_desc = "NCR Officers"
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
 							"NCR Medical Officer",
-							"NCR Senior Enlisted Advisor",
 							"NCR Representative"
 						)
 
@@ -651,7 +646,9 @@
 	path = /obj/item/clothing/under/f13/ranger
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
 	restricted_desc = "Rangers"
-	restricted_roles = list("NCR Veteran Ranger", "NCR Ranger")
+	restricted_roles = list("NCR Veteran Ranger", 
+							"NCR Ranger"
+						)
 
 /datum/gear/uniform/ranger/trail
 	name = "trail ranger outfit"
@@ -683,7 +680,7 @@
 							"Farmer",
 							"Prospector",
 							"Detective",
-							"Barkeep",
+							"Barkeep"
 							)
 
 //Khans 

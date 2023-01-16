@@ -131,17 +131,15 @@
 							"NCR Lieutenant",
 							"NCR Medical Officer",
 							"NCR Veteran Ranger",
-							"NCR Lieutenant",
+							"NCR Ranger",
 							"NCR Heavy Trooper",
-							"NCR Sergeant First Class",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Military Police",
 							"NCR Trooper",
-							"NCR Rear Echelon",
-							"NCR Off-Duty",
-							"NCR Ranger"
+							"NCR Off-Duty"
 						)
 
 
@@ -154,7 +152,7 @@
 	restricted_desc = "Scribes"
 	restricted_roles = list("Head Scribe",
 							"Senior Scribe",
-							"Scribe",
+							"Scribe"
 							)
 
 /datum/gear/suit/scribecoat
@@ -165,7 +163,7 @@
 	restricted_desc = "Scribes"
 	restricted_roles = list("Head Scribe",
 							"Senior Scribe",
-							"Scribe",
+							"Scribe"
 							)
 
 /datum/gear/suit/town
@@ -184,7 +182,7 @@
 							"Farmer",
 							"Prospector",
 							"Detective",
-							"Barkeep",
+							"Barkeep"
 							)
 
 /datum/gear/suit/deputyvest
@@ -198,7 +196,7 @@
 							"Mayor",
 							"Detective",
 							"Secretary",
-							"Shopkeeper",
+							"Shopkeeper"
 						)
 
 /datum/gear/suit/hazardvest
@@ -207,7 +205,7 @@
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_FACTIONS
 	cost = 2
 	restricted_roles = list("Citizen",
-							"Prospector",
+							"Prospector"
 							)
 
 

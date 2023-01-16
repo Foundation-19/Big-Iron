@@ -120,15 +120,13 @@
 							"NCR Veteran Ranger", 
 							"NCR Ranger",
 							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
 							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Military Police",
 							"NCR Trooper",
-							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
 

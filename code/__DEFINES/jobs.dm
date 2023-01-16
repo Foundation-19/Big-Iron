@@ -64,7 +64,6 @@
 #define F13MEDICALOFFICER (1<<3)
 #define	F13FIRSTSERGEANT (1<<4)
 #define F13HEAVYTROOPER	 (1<<5)
-#define F13DRILLSERGEANT (1<<6)
 #define F13SERGEANT		 (1<<7)
 #define F13CORPORAL		 (1<<8)
 #define F13COMBATMEDIC	 (1<<9)
