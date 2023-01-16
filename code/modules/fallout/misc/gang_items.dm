@@ -244,7 +244,7 @@
 	item_path = /obj/item/grenade/f13/stinger
 
 /datum/gang_item/equipment/he
-	name = "High Explosive Grenade"
+	name = "Stick of Dynamite"
 	cost = 75
 	item_path = /obj/item/grenade/f13/dynamite
 
