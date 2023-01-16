@@ -47,7 +47,7 @@
 		if(L.check_submerged() <= 0)
 			return
 		if(prob(5))
-			to_chat(L, span_warning("You trudge through \the [src]."))
+			to_chat(L, "<span class='warning'>You trudge through \the [src].</span>")
 	..()
 
 /mob/living/proc/check_submerged()
