@@ -1,6 +1,6 @@
 
 ////////////////////////mech technology////////////////////////
-/*
+
 /datum/techweb_node/mech
 	id = "mecha"
 	display_name = "Mechanical Exosuits"
@@ -246,4 +246,3 @@
 	prereq_ids = list("adv_mining")
 	design_ids = list("mech_diamond_drill")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-*/
