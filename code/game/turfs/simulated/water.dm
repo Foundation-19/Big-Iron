@@ -40,14 +40,14 @@
 	AM.water_act(5)
 	..()
 
-/turf/open/water/Exited(atom/movable/AM, atom/newloc)
+/turf/open/water/Exited(atom/movable/AM)
 	if(istype(AM, /mob/living))
 		var/mob/living/L = AM
 		L.update_water()
 		if(L.check_submerged() <= 0)
 			return
-		if(!istype(newloc, /turf/open/water))
-			to_chat(L, "<span class='warning'>You climb out of \the [src].</span>")
+		if(prob(5))
+			to_chat(L, span_warning("You trudge through \the [src]."))
 	..()
 
 /mob/living/proc/check_submerged()
