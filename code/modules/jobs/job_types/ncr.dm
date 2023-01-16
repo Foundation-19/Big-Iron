@@ -130,7 +130,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	jobtype = /datum/job/ncr/f13aide
 	id = /obj/item/card/id/dogtag/ncrsergeant
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_dress
-	accessory = /obj/item/clothing/accessory/ncr/SSGT
+	accessory = /obj/item/clothing/accessory/ncr/SGT
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	head = /obj/item/clothing/head/f13/ncr/ncr_campaign
 	neck = /obj/item/storage/belt/holster
@@ -351,45 +351,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-
-// DRILL SERGEANT
-
-/datum/job/ncr/f13drillsergeant
-	title = "NCR Senior Enlisted Advisor"
-	flag = F13DRILLSERGEANT
-	display_order = JOB_DISPLAY_ORDER_DRILLSERGEANT
-	total_positions = 0
-	spawn_positions = 0
-	description = "The direct superior to all enlisted, you are to provide training exercises, maintain military discipline, and instill orderliness within the ranks. You may also manage the NCOs. You are the pinnacle of the NCR's enlisted ranks, and are to advise the commissioned officers. You are not a frontline trooper, you are camp support."
-	supervisors = "Lieutenant and Above"
-	exp_requirements = 1500
-	
-	outfit = /datum/outfit/job/ncr/f13drillsergeant
-
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
-
-/datum/outfit/job/ncr/f13drillsergeant
-	name = "NCR Senior Enlisted Advisor"
-	jobtype = /datum/job/ncr/f13drillsergeant
-	id = /obj/item/card/id/dogtag/ncrsergeant
-	gloves = /obj/item/clothing/gloves/f13/leather
-	head = /obj/item/clothing/head/f13/ncr/ncr_campaign
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack
-	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
-	glasses	= /obj/item/clothing/glasses/sunglasses
-	head = /obj/item/clothing/head/f13/ncr/ncr_campaign
-	neck = /obj/item/storage/belt/holster
-	backpack_contents = list(
-		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/storage/bag/money/small/ncrofficers = 1,
-		/obj/item/melee/classic_baton/telescopic = 1,
-		/obj/item/storage/box/ration/menu_two = 1,
-		/obj/item/stack/crafting/armor_plate = 5,
-		/obj/item/clothing/accessory/ncr/FSGT = 1,
-		/obj/item/gun/ballistic/revolver/revolver45/gunslinger = 1,
-		/obj/item/ammo_box/a45lcbox = 1,
-		/obj/item/binoculars = 1
-		)
 
 // REPRESENATIVE
 
