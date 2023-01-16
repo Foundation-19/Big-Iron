@@ -51,8 +51,8 @@ Administrator
 
 	outfit = /datum/outfit/job/followers/f13leadpractitioner
 
-	access = list(ACCESS_FOLLOWER, ACCESS_MILITARY, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
-	minimal_access = list(ACCESS_FOLLOWER, ACCESS_MILITARY, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
+	access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN)
+	minimal_access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN)
 
 
 /datum/outfit/job/followers/f13leadpractitioner/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -107,8 +107,8 @@ Professor
 
 	outfit = /datum/outfit/job/followers/f13Professor
 
-	access = list(ACCESS_FOLLOWER, ACCESS_COMMAND, ACCESS_MILITARY, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
-	minimal_access = list(ACCESS_FOLLOWER, ACCESS_COMMAND, ACCESS_MILITARY, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_ATMOSPHERICS)
+	access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN)
+	minimal_access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN)
 
 /datum/outfit/job/followers/f13Professor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

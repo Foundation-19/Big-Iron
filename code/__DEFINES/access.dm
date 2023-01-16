@@ -102,6 +102,17 @@ also be like that but I can't be arsed to go back and change them all*/
 #define ACCESS_NCROFFDUTY	132 //general NCR access
 #define ACCESS_CLINIC		133 //Oasis clinic access
 #define ACCESS_ENCLAVE 		134 //enclave minibunker
+
+	// DR2 VTCC Access, names should be self-explanatory
+
+#define ACCESS_VTCC					135 //General VTCC access
+#define ACCESS_VTCC_COMMAND			136
+#define ACCESS_VTCC_SEC				137
+#define ACCESS_VTCC_BAR				138
+#define ACCESS_VTCC_SHOP			139
+#define ACCESS_VTCC_RESEARCH		140
+#define ACCESS_VTCC_ROADIE			141
+
 	//The Syndicate
 #define ACCESS_SYNDICATE 150//General Syndicate Access. Includes Syndicate mechs and ruins.
 #define ACCESS_SYNDICATE_LEADER 151//Nuke Op Leader Access
@@ -127,5 +138,47 @@ also be like that but I can't be arsed to go back and change them all*/
 
 #define ACCESS_NCR_COMMAND 253
 #define ACCESS_LEGION_COMMAND 254
-#define ACCESS_BROTHERHOOD_COMMAND 255
-#define ACCESS_ENCLAVE_COMMAND  266
+#define ACCESS_BROTHERHOOD_COMMAND 255 
+
+	//NCR Clearance Level Access
+#define ACCESS_NCR1 256
+#define ACCESS_NCR2 257
+#define ACCESS_NCR3 258
+#define ACCESS_NCR4 259
+#define ACCESS_NCRR 260
+
+	//Legion Clearance Level Access
+#define ACCESS_LEGION1 261
+#define ACCESS_LEGION2 262
+#define ACCESS_LEGION3 263
+#define ACCESS_LEGION4 264
+
+	//BoS Clearance Level Access
+#define ACCESS_BOS1 265
+#define ACCESS_BOS2 266
+#define ACCESS_BOS3 267
+#define ACCESS_BOS4 268
+
+	//Enclave Clearance Level Access
+#define ACCESS_ENCLAVE1 269
+#define ACCESS_ENCLAVE2 270
+#define ACCESS_ENCLAVE3 271
+#define ACCESS_ENCLAVE4 272
+
+	//Town Clearance Access
+#define ACCESS_TOWN 273
+#define ACCESS_TOWN_CIV 274
+#define ACCESS_TOWN_BAR 275
+#define ACCESS_TOWN_MERCH 276
+#define ACCESS_TOWN_PROSP 277
+#define ACCESS_TOWN_PREACH 278
+#define ACCESS_TOWN_SCIENCE 279
+#define ACCESS_TOWN_DOC 280
+#define ACCESS_TOWN_SEC 281
+#define ACCESS_TOWN_HOS 282
+#define ACCESS_TOWN_COMMAND 283
+
+	//Wasteland Clearance Access
+#define ACCESS_PUBLIC 284
+#define ACCESS_RAIDER 285
+#define ACCESS_WASTER 286
