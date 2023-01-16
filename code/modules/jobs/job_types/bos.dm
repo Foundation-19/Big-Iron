@@ -51,8 +51,8 @@ Elder
 	exp_type = EXP_TYPE_BROTHERHOODCOMMAND
 	head_announce = list("Security")
 	req_admin_notify = 1
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	description = "You are the Elder of this local chapter of the Brotherhood of Steel. You may be a veteran of warfare, an experienced commander or even a genius Scribe, and you command all the men within this bunker. Your main goals are to lead the Brotherhood, to solve conflicts inbetween castes and to manage the Head Paladin, Head Knight and Head Scribe."
 	supervisors = "the High Elders"
 	exp_requirements = 3000
