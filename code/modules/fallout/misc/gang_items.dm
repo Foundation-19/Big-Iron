@@ -245,8 +245,8 @@
 
 /datum/gang_item/equipment/he
 	name = "High Explosive Grenade"
-	cost = 100
-	item_path = /obj/item/grenade/f13/explosive
+	cost = 75
+	item_path = /obj/item/grenade/f13/dynamite
 
 /datum/gang_item/equipment/greatkhanheadset
 	name = "Great Khan Headset"
