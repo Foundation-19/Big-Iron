@@ -36,7 +36,7 @@ BONUS
 		switch(A.stage)
 			if(1, 2)
 				to_chat(H, "<span class='warning'>Your chin itches.</span>")
-				if(H.facial_hair_style == "Shaved")
+				if(H.facial_hair_style == "Clean shave (Hairless)")
 					H.facial_hair_style = "Jensen Beard"
 					H.update_hair()
 			if(3, 4)

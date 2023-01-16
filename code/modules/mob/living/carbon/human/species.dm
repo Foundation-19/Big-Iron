@@ -469,8 +469,8 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			//List of all valid dynamic_fhair_suffixes
 			var/static/list/fextensions
 			if(!fextensions)
-				var/icon/fhair_extensions = icon('icons/mob/facialhair_extensions.dmi')
-				fextensions = list()
+				var/icon/fhair_extensions = icon('icons/mob/facial_hair_extensions.dmi')
+				fextensions = list("+hood")
 				for(var/s in fhair_extensions.IconStates(1))
 					fextensions[s] = TRUE
 				qdel(fhair_extensions)
@@ -532,7 +532,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				var/static/list/extensions
 				if(!extensions)
 					var/icon/hair_extensions = icon('icons/mob/hair_extensions.dmi') //hehe
-					extensions = list()
+					extensions = list("+hood", "+generic"))
 					for(var/s in hair_extensions.IconStates(1))
 						extensions[s] = TRUE
 					qdel(hair_extensions)
@@ -1371,8 +1371,8 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 /datum/species/proc/go_bald(mob/living/carbon/human/H)
 	if(QDELETED(H))	//may be called from a timer
 		return
-	H.facial_hair_style = "Shaved"
-	H.hair_style = "Bald"
+	H.facial_hair_style = "Clean shave (Hairless)"
+	H.hair_style = "Wild (Radiated)"
 	H.update_hair()
 
 //////////////////

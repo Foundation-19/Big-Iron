@@ -533,7 +533,7 @@
 			if(prob(min(acidpwr*acid_volume/10, 90))) //Applies disfigurement
 				affecting.receive_damage(acidity, 2*acidity)
 				emote("scream")
-				facial_hair_style = "Shaved"
+				facial_hair_style = "Clean shave (Hairless)"
 				hair_style = "Bald"
 				update_hair()
 				ADD_TRAIT(src, TRAIT_DISFIGURED, TRAIT_GENERIC)
