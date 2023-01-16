@@ -199,7 +199,6 @@ Raider
 		/obj/item/clothing/under/pants/f13/ghoul, \
 		/obj/item/clothing/under/jabroni \
 		)
-	
 	if(prob(80))
 		mask = pick(
 			/obj/item/clothing/mask/bandana/red,\
@@ -207,9 +206,7 @@ Raider
 			/obj/item/clothing/mask/bandana/green,\
 			/obj/item/clothing/mask/bandana/gold,\
 			/obj/item/clothing/mask/bandana/black,\
-			/obj/item/clothing/mask/bandana/skull
-		)
-	
+			/obj/item/clothing/mask/bandana/skull)
 	if(prob(50))
 		neck = pick(
 			/obj/item/clothing/neck/mantle/peltfur,\
@@ -217,8 +214,7 @@ Raider
 			/obj/item/clothing/neck/mantle/poncho,\
 			/obj/item/clothing/neck/mantle/ragged,\
 			/obj/item/clothing/neck/mantle/brown,\
-			/obj/item/clothing/neck/mantle/gecko
-		)
+			/obj/item/clothing/neck/mantle/gecko)
 
 	shoes = (/obj/item/clothing/shoes/f13/raidertreads)
 
