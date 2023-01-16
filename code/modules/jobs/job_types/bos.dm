@@ -601,7 +601,7 @@ Initiate
 
 /*
 Off-Duty
-*/
+
 
 /datum/job/bos/f13offdutybos
 	title = "BoS Off-Duty"
@@ -628,3 +628,4 @@ Off-Duty
 		/obj/item/encryptionkey/headset_bos = 1,
 		/obj/item/melee/onehanded/knife/survival = 1
 		)
+*/
