@@ -188,13 +188,6 @@
 	icon_state = "oasisflag"
 	item_state = "oasisflag"
 
-/obj/item/flag/followers
-	name = "Followers of the Apocalypse flag"
-	desc = "A white flag with the black Follower's of the Apocalpyse cross on it."
-	icon_state = "followersflag"
-	item_state = "followersflag"
-	faction = FACTION_FOLLOWERS
-
 /obj/item/flag/locust
 	name = "Locust flag"
 	desc = "A flag with a skull, the symbol of Locusts."
@@ -260,12 +253,6 @@
 						icon_state = "bosflag"
 						item_state = "bosflag"
 						faction = FACTION_BROTHERHOOD
-					if("Followers")
-						name = "Followers of the Apocalypse flag"
-						desc = "A white flag with the black Follower's of the Apocalpyse cross on it."
-						icon_state = "followersflag"
-						item_state = "followersflag"
-						faction = FACTION_FOLLOWERS
 					if("Great Khans")
 						name = "Great Khans flag"
 						desc = "A flag worn and weathered from a long cherished history. A decorated smiling skull smiles mockingly upon those who challenge it."
