@@ -87,7 +87,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 
 "Legion Centurion",
 "Legion Orator",
-"Legion Vexillarius"
+"Legion Vexillarius",
 "Legion Veteran Decanus",
 "Veteran Legionnaire",
 "Legion Prime Decanus",
@@ -306,7 +306,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
 
 	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Prime Decanus", "Legion Recruit Decanus")),
-	EXP_TYPE_BROTHERHOODCOMMAND = list("titles" = list("Head Paladin", "Head Scribe"))
+	EXP_TYPE_BROTHERHOODCOMMAND = list("titles" = list("Head Paladin", "Head Scribe")),
 	EXP_TYPE_OASISCOMMAND = list("titles" = list("Secretary", "Officer")),
 	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCR Sergeant")),
 	EXP_TYPE_RANGER = list("titles" = list("NCR Ranger"))
