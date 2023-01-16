@@ -788,7 +788,7 @@ to the below
 		return
 	return ..()
 
-
+species.dm adjusted for new hair an beard suffixes + changed names.
 */
 
 /obj/structure/rack/shelf_wood
