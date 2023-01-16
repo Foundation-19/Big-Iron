@@ -86,16 +86,16 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "BoS Off-Duty",
 
 "Legion Centurion",
-"Legion Explorer",
-"Legion Slavemaster",
+"Legion Orator",
+"Legion Vexillarius"
 "Legion Veteran Decanus",
 "Veteran Legionnaire",
 "Legion Prime Decanus",
 "Prime Legionnaire",
 "Legion Recruit Decanus",
-"Legion Scout",
-"Legion Auxilia",
-"Legion Slave",
+"Recruit Legionnaire",
+"Legion Explorer",
+"Camp Follower",
 
 "Mayor",
 "Chief of Police",
@@ -181,15 +181,11 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Legion Recruit Decanus",
 	"Legion Vexillarius",
 	"Legion Explorer",
-	"Legion Scout",
 	"Veteran Legionnaire",
 	"Prime Legionnaire",
 	"Recruit Legionnaire",
-	"Legion Forgemaster",
 	"Legion Immune",
-	"Legion Auxilia",
-	"Legion Slave",
-	"Legion Slavemaster"
+	"Camp Follower"
 ))
 
 GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
@@ -202,19 +198,15 @@ GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Veteran Ranger",
 	"NCR Representative",
 	"NCR Ranger",
-	"NCR Sergeant First Class",
 	"NCR Heavy Trooper",
 	"NCR Military Police",
-	"NCR Senior Enlisted Advisor",
 	"NCR Sergeant",
 	"NCR Corporal",
 	"NCR Combat Medic",
 	"NCR Combat Engineer",
 	"NCR Trooper",
-	"NCR Conscript",
 	"NCR Medical Officer",
-	"NCR Logistics Officer",
-	"NCR Off-Duty",
+	"NCR Off-Duty"
 ))
 
 GLOBAL_LIST_INIT(vault_positions, list(
@@ -312,13 +304,12 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_TRIBAL = list("titles" = tribal_positions),
 	EXP_TYPE_FOLLOWERS = list("titles" = followers_positions),
 	EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
-	EXP_TYPE_RANGER = list("titles" = list("NCR Veteran Ranger","NCR Ranger")),
-	EXP_TYPE_SCRIBE = list("titles" = list("Scribe")),
-	EXP_TYPE_DECANUS = list("titles" = list("Legion Decanus")),
 
-	EXP_TYPE_TRIBALCOMMAND = list("titles" = list("Chief","Shaman","Head Hunter")),
-	EXP_TYPE_FOLLOWERSCOMMAND = list("titles" = list("Followers Administrator")),
-	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCR Lieutenant","NCR Sergeant First Class","NCR Captain", "NCR Veteran Ranger"))
+	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Prime Decanus", "Legion Recruit Decanus")),
+	EXP_TYPE_BROTHERHOODCOMMAND = list("titles" = list("Head Paladin", "Head Scribe"))
+	EXP_TYPE_OASISCOMMAND = list("titles" = list("Secretary", "Officer")),
+	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCR Sergeant")),
+	EXP_TYPE_RANGER = list("titles" = list("NCR Ranger"))
 ))
 
 GLOBAL_LIST_INIT(exp_specialmap, list(

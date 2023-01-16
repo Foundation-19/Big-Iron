@@ -33,7 +33,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal_pa)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribal_pa_helmet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tribalradio)
-
+/*
 /*
 Tribal Chief
 */
@@ -527,4 +527,4 @@ Guardian
 		/obj/item/stack/medical/gauze=1,
 		/obj/item/flashlight/flare/torch=1,
 		/obj/item/restraints/legcuffs/bola/tactical=1)
-
+*/
