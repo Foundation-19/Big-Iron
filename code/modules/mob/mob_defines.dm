@@ -175,3 +175,5 @@
 
 	/// D&D-like reach: how far in tiles is considered adjacent to this mob. Euclidean distance.
 	var/reach = 1
+
+	var/previous_job // Used for tracking what a ghost's last job was
