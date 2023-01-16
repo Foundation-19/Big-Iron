@@ -544,3 +544,4 @@
 	if(jobName in get_all_centcom_jobs()) //Return with the NT logo if it is a CentCom job
 		return "CentCom"
 	return "Unknown" //Return unknown if none of the above apply
+	
