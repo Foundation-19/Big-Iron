@@ -269,9 +269,6 @@ Paladin
 		/datum/matchmaking_pref/mentor = list(
 			/datum/job/bos/f13initiate,
 		),
-		/datum/matchmaking_pref/disciple = list(
-			/datum/job/bos/f13seniorpaladin,
-		),
 	)
 
 /datum/outfit/job/bos/f13paladin
@@ -345,9 +342,6 @@ Scribe
 		),
 		/datum/matchmaking_pref/mentor = list(
 			/datum/job/bos/f13initiate,
-		),
-		/datum/matchmaking_pref/disciple = list(
-			/datum/job/bos/f13seniorscribe,
 		),
 	)
 
