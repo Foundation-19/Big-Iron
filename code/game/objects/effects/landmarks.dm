@@ -847,23 +847,3 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/guardian
 	icon_state = "Tribal"
-
-//Followers of the Apocalypse
-/obj/effect/landmark/start/f13/followersadministrator
-	name = "Followers Administrator"
-	icon_state = "Chief Medical Officer"
-
-/obj/effect/landmark/start/f13/followersdoctor
-	name = "Followers Doctor"
-	icon_state = "Medical Doctor"
-
-/obj/effect/landmark/start/f13/followersguard
-	name = "Followers Guard"
-	icon_state = "Security Officer"
-
-/obj/effect/landmark/start/f13/followersvolunteer
-	name = "Followers Volunteer"
-	icon_state = "Medical Doctor"
-
-/obj/effect/landmark/start/f13/followersscientist
-	name = "Followers Scientist"
