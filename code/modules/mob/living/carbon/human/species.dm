@@ -532,7 +532,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				var/static/list/extensions
 				if(!extensions)
 					var/icon/hair_extensions = icon('icons/mob/hair_extensions.dmi') //hehe
-					extensions = list("+hood", "+generic"))
+					extensions = list("+hood", "+generic")
 					for(var/s in hair_extensions.IconStates(1))
 						extensions[s] = TRUE
 					qdel(hair_extensions)

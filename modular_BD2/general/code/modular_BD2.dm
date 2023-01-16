@@ -788,7 +788,12 @@ to the below
 		return
 	return ..()
 
+
+// -------------------- HAIR & BEARDS ------------------
+Files edited to make the new hair icon set work:
 species.dm adjusted for new hair an beard suffixes + changed names.
+hair_head.dm
+hair_face.dm
 */
 
 /obj/structure/rack/shelf_wood
