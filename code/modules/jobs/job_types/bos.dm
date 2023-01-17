@@ -256,7 +256,7 @@ Head Knight
 		)
 
 /datum/outfit/loadout/hkb
-	name = "Frontline Head Paladin"
+	name = "Frontline Head Knight"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/aer14 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 3
@@ -264,7 +264,7 @@ Head Knight
 		
 
 /datum/outfit/loadout/hkc
-	name = "Bulldozer Head Paladin"
+	name = "Backliner Head Knight"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/rcw = 1,
 		/obj/item/stock_parts/cell/ammo/ecp = 3
