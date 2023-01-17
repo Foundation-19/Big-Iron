@@ -145,8 +145,8 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "housewood1"
 
-	New()
-		..()
+/turf/open/floor/wood/f13/Initialize()
+	. = ..()
 		if(icon_state == "housewood1")
 			icon_state = "housewood[rand(1,4)]"
 
@@ -154,8 +154,8 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "oakfloor1"
 
-	New()
-		..()
+/turf/open/floor/wood/f13/oak/Initialize()
+	. = ..()
 		if(icon_state == "oakfloor1")
 			icon_state = "oakfloor[rand(1,4)]"
 
