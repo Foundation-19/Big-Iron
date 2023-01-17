@@ -40,7 +40,7 @@
 	M.AdjustSleeping(-40, FALSE)
 	M.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
 	if(HAS_TRAIT(M, TRAIT_NUKA_LOVER))
-	M.adjustToxLoss(0.1)
+		M.adjustToxLoss(0.1)
 	..()
 	. = TRUE
 
