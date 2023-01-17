@@ -266,6 +266,7 @@
 	if(I.flags_inv & HIDEEYES || forced)
 		update_inv_glasses()
 	if(I.flags_inv & HIDEEARS || forced)
+		update_inv_ears()//not sure if the update_body() proc handles it too but i'm adding it just in case
 		update_body()
 	sec_hud_set_security_status()
 	..()
