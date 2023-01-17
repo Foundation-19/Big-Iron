@@ -657,21 +657,7 @@
  * Racks
  */
 
-// Wooden shelf. Construct by crafting, not rack parts.
-/obj/structure/shelf_wood
-	name = "wooden shelf"
-	desc = "For storage."
-	icon = 'icons/fallout/objects/furniture/stationary.dmi'
-	icon_state = "shelf_wood"
-	layer = TABLE_LAYER
-	density = TRUE
-	anchored = TRUE
-	pass_flags = LETPASSTHROW
-	pass_flags_self = PASSTABLE
-	max_integrity = 30
-	attack_hand_speed = CLICK_CD_MELEE
-	attack_hand_is_action = TRUE
-
+// -------------------- RACK ------------------
 /obj/structure/rack
 	name = "rack"
 	desc = "Different from the Medieval version."
@@ -686,7 +672,18 @@
 	attack_hand_speed = CLICK_CD_MELEE
 	attack_hand_is_action = TRUE
 
-// Metal shelf, made with rack parts.
+
+// -------------------- WOODEN RACK (SHELVES) ------------------
+/obj/structure/rack/shelf_wood
+	flags_1 = NODECONSTRUCT_1
+	max_integrity = 50
+
+/obj/structure/rack/shelf_wood/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>It's not made to be easily disassembled.</span>"
+
+
+// -------------------- METAL RACK (SHELVES) ------------------
 /obj/structure/rack/shelf_metal
 	name = "metal shelf"
 	desc = "Metal shelf."
@@ -761,8 +758,11 @@
 		density = FALSE
 		var/obj/item/rack_parts/newparts = new(loc)
 		transfer_fingerprints_to(newparts)
+	else
+		density = FALSE
+		var/obj/item/stack/sheet/mineral/wood/plank = new(loc)
+		transfer_fingerprints_to(plank)
 	qdel(src)
-
 
 /*
  * Rack Parts
@@ -798,3 +798,5 @@
 		R.add_fingerprint(user)
 		qdel(src)
 	building = FALSE
+
+

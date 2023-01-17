@@ -5,6 +5,7 @@
 /obj/machinery/autolathe
 	name = "autolathe"
 	desc = "It produces items using metal and glass."
+	icon = 'icons/fallout/machines/autolathe.dmi'
 	icon_state = "autolathe"
 	density = TRUE
 	use_power = IDLE_POWER_USE
@@ -496,7 +497,7 @@
 
 /obj/machinery/autolathe/ammo
 	name = "reloading bench"
-	icon = 'icons/obj/machines/reloadingbench.dmi'
+	icon = 'icons/fallout/machines/reloadingbench.dmi'
 	desc = "An ammo bench that utilizes metal and other materials to make ammo and magazines."
 	circuit = /obj/item/circuitboard/machine/autolathe/ammo
 	stored_research = /datum/techweb/specialized/autounlocking/autolathe/ammo
@@ -546,14 +547,18 @@
 			if("simple")
 				simple = TRUE
 				qdel(I)
+				add_overlay("book1")
 			if("basic")
 				basic = TRUE
 				qdel(I)
+				add_overlay("book2")
 			if("intermediate")
 				intermediate = TRUE
 				qdel(I)
+				add_overlay("book3")
 			if("advanced")
 				advanced = TRUE
+				add_overlay("book4")
 				qdel(I)
 
 /obj/machinery/autolathe/ammo/can_build(datum/design/D, amount = 1)
@@ -584,14 +589,28 @@
 		new /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three(src.loc)
 	if(advanced)
 		new /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four(src.loc)
+	cut_overlays()
 
 /obj/machinery/autolathe/ammo/unlocked_basic
 	desc = "A ammo bench where you can make ammo and magazines. Copies of Guns and Ammo, parts one and two, can be found in a drawer."
 	simple = TRUE
 	basic = TRUE
 
+/obj/machinery/autolathe/ammo/unlocked_basic/Initialize()
+	. = ..()
+	add_overlay("book1")
+	add_overlay("book2")
+
 /obj/machinery/autolathe/ammo/unlocked
 	simple = TRUE
 	basic = TRUE
 	intermediate = TRUE
 	advanced = TRUE
+
+/obj/machinery/autolathe/ammo/unlocked/Initialize()
+	. = ..()
+	add_overlay("book1")
+	add_overlay("book2")
+	add_overlay("book3")
+	add_overlay("book4")
+
