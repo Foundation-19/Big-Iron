@@ -693,7 +693,7 @@
 	name = "Husky"
 	icon_state = "husky"
 
-datum/sprite_accessory/tails/mam_tails/insect
+/datum/sprite_accessory/tails/mam_tails/insect
 	name = "Insect"
 	icon_state = "insect"
 
