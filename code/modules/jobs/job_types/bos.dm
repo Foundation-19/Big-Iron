@@ -624,7 +624,7 @@ Knight
 		
 
 /datum/outfit/loadout/knightc
-	name = "Junior Footknight"
+	name = "Junior Knight-Scout"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/juniorknight = 1,
 		/obj/item/gun/ballistic/automatic/delisle/commando = 1,
@@ -634,7 +634,7 @@ Knight
 		)
 
 /datum/outfit/loadout/knightd
-	name = "Footknight"
+	name = "Knight-Scout"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knight = 1,
 		/obj/item/gun/ballistic/automatic/delisle/commando = 1,
