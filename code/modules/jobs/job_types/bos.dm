@@ -143,7 +143,7 @@ Head Paladin
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 3,
-		obj/item/shield/riot/bullet_proof = 1
+		/obj/item/shield/riot/bullet_proof = 1
 		)
 
 /datum/outfit/job/bos/f13headpaladin/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
