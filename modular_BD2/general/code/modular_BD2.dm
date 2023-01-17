@@ -800,4 +800,265 @@ hair_face.dm
 	name = "BUGGED VERSION, MURDER"
 	desc = "NO!!!."
 
+// TEMP FOR PORTING AND FUNCTIOANLITY
+
+// ------------------------ STRAIGHT RAZOR ------------------------------- // Pebbles straight razor. It borrows the razor code, edits some timers, adds sounds and slaps it on a melee weapon.
+/obj/item/melee/onehanded/straight_razor
+	name = "straight razor"
+	desc = "For those smooth close shaves. Better aim for the mouth or the head, or else things might get messy. Could be used as a scalpel in a pinch."
+	icon = 'modular_BD2/fashion/icons/cosmetics.dmi'
+	righthand_file = 'modular_BD2/fashion/icons/onmobright.dmi'
+	lefthand_file = 'modular_BD2/fashion/icons/onmobleft.dmi'
+	icon_state = "straight_razor"
+	force = WEAPON_FORCE_BIG_TOOL
+	throwforce = THROWING_PATHETIC
+	wound_bonus = WOUNDING_MALUS_SHALLOW // crap against armor
+	bare_wound_bonus = WOUNDING_BONUS_BIG // bleeds a lot, despite its low damage
+	sharpness = SHARP_EDGED
+	total_mass = TOTAL_MASS_TINY_ITEM
+	w_class = WEIGHT_CLASS_TINY
+	tool_behaviour = TOOL_SCALPEL //ghetto surgery yay
+	toolspeed = 1.2
+
+/obj/item/melee/onehanded/straight_razor/proc/manual_shave(mob/living/carbon/human/H, location = BODY_ZONE_PRECISE_MOUTH)
+	if(location == BODY_ZONE_PRECISE_MOUTH)
+		H.facial_hair_style = "Clean shave (Hairless)"
+	else
+		H.hair_style = "Skinhead"
+
+	H.update_hair()
+
+/obj/item/melee/onehanded/straight_razor/attack(mob/M, mob/user)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		var/location = user.zone_selected
+		if((location in list(BODY_ZONE_PRECISE_EYES, BODY_ZONE_PRECISE_MOUTH, BODY_ZONE_HEAD)) && !H.get_bodypart(BODY_ZONE_HEAD))
+			to_chat(user, span_warning("[H] doesn't have a head!"))
+			return
+		if(location == BODY_ZONE_PRECISE_MOUTH)
+			if(!(FACEHAIR in H.dna.species.species_traits))
+				to_chat(user, span_warning("There is no facial hair to shave!"))
+				return
+			if(!get_location_accessible(H, location))
+				to_chat(user, span_warning("The mask is in the way!"))
+				return
+			if(H.facial_hair_style == "Clean shave (Hairless)")
+				to_chat(user, span_warning("Already clean-shaven!"))
+				return
+
+			if(H == user) //shaving yourself
+				playsound(loc, 'modular_BD2/fashion/sound/shaving.ogg', 100, 1) // added
+				user.visible_message("[user] starts to shave [user.p_their()] facial hair with [src].", \
+									span_notice("You take a moment to shave your facial hair with [src]..."))
+				if(do_after(user, 150, target = H))
+					user.visible_message("[user] shaves [user.p_their()] facial hair clean with [src].", \
+										span_notice("You finish shaving with [src]. Fast and clean!"))
+					manual_shave(H, location)
+			else
+				var/turf/H_loc = H.loc
+				playsound(loc, 'modular_BD2/fashion/sound/shaving.ogg', 100, 1) // added
+				user.visible_message(span_warning("[user] tries to shave [H]'s facial hair with [src]."), \
+									span_notice("You start shaving [H]'s facial hair..."))
+				if(do_after(user, 100, target = H))
+					if(H_loc == H.loc)
+						user.visible_message(span_warning("[user] shaves off [H]'s facial hair with [src]."), \
+											span_notice("You shave [H]'s facial hair clean off."))
+						manual_shave(H, location)
+
+		else if(location == BODY_ZONE_HEAD)
+			if(!(HAIR in H.dna.species.species_traits))
+				to_chat(user, span_warning("There is no hair to shave!"))
+				return
+			if(!get_location_accessible(H, location))
+				to_chat(user, span_warning("The headgear is in the way!"))
+				return
+			if(H.hair_style == "Bald" || H.hair_style == "Mature (Balding)" || H.hair_style == "Clean shave (Hairless)")
+				to_chat(user, span_warning("There is not enough hair left to shave!"))
+				return
+
+			if(H == user) //shaving yourself
+				playsound(loc, 'modular_BD2/fashion/sound/shaving.ogg', 100, 1) // added
+				user.visible_message("[user] starts to shave [user.p_their()] head with [src].", \
+									span_notice("You start to shave your head with [src]..."))
+				if(do_after(user, 150, target = H)) //edited time
+					user.visible_message("[user] shaves [user.p_their()] head with [src].", \
+										span_notice("You finish shaving with [src]."))
+					manual_shave(H, location)
+			else
+				var/turf/H_loc = H.loc
+				playsound(loc, 'modular_BD2/fashion/sound/shaving.ogg', 100, 1) // added
+				user.visible_message(span_warning("[user] tries to shave [H]'s head with [src]!"), \
+									span_notice("You start shaving [H]'s head..."))
+				if(do_after(user, 150, target = H)) //edited time
+					if(H_loc == H.loc)
+						user.visible_message(span_warning("[user] shaves [H]'s head bald with [src]!"), \
+											span_notice("You shave [H]'s head bald."))
+						manual_shave(H, location)
+		else
+			..()
+	else
+		..()
+
+
+//////////////////////////////////////////
+// 										//
+//										//
+//			PRIMITIVE MEDICAL			//
+//										//
+//										//
+//////////////////////////////////////////
+
+// ------------------- BUTCHERS TABLE -----------------------------
+
+/obj/structure/table/optable/primitive
+	name = "butchers table"
+	desc = "Used for painful, primitive medical procedures."
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+
+
+// ------------------- PRIMITIVE SURGERY STUFF -----------------------------  Could use more janky ghetto stuff feeling, messing about in the wound datums maybe or whatnot. Currently basically reskins with a bit slower speed.
+
+/obj/item/cautery/primitive
+	name = "primitive cautery"
+	desc = "A welding device tuned down to cauterize wounds. Not very precise."
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	icon_state = "cautery_primitive"
+	toolspeed = 1.5
+
+/obj/item/circular_saw/primitive
+	name = "handsaw"
+	desc = "For sawing through wood or possibly bones."
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	icon_state = "saw"
+	item_state = "saw"
+	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
+	hitsound = 'sound/effects/shovel_dig.ogg'
+	usesound = 'sound/effects/shovel_dig.ogg'
+	custom_materials = list(/datum/material/iron=2000)
+	toolspeed = 1.2
+	wound_bonus = 0
+	bare_wound_bonus = 10
+	attack_verb = list("sawed", "scratched")
+
+/obj/item/stack/medical/bone_gel/superglue
+	name = "superglue (bonegel)"
+	singular_name = "superglue"
+	desc = "Good for gluing together broken bones!"
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	icon_state = "superglue"
+	lefthand_file = NONE
+	righthand_file = NONE
+	grind_results = NONE
+
+/obj/item/reagent_containers/medspray/sterilizine/honey
+	name = "medical honey (sterilizer)"
+	desc = "Pure honey has antiseptic properties, and probably works just as a sterilizing agent."
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	icon_state = "sterilizer_honey"
+	apply_method = "smear"
+//	sound_squirt = 'modular_BD2/general/sound/honey.ogg' FIX LATER MARKED FOR DEATH
+
+/* Added to base code
+sound_squirt
+Added to proc/attempt_spray
+		playsound(src, sound_squirt, 50, 1, -6)
+*/
+
+// ------------------- PRIMITIVE MEDICAL BAG -----------------------------
+
+/obj/item/storage/backpack/duffelbag/med/surgery/primitive
+	name = "surgical duffel bag"
+	desc = "A large duffel bag for holding extra medical supplies - this one seems to be designed for holding surgical tools."
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	icon_state = "toolbag_primitive"
+
+/obj/item/storage/backpack/duffelbag/med/surgery/primitive/PopulateContents()
+	new /obj/item/melee/onehanded/straight_razor(src)
+	new /obj/item/hemostat/tribal(src)
+	new /obj/item/retractor/tribal(src)
+	new /obj/item/circular_saw/primitive(src)
+	new /obj/item/cautery/primitive(src)
+	new /obj/item/bonesetter(src)
+	new /obj/item/bedsheet/blanket(src)
+	new /obj/item/reagent_containers/medspray/sterilizine/honey(src)
+	new /obj/item/stack/sticky_tape/surgical(src)
+	new /obj/item/stack/medical/bone_gel/superglue(src)
+
+/obj/item/storage/backpack/duffelbag/med/surgery/primitive/anchored
+	name = "surgical toolset"
+	desc = "Large piece of felt with various surgical tools laid out."
+	icon_state = "surgicalset_primitive"
+	anchored = TRUE
+
+
+// ------------------- PRIMITIVE IV DRIP -----------------------------
+
+/obj/machinery/iv_drip/primitive
+	name = "wooden IV drip"
+	desc = "Simple frame for infusing liquids using gravity. Can't suck out fluids."
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	anchored = TRUE
+	plane = GAME_PLANE
+
+/* 
+/obj/machinery/iv_drip/verb/toggle_mode() updated
+added this to make the overlay actually work
+			var/mutable_appearance/filling_overlay = mutable_appearance('modular_BD2/icons/primitive_medical.dmi', "reagent")
+*/
+
+
+// ------------------- PRIMITIVE DEFIB MOUNT -----------------------------
+
+/obj/machinery/defibrillator_mount/primitive
+	desc = "Holds a primitive defibrillator."
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	icon_state = "defibrillator_mount"
+	density = FALSE
+	use_power = FALSE
+	clamps_locked = TRUE
+	plane = GAME_PLANE
+
+/obj/machinery/defibrillator_mount/primitive/Initialize() //loaded subtype for mapping use
+	. = ..()
+	defib = new/obj/item/defibrillator/primitive(src)
+	update_overlays()
+
+
+// ------------------- PRIMITIVE MEDICAL TOOLBELT -----------------------------
+
+obj/item/storage/belt/medical/primitive
+	name = "primitive medical toolbelt"
+	desc = "This might look a bit like a toolbelt for a carpenter, but the items inside are meant to be used in surgery. No really."
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+	icon_state = "belt_blacksmith"
+	item_state = "belt_blacksmith"
+
+/obj/item/storage/belt/medical/primitive/PopulateContents()
+	new /obj/item/surgical_drapes(src)
+	new /obj/item/melee/onehanded/straight_razor(src)
+	new /obj/item/circular_saw/primitive(src)
+	new /obj/item/retractor/tribal(src)
+	new /obj/item/hemostat/tribal(src)
+	new /obj/item/cautery/primitive(src)
+	new /obj/item/bonesetter(src)
+
+/obj/item/hemostat/tribal
+	name = "primitive hemostat (flesh-poker)"
+	desc = "A pinching device made from bone to clamp bleedings with"
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	icon_state = "hemostat_primitive"
+
+/obj/item/retractor/tribal
+	name = "primitive retractor (skin-puller)"
+	desc = "Pries the flesh and bones open."
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	icon_state = "retractor_primitive"
 
