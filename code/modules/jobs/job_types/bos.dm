@@ -92,7 +92,7 @@ Head Paladin
 	supervisors = "the Elder"
 	exp_requirements = 1500
 	
-		loadout_options = list(
+	loadout_options = list(
 	/datum/outfit/loadout/hpa, //Laser Gatling
 	/datum/outfit/loadout/hpb, //Tribeam
 	/datum/outfit/loadout/hpc //14mm pistol, shield
