@@ -95,3 +95,4 @@ v1.4 - Peb
 - Changed notsword to workpiece because why God
 - Refactored smithed twohanders so the correct art loads when wielded even in stupid Eris code
 
+v1.5 Adaption to Citcode made
