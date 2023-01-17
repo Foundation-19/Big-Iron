@@ -2,22 +2,25 @@
 
 /obj/structure/campfire
 	name = "campfire"
-
-	density = 0
-	anchored = 1
-	opacity = 0
-
-	var/fired = 0
-	var/fuel = 300
-	light_color = LIGHT_COLOR_FIRE
-	var/burned = 0
 	desc = "A warm, bright, and hopeful fire source - when it's burning, of course."
-
 	icon = 'icons/fallout/objects/furniture/heating.dmi'
 	icon_state = "campfire"
+	density = FALSE
+	anchored = TRUE
+	opacity = FALSE
+	light_color = LIGHT_COLOR_FIRE
+	var/burned = FALSE
+	var/fired = FALSE
+	var/fuel = 300
+	var/datum/looping_sound/campfire/campfire_loop
+
+/obj/structure/campfire/Initialize()
+	. = ..()
+	campfire_loop = new(src, FALSE)
 
 /obj/structure/campfire/Destroy()
 	SSobj.processing.Remove(src)
+	QDEL_NULL(campfire_loop)
 	..()
 
 /obj/structure/campfire/attackby(obj/item/P, mob/user, params)
@@ -27,13 +30,22 @@
 		to_chat(user, "You remove some campfire ashes.")
 		qdel(src)
 		return
-	else if(istype(P, /obj/item/stack/sheet/mineral/wood))
+	else if(istype(P, /obj/item/stack/sheet/mineral/wood) || istype(P, /obj/item/stack/ore/coal))
 		var/obj/item/stack/sheet/mineral/wood/W = P
+		var/obj/item/stack/ore/coal/C = P
 		if(fuel > 3000)
 			to_chat(user, "You can't add more fuel - wait untill some of it burns away!")
 			return
-		if(W.use(1))
-			user.visible_message("[user] has added fuel to [src].", "<span class='notice'>You have added fuel to [src].</span>")
+		if(W.use(1) || C.use(1))
+			user.visible_message("[user] has added fuel to [src].", span_notice("You have added fuel to [src]."))
+			fuel += 100
+	else if(istype(P, /obj/item/stack/sheet/coke)) // added for coke to work as fuel
+		var/obj/item/stack/sheet/coke/C = P
+		if(fuel > 3000)
+			to_chat(user, "You can't add more fuel - wait untill some of it burns away!")
+			return
+		if(C.use(1))
+			user.visible_message("[user] has added fuel to [src].", span_notice("You have added fuel to [src]."))
 			fuel += 300
 	else if(fired && istype(P, /obj/item/reagent_containers/food/snacks))
 		if(!ishuman(user))
@@ -41,9 +53,18 @@
 		if(istype(P, /obj/item/reagent_containers/food/snacks))
 			var/obj/item/reagent_containers/food/snacks/F = P
 			if(F.cooked_type)
+				playsound(src, 'modular_BD2/kitchen_50s/sound/cooking_short.ogg', 75, TRUE, -3)
 				to_chat(user, "You start cooking a [F.name].")
-				if(do_after(user, 20, target = src))
+				if(do_after(user, 9 SECONDS, target = src))
 					F.microwave_act()
+	else if(fired && istype(P, /obj/item/stack/medical/gauze/improvised))
+		if(!ishuman(user))
+			return
+		if(istype(P, /obj/item/stack/medical/gauze/improvised))
+			var/obj/item/stack/medical/gauze/improvised/F = P
+			to_chat(user, "You start baking the [F.name].")
+			if(do_after(user, 30, target = src))
+				F.microwave_act()
 	else
 		. = ..()
 		if(fired)
@@ -59,6 +80,9 @@
 /obj/structure/campfire/process()
 	if(fuel <= 0)
 		extinguish()
+		campfire_loop.stop()
+		fired = FALSE
+		update_icon()
 		return
 	burn_process()
 	fuel--
@@ -74,15 +98,13 @@
 //		affected.temperature *= 1.01
 
 /obj/structure/campfire/proc/fire(mob/living/user)
-
 //	BeginAmbient('sound/effects/comfyfire.ogg', 20, 12)
-
-	playsound(src, 'sound/items/welder.ogg', 25, 1, -3)
 	START_PROCESSING(SSobj, src)
-	fired = 1
+	fired = TRUE
 	desc = "A warm, bright, and hopeful fire source."
+	campfire_loop.start()
 	if(user)
-		user.visible_message("[user] has lit a [src].", "<span class='notice'>You have lit a [src].</span>")
+		user.visible_message("[user] has lit a [src].", span_notice("You have lit a [src]."))
 	update_icon()
 	burned = 0
 	burn_process()
@@ -134,5 +156,15 @@
 /obj/structure/campfire/stove
 	name = "pot belly stove"
 	desc = "A warm stove, for cooking food, or keeping warm in the winter. It's really old fashioned, but works wonders when there's no electricity."
-	density = 1
 	icon_state = "potbelly"
+	icon = 'modular_BD2/kitchen_50s/icons/kitchen32x64.dmi'
+	icon_state = "potbelly"
+	density = TRUE
+	plane = GAME_PLANE // so the smoke covers mobs
+	layer = ABOVE_MOB_LAYER // so the smoke covers mobs
+
+/datum/looping_sound/campfire
+	mid_length = 70
+	mid_sounds = list('modular_BD2/kitchen_50s/sound/campfire.ogg'=1)
+	volume = 30
+

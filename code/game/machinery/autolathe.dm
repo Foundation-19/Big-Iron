@@ -1,6 +1,9 @@
 #define AUTOLATHE_MAIN_MENU       1
 #define AUTOLATHE_CATEGORY_MENU   2
 #define AUTOLATHE_SEARCH_MENU     3
+#define AUTOLATHE_STOP_INSERTING "KILL"
+#define AUTOLATHE_SKIP_INSERTING FALSE
+#define AUTOLATHE_INSERT_OK TRUE
 
 /obj/machinery/autolathe
 	name = "autolathe"
@@ -52,7 +55,7 @@
 	var/list/allowed_materials
 
 	/// Base print speed
-	var/base_print_speed = 10
+	var/base_print_speed = 2 SECONDS
 
 /obj/machinery/autolathe/Initialize()
 	var/list/mats = allowed_materials
@@ -539,7 +542,14 @@
 	. = ..()
 	if(!panel_open)
 		return
-
+	if(!busy && !stat)										// Lets you dump ammo from casing bags, ammo boxes and guns directly
+		if(istype(I, /obj/item/storage/bag/casings))
+			insert_things_from_bag(user, I)
+			return
+		if(istype(I, /obj/item/ammo_box))
+			if(pre_insert_check(user, I))
+				if(!insert_bullets_from_box(user, I))
+					return
 	if(I.type in typesof(/obj/item/book/granter/crafting_recipe/gunsmithing))
 		var/obj/item/book/granter/crafting_recipe/gunsmithing/inserted_book = I
 		to_chat(user, "<span class='notice'>You upgrade [src] with [inserted_book.autolathe_level] ammunition schematics.</span>")
@@ -560,6 +570,91 @@
 				advanced = TRUE
 				add_overlay("book4")
 				qdel(I)
+
+/obj/machinery/autolathe/ammo/proc/insert_thing(obj/item/thing, obj/item/thing_bag, datum/component/material_container/mat_box)
+	var/mat_amount = mat_box.get_item_material_amount(thing)
+	if(!mat_amount)
+		return AUTOLATHE_SKIP_INSERTING
+	if(!mat_box.has_space(mat_amount))
+		return AUTOLATHE_STOP_INSERTING
+	if(thing_bag)
+		if(!SEND_SIGNAL(thing_bag, COMSIG_TRY_STORAGE_TAKE, thing, src))
+			return AUTOLATHE_SKIP_INSERTING
+	// Forgive me for this.
+	if(mat_box.after_insert)
+		mat_box.after_insert.Invoke(thing, mat_box.last_inserted_id, mat_box.insert_item(thing))
+	return AUTOLATHE_INSERT_OK
+
+/obj/machinery/autolathe/ammo/proc/insert_things_from_bag(mob/user, obj/item/storage/bag/casings/O)
+	var/obj/item/storage/bag/casings/casings_bag = O
+	var/datum/component/material_container/mats = GetComponent(/datum/component/material_container)
+	var/count = 0
+	if(INTERACTING_WITH(user, src))
+		return
+	if(!length(casings_bag.contents))
+		to_chat(user, span_warning("There's nothing in \the [casings_bag] to load into \the [src]!"))
+		return
+	to_chat(user, span_notice("You start dumping \the [casings_bag] into \the [src]."))
+	if(!do_after(user, 2 SECONDS, target = src))
+		to_chat(user, span_notice("You stop dumping \the [casings_bag] into \the [src]."))
+		return
+	for(var/obj/item/ammo_casing/casing in casings_bag.contents)
+		var/mat_amount = mats.get_item_material_amount(casing)
+		if(!mat_amount)
+			continue
+		if(!mats.has_space(mat_amount))
+			to_chat(user, span_warning("You can't fit any more in \the [src]!"))
+			return
+		if(!SEND_SIGNAL(casings_bag, COMSIG_TRY_STORAGE_TAKE, casing, src))
+			continue
+		// Forgive me for this.
+		if(mats.after_insert)
+			mats.after_insert.Invoke(casing, mats.last_inserted_id, mats.insert_item(casing))
+		// I blame whoever wrote material containers.
+		qdel(casing)
+		count++
+	if(count > 0)
+		to_chat(user, span_notice("You insert [count] casing\s into \the [src]."))
+	else
+		to_chat(user, span_warning("There aren't any casings in \the [O] to recycle!"))
+
+/obj/machinery/autolathe/ammo/proc/pre_insert_check(mob/user, obj/item/O)
+	if(!istype(O))
+		return FALSE
+	var/obj/item/stuff_holder = O
+	if(INTERACTING_WITH(user, src))
+		return FALSE
+	if(!length(stuff_holder.contents))
+		to_chat(user, span_warning("There's nothing in \the [stuff_holder] to load into \the [src]!"))
+		return FALSE
+	to_chat(user, span_notice("You start dumping \the [stuff_holder] into \the [src]."))
+	if(!do_after(user, 2 SECONDS, target = src))
+		to_chat(user, span_notice("You stop dumping \the [stuff_holder] into \the [src]."))
+		return FALSE
+	return TRUE
+
+/obj/machinery/autolathe/ammo/proc/insert_bullets_from_box(mob/user, obj/item/ammo_box/ammobox)
+	if(!user)
+		return FALSE
+	if(!istype(ammobox))
+		return FALSE
+	var/datum/component/material_container/mats = GetComponent(/datum/component/material_container)
+	var/count = 0
+	for(var/obj/item/ammo_casing/casing in ammobox.stored_ammo)
+		switch(insert_thing(casing, null, mats))
+			if(AUTOLATHE_SKIP_INSERTING)
+				continue
+			if(AUTOLATHE_STOP_INSERTING)
+				to_chat(user, span_warning("You can't fit any more in \the [src]!"))
+				return FALSE
+		ammobox.stored_ammo -= casing
+		qdel(casing)
+		count++
+	if(count > 0)
+		to_chat(user, span_notice("You insert [count] casing\s into \the [src]."))
+	else
+		to_chat(user, span_warning("There aren't any casings in \the [ammobox] to recycle!"))
+	return TRUE
 
 /obj/machinery/autolathe/ammo/can_build(datum/design/D, amount = 1)
 	if(("Simple Ammo" || "Simple Magazines") in D.category)

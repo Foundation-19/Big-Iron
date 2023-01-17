@@ -60,66 +60,7 @@
 	spread = 1
 	scan_state = "rock_Coal"
 /*
-UPDATED CODE TO ALLOW FOR COKE AS FUEL
-/obj/machinery/grill/attackby(obj/item/I, mob/user)
-	if(istype(I, /obj/item/stack/sheet/mineral/coal) || I, /obj/item/stack/sheet/mineral/coke) || istype(I, /obj/item/stack/sheet/mineral/wood))
-		var/obj/item/stack/S = I
-		var/stackamount = S.get_amount()
-		to_chat(user, span_notice("You put [stackamount] [I]s in [src]."))
-		if(istype(I, /obj/item/stack/sheet/mineral/coal) || I, /obj/item/stack/sheet/mineral/coke))
-			grill_fuel += (500 * stackamount)
-		else
-			grill_fuel += (50 * stackamount)
-		S.use(stackamount)
-		update_icon()
-		return
-	if(I.resistance_flags & INDESTRUCTIBLE)
-		to_chat(user, span_warning("You don't feel it would be wise to grill [I]..."))
-		return ..()
-	if(istype(I, /obj/item/reagent_containers))
-		if(istype(I, /obj/item/reagent_containers/food) && !istype(I, /obj/item/reagent_containers/food/drinks))
-			if(HAS_TRAIT(I, TRAIT_NODROP) || (I.item_flags & (ABSTRACT | DROPDEL)))
-				return ..()
-			else if(!grill_fuel)
-				to_chat(user, span_notice("There is not enough fuel."))
-				return
-			else if(!grilled_item && user.transferItemToLoc(I, src))
-				grilled_item = I
-				to_chat(user, span_notice("You put the [grilled_item] on [src]."))
-				update_icon()
-				grill_loop.start()
-				return
-		else
-			if(I.reagents.has_reagent(/datum/reagent/consumable/monkey_energy))
-				grill_fuel += (20 * (I.reagents.get_reagent_amount(/datum/reagent/consumable/monkey_energy)))
-				to_chat(user, span_notice("You pour the Monkey Energy in [src]."))
-				I.reagents.remove_reagent("monkey_energy", I.reagents.get_reagent_amount(/datum/reagent/consumable/monkey_energy))
-				update_icon()
-				return
-	..()
-*/
-/* Added
-	icon = 'modular_BD2/general/icons/stackable_items.dmi'
-to the below
-/obj/item/stack/sheet/gold
-/obj/item/stack/sheet/silver
-/obj/item/stack/sheet/lead
-/obj/item/stack/sheet/metal
-/obj/item/stack/sheet/plasteel
-/obj/item/stack/sheet/mineral/wood
-/obj/item/stack/medical/gauze/improvised
-/obj/item/stack/sheet/cloth
-/obj/item/stack/sheet/plastic
-/obj/item/stack/sheet/glass
-/obj/item/stack/sheet/leatherstrips
-/obj/item/stack/sheet/mineral/limestone
-/obj/item/stack/sheet/mineral/concrete
-/obj/item/stack/ore/blackpowder
-/obj/item/stack/crafting/armor_plate
-/obj/item/stack/crafting/metalparts
-/obj/item/stack/crafting/goodparts
-/obj/item/stack/crafting/electronicparts
-/obj/item/stack/crafting/powder
+grill.dm edited for fueltypes and layers
 */
 
 //////////////////////////////////////////////////
@@ -348,7 +289,7 @@ to the below
 // /datum/design/shaker, /datum/design/earmuffs
 // #define AUTOLATHE_PRIMITIVE	(1<<13)	// ADD to defines machines.dm
 
-
+*/
 // ------------------------------- MILITARY AUTOLATHE ------------------------------
 
 /obj/machinery/autolathe/military
@@ -360,79 +301,10 @@ to the below
 /obj/item/circuitboard/machine/autolathe/military
 	name = "army lathe circuit board"
 
-
+/*
 // ------------------------------- AMMOLATHE ------------------------------
+autolathe.dm added overlays & casing bag stuff
 
-/obj/machinery/autolathe/ammo
-	name = "reloading bench"
-	icon = 'modular_BD2/general/icons/ammo_lathe.dmi'
-
-/obj/machinery/autolathe/ammo/attackby(obj/item/O, mob/user, params)
-	if(!busy && !stat)
-		if(istype(O, /obj/item/storage/bag/casings))
-			insert_things_from_bag(user, O)
-			return
-		if(istype(O, /obj/item/ammo_box))
-			if(pre_insert_check(user, O))
-				if(!insert_bullets_from_box(user, O))
-					return
-		if(istype(O, /obj/item/gun/ballistic))
-			if(pre_insert_check(user, O))
-				if(!insert_magazine_from_gun(user, O))
-					return
-	if(panel_open && accepts_books)
-		if(!simple && istype(O, /obj/item/book/granter/crafting_recipe/gunsmith_one))
-			to_chat(user, "<span class='notice'>You upgrade [src] with simple ammunition schematics.</span>")
-			simple = TRUE
-			add_overlay("book1")
-			qdel(O)
-			return
-		if(!basic && istype(O, /obj/item/book/granter/crafting_recipe/gunsmith_two))
-			to_chat(user, "<span class='notice'>You upgrade [src] with basic ammunition schematics.</span>")
-			basic = TRUE
-			add_overlay("book2")
-			qdel(O)
-			return
-		else if(!intermediate && istype(O, /obj/item/book/granter/crafting_recipe/gunsmith_three))
-			to_chat(user, "<span class='notice'>You upgrade [src] with intermediate ammunition schematics.</span>")
-			intermediate = TRUE
-			add_overlay("book3")
-			qdel(O)
-			return
-		else if(!advanced && istype(O, /obj/item/book/granter/crafting_recipe/gunsmith_four))
-			to_chat(user, "<span class='notice'>You upgrade [src] with advanced ammunition schematics.</span>")
-			advanced = TRUE
-			add_overlay("book4")
-			qdel(O)
-			return
-	return ..()
-
-/obj/machinery/autolathe/ammo/on_deconstruction()
-	..()
-	if(simple)
-		new /obj/item/book/granter/crafting_recipe/gunsmith_one(src)
-	if(basic)
-		new /obj/item/book/granter/crafting_recipe/gunsmith_two(src)
-	if(intermediate)
-		new /obj/item/book/granter/crafting_recipe/gunsmith_three(src)
-	if(advanced)
-		new /obj/item/book/granter/crafting_recipe/gunsmith_four(src)
-	cut_overlays()
-	return
-
-/obj/machinery/autolathe/ammo/unlocked_basic/Initialize()
-	. = ..()
-	add_overlay("book2")
-
-/obj/machinery/autolathe/ammo/unlocked
-	simple = TRUE
-	basic = TRUE
-	intermediate = TRUE
-	advanced = TRUE
-
-/obj/machinery/autolathe/ammo/unlocked/Initialize()
-	. = ..()
-	add_overlay("book4")
 
 
 //////////////////////////////////////////////////
@@ -621,28 +493,10 @@ to the below
 //												//
 //////////////////////////////////////////////////
 
-/* Copied to base code
-
-/obj/structure/closet/crate/basic
-	icon = 'modular_BD2/general/icons/crates.dmi'
-
 // ------------ CRATES ------------------ 
-
-/obj/structure/closet/crate/wicker
-	icon = 'icons/fallout/farming/farming_tools.dmi'
-	open_sound = 'sound/effects/rustle3.ogg'
-	close_sound = 'sound/effects/rustle3.ogg'
-	material_drop = /obj/item/stack/sheet/hay
-
-/obj/structure/closet/crate/footchest
-	icon = 'modular_BD2/general/icons/crates.dmi'
-	open_sound = 'modular_BD2/sound/creak.ogg'
-	close_sound = 'modular_BD2/sound/creak.ogg'
-	dense_when_open = FALSE
-*/
+// crates.dm
 
 
-/*	
 
 //////////////////////////////////////////////////
 //												//
@@ -653,7 +507,7 @@ to the below
 //////////////////////////////////////////////////
 
 // -------------------- TOOLBOX (PREWAR) ------------------  Meant to be loot possible to find in well preserved high tech places
-
+/*	
 /obj/item/storage/toolbox/prewar
 	name = "toolbox (pre-war)"
 	desc = "Plastic toolbox, made long ago."
@@ -671,7 +525,7 @@ to the below
 	new /obj/item/weldingtool/prewar(src)
 	new /obj/item/screwdriver/prewar(src)
 	new	/obj/item/multitool(src)
-
+*/
 
 // ------------------------------- ABRAXO SPRAYBOTTLE ------------------------------
 // Abraxo spray is now made by adding Abraxo to a spray bottle, not taking a pinch of glass and snap your fingers.
@@ -697,38 +551,10 @@ to the below
 
 
 // ------------------------------- MATCHBOX FIX ------------------------------
-
-/obj/item/storage/box/matches/attackby(obj/item/match/W as obj, mob/user as mob, params)
-	if(istype(W, /obj/item/match))
-		if(prob(50))
-			playsound(src, 'sound/f13items/matchstick_hit.ogg', 80, TRUE)
-			return
-		else
-			W.matchignite()
-			playsound(src, 'sound/f13items/matchstick_lit.ogg', 80, TRUE)
-
-
+// boxes.dm
 
 // ------------ CRAFING STACKABLE ICON UPDATERS ------------------
-/obj/item/stack/crafting/update_icon_state()
-	var/amount = get_amount()
-	if(amount <= 5)
-		icon_state = initial(icon_state)
-	else if(amount <= 25)
-		icon_state = "[initial(icon_state)]_2"
-	else
-		icon_state = "[initial(icon_state)]_3"
-
-// Adapted for the specific bullet remnant stacking
-/obj/item/stack/crafting/powder/update_icon_state()
-	var/amount = get_amount()
-	if(amount <= 80)
-		icon_state = initial(icon_state)
-	else if(amount <= 160)
-		icon_state = "[initial(icon_state)]_2"
-	else
-		icon_state = "[initial(icon_state)]_3"
-
+// crafting.dm
 
 // -------------------- CRAFTING RECIPES ------------------
 
@@ -750,7 +576,7 @@ to the below
 	category = CAT_CRAFTING
 	subcategory = CAT_TOOL
 
-
+/*
 // -------------------- ARMOR KIT CUSTOMIZATION ------------------ Because I like slapcrafting and Id like for my shoulder kit to be craftable
 
 /obj/item/clothing/suit/armor/light/kit/attackby(obj/item/C, mob/user, params)
@@ -801,103 +627,6 @@ hair_face.dm
 	desc = "NO!!!."
 
 // TEMP FOR PORTING AND FUNCTIOANLITY
-
-// ------------------------ STRAIGHT RAZOR ------------------------------- // Pebbles straight razor. It borrows the razor code, edits some timers, adds sounds and slaps it on a melee weapon.
-/obj/item/melee/onehanded/straight_razor
-	name = "straight razor"
-	desc = "For those smooth close shaves. Better aim for the mouth or the head, or else things might get messy. Could be used as a scalpel in a pinch."
-	icon = 'modular_BD2/fashion/icons/cosmetics.dmi'
-	righthand_file = 'modular_BD2/fashion/icons/onmobright.dmi'
-	lefthand_file = 'modular_BD2/fashion/icons/onmobleft.dmi'
-	icon_state = "straight_razor"
-	force = WEAPON_FORCE_BIG_TOOL
-	throwforce = THROWING_PATHETIC
-	wound_bonus = WOUNDING_MALUS_SHALLOW // crap against armor
-	bare_wound_bonus = WOUNDING_BONUS_BIG // bleeds a lot, despite its low damage
-	sharpness = SHARP_EDGED
-	total_mass = TOTAL_MASS_TINY_ITEM
-	w_class = WEIGHT_CLASS_TINY
-	tool_behaviour = TOOL_SCALPEL //ghetto surgery yay
-	toolspeed = 1.2
-
-/obj/item/melee/onehanded/straight_razor/proc/manual_shave(mob/living/carbon/human/H, location = BODY_ZONE_PRECISE_MOUTH)
-	if(location == BODY_ZONE_PRECISE_MOUTH)
-		H.facial_hair_style = "Clean shave (Hairless)"
-	else
-		H.hair_style = "Skinhead"
-
-	H.update_hair()
-
-/obj/item/melee/onehanded/straight_razor/attack(mob/M, mob/user)
-	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		var/location = user.zone_selected
-		if((location in list(BODY_ZONE_PRECISE_EYES, BODY_ZONE_PRECISE_MOUTH, BODY_ZONE_HEAD)) && !H.get_bodypart(BODY_ZONE_HEAD))
-			to_chat(user, span_warning("[H] doesn't have a head!"))
-			return
-		if(location == BODY_ZONE_PRECISE_MOUTH)
-			if(!(FACEHAIR in H.dna.species.species_traits))
-				to_chat(user, span_warning("There is no facial hair to shave!"))
-				return
-			if(!get_location_accessible(H, location))
-				to_chat(user, span_warning("The mask is in the way!"))
-				return
-			if(H.facial_hair_style == "Clean shave (Hairless)")
-				to_chat(user, span_warning("Already clean-shaven!"))
-				return
-
-			if(H == user) //shaving yourself
-				playsound(loc, 'modular_BD2/fashion/sound/shaving.ogg', 100, 1) // added
-				user.visible_message("[user] starts to shave [user.p_their()] facial hair with [src].", \
-									span_notice("You take a moment to shave your facial hair with [src]..."))
-				if(do_after(user, 150, target = H))
-					user.visible_message("[user] shaves [user.p_their()] facial hair clean with [src].", \
-										span_notice("You finish shaving with [src]. Fast and clean!"))
-					manual_shave(H, location)
-			else
-				var/turf/H_loc = H.loc
-				playsound(loc, 'modular_BD2/fashion/sound/shaving.ogg', 100, 1) // added
-				user.visible_message(span_warning("[user] tries to shave [H]'s facial hair with [src]."), \
-									span_notice("You start shaving [H]'s facial hair..."))
-				if(do_after(user, 100, target = H))
-					if(H_loc == H.loc)
-						user.visible_message(span_warning("[user] shaves off [H]'s facial hair with [src]."), \
-											span_notice("You shave [H]'s facial hair clean off."))
-						manual_shave(H, location)
-
-		else if(location == BODY_ZONE_HEAD)
-			if(!(HAIR in H.dna.species.species_traits))
-				to_chat(user, span_warning("There is no hair to shave!"))
-				return
-			if(!get_location_accessible(H, location))
-				to_chat(user, span_warning("The headgear is in the way!"))
-				return
-			if(H.hair_style == "Bald" || H.hair_style == "Mature (Balding)" || H.hair_style == "Clean shave (Hairless)")
-				to_chat(user, span_warning("There is not enough hair left to shave!"))
-				return
-
-			if(H == user) //shaving yourself
-				playsound(loc, 'modular_BD2/fashion/sound/shaving.ogg', 100, 1) // added
-				user.visible_message("[user] starts to shave [user.p_their()] head with [src].", \
-									span_notice("You start to shave your head with [src]..."))
-				if(do_after(user, 150, target = H)) //edited time
-					user.visible_message("[user] shaves [user.p_their()] head with [src].", \
-										span_notice("You finish shaving with [src]."))
-					manual_shave(H, location)
-			else
-				var/turf/H_loc = H.loc
-				playsound(loc, 'modular_BD2/fashion/sound/shaving.ogg', 100, 1) // added
-				user.visible_message(span_warning("[user] tries to shave [H]'s head with [src]!"), \
-									span_notice("You start shaving [H]'s head..."))
-				if(do_after(user, 150, target = H)) //edited time
-					if(H_loc == H.loc)
-						user.visible_message(span_warning("[user] shaves [H]'s head bald with [src]!"), \
-											span_notice("You shave [H]'s head bald."))
-						manual_shave(H, location)
-		else
-			..()
-	else
-		..()
 
 
 //////////////////////////////////////////
