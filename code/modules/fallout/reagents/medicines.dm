@@ -681,3 +681,57 @@
 /datum/reagent/medicine/gaia/overdose_start(mob/living/M)
 	metabolization_rate = 15 * REAGENTS_METABOLISM
 	..()
+
+// HYDRA - Basically Determination chem but made by Legionnaires.
+
+/datum/reagent/medicine/hydra
+	name = "Hydra"
+	description = "Hydra is a drug developed from antivenom. Due to the Legion's disapproval of using modern medicine, some Legionaries attempted to develop a different means to help them heal damaged limbs."
+	reagent_state = LIQUID
+	color = "#6D6374"
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	overdose_threshold = 16//No real downsides with use, aside from popping it twice quickly.
+	addiction_threshold = 14//No real downsides with use, aside from popping it twice quickly.
+	self_consuming = TRUE//So you can process without a liver. For future disembowelment reworks.
+
+/datum/reagent/medicine/hydra/on_mob_life(mob/living/carbon/M)
+	for(var/thing in M.all_wounds)
+		var/datum/wound/W = thing
+		var/obj/item/bodypart/wounded_part = W.limb
+		if(wounded_part)
+			wounded_part.heal_damage(125, 125)//Does this even work? AAAAAAAAAAAAAAAAA
+	..()
+
+/datum/reagent/medicine/hydra/overdose_process(mob/living/M)
+	if(prob(33))
+		M.drop_all_held_items()
+		M.Dizzy(2)
+		M.Jitter(2)
+	..()
+
+/datum/reagent/medicine/hydra/addiction_act_stage1(mob/living/M)
+	if(prob(33))
+		M.drop_all_held_items()
+		M.Jitter(2)
+	..()
+
+/datum/reagent/medicine/hydra/addiction_act_stage2(mob/living/M)
+	if(prob(33))
+		M.drop_all_held_items()
+		M.Dizzy(3)
+		M.Jitter(3)
+	..()
+
+/datum/reagent/medicine/hydra/addiction_act_stage3(mob/living/M)
+	if(prob(33))
+		M.drop_all_held_items()
+		M.Dizzy(4)
+		M.Jitter(4)
+	..()
+
+/datum/reagent/medicine/hydra/addiction_act_stage4(mob/living/M)
+	if(prob(33))
+		M.drop_all_held_items()
+		M.Dizzy(5)
+		M.Jitter(5)
+	..()
