@@ -567,7 +567,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Great Khan boots",				/obj/item/clothing/shoes/f13/military/khan,							15),
 		new /datum/data/wasteland_equipment("Great Khan pelt boots",		/obj/item/clothing/shoes/f13/military/khan_pelt,					15),
 		new /datum/data/wasteland_equipment("Stinger Grenade",				/obj/item/grenade/f13/stinger,										200),
-		new /datum/data/wasteland_equipment("HE Grenade",					/obj/item/grenade/syndieminibomb/concussion, 						200),
+		new /datum/data/wasteland_equipment("HE Grenade",					/obj/item/grenade/f13/he_grenade, 									200),
 		new /datum/data/wasteland_equipment("C4",							/obj/item/grenade/plastic/c4, 										250)
 		)
 	highpop_list = list(
@@ -591,7 +591,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Great Khan boots",				/obj/item/clothing/shoes/f13/military/khan,							15),
 		new /datum/data/wasteland_equipment("Great Khan pelt boots",		/obj/item/clothing/shoes/f13/military/khan_pelt,					15),
 		new /datum/data/wasteland_equipment("Stinger Grenade",				/obj/item/grenade/f13/stinger,										200),
-		new /datum/data/wasteland_equipment("HE Grenade",					/obj/item/grenade/syndieminibomb/concussion, 						200),
+		new /datum/data/wasteland_equipment("HE Grenade",					/obj/item/grenade/f13/he_grenade, 									200),
 		new /datum/data/wasteland_equipment("C4",							/obj/item/grenade/plastic/c4, 										250),
 		)
 
@@ -607,8 +607,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Smoke Grenade",				/obj/item/grenade/smokebomb, 										200),
 		new /datum/data/wasteland_equipment("Tear Gas Grenade",				/obj/item/grenade/chem_grenade/teargas,								700),
 		new /datum/data/wasteland_equipment("Stinger Grenade",				/obj/item/grenade/f13/stinger,										200),
-		new /datum/data/wasteland_equipment("HE Grenade",					/obj/item/grenade/syndieminibomb/concussion, 						200),
-		new /datum/data/wasteland_equipment("Frag Grenade",					/obj/item/grenade/syndieminibomb/concussion/frag, 					200),
+		new /datum/data/wasteland_equipment("HE Grenade",					/obj/item/grenade/f13/he_grenade, 									200),
+		new /datum/data/wasteland_equipment("Frag Grenade",					/obj/item/grenade/f13/frag, 										200),
 		new /datum/data/wasteland_equipment("C4",							/obj/item/grenade/plastic/c4, 										250),
 
 		)
@@ -621,8 +621,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Smoke Grenade",				/obj/item/grenade/smokebomb, 										200),
 		new /datum/data/wasteland_equipment("Tear Gas Grenade",				/obj/item/grenade/chem_grenade/teargas,								700),
 		new /datum/data/wasteland_equipment("Stinger Grenade",				/obj/item/grenade/f13/stinger,										200),
-		new /datum/data/wasteland_equipment("HE Grenade",					/obj/item/grenade/syndieminibomb/concussion, 						200),
-		new /datum/data/wasteland_equipment("Frag Grenade",					/obj/item/grenade/syndieminibomb/concussion/frag, 					200),
+		new /datum/data/wasteland_equipment("HE Grenade",					/obj/item/grenade/f13/he_grenade, 									200),
+		new /datum/data/wasteland_equipment("Frag Grenade",					/obj/item/grenade/f13/frag, 										200),
 		new /datum/data/wasteland_equipment("C4",							/obj/item/grenade/plastic/c4, 										250),
 
 		)
