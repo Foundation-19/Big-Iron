@@ -615,7 +615,7 @@ Knight
 /datum/outfit/loadout/knightb
 	name = "Footknight"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/knight = 1
+		/obj/item/clothing/accessory/bos/knight = 1,
 		/obj/item/gun/energy/laser/aer9 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 3,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
