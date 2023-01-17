@@ -365,7 +365,7 @@ Paladin
 /datum/outfit/loadout/paladind
 	name = "Heavy Senior Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpackbal5mm = 1.
+		/obj/item/minigunpackbal5mm = 1,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/accessory/bos/seniorpaladin = 1
