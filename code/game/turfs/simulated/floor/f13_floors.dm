@@ -147,8 +147,8 @@
 
 /turf/open/floor/wood/f13/Initialize()
 	. = ..()
-		if(icon_state == "housewood1")
-			icon_state = "housewood[rand(1,4)]"
+	if(icon_state == "housewood1")
+		icon_state = "housewood[rand(1,4)]"
 
 /turf/open/floor/wood/f13/oak
 	icon = 'icons/turf/floors.dmi'
@@ -156,8 +156,8 @@
 
 /turf/open/floor/wood/f13/oak/Initialize()
 	. = ..()
-		if(icon_state == "oakfloor1")
-			icon_state = "oakfloor[rand(1,4)]"
+	if(icon_state == "oakfloor1")
+		icon_state = "oakfloor[rand(1,4)]"
 
 /turf/open/floor/wood/f13/housewoodbroken
 	icon_state = "housewood1-broken"
