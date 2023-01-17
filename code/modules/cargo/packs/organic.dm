@@ -273,7 +273,7 @@
 					/obj/item/honey_frame,
 					/obj/item/honey_frame,
 					/obj/item/honey_frame,
-					/obj/item/queen_bee/bought,
+					/obj/item/queen_bee,
 					/obj/item/clothing/head/beekeeper_head,
 					/obj/item/clothing/suit/beekeeper_suit,
 					/obj/item/melee/flyswatter)
