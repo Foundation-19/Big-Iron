@@ -1151,6 +1151,11 @@
 	icon_state = "neutraldirtyfull"
 	},
 /area/f13/sewer)
+"aTt" = (
+/obj/structure/guncase/shotgun,
+/obj/item/gun/ballistic/rifle/hunting,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "aTB" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
@@ -1227,6 +1232,19 @@
 /obj/machinery/telecomms/receiver/preset_right,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
+"aWM" = (
+/obj/machinery/power/apc{
+	pixel_x = -32;
+	pixel_y = 6
+	},
+/obj/item/paper{
+	info = "Got the godforsaken power working down here. Apparently if you jam it in there good, the fusion cells from gunny's armor can fit in the power box. Below's how to replace the cell when it runs dry.<br><b>Step 1<br>Unlock cover in interface.<br>Step 2<br> Pry cell with crowbar.<br><b>Step 3<br>Add new cell.</b><br><br>-Private Barnes";
+	icon_state = "paper_words";
+	name = "power box instructions"
+	},
+/obj/item/crowbar/basic,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "aWO" = (
 /obj/structure/lattice/catwalk,
 /mob/living/simple_animal/hostile/handy/playable,
@@ -2035,7 +2053,6 @@
 /area/f13/tunnel)
 "buz" = (
 /obj/structure/chair/office/dark,
-/obj/effect/landmark/start/f13/usscientist,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "neutralrustyfull"
 	},
@@ -2428,6 +2445,35 @@
 /obj/item/dice/d1,
 /turf/open/floor/carpet/red,
 /area/f13/den)
+"bGa" = (
+/obj/item/trash/f13/porknbeans{
+	pixel_y = 23;
+	pixel_x = 12
+	},
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "red"
+	},
+/obj/item/trash/f13/electronic/toaster/oven{
+	pixel_x = -18;
+	pixel_y = 11
+	},
+/obj/item/reagent_containers/glass/beaker/waterbottle{
+	pixel_x = -7;
+	pixel_y = 15
+	},
+/obj/item/reagent_containers/glass/beaker/waterbottle{
+	pixel_x = -7;
+	pixel_y = 9
+	},
+/obj/structure/rack/shelf_metal{
+	pixel_x = 12
+	},
+/obj/item/flashlight/flare{
+	pixel_x = 12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "bGf" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress4"
@@ -5327,6 +5373,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/brotherhood/leisure)
+"dCm" = (
+/obj/effect/landmark/start/f13/usai,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "dCp" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
@@ -5766,6 +5816,18 @@
 	pixel_y = 19
 	},
 /turf/open/floor/plasteel/grimy,
+/area/f13/enclave)
+"dRF" = (
+/obj/machinery/computer/camera_advanced{
+	layer = 3.0;
+	networks = list("enclavesssss");
+	pixel_x = 2
+	},
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "red"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "dRJ" = (
 /obj/effect/decal/cleanable/blood/old{
@@ -6613,6 +6675,15 @@
 /obj/structure/closet/wardrobe/botanist,
 /turf/open/floor/plasteel/f13/vault_floor/green,
 /area/f13/bunker)
+"esa" = (
+/obj/structure/closet/locker/fridge{
+	pixel_x = -7
+	},
+/obj/structure/table/rolling{
+	pixel_x = 16
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "esc" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "ruinswindowbroken"
@@ -7718,9 +7789,11 @@
 	},
 /area/f13/enclave)
 "fcS" = (
-/obj/effect/landmark/start/f13/uslightduty,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/grimy,
+/obj/machinery/door/airlock/vault{
+	req_access_txt = "134";
+	id_tag = "enclavehatch"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "fcV" = (
 /obj/structure/barricade/wooden,
@@ -7859,6 +7932,16 @@
 	name = "metal plating"
 	},
 /area/f13/building)
+"fhn" = (
+/obj/structure/bed/mattress,
+/obj/item/radio/intercom{
+	pixel_x = 32;
+	pixel_y = 2;
+	frequency = 1292
+	},
+/obj/effect/landmark/start/f13/uslt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "fhr" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -7989,8 +8072,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/bunker)
 "flZ" = (
-/obj/effect/landmark/start/f13/uscpt,
-/turf/open/floor/carpet/black,
+/turf/closed/indestructible/f13vaultrusted,
 /area/f13/enclave)
 "fmg" = (
 /obj/structure/table/wood/settler,
@@ -11310,6 +11392,12 @@
 	color = "#e4e4e4"
 	},
 /area/f13/building)
+"huc" = (
+/obj/structure/chair/booth{
+	pixel_y = 7
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "huC" = (
 /obj/structure/fluff/railing{
 	dir = 8
@@ -11456,8 +11544,9 @@
 	},
 /area/f13/enclave)
 "hBY" = (
-/obj/effect/landmark/start/f13/uslightduty,
-/turf/open/floor/wood/f13/old,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
 /area/f13/enclave)
 "hCA" = (
 /obj/machinery/button/door{
@@ -11875,7 +11964,6 @@
 "hTU" = (
 /obj/structure/chair/f13foldupchair,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/start/f13/usscientist,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -14865,6 +14953,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall/rust,
 /area/f13/sewer)
+"kqf" = (
+/obj/item/book/manual/wiki/engineering_guide,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "kqg" = (
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood/gibs,
@@ -15437,6 +15529,13 @@
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
+"kNR" = (
+/obj/structure/bed/mattress{
+	icon_state = "mattress1"
+	},
+/obj/effect/landmark/start/f13/usspy,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "kNW" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/f13{
@@ -15506,11 +15605,13 @@
 	},
 /area/f13/enclave)
 "kQN" = (
-/obj/effect/landmark/start/f13/usspecialist,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
+/obj/item/radio/tribal{
+	pixel_y = 11;
+	desc = "an old pre-war radio transceiver somehow still working after all this time.";
+	name = "old radio"
 	},
+/obj/structure/table/rolling,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "kQO" = (
 /obj/item/storage/trash_stack{
@@ -16122,6 +16223,10 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/building)
+"lrC" = (
+/obj/effect/landmark/start/f13/usscientist,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "lsK" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier1,
@@ -16859,6 +16964,24 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/bunker)
+"lXU" = (
+/obj/item/reagent_containers/food/snacks/beans{
+	pixel_y = 20;
+	pixel_x = -5
+	},
+/obj/structure/rack/shelf_metal{
+	pixel_x = 4
+	},
+/obj/item/flashlight/glowstick{
+	pixel_y = 12;
+	pixel_x = 13
+	},
+/obj/item/flashlight/glowstick/yellow{
+	pixel_x = 9;
+	pixel_y = 11
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "lYo" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating/tunnel,
@@ -16965,7 +17088,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
 "mcD" = (
-/obj/effect/landmark/start/f13/ussgt,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave)
 "mcL" = (
@@ -19976,6 +20098,16 @@
 	icon_state = "casino"
 	},
 /area/f13/brotherhood/archives)
+"oMH" = (
+/obj/structure/barricade/concrete,
+/obj/structure/barricade/bars,
+/obj/structure/table/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	max_integrity = 300;
+	id = "enclave_shutter"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "oMS" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -20329,6 +20461,11 @@
 /obj/structure/simple_door/wood,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/den)
+"paT" = (
+/obj/structure/junk/machinery,
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "paW" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -21681,7 +21818,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/bunker)
 "qgb" = (
-/obj/effect/landmark/start/f13/usspecialist,
 /obj/structure/chair/folding,
 /turf/open/floor/f13{
 	icon_state = "bluerustyfull"
@@ -23851,6 +23987,13 @@
 	icon_state = "purplefull"
 	},
 /area/f13/clinic)
+"rKA" = (
+/obj/machinery/computer/card/enclave{
+	dir = 1
+	},
+/obj/item/newspaper,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "rKO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -24382,8 +24525,12 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "sgP" = (
-/obj/effect/landmark/start/f13/usspy,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/button{
+	pixel_x = 24;
+	pixel_y = 24;
+	id = "enclave_shutter";
+	name = "shutter button"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "shk" = (
@@ -25704,7 +25851,6 @@
 /turf/open/floor/carpet/red,
 /area/f13/den)
 "tpy" = (
-/obj/effect/landmark/start/f13/usspy,
 /obj/structure/fans/tiny{
 	pixel_y = 32
 	},
@@ -26287,10 +26433,11 @@
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
 "tNP" = (
-/obj/effect/landmark/start/f13/uslt,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "casino"
+/obj/structure/ladder/unbreakable{
+	id = "enclave_bunker";
+	height = 2
 	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "tOz" = (
 /obj/effect/spawner/lootdrop/f13/cash_legion_low,
@@ -27458,11 +27605,22 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/enclave)
 "uRF" = (
-/obj/item/mine/explosive{
-	name = "Welcome to the Colony"
+/obj/structure/junk/small/tv{
+	pixel_y = 9;
+	pixel_x = -3
 	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/structure/table/booth,
+/obj/item/reagent_containers/food/drinks/bottle/brown/beer{
+	pixel_y = 7;
+	pixel_x = 10
+	},
+/obj/machinery/light/small,
+/obj/item/clothing/head/f13/enclave{
+	pixel_y = 18;
+	pixel_x = -9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "uRH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -28564,7 +28722,6 @@
 	},
 /area/f13/clinic)
 "vHR" = (
-/obj/effect/landmark/start/f13/usspy,
 /obj/item/radio/intercom{
 	frequency = 1367;
 	name = "Vault Intercom";
@@ -28739,6 +28896,26 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/enclave)
+"vMi" = (
+/obj/structure/bed{
+	pixel_x = 2
+	},
+/obj/structure/fence{
+	pixel_x = -12
+	},
+/obj/structure/fence{
+	pixel_x = 16
+	},
+/obj/structure/bed{
+	pixel_y = 16;
+	pixel_x = 2
+	},
+/obj/machinery/computer/security/bos{
+	pixel_y = 15;
+	pixel_x = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "vMo" = (
 /obj/structure/spider/cocoon,
 /obj/item/reagent_containers/food/snacks/deadmouse,
@@ -28763,8 +28940,18 @@
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood)
 "vMX" = (
-/obj/effect/landmark/start/f13/usgysgt,
-/turf/open/floor/plating/tunnel,
+/obj/machinery/camera{
+	dir = 8;
+	network = list("enclaves")
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/item/radio/intercom{
+	pixel_x = 32;
+	frequency = 1291
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "vNj" = (
 /obj/structure/disposalpipe/segment{
@@ -28832,6 +29019,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
+"vPN" = (
+/obj/machinery/vending/wallmed/pubby{
+	pixel_y = -32
+	},
+/obj/structure/table/rolling,
+/obj/item/storage/hypospraykit/tactical,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "vQa" = (
 /obj/structure/disposalpipe/junction{
 	dir = 4
@@ -28960,8 +29155,12 @@
 /turf/closed/wall/rust,
 /area/f13/den)
 "vUa" = (
-/obj/effect/landmark/start/f13/usai,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/button{
+	pixel_x = 7;
+	pixel_y = 24;
+	id = "enclavehatch";
+	name = "hatch bolts button"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "vVx" = (
@@ -32326,7 +32525,7 @@ aoj
 vPg
 vPg
 vPg
-vPg
+eLE
 xiW
 xiW
 xiW
@@ -32583,7 +32782,7 @@ aoj
 vPg
 vPg
 vPg
-vPg
+eLE
 xiW
 muG
 vGU
@@ -32840,7 +33039,7 @@ aoj
 aoj
 vPg
 vPg
-vPg
+eLE
 xiW
 tGk
 ijw
@@ -33093,17 +33292,17 @@ vPg
 vPg
 vPg
 vPg
-vPg
-aoj
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
 xiW
 tGk
 ijw
 vHR
 dxQ
-sgP
+ycB
 ijw
 ybk
 blI
@@ -33350,7 +33549,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 xiW
 xiW
 xiW
@@ -33607,7 +33806,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 xiW
 rEg
 lWh
@@ -33624,7 +33823,7 @@ mES
 xQW
 ijw
 uqc
-kQN
+wHP
 jtf
 dpO
 wHP
@@ -33641,7 +33840,7 @@ uKd
 snF
 ijw
 uGQ
-vUa
+ycB
 lkf
 blI
 lFd
@@ -33864,7 +34063,7 @@ vPg
 aoj
 vPg
 vPg
-vPg
+eLE
 xiW
 ocb
 kxu
@@ -34119,9 +34318,9 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
 xiW
 rEg
 bzd
@@ -34131,7 +34330,7 @@ tGk
 ijw
 tpy
 ycB
-sgP
+ycB
 ijw
 xQW
 xQW
@@ -34376,7 +34575,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 xiW
 xiW
 xiW
@@ -34633,7 +34832,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 xiW
 tiW
 blI
@@ -34890,7 +35089,7 @@ lnr
 lnr
 vPg
 vPg
-vPg
+eLE
 xiW
 uEz
 blI
@@ -35147,7 +35346,7 @@ vPg
 lnr
 lnr
 vPg
-vPg
+eLE
 xiW
 tiW
 blI
@@ -35183,7 +35382,7 @@ nno
 mES
 ksQ
 oxN
-vMX
+blI
 uKC
 ycB
 wMd
@@ -35404,7 +35603,7 @@ vPg
 vPg
 lnr
 vPg
-vPg
+eLE
 xiW
 xiW
 xiW
@@ -35661,10 +35860,10 @@ vPg
 aoj
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
 xiW
 tfL
 ijw
@@ -35921,7 +36120,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 xiW
 rwC
 ijw
@@ -36177,8 +36376,8 @@ lAL
 jPC
 vPg
 vPg
-vPg
-vPg
+eLE
+eLE
 xiW
 rwC
 ijw
@@ -36190,7 +36389,7 @@ uxZ
 jNF
 ijw
 cWk
-flZ
+pbW
 pbW
 pbW
 pbW
@@ -36434,7 +36633,7 @@ frn
 lAL
 vPg
 vPg
-vPg
+eLE
 xiW
 xiW
 rwC
@@ -36691,7 +36890,7 @@ lnr
 lAL
 vPg
 vPg
-vPg
+eLE
 xiW
 vNj
 qBv
@@ -36948,7 +37147,7 @@ lnr
 gpM
 vPg
 vPg
-vPg
+eLE
 xiW
 vOq
 ijw
@@ -37205,7 +37404,7 @@ jPC
 vPg
 vPg
 vPg
-vPg
+eLE
 xiW
 vQa
 ijw
@@ -37462,7 +37661,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 xiW
 rwC
 ijw
@@ -37719,7 +37918,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 xiW
 vQa
 vpv
@@ -37976,7 +38175,7 @@ vPg
 vPg
 vPg
 aoj
-aoj
+eLE
 xiW
 rwC
 ijw
@@ -37998,7 +38197,7 @@ mES
 ijw
 ijw
 iqQ
-fcS
+xvk
 xvk
 xvk
 xvk
@@ -38233,7 +38432,7 @@ jPC
 wvW
 vPg
 vPg
-vPg
+eLE
 xiW
 rwC
 ijw
@@ -38247,7 +38446,7 @@ mPe
 ijw
 jjU
 kQE
-tNP
+vJZ
 ijw
 fQt
 mES
@@ -38490,7 +38689,7 @@ pfG
 gpM
 vPg
 vPg
-vPg
+eLE
 xiW
 tfL
 ijw
@@ -38747,7 +38946,7 @@ lnr
 gpM
 etM
 vPg
-vPg
+eLE
 xiW
 rwC
 ijw
@@ -38774,7 +38973,7 @@ xvk
 ijw
 lJQ
 skD
-hBY
+skD
 vGE
 uQR
 fAE
@@ -39004,7 +39203,7 @@ lnr
 gpM
 wvW
 vPg
-vPg
+eLE
 xiW
 iKe
 pfA
@@ -39261,7 +39460,7 @@ lnr
 lnr
 wvW
 vPg
-vPg
+eLE
 xiW
 xiW
 xiW
@@ -39516,13 +39715,13 @@ vPg
 wvW
 vPg
 lnr
-xVz
-wvW
-xVz
 vPg
 vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
 xiW
 xiW
 rwC
@@ -39773,14 +39972,14 @@ vPg
 vPg
 vPg
 wvW
-xVz
-xVz
-uRF
-wvW
-xVz
-xVz
-wvW
 vPg
+vPg
+vPg
+vPg
+vPg
+vPg
+eLE
+eLE
 xiW
 gcd
 vpv
@@ -40032,12 +40231,12 @@ vPg
 vPg
 vPg
 vPg
-wvW
-xVz
-xVz
-xVz
-xVz
-xVz
+vPg
+vPg
+vPg
+vPg
+vPg
+eLE
 faQ
 rwC
 faQ
@@ -40292,9 +40491,9 @@ aoj
 vPg
 aoj
 vPg
-wvW
 vPg
 vPg
+eLE
 xiW
 vbc
 ijw
@@ -40551,7 +40750,7 @@ vPg
 vPg
 aoj
 vPg
-aoj
+eLE
 xiW
 tfL
 ijw
@@ -40808,7 +41007,7 @@ vPg
 aoj
 aoj
 aoj
-vPg
+eLE
 xiW
 rwC
 ijw
@@ -41065,7 +41264,7 @@ vPg
 aoj
 aoj
 aoj
-aoj
+eLE
 xiW
 rwC
 ijw
@@ -41322,7 +41521,7 @@ vPg
 aoj
 aoj
 aoj
-aoj
+eLE
 xiW
 rwC
 ijw
@@ -41579,7 +41778,7 @@ vPg
 vPg
 aoj
 vPg
-aoj
+eLE
 xiW
 iKe
 pfA
@@ -41836,7 +42035,7 @@ aoj
 aoj
 vPg
 aoj
-vPg
+eLE
 xiW
 xiW
 xiW
@@ -41853,11 +42052,11 @@ pfA
 pfA
 qBv
 xiW
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
 ijw
 iRK
 ijw
@@ -42093,14 +42292,14 @@ aoj
 vPg
 aoj
 aoj
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 xiW
 xiW
 xiW
@@ -42110,11 +42309,11 @@ xiW
 xiW
 xiW
 xiW
+eLE
 vPg
 vPg
 vPg
-vPg
-vPg
+eLE
 ijw
 ijw
 ijw
@@ -42357,23 +42556,23 @@ vPg
 aoj
 aoj
 vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+vPg
 aoj
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-aoj
-vPg
-vPg
-aoj
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
 ijw
 ijw
 ijw
@@ -42630,19 +42829,19 @@ vPg
 aoj
 aoj
 aoj
-vPg
-vPg
-aoj
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 eLE
 "}
 (43,1,1) = {"
@@ -64712,11 +64911,11 @@ myy
 mjG
 dXE
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+aoj
+aoj
+aoj
+aoj
+aoj
 vPg
 aoj
 vPg
@@ -64969,11 +65168,11 @@ myy
 mjG
 dXE
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+aoj
+aoj
+aoj
+aoj
+aoj
 vPg
 aoj
 vPg
@@ -65226,11 +65425,11 @@ myy
 agK
 dXE
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+aoj
+aoj
+aoj
+aoj
+aoj
 vPg
 vPg
 vPg
@@ -68311,12 +68510,12 @@ mjG
 dXE
 vPg
 aoj
-aoj
-aoj
-aoj
-aoj
-aoj
-vPg
+flZ
+flZ
+flZ
+flZ
+flZ
+flZ
 vPg
 vPg
 vPg
@@ -68568,12 +68767,12 @@ mjG
 dXE
 vPg
 aoj
-aoj
-aoj
-aoj
-aoj
-aoj
-vPg
+flZ
+esa
+aWM
+kqf
+rKA
+flZ
 vPg
 vPg
 vPg
@@ -68825,12 +69024,12 @@ mjG
 dXE
 vPg
 aoj
-aoj
-aoj
-aoj
-aoj
-aoj
-vPg
+flZ
+bGa
+kNR
+vKj
+paT
+flZ
 vPg
 vPg
 vPg
@@ -69082,12 +69281,12 @@ bzC
 dXE
 vPg
 aoj
-aoj
-aoj
-aoj
-aoj
-aoj
-vPg
+flZ
+lXU
+vKj
+vKj
+aTt
+flZ
 vPg
 vPg
 vPg
@@ -69339,12 +69538,12 @@ mjG
 dXE
 vPg
 aoj
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+flZ
+vMi
+dCm
+lrC
+vPN
+flZ
 vPg
 vPg
 vPg
@@ -69596,12 +69795,12 @@ mjG
 dXE
 vPg
 aoj
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+flZ
+dRF
+hBY
+huc
+uRF
+flZ
 vPg
 vPg
 vPg
@@ -69853,12 +70052,12 @@ mjG
 dXE
 vPg
 aoj
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+flZ
+kQN
+vKj
+fhn
+sgP
+flZ
 vPg
 vPg
 vPg
@@ -70110,12 +70309,12 @@ mjG
 dXE
 vPg
 aoj
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+flZ
+flZ
+oMH
+flZ
+vUa
+flZ
 vPg
 vPg
 vPg
@@ -70367,12 +70566,12 @@ bzl
 dXE
 vPg
 aoj
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+flZ
+tNP
+vMX
+fcS
+vKj
+flZ
 vPg
 vPg
 lnr
@@ -70624,12 +70823,12 @@ mjG
 dXE
 vPg
 aoj
-vPg
-aoj
-vPg
-vPg
-vPg
-vPg
+flZ
+flZ
+flZ
+flZ
+flZ
+flZ
 vPg
 vPg
 lnr
