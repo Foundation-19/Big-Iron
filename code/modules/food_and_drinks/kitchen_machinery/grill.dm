@@ -1,10 +1,11 @@
 /obj/machinery/grill
 	name = "grill"
 	desc = "Just like the old days."
-	icon = 'icons/obj/kitchen.dmi'
+	icon = 'modular_BD2/kitchen_50s/icons/kitchen32x64.dmi'
 	icon_state = "grill_open"
 	density = TRUE
-	layer = BELOW_OBJ_LAYER
+	plane = GAME_PLANE // so the smoke covers mobs
+	layer = ABOVE_MOB_LAYER // so the smoke covers mobs
 	use_power = NO_POWER_USE
 	var/grill_fuel = 0
 	var/obj/item/reagent_containers/food/grilled_item
@@ -27,38 +28,38 @@
 	else
 		icon_state = "grill_open"
 
-/obj/machinery/grill/attackby(obj/item/I, mob/user)
-	if(istype(I, /obj/item/stack/sheet/mineral/coal) || istype(I, /obj/item/stack/sheet/mineral/wood))
+/obj/machinery/grill/attackby(obj/item/I, mob/user) // updated to make use of coal and coke as fuel
+	if(istype(I, /obj/item/stack/sheet/mineral/coal) || istype(I, /obj/item/stack/sheet/coke) || istype(I, /obj/item/stack/ore/coal) || istype(I, /obj/item/stack/sheet/mineral/wood))
 		var/obj/item/stack/S = I
 		var/stackamount = S.get_amount()
-		to_chat(user, "<span class='notice'>You put [stackamount] [I]s in [src].</span>")
-		if(istype(I, /obj/item/stack/sheet/mineral/coal))
-			grill_fuel += (500 * stackamount)
+		to_chat(user, span_notice("You put [stackamount] [I]s in [src]."))
+		if(istype(I, /obj/item/stack/sheet/coke))
+			grill_fuel += (300 * stackamount)
 		else
 			grill_fuel += (50 * stackamount)
 		S.use(stackamount)
 		update_icon()
 		return
 	if(I.resistance_flags & INDESTRUCTIBLE)
-		to_chat(user, "<span class='warning'>You don't feel it would be wise to grill [I]...</span>")
+		to_chat(user, span_warning("You don't feel it would be wise to grill [I]..."))
 		return ..()
 	if(istype(I, /obj/item/reagent_containers))
 		if(istype(I, /obj/item/reagent_containers/food) && !istype(I, /obj/item/reagent_containers/food/drinks))
 			if(HAS_TRAIT(I, TRAIT_NODROP) || (I.item_flags & (ABSTRACT | DROPDEL)))
 				return ..()
 			else if(!grill_fuel)
-				to_chat(user, "<span class='notice'>There is not enough fuel.</span>")
+				to_chat(user, span_notice("There is not enough fuel."))
 				return
 			else if(!grilled_item && user.transferItemToLoc(I, src))
 				grilled_item = I
-				to_chat(user, "<span class='notice'>You put the [grilled_item] on [src].</span>")
+				to_chat(user, span_notice("You put the [grilled_item] on [src]."))
 				update_icon()
 				grill_loop.start()
 				return
 		else
 			if(I.reagents.has_reagent(/datum/reagent/consumable/monkey_energy))
 				grill_fuel += (20 * (I.reagents.get_reagent_amount(/datum/reagent/consumable/monkey_energy)))
-				to_chat(user, "<span class='notice'>You pour the Monkey Energy in [src].</span>")
+				to_chat(user, span_notice("You pour the Monkey Energy in [src]."))
 				I.reagents.remove_reagent("monkey_energy", I.reagents.get_reagent_amount(/datum/reagent/consumable/monkey_energy))
 				update_icon()
 				return

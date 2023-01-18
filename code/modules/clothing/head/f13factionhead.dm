@@ -368,6 +368,8 @@
 /obj/item/clothing/head/helmet/f13/legion/vet/combvexil
 	name = "legion bear vexillarius helmet"
 	desc = "This helmet is decorated with the pelt of a ashland bear."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-vex"
 	item_state = "legion-vex"
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
@@ -381,6 +383,8 @@
 
 /obj/item/clothing/head/helmet/f13/legion/vet/nightvexil
 	name = "legion nightstalker vexillarius helmet"
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	desc = "This helmet is decorated with the pelt of a nightstalker."
 	icon_state = "legion-vex-night"
 	item_state = "legion-vex-night"
@@ -419,6 +423,8 @@
 /obj/item/clothing/head/helmet/f13/legion/heavy
 	name = "reinforced legion veteran decanus helmet"
 	desc = "A metal helmet with ballistic visor and a plume, denoting veteran Decanus status."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-decvet"
 	item_state = "legion-decvet"
 	armor = list("melee" = 50, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 50)
@@ -433,6 +439,8 @@
 /obj/item/clothing/head/helmet/f13/legion/vet/decan
 	name = "legion veteran decanus helmet"
 	desc = "It's a metal helmet with an array of red, white and black feathers, unmistakably a Veteran Decanus."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-decvet-alt"
 	item_state = "legion-decvet-alt"
 	armor = list("melee" = 50, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 50)
@@ -440,12 +448,16 @@
 /obj/item/clothing/head/helmet/f13/legion/vet/decan/daemon
 	name = "Customized Decanus helmet"
 	desc = "A fully enclosed mask of melted bronze with eyeslits allowing a menacing gaze to lay upon your enemies."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "daemon_helmet"
 	item_state = "daemon_helmet"
 
 /obj/item/clothing/head/helmet/f13/legion/centurion
 	name = "legion centurion helmet"
 	desc = "A sturdy helmet from steel and brass with a red horizontal plume."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-centurion"
 	item_state = "legion-centurion"
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 25, "bomb" = 45, "bio" = 20, "rad" = 20, "fire" = 45, "acid" = 45, "wound" = 55)
@@ -455,6 +467,8 @@
 /obj/item/clothing/head/helmet/f13/legion/rangercent
 	name = "ranger-hunter centurion helmet"
 	desc = "The helmet of an NCR ranger, refit to serve as a Centurions helmet."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-rangercent"
 	item_state = "legion-rangercent"
 	armor = list("melee" = 25, "bullet" = 35, "laser" = 15, "energy" = 25, "bomb" = 35, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0, "wound" = 55)
@@ -464,6 +478,8 @@
 /obj/item/clothing/head/helmet/f13/legion/palacent
 	name = "paladin-slayer centurion helmet"
 	desc = "The once-marvelous helmet of the T-45d power armor set, repurposed by the Legion into a symbol of its might. It has a large plume of red horse hair across the top of it going horizontally, donoting the rank of Centurion."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-palacent"
 	item_state = "legion-palacent"
 	armor = list("melee" = 35, "bullet" = 30, "laser" = 40, "energy" = 35, "bomb" = 35, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 75)
@@ -473,6 +489,8 @@
 /obj/item/clothing/head/helmet/f13/legion/legate
 	name = "legion legate helmet"
 	desc = "A custom forged steel full helmet complete with abstract points and arches. The face is extremely intimidating, as it was meant to be. This particular one was ordered to be forged by Caesar, given to his second legate in exchange for his undying loyalty to Caesar."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-legate"
 	item_state = "legion-legate"
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 40, "energy" = 35, "bomb" = 45, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0, "wound" = 60)
@@ -484,6 +502,8 @@
 /obj/item/clothing/head/helmet/f13/legion/legionsalvagedhelmet
 	name = "legion heavy helmet"
 	desc = "A once-operational power armor helmet, repurposed by the Legion into a symbol of its might, sporting a bronze visor."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-heavy"
 	item_state = "legion-heavy"
 	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 15, "bomb" = 45, "bio" = 65, "rad" = 40, "fire" = 70, "acid" = 25, "wound" = 40)
@@ -491,12 +511,16 @@
 /obj/item/clothing/head/helmet/f13/combat/legion
 	name = "Legion combat helmet"
 	desc = "An old military grade pre-war combat helmet, sporting modifications and painted in the colours of the Legion."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-combat"
 	item_state = "legion-combat"
 
 /obj/item/clothing/head/helmet/f13/combat/mk2/legion
 	name = "Legion combat helmet"
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-combat2"
 	item_state = "legion-combat2"
 

@@ -1040,19 +1040,8 @@
 /obj/structure/fireplace/preloaded
 	fuel_added = 1000
 
-/* Added to base code
-/obj/structure/campfire/stove
-	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
-
-added to end of campfire/attackby
-	else if(fired && istype(P, /obj/item/stack/medical/gauze/improvised))
-		if(!ishuman(user))
-			return
-		if(istype(P, /obj/item/stack/medical/gauze/improvised))
-			var/obj/item/stack/medical/gauze/improvised/F = P
-			to_chat(user, "You start baking the [F.name].")
-			if(do_after(user, 30, target = src))
-				F.microwave_act()
+/*
+campfire.dm
 */
 
 // Finally time to add my old dirt alternative, ploughed dirt
@@ -1125,19 +1114,12 @@ added to end of campfire/attackby
 // -------------- PRE-STONE RINGED BONFIRE ----------------- 
 
 /obj/structure/bonfire/safe
-	var/stones = TRUE  // maybe this needs porting from Atom
+	stones = TRUE
 	density = TRUE
 
 /obj/structure/bonfire/safe/Initialize()
 	. = ..()
 	add_overlay("bonfire_stones")
-
-
-/obj/structure/closet/crate/footlocker
-	dense_when_open = FALSE
-
-/obj/structure/closet/crate/footchest
-	dense_when_open = FALSE
 
 
 // -------------- TURF STUFF ----------------- 
@@ -1212,8 +1194,8 @@ added to end of campfire/attackby
 	icon_state = "desertsmooth"
 	slowdown = 0.3
 	loots = list(
-						/obj/item/stack/crafting/metalparts/five = 10,
-						)
+			/obj/item/stack/crafting/metalparts/five = 10,
+			)
 	footstep = FOOTSTEP_LOOSE_SAND
 	barefootstep = FOOTSTEP_LOOSE_SAND
 	clawfootstep = FOOTSTEP_LOOSE_SAND
@@ -1266,10 +1248,6 @@ added to end of campfire/attackby
 	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
 	icon_state = "shoes_sandals"
 	item_state = "shoes_sandals"
-//	icon = 'icons/fallout/clothing/shoes.dmi'
-//	mob_overlay_icon = 'icons/fallout/onmob/clothes/shoe.dmi'
-//	icon_state = "legion_sandals"
-//	item_state = "legion_sandals"
 	strip_delay = 100
 	equip_delay_other = 100
 	permeability_coefficient = 0.9
