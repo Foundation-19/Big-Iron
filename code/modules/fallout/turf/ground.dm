@@ -152,11 +152,11 @@
 	var/obj/dugpit/mypit
 	var/unburylevel = 0
 	var/list/loots = list(
-						/obj/item/stack/crafting/metalparts/five = 30,
-						/obj/item/stack/crafting/goodparts/five = 30,
-						/obj/item/stack/ore/blackpowder/twenty = 10,
-						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid = 3,
-						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low = 3
+						/obj/item/stack/crafting/goodparts/three = 20,
+						/obj/item/stack/crafting/metalparts/five = 10,
+						/obj/item/advanced_crafting_components/alloys = 5,
+						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid = 2,
+						/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low = 2
 						)
 
 //For sculpting with more precision, the random picking does not work very well. Slowdown 0.5 instead of 1. No random armor or gunpowder or titanium. Use directions for control. - Pebbles

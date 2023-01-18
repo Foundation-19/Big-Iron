@@ -242,18 +242,18 @@
 	defer_change = TRUE
 
 
-/turf/closed/mineral/random/low_chance
+/turf/closed/mineral/random/low_chance // No uranium or diamond, too shallow. More crappy stuff like limestone or coal, and iron ofc.
 	icon_state = "rock_lowchance"
 	mineralChance = 6
 	mineralSpawnChanceList = list(
-		/turf/closed/mineral/uranium = 2, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 4, /turf/closed/mineral/titanium = 4,
-		/turf/closed/mineral/silver = 6, /turf/closed/mineral/plasma = 15, /turf/closed/mineral/iron = 40, /turf/closed/mineral/lead = 30, /turf/closed/mineral/limestone = 20,
+		/turf/closed/mineral/gold = 2, /turf/closed/mineral/titanium = 4, /turf/closed/mineral/silver = 5, /turf/closed/mineral/plasma = 5,
+		/turf/closed/mineral/iron = 40, /turf/closed/mineral/lead = 10, /turf/closed/mineral/limestone = 20, /turf/closed/mineral/coal = 20,
 		/*/turf/closed/mineral/gibtonite = 2, *//turf/closed/mineral/bscrystal = 1) //indestructable chance moved to child, /underground
 
 /turf/closed/mineral/random/low_chance/underground
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium = 2, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 4, /turf/closed/mineral/titanium = 4,
-		/turf/closed/mineral/silver = 6, /turf/closed/mineral/plasma = 15, /turf/closed/mineral/iron = 40, /turf/closed/mineral/lead = 30, /turf/closed/mineral/limestone = 20,
+		/turf/closed/mineral/silver = 5, /turf/closed/mineral/plasma = 10, /turf/closed/mineral/iron = 40, /turf/closed/mineral/lead = 20, /turf/closed/mineral/limestone = 20, /turf/closed/mineral/coal = 10,
 		/*/turf/closed/mineral/gibtonite = 2, *//turf/closed/mineral/bscrystal = 1, /turf/closed/mineral/indestructible = 50) //fortuna edit, indestructible rocks added to chance list
 
 /turf/closed/mineral/random/low_chance/earth_like
