@@ -1146,7 +1146,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/book/granter/trait/lowsurgery = 1,
 		/obj/item/reagent_containers/food/condiment/flour = 2,
 		/obj/item/soap/homemade = 1,
-		/obj/item/razor = 1
+		/obj/item/cosmetics/razor = 1
 		)
 
 /datum/outfit/loadout/worker
