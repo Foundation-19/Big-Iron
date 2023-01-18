@@ -7110,7 +7110,9 @@
 /area/f13/village)
 "dnm" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
-/obj/item/pen/fountain/captain,
+/obj/item/pen/fountain/captain{
+	name = "expensive fountain pen"
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -8342,16 +8344,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"dUM" = (
-/obj/structure/ladder/unbreakable{
-	height = 2;
-	id = "Legion"
-	},
-/obj/structure/sign/poster/prewar/poster65{
-	pixel_x = -32
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/caves)
 "dUO" = (
 /obj/structure/fence/wooden,
 /obj/structure/fence/wooden{
@@ -14400,10 +14392,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"gvk" = (
-/obj/structure/destructible/tribal_torch/lit,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/caves)
 "gvm" = (
 /obj/structure/wreck/trash/two_barrels{
 	max_integrity = 1000
@@ -15231,7 +15219,7 @@
 	obj_integrity = 400;
 	req_access_txt = "123"
 	},
-/turf/open/floor/wood/f13/oak,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "gOx" = (
 /obj/structure/urinal,
@@ -20065,12 +20053,6 @@
 	icon_state = "bluemark"
 	},
 /area/f13/ncr)
-"iPG" = (
-/obj/effect/turf_decal/caution{
-	dir = 4
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/caves)
 "iPW" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
@@ -24493,7 +24475,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "kVz" = (
-/obj/effect/landmark/start/f13/orator,
+/obj/effect/landmark/start/f13/frumentarius,
 /turf/open/floor/carpet/black,
 /area/f13/legion)
 "kVL" = (
@@ -27726,15 +27708,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
-"mtK" = (
-/obj/machinery/door/unpowered/securedoor{
-	damage_deflection = 28;
-	max_integrity = 400;
-	obj_integrity = 400;
-	req_access_txt = "123"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "mtL" = (
 /obj/effect/spawner/lootdrop/ammo,
 /turf/open/indestructible/ground/outside/desert,
@@ -29573,7 +29546,6 @@
 	dir = 1;
 	pixel_y = 12
 	},
-/obj/effect/landmark/start/f13/immune,
 /turf/open/floor/wood/f13/oak,
 /area/f13/legion)
 "nkW" = (
@@ -35421,11 +35393,9 @@
 	},
 /area/f13/tunnel)
 "qgQ" = (
-/obj/structure/simple_door/metal/fence{
-	dir = 8
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/structure/fireplace,
+/turf/open/floor/wood/f13/oak,
+/area/f13/legion)
 "qgZ" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -42256,7 +42226,7 @@
 /obj/structure/table/wood,
 /obj/item/paper_bin,
 /obj/item/pen/fountain/captain{
-	name = "Orator's fountain pen"
+	name = "expensive fountain pen"
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/legion)
@@ -45938,12 +45908,12 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "vzG" = (
-/obj/structure/decoration/warning{
-	name = "WARNING: NO MANS LAND AHEAD PVP ZONE";
-	pixel_x = -32
+/obj/structure/table,
+/obj/item/paper_bin,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
 	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/caves)
+/area/f13/building)
 "vzL" = (
 /obj/structure/table/wood/bar,
 /obj/item/reagent_containers/spray/cleaner,
@@ -48892,10 +48862,6 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"xaF" = (
-/obj/machinery/recycler,
-/turf/open/floor/wood/f13/oak,
-/area/f13/legion)
 "xbA" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -102309,7 +102275,7 @@ cpK
 hRk
 sVD
 iHj
-xff
+vzG
 gts
 oGB
 oVH
@@ -102841,9 +102807,9 @@ pZO
 xfy
 ffj
 hom
-hom
-hom
-hom
+gcK
+gcK
+gcK
 hom
 xBC
 xfy
@@ -103094,13 +103060,13 @@ xFO
 aYH
 tXK
 hom
-ury
+qgQ
 sdc
 cWq
 hom
-vzG
-dUM
-vzG
+gcK
+gcK
+gcK
 hom
 vsO
 xfy
@@ -103355,9 +103321,9 @@ qoP
 xfy
 cmm
 hom
-unp
-iPG
-gvk
+gcK
+gcK
+gcK
 hom
 uCR
 xfy
@@ -103612,9 +103578,9 @@ hom
 qSg
 hom
 hom
-lwj
-ggK
-ggK
+gcK
+gcK
+gcK
 hom
 nLe
 xfy
@@ -103869,9 +103835,9 @@ qCT
 cWG
 jhm
 hom
+gcK
 lnP
-qgQ
-lnP
+gcK
 hom
 wFg
 nZV
@@ -104129,7 +104095,7 @@ gcK
 gcK
 xfy
 xfy
-mtK
+wDP
 vHe
 xfy
 xfy
@@ -104914,7 +104880,7 @@ bpD
 gcK
 gcK
 hom
-xaF
+hom
 hom
 gcK
 gcK
