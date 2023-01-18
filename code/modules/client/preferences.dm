@@ -92,7 +92,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/jumpsuit_style = PREF_SUIT		//suit/skirt
 	var/hair_style = "Bald"				//Hair type
 	var/hair_color = "000000"				//Hair color
-	var/facial_hair_style = "Shaved"	//Face hair type
+	var/facial_hair_style = "Clean shave (Hairless)"	//Face hair type
 	var/facial_hair_color = "000000"		//Facial hair color
 	var/skin_tone = "caucasian1"		//Skin color
 	var/use_custom_skin_tone = FALSE

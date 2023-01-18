@@ -469,8 +469,8 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			//List of all valid dynamic_fhair_suffixes
 			var/static/list/fextensions
 			if(!fextensions)
-				var/icon/fhair_extensions = icon('icons/mob/facialhair_extensions.dmi')
-				fextensions = list()
+				var/icon/fhair_extensions = icon('icons/mob/facial_hair_extensions.dmi')
+				fextensions = list("+hood")
 				for(var/s in fhair_extensions.IconStates(1))
 					fextensions[s] = TRUE
 				qdel(fhair_extensions)
@@ -480,7 +480,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			var/fhair_file = S.icon
 			if(fextensions[fhair_state+dynamic_fhair_suffix])
 				fhair_state += dynamic_fhair_suffix
-				fhair_file = 'icons/mob/facialhair_extensions.dmi'
+				fhair_file = 'icons/mob/facial_hair_extensions.dmi'
 
 			var/mutable_appearance/facial_overlay = mutable_appearance(fhair_file, fhair_state, -HAIR_LAYER)
 
@@ -532,7 +532,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				var/static/list/extensions
 				if(!extensions)
 					var/icon/hair_extensions = icon('icons/mob/hair_extensions.dmi') //hehe
-					extensions = list()
+					extensions = list("+hood", "+generic")
 					for(var/s in hair_extensions.IconStates(1))
 						extensions[s] = TRUE
 					qdel(hair_extensions)
@@ -581,7 +581,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	if(HD && !(HAS_TRAIT(H, TRAIT_HUSK)))
 		// lipstick
 		if(H.lip_style && (LIPS in species_traits))
-			var/mutable_appearance/lip_overlay = mutable_appearance('icons/mob/human_face.dmi', "lips_[H.lip_style]", -BODY_LAYER)
+			var/mutable_appearance/lip_overlay = mutable_appearance('modular_BD2/fashion/icons/face_overlays.dmi', "lips_[H.lip_style]", -BODY_LAYER)
 			lip_overlay.color = H.lip_color
 
 			if(OFFSET_LIPS in H.dna.species.offset_features)
@@ -1371,8 +1371,8 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 /datum/species/proc/go_bald(mob/living/carbon/human/H)
 	if(QDELETED(H))	//may be called from a timer
 		return
-	H.facial_hair_style = "Shaved"
-	H.hair_style = "Bald"
+	H.facial_hair_style = "Clean shave (Hairless)"
+	H.hair_style = "Wild (Radiated)"
 	H.update_hair()
 
 //////////////////

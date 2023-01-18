@@ -1981,7 +1981,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "aVn" = (
-/obj/structure/furnace,
+/obj/structure/blacksmith/furnace,
 /turf/open/indestructible/ground/outside/wood,
 /area/f13/wasteland)
 "aVq" = (
@@ -2191,8 +2191,8 @@
 	pixel_y = 6
 	},
 /obj/structure/wreck/trash/one_tire{
-	pixel_y = -9;
-	pixel_x = -11
+	pixel_x = -11;
+	pixel_y = -9
 	},
 /obj/structure/tires/two,
 /turf/open/floor/plasteel/f13{
@@ -2286,7 +2286,7 @@
 "bbV" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Barracks";
-	req_access_txt = "121"
+	req_access_txt = "256"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
@@ -6943,7 +6943,7 @@
 	desc = "An airtight door, built to withstand a nuclear blast.";
 	max_integrity = 10000;
 	name = "Brotherhood of Steel";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -8756,7 +8756,7 @@
 "edx" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Storage";
-	req_access_txt = "121"
+	req_access_txt = "256"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
@@ -9789,7 +9789,9 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/wasteland)
 "eyf" = (
-/obj/machinery/door/airlock/grunge/store,
+/obj/machinery/door/airlock/grunge/store{
+	req_access_txt = "276"
+	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/store)
 "eyi" = (
@@ -10462,10 +10464,10 @@
 /area/f13/building)
 "eNx" = (
 /obj/structure/table/wood/settler,
-/obj/item/lipstick/purple,
-/obj/item/lipstick/jade,
-/obj/item/lipstick/black,
-/obj/item/lipstick,
+/obj/item/cosmetics/lipstick/purple,
+/obj/item/cosmetics/lipstick/jade,
+/obj/item/cosmetics/lipstick/black,
+/obj/item/cosmetics/lipstick,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "eNA" = (
@@ -10555,7 +10557,7 @@
 "ePz" = (
 /obj/machinery/door/airlock/medical{
 	name = "Medical Officer";
-	req_access_txt = "121"
+	req_access_txt = "256"
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -10591,7 +10593,9 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/village)
 "ePQ" = (
-/obj/machinery/door/unpowered/securedoor/mayor,
+/obj/machinery/door/unpowered/securedoor/mayor{
+	req_access_txt = "283"
+	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "ePY" = (
@@ -10619,7 +10623,8 @@
 /area/f13/wasteland)
 "eQk" = (
 /obj/machinery/door/unpowered/securedoor/police{
-	name = "\improper North Gatehouse"
+	name = "\improper North Gatehouse";
+	req_access_txt = "281"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
@@ -12050,7 +12055,8 @@
 /area/f13/building)
 "fzB" = (
 /obj/machinery/door/unpowered/securedoor/mayor{
-	name = "\improper Oasis Government Office"
+	name = "\improper Oasis Government Office";
+	req_access_txt = "283"
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
@@ -12526,7 +12532,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "fGT" = (
-/obj/machinery/door/unpowered/securedoor/farm,
+/obj/machinery/door/unpowered/securedoor/farm{
+	req_access_txt = "274"
+	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "fHb" = (
@@ -13518,7 +13526,7 @@
 /obj/machinery/door/unpowered/securedoor{
 	desc = "Door with a built-in lock. Can't be padlocked. You can smell the whisky and toughness from even outside the door.";
 	name = "Ranger's Outpost";
-	req_access_txt = "121"
+	req_access_txt = "256"
 	},
 /turf/open/floor/wood/wood_large,
 /area/f13/ncr)
@@ -15004,7 +15012,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "gIs" = (
-/obj/structure/anvil/obtainable/table,
+/obj/structure/blacksmith/anvil/obtainable/table,
 /obj/item/twohanded/sledgehammer/simple,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
@@ -15871,9 +15879,9 @@
 	},
 /area/f13/building)
 "hdh" = (
-/obj/item/blacksmith/woodrod,
-/obj/item/blacksmith/woodrod,
-/obj/item/blacksmith/woodrod,
+/obj/item/blacksmith/woodenrod,
+/obj/item/blacksmith/woodenrod,
+/obj/item/blacksmith/woodenrod,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 10;
 	icon_state = "dirt"
@@ -16986,7 +16994,7 @@
 /obj/machinery/door/airlock/security/glass{
 	name = "Gatehouse";
 	req_access = null;
-	req_access_txt = "121"
+	req_access_txt = "256"
 	},
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
@@ -18260,7 +18268,7 @@
 "iau" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Medbay";
-	req_access_txt = "121"
+	req_access_txt = "256"
 	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
@@ -19268,7 +19276,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "iyy" = (
-/obj/structure/anvil/obtainable/sandstone,
+/obj/structure/blacksmith/furnace/sandstone,
 /obj/item/twohanded/sledgehammer/simple,
 /obj/item/clothing/gloves/f13/blacksmith,
 /turf/open/indestructible/ground/outside/wood,
@@ -21355,7 +21363,9 @@
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "jvP" = (
-/obj/machinery/door/unpowered/securedoor/town_clinic,
+/obj/machinery/door/unpowered/securedoor/town_clinic{
+	req_access_txt = "274"
+	},
 /obj/machinery/door/poddoor/shutters/clinic,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
@@ -21897,7 +21907,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/structure/furnace,
+/obj/structure/blacksmith/furnace,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "jKT" = (
@@ -22560,7 +22570,8 @@
 /area/f13/legion)
 "kai" = (
 /obj/machinery/door/unpowered/securedoor/farm{
-	name = "\improper Kitchen"
+	name = "\improper Kitchen";
+	req_access_txt = "275"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
@@ -23137,7 +23148,7 @@
 "klR" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Holding Facility";
-	req_access_txt = "121"
+	req_access_txt = "256"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
@@ -34872,8 +34883,8 @@
 /obj/structure/mirror{
 	pixel_y = 32
 	},
-/obj/item/lipstick/black,
-/obj/item/lipstick/jade,
+/obj/item/cosmetics/lipstick/black,
+/obj/item/cosmetics/lipstick/jade,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/raiders)
 "pVQ" = (
@@ -34970,7 +34981,8 @@
 /area/f13/building)
 "pXM" = (
 /obj/machinery/door/unpowered/securedoor/police{
-	name = "\improper South Gatehouse"
+	name = "\improper South Gatehouse";
+	req_access_txt = "281"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
@@ -35075,7 +35087,7 @@
 	pixel_y = 12
 	},
 /obj/structure/rack/shelf_metal,
-/obj/item/razor,
+/obj/item/cosmetics/razor,
 /turf/open/floor/wood/f13/oak,
 /area/f13/legion)
 "pZS" = (
@@ -35095,8 +35107,8 @@
 /obj/structure/mirror{
 	pixel_y = 32
 	},
-/obj/item/lipstick/purple,
-/obj/item/lipstick,
+/obj/item/cosmetics/lipstick/purple,
+/obj/item/cosmetics/lipstick,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/raiders)
 "qaS" = (
@@ -36185,7 +36197,7 @@
 "qCn" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "NCR Camp Miller Entrance";
-	req_access_txt = "121"
+	req_access_txt = "256"
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain0"
@@ -37504,7 +37516,8 @@
 /area/f13/wasteland)
 "rkt" = (
 /obj/machinery/door/unpowered/securedoor/farm{
-	name = "\improper Kitchen"
+	name = "\improper Kitchen";
+	req_access_txt = "275"
 	},
 /obj/machinery/door/poddoor/shutters/bar,
 /turf/open/floor/wood/f13/oak,
@@ -42727,7 +42740,7 @@
 "tRP" = (
 /obj/item/scalpel,
 /obj/item/cautery,
-/obj/item/razor,
+/obj/item/cosmetics/razor,
 /obj/item/surgical_drapes,
 /obj/item/reagent_containers/medspray/sterilizine,
 /obj/structure/table/wood/settler,
@@ -42978,7 +42991,7 @@
 /obj/machinery/door/unpowered/securedoor{
 	desc = "Door with a built-in lock. Can't be padlocked. You can smell the whisky and toughness from even outside the door.";
 	name = "Ranger Station Oscar";
-	req_access_txt = "121"
+	req_access_txt = "256"
 	},
 /turf/open/floor/wood/wood_large,
 /area/f13/ncr)
@@ -46425,7 +46438,7 @@
 "vMN" = (
 /obj/machinery/door/airlock/hatch{
 	name = "NCR War Room";
-	req_access_txt = "121"
+	req_access_txt = "256"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
@@ -47599,7 +47612,7 @@
 /turf/open/floor/plasteel/darkred,
 /area/f13/village)
 "wxc" = (
-/obj/structure/anvil/obtainable/basic,
+/obj/structure/blacksmith/anvil/obtainable,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "wxi" = (
@@ -47785,7 +47798,7 @@
 	},
 /area/f13/building)
 "wBd" = (
-/obj/structure/furnace,
+/obj/structure/blacksmith/furnace,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "wBL" = (
@@ -50084,7 +50097,7 @@
 /obj/machinery/door/unpowered/securedoor{
 	desc = "Door with a built-in lock. Can't be padlocked. You can smell the whisky and toughness from even outside the door.";
 	name = "Ranger's Communications Post";
-	req_access_txt = "121"
+	req_access_txt = "256"
 	},
 /turf/open/floor/wood/wood_large,
 /area/f13/ncr)

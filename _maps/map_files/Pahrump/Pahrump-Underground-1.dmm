@@ -316,7 +316,7 @@
 /obj/machinery/door/airlock/grunge{
 	id_tag = "sentdorm";
 	name = "Head Paladin Billet";
-	req_access_txt = "120"
+	req_access_txt = "268"
 	},
 /obj/structure/curtain{
 	color = "#5c131b"
@@ -1109,7 +1109,7 @@
 "aSi" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Head Paladin Office";
-	req_access_txt = "120"
+	req_access_txt = "268"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -1127,7 +1127,7 @@
 "aSv" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Maintenance System";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/enclave)
@@ -1235,7 +1235,7 @@
 "aWQ" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Fargo Administration";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -2557,14 +2557,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Restroom";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
 /area/f13/enclave)
 "bLj" = (
-/obj/structure/furnace,
+/obj/structure/blacksmith/furnace,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "yellowrustysolid"
 	},
@@ -4751,7 +4751,7 @@
 /area/f13/bunker)
 "djq" = (
 /obj/structure/simple_door/metal/barred{
-	req_one_access_txt = "120"
+	req_one_access_txt = "265"
 	},
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
@@ -4943,7 +4943,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Medical";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
@@ -5370,7 +5370,9 @@
 	},
 /area/f13/building)
 "dEl" = (
-/obj/machinery/door/airlock/grunge/store/prospector,
+/obj/machinery/door/airlock/grunge/store/prospector{
+	req_access_txt = "277"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "dEr" = (
@@ -6742,7 +6744,9 @@
 /area/f13/building)
 "exn" = (
 /obj/effect/turf_decal/stripes/corner,
-/obj/machinery/door/airlock/mining,
+/obj/machinery/door/airlock/mining{
+	req_access_txt = "277"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "exp" = (
@@ -7513,7 +7517,7 @@
 "eTY" = (
 /obj/machinery/door/airlock/vault{
 	name = "Fort Hazard";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -7679,7 +7683,7 @@
 "faQ" = (
 /obj/machinery/door/airlock/vault{
 	name = "Fort Hazard";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
@@ -7707,7 +7711,7 @@
 "fcz" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Holding Cell";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -7817,7 +7821,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/vault{
 	name = "Fort Hazard Maintenance System";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
@@ -8921,9 +8925,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/bunker)
 "fMP" = (
-/obj/structure/anvil/obtainable{
-	anvilquality = 10
-	},
+/obj/structure/blacksmith/anvil/obtainable,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -9254,7 +9256,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/bunker)
 "fVm" = (
-/obj/structure/furnace,
+/obj/structure/blacksmith/furnace,
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},
@@ -9377,7 +9379,7 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "gaN" = (
-/obj/structure/anvil/obtainable/basic,
+/obj/structure/blacksmith/anvil/obtainable,
 /turf/open/floor/f13{
 	icon_state = "dark"
 	},
@@ -9633,7 +9635,7 @@
 "gkr" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazardous Material Storage";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -9812,7 +9814,7 @@
 "gqA" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Canteen";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -9861,7 +9863,7 @@
 "gtv" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Power Armor Maintenance Room";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -10762,7 +10764,7 @@
 "gVW" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Interrogation";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -12706,7 +12708,7 @@
 "iET" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Farm";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -14347,7 +14349,7 @@
 /obj/machinery/door/airlock/hatch{
 	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi';
 	name = "Fort Hazard Admin Accommodation";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -14457,7 +14459,7 @@
 /obj/item/storage/backpack/duffelbag/med/surgery{
 	pixel_y = 15
 	},
-/obj/item/razor,
+/obj/item/cosmetics/razor,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -14898,8 +14900,8 @@
 /obj/machinery/door/poddoor/gate/preopen{
 	id = "boscheckpoint";
 	name = "Fargo Outpost";
-	req_one_access = "120";
-	req_one_access_txt = "120"
+	req_one_access = "265";
+	req_one_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
@@ -16054,7 +16056,7 @@
 "lpx" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Chapel";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -16388,7 +16390,7 @@
 "lFa" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Fargo Storage";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -16438,7 +16440,7 @@
 "lHj" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Medical";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -16507,7 +16509,7 @@
 /obj/machinery/door/airlock/grunge{
 	id_tag = "headscribedorm";
 	name = "Head Scribe Office";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -16634,7 +16636,7 @@
 "lPl" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Senior Paladin Billet";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -17842,7 +17844,7 @@
 /turf/open/floor/carpet/purple,
 /area/f13/building)
 "mYJ" = (
-/obj/structure/anvil/obtainable/basic,
+/obj/structure/blacksmith/anvil/obtainable,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "yellowrustysolid"
 	},
@@ -18136,14 +18138,14 @@
 "niz" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Outpost Sleeping Quarters";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
 	},
 /area/f13/brotherhood/dorms)
 "njG" = (
-/obj/item/ingot/silver,
+/obj/item/blacksmith/ingot/silver,
 /obj/structure/closet/crate,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -18173,7 +18175,7 @@
 "nlm" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard R&D";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -18547,7 +18549,7 @@
 "nEg" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Fargo Outpost";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -18694,7 +18696,7 @@
 /area/f13/sewer)
 "nIu" = (
 /obj/structure/simple_door/metal/barred{
-	req_one_access_txt = "120"
+	req_one_access_txt = "265"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -19015,7 +19017,7 @@
 /area/f13/caves)
 "nVz" = (
 /obj/machinery/door/airlock/grunge{
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -19525,7 +19527,7 @@
 /area/f13/building)
 "oqj" = (
 /obj/structure/simple_door/metal/barred{
-	req_one_access_txt = "120"
+	req_one_access_txt = "265"
 	},
 /obj/item/lock_construct,
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -19588,7 +19590,7 @@
 "ouH" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Fargo Outpost";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -19717,7 +19719,7 @@
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
 "oyL" = (
-/obj/structure/furnace,
+/obj/structure/blacksmith/furnace,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -19826,7 +19828,7 @@
 "oFo" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Fargo Canteen";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -20665,7 +20667,7 @@
 "pnO" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Fargo Admin Accommodation";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -20800,7 +20802,7 @@
 "ptr" = (
 /obj/machinery/door/airlock/vault{
 	name = "Fort Hazard Maintenance System";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -21042,7 +21044,7 @@
 /area/f13/caves)
 "pDM" = (
 /obj/structure/table/reinforced{
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /obj/structure/table/reinforced,
 /obj/structure/barricade/bars{
@@ -22004,7 +22006,7 @@
 "qub" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Senior Paladin Office";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -22843,7 +22845,7 @@
 /area/f13/bunker)
 "raa" = (
 /obj/machinery/door/airlock/grunge{
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/carpet,
 /area/f13/brotherhood/archives)
@@ -23020,7 +23022,7 @@
 /area/f13/bunker)
 "rkb" = (
 /obj/structure/table/reinforced{
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /obj/structure/table/reinforced,
 /obj/structure/barricade/bars{
@@ -24272,7 +24274,7 @@
 /obj/machinery/door/airlock/hatch{
 	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi';
 	name = "Fort Hazard Administration Centre";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -24699,7 +24701,7 @@
 "sxm" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Head Knight Office";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
@@ -24826,7 +24828,7 @@
 /area/f13/building)
 "sBM" = (
 /obj/machinery/door/airlock/grunge{
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -25056,7 +25058,7 @@
 	desc = "An airtight door, built to withstand a nuclear blast.";
 	max_integrity = 10000;
 	name = "Fargo Outpost";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/brotherhood)
@@ -25215,7 +25217,7 @@
 "sUC" = (
 /obj/machinery/door/airlock/freezer{
 	name = "Fort Hazard Food Storage";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/f13/enclave)
@@ -25483,7 +25485,7 @@
 "tgQ" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fargo Holding Cell";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -26486,7 +26488,7 @@
 "uac" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Fargo Outpost";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -27348,7 +27350,7 @@
 "uMU" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Fargo Outpost";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -27558,7 +27560,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "uXH" = (
-/obj/structure/shelf_wood,
+/obj/structure/rack/shelf_wood,
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/carpet/black,
@@ -27885,7 +27887,7 @@
 "vhk" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Fargo Canteen";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -28643,7 +28645,7 @@
 "vJI" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Supply Department";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -28911,7 +28913,7 @@
 "vSy" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Head Knight Office";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"
@@ -29786,7 +29788,7 @@
 "wEv" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Billet";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -30116,7 +30118,7 @@
 "wQF" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Polk Exclusion Zone";
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -30533,7 +30535,7 @@
 "xjL" = (
 /obj/machinery/door/window/brigdoor{
 	dir = 1;
-	req_one_access_txt = "134"
+	req_one_access_txt = "269"
 	},
 /obj/machinery/door/window,
 /obj/structure/table/reinforced{
@@ -31344,7 +31346,7 @@
 "xQo" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Fargo Outpost";
-	req_access_txt = "120"
+	req_access_txt = "265"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red{
 	icon_state = "darkrustysolid"

@@ -32,7 +32,7 @@
 			if(new_style)
 				H.facial_hair_style = new_style
 		else
-			H.facial_hair_style = "Shaved"
+			H.facial_hair_style = "Clean shave (Hairless)"
 
 		//handle normal hair
 		var/new_style = input(user, "Select a hair style", "Grooming")  as null|anything in GLOB.hair_styles_list

@@ -423,7 +423,7 @@
 	new /obj/item/surgical_drapes(src)
 	new /obj/item/clothing/mask/surgical(src)
 	new /obj/item/reagent_containers/medspray/sterilizine(src)
-	new /obj/item/razor(src)
+	new /obj/item/cosmetics/razor(src)
 	new /obj/item/stack/sticky_tape/surgical(src)
 	new /obj/item/stack/sticky_tape/surgical(src)
 	new /obj/item/stack/medical/bone_gel(src)
@@ -654,7 +654,7 @@
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/grenade/syndieminibomb(src)
 
-obj/item/storage/backpack/duffelbag/syndie/shredderbundle
+/obj/item/storage/backpack/duffelbag/syndie/shredderbundle
 	desc = "A large duffel bag containing two CX Shredders, some magazines, an elite hardsuit, and a chest rig."
 
 /obj/item/storage/backpack/duffelbag/syndie/shredderbundle/PopulateContents()

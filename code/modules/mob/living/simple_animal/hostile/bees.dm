@@ -284,7 +284,7 @@
 	..()
 
 
-/obj/item/queen_bee/bought/Initialize()
+/obj/item/queen_bee/Initialize()
 	. = ..()
 	queen = new(src)
 

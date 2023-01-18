@@ -25,7 +25,7 @@
 	var/hair_alpha = 255
 	//Facial hair colour and style
 	var/facial_hair_color = "000"
-	var/facial_hair_style = "Shaved"
+	var/facial_hair_style = "Clean shave (Hairless)"
 	//Eye Colouring
 
 	var/obj/item/organ/eyes/eyes = null
@@ -77,7 +77,7 @@
 	if(HAS_TRAIT(C, TRAIT_HUSK))
 		real_name = "Unknown"
 		hair_style = "Bald"
-		facial_hair_style = "Shaved"
+		facial_hair_style = "Clean shave (Hairless)"
 		lip_style = null
 
 	else if(!animal_origin)
@@ -96,7 +96,7 @@
 				facial_hair_color = H.facial_hair_color
 			hair_alpha = S.hair_alpha
 		else
-			facial_hair_style = "Shaved"
+			facial_hair_style = "Clean shave (Hairless)"
 			facial_hair_color = "000"
 			hair_alpha = 255
 		//Hair

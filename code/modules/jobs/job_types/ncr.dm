@@ -165,7 +165,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	
 	outfit = /datum/outfit/job/ncr/f13captain
 
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCRREP, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_CHANGE_IDS, ACCESS_NCR3, ACCESS_NCR4)
 
 	loadout_options = list(
 		/datum/outfit/loadout/captainbackline,	// Commander's Coat
@@ -190,7 +190,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncr = 1,
 		/obj/item/megaphone = 1,
-		/obj/item/grenade/syndieminibomb/concussion = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
 		/obj/item/lighter = 1,
 		/obj/item/reagent_containers/food/snacks/grown/tobacco/dried = 1,
@@ -246,7 +245,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_NCR3)
 
 /datum/outfit/job/ncr/f13lieutenant		// Republic's Pride, Binoculars, Bayonet, M1911 custom
 	name = "NCR Lieutenant"
@@ -270,7 +269,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/ammo_box/magazine/garand308 = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
-		/obj/item/grenade/syndieminibomb/concussion = 1,
 		/obj/item/stack/crafting/armor_plate = 5
 		)
 
@@ -366,7 +364,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	outfit = /datum/outfit/job/ncr/f13representative
 
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCRREP)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_CHANGE_IDS, ACCESS_NCR3, ACCESS_NCR4)
+	minimal_access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_CHANGE_IDS, ACCESS_NCR3, ACCESS_NCR4)
 
 	loadout_options = list(
 		/datum/outfit/loadout/repbrahminbaron,
@@ -438,7 +437,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	outfit = /datum/outfit/job/ncr/f13vetranger
 	
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_CHANGE_IDS, ACCESS_NCR3, ACCESS_NCR4)
+	minimal_access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_CHANGE_IDS, ACCESS_NCR3, ACCESS_NCR4)
 
 /datum/outfit/job/ncr/f13vetranger
 	name = "NCR Veteran Ranger"
@@ -587,7 +587,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
 
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
 
 /datum/outfit/job/ncr/f13heavytrooper	// Mk. 23, Bayonet, Heavy armor
 	name = "NCR Heavy Trooper"
@@ -629,7 +629,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	outfit = /datum/outfit/job/ncr/f13combatengineer
 
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
 
 /datum/outfit/job/ncr/f13combatengineer
 	name = "NCR Combat Engineer"
@@ -853,7 +853,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
 
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
 
 /datum/outfit/job/ncr/f13medicalofficer // M1911 Custom, Telescopic baton
 	name = "NCR Medical Officer"

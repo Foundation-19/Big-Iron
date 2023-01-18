@@ -533,7 +533,7 @@
 		/obj/item/pen,
 		/obj/item/toy/crayon/spraycan/borg,
 		/obj/item/hand_labeler/borg,
-		/obj/item/razor,
+		/obj/item/cosmetics/razor,
 		/obj/item/rsf/cyborg,
 		/obj/item/instrument/piano_synth,
 		/obj/item/reagent_containers/dropper,
@@ -710,7 +710,7 @@
 	var/mob/living/silicon/robot/assault = loc
 	assault.faction += "wastebots" //So other assaultrons don't gank you for existing.
 
-obj/item/robot_module/assaultron/remove_module(obj/item/I, delete_after)
+/obj/item/robot_module/assaultron/remove_module(obj/item/I, delete_after)
 	..()
 	var/mob/living/silicon/robot/assault = loc
 	assault.faction -= "wastebots" //Removes the faction if the module is removed.

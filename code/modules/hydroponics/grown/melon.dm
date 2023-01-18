@@ -12,7 +12,6 @@
 	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
 	icon_dead = "watermelon-dead"
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
-	mutatelist = list(/obj/item/seeds/watermelon/holy)
 	reagents_add = list(/datum/reagent/water = 0.2, /datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.2)
 
 /obj/item/seeds/watermelon/suicide_act(mob/user)
@@ -37,6 +36,8 @@
 	juice_results = list(/datum/reagent/consumable/watermelonjuice = 0)
 	wine_power = 40
 
+/*
+
 // Holymelon
 /obj/item/seeds/watermelon/holy
 	name = "pack of holymelon seeds"
@@ -60,7 +61,6 @@
 	wine_power = 70 //Water to wine, baby.
 	wine_flavor = "divinity"
 
-/*
 /obj/item/reagent_containers/food/snacks/grown/holymelon/Initialize()
 	. = ..()
 	var/uses = 1

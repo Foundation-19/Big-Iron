@@ -77,7 +77,7 @@
 	reqs = list(
 		/obj/item/reagent_containers/glass/bowl = 1,
 		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus = 3,
-		/obj/item/reagent_containers/food/snacks/grown/apple/gold = 1
+		/obj/item/reagent_containers/food/snacks/grown/apple = 1
 	)
 	result = /obj/item/reagent_containers/food/snacks/salad/aesirsalad
 	subcategory = CAT_SALAD

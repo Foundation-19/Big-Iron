@@ -872,7 +872,7 @@
 	can_scope = TRUE
 	zoomable = FALSE
 
-//Colt Rangemaster				Keywords: 7.62mm, Semi-auto, 10/20 round magazine, 35dmg
+//Colt Rangemaster				Keywords:5.56/.223, Semi-auto, 10 round magazine, 30dmg
 /obj/item/gun/ballistic/automatic/rangemaster
 	name = "Colt Rangemaster"
 	desc = "A Colt Rangemaster semi-automatic rifle, chambered for 7.62x51. Single-shot only."
@@ -880,9 +880,10 @@
 	item_state = "308"
 	icon_prefix = "308"
 	force = 20
-	mag_type = /obj/item/ammo_box/magazine/m762
-	extra_damage = 40
-	extra_penetration = 0.2
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
+	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
+	extra_damage = 30
+	extra_penetration = 0.1
 	extra_speed = 500
 	burst_size = 1
 	fire_delay = 4
@@ -1301,7 +1302,7 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 
-obj/item/gun/ballistic/automatic/bar
+/obj/item/gun/ballistic/automatic/bar
 	name = "automatic rifle (.308)"
 	desc = "An ancient machine gun that looks like outdated even by pre-war standards. It has Colt etched on one-side and Sierra Madre on the other. It is alarmingly heavy for a rifle."
 	icon = 'icons/fallout/objects/guns/bar.dmi'
