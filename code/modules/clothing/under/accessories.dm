@@ -325,7 +325,7 @@
 /obj/item/clothing/accessory/pocketprotector/cosmetology/Initialize()
 	. = ..()
 	for(var/i in 1 to 3)
-		new /obj/item/lipstick/random(src)
+		new /obj/item/cosmetics/lipstick/random(src)
 
 ////////////////
 //OONGA BOONGA//
