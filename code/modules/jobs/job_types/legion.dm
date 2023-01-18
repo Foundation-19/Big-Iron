@@ -681,7 +681,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/restraints/legcuffs/bola/tactical = 1
 		)
 		
-/datum/outfit/loadout/expsniper
+/datum/outfit/loadout/expscout
 	name = "Scout"
 	suit_store = /obj/item/gun/ballistic/automatic/delisle/commando
 	backpack_contents = list(
@@ -847,7 +847,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	neck = /obj/item/storage/belt/holster
 	backpack_contents = list(
 		/obj/item/twohanded/spear/lance = 1,
-		/obj/item/ammo_box/magazine/pistol10mm/extended = 2,
+		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
 		/obj/item/ammo_box/a357 = 1,
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2
