@@ -872,7 +872,7 @@
 	can_scope = TRUE
 	zoomable = FALSE
 
-//Colt Rangemaster				Keywords: 7.62mm, Semi-auto, 10/20 round magazine, 35dmg
+//Colt Rangemaster				Keywords:5.56/.223, Semi-auto, 10 round magazine, 30dmg
 /obj/item/gun/ballistic/automatic/rangemaster
 	name = "Colt Rangemaster"
 	desc = "A Colt Rangemaster semi-automatic rifle, chambered for 7.62x51. Single-shot only."
@@ -880,9 +880,10 @@
 	item_state = "308"
 	icon_prefix = "308"
 	force = 20
-	mag_type = /obj/item/ammo_box/magazine/m762
-	extra_damage = 40
-	extra_penetration = 0.2
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
+	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
+	extra_damage = 30
+	extra_penetration = 0.1
 	extra_speed = 500
 	burst_size = 1
 	fire_delay = 4

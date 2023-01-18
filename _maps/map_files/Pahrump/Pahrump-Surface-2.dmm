@@ -2191,8 +2191,8 @@
 	pixel_y = 6
 	},
 /obj/structure/wreck/trash/one_tire{
-	pixel_y = -9;
-	pixel_x = -11
+	pixel_x = -11;
+	pixel_y = -9
 	},
 /obj/structure/tires/two,
 /turf/open/floor/plasteel/f13{
@@ -9789,7 +9789,9 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/wasteland)
 "eyf" = (
-/obj/machinery/door/airlock/grunge/store,
+/obj/machinery/door/airlock/grunge/store{
+	req_access_txt = "276"
+	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/store)
 "eyi" = (
@@ -10591,7 +10593,9 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/village)
 "ePQ" = (
-/obj/machinery/door/unpowered/securedoor/mayor,
+/obj/machinery/door/unpowered/securedoor/mayor{
+	req_access_txt = "283"
+	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "ePY" = (
@@ -10619,7 +10623,8 @@
 /area/f13/wasteland)
 "eQk" = (
 /obj/machinery/door/unpowered/securedoor/police{
-	name = "\improper North Gatehouse"
+	name = "\improper North Gatehouse";
+	req_access_txt = "281"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
@@ -12050,7 +12055,8 @@
 /area/f13/building)
 "fzB" = (
 /obj/machinery/door/unpowered/securedoor/mayor{
-	name = "\improper Oasis Government Office"
+	name = "\improper Oasis Government Office";
+	req_access_txt = "283"
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
@@ -12526,7 +12532,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "fGT" = (
-/obj/machinery/door/unpowered/securedoor/farm,
+/obj/machinery/door/unpowered/securedoor/farm{
+	req_access_txt = "274"
+	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "fHb" = (
@@ -21355,7 +21363,9 @@
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
 "jvP" = (
-/obj/machinery/door/unpowered/securedoor/town_clinic,
+/obj/machinery/door/unpowered/securedoor/town_clinic{
+	req_access_txt = "274"
+	},
 /obj/machinery/door/poddoor/shutters/clinic,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
@@ -22560,7 +22570,8 @@
 /area/f13/legion)
 "kai" = (
 /obj/machinery/door/unpowered/securedoor/farm{
-	name = "\improper Kitchen"
+	name = "\improper Kitchen";
+	req_access_txt = "275"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/building)
@@ -34970,7 +34981,8 @@
 /area/f13/building)
 "pXM" = (
 /obj/machinery/door/unpowered/securedoor/police{
-	name = "\improper South Gatehouse"
+	name = "\improper South Gatehouse";
+	req_access_txt = "281"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
@@ -37504,7 +37516,8 @@
 /area/f13/wasteland)
 "rkt" = (
 /obj/machinery/door/unpowered/securedoor/farm{
-	name = "\improper Kitchen"
+	name = "\improper Kitchen";
+	req_access_txt = "275"
 	},
 /obj/machinery/door/poddoor/shutters/bar,
 /turf/open/floor/wood/f13/oak,

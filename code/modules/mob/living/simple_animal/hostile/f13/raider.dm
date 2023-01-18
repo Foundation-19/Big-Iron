@@ -123,12 +123,20 @@
 	health = 170
 	extra_projectiles = 3
 	projectiletype = /obj/item/projectile/bullet/c45/op
-	loot = list(/obj/item/gun/ballistic/automatic/smg/greasegun, /obj/item/clothing/head/helmet/f13/combat/mk2/raider, /obj/item/clothing/suit/armor/f13/combat/mk2/raider, /obj/item/clothing/under/f13/ravenharness)
+	loot = list(/obj/item/clothing/under/f13/ravenharness)
 
 /mob/living/simple_animal/hostile/raider/ranged/boss/Aggro()
 	..()
 	summon_backup(15)
 	say("KILL 'EM, FELLAS!")
+
+/mob/living/simple_animal/hostile/raider/ranged/boss/death(gibbed)
+	var/turf/T = get_turf(src)
+	if(prob(20))
+		new /obj/item/gun/ballistic/automatic/smg/greasegun(T)
+		new /obj/item/clothing/head/helmet/f13/combat/mk2/raider(T)
+		new /obj/item/clothing/suit/armor/f13/combat/mk2/raider(T)
+	. = ..()
 
 // RANGED RAIDER WITH ARMOR
 /mob/living/simple_animal/hostile/raider/ranged/sulphiteranged
