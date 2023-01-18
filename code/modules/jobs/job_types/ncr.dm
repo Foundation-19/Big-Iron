@@ -464,7 +464,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/vrclassic
 	name = "Sniper Veteran Ranger"
-	suit_store = /obj/item/gun/ballistic/automatic/sniper
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_dinner = 1,
 		/obj/item/ammo_box/magazine/w308 = 2
@@ -475,7 +475,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_lunch = 1,
-		/obj/item/ammo_box/loader/c4570 = 3
+		/obj/item/ammo_box/tube/c4570 = 3
 		)
 
 /datum/outfit/loadout/vrshotgunner
