@@ -520,7 +520,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/recdectribal
 	name = "Blackliner Decanus"
-	suit_store = /obj/item/gun/ballistic/rifle/sks
+	suit_store = /obj/item/gun/ballistic/automatic/m1garand/sks
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/sks = 3,
 		/obj/item/melee/onehanded/machete/forgedmachete = 1,
@@ -695,7 +695,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		
 /datum/outfit/loadout/expsniper
 	name = "Sniper"
-	suit_store = /obj/item/gun/ballistic/rifle/sks
+	suit_store = /obj/item/gun/ballistic/automatic/m1garand/sks
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/sks = 3,
 		/obj/item/attachments/scope = 1,
