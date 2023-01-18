@@ -75,9 +75,9 @@
 	name = "Handcuffs"
 	id = "handcuffs"
 	build_type = AUTOLATHE | NO_PUBLIC_LATHE
-	materials = list(/datum/material/iron = 500)
+	materials = list(MAT_METAL = 500)
 	build_path = /obj/item/restraints/handcuffs
-	category = list("hacked", "Security")
+	category = list("hacked", "Security", "Misc")
 
 /*
 /datum/design/rifle_receiver

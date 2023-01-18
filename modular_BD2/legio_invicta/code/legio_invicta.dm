@@ -1248,10 +1248,6 @@ campfire.dm
 	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
 	icon_state = "shoes_sandals"
 	item_state = "shoes_sandals"
-//	icon = 'icons/fallout/clothing/shoes.dmi'
-//	mob_overlay_icon = 'icons/fallout/onmob/clothes/shoe.dmi'
-//	icon_state = "legion_sandals"
-//	item_state = "legion_sandals"
 	strip_delay = 100
 	equip_delay_other = 100
 	permeability_coefficient = 0.9

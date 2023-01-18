@@ -265,7 +265,7 @@
 	total_mass = TOTAL_MASS_TINY_ITEM
 	w_class = WEIGHT_CLASS_TINY
 	tool_behaviour = TOOL_SCALPEL //ghetto surgery yay
-	toolspeed = 1.2
+	toolspeed = 1.6
 
 /obj/item/melee/onehanded/straight_razor/proc/manual_shave(mob/living/carbon/human/H, location = BODY_ZONE_PRECISE_MOUTH)
 	if(location == BODY_ZONE_PRECISE_MOUTH)

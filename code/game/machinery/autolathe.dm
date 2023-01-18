@@ -498,6 +498,7 @@
 							"Dinnerware",
 							)
 
+
 /obj/machinery/autolathe/ammo
 	name = "reloading bench"
 	icon = 'icons/fallout/machines/reloadingbench.dmi'
@@ -520,56 +521,45 @@
 		/datum/material/titanium,
 		/datum/material/blackpowder,
 		/datum/material/uranium)
-	var/simple = FALSE
-	var/basic = FALSE
-	var/intermediate = FALSE
-	var/advanced = FALSE
+	var/simple = 0
+	var/basic = 0
+	var/intermediate = 0
+	var/advanced = 0
+	/// does this bench accept books?
+	var/accepts_books = TRUE
 	tooadvanced = TRUE //technophobes will still need to be able to make ammo	//not anymore they wont
 
-/obj/machinery/autolathe/ammo/examine(mob/user)
-	. = ..()
-
-	if(simple)
-		. += "<span class='notice'>It is upgraded with simple ammuniton schematics."
-	if(basic)
-		. += "<span class='notice'>It is upgraded with basic ammuniton schematics."
-	if(intermediate)
-		. += "<span class='notice'>It is upgraded with intermediate ammuniton schematics."
-	if(advanced)
-		. += "<span class='notice'>It is upgraded with advanced ammuniton schematics."
-
-/obj/machinery/autolathe/ammo/attackby(obj/item/I, mob/user, params)
-	. = ..()
-	if(!panel_open)
-		return
-	if(!busy && !stat)										// Lets you dump ammo from casing bags, ammo boxes and guns directly
-		if(istype(I, /obj/item/storage/bag/casings))
-			insert_things_from_bag(user, I)
+/obj/machinery/autolathe/ammo/attackby(obj/item/O, mob/user, params)
+	if(!busy && !stat)
+		if(istype(O, /obj/item/storage/bag/casings))
+			insert_things_from_bag(user, O)
 			return
-		if(istype(I, /obj/item/ammo_box))
-			if(pre_insert_check(user, I))
-				if(!insert_bullets_from_box(user, I))
+		if(istype(O, /obj/item/ammo_box))
+			if(pre_insert_check(user, O))
+				if(!insert_bullets_from_box(user, O))
 					return
-	if(I.type in typesof(/obj/item/book/granter/crafting_recipe/gunsmithing))
-		var/obj/item/book/granter/crafting_recipe/gunsmithing/inserted_book = I
-		to_chat(user, "<span class='notice'>You upgrade [src] with [inserted_book.autolathe_level] ammunition schematics.</span>")
-		switch(inserted_book.autolathe_level)
-			if("simple")
-				simple = TRUE
-				qdel(I)
-				add_overlay("book1")
-			if("basic")
-				basic = TRUE
-				qdel(I)
-				add_overlay("book2")
-			if("intermediate")
-				intermediate = TRUE
-				qdel(I)
-				add_overlay("book3")
-			if("advanced")
-				advanced = TRUE
-				add_overlay("book4")
-				qdel(I)
+	if(panel_open && accepts_books)
+		if(!simple && istype(O, /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one))
+			to_chat(user, "<span class='notice'>You upgrade [src] with simple ammunition schematics.</span>")
+			simple = TRUE
+			qdel(O)
+			return
+		if(!basic && istype(O, /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two))
+			to_chat(user, "<span class='notice'>You upgrade [src] with basic ammunition schematics.</span>")
+			basic = TRUE
+			qdel(O)
+			return
+		else if(!intermediate && istype(O, /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three))
+			to_chat(user, "<span class='notice'>You upgrade [src] with intermediate ammunition schematics.</span>")
+			intermediate = TRUE
+			qdel(O)
+			return
+		else if(!advanced && istype(O, /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four))
+			to_chat(user, "<span class='notice'>You upgrade [src] with advanced ammunition schematics.</span>")
+			advanced = TRUE
+			qdel(O)
+			return
+	return ..()
 
 /obj/machinery/autolathe/ammo/proc/insert_thing(obj/item/thing, obj/item/thing_bag, datum/component/material_container/mat_box)
 	var/mat_amount = mat_box.get_item_material_amount(thing)
@@ -584,39 +574,6 @@
 	if(mat_box.after_insert)
 		mat_box.after_insert.Invoke(thing, mat_box.last_inserted_id, mat_box.insert_item(thing))
 	return AUTOLATHE_INSERT_OK
-
-/obj/machinery/autolathe/ammo/proc/insert_things_from_bag(mob/user, obj/item/storage/bag/casings/O)
-	var/obj/item/storage/bag/casings/casings_bag = O
-	var/datum/component/material_container/mats = GetComponent(/datum/component/material_container)
-	var/count = 0
-	if(INTERACTING_WITH(user, src))
-		return
-	if(!length(casings_bag.contents))
-		to_chat(user, span_warning("There's nothing in \the [casings_bag] to load into \the [src]!"))
-		return
-	to_chat(user, span_notice("You start dumping \the [casings_bag] into \the [src]."))
-	if(!do_after(user, 2 SECONDS, target = src))
-		to_chat(user, span_notice("You stop dumping \the [casings_bag] into \the [src]."))
-		return
-	for(var/obj/item/ammo_casing/casing in casings_bag.contents)
-		var/mat_amount = mats.get_item_material_amount(casing)
-		if(!mat_amount)
-			continue
-		if(!mats.has_space(mat_amount))
-			to_chat(user, span_warning("You can't fit any more in \the [src]!"))
-			return
-		if(!SEND_SIGNAL(casings_bag, COMSIG_TRY_STORAGE_TAKE, casing, src))
-			continue
-		// Forgive me for this.
-		if(mats.after_insert)
-			mats.after_insert.Invoke(casing, mats.last_inserted_id, mats.insert_item(casing))
-		// I blame whoever wrote material containers.
-		qdel(casing)
-		count++
-	if(count > 0)
-		to_chat(user, span_notice("You insert [count] casing\s into \the [src]."))
-	else
-		to_chat(user, span_warning("There aren't any casings in \the [O] to recycle!"))
 
 /obj/machinery/autolathe/ammo/proc/pre_insert_check(mob/user, obj/item/O)
 	if(!istype(O))
@@ -656,35 +613,119 @@
 		to_chat(user, span_warning("There aren't any casings in \the [ammobox] to recycle!"))
 	return TRUE
 
+/obj/machinery/autolathe/ammo/proc/insert_things_from_bag(mob/user, obj/item/storage/bag/casings/O)
+	var/obj/item/storage/bag/casings/casings_bag = O
+	var/datum/component/material_container/mats = GetComponent(/datum/component/material_container)
+	var/count = 0
+	if(INTERACTING_WITH(user, src))
+		return
+	if(!length(casings_bag.contents))
+		to_chat(user, span_warning("There's nothing in \the [casings_bag] to load into \the [src]!"))
+		return
+	to_chat(user, span_notice("You start dumping \the [casings_bag] into \the [src]."))
+	if(!do_after(user, 2 SECONDS, target = src))
+		to_chat(user, span_notice("You stop dumping \the [casings_bag] into \the [src]."))
+		return
+	for(var/obj/item/ammo_casing/casing in casings_bag.contents)
+		var/mat_amount = mats.get_item_material_amount(casing)
+		if(!mat_amount)
+			continue
+		if(!mats.has_space(mat_amount))
+			to_chat(user, span_warning("You can't fit any more in \the [src]!"))
+			return
+		if(!SEND_SIGNAL(casings_bag, COMSIG_TRY_STORAGE_TAKE, casing, src))
+			continue
+		// Forgive me for this.
+		if(mats.after_insert)
+			mats.after_insert.Invoke(casing, mats.last_inserted_id, mats.insert_item(casing))
+		// I blame whoever wrote material containers.
+		qdel(casing)
+		count++
+	if(count > 0)
+		to_chat(user, span_notice("You insert [count] casing\s into \the [src]."))
+	else
+		to_chat(user, span_warning("There aren't any casings in \the [O] to recycle!"))
+
+/// no discounts for sticky fingers!
+/obj/machinery/autolathe/ammo/get_design_cost(datum/design/D)
+	var/dat
+	for(var/i in D.materials)
+		if(istext(i)) //Category handling
+			dat += "[D.materials[i]] [i]"
+		else
+			var/datum/material/M = i
+			dat += "[D.materials[i]] [M.name] "
+	return dat
+
 /obj/machinery/autolathe/ammo/can_build(datum/design/D, amount = 1)
-	if(("Simple Ammo" || "Simple Magazines") in D.category)
-		if(!simple)
+	if("Simple Ammo" in D.category)
+		if(simple == 0)
 			return FALSE
-
-	if(("Basic Ammo" || "Basic Magazines") in D.category)
-		if(!basic)
+		else
+			. = ..()
+	else
+		. = ..()
+	if("Simple Magazines" in D.category)
+		if(simple == 0)
 			return FALSE
-
-	if(("Intermediate Ammo" || "Intermediate Magazines") in D.category)
-		if(!intermediate)
+		else
+			. = ..()
+	else
+		. = ..()
+	if("Basic Ammo" in D.category)
+		if(basic == 0)
 			return FALSE
-
-	if(("Advanced Ammo" || "Advanced Magazines") in D.category)
-		if(!advanced)
+		else
+			. = ..()
+	else
+		. = ..()
+	if("Basic Magazines" in D.category)
+		if(basic == 0)
 			return FALSE
-	return ..()
+		else
+			. = ..()
+	else
+		. = ..()
+	if("Intermediate Ammo" in D.category)
+		if(intermediate == 0)
+			return FALSE
+		else
+			. = ..()
+	else
+		. = ..()
+	if("Intermediate Magazines" in D.category)
+		if(intermediate == 0)
+			return FALSE
+		else
+			. = ..()
+	else
+		. = ..()
+	if("Advanced Ammo" in D.category)
+		if(advanced == 0)
+			return FALSE
+		else
+			. = ..()
+	else
+		. = ..()
+	if("Advanced Magazines" in D.category)
+		if(advanced == 0)
+			return FALSE
+		else
+			. = ..()
+	else
+		. = ..()
 
 /obj/machinery/autolathe/ammo/on_deconstruction()
-	. = ..()
+	..()
 	if(simple)
-		new /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one(src.loc)
+		new /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one(src)
 	if(basic)
-		new /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two(src.loc)
+		new /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two(src)
 	if(intermediate)
-		new /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three(src.loc)
+		new /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three(src)
 	if(advanced)
-		new /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four(src.loc)
-	cut_overlays()
+		new /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four(src)
+	return
 
 /obj/machinery/autolathe/ammo/unlocked_basic
 	desc = "A ammo bench where you can make ammo and magazines. Copies of Guns and Ammo, parts one and two, can be found in a drawer."

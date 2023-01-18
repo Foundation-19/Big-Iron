@@ -8,10 +8,10 @@
 //////////////////
 
 /datum/design/rods
-	name = "Metal Rod"
+	name = "Metal rod"
 	id = "rods"
-	build_type = AUTOLATHE
-	materials = list(/datum/material/iron = 1000)
+	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
+	materials = list(MAT_METAL = 1000)
 	build_path = /obj/item/stack/rods
 	category = list("initial","Construction")
 	maxstack = 50
@@ -19,26 +19,35 @@
 /datum/design/blackpowder
 	name = "Blackpowder"
 	id = "blackpowderkatsu"
-	build_type = AUTOLATHE
-	materials = list(/datum/material/blackpowder = 2000)
+	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
+	materials = list(/datum/material/blackpowder = ONE_SHEET)
 	build_path = /obj/item/stack/ore/blackpowder
 	category = list("initial","Construction")
 	maxstack = 50
 
 /datum/design/metal
-	name = "Metal"
+	name = "Metal sheet"
 	id = "metal"
-	build_type = AUTOLATHE
-	materials = list(/datum/material/iron = MINERAL_MATERIAL_AMOUNT)
+	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
+	materials = list(MAT_METAL = ONE_SHEET)
 	build_path = /obj/item/stack/sheet/metal
 	category = list("initial","Construction")
 	maxstack = 50
 
+/datum/design/lead
+	name = "Lead sheet"
+	id = "lead"
+	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
+	materials = list(/datum/material/lead = ONE_SHEET)
+	build_path = /obj/item/stack/sheet/lead
+	category = list("initial","Construction")
+	maxstack = 50
+
 /datum/design/glass
-	name = "Glass"
-	id = "glass"
-	build_type = AUTOLATHE
-	materials = list(/datum/material/glass = MINERAL_MATERIAL_AMOUNT)
+	name = "Glass sheet"
+	id = "glass_sheet"
+	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
+	materials = list(MAT_GLASS = MINERAL_MATERIAL_AMOUNT)
 	build_path = /obj/item/stack/sheet/glass
 	category = list("initial","Construction")
 	maxstack = 50
@@ -47,7 +56,7 @@
 	name = "Reinforced Glass"
 	id = "rglass"
 	build_type = AUTOLATHE | SMELTER | PROTOLATHE
-	materials = list(/datum/material/iron = 1000, /datum/material/glass = MINERAL_MATERIAL_AMOUNT)
+	materials = list(/datum/material/iron = 1000, MAT_GLASS = ONE_SHEET)
 	build_path = /obj/item/stack/sheet/rglass
 	category = list("initial","Construction","Stock Parts")
 	maxstack = 50
@@ -56,7 +65,7 @@
 	name = "Light Tube"
 	id = "light_tube"
 	build_type = AUTOLATHE
-	materials = list(/datum/material/glass = 100)
+	materials = list(MAT_GLASS = 100)
 	build_path = /obj/item/light/tube
 	category = list("initial", "Construction")
 

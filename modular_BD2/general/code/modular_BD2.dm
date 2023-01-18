@@ -59,9 +59,7 @@
 	spreadChance = 5
 	spread = 1
 	scan_state = "rock_Coal"
-/*
-grill.dm edited for fueltypes and layers
-*/
+
 
 //////////////////////////////////////////////////
 //												//
@@ -70,7 +68,7 @@ grill.dm edited for fueltypes and layers
 //												//
 //												//
 //////////////////////////////////////////////////
-/*
+
 // ------------------------------- MANUAL AUTOLATHE ------------------------------
 
 /obj/machinery/autolathe/manual
@@ -146,7 +144,7 @@ grill.dm edited for fueltypes and layers
 	name = "Bonesetter (primitive)"
 	id = "bonesetter_primitive"
 	materials = list(/datum/material/iron = ONE_SHEET*2, /datum/material/bone = HALF_SHEET)
-	build_path = /obj/item/bonesetter
+	build_path = /obj/item/bonesetter/primitive
 	category = list("initial", "Medical")
 	build_type = AUTOLATHE_PRIMITIVE
 
@@ -235,18 +233,9 @@ grill.dm edited for fueltypes and layers
 /datum/design/titanium
 	name = "Titanium sheet"
 	id = "titanium_sheet"
-	build_type = AUTOLATHE_PRIMITIVE
-	materials = list(/datum/material/titanium = ONE_SHEET)
-	build_path = /obj/item/stack/sheet/metal
-	category = list("initial","Construction")
-	maxstack = 50
-
-/datum/design/lead
-	name = "Lead sheet"
-	id = "lead"
 	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
-	materials = list(/datum/material/lead = ONE_SHEET)
-	build_path = /obj/item/stack/sheet/lead
+	materials = list(/datum/material/titanium = ONE_SHEET)
+	build_path = /obj/item/stack/sheet/mineral/titanium
 	category = list("initial","Construction")
 	maxstack = 50
 
@@ -281,14 +270,10 @@ grill.dm edited for fueltypes and layers
 	materials = list(/datum/material/iron = ONE_SHEET)
 	build_path = /obj/item/crafting/coffee_pot
 	category = list("initial", "Misc")
-
-// Also the following recipes has [] | AUTOLATHE_PRIMITIVE } added to build_type: /datum/design/lead, /datum/design/titanium, /datum/design/rods, /datum/design/metal, /datum/design/glass, /datum/design/rglass
-// /datum/design/handlabeler, /datum/design/kitchen_knife, /datum/design/fork, /datum/design/beaker, /datum/design/large_beaker, /datum/design/bonesetter
-// /datum/design/handcuffs, /datum/design/syringe, /datum/design/igniter, /datum/design/spraycan, /datum/design/extinguisher, /datum/design/welding_helmet, /datum/design/cable_coil
-// /datum/design/toolbox, /datum/design/spraybottle, /datum/design/bucket, /datum/design/timer, /datum/design/tray, /datum/design/bowl, /datum/design/drinking_glass, /datum/design/shot_glass
-// /datum/design/shaker, /datum/design/earmuffs
-// #define AUTOLATHE_PRIMITIVE	(1<<13)	// ADD to defines machines.dm
-
+/*
+// Also the following recipes has added | AUTOLATHE_PRIMITIVE
+/datum/design/earmuffs, /datum/design/bowl, /datum/design/drinking_glass, /datum/design/handcuffs,  /datum/design/igniter /datum/design/welding_helmet, /datum/design/extinguisher, /datum/design/timer, /datum/design/syringe
+/datum/design/spraybottle,/datum/design/kitchen_knife, /datum/design/beaker, /datum/design/bucket, /datum/design/cable_coil,  /datum/design/spraycan /datum/design/handlabeler/datum/design/toolbox,
 */
 // ------------------------------- MILITARY AUTOLATHE ------------------------------
 
@@ -447,7 +432,7 @@ autolathe.dm added overlays & casing bag stuff
 	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
 	icon_state = "metaldetect"
 
-
+*/
 
 //////////////////////////////////////////////////
 //												//
@@ -456,33 +441,14 @@ autolathe.dm added overlays & casing bag stuff
 //												//
 //												//
 //////////////////////////////////////////////////
-
-// ------------ METALWORKING BENCH ------------------ 
-
-/obj/machinery/workbench/forge // should be repathed to worbench/metal
-	name = "metalworking bench"
-	desc = "A workbench with a drill press, a makeshift blowtorch setup, and various tools for making crude weapons and tools."
-	icon = 'modular_BD2/blacksmith/icons/workbench64x32.dmi'
-	icon_state = "bench_metal"
-
-
-// ------------ WORKBENCH ------------------ 
-
+/*
+// ------------ WORKBENCHES ------------------ 
+Art & tool behaviours updated
 /obj/machinery/workbench
-	desc = "A basic workbench with a full set of tools for simple to intermediate projects."
-	icon = 'modular_BD2/general/icons/workbench.dmi'
-	machine_tool_behaviour = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER, TOOL_WIRECUTTER, TOOL_WRENCH)
-	drag_delay = 0.4 SECONDS // Heavy, slow to drag
-
-
-// ------------ ADVANCED WORKBENCH ------------------ 
-
 /obj/machinery/workbench/advanced
-	desc = "A large and advanced pre-war workbench to tackle any project! Comes with a full set of basic tools and a digital multitool."
-	icon = 'modular_BD2/general/icons/workbench.dmi'
-	machine_tool_behaviour = list(TOOL_AWORKBENCH, TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER, TOOL_WIRECUTTER, TOOL_WRENCH, TOOL_MULTITOOL)
-
+/obj/machinery/workbench/forge // should be repathed to worbench/metal
 */
+
 
 
 //////////////////////////////////////////////////
@@ -496,6 +462,9 @@ autolathe.dm added overlays & casing bag stuff
 // ------------ CRATES ------------------ 
 // crates.dm
 
+// ------------ BBQ ------------------ 
+//	grill.dm edited for fueltypes and layers
+//	campfire.dm edited for fueltypes, layers, sounds
 
 
 //////////////////////////////////////////////////
@@ -534,9 +503,9 @@ autolathe.dm added overlays & casing bag stuff
 /obj/item/reagent_containers/spray/empty/attackby(obj/item/C, mob/user, params)
 	if(istype(C, /obj/item/crafting/abraxo))
 		user.visible_message("[user] begins filling the[src] with Abraxo solution.", \
-				span_notice("You begin filling he [src] with Abraxo. Smells nice."), \
-				span_italic("You hear faint bubbling sounds."))
-		playsound(get_turf(src), 'modular_BD2/sound/abraxo.ogg', 100, TRUE)
+				span_notice("You begin filling he [src] with Abraxo. Smells nice."))
+//				span_italic("You hear faint bubbling sounds.")) why italic no work =/
+		playsound(get_turf(src), 'modular_BD2/general/sound/abraxo.ogg', 100, TRUE)
 		if(!do_after(user, 40, TRUE, src))
 			return
 		new /obj/item/reagent_containers/spray/cleaner(drop_location())
@@ -548,7 +517,7 @@ autolathe.dm added overlays & casing bag stuff
 /obj/item/reagent_containers/spray/empty
 	desc = "A spray bottle, with an unscrewable top. Meant to be filled with Abraxo for superior cleanliness."
 	icon = 'modular_BD2/general/icons/cleaning.dmi'
-
+	icon_state = "cleaner_empty"
 
 // ------------------------------- MATCHBOX FIX ------------------------------
 // boxes.dm
@@ -626,7 +595,6 @@ hair_face.dm
 	name = "BUGGED VERSION, MURDER"
 	desc = "NO!!!."
 
-// TEMP FOR PORTING AND FUNCTIOANLITY
 
 
 //////////////////////////////////////////
@@ -672,6 +640,30 @@ hair_face.dm
 	bare_wound_bonus = 10
 	attack_verb = list("sawed", "scratched")
 
+/obj/item/hemostat/tribal
+	name = "primitive hemostat (flesh-poker)"
+	desc = "A pinching device made from bone to clamp bleedings with"
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	icon_state = "hemostat_primitive"
+	toolspeed = 1.6
+
+/obj/item/retractor/tribal
+	name = "primitive retractor (skin-puller)"
+	desc = "Pries the flesh and bones open."
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	icon_state = "retractor_primitive"
+	toolspeed = 1.6
+
+/obj/item/bonesetter/primitive
+	name = "mallet (bonesetter)"
+	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
+	icon_state = "mallet"
+	lefthand_file = 'modular_BD2/general/icons/lefthand.dmi'
+	righthand_file = 'modular_BD2/general/icons/righthand.dmi'
+	custom_materials = list(/datum/material/iron=2000)
+	toolspeed = 1.6
+
+
 /obj/item/stack/medical/bone_gel/superglue
 	name = "superglue (bonegel)"
 	singular_name = "superglue"
@@ -688,13 +680,8 @@ hair_face.dm
 	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
 	icon_state = "sterilizer_honey"
 	apply_method = "smear"
-//	sound_squirt = 'modular_BD2/general/sound/honey.ogg' FIX LATER MARKED FOR DEATH
+	sound_squirt = 'modular_BD2/general/sound/honey.ogg'
 
-/* Added to base code
-sound_squirt
-Added to proc/attempt_spray
-		playsound(src, sound_squirt, 50, 1, -6)
-*/
 
 // ------------------- PRIMITIVE MEDICAL BAG -----------------------------
 
@@ -712,7 +699,7 @@ Added to proc/attempt_spray
 	new /obj/item/retractor/tribal(src)
 	new /obj/item/circular_saw/primitive(src)
 	new /obj/item/cautery/primitive(src)
-	new /obj/item/bonesetter(src)
+	new /obj/item/bonesetter/primitive(src)
 	new /obj/item/bedsheet/blanket(src)
 	new /obj/item/reagent_containers/medspray/sterilizine/honey(src)
 	new /obj/item/stack/sticky_tape/surgical(src)
@@ -777,17 +764,5 @@ obj/item/storage/belt/medical/primitive
 	new /obj/item/retractor/tribal(src)
 	new /obj/item/hemostat/tribal(src)
 	new /obj/item/cautery/primitive(src)
-	new /obj/item/bonesetter(src)
-
-/obj/item/hemostat/tribal
-	name = "primitive hemostat (flesh-poker)"
-	desc = "A pinching device made from bone to clamp bleedings with"
-	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
-	icon_state = "hemostat_primitive"
-
-/obj/item/retractor/tribal
-	name = "primitive retractor (skin-puller)"
-	desc = "Pries the flesh and bones open."
-	icon = 'modular_BD2/general/icons/primitive_medical.dmi'
-	icon_state = "retractor_primitive"
+	new /obj/item/bonesetter/primitive(src)
 

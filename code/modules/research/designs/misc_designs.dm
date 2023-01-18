@@ -412,9 +412,9 @@
 	name = "Spray Bottle"
 	desc = "A spray bottle, with an unscrewable top."
 	id = "spraybottle"
-	build_type = PROTOLATHE
-	materials = list(/datum/material/iron = 3000, /datum/material/glass = 200)
-	build_path = /obj/item/reagent_containers/spray
+	build_type = PROTOLATHE | AUTOLATHE_PRIMITIVE
+	materials = list(MAT_GLASS = ONE_SHEET*2)
+	build_path = /obj/item/reagent_containers/spray/empty
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SERVICE
 
