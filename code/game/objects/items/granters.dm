@@ -99,6 +99,14 @@
 	icon_state = "book1"
 	remarks = list("One smooth motion...", "Palm the bolt...", "Push up, rotate back, push forward, down...", "Don't slap yourself with the bolt...", "Wait, what's this about pumping?", "Who just scribbled \"Z\" and \"LMB\" on this page?")
 
+/obj/item/book/granter/trait/bowman
+	name = "The Sportsmans' guide to Archery"
+	desc = "A book adorned with images of bows, arrows, and strange pre-war animals with branching horns..."
+	granted_trait = TRAIT_AUTO_DRAW
+	traitname = "bowery"
+	icon_state = "book1"
+	remarks = list("Watch Your Footing...", "Practice at the Right Distance...", "Establish good anchor points...", "Hold firm while being relaxed while shooting...", "Stretch before shooting...")
+
 ///ACTION BUTTONS///
 
 /obj/item/book/granter/action
