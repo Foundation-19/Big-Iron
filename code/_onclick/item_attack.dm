@@ -138,18 +138,13 @@
 		force -= smutant
 
 //the equivalent of the standard version of attack() but for object targets.
-/obj/item/proc/attack_obj(obj/O, mob/living/user, damage_multiplier = 1)
+/obj/item/proc/attack_obj(obj/O, mob/living/user)
 	if(SEND_SIGNAL(src, COMSIG_ITEM_ATTACK_OBJ, O, user) & COMPONENT_NO_ATTACK_OBJ)
 		return
 	if(item_flags & NOBLUDGEON)
 		return
 	user.do_attack_animation(O)
 	O.attacked_by(src, user)
-	if	HAS_TRAIT(user, TRAIT_GHOULMELEE) //negative trait
-		damage_multiplier = 0.8
-
-	if	HAS_TRAIT(user, TRAIT_FEMALE) //negative trait
-		damage_multiplier = 0.8
 
 /atom/movable/proc/attacked_by()
 	return
