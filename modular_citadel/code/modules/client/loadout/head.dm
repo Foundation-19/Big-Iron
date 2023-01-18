@@ -144,7 +144,32 @@
 	name = "paper sack"
 	path = /obj/item/clothing/head/papersack
 
+/datum/gear/head/hairband
+	name = "hair band"
+	path = /obj/item/clothing/head/fashion/hairband
+
+
 //Cowboy Stuff
+/datum/gear/head/scarecrow
+	name = "scarecrow hat"
+	path = /obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/scarecrow
+	cost = 2
+
+/datum/gear/head/angeleyes
+	name = "dark stetson"
+	path = /obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy
+	cost = 2
+
+/datum/gear/head/angeleyes
+	name = "brown stetson"
+	path = /obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy/blondie
+	cost = 2
+
+/datum/gear/head/tuco
+	name = "dirty sombrero"
+	path = /obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy/tuco
+	cost = 2
+
 /datum/gear/head/cowboy
 	name = "brahmin leather cowboy hat"
 	path = /obj/item/clothing/head/helmet/f13/brahmincowboyhat

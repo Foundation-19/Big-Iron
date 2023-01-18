@@ -3,6 +3,27 @@
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_GENERAL
 	slot = SLOT_WEAR_SUIT
 
+
+/datum/gear/suit/overalls
+	name = "Farmers overalls"
+	path = /obj/item/clothing/suit/overalls/farmer
+	cost = 2
+
+/datum/gear/suit/cowboy_angeleyes
+	name = "Elegant cowboy jacket"
+	path = /obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy
+	cost = 3
+
+/datum/gear/suit/cowboy_blondie
+	name = "Brown and white poncho"
+	path = /obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy/blondie
+	cost = 3
+
+/datum/gear/suit/cowboy_tuco
+	name = "Dirty poncho"
+	path = /obj/item/clothing/under/f13/fashion/cowboy_tuco
+	cost = 3
+
 /datum/gear/suit/redhood
 	name = "Red cloak"
 	path = /obj/item/clothing/suit/hooded/cloak/david

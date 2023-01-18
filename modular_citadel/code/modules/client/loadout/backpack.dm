@@ -120,17 +120,7 @@
 /datum/gear/backpack/cigarettes/cigars
 	name = "Premium cigar case"
 	path = /obj/item/storage/fancy/cigarettes/cigars
-	cost = 2
-
-/datum/gear/backpack/cigarettes/cigars/cohiba
-	name = "Cohiba Robusto cigar case"
-	path = /obj/item/storage/fancy/cigarettes/cigars/cohiba
-	cost = 2
-
-/datum/gear/backpack/cigarettes/cigars/havana
-	name = "Havanian cigar case"
-	path = /obj/item/storage/fancy/cigarettes/cigars/havana
-	cost = 2
+	cost = 3
 
 /// Modkits 
 

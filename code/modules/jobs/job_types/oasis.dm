@@ -592,9 +592,9 @@ Mayor
 
 /datum/outfit/loadout/nurse
 	name = "Nurse"
-	head = /obj/item/clothing/head/nursehat
-	uniform = /obj/item/clothing/under/rank/nursesuit
-	shoes = /obj/item/clothing/shoes/sneakers/white
+	head = /obj/item/clothing/head/fashion/hat_nurse
+	uniform = /obj/item/clothing/under/f13/fashion/nurse_uniform
+	shoes = /obj/item/clothing/shoes/laceup/alternative
 	backpack_contents = list(
 		/obj/item/flashlight/pen = 1,
 		/obj/item/reagent_containers/food/snacks/lollipop = 5,
