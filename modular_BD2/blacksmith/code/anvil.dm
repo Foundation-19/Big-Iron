@@ -82,7 +82,7 @@ GLOBAL_LIST_INIT(anvil_recipes, list(
 	RECIPE_SPATHA = /obj/item/smithing/spathablade,
 	RECIPE_WARAXE = /obj/item/smithing/waraxehead,
 	RECIPE_LANCE = /obj/item/smithing/lancehead,
-    ))
+	))
 
 
 // Logic of smithing recipes: Tools start with bend and have 3 steps. 1h weapons have 3-4 steps. 2h weapons have 4-5 steps. Bigger bladed stuff start with a fold. Pointy stuff generally start with a draw. Unusual stuff migth start with upset.
