@@ -36,8 +36,8 @@ Mayor
 
 	outfit = /datum/outfit/job/den/f13mayor
 	
-	access = list(ACCESS_BAR, ACCESS_COMMAND, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_COMMAND, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	access = list(ACCESS_CLONING, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS,ACCESS_ROBOTICS, ACCESS_TOWN_SEC, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_BAR, ACCESS_TOWN_CIV, ACCESS_TOWN_DOC, ACCESS_TOWN_PROSP, ACCESS_TOWN_PREACH, ACCESS_TOWN_MERCH, ACCESS_TOWN_SCIENCE, ACCESS_TOWN_COMMAND, ACCESS_CHANGE_IDS)
+	minimal_access = list(ACCESS_CLONING, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_MINING, ACCESS_ROBOTICS, ACCESS_FORENSICS_LOCKERS, ACCESS_TOWN_SEC, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_BAR, ACCESS_TOWN_CIV, ACCESS_TOWN_DOC, ACCESS_TOWN_PROSP, ACCESS_TOWN_PREACH, ACCESS_TOWN_MERCH, ACCESS_TOWN_SCIENCE, ACCESS_TOWN_COMMAND, ACCESS_CHANGE_IDS)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -147,8 +147,8 @@ Mayor
 		/datum/outfit/loadout/pw
 		)
 
-	access = list(ACCESS_BAR, ACCESS_COMMAND, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_COMMAND, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_CLINIC, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	access = list(ACCESS_CLONING, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS,ACCESS_ROBOTICS, ACCESS_TOWN_SEC, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_BAR, ACCESS_TOWN_CIV, ACCESS_TOWN_DOC, ACCESS_TOWN_PROSP, ACCESS_TOWN_PREACH, ACCESS_TOWN_MERCH, ACCESS_TOWN_SCIENCE, ACCESS_TOWN_COMMAND, ACCESS_CHANGE_IDS)
+	minimal_access = list(ACCESS_CLONING, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_MINING, ACCESS_ROBOTICS, ACCESS_FORENSICS_LOCKERS, ACCESS_TOWN_SEC, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_BAR, ACCESS_TOWN_CIV, ACCESS_TOWN_DOC, ACCESS_TOWN_PROSP, ACCESS_TOWN_PREACH, ACCESS_TOWN_MERCH, ACCESS_TOWN_SCIENCE, ACCESS_TOWN_COMMAND, ACCESS_CHANGE_IDS)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -231,8 +231,8 @@ Mayor
 
 	outfit = /datum/outfit/job/den/f13sheriff
 
-	access = list(ACCESS_BAR, ACCESS_COMMAND, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
-	minimal_access = list(ACCESS_BAR, ACCESS_COMMAND, ACCESS_CLONING, ACCESS_GATEWAY, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_CLINIC, ACCESS_KITCHEN, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS)
+	access = list(ACCESS_CLONING, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_MINING, ACCESS_FORENSICS_LOCKERS,ACCESS_ROBOTICS, ACCESS_TOWN_SEC, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_BAR, ACCESS_TOWN_CIV, ACCESS_TOWN_DOC, ACCESS_TOWN_PROSP, ACCESS_TOWN_PREACH, ACCESS_TOWN_MERCH, ACCESS_TOWN_SCIENCE, ACCESS_TOWN_COMMAND, ACCESS_CHANGE_IDS)
+	minimal_access = list(ACCESS_CLONING, ACCESS_CARGO_BOT, ACCESS_MINT_VAULT, ACCESS_MINING, ACCESS_ROBOTICS, ACCESS_FORENSICS_LOCKERS, ACCESS_TOWN_SEC, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_BAR, ACCESS_TOWN_CIV, ACCESS_TOWN_DOC, ACCESS_TOWN_PROSP, ACCESS_TOWN_PREACH, ACCESS_TOWN_MERCH, ACCESS_TOWN_SCIENCE, ACCESS_TOWN_COMMAND, ACCESS_CHANGE_IDS)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -302,8 +302,8 @@ Mayor
 		/datum/outfit/loadout/swat
 		)
 
-	access = list(ACCESS_BAR, ACCESS_GATEWAY)
-	minimal_access = list(ACCESS_BAR, ACCESS_GATEWAY)
+	access = list(ACCESS_TOWN_SEC, ACCESS_PUBLIC, ACCESS_TOWN)
+	minimal_access = list(ACCESS_TOWN_SEC, ACCESS_PUBLIC, ACCESS_TOWN)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -386,8 +386,8 @@ Mayor
 
 	outfit = /datum/outfit/job/den/f13farmer
 
-	access = list(ACCESS_BAR,  ACCESS_KITCHEN)
-	minimal_access = list(ACCESS_BAR,  ACCESS_KITCHEN)
+	access = list(ACCESS_TOWN, ACCESS_TOWN_CIV, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TOWN, ACCESS_TOWN_CIV, ACCESS_PUBLIC)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -440,8 +440,8 @@ Mayor
 
 	outfit = /datum/outfit/job/den/f13prospector
 
-	access = list(ACCESS_BAR, ACCESS_MINING)
-	minimal_access = list(ACCESS_BAR, ACCESS_MINING)
+	access = list( ACCESS_CARGO_BOT, ACCESS_TOWN_PROSP, ACCESS_PUBLIC, ACCESS_TOWN)
+	minimal_access = list(ACCESS_CARGO_BOT, ACCESS_TOWN_PROSP, ACCESS_PUBLIC, ACCESS_TOWN)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -509,8 +509,8 @@ Mayor
 		/datum/outfit/loadout/nurse
 		)
 	
-	access = list(ACCESS_BAR, ACCESS_CLINIC)
-	minimal_access = list(ACCESS_BAR, ACCESS_CLINIC)
+	access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN)
+	minimal_access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -631,8 +631,8 @@ Mayor
 		/datum/outfit/loadout/cleanser		//Just some bombs.
 		)
 
-	access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
-	minimal_access = list(ACCESS_BAR, ACCESS_CHAPEL_OFFICE)
+	access = list(ACCESS_TOWN, ACCESS_TOWN_CIV, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TOWN, ACCESS_TOWN_CIV, ACCESS_PUBLIC)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -819,8 +819,8 @@ Mayor
 		/datum/outfit/loadout/diner
 		)
 
-	access = list(ACCESS_BAR, ACCESS_KITCHEN)
-	minimal_access = list(ACCESS_BAR, ACCESS_KITCHEN)
+	access = list(ACCESS_TOWN_BAR, ACCESS_PUBLIC, ACCESS_TOWN)
+	minimal_access = list(ACCESS_TOWN_BAR, ACCESS_PUBLIC, ACCESS_TOWN)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -906,8 +906,8 @@ Mayor
 		/datum/outfit/loadout/singer
 	)
 	
-	access = list(ACCESS_BAR)
-	minimal_access = list(ACCESS_BAR)
+	access = list(ACCESS_TOWN, ACCESS_TOWN_CIV, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TOWN, ACCESS_TOWN_CIV, ACCESS_PUBLIC)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -1138,7 +1138,7 @@ Mayor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/thatgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/frag_shrapnel)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/concussion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/he_grenade)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
@@ -1155,8 +1155,8 @@ Mayor
 	
 	outfit = /datum/outfit/job/den/f13shopkeeper
 
-	access = list(ACCESS_BAR, ACCESS_CARGO_BOT)
-	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT)
+	access = list(ACCESS_CARGO_BOT, ACCESS_TOWN_MERCH, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_PROSP)
+	minimal_access = list(ACCESS_CARGO_BOT, ACCESS_TOWN_MERCH, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_PROSP)
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -1197,7 +1197,7 @@ Mayor
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/thatgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/uzi)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/frag_shrapnel)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/concussion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/he_grenade)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/shrapnelmine)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)

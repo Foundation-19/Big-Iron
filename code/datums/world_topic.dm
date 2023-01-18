@@ -255,8 +255,6 @@
 		var/real_rank = rank // make_list_rank(R.fields["real_rank"])
 		if(real_rank in GLOB.ncr_positions)
 			ncr[name] = rank
-		else if(real_rank in GLOB.followers_positions)
-			followers[name] = rank
 		else if(real_rank in GLOB.legion_positions)
 			legion[name] = rank
 		else if(real_rank in GLOB.oasis_positions)

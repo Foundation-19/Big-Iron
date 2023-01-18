@@ -86,7 +86,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "BoS Off-Duty",
 
 "Legion Centurion",
-"Legion Orator",
+"Legion Frumentarius",
 "Legion Vexillarius",
 "Legion Veteran Decanus",
 "Veteran Legionnaire",
@@ -121,10 +121,6 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Head Hunter",
 "Druid",
 "Hunter",
-
-"Followers Administrator",
-"Followers Doctor",
-"Followers Guard",
 
 "Cyborg",
 "Overseer",
@@ -168,13 +164,13 @@ GLOBAL_LIST_INIT(oasis_positions, list(
 
 GLOBAL_LIST_INIT(legion_command_positions, list(
 	"Legate",
-	"Legion Orator",
+	"Legion Frumentarius",
 	"Legion Centurion",
 	"Legion Veteran Decanus",
 ))
 
 GLOBAL_LIST_INIT(legion_positions, list(
-	"Legion Orator",
+	"Legion Frumentarius",
 	"Legion Centurion",
 	"Legion Veteran Decanus",
 	"Legion Prime Decanus",
@@ -260,18 +256,9 @@ GLOBAL_LIST_INIT(tribal_positions, list(
 	"Guardian",
 ))
 
-GLOBAL_LIST_INIT(followers_positions, list(
-	"Followers Administrator",
-	"Followers Doctor",
-	"Followers Guard",
-	"Followers Volunteer",
-	"Followers Scientist",
-))
-
 // job categories for rendering the late join menu
 GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_NCR = list("jobs" = ncr_positions, "color" = "#ffeeaa"),
-	EXP_TYPE_FOLLOWERS = list("jobs" = followers_positions, "color" = "#ffeeaa"),
 	EXP_TYPE_BROTHERHOOD = list("jobs" = brotherhood_positions, "color" = "#95a5a6"),
 	EXP_TYPE_LEGION = list("jobs" = legion_positions, "color" = "#f81717"),
 	EXP_TYPE_WASTELAND = list("jobs" = wasteland_positions, "color" = "#5a5a5a"),
@@ -292,7 +279,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_SILICON = list("titles" = list("AI","Cyborg")),
 	EXP_TYPE_SERVICE = list("titles" = civilian_positions),
 
-	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | oasis_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | tribal_positions | followers_positions | enclave_positions),
+	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | oasis_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | tribal_positions | enclave_positions),
 
 	EXP_TYPE_OUTLAW = list("titles" = list("Outlaw","Den Mob Boss","Den Mob Enforcer","Den Doctor",)),
 	EXP_TYPE_BROTHERHOOD = list("titles" = brotherhood_positions),
@@ -302,7 +289,6 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_VAULT = list("titles" = vault_positions),
 	EXP_TYPE_WASTELAND = list("titles" = wasteland_positions),
 	EXP_TYPE_TRIBAL = list("titles" = tribal_positions),
-	EXP_TYPE_FOLLOWERS = list("titles" = followers_positions),
 	EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
 
 	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Prime Decanus", "Legion Recruit Decanus")),

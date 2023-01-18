@@ -56,8 +56,8 @@ Tribal Chief
 	outfit = /datum/outfit/job/tribal/f13chief
 	exp_requirements = 2400
 
-	access = list(ACCESS_TRIBE)
-	minimal_access = list(ACCESS_TRIBE)
+	access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
 
 /datum/outfit/job/tribal/f13chief/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -102,8 +102,8 @@ Tribal Shaman
 
 	outfit = /datum/outfit/job/tribal/f13shaman
 
-	access = list(ACCESS_TRIBE)
-	minimal_access = list(ACCESS_TRIBE)
+	access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
 
 	loadout_options = list(
 		/datum/outfit/loadout/invoker, //Red shaman
@@ -176,8 +176,8 @@ Tribal Head Hunter
 	exp_requirements = 1800
 
 	outfit = /datum/outfit/job/tribal/f13Hhunter
-	access = list(ACCESS_TRIBE)
-	minimal_access = list(ACCESS_TRIBE)
+	access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/tribal,
@@ -230,8 +230,8 @@ Druid
 	exp_requirements = 600
 
 	outfit = /datum/outfit/job/tribal/f13druid
-	access = list(ACCESS_TRIBE)
-	minimal_access = list(ACCESS_TRIBE)
+	access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/tribal,
@@ -288,8 +288,8 @@ Villager
 
 	outfit = /datum/outfit/job/tribal/f13villager
 
-	access = list(ACCESS_TRIBE)
-	minimal_access = list(ACCESS_TRIBE)
+	access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
 
 	loadout_options = list(
 		/datum/outfit/loadout/gatherer, //Bone Spear, Bone Knife, Healing powder
@@ -383,8 +383,8 @@ Hunter
 
 	outfit = /datum/outfit/job/tribal/f13hunter
 
-	access = list(ACCESS_TRIBE)
-	minimal_access = list(ACCESS_TRIBE)
+	access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
 
 	loadout_options = list(
 //		/datum/outfit/loadout/ranged, //Quick Cloak, Bow and quiver, Bone knife, Healing powder. Code hates this one.
@@ -466,8 +466,8 @@ Spirit-Pledged
 
 	outfit = /datum/outfit/job/tribal/f13spiritpledged
 
-	access = list(ACCESS_TRIBE)
-	minimal_access = list(ACCESS_TRIBE)
+	access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/tribal,
@@ -503,8 +503,8 @@ Guardian
 
 	outfit = /datum/outfit/job/tribal/f13guardian
 
-	access = list(ACCESS_TRIBE)
-	minimal_access = list(ACCESS_TRIBE)
+	access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TRIBE, ACCESS_PUBLIC)
 
 /datum/outfit/job/tribal/f13guardian/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

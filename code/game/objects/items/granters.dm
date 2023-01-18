@@ -607,6 +607,13 @@
 	remarks = list("And it was here that I stabbed a man over a desk fan...", "The paint was chipping, but that didn't matter when he lay dead...", "A tank here, a pipe there...", "A bit of duct tape wrapped around everything...", "My flamethrower spat fire! Wait, where are my eyebrows...")
 	crafting_recipe_types = list(/datum/crafting_recipe/autoaxe)
 
+/obj/item/book/granter/crafting_recipe/energy
+	name = "Future Weapons Today!"
+	desc = "A magazine series covering the latest trends in weapons technology. Though it probably seems a little out of date now"
+	oneuse = TRUE
+	remarks = list("Always keep the focusing lens on your laser weapons free of cracks", "Plasma gets hot! Always make sure the magnets on the weapon are in working order", "Laser weapons excel in precision but plasma can burn through almost any armor", "Energy weapons have few moving parts but they have very little tolerenace for their components getting knocked around.") 
+	crafting_recipe_types = list(/datum/crafting_recipe/AEP7, /datum/crafting_recipe/AER9, /datum/crafting_recipe/rechargerpistol)
+
 // New Blueprints, yay! -Superballs
 /obj/item/book/granter/crafting_recipe/blueprint
 	name = "blueprint"
@@ -871,7 +878,7 @@
 	granted_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 	traitname = "advanced explosive crafting"
 	remarks = list("Is this actually a legal chess move...?", "If you hook electronic parts up to a flux capacitor-oh, that makes a lot of sense, actually.", "Radium? What would you use radium f-oh no.", "Why would anyone actually publish this?")
-	crafting_recipe_types = list(/datum/crafting_recipe/incendiary, /datum/crafting_recipe/concussion, /datum/crafting_recipe/radgrenade, /datum/crafting_recipe/empgrenade, /datum/crafting_recipe/incendiaryrocket, /datum/crafting_recipe/strongrocket, /datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang,
+	crafting_recipe_types = list(/datum/crafting_recipe/incendiary, /obj/item/grenade/f13/he_grenade, /datum/crafting_recipe/radgrenade, /datum/crafting_recipe/empgrenade, /datum/crafting_recipe/incendiaryrocket, /datum/crafting_recipe/strongrocket, /datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang,
 /datum/crafting_recipe/smokebomb, /datum/crafting_recipe/a40mm, /datum/crafting_recipe/a40mm_box, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket)
 
 /obj/item/book/granter/trait/gunslinger

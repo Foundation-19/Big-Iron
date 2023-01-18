@@ -281,7 +281,7 @@
 
 /obj/structure/sign/poster/contraband/communist_state
 	name = "Communist State"
-	desc = "All hail the Communist party!"
+	desc = "All hail the Chinese Communist party!"
 	icon_state = "poster18"
 
 /obj/structure/sign/poster/contraband/rebels_unite
@@ -338,26 +338,6 @@
 	name = "Kudzu"
 	desc = "A poster advertising a movie about plants. How dangerous could they possibly be?"
 	icon_state = "poster43"
-
-/obj/structure/sign/poster/contraband/buzzfuzz
-	name = "Careless Talk Costs Lives"
-	desc = "What I know - I keep to myself. CARELESS TALK COSTS LIVES."
-	icon_state = "poster45"
-
-/obj/structure/sign/poster/contraband/scum
-	name = "Only You Can Prevent CORPORATE ESPIONAGE"
-	desc = "This poster shows the silhouette of a man wearing a raincoat with the collar up and a hat groping towards the files in a drawer of a filing cabinet."
-	icon_state = "poster46"
-
-/obj/structure/sign/poster/contraband/syndicate_logo
-	name = "You Bring Democracy to This Land"
-	desc = "NCR Trooper... YOU bring DEMOCRACY to This Land."
-	icon_state = "poster47"
-
-/obj/structure/sign/poster/contraband/bountyhunters
-	name = "Do Not Eat Irradiated Food"
-	desc = "A warning to NCR troopers about eating irradiated food."
-	icon_state = "poster48"
 
 /obj/structure/sign/poster/official
 	poster_item_name = "motivational poster"
@@ -500,32 +480,6 @@
 	desc = "A green cross, one of the international symbols of aid and health." // Didn't the American Heart Foundation trademark red crosses? I'm playing it safe with green, not that they'll notice spacegame13 poster.
 	icon_state = "poster42_legit"
 
-
-/obj/structure/sign/poster/ncr/keep_to_myself
-	name = "Careless Talk Costs Lives"
-	desc = "What I know - I keep to myself. CARELESS TALK COSTS LIVES."
-	icon_state = "poster45"
-
-/obj/structure/sign/poster/ncr/democracy
-	name = "You Bring Democracy to This Land"
-	desc = "NCR Trooper... YOU bring DEMOCRACY to This Land."
-	icon_state = "poster47"
-
-/obj/structure/sign/poster/ncr/irradiated_food
-	name = "Do Not Eat Irradiated Food"
-	desc = "A warning to NCR troopers about eating irradiated food."
-	icon_state = "poster48"
-
-/obj/structure/sign/poster/ncr/loaded
-	name = "Loaded?"
-	desc = "Loaded? Don't take chances with pick-ups... Loose women may also be loaded with disease."
-	icon_state = "poster49"
-
-/obj/structure/sign/poster/prewar/corporate_espionage
-	name = "Only You Can Prevent CORPORATE ESPIONAGE"
-	desc = "This poster shows the silhouette of a man wearing a raincoat with the collar up and a hat groping towards the files in a drawer of a filing cabinet."
-	icon_state = "poster46"
-
 /obj/structure/sign/poster/prewar/poster60
 	name = "old movie poster"
 	desc = "Midnight Man premiering July 2078!"
@@ -616,65 +570,199 @@
 	desc = "This poster calls to a time of free booze and fun. Today those beaches are full of mutants and bleached bones."
 	icon_state = "poster82"
 
-/obj/structure/sign/poster/prewar/poster93
+/obj/structure/sign/poster/prewar/poster83
 	name = "old cult poster"
 	desc = "Time is a trap, God slumbers locked in time. Humanity shares the Soul of God, each a spark of His spirit. The day when God rises and time will cease comes in thirteen centuries. On this day all sparks will unite in an endless bonfire."
-	icon_state = "poster93"
+	icon_state = "poster83"
 
-/obj/structure/sign/poster/prewar/poster94
+/obj/structure/sign/poster/prewar/poster84
 	name = "burning city poster"
 	desc = "An artists rendition of the 2195 Boneyard Riots, where the great gangs of the city made one last stand against the Republic. They lost."
-	icon_state = "poster94"
+	icon_state = "poster84"
+
+/obj/structure/sign/poster/ncr/keep_to_myself
+	name = "Careless Talk Costs Lives"
+	desc = "What I know - I keep to myself. CARELESS TALK COSTS LIVES."
+	icon_state = "keep_to_myself"
+
+/obj/structure/sign/poster/ncr/democracy
+	name = "You Bring Democracy to This Land"
+	desc = "NCR Trooper... YOU bring DEMOCRACY to This Land."
+	icon_state = "democracy"
+
+/obj/structure/sign/poster/ncr/irradiated_food
+	name = "Do Not Eat Irradiated Food"
+	desc = "A warning to NCR troopers about eating irradiated food."
+	icon_state = "irradiated_food"
+
+/obj/structure/sign/poster/ncr/loaded
+	name = "Loaded?"
+	desc = "Loaded? Don't take chances with pick-ups... Loose women may also be loaded with disease."
+	icon_state = "loaded"
+
+/obj/structure/sign/poster/bos
+	name = "Brotherhood of Steel poster"
+	desc = "A poster made by the Brotherhood of Steel, it depicts a Brotherhood of Steel paladin in T-51b running while waving the Brotherhoods flag."
+	icon_state = "bos"
 
 /obj/structure/sign/poster/prewar/protectron
 	name = "protectron advertisement poster"
 	desc = "A poster advertising the latest RobCo Mk.2 Protectron. Now with laser-targeted laser fire!"
-	icon_state = "poster50"
+	icon_state = "protectron"
 
 /obj/structure/sign/poster/prewar/vault_tec
-	name = "vault-tec poster"
+	name = "Vault-Tec advertisement poster #1"
 	desc = "A poster advertising the Vault-Tec Corporation. Vault-Tec: Revolutionizing safety for an uncertain future!"
-	icon_state = "poster51"
+	icon_state = "vault_tec"
+
+/obj/structure/sign/poster/prewar/vault_tec/well_be_there
+	name = "Vault-Tec advertisement poster #2"
+	desc = "A poster advertising the Vault-Tec Corporation. It shows a cut-away of the Earth with part of a vault shown underground and a family with a picnic above. The text reads 'We'll Be There!'."
+	icon_state = "vault_tec2"
+
+/obj/structure/sign/poster/prewar/vault_tec/vault_secure
+	name = "Vault-Tec advertisement poster #3"
+	desc = "A poster advertising the Vault-Tec Corporation. It shows a cutaway view of a vault within a mountain. The text reads 'Vault Secure!'."
+	icon_state = "vault_tec3"
+
+/obj/structure/sign/poster/prewar/vault_tec/vault_future
+	name = "Vault-Tec advertisement poster #4"
+	desc = "A poster advertising the Vault-Tec Corporation. It shows a detailed depiction of a vault within a mountain. The text reads 'The Vault for the Future!'."
+	icon_state = "vault_tec4"
+
+/obj/structure/sign/poster/prewar/corporate
+	name = "REPCONN Aerospace security poster #1"
+	desc = "A poster showing a man in a suit being ambushed by a sentry bot. It reads, 'Wear your badge! It could save your LIFE!'."
+	icon_state = "corporate"
+
+/obj/structure/sign/poster/prewar/corporate/eyes
+	name = "REPCONN Aerospace security poster #2"
+	desc = "A poster showing a REPCONN employee being watched by an ominous pair of eyes. The text reads, 'Security is YOUR duty!'."
+	icon_state = "corporate2"
+
+/obj/structure/sign/poster/prewar/corporate/espionage
+	name = "REPCONN Aerospace security poster #3"
+	desc = "This poster shows the silhouette of a man wearing a raincoat with the collar up and a hat groping towards the files in a drawer of a filing cabinet. The text reads, 'Only You Can Prevent CORPORATE ESPIONAGE!'."
+	icon_state = "corporate3"
+
+/obj/structure/sign/poster/prewar/zion/night
+	name = "Zion National Park advertisement poster #1"
+	desc = "A pre-war advertisement for the Zion National Park, popular for it's nature talks, school field trips and hiking programs."
+	icon_state = "zion"
+
+/obj/structure/sign/poster/prewar/zion/evening
+	name = "Zion National Park advertisement poster #2"
+	desc = "A pre-war advertisement for the Zion National Park, popular for it's nature talks, school field trips and hiking programs."
+	icon_state = "zion2"
+
+/obj/structure/sign/poster/prewar/zion/morning
+	name = "Zion National Park advertisement poster #3"
+	desc = "A pre-war advertisement for the Zion National Park, popular for it's nature talks, school field trips and hiking programs."
+	icon_state = "zion3"
+
+/obj/structure/sign/poster/prewar/enlist
+	name = "Enlist! poster"
+	desc = "A pre-war poster made by the United States government. The text reads, 'Your Country Needs You! Enlist!'."
+	icon_state = "enlist"
+
+/obj/structure/sign/poster/prewar/dean
+	name = "Dean Domino poster"
+	desc = "A pre-war advertisement for a touring performance from the King of Swing, Dean Domino."
+	icon_state = "dean"
+
+/obj/structure/sign/poster/prewar/nukagirl
+	name = "Nuka-Girl poster"
+	desc = "A poster depicting a woman in a midriff-exposing spacesuit and tall boots, helmet removed, holding a bottle of Nuka-Cola."
+	icon_state = "nuka"
+
+/obj/structure/sign/poster/prewar/nukagirl/New()
+	..()
+	icon_state = pick("nuka","nuka2")
+
+/obj/structure/sign/poster/prewar/nukacola
+	name = "Nuka-Cola poster"
+	desc = "A poster depicting a rocket shaped Nuka-Cola bottle. The text reads, 'Great New 'BOTTLE ROCKET' Shape!!'."
+	icon_state = "nuka3"
+
+/obj/structure/sign/poster/prewar/ralphie
+	name = "Ralphie the Robot poster"
+	desc = "A poster for the pre-war children's TV show RALPHIE the Robot's Incredibly Odyssey. 'RALPHIE, fly far, fly fast!'."
+	icon_state = "ralphie"
+
+/obj/structure/sign/poster/prewar/sarsaparilla
+	name = "Sunset Sarsaparilla advertisement poster #1"
+	desc = "An advertisement for Sunset Sarsaparilla, depicting a burly man in a red and white striped wrestling singlet lifting a large dumbbell and drinking from a bottle. The text reads, 'Build MASS with SASS!'."
+	icon_state = "sunset"
+
+/obj/structure/sign/poster/prewar/sarsaparilla/fresh_delight
+	name = "Sunset Sarsaparilla advertisement poster #2"
+	desc = "An advertisement for Sunset Sarsaparilla, depicting a blonde girl with ponytails, holding a Sunset Sarsaparilla bottle. The text reads, 'A Fresh Delight!'."
+	icon_state = "sunset2"
+
+/obj/structure/sign/poster/prewar/sugar_bombs
+	name = "Sugar Bombs poster"
+	desc = "A pre-war advertisement for the pre-War breakfast cereal, Sugar Bombs, and the fact that a free Captain Cosmos decoder ring came with every box."
+	icon_state = "sugar"
+
+/obj/structure/sign/poster/prewar/vim
+	name = "Vim! poster"
+	desc = "A pre-war advertisement for a the soft drink, Vim! The text reads their textbook slogan 'You've got... Vim!'."
+	icon_state = "vim"
+
+/obj/structure/sign/poster/prewar/china
+	name = "Chinese poster"
+	desc = "A pre-war poster made by the People's Republic of China. The text is in Chinese."
+	icon_state = "communism"
+
+/obj/structure/sign/poster/prewar/ski
+	name = "Skiing poster"
+	desc = "A pre-war advertisement for a popular ski slope in the then state of Utah, Park City Mountain."
+	icon_state = "ski"
+
+/obj/structure/sign/poster/prewar/pebbles
+	name = "Mr. Pebbles poster"
+	desc = "A poster of a white cat in a spacesuit, standing at a podium in front of an American flag. The text reads, 'Mr. Pebbles: The First Cat In Space'."
+	icon_state = "pebbles"
 
 /obj/structure/sign/poster/contraband/pinup_ride
 	name = "Pin-up - Sweet Ride"
 	desc = "A pin-up of a woman riding a rocket while holding two toy guns."
-	icon_state = "poster52"
+	icon_state = "sweet_ride"
 
 /obj/structure/sign/poster/contraband/pinup_couch
 	name = "Pin-up - Lounging"
 	desc = "A pin-up of a woman in revealing lingerie sprawled across a couch."
-	icon_state = "poster53"
+	icon_state = "lounging"
 
 /obj/structure/sign/poster/contraband/pinup_bed
 	name = "Pin-up - Bed Time"
 	desc = "A pin-up of a woman holding a book while laying on a large pillow."
-	icon_state = "poster54"
+	icon_state = "bed_time"
 
 /obj/structure/sign/poster/contraband/pinup_pink
 	name = "Pin-up - Just Peachy"
 	desc = "A pin-up of a woman with bright pink clothing and a small crown in a suggestive pose."
-	icon_state = "poster55"
+	icon_state = "just_peachy"
 
 /obj/structure/sign/poster/contraband/pinup_funk
 	name = "Pin-up - Funk"
 	desc = "A pin-up of an attractive woman, with the word 'funk' written over her. On second thought, that might not be 'funk'..."
-	icon_state = "poster56"
+	icon_state = "funk"
 
 /obj/structure/sign/poster/contraband/pinup_topless
 	name = "Pin-up - Topless Times"
 	desc = "A pin-up of a woman without a shirt, freed from the restraints of clothing."
-	icon_state = "poster57"
+	icon_state = "topless_times"
 
 /obj/structure/sign/poster/contraband/pinup_shower
 	name = "Pin-up - Take a Shower"
 	desc = "A pin-up of a woman peeking out from behind a curtain, it looks like she's inviting you in with her."
-	icon_state = "poster58"
+	icon_state = "take_a_shower"
 
 /obj/structure/sign/poster/contraband/pinup_vixen
 	name = "Pin-up - Space Vixen"
 	desc = "A pin-up of a woman in a space suit that's definately NOT spaceproof."
-	icon_state = "poster59"
+	icon_state = "space_vixen"
 
 
 #undef PLACE_SPEED
@@ -685,23 +773,46 @@
 
 /obj/effect/landmark/poster_spawner/Initialize()
 	. = ..()
-	var/obj/structure/sign/poster/P = pick(posters)
-	world << "[P]"
-	new P(loc)
-	qdel()
+	var/poster_type = pick(posters)
+	var/obj/structure/sign/poster/P = new poster_type(loc)
+	P.pixel_x = pixel_x
+	P.pixel_y = pixel_y
+	qdel(src)
 
 /obj/effect/landmark/poster_spawner/ncr
-	posters = list(/obj/structure/sign/poster/ncr/keep_to_myself, /obj/structure/sign/poster/ncr/democracy, /obj/structure/sign/poster/ncr/irradiated_food, /obj/structure/sign/poster/ncr/loaded)
+	posters = list(
+		/obj/structure/sign/poster/ncr/keep_to_myself, /obj/structure/sign/poster/ncr/democracy, 
+		/obj/structure/sign/poster/ncr/irradiated_food, /obj/structure/sign/poster/ncr/loaded
+	)
 
 /obj/effect/landmark/poster_spawner/prewar
 	posters = list(
-		/obj/structure/sign/poster/prewar/corporate_espionage,
-		/obj/structure/sign/poster/prewar/protectron,
-		/obj/structure/sign/poster/prewar/vault_tec,
+		/obj/structure/sign/poster/prewar/poster61, /obj/structure/sign/poster/prewar/poster62,
+		/obj/structure/sign/poster/prewar/poster63, /obj/structure/sign/poster/prewar/poster65,
+		/obj/structure/sign/poster/prewar/poster66, /obj/structure/sign/poster/prewar/poster68,
+		/obj/structure/sign/poster/prewar/poster69, /obj/structure/sign/poster/prewar/poster70,
+		/obj/structure/sign/poster/prewar/poster71, /obj/structure/sign/poster/prewar/poster72,
+		/obj/structure/sign/poster/prewar/poster73, /obj/structure/sign/poster/prewar/poster74,
+		/obj/structure/sign/poster/prewar/poster75, /obj/structure/sign/poster/prewar/poster79,
+		/obj/structure/sign/poster/prewar/poster80, /obj/structure/sign/poster/prewar/poster81,
+		/obj/structure/sign/poster/prewar/poster82, /obj/structure/sign/poster/prewar/poster83,
+		/obj/structure/sign/poster/prewar/poster84, /obj/structure/sign/poster/prewar/protectron,
+		/obj/structure/sign/poster/prewar/vault_tec, /obj/structure/sign/poster/prewar/vault_tec/well_be_there,
+		/obj/structure/sign/poster/prewar/vault_tec/vault_secure, /obj/structure/sign/poster/prewar/vault_tec/vault_future,
+		/obj/structure/sign/poster/prewar/corporate, /obj/structure/sign/poster/prewar/corporate/eyes,
+		/obj/structure/sign/poster/prewar/corporate/espionage, /obj/structure/sign/poster/prewar/zion/night,
+		/obj/structure/sign/poster/prewar/zion/evening, /obj/structure/sign/poster/prewar/zion/morning,
+		/obj/structure/sign/poster/prewar/enlist, /obj/structure/sign/poster/prewar/dean,
+		/obj/structure/sign/poster/prewar/nukagirl, /obj/structure/sign/poster/prewar/nukacola,
+		/obj/structure/sign/poster/prewar/ralphie, /obj/structure/sign/poster/prewar/sarsaparilla,
+		/obj/structure/sign/poster/prewar/sugar_bombs, /obj/structure/sign/poster/prewar/vim,
+		/obj/structure/sign/poster/prewar/ski, /obj/structure/sign/poster/prewar/pebbles
 	)
 
 /obj/effect/landmark/poster_spawner/pinup
-	posters = list(/obj/structure/sign/poster/contraband/pinup_ride, /obj/structure/sign/poster/contraband/pinup_couch,
+	posters = list(
+		/obj/structure/sign/poster/contraband/pinup_ride, /obj/structure/sign/poster/contraband/pinup_couch,
 		/obj/structure/sign/poster/contraband/pinup_bed, /obj/structure/sign/poster/contraband/pinup_pink,
 		/obj/structure/sign/poster/contraband/pinup_funk, /obj/structure/sign/poster/contraband/pinup_topless,
-		/obj/structure/sign/poster/contraband/pinup_shower, /obj/structure/sign/poster/contraband/pinup_vixen)
+		/obj/structure/sign/poster/contraband/pinup_shower, /obj/structure/sign/poster/contraband/pinup_vixen
+	)

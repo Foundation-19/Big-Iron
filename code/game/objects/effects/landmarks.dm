@@ -525,21 +525,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Lieutenant"
 	icon_state = "NCR Lieutenant"
 
-obj/effect/landmark/start/f13/ncrlogisticsofficer
-	name = "NCR Logistics Officer"
-	icon_state = "NCR Lieutenant"
-
 /obj/effect/landmark/start/f13/ncrmedofficer
 	name = "NCR Medical Officer"
 	icon_state = "NCR Lieutenant"
-
-/obj/effect/landmark/start/f13/ncrfirstsergeant
-	name = "NCR Sergeant First Class"
-	icon_state = "NCR Sergeant"
-
-/obj/effect/landmark/start/f13/ncrdrillsergeant
-	name = "NCR Senior Enlisted Advisor"
-	icon_state = "NCR Drill Sergeant"
 
 /obj/effect/landmark/start/f13/ncrsergeant
 	name = "NCR Sergeant"
@@ -573,10 +561,6 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	name = "NCR Trooper"
 	icon_state = "NCR Trooper"
 
-/obj/effect/landmark/start/f13/ncrconscript
-	name = "NCR Conscript"
-	icon_state = "NCR Conscript"
-
 /obj/effect/landmark/start/f13/ncrveteranranger
 	name = "NCR Veteran Ranger"
 	icon_state = "NCR Veteran Ranger"
@@ -599,14 +583,8 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	name = "Legion Centurion"
 	icon_state = "Centurion"
 
-/obj/effect/landmark/start/f13/orator
-	name = "Legion Orator"
-
-/obj/effect/landmark/start/f13/immune
-	name = "Legion Immune"
-
-/obj/effect/landmark/start/f13/priestess
-	name = "Priestess of Mars"
+/obj/effect/landmark/start/f13/frumentarius
+	name = "Legion Frumentarius"
 
 /obj/effect/landmark/start/f13/decanvet
 	name = "Legion Veteran Decanus"
@@ -636,23 +614,12 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 	name = "Recruit Legionnaire"
 	icon_state = "Legionary"
 
-/obj/effect/landmark/start/f13/slavemaster
-	name = "Legion Slavemaster"
-
 /obj/effect/landmark/start/f13/explorer
 	name = "Legion Explorer"
 	icon_state = "Legionary"
 
-/obj/effect/landmark/start/f13/venator
-	name = "Legion FUCK YOU"
-	icon_state = "Legionary"
-
-/obj/effect/landmark/start/f13/auxilia
-	name = "Camp Follower"
-	icon_state = "Auxilla"
-
 /obj/effect/landmark/start/f13/campfollower
-	name = "Legion Forgemaster"
+	name = "Camp Follower"
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/slave
@@ -785,13 +752,6 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 
 // Wasteland
 
-/obj/effect/landmark/start/f13/cultleader
-	name = "Cult Leader"
-
-/obj/effect/landmark/start/f13/vigilante
-	name = "Vigilante"
-	icon_state = "Wastelander"
-
 /obj/effect/landmark/start/f13/wastelander
 	name = "Wastelander"
 	icon_state = "Wastelander"
@@ -806,10 +766,6 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 
 /obj/effect/landmark/start/f13/preacher
 	name = "Preacher"
-	icon_state = "Preacher"
-
-/obj/effect/landmark/start/f13/faithful
-	name = "Faithful"
 	icon_state = "Preacher"
 
 /obj/effect/landmark/start/f13/detective
@@ -888,23 +844,3 @@ obj/effect/landmark/start/f13/ncrlogisticsofficer
 
 /obj/effect/landmark/start/f13/guardian
 	icon_state = "Tribal"
-
-//Followers of the Apocalypse
-/obj/effect/landmark/start/f13/followersadministrator
-	name = "Followers Administrator"
-	icon_state = "Chief Medical Officer"
-
-/obj/effect/landmark/start/f13/followersdoctor
-	name = "Followers Doctor"
-	icon_state = "Medical Doctor"
-
-/obj/effect/landmark/start/f13/followersguard
-	name = "Followers Guard"
-	icon_state = "Security Officer"
-
-/obj/effect/landmark/start/f13/followersvolunteer
-	name = "Followers Volunteer"
-	icon_state = "Medical Doctor"
-
-/obj/effect/landmark/start/f13/followersscientist
-	name = "Followers Scientist"

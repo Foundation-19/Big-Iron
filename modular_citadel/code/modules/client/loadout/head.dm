@@ -282,15 +282,13 @@
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
 							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
 							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Military Police",
 							"NCR Trooper",
-							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
 
@@ -303,14 +301,14 @@
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
 							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
 							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Military Police",
 							"NCR Trooper",
+							"NCR Off-Duty"
 						)
 
 /datum/gear/head/steelpot_gambler
@@ -322,17 +320,17 @@
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
 							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
 							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Military Police",
 							"NCR Trooper",
+							"NCR Off-Duty"
 						)
 
-datum/gear/head/steelpot_bandolier
+/datum/gear/head/steelpot_bandolier
 	name = "NCR bandolier helmet"
 	path = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
@@ -341,17 +339,15 @@ datum/gear/head/steelpot_bandolier
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
 							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
 							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Military Police",
 							"NCR Trooper",
+							"NCR Off-Duty"
 						)
-
-
 
 /datum/gear/head/ncr_slouch
 	name = "NCR slouch hat"
@@ -362,15 +358,13 @@ datum/gear/head/steelpot_bandolier
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
 							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
 							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Military Police",
 							"NCR Trooper",
-							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
 
@@ -383,15 +377,13 @@ datum/gear/head/steelpot_bandolier
 	restricted_roles = list("NCR Captain",
 							"NCR Lieutenant",
 							"NCR Medical Officer",
-							"NCR Sergeant First Class",
-							"NCR Lieutenant",
 							"NCR Heavy Trooper",
 							"NCR Sergeant",
 							"NCR Corporal",
 							"NCR Combat Engineer",
 							"NCR Combat Medic",
+							"NCR Military Police",
 							"NCR Trooper",
-							"NCR Rear Echelon",
 							"NCR Off-Duty"
 						)
 
@@ -400,8 +392,11 @@ datum/gear/head/steelpot_bandolier
 	path = /obj/item/clothing/head/f13/ncr/ncr_campaign
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS
 	cost = 4
-	restricted_desc = "NCR"
-	restricted_roles = list("NCR Sergeant",
+	restricted_desc = "NCR NCOs and COs"
+	restricted_roles = list("NCR Captain",
+							"NCR Lieutenant",
+							"NCR Medical Officer",
+							"NCR Sergeant",
 							"NCR Heavy Trooper"
 						)
 

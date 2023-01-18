@@ -12,6 +12,9 @@
 	attachment_holes = FALSE
 	planetary_atmos = TRUE
 
+/turf/open/floor/plating/f13/inside
+	planetary_atmos = FALSE
+
 /* so we can't break this */
 /turf/open/floor/plating/f13/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
 	return
@@ -142,19 +145,19 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "housewood1"
 
-	New()
-		..()
-		if(icon_state == "housewood1")
-			icon_state = "housewood[rand(1,4)]"
+/turf/open/floor/wood/f13/Initialize()
+	. = ..()
+	if(icon_state == "housewood1")
+		icon_state = "housewood[rand(1,4)]"
 
 /turf/open/floor/wood/f13/oak
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "oakfloor1"
 
-	New()
-		..()
-		if(icon_state == "oakfloor1")
-			icon_state = "oakfloor[rand(1,4)]"
+/turf/open/floor/wood/f13/oak/Initialize()
+	. = ..()
+	if(icon_state == "oakfloor1")
+		icon_state = "oakfloor[rand(1,4)]"
 
 /turf/open/floor/wood/f13/housewoodbroken
 	icon_state = "housewood1-broken"

@@ -224,10 +224,12 @@
 /obj/structure/closet/crate/wicker
 	name = "basket"
 	desc = "A handmade wicker basket."
-	icon = 'icons/fallout/farming/farming_tools.dmi'
+	icon = 'icons/obj/crates.dmi'
 	icon_state = "basket"
 	resistance_flags = FLAMMABLE
-
+	open_sound = 'sound/effects/rustle3.ogg'
+	close_sound = 'sound/effects/rustle3.ogg'
+	material_drop = /obj/item/stack/sheet/hay
 
 
 // ------------------------------------

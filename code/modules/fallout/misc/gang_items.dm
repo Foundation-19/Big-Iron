@@ -244,9 +244,14 @@
 	item_path = /obj/item/grenade/f13/stinger
 
 /datum/gang_item/equipment/he
-	name = "High Explosive Grenade"
-	cost = 100
-	item_path = /obj/item/grenade/syndieminibomb/concussion
+	name = "Stick of Dynamite"
+	cost = 75
+	item_path = /obj/item/grenade/f13/dynamite
+
+/datum/gang_item/equipment/greatkhanheadset
+	name = "Great Khan Headset"
+	cost = 10 
+	item_path = /obj/item/radio/headset/headset_khans
 
 
 ///////////////////
@@ -293,7 +298,7 @@
 	new /obj/item/grenade/frag(src)
 	new /obj/item/grenade/plastic/c4(src)
 	new /obj/item/grenade/plastic/c4(src)
-	new /obj/item/grenade/syndieminibomb/concussion(src)
+	new /obj/item/grenade/f13/he_grenade(src)
 	new /obj/item/clothing/suit/bomb_suit(src)
 
 /datum/gang_item/equipment/bundlegunner

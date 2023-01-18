@@ -42,15 +42,55 @@
 	path = /obj/item/taperecorder
 	cost = 2
 
-/datum/gear/backpack/razor
-	name = "electric razor"
-	path = /obj/item/razor
-	cost = 2
-
 /datum/gear/backpack/donuts
 	name = "donut box"
 	path = /obj/item/storage/fancy/donut_box
 	cost = 2
+
+/datum/gear/backpack/straight_razor
+	name = "Straight razor"
+	path = /obj/item/melee/onehanded/straight_razor
+	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_COSMETICS
+	cost = 3
+
+/datum/gear/backpack/haircomb
+	name = "Plastic comb"
+	path = /obj/item/cosmetics/haircomb
+	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_COSMETICS
+	cost = 1
+
+/datum/gear/backpack/hairbrush
+	name = "Hair brush"
+	path = /obj/item/cosmetics/haircomb/brush
+	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_COSMETICS
+	cost = 1
+
+/datum/gear/backpack/makeupmirror
+	name = "Makeup mirror"
+	path = /obj/item/cosmetics/mirror_makeup
+	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_COSMETICS
+	cost = 1
+
+/datum/gear/backpack/lipstick
+	name = "Red lipstick"
+	path = "/obj/item/cosmetics/lipstick"
+	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_COSMETICS
+
+/datum/gear/backpack/lipstickpurple
+	name = "Purple lipstick"
+	path = /obj/item/cosmetics/lipstick/purple
+	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_COSMETICS
+
+/datum/gear/backpack/lipstickjade
+	name = "Jade lipstick"
+	path = /obj/item/cosmetics/lipstick/jade
+	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_COSMETICS
+
+/datum/gear/backpack/lipstickblack
+	name = "Black lipstick"
+	path = /obj/item/cosmetics/lipstick/black
+	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_COSMETICS
+
 
 /// Belts
 
@@ -236,7 +276,7 @@
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_BACKPACKS
 	cost = 2
 	restricted_desc = "Legion Veteran+"
-	restricted_roles = list("Legion Orator",
+	restricted_roles = list("Legion Frumentarius",
 							"Legion Centurion",
 							"Legion Veteran Decanus",
 							"Legion Prime Decanus",
@@ -251,7 +291,7 @@
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_BACKPACKS
 	cost = 2
 	restricted_desc = "Legion Veteran+"
-	restricted_roles = list("Legion Orator",
+	restricted_roles = list("Legion Frumentarius",
 							"Legion Centurion",
 							"Legion Veteran Decanus",
 							"Legion Prime Decanus",

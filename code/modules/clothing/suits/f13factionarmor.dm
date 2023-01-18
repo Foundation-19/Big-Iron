@@ -187,7 +187,7 @@
 	icon_state = "legion_recruit"
 	item_state = "legarmor"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/powered, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
+	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/powered, /obj/item/melee/smith, /obj/item/twohanded/smithed)
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	slowdown = 0.05
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/tiny/legion
@@ -225,8 +225,8 @@
 	desc = "Legion prime decanus armor-an extra reinforced baseball uniform."
 	armor = list("melee" = 45, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
-/obj/item/clothing/suit/armor/f13/legion/orator
-	name = "Legion Orator armor"
+/obj/item/clothing/suit/armor/f13/legion/frumentarius
+	name = "Legion Frumentarius armor"
 	desc = "The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
 	icon_state = "legion_orator"
 	item_state = "legion_orator"
@@ -383,15 +383,6 @@
 	max_items = 4
 
 /obj/item/clothing/suit/armor/f13/utilityvest/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
-
-/obj/item/clothing/suit/armor/f13/utilityvest/logisticsofficer //same as his beret
-	name = "logistics officer utility vest"
-	desc = "A practical and armored vest with pockets for tools and such."
-	armor = list("melee" = 15, "bullet" = 30, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 55)
-
-/obj/item/clothing/suit/armor/f13/utilityvest/logisticsofficer/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 

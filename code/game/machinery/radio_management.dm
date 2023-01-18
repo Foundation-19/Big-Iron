@@ -127,4 +127,4 @@ GLOBAL_LIST_EMPTY(enclave_radios)
 /obj/machinery/radioterminal/enclave
 	name = "Enclave radio control"
 	assigned_faction = FACTION_ENCLAVE
-	req_one_access = list(ACCESS_ENCLAVE_COMMAND)
+	req_one_access = list(ACCESS_ENCLAVE)

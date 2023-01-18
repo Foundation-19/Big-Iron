@@ -67,6 +67,10 @@ GLOBAL_LIST(topic_status_cache)
 	initialize_global_loadout_items()
 	reload_custom_roundstart_items_list()//Cit change - loads donator items. Remind me to remove when I port over bay's loadout system
 
+	//Scramble the coords obsfucator
+	GLOB.obfs_x = rand(-2500, 2500)
+	GLOB.obfs_y = rand(-2500, 2500)
+
 	Master.Initialize(10, FALSE, TRUE)
 
 	#ifdef UNIT_TESTS
@@ -310,7 +314,7 @@ GLOBAL_LIST(topic_status_cache)
 
 	s += "<b>[station_name()]</b>";
 	s += " ("
-	s += "<a href=\"https://discord.gg/xCgEwJTppx\">" //Change this to wherever you want the hub to link to.
+	s += "<a href=\"https://discord.gg/NrMb5bEvHA\">" //Change this to wherever you want the hub to link to.
 	s += "Discord"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"
 	s += ")\]" //CIT CHANGE - encloses the server title in brackets to make the hub entry fancier

@@ -21,7 +21,7 @@
 
 	//Facial hair colour and style
 	var/facial_hair_color = "000"
-	var/facial_hair_style = "Shaved"
+	var/facial_hair_style = "Clean shave (Hairless)"
 
 	//Eye colour
 	var/left_eye_color = "000"

@@ -266,12 +266,14 @@ There are several things that need to be remembered:
 				client.screen += ears					//add it to the client's screen
 		update_observer_view(ears,1)
 
-		overlays_standing[EARS_LAYER] = ears.build_worn_icon(default_layer = EARS_LAYER, default_icon_file = 'icons/mob/ears.dmi')
+		if(!(head && (head.flags_inv & HIDEEARS)) && !(wear_mask && (wear_mask.flags_inv & HIDEEARS))) 
+			overlays_standing[EARS_LAYER] = ears.build_worn_icon(default_layer = EARS_LAYER, default_icon_file = 'icons/mob/ears.dmi')
 		var/mutable_appearance/ears_overlay = overlays_standing[EARS_LAYER]
-		if(OFFSET_EARS in dna.species.offset_features)
-			ears_overlay.pixel_x += dna.species.offset_features[OFFSET_EARS][1]
-			ears_overlay.pixel_y += dna.species.offset_features[OFFSET_EARS][2]
-		overlays_standing[EARS_LAYER] = ears_overlay
+		if(ears_overlay) //also checking if it got an ear overlay, else if it null it runtimes at spawn
+			if(OFFSET_EARS in dna.species.offset_features)
+				ears_overlay.pixel_x += dna.species.offset_features[OFFSET_EARS][1]
+				ears_overlay.pixel_y += dna.species.offset_features[OFFSET_EARS][2]
+			overlays_standing[EARS_LAYER] = ears_overlay 
 	apply_overlay(EARS_LAYER)
 
 
@@ -762,7 +764,7 @@ use_mob_overlay_icon: if FALSE, it will always use the default_icon_file even if
 	if(HD && !(HAS_TRAIT(src, TRAIT_HUSK)))
 		// lipstick
 		if(lip_style && (LIPS in dna.species.species_traits))
-			var/mutable_appearance/lip_overlay = mutable_appearance('icons/mob/human_face.dmi', "lips_[lip_style]", -BODY_LAYER)
+			var/mutable_appearance/lip_overlay = mutable_appearance('modular_BD2/fashion/icons/face_overlays.dmi', "lips_[lip_style]", -BODY_LAYER)
 			lip_overlay.color = lip_color
 			if(OFFSET_LIPS in dna.species.offset_features)
 				lip_overlay.pixel_x += dna.species.offset_features[OFFSET_LIPS][1]

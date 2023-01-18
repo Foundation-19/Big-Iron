@@ -49,6 +49,8 @@
 	var/base_opacity = FALSE
 	///Lazylist of movable atoms providing opacity sources.
 	var/list/atom/movable/opacity_sources
+	///whether or not this turf forces movables on it to have no gravity (unless they themselves have forced gravity)
+	var/force_no_gravity = FALSE
 
 
 /turf/vv_edit_var(var_name, var_value)
@@ -68,8 +70,9 @@
 		stack_trace("Warning: [src]([type]) initialized multiple times!")
 	flags_1 |= INITIALIZED_1
 
-	// by default, vis_contents is inherited from the turf that was here before
-	vis_contents.Cut()
+	// Checking length(vis_contents) in a proc this hot has huge wins for performance.
+	if(length(vis_contents))
+		vis_contents.Cut()
 
 	if(color)
 		add_atom_colour(color, FIXED_COLOUR_PRIORITY)
@@ -79,7 +82,9 @@
 	levelupdate()
 	if(smooth)
 		queue_smooth(src)
-	visibilityChanged()
+	
+	if (!mapload)
+		visibilityChanged()
 
 	if(initial(opacity)) // Could be changed by the initialization of movable atoms in the turf.
 		base_opacity = initial(opacity)
@@ -100,7 +105,7 @@
 				smooth_sunlight_border()
 
 	if(requires_activation)
-		CALCULATE_ADJACENT_TURFS(src)
+		ImmediateCalculateAdjacentTurfs()
 
 	if (light_power && light_range)
 		update_light()
@@ -118,12 +123,6 @@
 	set_custom_materials(custom_materials)
 
 	ComponentInitialize()
-	if(isopenturf(src))
-		var/turf/open/O = src
-		__auxtools_update_turf_temp_info(isspaceturf(get_z_base_turf()) && !O.planetary_atmos)
-	else
-		update_air_ref(-1)
-		__auxtools_update_turf_temp_info(isspaceturf(get_z_base_turf()))
 
 	return INITIALIZE_HINT_NORMAL
 
@@ -135,7 +134,7 @@
 
 
 /turf/proc/Initialize_Atmos(times_fired)
-	CALCULATE_ADJACENT_TURFS(src)
+	ImmediateCalculateAdjacentTurfs()
 
 /turf/Destroy(force)
 	. = QDEL_HINT_IWILLGC
@@ -162,6 +161,8 @@
 	flags_1 &= ~INITIALIZED_1
 	requires_activation = FALSE
 	..()
+	if (length(vis_contents))
+		vis_contents.Cut()
 
 /turf/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	user.Move_Pulled(src)
