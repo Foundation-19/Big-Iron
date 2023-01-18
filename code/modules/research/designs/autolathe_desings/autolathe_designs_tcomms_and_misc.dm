@@ -9,7 +9,7 @@
 	name = "Remote Signaling Device"
 	id = "signaler"
 	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
-	materials = list(MAT_METAL = 400, MAT_GLASS = 120)
+	materials = list(/datum/material/iron = 400, /datum/material/glass = 120)
 	build_path = /obj/item/assembly/signaler
 	category = list("initial", "T-Comm", "Electronics")
 
@@ -61,7 +61,7 @@
 	name = "Earmuffs"
 	id = "earmuffs"
 	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
-	materials = list(MAT_METAL = 500, MAT_GLASS = 500)
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 500)
 	build_path = /obj/item/clothing/ears/earmuffs
 	category = list("initial", "Misc")
 
@@ -157,7 +157,7 @@
 	name = "Igniter"
 	id = "igniter"
 	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
-	materials = list(MAT_METAL = QUARTER_SHEET, MAT_GLASS = 50)
+	materials = list(/datum/material/iron = QUARTER_SHEET, /datum/material/glass = 50)
 	build_path = /obj/item/assembly/igniter
 	category = list("initial", "Misc")
 
@@ -173,7 +173,7 @@
 	name = "Timer"
 	id = "timer"
 	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
-	materials = list(MAT_METAL = 500, MAT_GLASS = 50)
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 50)
 	build_path = /obj/item/assembly/timer
 	category = list("initial", "Misc")
 

@@ -63,7 +63,7 @@
 	name = "Hand Labeler"
 	id = "handlabel"
 	build_type = AUTOLATHE | PROTOLATHE | AUTOLATHE_PRIMITIVE
-	materials = list(MAT_METAL = 150, MAT_GLASS = 125)
+	materials = list(/datum/material/iron = 150, /datum/material/glass = 125)
 	build_path = /obj/item/hand_labeler
 	category = list("initial", "Electronics")
 

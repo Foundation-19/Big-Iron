@@ -9,7 +9,7 @@
 	name = "Kitchen Knife"
 	id = "kitchen_knife"
 	build_type = AUTOLATHE | NO_PUBLIC_LATHE
-	materials = list(MAT_METAL = ONE_SHEET*3)
+	materials = list(/datum/material/iron = ONE_SHEET*3)
 	build_path = /obj/item/kitchen/knife
 	category = list("initial","Dinnerware")
 
@@ -33,7 +33,7 @@
 	name = "Bowl"
 	id = "bowl"
 	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
-	materials = list(MAT_GLASS = QUARTER_SHEET)
+	materials = list(/datum/material/glass = QUARTER_SHEET)
 	build_path = /obj/item/reagent_containers/glass/bowl
 	category = list("initial","Dinnerware")
 
@@ -41,7 +41,7 @@
 	name = "Drinking Glass"
 	id = "drinking_glass"
 	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
-	materials = list(MAT_GLASS = 500)
+	materials = list(/datum/material/glass = 500)
 	build_path = /obj/item/reagent_containers/food/drinks/drinkingglass
 	category = list("initial","Dinnerware")
 
@@ -157,8 +157,8 @@
 /datum/design/beaker
 	name = "Beaker"
 	id = "beaker"
-	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(MAT_GLASS = QUARTER_SHEET)
+	build_type = AUTOLATHE | PROTOLATHE | AUTOLATHE_PRIMITIVE
+	materials = list(/datum/material/glass = QUARTER_SHEET)
 	build_path = /obj/item/reagent_containers/glass/beaker
 	category = list("initial", "Medical","Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SERVICE | DEPARTMENTAL_FLAG_SCIENCE
@@ -211,7 +211,7 @@
 	name = "Syringe"
 	id = "syringe"
 	build_type = AUTOLATHE | AUTOLATHE_PRIMITIVE
-	materials = list(MAT_METAL = 10, MAT_GLASS = 20)
+	materials = list(/datum/material/iron = 10, /datum/material/glass = 20)
 	build_path = /obj/item/reagent_containers/syringe
 	category = list("initial", "Medical")
 
