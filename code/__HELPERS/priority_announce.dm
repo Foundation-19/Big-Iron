@@ -155,7 +155,6 @@
 					
 
 /proc/minor_announce/grace("The winds grow violent, and the air grows tense. You feel as though it isn't as safe as it once was", title = "Warning!")
-
 	for(var/mob/M in GLOB.player_list)
 		if(!isnewplayer(M) && M.can_hear())
 			to_chat(M, "<span class='big bold'><font color = red>[html_encode(title)]</font color><BR>[html_encode(message)]</span><BR>")
