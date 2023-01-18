@@ -578,6 +578,9 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 	var/obj/item/bodypart/head/HD = H.get_bodypart(BODY_ZONE_HEAD)
 
+	if (H.dna.features["body_model"] == FEMALE) // Add FEMALE put here, seems to function well here
+		ADD_TRAIT(H, TRAIT_FEMALE, src)
+
 	if(HD && !(HAS_TRAIT(H, TRAIT_HUSK)))
 		// lipstick
 		if(H.lip_style && (LIPS in species_traits))
