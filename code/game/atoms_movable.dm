@@ -226,6 +226,9 @@
 	var/move_dir = get_dir(pulling.loc, A)
 	if(!Process_Spacemove(move_dir))
 		return FALSE
+//	if(pulling.pulling.pulling.pulling.pulling)
+//		stop_pulling()
+//		return FALSE
 	pulling.Move(get_step(pulling.loc, move_dir), move_dir, glide_size)
 	return TRUE
 
