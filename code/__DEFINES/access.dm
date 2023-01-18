@@ -91,7 +91,6 @@
 also be like that but I can't be arsed to go back and change them all*/
 
 #define ACCESS_LEGION		123	//general legion access
-#define ACCESS_FOLLOWER		124	//general followers access
 #define ACCESS_KHAN			125	//general khan access
 #define ACCESS_VAULT_F13	126	//general vault access
 #define ACCESS_RESTRICT		127	//general restricted access

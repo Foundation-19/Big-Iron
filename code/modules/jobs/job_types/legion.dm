@@ -719,31 +719,32 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 
-// ----------------- ORATOR ---------------------
+// ----------------- FRUMENTARIUS ---------------------
 
-/datum/job/CaesarsLegion/Legionnaire/f13orator
-	title = "Legion Orator"
-	flag = F13ORATOR
-	display_order = JOB_DISPLAY_ORDER_ORATOR
-	supervisors = "Centurion"
+/datum/job/CaesarsLegion/Legionnaire/f13frumentarius
+	title = "Legion Frumentarius"
+	flag = F13FRUMENTARIUS
+	display_order = JOB_DISPLAY_ORDER_FRUMENTARIUS
+	description = "The Eyes and Ears of Caesar. Frumentarii cover a wide range of specializations, from Ambassadors to local Tribes, Infiltrators of enemy societies, Couriers, Intelligence Gatherers and the Secret Police of Legion Camps. Unlike the lesser Legionaries, a Frumentarius is given much unsupervised freedom to do as one pleases, so long as the Legion's goals are accomplished. You are one of these Frumentarius. Spread Caesar's Will, for Mars is watching."
+	supervisors = "the Centurion"
 	selection_color = "#ffdddd"
 	total_positions = 1
 	spawn_positions = 1
 	exp_requirements = 1500
 	
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13orator
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13frumentarius
 	
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13orator	// .357 Revolver, Spatha
-	name = "Orator"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13orator
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13frumentarius	// .357 Revolver, Spatha
+	name = "Legion Frumentarius"
+	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13frumentarius
 	neck = /obj/item/storage/belt/holster
 	shoes = /obj/item/clothing/shoes/f13/military/plated
-	suit = /obj/item/clothing/suit/armor/f13/legion/orator
-	head = /obj/item/clothing/head/helmet/f13/legion/orator
-	id = /obj/item/card/id/dogtag/legorator
+	suit = /obj/item/clothing/suit/armor/f13/legion/frumentarius
+	head = /obj/item/clothing/head/helmet/f13/legion/frumentarius
+	id = /obj/item/card/id/dogtag/legfrumentarius
 	gloves = null
 	backpack = /obj/item/storage/backpack/legionr
 	shoes = /obj/item/clothing/shoes/roman
@@ -757,7 +758,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13orator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13frumentarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -1067,148 +1068,34 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 						//								//
 						//////////////////////////////////
 
-// Immunes are mostly an off-duty role meant to attend to the camp itself and the slaves or prisoners within.
+// ----------------- CAMP FOLLOWER --------------------- //
 
-/datum/job/CaesarsLegion/Legionnaire/f13immune
-	title = "Legion Immune"
-	flag = F13IMMUNE
+/datum/job/CaesarsLegion/f13campfollower
+	title = "Camp Follower"
+	flag = F13CAMPFOLLOWER
+	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	total_positions = 4
-	spawn_positions = 1
-	description = "An Immune is a legionnaire temporarily assigned to keeping the camp in order, according to their tasking on any given week."
-	supervisors = "the Centurion"
-	display_order = JOB_DISPLAY_ORDER_IMMUNE
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13immune
+	spawn_positions = 4
+	description = "A Camp Follower ranges in purposes. A Camp Follower is a legionnaire who got assigned to keeping the camp in order. Duties may vary from medical specialities, weapon crafting or other skilled-labor tasks."
+	supervisors = "Officers first, then warriors."
 	exp_requirements = 300
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13immune
-	name = "Immune"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13immune
-	id = /obj/item/card/id/dogtag/legimmune
+	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
+
+/datum/outfit/job/CaesarsLegion/f13campfollower
+	name = "Camp Follower"
+	id = /obj/item/card/id/dogtag/legfollower
 	mask = /obj/item/clothing/mask/bandana/legion/camp
 	uniform = /obj/item/clothing/under/f13/legskirt
 	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/f13/military/leather
 	l_pocket = /obj/item/flashlight/lantern
-	suit_store = /obj/item/melee/onehanded/machete/forgedmachete
+	suit_store = /obj/item/melee/onehanded/slavewhip
 	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/healingpowder = 1,
 		/obj/item/storage/bag/money/small/legenlisted = 1,
-		/obj/item/reagent_containers/pill/patch/healingpowder = 2
-		)
-
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13immune/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
-
-// ----------------- CAMP FOLLOWER --------------------- //
-
-/datum/job/CaesarsLegion/f13campfollower	// The main visual distinction between loadout/roles are their aprons, hats, shoes.
-	title = "Camp Follower"
-	flag = F13CAMPFOLLOWER
-	total_positions = 4
-	spawn_positions = 4
-	description = "A camp follower ranges in definition and purposes. Some may be not enslaved men who are simply not fit for service, termorarily or perminantly, or women who serve a purpose above stock to the Legion. Duties may vary from medical specialities, weapon crafting or other skilled-labor tasks."
-	supervisors = "Officers first, then warriors."
-	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
-	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
-
-	loadout_options = list(
-		/datum/outfit/loadout/servant,		// food -> medical -> clean
-		/datum/outfit/loadout/worker,		// farm -> mine -> clean
-		/datum/outfit/loadout/treasurer,	// jack of all trades
-		/datum/outfit/loadout/blacksmith,	// blacksmithing
-		/datum/outfit/loadout/medicus		// medical -> farm
-		)
-
-/datum/outfit/job/CaesarsLegion/f13campfollower
-	name = "Camp Follower"
-	id = /obj/item/card/id/dogtag/follower
-	ears = /obj/item/radio/headset/headset_legion
-	uniform	= /obj/item/clothing/under/f13/legauxilia
-	backpack = /obj/item/storage/backpack/satchel/leather
-	l_pocket = /obj/item/flashlight/lantern
-	shoes = null
-	backpack_contents = list(
-		/obj/item/clothing/glasses/welding = 1,
-		/obj/item/storage/bag/money/small/legenlisted = 1,
-		/obj/item/stack/sheet/cloth/ten = 1,
-		/obj/item/stack/sheet/leather/ten = 1
-		)
-
-/datum/outfit/loadout/servant
-	name = "Servant"
-	head = /obj/item/clothing/head/f13/servant
-	shoes = /obj/item/clothing/shoes/sandal
-	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder = 3,
-		/obj/item/smelling_salts = 1,
-		/obj/item/book/granter/trait/lowsurgery = 1,
-		/obj/item/reagent_containers/food/condiment/flour = 2,
-		/obj/item/soap/homemade = 1,
-		/obj/item/cosmetics/razor = 1
-		)
-
-/datum/outfit/loadout/worker
-	name = "Worker"
-	uniform = /obj/item/clothing/under/f13/legslave
-	shoes =	/obj/item/clothing/shoes/f13/rag
-	r_hand = /obj/item/flashlight/flare/torch
-	backpack_contents = list(
-		/obj/item/storage/bag/plants = 1,
-		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus = 1,
-		/obj/item/cultivator = 1,
-		/obj/item/broom = 1,
-		/obj/item/twohanded/fireaxe = 1,
-		/obj/item/shovel/spade = 1,
-		/obj/item/seeds/tomato = 2,
-		/obj/item/seeds/wheat = 2,
-		/obj/item/seeds/corn = 2,
-		/obj/item/seeds/onion = 2,
-		/obj/item/seeds/soya = 2,
-		/obj/item/seeds/potato = 2,
-		/obj/item/seeds/sugarcane = 2
-		)
-
-/datum/outfit/loadout/treasurer
-	name = "Treasurer"
-	head = /obj/item/clothing/head/f13/auxilia
-	neck = /obj/item/clothing/neck/mantle/treasurer
-	shoes = /obj/item/clothing/shoes/sandal
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/legauxiliaf = 1,
-		/obj/item/folder/red = 1,
-		/obj/item/paper/natural = 2,
-		/obj/item/pen/fountain = 1,
-		/obj/item/storage/bag/money/small/legion = 1
-		)
-
-/datum/outfit/loadout/blacksmith
-	name = "Blacksmith"
-	shoes = /obj/item/clothing/shoes/f13/military/plated
-	mask = /obj/item/clothing/mask/bandana/legion
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/legskirt = 1,
-		/obj/item/storage/belt/utility/waster/forgemaster = 1,
-		/obj/item/clothing/neck/apron/labor/forge = 1,
-		/obj/item/clothing/gloves/legion/forgemaster = 1,
-		/obj/item/stack/sheet/mineral/wood/twenty = 1,
-		/obj/item/twohanded/chainsaw = 1
-		)
-
-/datum/outfit/loadout/medicus
-	name = "Medicus"
-	head = /obj/item/clothing/head/f13/auxilia
-	shoes = /obj/item/clothing/shoes/f13/military/legion
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/legauxiliaf = 1,
-		/obj/item/defibrillator/primitive = 1,
-		/obj/item/clothing/neck/apron/medicus = 1,
-		/obj/item/clothing/gloves/f13/crudemedical = 1,
-		/obj/item/storage/belt/medical/primitive = 1,
-		/obj/item/book/granter/trait/midsurgery = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
-		/obj/item/healthanalyzer = 1
+		/obj/item/reagent_containers/glass/bucket = 1,
+		/obj/item/mop = 1
 		)
 
 /datum/outfit/job/CaesarsLegion/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1219,29 +1106,22 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 
-//......................//////////////////////////////////................................................
-						//								//
-						// 		GRAVEYARD - UNUSED		//
-						//								//
-//......................//////////////////////////////////................................................
-
 // LEGION SLAVES - Servant cook, and assist with medical, low surgery. Worker farm and mine.
-// Both get Mars teachings to help out when normal work is done.
 
 /datum/job/CaesarsLegion/slave
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 4
+	spawn_positions = 4
 	description = "A slave that survives the breaking camps is given a Legion appropriate name (latin-tribal inspired) and bull tattoo. Be obedient, respectful, stay inside the camp. Work the farm, mine, make food, clean and help injured men. Do NOT escape on your own, up to you how to handle it if forcibly freed by outside forces."
-	supervisors = "Officers and Slavemaster first, then Auxilia, then warriors"
+	supervisors = "Officers, then warriors"
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
 	exp_requirements = 120
 	outfit = /datum/outfit/job/CaesarsLegion/slave
 
 	loadout_options = list(
-		/datum/outfit/loadout/slaveservant,
-		/datum/outfit/loadout/slaveworker
+		/datum/outfit/loadout/slaveservant, //Servants cook, clean, help with medical tasks.
+		/datum/outfit/loadout/slaveworker //Workers farm and mine.
 		)
 
 	matchmaking_allowed = list(
@@ -1263,13 +1143,11 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Legion Slave"
 	jobtype = /datum/outfit/job/CaesarsLegion/slave
 	id = /obj/item/card/id/legionbrand
-	uniform = /obj/item/clothing/under/f13/legslavef
+	uniform = /obj/item/clothing/under/f13/legslave
 	neck = /obj/item/electropack/shockcollar
 	shoes =	null
 	l_pocket = /obj/item/radio
 
-
-//Servants cook, clean, help with medical tasks.
 /datum/outfit/loadout/slaveservant
 	name = "Servant"
 	head = /obj/item/clothing/head/f13/servant
@@ -1289,6 +1167,19 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/lighter = 1
 		)
 
+/datum/outfit/loadout/slaveworker
+	name = "Worker"
+	suit = /obj/item/clothing/suit/armor/f13/slavelabor
+	shoes =	/obj/item/clothing/shoes/f13/rag
+	r_hand = /obj/item/flashlight/flare/torch
+	backpack_contents = list(
+		/obj/item/storage/bag/plants = 1,
+		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus = 1,
+		/obj/item/cultivator = 1,
+		/obj/item/soap/homemade = 1,
+		/obj/item/shovel/spade = 1
+		)
+
 /datum/outfit/loadout/slaveservant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -1301,21 +1192,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 			var/obj/item/card/id/dogtag/L = H.wear_id
 			L.registered_name = H.name
 			L.update_label()
-
-//Laborers farm and mine.
-/datum/outfit/loadout/slaveworker
-	name = "Worker"
-	suit = /obj/item/clothing/suit/armor/f13/slavelabor
-	uniform = /obj/item/clothing/under/f13/legslave
-	shoes =	/obj/item/clothing/shoes/f13/rag
-	r_hand = /obj/item/flashlight/flare/torch
-	backpack_contents = list(
-		/obj/item/storage/bag/plants = 1,
-		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus = 1,
-		/obj/item/cultivator = 1,
-		/obj/item/soap/homemade = 1,
-		/obj/item/shovel/spade = 1
-		)
 
 /*
 Post Scriptum
