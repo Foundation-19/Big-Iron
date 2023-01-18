@@ -310,7 +310,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	neck = /obj/item/storage/belt/sabre/heavy
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2
+		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
 		/obj/item/grenade/smokebomb = 1
 		)
 
