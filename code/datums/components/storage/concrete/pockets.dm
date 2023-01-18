@@ -113,7 +113,7 @@
 	can_hold = typecacheof(list( //Same items as a PDA
 		/obj/item/pen,
 		/obj/item/toy/crayon,
-		/obj/item/lipstick,
+		/obj/item/cosmetics/lipstick,
 		/obj/item/flashlight/pen,
 		/obj/item/clothing/mask/cigarette))
 
@@ -262,7 +262,7 @@ GLOBAL_LIST_INIT(storage_treasurer_can_hold, typecacheof(list(
 	/obj/item/folder,
 	/obj/item/storage/bag/money/small,
 	/obj/item/binoculars,
-	/obj/item/lipstick,
+	/obj/item/cosmetics/lipstick,
 	/obj/item/pen,
 	)))
 

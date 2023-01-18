@@ -28,7 +28,7 @@
 		/obj/item/disk,
 		/obj/item/implanter,
 		/obj/item/lighter,
-		/obj/item/lipstick,
+		/obj/item/cosmetics/lipstick,
 		/obj/item/match,
 		/obj/item/paper,
 		/obj/item/pen,

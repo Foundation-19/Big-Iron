@@ -53,14 +53,15 @@
 
 /obj/machinery/workbench
 	name = "workbench"
-	icon = 'icons/obj/machines/reloadingbench.dmi'
+	icon = 'modular_BD2/general/icons/workbench.dmi'
 	icon_state = "standard_bench"
-	desc = "A basic workbench for simple to intermediate projects."
+	desc = "A basic workbench with a full set of tools for simple to intermediate projects."
 	resistance_flags = INDESTRUCTIBLE
 	density = TRUE
 	layer = BELOW_OBJ_LAYER
 	anchored = TRUE
-	machine_tool_behaviour = TOOL_WORKBENCH
+	machine_tool_behaviour = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER, TOOL_WIRECUTTER, TOOL_WRENCH)
+	drag_delay = 0.4 SECONDS // Heavy, slow to drag
 	var/wrenchable = 1
 
 
@@ -130,9 +131,10 @@
 
 /obj/machinery/workbench/advanced
 	name = "advanced workbench"
+	desc = "A large and advanced pre-war workbench to tackle any project! Comes with a full set of basic tools and a digital multitool."
+	icon = 'modular_BD2/general/icons/workbench.dmi'
 	icon_state = "advanced_bench"
-	desc = "A large and advanced pre-war workbench to tackle any project!"
-	machine_tool_behaviour = list(TOOL_AWORKBENCH, TOOL_WORKBENCH)
+	machine_tool_behaviour = list(TOOL_AWORKBENCH, TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER, TOOL_WIRECUTTER, TOOL_WRENCH, TOOL_MULTITOOL)
 
 /obj/machinery/workbench/mbench
 	name = "machine workbench"
@@ -156,17 +158,18 @@
 
 /obj/machinery/workbench/bottler
 	name = "bottle press"
-	icon_state = "bottler"
 	desc = "A self-crafted all-in-one bottle making and pressing machine."
+	icon = 'modular_BD2/general/icons/workbench.dmi'
+	icon_state = "bottler"
 	machine_tool_behaviour = list(TOOL_BOTTLER)
 
 /obj/machinery/workbench/forge
 	name = "metalworking bench"
 	desc = "A workbench with a drill press, a makeshift blowtorch setup, and various tools for making crude weapons and tools."
-	icon = 'icons/fallout/machines/64x32.dmi'
+	icon = 'modular_BD2/general/icons/workbench64x32.dmi'
 	icon_state = "bench_metal"
 	bound_width = 64
-	machine_tool_behaviour = list(TOOL_FORGE)
+	machine_tool_behaviour = list(TOOL_FORGE, TOOL_WELDER)
 
 /obj/item/weaponcrafting/receiver
 	name = "modular receiver"
@@ -179,17 +182,6 @@
 	desc = "A classic rifle stock that doubles as a grip, roughly carved out of wood."
 	icon = 'icons/obj/improvised.dmi'
 	icon_state = "riflestock"
-
-/obj/machinery/autolathe/ammobench
-	name = "universal reloading bench"
-	desc = "A reloading bench used for inefficiently  crafting new ammunition out of scrap metal. There's a substantial supply of powder and primer. This one can be used to craft most NCR and Legion rounds."
-	resistance_flags = INDESTRUCTIBLE
-	density = TRUE
-	layer = BELOW_OBJ_LAYER
-	anchored = TRUE
-//	machine_tool_behaviour = list(TOOL_LEGION, TOOL_NCR)
-	categories = list("Security")
-	super_advanced_technology = FALSE
 
 /obj/machinery/ammobench
 	name = "pre-war reloading press"
