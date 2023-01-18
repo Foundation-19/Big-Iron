@@ -764,7 +764,7 @@ use_mob_overlay_icon: if FALSE, it will always use the default_icon_file even if
 	if(HD && !(HAS_TRAIT(src, TRAIT_HUSK)))
 		// lipstick
 		if(lip_style && (LIPS in dna.species.species_traits))
-			var/mutable_appearance/lip_overlay = mutable_appearance('icons/mob/human_face.dmi', "lips_[lip_style]", -BODY_LAYER)
+			var/mutable_appearance/lip_overlay = mutable_appearance('modular_BD2/fashion/icons/face_overlays.dmi', "lips_[lip_style]", -BODY_LAYER)
 			lip_overlay.color = lip_color
 			if(OFFSET_LIPS in dna.species.offset_features)
 				lip_overlay.pixel_x += dna.species.offset_features[OFFSET_LIPS][1]
