@@ -714,7 +714,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/grenade/plastic/c4 = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
-		/obj/item/book/granter/trait/explosives = 1
+		/obj/item/book/granter/trait/explosives = 1,
+		/obj/item/book/granter/trait/bowman = 1
 		)
 
 
@@ -972,7 +973,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/storage/belt/tribe_quiver = 1,
 		/obj/item/reagent_containers/pill/bitterdrink = 2,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2
+		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
+		/obj/item/book/granter/trait/bowman = 1
 		)
 		
 // ----------------- RECRUIT --------------------- //
@@ -1042,7 +1044,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/storage/belt/tribe_quiver = 1,
 		/obj/item/book/granter/trait/trekking = 1,
-		/obj/item/warpaint_bowl = 1
+		/obj/item/warpaint_bowl = 1,
+		/obj/item/book/granter/trait/bowman = 1
 		)
 
 /datum/outfit/loadout/recruitlegion
