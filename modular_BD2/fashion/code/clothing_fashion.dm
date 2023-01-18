@@ -11,24 +11,24 @@
 /obj/effect/spawner/bundle/fashion/angel_eyes
 	name = "Angel Eyes outfit spawner"
 	items = list(
-		/obj/item/clothing/suit/armor/light/duster/cowboy,
-		/obj/item/clothing/head/helmet/fashion/cowboy,
+		/obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy,
+		/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy,
 		/obj/item/clothing/under/f13/fashion/cowboy_angeleyes,
 		/obj/item/clothing/shoes/f13/military/fashion/cowboy_boots)
 
 /obj/effect/spawner/bundle/fashion/blondie
 	name = "Blondie outfit spawner"
 	items = list(
-		/obj/item/clothing/suit/armor/light/duster/cowboy/blondie,
-		/obj/item/clothing/head/helmet/fashion/cowboy/blondie,
+		/obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy/blondie,
+		/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy/blondie,
 		/obj/item/clothing/under/f13/fashion/cowboy_blondie,
 		/obj/item/clothing/shoes/f13/military/fashion/cowboy_boots/blondie)
 
 /obj/effect/spawner/bundle/fashion/tuco
 	name = "Tuco outfit spawner"
 	items = list(
-		/obj/item/clothing/suit/armor/light/duster/cowboy/tuco,
-		/obj/item/clothing/head/helmet/fashion/cowboy/tuco,
+		/obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy/tuco,
+		/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy/tuco,
 		/obj/item/clothing/under/f13/fashion/cowboy_tuco,
 		/obj/item/clothing/shoes/f13/military/fashion/cowboy_boots/tuco)
 
@@ -61,11 +61,11 @@
 /obj/effect/spawner/bundle/fashion/scarecrow
 	name = "Scarecrow spawner"
 	items = list(
-		/obj/item/clothing/suit/armor/outfit/overalls/farmer,
-		/obj/item/clothing/head/helmet/fashion/scarecrow,
+		/obj/item/clothing/suit/overalls/farmer,
+		/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/scarecrow,
 		/obj/item/clothing/shoes/f13/explorer)
 
-/obj/item/clothing/head/helmet/fashion
+/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion
 	name = "template, bugreport"
 	desc = "template, bugreport"
 	icon = 'modular_BD2/fashion/icons/clothing_fashion.dmi'
@@ -76,7 +76,7 @@
 	flags_cover = null // lets you throw dust in their eyes
 	flags_inv = null // lets you place and remove your ear wear or glasses
 
-/obj/item/clothing/head/helmet/fashion/Initialize(mapload) // reason this exists see notes at start of document.
+/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/Initialize(mapload) // reason this exists see notes at start of document.
 	. = ..()
 	var/datum/component = GetComponent(/datum/component/wearertargeting/earprotection)
 	qdel(component)
@@ -179,14 +179,14 @@
 
 // ---------------------- SCARECROW -------------------------- //
 
-/obj/item/clothing/head/helmet/fashion/scarecrow
+/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/scarecrow
 	name = "scarecrow hat"
 	desc = "Felt hat, no nonsense. Looks good on a scarecrow."
 	icon_state = "hat_scarecrow"
 	item_state = "hat_scarecrow"
 
 
-/obj/item/clothing/suit/armor/outfit/overalls/farmer
+/obj/item/clothing/suit/overalls/farmer
 	icon = 'modular_BD2/fashion/icons/clothing_fashion.dmi'
 	mob_overlay_icon = 'modular_BD2/fashion/icons/onmob.dmi'
 	righthand_file = 'modular_BD2/fashion/icons/onmobright.dmi'
@@ -198,7 +198,7 @@
 
 // ---------------------- ANGEL EYES ------------------------- //
 
-/obj/item/clothing/suit/armor/light/duster/cowboy
+/obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy
 	name = "stylish cowboy jacket"
 	desc = "Elegant and durable."
 	icon = 'modular_BD2/fashion/icons/clothing_fashion.dmi'
@@ -208,7 +208,7 @@
 	icon_state = "suit_angeleyes"
 	item_state = "suit_angeleyes"
 
-/obj/item/clothing/head/helmet/fashion/cowboy
+/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy
 	name = "dark stetson hat"
 	desc = "'You're smart enough to know that talking won't save you.'"
 	icon_state = "hat_angeleyes"
@@ -232,13 +232,13 @@
 
 // ----------------------- BLONDIE --------------------------- //
 
-/obj/item/clothing/head/helmet/fashion/cowboy/blondie
+/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy/blondie
 	name = "leather stetson hat"
 	desc = "'God's not on our side because he hates idiots.'"
 	icon_state = "hat_blondie"
 	item_state = "hat_blondie"
 
-/obj/item/clothing/suit/armor/light/duster/cowboy/blondie
+/obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy/blondie
 	name = "thick decorated poncho"
 	desc = "Dark brown with white patterns, thick enough to provide some protection."
 	icon_state = "suit_blondie"
@@ -262,13 +262,13 @@
 
 // ------------------------ TUCO ----------------------------- //
 
-/obj/item/clothing/head/helmet/fashion/cowboy/tuco
+/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy/tuco
 	name = "dusty sombrero"
 	desc = "'When you have to shoot, shoot. Don't talk.'"
 	icon_state = "hat_tuco"
 	item_state = "hat_tuco"
 
-/obj/item/clothing/suit/armor/light/duster/cowboy/tuco
+/obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy/tuco
 	name = "worn heavy poncho"
 	desc = "Sunfaded and grimy, this is surprisingly good at keeping its wearer alive."
 	icon_state = "suit_tuco"

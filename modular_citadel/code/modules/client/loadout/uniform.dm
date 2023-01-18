@@ -11,6 +11,18 @@
 	name = "caravaneer outfit"
 	path = /obj/item/clothing/under/f13/caravaneer
 
+/datum/gear/uniform/angeleyes
+	name = "elegant cowboy outfit"
+	path = /obj/item/clothing/under/f13/fashion/cowboy_angeleyes
+
+/datum/gear/uniform/blondie
+	name = "dusty cowboy outfit"
+	path = /obj/item/clothing/under/f13/fashion/cowboy_blondie
+
+/datum/gear/uniform/blondie
+	name = "dirty frontier outfit"
+	path = /obj/item/clothing/under/f13/fashion/cowboy_tuco
+
 /datum/gear/uniform/ncrcf
 	name = "NCRCF outfit"
 	path = /obj/item/clothing/under/f13/ncrcf
@@ -172,13 +184,13 @@
 	path = /obj/item/clothing/under/suit/red
 	cost = 2
 
-/datum/gear/uniform/suit/charcoal
-	name = "charcoal Suit"
-	path = /obj/item/clothing/under/suit/charcoal
+/datum/gear/uniform/suit/fancy_checkeredsuit
+	name = "fancy checkered suit"
+	path = /obj/item/clothing/under/f13/fashion/suit_and_tie/benny
 	cost = 2
 
 /datum/gear/uniform/suit/checkered_suit
-	name = "checkered Suit"
+	name = "checkered suit"
 	path = /obj/item/clothing/under/suit/checkered
 	cost = 3
 
@@ -188,8 +200,8 @@
 	cost = 2
 
 /datum/gear/uniform/suit/burgundy
-	name = "burgundy suit"
-	path = /obj/item/clothing/under/suit/burgundy
+	name = "fancy burgundy suit"
+	path = /obj/item/clothing/under/f13/fashion/suit_and_tie
 	cost = 2
 
 /datum/gear/uniform/suit/tan
@@ -213,6 +225,14 @@
 	path = /obj/item/clothing/under/dress/striped
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_DRESSES
 	cost = 2
+
+/datum/gear/uniform/dress/housewife
+	name = "yellow pre-war dress"
+	path = /obj/item/clothing/under/f13/fashion/fifties_dress
+
+/datum/gear/uniform/dress/picnic
+	name = "polkadot pre-war dress"
+	path = /obj/item/clothing/under/f13/fashion/picnic_dress
 
 /datum/gear/uniform/dress/sun/white
 	name = "white sundress"
@@ -251,14 +271,6 @@
 /datum/gear/uniform/dress/flamenco
 	name = "flamenco dress"
 	path = /obj/item/clothing/under/dress/flamenco
-
-/datum/gear/uniform/dress/housewife
-	name = "yellow pre-war dress"
-	path = /obj/item/clothing/under/f13/housewifedress50s
-
-/datum/gear/uniform/dress/picnic
-	name = "red pre-war dress"
-	path = /obj/item/clothing/under/f13/picnicdress50s
 
 /datum/gear/uniform/dress/bandage
 	name = "bandage dress"
