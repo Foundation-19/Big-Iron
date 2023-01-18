@@ -1,2 +1,10 @@
-if(world.time > 18000)
-  /proc/minor_announce("The winds grow violent, and the air grows tense. You feel as though it isn't as safe as it once was", title = "Warning!")
+SUBSYSTEM_DEF(grace)
+	name = "Grace Period End"
+	wait = 30 MINUTES
+	var/successful_firing = 0
+	var/allowed_firings = 1
+	var/chance_of_fire = 100
+
+/datum/controller/subsystem/grace/fire
+	for(var/M in GLOB.player_list)
+		to_chat(M, "<span class='notice'>You feel the wind grow tense with violence. The Wasteland has grown a shade more violent.</font></span>")
