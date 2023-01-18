@@ -907,7 +907,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 6
 	description = "You are a professional soldier of the NCR Army. Obey your the NCOs and officers, no matter what you are expected to follow military discipline."
 	supervisors = "Corporals and Above"
-	exp_requirements = 60
 
 	outfit = /datum/outfit/job/ncr/f13trooper
 
