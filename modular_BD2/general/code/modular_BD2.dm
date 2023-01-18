@@ -97,7 +97,6 @@
 		)
 	stored_research = /datum/techweb/specialized/autounlocking/autolathe/manual
 
-
 /obj/item/circuitboard/machine/autolathe/manual // not reinventing machine building entirely even if its dorky
 	name = "manual lathe kit"
 
