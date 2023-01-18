@@ -591,7 +591,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/megaphone/cornu = 1,
 		/obj/item/storage/bag/money/small/legenlisted = 1,
-		/obj/item/warpaint_bowl = 1,
+		/obj/item/warpaint_bowl = 1
 		)
 
 /datum/outfit/loadout/vexbear
@@ -688,6 +688,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/ammo_box/magazine/m45exp = 3,
 		/obj/item/gun/ballistic/automatic/smg/mini_uzi,
 		/obj/item/ammo_box/magazine/uzim9mm = 2,
+		/obj/item/attachments/scope = 1,
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/grenade/plastic/c4 = 1
 		)
@@ -782,6 +783,13 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 600
 
+	loadout_options = list(	//ALL: Gladius
+		/datum/outfit/loadout/vetaxe,	// AXE AND FISTS AND NOTHING FUCKING ELSE
+		/datum/outfit/loadout/vetsmg, 		// 10mm SMG, .357 Revolver
+		/datum/outfit/loadout/vetberserker,	// Lever shotgun, Bola, Legion Lance
+		/datum/outfit/loadout/vetrifle		// Trail gun, .357 Revolver, Throwing knives
+		)
+
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
 
 	matchmaking_allowed = list(
@@ -810,7 +818,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	head = /obj/item/clothing/head/helmet/f13/legion/vet
 	neck = /obj/item/storage/belt/holster
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet
-	suit_store = /obj/item/gun/ballistic/shotgun/trench
 	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/flashlight/lantern
@@ -821,10 +828,55 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 1,
 		/obj/item/stack/crafting/armor_plate = 4,
-		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/ammo_box/shotgun/slug = 1,
-		/obj/item/ammo_box/shotgun/buck = 2
 		)
+
+/datum/outfit/loadout/vetaxe
+	name = "Enforcer"
+	suit_store = /obj/item/twohanded/legionaxe
+	neck = /obj/item/storage/belt/sabre/single
+	backpack_contents = list(
+		/obj/item/melee/unarmed/tigerclaw = 1,
+		/obj/item/restraints/legcuffs/bola = 1,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 2
+		)
+
+/datum/outfit/loadout/vetsmg
+	name = "Flanker"
+	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
+	neck = /obj/item/storage/belt/holster
+	backpack_contents = list(
+		/obj/item/twohanded/spear/lance = 1,
+		/obj/item/ammo_box/magazine/pistol10mm/extended = 2,
+		/obj/item/gun/ballistic/revolver/colt357 = 1,
+		/obj/item/ammo_box/loader/a357 = 1,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 2
+		)
+
+/datum/outfit/loadout/vetberserker
+	name = "Berserker"
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
+	neck = /obj/item/storage/belt/bandolier
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/slug = 1,
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/twohanded/spear/lance = 1,
+		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/restraints/legcuffs/bola = 2
+		)
+
+/datum/outfit/loadout/vetrifle
+	name = "Sharpshooter"
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
+	neck = /obj/item/storage/belt/holster
+	backpack_contents = list(
+		/obj/item/ammo_box/tube/m44/ = 3,
+		/obj/item/gun/ballistic/revolver/colt357 = 1,
+		/obj/item/ammo_box/loader/a357 = 1,
+		/obj/item/melee/onehanded/knife/throwing = 2,
+		/obj/item/reagent_containers/pill/bitterdrink = 1,
+		/obj/item/restraints/legcuffs/beartrap = 1
+		)
+
 
 // ----------------- PRIME --------------------- //
 
