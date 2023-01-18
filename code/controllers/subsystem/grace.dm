@@ -7,4 +7,4 @@ SUBSYSTEM_DEF(grace)
 
 /datum/controller/subsystem/grace/fire
 	for(var/M in GLOB.player_list)
-		to_chat(M, "<span class='notice'>You feel the wind grow tense with violence. The Wasteland has grown a shade more violent.</font></span>")
+		to_chat(M, "[span_minorannounce("<font color = red>["Grace Over"]</font color><BR>["You feel the wind grow tense with violence. The Wasteland has grown a shade more violent."]")]<BR>")
