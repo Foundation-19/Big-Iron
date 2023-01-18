@@ -298,7 +298,7 @@
 	new /obj/item/grenade/frag(src)
 	new /obj/item/grenade/plastic/c4(src)
 	new /obj/item/grenade/plastic/c4(src)
-	new /obj/item/grenade/syndieminibomb/concussion(src)
+	new /obj/item/grenade/f13/he_grenade(src)
 	new /obj/item/clothing/suit/bomb_suit(src)
 
 /datum/gang_item/equipment/bundlegunner

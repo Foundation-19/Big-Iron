@@ -1386,7 +1386,7 @@
 				/obj/item/ammo_box/magazine/m556/rifle/
 				)
 
-obj/effect/spawner/bundle/f13/combat_rifle
+/obj/effect/spawner/bundle/f13/combat_rifle
 	name = "combat rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/combat,
@@ -1753,7 +1753,7 @@ obj/effect/spawner/bundle/f13/combat_rifle
 
 /obj/effect/spawner/lootdrop/f13/bomb/tier3
 	loot = list(
-				/obj/item/grenade/syndieminibomb/concussion,
+				/obj/item/grenade/f13/he_grenade,
 				/obj/item/grenade/plastic/c4,
 				/obj/item/grenade/empgrenade,
 				/obj/item/grenade/f13/radiation,
@@ -1782,7 +1782,7 @@ obj/effect/spawner/bundle/f13/combat_rifle
 				/obj/item/poster/random_official,
 				/obj/item/multitool,
 				/obj/item/cigbutt/cigarbutt,
-				/obj/item/razor,
+				/obj/item/cosmetics/razor,
 				/obj/item/candle,
 				/obj/item/rollingpaper,
 				/obj/item/trash/coal,
@@ -2270,7 +2270,7 @@ obj/effect/spawner/bundle/f13/combat_rifle
 		/obj/item/advanced_crafting_components/receiver,
 		/obj/item/advanced_crafting_components/assembly,
 		/obj/item/advanced_crafting_components/alloys,
-		/obj/item/ingot/adamantine, // Valuable for smithing
+		/obj/item/blacksmith/ingot/adamantine, // Valuable for smithing
 	)
 
 /obj/effect/spawner/lootdrop/f13/attachments

@@ -236,7 +236,7 @@
 	armour_penetration = 0.1
 	custom_materials = null
 
-obj/item/melee/onehanded/knife/switchblade
+/obj/item/melee/onehanded/knife/switchblade
 	name = "switchblade"
 	desc = "A sharp, concealable, spring-loaded knife."
 	icon_state = "knife_switch"
@@ -293,7 +293,7 @@ obj/item/melee/onehanded/knife/switchblade
 		user.visible_message("[user] begins cleaning the blade of the [src].", \
 				"<span class='notice'>You begin scrubbing the [src] with Abraxo. Smells nice.</span>", \
 				"<span class='italics'>You hear faint sounds of scrubbing.</span>")
-		playsound(get_turf(src), 'sound/FermiChem/heatdam.ogg', 50, TRUE)
+		playsound(get_turf(src), 'modular_BD2/general/sound/abraxo.ogg', 100, TRUE)
 		if(!do_after(user, 60, TRUE, src))
 			return
 		new /obj/item/melee/onehanded/knife/cosmic(drop_location())
@@ -795,7 +795,7 @@ obj/item/melee/onehanded/knife/switchblade
 	attack_verb = list("stabbed", "sliced", "pierced", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
-obj/item/melee/unarmed/punchdagger/cyborg
+/obj/item/melee/unarmed/punchdagger/cyborg
 	name = "assaultron claws"
 	desc = "Razor sharp blades embedded into the grippers of an assaultron. Sharp."
 	icon_state = "tiger_claw"

@@ -22,6 +22,7 @@
 	var/self_delay = 3 SECONDS
 	var/squirt_mode = FALSE
 	var/squirt_amount = 5
+	var/sound_squirt = 'sound/effects/spray2.ogg'
 
 /obj/item/reagent_containers/medspray/attack_self(mob/user)
 	squirt_mode = !squirt_mode
@@ -75,7 +76,7 @@
 
 	else
 		log_combat(user, L, "applied", src, reagents.log_list())
-		playsound(src, 'sound/effects/spray2.ogg', 50, 1, -6)
+		playsound(src, sound_squirt, 50, 1, -6)
 		var/fraction = min(amount_per_transfer_from_this/reagents.total_volume, 1)
 		reagents.reaction(L, apply_type, fraction)
 		reagents.trans_to(L, amount_per_transfer_from_this, log = TRUE)

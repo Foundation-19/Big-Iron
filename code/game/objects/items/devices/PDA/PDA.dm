@@ -85,7 +85,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 
 	var/datum/picture/picture //Scanned photo
 
-	var/list/contained_item = list(/obj/item/pen, /obj/item/toy/crayon, /obj/item/lipstick, /obj/item/flashlight/pen, /obj/item/clothing/mask/cigarette)
+	var/list/contained_item = list(/obj/item/pen, /obj/item/toy/crayon, /obj/item/cosmetics/lipstick, /obj/item/flashlight/pen, /obj/item/clothing/mask/cigarette)
 	var/obj/item/inserted_item //Used for pen, crayon, and lipstick insertion or removal. Same as above.
 	var/list/overlays_offsets // offsets to use for certain overlays
 	var/overlays_x_offset = 0

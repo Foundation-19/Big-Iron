@@ -114,23 +114,17 @@
 /obj/structure/railing/wood
 	name = "wooden fence"
 	desc = "Marks property and prevents accidents."
-	icon = 'icons/fallout/structures/fences.dmi'
+	icon = 'modular_BD2/general/icons/fence.dmi'
 	icon_state = "straight_wood"
 	layer = WALL_OBJ_LAYER
 
 /obj/structure/railing/wood/underlayer
 	layer = BELOW_MOB_LAYER
 
-/obj/structure/railing/wood/post 
-	icon_state = "post_wood"
-	density = FALSE
-
-/obj/structure/railing/wood/post/underlayer
-	layer = BELOW_MOB_LAYER
-
 /obj/structure/simple_door/metal/fence/wooden
 	name = "wood fence gate"
 	desc = "A wooden gate for a wood fence."
+	icon = 'modular_BD2/general/icons/fence.dmi'
 	icon_state = "fence_wood"
 	door_type = "fence_wood"
 	open_sound = "sound/machines/door_open.ogg"

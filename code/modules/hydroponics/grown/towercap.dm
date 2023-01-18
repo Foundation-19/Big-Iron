@@ -157,6 +157,7 @@
 	var/burn_icon = "bonfire_on_fire" //for a softer more burning embers icon, use "bonfire_warm"
 	var/grill = FALSE
 	var/fire_stack_strength = 5
+	var/stones = FALSE
 
 /obj/structure/bonfire/dense
 	density = TRUE
@@ -192,6 +193,18 @@
 				add_overlay("bonfire_grill")
 			else
 				return ..()
+	//SANDSTONE GUARDRAIL. Use sandstone to make the bonfire dense to avoid accidentally walking onto the fire.
+	if(istype(W, /obj/item/stack/sheet/mineral/sandstone) && !stones)
+		var/obj/item/stack/sheet/mineral/sandstone/stone = W
+		if(stone.use(3))
+			to_chat(user, span_warning("You surround \the [src] with stones to make it safer."))
+			density = TRUE
+			stones = TRUE
+			add_overlay("bonfire_stones")
+			return
+		else
+			to_chat(user, span_warning("You do not have enough [W] to surround \the [src] with stones."))
+			return
 	if(W.get_temperature())
 		StartBurning()
 	if(grill)
