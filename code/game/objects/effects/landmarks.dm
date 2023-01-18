@@ -583,11 +583,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Legion Centurion"
 	icon_state = "Centurion"
 
-/obj/effect/landmark/start/f13/orator
-	name = "Legion Orator"
-
-/obj/effect/landmark/start/f13/immune
-	name = "Legion Immune"
+/obj/effect/landmark/start/f13/frumentarius
+	name = "Legion Frumentarius"
 
 /obj/effect/landmark/start/f13/decanvet
 	name = "Legion Veteran Decanus"

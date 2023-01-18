@@ -276,7 +276,7 @@
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_BACKPACKS
 	cost = 2
 	restricted_desc = "Legion Veteran+"
-	restricted_roles = list("Legion Orator",
+	restricted_roles = list("Legion Frumentarius",
 							"Legion Centurion",
 							"Legion Veteran Decanus",
 							"Legion Prime Decanus",
@@ -291,7 +291,7 @@
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_BACKPACKS
 	cost = 2
 	restricted_desc = "Legion Veteran+"
-	restricted_roles = list("Legion Orator",
+	restricted_roles = list("Legion Frumentarius",
 							"Legion Centurion",
 							"Legion Veteran Decanus",
 							"Legion Prime Decanus",

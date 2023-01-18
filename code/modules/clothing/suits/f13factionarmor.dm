@@ -225,8 +225,8 @@
 	desc = "Legion prime decanus armor-an extra reinforced baseball uniform."
 	armor = list("melee" = 45, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
-/obj/item/clothing/suit/armor/f13/legion/orator
-	name = "Legion Orator armor"
+/obj/item/clothing/suit/armor/f13/legion/frumentarius
+	name = "Legion Frumentarius armor"
 	desc = "The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
 	icon_state = "legion_orator"
 	item_state = "legion_orator"
