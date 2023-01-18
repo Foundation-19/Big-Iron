@@ -613,7 +613,7 @@ Records disabled until a use for them is found
 */
 			dat +="<td width='220px' height='300px' valign='top'>"
 			if(NOGENITALS in pref_species.species_traits)
-				dat += "<b>Your species ([pref_species.name]) does not support genitals!</b><br>"
+			//	dat += "<b>Your species ([pref_species.name]) does not support genitals!</b><br>"
 			else
 				dat += "<h3>Penis</h3>"
 				dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=has_cock'>[features["has_cock"] == TRUE ? "Yes" : "No"]</a>"

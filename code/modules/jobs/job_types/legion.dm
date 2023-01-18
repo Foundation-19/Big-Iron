@@ -808,7 +808,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	spawn_positions = 4
 	description = "A Camp Follower ranges in purposes. A Camp Follower is a legionnaire who got assigned to keeping the camp in order. Duties may vary from medical specialities, weapon crafting or other skilled-labor tasks."
 	supervisors = "Officers first, then warriors."
-	exp_requirements = 300
 
 	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
 
@@ -846,7 +845,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	description = "A slave that survives the breaking camps is given a Legion appropriate name (latin-tribal inspired) and bull tattoo. Be obedient, respectful, stay inside the camp. Work the farm, mine, make food, clean and help injured men. Do NOT escape on your own, up to you how to handle it if forcibly freed by outside forces."
 	supervisors = "Officers, then warriors"
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
-	exp_requirements = 120
 	outfit = /datum/outfit/job/CaesarsLegion/slave
 
 	loadout_options = list(

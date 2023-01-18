@@ -18,6 +18,7 @@
 	name = "fork"
 	desc = "Pointy."
 	icon_state = "fork"
+	item_state = "fork"
 	force = 5
 	w_class = WEIGHT_CLASS_TINY
 	throwforce = 0

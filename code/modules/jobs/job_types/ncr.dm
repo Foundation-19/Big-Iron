@@ -425,7 +425,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You answer directly to the Captain, working either independently or in a team to complete your mission objectives however required, operating either alone, in a squad or with the NCR Army. Your primary mission is to improve general opinion of the Republic and to neutralize slavers and raiders operating in the area."
 	supervisors = "the NCRA Captain and High Command"
-	exp_requirements = 3500
+	exp_requirements = 3000
 
 	outfit = /datum/outfit/job/ncr/f13vetranger
 	
