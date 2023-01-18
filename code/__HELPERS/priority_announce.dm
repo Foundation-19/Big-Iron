@@ -151,7 +151,4 @@
 				if(alert)
 					SEND_SOUND(M, sound('sound/misc/notice1.ogg'))
 				else
-					SEND_SOUND(M, sound('sound/misc/notice2.ogg'))
-					
-
-/proc/minor_announce/grace("The winds grow violent, and the air grows tense. You feel as though it isn't as safe as it once was", title = "Warning!")
+					SEND_SOUND(M, sound('sound/misc/notice2.ogg')
