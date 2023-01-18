@@ -161,7 +161,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "the Colonel"
-	exp_requirements = 1200
+	exp_requirements = 600
 	
 	outfit = /datum/outfit/job/ncr/f13captain
 
@@ -236,7 +236,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the direct superior to the NCOs and Enlisted, and under special circumstances, Rangers. You are the XO of Camp Miller. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
 	supervisors = "the Captain"
-	exp_requirements = 900
+	exp_requirements = 600
 	
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 
@@ -352,7 +352,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are an influential representative for the NCR and experienced bureaucrat. You are here to further the objective and ensure the interests of the NCR, your company or own enterprise are met through thick and thin, and have been supplied with ample amounts of money to do so."
 	supervisors = "the Captain and the NCR"
-	exp_requirements = 900
+	exp_requirements = 300
 
 	outfit = /datum/outfit/job/ncr/f13representative
 
@@ -953,7 +953,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the lead medical professional in Camp Miller, you do not have any command authority unless it is of medical nature. Your duties are to ensure your troopers are in good health and that medical supplies are stocked for troopers."
 	supervisors = "Lieutenant and Above"
-	exp_requirements = 900
+	exp_requirements = 300
 
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
 

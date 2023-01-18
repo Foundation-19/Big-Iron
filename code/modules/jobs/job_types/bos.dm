@@ -55,7 +55,7 @@ Elder
 	spawn_positions = 1
 	description = "You are the Elder of this local chapter of the Brotherhood of Steel. You may be a veteran of warfare, an experienced commander or even a genius Scribe, and you command all the men within this bunker. Your main goals are to lead the Brotherhood, to solve conflicts inbetween castes and to manage the Head Paladin, Head Knight and Head Scribe."
 	supervisors = "the High Elders"
-	exp_requirements = 600
+	exp_requirements = 1200
 
 	outfit = /datum/outfit/job/bos/f13elder
 
@@ -90,7 +90,7 @@ Head Paladin
 	spawn_positions = 1
 	description = "You are the acting field commander until the Brotherhood regains its strength enough to place an Elder for the bunker. You are a veteran of many battles and sorties in pursuit of Brotherhood goals; your only weakness may just be your hubris. Your main goals are defense of the Chapter and surveillance of the surrounding region for technology."
 	supervisors = "the Elder"
-	exp_requirements = 300
+	exp_requirements = 600
 	
 	loadout_options = list(
 	/datum/outfit/loadout/hpa, //Laser Gatling
@@ -172,7 +172,7 @@ Head Scribe
 	spawn_positions = 1
 	description = "You are the foremost experienced scribe remaining in this bunker. Your role is to ensure the safekeeping and proper usage of technology within the Brotherhood. You are also the lead medical expert in this Chapter. Delegate your tasks to your Scribes."
 	supervisors = "the Elder"
-	exp_requirements = 300
+	exp_requirements = 600
 
 	outfit = /datum/outfit/job/bos/f13headscribe
 
@@ -218,7 +218,7 @@ Head Knight
 	spawn_positions = 1
 	description = "You are the Head Knight, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
 	supervisors = "the Elder"
-	exp_requirements = 300
+	exp_requirements = 600
 
 	loadout_options = list(
 	/datum/outfit/loadout/hka, //Sniper
