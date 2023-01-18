@@ -20,8 +20,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	faction = FACTION_NCR
 	exp_type = EXP_TYPE_NCR
 
-	access = list(ACCESS_NCR)
-	minimal_access = list(ACCESS_NCR)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC)
 	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation. Zero sexual intercourse is tolorated while on-duty."
 	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
 	objectivesList = list("High Command recommends the following goal for this week: Establish an outpost at the Hospital","High Command recommends the following goal for this week: Scout the region for raider activity and detain any individuals breaking NCR law in our territory","High command recommends the following goal for this week: Establish good relations with unaligned individuals and improve the diplomatic standing of the NCR","High command recommends the following goal for this week: Gather funds from the wasteland by providing a service and taxing people")
