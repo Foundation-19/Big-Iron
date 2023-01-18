@@ -590,8 +590,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	title = "Legion Frumentarius"
 	flag = F13FRUMENTARIUS
 	display_order = JOB_DISPLAY_ORDER_FRUMENTARIUS
-	description = "."
-	supervisors = "Centurion"
+	description = "The Eyes and Ears of Caesar. Frumentarii cover a wide range of specializations, from Ambassadors to local Tribes, Infiltrators of enemy societies, Couriers, Intelligence Gatherers and the Secret Police of Legion Camps. Unlike the lesser Legionaries, a Frumentarius is given much unsupervised freedom to do as one pleases, so long as the Legion's goals are accomplished. You are one of these Frumentarius. Spread Caesar's Will, for Mars is watching."
+	supervisors = "the Centurion"
 	selection_color = "#ffdddd"
 	total_positions = 1
 	spawn_positions = 1
