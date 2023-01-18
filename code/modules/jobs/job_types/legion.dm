@@ -507,7 +507,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/warpaint_bowl = 1
 		)
 		
-	/datum/outfit/loadout/recdeclegion
+/datum/outfit/loadout/recdeclegion
 	name = "Frontier Decanus"
 	suit_store = /obj/item/twohanded/fireaxe/bmprsword
 	neck = /obj/item/storage/belt/sabre/heavy
