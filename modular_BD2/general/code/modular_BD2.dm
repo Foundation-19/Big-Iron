@@ -746,7 +746,7 @@ added this to make the overlay actually work
 
 // ------------------- PRIMITIVE MEDICAL TOOLBELT -----------------------------
 
-obj/item/storage/belt/medical/primitive
+/obj/item/storage/belt/medical/primitive
 	name = "primitive medical toolbelt"
 	desc = "This might look a bit like a toolbelt for a carpenter, but the items inside are meant to be used in surgery. No really."
 	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'

@@ -28,10 +28,6 @@
 	icon = 'modular_BD2/kitchen_50s/icons/icons_kitchen.dmi'
 	icon_state = "choppingpin"
 
-	build_stage = 1
-	obj/item/reagent_containers/glass/bowl
-	completed = FALSE
-
 /obj/structure/chopping_block/update_icon()
 	. = ..()
 	if(build_stage == 1)
