@@ -12,11 +12,11 @@
 	path = /obj/item/clothing/under/f13/caravaneer
 
 /datum/gear/uniform/angeleyes
-	name = "Elegant cowboy outfit"
+	name = "elegant cowboy outfit"
 	path = /obj/item/clothing/under/f13/fashion/cowboy_angeleyes
 
 /datum/gear/uniform/blondie
-	name = "Dusty cowboy outfit"
+	name = "dusty cowboy outfit"
 	path = /obj/item/clothing/under/f13/fashion/cowboy_blondie
 
 /datum/gear/uniform/blondie

@@ -5,127 +5,127 @@
 
 
 /datum/gear/suit/overalls
-	name = "Farmers overalls"
+	name = "farmers overalls"
 	path = /obj/item/clothing/suit/overalls/farmer
 	cost = 2
 
 /datum/gear/suit/cowboy_angeleyes
-	name = "Elegant cowboy jacket"
+	name = "elegant cowboy jacket"
 	path = /obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy
 	cost = 3
 
 /datum/gear/suit/cowboy_blondie
-	name = "Brown and white poncho"
+	name = "brown and white poncho"
 	path = /obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy/blondie
 	cost = 3
 
 /datum/gear/suit/cowboy_tuco
-	name = "Dirty poncho"
+	name = "dirty poncho"
 	path = /obj/item/clothing/under/f13/fashion/cowboy_tuco
 	cost = 3
 
 /datum/gear/suit/redhood
-	name = "Red cloak"
+	name = "red cloak"
 	path = /obj/item/clothing/suit/hooded/cloak/david
 	cost = 3
 
 /datum/gear/suit/labcoat
-	name = "Labcoat"
+	name = "labcoat"
 	path = /obj/item/clothing/suit/toggle/labcoat
 	cost = 2
 
 /datum/gear/suit/jacketbomber
-	name = "Bomber jacket"
+	name = "bomber jacket"
 	path = /obj/item/clothing/suit/jacket
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 3
 
 /datum/gear/suit/oldjacketbomber
-	name = "Old bomber jacket"
+	name = "old bomber jacket"
 	path = /obj/item/clothing/suit/bomber
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 3
 
 /datum/gear/suit/jacketflannelblack // all of these are reskins of bomber jackets but with the vibe to make you look like a true lumberjack
-	name = "Black flannel jacket"
+	name = "black flannel jacket"
 	path = /obj/item/clothing/suit/jacket/flannel
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 2
 
 /datum/gear/suit/jacketflannelred
-	name = "Red flannel jacket"
+	name = "red flannel jacket"
 	path = /obj/item/clothing/suit/jacket/flannel/red
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 2
 
 /datum/gear/suit/jacketflannelaqua
-	name = "Aqua flannel jacket"
+	name = "aqua flannel jacket"
 	path = /obj/item/clothing/suit/jacket/flannel/aqua
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 2
 
 /datum/gear/suit/jacketflannelbrown
-	name = "Brown flannel jacket"
+	name = "brown flannel jacket"
 	path = /obj/item/clothing/suit/jacket/flannel/brown
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 2
 
 /datum/gear/suit/jacketleather
-	name = "Leather jacket"
+	name = "leather jacket"
 	path = /obj/item/clothing/suit/armor/f13/leather_jacket
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 3
 
 /datum/gear/suit/overcoatleather
-	name = "Leather overcoat"
+	name = "leather overcoat"
 	path = /obj/item/clothing/suit/jacket/leather/overcoat
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 3
 
 /datum/gear/suit/jacketpuffer
-	name = "Puffer jacket"
+	name = "puffer jacket"
 	path = /obj/item/clothing/suit/jacket/puffer
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 2
 
 /datum/gear/suit/vestpuffer
-	name = "Puffer vest"
+	name = "puffer vest"
 	path = /obj/item/clothing/suit/jacket/puffer/vest
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 2
 
 /datum/gear/suit/jacketlettermanbrown
-	name = "Brown letterman jacket"
+	name = "brown letterman jacket"
 	path = /obj/item/clothing/suit/jacket/letterman
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 2
 
 /datum/gear/suit/jacketlettermanred
-	name = "Red letterman jacket"
+	name = "red letterman jacket"
 	path = /obj/item/clothing/suit/jacket/letterman_red
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 2
 
 /datum/gear/suit/militaryjacket
-	name = "Military Jacket"
+	name = "military Jacket"
 	path = /obj/item/clothing/suit/jacket/miljacket
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 3
 
 /datum/gear/suit/flakjack
-	name = "Flak Jacket"
+	name = "flak Jacket"
 	path = /obj/item/clothing/suit/flakjack
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 3
 
 /datum/gear/suit/armorkit
-	name = "Armor Kit"
+	name = "armor Kit"
 	path = /obj/item/clothing/suit/armor/f13/kit
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 5
 
 /datum/gear/suit/punkkit
-	name = "Punk Armor Kit"
+	name = "punk Armor Kit"
 	path = /obj/item/clothing/suit/armor/f13/punk
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_JACKETS
 	cost = 5
