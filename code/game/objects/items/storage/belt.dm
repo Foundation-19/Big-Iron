@@ -171,8 +171,8 @@
 		/obj/item/plant_analyzer, // out of place but mechanically useful for the foreseeable future, so included for QoL
 		))
 	STR.can_hold = can_hold
-
-// Primitive medical belt, meant to be part of a ghetto surgery improvement at some point
+/*
+// Primitive medical belt, meant to be part of a ghetto surgery improvement at some point Newer version in Invicta
 /obj/item/storage/belt/medical/primitive
 	name = "primitive medical toolbelt"
 	desc = "This might look a bit like a toolbelt for a carpenter, but the items inside are meant to be used in surgery. No really."
@@ -186,7 +186,7 @@
 	new /obj/item/hemostat(src)
 	new /obj/item/weldingtool/basic(src)
 	new /obj/item/bonesetter(src)
-
+*/
 // ---------------------------------------------
 // BANDOLIER - since TG style bandolier was useless, now takes 3 boxes of shotgun ammo, or flasks, or grenades, or improvised bombs/molotovs
 /obj/item/storage/belt/bandolier
@@ -914,7 +914,7 @@
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_NECK
 	fitting_swords = list(
 	/obj/item/melee/smith/wakizashi,
-	/obj/item/melee/smith/twohand/katana,
+	/obj/item/twohanded/smithed/katana,
 	/obj/item/melee/onehanded/machete,
 	/obj/item/melee/onehanded/club,
 	/obj/item/melee/classic_baton,
@@ -949,7 +949,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	content_overlays = TRUE
 	onmob_overlays = TRUE
-	var/list/fitting_swords = list(/obj/item/melee/smith/sabre, /obj/item/melee/baton/stunsword)
+	var/list/fitting_swords = list(/obj/item/melee/smith/sword, /obj/item/melee/baton/stunsword)
 	var/starting_sword = null
 
 // Instead of half-assed broken weaboo stuff lets have something that works.
@@ -958,7 +958,7 @@
 	desc = "A set of sheathes and straps for carrying two curved japanese style swords."
 	icon_state = "sheath_twin"
 	item_state = "sheath_twin"
-	fitting_swords = list(/obj/item/melee/smith/wakizashi, /obj/item/melee/smith/twohand/katana, /obj/item/melee/bokken)
+	fitting_swords = list(/obj/item/melee/smith/wakizashi, /obj/item/twohanded/smithed/katana, /obj/item/melee/bokken)
 	starting_sword = null
 
 /obj/item/storage/belt/sword/twin/ComponentInitialize()
