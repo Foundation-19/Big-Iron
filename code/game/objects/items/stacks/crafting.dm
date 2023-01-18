@@ -2,19 +2,20 @@
 	name = "crafting part"
 	icon = 'icons/fallout/objects/crafting/parts_stack.dmi'
 	amount = 1
-	max_amount = 5000
+	max_amount = 50
 	throw_speed = 3
 	throw_range = 7
 	w_class = WEIGHT_CLASS_TINY
 	novariants = FALSE
 
-// Update icon adapted for the 5000 max_amount limit, so there will be some meaningful visual feedback on how much stuff is in a stack. The fact it updates at 2000 armor plates already is irrelevant and retarded, don't bring it up again.
 /obj/item/stack/crafting/update_icon_state()
 	var/amount = get_amount()
 	if(amount <= 5)
 		icon_state = initial(icon_state)
-	else
+	else if(amount <= 15)
 		icon_state = "[initial(icon_state)]_2"
+	else
+		icon_state = "[initial(icon_state)]_3"
 
 /obj/item/stack/crafting/armor_plate
 	name = "armor plate"
