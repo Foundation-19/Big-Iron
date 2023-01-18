@@ -60,7 +60,7 @@ GLOBAL_LIST_INIT(anvil_recipes, list(
 	RECIPE_BALLANDCHAIN = /obj/item/smithing/ballandchain,
 	RECIPE_ARMOR_PIECE = /obj/item/smithing/armor_piece,
 	RECIPE_DAGGER = /obj/item/smithing/daggerblade,
-   	RECIPE_BOWIE = /obj/item/smithing/bowieblade,
+	RECIPE_BOWIE = /obj/item/smithing/bowieblade,
 	RECIPE_MACHETE = /obj/item/smithing/macheteblade,
 	RECIPE_MACHREFORG = /obj/item/smithing/macheterblade,
 	RECIPE_SWORD = /obj/item/smithing/swordblade,
