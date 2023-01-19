@@ -611,8 +611,8 @@ Records disabled until a use for them is found
 			dat += "<b>Uplink Location:</b><a style='display:block;width:100px' href ='?_src_=prefs;preference=uplink_loc;task=input'>[uplink_spawn_loc]</a>"
 			dat += "</td>"
 */
-			dat +="<td width='220px' height='300px' valign='top'>"
-/*			if(NOGENITALS in pref_species.species_traits)
+/*			dat +="<td width='220px' height='300px' valign='top'>"
+			if(NOGENITALS in pref_species.species_traits)
 			//	dat += "<b>Your species ([pref_species.name]) does not support genitals!</b><br>"
 			else
 				dat += "<h3>Penis</h3>"
