@@ -80,7 +80,13 @@
 
 /obj/structure/leaper_bubble/Initialize()
 	. = ..()
-	INVOKE_ASYNC(src, /atom/movable.proc/float, TRUE)
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = .proc/on_entered,
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
+
+	float(TRUE)
 	QDEL_IN(src, 100)
 
 /obj/structure/leaper_bubble/Destroy()
