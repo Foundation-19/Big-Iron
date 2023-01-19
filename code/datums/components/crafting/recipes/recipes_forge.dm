@@ -51,7 +51,7 @@
 	subcategory = CAT_FORGING
 
 /datum/crafting_recipe/furnace
-	name = "Furnace"
+	name = "Sandstone furnace"
 	result = /obj/structure/blacksmith/furnace/sandstone
 	time = 20 SECONDS
 	reqs = list(
@@ -59,6 +59,17 @@
 		/obj/item/stack/sheet/metal = 6,
 		)
 	tools = list(TOOL_CROWBAR)
+	category = CAT_CRAFTING
+	subcategory = CAT_FORGING
+
+/datum/crafting_recipe/blacksmith/quenching_trough
+	name = "Quenching trough"
+	result = /obj/structure/blacksmith/quenching
+	reqs = list(
+		/obj/item/stack/sheet/mineral/wood = 20,
+		/datum/reagent/water = 300,
+		)
+	time = 100
 	category = CAT_CRAFTING
 	subcategory = CAT_FORGING
 
