@@ -612,7 +612,7 @@ Records disabled until a use for them is found
 			dat += "</td>"
 */
 			dat +="<td width='220px' height='300px' valign='top'>"
-			if(NOGENITALS in pref_species.species_traits)
+/*			if(NOGENITALS in pref_species.species_traits)
 			//	dat += "<b>Your species ([pref_species.name]) does not support genitals!</b><br>"
 			else
 				dat += "<h3>Penis</h3>"
@@ -662,7 +662,7 @@ Records disabled until a use for them is found
 				dat += "</td>"
 			dat += "</td>"
 			dat += "</tr></table>"
-
+*/
 		if(GAME_PREFERENCES_TAB) // Game Preferences
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 			dat += "<h2>General Settings</h2>"
