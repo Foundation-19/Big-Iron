@@ -777,7 +777,8 @@
 	fire_delay = 1
 	burst_size = 1
 	spread = 1
-	extra_damage = 25
+	extra_damage = 30
+	extra_penteration = 0.1
 	can_attachments = TRUE
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
@@ -815,7 +816,7 @@
 	icon_state = "scout_carbine"
 	spread = 1.2
 	slowdown = 0.05
-	extra_damage = 25
+	extra_damage = 30
 	extra_penetration = 0.1
 	can_scope = TRUE
 	scope_state = "scope_short"
