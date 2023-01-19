@@ -507,8 +507,8 @@ Mayor
 		/datum/outfit/loadout/nurse
 		)
 	
-	access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN)
-	minimal_access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN)
+	access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_CIV)
+	minimal_access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_CIV)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(

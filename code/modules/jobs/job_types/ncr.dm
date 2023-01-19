@@ -290,7 +290,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	
 	outfit = /datum/outfit/job/ncr/f13sergeant
 
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
 
 	loadout_options = list( // ALL: Bayonet, M1911 sidearm
 		/datum/outfit/loadout/sergeantrifleman, // Scout Carbine, Mantle Armor
