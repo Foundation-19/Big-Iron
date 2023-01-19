@@ -69,7 +69,7 @@
 		/obj/item/stack/sheet/mineral/wood = 20,
 		/datum/reagent/water = 300,
 		)
-	time = 100
+	time = 10 SECONDS
 	category = CAT_CRAFTING
 	subcategory = CAT_FORGING
 
@@ -80,14 +80,14 @@
 		/obj/item/stack/sheet/mineral/wood = 15,
 		/obj/item/stack/sheet/metal = 10,
 		)
-	time = 80
+	time = 8 SECONDS
 	category = CAT_CRAFTING
 	subcategory = CAT_FORGING
 
 /datum/crafting_recipe/tools/forged/sledge
 	name = "Sledgehammer"
 	result = /obj/item/twohanded/sledgehammer/simple
-	time = 700
+	time = 20 SECONDS
 	reqs = list(
 		/obj/item/stack/sheet/metal = 15,
 		/obj/item/stack/sheet/mineral/wood = 5,
@@ -101,7 +101,7 @@
 /datum/crafting_recipe/melee/forged/cleaver
 	name = "Butchers Cleaver"
 	result = /obj/item/kitchen/knife/butcher
-	time = 100
+	time = 10 SECONDS
 	reqs = list(
 		/obj/item/stack/sheet/metal = 3,
 		/obj/item/stack/sheet/mineral/wood = 1,
@@ -113,7 +113,7 @@
 /datum/crafting_recipe/melee/forged/huntingknife
 	name = "Hunting Knife"
 	result = /obj/item/melee/onehanded/knife/hunting
-	time = 150
+	time = 15 SECONDS
 	reqs = list(
 		/obj/item/stack/sheet/metal = 3,
 		/obj/item/blacksmith/swordhandle = 1,
