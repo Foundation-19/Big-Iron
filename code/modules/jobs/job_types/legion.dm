@@ -1119,10 +1119,10 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
-			/datum/job/CaesarsLegion/slave,
+			/datum/job/CaesarsLegion/f13slave,
 		),
 		/datum/matchmaking_pref/rival = list(
-			/datum/job/CaesarsLegion/slave,
+			/datum/job/CaesarsLegion/f13slave,
 		),
 	)
 
@@ -1134,7 +1134,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/job/CaesarsLegion/f13slave
 	name = "Legion Slave"
-	jobtype = /datum/outfit/job/CaesarsLegion/slave
+	jobtype = /datum/outfit/job/CaesarsLegion/f13slave
 	id = /obj/item/card/id/legionbrand
 	uniform = /obj/item/clothing/under/f13/legslave
 	neck = /obj/item/electropack/shockcollar
