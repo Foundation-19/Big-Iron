@@ -628,14 +628,11 @@
 /turf/open/floor/carpet/purple,
 /area/f13/village)
 "cf" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/simple_door/house,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
 	},
-/obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 1
-	},
-/area/f13/followers)
+/area/f13/clinic)
 "cg" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -778,9 +775,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/brotherhood/surface)
 "cA" = (
-/obj/machinery/iv_drip,
+/obj/structure/bed/old,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibmid1";
+	pixel_x = 6;
+	pixel_y = 9
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "cB" = (
 /obj/structure/chair/f13chair2{
 	dir = 1
@@ -969,14 +971,11 @@
 /turf/open/transparent/openspace,
 /area/f13/brotherhood/surface)
 "df" = (
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "floor2"
-	},
-/obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "dg" = (
 /obj/machinery/photocopier,
 /obj/effect/decal/cleanable/dirt,
@@ -986,8 +985,14 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate"
 	},
 /area/f13/wasteland)
 "di" = (
@@ -1080,14 +1085,11 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "du" = (
-/obj/structure/chair/office/dark{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
+/obj/structure/table,
+/obj/item/paper_bin,
+/obj/item/pen,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "dw" = (
 /obj/structure/window/fulltile/wood/broken,
 /obj/structure/decoration/rag,
@@ -1154,15 +1156,13 @@
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
 "dE" = (
-/obj/structure/barricade/wooden/planks/pregame,
-/obj/machinery/door/airlock/medical{
-	name = "Clinic Morgue";
-	req_one_access_txt = "124"
+/obj/item/trash/candy,
+/obj/structure/lattice/catwalk,
+/turf/open/transparent/openspace{
+	name = "air";
+	sunlight_state = 1
 	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "plating"
-	},
-/area/f13/followers)
+/area/f13/clinic)
 "dF" = (
 /obj/machinery/light,
 /turf/open/floor/f13/wood,
@@ -1240,16 +1240,16 @@
 	},
 /area/f13/building)
 "dR" = (
+/obj/structure/table,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/machinery/light{
-	dir = 8
+/obj/item/reagent_containers/dropper,
+/obj/machinery/light/small{
+	dir = 4
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 8
-	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "dS" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13{
@@ -1288,16 +1288,17 @@
 	},
 /area/f13/wasteland)
 "dY" = (
-/obj/structure/table,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/machinery/cell_charger,
-/obj/machinery/light/small{
-	dir = 4
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "ea" = (
 /obj/item/ammo_box/magazine/m10mm_adv,
 /obj/structure/rack{
@@ -1330,9 +1331,11 @@
 /turf/closed/wall/f13/wood,
 /area/f13/building)
 "ee" = (
-/obj/structure/simple_door/house,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 10;
+	icon_state = "bluedirty"
+	},
+/area/f13/clinic)
 "ef" = (
 /obj/structure/closet/fridge,
 /obj/item/reagent_containers/food/condiment/flour,
@@ -1359,12 +1362,14 @@
 /turf/open/floor/holofloor/carpet,
 /area/f13/building)
 "ej" = (
-/obj/structure/table,
-/obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/item/healthanalyzer,
-/obj/item/reagent_containers/hypospray/medipen/medx,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/bed/roller,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 1
+	},
+/area/f13/clinic)
 "ek" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -1399,12 +1404,9 @@
 	},
 /area/f13/building)
 "ep" = (
-/obj/structure/chair/stool{
-	dir = 4;
-	icon_state = "bench_center"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/purple,
-/area/f13/followers)
+/obj/machinery/light,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side,
+/area/f13/clinic)
 "er" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -1594,13 +1596,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/building)
 "eX" = (
-/obj/item/trash/sosjerky,
-/obj/structure/lattice/catwalk,
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/followers)
+/obj/structure/sign/departments/medbay/alt,
+/turf/closed/wall/f13/store,
+/area/f13/clinic)
 "eY" = (
 /obj/structure/barricade/bars,
 /obj/structure/table/wood/poker,
@@ -1618,14 +1616,15 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/curtain,
-/obj/machinery/shower{
-	pixel_y = 17
-	},
+/obj/structure/table/wood,
+/obj/item/reagent_containers/rag/towel,
+/obj/item/reagent_containers/rag/towel,
+/obj/item/reagent_containers/rag/towel,
+/obj/item/reagent_containers/rag/towel,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "fb" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/donut/berry,
@@ -1908,12 +1907,12 @@
 	},
 /area/f13/wasteland)
 "fS" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/simple_door/metal/store,
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 6
 	},
-/obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/followers)
+/area/f13/clinic)
 "fU" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -2118,10 +2117,11 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 6
+/obj/machinery/light/small{
+	dir = 4
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "gv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/poster_spawner/prewar{
@@ -2141,15 +2141,10 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "gy" = (
-/turf/closed/indestructible/rock{
-	desc = "A pre-War wall made of solid concrete.";
-	icon = 'icons/turf/walls/f13store.dmi';
-	icon_state = "store";
-	icon_type_smooth = "store";
-	name = "Concrete wall";
-	smooth = 1
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 4
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "gA" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -2243,20 +2238,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "gL" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 6;
+	icon_state = "bluerusty"
 	},
-/obj/structure/mirror{
-	pixel_x = -1;
-	pixel_y = 29
-	},
-/obj/structure/sink{
-	pixel_y = 15
-	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/followers)
+/area/f13/clinic)
 "gM" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/bottle/whiskey{
@@ -2302,11 +2288,11 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/mob/living/simple_animal/hostile/handy/protectron,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 4
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/clinic)
 "gT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/wood/worn,
@@ -2412,11 +2398,12 @@
 	},
 /area/f13/caves)
 "hl" = (
-/obj/item/trash/candy,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 8
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/followers)
+/obj/structure/simple_door/bunker,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/clinic)
 "hm" = (
 /turf/closed/wall/f13/store{
 	desc = "A pre-War wall made of solid concrete.";
@@ -2562,13 +2549,9 @@
 	},
 /area/f13/wasteland)
 "hN" = (
-/obj/structure/table,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "hO" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -2576,14 +2559,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "hR" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
+/obj/structure/simple_door/metal/store,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/f13/vault_floor/blue/side,
-/area/f13/followers)
+/area/f13/clinic)
 "hS" = (
 /obj/machinery/light{
 	dir = 8
@@ -2697,10 +2676,16 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "ij" = (
-/obj/structure/simple_door/metal/store,
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side,
-/area/f13/followers)
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/clinic)
 "ik" = (
 /obj/structure/dresser,
 /obj/machinery/light/small{
@@ -2760,10 +2745,16 @@
 /turf/open/floor/wood/wood_tiled,
 /area/f13/building)
 "ir" = (
-/turf/open/floor/plasteel/f13/vault_floor/blue/corner{
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/bed/mattress{
+	icon_state = "mattress5"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "is" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
@@ -2935,12 +2926,13 @@
 	},
 /area/f13/wasteland)
 "iZ" = (
-/obj/structure/barricade/wooden,
-/obj/structure/window/fulltile/store{
-	icon_state = "ruinswindowbrokenvertical"
+/obj/structure/table,
+/obj/item/healthanalyzer,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "ja" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -3498,12 +3490,15 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "kt" = (
-/obj/structure/barricade/wooden,
-/obj/structure/window/fulltile/store{
-	icon_state = "ruinswindowvertical"
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
-/area/f13/followers)
+/obj/structure/table,
+/obj/item/reagent_containers/glass/beaker,
+/obj/item/reagent_containers/glass/beaker,
+/obj/item/reagent_containers/hypospray/combat,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "ku" = (
 /obj/structure/table/wood,
 /obj/item/binoculars,
@@ -3517,11 +3512,11 @@
 /area/f13/building)
 "kx" = (
 /obj/structure/table,
-/obj/machinery/processor/chopping_block,
+/obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "ky" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -3679,15 +3674,13 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/table/wood,
-/obj/item/reagent_containers/rag/towel,
-/obj/item/reagent_containers/rag/towel,
-/obj/item/reagent_containers/rag/towel,
-/obj/item/reagent_containers/rag/towel,
+/obj/structure/toilet{
+	pixel_y = 7
+	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "kZ" = (
 /obj/structure/simple_door/metal/fence,
 /obj/structure/decoration/rag,
@@ -3800,12 +3793,16 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "lq" = (
+/obj/structure/table,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/chair/office/dark,
+/obj/machinery/cell_charger,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "lr" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -3843,14 +3840,8 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/nest/protectron{
-	layer = 3;
-	max_mobs = 1;
-	pixel_y = 20
-	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/smartfridge/bottlerack/lootshelf/construction,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building)
 "lx" = (
@@ -3902,15 +3893,12 @@
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/wasteland)
 "lE" = (
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/table/optable,
+/obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "lG" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/barricade/bars,
@@ -4194,11 +4182,12 @@
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/wasteland)
 "mv" = (
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 10;
-	icon_state = "bluedirty"
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/followers)
+/obj/machinery/light,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side,
+/area/f13/clinic)
 "mw" = (
 /obj/structure/table/wood,
 /obj/item/cigbutt/cigarbutt,
@@ -4207,12 +4196,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "mx" = (
-/obj/machinery/light{
-	dir = 8
+/obj/structure/barricade/wooden,
+/obj/structure/window/fulltile/store{
+	icon_state = "ruinswindowvertical"
 	},
-/obj/structure/bodycontainer/morgue,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
+/area/f13/clinic)
 "my" = (
 /obj/structure/table/wood,
 /obj/item/lighter,
@@ -4752,11 +4741,12 @@
 	},
 /area/f13/building)
 "nZ" = (
-/obj/effect/decal/cleanable/blood/tracks,
+/obj/item/bodypart/l_arm,
+/obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "oa" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -4913,18 +4903,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "ow" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/nest/protectron{
-	layer = 3;
-	max_mobs = 1;
-	pixel_y = 20
-	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 1
-	},
-/area/f13/followers)
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/clinic)
 "oz" = (
 /obj/structure/rack,
 /obj/item/circuitboard/machine/chem_dispenser/drinks/beer,
@@ -5157,12 +5138,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "pj" = (
-/obj/structure/simple_door/house,
-/obj/structure/barricade/wooden,
-/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
-	icon_state = "whitedirtysolid"
+/obj/structure/chair/office/dark{
+	dir = 8
 	},
-/area/f13/followers)
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "pl" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/f13/wood,
@@ -5180,11 +5163,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate"
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/wasteland)
 "po" = (
 /obj/structure/chair/booth{
@@ -5355,9 +5336,12 @@
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/legion)
 "pJ" = (
-/obj/structure/sign/departments/medbay/alt,
-/turf/closed/wall/f13/store,
-/area/f13/followers)
+/obj/structure/table,
+/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/item/healthanalyzer,
+/obj/item/reagent_containers/hypospray/medipen/medx,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "pK" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -5420,16 +5404,15 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "pS" = (
-/obj/effect/overlay/junk/toilet{
-	dir = 4;
-	layer = 2.9
+/turf/closed/indestructible/rock{
+	desc = "A pre-War wall made of solid concrete.";
+	icon = 'icons/turf/walls/f13store.dmi';
+	icon_state = "store";
+	icon_type_smooth = "store";
+	name = "Concrete wall";
+	smooth = 1
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/mob/living/simple_animal/hostile/raider/tribal,
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/followers)
+/area/f13/clinic)
 "pT" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -5784,14 +5767,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
+/mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "qU" = (
 /turf/closed/wall/r_wall,
 /area/f13/caves)
@@ -5880,14 +5858,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/building)
 "re" = (
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "gibbear1"
+/obj/machinery/computer/operating,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "rf" = (
 /obj/item/bedsheet/brown,
 /obj/structure/bed/old,
@@ -6088,12 +6066,14 @@
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
 "rI" = (
-/obj/structure/lattice/catwalk,
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/followers)
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/turf/open/floor/plasteel/f13/vault_floor/blue/corner{
+	dir = 1
+	},
+/area/f13/clinic)
 "rJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -6115,11 +6095,11 @@
 /area/f13/wasteland)
 "rO" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/medx,
+/obj/machinery/processor/chopping_block,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "rP" = (
 /obj/structure/punching_bag,
 /turf/open/indestructible/ground/inside/mountain,
@@ -6128,18 +6108,17 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 10
-	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/white,
+/area/f13/clinic)
 "rR" = (
-/obj/structure/window/fulltile/store{
-	icon_state = "storewindowtop"
+/obj/structure/kitchenspike,
+/obj/effect/decal/cleanable/blood/gibs{
+	icon_state = "gibup1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "rS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small,
@@ -6157,11 +6136,10 @@
 /turf/closed/wall/f13/store/constructed,
 /area/f13/ncr)
 "rV" = (
-/obj/structure/window/fulltile/store{
-	icon_state = "ruinswindowbrokenvertical"
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 9
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
-/area/f13/followers)
+/area/f13/clinic)
 "rW" = (
 /obj/structure/bed,
 /obj/item/bedsheet/black,
@@ -6496,14 +6474,16 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "ta" = (
-/obj/item/organ/liver,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/gibs/down{
+	icon_state = "gibleg"
+	},
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /obj/structure/table,
-/obj/item/defibrillator/primitive,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "tb" = (
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
@@ -6597,14 +6577,12 @@
 /turf/closed/wall/f13/wood/house,
 /area/f13/raiders)
 "tn" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/machinery/light{
+	dir = 8
 	},
-/obj/structure/bed/mattress{
-	icon_state = "mattress5"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side,
-/area/f13/followers)
+/obj/structure/bodycontainer/morgue,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "to" = (
 /obj/structure/window/reinforced/spawner{
 	dir = 1
@@ -6722,13 +6700,11 @@
 	},
 /area/f13/building)
 "tF" = (
-/obj/structure/table,
-/obj/item/healthanalyzer,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "tG" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing/corner{
@@ -6747,16 +6723,17 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/legion)
 "tI" = (
-/obj/structure/table,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/item/reagent_containers/dropper,
-/obj/machinery/light/small{
-	dir = 4
+/obj/effect/decal/remains{
+	icon_state = "remains"
+	},
+/obj/structure/chair/office/light{
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "tK" = (
 /obj/structure/chair/sofa/corp,
 /obj/effect/turf_decal/trimline/yellow/line{
@@ -7140,13 +7117,14 @@
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/village)
 "uD" = (
-/obj/machinery/light{
-	dir = 1
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 1
+/obj/machinery/light/small,
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "uE" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -7183,14 +7161,15 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "uO" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/machinery/light{
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/followers)
+/obj/structure/table/optable,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "uP" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -7225,12 +7204,17 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "uS" = (
-/obj/structure/table,
-/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/structure/kitchenspike,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbearcore"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "uT" = (
 /obj/structure/rack,
 /obj/item/storage/box/medicine/stimpaks/superstimpaks5,
@@ -7398,12 +7382,10 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "vn" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/mob/living/simple_animal/hostile/ghoul,
+/obj/structure/simple_door/house,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "vo" = (
 /obj/structure/chair/sofa/corp{
 	dir = 8
@@ -7523,13 +7505,13 @@
 /turf/open/floor/wood/wood_large,
 /area/f13/ncr)
 "vG" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/machinery/defibrillator_mount/loaded{
+	pixel_x = -27
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "vH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/junk/jukebox,
@@ -7603,14 +7585,14 @@
 /turf/open/floor/holofloor/carpet,
 /area/f13/building)
 "vS" = (
-/obj/machinery/computer/operating,
+/obj/structure/table/optable,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "vT" = (
 /obj/machinery/light{
 	dir = 8
@@ -7687,16 +7669,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/brotherhood/surface)
 "wf" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
+/obj/machinery/light/small,
+/mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "wg" = (
 /obj/structure/decoration/clock/old/active{
 	pixel_y = 32
@@ -7820,14 +7798,10 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/wasteland)
 "wy" = (
-/obj/structure/simple_door/house,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 10
 	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/followers)
+/area/f13/clinic)
 "wz" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -7995,12 +7969,13 @@
 /turf/open/floor/carpet/royalblue,
 /area/f13/ncr)
 "xa" = (
-/obj/structure/simple_door/house,
-/obj/effect/decal/cleanable/blood/tracks,
-/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
-	icon_state = "whitedirtysolid"
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 10
+	},
+/area/f13/clinic)
 "xb" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/meat/steak/plain/human{
@@ -8127,9 +8102,14 @@
 /turf/open/floor/carpet/red,
 /area/f13/ncr)
 "xr" = (
-/obj/structure/bed/old,
+/obj/effect/decal/remains{
+	icon_state = "remains"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "xs" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -8137,14 +8117,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "xt" = (
-/obj/structure/kitchenspike,
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "gibbearcore"
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
-	icon_state = "whitedirtysolid"
-	},
-/area/f13/followers)
+/mob/living/simple_animal/hostile/handy/protectron,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side,
+/area/f13/clinic)
 "xu" = (
 /obj/effect/decal/riverbank,
 /obj/effect/decal/riverbank,
@@ -8280,14 +8258,13 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "xU" = (
-/obj/structure/table/optable,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "xV" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -8386,11 +8363,16 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "yh" = (
-/obj/structure/table,
-/obj/item/paper_bin,
-/obj/item/pen,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/item/trash/candy,
+/obj/structure/lattice/catwalk,
+/turf/open/transparent/openspace{
+	name = "air";
+	sunlight_state = 1
+	},
+/area/f13/clinic)
 "yi" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -8417,11 +8399,10 @@
 	dir = 4;
 	light_color = "#c1caff"
 	},
-/mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 4
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "ym" = (
 /obj/structure/railing{
 	dir = 8
@@ -8430,11 +8411,13 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "yo" = (
-/obj/structure/window/fulltile/store{
-	icon_state = "storewindowtop"
+/obj/vehicle/ridden/wheelchair{
+	dir = 4
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 5
+	},
+/area/f13/clinic)
 "yp" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt{
@@ -8446,9 +8429,12 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/mob/living/simple_animal/hostile/handy/protectron,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side,
-/area/f13/followers)
+/obj/structure/bed/old,
+/obj/machinery/light/small/broken{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "yt" = (
 /obj/structure/closet/crate/freezer/surplus_limbs,
 /turf/open/floor/wood/f13/oak,
@@ -8546,10 +8532,11 @@
 /turf/open/floor/wood/f13/stage_l,
 /area/f13/wasteland)
 "yI" = (
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 5
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowtop"
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
+/area/f13/clinic)
 "yJ" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -8698,14 +8685,11 @@
 /turf/closed/wall/f13/wood/house,
 /area/f13/building)
 "zd" = (
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 4
-	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/clinic)
 "ze" = (
 /obj/structure/decoration/rag,
 /turf/closed/wall/f13/wood/house,
@@ -8747,9 +8731,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "zj" = (
-/mob/living/simple_animal/hostile/ghoul,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/obj/structure/fermenting_barrel,
+/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
+	icon_state = "whitedirtysolid"
+	},
+/area/f13/clinic)
 "zk" = (
 /turf/closed/indestructible/riveted,
 /area/f13/tcoms)
@@ -8789,13 +8775,17 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/toilet{
-	pixel_y = 7
+/obj/structure/mirror{
+	pixel_x = -1;
+	pixel_y = 29
+	},
+/obj/structure/sink{
+	pixel_y = 15
 	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "zr" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -8914,14 +8904,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/building)
 "zP" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/old{
-	icon_state = "floor2"
+	icon_state = "gibbear1"
 	},
+/obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "zQ" = (
 /obj/machinery/microwave/stove,
 /turf/open/floor/f13{
@@ -9003,8 +8993,12 @@
 /turf/closed/wall/f13/tunnel,
 /area/f13/building)
 "Af" = (
-/turf/closed/wall/f13/store,
-/area/f13/wasteland)
+/obj/structure/simple_door/house,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
+	icon_state = "whitedirtysolid"
+	},
+/area/f13/clinic)
 "Ag" = (
 /obj/structure/chair/sofa/right{
 	dir = 4
@@ -9028,12 +9022,6 @@
 "Ai" = (
 /turf/closed/indestructible/f13/matrix,
 /area/f13/caves)
-"Aj" = (
-/obj/structure/window/fulltile/house{
-	icon_state = "housewindowbrokenvertical"
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/wasteland)
 "Ak" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -9049,22 +9037,25 @@
 "Am" = (
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood/old{
-	icon_state = "gibbearcore"
+	icon_state = "gibmid1";
+	pixel_x = 6;
+	pixel_y = 9
 	},
-/obj/machinery/light{
-	dir = 1
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor2"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Ao" = (
-/obj/effect/decal/cleanable/robot_debris,
-/obj/effect/decal/cleanable/oil/slippery,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 1
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/corner{
+	dir = 8
+	},
+/area/f13/clinic)
 "Ap" = (
 /obj/structure/table/wood,
 /obj/item/paper/bitterdrink,
@@ -9154,11 +9145,8 @@
 	},
 /area/f13/ncr)
 "AA" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "AB" = (
 /obj/structure/toilet{
 	pixel_y = 13
@@ -9180,15 +9168,13 @@
 	},
 /area/f13/wasteland)
 "AF" = (
-/obj/structure/table,
-/obj/item/organ/heart,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
-/obj/machinery/light,
-/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
-	icon_state = "whitedirtysolid"
+/obj/machinery/light{
+	dir = 1
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 1
+	},
+/area/f13/clinic)
 "AG" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -9320,15 +9306,14 @@
 	},
 /area/f13/building)
 "AW" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
+/obj/item/trash/candy,
+/obj/item/trash/sosjerky,
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace{
 	name = "air";
 	sunlight_state = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "AX" = (
 /obj/structure/lattice/catwalk,
 /obj/effect/decal/cleanable/dirt,
@@ -9432,11 +9417,12 @@
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/village)
 "Bm" = (
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 6;
-	icon_state = "bluerusty"
+/obj/structure/table,
+/obj/item/reagent_containers/hypospray/medipen/medx,
+/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
+	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Bn" = (
 /obj/structure/chair/stool,
 /turf/open/floor/carpet/black,
@@ -9662,14 +9648,13 @@
 /turf/closed/wall/f13/tentwall,
 /area/f13/building)
 "Ca" = (
+/obj/structure/table,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/bed/roller,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 1
-	},
-/area/f13/followers)
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "Cb" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -9787,21 +9772,26 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/legion)
 "Cr" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/turf/open/transparent/openspace{
+	name = "air";
+	sunlight_state = 1
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Cs" = (
 /obj/structure/bookcase,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "Ct" = (
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/kitchenspike,
+/obj/effect/decal/cleanable/blood/gibs{
+	icon_state = "gibtorso"
+	},
+/obj/item/stack/sheet/animalhide/human,
+/obj/item/stack/sheet/animalhide/human,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Cu" = (
 /obj/structure/closet/crate/bin/trashbin,
 /turf/open/floor/wood/f13/oak,
@@ -9982,13 +9972,14 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "CX" = (
-/turf/closed/indestructible/rock{
-	desc = "A pre-War supermart wall made of reinforced concrete.";
-	icon = 'icons/turf/walls/f13superstore.dmi';
-	icon_state = "supermart";
-	icon_type_smooth = "supermart";
-	name = "supermart wall";
-	smooth = 1
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/indestructible/ground/outside/ruins{
+	icon_state = "rubbleplate"
 	},
 /area/f13/wasteland)
 "CY" = (
@@ -10074,22 +10065,27 @@
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
 "Dn" = (
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 10
+/obj/item/trash/candy{
+	pixel_x = 7;
+	pixel_y = 6
 	},
-/area/f13/followers)
+/obj/item/trash/candy,
+/obj/structure/lattice/catwalk,
+/turf/open/transparent/openspace{
+	name = "air";
+	sunlight_state = 1
+	},
+/area/f13/clinic)
 "Do" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/wasteland)
 "Dp" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/bed/mattress{
+	icon_state = "mattress5"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 1
-	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/clinic)
 "Dq" = (
 /obj/structure/decoration/rag{
 	desc = "A string of bones and skulls.<br>A common warning from tribals and raiders to outsiders.";
@@ -10169,10 +10165,11 @@
 /turf/closed/wall/f13/wood/interior,
 /area/f13/village)
 "DB" = (
+/mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "DC" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -10183,13 +10180,14 @@
 	},
 /area/f13/building)
 "DD" = (
-/obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/structure/table,
+/obj/item/paper_bin,
+/obj/item/pen,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "DE" = (
 /obj/structure/dresser,
 /obj/effect/decal/cleanable/dirt,
@@ -10228,10 +10226,16 @@
 	},
 /area/f13/building)
 "DJ" = (
-/obj/structure/barricade/sandbags,
-/obj/structure/barricade/wooden,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side,
-/area/f13/followers)
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 1
+	},
+/area/f13/clinic)
 "DK" = (
 /obj/structure/legion_extractor,
 /turf/open/floor/wood/f13/oak,
@@ -10289,8 +10293,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "DU" = (
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 8
+	},
+/area/f13/clinic)
 "DV" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -10384,23 +10390,24 @@
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/caves)
 "Ek" = (
-/obj/structure/table,
-/obj/machinery/light/small/broken{
-	dir = 8
+/obj/effect/decal/cleanable/robot_debris,
+/obj/effect/decal/cleanable/oil/slippery,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/obj/item/reagent_containers/hypospray/medipen/psycho,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/side,
+/area/f13/clinic)
 "El" = (
 /obj/structure/closet/crate/bin/trashbin,
 /turf/open/floor/wood/wood_large,
 /area/f13/ncr)
 "Em" = (
-/obj/structure/bed/mattress{
-	icon_state = "mattress5"
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 5;
+	icon_state = "bluerusty"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/followers)
+/area/f13/clinic)
 "En" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
@@ -10438,11 +10445,8 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "Ew" = (
-/obj/structure/chair/stool{
-	icon_state = "bench"
-	},
 /turf/open/floor/plasteel/f13/vault_floor/purple,
-/area/f13/followers)
+/area/f13/clinic)
 "Ey" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -10480,10 +10484,13 @@
 /turf/open/floor/plasteel/grimy,
 /area/f13/brotherhood/surface)
 "ED" = (
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 9
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 1
+	},
+/area/f13/clinic)
 "EE" = (
 /obj/item/kirbyplants/random,
 /obj/structure/railing{
@@ -10493,14 +10500,16 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "EF" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/effect/overlay/junk/toilet{
+	dir = 4;
+	layer = 2.9
 	},
-/obj/machinery/light/small,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/mob/living/simple_animal/hostile/raider/tribal,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "EG" = (
 /obj/effect/landmark/start/f13/settler,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -10552,9 +10561,13 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "EP" = (
-/obj/structure/wreck/trash/machinepiletwo,
+/obj/structure/table,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "EQ" = (
 /obj/machinery/smartfridge/bottlerack/seedbin/primitive,
 /turf/open/floor/wood/f13/oak,
@@ -10604,26 +10617,15 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "EY" = (
-/obj/structure/bed/old,
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "gibmid1";
-	pixel_x = 6;
-	pixel_y = 9
-	},
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/turf/closed/wall/f13/store,
+/area/f13/clinic)
 "EZ" = (
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
 "Fc" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/machinery/light/small{
-	dir = 4
-	},
+/obj/structure/bed/old,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Fd" = (
 /obj/structure/chair/stool/retro/backed,
 /obj/effect/decal/cleanable/dirt{
@@ -10679,15 +10681,11 @@
 	},
 /area/f13/caves)
 "Fk" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/barricade/sandbags,
-/obj/structure/barricade/wooden,
+/obj/structure/bed/roller,
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Fl" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -10706,9 +10704,13 @@
 /turf/open/floor/f13,
 /area/f13/brotherhood/surface)
 "Fm" = (
-/obj/structure/simple_door/bunker,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/followers)
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 4
+	},
+/area/f13/clinic)
 "Fn" = (
 /obj/effect/landmark/start/f13/ncrcombatengineer,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -10717,13 +10719,15 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/machinery/light{
-	dir = 1
+/obj/structure/nest/protectron{
+	layer = 3;
+	max_mobs = 1;
+	pixel_y = 20
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Fp" = (
 /obj/structure/bed/dogbed,
 /turf/open/indestructible/ground/outside/woodalt,
@@ -10967,13 +10971,11 @@
 /turf/open/floor/plasteel/grimy,
 /area/f13/brotherhood/surface)
 "FZ" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/window/fulltile/store{
+	icon_state = "ruinswindowbrokenvertical"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 8
-	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
+/area/f13/clinic)
 "Ga" = (
 /obj/effect/decal/fakelattice,
 /turf/closed/wall/r_wall/rust,
@@ -11010,13 +11012,11 @@
 	},
 /area/f13/wasteland)
 "Gf" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/item/trash/candy,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 8
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/corner{
-	dir = 16
-	},
-/area/f13/followers)
+/area/f13/clinic)
 "Gg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing/corner{
@@ -11175,9 +11175,14 @@
 	},
 /area/f13/building)
 "GG" = (
-/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/bed/mattress{
+	icon_state = "mattress5"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side,
-/area/f13/followers)
+/area/f13/clinic)
 "GH" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/building)
@@ -11237,11 +11242,15 @@
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
 "GR" = (
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 9;
-	icon_state = "bluerusty"
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/gibs/down{
+	icon_state = "gib6-old"
 	},
-/area/f13/followers)
+/obj/structure/fermenting_barrel,
+/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
+	icon_state = "whitedirtysolid"
+	},
+/area/f13/clinic)
 "GS" = (
 /obj/structure/table/wood/settler,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -11388,8 +11397,12 @@
 /turf/closed/wall/f13/store,
 /area/f13/building)
 "Hn" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Hp" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowhorizontal"
@@ -11519,18 +11532,16 @@
 	},
 /area/f13/wasteland)
 "HG" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side,
-/area/f13/followers)
+/area/f13/clinic)
 "HH" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /obj/structure/table,
+/obj/item/reagent_containers/hypospray/medipen/psycho,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "HI" = (
 /obj/structure/chair/stool{
 	dir = 1;
@@ -11639,11 +11650,13 @@
 	},
 /area/f13/caves)
 "HV" = (
-/obj/structure/railing{
-	dir = 4
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowtop"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
+	icon_state = "whitedirtysolid"
+	},
+/area/f13/clinic)
 "HW" = (
 /obj/machinery/light,
 /turf/open/floor/f13{
@@ -11695,16 +11708,12 @@
 /turf/open/floor/carpet/red,
 /area/f13/ncr)
 "Ib" = (
-/obj/structure/kitchenspike,
-/obj/effect/decal/cleanable/blood/gibs{
-	icon_state = "gibtorso"
-	},
-/obj/item/stack/sheet/animalhide/human,
-/obj/item/stack/sheet/animalhide/human,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/bodypart/l_arm,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Ic" = (
 /obj/structure/curtain{
 	color = "#5c131b";
@@ -11731,14 +11740,10 @@
 	},
 /area/f13/raiders)
 "Ig" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plasteel/f13/vault_floor/blue/corner{
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Ik" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -11794,22 +11799,25 @@
 	},
 /area/f13/building)
 "Iq" = (
+/obj/structure/table,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/corner{
+/obj/machinery/light/small{
 	dir = 8
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "Ir" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/barricade/wooden/planks/pregame,
+/obj/machinery/door/airlock/medical{
+	name = "Clinic Morgue";
+	req_one_access_txt = "124"
 	},
-/obj/structure/window/fulltile/store{
-	icon_state = "ruinswindowbrokenvertical"
+/turf/open/floor/plasteel/f13{
+	icon_state = "plating"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
-/area/f13/followers)
+/area/f13/clinic)
 "Is" = (
 /obj/structure/table,
 /turf/open/floor/f13{
@@ -11873,15 +11881,13 @@
 /turf/open/floor/carpet/black,
 /area/f13/village)
 "Iz" = (
-/obj/structure/simple_door/metal/store,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 10
+/turf/open/floor/plasteel/f13/vault_floor/blue/corner{
+	dir = 16
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "IA" = (
 /obj/structure/decoration/rag{
 	desc = "A string of bones and skulls.<br>A common warning from tribals and raiders to outsiders.";
@@ -11978,12 +11984,12 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "IS" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/chair/stool{
+	dir = 1;
+	icon_state = "bench"
 	},
-/obj/structure/wreck/trash/machinepiletwo,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/purple,
+/area/f13/clinic)
 "IT" = (
 /obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -11997,13 +12003,11 @@
 /turf/open/floor/wood/wood_large,
 /area/f13/wasteland)
 "IW" = (
-/obj/machinery/light{
-	dir = 4
-	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 4
+	dir = 9;
+	icon_state = "bluerusty"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "IX" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal,
@@ -12057,14 +12061,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "Jg" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/table,
-/obj/item/paper_bin,
-/obj/item/pen,
+/obj/structure/simple_door/house,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Jh" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -12110,11 +12109,12 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/item/trash/candy,
+/obj/structure/barricade/sandbags,
+/obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Jp" = (
 /obj/structure/chair/office/dark,
 /turf/open/floor/f13/wood{
@@ -12187,8 +12187,11 @@
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/raiders)
 "JA" = (
+/obj/structure/chair/stool{
+	icon_state = "bench"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/purple,
-/area/f13/followers)
+/area/f13/clinic)
 "JB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/comfy/shuttle{
@@ -12274,15 +12277,15 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "JP" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
 	},
-/obj/structure/table,
-/obj/item/bodybag/containment,
-/obj/item/bodybag/containment,
-/obj/item/storage/box/bodybags,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/mob/living/simple_animal/hostile/handy/protectron,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 4
+	},
+/area/f13/clinic)
 "JQ" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -12336,13 +12339,8 @@
 	},
 /area/f13/ncr)
 "JY" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 8
-	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/clinic)
 "JZ" = (
 /obj/structure/junk/small,
 /obj/machinery/light{
@@ -12440,12 +12438,14 @@
 	},
 /area/f13/raiders)
 "Km" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/kitchenspike,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbearcore"
 	},
-/obj/machinery/iv_drip,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
+	icon_state = "whitedirtysolid"
+	},
+/area/f13/clinic)
 "Kn" = (
 /obj/structure/decoration/rag{
 	icon_state = "skin"
@@ -12484,37 +12484,28 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "Kt" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 5;
-	icon_state = "bluerusty"
-	},
-/area/f13/followers)
-"Ku" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/followers)
-"Kv" = (
-/obj/structure/chair/stool{
-	dir = 1;
-	icon_state = "bench"
-	},
+/obj/structure/simple_door/house,
 /turf/open/floor/plasteel/f13/vault_floor/purple,
-/area/f13/followers)
+/area/f13/clinic)
+"Ku" = (
+/obj/structure/bodycontainer/morgue,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
+"Kv" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/clinic)
 "Kz" = (
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "gibmid1"
-	},
-/obj/item/clothing/head/hooded/human_head{
-	pixel_y = -10
-	},
-/obj/item/organ/heart,
+/obj/item/organ/liver,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table,
+/obj/item/defibrillator/primitive,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "KA" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt{
@@ -12558,14 +12549,12 @@
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
 "KH" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/machinery/light/small{
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
+/obj/structure/wreck/trash/machinepiletwo,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "KI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/glass{
@@ -12698,14 +12687,13 @@
 /area/f13/building)
 "KZ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/blood/gibs/down{
-	icon_state = "gib6-old"
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor2"
 	},
-/obj/structure/fermenting_barrel,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "La" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/wood{
@@ -12765,10 +12753,9 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "Li" = (
-/obj/structure/simple_door/house,
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/obj/structure/simple_door/bunker,
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/clinic)
 "Lj" = (
 /obj/effect/decal/remains/human,
 /obj/item/clothing/under/pants/f13/ghoul,
@@ -12794,11 +12781,14 @@
 /area/f13/wasteland)
 "Ln" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/junkspawners,
+/obj/item/organ/heart,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
+/obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Lo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/fluff/railing/corner{
@@ -12892,11 +12882,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "LE" = (
-/obj/structure/wreck/trash/machinepiletwo,
-/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
-	icon_state = "whitedirtysolid"
+/obj/machinery/light{
+	dir = 4
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 4
+	},
+/area/f13/clinic)
 "LF" = (
 /obj/structure/table/reinforced/brass,
 /obj/item/book/manual/wiki/barman_recipes,
@@ -12972,14 +12964,12 @@
 /turf/open/floor/wood/f13/maple,
 /area/f13/store)
 "LP" = (
-/obj/machinery/light{
-	dir = 8
+/obj/structure/simple_door/house,
+/obj/structure/barricade/wooden,
+/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
+	icon_state = "whitedirtysolid"
 	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/wasteland)
+/area/f13/clinic)
 "LR" = (
 /obj/structure/decoration/rag,
 /obj/structure/barricade/wooden,
@@ -13030,13 +13020,16 @@
 	},
 /area/f13/wasteland)
 "Md" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/effect/overlay/junk/sink{
+	pixel_y = 15
+	},
+/obj/effect/overlay/junk/mirror{
+	pixel_y = 32
 	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Me" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/bin/trashbin,
@@ -13141,28 +13134,34 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)
 "Mx" = (
-/mob/living/simple_animal/hostile/handy/protectron,
+/obj/structure/nest/protectron{
+	layer = 3;
+	max_mobs = 1;
+	pixel_y = 20
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "My" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/simple_door/metal/store,
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 1
+/obj/structure/curtain,
+/obj/machinery/shower{
+	pixel_y = 17
 	},
-/area/f13/followers)
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/clinic)
 "Mz" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowbrokenvertical"
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/wood/f13/old,
-/area/f13/wasteland)
+/area/f13/building)
 "MB" = (
 /obj/machinery/biogenerator{
 	pixel_x = 18;
@@ -13209,11 +13208,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "MF" = (
-/obj/structure/chair/office/dark{
-	dir = 1
-	},
+/obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "MG" = (
 /obj/structure/dresser,
 /turf/open/floor/f13/wood,
@@ -13465,14 +13462,12 @@
 	},
 /area/f13/building)
 "Nt" = (
-/obj/effect/decal/remains{
-	icon_state = "remains"
+/obj/machinery/light/small/broken{
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
+/mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Nw" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/wiki/engineering_hacking,
@@ -13492,9 +13487,9 @@
 	},
 /area/f13/building)
 "NC" = (
-/obj/item/bodypart/l_arm,
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/followers)
+/obj/machinery/iv_drip,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "NE" = (
 /obj/structure/decoration/rag{
 	icon_state = "skulls"
@@ -13509,7 +13504,12 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/purple,
+/obj/structure/nest/protectron{
+	layer = 3;
+	max_mobs = 1;
+	pixel_y = 20
+	},
+/turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland)
 "NH" = (
 /obj/machinery/light/small/broken{
@@ -13626,15 +13626,19 @@
 /turf/open/floor/f13,
 /area/f13/brotherhood/surface)
 "Ob" = (
+/obj/effect/decal/cleanable/robot_debris,
+/obj/effect/decal/cleanable/oil{
+	icon_state = "floor5"
+	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/bed/old,
-/obj/machinery/light/small/broken{
-	dir = 4
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
+/mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Oc" = (
 /obj/machinery/vending/cola/space_up,
 /obj/structure/fluff/railing/corner{
@@ -13740,20 +13744,18 @@
 /turf/closed/wall/f13/wood/house,
 /area/f13/caves)
 "Ou" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/blood/gibs/down{
-	icon_state = "gibleg"
-	},
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /obj/structure/table,
+/obj/item/storage/backpack/duffelbag/med/surgery,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Ow" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/wasteland)
+/obj/structure/window/fulltile/house{
+	icon_state = "housewindowbrokenvertical"
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/building)
 "Ox" = (
 /obj/structure/decoration/vent,
 /obj/structure/curtain,
@@ -13935,14 +13937,17 @@
 	},
 /area/f13/building)
 "Pa" = (
-/obj/structure/kitchenspike,
-/obj/effect/decal/cleanable/blood/gibs{
-	icon_state = "gibup1"
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibmid1"
 	},
+/obj/item/clothing/head/hooded/human_head{
+	pixel_y = -10
+	},
+/obj/item/organ/heart,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Pb" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/decoration/rag,
@@ -14030,13 +14035,15 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
 "Pq" = (
-/obj/item/trash/candy,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace{
 	name = "air";
 	sunlight_state = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Pr" = (
 /obj/structure/chair/stool,
 /obj/effect/decal/cleanable/dirt,
@@ -14057,16 +14064,13 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
 "Px" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/item/trash/candy,
+/obj/item/trash/sosjerky,
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace{
 	name = "air";
 	sunlight_state = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Py" = (
 /turf/open/transparent/openspace{
 	name = "air";
@@ -14222,15 +14226,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building)
 "Qa" = (
-/obj/structure/nest/protectron{
-	layer = 3;
-	max_mobs = 1;
-	pixel_y = 20
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
+/mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Qb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -14260,12 +14263,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/building)
 "Qg" = (
-/obj/machinery/light/small,
-/mob/living/simple_animal/hostile/ghoul,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Qh" = (
 /obj/structure/fluff/railing/corner{
 	dir = 4
@@ -14276,16 +14280,12 @@
 	},
 /area/f13/building)
 "Qi" = (
-/obj/effect/overlay/junk/sink{
-	pixel_y = 15
+/obj/structure/bed/old,
+/obj/machinery/light/small{
+	dir = 4
 	},
-/obj/effect/overlay/junk/mirror{
-	pixel_y = 32
-	},
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
-	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "Qj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/bin/trashbin,
@@ -14344,11 +14344,13 @@
 /area/f13/raiders)
 "Qt" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/bodypart/l_arm,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Qw" = (
 /obj/structure/decoration/rag,
 /obj/structure/barricade/wooden,
@@ -14388,12 +14390,10 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/wasteland)
 "QF" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/machinery/light,
+/obj/structure/barricade/sandbags,
+/obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/blue/side,
-/area/f13/followers)
+/area/f13/clinic)
 "QG" = (
 /obj/structure/window/reinforced/spawner{
 	dir = 1
@@ -14472,15 +14472,15 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "QP" = (
-/obj/structure/table,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/machinery/light/small{
-	dir = 8
-	},
+/obj/structure/table,
+/obj/item/bodybag/containment,
+/obj/item/bodybag/containment,
+/obj/item/storage/box/bodybags,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "QQ" = (
 /obj/machinery/light,
 /obj/structure/table,
@@ -14533,12 +14533,12 @@
 /turf/open/floor/holofloor/carpet,
 /area/f13/building)
 "QX" = (
-/obj/machinery/light/small{
-	dir = 8
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/obj/structure/wreck/trash/machinepiletwo,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side,
+/area/f13/clinic)
 "QY" = (
 /obj/machinery/light{
 	dir = 1
@@ -14615,20 +14615,21 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building)
 "Rk" = (
-/obj/structure/simple_door/house,
-/turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 5;
+	icon_state = "bluerusty"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Rl" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/mob/living/simple_animal/hostile/handy/protectron,
+/obj/structure/simple_door/metal/store,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Rm" = (
 /turf/open/floor/carpet/red,
 /area/f13/building)
@@ -14663,13 +14664,14 @@
 /turf/open/floor/f13,
 /area/f13/brotherhood/surface)
 "Rs" = (
-/obj/vehicle/ridden/wheelchair{
-	dir = 4
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 5
+/obj/structure/window/fulltile/store{
+	icon_state = "ruinswindowbrokenvertical"
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
+/area/f13/clinic)
 "Rt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash/large,
@@ -14712,15 +14714,11 @@
 /turf/closed/wall/f13/store,
 /area/f13/building)
 "Ry" = (
-/obj/structure/chair/stool{
-	dir = 4;
-	icon_state = "bench_center"
-	},
-/obj/machinery/light{
-	dir = 4
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple,
-/area/f13/followers)
+/area/f13/clinic)
 "RA" = (
 /obj/structure/mopbucket,
 /obj/item/reagent_containers/glass/bucket/plastic,
@@ -14876,12 +14874,12 @@
 	},
 /area/f13/raiders)
 "Sa" = (
-/obj/structure/bed/old,
-/obj/machinery/light/small{
-	dir = 4
+/obj/effect/decal/cleanable/robot_debris,
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 1
 	},
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Sb" = (
 /obj/structure/simple_door/metal/store{
 	icon_state = "brokenstore";
@@ -14919,13 +14917,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/building)
 "Sg" = (
-/obj/effect/decal/cleanable/robot_debris,
-/obj/effect/decal/cleanable/oil/slippery,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side,
-/area/f13/followers)
+/area/f13/clinic)
 "Sh" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -14937,19 +14936,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/brotherhood/surface)
 "Sj" = (
-/obj/structure/kitchenspike,
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "gibmid1";
-	pixel_x = 6;
-	pixel_y = 9
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 4
 	},
-/obj/effect/decal/cleanable/blood/old{
-	icon_state = "floor2"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
-	icon_state = "whitedirtysolid"
-	},
-/area/f13/followers)
+/area/f13/clinic)
 "Sl" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -14983,9 +14974,6 @@
 /obj/effect/spawner/lootdrop/bedsheet,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
-"Sq" = (
-/turf/open/indestructible/ground/outside/ruins,
-/area/f13/wasteland)
 "Sr" = (
 /obj/structure/table/wood/poker{
 	name = "felt table"
@@ -14994,11 +14982,14 @@
 /area/f13/building)
 "St" = (
 /obj/structure/simple_door/metal/store,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 6
+	dir = 10
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Su" = (
 /obj/structure/chair/sofa/left{
 	dir = 4
@@ -15042,12 +15033,14 @@
 /turf/closed/wall/f13/wood,
 /area/f13/caves)
 "SC" = (
-/obj/item/bodypart/l_arm,
-/obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
-	icon_state = "whitedirtysolid"
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/followers)
+/obj/effect/spawner/lootdrop/f13/junkspawners,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 1
+	},
+/area/f13/clinic)
 "SD" = (
 /obj/structure/railing{
 	dir = 4
@@ -15127,13 +15120,11 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "SV" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
+	icon_state = "whitedirtysolid"
 	},
-/obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/psycho,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "SX" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -15230,9 +15221,13 @@
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/wasteland)
 "Tl" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
 /obj/structure/table,
+/obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Tn" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/trash/candle,
@@ -15433,9 +15428,9 @@
 /turf/open/floor/wood/f13/stage_b/outdoors,
 /area/f13/wasteland)
 "TS" = (
-/obj/structure/simple_door/house,
-/turf/open/floor/plasteel/f13/vault_floor/purple,
-/area/f13/followers)
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "TT" = (
 /obj/structure/chair/sofa/corp{
 	dir = 1
@@ -15475,9 +15470,13 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side,
-/area/f13/followers)
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 8
+	},
+/area/f13/clinic)
 "Ub" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/curtain{
@@ -15517,13 +15516,13 @@
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/wasteland)
 "Uf" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 4
+	dir = 8
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Ug" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/wiki/infections,
@@ -15572,11 +15571,12 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "Up" = (
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/followers)
+/mob/living/simple_animal/hostile/ghoul,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "Uq" = (
 /obj/item/clothing/shoes/f13/explorer{
 	pixel_y = -9
@@ -15588,9 +15588,12 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/mob/living/simple_animal/hostile/handy/protectron,
+/obj/structure/bed/old,
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Ut" = (
 /obj/structure/table/wood/poker,
 /obj/effect/decal/cleanable/dirt,
@@ -15715,26 +15718,26 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "UM" = (
-/obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/followers)
+/obj/structure/simple_door/house,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/turf/open/floor/f13{
+	icon_state = "whitegreenrustychess"
+	},
+/area/f13/clinic)
 "UN" = (
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubblepillar"
 	},
 /area/f13/building)
 "UP" = (
-/obj/item/trash/candy{
-	pixel_x = 7;
-	pixel_y = 6
-	},
-/obj/item/trash/candy,
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace{
 	name = "air";
 	sunlight_state = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "UQ" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/pill/patch/healingpowder,
@@ -15835,8 +15838,15 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/legion)
 "Ve" = (
-/turf/closed/wall/f13/store,
-/area/f13/followers)
+/obj/structure/chair/stool{
+	dir = 4;
+	icon_state = "bench_center"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/purple,
+/area/f13/clinic)
 "Vf" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt{
@@ -15879,11 +15889,9 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "Vl" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 4
-	},
-/area/f13/followers)
+/obj/item/bodypart/l_arm,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/clinic)
 "Vm" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -15916,17 +15924,6 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/f13/brotherhood/surface)
-"Vs" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/bed/mattress{
-	icon_state = "mattress5"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 1
-	},
-/area/f13/followers)
 "Vu" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag,
@@ -15963,16 +15960,6 @@
 /obj/structure/flora/grass/wasteland,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/caves)
-"Vz" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/structure/table,
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/hypospray/combat,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
 "VB" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag,
@@ -16060,12 +16047,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/bed/old,
-/obj/machinery/light/small{
-	dir = 8
-	},
+/obj/machinery/iv_drip,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "VQ" = (
 /obj/structure/chair/wood/worn,
 /obj/effect/decal/cleanable/dirt,
@@ -16170,17 +16154,10 @@
 	},
 /area/f13/wasteland)
 "Wh" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/effect/decal/remains{
-	icon_state = "remains"
-	},
-/obj/structure/chair/office/light{
+/turf/open/floor/plasteel/f13/vault_floor/blue/corner{
 	dir = 1
 	},
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Wi" = (
 /obj/structure/bed/old,
 /obj/item/bedsheet/brown,
@@ -16217,10 +16194,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "Wn" = (
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 4
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 8
+	},
+/area/f13/clinic)
 "Wo" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/wood/f13/stage_br,
@@ -16259,22 +16239,26 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "Wu" = (
-/obj/structure/bed/roller,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/item/trash/candy,
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 1
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "Wv" = (
 /obj/structure/simple_door/house,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/white,
 /area/f13/building)
 "Ww" = (
+/obj/structure/table,
 /obj/machinery/light/small/broken{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/handy/protectron,
+/obj/item/reagent_containers/hypospray/medipen/psycho,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Wx" = (
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/wasteland)
@@ -16282,8 +16266,6 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/smartfridge/bottlerack/lootshelf/construction,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/wasteland)
 "WA" = (
@@ -16311,31 +16293,26 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legion)
 "WG" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side,
-/area/f13/followers)
+/area/f13/clinic)
 "WH" = (
-/obj/effect/decal/cleanable/robot_debris,
-/obj/effect/decal/cleanable/oil{
-	icon_state = "floor5"
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/mob/living/simple_animal/hostile/ghoul,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "WJ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "WK" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -16366,13 +16343,14 @@
 /turf/open/floor/carpet/red,
 /area/f13/legion)
 "WP" = (
-/obj/machinery/defibrillator_mount/loaded{
-	pixel_x = -27
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
-	icon_state = "whitedirtysolid"
+/mob/living/simple_animal/hostile/handy/protectron,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 4
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "WQ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
@@ -16575,11 +16553,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "XA" = (
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 5;
-	icon_state = "bluerusty"
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 6
+	},
+/area/f13/clinic)
 "XB" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/spray/plantbgone{
@@ -16652,16 +16632,17 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "XL" = (
-/obj/structure/fermenting_barrel,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "XM" = (
-/turf/open/floor/plasteel/f13/vault_floor/blue/side{
-	dir = 8
+/obj/structure/barricade/wooden,
+/obj/structure/window/fulltile/store{
+	icon_state = "ruinswindowbrokenvertical"
 	},
-/area/f13/followers)
+/turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
+/area/f13/clinic)
 "XN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/poster_spawner/prewar{
@@ -16783,13 +16764,11 @@
 	},
 /area/f13/building)
 "Yl" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/chair/office/dark{
+	dir = 1
 	},
-/obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "Yn" = (
 /obj/machinery/processor,
 /turf/open/floor/wood/f13/oak,
@@ -16825,11 +16804,12 @@
 /turf/closed/wall/f13/wood,
 /area/f13/caves)
 "Yt" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
+/obj/structure/chair/stool{
+	dir = 4;
+	icon_state = "bench_center"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/purple,
-/area/f13/followers)
+/area/f13/clinic)
 "Yu" = (
 /obj/structure/barricade/bars{
 	layer = 5
@@ -17153,9 +17133,12 @@
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/ncr)
 "ZD" = (
-/obj/structure/bodycontainer/morgue,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/chair/office/dark,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/followers)
+/area/f13/clinic)
 "ZE" = (
 /obj/structure/rack,
 /obj/item/clothing/neck/mantle/poncho,
@@ -17171,14 +17154,10 @@
 /turf/closed/wall/mineral/wood,
 /area/f13/ncr)
 "ZJ" = (
-/obj/item/trash/candy,
-/obj/item/trash/sosjerky,
-/obj/structure/lattice/catwalk,
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 5
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "ZK" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -17221,10 +17200,14 @@
 	},
 /area/f13/building)
 "ZQ" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor2"
+	},
+/obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
-/area/f13/followers)
+/area/f13/clinic)
 "ZR" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/ruins,
@@ -32908,11 +32891,11 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
+am
+yH
+yH
+yH
+yz
 PL
 PL
 PL
@@ -33165,11 +33148,11 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
+wP
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -33422,11 +33405,11 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
+wP
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -33679,11 +33662,11 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
+wP
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -33931,16 +33914,16 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+am
+yH
+yH
+yH
+yH
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -34188,16 +34171,16 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -34445,16 +34428,16 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -34702,16 +34685,16 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -34959,16 +34942,16 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -35216,16 +35199,16 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -35473,16 +35456,16 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -35730,16 +35713,16 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+dc
+RI
+RI
+RI
+RI
+RI
+RI
+RI
+RI
+KB
 PL
 PL
 PL
@@ -49335,26 +49318,26 @@ NX
 IN
 rn
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -50886,7 +50869,7 @@ ZU
 ZU
 ZU
 PL
-ZU
+PL
 ZU
 ZU
 ZU
@@ -51391,7 +51374,7 @@ rn
 rn
 rn
 PL
-PL
+ZU
 ZU
 ZU
 ZU
@@ -52291,11 +52274,11 @@ kC
 kC
 kC
 kC
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
 kC
 kC
 kC
@@ -52547,14 +52530,14 @@ kC
 kC
 kC
 kC
+kC
 PL
 PL
 PL
 PL
 PL
-PL
-PL
-PL
+kC
+kC
 kC
 kC
 kC
@@ -52677,20 +52660,20 @@ PL
 PL
 PL
 PL
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
 PL
 ZU
 ZU
 ZU
 ZU
 ZU
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+ZU
 ZU
 ZU
 ZU
@@ -52935,6 +52918,11 @@ PL
 PL
 PL
 PL
+ZU
+ZU
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -52943,16 +52931,11 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+ZU
+ZU
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -53060,7 +53043,7 @@ kC
 kC
 kC
 kC
-PL
+kC
 PL
 PL
 PL
@@ -53193,23 +53176,23 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -53458,9 +53441,9 @@ ZU
 ZU
 ZU
 ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
 ZU
 ZU
 ZU
@@ -53572,8 +53555,8 @@ kC
 kC
 kC
 kC
-PL
-PL
+kC
+kC
 PL
 PL
 PL
@@ -54342,7 +54325,7 @@ kC
 kC
 kC
 kC
-PL
+kC
 PL
 PL
 PL
@@ -54599,7 +54582,7 @@ kC
 kC
 kC
 kC
-PL
+kC
 PL
 PL
 PL
@@ -54735,10 +54718,10 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
+ZU
+ZU
+ZU
+ZU
 ZU
 ZU
 ZU
@@ -54856,7 +54839,7 @@ kC
 kC
 kC
 kC
-PL
+kC
 PL
 PL
 PL
@@ -55113,7 +55096,7 @@ kC
 kC
 kC
 kC
-PL
+kC
 PL
 PL
 PL
@@ -55387,7 +55370,7 @@ PL
 PL
 PL
 PL
-PL
+kC
 kC
 kC
 kC
@@ -55885,8 +55868,8 @@ kC
 kC
 kC
 kC
-kC
-kC
+PL
+PL
 PL
 PL
 PL
@@ -56024,19 +56007,19 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -56144,7 +56127,7 @@ kC
 kC
 kC
 kC
-kC
+PL
 PL
 PL
 PL
@@ -56402,7 +56385,7 @@ kC
 kC
 kC
 kC
-kC
+PL
 PL
 PL
 PL
@@ -56660,9 +56643,9 @@ kC
 kC
 kC
 Al
-Al
-kC
-kC
+PL
+PL
+PL
 PL
 PL
 PL
@@ -56893,18 +56876,18 @@ kC
 kC
 kC
 kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kC
 kC
 kC
@@ -56920,10 +56903,10 @@ kC
 kC
 kC
 kC
-kC
-kC
-kC
-kC
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -57149,13 +57132,7 @@ kC
 kC
 kC
 kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
 PL
 PL
 PL
@@ -57171,18 +57148,24 @@ PL
 kC
 kC
 kC
-lH
-kC
-kC
-lH
-ZU
-ZU
-ZU
-ZU
-ZU
 kC
 kC
 kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+PL
+PL
 PL
 PL
 PL
@@ -57428,10 +57411,10 @@ PL
 kC
 kC
 kC
+lH
 kC
 kC
-kC
-kC
+lH
 ZU
 ZU
 ZU
@@ -57440,9 +57423,9 @@ ZU
 kC
 kC
 kC
-kC
-GW
-GW
+PL
+PL
+PL
 PL
 PL
 kC
@@ -57662,7 +57645,7 @@ kC
 kC
 kC
 kC
-PL
+kC
 PL
 PL
 PL
@@ -57685,10 +57668,10 @@ PL
 kC
 kC
 kC
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
 ZU
 ZU
 ZU
@@ -57698,7 +57681,7 @@ kC
 kC
 kC
 kC
-kC
+GW
 GW
 PL
 PL
@@ -57939,9 +57922,9 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
+kC
+kC
+kC
 PL
 PL
 PL
@@ -57954,8 +57937,8 @@ ZU
 kC
 kC
 kC
-Al
-Al
+kC
+kC
 GW
 PL
 PL
@@ -58170,26 +58153,26 @@ Al
 Al
 kC
 kC
-am
-yH
-yH
-yH
-yz
+kC
+kC
+kC
+kC
+kC
+kC
 PL
 PL
 PL
 PL
 PL
-am
-yH
-yH
-yH
-yH
-yH
-yH
-yH
-yH
-yz
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -58208,12 +58191,12 @@ ZU
 ZU
 ZU
 ZU
-Al
-Al
+kC
+kC
+kC
 Al
 Al
 GW
-Ae
 PL
 PL
 PL
@@ -58427,26 +58410,26 @@ Al
 Al
 kC
 kC
-wP
-Pj
-Pj
-Pj
-gh
+am
+yH
+yH
+yH
+yz
 PL
 PL
 PL
 PL
 PL
-wP
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-gh
+am
+yH
+yH
+yH
+yH
+yH
+yH
+yH
+yH
+yz
 PL
 PL
 PL
@@ -58456,8 +58439,8 @@ PL
 PL
 PL
 PL
-BY
-BY
+PL
+PL
 PL
 PL
 ZU
@@ -58466,11 +58449,11 @@ ZU
 ZU
 ZU
 Al
-kC
-kC
-kC
-kC
-PL
+Al
+Al
+Al
+GW
+Ae
 PL
 PL
 PL
@@ -58717,22 +58700,22 @@ BY
 BY
 PL
 PL
+ZU
+ZU
+ZU
+ZU
+ZU
+Al
+kC
+kC
+kC
+kC
 PL
 PL
 PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-GW
-GW
 kC
 kC
 kC
@@ -58970,8 +58953,8 @@ PL
 PL
 PL
 PL
-PL
-PL
+BY
+BY
 PL
 PL
 PL
@@ -58989,10 +58972,10 @@ PL
 PL
 PL
 GW
+GW
 kC
 kC
 kC
-PL
 ZU
 ZU
 ZU
@@ -59248,7 +59231,7 @@ PL
 GW
 kC
 kC
-PL
+kC
 PL
 ZU
 ZU
@@ -59463,9 +59446,9 @@ gh
 PL
 PL
 PL
-am
-yH
-Pj
+PL
+PL
+wP
 Pj
 Pj
 Pj
@@ -59488,23 +59471,23 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
 PL
 PL
 PL
 PL
 PL
 PL
-rn
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 GW
-GW
-PL
+kC
+kC
 PL
 PL
 ZU
@@ -59712,16 +59695,16 @@ Al
 Al
 kC
 kC
-dc
-RI
-RI
-RI
-KB
+wP
+Pj
+Pj
+Pj
+gh
+PL
 PL
 PL
 am
-Pj
-Pj
+yH
 Pj
 Pj
 Pj
@@ -59756,11 +59739,11 @@ PL
 PL
 PL
 PL
+rn
 PL
 PL
-PL
-PL
-PL
+GW
+GW
 PL
 PL
 PL
@@ -59969,14 +59952,14 @@ Al
 Al
 kC
 kC
-kC
-kC
-kC
+dc
+RI
+RI
+RI
+KB
 PL
 PL
-PL
-PL
-wP
+am
 Pj
 Pj
 Pj
@@ -60233,8 +60216,8 @@ kC
 PL
 PL
 PL
-dc
-RI
+wP
+Pj
 Pj
 Pj
 Pj
@@ -60490,19 +60473,19 @@ kC
 PL
 PL
 PL
-PL
-PL
 dc
 RI
-RI
-RI
-RI
-RI
-RI
-RI
-RI
-RI
-KB
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -60527,7 +60510,7 @@ PL
 PL
 PL
 PL
-rn
+PL
 PL
 PL
 PL
@@ -60573,21 +60556,21 @@ Ge
 tS
 tS
 sK
-gy
-gy
-iZ
-rV
-Ve
-Ir
-rV
-Ve
-iZ
-kt
-gy
-Ve
-gy
-gy
-gy
+pS
+pS
+XM
+FZ
+EY
+Rs
+FZ
+EY
+XM
+mx
+pS
+EY
+pS
+pS
+pS
 PL
 PL
 ZU
@@ -60747,19 +60730,19 @@ kC
 kC
 kC
 kC
-kC
-kC
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+dc
+RI
+RI
+RI
+RI
+RI
+RI
+RI
+RI
+RI
+KB
 PL
 PL
 PL
@@ -60778,13 +60761,13 @@ ZU
 ZU
 ZU
 ZU
-kC
-kC
 PL
 PL
 PL
 PL
 PL
+PL
+rn
 PL
 PL
 PL
@@ -60822,29 +60805,29 @@ Pj
 Pj
 gh
 PL
-gy
-yo
-yo
-gy
-gy
-yo
-yo
-gy
-gy
-GR
-FZ
-FZ
-FZ
-XM
-XM
-XM
-XM
-XM
-mv
-Ve
-Qi
 pS
-gy
+yI
+yI
+pS
+pS
+yI
+yI
+pS
+pS
+IW
+Wn
+Wn
+Wn
+DU
+DU
+DU
+DU
+DU
+ee
+EY
+Md
+EF
+pS
 PL
 PL
 ZU
@@ -61006,42 +60989,42 @@ kC
 kC
 kC
 kC
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+ZU
+ZU
+ZU
+ZU
+ZU
 kC
 kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -61079,29 +61062,29 @@ Pj
 Pj
 gh
 PL
-gy
-yI
-FZ
-FZ
-XM
-XM
-FZ
-FZ
-Iz
-DB
-Ku
-Ku
-Ku
+pS
+ZJ
+Wn
+Wn
 DU
-Ku
-Ku
-uO
-Ku
-WG
-Ve
-Md
-EF
-gy
+DU
+Wn
+Wn
+St
+Ig
+zd
+zd
+zd
+JY
+zd
+zd
+gS
+zd
+HG
+EY
+Qg
+uD
+pS
 kC
 PL
 ZU
@@ -61336,29 +61319,29 @@ Pj
 Pj
 KB
 PL
+pS
+Ig
+Iz
 gy
-DB
-Gf
-Wn
-IW
-Uf
-Wn
-Wn
-St
-XA
-Wn
+LE
+Fm
+gy
+gy
+fS
+Rk
+gy
+JP
+gy
+gy
+gy
 yl
-Wn
-Wn
-Wn
-zd
-gS
-Uf
-Bm
-Ve
-wy
-Ve
-gy
+WP
+Fm
+gL
+EY
+UM
+EY
+pS
 kC
 kC
 ZU
@@ -61403,15 +61386,15 @@ PL
 PL
 PL
 PL
-ze
-WC
-WC
-zB
-ze
-Os
-MS
-zB
-zB
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -61593,29 +61576,29 @@ Pj
 gh
 PL
 PL
-gy
-Dp
-WG
-Ve
-Ve
-Fm
-fS
-Ve
-Ve
-Ve
-Ve
-Ve
-Ve
-Ve
-Ve
-Ve
-Ve
-yI
-XM
-XM
-XM
-Dn
-gy
+pS
+ED
+HG
+EY
+EY
+Li
+hl
+EY
+EY
+EY
+EY
+EY
+EY
+EY
+EY
+EY
+EY
+ZJ
+DU
+DU
+DU
+wy
+pS
 kC
 ZU
 ZU
@@ -61655,20 +61638,20 @@ PL
 PL
 PL
 PL
-zB
-zB
-zB
-zB
 PL
-qi
-iF
-HX
-ns
-tW
-LN
-Is
-rh
-sr
+PL
+PL
+PL
+PL
+ze
+WC
+WC
+zB
+ze
+Os
+MS
+zB
+zB
 PL
 PL
 PL
@@ -61813,7 +61796,7 @@ kC
 kC
 kC
 kC
-kC
+PL
 PL
 PL
 PL
@@ -61850,29 +61833,29 @@ Pj
 gh
 PL
 PL
-gy
-Rl
-WG
-Ve
-ZJ
-AW
-AW
-rI
-Ve
-Ve
-Ve
-Sj
-xt
-WP
-SC
-LE
-Ve
-DB
-NC
-UM
-Em
+pS
+Qa
 HG
-gy
+EY
+AW
+Pq
+Pq
+UP
+EY
+EY
+EY
+Am
+Km
+vG
+nZ
+df
+EY
+Ig
+Vl
+ow
+Dp
+WG
+pS
 kC
 ZU
 ZU
@@ -61913,18 +61896,18 @@ PL
 PL
 PL
 zB
-MG
+zB
+zB
+zB
+PL
+qi
 iF
-zB
-zB
-ze
-Jq
-Bb
-JT
-sX
-HC
-bg
-Ez
+HX
+ns
+tW
+LN
+Is
+rh
 sr
 PL
 PL
@@ -62040,16 +62023,16 @@ kC
 kC
 kC
 kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kC
 kC
 kC
@@ -62107,29 +62090,286 @@ PL
 gh
 PL
 PL
-gy
-Dp
-GG
-Ve
-AW
-rI
-eX
-AW
-Ve
-Ve
-Ve
-Am
+pS
+ED
+ep
+EY
+Pq
+UP
+Px
+Pq
+EY
+EY
+EY
+uS
+XL
+xU
+SV
 ZQ
-vG
-nZ
-df
-xa
-Kt
-Vl
-Wn
-Dp
-HG
+Af
+Em
+Sj
 gy
+ED
+WG
+pS
+kC
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+PL
+PL
+PL
+PL
+PL
+PL
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
+PL
+PL
+PL
+PL
+PL
+zB
+MG
+iF
+zB
+zB
+ze
+Jq
+Bb
+JT
+sX
+HC
+bg
+Ez
+sr
+PL
+PL
+BY
+BY
+BY
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Al
+"}
+(176,1,1) = {"
+Al
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+PL
+PL
+PL
+PL
+PL
+PL
+wP
+Pj
+Pj
+Pj
+Pj
+PL
+PL
+Pj
+gh
+PL
+PL
+pS
+SC
+HG
+EY
+dE
+Dn
+yh
+Pq
+EY
+Cr
+EY
+Ou
+XL
+vS
+xU
+XL
+EY
+EY
+EY
+EY
+Rl
+hR
+pS
 kC
 ZU
 ZU
@@ -62264,9 +62504,9 @@ kC
 kC
 kC
 kC
-kC
-kC
-kC
+lH
+lH
+lH
 kC
 kC
 kC
@@ -62278,7 +62518,7 @@ kC
 kC
 Al
 "}
-(176,1,1) = {"
+(177,1,1) = {"
 Al
 kC
 kC
@@ -62341,52 +62581,52 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
 PL
 PL
 PL
 PL
 PL
 PL
-wP
-Pj
-Pj
-Pj
-Pj
 PL
 PL
-Pj
-gh
 PL
 PL
-gy
-cf
+PL
+PL
+dc
+RI
+RI
+RI
+RI
+RI
+RI
+RI
+KB
+PL
+PL
+pS
+Mx
 WG
-Ve
-Pq
-UP
-Px
-AW
-Ve
-Up
-Ve
-uS
-ZQ
+EY
+EY
+EY
+EY
+EY
+EY
+rQ
+EY
+ta
+WJ
+re
 xU
-vG
-ZQ
-Ve
-Ve
-Ve
-Ve
-My
-ij
-gy
+Ln
+EY
+zq
+Qg
+cf
+Qa
+Sg
+pS
 kC
 ZU
 ZU
@@ -62440,263 +62680,6 @@ RO
 bg
 tU
 zB
-PL
-PL
-BY
-BY
-BY
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-lH
-lH
-lH
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-Al
-"}
-(177,1,1) = {"
-Al
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-hY
-mn
-Pb
-XS
-nX
-Pn
-nX
-rb
-PL
-PL
-PL
-PL
-PL
-PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-dc
-RI
-RI
-RI
-RI
-RI
-RI
-RI
-KB
-PL
-PL
-gy
-Qa
-HG
-Ve
-Ve
-Ve
-Ve
-Ve
-Ve
-Cr
-Ve
-Ou
-Ct
-vS
-vG
-AF
-Ve
-gL
-Md
-Rk
-Rl
-hR
-gy
-kC
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-PL
-PL
-PL
-PL
-PL
-PL
-wP
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-gh
-PL
-PL
-PL
-PL
-PL
-Fw
-iF
-ns
-ze
-zB
-zB
-EH
-ns
-DP
-ze
-zB
-zB
-zB
-ze
 PL
 PL
 BY
@@ -62813,18 +62796,15 @@ PL
 PL
 PL
 PL
-MM
-RK
-ps
-oU
-Kl
-eZ
-sF
-aL
+PL
+hY
+mn
+Pb
 XS
-PL
-PL
-PL
+nX
+Pn
+nX
+rb
 PL
 PL
 PL
@@ -62845,6 +62825,7 @@ kC
 kC
 kC
 kC
+kC
 PL
 PL
 PL
@@ -62878,29 +62859,31 @@ PL
 PL
 PL
 PL
-gy
-DB
-WG
-Ve
-cA
-Ww
-SV
-pJ
-Rs
-rQ
-Ve
-ta
-WJ
-re
-ZQ
-Ln
-Ve
-zq
-Qg
-Ve
-uD
-Sg
-gy
+PL
+PL
+pS
+Ig
+HG
+EY
+NC
+Nt
+HH
+eX
+yo
+xa
+EY
+Kz
+Qt
+zP
+XL
+kx
+EY
+kY
+wf
+EY
+AF
+Ek
+pS
 kC
 ZU
 ZU
@@ -62940,20 +62923,20 @@ PL
 PL
 PL
 PL
-wS
+Fw
 iF
-bU
+ns
 ze
-qo
 zB
-ou
+zB
+EH
 ns
-ns
-sm
-yj
-yj
-Oo
-sr
+DP
+ze
+zB
+zB
+zB
+ze
 PL
 PL
 BY
@@ -63070,25 +63053,25 @@ PL
 PL
 PL
 PL
-mn
-EB
+MM
+RK
+ps
 oU
+Kl
 eZ
-eZ
-oU
-pN
-cp
+sF
+aL
 XS
-TM
-tY
-tY
-tY
-tY
-tY
-KO
 PL
 PL
 PL
+PL
+PL
+PL
+PL
+PL
+PL
+kC
 kC
 kC
 kC
@@ -63135,29 +63118,29 @@ Xl
 eB
 eB
 PL
-gy
-DB
-HG
-Ve
-Tl
-Nt
-HH
-Ve
-Wu
-HG
-pj
-Kz
-Qt
-zP
-ZQ
-kx
-Ve
-kY
-wf
-Ve
-Qa
-HG
-gy
+pS
+Ig
+WG
+EY
+MF
+xr
+lE
+EY
+Fk
+WG
+LP
+Pa
+Ib
+KZ
+XL
+rO
+EY
+fa
+ij
+EY
+Mx
+WG
+pS
 kC
 ZU
 ZU
@@ -63197,20 +63180,20 @@ PL
 PL
 PL
 PL
-zB
-wU
-Zs
-zB
-zl
-pl
-Xh
+wS
 iF
-iF
+bU
+ze
+qo
 zB
-At
+ou
+ns
+ns
+sm
 yj
-QQ
-UG
+yj
+Oo
+sr
 PL
 PL
 BY
@@ -63327,22 +63310,21 @@ PL
 PL
 PL
 PL
-Tz
-Rp
-RZ
-MQ
-Im
+mn
+EB
 oU
-WR
+eZ
+eZ
+oU
+pN
 cp
-NR
-ar
-Wx
-HA
-HA
-op
-ol
-sq
+XS
+TM
+tY
+tY
+tY
+tY
+tY
 KO
 PL
 PL
@@ -63381,6 +63363,7 @@ PL
 PL
 PL
 PL
+PL
 eB
 XV
 Ub
@@ -63392,29 +63375,29 @@ Ub
 XV
 eB
 PL
-gy
-DB
-WG
-ee
-AA
-xr
-AA
-Ve
-Fk
-DJ
-Ve
-Pa
-Ib
-KZ
-XL
-rO
-Ve
-fa
-Md
-Ve
-DB
-WG
-gy
+pS
+Ig
+HG
+Jg
+tF
+Fc
+tF
+EY
+Jn
+QF
+EY
+rR
+Ct
+GR
+zj
+Bm
+EY
+My
+Qg
+EY
+Ig
+HG
+pS
 kC
 ZU
 ZU
@@ -63455,19 +63438,19 @@ PL
 PL
 PL
 zB
+wU
+Zs
 zB
-gJ
-db
-zB
-zB
+zl
 pl
-pl
+Xh
+iF
+iF
 zB
-zB
-db
-nr
-zB
-zB
+At
+yj
+QQ
+UG
 PL
 PL
 BY
@@ -63578,35 +63561,32 @@ kC
 kC
 kC
 kC
-tY
-tY
-tY
-tY
-tY
-KO
-Hy
-vN
-fU
-vN
-vN
-eZ
-tk
-rc
-XS
-Do
-Wx
-lD
-iR
-mL
-ol
-Do
-sq
-tY
-tY
-tY
+PL
+PL
+PL
+PL
+PL
+PL
+Tz
+Rp
+RZ
+MQ
+Im
+oU
+WR
+cp
+NR
 ar
-Jk
-fu
+Wx
+HA
+HA
+op
+ol
+sq
+KO
+PL
+PL
+PL
 kC
 kC
 kC
@@ -63620,6 +63600,9 @@ kC
 kC
 kC
 kC
+PL
+PL
+PL
 PL
 PL
 PL
@@ -63649,29 +63632,29 @@ Eg
 XV
 eB
 PL
-gy
-DB
-tn
-Ve
-Hn
-Fc
-EP
-Ve
-Jn
-QF
-Ve
-rR
-rR
-rR
-rR
-Ve
-Ve
-Ve
-Ve
-Ve
-ow
-HG
-gy
+pS
+Ig
+GG
+EY
+AA
+gu
+TS
+EY
+Wu
+mv
+EY
+HV
+HV
+HV
+HV
+EY
+EY
+EY
+EY
+EY
+Fo
+WG
+pS
 kC
 ZU
 ZU
@@ -63711,20 +63694,20 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-vE
-Gl
-Gl
-sA
-lz
-PL
-PL
-PL
-PL
+zB
+zB
+gJ
+db
+zB
+zB
+pl
+pl
+zB
+zB
+db
+nr
+zB
+zB
 PL
 PL
 PL
@@ -63832,39 +63815,38 @@ kC
 kC
 kC
 kC
-rb
-XS
-iX
-mn
-XS
-iD
-ZA
-ol
-sq
-Pb
-oU
-bs
-oU
-bs
-oU
-eZ
-oU
+kC
+kC
+kC
+tY
+tY
+tY
+tY
+tY
+KO
 Hy
+vN
+fU
+vN
+vN
+eZ
+tk
+rc
+XS
+Do
 Wx
-Ka
-jR
-uf
+lD
 iR
-Wx
-Wx
-Gl
-Gl
-Gl
-Gl
-Gl
-AM
-AM
+mL
+ol
+Do
+sq
+tY
+tY
+tY
+ar
 Jk
+fu
 kC
 kC
 kC
@@ -63878,7 +63860,8 @@ kC
 kC
 kC
 kC
-kC
+PL
+PL
 PL
 PL
 PL
@@ -63906,29 +63889,29 @@ Iy
 Bx
 eB
 PL
-gy
-Qa
-GG
-Ve
-Ve
-Ve
-Ve
-Ve
-Dp
-HG
-Ve
-HV
-HV
-HV
-HV
-Ve
-cA
-VP
-IS
-Ve
-Fo
+pS
+Mx
+ep
+EY
+EY
+EY
+EY
+EY
+ED
 WG
-gy
+EY
+Kv
+Kv
+Kv
+Kv
+EY
+NC
+Ur
+Hn
+EY
+DJ
+HG
+pS
 kC
 ZU
 ZU
@@ -63973,11 +63956,11 @@ PL
 PL
 PL
 PL
-Mj
+vE
 Gl
 Gl
-aJ
-PL
+sA
+lz
 PL
 PL
 PL
@@ -64089,31 +64072,31 @@ kC
 kC
 kC
 kC
+rb
 XS
-mA
-zf
-Tc
-Of
-TC
+iX
+mn
+XS
+iD
+ZA
+ol
+sq
+Pb
+oU
+bs
+oU
+bs
+oU
+eZ
+oU
+Hy
 Wx
-jZ
-Gl
-Gl
-sf
-nm
-nL
-iG
-lZ
-yR
-fN
-Oe
+Ka
+jR
+uf
+iR
 Wx
-FL
-tA
-tA
-HA
-jZ
-jZ
+Wx
 Gl
 Gl
 Gl
@@ -64121,8 +64104,8 @@ Gl
 Gl
 AM
 AM
-vX
-gg
+Jk
+kC
 kC
 kC
 kC
@@ -64137,12 +64120,12 @@ kC
 kC
 kC
 PL
-Xg
-tY
-tY
-tY
-tY
-KO
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -64163,29 +64146,29 @@ YZ
 XV
 eB
 PL
-gy
-Dp
+pS
+ED
+HG
+EY
+TS
+Iq
+MF
+EY
+ED
 WG
-Ve
-EP
-QP
-Tl
-Ve
-Dp
-HG
-Ve
-Ew
-ep
-ep
-Kv
-Ve
-Hn
-Ur
-Hn
-ee
-Dp
-HG
-gy
+EY
+JA
+Yt
+Yt
+IS
+EY
+AA
+qT
+AA
+Jg
+ED
+WG
+pS
 kC
 ZU
 ZU
@@ -64346,40 +64329,40 @@ kC
 kC
 kC
 kC
-dO
-nb
-As
-tN
-yR
-Tf
-Ka
-BF
-Gl
-Gl
-He
-fN
-Qr
-mn
-qz
-yR
-fN
-He
+XS
+mA
+zf
+Tc
+Of
+TC
 Wx
-Ka
-Gj
-Gj
-jZ
-Kj
 jZ
 Gl
 Gl
+sf
+nm
+nL
+iG
+lZ
+yR
+fN
+Oe
+Wx
+FL
+tA
+tA
+HA
+jZ
+jZ
 Gl
 Gl
 Gl
+Gl
+Gl
 AM
 AM
-AM
-SA
+vX
+gg
 kC
 kC
 kC
@@ -64393,13 +64376,12 @@ kC
 kC
 kC
 kC
-kC
-kC
-AM
-AM
-AM
-AM
-sq
+PL
+Xg
+tY
+tY
+tY
+tY
 KO
 PL
 PL
@@ -64409,6 +64391,7 @@ PL
 PL
 PL
 PL
+PL
 eB
 XV
 Eg
@@ -64420,29 +64403,29 @@ Eg
 XV
 eB
 PL
-gy
-Ao
-HG
-Ve
-AA
-AA
-MF
-Ve
-ow
-HG
-TS
-JA
-JA
-Yt
-Yt
-Ve
-lq
-qT
-AA
-Ve
-DB
+pS
+Sa
 WG
-gy
+EY
+tF
+tF
+Yl
+EY
+Fo
+WG
+Kt
+Ew
+Ew
+Ry
+Ry
+EY
+ZD
+dY
+tF
+EY
+Ig
+HG
+pS
 Al
 ZU
 ZU
@@ -64490,7 +64473,7 @@ PL
 Mj
 Gl
 Gl
-sA
+aJ
 PL
 PL
 PL
@@ -64604,6 +64587,263 @@ kC
 kC
 kC
 dO
+nb
+As
+tN
+yR
+Tf
+Ka
+BF
+Gl
+Gl
+He
+fN
+Qr
+mn
+qz
+yR
+fN
+He
+Wx
+Ka
+Gj
+Gj
+jZ
+Kj
+jZ
+Gl
+Gl
+Gl
+Gl
+Gl
+AM
+AM
+AM
+SA
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+AM
+AM
+AM
+AM
+sq
+KO
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+eB
+DA
+DA
+DA
+DA
+NJ
+DA
+DA
+DA
+eB
+PL
+pS
+Ig
+HG
+Jg
+AA
+tF
+Tl
+EY
+ED
+HG
+EY
+JA
+Ve
+Ve
+IS
+EY
+MF
+lq
+iZ
+EY
+Mx
+HG
+pS
+Al
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+Mj
+Gl
+Gl
+sA
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+lH
+lH
+lH
+lH
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Al
+"}
+(186,1,1) = {"
+Al
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+dO
 nB
 AN
 pY
@@ -64667,39 +64907,39 @@ PL
 PL
 PL
 eB
-DA
-DA
-DA
-DA
-NJ
-DA
-DA
-DA
+XV
+XV
+XV
+Gc
+XV
+XV
+XV
+Gc
 eB
 PL
-gy
-DB
-WG
-ee
-Hn
-AA
-Yl
-Ve
-Dp
-WG
-Ve
-Ew
-Ry
-Ry
-Kv
-Ve
-Tl
-dY
-tF
-Ve
+pS
+Ig
+HG
+EY
+NC
+Qi
+MF
+EY
 Qa
-WG
-gy
+HG
+EY
+EY
+EY
+EY
+EY
+EY
+EY
+EY
+EY
+EY
+ED
+HG
+pS
 Al
 ZU
 ZU
@@ -64711,7 +64951,7 @@ ZU
 ZU
 ZU
 ZU
-ZU
+PL
 PL
 PL
 PL
@@ -64848,7 +65088,7 @@ kC
 kC
 Al
 "}
-(186,1,1) = {"
+(187,1,1) = {"
 Al
 kC
 kC
@@ -64924,263 +65164,6 @@ PL
 PL
 PL
 eB
-XV
-XV
-XV
-Gc
-XV
-XV
-XV
-Gc
-eB
-PL
-gy
-DB
-WG
-Ve
-cA
-Sa
-Tl
-Ve
-Rl
-WG
-Ve
-Ve
-Ve
-Ve
-Ve
-Ve
-Ve
-Ve
-Ve
-Ve
-Dp
-WG
-gy
-Al
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-Mj
-Gl
-Gl
-Gl
-aJ
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-lH
-lH
-lH
-lH
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-Al
-"}
-(187,1,1) = {"
-Al
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-mn
-pY
-yR
-fN
-Qr
-Hy
-DR
-jZ
-ol
-aJ
-PL
-PL
-PL
-lz
-PL
-PL
-lz
-PL
-Zp
-nE
-nE
-nE
-nE
-nE
-eU
-PL
-PL
-PL
-PL
-PL
-Mj
-Wx
-Wx
-AM
-AM
-GV
-AM
-AM
-kC
-Jk
-Ht
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-gg
-xj
-xo
-AM
-AM
-AM
-bJ
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-eB
 uC
 XV
 XV
@@ -65191,29 +65174,29 @@ XV
 Bx
 eB
 PL
-gy
-Dp
-ys
-Ve
-Ve
-Ve
-Ve
-Ve
-Qa
-WG
-Ve
-ZD
-mx
-ZD
-ZD
-Ve
+pS
+ED
+xt
 EY
-QX
-Vz
-Ve
-ow
+EY
+EY
+EY
+EY
+Mx
 HG
-gy
+EY
+Ku
+tn
+Ku
+Ku
+EY
+cA
+KH
+kt
+EY
+Fo
+WG
+pS
 Al
 ZU
 ZU
@@ -65257,12 +65240,12 @@ PL
 PL
 PL
 PL
-me
+Mj
 Gl
 Gl
 Gl
-sA
-bW
+aJ
+PL
 PL
 PL
 PL
@@ -65375,61 +65358,61 @@ kC
 kC
 kC
 mn
-mn
-XS
-XS
-XS
-TF
-BN
+pY
+yR
+fN
+Qr
+Hy
+DR
 jZ
 ol
 aJ
 PL
 PL
 PL
+lz
+PL
+PL
+lz
+PL
+Zp
+nE
+nE
+nE
+nE
+nE
+eU
 PL
 PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-TM
-tY
-tY
-ar
-Do
-jZ
+Mj
+Wx
 Wx
 AM
 AM
+GV
+AM
+AM
+kC
+Jk
+Ht
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+gg
+xj
+xo
 AM
 AM
 AM
-AM
-gX
-fu
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-AM
-AM
-AM
-Xt
-yD
-aJ
+bJ
 PL
 PL
 PL
@@ -65448,29 +65431,29 @@ XV
 XV
 eB
 PL
-gy
-Ca
-HG
-Ve
-EP
-Ek
-yh
-Ve
-DB
-GG
-Ve
-Hn
+pS
+ej
+WG
+EY
+TS
+Ww
+du
+EY
+Ig
+ep
+EY
 AA
-Hn
-Hn
-Ve
-cA
-KH
-Hn
-Li
-Dp
-Ua
-gy
+tF
+AA
+AA
+EY
+NC
+WH
+AA
+vn
+ED
+QX
+pS
 Al
 ZU
 ZU
@@ -65504,24 +65487,24 @@ PL
 PL
 PL
 PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-AM
-AM
-AM
-kC
-kC
-kC
-kC
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+me
+Gl
+Gl
+Gl
+sA
+bW
+PL
+PL
 PL
 PL
 PL
@@ -65631,16 +65614,16 @@ kC
 kC
 kC
 kC
-kC
-kC
-kC
-kC
-fu
-pg
+mn
+mn
+XS
+XS
+XS
+TF
+BN
 jZ
-Wx
-lS
-eU
+ol
+aJ
 PL
 PL
 PL
@@ -65659,34 +65642,34 @@ PL
 PL
 PL
 TM
-Wx
-Wx
-Wx
-Wx
+tY
+tY
+ar
+Do
 jZ
 Wx
-WU
-Wx
-AM
-AM
-AM
-AM
-AM
-NM
 AM
 AM
 AM
 AM
 AM
 AM
+gX
+fu
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 AM
 AM
 AM
-AM
-AM
-Hj
+Xt
+yD
 aJ
-eU
 PL
 PL
 PL
@@ -65705,29 +65688,29 @@ NJ
 DA
 eB
 PL
-gy
-DB
-GG
-Ve
-Hn
-KH
-du
-Ve
-ow
-WG
-dE
-Hn
+pS
+Ig
+ep
+EY
 AA
-vn
-AA
-Ve
-AA
-AA
-Hn
-Ve
-uD
+WH
+pj
+EY
+Fo
 HG
-gy
+Ir
+AA
+tF
+Up
+tF
+EY
+tF
+tF
+AA
+EY
+AF
+WG
+pS
 Al
 ZU
 ZU
@@ -65759,27 +65742,27 @@ PL
 PL
 PL
 PL
+PL
+PL
 kC
 kC
 kC
 kC
 kC
 kC
-Jk
-Jk
-Jk
-Jk
-Jk
-Jk
-kC
-kC
-pR
-aT
 kC
 kC
 kC
 kC
 kC
+AM
+AM
+AM
+kC
+kC
+kC
+kC
+PL
 PL
 PL
 PL
@@ -65887,63 +65870,63 @@ kC
 kC
 kC
 kC
-Al
-Al
-Al
-Al
 kC
-ll
-Uz
-Kj
-Ka
-aJ
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-Mj
-Wx
-Wx
+kC
+kC
+kC
+kC
+fu
+pg
 jZ
-jZ
-jZ
-sn
-Nh
 Wx
-IA
-nE
-WW
-AM
-AM
-AM
-AM
-AM
-AM
-AM
-AM
-AM
-AM
-AM
-AM
-UB
-ES
-nE
+lS
 eU
 PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+TM
+Wx
+Wx
+Wx
+Wx
+jZ
+Wx
+WU
+Wx
+AM
+AM
+AM
+AM
+AM
+NM
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+Hj
+aJ
+eU
 PL
 PL
 PL
@@ -65962,29 +65945,29 @@ XV
 xN
 eB
 PL
-gy
-Jn
-WG
-Li
+pS
+Wu
+HG
+vn
+tF
+Ob
+tF
+EY
+Ig
+QX
+EY
 AA
-WH
 AA
-Ve
-DB
-Ua
-Ve
-Hn
-Hn
+tF
 AA
-Hn
-Ve
-Jg
-Wh
-zj
-Ve
-Qa
-WG
-gy
+EY
+DD
+tI
+hN
+EY
+Mx
+HG
+pS
 Al
 ZU
 ZU
@@ -66018,26 +66001,26 @@ PL
 PL
 kC
 kC
+kC
+kC
+kC
+kC
 Jk
 Jk
 Jk
 Jk
 Jk
-zQ
-ZL
-OL
-Gs
 Jk
 kC
 kC
-md
-AM
+pR
+aT
 kC
 kC
 kC
 kC
 kC
-kC
+PL
 PL
 PL
 PL
@@ -66145,21 +66128,21 @@ kC
 kC
 kC
 Al
-Ai
-AM
-AM
 Al
-gX
-nz
+Al
+Al
+kC
+ll
+Uz
 Kj
 Ka
-sq
-tY
-tY
-tY
-tY
-tY
-KO
+aJ
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -66178,28 +66161,28 @@ Wx
 jZ
 jZ
 jZ
-xV
-Ue
+sn
+Nh
 Wx
-bJ
-PL
-Zp
+IA
 nE
-nE
-nE
-nE
-nE
-nE
-Ya
-Gl
-Gl
-lS
-nE
-nE
+WW
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+UB
+ES
 nE
 eU
-PL
-PL
 PL
 PL
 PL
@@ -66219,29 +66202,29 @@ XV
 XV
 eB
 PL
-gy
-Wu
+pS
+Fk
+WG
+EY
+tF
+ys
+VP
+EY
+Ig
 HG
-Ve
-AA
-Ob
-Km
-Ve
+EY
+Up
+QP
+uO
+pJ
+EY
+EP
+dR
+Ca
+EY
 DB
 WG
-Ve
-vn
-JP
-lE
-ej
-Ve
-DD
-tI
-hN
-Ve
-Mx
-HG
-gy
+pS
 Al
 ZU
 ZU
@@ -66274,20 +66257,20 @@ PL
 PL
 PL
 kC
+kC
 Jk
 Jk
-Pg
-VL
-nq
-NE
-hk
+Jk
+Jk
+Jk
+zQ
+ZL
 OL
-ob
-eb
+Gs
 Jk
 kC
 kC
-xj
+md
 AM
 kC
 kC
@@ -66295,7 +66278,7 @@ kC
 kC
 kC
 kC
-kC
+PL
 PL
 PL
 PL
@@ -66405,40 +66388,16 @@ Al
 Ai
 AM
 AM
-AM
-qj
-AM
-jZ
-Wx
-Wx
-Wx
-ol
-ol
-Wx
-tj
+Al
+gX
+nz
+Kj
+Ka
 sq
-KO
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-Mj
-Wx
-Wx
-Wx
-jZ
-jZ
-KL
-ke
-Wx
-Cm
+tY
+tY
+tY
+tY
 tY
 KO
 PL
@@ -66447,14 +66406,38 @@ PL
 PL
 PL
 PL
+PL
+PL
+PL
+PL
+PL
+PL
 Mj
+Wx
+Wx
+jZ
+jZ
+jZ
+xV
+Ue
+Wx
+bJ
+PL
+Zp
+nE
+nE
+nE
+nE
+nE
+nE
+Ya
 Gl
 Gl
-aJ
-PL
-PL
-PL
-PL
+lS
+nE
+nE
+nE
+eU
 PL
 PL
 PL
@@ -66476,29 +66459,29 @@ XV
 Rv
 eB
 PL
-gy
-DB
-WG
-Ve
-Ve
-Ve
-Ve
-pJ
-Vs
-WG
-pJ
-Ve
-Ve
-Ve
-pJ
-Ve
-Ve
-Ve
-Ve
-Ve
-DB
-WG
-gy
+pS
+Ig
+HG
+EY
+EY
+EY
+EY
+eX
+ir
+HG
+eX
+EY
+EY
+EY
+eX
+EY
+EY
+EY
+EY
+EY
+Ig
+HG
+pS
 Al
 ZU
 ZU
@@ -66532,19 +66515,19 @@ PL
 PL
 kC
 Jk
-Pw
-Gy
-Vy
-Gy
-HU
-Fj
-jc
-jc
+Jk
+Pg
+VL
+nq
+NE
+hk
 OL
+ob
+eb
 Jk
 kC
 kC
-AM
+xj
 AM
 kC
 kC
@@ -66659,48 +66642,48 @@ kC
 kC
 kC
 Al
-Al
-xj
+Ai
 AM
-vX
-ad
-pg
-BP
-Wx
-LL
-Ka
-Wx
-Wx
+AM
+AM
+qj
+AM
 jZ
+Wx
+Wx
 Wx
 ol
-aJ
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-Zp
+ol
 Wx
-Wx
-Wx
-jZ
-jZ
-jZ
-kV
-AM
-AM
-AM
+tj
 sq
-tY
+KO
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+Mj
+Wx
+Wx
+Wx
+jZ
+jZ
+KL
+ke
+Wx
+Cm
 tY
 KO
+PL
+PL
+PL
 PL
 PL
 PL
@@ -66733,29 +66716,29 @@ XV
 LI
 eB
 PL
-gy
-Dp
-Iq
-XM
-XM
-JY
-XM
-XM
-ir
-Iq
-XM
-XM
-hl
-JY
-XM
-FZ
-FZ
-XM
-dR
-XM
-Ig
-WG
-gy
+pS
+ED
+Ao
+DU
+DU
+Uf
+DU
+DU
+Wh
+Ao
+DU
+DU
+Gf
+Uf
+DU
+Wn
+Wn
+DU
+Ua
+DU
+rI
+HG
+pS
 Al
 ZU
 ZU
@@ -66785,24 +66768,24 @@ PL
 PL
 PL
 PL
+PL
+PL
 kC
-kC
-kC
-Ht
-xx
-Vy
-nq
+Jk
+Pw
 Gy
-Ht
-eV
-xb
-rB
-Cp
+Vy
+Gy
+HU
+Fj
+jc
+jc
+OL
 Jk
 kC
+kC
 AM
 AM
-AM
 kC
 kC
 kC
@@ -66810,7 +66793,7 @@ kC
 kC
 kC
 kC
-kC
+PL
 PL
 PL
 PL
@@ -66915,22 +66898,22 @@ kC
 kC
 kC
 kC
-kC
-kC
 Al
 Al
-Al
-Al
-Al
-Al
-kC
-Jk
-Ff
-pT
+xj
+AM
+vX
+ad
+pg
+BP
 Wx
-tO
-Bo
-WV
+LL
+Ka
+Wx
+Wx
+jZ
+Wx
+ol
 aJ
 PL
 PL
@@ -66944,21 +66927,21 @@ PL
 PL
 PL
 Zp
-nE
-nE
-WW
-Do
 Wx
 Wx
-AM
-AM
-AM
-AM
+Wx
+jZ
+jZ
+jZ
+kV
 AM
 AM
 AM
 sq
+tY
+tY
 KO
+PL
 PL
 PL
 Mj
@@ -66990,29 +66973,29 @@ XV
 cb
 eB
 PL
+pS
+rV
 gy
-ED
-Wn
-Wn
-Wn
-Wn
-Wn
-Wn
-Wn
-Wn
-Wn
-Wn
-Wn
-Uf
-Uf
-Wn
-Uf
-Wn
-Wn
-Wn
-Wn
-gu
 gy
+gy
+gy
+gy
+gy
+gy
+gy
+gy
+gy
+gy
+Fm
+Fm
+gy
+Fm
+gy
+gy
+gy
+gy
+XA
+pS
 Al
 ZU
 ZU
@@ -67046,20 +67029,20 @@ kC
 kC
 kC
 Ht
-nS
+xx
+Vy
+nq
 Gy
-Gy
-Gy
-Oz
-SZ
-SZ
-qX
-DV
-kh
-AM
-AM
-AM
+Ht
+eV
+xb
+rB
+Cp
+Jk
 kC
+AM
+AM
+AM
 kC
 kC
 lH
@@ -67068,7 +67051,7 @@ kC
 kC
 kC
 kC
-kC
+PL
 PL
 PL
 PL
@@ -67173,21 +67156,21 @@ kC
 kC
 kC
 kC
-fu
-pg
+kC
+Al
+Al
+Al
+Al
+Al
+Al
+kC
 Jk
-Jk
-LR
-kC
-kC
-kC
-kC
-gg
-ww
-Ka
-xV
+Ff
+pT
+Wx
+tO
 Bo
-HI
+WV
 aJ
 PL
 PL
@@ -67200,25 +67183,25 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-Mj
+Zp
+nE
+nE
+WW
+Do
 Wx
 Wx
 AM
 AM
 AM
 AM
-AM
-Xt
 AM
 AM
 AM
 sq
-tY
-PR
-JN
+KO
+PL
+PL
+Mj
 Gl
 Gl
 sq
@@ -67247,29 +67230,29 @@ eB
 eB
 eB
 PL
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
-gy
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
+pS
 Al
 ZU
 ZU
@@ -67303,17 +67286,17 @@ kC
 kC
 kC
 Ht
-Je
-nq
-nq
-yT
-Jk
-QY
-HM
-Gm
-dF
-Jk
-DM
+nS
+Gy
+Gy
+Gy
+Oz
+SZ
+SZ
+qX
+DV
+kh
+AM
 AM
 AM
 kC
@@ -67430,21 +67413,21 @@ kC
 kC
 kC
 kC
+fu
+pg
 Jk
-ru
-CM
-xo
-OT
+Jk
+LR
 kC
 kC
 kC
-BC
-ht
+kC
+gg
 ww
 Ka
-Tk
+xV
 Bo
-Tk
+HI
 aJ
 PL
 PL
@@ -67461,23 +67444,23 @@ PL
 PL
 PL
 Mj
+Wx
+Wx
+AM
+AM
+AM
+AM
+AM
+Xt
+AM
+AM
+AM
+sq
+tY
+PR
+JN
 Gl
-AM
-AM
-la
-LA
-yZ
-oC
-Al
-AM
-AM
-AM
-AM
-AM
-AM
-AM
-AM
-AM
+Gl
 AM
 AM
 AM
@@ -67559,18 +67542,18 @@ PL
 kC
 kC
 kC
+Ht
+Je
+nq
+nq
+yT
 Jk
+QY
+HM
+Gm
+dF
 Jk
-Gy
-Gy
-Gy
-gF
-Op
-DV
-ne
-DV
-dl
-ET
+DM
 AM
 AM
 kC
@@ -67687,25 +67670,25 @@ kC
 kC
 kC
 kC
-wJ
-rC
+Jk
+ru
 CM
 xo
-Ht
+OT
 kC
 kC
-GV
-AM
-lN
+kC
+BC
+ht
 ww
-Wx
-Wx
-jZ
-sy
+Ka
+Tk
+Bo
+Tk
 aJ
 PL
 PL
-bW
+PL
 PL
 PL
 PL
@@ -67720,19 +67703,19 @@ PL
 Mj
 Gl
 AM
-oH
-mC
-kC
-kC
-kC
-kC
-kC
-BC
-Vo
+AM
+la
+LA
+yZ
+oC
+Al
 AM
 AM
 AM
-Xt
+AM
+AM
+AM
+AM
 AM
 AM
 AM
@@ -67776,9 +67759,6 @@ gI
 gI
 gI
 gI
-CX
-CX
-CX
 gI
 gI
 gI
@@ -67788,6 +67768,9 @@ gI
 gI
 gI
 gI
+gI
+gI
+gI
 ZU
 ZU
 ZU
@@ -67813,21 +67796,21 @@ PL
 PL
 PL
 PL
-kC
 kC
 kC
 kC
 Jk
 Jk
-Vy
 Gy
-kM
+Gy
+Gy
+gF
+Op
+DV
 ne
 DV
-rA
-DV
-BC
-eJ
+dl
+ET
 AM
 AM
 kC
@@ -67840,7 +67823,7 @@ kC
 kC
 kC
 kC
-kC
+PL
 PL
 PL
 PL
@@ -67944,26 +67927,26 @@ kC
 kC
 kC
 kC
-Jk
-ru
+wJ
+rC
 CM
 xo
-Pm
+Ht
+kC
+kC
+GV
 AM
-AM
-AM
-AM
-PS
-pT
-jZ
+lN
+ww
 Wx
-Ak
-zZ
-XS
-nX
-nX
-oY
-eA
+Wx
+jZ
+sy
+aJ
+PL
+PL
+bW
+PL
 PL
 PL
 PL
@@ -67976,22 +67959,22 @@ PL
 PL
 Mj
 Gl
-Gl
+AM
+oH
+mC
 kC
 kC
 kC
 kC
 kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-oC
-Vu
+BC
+Vo
+AM
+AM
+AM
+Xt
+AM
+AM
 gg
 kC
 xj
@@ -68033,10 +68016,10 @@ wV
 wV
 UW
 wV
-OS
+CX
 bR
 Fh
-dh
+wV
 NH
 wV
 fr
@@ -68074,16 +68057,16 @@ kC
 kC
 kC
 kC
-kC
 Jk
 Jk
+Vy
 Gy
-Ht
+kM
 ne
 DV
-HM
+rA
 DV
-oh
+BC
 eJ
 AM
 AM
@@ -68202,25 +68185,25 @@ kC
 kC
 kC
 Jk
-fu
-pg
-Ff
+ru
+CM
+xo
+Pm
+AM
+AM
+AM
+AM
 PS
-xj
-AM
-AM
-kC
-OA
-kC
+pT
 jZ
 Wx
-ol
-FC
-fN
-EV
-pB
-Le
+Ak
+zZ
 XS
+nX
+nX
+oY
+eA
 PL
 PL
 PL
@@ -68234,7 +68217,6 @@ PL
 Mj
 Gl
 Gl
-Jk
 kC
 kC
 kC
@@ -68248,7 +68230,8 @@ kC
 kC
 kC
 kC
-kC
+oC
+Vu
 kC
 kC
 kC
@@ -68291,9 +68274,9 @@ bX
 wV
 wV
 UN
-ga
-vr
-ZP
+Wy
+pn
+dh
 wV
 px
 Yu
@@ -68326,21 +68309,21 @@ PL
 PL
 PL
 PL
+PL
 kC
 kC
 kC
 kC
 kC
-kC
-kC
-Ht
 Jk
+Jk
+Gy
 Ht
-TB
-Ht
-YN
-Op
-Oz
+ne
+DV
+HM
+DV
+oh
 eJ
 AM
 AM
@@ -68355,8 +68338,8 @@ kC
 kC
 kC
 kC
-kC
-kC
+PL
+PL
 PL
 PL
 PL
@@ -68392,7 +68375,7 @@ PL
 PL
 PL
 PL
-jA
+PL
 CQ
 xn
 xP
@@ -68458,26 +68441,26 @@ kC
 kC
 kC
 kC
-gO
-ty
-xo
-Fp
-Qw
+Jk
+fu
+pg
+Ff
+PS
+xj
 AM
 AM
 kC
+OA
 kC
-kC
-kC
-Wx
+jZ
 Wx
 ol
-He
-yR
-KJ
-JJ
-Jz
-nR
+FC
+fN
+EV
+pB
+Le
+XS
 PL
 PL
 PL
@@ -68490,8 +68473,8 @@ PL
 PL
 Mj
 Gl
-mz
-fu
+Gl
+Jk
 kC
 kC
 kC
@@ -68591,14 +68574,14 @@ kC
 kC
 kC
 Ht
-Uu
-Ze
-DV
-Ht
-yy
-Op
 Jk
-oR
+Ht
+TB
+Ht
+YN
+Op
+Oz
+eJ
 AM
 AM
 kC
@@ -68614,7 +68597,7 @@ kC
 kC
 kC
 kC
-kC
+PL
 PL
 PL
 PL
@@ -68649,7 +68632,7 @@ PL
 PL
 PL
 PL
-Mj
+jA
 fK
 fK
 fK
@@ -68715,26 +68698,26 @@ kC
 kC
 kC
 kC
-Ht
-ue
+gO
+ty
 xo
-Fu
-GV
+Fp
+Qw
 AM
 AM
-BC
 kC
 kC
-Al
-AY
+kC
+kC
 Wx
 Wx
-If
+ol
+He
 yR
-lZ
-TL
-lL
-Pb
+KJ
+JJ
+Jz
+nR
 PL
 PL
 PL
@@ -68747,12 +68730,12 @@ PL
 PL
 Mj
 Gl
-Gl
-Cb
-PL
-PL
-PL
-Jk
+mz
+fu
+kC
+kC
+kC
+kC
 kC
 kC
 kC
@@ -68829,17 +68812,17 @@ PL
 PL
 PL
 PL
-kC
-kC
-kC
 PL
 PL
 PL
 PL
 PL
 PL
-kC
-kC
+PL
+PL
+PL
+PL
+PL
 kC
 kC
 kC
@@ -68848,15 +68831,15 @@ kC
 kC
 kC
 Ht
-IE
-ne
+Uu
+Ze
 DV
-Ys
+Ht
+yy
+Op
 Jk
-Jk
-Jk
-kC
-wo
+oR
+AM
 AM
 kC
 kC
@@ -68870,8 +68853,8 @@ kC
 kC
 kC
 kC
-PL
-PL
+kC
+kC
 PL
 PL
 PL
@@ -68972,27 +68955,27 @@ kC
 kC
 kC
 kC
-gX
-ux
+Ht
+ue
+xo
+Fu
+GV
 AM
 AM
-AM
-AM
-AM
-kC
+BC
 kC
 kC
 Al
-nE
-nE
-lj
-dW
-fN
-xg
-XS
-XS
-Hy
-eA
+AY
+Wx
+Wx
+If
+yR
+lZ
+TL
+lL
+Pb
+PL
 PL
 PL
 PL
@@ -69005,13 +68988,13 @@ PL
 Mj
 Gl
 Gl
-oa
+Cb
 PL
 PL
 PL
-PL
-PL
-PL
+Jk
+kC
+kC
 kC
 kC
 kC
@@ -69089,12 +69072,12 @@ PL
 kC
 kC
 kC
-kC
-kC
 PL
 PL
 PL
-kC
+PL
+PL
+PL
 kC
 kC
 kC
@@ -69105,15 +69088,15 @@ kC
 kC
 kC
 Ht
-Ne
+IE
 ne
 DV
+Ys
+Jk
+Jk
 Jk
 kC
-kC
-kC
-kC
-AM
+wo
 AM
 kC
 kC
@@ -69121,12 +69104,12 @@ kC
 kC
 kC
 kC
-kC
-kC
-kC
-kC
-kC
-kC
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -69228,28 +69211,28 @@ kC
 kC
 kC
 kC
-Ht
-gZ
-gZ
-Dd
+kC
+gX
+ux
 AM
 AM
-Xt
 AM
 AM
+AM
+kC
 kC
 kC
 Al
-PL
-PL
-PL
-iX
+nE
+nE
+lj
+dW
 fN
-FX
-Qr
-dO
-tm
-PL
+xg
+XS
+XS
+Hy
+eA
 PL
 PL
 PL
@@ -69262,7 +69245,7 @@ PL
 Mj
 Gl
 Gl
-Cb
+oa
 PL
 PL
 PL
@@ -69348,29 +69331,29 @@ kC
 kC
 kC
 kC
+PL
+PL
+PL
 kC
-al
-al
-al
-al
-al
-al
-al
-mr
-al
-al
-al
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kC
 Ht
+Ne
+ne
+DV
 Jk
-Jk
-Jk
-Ff
 kC
 kC
 kC
 kC
-xj
+AM
 AM
 kC
 kC
@@ -69378,12 +69361,12 @@ kC
 kC
 kC
 kC
-kC
-kC
-kC
-kC
-kC
-kC
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -69485,30 +69468,30 @@ kC
 kC
 kC
 kC
-ad
-kj
-ws
+Ht
+gZ
+gZ
 Dd
 AM
 AM
-Ht
-Jk
-kN
-pg
+Xt
+AM
+AM
 kC
 kC
+Al
 PL
 PL
 PL
-Dq
-Hy
-Gg
-fN
 iX
-mn
-tY
-tY
-KO
+fN
+FX
+Qr
+dO
+tm
+PL
+PL
+PL
 PL
 PL
 PL
@@ -69526,10 +69509,10 @@ PL
 PL
 PL
 PL
-Al
-Al
-Al
-Al
+kC
+kC
+kC
+kC
 kC
 kC
 kC
@@ -69563,9 +69546,9 @@ cg
 CO
 pv
 Gb
-NG
-Wy
-pn
+CO
+lw
+pv
 Gb
 Yf
 lu
@@ -69607,40 +69590,40 @@ kC
 kC
 kC
 al
-SS
-SS
-Wl
-kv
-le
-ny
-pX
-kv
-HD
-xd
+al
+al
+al
+al
+al
+al
+mr
+al
+al
+al
+kC
+Ht
+Jk
+Jk
+Jk
+Ff
+kC
+kC
+kC
+kC
+xj
+AM
 kC
 kC
 kC
 kC
 kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -69742,30 +69725,30 @@ kC
 kC
 kC
 kC
-Ht
-gZ
-gZ
+ad
+kj
+ws
 Dd
 AM
 AM
-Vp
-YH
-AM
-pg
 Ht
+Jk
+kN
+pg
+kC
+kC
 PL
 PL
 PL
-PL
-PL
+Dq
 Hy
+Gg
 fN
-fN
-XS
-Wx
-Wx
-Wx
-aJ
+iX
+mn
+tY
+tY
+KO
 PL
 PL
 PL
@@ -69782,15 +69765,15 @@ PL
 PL
 PL
 PL
-TM
-yK
-Xv
-zc
+PL
 Al
 Al
 Al
 Al
-Al
+kC
+kC
+kC
+kC
 kC
 kC
 kC
@@ -69820,9 +69803,9 @@ Dz
 CO
 cg
 cg
-lw
-ga
-ga
+NG
+Wy
+Wy
 cD
 cg
 lu
@@ -69858,21 +69841,21 @@ PL
 PL
 PL
 kC
-lH
-lH
+kC
+kC
 kC
 kC
 kC
 al
-QW
-Ni
-Ey
-on
-Xi
-Py
-al
-bK
+SS
+SS
+Wl
 kv
+le
+ny
+pX
+kv
+HD
 xd
 kC
 kC
@@ -69891,14 +69874,14 @@ kC
 kC
 kC
 kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
+PL
 PL
 PL
 PL
@@ -69999,17 +69982,32 @@ kC
 kC
 kC
 kC
-aE
-ls
-ls
-xo
+Ht
+gZ
+gZ
+Dd
 AM
 AM
-Vu
-IF
+Vp
+YH
 AM
-PH
-FS
+pg
+Ht
+PL
+PL
+PL
+PL
+PL
+Hy
+fN
+fN
+XS
+Wx
+Wx
+Wx
+aJ
+PL
+PL
 PL
 PL
 PL
@@ -70018,35 +70016,20 @@ PL
 Mj
 Gl
 Gl
-pu
-Wx
-Wx
-Wx
-sq
-tY
-tY
-tY
-tY
-tY
-tY
-tY
-ar
-Gl
-Gl
-oa
+Cb
 PL
 PL
 PL
 PL
 PL
-BE
-nt
-Vm
-ZO
-zB
+TM
+yK
 Xv
-HQ
-RM
+zc
+Al
+Al
+Al
+Al
 Al
 kC
 kC
@@ -70115,21 +70098,21 @@ PL
 PL
 PL
 kC
-kC
-kC
-kC
-kC
 lH
-mr
-DN
+lH
+kC
+kC
+kC
+al
+QW
 Ni
-yi
+Ey
 on
-Lr
+Xi
+Py
 al
-al
-Tt
-jE
+bK
+kv
 xd
 kC
 kC
@@ -70148,15 +70131,15 @@ kC
 kC
 kC
 kC
-kC
+wP
 Pj
-kC
-kC
-kC
-kC
-kC
-kC
-PL
+Pj
+Pj
+Pj
+Pj
+Pj
+yH
+yz
 PL
 PL
 PL
@@ -70256,17 +70239,17 @@ kC
 kC
 kC
 kC
-kC
-Ht
-OI
+aE
+ls
+ls
 xo
-xo
-QR
-pg
-Hh
-xo
-xo
-pV
+AM
+AM
+Vu
+IF
+AM
+PH
+FS
 PL
 PL
 PL
@@ -70275,35 +70258,35 @@ PL
 Mj
 Gl
 Gl
-Gl
+pu
 Wx
 Wx
 Wx
-jZ
-jZ
-Wx
+sq
+tY
+tY
+tY
+tY
+tY
+tY
+tY
+ar
 Gl
 Gl
-Gl
-Gl
-Gl
-Gl
-Gl
-Gl
-Cb
+oa
 PL
 PL
 PL
 PL
 PL
 BE
-qV
-oB
-nQ
-EM
-fe
-Bn
-fv
+nt
+Vm
+ZO
+zB
+Xv
+HQ
+RM
 Al
 kC
 kC
@@ -70376,21 +70359,18 @@ kC
 kC
 kC
 kC
-kC
+lH
 mr
-Sr
+DN
 Ni
-VY
+yi
 on
-Eo
+Lr
 al
 al
-al
-al
-al
-kC
-kC
-PL
+Tt
+jE
+xd
 kC
 kC
 kC
@@ -70403,9 +70383,13 @@ kC
 kC
 kC
 kC
-PL
-PL
+kC
+kC
+kC
+kC
+kC
 wP
+Pj
 Pj
 Pj
 Pj
@@ -70420,7 +70404,6 @@ PL
 PL
 PL
 PL
-PL
 ZU
 ZU
 ZU
@@ -70448,7 +70431,7 @@ PL
 PL
 PL
 PL
-wl
+Mj
 wA
 LJ
 LJ
@@ -70503,6 +70486,263 @@ kC
 Al
 "}
 (208,1,1) = {"
+Al
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+Ht
+OI
+xo
+xo
+QR
+pg
+Hh
+xo
+xo
+pV
+PL
+PL
+PL
+PL
+PL
+Mj
+Gl
+Gl
+Gl
+Wx
+Wx
+Wx
+jZ
+jZ
+Wx
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Cb
+PL
+PL
+PL
+PL
+PL
+BE
+qV
+oB
+nQ
+EM
+fe
+Bn
+fv
+Al
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+gI
+ga
+Iv
+bD
+UN
+pE
+QC
+QC
+SF
+SF
+QJ
+PU
+Pp
+vu
+PU
+SF
+sZ
+sZ
+zy
+QC
+SF
+SF
+SF
+vu
+PU
+Pp
+vu
+PU
+NO
+SF
+NO
+lu
+Pt
+xP
+aO
+aO
+gI
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+kC
+kC
+kC
+kC
+kC
+kC
+mr
+Sr
+Ni
+VY
+on
+Eo
+al
+al
+al
+al
+al
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+wl
+Vh
+nE
+nE
+WW
+Gl
+lS
+nE
+nE
+nE
+nE
+nE
+Wf
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+kC
+kC
+kC
+kC
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+CE
+aJ
+PL
+PL
+nc
+Lb
+Xs
+Xs
+RP
+Xs
+Xs
+Xs
+RP
+Xs
+Xs
+kC
+kC
+kC
+kC
+kC
+Al
+"}
+(209,1,1) = {"
 Al
 kC
 kC
@@ -70579,263 +70819,6 @@ PL
 PL
 PL
 gI
-ga
-Iv
-bD
-UN
-pE
-QC
-QC
-SF
-SF
-QJ
-PU
-Pp
-vu
-PU
-SF
-sZ
-sZ
-zy
-QC
-SF
-SF
-SF
-vu
-PU
-Pp
-vu
-PU
-NO
-SF
-NO
-lu
-Pt
-xP
-aO
-aO
-gI
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-am
-gh
-kC
-kC
-kC
-kC
-mr
-VT
-Zd
-vR
-on
-eh
-qM
-Pj
-Pj
-Pj
-Pj
-gh
-PL
-PL
-PL
-PL
-PL
-kC
-kC
-kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-wP
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-Vh
-nE
-nE
-WW
-Gl
-lS
-nE
-nE
-nE
-nE
-nE
-Wf
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-kC
-kC
-kC
-kC
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-CE
-aJ
-PL
-PL
-nc
-Lb
-Xs
-Xs
-RP
-Xs
-Xs
-Xs
-RP
-Xs
-Xs
-kC
-kC
-kC
-kC
-kC
-Al
-"}
-(209,1,1) = {"
-Al
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-BC
-yZ
-Jk
-No
-Ht
-Jk
-Jk
-Ff
-Ff
-kC
-kC
-kC
-PL
-PL
-PL
-kC
-kC
-kC
-kC
-kC
-zI
-xo
-AM
-AM
-sp
-WY
-WY
-sp
-AM
-xo
-kC
-nE
-nE
-eU
-PL
-PL
-PL
-PL
-PL
-BE
-Nr
-oB
-dw
-EM
-yx
-kF
-Xv
-Al
-kC
-kC
-kC
-kC
-kC
-kC
-eA
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-gI
 bD
 vU
 bD
@@ -70885,19 +70868,44 @@ PL
 PL
 PL
 PL
-wP
+am
 gh
 kC
 kC
 kC
 kC
 mr
-vc
-Tw
-uv
-kv
-UL
-al
+VT
+Zd
+vR
+on
+eh
+qM
+Pj
+Pj
+Pj
+Pj
+gh
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+wP
+Pj
+Pj
+Pj
 Pj
 Pj
 Pj
@@ -70906,31 +70914,6 @@ gh
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-dc
-RI
-RI
-Pj
-Pj
-Pj
-Pj
-Pj
-yH
-yH
-yH
-yz
 PL
 PL
 PL
@@ -71028,52 +71011,52 @@ kC
 kC
 kC
 kC
+BC
+yZ
+Jk
+No
+Ht
+Jk
+Jk
+Ff
+Ff
+kC
+kC
+kC
+PL
+PL
+PL
 kC
 kC
 kC
 kC
 kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-Ot
-OI
-AM
-CP
-ts
-sp
-Qp
-AM
-AM
-AM
 zI
-eA
-PL
-PL
+xo
+AM
+AM
+sp
+WY
+WY
+sp
+AM
+xo
+kC
+nE
+nE
+eU
 PL
 PL
 PL
 PL
 PL
 BE
-nT
-uc
-yf
+Nr
+oB
+dw
 EM
-qS
-Bn
+yx
+kF
 Xv
 Al
 kC
@@ -71144,50 +71127,50 @@ PL
 PL
 wP
 gh
-PL
-PL
-PL
-PL
-al
-al
-bC
-hh
-fB
-al
+kC
+kC
+kC
+kC
+mr
+vc
+Tw
+uv
+kv
+UL
 al
 Pj
 Pj
 Pj
 Pj
 gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-wP
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+dc
+RI
+RI
 Pj
 Pj
 Pj
 Pj
 Pj
 Pj
-Pj
-gh
+yH
+yH
+yz
 PL
 PL
 PL
@@ -71305,18 +71288,18 @@ kC
 kC
 kC
 kC
-qm
+Ot
+OI
 AM
-pa
-mO
-bk
-bk
-bk
-Lf
+CP
+ts
+sp
+Qp
 AM
-vX
-ad
-PL
+AM
+AM
+zI
+eA
 PL
 PL
 PL
@@ -71325,12 +71308,12 @@ PL
 PL
 PL
 BE
-qV
-BM
-fv
-ek
-XP
-Xv
+nT
+uc
+yf
+EM
+qS
+Bn
 Xv
 Al
 kC
@@ -71405,37 +71388,37 @@ PL
 PL
 PL
 PL
-PL
-LP
-PL
-PL
-PL
-Ud
+al
+al
+bC
+hh
+fB
+al
+al
 Pj
 Pj
 Pj
 Pj
-Pj
-KB
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+gh
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -71561,34 +71544,34 @@ kC
 kC
 kC
 kC
-Jk
-GS
+kC
+qm
 AM
-il
-sp
-sp
-sp
-sp
-il
-xo
+pa
+mO
+bk
+bk
+bk
+Lf
 AM
-ch
-kC
-kC
-kC
+vX
+ad
+PL
+PL
+PL
 PL
 PL
 PL
 PL
 PL
 BE
-mH
-yM
-sc
-FO
-Py
+qV
+BM
 fv
-Al
+ek
+XP
+Xv
+Xv
 Al
 kC
 kC
@@ -71667,32 +71650,32 @@ PL
 PL
 PL
 PL
-wP
+Ud
 Pj
 Pj
 Pj
 Pj
-gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+Pj
+KB
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -71818,35 +71801,35 @@ kC
 kC
 kC
 kC
-Og
+Jk
+GS
 AM
-AM
-cs
+il
 sp
 sp
-zM
 sp
-xY
+sp
+il
 xo
 AM
-kC
-kC
-kC
+ch
 kC
 kC
 kC
 PL
 PL
 PL
-Zp
-VB
-zc
-mY
-Xv
-Xv
+PL
+PL
+BE
+mH
+yM
+sc
+FO
+Py
 fv
 Al
-kC
+Al
 kC
 kC
 kC
@@ -71930,26 +71913,26 @@ Pj
 Pj
 Pj
 gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -71990,7 +71973,7 @@ PL
 PL
 PL
 PL
-jA
+PL
 PL
 PL
 PL
@@ -72075,34 +72058,17 @@ kC
 kC
 kC
 kC
-bY
-xo
-Bf
+Og
+AM
+AM
 cs
 sp
 sp
+zM
 sp
-sp
-kZ
-AM
+xY
 xo
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-BC
-PL
-PL
-Al
-Al
-Al
-Al
-Al
-Al
-Al
+AM
 kC
 kC
 kC
@@ -72110,6 +72076,23 @@ kC
 kC
 kC
 PL
+PL
+PL
+Zp
+VB
+zc
+mY
+Xv
+Xv
+fv
+Al
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 PL
 PL
 PL
@@ -72187,26 +72170,26 @@ Pj
 Pj
 Pj
 gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -72247,7 +72230,7 @@ PL
 PL
 PL
 PL
-Mj
+jA
 cE
 tY
 tY
@@ -72332,17 +72315,17 @@ kC
 kC
 kC
 kC
-Ui
+bY
 xo
-RB
+Bf
 cs
-Hl
 sp
 sp
-Jr
-xY
+sp
+sp
+kZ
+AM
 xo
-xo
 kC
 kC
 kC
@@ -72350,16 +72333,16 @@ kC
 kC
 kC
 kC
-kC
+BC
 PL
 PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
+Al
+Al
+Al
+Al
+Al
+Al
+Al
 kC
 kC
 kC
@@ -72444,26 +72427,26 @@ Pj
 Pj
 Pj
 gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -72589,17 +72572,17 @@ kC
 kC
 kC
 kC
-XH
+Ui
 xo
-AM
+RB
 cs
+Hl
 sp
 sp
-sp
-sp
-il
-AM
-EN
+Jr
+xY
+xo
+xo
 kC
 kC
 kC
@@ -72608,8 +72591,8 @@ kC
 kC
 kC
 kC
-kC
-Jk
+PL
+PL
 kC
 kC
 kC
@@ -72701,26 +72684,26 @@ Pj
 Pj
 Pj
 gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -72846,17 +72829,17 @@ kC
 kC
 kC
 kC
-CD
-xj
+XH
+xo
 AM
-ZW
-bk
-bk
-bk
-bk
-ok
+cs
+sp
+sp
+sp
+sp
+il
 AM
-nj
+EN
 kC
 kC
 kC
@@ -72866,7 +72849,7 @@ kC
 kC
 kC
 kC
-kC
+Jk
 kC
 kC
 kC
@@ -72958,26 +72941,26 @@ Pj
 Pj
 Pj
 gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -73103,17 +73086,17 @@ kC
 kC
 kC
 kC
-kC
-Ht
-rP
-WY
-sp
-ts
-xG
-WY
-sp
+CD
+xj
 AM
-Jk
+ZW
+bk
+bk
+bk
+bk
+ok
+AM
+nj
 kC
 kC
 kC
@@ -73161,7 +73144,7 @@ lu
 lu
 Mz
 Mz
-Aj
+Ow
 Mz
 lu
 ZR
@@ -73215,26 +73198,26 @@ Pj
 Pj
 Pj
 gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -73361,16 +73344,16 @@ kC
 kC
 kC
 kC
-kC
-kC
-xo
-Xt
+Ht
+rP
+WY
+sp
+ts
+xG
+WY
+sp
 AM
-xo
-xE
-AM
-mm
-Gt
+Jk
 kC
 kC
 kC
@@ -73415,7 +73398,7 @@ YG
 gI
 qI
 KM
-Sq
+bD
 PL
 PL
 PL
@@ -73472,26 +73455,26 @@ Pj
 Pj
 Pj
 gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -73620,6 +73603,14 @@ kC
 kC
 kC
 kC
+xo
+Xt
+AM
+xo
+xE
+AM
+mm
+Gt
 kC
 kC
 kC
@@ -73643,14 +73634,6 @@ kC
 kC
 kC
 kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-PL
 PL
 PL
 PL
@@ -73729,26 +73712,26 @@ Pj
 Pj
 Pj
 gh
+kC
+kC
+kC
+kC
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -73787,9 +73770,9 @@ PL
 PL
 PL
 PL
-kC
-kC
-kC
+PL
+PL
+Mj
 aF
 ZU
 ZU
@@ -73932,8 +73915,8 @@ ZR
 PL
 PL
 PL
-Py
-Py
+PL
+PL
 Rj
 FK
 GD
@@ -73986,26 +73969,26 @@ Pj
 Pj
 Pj
 gh
+kC
+kC
+kC
 PL
 PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -74014,8 +73997,8 @@ Pj
 Pj
 Pj
 Pj
-Pj
-yz
+gh
+PL
 PL
 PL
 PL
@@ -74163,7 +74146,7 @@ kC
 kC
 kC
 kC
-PL
+kC
 PL
 PL
 PL
@@ -74185,10 +74168,10 @@ OJ
 wz
 gI
 ZR
-Ow
+ZR
 PL
 PL
-Py
+PL
 Iv
 bD
 Xu
@@ -74243,56 +74226,8 @@ Pj
 Pj
 Pj
 gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-am
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
 PL
 PL
 PL
@@ -74301,6 +74236,54 @@ PL
 PL
 PL
 kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+yz
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 kC
 kC
 kC
@@ -74382,15 +74365,6 @@ kC
 kC
 kC
 kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
 kC
 kC
 kC
@@ -74416,10 +74390,19 @@ kC
 kC
 kC
 kC
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 PL
 PL
 PL
@@ -74442,9 +74425,9 @@ lu
 iV
 gI
 Ac
-Py
 PL
-Py
+PL
+PL
 bD
 bD
 fD
@@ -74500,6 +74483,8 @@ Pj
 Pj
 Pj
 gh
+kC
+kC
 PL
 PL
 PL
@@ -74508,18 +74493,16 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-wP
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+am
 Pj
 Pj
 Pj
@@ -74629,33 +74612,8 @@ kC
 kC
 kC
 kC
-PL
-PL
-PL
-PL
 kC
 kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
 kC
 kC
 kC
@@ -74673,6 +74631,31 @@ PL
 PL
 PL
 PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 PL
 PL
 PL
@@ -74700,7 +74683,7 @@ wz
 gI
 FM
 Iv
-Py
+PL
 Yx
 jM
 Yj
@@ -74757,6 +74740,7 @@ Pj
 Pj
 Pj
 gh
+kC
 PL
 PL
 PL
@@ -74768,14 +74752,13 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 wP
 Pj
 Pj
@@ -74786,7 +74769,7 @@ Pj
 Pj
 Pj
 Pj
-KB
+gh
 PL
 PL
 PL
@@ -74885,42 +74868,42 @@ kC
 kC
 kC
 kC
+PL
+PL
+PL
+PL
+PL
+kC
 kC
 PL
 PL
 PL
 PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 PL
 PL
 PL
@@ -75014,49 +74997,7 @@ Pj
 Pj
 Pj
 gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-wP
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-gh
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
 PL
 PL
 PL
@@ -75071,6 +75012,48 @@ PL
 PL
 PL
 kC
+kC
+kC
+kC
+kC
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+KB
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 kC
 kC
 kC
@@ -75148,7 +75131,7 @@ PL
 PL
 PL
 PL
-PL
+as
 PL
 PL
 PL
@@ -75255,12 +75238,12 @@ PL
 PL
 PL
 wP
-Pj
-yH
-yH
-yH
-yH
-yz
+gh
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -75287,19 +75270,19 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-dc
-RI
-RI
-RI
-RI
-RI
-RI
-RI
-RI
-KB
+kC
+kC
+kC
+wP
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -75511,18 +75494,18 @@ PL
 PL
 PL
 PL
-dc
-RI
-RI
-RI
-RI
-RI
+wP
 Pj
+yH
+yH
+yH
+yH
 yz
-Gl
-Gl
-am
-Pj
+PL
+PL
+PL
+PL
+wP
 Pj
 Pj
 Pj
@@ -75546,44 +75529,44 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-Af
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
 kC
+dc
+RI
+RI
+RI
+RI
+RI
+RI
+RI
+RI
+KB
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 kC
 kC
 kC
@@ -75768,23 +75751,23 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-dc
-KB
-Gl
-Gl
 dc
 RI
 RI
 RI
 RI
 RI
-KB
+Pj
+yz
+Gl
+Gl
+am
+Pj
+Pj
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -75810,7 +75793,7 @@ PL
 PL
 PL
 PL
-PL
+al
 PL
 PL
 PL
@@ -75919,6 +75902,8 @@ PL
 PL
 PL
 PL
+as
+as
 PL
 PL
 PL
@@ -76029,6 +76014,17 @@ PL
 PL
 PL
 PL
+dc
+KB
+Gl
+Gl
+dc
+RI
+RI
+RI
+RI
+RI
+KB
 PL
 PL
 PL
@@ -76084,19 +76080,6 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-kC
 kC
 kC
 kC
@@ -76170,11 +76153,11 @@ kC
 kC
 kC
 PL
+as
 PL
+as
 PL
-PL
-PL
-PL
+as
 PL
 PL
 PL
@@ -77638,7 +77621,7 @@ PL
 PL
 PL
 PL
-PL
+kC
 kC
 kC
 kC
@@ -78152,7 +78135,7 @@ PL
 PL
 PL
 PL
-kC
+PL
 kC
 kC
 kC
@@ -78226,11 +78209,11 @@ kC
 kC
 kC
 PL
+as
 PL
+as
 PL
-PL
-PL
-PL
+as
 PL
 PL
 PL
@@ -78489,8 +78472,8 @@ PL
 PL
 PL
 PL
-PL
-PL
+as
+as
 PL
 PL
 PL
@@ -78796,11 +78779,6 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
 PL
 PL
 PL
@@ -78887,11 +78865,6 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
 PL
 PL
 PL
@@ -78922,7 +78895,17 @@ PL
 PL
 PL
 PL
-kC
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 kC
 kC
 kC
@@ -79052,44 +79035,44 @@ PL
 PL
 PL
 PL
-kC
-ZU
-ZU
-ZU
-ZU
-ZU
-kC
-kC
-kC
-PL
-PL
-PL
-PL
-kC
-kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
 PL
 ZU
 ZU
 ZU
 ZU
 ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -79260,7 +79243,7 @@ PL
 PL
 PL
 PL
-PL
+as
 PL
 PL
 PL
@@ -79308,45 +79291,17 @@ PL
 PL
 PL
 PL
-kC
-kC
-ZU
-ZU
-ZU
-ZU
-ZU
-kC
-kC
-kC
-kC
-PL
 PL
 kC
+ZU
+ZU
+ZU
+ZU
+ZU
 kC
 kC
 kC
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
 PL
 PL
 PL
@@ -79367,48 +79322,14 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-kC
 ZU
 ZU
 ZU
 ZU
 ZU
-kC
-kC
-kC
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -79421,9 +79342,71 @@ PL
 PL
 PL
 PL
-nH
-nH
-nH
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+ZU
+ZU
+ZU
+ZU
+ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -79512,7 +79495,7 @@ kC
 kC
 kC
 kC
-kC
+as
 PL
 PL
 PL
@@ -79564,26 +79547,29 @@ PL
 PL
 PL
 PL
+PL
+kC
+kC
+ZU
+ZU
+ZU
+ZU
+ZU
 kC
 kC
 kC
 kC
+PL
+PL
 kC
 kC
 kC
 kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -79601,72 +79587,69 @@ ZU
 ZU
 ZU
 ZU
+PL
+PL
+PL
+kC
+kC
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+kC
 ZU
 ZU
 ZU
 ZU
 ZU
-ZU
-ZU
-kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
 kC
 kC
 kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
+PL
 PL
 PL
 PL
@@ -79815,36 +79798,36 @@ PL
 PL
 PL
 PL
+PL
+PL
+PL
+PL
+PL
+PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kC
 kC
 PL
 PL
 PL
 PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
 PL
 PL
 PL
@@ -79854,7 +79837,64 @@ ZU
 ZU
 ZU
 ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
 kC
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 kC
 kC
 kC
@@ -79869,63 +79909,6 @@ kC
 kC
 PL
 PL
-PL
-PL
-PL
-kC
-kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-kC
-kC
-PL
-PL
-PL
-PL
-PL
-kC
-kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-kC
-PL
-PL
-PL
-PL
-kC
-PL
-PL
-PL
-PL
-PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
 PL
 PL
 PL
@@ -80065,48 +80048,50 @@ kC
 kC
 kC
 kC
-kC
 PL
 PL
 PL
 PL
 PL
-kC
-kC
-kC
-kC
-kC
 PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
+PL
 kC
 kC
 PL
 PL
 PL
 PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+PL
+PL
+PL
+PL
+PL
+ZU
+ZU
 ZU
 ZU
 kC
@@ -80122,31 +80107,11 @@ kC
 kC
 kC
 kC
-kC
-kC
-kC
-PL
-PL
-PL
-kC
-kC
-kC
-kC
 PL
 PL
 PL
 PL
 PL
-PL
-kC
-kC
-kC
-kC
-kC
-PL
-PL
-kC
-kC
 kC
 kC
 PL
@@ -80155,37 +80120,55 @@ PL
 PL
 PL
 PL
+PL
+PL
+kC
+kC
+PL
+PL
+PL
+PL
+PL
+kC
+kC
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+kC
+PL
+PL
+PL
+PL
+kC
+PL
+PL
+PL
+PL
+PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 kC
 kC
 kC
 PL
 PL
-kC
-kC
-kC
 PL
-PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-lH
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
 PL
 PL
 PL
@@ -80323,47 +80306,48 @@ kC
 kC
 kC
 kC
-kC
-kC
 PL
 PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-lH
-lH
-lH
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
+PL
+PL
+PL
 kC
 kC
 kC
 kC
 kC
 PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 PL
+PL
+PL
+PL
+ZU
 ZU
 kC
 kC
@@ -80381,8 +80365,59 @@ kC
 kC
 kC
 kC
+PL
+PL
+PL
 kC
 kC
+kC
+kC
+PL
+PL
+PL
+PL
+PL
+PL
+kC
+kC
+kC
+kC
+kC
+PL
+PL
+kC
+kC
+kC
+kC
+PL
+PL
+PL
+PL
+PL
+PL
+kC
+kC
+kC
+PL
+PL
+kC
+kC
+kC
+PL
+PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+lH
 kC
 kC
 kC
@@ -80394,64 +80429,12 @@ kC
 PL
 PL
 PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
 PL
 PL
 PL
-PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+nH
+nH
+nH
 PL
 PL
 PL
@@ -80582,8 +80565,8 @@ kC
 kC
 kC
 kC
-kC
-kC
+PL
+PL
 kC
 kC
 kC
@@ -80619,27 +80602,9 @@ kC
 kC
 kC
 kC
-kC
 PL
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
+PL
+ZU
 kC
 kC
 kC
@@ -80667,10 +80632,25 @@ kC
 kC
 kC
 PL
+PL
+PL
 kC
 kC
 kC
 kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+PL
+PL
+PL
+PL
 kC
 kC
 kC
@@ -80722,6 +80702,9 @@ PL
 PL
 PL
 PL
+PL
+PL
+kC
 kC
 kC
 kC
@@ -80854,13 +80837,7 @@ kC
 kC
 kC
 kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
+lH
 lH
 lH
 kC
@@ -80883,6 +80860,7 @@ kC
 kC
 kC
 kC
+PL
 kC
 kC
 kC
@@ -80928,6 +80906,7 @@ kC
 kC
 kC
 kC
+PL
 kC
 kC
 kC
@@ -80940,7 +80919,6 @@ kC
 kC
 kC
 kC
-lH
 kC
 kC
 kC
@@ -80948,7 +80926,6 @@ kC
 kC
 kC
 kC
-lH
 kC
 kC
 kC
@@ -80965,6 +80942,12 @@ kC
 kC
 kC
 kC
+kC
+kC
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -81147,19 +81130,57 @@ lH
 kC
 kC
 lH
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 lH
-lH
-lH
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
 kC
 kC
 kC
@@ -81184,58 +81205,20 @@ kC
 kC
 kC
 kC
-lH
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
-kC
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 kC
 kC
 kC
