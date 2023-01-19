@@ -49,14 +49,14 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 
 /datum/outfit/job/CaesarsLegion/Legionnaire
-	belt = /obj/item/storage/belt/military/assault/legion
+	belt = /obj/item/storage/belt/military/legion
 	ears = /obj/item/radio/headset/headset_legion
-	backpack = /obj/item/storage/backpack/explorer
+	backpack = /obj/item/storage/backpack/marching_satchel
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	uniform = /obj/item/clothing/under/f13/legskirt
 	shoes = /obj/item/clothing/shoes/f13/military/legion
 	gloves = /obj/item/clothing/gloves/legion
-	box = /obj/item/storage/survivalkit_tribal
+	box = /obj/item/storage/survivalkit/legion_rations
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -194,14 +194,14 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
 	name = "Legion Centurion"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13centurion
-	id = /obj/item/card/id/dogtag/legcenturion
+	id = /obj/item/card/id/dogtag/legion/centurion
 	mask = /obj/item/clothing/mask/bandana/legion/centurion
 	ears = /obj/item/radio/headset/headset_legion/cent
-	neck = /obj/item/clothing/neck/mantle/legion
+	neck = /obj/item/storage/belt/holster
 	gloves = /obj/item/clothing/gloves/legion/plated
 	glasses = /obj/item/clothing/glasses/night/polarizing
 	shoes = /obj/item/clothing/shoes/f13/military/plated
-	r_pocket = /obj/item/restraints/handcuffs
+	r_pocket = /obj/item/storage/survivalkit/medical/legion
 	l_pocket = /obj/item/flashlight/lantern
 	box = /obj/item/storage/survivalkit_tribal/chief
 	backpack_contents = list(
@@ -247,7 +247,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/storage/belt/holster = 1,
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 2,
-		/obj/item/ammo_box/magazine/internal/shot/com/citykiller = 3
+		/obj/item/ammo_box/shotgun/slug = 1,
+		/obj/item/ammo_box/shotgun/magnum = 2,
 		)
 
 
@@ -295,8 +296,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ears = /obj/item/radio/headset/headset_legion/cent
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	shoes = /obj/item/clothing/shoes/f13/military/plated
-	r_pocket = /obj/item/flashlight/lantern
-	box = /obj/item/storage/survivalkit_tribal/chief
+	r_pocket = /obj/item/storage/survivalkit/medical/legion
+	l_pocket = /obj/item/flashlight/lantern
+	
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/storage/bag/money/small/legofficers = 1,
@@ -396,10 +398,10 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit = /obj/item/clothing/suit/armor/f13/legion/prime/decan
 	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
 	mask = /obj/item/clothing/mask/bandana/legion
-	glasses = /obj/item/clothing/glasses/legiongoggles
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
 	shoes = /obj/item/clothing/shoes/f13/military/plated
-	r_pocket = /obj/item/flashlight/lantern
-	l_pocket = /obj/item/restraints/handcuffs
+	r_pocket = /obj/item/storage/survivalkit/medical/legion
+	l_pocket = /obj/item/flashlight/lantern
 	box = /obj/item/storage/survivalkit_tribal/chief
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legofficers = 1,
@@ -491,13 +493,13 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
 	name = "Legion Recruit Decanus"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decanrec
-	id = /obj/item/card/id/dogtag/legveteran
+	id = /obj/item/card/id/dogtag/legion
 	suit = /obj/item/clothing/suit/armor/f13/legion/recruit/decan
 	head = /obj/item/clothing/head/helmet/f13/legion/recruit/decan
 	mask = /obj/item/clothing/mask/bandana/legion
-	glasses = /obj/item/clothing/glasses/legiongoggles
-	r_pocket = /obj/item/flashlight/lantern
-	l_pocket = /obj/item/storage/survivalkit_tribal
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
+	r_pocket = /obj/item/storage/survivalkit/medical/legion
+	l_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
 		/obj/item/restraints/handcuffs = 1,
@@ -576,13 +578,14 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
 	name = "Vexillarius"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13vexillarius
-	id = /obj/item/card/id/dogtag/legveteran
+	id = /obj/item/card/id/dogtag/legion/veteran
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet/vexil
 	mask = /obj/item/clothing/mask/bandana/legion
 	neck = /obj/item/storage/belt/holster
 	glasses = /obj/item/clothing/glasses/sunglasses
 	gloves = /obj/item/clothing/gloves/legion/plated
-	r_pocket = /obj/item/flashlight/lantern
+	r_pocket = /obj/item/storage/survivalkit/medical/legion
+	l_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
 		/obj/item/restraints/handcuffs = 1,
@@ -661,7 +664,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 	name = "Legion Explorer"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13explorer
-	id = /obj/item/card/id/dogtag/legprime
+	id = /obj/item/card/id/dogtag/legion/prime
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/explorer
 	neck = /obj/item/storage/belt/holster
@@ -674,7 +677,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/storage/bag/money/small/legenlisted = 1,
 		/obj/item/melee/onehanded/machete/forgedmachete = 1,
 		/obj/item/restraints/handcuffs = 1,
-		/obj/item/restraints/legcuffs/bola/tactical = 1
+		/obj/item/restraints/legcuffs/bola/tactical = 1,
+		/obj/item/storage/survivalkit/medical/legion = 1
 		)
 		
 /datum/outfit/loadout/expscout
@@ -810,14 +814,15 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
 	name = "Veteran Legionnaire"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	id = /obj/item/card/id/dogtag/legveteran
+	id = /obj/item/card/id/dogtag/legion/veteran
 	mask = /obj/item/clothing/mask/bandana/legion
 	head = /obj/item/clothing/head/helmet/f13/legion/vet
 	neck = /obj/item/storage/belt/holster
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet
 	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/f13/military/plated
-	r_pocket = /obj/item/flashlight/lantern
+	r_pocket = /obj/item/storage/survivalkit/medical/legion
+	l_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
 		/obj/item/storage/bag/money/small/legenlisted = 1,
@@ -915,14 +920,14 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 	name = "Prime Legionnaire"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13legionary
-	id = /obj/item/card/id/dogtag/legprime
-	mask = /obj/item/clothing/mask/bandana/legion/recruit
+	id = /obj/item/card/id/dogtag/legion/prime
+	mask = /obj/item/clothing/mask/bandana/legion
 	head = /obj/item/clothing/head/helmet/f13/legion/prime
 	neck = /obj/item/storage/belt/holster
 	suit = /obj/item/clothing/suit/armor/f13/legion/prime
-	glasses = /obj/item/clothing/glasses/legiongoggles
-	r_pocket = /obj/item/flashlight/lantern
-	l_pocket = /obj/item/restraints/handcuffs
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
+	r_pocket = /obj/item/storage/survivalkit/medical/legion
+	l_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legenlisted = 1,
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
@@ -978,8 +983,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	title = "Recruit Legionnaire"
 	flag = F13RECRUITLEG
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 6
+	spawn_positions = 6
 	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion. Respect the soldiers of higher rank."
 	supervisors = "the Decani and Centurion"
 
@@ -1010,13 +1015,14 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
 	name = "Recruit Legionnaire"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13recleg
-	id = /obj/item/card/id/dogtag/legrecruit
+	id = /obj/item/card/id/dogtag/legion
 	shoes = /obj/item/clothing/shoes/f13/military/leather
 	suit = /obj/item/clothing/suit/armor/f13/legion/recruit
 	head = /obj/item/clothing/head/helmet/f13/legion/recruit
 	mask = /obj/item/clothing/mask/bandana/legion/recruit
-	glasses = /obj/item/clothing/glasses/legiongoggles
-	r_pocket = /obj/item/flashlight/lantern
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
+	r_pocket = /obj/item/storage/survivalkit/medical/legion
+	l_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legenlisted = 1,
 		/obj/item/reagent_containers/pill/patch/healingpowder = 1,
