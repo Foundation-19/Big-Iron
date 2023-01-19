@@ -55,7 +55,7 @@ Elder
 	spawn_positions = 1
 	description = "You are the Elder of this local chapter of the Brotherhood of Steel. You may be a veteran of warfare, an experienced commander or even a genius Scribe, and you command all the men within this bunker. Your main goals are to lead the Brotherhood, to solve conflicts inbetween castes and to manage the Head Paladin, Head Knight and Head Scribe."
 	supervisors = "the High Elders"
-	exp_requirements = 3000
+	exp_requirements = 1200
 
 	outfit = /datum/outfit/job/bos/f13elder
 
@@ -90,7 +90,7 @@ Head Paladin
 	spawn_positions = 1
 	description = "You are the acting field commander until the Brotherhood regains its strength enough to place an Elder for the bunker. You are a veteran of many battles and sorties in pursuit of Brotherhood goals; your only weakness may just be your hubris. Your main goals are defense of the Chapter and surveillance of the surrounding region for technology."
 	supervisors = "the Elder"
-	exp_requirements = 1500
+	exp_requirements = 600
 	
 	loadout_options = list(
 	/datum/outfit/loadout/hpa, //Laser Gatling
@@ -172,7 +172,7 @@ Head Scribe
 	spawn_positions = 1
 	description = "You are the foremost experienced scribe remaining in this bunker. Your role is to ensure the safekeeping and proper usage of technology within the Brotherhood. You are also the lead medical expert in this Chapter. Delegate your tasks to your Scribes."
 	supervisors = "the Elder"
-	exp_requirements = 1500
+	exp_requirements = 600
 
 	outfit = /datum/outfit/job/bos/f13headscribe
 
@@ -218,7 +218,7 @@ Head Knight
 	spawn_positions = 1
 	description = "You are the Head Knight, leader of your respective division in the Chapter. Your knowledge of pre-war materials and engineering is almost unparalleled, and you have basic combat training and experience. You are in charge of the Chapter's engineering Corps, and your Knights. Delegate to them as necessary. As Chief Armorer, you are also in charge of the armory."
 	supervisors = "the Elder"
-	exp_requirements = 1500
+	exp_requirements = 600
 
 	loadout_options = list(
 	/datum/outfit/loadout/hka, //Sniper
@@ -297,7 +297,6 @@ Paladin
 	spawn_positions = 2
 	description = "You answer directly to the Head Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
 	supervisors = "the Head Paladin"
-	exp_requirements = 1000
 
 	loadout_options = list(
 	/datum/outfit/loadout/paladina, //Frontline P
@@ -391,7 +390,6 @@ Scribe
 	spawn_positions = 2
 	description = "You answer directly to the Senior Scribe, tasked with researching and reverse-engineering recovered technologies from the old world, while maintaining the brotherhoods scientific archives. You may also be given a trainee to assign duties to."
 	supervisors = "the Senior Scribe"
-	exp_requirements = 600
 
 	loadout_options = list(
 	/datum/outfit/loadout/scribea,
@@ -467,7 +465,6 @@ Senior Knight
 	spawn_positions = 2
 	description = "You report directly to the Head Knight. You are the Brotherhood Senior Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
 	supervisors = "the Head Knight"
-	exp_requirements = 800
 	
 	loadout_options = list(
 	/datum/outfit/loadout/ska,
@@ -560,7 +557,6 @@ Knight
 	spawn_positions = 3
 	description = "You are the Brotherhood Knight, the veritable lifeblood of your organization. You are a versatile and adaptably trained person: from your primary duties of weapon & armor repair to basic combat, survival and stealth skills, the only thing you lack is proper experience. You are also in charge of Initiates."
 	supervisors = "the Senior Knight"
-	exp_requirements = 600
 
 	loadout_options = list(
 	/datum/outfit/loadout/knighta, //AER9 Junior
@@ -738,7 +734,6 @@ Off-Duty
 	spawn_positions = 0
 	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties of the bunker, and you may spend your time doing whatever you please, within reason. However, you may not leave the bunker, and you may not get in the way of on-duty personnel. Do not pull rank or give orders. Should the bunker be attacked, you are expected NOT to participate in the fighting, and must instead head to the lower levels for safety (i.e. despawn yourself at the matrix point)."
 	supervisors = "Everyone else"
-	exp_requirements = 300
 
 	outfit = /datum/outfit/job/bos/f13offdutybos
 

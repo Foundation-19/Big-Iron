@@ -161,7 +161,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "the Colonel"
-	exp_requirements = 1500
+	exp_requirements = 600
 	
 	outfit = /datum/outfit/job/ncr/f13captain
 
@@ -236,7 +236,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the direct superior to the NCOs and Enlisted, and under special circumstances, Rangers. You are the XO of Camp Miller. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
 	supervisors = "the Captain"
-	exp_requirements = 1000
+	exp_requirements = 600
 	
 	outfit = /datum/outfit/job/ncr/f13lieutenant
 
@@ -287,7 +287,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 3
 	description = "You are the direct superior to the enlisted troops, working with the chain of command you echo the orders of your superiors and ensure that the enlisted follow them to the letter. Additionally, you are responsible for the wellbeing of the troops and their ongoing training with the NCR."
 	supervisors = "Lieutenant and Above"
-	exp_requirements = 1000
 	
 	outfit = /datum/outfit/job/ncr/f13sergeant
 
@@ -353,7 +352,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are an influential representative for the NCR and experienced bureaucrat. You are here to further the objective and ensure the interests of the NCR, your company or own enterprise are met through thick and thin, and have been supplied with ample amounts of money to do so."
 	supervisors = "the Captain and the NCR"
-	exp_requirements = 1500
+	exp_requirements = 300
 
 	outfit = /datum/outfit/job/ncr/f13representative
 
@@ -425,7 +424,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You answer directly to the Captain, working either independently or in a team to complete your mission objectives however required, operating either alone, in a squad or with the NCR Army. Your primary mission is to improve general opinion of the Republic and to neutralize slavers and raiders operating in the area."
 	supervisors = "the NCRA Captain and High Command"
-	exp_requirements = 3000
+	exp_requirements = 1200
 
 	outfit = /datum/outfit/job/ncr/f13vetranger
 	
@@ -508,7 +507,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 3
 	description = "As an NCR Ranger, you are the premier special forces unit of the NCR. You are the forward observations and support the Army in it's campaigns, as well as continuing the tradition of stopping slavery in it's tracks."
 	supervisors = "the Veteran Ranger"
-	exp_requirements = 1000
+	exp_requirements = 150
 	
 	outfit = /datum/outfit/job/ncr/f13ranger
 
@@ -604,7 +603,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the most elite of the enlisted, sergeant in rank but forgoing regular command roles to lead in battle only. You are expected to be on the frontlines of every engagement, and to provide firing support for the rank and file. Your power armor lacks the protection the full working sets have, but you have trained with it and can use it in battle well. General Oliver praises you and your other Heavy Troopers, prove to him you're no exception to the rule."
 	supervisors = "Lieutenant and Above"
-	exp_requirements = 750	
 	
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
 
@@ -665,7 +663,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 2
 	description = "You are a senior enlisted trooper with an engineering skill set. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Corporals and Above"
-	exp_requirements = 120
 
 	outfit = /datum/outfit/job/ncr/f13combatengineer
 
@@ -783,7 +780,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 2
 	description = "You are a senior enlisted with a medical skill set. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Corporals and Above"
-	exp_requirements = 120
 
 	outfit = /datum/outfit/job/ncr/f13combatmedic
 
@@ -831,7 +827,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 3
 	description = "You are a junior NCO. You are expected to lead from the frontlines with your sergeant. Keep the troopers in order and keep your squad coherent."
 	supervisors = "Sergeant and above"
-	exp_requirements = 180
 	
 	outfit = /datum/outfit/job/ncr/f13corporal
 
@@ -958,7 +953,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 1
 	description = "You are the lead medical professional in Camp Miller, you do not have any command authority unless it is of medical nature. Your duties are to ensure your troopers are in good health and that medical supplies are stocked for troopers."
 	supervisors = "Lieutenant and Above"
-	exp_requirements = 1500
+	exp_requirements = 300
 
 	outfit = /datum/outfit/job/ncr/f13medicalofficer
 
@@ -1003,12 +998,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	title = "NCR Off-Duty"
 	flag = F13OFFDUTYNCR
 	display_order = JOB_DISPLAY_ORDER_OFFDUTYNCR
-	exp_type = EXP_TYPE_FALLOUT
 	total_positions = 4
 	spawn_positions = 4
 	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties, and you may spend your time doing whatever you please, within reason. However, you may not get in the way of on-duty personnel. Do not pull rank or give orders. Should Camp Miller be attacked, you are expected NOT to participate in the fighting, and must instead head West for safety (i.e. despawn yourself at the matrix point)."
 	supervisors = "Everyone else"
-	exp_requirements = 60
 
 	outfit = /datum/outfit/job/ncr/f13offdutyncr
 
