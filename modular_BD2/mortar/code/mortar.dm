@@ -237,50 +237,6 @@
 /obj/item/mortar_shell/detonate(turf/T)
 	explosion(T, 2, 4, 6, 8)
 
-
-//WILLY PETE
-/obj/item/mortar_shell/smoke
-	name = "\improper 80mm mortar shell (WP)"
-	desc = "An 80mm mortar shell, loaded with chemical dispersal agents."
-	icon_state = "mortar_ammo_smk"
-	var/datum/effect_system/smoke_spread/bad/smoke
-
-/obj/item/mortar_shell/smoke/New()
-	..()
-	src.smoke = new /datum/effect_system/smoke_spread/willy_pete
-	src.smoke.attach(src)
-
-/obj/item/mortar_shell/smoke/Destroy()
-	qdel(smoke)
-	return ..()
-
-/obj/item/mortar_shell/smoke/detonate(turf/T)
-	explosion(T, 0, 1, 2, 7)//Generic mortar explosion outside of HE shells.
-	forceMove(T) //AAAAAAAA
-	playsound(T, 'sound/effects/smoke.ogg', 50, 1, 4)
-	smoke.set_up(4, src)
-	smoke.start()
-	sleep(1)//Yeah, I know.
-	qdel(src)
-
-//FRAG
-/obj/item/mortar_shell/frag
-	name = "\improper 80mm mortar shell (FRAG)"
-	desc = "A hefty mortar shell. Looks to be a fragmentation round."
-	icon_state = "mortar_ammo_frag"
-	var/shrapnel_type = /obj/item/projectile/bullet/shrapnel_launcher/mortar
-	var/shrapnel_magnitude = 6//Previously 24. Way too powerful at that.
-
-/obj/item/mortar_shell/frag/New()
-	..()
-	AddComponent(/datum/component/pellet_cloud, projectile_type=shrapnel_type, magnitude=shrapnel_magnitude)
-
-/obj/item/mortar_shell/frag/detonate(turf/T)
-	explosion(T, 0, 1, 2, 7)//Generic mortar explosion outside of HE shells.
-	forceMove(T) //AAAAAAAA
-	SEND_SIGNAL(src, COMSIG_ROCKET_IMPACT)
-	qdel(src)
-
 //RAD
 /obj/item/mortar_shell/rad
 	name = "\improper 80mm mortar shell (CNTM)"

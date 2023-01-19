@@ -171,15 +171,6 @@
 	stored_item = null
 	return ..()
 
-/obj/structure/trap/stun/hunter/process_entered(atom/movable/AM)
-	..()
-	if(isliving(AM))
-		var/mob/living/L = AM
-		if(!L.mind?.has_antag_datum(/datum/antagonist/fugitive))
-			return
-	caught = TRUE
-	. = ..()
-
 /obj/structure/trap/stun/hunter/flare()
 	..()
 	stored_item.forceMove(get_turf(src))

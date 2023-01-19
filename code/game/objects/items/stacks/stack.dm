@@ -63,10 +63,6 @@
 			mats_per_unit[SSmaterials.GetMaterialRef(i)] = in_process_mat_list[i]
 			custom_materials[i] *= amount
 	. = ..()
-<<<<<<< HEAD
-=======
-
->>>>>>> ad2b535a3d (November optimization updates (#746))
 	if(merge)
 		for(var/obj/item/stack/item_stack in loc)
 			if(item_stack == src)

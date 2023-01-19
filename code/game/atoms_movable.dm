@@ -288,11 +288,6 @@
 		orbiting.end_orbit(src)
 		orbiting = null
 
-	if(move_packet)
-		if(!QDELETED(move_packet))
-			qdel(move_packet)
-		move_packet = null
-
 	LAZYCLEARLIST(client_mobs_in_contents)
 
 	. = ..()
