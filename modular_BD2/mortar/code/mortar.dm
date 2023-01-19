@@ -237,6 +237,33 @@
 /obj/item/mortar_shell/detonate(turf/T)
 	explosion(T, 2, 4, 6, 8)
 
+//RAD
+/obj/item/mortar_shell/rad
+	name = "\improper 80mm mortar shell (CNTM)"
+	desc = "A hefty mortar shell. Looks to be a round filled with contaminated material. A little door on the side feels hot to the touch. Is this safe?"
+	icon_state = "mortar_ammo_flr"
+
+/obj/item/mortar_shell/rad/detonate(turf/T)
+	explosion(T, 0, 1, 2, 7)//Generic mortar explosion outside of HE shells.
+	forceMove(T) //AAAAAAAA
+
+	for(var/mob/living/carbon/human/victim in view(src,6))//6 range, half step of frag.
+		if(istype(victim) && victim.stat != DEAD)
+			victim.rad_act(12500)//I'm sorry, little one. :(
+
+	for(var/turf/open/turf in view(src,2))//Probably too little?
+		if(istype(turf))
+			var/obj/effect/decal/waste/WS = locate() in turf.contents
+			if(!WS)
+				WS = new/obj/effect/decal/waste(turf)
+
+	radiation_pulse(src, 3500) //General rad pulse. Stacks with the above.
+	qdel(src)
+
+////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////Mortar Crates//////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
 /obj/structure/closet/crate/mortar_shells
 	name = "mortar shell crate"
 	desc = "Specialised mortar shells."

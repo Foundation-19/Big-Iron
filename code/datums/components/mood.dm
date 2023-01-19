@@ -42,6 +42,13 @@
 /datum/component/mood/Destroy()
 	STOP_PROCESSING(SSobj, src)
 	unmodify_hud()
+	// unlike remove_temp_moods, this removes non-temporary moods too
+	for(var/i in mood_events)
+		var/datum/mood_event/moodlet = mood_events[i]
+		if(!moodlet)
+			continue
+		mood_events -= i
+		qdel(moodlet)
 	return ..()
 
 /datum/component/mood/proc/stop_processing()

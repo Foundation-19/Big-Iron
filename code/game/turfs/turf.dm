@@ -90,8 +90,8 @@
 		base_opacity = initial(opacity)
 		directional_opacity = ALL_CARDINALS
 
-	for(var/atom/movable/AM in src)
-		Entered(AM)
+	for(var/atom/movable/contained as anything in src)
+		Entered(contained)
 
 	var/area/A = loc
 	if(!IS_DYNAMIC_LIGHTING(src) && IS_DYNAMIC_LIGHTING(A))

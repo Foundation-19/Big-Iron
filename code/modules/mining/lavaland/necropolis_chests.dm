@@ -456,6 +456,11 @@
 	var/obj/item/warp_cube/linked
 	var/teleporting = FALSE
 
+/obj/item/warp_cube/Destroy()
+	linked?.linked = null
+	linked = null
+	return ..()
+
 /obj/item/warp_cube/attack_self(mob/user)
 	if(!linked)
 		to_chat(user, "[src] fizzles uselessly.")
@@ -561,7 +566,7 @@
 		//TODO: needs a callback to delete the chain
 
 /obj/item/projectile/hook/Destroy()
-	qdel(chain)
+	QDEL_NULL(chain)
 	return ..()
 
 
