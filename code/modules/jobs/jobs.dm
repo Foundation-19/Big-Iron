@@ -70,7 +70,6 @@ GLOBAL_LIST_INIT(command_positions, list(
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 "Mr. Handy"))
 //Whitelisted positions list FO13 anything that shows up here requires that the user have an entry in the 'role_whitelist' table of id,ckey,"faction"
-//NCR Assistant and Legion Camp Follower re-added to whitelisting.  BoS Initiate removed from whitelist.
 
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Elder",
@@ -96,6 +95,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Recruit Legionnaire",
 "Legion Explorer",
 "Camp Follower",
+"Legion Slave",
 
 "Mayor",
 "Chief of Police",
@@ -164,14 +164,14 @@ GLOBAL_LIST_INIT(oasis_positions, list(
 
 GLOBAL_LIST_INIT(legion_command_positions, list(
 	"Legate",
-	"Legion Frumentarius",
 	"Legion Centurion",
-	"Legion Veteran Decanus",
+	"Legion Frumentarius",
+	"Legion Veteran Decanus"
 ))
 
 GLOBAL_LIST_INIT(legion_positions, list(
-	"Legion Frumentarius",
 	"Legion Centurion",
+	"Legion Frumentarius",
 	"Legion Veteran Decanus",
 	"Legion Prime Decanus",
 	"Legion Recruit Decanus",
@@ -180,8 +180,8 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Veteran Legionnaire",
 	"Prime Legionnaire",
 	"Recruit Legionnaire",
-	"Legion Immune",
-	"Camp Follower"
+	"Camp Follower",
+	"Legion Slave"
 ))
 
 GLOBAL_LIST_INIT(ncr_rangervet_positions, list(

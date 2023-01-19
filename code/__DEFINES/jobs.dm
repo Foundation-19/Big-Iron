@@ -88,7 +88,7 @@
 #define F13LEGIONARY	(1<<9)
 #define F13RECRUITLEG	(1<<10)
 #define F13CAMPFOLLOWER	(1<<11)
-#define F13LEGIONSLAVE (1<<12)
+#define F13LEGIONSLAVE	(1<<12)
 
 #define BOS				(1<<5)
 

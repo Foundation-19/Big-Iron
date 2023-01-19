@@ -195,7 +195,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Legion Centurion"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13centurion
 	id = /obj/item/card/id/dogtag/legcenturion
-	mask = /obj/item/clothing/mask/bandana/legion/legcenturion
+	mask = /obj/item/clothing/mask/bandana/legion/centurion
 	ears = /obj/item/radio/headset/headset_legion/cent
 	neck = /obj/item/clothing/neck/mantle/legion
 	gloves = /obj/item/clothing/gloves/legion/plated
@@ -290,7 +290,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decanvet
 	id = /obj/item/card/id/dogtag/legveteran
 	suit = /obj/item/clothing/suit/armor/f13/legion/heavy
-	mask = /obj/item/clothing/mask/bandana/legion/legdecan
+	mask = /obj/item/clothing/mask/bandana/legion
 	gloves = /obj/item/clothing/gloves/legion/plated
 	ears = /obj/item/radio/headset/headset_legion/cent
 	glasses = /obj/item/clothing/glasses/sunglasses/big
@@ -395,7 +395,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	id = /obj/item/card/id/dogtag/legveteran
 	suit = /obj/item/clothing/suit/armor/f13/legion/prime/decan
 	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
-	mask = /obj/item/clothing/mask/bandana/legion/legdecan
+	mask = /obj/item/clothing/mask/bandana/legion
 	glasses = /obj/item/clothing/glasses/legiongoggles
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/flashlight/lantern
@@ -494,7 +494,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	id = /obj/item/card/id/dogtag/legveteran
 	suit = /obj/item/clothing/suit/armor/f13/legion/recruit/decan
 	head = /obj/item/clothing/head/helmet/f13/legion/recruit/decan
-	mask = /obj/item/clothing/mask/bandana/legion/legdecan
+	mask = /obj/item/clothing/mask/bandana/legion
 	glasses = /obj/item/clothing/glasses/legiongoggles
 	r_pocket = /obj/item/flashlight/lantern
 	l_pocket = /obj/item/storage/survivalkit_tribal
@@ -578,7 +578,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13vexillarius
 	id = /obj/item/card/id/dogtag/legveteran
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet/vexil
-	mask = /obj/item/clothing/mask/bandana/legion/legvet
+	mask = /obj/item/clothing/mask/bandana/legion
 	neck = /obj/item/storage/belt/holster
 	glasses = /obj/item/clothing/glasses/sunglasses
 	gloves = /obj/item/clothing/gloves/legion/plated
@@ -811,7 +811,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Veteran Legionnaire"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
 	id = /obj/item/card/id/dogtag/legveteran
-	mask = /obj/item/clothing/mask/bandana/legion/legvet
+	mask = /obj/item/clothing/mask/bandana/legion
 	head = /obj/item/clothing/head/helmet/f13/legion/vet
 	neck = /obj/item/storage/belt/holster
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet
@@ -916,7 +916,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Prime Legionnaire"
 	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13legionary
 	id = /obj/item/card/id/dogtag/legprime
-	mask = /obj/item/clothing/mask/bandana/legion/legprime
+	mask = /obj/item/clothing/mask/bandana/legion/recruit
 	head = /obj/item/clothing/head/helmet/f13/legion/prime
 	neck = /obj/item/storage/belt/holster
 	suit = /obj/item/clothing/suit/armor/f13/legion/prime
@@ -1014,7 +1014,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	shoes = /obj/item/clothing/shoes/f13/military/leather
 	suit = /obj/item/clothing/suit/armor/f13/legion/recruit
 	head = /obj/item/clothing/head/helmet/f13/legion/recruit
-	mask = /obj/item/clothing/mask/bandana/legion/legrecruit
+	mask = /obj/item/clothing/mask/bandana/legion/recruit
 	glasses = /obj/item/clothing/glasses/legiongoggles
 	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
@@ -1078,7 +1078,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/job/CaesarsLegion/f13campfollower
 	name = "Camp Follower"
 	id = /obj/item/card/id/dogtag/legfollower
-	mask = /obj/item/clothing/mask/bandana/legion/camp
+	mask = /obj/item/clothing/mask/bandana/legion/dark
 	uniform = /obj/item/clothing/under/f13/legskirt
 	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/f13/military/leather
@@ -1101,15 +1101,16 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // LEGION SLAVES - Servant cook, and assist with medical, low surgery. Worker farm and mine.
 
-/datum/job/CaesarsLegion/slave
+/datum/job/CaesarsLegion/f13slave
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
+	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
 	total_positions = 4
 	spawn_positions = 4
 	description = "A slave that survives the breaking camps is given a Legion appropriate name (latin-tribal inspired) and bull tattoo. Be obedient, respectful, stay inside the camp. Work the farm, mine, make food, clean and help injured men. Do NOT escape on your own, up to you how to handle it if forcibly freed by outside forces."
 	supervisors = "Officers, then warriors"
-	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
-	outfit = /datum/outfit/job/CaesarsLegion/slave
+
+	outfit = /datum/outfit/job/CaesarsLegion/f13slave
 
 	loadout_options = list(
 		/datum/outfit/loadout/slaveservant, //Servants cook, clean, help with medical tasks.
@@ -1125,13 +1126,13 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		),
 	)
 
-/datum/outfit/job/CaesarsLegion/slave/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/f13slave/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 
-/datum/outfit/job/CaesarsLegion/slave
+/datum/outfit/job/CaesarsLegion/f13slave
 	name = "Legion Slave"
 	jobtype = /datum/outfit/job/CaesarsLegion/slave
 	id = /obj/item/card/id/legionbrand
