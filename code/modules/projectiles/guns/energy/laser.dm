@@ -403,7 +403,7 @@
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 1
+	fire_delay = 0.5
 	slowdown = 0.2
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
@@ -451,7 +451,7 @@
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 1.5
+	fire_delay = 0.75
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
 	scope_y_offset = 20
@@ -466,7 +466,7 @@
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer14/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 1.5
+	fire_delay = 0.75
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
 	scope_y_offset = 20
