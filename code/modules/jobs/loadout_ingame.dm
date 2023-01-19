@@ -138,8 +138,6 @@
 		if("loadout_confirm")
 			if (selected_datum)
 				finish()
-		if("loadout_preview_direction")
-			selected_direction = turn(selected_direction, 90 * text2num(params["direction"]))
 	return TRUE
 
 //Selects an outfit and loads the preview of it
