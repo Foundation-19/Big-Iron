@@ -93,9 +93,9 @@ Head Paladin
 	exp_requirements = 600
 	
 	loadout_options = list(
-	/datum/outfit/loadout/hpa, //Laser Gatling
-	/datum/outfit/loadout/hpb, //Tribeam
-	/datum/outfit/loadout/hpc //14mm pistol, shield
+	/datum/outfit/loadout/hpa, //Laser Gatling, Super Sledge
+	/datum/outfit/loadout/hpb, //Tribeam, Powerfist
+	/datum/outfit/loadout/hpc //14mm pistol, Shield, Pre-war Ripper
 	)
 
 	outfit = /datum/outfit/job/bos/f13headpaladin
@@ -117,7 +117,6 @@ Head Paladin
 	neck = 			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/melee/powered/ripper = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
@@ -127,14 +126,16 @@ Head Paladin
 	name = "Heavy Weapons Head Paladin"
 	backpack_contents = list(
 		/obj/item/minigunpack = 1,
-		/obj/item/stock_parts/cell/ammo/ecp = 3
+		/obj/item/stock_parts/cell/ammo/ecp = 3,
+		/obj/item/twohanded/sledgehammer/supersledge = 1
 		)
 
 /datum/outfit/loadout/hpb
 	name = "Frontline Head Paladin"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/melee/unarmed/powerfist = 1
 		)
 		
 
@@ -143,7 +144,8 @@ Head Paladin
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 3,
-		/obj/item/shield/riot/bullet_proof = 1
+		/obj/item/shield/riot/bullet_proof = 1,
+		/obj/item/melee/powered/ripper/prewar = 1
 		)
 
 /datum/outfit/job/bos/f13headpaladin/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -329,7 +331,8 @@ Paladin
 	belt =	/obj/item/storage/belt/military/assault
 	neck =	/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/melee/powered/ripper = 1,
 	)
 
 /datum/outfit/loadout/paladina
