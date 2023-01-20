@@ -60,7 +60,7 @@
 			playsound(T, 'sound/effects/footstep/crawl1.ogg', 15 * volume)
 		return
 
-	if(HAS_TRAIT(LM, TRAIT_SILENT_STEP))
+	if(LM.m_intent == MOVE_INTENT_WALK && HAS_TRAIT(LM, TRAIT_SILENT_STEP)) // Edited Big Iron for no sprinting in total silence
 		return
 
 	if(iscarbon(LM))
