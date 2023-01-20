@@ -7,7 +7,7 @@
 	icon_state = "furnace"
 	density = TRUE
 	anchored = TRUE
-	max_integrity = 700
+	max_integrity = 3000 // temp until can fix the ingot hitting it crap, love this code
 	light_system = MOVABLE_LIGHT
 	light_range = 2
 	light_power = GLOW_BRIGHT
