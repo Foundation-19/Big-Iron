@@ -7,7 +7,7 @@
 	icon_state = "furnace"
 	density = TRUE
 	anchored = TRUE
-	max_integrity = 3000 // temp until can fix the ingot hitting it crap, love this code
+	max_integrity = 700
 	light_system = MOVABLE_LIGHT
 	light_range = 2
 	light_power = GLOW_BRIGHT
@@ -56,6 +56,7 @@
 				workpiece.icon_state = "hot_ingot"
 				workpiece.set_light_on(TRUE)
 				I.on_attack_hand(user)
+				return
 		else
 			to_chat(user, "The furnace isn't working!.")
 	if(istype(I, /obj/item/stack/ore))

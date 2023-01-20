@@ -166,6 +166,7 @@ GLOBAL_LIST_INIT(xeno_recipes, list ( \
 
 GLOBAL_LIST_INIT(leather_recipes, list ( \
 	new/datum/stack_recipe("farmers gloves", /obj/item/clothing/gloves/botanic_leather, 3), \
+	new/datum/stack_recipe("blacksmith mittens", /obj/item/clothing/gloves/blacksmith_mittens, 2), \
 	new/datum/stack_recipe("gardeners belt", /obj/item/storage/belt/utility/gardener, 4), \
 	null, \
 	new/datum/stack_recipe("toolbelt", /obj/item/storage/belt/utility, 4), \
