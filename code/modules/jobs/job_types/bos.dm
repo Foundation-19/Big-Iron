@@ -225,7 +225,7 @@ Head Knight
 	loadout_options = list(
 	/datum/outfit/loadout/hka, //Sniper
 	/datum/outfit/loadout/hkb,	//AER14
-	/datum/outfit/loadout/hkb //RCW
+	/datum/outfit/loadout/hkc //RCW holy fuck can you at least get a path right kimi
 	)
 	outfit = /datum/outfit/job/bos/f13headknight
 
