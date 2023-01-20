@@ -346,16 +346,16 @@
 
 //Legion
 
-/obj/item/clothing/under/f13/campfollowermale
-	name = "camp follower male robe"
+/obj/item/clothing/under/f13/slavemale
+	name = "male slave robe"
 	desc = "Olive colored cloth with a red belt."
 	icon_state = "legcamp"
 	item_state = "brownjsuit"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
-/obj/item/clothing/under/f13/campfollowerfemale
-	name = "camp follower female robe"
+/obj/item/clothing/under/f13/slavefemale
+	name = "female slave robe"
 	desc = "Olive colored cloth with a red sash."
 	icon_state = "legcamp_f"
 	item_state = "legcamp_f"
