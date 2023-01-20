@@ -1,9 +1,22 @@
+// DEFINES FOR THE GUNS - point is to make it more clear. Generally higher RoF should mean lower damage per shot or DPS will be super imbalanced. Fuck realism, fun design is whats important, and that means more viable options than top tier autos for all.
+
+#define DAMAGE_SEMIAUTO_RIFLE 30
+#define DAMAGE_BOLTACTION_RIFLE 40
+#define DAMAGE_REPEATER_RIFLE 35
+#define DAMAGE_SMG 20
+#define DAMAGE_AUTOMATICRIFLE 24
+#define DAMAGE_PISTOL 31
+#define DAMAGE_REVOLVER 34
+
+#define PISTOL_WHIP 15
+#define RIFLE_BUTT 20
+
 /*
 IN THIS DOCUMENT: Universal Gun system rules/keywords. Universal gun template and procs/vars.
 
 /////////////////////////////////////
 //UNIVERSAL GUN KEYWORDS AND SYSTEM//
-/////////////////////////////////////
+///////////////////////////////////// This whole thing is pretty outdated
 
 GENERAL
 

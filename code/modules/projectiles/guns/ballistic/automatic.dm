@@ -15,7 +15,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = 0
-	force = 15
+	force = RIFLE_BUTT
 	burst_size = 1
 	burst_shot_delay = 3
 	var/automatic_burst_overlay = TRUE
@@ -189,13 +189,15 @@
 	icon_prefix = "uzi"
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	force = PISTOL_WHIP
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_HEAVY //Automatic fire and onehanded use mix poorly.
 	slowdown = 0.4
 	fire_delay = 3.75
 	burst_shot_delay = 3
 	spread = 10
-	force = 12
+	is_automatic = TRUE
+	automatic = TRUE
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 
 //American 180				Keywords: .22 LR, Automatic, 180 rounds
@@ -208,12 +210,10 @@
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/m22smg
 	can_unsuppress = FALSE
-	is_automatic = TRUE
-	automatic = 1
 	autofire_shot_delay = 1.75
 	spread = 18
 	burst_shot_delay = 1.5
-	extra_damage = 10
+	extra_damage = DAMAGE_SMG-10 // super high ammo cap and rof
 	suppressed = 1
 	actions_types = null
 	fire_sound = 'sound/f13weapons/american180.ogg'
@@ -227,11 +227,9 @@
 	item_state = "14toploader"
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/smg14
-	is_automatic = TRUE
-	automatic = 1
 	autofire_shot_delay = 3.25
 	spread = 9
-	extra_damage = 32
+	extra_damage = DAMAGE_SMG+10
 	extra_penetration = 0.1
 	recoil = 0.35
 	can_attachments = TRUE
@@ -247,11 +245,9 @@
 	item_state = "smg9mm"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
 	spread = 8
-	extra_damage = 19
+	extra_damage = DAMAGE_SMG-1
 	slowdown = 0.3
 	burst_shot_delay = 2.75
-	is_automatic = TRUE
-	automatic = 1
 	autofire_shot_delay = 2.5
 	spread = 14
 	can_attachments = TRUE
@@ -290,7 +286,7 @@
 	can_attachments = FALSE
 	spread = 16.5
 	recoil = 0.3
-	extra_damage = 17
+	extra_damage = DAMAGE_SMG-2
 
 /obj/item/gun/ballistic/automatic/smg/greasegun/worn/auto_select()
 	var/mob/living/carbon/human/user = usr
@@ -325,13 +321,10 @@
 	icon_prefix = "smg10mm"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
 	init_mag_type = /obj/item/ammo_box/magazine/m10mm_adv/ext
-	is_automatic = TRUE
-	automatic = 1
 	autofire_shot_delay = 2.25
 	spread = 12
 	slowdown = 0.3
-	extra_damage = 20
-	extra_penetration = 0.1
+	extra_damage = DAMAGE_SMG+3
 	recoil = 0.05
 	fire_delay = 3.25
 	can_attachments = TRUE
@@ -346,8 +339,7 @@
 	desc = "Mass-produced weapon from the Great War, this one has seen use ever since. Grip is wrapped in tape to keep the plastic from crumbling, the metals are oxidizing, but the gun still works."
 	init_mag_type = /obj/item/ammo_box/magazine/m10mm_adv/ext
 	worn_out = TRUE
-	extra_penetration = 0.05
-	extra_damage = 18
+	extra_damage = DAMAGE_SMG+1
 	spread = 10
 
 /obj/item/gun/ballistic/automatic/smg/smg10mm/auto_select()
@@ -382,12 +374,10 @@
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
 	fire_delay = 3
 	burst_shot_delay = 2.2
-	is_automatic = TRUE
-	automatic = 1
 	slowdown = 0.3
 	autofire_shot_delay = 2
 	spread = 40
-	extra_damage = 17
+	extra_damage = DAMAGE_SMG-1
 	can_suppress = TRUE
 	can_attachments = TRUE
 	suppressor_state = "uzi_suppressor"
@@ -426,13 +416,11 @@
 	icon_state = "cg45"
 	item_state = "cg45"
 	mag_type = /obj/item/ammo_box/magazine/cg45
-	is_automatic = TRUE
-	automatic = 1
 	slowdown = 0.35
 	autofire_shot_delay = 2.5
 	spread = 12
 	fire_delay = 3.5
-	extra_damage = 20
+	extra_damage = DAMAGE_SMG+3
 	recoil = 0.1
 	can_attachments = TRUE
 	fire_sound = 'sound/f13weapons/10mm_fire_03.ogg'
@@ -449,12 +437,10 @@
 	mag_type = /obj/item/ammo_box/magazine/tommygunm45
 	init_mag_type = /obj/item/ammo_box/magazine/tommygunm45/stick
 	fire_sound = 'sound/weapons/gunshot_smg.ogg'
-	is_automatic = TRUE
-	automatic = 1
 	autofire_shot_delay = 2.25
 	burst_shot_delay = 2.75
 	fire_delay = 3.75
-	extra_damage = 18
+	extra_damage = DAMAGE_SMG // Guess its due to high ammo count and Rof, unsure of the DPS, upped it a little.
 	spread = 15
 	recoil = 0.5
 
@@ -465,7 +451,6 @@
 	mag_type = /obj/item/ammo_box/magazine/tommygunm45
 	init_mag_type = /obj/item/ammo_box/magazine/tommygunm45/stick
 	fire_delay = 3.75
-	extra_damage = 18
 	spread = 19
 
 //P90				Keywords: 10mm, Automatic, 50 rounds. Special modifiers: damage +1
@@ -476,13 +461,11 @@
 	item_state = "m90"
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/m10mm_p90
-	extra_damage = 22
-	extra_penetration = 0.15
+	extra_damage = DAMAGE_SMG+1
+	extra_penetration = 0.1
 	burst_size = 1
 	fire_delay = 3
 	spread = 14
-	is_automatic = TRUE
-	automatic = 1
 	autofire_shot_delay = 2
 	burst_shot_delay = 2.5
 	recoil = 0.25
@@ -510,11 +493,9 @@
 	spread = 6
 	fire_delay = 3.5
 	slowdown = 0.25
-	is_automatic = TRUE
-	automatic = 1
 	autofire_shot_delay = 2.15
 	burst_shot_delay = 2
-	extra_damage = 17
+	extra_damage =  DAMAGE_SMG-1
 	suppressed = 1
 	recoil = 0.05
 	can_attachments = TRUE
@@ -533,11 +514,9 @@
 	mag_type = /obj/item/ammo_box/magazine/pps9mm
 	spread = 20
 	fire_delay = 6
-	is_automatic = TRUE
-	automatic = 1
 	autofire_shot_delay = 2.25
 	burst_shot_delay = 1.5
-	extra_damage = 18
+	extra_damage =  DAMAGE_SMG-2
 	extra_penetration = 0.05
 	recoil = 0.25
 	can_attachments = TRUE
@@ -562,8 +541,7 @@
 	burst_size = 1
 	fire_delay = 2.5
 	spread = 2
-	extra_damage = 20
-	extra_penetration = 0.1
+	extra_damage = DAMAGE_SEMIAUTO_RIFLE-6
 	slowdown = 0.05
 	automatic_burst_overlay = FALSE
 	can_bayonet = TRUE
@@ -591,8 +569,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "ncr-m1carbine"
 	item_state = "rifle"
-	extra_damage = 25
-
+	extra_damage = DAMAGE_SEMIAUTO_RIFLE-5
 
 //M1A1 Carbine				Keywords: 10mm, Semi-auto, 12/24 rounds, Long barrel, Folding stock.
 /obj/item/gun/ballistic/automatic/m1carbine/compact
@@ -628,7 +605,7 @@
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"][stock ? "" : "-f"]"
 
 
-//WT-550								4.7mm, 20 round magazine
+//WT-550								4.7mm, 20 round magazine Is this some sort of Paradise station gun or what, if so, lame
 /obj/item/gun/ballistic/automatic/wt550
 	name = "4.73mm carbine"
 	desc = "A WT-550 Personal Defense Weapon, manufactured by West Tek. It fires 4.73mm caseless rounds."
@@ -662,14 +639,13 @@
 	desc = "A simple bolt action rifle in 5.56mm calibre. Easy to use and maintain."
 	icon_state = "varmint"
 	item_state = "varmintrifle"
-	force = 23
+	extra_damage = DAMAGE_BOLTACTION_RIFLE-10
 	slowdown = 0.05
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	fire_delay = 3.5
 	burst_size = 1
 	spread = 0
-	extra_damage = 20
 	extra_speed = 500
 	can_bayonet = FALSE
 	semi_auto = TRUE
@@ -692,8 +668,8 @@
 	item_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
 	slowdown = 0.05
-	extra_damage = 22
-	extra_penetration = 0.05
+	extra_damage = DAMAGE_PISTOL+2
+	extra_penetration = 0.1 // gets AP because why not, maybe it will make it useful. Also 2-h with pistol, needs SOMETHING
 	fire_delay = 4
 	burst_size = 1
 	spread = 0
@@ -723,7 +699,7 @@
 	desc = "Legends are told of the \"Ratslayer\", a custom-made souped-up varmint rifle with a sick paintjob. This is a pale imitation, made of chopped-up bits of other guns."
 	icon_state = "verminrifle"
 	item_state = "ratslayer"
-	extra_damage = 25
+	extra_damage = DAMAGE_BOLTACTION_RIFLE-7
 	suppressed = 1
 	zoomable = TRUE
 	zoom_amt = 10
@@ -738,7 +714,7 @@
 	desc = "A modified varmint rifle with better stopping power, a scope, and suppressor. Oh, don't forget the sick paint job."
 	icon_state = "ratslayer"
 	item_state = "ratslayer"
-	extra_damage = 30
+	extra_damage = DAMAGE_BOLTACTION_RIFLE-10
 	extra_penetration = 0.1
 	suppressed = 1
 	zoomable = TRUE
@@ -757,8 +733,8 @@
 	fire_delay = 3
 	burst_size = 1
 	spread = 1
-	extra_damage = 32
-	extra_penetration = 0.2
+	extra_damage = DAMAGE_AUTOMATICRIFLE+2
+	extra_penetration = 0.1
 	slowdown = 0.5
 	can_attachments = FALSE
 	automatic_burst_overlay = FALSE
@@ -777,7 +753,7 @@
 	fire_delay = 1
 	burst_size = 1
 	spread = 1
-	extra_damage = 25
+	extra_damage = DAMAGE_SEMIAUTO_RIFLE-2
 	can_attachments = TRUE
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
@@ -797,7 +773,7 @@
 	fire_delay = 1
 	burst_size = 2
 	spread = 1
-	extra_damage = 27
+	extra_damage = DAMAGE_AUTOMATICRIFLE+1
 	can_attachments = FALSE
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
@@ -815,8 +791,6 @@
 	icon_state = "scout_carbine"
 	spread = 1.2
 	slowdown = 0.05
-	extra_damage = 25
-	extra_penetration = 0.1
 	can_scope = TRUE
 	scope_state = "scope_short"
 	scope_x_offset = 4
@@ -832,8 +806,7 @@
 	item_state = "marksman"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 2
-	extra_penetration = 0.1
-	extra_damage = 34
+	extra_damage = DAMAGE_SEMIAUTO_RIFLE
 	slowdown = 0.2
 	burst_size = 1
 	spread = 1
@@ -854,24 +827,6 @@
 	suppressor_y_offset = 15
 	fire_sound = 'sound/f13weapons/marksman_rifle.ogg'
 
-/obj/item/gun/ballistic/automatic/marksman/policerifle
-	name = "Police Rifle"
-	desc = "A pre-war Rifle that has been constantly repaired and rebuilt by the Oasis Police Department. Held together by duct tape and prayers, it somehow still shoots. This one has been re-chambered to 5.56"
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
-	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
-	icon_prefix = "assault_carbine"
-	icon_state = "rifle-police"
-	item_state = "assault_carbine"
-	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	extra_damage = 25
-	extra_penetration = 0.1
-	spread = 1.1
-	fire_delay = 2
-	can_suppress = FALSE
-	can_scope = TRUE
-	zoomable = FALSE
-
 //Colt Rangemaster				Keywords:5.56/.223, Semi-auto, 10 round magazine, 30dmg
 /obj/item/gun/ballistic/automatic/rangemaster
 	name = "Colt Rangemaster"
@@ -882,7 +837,7 @@
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
-	extra_damage = 30
+	extra_damage = DAMAGE_SEMIAUTO_RIFLE
 	extra_penetration = 0.1
 	extra_speed = 500
 	burst_size = 1
@@ -912,7 +867,7 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "slr"
 	item_state = "slr"
-	force = 20
+	extra_damage = DAMAGE_SEMIAUTO_RIFLE+2
 	mag_type = /obj/item/ammo_box/magazine/m762
 	burst_size = 1
 	fire_delay = 2
@@ -942,7 +897,7 @@
 	force = 20
 	slowdown = 0.2
 	mag_type = /obj/item/ammo_box/magazine/garand308
-	extra_damage = 38
+	extra_damage = DAMAGE_SEMIAUTO_RIFLE+6
 	extra_penetration = 0.1
 	fire_delay = 2
 	burst_size = 1
@@ -975,7 +930,7 @@
 	name = "Old Glory"
 	desc = "This Machine kills communists!"
 	icon_state = "oldglory"
-	extra_damage = 50
+	extra_damage = DAMAGE_SEMIAUTO_RIFLE+15
 
 //Republics Pride			Keywords: UNIQUE, 7.62mm, Semi-auto, 8 rounds internal, Scoped, Damage +8, Penetration +0.1
 /obj/item/gun/ballistic/automatic/m1garand/republicspride
@@ -983,8 +938,8 @@
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. Chambered in 7.62x51."
 	icon_state = "republics_pride"
 	item_state = "scoped308"
-	extra_damage = 45
-	extra_penetration = 0.3
+	extra_damage = DAMAGE_SEMIAUTO_RIFLE+10
+	extra_penetration = 0.2
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -1003,7 +958,7 @@
 	item_state = "sks"
 	mag_type = /obj/item/ammo_box/magazine/sks
 	fire_delay = 2
-	extra_damage = 40
+	extra_damage = DAMAGE_SEMIAUTO_RIFLE+7
 	extra_penetration = 0.1
 	extra_speed = 100
 	bayonet_state = "bayonet"
@@ -1028,7 +983,7 @@
 	burst_size = 1
 	extra_speed = 800
 	extra_penetration = 0.2
-	extra_damage = 35
+	extra_damage = DAMAGE_SEMIAUTO_RIFLE+5
 	slowdown = 0.4
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -1057,8 +1012,6 @@
 	slowdown = 0.3
 	zoom_amt = 15
 	zoom_out_amt = 17
-	extra_penetration = 0.2
-	extra_damage = 35
 
 /obj/item/gun/ballistic/automatic/marksman/sniper/sniperranger
 	name = "compact sniper rifle"
@@ -1078,7 +1031,7 @@
 	icon_state = "R82"
 	item_state = "R84"
 	icon_prefix = "r82"
-	extra_damage = 20
+	extra_damage = DAMAGE_AUTOMATICRIFLE-2
 	fire_delay = 2.5
 	is_automatic = TRUE
 	slowdown = 0.4
@@ -1101,7 +1054,7 @@
 	fire_delay = 2.5
 	slowdown = 0.35
 	spread = 10
-	extra_damage = 25
+	extra_damage = DAMAGE_AUTOMATICRIFLE
 	recoil = 0.1
 	is_automatic = TRUE
 	automatic = 1
@@ -1126,7 +1079,7 @@
 	icon_state = "infiltrator"
 	item_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	extra_damage = 25
+	extra_damage = DAMAGE_AUTOMATICRIFLE-1
 	spread = 9
 	fire_delay = 3.5
 	burst_shot_delay = 2
@@ -1155,7 +1108,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 1
 	spread = 1
-	extra_damage = 25
+	extra_damage = DAMAGE_AUTOMATICRIFLE
 	burst_size = 1
 	can_attachments = FALSE
 	semi_auto = TRUE
@@ -1177,10 +1130,9 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 4
 	spread = 10
-	extra_damage = 23
-	extra_penetration = 0.05
+	extra_damage = DAMAGE_AUTOMATICRIFLE-2
 	is_automatic = TRUE
-	automatic = 1
+	automatic = TRUE
 	autofire_shot_delay = 3
 	recoil = 0.1
 	can_suppress = TRUE
@@ -1198,7 +1150,7 @@
 	item_state = "handmade_rifle"
 	fire_delay = 5
 	spread = 13
-	extra_damage = 21
+	extra_damage = DAMAGE_AUTOMATICRIFLE-4
 	can_suppress = FALSE
 
 
@@ -1214,7 +1166,7 @@
 	automatic = 1
 	autofire_shot_delay = 2
 	burst_shot_delay = 1.5
-	extra_damage = 25
+	extra_damage = DAMAGE_AUTOMATICRIFLE+1
 	fire_delay = 3
 	spread = 8
 	recoil = 0.1
@@ -1239,9 +1191,9 @@
 	fire_delay = 3
 	burst_shot_delay = 2.0
 	is_automatic = TRUE
-	automatic = 1
+	automatic = TRUE
 	autofire_shot_delay = 2
-	extra_damage = 19
+	extra_damage = DAMAGE_AUTOMATICRIFLE-5  // shittier damage but AP
 	extra_penetration = 0.25
 	spread = 10 //high-velocity
 	can_attachments = TRUE
@@ -1269,7 +1221,6 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "rifle-police"
 	autofire_shot_delay = 3.5 //not a real auto-gun, a lot slower than the assault carbine
-	extra_damage = 20 //longer barrel
 	spread = 8 //more accurate than the assault carbine, its a rifle
 	can_scope = TRUE
 
@@ -1280,8 +1231,9 @@
 	fire_delay = 3.5
 	burst_shot_delay = 2.2
 	spread = 14
-	extra_damage = 18
-	extra_penetration = 0.12
+	extra_damage = DAMAGE_AUTOMATICRIFLE-8
+
+
 //FN-FAL				Keywords: 7.62mm, Automatic, 10/20 round magazine
 /obj/item/gun/ballistic/automatic/fnfal
 	name = "FN FAL"
@@ -1289,8 +1241,7 @@
 	icon_state = "fnfal"
 	item_state = "fnfal"
 	force = 20
-	extra_damage = 28
-	extra_penetration = 0.1
+	extra_damage = DAMAGE_AUTOMATICRIFLE+2
 	extra_speed = 400
 	fire_delay = 3.5
 	is_automatic = TRUE
@@ -1315,8 +1266,8 @@
 	force = 24 //club
 	slowdown = 1.5 //really goddamn big
 	autofire_shot_delay = 2.3
-	extra_damage = 30
-	extra_penetration = 0.2
+	extra_damage = DAMAGE_AUTOMATICRIFLE+4
+	extra_penetration = 0.1
 	spread = 10
 	recoil = 0.3
 	actions_types = list(/datum/action/item_action/toggle_firemode)
@@ -1330,7 +1281,7 @@
 	item_state = "arg"
 	mag_type = /obj/item/ammo_box/magazine/m473
 	burst_size = 1
-	extra_damage = 16
+	extra_damage = DAMAGE_AUTOMATICRIFLE-5
 	extra_penetration = 0.25
 	fire_delay = 2
 	is_automatic = TRUE
@@ -1361,11 +1312,11 @@
 	item_state = "R84"
 	slowdown = 1.5
 	mag_type = /obj/item/ammo_box/magazine/lmg
-	extra_damage = 23
+	extra_damage = DAMAGE_AUTOMATICRIFLE-3
 	fire_delay = 6
 	burst_shot_delay = 2.5
 	is_automatic = TRUE
-	automatic = 1
+	automatic = TRUE
 	autofire_shot_delay = 2
 	spread = 20
 	can_attachments = FALSE
@@ -1386,8 +1337,8 @@
 	fire_delay = 4.5
 	burst_shot_delay = 2
 	is_automatic = TRUE
-	automatic = 1
-	extra_damage = 23
+	automatic = TRUE
+	extra_damage = DAMAGE_AUTOMATICRIFLE-1
 	spread = 12
 	spawnwithmagazine = TRUE
 	zoomable = TRUE
@@ -1413,7 +1364,7 @@
 	automatic = 1
 	autofire_shot_delay = 2.2
 	fire_delay = 4
-	extra_damage = 30
+	extra_damage = DAMAGE_AUTOMATICRIFLE+3
 	extra_penetration = 0.1
 	spread = 8
 	can_attachments = FALSE

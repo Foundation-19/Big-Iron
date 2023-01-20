@@ -24,7 +24,7 @@
 	slowdown = 0.5
 	fire_delay = 6
 	spread = 0
-	force = 15 //Decent clubs generally speaking
+	force = RIFLE_BUTT
 	flags_1 =  CONDUCT_1
 	casing_ejector = FALSE
 	var/recentpump = 0 // to prevent spammage
@@ -162,7 +162,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_delay = 4
-	extra_damage = 37
+	extra_damage = DAMAGE_BOLTACTION_RIFLE
 	extra_penetration = 0.20
 	extra_speed = 800
 	spread = 0
@@ -189,7 +189,6 @@
 	desc = "A militarized hunting rifle rechambered to 7.62. This one has had the barrel floated with shims to increase accuracy."
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/remington
 	fire_delay = 2
-	extra_damage = 39
 	extra_speed = 800
 	force = 18
 
@@ -212,7 +211,7 @@
 	item_state = "paciencia"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/paciencia
 	fire_delay = 9
-	extra_damage = 50 //hits like an AMR
+	extra_damage = DAMAGE_BOLTACTION_RIFLE+5
 	extra_penetration = 0.2
 	zoomable = TRUE
 	zoom_amt = 10
@@ -237,7 +236,7 @@
 	icon_state = "mosin"
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
-	extra_damage = 37
+	extra_damage = DAMAGE_BOLTACTION_RIFLE-2
 	extra_speed = 600
 	fire_delay = 3
 	force = 18
@@ -259,7 +258,7 @@
 	icon_state = "enfield2"
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
-	extra_damage = 40
+	extra_damage = DAMAGE_BOLTACTION_RIFLE
 	extra_speed = 600
 	fire_delay = 1
 	slowdown = 0.35
@@ -328,7 +327,7 @@
 	item_state = "amr"
 	mag_type = /obj/item/ammo_box/magazine/amr
 	fire_delay = 12 //Heavy round, tiny bit slower
-	extra_damage = 50
+	extra_damage = DAMAGE_BOLTACTION_RIFLE+4
 	extra_penetration = 0.6
 	recoil = 1
 	spread = 0
