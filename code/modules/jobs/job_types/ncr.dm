@@ -190,7 +190,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncr = 1,
 		/obj/item/megaphone = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
 		/obj/item/lighter = 1,
 		/obj/item/reagent_containers/food/snacks/grown/tobacco/dried = 1,
 		/obj/item/melee/onehanded/knife/trench = 1
@@ -263,7 +263,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/magazine/m9mmds = 3,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/ammo_box/magazine/garand308 = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/storage/box/ration/menu_five = 1
 		)
 
@@ -274,7 +274,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
 
 // SERGEANT
@@ -305,8 +304,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	neck = /obj/item/storage/belt/holster/legholster
 	backpack_contents = list(
-		/obj/item/storage/bag/money/small/ncrofficers = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 1
+		/obj/item/storage/bag/money/small/ncrofficers = 1
 		)
 
 /datum/outfit/loadout/sergeantrifleman
@@ -315,7 +313,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	head = /obj/item/clothing/head/f13/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle/extended = 2,
+		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		/obj/item/storage/box/ration/menu_one = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1
 		)
@@ -332,15 +330,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/grenade/smokebomb = 2,
 		/obj/item/melee/onehanded/knife/trench = 1
 		)
-
-/datum/outfit/job/ncr/f13sergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 // REPRESENATIVE
 
@@ -456,7 +445,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/storage/survivalkit_aid_adv = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 2,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/ammo_box/c4570 = 3
 		)
@@ -800,7 +789,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/healthanalyzer/advanced = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 2,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/clothing/glasses/hud/health = 1,
 		/obj/item/storage/box/ration/menu_ten = 1
 		)
@@ -882,13 +871,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/attachments/scope = 1,
 		/obj/item/storage/box/ration/menu_four = 1
 		)
-
-
-/datum/outfit/job/ncr/f13corporal/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	. = ..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 // TROOPER
 
@@ -988,9 +970,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	. = ..()
 	if(visualsOnly)
 		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 
 // OFF-DUTY
 
