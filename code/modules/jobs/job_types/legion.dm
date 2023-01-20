@@ -1073,7 +1073,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	title = "Camp Duty"
 	flag = F13CAMPDUTY
 	display_order = JOB_DISPLAY_ORDER_CAMPDUTY
-	total_positions = 2
+	total_positions = 3
 	spawn_positions = 2
 	description = "A legionnaire assigned to camp duty ranges in purposes. Duties may vary from cleaning up, watching the slaves or helping the Forgemaster in the Forge."
 	supervisors = "Officers first, then warriors."
