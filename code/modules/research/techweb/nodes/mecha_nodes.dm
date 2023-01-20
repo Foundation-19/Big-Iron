@@ -117,8 +117,7 @@
 	prereq_ids = list("adv_mecha", "bluespace_power")
 	design_ids = list(/*"mech_energy_relay",*/ "mech_ccw_armor", "mech_proj_armor", "mech_generator_nuclear")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
- ## Uncomment it after projectiles don't runtime anymore
+	
 /datum/techweb_node/mech_scattershot
 	id = "mecha_tools"
 	display_name = "Exosuit Weapon (LBX AC 10 \"Scattershot\")"
