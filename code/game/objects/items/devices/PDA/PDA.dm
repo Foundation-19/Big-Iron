@@ -27,7 +27,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 	item_flags = NOBLUDGEON
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_ID | ITEM_SLOT_GLOVES
-	armor = ARMOR_VALUE_GENERIC_ITEM
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 	//Main variables
@@ -922,7 +922,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 	// Log in the talk log
 	user.log_talk(message, LOG_PDA, tag="PDA: [initial(name)] to [target_text] (BLOCKED:[string_blocked])")
 	if (!silent)
-		playsound(src, 'modular_coyote/sound/pipsounds/pipmsgsend.ogg', 30, 1)
+		playsound(src, 'sound/machines/terminal_success.ogg', 15, 1)
 	// Reset the photo
 	picture = null
 	last_text = world.time
@@ -932,7 +932,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 /obj/item/pda/proc/receive_message(datum/signal/subspace/pda/signal)
 	tnote += "<i><b>&larr; From <a href='byond://?src=[REF(src)];choice=Message;target=[REF(signal.source)]'>[signal.data["name"]]</a> ([signal.data["job"]]):</b></i> <a href='byond://?src=[REF(src)];choice=toggle_block;target=[signal.data["name"]]'>(BLOCK/UNBLOCK)</a><br>[signal.format_message()]<br>"
 	if (!silent)
-		playsound(src, 'modular_coyote/sound/pipsounds/pipmsgget.ogg', 80, 1)
+		playsound(src, 'sound/machines/twobeep.ogg', 50, 1)
 		audible_message("[icon2html(src, hearers(src))] *[ttone]*", null, 3)
 	//Search for holder of the PDA.
 	var/mob/living/L = null
