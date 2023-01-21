@@ -240,79 +240,22 @@
 
 
 //Plasma musket.
-/obj/item/gun/energy/rifle/plasma
-	name = "plasma musket"
+/obj/item/gun/ballistic/rifle/hobo/plasmacaster
+	name = "Plasma Musket"
 	desc = "The cooling looks dubious and is that a empty can of beans used as a safety valve? Pray the plasma goes towards the enemy and not your face when you pull the trigger."
 	icon_state = "plasmamusket"
 	item_state = "plasmamusket"
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	slot_flags = ITEM_SLOT_BACK
-	can_automatic = FALSE
-	slowdown = 0.8
+	mag_type = /obj/item/ammo_box/magazine/internal/plasmacaster
 	fire_delay = 20
-	spread = 0
-	force = 15
-	flags_1 =  CONDUCT_1
-	casing_ejector = FALSE
-	var/recentpump = 0
-	spawnwithmagazine = TRUE
-	var/pump_sound = 'sound/weapons/shotgunpump.ogg'
-	fire_sound = 'sound/f13weapons/shotgun.ogg'
-	var/pump_stam_cost = 2
-
-/obj/item/gun/energy/rifle/plasma/process_chamber(mob/living/user, empty_chamber = 0)
-	return ..() //changed argument value
-
-/obj/item/gun/energy/rifle/plasma/can_shoot()
-	return !!chambered?.BB
-
-/obj/item/gun/energy/rifle/plasma/attack_self(mob/living/user)
-	if(recentpump > world.time)
-		return
-	if(IS_STAMCRIT(user))//CIT CHANGE - makes pumping shotguns impossible in stamina softcrit
-		to_chat(user, "<span class='warning'>You're too exhausted for that.</span>")//CIT CHANGE - ditto
-		return//CIT CHANGE - ditto
-	pump(user, TRUE)
-	if(HAS_TRAIT(user, TRAIT_FAST_PUMP))
-		recentpump = world.time + 2
-	else
-		recentpump = world.time + 10
-		if(istype(user))//CIT CHANGE - makes pumping shotguns cost a lil bit of stamina.
-			user.adjustStaminaLossBuffered(pump_stam_cost) //CIT CHANGE - DITTO. make this scale inversely to the strength stat when stats/skills are added
-	return
-
-/obj/item/gun/energy/rifle/plasma/blow_up(mob/user)
-	. = 0
-	if(chambered && chambered.BB)
-		process_fire(user, user, FALSE)
-		. = 1
-
-/obj/item/gun/energy/rifle/plasma/proc/pump(mob/M, visible = TRUE)
-	if(visible)
-		M.visible_message("<span class='warning'>[M] racks [src].</span>", "<span class='warning'>You rack [src].</span>")
-	playsound(M, pump_sound, 60, 1)
-	pump_unload(M)
-	pump_reload(M)
-	update_icon()	//I.E. fix the desc
-	return 1
-/obj/item/gun/energy/rifle/plasma/proc/pump_unload(mob/M)
-	if(chambered)//We have a shell in the chamber
-		chambered.forceMove(drop_location())//Eject casing
-		chambered.bounce_away()
-		chambered = null
-
-/obj/item/gun/energy/rifle/plasma/proc/pump_reload(mob/M)
-	if(!magazine.ammo_count())
-		return 0
-	var/obj/item/ammo_casing/AC = magazine.get_round() //load next casing.
-	chambered = AC
-
-/obj/item/gun/energy/rifle/plasma/examine(mob/user)
-	. = ..()
-	if (chambered)
-		. += "A [chambered.BB ? "live" : "spent"] one is in the chamber."
-
+	var/bolt_open = FALSE
+	dryfire_sound = 'sound/f13weapons/noammoenergy.ogg'
+	dryfire_text = "*power failure*"
+	scope_state = "scope_medium"
+	scope_x_offset = 9
+	scope_y_offset = 20
+	fire_sound = 'sound/f13weapons/lasmusket_fire.ogg'
+	pump_sound = 'sound/f13weapons/lasmusket_crank.ogg'
+	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
 
 //Destroyer carbine										Keywords: 9mm, Automatic, 30 rounds, Long barrel, Suppressor
