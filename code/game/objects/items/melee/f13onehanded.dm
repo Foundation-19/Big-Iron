@@ -132,6 +132,20 @@
 	w_class = WEIGHT_CLASS_NORMAL
 
 
+/obj/item/melee/onehanded/chinesesword //[low damage, low wounding, very high block]
+	name = "chinese officer's sword"
+	desc = "A sword usually issued to chinese officers during the great war. Despite being ntended for ceremonial use, it's still very well made and functional. Not very heavy but in trained hands its an incredibly agile weapon."
+	icon = 'icons/fallout/objects/melee/melee.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
+	icon_state = "chinasword"
+	item_state = "spathasmith" //placeholder
+	force = 30 //worse than scrap sabre
+	wound_bonus = WOUNDING_BONUS_MODEST
+	block_chance = 25 //perfectly balanced
+	wound_bonus = 10
+	armour_penetration = 0.25 //high boost to pen from aiming for weakpoints
+
 
 ////////////
 // KNIVES //
@@ -677,8 +691,8 @@
 	if(ishuman(user) && slot == SLOT_GLOVES)
 		ADD_TRAIT(user, TRAIT_UNARMED_WEAPON, "glove")
 		if(HAS_TRAIT(user, TRAIT_UNARMED_WEAPON))
-			H.dna.species.punchdamagehigh = force + 8 //The +8 damage is what brings up your punch damage to the unarmed weapon's force fully
-			H.dna.species.punchdamagelow = force + 8
+			H.dna.species.punchdamagehigh = force
+			H.dna.species.punchdamagelow = force
 			H.dna.species.attack_sound = hitsound
 			if(sharpness == SHARP_POINTY || sharpness ==  SHARP_EDGED)
 				H.dna.species.attack_verb = pick("slash","slice","rip","tear","cut","dice")
@@ -687,11 +701,11 @@
 	if(ishuman(user) && slot != SLOT_GLOVES && !H.gloves)
 		REMOVE_TRAIT(user, TRAIT_UNARMED_WEAPON, "glove")
 		if(!HAS_TRAIT(user, TRAIT_UNARMED_WEAPON))
-			H.dna.species.punchdamagehigh = 1
-			H.dna.species.punchdamagelow = 10
+			H.dna.species.punchdamagehigh = 10
+			H.dna.species.punchdamagelow = 1
 		if(HAS_TRAIT(user, TRAIT_IRONFIST))
-			H.dna.species.punchdamagehigh = 4
-			H.dna.species.punchdamagelow = 11
+			H.dna.species.punchdamagehigh = 11
+			H.dna.species.punchdamagelow = 4
 		H.dna.species.attack_sound = 'sound/weapons/punch1.ogg'
 		H.dna.species.attack_verb = "punch"
 

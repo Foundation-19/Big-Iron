@@ -670,6 +670,7 @@
 				/obj/item/melee/onehanded/club,
 				/obj/item/melee/onehanded/knife/cosmicdirty,
 				/obj/item/melee/onehanded/machete,
+				/obj/item/melee/onehanded/chinesesword,
 				/obj/item/melee/unarmed/brass,
 				/obj/item/melee/unarmed/brass/spiked,
 				/obj/item/twohanded/baseball,
@@ -689,6 +690,7 @@
 				/obj/item/twohanded/spear,
 				/obj/item/twohanded/baseball/louisville,
 				/obj/item/twohanded/fireaxe,
+				/obj/item/melee/onehanded/chinesesword,
 				/obj/item/twohanded/fireaxe/bmprsword,
 				/obj/item/melee/unarmed/sappers,
 				/obj/item/twohanded/sledgehammer/simple,
@@ -926,7 +928,14 @@
 				/obj/effect/spawner/bundle/f13/revolverm29alt,
 				/obj/effect/spawner/bundle/f13/revolver44,
 				/obj/effect/spawner/bundle/f13/revolverm29snub
-	)
+				)
+
+/obj/effect/spawner/lootdrop/f13/weapon/pistol10mmvariant //more N99s than type-17s, but you still have the type-17
+	name = "random spawner for 10mm pistols"
+	loot = list(/obj/effect/spawner/bundle/f13/revolverm29,
+				/obj/effect/spawner/bundle/f13/n99 = 3,
+				/obj/effect/spawner/bundle/f13/type17 = 1,
+				)
 
 /*	------------------------------------------------
 	-------------NEW TIER'D GUN WEAPON SPAWNERS----------------
@@ -951,7 +960,7 @@
 				/obj/effect/spawner/bundle/f13/mosin,
 				/obj/effect/spawner/bundle/f13/widowmaker,
 				/obj/effect/spawner/bundle/f13/varmint,
-				/obj/effect/spawner/bundle/f13/n99,
+				/obj/effect/spawner/lootdrop/f13/weapon/pistol10mmvariant,
 				/obj/effect/spawner/bundle/f13/m1911,
 				/obj/effect/spawner/bundle/f13/remington,
 				/obj/effect/spawner/bundle/f13/revolver45,
@@ -1066,6 +1075,13 @@
 	name = "10mm pistol and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/pistol/n99,
+				/obj/item/ammo_box/magazine/m10mm_adv/simple/
+				)
+
+/obj/effect/spawner/bundle/f13/type17
+	name = "chinese 10mm pistol and ammo spawner"
+	items = list(
+			/obj/item/gun/ballistic/automatic/pistol/type17,
 				/obj/item/ammo_box/magazine/m10mm_adv/simple/
 				)
 
