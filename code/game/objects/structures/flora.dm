@@ -326,7 +326,7 @@
 /obj/item/kirbyplants/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/tactical)
-	addtimer(CALLBACK(src, /datum.proc/_AddElement, list(/datum/element/beauty, 500)), 0)
+//	addtimer(CALLBACK(src, /datum.proc/_AddElement, list(/datum/element/beauty, 500)), 0) MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate on 2023-01-20
 	AddComponent(/datum/component/two_handed, require_twohands=TRUE, force_unwielded=10, force_wielded=10)
 
 /obj/item/kirbyplants/random

@@ -347,7 +347,7 @@
 			add_event(null, "charge", /datum/mood_event/overcharged)
 		if(ETHEREAL_CHARGE_OVERLOAD to ETHEREAL_CHARGE_DANGEROUS)
 			add_event(null, "charge", /datum/mood_event/supercharged)
-
+/* MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate on 2023-01-20
 /datum/component/mood/proc/update_beauty(area/A)
 	if(A.outdoors) //if we're outside, we don't care.
 		clear_event(null, "area_beauty")
@@ -369,7 +369,7 @@
 			add_event(null, "area_beauty", /datum/mood_event/goodroom)
 		if(BEAUTY_LEVEL_GREAT to INFINITY)
 			add_event(null, "area_beauty", /datum/mood_event/greatroom)
-
+*/
 ///Called when parent is revived.
 /datum/component/mood/proc/on_revive(datum/source, full_heal)
 	START_PROCESSING(SSobj, src)
