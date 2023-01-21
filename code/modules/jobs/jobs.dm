@@ -94,7 +94,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Legion Recruit Decanus",
 "Recruit Legionnaire",
 "Legion Explorer",
-"Camp Follower",
+"Camp Duty",
 "Legion Slave",
 
 "Mayor",
@@ -181,7 +181,7 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Veteran Legionnaire",
 	"Prime Legionnaire",
 	"Recruit Legionnaire",
-	"Camp Follower",
+	"Camp Duty",
 	"Legion Slave"
 ))
 
