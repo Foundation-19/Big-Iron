@@ -570,7 +570,7 @@ Raider
 	backpack_contents =  list(/obj/item/reagent_containers/medspray/synthflesh = 2,
 							/obj/item/smelling_salts = 1,
 							/obj/item/healthanalyzer = 1,
-							/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
+							/obj/item/gun/energy/laser/rechargerrifle = 1,
 							/obj/item/reagent_containers/glass/bottle/epinephrine = 2,
 							/obj/item/storage/backpack/duffelbag/med/surgery = 1,
 							/obj/item/paper_bin = 1,
