@@ -12,7 +12,7 @@
 	var/obj/item/gun/ballistic/m2flamethrower/gun
 	var/armed = 0 //whether the gun is attached, 0 is attached, 1 is the gun is wielded.
 	var/overheat = 0
-	var/overheat_max = 12
+	var/overheat_max = 6
 	var/heat_diffusion = 1
 
 /obj/item/m2flamethrowertank/Initialize()
@@ -98,7 +98,7 @@
 	icon_state = "m2_flamethrower_on"
 	item_state = "m2flamethrower"
 	flags_1 = CONDUCT_1
-	slowdown = 0.3
+	slowdown = 0.5
 	slot_flags = null
 	w_class = WEIGHT_CLASS_HUGE
 	custom_materials = null

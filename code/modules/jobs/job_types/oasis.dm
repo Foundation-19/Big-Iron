@@ -1093,8 +1093,8 @@ Mayor
 
 	outfit = /datum/outfit/job/oasis/f13assist
 
-	access = list(ACCESS_BAR, ACCESS_CARGO_BOT)
-	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT)
+	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_TOWN_MERCH)
+	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_TOWN_MERCH)
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
