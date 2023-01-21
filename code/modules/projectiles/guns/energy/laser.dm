@@ -416,6 +416,24 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan/focused)
 	fire_delay = 5
 
+//worse than the recharger pistol as per FNV, hobo-tier
+//it isnt the same as the one from FNV, sprite is different
+//8 shots, bulky, but infinite ammo, good for mob killing
+/obj/item/gun/energy/laser/rechargerrifle
+	name = "recharger rifle"
+	desc = "A locally produced copy of the recharger rifle. It's a bulky first-generation weapon designed to replenish its energy using radioactive decay."
+	icon = 'icons/fallout/objects/guns/longguns.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon_state = "rechargerrifle"
+	item_state = "rechargerrifle"
+	icon_prefix = "rechargerrifle"
+	can_remove = 0
+	can_charge = 0
+	selfcharge = 1
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/rechargerrifle/hitscan)
+	cell_type = /obj/item/stock_parts/cell/ammo/breeder/small
+
 //Ultracite Laser rifle
 /obj/item/gun/energy/laser/ultra_rifle
 	name = "\improper Ultracite laser rifle"
