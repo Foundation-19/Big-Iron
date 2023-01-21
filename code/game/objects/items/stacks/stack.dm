@@ -44,7 +44,7 @@
 
 /obj/item/stack/grind_requirements()
 	if(is_cyborg)
-		to_chat(usr, "<span class='danger'>[src] is electronically synthesized in your chassis and can't be ground up!</span>")
+		to_chat(usr, span_danger("[src] is electronically synthesized in your chassis and can't be ground up!"))
 		return
 	return TRUE
 
@@ -63,13 +63,18 @@
 			mats_per_unit[SSmaterials.GetMaterialRef(i)] = in_process_mat_list[i]
 			custom_materials[i] *= amount
 	. = ..()
+	var/static/list/loc_connections = list(
+		COMSIG_ATOM_ENTERED = .proc/on_movable_entered_occupied_turf,
+	)
+	AddElement(/datum/element/connect_loc, loc_connections)
+
 	if(merge)
 		for(var/obj/item/stack/item_stack in loc)
 			if(item_stack == src)
 				continue
 			if(can_merge(item_stack))
 				INVOKE_ASYNC(src, .proc/merge_without_del, item_stack)
-				if(is_zero_amount(delete_if_zero = FALSE))
+				if(zero_amount())
 					return INITIALIZE_HINT_QDEL
 	var/list/temp_recipes = get_main_recipes()
 	recipes = temp_recipes.Copy()
@@ -82,10 +87,6 @@
 					recipes += temp
 	update_weight()
 	update_icon()
-	var/static/list/loc_connections = list(
-		COMSIG_ATOM_ENTERED = .proc/on_movable_entered_occupied_turf,
-	)
-	AddElement(/datum/element/connect_loc, loc_connections)
 
 /obj/item/stack/proc/get_main_recipes()
 	return list()//empty list
@@ -141,7 +142,7 @@
 		. += "There are [get_amount()] in the stack."
 	else
 		. += "There is [get_amount()] in the stack."
-	. += "<span class='notice'>Alt-click to take a custom amount.</span>"
+	. += span_notice("Alt-click to take a custom amount.")
 
 /obj/item/stack/proc/get_amount()
 	if(is_cyborg)
@@ -233,7 +234,7 @@
 			return
 		if (R.time)
 			var/adjusted_time = 0
-			usr.visible_message("<span class='notice'>[usr] starts building [R.title].</span>", "<span class='notice'>You start building [R.title]...</span>")
+			usr.visible_message(span_notice("[usr] starts building [R.title]."), span_notice("You start building [R.title]..."))
 			if(HAS_TRAIT(usr, R.trait_booster))
 				adjusted_time = (R.time * R.trait_modifier)
 			else
@@ -294,22 +295,22 @@
 /obj/item/stack/proc/building_checks(datum/stack_recipe/R, multiplier)
 	if (get_amount() < R.req_amount*multiplier)
 		if (R.req_amount*multiplier>1)
-			to_chat(usr, "<span class='warning'>You haven't got enough [src] to build \the [R.req_amount*multiplier] [R.title]\s!</span>")
+			to_chat(usr, span_warning("You haven't got enough [src] to build \the [R.req_amount*multiplier] [R.title]\s!"))
 		else
-			to_chat(usr, "<span class='warning'>You haven't got enough [src] to build \the [R.title]!</span>")
+			to_chat(usr, span_warning("You haven't got enough [src] to build \the [R.title]!"))
 		return FALSE
 	var/turf/T = get_turf(usr)
 
 	var/obj/D = R.result_type
 	if(R.window_checks && !valid_window_location(T, initial(D.dir) == FULLTILE_WINDOW_DIR ? FULLTILE_WINDOW_DIR : usr.dir))
-		to_chat(usr, "<span class='warning'>The [R.title] won't fit here!</span>")
+		to_chat(usr, span_warning("The [R.title] won't fit here!"))
 		return FALSE
 	if(R.one_per_turf && (locate(R.result_type) in T))
-		to_chat(usr, "<span class='warning'>There is another [R.title] here!</span>")
+		to_chat(usr, span_warning("There is another [R.title] here!"))
 		return FALSE
 	if(R.on_floor)
 		if(!isfloorturf(T) && !isgroundturf(T))
-			to_chat(usr, "<span class='warning'>\The [R.title] must be constructed on the floor!</span>")
+			to_chat(usr, span_warning("\The [R.title] must be constructed on the floor!"))
 			return FALSE
 		for(var/obj/AM in T)
 			if(istype(AM,/obj/structure/grille))
@@ -321,7 +322,7 @@
 				if(!W.fulltile)
 					continue
 			if(AM.density)
-				to_chat(usr, "<span class='warning'>Theres a [AM.name] here. You cant make a [R.title] here!</span>")
+				to_chat(usr, span_warning("Theres a [AM.name] here. You cant make a [R.title] here!"))
 				return FALSE
 	if(R.placement_checks)
 		switch(R.placement_checks)
@@ -330,23 +331,23 @@
 				for(var/direction in GLOB.cardinals)
 					step = get_step(T, direction)
 					if(locate(R.result_type) in step)
-						to_chat(usr, "<span class='warning'>\The [R.title] must not be built directly adjacent to another!</span>")
+						to_chat(usr, span_warning("\The [R.title] must not be built directly adjacent to another!"))
 						return FALSE
 			if(STACK_CHECK_ADJACENT)
 				if(locate(R.result_type) in range(1, T))
-					to_chat(usr, "<span class='warning'>\The [R.title] must be constructed at least one tile away from others of its type!</span>")
+					to_chat(usr, span_warning("\The [R.title] must be constructed at least one tile away from others of its type!"))
 					return FALSE
 	return TRUE
 
 /obj/item/stack/use(used, transfer = FALSE, check = TRUE) // return 0 = borked; return 1 = had enough
-	if(check && is_zero_amount(delete_if_zero = TRUE))
+	if(check && zero_amount())
 		return FALSE
 	if (is_cyborg)
 		return source.use_charge(used * cost)
 	if (amount < used)
 		return FALSE
 	amount -= used
-	if(check && is_zero_amount(delete_if_zero = TRUE))
+	if(check && zero_amount())
 		return TRUE
 	if(length(mats_per_unit))
 		var/temp_materials = custom_materials.Copy()
@@ -361,30 +362,23 @@
 	if(get_amount() < amount)
 		if(singular_name)
 			if(amount > 1)
-				to_chat(user, "<span class='warning'>You need at least [amount] [singular_name]\s to do this!</span>")
+				to_chat(user, span_warning("You need at least [amount] [singular_name]\s to do this!"))
 			else
-				to_chat(user, "<span class='warning'>You need at least [amount] [singular_name] to do this!</span>")
+				to_chat(user, span_warning("You need at least [amount] [singular_name] to do this!"))
 		else
-			to_chat(user, "<span class='warning'>You need at least [amount] to do this!</span>")
+			to_chat(user, span_warning("You need at least [amount] to do this!"))
 
 		return FALSE
 
 	return TRUE
 
-/**
- * Returns TRUE if the item stack is the equivalent of a 0 amount item.
- *
- * Also deletes the item if delete_if_zero is TRUE and the stack does not have
- * is_cyborg set to true.
- */
-/obj/item/stack/proc/is_zero_amount(delete_if_zero = TRUE)
+/obj/item/stack/proc/zero_amount()
 	if(is_cyborg)
 		return source.energy < cost
 	if(amount < 1)
-		if(delete_if_zero)
-			qdel(src)
-		return TRUE
-	return FALSE
+		qdel(src)
+		return 1
+	return 0
 
 /obj/item/stack/proc/add(amount)
 	if (is_cyborg)
@@ -403,13 +397,16 @@
  *
  * Arguments:
  * - [check][/obj/item/stack]: The stack to check for mergeability.
+ * - [inhand][boolean]: Whether or not the stack to check should act like it's in a mob's hand.
  */
-/obj/item/stack/proc/can_merge(obj/item/stack/check)
+/obj/item/stack/proc/can_merge(obj/item/stack/check, inhand = FALSE)
 	if(!istype(check, merge_type))
 		return FALSE
-	if(mats_per_unit != check.mats_per_unit)
+	if(mats_per_unit ~! check.mats_per_unit) // ~! in case of lists this operator checks only keys, but not values
 		return FALSE
 	if(is_cyborg) // No merging cyborg stacks into other stacks
+		return FALSE
+	if(ismob(loc) && !inhand) // no merging with items that are on the mob
 		return FALSE
 	return TRUE
 
@@ -436,20 +433,20 @@
 	else
 		transfer = min(transfer, (limit ? limit : target_stack.max_amount) - target_stack.amount)
 	if(pulledby)
-		INVOKE_ASYNC(pulledby, /atom/movable.proc/start_pulling, target_stack)
+		INVOKE_ASYNC(pulledby, /atom/movable/.proc/start_pulling, target_stack)
 	target_stack.copy_evidences(src)
 	use(transfer, transfer = TRUE, check = FALSE)
 	target_stack.add(transfer)
+	if(target_stack.mats_per_unit != mats_per_unit) // We get the average value of mats_per_unit between two stacks getting merged
+		var/list/temp_mats_list = list() // mats_per_unit is passed by ref into this coil, and that same ref is used in other places. If we didn't make a new list here we'd end up contaminating those other places, which leads to batshit behavior
+		for(var/mat_type in target_stack.mats_per_unit)
+			temp_mats_list[mat_type] = (target_stack.mats_per_unit[mat_type] * (target_stack.amount - transfer) + mats_per_unit[mat_type] * transfer) / target_stack.amount
+		target_stack.mats_per_unit = temp_mats_list
 	return transfer
 
-/**
- * Merges as much of src into target_stack as possible. If present, the limit arg overrides target_stack.max_amount for transfer.
- *
- * This proc deletes src if the remaining amount after the transfer is 0.
- */
 /obj/item/stack/proc/merge(obj/item/stack/target_stack, limit)
 	. = merge_without_del(target_stack, limit)
-	is_zero_amount(delete_if_zero = TRUE)
+	zero_amount()
 
 /// Signal handler for connect_loc element. Called when a movable enters the turf we're currently occupying. Merges if possible.
 /obj/item/stack/proc/on_movable_entered_occupied_turf(datum/source, atom/movable/arrived)
@@ -469,9 +466,9 @@
 
 /obj/item/stack/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(user.get_inactive_held_item() == src)
-		if(is_zero_amount(delete_if_zero = TRUE))
+		if(zero_amount())
 			return
-		return split_stack(user,1)
+		return change_stack(user,1)
 	else
 		. = ..()
 
@@ -482,7 +479,7 @@
 	if(is_cyborg)
 		return
 	else
-		if(is_zero_amount(delete_if_zero = TRUE))
+		if(zero_amount())
 			return
 		//get amount from user
 		var/max = get_amount()
@@ -492,17 +489,11 @@
 		if(stackmaterial == null || stackmaterial <= 0 || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
 			return TRUE
 		else
-			split_stack(user, stackmaterial)
-			to_chat(user, "<span class='notice'>You take [stackmaterial] sheets out of the stack</span>")
+			change_stack(user, stackmaterial)
+			to_chat(user, span_notice("You take [stackmaterial] sheets out of the stack"))
 		return TRUE
 
-/** Splits the stack into two stacks.
- *
- * Arguments:
- * - [user][/mob]: The mob splitting the stack.
- * - amount: The number of units to split from this stack.
- */
-/obj/item/stack/proc/split_stack(mob/user, amount)
+/obj/item/stack/proc/change_stack(mob/user, amount)
 	if(!use(amount, TRUE, FALSE))
 		return FALSE
 	var/obj/item/stack/F = new type(user? user : drop_location(), amount, FALSE)
@@ -513,14 +504,13 @@
 			F.forceMove(user.drop_location())
 		add_fingerprint(user)
 		F.add_fingerprint(user)
-
-	is_zero_amount(delete_if_zero = TRUE)
+	zero_amount()
 
 /obj/item/stack/attackby(obj/item/W, mob/user, params)
 	if(istype(W, merge_type))
 		var/obj/item/stack/S = W
 		if(merge(S))
-			to_chat(user, "<span class='notice'>Your [S.name] stack now contains [S.get_amount()] [S.singular_name]\s.</span>")
+			to_chat(user, span_notice("Your [S.name] stack now contains [S.get_amount()] [S.singular_name]\s."))
 	else
 		. = ..()
 
