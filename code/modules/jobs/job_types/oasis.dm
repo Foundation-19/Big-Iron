@@ -32,7 +32,7 @@ Mayor
 	supervisors = "Oasis"
 	description = "You are the benevolent tyrant of Oasis, chosen by the people to represent and lead them. Pass laws to protect your citizens, distribute town funds and make deals with the powers present within the Region to better the people, and yourself, of course."
 	selection_color = "#d7b088"
-	exp_requirements = 1500
+	exp_requirements = 300
 
 	outfit = /datum/outfit/job/den/f13mayor
 	
@@ -138,7 +138,7 @@ Mayor
 	supervisors = "the Mayor"
 	description = "You are the Mayor's assistant, you help them with anything and everything they require and make sure trivial problems do not concern them. You handle clerical work, hear complaints, and set meetings. An efficient and smooth running town means a happy mayor."
 	selection_color = "#d7b088"
-	exp_requirements = 800
+	exp_requirements = 300
 
 	outfit = /datum/outfit/job/den/f13secretary
 
@@ -227,7 +227,7 @@ Mayor
 	supervisors = "the Mayor"
 	description = "You are the Mayor's best friend, you helped them get where they are. While they handle civil matters, you've been rewarded with more hands-on work, as preferred. With your loyal patrolmen, you maintain your claim to authority by keeping the peace, and protecting the citizens from threats within and without. Never leave Oasis undefended, and don't let its people die out. You have nowhere left to go, if this town falls, so will you."
 	selection_color = "#d7b088"
-	exp_requirements = 1500
+	exp_requirements = 300
 
 	outfit = /datum/outfit/job/den/f13sheriff
 
@@ -291,8 +291,6 @@ Mayor
 	spawn_positions = 5
 	supervisors = "the Chief of Police"
 	description = "You've passed the training and tests to join the OPD, and your loyalty to the Chief is absolute - this is your new home, your family. This oasis of civilization will not fall as long as you breathe. Protect its citizens and property, for that is your new purpose."
-	exp_type = EXP_TYPE_FALLOUT
-	exp_requirements = 600
 
 	outfit = /datum/outfit/job/oasis/f13deputy
 
@@ -509,8 +507,8 @@ Mayor
 		/datum/outfit/loadout/nurse
 		)
 	
-	access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN)
-	minimal_access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN)
+	access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_CIV)
+	minimal_access = list(ACCESS_CLONING, ACCESS_TOWN_DOC, ACCESS_PUBLIC, ACCESS_TOWN, ACCESS_TOWN_CIV)
 	
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -592,9 +590,9 @@ Mayor
 
 /datum/outfit/loadout/nurse
 	name = "Nurse"
-	head = /obj/item/clothing/head/nursehat
-	uniform = /obj/item/clothing/under/rank/nursesuit
-	shoes = /obj/item/clothing/shoes/sneakers/white
+	head = /obj/item/clothing/head/fashion/hat_nurse
+	uniform = /obj/item/clothing/under/f13/fashion/nurse_uniform
+	shoes = /obj/item/clothing/shoes/laceup/alternative
 	backpack_contents = list(
 		/obj/item/flashlight/pen = 1,
 		/obj/item/reagent_containers/food/snacks/lollipop = 5,
@@ -1087,16 +1085,16 @@ Mayor
 /datum/job/oasis/f13assistant
 	title = "Shop Assistant"
 	flag = F13ASSIST
+	display_order = JOB_DISPLAY_ORDER_SHOPKEEPER
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Shopkeeper"
 	description = "Sometimes you need a cog in the machine to keep it turning. You are the cog, capitalism is the machine, and the shopkeeper turns the handle. In return for being taught the ways of commerce and crafting, you help keep the shop orderly and customers happy."
-	exp_requirements = 600
 
 	outfit = /datum/outfit/job/oasis/f13assist
 
-	access = list(ACCESS_BAR, ACCESS_CARGO_BOT)
-	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT)
+	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_TOWN_MERCH)
+	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_TOWN_MERCH)
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -1151,7 +1149,6 @@ Mayor
 	spawn_positions = 1
 	supervisors = "Capitalism"
 	description = "The greed of the United States survived better than its people. You are an organ of this greed. Ensure its continuation."
-	exp_requirements = 800
 	
 	outfit = /datum/outfit/job/den/f13shopkeeper
 

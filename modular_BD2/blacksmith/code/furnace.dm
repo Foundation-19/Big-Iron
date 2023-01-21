@@ -56,6 +56,7 @@
 				workpiece.icon_state = "hot_ingot"
 				workpiece.set_light_on(TRUE)
 				I.on_attack_hand(user)
+				return
 		else
 			to_chat(user, "The furnace isn't working!.")
 	if(istype(I, /obj/item/stack/ore))

@@ -5,8 +5,23 @@
 
 /datum/gear/shoes/laceup
 	name = "laceup shoes"
-	path = /obj/item/clothing/shoes/laceup
-	cost = 2
+	path = /obj/item/clothing/shoes/laceup/alternative
+	cost = 1
+
+/datum/gear/shoes/cowboy_angeleyes
+	name = "elegant cowboy boots"
+	path = /obj/item/clothing/shoes/f13/military/fashion/cowboy_boots
+	cost = 1
+
+/datum/gear/shoes/cowboy_blondie
+	name = "dusty cowboy boots"
+	path = /obj/item/clothing/shoes/f13/military/fashion/cowboy_boots/blondie
+	cost = 1
+
+/datum/gear/shoes/cowboy_tuco
+	name = "filthy leather shoes"
+	path = /obj/item/clothing/shoes/f13/military/fashion/cowboy_boots/tuco
+	cost = 1
 
 /datum/gear/shoes/workboots
 	name = "work boots"
@@ -64,9 +79,9 @@
 	name = "worn boots"
 	path = /obj/item/clothing/shoes/f13/explorer
 
-/datum/gear/shoes/romansandals
-	name = "roman sandals"
-	path = /obj/item/clothing/shoes/roman
+/datum/gear/shoes/leathersandals
+	name = "leather sandals"
+	path = /obj/item/clothing/shoes/sandals_leather
 
 /datum/gear/shoes/cowboy
 	name = "cowboy boots"

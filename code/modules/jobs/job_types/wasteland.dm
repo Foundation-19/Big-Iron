@@ -16,8 +16,6 @@
 	description = "You are no common raider or tribal settler, for you are a Great Khan. Your ancestry is that of fierce warriors and noble chieftans, whose rites and sagas tell of blood soaked battlefields and great sacrifice for your tribe. At least, this was once the case: after the massacre at Bitter Springs by the NCR, your people have lost much of their strength - now you and many other Khans travel west of Vegas through Red Rock Canyon in the hopes of settling in the region of Yuma."
 	supervisors = "your gang leadership"
 	selection_color = "#ff915e"
-	exp_requirements = 1000
-	exp_type = EXP_TYPE_FALLOUT
 
 	outfit = /datum/outfit/job/wasteland/f13pusher
 
@@ -552,8 +550,8 @@ Raider
 	l_hand = /obj/item/gun/ballistic/automatic/pistol/n99
 	belt = /obj/item/storage/belt
 	backpack_contents = list(
-		/obj/item/stack/sheet/metal = 50,
-		/obj/item/stack/sheet/mineral/wood = 50,
+		/obj/item/stack/sheet/metal/fifty = 1,
+		/obj/item/stack/sheet/mineral/wood/fifty = 1,
 		/obj/item/pickaxe/mini = 1,
 		/obj/item/toy/crayon/spraycan = 1,
 		/obj/item/cultivator = 1,
@@ -701,7 +699,6 @@ Raider
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 	ADD_TRAIT(H, TRAIT_AUTO_DRAW, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	H.grant_language(/datum/language/tribal)
 	var/list/recipes = list(
 		/datum/crafting_recipe/tribal_pa,

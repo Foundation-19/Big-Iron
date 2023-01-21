@@ -128,7 +128,7 @@
 	T.air_update_turf()
 
 /obj/structure/disposalholder/AllowDrop()
-	return TRUE
+	return !QDELETED(src)
 
 /obj/structure/disposalholder/ex_act(severity, target)
 	return

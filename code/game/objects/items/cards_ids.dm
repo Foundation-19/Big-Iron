@@ -764,6 +764,10 @@
 
 /obj/item/card/id/departmental_budget/Destroy()
 	SSeconomy.dep_cards -= src
+	registered_account = null
+	var/datum/bank_account/B = SSeconomy.get_dep_account(department_ID)
+	if(B?.bank_cards.len)
+		B.bank_cards -= src
 	return ..()
 
 /obj/item/card/id/departmental_budget/update_label()
@@ -1052,13 +1056,6 @@
 	item_state = "card-id_leg"
 	assignment = "prime medallion"
 
-/obj/item/card/id/dogtag/legimmune
-	name = "immune medallion"
-	desc = "A marked silver disc stamped with the Legion's Bull insignia. Worn by legionnaires on camp duty."
-	icon_state = "legionmedallionprime"
-	item_state = "card-id_leg"
-	assignment = "immune medallion"
-
 /obj/item/card/id/dogtag/legveteran
 	name = "veteran medallion"
 	desc = "A heavily marked silver disc stamped with the Legion's Bull insignia. Belongs to a veteran, and reeks of iron."
@@ -1073,19 +1070,19 @@
 	item_state = "card-id_leg2"
 	assignment = "centurion medallion"
 
-/obj/item/card/id/dogtag/follower
-	name = "follower medallion"
-	desc = "A silver disc given to Camp Followers of Caesar's Legion."
+/obj/item/card/id/dogtag/legcampduty
+	name = "camp duty medallion"
+	desc = "A silver disc given to legionnaires of Caesar's Legion assigned to camp duty."
 	icon_state = "legionmedallionveteran"
 	item_state = "card-id_leg"
-	assignment = "auxilia medallion"
+	assignment = "camp duty medallion"
 
-/obj/item/card/id/dogtag/legorator
-	name = "orator medallion"
-	desc = "A golden disc awarded to the one who is a dedicated ambassador for Caesar's Legion."
+/obj/item/card/id/dogtag/legfrumentarius
+	name = "frumentarius medallion"
+	desc = "A golden disc with a string threaded through the top, displaying official markings confirming a frumentarius' status."
 	icon_state = "legionmedallioncent"
 	item_state = "card-id_leg2"
-	assignment = "orator medallion"
+	assignment = "frumentarius medallion"
 
 /obj/item/card/id/legionbrand
 	name = "Legion's brand"

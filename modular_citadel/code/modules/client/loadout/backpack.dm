@@ -120,17 +120,7 @@
 /datum/gear/backpack/cigarettes/cigars
 	name = "Premium cigar case"
 	path = /obj/item/storage/fancy/cigarettes/cigars
-	cost = 2
-
-/datum/gear/backpack/cigarettes/cigars/cohiba
-	name = "Cohiba Robusto cigar case"
-	path = /obj/item/storage/fancy/cigarettes/cigars/cohiba
-	cost = 2
-
-/datum/gear/backpack/cigarettes/cigars/havana
-	name = "Havanian cigar case"
-	path = /obj/item/storage/fancy/cigarettes/cigars/havana
-	cost = 2
+	cost = 3
 
 /// Modkits 
 
@@ -276,7 +266,7 @@
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_BACKPACKS
 	cost = 2
 	restricted_desc = "Legion Veteran+"
-	restricted_roles = list("Legion Orator",
+	restricted_roles = list("Legion Frumentarius",
 							"Legion Centurion",
 							"Legion Veteran Decanus",
 							"Legion Prime Decanus",
@@ -291,7 +281,7 @@
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_BACKPACKS
 	cost = 2
 	restricted_desc = "Legion Veteran+"
-	restricted_roles = list("Legion Orator",
+	restricted_roles = list("Legion Frumentarius",
 							"Legion Centurion",
 							"Legion Veteran Decanus",
 							"Legion Prime Decanus",

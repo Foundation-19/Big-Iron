@@ -180,7 +180,7 @@
 
 
 // ------------------- BELT -----------------------------
-/* Already copied to main
+
 /obj/item/storage/belt/military/legion
 	name = "legion marching belt"
 	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
@@ -189,7 +189,7 @@
 	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
 	icon_state = "belt_legion"
 	item_state = "belt_legion"
-*/
+
 
 // ------------------- WEAPONS -----------------------------
 
@@ -1227,16 +1227,6 @@ campfire.dm
 
 /obj/item/bedsheet/blanket2
 	icon_state = "blanket2"
-
-/obj/item/storage/belt/military/legion
-	name = "legion marching belt"
-	desc = "A belt capable of holding various supplies a warrior might need. Comes with a red sash."
-	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
-	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
-	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
-	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
-	icon_state = "belt_legion"
-	item_state = "belt_legion"
 
 
 /obj/item/clothing/shoes/sandals_leather
