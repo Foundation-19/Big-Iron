@@ -1975,6 +1975,7 @@
 /obj/item/stack/f13Cash/ncr{
 	amount = 500
 	},
+/obj/item/pda,
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
 "fZ" = (
@@ -6129,7 +6130,7 @@
 /area/f13/brotherhood/surface)
 "rH" = (
 /obj/structure/table/wood,
-/obj/item/pda,
+/obj/machinery/radioterminal/ncr,
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
 "rI" = (
@@ -8093,12 +8094,13 @@
 /area/f13/building)
 "xe" = (
 /obj/structure/table/wood,
-/obj/machinery/radioterminal/ncr{
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/msgterminal/ncr{
 	dir = 1;
 	icon_state = "terminal";
-	name = "NCR Radio Terminal"
+	name = "Communications Terminal";
+	plane = -4
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
 "xf" = (
