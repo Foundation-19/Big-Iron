@@ -10,7 +10,7 @@
 	icon = 'icons/mob/hair.dmi'
 	var/flags
 
-	// Name is type of hair first, second part the hair ID. Avouid numbers, use names, avoid hair ID duplication. 
+	// Name is type of hair first, second part the hair ID. Avouid numbers, use names, avoid hair ID duplication.
 	// sort by category
 	// try to capitalize the names please~, and keep them short enough for single line names in preferences.
 	// try to spell
@@ -106,6 +106,10 @@
 /datum/sprite_accessory/hair/bob_shy
 	name = "Bob (Shy)"
 	icon_state = "bob_shy"
+
+/datum/sprite_accessory/hair/bob_styled
+	name = "Bob (Styled)"
+	icon_state = "bob_styled"
 
 
 // BRAIDS
@@ -616,7 +620,7 @@
 	name = "Tail (Ziegler)"
 	icon_state = "tail_ziegler"
 	flags = VERY_LONG_HAIR
-	
+
 
 // TOPKNOT
 /datum/sprite_accessory/hair/topknot
