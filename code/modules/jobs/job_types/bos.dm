@@ -76,6 +76,12 @@ Elder
 		/obj/item/melee/onehanded/knife/hunting = 1
 	)
 
+/datum/outfit/job/bos/f13elder/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	if(H.gender == FEMALE)
+		suit_store = /obj/item/gun/energy/laser/plasma/pistol
 
 /*
 Head Paladin
