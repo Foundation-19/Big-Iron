@@ -101,6 +101,10 @@
 	name = "concrete wall"
 	},
 /area/f13/building)
+"abW" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/store)
 "abY" = (
 /obj/structure/window/fulltile/store{
 	icon_state = "ruinswindow"
@@ -560,6 +564,10 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"akJ" = (
+/obj/structure/closet/cardboard,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/store)
 "akM" = (
 /obj/machinery/light{
 	dir = 1
@@ -1428,8 +1436,10 @@
 	},
 /area/f13/caves)
 "aFF" = (
-/obj/item/mop,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/open/transparent/openspace{
+	name = "air";
+	sunlight_state = 1
+	},
 /area/f13/store)
 "aFG" = (
 /obj/item/clothing/head/cone,
@@ -1865,6 +1875,13 @@
 	icon_state = "wasteland32"
 	},
 /area/f13/wasteland)
+"aQU" = (
+/obj/structure/closet/locker,
+/obj/item/stack/sheet/lead/twenty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/store)
 "aRf" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowbroken"
@@ -2612,7 +2629,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/turf/open/floor/carpet/black,
 /area/f13/store)
 "bhL" = (
 /obj/structure/table/reinforced,
@@ -2916,7 +2933,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "bor" = (
-/obj/item/reagent_containers/glass/bucket,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/store)
 "box" = (
@@ -15047,6 +15066,13 @@
 /obj/item/storage/backpack/duffelbag/med/surgery,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/building)
+"gMK" = (
+/obj/structure/rack,
+/obj/item/stack/wrapping_paper,
+/obj/item/stack/wrapping_paper,
+/obj/item/stack/wrapping_paper,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/store)
 "gMO" = (
 /obj/machinery/processor,
 /obj/machinery/light/broken{
@@ -18492,6 +18518,15 @@
 	name = "concrete wall"
 	},
 /area/f13/building)
+"ije" = (
+/obj/structure/closet/locker,
+/obj/structure/closet/locker,
+/obj/item/stack/sheet/mineral/wood/fifty,
+/obj/item/stack/sheet/leather/twenty,
+/obj/item/stack/sheet/cloth/thirty,
+/obj/item/stack/sheet/cardboard/fifty,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/store)
 "ijg" = (
 /turf/closed/wall/f13/wood/house/broken,
 /area/f13/village)
@@ -20620,6 +20655,13 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
+"jiz" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/store)
 "jiA" = (
 /obj/structure/window/fulltile/house,
 /turf/open/floor/f13{
@@ -27730,6 +27772,12 @@
 	},
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
+"mBr" = (
+/obj/structure/rack,
+/obj/item/stack/packageWrap,
+/obj/item/stack/packageWrap,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/store)
 "mBD" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -33484,6 +33532,10 @@
 /obj/structure/sign/poster/prewar/poster60,
 /turf/closed/wall/f13/wood/house,
 /area/f13/village)
+"prh" = (
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/store)
 "prz" = (
 /obj/effect/decal/riverbank{
 	dir = 4
@@ -39776,6 +39828,17 @@
 	icon_state = "verticalinnermain0"
 	},
 /area/f13/wasteland)
+"sCM" = (
+/obj/structure/table,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/item/paperslip{
+	pixel_x = -5;
+	pixel_y = 10
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/store)
 "sCQ" = (
 /obj/structure/table,
 /obj/machinery/light,
@@ -44953,6 +45016,35 @@
 	icon_state = "rubbleplate"
 	},
 /area/f13/wasteland)
+"uXX" = (
+/obj/structure/table,
+/obj/item/paper_bin/bundlenatural{
+	pixel_x = -19;
+	pixel_y = 5
+	},
+/obj/item/paper_bin/bundlenatural{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/obj/item/paper_bin/bundlenatural{
+	pixel_x = -19;
+	pixel_y = 9
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/item/paperplane{
+	pixel_x = 9
+	},
+/obj/item/paperplane{
+	pixel_x = 7;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/store)
 "uYf" = (
 /obj/effect/decal/marking{
 	icon_state = "dottedverticalcorroded"
@@ -48263,6 +48355,14 @@
 /obj/machinery/hydroponics/soil,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
+"wOu" = (
+/obj/structure/rack,
+/obj/item/stack/sheet/plastic/fifty,
+/obj/item/stack/sheet/mineral/concrete/five{
+	amount = 50
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/store)
 "wOv" = (
 /turf/closed/wall/f13/store,
 /area/f13/brotherhood/surface)
@@ -85048,7 +85148,7 @@ cPj
 cPj
 dZE
 eZB
-ePI
+eZB
 eZB
 ftu
 cPj
@@ -85306,7 +85406,7 @@ cPj
 dZP
 eZB
 eZB
-eZB
+ffc
 ftu
 cPj
 gHK
@@ -85563,7 +85663,7 @@ cPj
 dqX
 eZB
 eZB
-ffc
+bhc
 cPj
 cPj
 eDp
@@ -85820,7 +85920,7 @@ cPj
 cDz
 eZB
 eZB
-bhc
+ePI
 cPj
 cPj
 qUC
@@ -86076,8 +86176,8 @@ cPj
 cPj
 apU
 eZB
-aFF
-bor
+eZB
+eZB
 bxn
 cPj
 eDp
@@ -86331,9 +86431,9 @@ pWN
 uPP
 cPj
 cPj
-cPj
-avl
-aOO
+bor
+eZB
+eZB
 buX
 cPj
 cPj
@@ -86588,10 +86688,10 @@ pqO
 pfl
 cPj
 cPj
-cPj
-cPj
-cPj
-cPj
+avl
+eZB
+eZB
+ePI
 cPj
 cPj
 gJx
@@ -86843,12 +86943,12 @@ qvQ
 pqO
 wGJ
 pfl
-fyf
 cPj
 cPj
-cPj
-cPj
-cPj
+aOO
+eZB
+eZB
+prh
 cPj
 cPj
 dCV
@@ -87100,12 +87200,12 @@ voF
 wGJ
 wGJ
 pfl
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
+cPj
+cPj
+akJ
+eZB
+eZB
+eZB
 dCV
 dCV
 dCV
@@ -87357,13 +87457,13 @@ voF
 wGJ
 pRo
 pfl
-fyf
-fyf
-nxY
-fyf
-fyf
-fyf
-fyf
+cPj
+cPj
+bor
+eZB
+eZB
+eZB
+eZB
 dCV
 dCV
 dCV
@@ -87614,16 +87714,16 @@ qvQ
 pRo
 pRo
 pfl
-nxY
-nxY
-fyf
-fyf
-nxY
-fyf
-fyf
-fyf
-fyf
-tBN
+cPj
+cPj
+sCM
+eZB
+eZB
+eZB
+eZB
+aFF
+abW
+cPj
 hto
 mvv
 deo
@@ -87871,16 +87971,16 @@ pOC
 pRo
 kin
 mmH
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
-bKy
-fyf
-fyf
-tBN
+cPj
+cPj
+uXX
+eZB
+eZB
+eZB
+eZB
+aFF
+eZB
+cPj
 mvv
 mvv
 mvv
@@ -88128,16 +88228,16 @@ grp
 wNe
 mmH
 fyf
-bKy
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
-nxY
-tBN
+cPj
+cPj
+eZB
+eZB
+eZB
+eZB
+eZB
+eZB
+eZB
+cPj
 qvX
 mvv
 mvv
@@ -88385,16 +88485,16 @@ fyf
 fyf
 fyf
 fyf
-fyf
-nxY
-fyf
-fyf
-fyf
-xTK
-fyf
-fyf
-fyf
-tBN
+cPj
+cPj
+gMK
+mBr
+wOu
+jiz
+ije
+aQU
+abW
+cPj
 hto
 mvv
 vKZ
@@ -88642,16 +88742,16 @@ tFR
 fyf
 fyf
 fyf
-fyf
-fyf
-fyf
-nxY
-fyf
-fyf
-fyf
-fyf
-fyf
-tBN
+cPj
+cPj
+cPj
+cPj
+cPj
+cPj
+cPj
+cPj
+cPj
+cPj
 qvX
 mvv
 mvv
@@ -88899,16 +88999,16 @@ fyf
 fyf
 fyf
 uey
-nxY
-fyf
-fyf
-fyf
-fyf
-nxY
-fyf
-fyf
-fyf
-xdF
+cPj
+cPj
+cPj
+cPj
+cPj
+cPj
+cPj
+cPj
+cPj
+cPj
 xGH
 deo
 mvv
