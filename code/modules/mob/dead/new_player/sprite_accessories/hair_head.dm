@@ -427,7 +427,7 @@
 // SHAVED
 /datum/sprite_accessory/hair/shaved
 	name = "Clean shave (Hairless)"
-	icon_state = "Clean shave (Hairless)"
+	icon_state = "shaved"
 
 /datum/sprite_accessory/hair/shaved_buzzcut
 	name = "Shave (Buzzcut)"
