@@ -80,7 +80,7 @@
 		/obj/item/melee/classic_baton/telescopic = 1
 		)
 
-/datum/outfit/job/enclave/peacekeeper/enclavecpt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/enclave/peacekeeper/enclavecpt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
