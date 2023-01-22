@@ -832,6 +832,7 @@
 	desc = "A classic wooden bench."
 	icon_state = "bench"
 	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	item_chair = null
 	buildstacktype = /obj/item/stack/sheet/mineral/wood
 
 /obj/structure/chair/comfy/bench/post_buckle_mob(mob/living/M)
