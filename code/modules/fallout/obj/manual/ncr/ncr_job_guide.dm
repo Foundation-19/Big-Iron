@@ -216,3 +216,95 @@
 	<p>When you come on duty, sign in over the radio and ask for an assignment. Unlike the rest of the Army you will most likely not be placed into a squad permanently, but rather rolling with whatever squad is on base, helping one of the Leadership roles, or working with the MOs. Wherever you do end up being sent, make sure to ask plenty of questions and learn as much as you can.</p>
 </body>
 </html>"}
+
+/obj/item/book/manual/ncr/jobguide/regs
+	name = "Uniform Regulations"
+	desc = "A military police document detailing regulations in regards to NCRA uniforms."
+	icon_state ="ncr_manual"
+	author = "NCR Army Command"
+	title = "NCRA Uniform Regulations"
+	dat = {"<body>
+<p>Wear and Apperance of the NCRA Uniforms and Insignia</p>
+<p>&nbsp;</p>
+<p>Regulation R-120</p>
+<p>Last revision</p>
+<p>19 October 2280</p>
+<p></p>
+<p>Contents</p>
+<p style="padding-left: 40px;">Chapter 1</p>
+<p>Introduction</p>
+<p style="padding-left: 40px;">Chapter 2</p>
+<p>Appearance and Grooming Policies</p>
+<p style="padding-left: 40px;">Chapter 3</p>
+<p>Field and Combat Uniform</p>
+<p style="padding-left: 40px;">Chapter 4</p>
+<p>Service-Dress Uniform</p>
+<p>&nbsp;</p>
+<p>Chapter 1</p>
+<p>Introduction</p>
+<p>By,</p>
+<p>George C. Holtman Jr.,</p>
+<p>Chief of Staff of the New California Republic Army</p>
+<p>The NCRA is a professional Army, we are not a militia, we are not a band of tribals, we are Soldiers, and a Soldier's appearance measures part of their professionalism. Proper wear of the Army uniform is a matter of personal pride for all Soldiers, as it is indicative of the esprit de corps and morale within a unit.</p>
+<p>It is the responsibility of all soldiers to follow these guidelines, and it is the responsibility of all Leaders to insure they are being correctly followed, for professionalism is the first step to victory.</p>
+<p>Signed,</p>
+<p>George C. Holtman Jr.</p>
+<p>&nbsp;</p>
+<p>Chapter 2</p>
+<p>Appearance and Grooming Policies</p>
+<p style="padding-left: 40px;">2-1. Hair grooming standards</p>
+<p>&nbsp;</p>
+<p style="padding-left: 40px;">a. Hair.</p>
+<p>(1) General. The requirement for hair grooming standards is necessary to maintain conformity within a military force. Most haircuts are acceptable, as long as they are neat and conservative. It is the responsibility of leaders</p>
+<p>at all levels to exercise good judgment when enforcing Army policy. All Soldiers will comply with hair, grooming policies while in any military uniform, or in civilian clothes on duty.</p>
+<p style="padding-left: 40px;">(a) In general, hair should be cut as to not interfere with any headwear, such as military helmets, berets, dress caps or side caps, "bangs" should not dangle in front of the face or block the eyes.</p>
+<p style="padding-left: 40px;">For men, hair should be cut very short, it should be flat against the back of the head and the sides, and it should not reach below the ears.</p>
+<p style="padding-left: 40px;">For women, hair should not reach below the neck.</p>
+<p style="padding-left: 40px;">(b) Extreme, eccentric, or faddish haircuts or hairstyles are not authorized. If Soldiers use dyes, tints, or bleaches, they must choose a natural hair color. Colors that detract from a professional military appearance are prohibited.</p>
+<p>Chapter 3</p>
+<p>Field and Combat Uniform</p>
+<p style="padding-left: 40px;">3-1. Authorization for wear</p>
+<p>The field uniform is year-round duty wear by all Soldiers, when prescribed by the commander. Some field uniforms are classified as utility uniforms, while others are designed for a specific function.</p>
+<p style="padding-left: 40px;">3-2. Items authorized for ranks</p>
+<p>(1) Headgear.</p>
+<p style="padding-left: 40px;">(a) Enlisted and NCOs may wear the field cap when wearing the base field uniform, with the full combat uniform, the helmet should be worn.</p>
+<p style="padding-left: 40px;">(b) Officers may wear the beret in both the base field and full combat uniforms.</p>
+<p style="padding-left: 40px;">(2) Footwear</p>
+<p style="padding-left: 40px;">(a) Enlisted and NCOs should wear patrol boots with the field and combat uniform.</p>
+<p style="padding-left: 40px;">(b) Officers should wear 'officers' dress boots with the field and combat uniforms.</p>
+<p style="padding-left: 40px;">(3) Gloves</p>
+<p style="padding-left: 40px;">(a) Leather or Fingerless leather gloves may be worn by officers and NCOs respectively.</p>
+<p style="padding-left: 40px;">&nbsp;</p>
+<p style="padding-left: 40px;">3-3. Uniform configurations</p>
+<p>(1) Base field uniform. The base uniform should be worn when off duty or when serving in support roles away from combat.</p>
+<p>The base field uniform consists of the following:</p>
+<p style="padding-left: 40px;">a. Fatigue jacket</p>
+<p style="padding-left: 40px;">b. Fatigue pants</p>
+<p style="padding-left: 40px;">c. Headgear (see 3-2)</p>
+<p style="padding-left: 40px;">d. Boots (see 3-2)</p>
+<p>(2) Full combat uniform. The combat uniform should be worn in combat, at front lines where combat is likely, and in situations where commanders believe combat is likely.</p>
+<p>The full combat uniform consists of the following:</p>
+<p style="padding-left: 40px;">a. Fatigue jacket</p>
+<p style="padding-left: 40px;">b. Fatigue pants.</p>
+<p style="padding-left: 40px;">c. Patrol vest</p>
+<p style="padding-left: 40px;">d. Helmet or Headgear (see 3-2)</p>
+<p style="padding-left: 40px;">e. Boots (see 3-2)</p>
+<p>&nbsp;</p>
+<p>Chapter 4</p>
+<p>Service-Dress Uniform</p>
+<p style="padding-left: 40px;">4-1. Authorization for wear</p>
+<p>The service-dress uniform is authorized for year-round wear by all personnel. It should be worn both where a service and dress uniform would be appropriate.</p>
+<p style="padding-left: 40px;">4-2. Items authorized for ranks</p>
+<p>(1) Headgear.</p>
+<p style="padding-left: 40px;">(a) Enlisted and NCOs should wear the enlisted dress cap.</p>
+<p style="padding-left: 40px;">(b) Officers should wear the officer dress cap.</p>
+<p style="padding-left: 40px;">(b) Officers should wear the officer dress cap.</p>
+<p style="padding-left: 40px;">(c) The campaign hat should be worn by high ranking NCOs.</p>
+<p>(2) Overwear.</p>
+<p style="padding-left: 40px;">(a) All ranks should wear the jacket.</p>
+<p>(3) Footwear.</p>
+<p style="padding-left: 40px;">(a) All ranks should wear the dress boots.</p>
+<p>(4) Gloves</p>
+<p style="padding-left: 40px;">(a) Officers and NCOs may wear leather gloves if they so choose.</p>
+</body>
+</html>"}
