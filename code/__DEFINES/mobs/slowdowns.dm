@@ -10,3 +10,5 @@
 #define CRAWLING_ADD_SLOWDOWN 7
 /// slowdown while scoped in
 #define SCOPED_IN_ADD_SLOWDOWN 4
+//slowdown  while in a big snake
+#define SNAKE_SLOWDOWN 0.8

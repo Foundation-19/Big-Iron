@@ -525,8 +525,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/ammo_box/magazine/sks = 3,
 		/obj/item/melee/onehanded/machete/forgedmachete = 1,
 		/obj/item/storage/backpack/spearquiver = 1,
-		/obj/item/bottlecap_mine = 1,
-		/obj/item/warpaint_bowl = 1
+		/obj/item/bottlecap_mine = 1
 		)
 
 //......................//////////////////////////////////................................................
@@ -695,9 +694,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		
 /datum/outfit/loadout/expsniper
 	name = "Sniper"
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand/sks
+	suit_store = /obj/item/gun/ballistic/rifle/hunting
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/sks = 3,
+		/obj/item/ammo_box/a308 = 3,
 		/obj/item/attachments/scope = 1,
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/bottlecap_mine = 1
