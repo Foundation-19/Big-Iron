@@ -102,6 +102,12 @@
 /obj/item/storage/belt/utility/waster
 	name = "wastelander toolbelt"
 	desc = "Holds a collection of simple tools."
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+	icon_state = "belt_blacksmith"
+	item_state = "belt_blacksmith"
 
 /obj/item/storage/belt/utility/waster/ComponentInitialize()
 	. = ..()

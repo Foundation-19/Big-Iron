@@ -469,19 +469,29 @@
 
 // ------------------- CRAFTING -----------------------------
 
-/datum/crafting_recipe/blacksmith/smithed_armor_legion
-	name = "Legion metal armor set"
-	result = /obj/item/clothing/suit/armor/heavy/metal/smithed/legion
+/datum/crafting_recipe/tools/forged/armor_legion
+	name = "Legion plate armor"
+	result = /obj/item/clothing/suit/armor/f13/legion/vet/smithed
+	time = 20 SECONDS
 	reqs = list(
 		/obj/item/smithing/armor_piece = 2,
 		/obj/item/stack/sheet/leather = 2,
 		)
-	time = 200
 	tools = list(TOOL_FORGE)
 	category = CAT_CRAFTING
 	subcategory = CAT_FORGING
 	always_available = FALSE
 
+
+/datum/crafting_recipe/hydra
+	name = "Hydra"
+	result = /obj/item/reagent_containers/pill/patch/hydra
+	reqs = list(/obj/item/reagent_containers/food/snacks/meat/slab/radscorpion_meat = 2,
+				/datum/reagent/consumable/cavefungusjuice = 20,
+				/obj/item/reagent_containers/glass/beaker = 1)
+	time = 2 SECONDS
+	category = CAT_MEDICAL
+	always_available = FALSE
 
 
 //////////////////////////////////////////
@@ -545,7 +555,8 @@
 /obj/item/clothing/suit/armor/heavy/legion/legate
 	icon_state = "armor_legate"
 */
-/obj/item/clothing/suit/armor/heavy/metal/smithed/legion
+
+/obj/item/clothing/suit/armor/f13/legion/vet/smithed
 	name = "smithed legion armor"
 	desc = "A set of plates with leather straps, protecting some vital areas. This one is combined with football shoulder pads and marked with the red X of Caesars Legion."
 	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
@@ -814,6 +825,39 @@
 	icon_state = "bust_legion"
 
 
+// ------------------- BENCH MK 2 -----------------------------
+
+/obj/structure/chair/comfy/bench
+	name = "bench"
+	desc = "A classic wooden bench."
+	icon_state = "bench"
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	item_chair = null
+	buildstacktype = /obj/item/stack/sheet/mineral/wood
+
+/obj/structure/chair/comfy/bench/post_buckle_mob(mob/living/M)
+	. = ..()
+	handle_layer()
+	layer = OBJ_LAYER
+
+/obj/structure/chair/comfy/bench/GetArmrest()
+	return mutable_appearance('modular_BD2/legio_invicta/icons/icons_legion.dmi', "bench_sitting")
+
+
+// -------------- THRONE ----------------- 
+
+/obj/structure/chair/comfy/throne
+	name = "tribal throne"
+	desc = "Bone, wood, animal parts."
+	icon = 'modular_BD2/general/icons/thrones.dmi'
+	icon_state = "throne"
+	buildstacktype = /obj/item/stack/sheet/bone
+	buildstackamount = 4
+
+/obj/structure/chair/comfy/throne/GetArmrest()
+	return mutable_appearance('modular_BD2/general/icons/thrones.dmi', "throne_armrest")
+
+
 // -------------- BATHTUB ----------------- - only mood function, just for RP. Would be better if mood boost just fired if not weaing anything in uniform slot, or unable to buckle if dressed.
 
 /obj/structure/chair/comfy/bathtub
@@ -927,12 +971,16 @@
 	name = "guardhouse"
 	desc = "Sit in the gloom and wait for something to happen."
 
+/obj/structure/sign/legion/slavepen
+	name = "slave pen"
+	desc = "For keeping the livestock in order."
+
 
 // -------------- ID LOCKED DOORS BY RANK ----------------- 
 
 /obj/machinery/door/unpowered/securedoor/legion/warroom
 	name = "war room"
-	req_access_txt = "254" // ACCESS_LEGION_CPMMAND
+	req_access_txt = "123" // ACCESS_LEGION
 
 /obj/machinery/door/unpowered/securedoor/legion/centurion
 	name = "centurions quarters"
@@ -1065,7 +1113,7 @@ campfire.dm
 // New roof for tent
 /turf/open/floor/plating/f13/outside/roof/tent_leather 
 	name = "leather tent roof"
-	icon = 'icons/fallout/turfs/walls/tents.dmi'
+	icon = 'modular_BD2/general/icons/tents.dmi'
 	icon_state = "leather_roof"
 
 // shading under the pavillon
@@ -1076,13 +1124,18 @@ campfire.dm
 // Floorshading testing
 /obj/effect/turf_decal/shadow/floor
 	icon_state = "shadow_floor"
-	plane = GAME_PLANE
+	plane = -6
 
 // Wallshading testing
-/obj/effect/shadow_wall
+/obj/effect/turf_decal/shadow/floor/wall
+	icon_state = "shadow_wall"
+
+// Wallshading testing
+/obj/effect/shadow/wall
 	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
 	icon_state = "shadow_wall"
-	plane = GAME_PLANE
+	layer = ON_EDGED_TURF_LAYER
+	plane = -5
 	pixel_y = 32
 
 // stairs platform to make it prettier
@@ -1197,7 +1250,7 @@ campfire.dm
 			/obj/item/stack/crafting/metalparts/five = 10,
 			)
 	footstep = FOOTSTEP_LOOSE_SAND
-	barefootstep = FOOTSTEP_LOOSE_SAND
+	barefootstep = FOOTSTEP_LOOSE_SAND_BAREFOOT
 	clawfootstep = FOOTSTEP_LOOSE_SAND
 
 /turf/open/indestructible/ground/outside/desert/sonora/Initialize()

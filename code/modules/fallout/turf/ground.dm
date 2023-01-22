@@ -168,7 +168,7 @@
 						/obj/item/stack/crafting/metalparts/five = 30,
 						)
 	footstep = FOOTSTEP_LOOSE_SAND
-	barefootstep = FOOTSTEP_LOOSE_SAND
+	barefootstep = FOOTSTEP_LOOSE_SAND_BAREFOOT
 	clawfootstep = FOOTSTEP_LOOSE_SAND
 
 /turf/open/indestructible/ground/outside/desert/sonora/coarse
@@ -533,6 +533,9 @@
 	name = "gravel"
 	icon_state = "graveldirt"
 	icon = 'icons/fallout/turfs/ground.dmi'
+	footstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL_BAREFOOT
+	clawfootstep = FOOTSTEP_GRAVEL
 //	step_sounds = list("human" = "erikafootsteps")
 
 // New gravel, organized. Use directions for control. - Pebbles
@@ -541,7 +544,7 @@
 	icon_state = "gravel"
 	icon = 'icons/fallout/turfs/gravel.dmi'
 	footstep = FOOTSTEP_GRAVEL
-	barefootstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL_BAREFOOT
 	clawfootstep = FOOTSTEP_GRAVEL
 
 /turf/open/indestructible/ground/outside/gravel/alt
