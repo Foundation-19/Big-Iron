@@ -109,8 +109,9 @@
 	name = "Hydra"
 	result = /obj/item/reagent_containers/pill/patch/hydra
 	reqs = list(/obj/item/reagent_containers/food/snacks/meat/slab/radscorpion_meat = 2,
-				/obj/item/reagent_containers/food/snacks/grown/fungus = 2)
-	time = 15
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 2,
+				/obj/item/reagent_containers/glass/beaker = 1)
+	time = 2 SECONDS
 	category = CAT_MEDICAL
 	always_available = FALSE
 

@@ -1295,3 +1295,21 @@ campfire.dm
 	equip_delay_other = 100
 	permeability_coefficient = 0.9
 	can_be_tied = FALSE
+
+/obj/item/paper/hydra
+	name = "Recipe for Hydra"
+	info = {"Hydra is a strong smelling disgusting medicine that is more potent the worse your wounds, and can be smeared on dislocated limbs to force muscle spasms, pulling it into place.
+	<br>
+	<b>Step 1
+	<br>
+	Aquire cave fungus and raw rad scorpion meat and a beaker or bottle
+	<br>
+	Step 2
+	<br> 
+	Ferment cave fungus
+	<br>
+	<b>Step 3
+	<br>
+	Using the alchemy table craft the medicine from the ingridients.</b>"}
+
+

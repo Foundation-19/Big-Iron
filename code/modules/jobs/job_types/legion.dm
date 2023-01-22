@@ -631,8 +631,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	total_positions = 3
 	spawn_positions = 3
-	description = "Scout the area, secure key points, but do not ignore orders or wordlessly die some place. A good explorer helps his unit by taking initiative and helping the commander without needing micro-managment."
-	supervisors = "the Veteran Decanus and Centurion must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist"
+	description = "Scout the area, secure key points, ignore orders and wordlessly die some place. A good explorer helps his unit by taking initiative and helping the commander without needing micro-managment. When moving slowly they are hard for enemies to hear."
+	supervisors = "the Decanus and Centurion must be obeyed. You are equivalent to a Prime, but you are a specialist"
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 
