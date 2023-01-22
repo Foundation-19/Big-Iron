@@ -50,9 +50,10 @@
 /obj/item/melee/unarmed/powerfist/goliath
 	name = "Goliath"
 	desc = "A massive, experimental metal gauntlet captured by the Legion. The piston-powered ram on top is designed to throw targets very, very far."
-	icon = 'icons/fallout/objects/melee/melee.dmi'
-	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
-	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
 	icon_state = "goliath"
 	item_state = "goliath"
 	force = 25
@@ -111,10 +112,12 @@
 /obj/item/melee/powered/ripper
 	name = "ripper"
 	desc = "The Ripper™ vibroblade is powered by a small energy cell wich allows it to easily cut through flesh and bone."
-	icon = 'icons/fallout/objects/melee/melee.dmi'
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/beltslot.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
 	icon_state = "ripper"
-	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
-	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
+	item_state = "ripper"
 	w_class = WEIGHT_CLASS_NORMAL
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
@@ -168,6 +171,9 @@
 /obj/item/melee/powered/ripper/prewar
 	name = "pre-war military ripper"
 	desc = "A hand-held, militarized chainsaw, popular with Army units requiring a compact engineering tool for cutting. Just what material is intended to be cut with the weapon remains open to debate."
+	icon = 'icons/fallout/objects/melee/melee.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
 	icon_state = "prewarrip_off"
 	on_icon_state = "prewarrip_on"
 	off_icon_state = "prewarrip_off"

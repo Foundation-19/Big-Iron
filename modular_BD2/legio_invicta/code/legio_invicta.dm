@@ -245,7 +245,7 @@
 
 /obj/item/twohanded/chainsaw
 	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/backslot.dmi'
-
+*/
 /obj/item/clothing/glasses/f13/sunglasses
 	name = "sunglasses"
 	desc = "Makes the strong desert sun a lot more bearable. Some protection against blinding lights is a bonus."
@@ -262,7 +262,7 @@
 	item_state = "bigsunglasses"
 	layer = (FACEMASK_LAYER-0.1) // only reason for this is to make it look good over bandana masks.
 	alternate_worn_layer = (FACEMASK_LAYER-0.1)
-*/
+
 
 
 
@@ -313,23 +313,15 @@
 	icon_state = "mantle_legion"
 	item_state = "mantle_legion"
 	layer = NECK_LAYER
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/mantle
 
-/obj/item/clothing/neck/mantle/legion/ComponentInitialize()
+/datum/component/storage/concrete/pockets/mantle
+	max_items = 4
+	max_w_class = WEIGHT_CLASS_NORMAL
+
+/datum/component/storage/concrete/pockets/mantle/Initialize()
 	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 1
-	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.can_hold = typecacheof(list(
-		/obj/item/gun/ballistic/automatic/pistol,
-		/obj/item/gun/ballistic/revolver,
-		/obj/item/gun/energy/laser/solar,
-		/obj/item/gun/energy/laser/pistol,
-		/obj/item/gun/energy/laser/plasma/pistol,
-		/obj/item/gun/energy/laser/plasma/glock,
-		/obj/item/gun/energy/laser/plasma/glock/extended,
-		/obj/item/gun/energy/laser/wattz,
-		/obj/item/gun/energy/laser/wattz/magneto,
-		))
+	can_hold = GLOB.storage_holster_can_hold
 
 
 // ------------------- KITS & BAGS & HOLSTERS -----------------------------

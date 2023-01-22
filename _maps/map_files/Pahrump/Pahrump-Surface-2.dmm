@@ -10228,7 +10228,9 @@
 	plane = -7
 	},
 /obj/structure/decoration/rag{
-	icon_state = "skin"
+	icon_state = "skin";
+	pixel_x = 10;
+	pixel_y = 4
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/legion)
@@ -22830,7 +22832,10 @@
 /obj/structure/barricade/tentleathercorner{
 	dir = 4
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
 /area/f13/legion)
 "jLq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -23102,9 +23107,7 @@
 /area/f13/village)
 "jRu" = (
 /obj/structure/barricade/tentleathercorner,
-/turf/open/indestructible/ground/outside/gravel/edge{
-	dir = 1
-	},
+/turf/open/indestructible/ground/outside/desert/sonora/rough,
 /area/f13/legion)
 "jRy" = (
 /obj/structure/table/wood/poker,
@@ -37139,7 +37142,10 @@
 /obj/structure/decoration/rag{
 	icon_state = "skin"
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
 /area/f13/legion)
 "qkj" = (
 /obj/structure/chair/right,
@@ -49686,7 +49692,14 @@
 	},
 /area/f13/wasteland)
 "wjP" = (
-/obj/structure/barricade/tentleatheredge,
+/obj/structure/barricade/tentleatheredge{
+	dir = 8
+	},
+/obj/structure/decoration/rag{
+	icon_state = "skin";
+	pixel_x = -2;
+	pixel_y = 17
+	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/legion)
 "wjS" = (
@@ -110993,7 +111006,7 @@ xox
 xox
 xox
 xoK
-eZg
+wjP
 eZg
 vuZ
 vuZ
@@ -111255,7 +111268,7 @@ uNh
 gRJ
 hxi
 jfi
-wjP
+kZf
 nme
 lgs
 mfc
@@ -111506,7 +111519,7 @@ xox
 xox
 xox
 xox
-eyL
+xoK
 nHq
 fTc
 vPA
@@ -111763,13 +111776,13 @@ xox
 xox
 xox
 xox
-xoK
+eyL
 fhf
 cRh
 gVa
 hxi
 fTc
-wjP
+kZf
 pFA
 pFA
 lbu
