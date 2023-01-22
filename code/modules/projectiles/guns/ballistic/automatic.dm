@@ -786,7 +786,7 @@
 	bayonet_state = "bayonet"
 	knife_x_offset = 22
 	knife_y_offset = 21
-	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
+	fire_sound = 'sound/f13weapons/combatrifle.ogg'
 
 //ALR15			Keywords: Donor, 5.56mm, Semi-auto
 /obj/item/gun/ballistic/automatic/service/alr
