@@ -182,7 +182,11 @@
 /datum/export/large/ammobench
 	cost = 3500
 	unit_name = "ammo bench"
+<<<<<<< HEAD
 	export_types = list(/obj/machinery/autolathe/ammo)
+=======
+	export_types = list(obj/machinery/autolathe/ammo)
+>>>>>>> ed2b1ef110 (port cargo stuff from AB)
 
 /datum/export/large/forge
 	cost = 2000
@@ -196,7 +200,11 @@
 
 /datum/export/large/microwave
 	cost = 750
+<<<<<<< HEAD
 	unit_name = "microwave"
+=======
+	unit_name = "all-in-one grinder"
+>>>>>>> ed2b1ef110 (port cargo stuff from AB)
 	export_types = list(/obj/machinery/microwave)
 
 /datum/export/large/optable
