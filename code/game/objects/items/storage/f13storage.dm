@@ -476,7 +476,7 @@
 	icon_state = "medicinebox_simple"
 	illustration = "overlay_powder"
 
-/obj/item/storage/box/medicine/poultice5/PopulateContents()
+/obj/item/storage/box/medicine/powder5/PopulateContents()
 	. = ..()
 	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
 	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
