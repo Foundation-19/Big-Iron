@@ -882,10 +882,7 @@
 /area/f13/wasteland)
 "aqF" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/camera{
-	dir = 8;
-	network = list("enclave")
-	},
+/obj/item/wallframe/camera,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "aqI" = (
@@ -2867,6 +2864,12 @@
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
 	},
+/area/f13/building)
+"bjm" = (
+/obj/structure/decoration/warning{
+	name = "WARNING: DO NOT ENTER, UNDER NEW CALIFORNIA JURISDICTION, KEEP OUT!"
+	},
+/turf/closed/wall/f13/wood/house,
 /area/f13/building)
 "bjs" = (
 /obj/structure/closet,
@@ -12964,11 +12967,10 @@
 	},
 /area/f13/wasteland)
 "fDR" = (
-/mob/living/simple_animal/hostile/wolf,
-/turf/open/indestructible/ground/outside/dirt{
-	icon_state = "dirtcorner"
-	},
-/area/f13/wasteland)
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/microwave/stove,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "fEb" = (
 /obj/structure/simple_door/metal/fence,
 /turf/open/indestructible/ground/outside/road{
@@ -16921,6 +16923,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/clinic)
+"hic" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/remains/human,
+/obj/item/clothing/shoes/f13/enclave/serviceboots,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "hie" = (
 /obj/effect/overlay/junk/sink{
 	pixel_y = 15
@@ -17965,6 +17974,8 @@
 /area/f13/building)
 "hDY" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/remains/human,
+/obj/item/clothing/under/f13/ncr/conscript,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
 	icon_state = "dirtcorner"
@@ -25068,7 +25079,8 @@
 /area/f13/tunnel)
 "kJH" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/wolf/alpha/playable,
+/obj/effect/decal/cleanable/ash/large,
+/obj/item/clothing/shoes/f13/military/ncr,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "kKd" = (
@@ -31633,9 +31645,6 @@
 	layer = 2.8;
 	pixel_y = -6
 	},
-/obj/machinery/microwave/stove{
-	anchored = 0
-	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "nEW" = (
@@ -32355,9 +32364,10 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "nZr" = (
-/mob/living/simple_animal/hostile/wolf,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/sandbags,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "nZJ" = (
 /obj/structure/car/rubbish3,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -33693,6 +33703,14 @@
 	icon_state = "greendirtyfull"
 	},
 /area/f13/building)
+"oHE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/remains/human,
+/obj/item/clothing/accessory/ncr/SGT,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "oHK" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -37364,6 +37382,12 @@
 	},
 /turf/closed/wall/f13/wood/interior,
 /area/f13/raiders)
+"qoP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/remains/human,
+/obj/item/clothing/mask/gas/enclave,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "qoS" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft1"
@@ -39103,6 +39127,7 @@
 /area/f13/wasteland)
 "rkk" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirt"
 	},
@@ -39190,6 +39215,7 @@
 "rlZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/simple_door/interior,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "rmb" = (
@@ -43546,6 +43572,7 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_3"
 	},
+/obj/item/flag/ncr,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 5;
 	icon_state = "dirt"
@@ -53531,6 +53558,12 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"xQx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "xQE" = (
 /obj/structure/sink/greyscale{
 	desc = "A sink connected to the rainwater tank.";
@@ -54036,6 +54069,11 @@
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft0"
 	},
+/area/f13/wasteland)
+"ybM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/flag/ncr,
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "ybP" = (
 /obj/structure/bed/mattress{
@@ -83803,7 +83841,7 @@ jMC
 fyf
 qOV
 hDY
-fyf
+jxH
 fyf
 fyf
 fyf
@@ -84315,11 +84353,11 @@ fyf
 fyf
 fyf
 mtt
-rkk
+oHE
 uRZ
 hgx
 tnV
-sYX
+bjm
 sYX
 sYX
 sYX
@@ -84574,8 +84612,8 @@ mtt
 ilO
 ppu
 ylq
-vwS
-vwS
+kJH
+xQx
 vwS
 vwS
 vwS
@@ -84827,13 +84865,13 @@ fyf
 fyf
 uey
 fyf
-fDR
+qOV
 kQd
-uRZ
-sYX
+ybM
+bjm
 vwS
-vwS
-rYb
+nZr
+hic
 vwS
 vwS
 sYX
@@ -85090,7 +85128,7 @@ mvv
 rlZ
 vwS
 vwS
-vwS
+nZr
 rYb
 vwS
 sYX
@@ -85604,9 +85642,9 @@ jPh
 sYX
 mWT
 vwS
+fDR
+qoP
 vwS
-vwS
-kJH
 sYX
 fyf
 gcK
@@ -86112,7 +86150,7 @@ uey
 fyf
 fyf
 fyf
-nZr
+fyf
 tBN
 mvv
 sYX
