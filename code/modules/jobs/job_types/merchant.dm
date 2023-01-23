@@ -63,7 +63,6 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/thatgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/frag_shrapnel)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/concussion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/explosive/shrapnelmine)
 
 /datum/outfit/job/den/f13shopkeeper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -132,7 +131,6 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/huntingshotgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/thatgun)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/frag_shrapnel)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/concussion)
 
 /datum/outfit/job/merchant/f13assist/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -166,7 +164,7 @@
 
 /datum/outfit/job/merchant/f13mercenary
 	name = "Merc"
-	jobtype = /datum/job/merchant/f13deputy
+	jobtype = /datum/job/merchant/f13mercenary
 	head = /obj/item/clothing/head/helmet/riot
 	mask = /obj/item/clothing/mask/balaclava
 	ears = /obj/item/radio/headset/headset_merchant
@@ -201,7 +199,7 @@
 
 /datum/job/merchant/f13bartender
 	title = "Bartender"
-	flag = F13PROSPECTOR
+	flag = F13BARTENDER
 	department_flag = MERCHANT
 	total_positions = 1
 	spawn_positions = 1
@@ -231,7 +229,7 @@
 
 /datum/outfit/job/merchant/f13bartender
 	name = "Barkeep"
-	jobtype = /datum/job/merchant/f13barkeep
+	jobtype = /datum/job/merchant/f13bartender
 	uniform = /obj/item/clothing/under/f13/bartenderalt
 	id = /obj/item/card/id/dogtag/town
 	ears = /obj/item/radio/headset/headset_merchant

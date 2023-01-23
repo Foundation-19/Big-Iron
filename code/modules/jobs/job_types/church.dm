@@ -142,7 +142,7 @@
 
 /datum/job/church/f13acolyte
 	title = "Acolyte"
-	flag = F13acolyte
+	flag = F13ACOLYTE
 	department_flag = CHURCH
 	total_positions = 4
 	spawn_positions = 4
@@ -154,7 +154,7 @@
 	exp_type = EXP_TYPE_CHURCH
 	exp_requirements = 0
 
-	outfit = /datum/outfit/job/church/f13proselytizer
+	outfit = /datum/outfit/job/church/f13acolyte
 	access = list(ACCESS_COTC, ACCESS_COTC_ARMORY)
 	minimal_access = list(ACCESS_COTC, ACCESS_COTC_ARMORY)
 
