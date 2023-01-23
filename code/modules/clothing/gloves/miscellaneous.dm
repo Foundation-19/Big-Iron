@@ -193,7 +193,7 @@
 
 /obj/item/clothing/gloves/evening
 	name = "evening gloves"
-	desc = "Thin, pretty gloves intended for use in regal feminine attire. A tag on the hem claims they were 'maid' in Space China, these were probably intended for use in some maid fetish."
+	desc = "Thin, pretty gloves intended for use in regal feminine attire. A tag on the hem claims they were 'maid' in Chinatown, San Francisco. these were probably intended for use in some maid fetish."
 	icon_state = "evening"
 	item_state = "evening"
 	transfer_prints = TRUE
