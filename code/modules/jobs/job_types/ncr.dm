@@ -193,6 +193,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
 		/obj/item/lighter = 1,
 		/obj/item/reagent_containers/food/snacks/grown/tobacco/dried = 1,
+		/obj/item/storage/lockbox/medal = 1,
 		/obj/item/melee/onehanded/knife/trench = 1
 		)
 
