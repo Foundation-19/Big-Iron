@@ -1,3 +1,35 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@BrotherHangyul 
+Fallout-Big-Iron
+/
+Big-Iron
+Public
+Fork your own copy of Fallout-Big-Iron/Big-Iron
+Code
+Issues
+6
+Pull requests
+16
+Actions
+Projects
+Security
+Insights
+Big-Iron/code/modules/reagents/chemistry/reagents/other_reagents.dm
+@BadAtThisGame302
+BadAtThisGame302 Massive Code Fixes
+Latest commit f4682d9 5 days ago
+ History
+ 74 contributors
+@Poojawa@silicons@Ghommie@Trilbyspaceclone@Putnam3145@CitadelStationBot@Arturlang@timothyteakettle@LetterJay@AlexPieNoticeMe@Iatots@Thalpy
+2827 lines (2445 sloc)  97.9 KB
+
 /datum/reagent/blood
 	data = list("donor"=null,"viruses"=null,"blood_DNA"=null, "bloodcolor" = BLOOD_COLOR_HUMAN, "blood_type"= null,"resistances"=null,"trace_chem"=null,"mind"=null,"ckey"=null,"gender"=null,"real_name"=null,"cloneable"=null,"factions"=null,"quirks"=null)
 	name = "Blood"
@@ -2277,7 +2309,7 @@
 	..()
 
 //Misc reagents
-
+/*
 /datum/reagent/romerol
 	name = "Romerol"
 	// the REAL zombie powder
@@ -2300,7 +2332,7 @@
 		var/obj/item/organ/zombie_infection/nodamage/ZI = new()
 		ZI.Insert(H)
 	..()
-
+*/
 /datum/reagent/magillitis
 	name = "Magillitis"
 	description = "An experimental serum which causes rapid muscular growth in Hominidae. Side-affects may include hypertrichosis, violent outbursts, and an unending affinity for bananas."
@@ -2322,7 +2354,6 @@
 	var/current_size = RESIZE_DEFAULT_SIZE
 	value = REAGENT_VALUE_COMMON
 	taste_description = "bitterness" // apparently what viagra tastes like
-
 /datum/reagent/growthserum/on_mob_life(mob/living/carbon/H)
 	var/newsize = current_size
 	switch(volume)
@@ -2336,12 +2367,10 @@
 			newsize = 2.5*RESIZE_DEFAULT_SIZE
 		if(200 to INFINITY)
 			newsize = 3.5*RESIZE_DEFAULT_SIZE
-
 	H.resize = newsize/current_size
 	current_size = newsize
 	H.update_transform()
 	..()
-
 /datum/reagent/growthserum/on_mob_end_metabolize(mob/living/M)
 	M.resize = RESIZE_DEFAULT_SIZE/current_size
 	current_size = RESIZE_DEFAULT_SIZE
@@ -2825,3 +2854,18 @@
 /datum/reagent/nutracid/on_mob_life(mob/living/carbon/M)
 	M.adjust_nutrition(-5)
 	..()
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Big-Iron/other_reagents.dm at master · Fallout-Big-Iron/Big-Iron
