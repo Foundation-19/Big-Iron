@@ -19,6 +19,9 @@
 #define FOOTSTEP_HARD_BAREFOOT "hardbarefoot"
 #define FOOTSTEP_HARD_CLAW "hardclaw"
 #define FOOTSTEP_CARPET_BAREFOOT "carpetbarefoot"
+#define FOOTSTEP_LOOSE_SAND_BAREFOOT "sand"
+#define FOOTSTEP_GRAVEL_BAREFOOT "gravel"
+
 //misc footstep sounds
 #define FOOTSTEP_GENERIC_HEAVY "heavy"
 
@@ -114,12 +117,12 @@ GLOBAL_LIST_INIT(footstep, list(
 		'sound/effects/footstep/gravel1.ogg',
 		'sound/effects/footstep/gravel2.ogg',
 		'sound/effects/footstep/gravel3.ogg',
-		'sound/effects/footstep/gravel4.ogg'), 100, 1),
+		'sound/effects/footstep/gravel4.ogg'), 40, 1),
 	FOOTSTEP_LOOSE_SAND = list(list(
 		'sound/effects/footstep/sand1.ogg',
 		'sound/effects/footstep/sand2.ogg',
 		'sound/effects/footstep/sand3.ogg',
-		'sound/effects/footstep/sand4.ogg'), 100, 1),
+		'sound/effects/footstep/sand4.ogg'), 40, 1),
 	FOOTSTEP_ROAD = list(list(
 		'sound/f13effects/footstep/Road/road_walk1.ogg',
 		'sound/f13effects/footstep/Road/road_walk2.ogg',
@@ -169,6 +172,16 @@ GLOBAL_LIST_INIT(barefootstep, list(
 		'sound/effects/footstep/lava1.ogg',
 		'sound/effects/footstep/lava2.ogg',
 		'sound/effects/footstep/lava3.ogg'), 100, 0),
+	FOOTSTEP_GRAVEL_BAREFOOT = list(list(
+		'sound/effects/footstep/gravel1.ogg',
+		'sound/effects/footstep/gravel2.ogg',
+		'sound/effects/footstep/gravel3.ogg',
+		'sound/effects/footstep/gravel4.ogg'), 20, 1),
+	FOOTSTEP_LOOSE_SAND_BAREFOOT  = list(list(
+		'sound/effects/footstep/sand1.ogg',
+		'sound/effects/footstep/sand2.ogg',
+		'sound/effects/footstep/sand3.ogg',
+		'sound/effects/footstep/sand4.ogg'), 20, 1),
 	FOOTSTEP_MEAT = list(list(
 		'sound/effects/meatslap.ogg'), 100, 0),
 	FOOTSTEP_RUST = list(list(

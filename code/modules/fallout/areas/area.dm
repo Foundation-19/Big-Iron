@@ -529,6 +529,7 @@
 
 /area/f13/legion
 	name = "Legion"
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'	
 	icon_state = "legion"
 //	ambience_area =  list('sound/f13ambience/building.ogg')
 //	ambientmusic = list('sound/f13music/fo2_hub.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
