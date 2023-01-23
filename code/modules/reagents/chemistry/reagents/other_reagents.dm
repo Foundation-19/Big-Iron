@@ -1,35 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@BrotherHangyul 
-Fallout-Big-Iron
-/
-Big-Iron
-Public
-Fork your own copy of Fallout-Big-Iron/Big-Iron
-Code
-Issues
-6
-Pull requests
-16
-Actions
-Projects
-Security
-Insights
-Big-Iron/code/modules/reagents/chemistry/reagents/other_reagents.dm
-@BadAtThisGame302
-BadAtThisGame302 Massive Code Fixes
-Latest commit f4682d9 5 days ago
- History
- 74 contributors
-@Poojawa@silicons@Ghommie@Trilbyspaceclone@Putnam3145@CitadelStationBot@Arturlang@timothyteakettle@LetterJay@AlexPieNoticeMe@Iatots@Thalpy
-2827 lines (2445 sloc)  97.9 KB
-
 /datum/reagent/blood
 	data = list("donor"=null,"viruses"=null,"blood_DNA"=null, "bloodcolor" = BLOOD_COLOR_HUMAN, "blood_type"= null,"resistances"=null,"trace_chem"=null,"mind"=null,"ckey"=null,"gender"=null,"real_name"=null,"cloneable"=null,"factions"=null,"quirks"=null)
 	name = "Blood"
@@ -2854,18 +2822,3 @@ Latest commit f4682d9 5 days ago
 /datum/reagent/nutracid/on_mob_life(mob/living/carbon/M)
 	M.adjust_nutrition(-5)
 	..()
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Big-Iron/other_reagents.dm at master · Fallout-Big-Iron/Big-Iron
