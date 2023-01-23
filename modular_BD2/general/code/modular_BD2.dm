@@ -158,7 +158,7 @@
 /datum/design/lantern
 	name = "Lantern"
 	id = "lantern"
-	materials = list(/datum/material/lead = QUARTER_SHEET, /datum/material/glass = ONE_SHEET)
+	materials = list(/datum/material/iron = ONE_SHEET, /datum/material/glass = ONE_SHEET)
 	build_path = /obj/item/flashlight/lantern
 	category = list("initial","Equipment")
 	build_type = AUTOLATHE_PRIMITIVE
@@ -589,10 +589,6 @@ species.dm adjusted for new hair an beard suffixes + changed names.
 hair_head.dm
 hair_face.dm
 */
-
-/obj/structure/rack/shelf_wood
-	name = "BUGGED VERSION, MURDER"
-	desc = "NO!!!."
 
 
 

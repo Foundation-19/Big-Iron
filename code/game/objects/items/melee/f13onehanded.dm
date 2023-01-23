@@ -52,8 +52,12 @@
 /obj/item/melee/onehanded/machete
 	name = "simple machete"
 	desc = "A makeshift machete made of a lawn mower blade."
-	icon_state = "machete_imp"
-	item_state = "salvagedmachete"
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/beltslot.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	icon_state = "machete_lawnmower"
+	item_state = "machete_lawnmower"
 	force = 34
 	block_chance = 7
 	throwforce = 20
@@ -64,6 +68,7 @@
 	name = "machete"
 	desc = "A forged machete made of high quality steel."
 	icon_state = "machete"
+	item_state = "machete"
 	force = 35
 	wound_bonus = 20
 	block_chance = 8
@@ -112,6 +117,9 @@
 /obj/item/melee/onehanded/machete/scrapsabre
 	name = "scrap sabre"
 	desc = "Made from materials found in the wastes, a skilled blacksmith has turned it into a thing of deadly beauty."
+	icon = 'icons/fallout/objects/melee/melee.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
 	icon_state = "scrapsabre"
 	item_state = "scrapsabre"
 	force = 37

@@ -295,23 +295,25 @@
 
 /obj/structure/simple_door/tentflap_leather
 	name = "brahminskin tent entrance"
+	icon = 'modular_BD2/general/icons/tents.dmi'
 	icon_state = "tentflap_leather"
 	door_type = "tentflap_leather"
 	base_opacity = TRUE
 	can_disasemble = FALSE
 	can_hold_padlock = FALSE
-	open_sound = 'sound/effects/footstep/hardbarefoot4.ogg'
-	close_sound = 'sound/effects/footstep/hardbarefoot5.ogg'
+	open_sound = 'sound/effects/rustle3.ogg'
+	close_sound = 'sound/effects/rustle3.ogg'
 
 /obj/structure/simple_door/tentflap_cloth
 	name = "cotton tent entrance"
+	icon = 'modular_BD2/general/icons/tents.dmi'
 	icon_state = "tentflap_cloth"
 	door_type = "tentflap_cloth"
 	base_opacity = TRUE
 	can_disasemble = FALSE
 	can_hold_padlock = FALSE
-	open_sound = 'sound/effects/footstep/hardbarefoot4.ogg'
-	close_sound = 'sound/effects//footstep/hardbarefoot5.ogg'
+	open_sound = 'sound/effects/rustle3.ogg'
+	close_sound = 'sound/effects/rustle3.ogg'
 
 // Old square style tent door
 /obj/structure/simple_door/tent
