@@ -706,50 +706,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Vault Dweller"
 	icon_state = "Vault Dweller"
 
-// Oasis
-
-/obj/effect/landmark/start/f13/mayor
-	name = "Mayor"
-	icon_state = "Banker"
-
-/obj/effect/landmark/start/f13/secretary
-	name = "Secretary"
-	icon_state = "Lawyer"
-
-/obj/effect/landmark/start/f13/sheriff
-	name = "Chief of Police"
-	icon_state = "Chief of Police"
-
-/obj/effect/landmark/start/f13/deputy
-	name = "Officer"
-	icon_state = "Officer"
-
-/obj/effect/landmark/start/f13/farmer
-	name = "Farmer"
-
-/obj/effect/landmark/start/f13/prospector
-	name = "Prospector"
-
-/obj/effect/landmark/start/f13/settler
-	name = "Citizen"
-	icon_state = "Settler"
-
-/obj/effect/landmark/start/f13/towndoctor
-	name = "Town Doctor"
-	icon_state = "Medical Doctor"
-
-/obj/effect/landmark/start/f13/shopkeeper
-	name = "Shopkeeper"
-	icon_state = "Shopkeeper"
-
-/obj/effect/landmark/start/f13/assistant
-	name = "Shop Assistant"
-	icon_state = "Janitor"
-
-/obj/effect/landmark/start/f13/barkeep
-	name = "Barkeep"
-	icon_state = "Barkeep"
-
 // Wasteland
 
 /obj/effect/landmark/start/f13/wastelander
@@ -844,3 +800,59 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/guardian
 	icon_state = "Tribal"
+
+//MERCHANT
+
+/obj/effect/landmark/start/f13/merchant/highpriest
+	name = "Merchant"
+	icon_state = "Shopkeeper"
+
+/obj/effect/landmark/start/f13/merchant/servitormilitant
+	name = "Apprentice"
+	icon_state = "Quartermaster"
+
+/obj/effect/landmark/start/f13/merchant/acolyte
+	name = "Mercenary"
+	icon_state = "Officer"
+
+/obj/effect/landmark/start/f13/merchant/neophyte
+	name = "Bartender"
+	icon_state = "Barkeep"
+
+//COTC
+
+/obj/effect/landmark/start/f13/cotc/highpriest
+	name = "High Priest"
+	icon_state = "High Priest"
+
+/obj/effect/landmark/start/f13/cotc/servitor
+	name = "Servitor"
+	icon_state = "Servitor"
+
+/obj/effect/landmark/start/f13/cotc/acolyte
+	name = "Acolyte"
+	icon_state = "Acolyte"
+
+/obj/effect/landmark/start/f13/cotc/neophyte
+	name = "Neophyte"
+	icon_state = "Neophyte"
+
+//Rustwalkers
+
+/obj/effect/landmark/start/f13/rustwalker/listener
+	name = "Listener"
+	icon_state = "Tribal"
+
+/obj/effect/landmark/start/f13/rustwalker/rustwalker
+	name = "Rustwalker"
+	icon_state = "Tribal"
+
+//kebab
+
+/obj/effect/landmark/start/f13/kebab/radiohost
+	name = "Listener"
+	icon_state = "template"
+
+/obj/effect/landmark/start/f13/kebab/scab
+	name = "Rustwalker"
+	icon_state = "Wastelander"

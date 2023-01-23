@@ -50,7 +50,7 @@
 		)
 
 /datum/outfit/job/rustwalker/f13rustwalker/pre_equip(mob/living/carbon/human/H)
-		..()
+	..()
 	if(visualsOnly)
 		return
 	switch(H.gender)
@@ -91,7 +91,7 @@
 		)
 
 /datum/outfit/job/rustwalker/f13rustwalker/pre_equip(mob/living/carbon/human/H)
-		..()
+	..()
 	if(visualsOnly)
 		return
 	switch(H.gender)

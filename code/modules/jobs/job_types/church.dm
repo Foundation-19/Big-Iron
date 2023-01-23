@@ -4,7 +4,6 @@
 	faction = FACTION_CHURCH
 	exp_type = EXP_TYPE_CHURCH
 
-
 /datum/job/church/f13highpriest
 	title = "High Priest"
 	flag = F13HIGHPRIEST
@@ -39,7 +38,7 @@
 	jobtype = /datum/job/church/f13highpriest
 
 	id = /obj/item/card/id/yuma/cotc
-	uniform = /obj/item/clothing/under/f13/religion/priest
+	uniform = /obj/item/clothing/under/f13/chaplain
 	suit = /obj/item/clothing/suit/hooded/robes/cotc/highpriest
 	suit_store = /obj/item/gun/energy/laser/plasma/pistol
 	ears = /obj/item/radio/headset/headset_church
@@ -106,7 +105,7 @@
 	jobtype = /datum/job/church/f13servitor
 
 	id = /obj/item/card/id/yuma/cotc
-	uniform = /obj/item/clothing/under/f13/religion/priest
+	uniform = /obj/item/clothing/under/f13/chaplain
 	suit = /obj/item/clothing/suit/hooded/robes/cotc/servitor
 	suit_store = /obj/item/gun/energy/laser/wattz2k
 	ears = /obj/item/radio/headset/headset_church
@@ -173,9 +172,9 @@
 		),
 	)
 
-/datum/outfit/job/church/f13proselytizer
-	name = "Proselytizer"
-	jobtype = /datum/job/church/f13proselytizer
+/datum/outfit/job/church/f13acolyte
+	name = "Acolyte"
+	jobtype = /datum/job/church/f13acolyte
 
 	id = /obj/item/card/id/yuma/cotc
 	uniform = /obj/item/clothing/under/f13/brahminm

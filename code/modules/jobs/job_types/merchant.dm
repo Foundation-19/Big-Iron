@@ -3,7 +3,6 @@
 	selection_color = "#dcba97"
 	faction = FACTION_MERCHANT
 	exp_type = EXP_TYPE_FALLOUT
-	maptype = "yuma"
 
 /datum/job/merchant/f13shopkeeper
 	title = "Merchant"
@@ -36,9 +35,9 @@
 
 	id = /obj/item/card/id/dogtag/town
 	shoes = /obj/item/clothing/shoes/f13/brownie
-	uniform = /obj/item/clothing/under/f13/brahminbaron/foreign_suit
-	head = /obj/item/clothing/head/helmet/f13/foreign_hat
-	suit = /obj/item/clothing/suit/armor/f13/civilians/schlimmcoat
+	uniform = /obj/item/clothing/under/f13/schlimmsuit
+	head = /obj/item/clothing/head/helmet/f13/marlowhat/schlimmhat
+	suit = /obj/item/clothing/suit/armor/f13/marlowsuit/schlimmcoat
 	ears = /obj/item/radio/headset/headset_merchant
 	backpack = /obj/item/storage/backpack/satchel/leather/withwallet
 	satchel = /obj/item/storage/backpack/satchel/leather/withwallet
@@ -141,19 +140,19 @@
 		return
 
 /*--------------------------------------------------------------*/
-/datum/job/merchant/f13deputy
-	title = "Security Contractor"
-	flag = F13POLICEMAN
+/datum/job/merchant/f13mercenary
+	title = "Mercenary"
+	flag = F13MERCENARY
 	department_flag = MERCHANT
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Merchant"
-	description = "You are a Security Contractor, hired by the Merchant; follow his bidding, keep his slaves in line, and make sure no one holds out payment from him."
+	description = "You are a mercenary, hired by the Merchant; follow his bidding, keep his slaves in line, and make sure no one holds out payment from him."
 	selection_color = "#dcba97"
 	exp_type = EXP_TYPE_MERCHANT
 	exp_requirements = 0
 
-	outfit = /datum/outfit/job/merchant/f13deputy
+	outfit = /datum/outfit/job/merchant/f13mercenary
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINING, ACCESS_GATEWAY)
 	minimal_access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINING, ACCESS_GATEWAY)
 	matchmaking_allowed = list(
@@ -165,7 +164,7 @@
 		),
 	)
 
-/datum/outfit/job/merchant/f13deputy
+/datum/outfit/job/merchant/f13mercenary
 	name = "Merc"
 	jobtype = /datum/job/merchant/f13deputy
 	head = /obj/item/clothing/head/helmet/riot
@@ -200,23 +199,24 @@
 
 /*--------------------------------------------------------------*/
 
-/datum/job/merchant/f13prospector
-	title = "Indentured Servant"
+/datum/job/merchant/f13bartender
+	title = "Bartender"
 	flag = F13PROSPECTOR
 	department_flag = MERCHANT
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Merchant"
-	description = "You are the property of the merchant, but comparatively you are quite well off compared to those in the hands of the Legion, raiders, and those who dwell across the street. You may work in the house or be a hard laborer working in the mines or salvaging cars. Work hard enough and one day you may gain your freedom."
+	description = "You are the bartender, an employee of the Merchant. How you came into the Merchant's service is up to you, but what is known is that the Merchant owns the bar, and expects to see a return on investment. You are entitled to protection from the Merchant's guards, and are required to pay him whatever cut of the bar's profits he demands."
 	selection_color = "#dcba97"
 
-	outfit = /datum/outfit/job/merchant/f13indenturedservant
+	outfit = /datum/outfit/job/merchant/f13bartender
 
 	loadout_options = list(
-		/datum/outfit/loadout/houseservant,
-		/datum/outfit/loadout/miner,
-		/datum/outfit/loadout/tribalservant,
-		/datum/outfit/loadout/scrapper)
+		/datum/outfit/loadout/rugged,
+		/datum/outfit/loadout/frontier,
+		/datum/outfit/loadout/richmantender,
+		/datum/outfit/loadout/diner
+		)
 
 	access = list(ACCESS_BAR, ACCESS_MINING, ACCESS_CARGO_BOT)
 	minimal_access = list(ACCESS_BAR, ACCESS_MINING, ACCESS_CARGO_BOT)
@@ -229,48 +229,55 @@
 		),
 	)
 
-/datum/outfit/job/merchant/f13indenturedservant
-	name = "Indentured Servant"
-	jobtype = /datum/job/merchant/f13prospector
+/datum/outfit/job/merchant/f13bartender
+	name = "Barkeep"
+	jobtype = /datum/job/merchant/f13barkeep
+	uniform = /obj/item/clothing/under/f13/bartenderalt
+	id = /obj/item/card/id/dogtag/town
+	ears = /obj/item/radio/headset/headset_merchant
+	belt = /obj/item/gun/ballistic/revolver/caravan_shotgun
+	shoes = /obj/item/clothing/shoes/workboots/mining
+	backpack = /obj/item/storage/backpack/satchel/leather
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/settler = 1,
+		/obj/item/book/granter/action/drink_fling = 1,
+		/obj/item/ammo_box/shotgun/bean = 2,
+		/obj/item/book/manual/nuka_recipes = 1,
+		/obj/item/stack/f13Cash/caps/onezerozero = 1,
+		/obj/item/reagent_containers/food/drinks/bottle/rotgut = 1
+		)
 
-	id = /obj/item/card/id/outcasttattoo
-	ears = null
-	shoes = null
-	neck = /obj/item/electropack/shockcollar
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
+/datum/outfit/loadout/rugged
+	name = "Rugged"
+	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
+	uniform = /obj/item/clothing/under/f13/cowboyb
+	suit = /obj/item/clothing/suit/f13/cowboybvest
+	gloves = /obj/item/clothing/gloves/color/brown
+	shoes = /obj/item/clothing/shoes/f13/brownie
 
-/datum/outfit/job/merchant/f13indenturedservant/pre_equip(mob/living/carbon/human/H)
-	..()
-	uniform = pick(
-		/obj/item/clothing/under/f13/rag,
-		/obj/item/clothing/under/f13/raiderrags,
-		/obj/item/clothing/under/f13/raider_leather)
-
-/datum/outfit/loadout/houseservant
-	name = "House Servant"
-	uniform = /obj/item/clothing/under/f13/relaxedwear
+/datum/outfit/loadout/frontier
+	name = "Frontier"
+	head = /obj/item/clothing/head/bowler
+	mask = /obj/item/clothing/mask/fakemoustache
+	uniform = /obj/item/clothing/under/f13/westender
+	suit = /obj/item/clothing/suit/f13/westender
+	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/f13/fancy
-	backpack_contents = list(
-		/obj/item/soap = 1)
 
-/datum/outfit/loadout/tribalservant
-	name = "Tribal Servant"
-	uniform = /obj/item/clothing/under/f13/exile/tribal
-	backpack_contents = list(
-		/obj/item/soap = 1,
-		/obj/item/warpaint_bowl = 1,)
+/datum/outfit/loadout/richmantender
+	name = "Fancy"
+	head = /obj/item/clothing/head/fedora
+	glasses = /obj/item/clothing/glasses/sunglasses
+	uniform = /obj/item/clothing/under/rank/bartender
+	suit = /obj/item/clothing/suit/toggle/lawyer/black
+	gloves = /obj/item/clothing/gloves/fingerless
+	shoes = /obj/item/clothing/shoes/f13/fancy
+	neck = /obj/item/clothing/neck/tie/black
 
-/datum/outfit/loadout/miner
-	name = "Miner"
-	belt = /obj/item/storage/bag/ore
-	shoes = /obj/item/clothing/shoes/jackboots
-	backpack_contents = list(
-		/obj/item/mining_scanner = 1,
-		/obj/item/pickaxe = 1,)
-
-/datum/outfit/loadout/scrapper
-	name = "Scrapper"
-	shoes = /obj/item/clothing/shoes/jackboots
-	belt = /obj/item/storage/belt/utility/full
-	head = /obj/item/clothing/head/welding/f13
+/datum/outfit/loadout/diner
+	name = "Diner"
+	glasses = /obj/item/clothing/glasses/orange
+	uniform = /obj/item/clothing/under/f13/brahminf
+	neck = /obj/item/clothing/neck/apron/chef
+	gloves = /obj/item/clothing/gloves/color/white
+	shoes = /obj/item/clothing/shoes/f13/military/ncr

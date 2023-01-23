@@ -1,7 +1,6 @@
 /datum/job/kebab
 	exp_type = EXP_TYPE_FALLOUT
 	faction = FACTION_KEBAB
-/*--------------------------------------------------------------*/
 
 /datum/job/kebab/f13scab
 	title = "Scab"
@@ -116,6 +115,4 @@
 		/obj/item/book/manual/nuka_recipes = 1,
 		/obj/item/megaphone = 1,
 		/obj/item/pda = 1,
-		/obj/item/reagent_containers/food/drinks/bottle/rotgut = 1,
-		/obj/item/clothing/mask/chameleon/radiohost,
-		/obj/item/card/id/syndicate/radiohost)
+		/obj/item/reagent_containers/food/drinks/bottle/rotgut = 1)
