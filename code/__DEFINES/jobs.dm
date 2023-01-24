@@ -129,8 +129,8 @@
 
 #define DEP_KEBAB 		(1<<9)
 
-#define F13SCAB			(1<<11)
-#define F13RADIOHOST	(1<<12)
+#define F13SCAB			(1<<1)
+#define F13RADIOHOST	(1<<2)
 
 #define VAULT			(1<<7)
 

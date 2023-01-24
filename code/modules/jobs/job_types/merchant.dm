@@ -2,7 +2,7 @@
 	department_flag = MERCHANT
 	selection_color = "#dcba97"
 	faction = FACTION_MERCHANT
-	exp_type = EXP_TYPE_FALLOUT
+	exp_type = EXP_TYPE_MERCHANT
 
 /datum/job/merchant/f13shopkeeper
 	title = "Merchant"

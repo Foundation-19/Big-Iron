@@ -30,7 +30,7 @@
 	spawn_positions = 1
 	description = "You are the listener, the leadership of the tribe. You are the most technologically capable of the rustwalkers, and have a talent for fixing machines. You run the tribes generator, make the executive decisions for the tribe, and lead it in times of war."
 	supervisors = "the Machine"
-	outfit = /datum/outfit/job/rustwalker/f13rustwalker
+	outfit = /datum/outfit/job/rustwalker/f13listener
 
 /datum/outfit/job/rustwalker/f13listener
 	name = "Listener"
@@ -40,16 +40,18 @@
 	ears = /obj/item/radio/headset/headset_rustwalker
 	head = /obj/item/clothing/head/helmet/f13/wastewarhat
 	suit = /obj/item/clothing/suit/f13/tribal/heavy/rustwalkers
+	uniform = /obj/item/clothing/under/f13/rustwalkers
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	glasses	= /obj/item/clothing/glasses/welding
 	gloves = /obj/item/clothing/gloves/color/yellow
 	suit_store = /obj/item/twohanded/spear/scrapspear
 	backpack_contents = list(
 		/obj/item/storage/belt/utility/full = 1,
+		/obj/item/clothing/under/f13/female/rustwalkers = 1,
 		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
 		/obj/item/book/granter/crafting_recipe/tribal/rustwalkers = 1
 		)
-
+/*
 /datum/outfit/job/rustwalker/f13listener/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -59,7 +61,7 @@
 			uniform = /obj/item/clothing/under/f13/female/rustwalkers
 		if(MALE)
 			uniform = /obj/item/clothing/under/f13/rustwalkers
-
+*/ //This seems to not be working for some reason.
 
 //RUSTWALKER
 
@@ -82,6 +84,7 @@
 	ears = /obj/item/radio/headset/headset_rustwalker
 	head = /obj/item/clothing/head/helmet/f13/wastewarhat
 	suit = /obj/item/clothing/suit/f13/tribal/light/rustwalkers
+	uniform = /obj/item/clothing/under/f13/female/rustwalkers
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	glasses	= /obj/item/clothing/glasses/welding
 	gloves = /obj/item/clothing/gloves/color/yellow
@@ -89,9 +92,10 @@
 	backpack_contents = list(
 		/obj/item/storage/belt/utility/full = 1,
 		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/clothing/under/f13/female/rustwalkers = 1,
 		/obj/item/book/granter/crafting_recipe/tribal/rustwalkers = 1
 		)
-
+/*
 /datum/outfit/job/rustwalker/f13rustwalker/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -101,3 +105,4 @@
 			uniform = /obj/item/clothing/under/f13/female/rustwalkers
 		if(MALE)
 			uniform = /obj/item/clothing/under/f13/rustwalkers
+*/ //This seems to not be working for some reason.

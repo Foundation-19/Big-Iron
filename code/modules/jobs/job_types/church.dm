@@ -178,8 +178,6 @@
 
 	id = /obj/item/card/id/yuma/cotc
 	uniform = /obj/item/clothing/under/f13/brahminm
-	suit = /obj/item/clothing/suit/hooded/robes/cotc/proselytizer
-	suit_store = /obj/item/gun/energy/laser/wattz
 	ears = /obj/item/radio/headset/headset_church
 	backpack = /obj/item/storage/backpack/satchel/sec
 	satchel = /obj/item/storage/backpack/satchel/sec
@@ -256,7 +254,7 @@
 	belt = /obj/item/storage/bag/plants
 	shoes = /obj/item/clothing/shoes/f13/rag
 	backpack_contents = list(
-		/obj/item/cultivator=1, \
+		/obj/item/cultivator=1,
 		/obj/item/hatchet=1,
 		/obj/item/shovel/spade=1)
 
