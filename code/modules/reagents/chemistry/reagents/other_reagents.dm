@@ -2277,7 +2277,7 @@
 	..()
 
 //Misc reagents
-
+/*
 /datum/reagent/romerol
 	name = "Romerol"
 	// the REAL zombie powder
@@ -2300,7 +2300,7 @@
 		var/obj/item/organ/zombie_infection/nodamage/ZI = new()
 		ZI.Insert(H)
 	..()
-
+*/
 /datum/reagent/magillitis
 	name = "Magillitis"
 	description = "An experimental serum which causes rapid muscular growth in Hominidae. Side-affects may include hypertrichosis, violent outbursts, and an unending affinity for bananas."
@@ -2322,7 +2322,6 @@
 	var/current_size = RESIZE_DEFAULT_SIZE
 	value = REAGENT_VALUE_COMMON
 	taste_description = "bitterness" // apparently what viagra tastes like
-
 /datum/reagent/growthserum/on_mob_life(mob/living/carbon/H)
 	var/newsize = current_size
 	switch(volume)
@@ -2336,12 +2335,10 @@
 			newsize = 2.5*RESIZE_DEFAULT_SIZE
 		if(200 to INFINITY)
 			newsize = 3.5*RESIZE_DEFAULT_SIZE
-
 	H.resize = newsize/current_size
 	current_size = newsize
 	H.update_transform()
 	..()
-
 /datum/reagent/growthserum/on_mob_end_metabolize(mob/living/M)
 	M.resize = RESIZE_DEFAULT_SIZE/current_size
 	current_size = RESIZE_DEFAULT_SIZE

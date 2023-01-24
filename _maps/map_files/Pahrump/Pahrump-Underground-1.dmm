@@ -202,8 +202,14 @@
 	},
 /area/f13/sewer)
 "agL" = (
-/obj/structure/ore_box,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/structure/rack/shelf_metal,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	color = "#e4e4e4"
+	},
 /area/f13/tunnel)
 "agO" = (
 /obj/machinery/defibrillator_mount/loaded{
@@ -1223,8 +1229,8 @@
 /area/f13/tcoms)
 "aWM" = (
 /obj/item/paper{
-	info = "Got the godforsaken power working down here. Apparently if you jam it in there good, the fusion cells from gunny's armor can fit in the power box. Below's how to replace the cell when it runs dry.<br><b>Step 1<br>Unlock cover in interface.<br>Step 2<br> Pry cell with crowbar.<br><b>Step 3<br>Add new cell.</b><br><br>-Private Barnes";
 	icon_state = "paper_words";
+	info = "Got the godforsaken power working down here. Apparently if you jam it in there good, the fusion cells from gunny's armor can fit in the power box. Below's how to replace the cell when it runs dry.<br><b>Step 1<br>Unlock cover in interface.<br>Step 2<br> Pry cell with crowbar.<br><b>Step 3<br>Add new cell.</b><br><br>-Private Barnes";
 	name = "power box instructions"
 	},
 /obj/machinery/power/apc/auto_name/west,
@@ -2432,7 +2438,32 @@
 /turf/open/floor/carpet/red,
 /area/f13/den)
 "bGa" = (
-/obj/item/stock_parts/cell/ammo/breeder,
+/obj/item/trash/f13/porknbeans{
+	pixel_x = 12;
+	pixel_y = 23
+	},
+/obj/machinery/light/small{
+	dir = 1;
+	light_color = "red"
+	},
+/obj/item/trash/f13/electronic/toaster/oven{
+	pixel_x = -18;
+	pixel_y = 11
+	},
+/obj/item/reagent_containers/glass/beaker/waterbottle{
+	pixel_x = -7;
+	pixel_y = 15
+	},
+/obj/item/reagent_containers/glass/beaker/waterbottle{
+	pixel_x = -7;
+	pixel_y = 9
+	},
+/obj/structure/rack/shelf_metal{
+	pixel_x = 12
+	},
+/obj/item/flashlight/flare{
+	pixel_x = 12
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "bGf" = (
@@ -7790,7 +7821,10 @@
 	},
 /area/f13/enclave)
 "fcS" = (
-/obj/structure/door_assembly/door_assembly_vault,
+/obj/machinery/door/airlock/vault{
+	id_tag = "enclavehatch";
+	req_access_txt = "134"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "fcV" = (
@@ -7931,7 +7965,13 @@
 	},
 /area/f13/building)
 "fhn" = (
-/obj/item/stack/sheet/cloth,
+/obj/structure/bed/mattress,
+/obj/item/radio/intercom{
+	frequency = 1292;
+	pixel_x = 32;
+	pixel_y = 2
+	},
+/obj/effect/landmark/start/f13/uslt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "fhr" = (
@@ -14576,8 +14616,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
 "jYE" = (
-/obj/item/candle/tribal_torch,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/structure/rack/shelf_metal,
+/obj/item/stack/sheet/coke/twenty,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	color = "#e4e4e4"
+	},
 /area/f13/tunnel)
 "jYR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -15616,7 +15659,12 @@
 	},
 /area/f13/enclave)
 "kQN" = (
-/obj/structure/table_frame,
+/obj/item/radio/tribal{
+	desc = "an old pre-war radio transceiver somehow still working after all this time.";
+	name = "old radio";
+	pixel_y = 11
+	},
+/obj/structure/table/rolling,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "kQO" = (
@@ -16954,7 +17002,21 @@
 	},
 /area/f13/bunker)
 "lXU" = (
-/obj/item/rack_parts,
+/obj/item/reagent_containers/food/snacks/beans{
+	pixel_x = -5;
+	pixel_y = 20
+	},
+/obj/structure/rack/shelf_metal{
+	pixel_x = 4
+	},
+/obj/item/flashlight/glowstick{
+	pixel_x = 13;
+	pixel_y = 12
+	},
+/obj/item/flashlight/glowstick/yellow{
+	pixel_x = 9;
+	pixel_y = 11
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "lYo" = (
@@ -17345,6 +17407,9 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/brotherhood/archives)
+"mpV" = (
+/turf/closed/mineral/random/protective_area,
+/area/f13/caves)
 "mro" = (
 /obj/machinery/light,
 /turf/open/floor/carpet/red,
@@ -20084,9 +20149,13 @@
 	},
 /area/f13/brotherhood/archives)
 "oMH" = (
-/obj/structure/barricade/wooden/planks/pregame,
-/obj/structure/table_frame,
-/obj/structure/barricade/wooden,
+/obj/structure/barricade/concrete,
+/obj/structure/barricade/bars,
+/obj/structure/table/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	id = "enclave_shutter";
+	max_integrity = 300
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "oMS" = (
@@ -22202,6 +22271,12 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/enclave)
+"qxy" = (
+/obj/structure/ore_box,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	color = "#e4e4e4"
+	},
+/area/f13/tunnel)
 "qxN" = (
 /obj/item/radio/intercom{
 	frequency = 1361;
@@ -22453,6 +22528,13 @@
 "qGM" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/structure/barricade/wooden/strong,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
+"qGO" = (
+/obj/structure/destructible/tribal_torch/lit{
+	light_power = 0.8;
+	light_range = 5
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "qGX" = (
@@ -24241,9 +24323,10 @@
 /turf/open/floor/carpet/red,
 /area/f13/den)
 "rTo" = (
-/obj/item/storage/bag/ore,
-/obj/item/pickaxe,
-/turf/open/indestructible/ground/inside/mountain,
+/obj/structure/blacksmith/furnace/sandstone,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	color = "#e4e4e4"
+	},
 /area/f13/tunnel)
 "rTW" = (
 /obj/effect/decal/remains{
@@ -24551,12 +24634,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "sgP" = (
-/obj/effect/decal/cleanable/blood/gibs{
-	icon_state = "gibtorso"
-	},
-/obj/effect/decal/remains/human,
-/obj/item/clothing/head/f13/enclave{
-	pixel_y = 6
+/obj/machinery/button{
+	id = "enclave_shutter";
+	name = "shutter button";
+	pixel_x = 24;
+	pixel_y = 24
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
@@ -26502,8 +26584,8 @@
 /area/f13/tcoms)
 "tNP" = (
 /obj/structure/ladder/unbreakable{
-	id = "enclave_bunker";
-	height = 2
+	height = 2;
+	id = "enclave_bunker"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
@@ -27679,8 +27761,20 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/enclave)
 "uRF" = (
+/obj/structure/junk/small/tv{
+	pixel_x = -3;
+	pixel_y = 9
+	},
+/obj/structure/table/booth,
+/obj/item/reagent_containers/food/drinks/bottle/brown/beer{
+	pixel_x = 10;
+	pixel_y = 7
+	},
 /obj/machinery/light/small,
-/obj/item/card/id/rusted/brokenholodog/enclave,
+/obj/item/clothing/head/f13/enclave{
+	pixel_x = -9;
+	pixel_y = 18
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "uRH" = (
@@ -27740,17 +27834,17 @@
 	},
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d{
 	anchored = 1;
-	pixel_y = 10;
-	name = "display T-45d helmet";
 	armor = list("melee"=0,"bullet"=0,"laser"=0,"energy"=0,"bomb"=0,"bio"=0,"rad"=0,"fire"=0,"acid"=0,"wound"=0);
-	desc = "Upon closer inspection, this T-45d power armor helmet appears to be fake."
+	desc = "Upon closer inspection, this T-45d power armor helmet appears to be fake.";
+	name = "display T-45d helmet";
+	pixel_y = 10
 	},
 /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d{
 	anchored = 1;
-	pixel_x = -1;
-	pixel_y = 2;
+	desc = "Upon closer inspection, this T-45d power armor appears to be fake.";
 	name = "display T-45d power armor";
-	desc = "Upon closer inspection, this T-45d power armor appears to be fake."
+	pixel_x = -1;
+	pixel_y = 2
 	},
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
@@ -28370,19 +28464,19 @@
 	},
 /obj/item/clothing/suit/armored/heavy/salvaged_pa/t51b{
 	anchored = 1;
-	pixel_x = -1;
-	pixel_y = 3;
-	name = "displayT-51b power armor";
 	armor = list("melee"=0,"bullet"=0,"laser"=0,"energy"=0,"bomb"=0,"bio"=0,"rad"=0,"fire"=0,"acid"=0,"wound"=0);
-	desc = "Upon closer inspection, this T-51b power armor appears to be fake."
+	desc = "Upon closer inspection, this T-51b power armor appears to be fake.";
+	name = "displayT-51b power armor";
+	pixel_x = -1;
+	pixel_y = 3
 	},
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t51b{
 	anchored = 1;
-	pixel_x = -1;
-	pixel_y = 11;
+	armor = list("melee"=0,"bullet"=0,"laser"=0,"energy"=0,"bomb"=0,"bio"=0,"rad"=0,"fire"=0,"acid"=0,"wound"=0);
 	desc = "Upon closer inspection, this T-51b power armor helmet appears to be fake.";
 	name = "display T-51b power armor";
-	armor = list("melee"=0,"bullet"=0,"laser"=0,"energy"=0,"bomb"=0,"bio"=0,"rad"=0,"fire"=0,"acid"=0,"wound"=0)
+	pixel_x = -1;
+	pixel_y = 11
 	},
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
@@ -28966,17 +29060,17 @@
 	},
 /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d{
 	anchored = 1;
-	pixel_x = -1;
-	pixel_y = 2;
+	desc = "Upon closer inspection, this T-45d power armor appears to be fake.";
 	name = "display T-45d power armor";
-	desc = "Upon closer inspection, this T-45d power armor appears to be fake."
+	pixel_x = -1;
+	pixel_y = 2
 	},
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d{
 	anchored = 1;
-	pixel_y = 10;
-	name = "display T-45d helmet";
 	armor = list("melee"=0,"bullet"=0,"laser"=0,"energy"=0,"bomb"=0,"bio"=0,"rad"=0,"fire"=0,"acid"=0,"wound"=0);
-	desc = "Upon closer inspection, this T-45d power armor helmet appears to be fake."
+	desc = "Upon closer inspection, this T-45d power armor helmet appears to be fake.";
+	name = "display T-45d helmet";
+	pixel_y = 10
 	},
 /turf/open/indestructible/ground/inside/subway{
 	name = "stone floor"
@@ -29016,7 +29110,20 @@
 /obj/structure/bed{
 	pixel_x = 2
 	},
-/obj/item/trash/f13/porknbeans,
+/obj/structure/fence{
+	pixel_x = -12
+	},
+/obj/structure/fence{
+	pixel_x = 16
+	},
+/obj/structure/bed{
+	pixel_x = 2;
+	pixel_y = 16
+	},
+/obj/machinery/computer/security/bos{
+	pixel_x = -3;
+	pixel_y = 15
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "vMo" = (
@@ -29049,10 +29156,10 @@
 /obj/machinery/light/small/broken{
 	dir = 4
 	},
-/obj/effect/decal/remains/human,
-/obj/item/clothing/under/f13/ncr/ncr_shorts,
-/obj/item/crowbar/basic,
-/obj/effect/decal/cleanable/blood,
+/obj/item/radio/intercom{
+	frequency = 1291;
+	pixel_x = 32
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "vNj" = (
@@ -29254,7 +29361,12 @@
 /turf/closed/wall/rust,
 /area/f13/den)
 "vUa" = (
-/obj/item/wallframe/button,
+/obj/machinery/button{
+	id = "enclavehatch";
+	name = "hatch bolts button";
+	pixel_x = 7;
+	pixel_y = 24
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "vVx" = (
@@ -77890,9 +78002,9 @@ vPg
 vPg
 vPg
 vPg
-aoj
-aoj
-aoj
+mpV
+mpV
+mpV
 eLE
 vPg
 vPg
@@ -78146,7 +78258,7 @@ tur
 vPg
 vPg
 vPg
-vPg
+mpV
 vPg
 vPg
 vPg
@@ -78402,10 +78514,10 @@ hpW
 tur
 vPg
 vPg
+mpV
 vPg
 vPg
-vPg
-vPg
+aoj
 vPg
 vPg
 vPg
@@ -78659,7 +78771,7 @@ lfk
 tur
 vPg
 vPg
-vPg
+mpV
 vPg
 vPg
 vPg
@@ -78916,11 +79028,11 @@ dxj
 tur
 vPg
 vPg
+mpV
 vPg
 vPg
 vPg
-vPg
-vPg
+aoj
 vPg
 vPg
 vPg
@@ -80205,7 +80317,7 @@ evI
 wFD
 evI
 vPg
-vPg
+mpV
 vPg
 vPg
 aoj
@@ -80462,7 +80574,7 @@ evI
 evI
 vPg
 vPg
-vPg
+mpV
 vPg
 aoj
 aoj
@@ -80718,7 +80830,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+mpV
 vPg
 vPg
 vPg
@@ -80969,12 +81081,12 @@ eLE
 eLE
 eLE
 eLE
-vPg
-vPg
-aoj
-aoj
-vPg
-vPg
+mpV
+mpV
+mpV
+mpV
+mpV
+mpV
 vPg
 vPg
 vPg
@@ -82257,7 +82369,7 @@ eLE
 eLE
 eLE
 eLE
-eLE
+vPg
 vPg
 vPg
 vPg
@@ -83803,7 +83915,7 @@ eLE
 vPg
 vPg
 vPg
-aoj
+vPg
 aoj
 aoj
 aoj
@@ -84313,7 +84425,7 @@ vPg
 vPg
 vPg
 eLE
-eLE
+vPg
 vPg
 vPg
 vPg
@@ -84570,7 +84682,7 @@ vPg
 vPg
 vPg
 eLE
-vPg
+aoj
 vPg
 vPg
 vPg
@@ -87138,7 +87250,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 eLE
 vPg
 vPg
@@ -87396,7 +87508,7 @@ eLE
 eLE
 eLE
 eLE
-eLE
+vPg
 vPg
 vPg
 vPg
@@ -87645,12 +87757,12 @@ raD
 lPf
 fvo
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
 eLE
+vPg
+vPg
+vPg
+vPg
+aoj
 vPg
 vPg
 vPg
@@ -87902,12 +88014,12 @@ raD
 qRM
 fvo
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
 eLE
+vPg
+vPg
+aoj
+aoj
+aoj
 vPg
 vPg
 vPg
@@ -88160,11 +88272,11 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
 eLE
+eLE
+eLE
+vPg
+vPg
 vPg
 vPg
 vPg
@@ -88420,8 +88532,8 @@ vPg
 vPg
 vPg
 vPg
-vPg
 eLE
+vPg
 vPg
 vPg
 vPg
@@ -88944,7 +89056,7 @@ aoj
 vPg
 vPg
 aoj
-aoj
+vPg
 aoj
 aoj
 aoj
@@ -90746,7 +90858,7 @@ aoj
 aoj
 aoj
 aoj
-aoj
+vPg
 vPg
 vPg
 vPg
@@ -91475,7 +91587,7 @@ eLE
 eLE
 vPg
 vPg
-aoj
+vPg
 aoj
 vPg
 vPg
@@ -92242,7 +92354,7 @@ eSW
 eLE
 vPg
 vPg
-vPg
+aoj
 vPg
 vPg
 vPg
@@ -92499,11 +92611,11 @@ eLE
 eLE
 vPg
 vPg
+aoj
 vPg
 vPg
 vPg
-vPg
-vPg
+aoj
 vPg
 vPg
 vPg
@@ -92754,19 +92866,19 @@ weC
 eSW
 eLE
 eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
+vPg
+vPg
+vPg
+vPg
+vPg
+vPg
+vPg
+vPg
+vPg
+vPg
+vPg
+vPg
+vPg
 vPg
 vPg
 aoj
@@ -92783,13 +92895,13 @@ vPg
 vPg
 aoj
 aoj
-aoj
-aoj
-aoj
-aoj
-vPg
 vPg
 aoj
+aoj
+aoj
+vPg
+vPg
+aoj
 vPg
 vPg
 vPg
@@ -92805,7 +92917,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+aoj
 eLE
 "}
 (237,1,1) = {"
@@ -93016,14 +93128,14 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
 vPg
 aoj
 vPg
 vPg
-eLE
+vPg
 vPg
 vPg
 vPg
@@ -93269,18 +93381,18 @@ xwr
 eLE
 vPg
 vPg
+aoj
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
 vPg
 vPg
 vPg
 eLE
+eLE
+aoj
+aoj
+vPg
 vPg
 vPg
 vPg
@@ -93524,20 +93636,20 @@ ojd
 xwr
 xwr
 eLE
+eLE
 vPg
 vPg
-vPg
-vPg
-vPg
+eLE
+eLE
 vPg
 vPg
 lnr
 vPg
 vPg
 vPg
-vPg
-aoj
 eLE
+aoj
+vPg
 vPg
 vPg
 vPg
@@ -93782,8 +93894,8 @@ uWA
 eSW
 eLE
 vPg
-vPg
-vPg
+eLE
+eLE
 vPg
 vPg
 vPg
@@ -93791,10 +93903,10 @@ lnr
 lnr
 nBk
 nBk
-vPg
-vPg
 vPg
 eLE
+vPg
+vPg
 vPg
 vPg
 vPg
@@ -94050,8 +94162,8 @@ lnr
 nBk
 vPg
 vPg
-vPg
 eLE
+vPg
 vPg
 aoj
 vPg
@@ -95592,15 +95704,15 @@ vPg
 vPg
 vPg
 vPg
-vPg
 eLE
+vPg
 aoj
 vPg
 vPg
 vPg
 aoj
 aoj
-aoj
+vPg
 aoj
 aoj
 aoj
@@ -95845,12 +95957,12 @@ vVD
 tmM
 vPg
 vPg
-aoj
-aoj
-vPg
-vPg
-vPg
 eLE
+eLE
+eLE
+eLE
+vPg
+vPg
 aoj
 vPg
 vPg
@@ -96101,30 +96213,30 @@ tVE
 mRl
 tmM
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
 eLE
-aoj
 vPg
 vPg
-aoj
 vPg
-aoj
-aoj
-aoj
-aoj
-aoj
 vPg
 vPg
 vPg
 aoj
 vPg
 vPg
+aoj
 vPg
+aoj
+aoj
+aoj
+aoj
+aoj
+vPg
+vPg
+vPg
+aoj
+vPg
+vPg
+lnr
 vPg
 vPg
 vPg
@@ -96358,14 +96470,14 @@ fgu
 nJG
 tmM
 vPg
-vPg
-vPg
-vPg
-vPg
-aoj
-vPg
 eLE
 vPg
+vPg
+vPg
+aoj
+vPg
+vPg
+vPg
 aoj
 aoj
 vPg
@@ -96375,14 +96487,14 @@ aoj
 aoj
 aoj
 aoj
-vPg
 vPg
 vPg
 vPg
 vPg
 vPg
 jYE
-vPg
+lnr
+lnr
 vPg
 vPg
 eLE
@@ -96615,15 +96727,15 @@ tmM
 tmM
 xLe
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
 eLE
 vPg
 vPg
+vPg
+aoj
+vPg
+vPg
+vPg
+vPg
 aoj
 aoj
 aoj
@@ -96637,10 +96749,10 @@ aoj
 vPg
 aoj
 vPg
+rTo
 lnr
+qGO
 lnr
-lnr
-rJA
 vPg
 vPg
 vPg
@@ -96872,13 +96984,13 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
 eLE
+vPg
+vPg
+aoj
+aoj
+vPg
+vPg
 vPg
 vPg
 aoj
@@ -97128,21 +97240,21 @@ eLE
 eLE
 eLE
 eLE
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
 eLE
 vPg
 vPg
 aoj
+vPg
+vPg
+vPg
+vPg
+vPg
+vPg
 aoj
 aoj
 aoj
 aoj
+aoj
 vPg
 vPg
 vPg
@@ -97151,15 +97263,15 @@ vPg
 vPg
 vPg
 vPg
-vPg
-rTo
+qxy
+lnr
 ldM
 vPg
 vPg
 vPg
 vPg
 vPg
-vPg
+aoj
 vPg
 eLE
 hgA
@@ -97392,14 +97504,14 @@ vPg
 vPg
 vPg
 vPg
-eLE
+vPg
 vPg
 vPg
 aoj
 aoj
+vPg
 aoj
 aoj
-aoj
 vPg
 vPg
 vPg
@@ -97408,8 +97520,8 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
+qxy
+lnr
 vPg
 vPg
 vPg
