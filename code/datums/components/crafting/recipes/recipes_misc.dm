@@ -26,8 +26,7 @@
 /datum/crafting_recipe/ncrgate
 	name = "NCR reinforced door"
 	result = /obj/machinery/door/unpowered/secure_NCR
-	reqs = list(/obj/item/stack/sheet/metal = 20,
-				/obj/item/stack/sheet/mineral/wood = 20,)
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 25)
 	time = 60
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
