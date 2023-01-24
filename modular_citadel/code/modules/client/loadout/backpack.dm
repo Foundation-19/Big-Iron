@@ -124,54 +124,6 @@
 
 /// Modkits 
 
-/datum/gear/backpack/weatheredrangerhelm
-	name = "weathered ranger helmet modkit"
-	path = /obj/item/modkit/digger_helm
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-
-/datum/gear/backpack/weatheredrangerarmor
-	name = "weathered ranger armor modkit"
-	path = /obj/item/modkit/digger_vest
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-
-/datum/gear/backpack/marlowsuit_ike
-	name = "Gunfighters Overcoat modkit"
-	path = /obj/item/modkit/marlowsuit_ike
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-
-/datum/gear/backpack/marlowsuit_mason
-	name = "Vagabond Vest modkit"
-	path = /obj/item/modkit/marlowsuit_mason
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-
-/datum/gear/backpack/marlowsuit
-	name = "Marlow Overcoat modkit"
-	path = /obj/item/modkit/marlowsuit
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-
-/datum/gear/backpack/marlowhat
-	name = "Marlow Hat modkit"
-	path = /obj/item/modkit/marlowhat
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-
-/datum/gear/backpack/schlimmhat
-	name = "Foreign Florentine Hat modkit"
-	path = /obj/item/modkit/schlimmhat
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-
-/datum/gear/backpack/schlimmcoat
-	name = "Foreign Frock Coat modkit"
-	path = /obj/item/modkit/schlimmcoat
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-
 /datum/gear/backpack/ahp_suit
 	name = "Highway Patrol Jacket modkit"
 	path = /obj/item/modkit/ahp_suit
@@ -183,38 +135,6 @@
 	path = /obj/item/modkit/ahp_helmet
 	cost = 2
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-
-/datum/gear/backpack/westernwayfarerlight
-	name = "Western wayfarer light modkit"
-	path = /obj/item/modkit/westernwayfarerlight
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-	restricted_desc = "Tribal"
-	restricted_roles = list("Tribal")
-
-/datum/gear/backpack/westernwayfarerheavy
-	name = "Western wayfarer heavy modkit"
-	path = /obj/item/modkit/westernwayfarerheavy
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-	restricted_desc = "Tribal"
-	restricted_roles = list("Tribal")
-
-/datum/gear/backpack/khanbatkit
-	name = "khanbat armor modkit"
-	path = /obj/item/modkit/khanbat
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
-
-/datum/gear/backpack/khanbatreinforcedkit
-	name = "khanbat reinforced armor modkit"
-	path = /obj/item/modkit/khanbatreinforced
-	cost = 2
-	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
 
 
 /// Backpacks
