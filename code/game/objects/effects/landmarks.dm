@@ -706,6 +706,50 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Vault Dweller"
 	icon_state = "Vault Dweller"
 
+// Oasis
+
+/obj/effect/landmark/start/f13/mayor
+	name = "Mayor"
+	icon_state = "Banker"
+
+/obj/effect/landmark/start/f13/secretary
+	name = "Secretary"
+	icon_state = "Lawyer"
+
+/obj/effect/landmark/start/f13/sheriff
+	name = "Chief of Police"
+	icon_state = "Chief of Police"
+
+/obj/effect/landmark/start/f13/deputy
+	name = "Officer"
+	icon_state = "Officer"
+
+/obj/effect/landmark/start/f13/farmer
+	name = "Farmer"
+
+/obj/effect/landmark/start/f13/prospector
+	name = "Prospector"
+
+/obj/effect/landmark/start/f13/settler
+	name = "Citizen"
+	icon_state = "Settler"
+
+/obj/effect/landmark/start/f13/towndoctor
+	name = "Town Doctor"
+	icon_state = "Medical Doctor"
+
+/obj/effect/landmark/start/f13/shopkeeper
+	name = "Shopkeeper"
+	icon_state = "Shopkeeper"
+
+/obj/effect/landmark/start/f13/assistant
+	name = "Shop Assistant"
+	icon_state = "Janitor"
+
+/obj/effect/landmark/start/f13/barkeep
+	name = "Barkeep"
+	icon_state = "Barkeep"
+
 // Wasteland
 
 /obj/effect/landmark/start/f13/wastelander
