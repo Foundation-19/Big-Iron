@@ -35,7 +35,7 @@
 /datum/outfit/job/rustwalker/f13listener
 	name = "Listener"
 	jobtype	= /datum/job/rustwalker/f13listener
-	id = /obj/item/card/id/tribetattoo
+	id = /obj/item/card/id/outcasttattoo
 	belt = /obj/item/storage/backpack/spearquiver
 	ears = /obj/item/radio/headset/headset_rustwalker
 	head = /obj/item/clothing/head/helmet/f13/wastewarhat
@@ -78,8 +78,8 @@
 
 /datum/outfit/job/rustwalker/f13rustwalker
 	name = "Rustwalker"
-	jobtype	= /datum/job/ncr/f13trooper
-	id = /obj/item/card/id/tribetattoo
+	jobtype	= /datum/job/ncr/f13rustwalker
+	id = /obj/item/card/id/outcasttattoo
 	belt = /obj/item/storage/backpack/spearquiver
 	ears = /obj/item/radio/headset/headset_rustwalker
 	head = /obj/item/clothing/head/helmet/f13/wastewarhat
