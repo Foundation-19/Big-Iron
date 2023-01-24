@@ -205,7 +205,7 @@
 	head = /obj/item/clothing/head/helmet/f13/envirosuit
 
 /obj/effect/mob_spawn/human/corpse/enclave
-	name = "enclave specialist"
+	name = "enclave private"
 	uniform = /obj/item/clothing/under/f13/enclave/peacekeeper
 	shoes = /obj/item/clothing/shoes/f13/enclave/serviceboots
 	gloves = /obj/item/clothing/gloves/f13/military
