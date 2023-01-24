@@ -307,7 +307,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_CHURCH = list("titles" = church_positions),
 	EXP_TYPE_MERCHANT = list("titles" = merchant_positions),
 	EXP_TYPE_RUSTWALKER = list("titles" = rustwalker_positions),
-	EXP_TYPE_KEBAB = list("titles" = kebab_positions ),
+	EXP_TYPE_KEBAB = list("titles" = kebab_positions),
 	EXP_TYPE_TRIBAL = list("titles" = tribal_positions),
 	EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
 

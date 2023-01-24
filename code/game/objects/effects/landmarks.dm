@@ -803,19 +803,19 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 //MERCHANT
 
-/obj/effect/landmark/start/f13/merchant/highpriest
+/obj/effect/landmark/start/f13/merchant/merchant
 	name = "Merchant"
 	icon_state = "Shopkeeper"
 
-/obj/effect/landmark/start/f13/merchant/servitormilitant
+/obj/effect/landmark/start/f13/merchant/apprentice
 	name = "Apprentice"
 	icon_state = "Quartermaster"
 
-/obj/effect/landmark/start/f13/merchant/acolyte
+/obj/effect/landmark/start/f13/merchant/mercenary
 	name = "Mercenary"
 	icon_state = "Officer"
 
-/obj/effect/landmark/start/f13/merchant/neophyte
+/obj/effect/landmark/start/f13/merchant/bartender
 	name = "Bartender"
 	icon_state = "Barkeep"
 
@@ -850,9 +850,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 //kebab
 
 /obj/effect/landmark/start/f13/kebab/radiohost
-	name = "Listener"
+	name = "Radio Host"
 	icon_state = "template"
 
 /obj/effect/landmark/start/f13/kebab/scab
-	name = "Rustwalker"
+	name = "Scab"
 	icon_state = "Wastelander"

@@ -37,7 +37,7 @@
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/raider = 1,
 		)
-/datum/outfit/job/den/f13settler/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/kebab/f13scab/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 	uniform = pick(
 		/obj/item/clothing/under/f13/merca,
