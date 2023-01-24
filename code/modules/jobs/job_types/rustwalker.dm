@@ -78,7 +78,7 @@
 
 /datum/outfit/job/rustwalker/f13rustwalker
 	name = "Rustwalker"
-	jobtype	= /datum/job/ncr/f13rustwalker
+	jobtype	= /datum/job/rustwalker/f13rustwalker
 	id = /obj/item/card/id/outcasttattoo
 	belt = /obj/item/storage/backpack/spearquiver
 	ears = /obj/item/radio/headset/headset_rustwalker
