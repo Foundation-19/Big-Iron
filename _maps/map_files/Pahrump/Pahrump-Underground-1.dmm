@@ -2438,32 +2438,7 @@
 /turf/open/floor/carpet/red,
 /area/f13/den)
 "bGa" = (
-/obj/item/trash/f13/porknbeans{
-	pixel_x = 12;
-	pixel_y = 23
-	},
-/obj/machinery/light/small{
-	dir = 1;
-	light_color = "red"
-	},
-/obj/item/trash/f13/electronic/toaster/oven{
-	pixel_x = -18;
-	pixel_y = 11
-	},
-/obj/item/reagent_containers/glass/beaker/waterbottle{
-	pixel_x = -7;
-	pixel_y = 15
-	},
-/obj/item/reagent_containers/glass/beaker/waterbottle{
-	pixel_x = -7;
-	pixel_y = 9
-	},
-/obj/structure/rack/shelf_metal{
-	pixel_x = 12
-	},
-/obj/item/flashlight/flare{
-	pixel_x = 12
-	},
+/obj/item/stock_parts/cell/ammo/breeder,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "bGf" = (
@@ -3271,6 +3246,9 @@
 /obj/structure/junk/small/tv{
 	pixel_y = 9;
 	pixel_x = -3
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
@@ -7821,10 +7799,8 @@
 	},
 /area/f13/enclave)
 "fcS" = (
-/obj/machinery/door/airlock/vault{
-	id_tag = "enclavehatch";
-	req_access_txt = "134"
-	},
+/obj/structure/door_assembly/door_assembly_vault,
+/obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "fcV" = (
@@ -7965,13 +7941,7 @@
 	},
 /area/f13/building)
 "fhn" = (
-/obj/structure/bed/mattress,
-/obj/item/radio/intercom{
-	frequency = 1292;
-	pixel_x = 32;
-	pixel_y = 2
-	},
-/obj/effect/landmark/start/f13/uslt,
+/obj/item/stack/sheet/cloth/five,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "fhr" = (
@@ -11575,10 +11545,10 @@
 	},
 /area/f13/enclave)
 "hBY" = (
-/obj/effect/decal/cleanable/blood{
-	icon_state = "floor2"
-	},
 /obj/item/stock_parts/cell/ammo/mfc,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib2_flesh"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -15659,12 +15629,7 @@
 	},
 /area/f13/enclave)
 "kQN" = (
-/obj/item/radio/tribal{
-	desc = "an old pre-war radio transceiver somehow still working after all this time.";
-	name = "old radio";
-	pixel_y = 11
-	},
-/obj/structure/table/rolling,
+/obj/structure/table_frame,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "kQO" = (
@@ -17002,21 +16967,7 @@
 	},
 /area/f13/bunker)
 "lXU" = (
-/obj/item/reagent_containers/food/snacks/beans{
-	pixel_x = -5;
-	pixel_y = 20
-	},
-/obj/structure/rack/shelf_metal{
-	pixel_x = 4
-	},
-/obj/item/flashlight/glowstick{
-	pixel_x = 13;
-	pixel_y = 12
-	},
-/obj/item/flashlight/glowstick/yellow{
-	pixel_x = 9;
-	pixel_y = 11
-	},
+/obj/item/rack_parts,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "lYo" = (
@@ -20149,13 +20100,9 @@
 	},
 /area/f13/brotherhood/archives)
 "oMH" = (
-/obj/structure/barricade/concrete,
-/obj/structure/barricade/bars,
-/obj/structure/table/reinforced,
-/obj/machinery/door/poddoor/shutters{
-	id = "enclave_shutter";
-	max_integrity = 300
-	},
+/obj/structure/barricade/wooden/planks/pregame,
+/obj/structure/table_frame,
+/obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "oMS" = (
@@ -24634,11 +24581,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "sgP" = (
-/obj/machinery/button{
-	id = "enclave_shutter";
-	name = "shutter button";
-	pixel_x = 24;
-	pixel_y = 24
+/obj/effect/decal/remains/human,
+/obj/item/clothing/head/f13/enclave{
+	pixel_y = 7
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
@@ -27761,20 +27706,8 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/enclave)
 "uRF" = (
-/obj/structure/junk/small/tv{
-	pixel_x = -3;
-	pixel_y = 9
-	},
-/obj/structure/table/booth,
-/obj/item/reagent_containers/food/drinks/bottle/brown/beer{
-	pixel_x = 10;
-	pixel_y = 7
-	},
 /obj/machinery/light/small,
-/obj/item/clothing/head/f13/enclave{
-	pixel_x = -9;
-	pixel_y = 18
-	},
+/obj/item/card/id/rusted/brokenholodog/enclave,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "uRH" = (
@@ -29110,20 +29043,7 @@
 /obj/structure/bed{
 	pixel_x = 2
 	},
-/obj/structure/fence{
-	pixel_x = -12
-	},
-/obj/structure/fence{
-	pixel_x = 16
-	},
-/obj/structure/bed{
-	pixel_x = 2;
-	pixel_y = 16
-	},
-/obj/machinery/computer/security/bos{
-	pixel_x = -3;
-	pixel_y = 15
-	},
+/obj/item/trash/f13/porknbeans,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "vMo" = (
@@ -29156,10 +29076,13 @@
 /obj/machinery/light/small/broken{
 	dir = 4
 	},
-/obj/item/radio/intercom{
-	frequency = 1291;
-	pixel_x = 32
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor2"
 	},
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/item/clothing/under/f13/ncr/ncr_shorts,
+/obj/item/crowbar,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "vNj" = (
@@ -29361,11 +29284,9 @@
 /turf/closed/wall/rust,
 /area/f13/den)
 "vUa" = (
-/obj/machinery/button{
-	id = "enclavehatch";
-	name = "hatch bolts button";
-	pixel_x = 7;
-	pixel_y = 24
+/obj/item/wallframe/button,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
