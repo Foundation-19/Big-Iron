@@ -84,7 +84,7 @@
 	ears = /obj/item/radio/headset/headset_rustwalker
 	head = /obj/item/clothing/head/helmet/f13/wastewarhat
 	suit = /obj/item/clothing/suit/f13/tribal/light/rustwalkers
-	uniform = /obj/item/clothing/under/f13/female/rustwalkers
+	uniform = /obj/item/clothing/under/f13/rustwalkers
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	glasses	= /obj/item/clothing/glasses/welding
 	gloves = /obj/item/clothing/gloves/color/yellow
