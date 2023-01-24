@@ -793,7 +793,7 @@
 	force = FORCE_SMITH_REACH
 	armour_penetration = PIERCING_MODERATE
 	sharpness = SHARP_POINTY
-	embedding = list("pain_mult" = 2, "embed_chance" = 62, "fall_chance" = 20, "ignore_throwspeed_threshold" = TRUE)
+	embedding = list("pain_mult" = 2, "embed_chance" = 62, "fall_chance" = 8, "ignore_throwspeed_threshold" = TRUE)
 
 // ------------ THROWING KNIFE ------------ // [Embed]
 /obj/item/melee/smith/throwingknife
@@ -803,7 +803,7 @@
 	item_state = "dagger_smith"
 	force = FORCE_SMITH_REACH
 	armour_penetration = PIERCING_MINOR
-	embedding = list("pain_mult" = 2, "embed_chance" = 65, "fall_chance" = 20, "ignore_throwspeed_threshold" = TRUE)
+	embedding = list("pain_mult" = 2, "embed_chance" = 65, "fall_chance" = 8, "ignore_throwspeed_threshold" = TRUE)
 	w_class = WEIGHT_CLASS_SMALL
 
 // ------------ METAL BOLA ------------ //

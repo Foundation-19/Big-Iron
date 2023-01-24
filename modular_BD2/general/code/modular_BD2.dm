@@ -28,7 +28,7 @@
 
 /obj/item/stack/ore/coal // turns to coke when heated in a Furnace or ORM
 	name = "coal"
-	desc = "Pure coal needs heat-processing to become good fuel."
+	desc = "Pure coal needs heat-processing to become efficient fuel."
 	icon = 'modular_BD2/general/icons/stackable_items.dmi'
 	icon_state = "ore_coal"
 	singular_name = "lump of coal"
@@ -40,7 +40,7 @@
 
 /obj/item/stack/sheet/coke // Can be used to fuel Furnaces, Campfires, Barrel Fires, Potbelly stoves, Fireplaces, or grind for charcoal
 	name = "coke"
-	desc = "Coke is what you get when you heat-treat coal. It's a good fuel for burning."
+	desc = "Coke is what you get when you heat-treat coal. It's a good fuel for burning, use it in furnaces, grills, potbelly stoves and so on."
 	singular_name = "bag of coke"
 	icon = 'modular_BD2/general/icons/stackable_items.dmi'
 	icon_state = "sheet_coke"
