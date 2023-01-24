@@ -19750,7 +19750,7 @@
 /obj/structure/rack/shelf_metal,
 /obj/item/lock_construct,
 /obj/item/key,
-/turf/open/floor/wood/f13/oak,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "hZD" = (
 /obj/machinery/grill{
@@ -25560,7 +25560,7 @@
 "kBk" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/reagent_containers/pill/patch/jet,
-/turf/open/floor/wood/f13/oak,
+/turf/open/floor/f13/wood,
 /area/f13/building)
 "kBr" = (
 /obj/machinery/hydroponics/constructable,
@@ -30013,6 +30013,9 @@
 "mtV" = (
 /obj/structure/barricade/bars,
 /obj/structure/table/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "workshop"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -33373,6 +33376,16 @@
 /obj/item/ammo_casing/c10mm,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
+"nUO" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/button/door{
+	pixel_y = 22;
+	id = "worshop"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "nUT" = (
 /obj/structure/decoration/cctv{
 	pixel_x = -30
@@ -82234,7 +82247,7 @@ qLT
 hxa
 kEI
 kBk
-aRl
+rpu
 saL
 kEI
 csQ
@@ -82491,7 +82504,7 @@ qLT
 dCL
 kEI
 hZC
-aRl
+rpu
 cqt
 kEI
 oFC
@@ -82747,8 +82760,8 @@ hxa
 ftX
 lez
 kEI
-rEe
-aRl
+nUO
+rpu
 dOc
 kEI
 kEI
