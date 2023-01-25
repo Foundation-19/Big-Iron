@@ -3559,9 +3559,11 @@
 "cDs" = (
 /obj/structure/rack,
 /obj/item/pickaxe,
-/obj/item/storage/bag/ore,
+/obj/item/pickaxe,
+/obj/item/flashlight/lantern,
+/obj/item/mining_scanner,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
+/area/f13/merchant)
 "cDP" = (
 /turf/open/floor/carpet/black,
 /area/f13/building)
@@ -4958,11 +4960,8 @@
 	},
 /area/f13/bunker)
 "dJi" = (
-/obj/item/storage/trash_stack{
-	icon_state = "trash_2"
-	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
+/area/f13/merchant)
 "dJm" = (
 /obj/machinery/light/small,
 /turf/open/indestructible/ground/inside/subway,
@@ -6073,11 +6072,6 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"eAk" = (
-/obj/structure/rack,
-/obj/item/flashlight/lantern,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
 "eAG" = (
 /obj/structure/table,
 /obj/machinery/computer/rdconsole/core/bos{
@@ -7006,9 +7000,6 @@
 /obj/item/export_scanner,
 /turf/open/floor/wood/f13/oak,
 /area/f13/merchant)
-"fka" = (
-/turf/closed/wall/r_wall/rust,
-/area/f13/building)
 "fkk" = (
 /obj/structure/falsewall/rust,
 /turf/closed/wall/rust,
@@ -7583,10 +7574,9 @@
 	},
 /area/f13/caves)
 "fCQ" = (
-/obj/structure/rack,
-/obj/item/pickaxe,
+/obj/machinery/mineral/equipment_vendor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
+/area/f13/merchant)
 "fCZ" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Generator Room";
@@ -8819,10 +8809,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random_mid,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
-"gyf" = (
-/obj/structure/ore_box,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/building)
 "gyl" = (
 /obj/structure/chair/wood/modern{
 	dir = 8
@@ -9143,20 +9129,25 @@
 /area/f13/bunker)
 "gHN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/line,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/building)
+/area/f13/merchant)
 "gHU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "gHY" = (
-/obj/item/flashlight/lantern,
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "mine1";
+	pixel_x = 11;
+	pixel_y = -11
+	},
 /turf/open/indestructible/ground/inside/subway,
-/area/f13/building)
+/area/f13/merchant)
 "gId" = (
 /obj/structure/sign/warning/securearea{
 	desc = "A warning sign which reads 'SERVER ROOM'.";
@@ -9439,8 +9430,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "gSD" = (
+/obj/structure/ore_box,
 /turf/open/indestructible/ground/inside/subway,
-/area/f13/building)
+/area/f13/merchant)
 "gSF" = (
 /obj/effect/decal/remains{
 	icon_state = "remains"
@@ -10608,12 +10600,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "hWZ" = (
+/obj/structure/ore_box,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/building)
+/area/f13/merchant)
 "hXd" = (
 /obj/machinery/light,
 /turf/open/indestructible/ground/inside/subway,
@@ -10992,7 +10985,7 @@
 "iox" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/building)
+/area/f13/merchant)
 "ioI" = (
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -11050,12 +11043,11 @@
 /turf/open/floor/plasteel/grimy,
 /area/f13/enclave)
 "irB" = (
-/obj/item/pickaxe/drill,
-/obj/machinery/light/small/broken{
+/obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/building)
+/area/f13/merchant)
 "irH" = (
 /obj/effect/decal/cleanable/greenglow,
 /obj/effect/decal/waste{
@@ -11443,9 +11435,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/enclave)
-"iKB" = (
-/turf/open/floor/plating/tunnel,
-/area/f13/building)
 "iLg" = (
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/grimy,
@@ -11556,7 +11545,7 @@
 "iPH" = (
 /obj/structure/lattice/catwalk,
 /turf/open/floor/plating/tunnel,
-/area/f13/building)
+/area/f13/merchant)
 "iQL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/chem_master/advanced,
@@ -11662,7 +11651,7 @@
 "iTJ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/subway,
-/area/f13/building)
+/area/f13/merchant)
 "iTZ" = (
 /turf/open/floor/carpet,
 /area/f13/brotherhood)
@@ -11684,12 +11673,13 @@
 	},
 /area/f13/enclave)
 "iVi" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/simple_door/metal/ventilation{
-	name = "drainage system"
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "prospectorladder"
 	},
-/turf/open/floor/plating/tunnel,
-/area/f13/building)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/merchant)
 "iVj" = (
 /obj/structure/noticeboard{
 	name = "display plate";
@@ -12692,7 +12682,7 @@
 /area/f13/tunnel)
 "jMT" = (
 /turf/closed/wall/f13/ruins,
-/area/f13/building)
+/area/f13/merchant)
 "jNu" = (
 /turf/open/floor/plating/ashplanet/wateryrock{
 	baseturfs = /turf/open/indestructible/ground/outside/desert
@@ -13230,8 +13220,14 @@
 /turf/open/floor/plating/dirt,
 /area/f13/sewer)
 "kiM" = (
+/obj/structure/rack,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/flashlight/lantern,
+/obj/item/mining_scanner,
+/obj/item/pickaxe/drill,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
+/area/f13/merchant)
 "kiV" = (
 /obj/structure/wreck/trash/five_tires,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -13357,12 +13353,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "kpo" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small/broken{
+/obj/machinery/light/small{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/building)
+/area/f13/merchant)
 "kpJ" = (
 /obj/machinery/light{
 	dir = 4;
@@ -13840,9 +13836,14 @@
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
 "kIS" = (
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/rack,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/flashlight/lantern,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
+/area/f13/merchant)
 "kJk" = (
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = 32
@@ -13883,9 +13884,10 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/merchant)
 "kKB" = (
+/obj/item/circuitboard/machine/ore_redemption,
 /obj/structure/frame/machine,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
+/area/f13/merchant)
 "kLh" = (
 /obj/effect/decal/cleanable/blood/innards,
 /turf/open/floor/f13/wood{
@@ -14944,11 +14946,10 @@
 /area/f13/den)
 "lKP" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/building)
+/area/f13/merchant)
 "lLs" = (
 /obj/machinery/door/airlock/grunge{
 	id_tag = "headscribedorm";
@@ -15296,9 +15297,8 @@
 /area/f13/sewer)
 "lYI" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/trash,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
+/area/f13/merchant)
 "lYM" = (
 /obj/effect/decal/cleanable/blood/innards,
 /obj/effect/decal/cleanable/blood/gibs,
@@ -15613,14 +15613,6 @@
 /mob/living/simple_animal/hostile/securitron/sentrybot/nsb,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"moK" = (
-/obj/structure/rack,
-/obj/item/pickaxe,
-/obj/item/pickaxe,
-/obj/item/flashlight/lantern,
-/obj/item/mining_scanner,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
 "mph" = (
 /obj/structure/timeddoor,
 /turf/closed/mineral/random/low_chance/underground,
@@ -16011,9 +16003,15 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "mNt" = (
-/obj/machinery/light/small/broken,
+/obj/structure/rack,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/flashlight/lantern,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
+/obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
+/area/f13/merchant)
 "mNE" = (
 /obj/structure/barricade/bars,
 /turf/open/water,
@@ -16243,7 +16241,7 @@
 "mYV" = (
 /obj/structure/decoration/vent/rusty,
 /turf/closed/wall/r_wall/rust,
-/area/f13/building)
+/area/f13/merchant)
 "mZq" = (
 /obj/effect/decal/remains{
 	icon_state = "remains"
@@ -18563,14 +18561,13 @@
 /turf/open/floor/carpet/black,
 /area/f13/enclave)
 "pcg" = (
+/obj/structure/ore_box,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/stripes/corner{
-	dir = 1
-	},
+/obj/effect/turf_decal/stripes/line,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/building)
+/area/f13/merchant)
 "pcm" = (
 /obj/effect/overlay/junk/sink{
 	dir = 4;
@@ -20091,12 +20088,6 @@
 	icon_state = "purplefull"
 	},
 /area/f13/clinic)
-"qtY" = (
-/obj/structure/rack,
-/obj/item/storage/bag/ore,
-/obj/item/pickaxe,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
 "qub" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Senior Paladin Office";
@@ -23569,9 +23560,9 @@
 	},
 /area/f13/building)
 "tjl" = (
-/obj/item/storage/bag/ore,
+/obj/structure/ore_box,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/building)
+/area/f13/merchant)
 "tjA" = (
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/indestructible/ground/inside/mountain,
@@ -50909,14 +50900,14 @@ wFD
 wFD
 ddv
 ddv
-fka
-fka
-fka
-fka
-fka
-fka
-fka
-fka
+lAv
+lAv
+lAv
+lAv
+lAv
+lAv
+lAv
+lAv
 ddv
 jqn
 ddv
@@ -51166,14 +51157,14 @@ wFD
 wFD
 ddv
 ddv
-fka
+lAv
 gSD
 hWZ
 pcg
-kIS
-kiM
+lYI
+dJi
 cDs
-fka
+lAv
 ddv
 jqn
 ddv
@@ -51423,14 +51414,14 @@ wFD
 wFD
 ddv
 ddv
-fka
+lAv
 gHY
 iox
 gHN
 kKB
+dJi
 kiM
-kiM
-fka
+lAv
 ddv
 jqn
 ddv
@@ -51680,14 +51671,14 @@ wFD
 wFD
 ddv
 ddv
-fka
-gSD
+lAv
+bEV
 iox
 gHN
-kIS
-kIS
-moK
-fka
+lYI
+lYI
+cDs
+lAv
 ddv
 jqn
 ddv
@@ -51937,14 +51928,14 @@ wFD
 wFD
 ddv
 ddv
-fka
-gyf
+lAv
+bEV
 irB
 lKP
-tjl
-kIS
+dJi
+dJi
 mNt
-fka
+lAv
 ddv
 jqn
 ddv
@@ -52194,14 +52185,14 @@ wFD
 wFD
 ddv
 ddv
-fka
-fka
-fka
+lAv
+lAv
+lAv
 jMT
-kiM
+dJi
 dJi
 kIS
-fka
+lAv
 ddv
 jqn
 ddv
@@ -52451,14 +52442,14 @@ wFD
 wFD
 ddv
 ddv
-fka
-fka
-kiM
-kiM
-kIS
-kIS
-kiM
-fka
+lAv
+lAv
+tjl
+dJi
+lYI
+lYI
+dJi
+lAv
 ddv
 jqn
 ddv
@@ -52708,14 +52699,14 @@ wFD
 wFD
 ddv
 ddv
-fka
-fka
+lAv
+lAv
 iPH
 iPH
 iPH
 iPH
 iPH
-fka
+lAv
 ddv
 jqn
 ddv
@@ -52965,14 +52956,14 @@ wFD
 wFD
 ddv
 ddv
-fka
-fka
+lAv
+lAv
 iTJ
 kpo
-kIS
 lYI
-eAk
-fka
+lYI
+dJi
+lAv
 ddv
 jqn
 ddv
@@ -53222,14 +53213,14 @@ wFD
 wFD
 ddv
 ddv
-fka
-fka
+lAv
+lAv
 iVi
-fka
-kiM
-qtY
+lAv
+dJi
+dJi
 fCQ
-fka
+lAv
 ddv
 jqn
 ddv
@@ -53479,14 +53470,14 @@ wFD
 wFD
 ddv
 ddv
-fka
-fka
-iKB
-fka
-fka
-fka
+lAv
+lAv
+lAv
+lAv
+lAv
+lAv
 mYV
-fka
+lAv
 ddv
 jqn
 ddv
