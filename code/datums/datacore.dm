@@ -104,7 +104,7 @@
 	var/list/was = list()
 	var/list/church = list()
 	var/list/merchant = list()
-	var/list/pitrats = list()
+	var/list/rustwalker = list()
 	var/list/misc = list()
 	var/dat = {"
 	<head><style>
@@ -146,7 +146,7 @@
 			church[name] = rank
 			department = 1
 		if(rank in GLOB.rustwalker_positions)
-			pitrats[name] = rank
+			rustwalker[name] = rank
 			department = 1
 		if(rank in GLOB.legion_positions)
 			leg[name] = rank
@@ -214,6 +214,21 @@
 		dat += "<tr><th colspan=3>Wasteland</th></tr>"
 		for(var/name in was)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[was[name]]</td></tr>"
+			even = !even
+	if(length(merchant))
+		dat += "<tr><th colspan=3>Merchant</th></tr>"
+		for(var/name in merchant)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[merchant[name]]</td></tr>"
+			even = !even
+	if(length(church))
+		dat += "<tr><th colspan=3>Church</th></tr>"
+		for(var/name in church)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[church[name]]</td></tr>"
+			even = !even
+	if(length(rustwalker))
+		dat += "<tr><th colspan=3>Rustwalker</th></tr>"
+		for(var/name in church)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[rustwalker[name]]</td></tr>"
 			even = !even
 	// misc guys
 	if(length(misc))

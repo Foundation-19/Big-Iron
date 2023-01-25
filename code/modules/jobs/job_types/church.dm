@@ -18,7 +18,7 @@
 	forbids = "Exposing the secrets of the Church, fraternizing with the NCR, treating patients for nothing in return, consuming alcohol, and using chems."
 	enforces = "Preaching the faith, following the faith's internal structure and rules."
 	exp_type = EXP_TYPE_CHURCH
-	exp_requirements = 0
+	exp_requirements = 100
 
 	outfit = /datum/outfit/job/church/f13highpriest
 	access = list(ACCESS_COTC, ACCESS_COTC_ARMORY, ACCESS_COTC_SECRET)
@@ -85,7 +85,7 @@
 	forbids = "Exposing the secrets of the Church, fraternizing with the NCR, treating patients for nothing in return, consuming alcohol, and using chems."
 	enforces = "Preaching the faith, following the faith's internal structure and rules."
 	exp_type = EXP_TYPE_CHURCH
-	exp_requirements = 0
+	exp_requirements = 30
 
 	outfit = /datum/outfit/job/church/f13servitor
 	access = list(ACCESS_COTC, ACCESS_COTC_ARMORY, ACCESS_COTC_SECRET)
@@ -205,7 +205,6 @@
 /datum/outfit/loadout/healer
 	name = "Healer"
 	suit = /obj/item/clothing/suit/hooded/robes/cotc/acolyte
-	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
 		/obj/item/book/granter/trait/midsurgery = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1

@@ -14,7 +14,7 @@
 	description = "The greed of the United States survived better than its people. You are an organ of this greed. Ensure its continuation."
 	selection_color = "#caa581"
 	exp_type = EXP_TYPE_MERCHANT
-	exp_requirements = 0
+	exp_requirements = 100
 
 	outfit = /datum/outfit/job/merchant/f13shopkeeper
 	access = list(ACCESS_BAR, ACCESS_CARGO_BOT, ACCESS_MINING, ACCESS_GATEWAY)

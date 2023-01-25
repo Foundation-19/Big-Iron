@@ -51,6 +51,12 @@
 		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
 		/obj/item/book/granter/crafting_recipe/tribal/rustwalkers = 1
 		)
+
+/datum/outfit/job/rustwalker/f13listener/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.grant_language(/datum/language/rustwalker)
 /*
 /datum/outfit/job/rustwalker/f13listener/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -95,6 +101,12 @@
 		/obj/item/clothing/under/f13/female/rustwalkers = 1,
 		/obj/item/book/granter/crafting_recipe/tribal/rustwalkers = 1
 		)
+
+/datum/outfit/job/rustwalker/f13rustwalker/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.grant_language(/datum/language/rustwalker)
 /*
 /datum/outfit/job/rustwalker/f13rustwalker/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
