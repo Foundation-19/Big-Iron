@@ -205,7 +205,6 @@
 /datum/outfit/loadout/healer
 	name = "Healer"
 	suit = /obj/item/clothing/suit/hooded/robes/cotc/acolyte
-	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
 		/obj/item/book/granter/trait/midsurgery = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
