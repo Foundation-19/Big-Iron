@@ -959,7 +959,8 @@
 				/obj/item/gun/ballistic/revolver/hobo/knucklegun,
 				/obj/effect/spawner/bundle/f13/autopipe,
 				/obj/effect/spawner/bundle/f13/pistol22,
-				/obj/item/gun/ballistic/revolver/winchesterrebored
+				/obj/item/gun/ballistic/revolver/winchesterrebored,
+				/obj/item/gun/energy/laser/rechargerrifle
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2
@@ -984,7 +985,7 @@
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/police_pistol,
 				/obj/effect/spawner/bundle/f13/m1carbine,
-				/obj/effect/spawner/bundle/f13/service,
+				/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/cowboy,
 				/obj/effect/spawner/bundle/f13/dkssniper,
 				/obj/effect/spawner/bundle/f13/greasegun,
@@ -992,6 +993,7 @@
 				/obj/effect/spawner/bundle/f13/guns/auto5,
 				/obj/effect/spawner/bundle/f13/guns/tommygun = 5,
 				/obj/effect/spawner/bundle/f13/laserpistol,
+				/obj/item/gun/energy/laser/wattz/recharger,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4
@@ -1028,7 +1030,6 @@
 	name = "tier six firearms"
 	loot = list(/obj/effect/spawner/bundle/f13/amr = 10,
 				/obj/effect/spawner/bundle/f13/brushgun = 15,
-				/obj/effect/spawner/bundle/f13/rangemaster = 15,
 				/obj/item/gun/ballistic/rocketlauncher = 5,
 				/obj/effect/spawner/bundle/f13/assault_rifle = 20,
 				/obj/effect/spawner/bundle/f13/r84 = 10,
