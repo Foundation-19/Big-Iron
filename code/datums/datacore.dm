@@ -227,7 +227,7 @@
 			even = !even
 	if(length(rustwalker))
 		dat += "<tr><th colspan=3>Rustwalker</th></tr>"
-		for(var/name in church)
+		for(var/name in rustwalker)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[rustwalker[name]]</td></tr>"
 			even = !even
 	// misc guys
