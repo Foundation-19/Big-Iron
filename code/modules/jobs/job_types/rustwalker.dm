@@ -4,8 +4,8 @@
 	faction = FACTION_RUSTWALKER
 	exp_type = EXP_TYPE_RUSTWALKER
 
-	access = list(ACCESS_DEN)
-	access = list(ACCESS_DEN)
+	access = list(ACCESS_DEN, ACCESS_ENGINE_EQUIP)
+	access = list(ACCESS_DEN, ACCESS_ENGINE_EQUIP)
 	forbids = "Betraying tribe secrets. Use of addictive chems outside of alcohol and nicotine."
 	enforces = "Bravery and honor in battle. Respecting the customs of the tribe and Kebab."
 
@@ -35,7 +35,7 @@
 /datum/outfit/job/rustwalker/f13listener
 	name = "Listener"
 	jobtype	= /datum/job/rustwalker/f13listener
-	id = /obj/item/card/id/outcasttattoo
+	id = /obj/item/card/id/rusted/fadedrustwalkerid
 	belt = /obj/item/storage/backpack/spearquiver
 	ears = /obj/item/radio/headset/headset_rustwalker
 	head = /obj/item/clothing/head/helmet/f13/wastewarhat
@@ -85,7 +85,7 @@
 /datum/outfit/job/rustwalker/f13rustwalker
 	name = "Rustwalker"
 	jobtype	= /datum/job/rustwalker/f13rustwalker
-	id = /obj/item/card/id/outcasttattoo
+	id = /obj/item/card/id/rusted/fadedrustwalkerid
 	belt = /obj/item/storage/backpack/spearquiver
 	ears = /obj/item/radio/headset/headset_rustwalker
 	head = /obj/item/clothing/head/helmet/f13/wastewarhat
