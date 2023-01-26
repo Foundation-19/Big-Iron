@@ -210,11 +210,6 @@
 		for(var/name in vault)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[vault[name]]</td></tr>"
 			even = !even
-	if(length(was))
-		dat += "<tr><th colspan=3>Wasteland</th></tr>"
-		for(var/name in was)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[was[name]]</td></tr>"
-			even = !even
 	if(length(merchant))
 		dat += "<tr><th colspan=3>Merchant</th></tr>"
 		for(var/name in merchant)
@@ -229,6 +224,11 @@
 		dat += "<tr><th colspan=3>Rustwalker</th></tr>"
 		for(var/name in rustwalker)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[rustwalker[name]]</td></tr>"
+			even = !even
+	if(length(was))
+		dat += "<tr><th colspan=3>Wasteland</th></tr>"
+		for(var/name in was)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[was[name]]</td></tr>"
 			even = !even
 	// misc guys
 	if(length(misc))
