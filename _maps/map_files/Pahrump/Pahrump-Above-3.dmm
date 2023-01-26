@@ -451,6 +451,10 @@
 /obj/structure/chair/wood/modern{
 	dir = 4
 	},
+/obj/machinery/light/small{
+	dir = 1;
+	pixel_x = -16
+	},
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -1522,13 +1526,14 @@
 /turf/closed/wall/f13/wood/house,
 /area/f13/village)
 "eC" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 8
-	},
 /obj/structure/table/wood,
 /obj/item/pen,
 /obj/item/paper,
 /obj/item/pen,
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/cotc)
 "eD" = (
@@ -2444,10 +2449,13 @@
 	},
 /area/f13/cotc)
 "hj" = (
-/obj/structure/destructible/tribal_torch/wall/lit,
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
 	},
 /area/f13/cotc)
 "hk" = (
@@ -3573,11 +3581,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "kp" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	pixel_y = 12
+/obj/machinery/light/small{
+	dir = 4
 	},
-/obj/effect/landmark/start/f13/cotc/acolyte,
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -4058,12 +4064,12 @@
 	},
 /area/f13/wasteland)
 "lG" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 4
-	},
 /obj/structure/table/wood/settler,
 /obj/item/folder,
 /obj/item/folder/red,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/cotc)
 "lH" = (
@@ -7992,6 +7998,9 @@
 	info = "<p>Recommend Pricing Scheme:<br />50 caps: Non-stimpack first aid.<br />100 caps: Price of stimpaks used or sold.<br />100-150 caps: Price of surgery<br />200-300 caps: Price of revival.</p>";
 	name = "pricing"
 	},
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -8020,7 +8029,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "wp" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
+/obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -8144,8 +8153,9 @@
 	},
 /area/f13/legion)
 "wE" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 8
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/cotc)
@@ -9448,6 +9458,10 @@
 /obj/structure/table/wood,
 /obj/item/paper,
 /obj/item/pen,
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/cotc)
 "AC" = (
@@ -10522,10 +10536,6 @@
 	},
 /area/f13/clinic)
 "DK" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	pixel_y = 12
-	},
 /obj/machinery/computer/libraryconsole/bookmanagement,
 /obj/structure/table/wood/settler,
 /turf/open/floor/f13{
@@ -11432,9 +11442,9 @@
 	},
 /area/f13/building)
 "GA" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
+/obj/machinery/light/small{
 	dir = 1;
-	pixel_y = 12
+	pixel_x = -16
 	},
 /turf/open/transparent/openspace{
 	name = "air";
@@ -11840,9 +11850,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/caves)
 "HN" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 8
+/obj/machinery/light/small{
+	pixel_x = 10
 	},
 /turf/open/transparent/openspace{
 	name = "air";
@@ -12253,6 +12262,10 @@
 "IU" = (
 /obj/structure/chair/office{
 	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
 	},
 /turf/open/floor/carpet/purple,
 /area/f13/cotc)
@@ -16546,6 +16559,10 @@
 /obj/item/paper/pamphlet/church1,
 /obj/item/paper/pamphlet/church1,
 /obj/item/paper/pamphlet/church1,
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/cotc)
 "VW" = (
@@ -16606,12 +16623,12 @@
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
 "Wd" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 4
-	},
 /obj/structure/table/wood,
 /obj/item/paper,
 /obj/item/pen,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/cotc)
 "Wf" = (
@@ -17062,9 +17079,6 @@
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "XF" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 8
-	},
 /turf/open/floor/carpet/purple,
 /area/f13/cotc)
 "XG" = (
@@ -49844,10 +49858,10 @@ PL
 PL
 bM
 IG
-HN
+HZ
 IG
 IG
-HN
+HZ
 IG
 bM
 ae
@@ -50105,7 +50119,7 @@ HZ
 IG
 IG
 HZ
-IG
+HN
 bM
 jJ
 jJ
@@ -50357,7 +50371,7 @@ PL
 PL
 PL
 bM
-IG
+GA
 HZ
 IG
 IG
@@ -50366,7 +50380,7 @@ IG
 bM
 uF
 Wt
-Wt
+kp
 bM
 IG
 zv
@@ -50614,12 +50628,12 @@ PL
 PL
 PL
 bM
-GA
+IG
 HZ
 IG
 IG
 HZ
-hj
+IG
 bM
 bM
 Cw
@@ -50631,7 +50645,7 @@ qH
 wE
 tR
 tR
-In
+wE
 Kf
 zv
 Qy
@@ -50880,7 +50894,7 @@ IG
 bM
 uF
 Wt
-Wt
+hj
 Lq
 zv
 Rn
@@ -51390,7 +51404,7 @@ HZ
 IG
 IG
 HZ
-IG
+HN
 bM
 DK
 Wt
@@ -51647,7 +51661,7 @@ HZ
 IG
 IG
 HZ
-hj
+IG
 bM
 Ie
 Wt
@@ -52670,7 +52684,7 @@ PL
 PL
 PL
 bM
-kp
+kS
 Wt
 kS
 kS
@@ -53189,13 +53203,13 @@ cK
 cK
 Wt
 Wt
-Wt
+kp
 jm
 In
 In
 Wd
 so
-AB
+Wd
 so
 bF
 zv

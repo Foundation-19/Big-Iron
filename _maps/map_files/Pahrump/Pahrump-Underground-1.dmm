@@ -2169,6 +2169,12 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/tunnel)
+"bBo" = (
+/obj/effect/landmark/start/f13/raider,
+/turf/open/floor/f13{
+	icon_state = "greenrustyfull"
+	},
+/area/f13/sewer)
 "bBs" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -4541,6 +4547,10 @@
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"drx" = (
+/obj/effect/landmark/start/f13/raider,
+/turf/open/floor/f13/wood,
+/area/f13/tunnel)
 "drK" = (
 /obj/structure/nest/ghoul,
 /turf/open/indestructible/ground/inside/subway,
@@ -10334,15 +10344,6 @@
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"hNO" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 8
-	},
-/turf/open/floor/f13{
-	color = "#818181";
-	icon_state = "floorrustysolid"
-	},
-/area/f13/cotc)
 "hNU" = (
 /obj/machinery/light{
 	dir = 4
@@ -13319,6 +13320,12 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"knA" = (
+/obj/effect/landmark/start/f13/raider,
+/turf/open/floor/f13{
+	icon_state = "neutraldirtyfull"
+	},
+/area/f13/sewer)
 "kom" = (
 /obj/structure/grille,
 /obj/structure/window/fulltile/house{
@@ -14307,6 +14314,11 @@
 	},
 /turf/closed/mineral/random/low_chance/underground,
 /area/f13/bunker)
+"lhI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/f13/raider,
+/turf/open/floor/carpet/red,
+/area/f13/den)
 "lib" = (
 /obj/structure/reagent_dispensers/barrel/four,
 /obj/effect/decal/waste{
@@ -14454,9 +14466,8 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "lny" = (
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 1;
-	pixel_y = 12
+/obj/machinery/light/small{
+	dir = 1
 	},
 /turf/open/floor/f13{
 	color = "#818181";
@@ -24584,6 +24595,12 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
+"ufN" = (
+/obj/effect/landmark/start/f13/raider,
+/turf/open/floor/f13{
+	icon_state = "neutralrustyfull"
+	},
+/area/f13/sewer)
 "ufY" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -24986,7 +25003,7 @@
 	},
 /area/f13/brotherhood/medical)
 "uwu" = (
-/obj/structure/destructible/tribal_torch/wall/lit,
+/obj/machinery/light/small,
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -25441,6 +25458,12 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/sewer)
+"uRO" = (
+/obj/effect/landmark/start/f13/raider,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/tunnel)
 "uRZ" = (
 /obj/structure/bed/oldalt,
 /obj/effect/decal/cleanable/dirt,
@@ -54534,8 +54557,8 @@ mjG
 mjG
 mjG
 mjG
-mjG
-mjG
+bBo
+bBo
 mjG
 mjG
 mjG
@@ -59191,8 +59214,8 @@ bzl
 mjG
 qEm
 mjG
-mjG
-mjG
+bBo
+bBo
 mjG
 mjG
 xse
@@ -64545,9 +64568,9 @@ yhT
 eLE
 nHM
 oTY
-hNO
 oTY
-hNO
+oTY
+oTY
 oTY
 nHM
 eLE
@@ -64801,11 +64824,11 @@ vPg
 vPg
 eLE
 nHM
-oTY
+lny
 jbM
 dQG
 qXS
-oTY
+uwu
 nHM
 eLE
 vPg
@@ -71000,8 +71023,8 @@ wFD
 uiZ
 bpu
 wLJ
-wLJ
-wLJ
+lhI
+lhI
 wLJ
 wLJ
 wLJ
@@ -71692,7 +71715,7 @@ rmb
 qew
 bpj
 tur
-ctV
+drx
 bBs
 ctV
 ctu
@@ -71949,7 +71972,7 @@ dxj
 dxj
 dxj
 tur
-bBs
+uRO
 bSL
 uig
 uig
@@ -76882,9 +76905,9 @@ vlu
 bnM
 vbV
 ijr
-vlu
+ufN
 sEn
-vlu
+ufN
 vlu
 vlu
 osv
@@ -76939,8 +76962,8 @@ vlu
 osv
 osv
 vlu
-bnM
-bnM
+knA
+knA
 ijr
 ijr
 eMF
