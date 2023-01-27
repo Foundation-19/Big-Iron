@@ -2238,6 +2238,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"aUJ" = (
+/obj/structure/blacksmith/quenching,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "aUL" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_2";
@@ -5257,6 +5261,13 @@
 	icon_state = "horizontaltopborderbottom0"
 	},
 /area/f13/wasteland)
+"cgR" = (
+/turf/open/indestructible/ground/inside/dirt{
+	barefootstep = "sand";
+	clawfootstep = "sand";
+	footstep = "sand"
+	},
+/area/f13/building)
 "cgS" = (
 /obj/structure/fence{
 	dir = 4
@@ -13411,8 +13422,16 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "fCM" = (
+<<<<<<< HEAD
 /obj/structure/flora/grass/wasteland,
 /turf/open/indestructible/ground/outside/wood,
+=======
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4
+	},
+/obj/structure/blacksmith/anvil/obtainable,
+/turf/open/indestructible/ground/outside/savannah/topcenter,
+>>>>>>> 243aa1f362 (readds traders and adds quenching)
 /area/f13/wasteland)
 "fCO" = (
 /obj/effect/decal/fakelattice{
@@ -15239,6 +15258,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/raiders)
+"gnr" = (
+/obj/machinery/mineral/wasteland_trader/general,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "gnG" = (
 /obj/machinery/light{
 	dir = 8
@@ -16240,6 +16263,10 @@
 "gFR" = (
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/wasteland)
+"gGs" = (
+/mob/living/simple_animal/chicken/rabbit,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "gGu" = (
 /obj/structure/simple_door/metal/store{
 	icon_state = "brokenstore"
@@ -21058,6 +21085,12 @@
 	name = "metal plating"
 	},
 /area/f13/merchant)
+"iBx" = (
+/obj/machinery/mineral/wasteland_trader/general,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticalleftborderleft0"
+	},
+/area/f13/wasteland)
 "iBF" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13{
@@ -24473,6 +24506,12 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"kae" = (
+/obj/machinery/mineral/wasteland_trader/general,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontalbottomborderbottom2"
+	},
+/area/f13/wasteland)
 "kaf" = (
 /obj/structure/rack,
 /turf/open/floor/carpet,
@@ -35360,6 +35399,10 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/building)
+"oLa" = (
+/mob/living/simple_animal/chicken,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "oLm" = (
 /obj/structure/simple_door/house,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/white,
@@ -36461,6 +36504,10 @@
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/ausbushes/reedbush,
 /turf/open/indestructible/ground/outside/water,
+/area/f13/wasteland)
+"pjQ" = (
+/obj/structure/blacksmith/quenching,
+/turf/open/indestructible/ground/outside/wood,
 /area/f13/wasteland)
 "pkf" = (
 /obj/machinery/light/small,
@@ -52437,6 +52484,10 @@
 	},
 /turf/open/floor/wood,
 /area/f13/village)
+"wzu" = (
+/obj/structure/fence/corner/wooden,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "wzJ" = (
 /obj/structure/flora/grass/coyote/twentyfive,
 /turf/open/indestructible/ground/outside/desert/sonora/rough{
@@ -52805,6 +52856,10 @@
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/darkblue/corner,
+/area/f13/building)
+"wHt" = (
+/obj/structure/fence/wooden,
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "wHD" = (
 /obj/machinery/hydroponics/soil/plowed,
@@ -88608,7 +88663,7 @@ nyV
 nyV
 nyV
 nmS
-ybI
+iBx
 jps
 jps
 hkW
@@ -95567,7 +95622,7 @@ xrj
 usx
 iFR
 usx
-sBk
+kae
 vCc
 qvQ
 wGJ
@@ -96415,11 +96470,11 @@ ktB
 ktB
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+uqa
+gCh
+uqa
+iFn
+uqa
 gcK
 gbL
 gcK
@@ -96672,13 +96727,13 @@ ktB
 ktB
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+uqa
+fil
+oLa
+aFK
+gCh
+cbK
+cbK
 gcK
 aVc
 fyf
@@ -96929,13 +96984,13 @@ ktB
 ktB
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+iFn
+pnQ
+oLa
+cbr
+auw
+cbK
+cbK
 qOV
 cWG
 cWG
@@ -97186,13 +97241,13 @@ ktB
 ktB
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+uqa
+gGs
+cbr
+cbr
+gDn
+cbK
+cbK
 tBN
 mvv
 mvv
@@ -97443,12 +97498,12 @@ ktB
 ktB
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+uqa
+gGs
+cbr
+cbr
+auw
+cbK
 fyf
 tBN
 mvv
@@ -97700,12 +97755,12 @@ ktB
 ktB
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+uqa
+cgR
+cbr
+cbr
+auw
+cbK
 fyf
 tBN
 mvv
@@ -97958,10 +98013,10 @@ ktB
 gcK
 gcK
 uqa
-gCh
-uqa
-iFn
-uqa
+wHt
+wHt
+wHt
+wzu
 fyf
 fyf
 tBN
@@ -102305,8 +102360,8 @@ gcK
 gcK
 gcK
 gcK
-sas
-ayd
+gcK
+aUJ
 mwp
 mwp
 mwp
@@ -102562,8 +102617,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+oKE
+hCN
 bfN
 bfN
 bfN
@@ -105945,8 +106000,12 @@ stD
 jAM
 fQm
 aEV
+<<<<<<< HEAD
 wsA
 stD
+=======
+pjQ
+>>>>>>> 243aa1f362 (readds traders and adds quenching)
 mvv
 vDb
 kaP
@@ -118588,7 +118647,7 @@ qpM
 nsE
 oUV
 mrq
-fyf
+gnr
 fyf
 fyf
 fyf
