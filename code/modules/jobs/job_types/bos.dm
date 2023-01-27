@@ -69,7 +69,7 @@ Elder
 	glasses = /obj/item/clothing/glasses/sunglasses
 	accessory =	/obj/item/clothing/accessory/bos/elder
 	suit_store = /obj/item/gun/energy/laser/plasma/pistol/light
-	neck =	/obj/item/clothing/neck/mantle/bos/right
+	neck =	/obj/item/clothing/neck/mantle/bos
 	ears = /obj/item/radio/headset/headset_bos/command
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
