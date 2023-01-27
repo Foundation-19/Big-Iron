@@ -831,7 +831,6 @@
 	name = "very low tier non-hobo ballistic gun"
 	loot = list(/obj/effect/spawner/bundle/f13/ninemil,
 				/obj/effect/spawner/bundle/f13/caravan_shotgun,
-				/obj/effect/spawner/bundle/f13/mosin,
 				/obj/effect/spawner/bundle/f13/remington,
 				/obj/effect/spawner/bundle/f13/widowmaker,
 				/obj/effect/spawner/bundle/f13/varmint
@@ -941,9 +940,8 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/pistol10mmvariant //more N99s than type-17s, but you still have the type-17
 	name = "random spawner for 10mm pistols"
-	loot = list(/obj/effect/spawner/bundle/f13/revolverm29,
-				/obj/effect/spawner/bundle/f13/n99 = 3,
-				/obj/effect/spawner/bundle/f13/type17 = 1,
+	loot = list(/obj/effect/spawner/bundle/f13/n99 = 3,
+				/obj/effect/spawner/bundle/f13/type17 = 1
 				)
 
 /*	------------------------------------------------
@@ -966,7 +964,6 @@
 	name = "tier two firearms"
 	loot = list(/obj/effect/spawner/bundle/f13/ninemil,
 				/obj/effect/spawner/bundle/f13/caravan_shotgun,
-				/obj/effect/spawner/bundle/f13/mosin,
 				/obj/effect/spawner/bundle/f13/widowmaker,
 				/obj/effect/spawner/bundle/f13/varmint,
 				/obj/effect/spawner/lootdrop/f13/weapon/pistol10mmvariant,
@@ -1059,13 +1056,6 @@
 				/obj/item/ammo_box/shotgun/improvised
 				)
 
-/obj/effect/spawner/bundle/f13/mosin
-	name = "mosin nagant and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/rifle/mosin,
-				/obj/item/ammo_box/a762
-				)
-
 /obj/effect/spawner/bundle/f13/remington
 	name = "Hunting rifle and ammo spawner"
 	items = list(
@@ -1090,7 +1080,7 @@
 /obj/effect/spawner/bundle/f13/type17
 	name = "chinese 10mm pistol and ammo spawner"
 	items = list(
-			/obj/item/gun/ballistic/automatic/pistol/type17,
+				/obj/item/gun/ballistic/automatic/pistol/type17,
 				/obj/item/ammo_box/magazine/m10mm_adv/simple/
 				)
 
