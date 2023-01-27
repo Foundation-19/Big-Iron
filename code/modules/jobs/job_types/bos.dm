@@ -68,7 +68,7 @@ Elder
 	suit =	/obj/item/clothing/suit/f13/elder
 	glasses = /obj/item/clothing/glasses/sunglasses
 	accessory =	/obj/item/clothing/accessory/bos/elder
-	suit_store = /obj/item/gun/energy/laser/pistol
+	suit_store = /obj/item/gun/energy/laser/plasma/pistol/light
 	neck =	/obj/item/clothing/neck/mantle/bos/right
 	ears = /obj/item/radio/headset/headset_bos/command
 	backpack_contents = list(
@@ -184,14 +184,14 @@ Head Scribe
 /datum/outfit/job/bos/f13headscribe
 	name = "Head Scribe"
 	jobtype = /datum/job/bos/f13headscribe
-	accessory = 	/obj/item/clothing/accessory/bos/headscribe
-	glasses =       /obj/item/clothing/glasses/sunglasses
-	suit = 			/obj/item/clothing/suit/armor/f13/headscribe
-	belt = 			/obj/item/storage/belt/utility/full/engi
+	accessory =		/obj/item/clothing/accessory/bos/headscribe
+	glasses =		/obj/item/clothing/glasses/sunglasses
+	suit =			/obj/item/clothing/suit/armor/f13/headscribe
+	suit_store =	/obj/item/gun/energy/laser/pistol
+	belt =			/obj/item/storage/belt/utility/full/engi
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
-		/obj/item/gun/energy/laser/plasma/pistol = 1,
 		/obj/item/gun/medbeam = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
@@ -224,7 +224,7 @@ Head Knight
 
 	loadout_options = list(
 	/datum/outfit/loadout/hka, //Sniper
-	/datum/outfit/loadout/hkb,	//AER14
+	/datum/outfit/loadout/hkb,	//AER12
 	/datum/outfit/loadout/hkc //RCW holy fuck can you at least get a path right kimi
 	)
 	outfit = /datum/outfit/job/bos/f13headknight
@@ -260,11 +260,11 @@ Head Knight
 /datum/outfit/loadout/hkb
 	name = "Frontline Head Knight"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer14 = 1,
+		/obj/item/gun/energy/laser/aer12 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 3
 		)
 		
-/datum/outfit/loadout/hkc
+/datum/outfit/loadout/hkc // AER12 and RCW are similar in DPS, one with 75 and needing to land more shots and one with 60 with only 2 shots. Better damage for higher skill. Mind you, he already gets a 14mm sidearm too.
 	name = "Backliner Head Knight"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/rcw = 1,
@@ -338,7 +338,7 @@ Paladin
 /datum/outfit/loadout/paladina
 	name = "Frontline Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/gun/energy/laser/aer9 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
@@ -348,7 +348,7 @@ Paladin
 /datum/outfit/loadout/paladinb
 	name = "Frontline Senior Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/gun/energy/laser/aer9 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
@@ -464,8 +464,8 @@ Senior Knight
 	title = "Senior Knight"
 	flag = F13SENIORKNIGHT
 	display_order = JOB_DISPLAY_ORDER_SENIORKNIGHT
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "You report directly to the Head Knight. You are the Brotherhood Senior Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
 	supervisors = "the Head Knight"
 	
