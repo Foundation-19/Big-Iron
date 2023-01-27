@@ -72,7 +72,7 @@ Elder
 	neck =	/obj/item/clothing/neck/mantle/bos
 	ears = /obj/item/radio/headset/headset_bos/command
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/stock_parts/cell/ammo/ec = 3,
 		/obj/item/melee/onehanded/knife/hunting = 1
 	)
 
