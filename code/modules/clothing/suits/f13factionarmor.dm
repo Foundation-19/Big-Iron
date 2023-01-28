@@ -354,7 +354,7 @@
 	desc = "It's a set of standard legion armor strengthened using numerous parts taken from a suit of power armor, sacrificing speed and bullet protection for greater protection against laser-based weaponary."
 	icon_state = "legion-heavy"
 	item_state = "legion-heavy"
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 40, "energy" = 35, "bomb" = 35, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 75)
+	armor = list("melee" = 60, "bullet" = 65, "laser" = 55, "energy" = 15, "bomb" = 40, "bio" = 55, "rad" = 25, "fire" = 55, "acid" = 15, "wound" = 30)
 	slowdown = 1.5
 
 /obj/item/clothing/suit/armor/f13/slavelabor
