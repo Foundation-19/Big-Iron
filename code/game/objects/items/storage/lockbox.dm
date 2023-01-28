@@ -94,7 +94,7 @@
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
-	req_access = list(ACCESS_CAPTAIN)
+	req_access = list(ACCESS_NCR4)
 	icon_locked = "medalbox+l"
 	icon_closed = "medalbox"
 	icon_broken = "medalbox+b"
@@ -122,15 +122,13 @@
 			return TRUE
 
 /obj/item/storage/lockbox/medal/PopulateContents()
-	new /obj/item/clothing/accessory/medal/gold/captain(src)
-	new /obj/item/clothing/accessory/medal/silver/valor(src)
 	new /obj/item/clothing/accessory/medal/silver/valor(src)
 	new /obj/item/clothing/accessory/medal/silver/security(src)
 	new /obj/item/clothing/accessory/medal/bronze_heart(src)
-	new /obj/item/clothing/accessory/medal/plasma/nobel_science(src)
-	new /obj/item/clothing/accessory/medal/plasma/nobel_science(src)
 	for(var/i in 1 to 3)
 		new /obj/item/clothing/accessory/medal/conduct(src)
+	for(var/i in 1 to 3)
+		new /obj/item/clothing/accessory/medal/bronze_heart(src)
 
 /obj/item/storage/lockbox/medal/update_icon_state()
 	var/locked = SEND_SIGNAL(src, COMSIG_IS_STORAGE_LOCKED)

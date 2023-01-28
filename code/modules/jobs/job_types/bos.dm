@@ -93,9 +93,9 @@ Head Paladin
 	exp_requirements = 600
 	
 	loadout_options = list(
-	/datum/outfit/loadout/hpa, //Laser Gatling
-	/datum/outfit/loadout/hpb, //Tribeam
-	/datum/outfit/loadout/hpc //14mm pistol, shield
+	/datum/outfit/loadout/hpa, //Laser Gatling, Super Sledge
+	/datum/outfit/loadout/hpb, //Tribeam, Powerfist
+	/datum/outfit/loadout/hpc //14mm pistol, Shield, Pre-war Ripper
 	)
 
 	outfit = /datum/outfit/job/bos/f13headpaladin
@@ -117,7 +117,6 @@ Head Paladin
 	neck = 			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/melee/powered/ripper = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
@@ -127,14 +126,16 @@ Head Paladin
 	name = "Heavy Weapons Head Paladin"
 	backpack_contents = list(
 		/obj/item/minigunpack = 1,
-		/obj/item/stock_parts/cell/ammo/ecp = 3
+		/obj/item/stock_parts/cell/ammo/ecp = 3,
+		/obj/item/twohanded/sledgehammer/supersledge = 1
 		)
 
 /datum/outfit/loadout/hpb
 	name = "Frontline Head Paladin"
 	backpack_contents = list(
 		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/melee/unarmed/powerfist = 1
 		)
 		
 
@@ -143,7 +144,8 @@ Head Paladin
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 3,
-		/obj/item/shield/riot/bullet_proof = 1
+		/obj/item/shield/riot/bullet_proof = 1,
+		/obj/item/melee/powered/ripper/prewar = 1
 		)
 
 /datum/outfit/job/bos/f13headpaladin/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -223,12 +225,12 @@ Head Knight
 	loadout_options = list(
 	/datum/outfit/loadout/hka, //Sniper
 	/datum/outfit/loadout/hkb,	//AER14
-	/datum/outfit/loadout/hkb //RCW
+	/datum/outfit/loadout/hkc //RCW holy fuck can you at least get a path right kimi
 	)
 	outfit = /datum/outfit/job/bos/f13headknight
 
-	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_PUBLIC)
-	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_PUBLIC)
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS, ACCESS_CHANGE_IDS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_BOS4, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS, ACCESS_CHANGE_IDS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_BOS4, ACCESS_PUBLIC)
 
 /datum/outfit/job/bos/f13headknight
 	name = "Head Knight"
@@ -262,7 +264,6 @@ Head Knight
 		/obj/item/stock_parts/cell/ammo/mfc = 3
 		)
 		
-
 /datum/outfit/loadout/hkc
 	name = "Backliner Head Knight"
 	backpack_contents = list(
@@ -297,6 +298,7 @@ Paladin
 	spawn_positions = 2
 	description = "You answer directly to the Head Paladin. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
 	supervisors = "the Head Paladin"
+	exp_requirements = 300
 
 	loadout_options = list(
 	/datum/outfit/loadout/paladina, //Frontline P
@@ -329,7 +331,8 @@ Paladin
 	belt =	/obj/item/storage/belt/military/assault
 	neck =	/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/melee/powered/ripper = 1,
 	)
 
 /datum/outfit/loadout/paladina

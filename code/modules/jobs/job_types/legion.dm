@@ -525,8 +525,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/ammo_box/magazine/sks = 3,
 		/obj/item/melee/onehanded/machete/forgedmachete = 1,
 		/obj/item/storage/backpack/spearquiver = 1,
-		/obj/item/bottlecap_mine = 1,
-		/obj/item/warpaint_bowl = 1
+		/obj/item/bottlecap_mine = 1
 		)
 
 //......................//////////////////////////////////................................................
@@ -632,8 +631,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	total_positions = 3
 	spawn_positions = 3
-	description = "Scout the area, secure key points, but do not ignore orders or wordlessly die some place. A good explorer helps his unit by taking initiative and helping the commander without needing micro-managment."
-	supervisors = "the Veteran Decanus and Centurion must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist"
+	description = "Scout the area, secure key points, ignore orders and wordlessly die some place. A good explorer helps his unit by taking initiative and helping the commander without needing micro-managment. When moving slowly they are hard for enemies to hear."
+	supervisors = "the Decanus and Centurion must be obeyed. You are equivalent to a Prime, but you are a specialist"
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 
@@ -695,9 +694,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		
 /datum/outfit/loadout/expsniper
 	name = "Sniper"
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand/sks
+	suit_store = /obj/item/gun/ballistic/rifle/hunting
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/sks = 3,
+		/obj/item/ammo_box/a308 = 3,
 		/obj/item/attachments/scope = 1,
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/bottlecap_mine = 1
@@ -743,7 +742,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	neck = /obj/item/storage/belt/holster
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	suit = /obj/item/clothing/suit/armor/f13/legion/frumentarius
-	head = /obj/item/clothing/head/helmet/f13/legion/frumentarius
 	id = /obj/item/card/id/dogtag/legfrumentarius
 	gloves = null
 	backpack = /obj/item/storage/backpack/legionr
@@ -1010,7 +1008,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
 	name = "Recruit Legionnaire"
@@ -1068,22 +1065,22 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 						//								//
 						//////////////////////////////////
 
-// ----------------- CAMP FOLLOWER --------------------- //
+// ----------------- CAMP DUTY --------------------- //
 
-/datum/job/CaesarsLegion/f13campfollower
-	title = "Camp Follower"
-	flag = F13CAMPFOLLOWER
-	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
-	total_positions = 4
-	spawn_positions = 4
-	description = "A Camp Follower ranges in purposes. A Camp Follower is a legionnaire who got assigned to keeping the camp in order. Duties may vary from medical specialities, weapon crafting or other skilled-labor tasks."
+/datum/job/CaesarsLegion/Legionnaire/f13campduty
+	title = "Camp Duty"
+	flag = F13CAMPDUTY
+	display_order = JOB_DISPLAY_ORDER_CAMPDUTY
+	total_positions = 3
+	spawn_positions = 3
+	description = "A legionnaire assigned to camp duty ranges in purposes. Duties may vary from cleaning up, watching the slaves or helping the Forgemaster in the Forge."
 	supervisors = "Officers first, then warriors."
 
-	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campduty
 
-/datum/outfit/job/CaesarsLegion/f13campfollower
-	name = "Camp Follower"
-	id = /obj/item/card/id/dogtag/legfollower
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13campduty
+	name = "Camp Duty"
+	id = /obj/item/card/id/dogtag/legcampduty
 	mask = /obj/item/clothing/mask/bandana/legion/dark
 	uniform = /obj/item/clothing/under/f13/legskirt
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -1097,13 +1094,15 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/mop = 1
 		)
 
-/datum/outfit/job/CaesarsLegion/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/f13campduty/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_TRIBAL, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/armor_legion)
 
 // LEGION SLAVES - Servant cook, and assist with medical, low surgery. Worker farm and mine.
 
@@ -1137,6 +1136,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 
 /datum/outfit/job/CaesarsLegion/f13slave
 	name = "Legion Slave"
@@ -1150,7 +1150,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/loadout/slaveservant
 	name = "Servant"
 	head = /obj/item/clothing/head/f13/servant
-	uniform	= /obj/item/clothing/under/f13/campfollowermale
+	uniform	= /obj/item/clothing/under/f13/slavefemale
 	gloves = /obj/item/clothing/gloves/f13/crudemedical
 	shoes =	/obj/item/clothing/shoes/roman
 	r_pocket = /obj/item/flashlight/lantern

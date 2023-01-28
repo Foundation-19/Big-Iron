@@ -459,18 +459,15 @@ Raider
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/wasteland/f13wastelander,
-			/datum/job/oasis/f13detective,
 		),
 		/datum/matchmaking_pref/rival = list(
 			/datum/job/wasteland/f13wastelander,
-			/datum/job/oasis/f13detective,
 		),
 		/datum/matchmaking_pref/mentor = list(
 			/datum/job/wasteland/f13wastelander,
 		),
 		/datum/matchmaking_pref/disciple = list(
 			/datum/job/wasteland/f13wastelander,
-			/datum/job/oasis/f13detective,
 		),
 		/datum/matchmaking_pref/patron = list(
 			/datum/job/wasteland/f13wastelander,
@@ -550,8 +547,8 @@ Raider
 	l_hand = /obj/item/gun/ballistic/automatic/pistol/n99
 	belt = /obj/item/storage/belt
 	backpack_contents = list(
-		/obj/item/stack/sheet/metal = 50,
-		/obj/item/stack/sheet/mineral/wood = 50,
+		/obj/item/stack/sheet/metal/fifty = 1,
+		/obj/item/stack/sheet/mineral/wood/fifty = 1,
 		/obj/item/pickaxe/mini = 1,
 		/obj/item/toy/crayon/spraycan = 1,
 		/obj/item/cultivator = 1,
@@ -570,7 +567,7 @@ Raider
 	backpack_contents =  list(/obj/item/reagent_containers/medspray/synthflesh = 2,
 							/obj/item/smelling_salts = 1,
 							/obj/item/healthanalyzer = 1,
-							/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
+							/obj/item/gun/energy/laser/rechargerrifle = 1,
 							/obj/item/reagent_containers/glass/bottle/epinephrine = 2,
 							/obj/item/storage/backpack/duffelbag/med/surgery = 1,
 							/obj/item/paper_bin = 1,

@@ -936,7 +936,7 @@
 	item_state = "card-doctor"
 	assignment = "citizenship permit"
 	access = list(ACCESS_BAR)
-	
+
 /obj/item/card/id/dogtag/MDfakepermit
 	name = "faded medical license"
 	desc = "a revoked medical license. This is why we do not remove people's skeletons "
@@ -1070,12 +1070,12 @@
 	item_state = "card-id_leg2"
 	assignment = "centurion medallion"
 
-/obj/item/card/id/dogtag/legfollower
-	name = "camp follower medallion"
-	desc = "A silver disc given to Camp Followers of Caesar's Legion."
+/obj/item/card/id/dogtag/legcampduty
+	name = "camp duty medallion"
+	desc = "A silver disc given to legionnaires of Caesar's Legion assigned to camp duty."
 	icon_state = "legionmedallionveteran"
 	item_state = "card-id_leg"
-	assignment = "camp follower medallion"
+	assignment = "camp duty medallion"
 
 /obj/item/card/id/dogtag/legfrumentarius
 	name = "frumentarius medallion"
@@ -1241,3 +1241,21 @@
 	assignment = "US dogtags"
 	access = list(ACCESS_ENCLAVE)
 
+//cotc
+
+/obj/item/card/id/yuma/cotc
+	name = "identification papers"
+	desc = "Papers detailing general information personal information used for identification."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "identification papers"
+
+/obj/item/card/id/yuma/cotc/neophyte
+	name = "neophyte identification papers"
+	desc = "Papers detailing general information personal information used for identification."
+	icon_state = "papers"
+	item_state = null
+	uses_overlays = FALSE
+	assignment = "neophyte identification papers"
+	access = list(ACCESS_COTC)

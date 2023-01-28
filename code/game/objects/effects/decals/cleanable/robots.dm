@@ -10,7 +10,7 @@
 	blood_state = BLOOD_STATE_OIL
 	bloodiness = BLOOD_AMOUNT_PER_DECAL
 	mergeable_decal = FALSE
-	beauty = -50
+//	beauty = -50 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/robot_debris/Initialize(mapload, list/datum/disease/diseases)
 	. = ..()
@@ -51,7 +51,7 @@
 	random_icon_states = list("floor1", "floor2", "floor3", "floor4", "floor5", "floor6", "floor7")
 	blood_state = BLOOD_STATE_OIL
 	bloodiness = BLOOD_AMOUNT_PER_DECAL
-	beauty = -100
+//	beauty = -100 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/oil/Initialize()
 	. = ..()
@@ -60,7 +60,7 @@
 
 /obj/effect/decal/cleanable/oil/streak
 	random_icon_states = list("streak1", "streak2", "streak3", "streak4", "streak5")
-	beauty = -50
+//	beauty = -50 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/oil/slippery
 

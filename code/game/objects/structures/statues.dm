@@ -15,7 +15,7 @@
 /obj/structure/statue/Initialize()
 	. = ..()
 	AddElement(/datum/element/art, impressiveness)
-	addtimer(CALLBACK(src, /datum.proc/_AddElement, list(/datum/element/beauty, impressiveness *  75)), 0)
+//	addtimer(CALLBACK(src, /datum.proc/_AddElement, list(/datum/element/beauty, impressiveness *  75)), 0) MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate on 2023-01-20
 	AddComponent(/datum/component/simple_rotation, ROTATION_ALTCLICK | ROTATION_CLOCKWISE, CALLBACK(src, .proc/can_user_rotate), CALLBACK(src, .proc/can_be_rotated), null)
 
 /obj/structure/statue/proc/can_be_rotated(mob/user)

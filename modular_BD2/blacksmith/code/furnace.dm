@@ -2,7 +2,7 @@
 
 /obj/structure/blacksmith/furnace
 	name = "furnace"
-	desc = "A furnace with fume protection and good ventilation for stoking the fire. Used for heating metal ingots or smelting ores into sheets."
+	desc = "A furnace with fume protection and good ventilation for stoking the fire. Used for heating metal ingots or smelting ores into sheets. Can be fueled with coke or welder fuel."
 	icon = 'modular_BD2/blacksmith/icons/furnace32x64.dmi'
 	icon_state = "furnace"
 	density = TRUE
@@ -56,6 +56,7 @@
 				workpiece.icon_state = "hot_ingot"
 				workpiece.set_light_on(TRUE)
 				I.on_attack_hand(user)
+				return
 		else
 			to_chat(user, "The furnace isn't working!.")
 	if(istype(I, /obj/item/stack/ore))
@@ -104,6 +105,6 @@
 
 /obj/structure/blacksmith/furnace/sandstone // can be built from sandstone, less economical but same effect
 	name = "sandstone furnace"
-	desc = "A simply made furnace, not as fuel-efficient as more advanced ones. Used for heating metal ingots."
+	desc = "A simply made furnace, not as fuel-efficient as more advanced ones. Used for heating metal ingots or smelting ores. Can be fueled with coke or welder fuel."
 	icon = 'modular_BD2/blacksmith/icons/furnace_sandstone32x64.dmi'
 	fueluse = 2
