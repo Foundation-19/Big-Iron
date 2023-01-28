@@ -320,6 +320,8 @@
 /obj/item/clothing/head/helmet/f13/legion/marsheaddress
 	name = "priestess' headdress"
 	desc = "A headdress made of feathers and decorated with two golden tassles."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-priestess"
 	item_state = "legion-priestess"
 	dynamic_hair_suffix = "+generic"
@@ -359,7 +361,7 @@
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
 /obj/item/clothing/head/helmet/f13/legion/vet/explorer
-	name = "legion scout hood"
+	name = "legion explorer hood"
 	desc = "It's a leather hood with metal reinforcments and built in headphones to plug the radio into."
 	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
 	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
@@ -403,16 +405,6 @@
 	item_state = "legion-venator"
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
-
-/obj/item/clothing/head/helmet/f13/legion/frumentarius
-	name = "laurel wreath"
-	desc = "A laurel wreath is made of branches and leaves of the laurel, a type of evergreen shrub or small tree. This one appears to be out of metal,however. In Ancient Rome, it was worn on the head as a symbol of triumph."
-	icon = 'icons/fallout/clothing/hats.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
-	icon_state = "legion-orator"
-	item_state = "legion-orator"
-	flags_inv = null
-	armor = list("melee" = 50, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/head/helmet/f13/legion/recruit/decan
 	name = "legion recruit decanus helmet"
@@ -518,7 +510,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-heavy"
 	item_state = "legion-heavy"
-	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 15, "bomb" = 45, "bio" = 65, "rad" = 40, "fire" = 70, "acid" = 25, "wound" = 40)
+	armor = list("melee" = 35, "bullet" = 30, "laser" = 40, "energy" = 35, "bomb" = 35, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 75)
 
 /obj/item/clothing/head/helmet/f13/combat/legion
 	name = "Legion combat helmet"

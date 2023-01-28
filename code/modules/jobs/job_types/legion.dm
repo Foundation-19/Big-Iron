@@ -631,6 +631,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	total_positions = 3
 	spawn_positions = 3
+
 	description = "You are a scout; in charge of gathering intel, keeping your superiors well informed, and occasionally ambushing the enemy if the opportunity presents itself. Take initiative and help paint a picture of the situation for your commander."
 	supervisors = "the decanii"
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
@@ -698,7 +699,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	neck = /obj/item/storage/belt/holster
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	suit = /obj/item/clothing/suit/armor/f13/legion/frumentarius
-	head = /obj/item/clothing/head/helmet/f13/legion/frumentarius
 	id = /obj/item/card/id/dogtag/legfrumentarius
 	gloves = null
 	backpack = /obj/item/storage/backpack/legionr
@@ -1058,6 +1058,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_TRIBAL, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/armor_legion)
 
 // LEGION SLAVES - Servant cook, and assist with medical, low surgery. Worker farm and mine.
 
@@ -1091,6 +1093,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 
 /datum/outfit/job/CaesarsLegion/f13slave
 	name = "Legion Slave"

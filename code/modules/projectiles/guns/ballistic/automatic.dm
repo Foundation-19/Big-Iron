@@ -786,7 +786,7 @@
 	bayonet_state = "bayonet"
 	knife_x_offset = 22
 	knife_y_offset = 21
-	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
+	fire_sound = 'sound/f13weapons/combatrifle.ogg'
 
 //ALR15			Keywords: Donor, 5.56mm, Semi-auto
 /obj/item/gun/ballistic/automatic/service/alr
@@ -876,7 +876,7 @@
 //Colt Rangemaster				Keywords:5.56/.223, Semi-auto, 10 round magazine, 30dmg
 /obj/item/gun/ballistic/automatic/rangemaster
 	name = "Colt Rangemaster"
-	desc = "A Colt Rangemaster semi-automatic rifle, chambered for 7.62x51. Single-shot only."
+	desc = "A Colt Rangemaster semi-automatic hunting rifle, chambered for .223 rounds. Single-shot only."
 	icon_state = "rangemaster"
 	item_state = "308"
 	icon_prefix = "308"
@@ -1306,7 +1306,7 @@
 /obj/item/gun/ballistic/automatic/bar
 	name = "automatic rifle (.308)"
 	desc = "An ancient machine gun that looks like outdated even by pre-war standards. It has Colt etched on one-side and Sierra Madre on the other. It is alarmingly heavy for a rifle."
-	icon = 'icons/fallout/objects/guns/bar.dmi'
+	icon = 'icons/fallout/objects/guns/longguns.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	icon_state = "BAR"
 	item_state = "BAR"

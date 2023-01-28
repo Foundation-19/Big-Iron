@@ -192,8 +192,8 @@
 /datum/design/healthanalyzer
 	name = "Health Analyzer"
 	id = "healthanalyzer"
-	build_type = AUTOLATHE | PROTOLATHE | NO_PUBLIC_LATHE
-	materials = list(/datum/material/iron = 500, /datum/material/glass = 50)
+	build_type = AUTOLATHE | PROTOLATHE | NO_PUBLIC_LATHE | AUTOLATHE_PRIMITIVE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 1000)
 	build_path = /obj/item/healthanalyzer
 	category = list("initial", "Medical")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
