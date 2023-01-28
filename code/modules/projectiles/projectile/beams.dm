@@ -385,6 +385,15 @@
 	impact_type = /obj/effect/projectile/impact/pulse
 	light_color = LIGHT_COLOR_BLUE
 
+/obj/item/projectile/beam/laser/rechargerrifle/hitscan
+	name = "recharger beam"
+	damage = 15
+	hitscan = TRUE
+	armour_penetration = 0
+	tracer_type = /obj/effect/projectile/tracer/pulse
+	muzzle_type = /obj/effect/projectile/muzzle/pulse
+	impact_type = /obj/effect/projectile/impact/pulse
+	light_color = LIGHT_COLOR_BLUE
 
 /obj/item/projectile/beam/laser/ultra_pistol //unused
 	name = "laser beam"
@@ -554,7 +563,19 @@
 	light_color = LIGHT_COLOR_BLUE
 
 /obj/item/projectile/beam/laser/laer/hitscan
+	tracer_type = /obj/effect/projectile/tracer/pulse
+	muzzle_type = /obj/effect/projectile/muzzle/pulse
+	impact_type = /obj/effect/projectile/impact/pulse
 	hitscan = TRUE
+	hitscan_light_intensity = 5
+	hitscan_light_range = 1
+	hitscan_light_color_override = LIGHT_COLOR_BLUE
+	muzzle_flash_intensity = 8
+	muzzle_flash_range = 2
+	muzzle_flash_color_override = LIGHT_COLOR_BLUE
+	impact_light_intensity = 10
+	impact_light_range = 3
+	impact_light_color_override = LIGHT_COLOR_BLUE
 
 /obj/item/projectile/beam/laser/laer/hitscan/Initialize()
 	. = ..()

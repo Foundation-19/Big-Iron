@@ -13,43 +13,14 @@
 		/obj/item/wirecutters = 1,
 		/obj/item/stack/sheet/metal = 20,
 		)
-	time = 400
-	category = CAT_CRAFTING
-	subcategory = CAT_FORGING
-
-/datum/crafting_recipe/stick
-	name = "Wooden Handle"
-	time = 30
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 1)
-	result = /obj/item/blacksmith/woodrod
-	category = CAT_CRAFTING
-	subcategory = CAT_FORGING
-
-/datum/crafting_recipe/swordhilt
-	name = "Sword Hilt"
-	time = 30
-	reqs = list(/obj/item/stack/sheet/mineral/wood = 2)
-	result = /obj/item/blacksmith/swordhandle
-	category = CAT_CRAFTING
-	subcategory = CAT_FORGING
-
-/datum/crafting_recipe/toolboxhammer
-	name = "Toolbox Hammer"
-	result = /obj/item/melee/smith/hammer/toolbox
-	tools = list(TOOL_SCREWDRIVER, TOOL_WRENCH, TOOL_WELDER)
-	reqs = list(
-		/obj/item/storage/toolbox = 1,
-		/obj/item/stack/sheet/metal = 4,
-		/obj/item/stack/rods = 2,
-		)
-	time = 40
+	time = 30 SECONDS
 	category = CAT_CRAFTING
 	subcategory = CAT_FORGING
 
 /datum/crafting_recipe/tableanvil
 	name = "Table Anvil"
-	result = /obj/structure/anvil/obtainable/table
-	time = 300
+	result = /obj/structure/blacksmith/anvil/obtainable/table
+	time = 20 SECONDS
 	reqs = list(
 		/obj/item/stack/sheet/metal = 8,
 		/obj/item/stack/rods = 8,
@@ -60,8 +31,8 @@
 
 /datum/crafting_recipe/anvil
 	name = "Anvil"
-	result = /obj/structure/anvil/obtainable/basic
-	time = 450
+	result = /obj/structure/blacksmith/anvil/obtainable
+	time = 30 SECONDS
 	reqs = list(
 		/obj/item/stack/sheet/metal = 50,
 		/obj/item/stack/sheet/mineral/titanium = 15,
@@ -72,22 +43,33 @@
 
 /datum/crafting_recipe/sandvil
 	name = "Sandstone Anvil"
-	result = /obj/structure/anvil/obtainable/sandstone
-	time = 300
+	result = /obj/structure/blacksmith/anvil/obtainable/sandstone
+	time = 25 SECONDS
 	reqs = list(/obj/item/stack/sheet/mineral/sandstone = 16)
 	tools = list(TOOL_CROWBAR)
 	category = CAT_CRAFTING
 	subcategory = CAT_FORGING
 
 /datum/crafting_recipe/furnace
-	name = "Furnace"
-	result = /obj/structure/furnace
-	time = 300
+	name = "Sandstone furnace"
+	result = /obj/structure/blacksmith/furnace/sandstone
+	time = 20 SECONDS
 	reqs = list(
 		/obj/item/stack/sheet/mineral/sandstone = 20,
 		/obj/item/stack/sheet/metal = 6,
 		)
 	tools = list(TOOL_CROWBAR)
+	category = CAT_CRAFTING
+	subcategory = CAT_FORGING
+
+/datum/crafting_recipe/blacksmith/quenching_trough
+	name = "Quenching trough"
+	result = /obj/structure/blacksmith/quenching
+	reqs = list(
+		/obj/item/stack/sheet/mineral/wood = 20,
+		/datum/reagent/water = 300,
+		)
+	time = 10 SECONDS
 	category = CAT_CRAFTING
 	subcategory = CAT_FORGING
 
@@ -98,14 +80,14 @@
 		/obj/item/stack/sheet/mineral/wood = 15,
 		/obj/item/stack/sheet/metal = 10,
 		)
-	time = 80
+	time = 8 SECONDS
 	category = CAT_CRAFTING
 	subcategory = CAT_FORGING
 
 /datum/crafting_recipe/tools/forged/sledge
 	name = "Sledgehammer"
 	result = /obj/item/twohanded/sledgehammer/simple
-	time = 700
+	time = 20 SECONDS
 	reqs = list(
 		/obj/item/stack/sheet/metal = 15,
 		/obj/item/stack/sheet/mineral/wood = 5,
@@ -119,7 +101,7 @@
 /datum/crafting_recipe/melee/forged/cleaver
 	name = "Butchers Cleaver"
 	result = /obj/item/kitchen/knife/butcher
-	time = 100
+	time = 10 SECONDS
 	reqs = list(
 		/obj/item/stack/sheet/metal = 3,
 		/obj/item/stack/sheet/mineral/wood = 1,
@@ -131,7 +113,7 @@
 /datum/crafting_recipe/melee/forged/huntingknife
 	name = "Hunting Knife"
 	result = /obj/item/melee/onehanded/knife/hunting
-	time = 150
+	time = 15 SECONDS
 	reqs = list(
 		/obj/item/stack/sheet/metal = 3,
 		/obj/item/blacksmith/swordhandle = 1,

@@ -1062,7 +1062,7 @@ rough example of the "cone" made by the 3 dirs checked
 	return closest_atom
 
 
-proc/pick_closest_path(value, list/matches = get_fancy_list_of_atom_types())
+/proc/pick_closest_path(value, list/matches = get_fancy_list_of_atom_types())
 	if (value == FALSE) //nothing should be calling us with a number, so this is safe
 		value = input("Enter type to find (blank for all, cancel to cancel)", "Search for type") as null|text
 		if (isnull(value))
@@ -1627,3 +1627,19 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 		if(target.reagents.has_reagent(/datum/reagent/consumable/garlic))
 			return FALSE
 	return TRUE
+
+//Used by the tactical binoculars and linked systems to prevent coords collection/prefiring
+GLOBAL_VAR(obfs_x) //A number between -2500 and 2500
+GLOBAL_VAR(obfs_y) //A number between -2500 and 2500
+
+//Offuscate x for coord system
+#define obfuscate_x(x) (x + GLOB.obfs_x)
+
+//Offuscate y for coord system
+#define obfuscate_y(y) (y + GLOB.obfs_y)
+
+//Deoffuscate x for coord system
+#define deobfuscate_x(x) (x - GLOB.obfs_x)
+
+//Deoffuscate y for coord system
+#define deobfuscate_y(y) (y - GLOB.obfs_y)

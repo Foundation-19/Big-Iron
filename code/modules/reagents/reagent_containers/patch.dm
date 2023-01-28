@@ -17,8 +17,8 @@
 		if(!affecting)
 			to_chat(user, "<span class='warning'>The limb is missing!</span>")
 			return
-		if(!L.can_inject(user, TRUE, user.zone_selected, FALSE, TRUE)) //stopped by clothing, not by species immunity.
-			return
+		//if(!L.can_inject(user, TRUE, user.zone_selected, FALSE, TRUE)) //stopped by clothing, not by species immunity.
+			//return
 		if(affecting.status != BODYPART_ORGANIC)
 			to_chat(user, "<span class='notice'>Medicine won't work on a robotic limb!</span>")
 			return
@@ -114,26 +114,23 @@
 	self_delay = 0
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 
-/*
 // ---------------------------------
-// HYDRA - never a thing, make it something. Sprites done.
+// HYDRA
 
 /obj/item/reagent_containers/pill/patch/hydra
 	name = "Hydra"
 	desc = "Hydra is a drug developed from antivenom. Due to the Legion's disapproval of using modern medicine, some Legionaries attempted to develop a different means to help them heal damaged limbs. To do that, they combined cave fungus, nightstalker blood and the poison from a radscorpion poison gland with antivenom before use. This resulted in the development of Hydra, a curative agent that both anesthetizes and restores crippled limbs over time."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_hydra"
-	list_reagents = null
-	self_delay = 0
+	list_reagents = list(/datum/reagent/medicine/hydra = 10)
 
 // -----------------
 // BERSERKER POWDER - Was pulled for rebalance summer of 2020 and never looked at. Remove I guess. (Admin died to it and removed it)
 // ------------------
-*/
 
 /obj/item/reagent_containers/pill/patch/healingpowder/berserker
 	name = "Berserker powder"
-	desc = "a combination of psychadelic mushrooms and tribal drugs used by legion berserkers. Induces a trancelike state, allowing them much greater pain resistance. Extremely dangerous, even for those who are trained to use it. It's a really bad idea to use this if you're not a berserker. Even if you are, taking it for too long causes extreme symptoms when the trance ends."
+	desc = "A combination of psychadelic mushrooms and tribal drugs used by legion berserkers. Induces a trancelike state, allowing them much greater pain resistance. Extremely dangerous, even for those who are trained to use it. It's a really bad idea to use this if you're not a berserker. Even if you are, taking it for too long causes extreme symptoms when the trance ends."
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	list_reagents = list(/datum/reagent/medicine/berserker_powder = 10)
 	icon_state = "patch_berserkerpowder"

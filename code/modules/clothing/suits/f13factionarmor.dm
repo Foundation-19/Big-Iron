@@ -187,7 +187,7 @@
 	icon_state = "legion_recruit"
 	item_state = "legarmor"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/powered, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
+	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/powered, /obj/item/melee/smith, /obj/item/twohanded/smithed)
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	slowdown = 0.05
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/tiny/legion
@@ -203,21 +203,29 @@
 /obj/item/clothing/suit/armor/f13/legion/recruit
 	name = "legion recruit armor"
 	desc = "Well, it's better than nothing."
-	icon_state = "legion_recruit"
-	item_state = "legion_recruit"
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+	icon_state = "armor_recruit"
+	item_state = "armor_recruit"
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 5, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	slowdown = 0.04
 
 /obj/item/clothing/suit/armor/f13/legion/recruit/decan
-	name = "legion recruit armor"
+	name = "legion recruit decanus armor"
 	desc = "Recruit decanii receive slightly better protection than regular recruits. Slightly."
 	armor = list("melee" = 40, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/suit/armor/f13/legion/prime
 	name = "legion prime armor"
 	desc = "Legion Primes have survived some skirmishes, and when promoted often recieve a set of armor, padded leather modeled on ancient baseball catcher uniforms and various plates of metal or boiled leather."
-	icon_state = "legion_prime"
-	item_state = "legion_prime"
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+	icon_state = "armor_prime"
+	item_state = "armor_prime"
 	armor = list("melee" = 40, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/suit/armor/f13/legion/prime/decan
@@ -225,8 +233,8 @@
 	desc = "Legion prime decanus armor-an extra reinforced baseball uniform."
 	armor = list("melee" = 45, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
-/obj/item/clothing/suit/armor/f13/legion/orator
-	name = "Legion Orator armor"
+/obj/item/clothing/suit/armor/f13/legion/frumentarius
+	name = "Legion Frumentarius armor"
 	desc = "The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
 	icon_state = "legion_orator"
 	item_state = "legion_orator"
@@ -241,8 +249,12 @@
 /obj/item/clothing/suit/armor/f13/legion/vet
 	name = "legion veteran armor"
 	desc = "Armor worn by veterans, salvaged bits of enemy armor and scrap metal often reinforcing the armor."
-	icon_state = "legion_veteran"
-	item_state = "legion_veteran"
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+	icon_state = "armor_veteran"
+	item_state = "armor_veteran"
 	armor = list("melee" = 50, "bullet" = 30, "laser" = 10, "energy" = 15, "bomb" = 30, "bio" = 5, "rad" = 5, "fire" = 35, "acid" = 0, "wound" = 40)
 	slowdown = 0.05
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4) // Slightly better armor
@@ -264,24 +276,28 @@
 	item_state = "daemon_armor"
 
 /obj/item/clothing/suit/armor/f13/legion/vet/explorer
-	name = "legion scout armor"
+	name = "legion explorer armor"
 	desc = "Armor based on layered strips of laminated linen and leather, the technique giving it surprising resilience for low weight."
-	icon_state = "legion_explorer"
-	item_state = "legion_explorer"
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+	icon_state = "armor_explorer"
+	item_state = "armor_explorer"
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 5, "energy" = 10, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	slowdown = 0.03
 
 /obj/item/clothing/suit/armor/f13/legion/vet/vexil
 	name = "legion vexillarius armor"
 	desc = " Worn by Vexillarius, this armor has been reinforced with circular metal plates on the chest and a back mounted pole for the flag of the Bull, making the wearer easy to see at a distance."
-	icon_state = "legion_vex"
-	item_state = "legion_vex"
+	icon_state = "armor_vexillarius"
+	item_state = "armor_vexillarius"
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/f13/legion/venator
-	name = "legion explorer armor"
-	desc = "Explorer armor reinforced with metal plates and chainmail."
+	name = "legion speculator armor"
+	desc = "Speculator armor reinforced with metal plates and chainmail."
 	icon_state = "legion_venator"
 	item_state = "legion_venator"
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 10, "energy" = 20, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
@@ -314,7 +330,7 @@
 
 /obj/item/clothing/suit/armor/f13/legion/legate
 	name = "legion legate armor"
-	desc = " Made by the most skilled blacksmiths in Arizona, the bronzed steel of this rare armor offers good protection, and the scars on its metal proves it has seen use on the field."
+	desc = "Made by the most skilled blacksmiths in Arizona, the bronzed steel of this rare armor offers good protection, and the scars on its metal proves it has seen use on the field."
 	icon_state = "legion_legate"
 	item_state = "legion_legate"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
@@ -338,7 +354,7 @@
 	desc = "It's a set of standard legion armor strengthened using numerous parts taken from a suit of power armor, sacrificing speed and bullet protection for greater protection against laser-based weaponary."
 	icon_state = "legion-heavy"
 	item_state = "legion-heavy"
-	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 15, "bomb" = 45, "bio" = 65, "rad" = 40, "fire" = 70, "acid" = 25, "wound" = 40)
+	armor = list("melee" = 35, "bullet" = 30, "laser" = 40, "energy" = 35, "bomb" = 35, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 75)
 	slowdown = 1.5
 
 /obj/item/clothing/suit/armor/f13/slavelabor

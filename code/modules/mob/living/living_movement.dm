@@ -69,6 +69,8 @@
 		if(isliving(pulling))
 			var/mob/living/L = pulling
 			should_slow = (drag_slowdown && L.lying && !L.buckled && grab_state < GRAB_AGGRESSIVE) ? PULL_PRONE_SLOWDOWN : FALSE
+			if(L.pulling?.pulling?.pulling?.pulling)//brainpower.mp4
+				should_slow = SNAKE_SLOWDOWN
 		else
 			should_slow = pulling.drag_delay
 		if(should_slow)

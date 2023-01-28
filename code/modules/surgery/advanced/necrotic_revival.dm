@@ -1,3 +1,4 @@
+/*
 /datum/surgery/advanced/necrotic_revival
 	name = "Necrotic Revival"
 	desc = "An experimental surgical procedure that stimulates the growth of a Romerol tumor inside the patient's brain. Requires rezadone."
@@ -36,3 +37,4 @@
 		var/obj/item/organ/zombie_infection/ZI = new()
 		ZI.Insert(target)
 	return TRUE
+*/

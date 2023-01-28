@@ -670,6 +670,7 @@
 				/obj/item/melee/onehanded/club,
 				/obj/item/melee/onehanded/knife/cosmicdirty,
 				/obj/item/melee/onehanded/machete,
+				/obj/item/melee/onehanded/chinesesword,
 				/obj/item/melee/unarmed/brass,
 				/obj/item/melee/unarmed/brass/spiked,
 				/obj/item/twohanded/baseball,
@@ -689,6 +690,7 @@
 				/obj/item/twohanded/spear,
 				/obj/item/twohanded/baseball/louisville,
 				/obj/item/twohanded/fireaxe,
+				/obj/item/melee/onehanded/chinesesword,
 				/obj/item/twohanded/fireaxe/bmprsword,
 				/obj/item/melee/unarmed/sappers,
 				/obj/item/twohanded/sledgehammer/simple,
@@ -756,11 +758,20 @@
 	icon_state = "gun_loot"
 
 //Energy Weapon Spawners
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/hobo
+	name = "hobo tier energy gun"
+	loot = list(/obj/effect/spawner/bundle/f13/wattz,
+				/obj/item/gun/ballistic/rifle/hobo/lasmusket,
+				/obj/item/gun/energy/laser/rechargerrifle,
+				)
+
+
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low
 	name = "low tier energy gun"
-	loot = list(/obj/effect/spawner/bundle/f13/wattz = 40,
-				/obj/effect/spawner/bundle/f13/wattzm = 25,
-				/obj/effect/spawner/bundle/f13/laserpistol = 35
+	loot = list(/obj/effect/spawner/bundle/f13/wattz = 25,
+				/obj/effect/spawner/bundle/f13/wattzm = 15,
+				/obj/effect/spawner/bundle/f13/laserpistol = 30,
+				/obj/item/gun/energy/laser/rechargerrifle = 30,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid
@@ -846,7 +857,7 @@
 				/obj/effect/spawner/bundle/f13/mk23,
 				/obj/effect/spawner/bundle/f13/hunting,
 				/obj/effect/spawner/lootdrop/f13/weapon/revolver44variants,
-				/obj/effect/spawner/bundle/f13/trenchshotgun,
+				/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/m1carbine,
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/revolver45
@@ -855,7 +866,7 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid
 	name = "mid tier ballistic gun"
 	loot = list(/obj/effect/spawner/bundle/f13/trail,
-				/obj/effect/spawner/bundle/f13/service,
+				/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/miniuzi,
 				/obj/effect/spawner/bundle/f13/auto5,
 				/obj/effect/spawner/bundle/f13/marksman,
@@ -897,7 +908,6 @@
 	loot = list(/obj/effect/spawner/bundle/f13/riotshotgun = 5,
 				/obj/effect/spawner/bundle/f13/amr = 10,
 				/obj/effect/spawner/bundle/f13/brushgun = 15,
-				/obj/effect/spawner/bundle/f13/rangemaster = 15,
 				/obj/effect/spawner/bundle/f13/fnfal = 10,
 				/obj/item/gun/ballistic/rocketlauncher = 10,
 				/obj/item/gun/ballistic/automatic/bozar = 10
@@ -927,7 +937,14 @@
 				/obj/effect/spawner/bundle/f13/revolverm29alt,
 				/obj/effect/spawner/bundle/f13/revolver44,
 				/obj/effect/spawner/bundle/f13/revolverm29snub
-	)
+				)
+
+/obj/effect/spawner/lootdrop/f13/weapon/pistol10mmvariant //more N99s than type-17s, but you still have the type-17
+	name = "random spawner for 10mm pistols"
+	loot = list(/obj/effect/spawner/bundle/f13/revolverm29,
+				/obj/effect/spawner/bundle/f13/n99 = 3,
+				/obj/effect/spawner/bundle/f13/type17 = 1,
+				)
 
 /*	------------------------------------------------
 	-------------NEW TIER'D GUN WEAPON SPAWNERS----------------
@@ -952,7 +969,7 @@
 				/obj/effect/spawner/bundle/f13/mosin,
 				/obj/effect/spawner/bundle/f13/widowmaker,
 				/obj/effect/spawner/bundle/f13/varmint,
-				/obj/effect/spawner/bundle/f13/n99,
+				/obj/effect/spawner/lootdrop/f13/weapon/pistol10mmvariant,
 				/obj/effect/spawner/bundle/f13/m1911,
 				/obj/effect/spawner/bundle/f13/remington,
 				/obj/effect/spawner/bundle/f13/revolver45,
@@ -1067,6 +1084,13 @@
 	name = "10mm pistol and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/pistol/n99,
+				/obj/item/ammo_box/magazine/m10mm_adv/simple/
+				)
+
+/obj/effect/spawner/bundle/f13/type17
+	name = "chinese 10mm pistol and ammo spawner"
+	items = list(
+			/obj/item/gun/ballistic/automatic/pistol/type17,
 				/obj/item/ammo_box/magazine/m10mm_adv/simple/
 				)
 
@@ -1387,7 +1411,7 @@
 				/obj/item/ammo_box/magazine/m556/rifle/
 				)
 
-obj/effect/spawner/bundle/f13/combat_rifle
+/obj/effect/spawner/bundle/f13/combat_rifle
 	name = "combat rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/combat,
@@ -1447,7 +1471,7 @@ obj/effect/spawner/bundle/f13/combat_rifle
 	name = "rangemaster rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/rangemaster,
-				/obj/item/ammo_box/magazine/m762/
+				/obj/item/ammo_box/magazine/m556/rifle/small
 				)
 
 /obj/effect/spawner/bundle/f13/riotshotgun
@@ -1754,7 +1778,7 @@ obj/effect/spawner/bundle/f13/combat_rifle
 
 /obj/effect/spawner/lootdrop/f13/bomb/tier3
 	loot = list(
-				/obj/item/grenade/syndieminibomb/concussion,
+				/obj/item/grenade/f13/he_grenade,
 				/obj/item/grenade/plastic/c4,
 				/obj/item/grenade/empgrenade,
 				/obj/item/grenade/f13/radiation,
@@ -1783,7 +1807,7 @@ obj/effect/spawner/bundle/f13/combat_rifle
 				/obj/item/poster/random_official,
 				/obj/item/multitool,
 				/obj/item/cigbutt/cigarbutt,
-				/obj/item/razor,
+				/obj/item/cosmetics/razor,
 				/obj/item/candle,
 				/obj/item/rollingpaper,
 				/obj/item/trash/coal,
@@ -2271,7 +2295,7 @@ obj/effect/spawner/bundle/f13/combat_rifle
 		/obj/item/advanced_crafting_components/receiver,
 		/obj/item/advanced_crafting_components/assembly,
 		/obj/item/advanced_crafting_components/alloys,
-		/obj/item/ingot/adamantine, // Valuable for smithing
+		/obj/item/blacksmith/ingot/adamantine, // Valuable for smithing
 	)
 
 /obj/effect/spawner/lootdrop/f13/attachments

@@ -16,6 +16,8 @@
 	qdel(hud_used)
 	for(var/cc in client_colours)
 		qdel(cc)
+	QDEL_LIST(mob_spell_list)
+	QDEL_LIST(actions)
 	client_colours = null
 	ghostize()
 	..()
@@ -167,7 +169,7 @@
 		M.show_message(msg, MSG_VISUAL, blind_message, MSG_AUDIBLE)
 
 ///Adds the functionality to self_message.
-mob/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, mob/target, target_message, visible_message_flags = NONE)
+/mob/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, mob/target, target_message, visible_message_flags = NONE)
 	. = ..()
 	if(self_message && target != src)
 		show_message(self_message, MSG_VISUAL, blind_message, MSG_AUDIBLE)
@@ -787,7 +789,8 @@ GLOBAL_VAR_INIT(exploit_warn_spam_prevention, 0)
 		var/obj/effect/proc_holder/spell/S = X
 		if(istype(S, spell))
 			mob_spell_list -= S
-			qdel(S)
+			if(!QDELETED(S))
+				qdel(S)
 	if(client)
 		client << output(null, "statbrowser:check_spells")
 

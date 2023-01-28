@@ -188,13 +188,6 @@
 	icon_state = "oasisflag"
 	item_state = "oasisflag"
 
-/obj/item/flag/followers
-	name = "Followers of the Apocalypse flag"
-	desc = "A white flag with the black Follower's of the Apocalpyse cross on it."
-	icon_state = "followersflag"
-	item_state = "followersflag"
-	faction = FACTION_FOLLOWERS
-
 /obj/item/flag/locust
 	name = "Locust flag"
 	desc = "A flag with a skull, the symbol of Locusts."
@@ -227,13 +220,20 @@
 	item_state = "khanflag"
 	faction = "Great Khans"
 
+/obj/item/flag/cotc
+	name = "The Church flag"
+	desc = "A blood red flag featuring a symbol associated with nuclear radiation."
+	icon_state = "cotc"
+	item_state = "cotc"
+	faction = "The Church"
+
 /obj/item/flag/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/stack/sheet/leather) && item_state == "emptyflag")
 		visible_message("<span class='notice'>[user] begins to make a flag.</span>")
 		if(do_after(user, 60, target = src))
 			var/obj/item/stack/sheet/leather/H = I
 			if(H.use(1))
-				var/list/choices = list("NCR", "Legion", "Yuma", "BOS", "Followers", "Great Khans")
+				var/list/choices = list("NCR", "Legion", "Yuma", "BOS", "Followers", "Great Khans", "The Church")
 				var/flag = input("Please choose which faction flag you wish to create.") in choices
 				switch(flag)
 					if(FACTION_NCR)
@@ -253,25 +253,24 @@
 						desc = "A banner depicting three rivers meeting at its center, overlaid with an ear of corn."
 						icon_state = "cornflag"
 						item_state = "cornflag"
-						faction = FACTION_OASIS
 					if(FACTION_BROTHERHOOD)
 						name = "BOS flag"
 						desc = "A red and black flag with a sword surrounded in gears and wings, in a dazzling gold."
 						icon_state = "bosflag"
 						item_state = "bosflag"
 						faction = FACTION_BROTHERHOOD
-					if("Followers")
-						name = "Followers of the Apocalypse flag"
-						desc = "A white flag with the black Follower's of the Apocalpyse cross on it."
-						icon_state = "followersflag"
-						item_state = "followersflag"
-						faction = FACTION_FOLLOWERS
 					if("Great Khans")
 						name = "Great Khans flag"
 						desc = "A flag worn and weathered from a long cherished history. A decorated smiling skull smiles mockingly upon those who challenge it."
 						icon_state = "khanflag"
 						item_state = "khanflag"
 						faction = "Great Khans"
+					if("The Church")
+						name = "The Church flag"
+						desc = "A blood red flag featuring a symbol associated with nuclear radiation."
+						icon_state = "cotc"
+						item_state = "cotc"
+						faction = "The Church"
 				update_icon()
 	else
 		attack_hand(user)

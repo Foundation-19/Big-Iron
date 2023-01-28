@@ -92,7 +92,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/jumpsuit_style = PREF_SUIT		//suit/skirt
 	var/hair_style = "Bald"				//Hair type
 	var/hair_color = "000000"				//Hair color
-	var/facial_hair_style = "Shaved"	//Face hair type
+	var/facial_hair_style = "Clean shave (Hairless)"	//Face hair type
 	var/facial_hair_color = "000000"		//Facial hair color
 	var/skin_tone = "caucasian1"		//Skin color
 	var/use_custom_skin_tone = FALSE
@@ -613,7 +613,7 @@ Records disabled until a use for them is found
 */
 			dat +="<td width='220px' height='300px' valign='top'>"
 			if(NOGENITALS in pref_species.species_traits)
-				dat += "<b>Your species ([pref_species.name]) does not support genitals!</b><br>"
+			//	dat += "<b>Your species ([pref_species.name]) does not support genitals!</b><br>"
 			else
 				dat += "<h3>Penis</h3>"
 				dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=has_cock'>[features["has_cock"] == TRUE ? "Yes" : "No"]</a>"

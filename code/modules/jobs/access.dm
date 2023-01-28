@@ -334,8 +334,6 @@
 			return "NCR Armory"
 		if(ACCESS_NCROFFDUTY)
 			return "NCR Civilian"
-		if(ACCESS_FOLLOWER)
-			return "Follower Access"
 		if(ACCESS_ENCLAVE)
 			return "Enclave Clearance 0"
 		if(ACCESS_KHAN)

@@ -696,7 +696,7 @@
 
 	//BoS (Steel Blue)
 		dat += "<table cellpadding='1' cellspacing='0' width='100%'>"
-		dat += "<tr align='center' bgcolor='8eb7e3'><th colspan='[length(GLOB.oasis_positions)]'><a href='?src=[REF(src)];[HrefToken()];jobban3=brotherhooddept;jobban4=[REF(M)]'>Brotherhood Positions</a></th></tr><tr align='center'>"
+		dat += "<tr align='center' bgcolor='8eb7e3'><th colspan='[length(GLOB.kebab_positions)]'><a href='?src=[REF(src)];[HrefToken()];jobban3=brotherhooddept;jobban4=[REF(M)]'>Brotherhood Positions</a></th></tr><tr align='center'>"
 		for(var/jobPos in GLOB.brotherhood_positions)
 			if(!jobPos)
 				continue
@@ -714,8 +714,8 @@
 
 	//Oasis (Green)
 		dat += "<table cellpadding='1' cellspacing='0' width='100%'>"
-		dat += "<tr align='center' bgcolor='8ee3a4'><th colspan='[length(GLOB.oasis_positions)]'><a href='?src=[REF(src)];[HrefToken()];jobban3=oasisdept;jobban4=[REF(M)]'>Oasis Positions</a></th></tr><tr align='center'>"
-		for(var/jobPos in GLOB.oasis_positions)
+		dat += "<tr align='center' bgcolor='8ee3a4'><th colspan='[length(GLOB.kebab_positions)]'><a href='?src=[REF(src)];[HrefToken()];jobban3=oasisdept;jobban4=[REF(M)]'>Oasis Positions</a></th></tr><tr align='center'>"
+		for(var/jobPos in GLOB.kebab_positions)
 			if(!jobPos)
 				continue
 			if(jobban_isbanned(M, jobPos))
@@ -837,25 +837,6 @@
 				dat += "</tr><tr>"
 				counter = 0
 		dat += "</tr></table>"
-
-	//Followers (Light Blue)
-		dat += "<table cellpadding='1' cellspacing='0' width='100%'>"
-		dat += "<tr align='center' bgcolor='abfffd'><th colspan='[length(GLOB.followers_positions)]'><a href='?src=[REF(src)];[HrefToken()];jobban3=followersdept;jobban4=[REF(M)]'>Followers Positions</a></th></tr><tr align='center'>"
-		for(var/jobPos in GLOB.followers_positions)
-			if(!jobPos)
-				continue
-			if(jobban_isbanned(M, jobPos))
-				dat += "<td width='15%'><a href='?src=[REF(src)];[HrefToken()];jobban3=[jobPos];jobban4=[REF(M)]'><font color=red>[jobPos]</font></a></td>"
-				counter++
-			else
-				dat += "<td width='15%'><a href='?src=[REF(src)];[HrefToken()];jobban3=[jobPos];jobban4=[REF(M)]'>[jobPos]</a></td>"
-				counter++
-
-			if(counter >= 6) //So things dont get squiiiiished!
-				dat += "</tr><tr>"
-				counter = 0
-		dat += "</tr></table>"
-
 
 	//Non-Human (Green)
 		counter = 0
@@ -1033,7 +1014,7 @@
 						continue
 					joblist += jobPos
 			if("oasisdept")
-				for(var/jobPos in GLOB.oasis_positions)
+				for(var/jobPos in GLOB.kebab_positions)
 					if(!jobPos)
 						continue
 					joblist += jobPos
@@ -1064,11 +1045,6 @@
 					joblist += jobPos
 			if("tribaldept")
 				for(var/jobPos in GLOB.tribal_positions)
-					if(!jobPos)
-						continue
-					joblist += jobPos
-			if("followersdept")
-				for(var/jobPos in GLOB.followers_positions)
 					if(!jobPos)
 						continue
 					joblist += jobPos
@@ -3361,7 +3337,7 @@
 			list("ckey" = ckey)
 		)
 		if(!query_remove_mentor.warn_execute())
-			return		
+			return
 		var/datum/db_query/query_add_admin_log = SSdbcore.NewQuery({"
 			INSERT INTO `[format_table_name("admin_log")]` (`datetime`, `round_id`, `adminckey`, `adminip`, `operation`, `target`, `log`)
 			VALUES (:time, :round_id, :adminckey, :addr, 'remove mentor', :mentorkey, CONCAT('Removed mentor ', :mentorkey));"},

@@ -6,7 +6,7 @@
 	required_reagents = list(/datum/reagent/silicon = 1, /datum/reagent/copper = 1)
 	required_catalysts = list(/datum/reagent/toxin/plasma = 5)
 
-datum/chemical_reaction/rezadone
+/datum/chemical_reaction/rezadone
 	name = "Rezadone"
 	id = /datum/reagent/medicine/rezadone
 	results = list(/datum/reagent/medicine/rezadone = 3)
@@ -456,7 +456,7 @@ datum/chemical_reaction/rezadone
 	name = "Bitter drink"
 	id = /datum/reagent/medicine/bitter_drink
 	results = list(/datum/reagent/medicine/bitter_drink = 30)
-	required_reagents = list(/datum/reagent/consumable/ethanol/salgam = 10 , /datum/reagent/consumable/ethanol/brocbrew = 10 , /datum/reagent/consumable/sunset = 10 , /datum/reagent/consumable/ethanol/yellowpulque = 10)
+	required_reagents = list(/datum/reagent/consumable/ethanol/salgam = 10 , /datum/reagent/consumable/ethanol/brocbrew = 10 , /datum/reagent/consumable/ethanol/yellowpulque = 10)
 
 /datum/chemical_reaction/drinkneutralization
 	name = "Neutralization reaction"

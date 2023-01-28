@@ -57,12 +57,12 @@
 		ratvar_modules -= i
 
 /obj/item/robot_module/Destroy()
-	basic_modules.Cut()
-	emag_modules.Cut()
-	ratvar_modules.Cut()
+	QDEL_LIST(basic_modules)
+	QDEL_LIST(emag_modules)
+	QDEL_LIST(ratvar_modules)
+	QDEL_LIST(added_modules)
 	modules.Cut()
-	added_modules.Cut()
-	storages.Cut()
+	QDEL_LIST(storages)
 	return ..()
 
 /obj/item/robot_module/emp_act(severity)
@@ -533,7 +533,7 @@
 		/obj/item/pen,
 		/obj/item/toy/crayon/spraycan/borg,
 		/obj/item/hand_labeler/borg,
-		/obj/item/razor,
+		/obj/item/cosmetics/razor,
 		/obj/item/rsf/cyborg,
 		/obj/item/instrument/piano_synth,
 		/obj/item/reagent_containers/dropper,
@@ -710,7 +710,7 @@
 	var/mob/living/silicon/robot/assault = loc
 	assault.faction += "wastebots" //So other assaultrons don't gank you for existing.
 
-obj/item/robot_module/assaultron/remove_module(obj/item/I, delete_after)
+/obj/item/robot_module/assaultron/remove_module(obj/item/I, delete_after)
 	..()
 	var/mob/living/silicon/robot/assault = loc
 	assault.faction -= "wastebots" //Removes the faction if the module is removed.

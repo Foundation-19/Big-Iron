@@ -147,9 +147,9 @@
 	time = 15
 	category = CAT_EXPLOSIVE
 
-/datum/crafting_recipe/concussion
+/datum/crafting_recipe/he_grenade
 	name = "High Explosive Grenade" //this one has no shrapnel
-	result = /obj/item/grenade/syndieminibomb/concussion
+	result = /obj/item/grenade/f13/he_grenade
 	category = CAT_EXPLOSIVE
 	reqs = list(
 			/obj/item/stack/sheet/metal = 10,

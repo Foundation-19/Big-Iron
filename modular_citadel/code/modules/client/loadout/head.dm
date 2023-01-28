@@ -3,6 +3,26 @@
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_GENERAL
 	slot = SLOT_HEAD
 
+/datum/gear/head/scarecrow
+	name = "scarecrow hat"
+	path = /obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/scarecrow
+	cost = 2
+
+/datum/gear/head/angeleyes
+	name = "dark stetson"
+	path = /obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy
+	cost = 2
+
+/datum/gear/head/blondie
+	name = "brown stetson"
+	path = /obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy/blondie
+	cost = 2
+
+/datum/gear/head/tuco
+	name = "dirty sombrero"
+	path = /obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy/tuco
+	cost = 2
+
 /datum/gear/head/baseball
 	name = "ballcap"
 	path = /obj/item/clothing/head/soft/mime
@@ -143,6 +163,11 @@
 /datum/gear/head/papersack
 	name = "paper sack"
 	path = /obj/item/clothing/head/papersack
+
+/datum/gear/head/hairband
+	name = "hair band"
+	path = /obj/item/clothing/head/fashion/hairband
+
 
 //Cowboy Stuff
 /datum/gear/head/cowboy
@@ -330,7 +355,7 @@
 							"NCR Off-Duty"
 						)
 
-datum/gear/head/steelpot_bandolier
+/datum/gear/head/steelpot_bandolier
 	name = "NCR bandolier helmet"
 	path = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
 	subcategory = LOADOUT_SUBCATEGORY_HEAD_FACTIONS

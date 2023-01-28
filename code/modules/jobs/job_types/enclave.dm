@@ -3,7 +3,7 @@
 	department_flag = ENCLAVE
 	selection_color = "#323232"
 	faction = FACTION_ENCLAVE
-	exp_type = EXP_TYPE_FALLOUT
+	exp_type = EXP_TYPE_ENCLAVE
 
 	access = list(ACCESS_ENCLAVE)
 	minimal_access = list(ACCESS_ENCLAVE)
@@ -80,7 +80,7 @@
 		/obj/item/melee/classic_baton/telescopic = 1
 		)
 
-/datum/outfit/job/enclave/peacekeeper/enclavecpt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/enclave/peacekeeper/enclavecpt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -95,14 +95,14 @@
 /datum/job/enclave/enclavelt
 	title = "Enclave Lieutenant"
 	flag = F13USLT
+	display_order = JOB_DISPLAY_ORDER_F13USLT
 	total_positions = 0
 	spawn_positions = 0
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_ENCLAVE3, ACCESS_PUBLIC)
 	description = "You are probably the last operating cell of the Enclave in the US, as far as you know. Now that the lore is out of the way, just make the round fun. You set the policies and the attitude of the Enclave this week."
 	supervisors = "Enclave Department of the Army."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
-	exp_type = EXP_TYPE_ENCLAVE
-	exp_requirements = 3000
+	exp_requirements = 600
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt
 	name = "Enclave Lieutenant"
@@ -141,13 +141,13 @@
 /datum/job/enclave/f13gysergeant
 	title = "Enclave Gunnery Sergeant"
 	flag = F13USGYSGT
+	display_order = JOB_DISPLAY_ORDER_F13USGYSGT
 	total_positions = 0
 	spawn_positions = 0
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_PUBLIC)
 	description = "Second in command after Lieutenant, your role is to direct their orders directly to the sergeants and regular troops."
 	supervisors = "The Lieutenant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13gysergeant
-	exp_type = EXP_TYPE_ENCLAVE
 	exp_requirements = 2000
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant
@@ -183,13 +183,13 @@
 /datum/job/enclave/Armoredinfantry
 	title = "Enclave Armored Infantry"
 	flag = F13USAI
+	display_order = JOB_DISPLAY_ORDER_F13USAI
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a specialist trained in the use of heavy equipment and X0-2 Power armor. Your job is to be he anchor of your unit."
 	supervisors = "The Lieutenant and the Sergeants"
 	outfit = /datum/outfit/job/enclave/peacekeeper/Armoredinfantry
-	exp_type = EXP_TYPE_ENCLAVE
-	exp_requirements = 2000
+	exp_requirements = 600
 
 	loadout_options = list(
 	/datum/outfit/loadout/troopy,
@@ -232,6 +232,7 @@
 /datum/job/enclave/enclavesgt
 	title = "Enclave Sergeant"
 	flag = F13USSGT
+	display_order = JOB_DISPLAY_ORDER_F13USSGT
 	total_positions = 0
 	spawn_positions = 0
 	description = "Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
@@ -268,6 +269,7 @@
 /datum/job/enclave/f13specialist
 	title = "Enclave Specialist"
 	flag = F13USSPECIALIST
+	display_order = JOB_DISPLAY_ORDER_F13USSPECIALIST
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are an operative for the remnants of the Enclave. You, unlike the normal privates, have recieved specialist training in either engineering or medicine."
@@ -304,6 +306,7 @@
 /datum/job/enclave/enclavespy
 	title = "Enclave Private"
 	flag = F13USPRIVATE
+	display_order = JOB_DISPLAY_ORDER_F13USPRIVATE
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are an operative for the remnants of the Enclave. Obey your Lieutenant. He sets the Enclave's policies."
@@ -335,13 +338,14 @@
 /datum/job/enclave/enclavesci
 	title = "Enclave Scientist"
 	flag = F13USSCIENTIST
+	display_order = JOB_DISPLAY_ORDER_F13USSCIENTIST
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_PUBLIC)
 	total_positions = 0
 	spawn_positions = 0
 	description = "You're responsible for the maintenance of the base, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant."
 	supervisors = "Enclave Research and Development Division."
 	outfit = /datum/outfit/job/enclave/noncombat/enclavesci
-	exp_requirements = 2000
+	exp_requirements = 300
 
 /datum/outfit/job/enclave/noncombat/enclavesci
 	name = "Enclave Scientist"
@@ -385,6 +389,7 @@
 /datum/job/enclave/f13BDUTY
 	title = "Enclave Bunker Duty"
 	flag = F13USBDUTY
+	display_order = JOB_DISPLAY_ORDER_F13USPRIVATE
 	total_positions = 0
 	spawn_positions = 0
 	description = "You were assigned to bunker duty this week, clean up, cook up, preach up or chem up your fellow Americans and remember don't join any raids or battles from your fellow Americans, after all it's none of your concern this week is it."

@@ -477,8 +477,12 @@
 	illustration = "overlay_powder"
 
 /obj/item/storage/box/medicine/powder5/PopulateContents()
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	. = ..()
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
 
 // -----------------------------------
 // POULTICE BOX
@@ -490,8 +494,13 @@
 	illustration = "overlay_poultice"
 
 /obj/item/storage/box/medicine/poultice5/PopulateContents()
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	. = ..()
+	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+
 
 // -----------------------------------
 // BITTER DRINK BOX
@@ -504,5 +513,11 @@
 	illustration = "overlay_bitter"
 
 /obj/item/storage/box/medicine/bitterdrink5/PopulateContents()
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+	. = ..()
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+
+

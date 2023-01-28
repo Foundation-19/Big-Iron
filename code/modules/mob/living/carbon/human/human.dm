@@ -48,6 +48,7 @@
 
 /mob/living/carbon/human/Destroy()
 	QDEL_NULL(physiology)
+	QDEL_LIST(bioware)
 	GLOB.human_list -= src
 	return ..()
 
@@ -636,7 +637,7 @@
 	if(dna.features["body_model"] == MALE)
 		facial_hair_style = "Full Beard"
 	else
-		facial_hair_style = "Shaved"
+		facial_hair_style = "Clean shave (Hairless)"
 	hair_style = pick("Bedhead", "Bedhead 2", "Bedhead 3")
 	underwear = "Nude"
 	undershirt = "Nude"

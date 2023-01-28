@@ -50,14 +50,16 @@
 /datum/crafting_recipe/bitterdrink
 	name = "Bottle bitterdrink"
 	result = /obj/item/reagent_containers/pill/patch/bitterdrink
-	reqs = list(/datum/reagent/medicine/bitter_drink = 30)
+	reqs = list(/datum/reagent/medicine/bitter_drink = 30,
+				/obj/item/reagent_containers/glass/beaker = 1)
 	time = 5
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/bitterdrink5
 	name = "Batch of bitterdrink (x5)"
 	result = /obj/item/storage/box/medicine/bitterdrink5
-	reqs = list(/datum/reagent/medicine/bitter_drink = 150)
+	reqs = list(/datum/reagent/medicine/bitter_drink = 150,
+				/obj/item/reagent_containers/glass/beaker = 5)
 	time = 5
 	category = CAT_MEDICAL
 
@@ -102,6 +104,16 @@
 				/obj/item/reagent_containers/food/snacks/grown/bee_balm = 2) //Beebalm was a smelling salt utilized in the victorian era for vaporous herbal remedies to things like sore throats.
 	time = 50
 	category = CAT_MEDICAL
+
+/datum/crafting_recipe/hydra
+	name = "Hydra"
+	result = /obj/item/reagent_containers/pill/patch/hydra
+	reqs = list(/obj/item/reagent_containers/food/snacks/meat/slab/radscorpion_meat = 2,
+				/obj/item/reagent_containers/food/snacks/grown/fungus = 2,
+				/obj/item/reagent_containers/glass/beaker = 1)
+	time = 2 SECONDS
+	category = CAT_MEDICAL
+	always_available = FALSE
 
 /datum/crafting_recipe/stimpak
 	name = "Stimpak"

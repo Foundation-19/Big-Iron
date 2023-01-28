@@ -60,8 +60,12 @@
 /obj/item/storage/backpack/spearquiver
 	name = "sturdy quiver"
 	desc = "A leather and iron quiver designed to hold throwing spears and bolas."
-	icon = 'icons/fallout/clothing/belts.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+//	icon = 'icons/fallout/clothing/belts.dmi'
+//	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
 	icon_state = "spearquiver"
 	item_state = "spearquiver"
 	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_BELT
@@ -423,7 +427,7 @@
 	new /obj/item/surgical_drapes(src)
 	new /obj/item/clothing/mask/surgical(src)
 	new /obj/item/reagent_containers/medspray/sterilizine(src)
-	new /obj/item/razor(src)
+	new /obj/item/cosmetics/razor(src)
 	new /obj/item/stack/sticky_tape/surgical(src)
 	new /obj/item/stack/sticky_tape/surgical(src)
 	new /obj/item/stack/medical/bone_gel(src)
@@ -654,7 +658,7 @@
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/grenade/syndieminibomb(src)
 
-obj/item/storage/backpack/duffelbag/syndie/shredderbundle
+/obj/item/storage/backpack/duffelbag/syndie/shredderbundle
 	desc = "A large duffel bag containing two CX Shredders, some magazines, an elite hardsuit, and a chest rig."
 
 /obj/item/storage/backpack/duffelbag/syndie/shredderbundle/PopulateContents()

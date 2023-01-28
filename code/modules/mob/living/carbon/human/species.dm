@@ -388,7 +388,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 /datum/species/proc/on_species_loss(mob/living/carbon/human/C, datum/species/new_species, pref_load)
 	if(C.dna.species.exotic_bloodtype)
-		if(!new_species.exotic_bloodtype)
+		if(!istype(new_species) || !new_species.exotic_bloodtype)
 			C.dna.blood_type = random_blood_type()
 		else
 			C.dna.blood_type = new_species.exotic_bloodtype
@@ -405,16 +405,17 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		C.type_of_meat = initial(meat)
 
 	//If their inert mutation is not the same, swap it out
-	if((inert_mutation != new_species.inert_mutation) && LAZYLEN(C.dna.mutation_index) && (inert_mutation in C.dna.mutation_index))
+	if((!istype(new_species) || inert_mutation != new_species.inert_mutation) && LAZYLEN(C.dna.mutation_index) && (inert_mutation in C.dna.mutation_index))
 		C.dna.remove_mutation(inert_mutation)
-		//keep it at the right spot, so we can't have people taking shortcuts
-		var/location = C.dna.mutation_index.Find(inert_mutation)
-		C.dna.mutation_index[location] = new_species.inert_mutation
-		C.dna.default_mutation_genes[location] = C.dna.mutation_index[location]
-		C.dna.mutation_index[new_species.inert_mutation] = create_sequence(new_species.inert_mutation)
-		C.dna.default_mutation_genes[new_species.inert_mutation] = C.dna.mutation_index[new_species.inert_mutation]
+		if(istype(new_species))
+			//keep it at the right spot, so we can't have people taking shortcuts
+			var/location = C.dna.mutation_index.Find(inert_mutation)
+			C.dna.mutation_index[location] = new_species.inert_mutation
+			C.dna.default_mutation_genes[location] = C.dna.mutation_index[location]
+			C.dna.mutation_index[new_species.inert_mutation] = create_sequence(new_species.inert_mutation)
+			C.dna.default_mutation_genes[new_species.inert_mutation] = C.dna.mutation_index[new_species.inert_mutation]
 
-	if(!new_species.has_field_of_vision && has_field_of_vision && ishuman(C) && CONFIG_GET(flag/use_field_of_vision))
+	if((!istype(new_species) || !new_species.has_field_of_vision) && has_field_of_vision && ishuman(C) && CONFIG_GET(flag/use_field_of_vision))
 		var/datum/component/field_of_vision/F = C.GetComponent(/datum/component/field_of_vision)
 		if(F)
 			qdel(F)
@@ -469,8 +470,8 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			//List of all valid dynamic_fhair_suffixes
 			var/static/list/fextensions
 			if(!fextensions)
-				var/icon/fhair_extensions = icon('icons/mob/facialhair_extensions.dmi')
-				fextensions = list()
+				var/icon/fhair_extensions = icon('icons/mob/facial_hair_extensions.dmi')
+				fextensions = list("+hood")
 				for(var/s in fhair_extensions.IconStates(1))
 					fextensions[s] = TRUE
 				qdel(fhair_extensions)
@@ -480,7 +481,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 			var/fhair_file = S.icon
 			if(fextensions[fhair_state+dynamic_fhair_suffix])
 				fhair_state += dynamic_fhair_suffix
-				fhair_file = 'icons/mob/facialhair_extensions.dmi'
+				fhair_file = 'icons/mob/facial_hair_extensions.dmi'
 
 			var/mutable_appearance/facial_overlay = mutable_appearance(fhair_file, fhair_state, -HAIR_LAYER)
 
@@ -532,7 +533,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 				var/static/list/extensions
 				if(!extensions)
 					var/icon/hair_extensions = icon('icons/mob/hair_extensions.dmi') //hehe
-					extensions = list()
+					extensions = list("+hood", "+generic")
 					for(var/s in hair_extensions.IconStates(1))
 						extensions[s] = TRUE
 					qdel(hair_extensions)
@@ -581,7 +582,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	if(HD && !(HAS_TRAIT(H, TRAIT_HUSK)))
 		// lipstick
 		if(H.lip_style && (LIPS in species_traits))
-			var/mutable_appearance/lip_overlay = mutable_appearance('icons/mob/human_face.dmi', "lips_[H.lip_style]", -BODY_LAYER)
+			var/mutable_appearance/lip_overlay = mutable_appearance('modular_BD2/fashion/icons/face_overlays.dmi', "lips_[H.lip_style]", -BODY_LAYER)
 			lip_overlay.color = H.lip_color
 
 			if(OFFSET_LIPS in H.dna.species.offset_features)
@@ -1371,8 +1372,8 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 /datum/species/proc/go_bald(mob/living/carbon/human/H)
 	if(QDELETED(H))	//may be called from a timer
 		return
-	H.facial_hair_style = "Shaved"
-	H.hair_style = "Bald"
+	H.facial_hair_style = "Clean shave (Hairless)"
+	H.hair_style = "Wild (Radiated)"
 	H.update_hair()
 
 //////////////////

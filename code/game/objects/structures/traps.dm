@@ -167,13 +167,9 @@
 	. = ..()
 	time_between_triggers = 10
 
-/obj/structure/trap/stun/hunter/Crossed(atom/movable/AM)
-	if(isliving(AM))
-		var/mob/living/L = AM
-		if(!L.mind?.has_antag_datum(/datum/antagonist/fugitive))
-			return
-	caught = TRUE
-	. = ..()
+/obj/structure/trap/stun/hunter/Destroy()
+	stored_item = null
+	return ..()
 
 /obj/structure/trap/stun/hunter/flare()
 	..()
@@ -220,7 +216,7 @@
 	forceMove(stored_trap)//moves item into trap
 
 /obj/item/bountytrap/Destroy()
-	qdel(stored_trap)
+	QDEL_NULL(stored_trap)
 	QDEL_NULL(radio)
 	QDEL_NULL(spark_system)
 	. = ..()

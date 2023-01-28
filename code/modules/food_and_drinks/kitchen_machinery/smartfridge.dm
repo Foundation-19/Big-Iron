@@ -621,8 +621,8 @@
 // Preloaded simple farming rack for mapping
 /obj/machinery/smartfridge/bottlerack/gardentool/primitive
 	initial_contents = list(
-		/obj/item/shovel = 2,
-		/obj/item/hatchet = 2,
+		/obj/item/shovel/spade = 1,
+		/obj/item/shovel = 1,
 		/obj/item/cultivator/rake  = 2,
 		/obj/item/reagent_containers/glass/bucket/wood = 3,
 		/obj/item/storage/bag/plants = 2,
