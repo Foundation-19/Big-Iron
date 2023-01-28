@@ -289,14 +289,14 @@ Fence
 	name = "Gun Repository"
 	desc = "Place weapon inside slot. Weapon is sent out of the region for post-processing. Recieve compensation. Yuma Wasteland Supply Inc. thanks you for disarming the wasteland."
 	goods_list = list(/obj/item/gun/ballistic/automatic/hobo/zipgun = 5,
-						/obj/item/gun/ballistic/revolver/hobo = 5,
 						/obj/item/gun/ballistic/revolver/detective = 5,
-						/obj/item/gun/ballistic/revolver/hobo = 8,
+						/obj/item/gun/ballistic/revolver/hobo/knucklegun = 8,
 						/obj/item/gun/ballistic/revolver/hobo/piperifle = 8,
 						/obj/item/gun/ballistic/revolver/hobo/knifegun = 8,
 						/obj/item/gun/ballistic/revolver/hobo/pepperbox = 8,
 						/obj/item/gun/ballistic/revolver/single_shotgun = 8,
 						/obj/item/gun/ballistic/automatic/pistol/n99 = 8,
+						/obj/item/gun/ballistic/automatic/pistol/type17 = 8,
 						/obj/item/gun/ballistic/automatic/pistol/pistol22 = 8,
 						/obj/item/gun/ballistic/automatic/pistol/ninemil = 8,
 						/obj/item/gun/ballistic/automatic/pistol/sig = 8,
@@ -304,13 +304,12 @@ Fence
 						/obj/item/gun/ballistic/automatic/pistol/m1911 = 8,
 						/obj/item/gun/ballistic/rifle/hunting = 10,
 						/obj/item/gun/ballistic/revolver/colt357 = 10,
-						/obj/item/gun/ballistic/rifle/mosin = 10,
 						/obj/item/gun/ballistic/revolver/caravan_shotgun = 10,
 						/obj/item/gun/ballistic/revolver/widowmaker = 10,
 						/obj/item/gun/ballistic/revolver/winchesterrebored = 10,
 						/obj/item/gun/ballistic/automatic/autopipe = 15,
 						/obj/item/gun/ballistic/rifle/hobo/lasmusket = 15,
-						/obj/item/stack/crafting/armor_plate = 20,
+						/obj/item/stack/crafting/armor_plate = 20
 						)
 
 /obj/machinery/mineral/wasteland_trader/gunbuyer/ui_interact(mob/user)
