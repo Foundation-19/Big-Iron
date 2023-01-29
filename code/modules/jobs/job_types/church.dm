@@ -18,7 +18,7 @@
 	forbids = "Exposing the secrets of the Church, fraternizing with the NCR, treating patients for nothing in return, consuming alcohol, and using chems."
 	enforces = "Preaching the faith, following the faith's internal structure and rules."
 	exp_type = EXP_TYPE_CHURCH
-	exp_requirements = 100
+	exp_requirements = 130
 
 	outfit = /datum/outfit/job/church/f13highpriest
 	access = list(ACCESS_COTC, ACCESS_COTC_ARMORY, ACCESS_COTC_SECRET)
