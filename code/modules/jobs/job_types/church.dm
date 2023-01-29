@@ -37,7 +37,7 @@
 	name = "High Priest"
 	jobtype = /datum/job/church/f13highpriest
 
-	id = /obj/item/card/id/yuma/cotc
+	id = /obj/item/card/id/yuma/cotc/brand
 	uniform = /obj/item/clothing/under/f13/chaplain
 	suit = /obj/item/clothing/suit/hooded/robes/cotc/highpriest
 	suit_store = /obj/item/gun/energy/laser/plasma/pistol
@@ -105,7 +105,7 @@
 	name = "Servitor"
 	jobtype = /datum/job/church/f13servitor
 
-	id = /obj/item/card/id/yuma/cotc
+	id = /obj/item/card/id/yuma/cotc/brand
 	uniform = /obj/item/clothing/under/f13/chaplain
 	suit = /obj/item/clothing/suit/hooded/robes/cotc/servitor
 	suit_store = /obj/item/gun/energy/laser/wattz2k
@@ -180,7 +180,7 @@
 	name = "Acolyte"
 	jobtype = /datum/job/church/f13acolyte
 
-	id = /obj/item/card/id/yuma/cotc
+	id = /obj/item/card/id/yuma/cotc/brand
 	uniform = /obj/item/clothing/under/f13/brahminm
 	ears = /obj/item/radio/headset/headset_church
 	backpack = /obj/item/storage/backpack/satchel/sec
@@ -263,7 +263,7 @@
 	name = "Neophyte"
 	jobtype = /datum/job/church/f13neophyte
 
-	id = /obj/item/card/id/yuma/cotc
+	id = /obj/item/card/id/yuma/cotc/brand
 	ears = 	/obj/item/radio/headset/headset_church
 	suit = /obj/item/clothing/suit/hooded/robes/cotc
 	backpack = /obj/item/storage/backpack/satchel/explorer
