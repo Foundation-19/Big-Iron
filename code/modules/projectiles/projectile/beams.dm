@@ -590,7 +590,7 @@
 	light_color = LIGHT_COLOR_BLUE
 
 /obj/item/projectile/beam/laser/aer14/hitscan
-	damage = 39
+	damage = 35
 	wound_bonus = 20
 	armour_penetration = 0.05
 	tracer_type = /obj/effect/projectile/tracer/pulse
