@@ -1243,7 +1243,7 @@
 
 //cotc
 
-/obj/item/card/id/yuma/cotc
+/obj/item/card/id/yuma/cotc/brand
 	name = "Church brand"
 	desc = "A brand showing one's eternal commitment to the Father."
 	icon_state = "cotc"

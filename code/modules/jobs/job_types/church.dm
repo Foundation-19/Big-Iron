@@ -68,7 +68,7 @@
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 
 
@@ -306,10 +306,10 @@
 /datum/outfit/loadout/neophyte/sanitation
 	name = "Janitor"
 	backpack_contents = list(
-		/obj/item/melee/classic_baton = 1,
-		/obj/item/restraints/legcuffs/bola = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
+		/obj/item/mop = 1,
+		/obj/item/reagent_containers/glass/bucket = 1,
+		/obj/item/soap/homemade = 1,
+		/obj/item/storage/bag/trash = 1
 		)
 
 /datum/outfit/loadout/neophyte/gardener
