@@ -198,7 +198,7 @@ GLOBAL_LIST_EMPTY(electrochromatic_window_lookup)
 
 			to_chat(user, "<span class='notice'>You begin repairing [src]...</span>")
 			if(I.use_tool(src, user, 40, volume=50))
-				obj_integrity = max_integrity
+				obj_integrity = obj_integrity + (obj_integrity / 4)
 				update_nearby_icons()
 				to_chat(user, "<span class='notice'>You repair [src].</span>")
 		else
