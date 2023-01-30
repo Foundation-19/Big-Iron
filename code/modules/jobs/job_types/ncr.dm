@@ -292,8 +292,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
 
-	loadout_options = list( // ALL: Bayonet, M1911 sidearm
-		/datum/outfit/loadout/sergeantrifleman, // Scout Carbine, Mantle Armor
+	loadout_options = list(
+		/datum/outfit/loadout/sergeantrifleman, // Marksman Carbine, Mantle Armor
 		/datum/outfit/loadout/sergeantcqc // Trench Shotgun, Trench Armor
 		)
 
@@ -310,7 +310,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/sergeantrifleman
 	name = "Lead Rifleman"
-	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
+	suit_store = /obj/item/gun/ballistic/automatic/marksman
 	head = /obj/item/clothing/head/f13/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	backpack_contents = list(
@@ -327,6 +327,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/storage/box/ration/menu_eleven = 1,
 		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/ammo_box/shotgun/incendiary = 1,
 		/obj/item/clothing/mask/gas = 1,
 		/obj/item/grenade/smokebomb = 2,
 		/obj/item/melee/onehanded/knife/trench = 1
@@ -502,9 +503,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13ranger
 
 	loadout_options = list( // ALL: Binoculars, Bowie knife
-	/datum/outfit/loadout/rangerrecon,
-	/datum/outfit/loadout/rangertrail,
-	/datum/outfit/loadout/rangerpatrol
+	/datum/outfit/loadout/rangerrecon, // Scout Carbine, .45 Revolver
+	/datum/outfit/loadout/rangertrail, // Cowboy Repeater, .357 Revolver
+	/datum/outfit/loadout/rangerpatrol // Browning Auto-5, .44 snub revolver
 	)
 
 /datum/outfit/job/ncr/f13ranger
@@ -534,7 +535,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	belt = /obj/item/storage/belt/military/reconbandolier
 	head = /obj/item/clothing/head/beret/ncr_recon_ranger
 	neck = /obj/item/clothing/neck/mantle/ranger
-	suit_store = /obj/item/gun/ballistic/automatic/marksman
+	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_dinner = 1,
 		/obj/item/ammo_box/magazine/m556/rifle = 3,
