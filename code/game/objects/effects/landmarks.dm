@@ -760,8 +760,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Outlaw"
 	icon_state = "Raider"
 
-/obj/effect/landmark/start/f13/pusher
-	name = "Great Khan"
+/obj/effect/landmark/start/f13/blackwater
+	name = "Blackwater"
 	icon_state = "Pusher"
 
 /obj/effect/landmark/start/f13/preacher
