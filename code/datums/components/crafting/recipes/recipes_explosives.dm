@@ -136,7 +136,6 @@
 	category = CAT_EXPLOSIVE
 	always_available = FALSE
 
-
 /datum/crafting_recipe/lance
 	name = "Explosive Spear (Grenade)"
 	result = /obj/item/twohanded/spear
@@ -163,6 +162,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/frag_shrapnel
 	name = "Fragmentation Grenade"
@@ -180,6 +180,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/incendiary
 	name = "Incendiary Grenade"
@@ -197,6 +198,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/stinger
 	name = "Stinger Grenade"
@@ -213,6 +215,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/radgrenade
 	name = "Radiation Grenade"
@@ -231,6 +234,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 
 /datum/crafting_recipe/flashbang
 	name = "Flashbang"
@@ -247,6 +251,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/smokebomb
 	name = "Smokebomb"
@@ -263,6 +268,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/empgrenade
 	name = "Pulse Grenade"
@@ -279,6 +285,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 	
 /datum/crafting_recipe/a40mm
 	name = "40mm grenade"
@@ -296,6 +303,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 	
 /datum/crafting_recipe/a40mm_box
 	name = "Ammo box (40mm grenades)"
@@ -313,6 +321,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 20
 	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/rocket_base
 	name = "Empty rocket shell"
@@ -329,6 +338,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/weakrocket
 	name = "Low-yield HE rocket"
@@ -343,6 +353,7 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 
 /datum/crafting_recipe/strongrocket
 	name = "High-yield HE rocket"
@@ -372,3 +383,4 @@
 	tools = list(TOOL_AWORKBENCH)
 	time = 5
 	always_available = FALSE
+	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING

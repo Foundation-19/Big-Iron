@@ -67,7 +67,7 @@
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 
 
@@ -124,7 +124,7 @@
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2
 		)
 
-/datum/outfit/job/church/f13servitormedici/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/church/f13servitor/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -135,7 +135,7 @@
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 
 /*--------------------------------------------------------------*/
