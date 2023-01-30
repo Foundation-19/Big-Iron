@@ -2,111 +2,102 @@
 	department_flag = WASTELAND
 
 ////////////////
-// GREAT KHAN //
+// BLACKWATER //
 ////////////////
 
-/datum/job/wasteland/f13pusher
-	title = "Great Khan"
-	flag = F13PUSHER
+/datum/job/wasteland/blackwater
+	title = "Blackwater Settler"
+	flag = blackwater
 	department_head = list("Captain")
 	head_announce = list("Security")
 	faction = FACTION_WASTELAND
 	total_positions = 8
 	spawn_positions = 8
-	description = "You are no common raider or tribal settler, for you are a Great Khan. Your ancestry is that of fierce warriors and noble chieftans, whose rites and sagas tell of blood soaked battlefields and great sacrifice for your tribe. At least, this was once the case: after the massacre at Bitter Springs by the NCR, your people have lost much of their strength - now you and many other Khans travel west of Vegas through Red Rock Canyon in the hopes of settling in the region of Yuma."
-	supervisors = "your gang leadership"
-	selection_color = "#ff915e"
+	description = "You're somebody - maybe an old Oasis refugee, maybe a simple nomad or a wandering wastelander who's grown tired of having no place to stay. Whatever's brought you here, you're a member of the Blackwater community, a small 'town' made of a variety of different people. There's no leaders, no Gods and no masters, only each other."
+	supervisors = "your fellows"
+	selection_color = "#3e4461"
 
-	outfit = /datum/outfit/job/wasteland/f13pusher
+	outfit = /datum/outfit/job/wasteland/blackwater
 
-	access = list(ACCESS_KHAN, ACCESS_PUBLIC)
-	minimal_access = list(ACCESS_KHAN, ACCESS_PUBLIC)
+	access = list(ACCESS_BLACKWATER, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BLACWATER, ACCESS_PUBLIC)
 
 	loadout_options = list(
-		/datum/outfit/loadout/khanenforcer,
-		/datum/outfit/loadout/khanskirmisher,
-		/datum/outfit/loadout/khandrug
+		/datum/outfit/loadout/hunter,
+		/datum/outfit/loadout/doctor,
+		/datum/outfit/loadout/prospector,
+		/datum/outfit/loadout/labourer
 		)
-	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/wasteland/f13raider,
-			/datum/job/wasteland/f13pusher,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/wasteland/f13raider,
-			/datum/job/wasteland/f13pusher,
-		),
 	)
 
-/datum/outfit/job/wasteland/f13pusher
-	name = "Great Khan"
-	jobtype = /datum/job/wasteland/f13pusher
-	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
-	id = /obj/item/card/id/khantattoo
-	ears = /obj/item/radio/headset/headset_khans
-	head = /obj/item/clothing/head/helmet/f13/khan
-	shoes = /obj/item/clothing/shoes/f13/military/khan
+/datum/outfit/job/wasteland/blackwater
+	name = "Blackwater Settler"
+	jobtype = /datum/job/wasteland/blackwater
+	id = /obj/item/card/id/rusted/blackwaterid
+	ears = /obj/item/radio/headset/headset_blackwater
+	shoes = /obj/item/clothing/shoes/jackboots
 	backpack =	/obj/item/storage/backpack/satchel/explorer
 	satchel = 	/obj/item/storage/backpack/satchel/old
-	uniform = /obj/item/clothing/under/f13/khan
+	uniform = /obj/item/clothing/under/f13/settler
 	r_hand = /obj/item/book/granter/trait/selection
 	r_pocket = /obj/item/flashlight/flare
-	l_pocket = /obj/item/storage/survivalkit_khan
-	gloves = /obj/item/melee/unarmed/brass/spiked
+	l_pocket = /obj/item/storage/survivalkit
 	box = null
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/jet = 2,
-		/obj/item/storage/bag/money/small/khan = 1
+		/obj/item/storage/bag/money/small = 1
 		)
 
-
-/datum/outfit/job/wasteland/f13pusher/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/wasteland/blackwater/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_blackwater)
 
-	if(!H.gang)
-		var/datum/gang/greatkhans/GK = GLOB.greatkhans
-		GLOB.all_gangs |= GK
-		GK.add_member(H)
-		H.gang = GK
-
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/varmintrifle)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/combatrifle)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_khanate)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/jet)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/turbo)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/psycho)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/buffout)
-
-/datum/outfit/loadout/khanenforcer
-	name = "Enforcer"
-	r_hand = /obj/item/twohanded/baseball/spiked
-	belt = /obj/item/storage/belt/bandolier
+/datum/outfit/loadout/hunter
+	name = "Hunter"
+	r_hand = /obj/item/gun/ballistic/rifle/hunting/remington
+	belt = /obj/item/storage/belt/military/army
+	suit = /obj/item/clothing/suit/armored/light/town
 	backpack_contents = list(
-		/obj/item/restraints/legcuffs/bola/tactical = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
+		/obj/item/ammo_box/a308 = 2,
+		/obj/item/melee/onehanded/knife/hunting = 1,
+		/obj/item/gun/ballistic/revolver/colt357 = 1
 		)
 
-/datum/outfit/loadout/khanskirmisher
-	name = "Skirmisher"
-	r_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
+/datum/outfit/loadout/doctor
+	name = "Doctor"
+	uniform = /obj/item/clothing/under/f13/doctor
+	suit =	/obj/item/clothing/suit/toggle/labcoat/f13/followers
+	shoes = /obj/item/clothing/shoes/sneakers/white
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun = 3,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-		/obj/item/storage/belt/holster = 1,
-		/obj/item/book/granter/trait/trekking = 1
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/storage/firstaid/regular = 1,
+		/obj/item/book/granter/trait/lowsurgery = 1,
+		/obj/item/gun/ballistic/automatic/pistol/beretta = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 2
 		)
 
-/datum/outfit/loadout/khandrug
-	name = "Drug Pusher"
-	belt = /obj/item/storage/belt/bandolier
+/datum/outfit/loadout/prospector
+	name = "Prospector"
+	r_hand = /obj/item/pickaxe
+	suit = /obj/item/clothing/suit/armor/f13/raider/iconoclast/
 	backpack_contents = list(
-		/obj/item/storage/pill_bottle/chem_tin/fixer = 1,
-		/obj/item/book/granter/trait/chemistry = 1,
-		/obj/item/reagent_containers/pill/patch/turbo = 2
+		obj/item/flashlight/lantern =  1,
+		/obj/item/mining_scanner = 1,
+		/obj/item/shovel = 1,
+		/obj/item/melee/onehanded/knife/hunting, = 1,
+		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 1
+		)
+
+/datum/outfit/loadout/labourer
+	name = "Labourer"
+	belt = /obj/item/storage/bag/plants
+	backpack_contents = list(
+		/obj/item/cultivator = 1,
+		/obj/item/hatchet = 1,
+		/obj/item/shovel/spade = 1,
+		/obj/item/book/granter/trait/iron_fist = 1
 		)
 
 /*
@@ -440,6 +431,21 @@ Raider
 		/obj/item/ammo_box/magazine/greasegun = 2,
 		/obj/item/grenade/f13/dynamite = 2,
 		/obj/item/book/granter/trait/explosives = 1
+		)
+
+/datum/outfit/loadout/raider_khan
+	name = "Great Khan"
+	/datum/outfit/job/wasteland/f13pusher
+	name = "Great Khan"
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+	suit_store = /obj/item/twohanded/baseball/spiked
+	head = /obj/item/clothing/head/helmet/f13/khan
+	uniform = /obj/item/clothing/under/f13/khan
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/jet = 2,
+		/obj/item/storage/bag/money/small/khan = 1,
+		/obj/item/melee/unarmed/brass/spiked = 1,
+		/obj/item/book/granter/trait/bigleagues = 1
 		)
 
 /datum/job/wasteland/f13wastelander

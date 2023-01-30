@@ -167,7 +167,7 @@
 		if(5) //Town
 			return list(ACCESS_TOWN, ACCESS_TOWN_CIV, ACCESS_TOWN_BAR, ACCESS_TOWN_MERCH, ACCESS_TOWN_PROSP, ACCESS_TOWN_SCIENCE, ACCESS_TOWN_DOC, ACCESS_TOWN_SEC, ACCESS_TOWN_HOS, ACCESS_TOWN_COMMAND, ACCESS_DEN)
 		if(6) //Wasteland
-			return list(ACCESS_PUBLIC, ACCESS_KHAN, ACCESS_TRIBE, ACCESS_RAIDER, ACCESS_WASTER)
+			return list(ACCESS_PUBLIC, ACCESS_BLACKWATER, ACCESS_TRIBE, ACCESS_RAIDER, ACCESS_WASTER)
 
 /proc/get_region_accesses_name(code)
 	switch(code)
@@ -336,8 +336,8 @@
 			return "NCR Civilian"
 		if(ACCESS_ENCLAVE)
 			return "Enclave Clearance 0"
-		if(ACCESS_KHAN)
-			return "Great Khans Access"
+		if(ACCESS_BLACKWATER)
+			return "Blackwater Access"
 		if(ACCESS_NCR1)
 			return "NCR Clearance 1"
 		if(ACCESS_NCR2)
@@ -524,7 +524,7 @@
 				"NCR Scout", "NCR Scout Sergeant", "NCR Scout Lieutenant",
 				"Chief of Security", "Vault-tec Doctor", "Vault-tec Scientist",
 				"Vault-tec Security", "Vault-tec Engineer", "Vault Dweller", "Settler",
-				"Wastelander", "Raider", "Great Khan", "Preacher", "Head Hunter", "Chief", "Shaman", "Villager", "Hunter")
+				"Wastelander", "Raider", "Blackwater Settler", "Preacher", "Head Hunter", "Chief", "Shaman", "Villager", "Hunter")
 
 /proc/get_all_job_icons() //For all existing HUD icons
 	return get_all_jobs() + list("Prisoner")

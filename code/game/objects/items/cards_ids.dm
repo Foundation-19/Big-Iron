@@ -1137,20 +1137,13 @@
 
 	access = list(ACCESS_DEN)
 
-
-/obj/item/card/id/khantattoo
-	name = "Great Khan tattoo"
-	desc = "A tattoo of the symbol of the Great Khans."
-	icon = 'icons/fallout/clothing/khans.dmi'
-	icon_state = "khan_id"
-	item_state = null
-	assignment = "gang tattoo"
+/obj/item/card/id/rusted/blackwaterid
+	name = "blackwater id card"
+	desc = "A and worn Oasis ID card, once a proud bastion of civillisation, now just a dream."
+	icon_state = "fadedvaultid"
+	item_state = "fadedvaultid"
 	uses_overlays = FALSE
-	access = list(ACCESS_KHAN)
-
-/obj/item/card/id/khantattoo/Initialize()
-	. = ..()
-	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+	access = list(ACCESS_BLACKWATER)
 
 /obj/item/card/id/outcasttattoo
 	name = "faded tribal tattoos"

@@ -76,8 +76,8 @@
 	req_access_txt = "123"
 
 //khoor
-/obj/machinery/door/unpowered/securedoor/khandoor
-	name = "khan door"
+/obj/machinery/door/unpowered/securedoor/blackwater_door
+	name = "blackwater door"
 	req_access_txt = "125"
 
 
