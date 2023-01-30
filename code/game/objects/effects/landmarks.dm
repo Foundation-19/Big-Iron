@@ -761,7 +761,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "Raider"
 
 /obj/effect/landmark/start/f13/blackwater
-	name = "Blackwater"
+	name = "Blackwater Settler"
 	icon_state = "Pusher"
 
 /obj/effect/landmark/start/f13/preacher

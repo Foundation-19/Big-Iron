@@ -56,7 +56,7 @@
 	name = "Hunter"
 	r_hand = /obj/item/gun/ballistic/rifle/hunting/remington
 	belt = /obj/item/storage/belt/military/army
-	suit = /obj/item/clothing/suit/armored/light/town
+	suit = /obj/item/clothing/suit/armored/medium/combat/duster
 	backpack_contents = list(
 		/obj/item/ammo_box/a308 = 2,
 		/obj/item/melee/onehanded/knife/hunting = 1,
