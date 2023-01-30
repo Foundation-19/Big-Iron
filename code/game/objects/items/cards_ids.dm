@@ -1251,7 +1251,7 @@
 	uses_overlays = FALSE
 	assignment = "brand"
 
-/obj/item/card/id/yuma/cotc/Initialize()
+/obj/item/card/id/yuma/cotc/brand/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
