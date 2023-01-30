@@ -1139,7 +1139,7 @@
 
 /obj/item/card/id/rusted/blackwaterid
 	name = "blackwater id card"
-	desc = "A and worn Oasis ID card, once a proud bastion of civillisation, now just a dream."
+	desc = "A worn Oasis ID card, once a proud bastion of civillisation, now just a dream."
 	icon_state = "fadedvaultid"
 	item_state = "fadedvaultid"
 	uses_overlays = FALSE
