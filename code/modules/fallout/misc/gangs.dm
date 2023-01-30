@@ -4,8 +4,6 @@
 GLOBAL_LIST_INIT(gang_names, list ( \
 "raider", \
 "raiders", \
-"great khan", \
-"great khans", \
 "gang", \
 "gangs", \
 ))
@@ -18,9 +16,6 @@ GLOBAL_LIST_INIT(allowed_gang_factions, list ( \
 
 // List of all existing gangs
 GLOBAL_LIST_EMPTY(all_gangs)
-
-//Great Khans
-GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 
 /datum/gang
 	var/name = "gang"
