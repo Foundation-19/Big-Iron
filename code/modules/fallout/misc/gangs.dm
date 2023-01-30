@@ -60,27 +60,6 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 	)
 
 //Round-start gangs
-/datum/gang/greatkhans
-	name = "Great Khans"
-	color = "#b07f43"
-	round_start = TRUE
-	boss_items = list(
-		/datum/gang_item/weapon/spikedbaseball,
-		/datum/gang_item/weapon/greasegun,
-		/datum/gang_item/weapon/uzi,
-		/datum/gang_item/weapon/brass,
-
-		/datum/gang_item/equipment/emp,
-		/datum/gang_item/equipment/stinger,
-		/datum/gang_item/equipment/he,
-
-		/datum/gang_item/weapon/shuriken,
-		/datum/gang_item/equipment/necklace,
-		/datum/gang_item/clothing/prostitute_dress,
-		/datum/gang_item/clothing/hat,
-		/datum/gang_item/clothing/glasses/sunglasses,
-		/datum/gang_item/equipment/greatkhanheadset
-	)
 
 /datum/gang/New(starting_members, starting_leader)
 	. = ..()

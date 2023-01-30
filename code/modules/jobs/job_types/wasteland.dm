@@ -7,7 +7,7 @@
 
 /datum/job/wasteland/blackwater
 	title = "Blackwater Settler"
-	flag = blackwater
+	flag = F13BLACKWATER
 	department_head = list("Captain")
 	head_announce = list("Security")
 	faction = FACTION_WASTELAND
@@ -20,7 +20,7 @@
 	outfit = /datum/outfit/job/wasteland/blackwater
 
 	access = list(ACCESS_BLACKWATER, ACCESS_PUBLIC)
-	minimal_access = list(ACCESS_BLACWATER, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BLACKWATER, ACCESS_PUBLIC)
 
 	loadout_options = list(
 		/datum/outfit/loadout/hunter,
@@ -28,7 +28,6 @@
 		/datum/outfit/loadout/prospector,
 		/datum/outfit/loadout/labourer
 		)
-	)
 
 /datum/outfit/job/wasteland/blackwater
 	name = "Blackwater Settler"
@@ -82,10 +81,10 @@
 	r_hand = /obj/item/pickaxe
 	suit = /obj/item/clothing/suit/armor/f13/raider/iconoclast/
 	backpack_contents = list(
-		obj/item/flashlight/lantern =  1,
+		/obj/item/flashlight/lantern =  1,
 		/obj/item/mining_scanner = 1,
 		/obj/item/shovel = 1,
-		/obj/item/melee/onehanded/knife/hunting, = 1,
+		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 1
 		)
@@ -124,12 +123,6 @@ Raider
 	access = list(ACCESS_RAIDER, ACCESS_PUBLIC)
 	minimal_access = list(ACCESS_RAIDER, ACCESS_PUBLIC)
 	matchmaking_allowed = list(
-		/datum/matchmaking_pref/friend = list(
-			/datum/job/wasteland/f13pusher,
-		),
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/wasteland/f13pusher,
-		),
 		/datum/matchmaking_pref/patron = list(
 			/datum/job/wasteland/f13raider,
 		),
