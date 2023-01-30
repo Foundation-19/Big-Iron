@@ -428,8 +428,6 @@ Raider
 
 /datum/outfit/loadout/raider_khan
 	name = "Great Khan"
-	/datum/outfit/job/wasteland/f13pusher
-	name = "Great Khan"
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
 	suit_store = /obj/item/twohanded/baseball/spiked
 	head = /obj/item/clothing/head/helmet/f13/khan
