@@ -23,7 +23,7 @@
 	var/reload_time = 20
 
 /obj/structure/HMG/Initialize()
-	..()
+	.=..()
 	update_icon()
 
 //Destroy
