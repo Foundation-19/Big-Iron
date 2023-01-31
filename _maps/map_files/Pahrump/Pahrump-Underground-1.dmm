@@ -529,10 +529,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "avu" = (
-/obj/structure/closet/crate/secure,
-/obj/item/clothing/under/f13/recon,
-/obj/item/clothing/suit/armor/f13/power_armor/t45d,
-/obj/item/clothing/head/helmet/f13/power_armor/t45d,
+/obj/structure/HMG{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "avG" = (
@@ -14651,7 +14650,6 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/structure/wreck/trash/four_barrels,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 1
 	},
@@ -15541,9 +15539,11 @@
 	dir = 8;
 	req_access_txt = "1"
 	},
-/obj/structure/rack,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
+	},
+/obj/structure/HMG{
+	dir = 4
 	},
 /turf/open/floor/plasteel/darkred/side{
 	dir = 4
@@ -18267,6 +18267,10 @@
 	icon_state = "casino"
 	},
 /area/f13/brotherhood/rnd)
+"oKy" = (
+/obj/machinery/computer/arcade/battle,
+/turf/open/floor/f13,
+/area/f13/ncr)
 "oKE" = (
 /obj/structure/sign/poster/official/work_for_a_future{
 	pixel_x = 32
@@ -20206,7 +20210,7 @@
 	},
 /area/f13/sewer)
 "qsr" = (
-/obj/structure/rack,
+/obj/structure/HMG,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "qsI" = (
@@ -27741,10 +27745,6 @@
 	icon_state = "neutralrustyfull"
 	},
 /area/f13/enclave)
-"wxy" = (
-/obj/machinery/computer/arcade/battle,
-/turf/open/floor/f13,
-/area/f13/ncr)
 "wxL" = (
 /obj/structure/table/wood/fancy/green,
 /obj/item/stack/sheet/mineral/uranium,
@@ -37109,7 +37109,7 @@ eLE
 "}
 (29,1,1) = {"
 vTG
-wxy
+oKy
 nQK
 szu
 skd
