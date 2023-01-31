@@ -244,3 +244,4 @@
 /obj/item/ammo_box/magazine/ammobelt/proc/delempty()
 	if(ammo_count() < 1)
 		del src
+
