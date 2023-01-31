@@ -43,12 +43,15 @@
 	emote_see = list("hops around","bounces up and down")
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 1)
 	egg_type = /obj/item/reagent_containers/food/snacks/egg/loaded
-	food_type = /obj/item/reagent_containers/food/snacks/grown/carrot
 	eggsleft = 10
 	eggsFertile = FALSE
 	icon_prefix = "rabbit"
 	feedMessages = list("It nibbles happily.","It noms happily.")
 	layMessage = list("hides an egg.","scampers around suspiciously.","begins making a huge racket.","begins shuffling.")
+
+/mob/living/simple_animal/chicken/rabbit/Initialize()
+	. = ..()
+	food_type.Add(CARROT)
 
 /mob/living/simple_animal/chicken/rabbit/space
 	icon_prefix = "s_rabbit"
