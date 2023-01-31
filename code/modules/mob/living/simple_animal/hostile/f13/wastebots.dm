@@ -279,6 +279,13 @@
 	butcher_results = list(/obj/effect/gibspawner/robot = 1)
 	blood_volume = 0
 
+/mob/living/simple_animal/hostile/handy/protectron/nukatron
+	name = "Nukatron"
+	desc = "A pre-war Nukacola advertisement bot."
+	icon_state = "nukatron"
+	icon_living = "nukatron"
+	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/five, /obj/item/reagent_containers/food/drinks/bottle/f13nukacola)
+
 /mob/living/simple_animal/hostile/handy/assaultron
 	name = "assaultron"
 	desc = "A deadly close combat robot developed by RobCo in a vaguely feminine, yet ominous chassis."
