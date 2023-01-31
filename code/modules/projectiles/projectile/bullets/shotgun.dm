@@ -41,7 +41,7 @@
 	light_color = LIGHT_COLOR_FIRE
 	flag = "bullet"
 	damage_type = BURN
-	damage = 12 //slight damage on impact
+	damage = 10 //slight damage on impact
 	range = 10
 
 /obj/item/projectile/incendiary/flamethrower/on_hit(atom/target)
