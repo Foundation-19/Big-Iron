@@ -1923,9 +1923,11 @@
 	},
 /area/f13/building)
 "gw" = (
-/obj/structure/bed/old,
-/turf/open/floor/plasteel/grimy,
-/area/f13/ncr)
+/turf/open/transparent/openspace{
+	name = "air";
+	sunlight_state = 1
+	},
+/area/f13/caves)
 "gx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/poster_spawner/prewar{
@@ -2280,6 +2282,12 @@
 /area/f13/clinic)
 "hS" = (
 /obj/structure/closet/cabinet,
+/obj/item/clothing/shoes/f13/military/ncr_officer_boots{
+	name = "NCR dress boots"
+	},
+/obj/item/clothing/under/f13/ncr/ncr_dress,
+/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_codressjack,
+/obj/item/clothing/head/beret/ncr_codresscap,
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
 "hT" = (
@@ -2638,6 +2646,13 @@
 /obj/structure/barricade/wooden,
 /turf/closed/wall/f13/wood/house,
 /area/f13/raiders)
+"iY" = (
+/obj/machinery/workbench/advanced,
+/obj/item/stack/ore/blackpowder/fifty,
+/turf/open/floor/f13{
+	icon_state = "darkredfull"
+	},
+/area/f13/ncr)
 "iZ" = (
 /obj/structure/table,
 /obj/item/healthanalyzer,
@@ -3060,10 +3075,6 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
-"ko" = (
-/obj/effect/decal/remains/human,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "kp" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -4263,6 +4274,12 @@
 /area/f13/village)
 "nW" = (
 /obj/structure/closet/crate/footlocker,
+/obj/item/clothing/shoes/f13/military/ncr_officer_boots{
+	name = "NCR dress boots"
+	},
+/obj/item/clothing/under/f13/ncr/ncr_dress,
+/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
+/obj/item/clothing/head/beret/ncr_dresscap,
 /turf/open/floor/plasteel/grimy,
 /area/f13/ncr)
 "nX" = (
@@ -4519,14 +4536,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/ncr)
-"oM" = (
-/obj/structure/rack/shelf_metal,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
-/turf/open/floor/f13{
-	icon_state = "darkredfull"
-	},
 /area/f13/ncr)
 "oN" = (
 /obj/effect/decal/cleanable/dirt{
@@ -5174,13 +5183,6 @@
 	},
 /turf/open/floor/carpet/red,
 /area/f13/legion)
-"qy" = (
-/obj/machinery/workbench/advanced,
-/obj/item/stack/ore/blackpowder/fifty,
-/turf/open/floor/f13{
-	icon_state = "darkredfull"
-	},
-/area/f13/ncr)
 "qz" = (
 /obj/machinery/vending/cola/space_up,
 /obj/effect/decal/cleanable/dirt,
@@ -8742,6 +8744,14 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
+"Bv" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,
+/turf/open/floor/f13{
+	icon_state = "darkredfull"
+	},
+/area/f13/ncr)
 "Bw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/fluff/railing/corner{
@@ -11627,10 +11637,8 @@
 /turf/open/floor/wood/f13/stage_br,
 /area/f13/wasteland)
 "KC" = (
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "KD" = (
 /obj/structure/dresser,
@@ -12776,7 +12784,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building)
 "Om" = (
-/obj/structure/closet/cabinet,
+/obj/structure/closet/cabinet/anchored,
+/obj/item/clothing/shoes/f13/military/ncr_officer_boots{
+	name = "NCR dress boots"
+	},
+/obj/item/clothing/under/f13/ncr/ncr_dress,
+/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
+/obj/item/clothing/head/beret/ncr_dresscap,
 /turf/open/floor/plasteel/grimy,
 /area/f13/ncr)
 "Oo" = (
@@ -13960,6 +13974,12 @@
 /area/f13/legion)
 "RQ" = (
 /obj/structure/closet/crate/footlocker,
+/obj/item/clothing/shoes/f13/military/ncr_officer_boots{
+	name = "NCR dress boots"
+	},
+/obj/item/clothing/under/f13/ncr/ncr_dress,
+/obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack,
+/obj/item/clothing/head/beret/ncr_dresscap,
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleslab"
 	},
@@ -15516,10 +15536,6 @@
 	sunlight_state = 1
 	},
 /area/f13/raiders)
-"WS" = (
-/obj/structure/campfire,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "WU" = (
 /obj/structure/chair/stool/retro,
 /turf/open/indestructible/ground/outside/woodalt,
@@ -15632,6 +15648,10 @@
 	icon_state = "rubbleslab"
 	},
 /area/f13/building)
+"Xp" = (
+/obj/structure/campfire,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "Xr" = (
 /turf/open/floor/f13{
 	icon_state = "white"
@@ -20062,8 +20082,8 @@ Ll
 ia
 vh
 Ll
-qy
-oM
+iY
+Bv
 sG
 sG
 vh
@@ -20633,8 +20653,8 @@ PL
 PL
 kC
 kC
-ko
-WS
+KC
+Xp
 AM
 AM
 kC
@@ -21149,8 +21169,8 @@ kC
 kC
 AM
 AM
-KC
-KC
+gw
+gw
 kC
 kC
 PL
@@ -21405,9 +21425,9 @@ PL
 PL
 kC
 kC
-KC
-KC
-KC
+gw
+gw
+gw
 kC
 kC
 PL
@@ -21662,8 +21682,8 @@ PL
 PL
 kC
 AM
-KC
-KC
+gw
+gw
 AM
 kC
 kC
@@ -21920,7 +21940,7 @@ kC
 kC
 AM
 AM
-KC
+gw
 AM
 kC
 kC
@@ -24941,7 +24961,7 @@ Al
 (34,1,1) = {"
 rU
 Tg
-qk
+Om
 fW
 Tg
 qk
@@ -28803,7 +28823,7 @@ RQ
 dz
 nW
 IK
-gw
+dz
 nW
 Tg
 EZ
