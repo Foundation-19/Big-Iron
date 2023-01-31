@@ -6,3 +6,4 @@
 #define STEELCAPS				/obj/item/grown/log/steel
 #define PUNGA					/obj/item/reagent_containers/food/snacks/grown/pungafruit
 #define WATERMELON				/obj/item/reagent_containers/food/snacks/grown/watermelon
+#define CARROT					/obj/item/reagent_containers/food/snacks/grown/carrot
