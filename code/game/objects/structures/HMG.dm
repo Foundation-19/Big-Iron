@@ -39,7 +39,7 @@
 	..()
 
 //Unbuckle
-/obj/structure/HMG/unbuckle_mob(mob/living/user)
+/obj/structure/HMG/unbuckle_mob(mob/living/user, force=FALSE)
 	STOP_PROCESSING(SSfastprocess, src)
 	user.pixel_x = 0
 	user.pixel_y = 0
