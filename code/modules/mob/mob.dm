@@ -789,7 +789,7 @@ GLOBAL_VAR_INIT(exploit_warn_spam_prevention, 0)
 		var/obj/effect/proc_holder/spell/S = X
 		if(istype(S, spell))
 			mob_spell_list -= S
-			S.action.Remove(src)
+			S.action.Remove(src)//BIG IRON EDIT why wasn't this here before? it deletes the button when you don't have the spell
 			if(!QDELETED(S))
 				qdel(S)
 	if(client)

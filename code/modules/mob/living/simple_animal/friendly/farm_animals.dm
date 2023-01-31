@@ -333,8 +333,7 @@
 	turns_per_move = 3
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/chicken = 2)
 	var/egg_type = /obj/item/reagent_containers/food/snacks/egg
-	var/list/food_type
-	food_type = list()
+	var/list/food_type = list(WHEAT, PUNGA, CHILI, WATERMELON, STEELCAPS, GRAPES) //BIG IRON edit, many types of foods
 	response_help_continuous  = "pets"
 	response_help_simple = "pet"
 	response_disarm_continuous = "gently pushes aside"
@@ -357,13 +356,11 @@
 	var/list/validColors = list("brown","black","white")
 	gold_core_spawnable = FRIENDLY_SPAWN
 	var/static/chicken_count = 0
-	var/pungajuice = 0
-	var/parentegg = /obj/item/reagent_containers/food/snacks/egg
-	var/list/foodpoints
-	var/list/avaiblemuts = list()
-	var/list/mutationbars = list()
-	var/mutaion = null
-	var/cheery = FALSE
+	var/pungajuice = 0//BIG IRON EDIT -start- punga juice used to force normal eggs
+	var/parentegg = /obj/item/reagent_containers/food/snacks/egg//here it would be the previous mutation type of egg (soon(tm))
+	var/list/avaiblemuts = list()// list of eggs that can be spawned
+	var/list/mutationbars = list()//progress toward archieving a specific egg type
+	var/cheery = FALSE//is the chicken enchanced? BIG IRON EDIT-End-
 
 	footstep_type = FOOTSTEP_MOB_CLAW
 
@@ -377,13 +374,12 @@
 	pixel_x = rand(-6, 6)
 	pixel_y = rand(0, 10)
 	++chicken_count
-	food_type.Add(WHEAT, PUNGA, CHILI, WATERMELON, STEELCAPS, GRAPES)
 
 /mob/living/simple_animal/chicken/Destroy()
 	--chicken_count
 	return ..()
 
-/mob/living/simple_animal/chicken/handle_automated_movement()
+/mob/living/simple_animal/chicken/handle_automated_movement()//BIG IRON EDIT -start- chech to see if there's food below, eat it instead of walking
 	if(eggsleft < 8)
 		for(var/obj/item/O in loc)
 			var/isfood = FALSE
@@ -395,19 +391,19 @@
 				feed(O)
 				return
 	. = ..()
-
+//BIG IRON EDIT -end-
 /mob/living/simple_animal/chicken/attackby(obj/item/O, mob/user, params)
-	var/isfood = FALSE
+	var/isfood = FALSE//BIG IRON EDIT -start- checks if the item you use is acceptable as food
 	for(var/I = 1, I <= food_type.len, I++)
 		var/obj/item/Foodie = food_type[I]
 		if(istype(O, Foodie))
 			isfood = TRUE
-	if(isfood == TRUE) //feedin' dem chickens
+	if(isfood == TRUE)
 		feed(O)
 	else
-		..()
+		..()// check ends here
 
-/mob/living/simple_animal/chicken/proc/feed(obj/item/yums)
+/mob/living/simple_animal/chicken/proc/feed(obj/item/yums)//The actual feeding
 	if(!stat && eggsleft < 8)
 		eggsleft += rand(1, 4)
 		if(istype(yums, PUNGA))
@@ -423,14 +419,14 @@
 		qdel(yums)
 		visible_message("<span class='warning'>[name] eats the [yums]!</span>")
 	else
-		visible_message("<span class='warning'>[name] doesn't seem hungry!</span>")
+		visible_message("<span class='warning'>[name] doesn't seem hungry!</span>")//BIG IRON EDIT -end
 
 /mob/living/simple_animal/chicken/BiologicalLife(seconds, times_fired)
 	if(!(. = ..()))
 		return
 	if((!stat && prob(3) && eggsleft > 0) && egg_type)
-		var/p
-		for(p in mutationbars)
+		var/p //BIG IRON EDIT-start- handles egg lying and it's type
+		for(p in mutationbars)// check to see if there are any archieved mutations
 			if(mutationbars[p] >= 100)
 				AddMutation(p)
 		if(avaiblemuts.len && prob(50))
@@ -445,23 +441,23 @@
 				egg_type = /obj/item/reagent_containers/food/snacks/egg/winegg
 		visible_message("<span class='alertalien'>[src] [pick(layMessage)]</span>")
 		eggsleft--
-		if(pungajuice >= 100)
+		if(pungajuice >= 100)//Feeding punga makes it spit a normal egg
 			egg_type = parentegg
 			pungajuice -= 10
 		var/obj/item/E = new egg_type(get_turf(src))
-		if(cheery == TRUE)
+		if(cheery == TRUE)// happy chickens make double the eggs
 			new E
-		egg_type = initial(egg_type)
+		egg_type = initial(egg_type)// BIG IRON EDIT -end-
 		E.pixel_x = rand(-6,6)
 		E.pixel_y = rand(-6,6)
 		if(eggsFertile)
 			if(chicken_count < MAX_CHICKENS && prob(25))
 				START_PROCESSING(SSobj, E)
 
-/mob/living/simple_animal/chicken/proc/AddMutation(mutation)
+/mob/living/simple_animal/chicken/proc/AddMutation(mutation)//BIG IRON EDIT -start- when a mutation reachs 100 points, the chicken will have the option to make those eggs
 	if(!avaiblemuts.Find("[mutation]"))
 		avaiblemuts.Add(mutation)
-
+//BIG IRON EDIT -end
 /obj/item/reagent_containers/food/snacks/egg/var/amount_grown = 0
 /obj/item/reagent_containers/food/snacks/egg/process()
 	if(isturf(loc))
@@ -473,7 +469,13 @@
 			qdel(src)
 	else
 		STOP_PROCESSING(SSobj, src)
-/obj/item/reagent_containers/food/snacks/egg/firegg
+//EGGS TYPES
+//each egg has at least 3 kind of uses: self use, feeding use and a throw use
+/obj/item/reagent_containers/food/snacks/egg/firegg// BIG IRON EDIT start- 
+/*fire eggs
+SElF USE: makes a pretty neat welder
+FEED USE: gives one use of fire breath
+throw use: makes a firy explosion and works as a flash*/
 	name = "Fire egg"
 	desc = "this egg is warm to the touch"
 	list_reagents = list(/datum/reagent/fuel = 20)
@@ -501,7 +503,10 @@
 	M.AddSpell(power)
 	addtimer(CALLBACK(M, /mob/living.proc/RemoveSpell, power), 60 SECONDS)
 	qdel(src)
-
+/* WATER EGG
+SElF USE: wets everything in a 2x2 area, extinguishing fires and wetting floors
+FEED USE: clear mutations by feeding mutadone
+throw use: make some foam */
 /obj/item/reagent_containers/food/snacks/egg/wategg
 	name = "Water egg"
 	desc = "this egg is always a bit wet"
@@ -538,7 +543,11 @@
 	M.reagents.add_reagent(/datum/reagent/medicine/mutadone, 5)
 	to_chat(M, "you feel cleaner")
 	qdel(src)
-
+/* IRON EGG
+SElF USE: creates 15 sheets of metal and 5 plasteel
+FEED USE: creates 15 sheets of glass and 5 reinforced glass
+throw use: hurts and knocksback
+WHEN DESTROYED: create 2 egg shells that can be used as caltrops or knifes */
 /obj/item/reagent_containers/food/snacks/egg/ironegg
 	name = "Iron egg"
 	desc = "this egg is hard as steel"
@@ -627,7 +636,11 @@
 	new /obj/item/stack/sheet/glass(location, 15)
 	M.visible_message("[src] spits out some glass!")
 	qdel(src)
-
+/*WINE EGG
+SElF USE: creates some random drinks
+FEED USE: serves someone a random drink, if its a chicken make sthem cheery
+throw use: feed someone alcohol
+*/
 /obj/item/reagent_containers/food/snacks/egg/winegg
 	name = "Wine egg"
 	desc = "this egg smells like wine"
@@ -678,7 +691,7 @@
 		var/booze = new boozetype(location)
 		qdel(src)
 		user.put_in_active_hand(booze)
-
+//BIG IRON EDIT -end
 ///////////
 // UDDER //
 ///////////
