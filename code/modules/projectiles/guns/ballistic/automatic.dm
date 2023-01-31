@@ -876,7 +876,7 @@
 //Colt Rangemaster				Keywords:5.56/.223, Semi-auto, 10 round magazine, 30dmg
 /obj/item/gun/ballistic/automatic/rangemaster
 	name = "Colt Rangemaster"
-	desc = "A Colt Rangemaster semi-automatic rifle, chambered for 7.62x51. Single-shot only."
+	desc = "A Colt Rangemaster semi-automatic hunting rifle, chambered for .223 rounds. Single-shot only."
 	icon_state = "rangemaster"
 	item_state = "308"
 	icon_prefix = "308"
