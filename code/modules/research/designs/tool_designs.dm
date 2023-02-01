@@ -1,7 +1,7 @@
 /////////////////////////////////////////
 /////////////////Tools///////////////////
 /////////////////////////////////////////
-/*
+
 /datum/design/rcd_upgrade/frames
 	name = "RCD frames designs upgrade"
 	desc = "Adds the computer frame and machine frame to the RCD."
@@ -41,7 +41,7 @@
 	materials = list(/datum/material/iron = 8000, /datum/material/titanium = 5000, /datum/material/bluespace = 5000)
 	category = list("Tool Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_ENGINEERING
-*/
+
 /datum/design/handdrill
 	name = "Hand Drill"
 	desc = "A small electric hand drill with an interchangeable screwdriver and bolt bit"
