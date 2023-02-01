@@ -1243,13 +1243,17 @@
 
 //cotc
 
-/obj/item/card/id/yuma/cotc
-	name = "identification papers"
-	desc = "Papers detailing general information personal information used for identification."
-	icon_state = "papers"
+/obj/item/card/id/yuma/cotc/brand
+	name = "Church brand"
+	desc = "A brand showing one's eternal commitment to the Father."
+	icon_state = "cotc"
 	item_state = null
 	uses_overlays = FALSE
-	assignment = "identification papers"
+	assignment = "brand"
+
+/obj/item/card/id/yuma/cotc/brand/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 
 /obj/item/card/id/yuma/cotc/neophyte
 	name = "neophyte identification papers"
