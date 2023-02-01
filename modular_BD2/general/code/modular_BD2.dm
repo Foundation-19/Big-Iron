@@ -99,6 +99,7 @@
 
 /obj/item/circuitboard/machine/autolathe/manual // not reinventing machine building entirely even if its dorky
 	name = "manual lathe kit"
+	build_path = /obj/machinery/autolathe/manual
 
 /datum/techweb/specialized/autounlocking/autolathe/manual
 	design_autounlock_buildtypes = AUTOLATHE_PRIMITIVE
