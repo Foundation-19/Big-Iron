@@ -1004,7 +1004,6 @@
 				/obj/effect/spawner/bundle/f13/deagle,
 				/obj/effect/spawner/bundle/f13/shotgunlever,
 				/obj/item/gun/ballistic/automatic/smg/american180,
-				/obj/effect/spawner/bundle/f13/r82,
 				/obj/effect/spawner/bundle/f13/aer9,
 				/obj/effect/spawner/bundle/f13/plasmapistol
 				)
@@ -2233,7 +2232,6 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/leveraction,
 		/obj/item/book/granter/crafting_recipe/blueprint/deagle,
 		/obj/item/book/granter/crafting_recipe/blueprint/combatrifle,
-		/obj/item/book/granter/crafting_recipe/blueprint/r82,
 		/obj/item/book/granter/crafting_recipe/blueprint/uzi,
 	)
 
@@ -2265,7 +2263,6 @@
 	loot = list(
 		/obj/item/book/granter/crafting_recipe/blueprint/m1carbine = 20,
 		/obj/item/book/granter/crafting_recipe/blueprint/greasegun = 10,
-		/obj/item/book/granter/crafting_recipe/blueprint/r82 = 2,
 		/obj/item/book/granter/crafting_recipe/blueprint/m1garand = 1,
 		/obj/item/advanced_crafting_components/flux,
 		/obj/item/advanced_crafting_components/lenses,
