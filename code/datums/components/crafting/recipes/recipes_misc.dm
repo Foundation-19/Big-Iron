@@ -17,7 +17,7 @@
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
-	
+
 
 /////////////////
 //Large Objects//
@@ -26,6 +26,15 @@
 /datum/crafting_recipe/ncrgate
 	name = "NCR reinforced door"
 	result = /obj/machinery/door/unpowered/secure_NCR
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 25)
+	time = 60
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+	always_available = FALSE
+
+/datum/crafting_recipe/church
+	name = "Church door"
+	result = /obj/machinery/door/unpowered/securedoor/church
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 25)
 	time = 60
 	subcategory = CAT_MISCELLANEOUS
@@ -49,7 +58,7 @@
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 	always_available = FALSE
-	
+
 /datum/crafting_recipe/gate_blackwater
 	name = "Blackwater steel-reinforced wood door"
 	result = /obj/machinery/door/unpowered/securedoor/blackwater_door
@@ -422,5 +431,4 @@
 	category = CAT_MISC
 
 */
-
 
