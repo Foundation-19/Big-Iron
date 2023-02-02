@@ -293,7 +293,7 @@
 	pass_flags = PASSTABLE | PASSGRILLE | PASSMOB
 	mob_size = MOB_SIZE_TINY
 	gold_core_spawnable = FRIENDLY_SPAWN
-
+	var/mutation = null
 	footstep_type = FOOTSTEP_MOB_CLAW
 
 /mob/living/simple_animal/chick/Initialize()
@@ -307,8 +307,12 @@
 	if(!stat && !ckey)
 		amount_grown += rand(1,2)
 		if(amount_grown >= 100)
-			new /mob/living/simple_animal/chicken(src.loc)
-			qdel(src)
+			if(mutation)
+				new mutation(loc)
+				qdel(src)
+			else
+				new /mob/living/simple_animal/chicken(loc)
+				qdel(src)
 
 /mob/living/simple_animal/chick/holo/BiologicalLife(seconds, times_fired)
 	if(!(. = ..()))
@@ -361,7 +365,7 @@
 	var/list/avaiblemuts = list()// list of eggs that can be spawned
 	var/list/mutationbars = list()//progress toward archieving a specific egg type
 	var/cheery = FALSE//is the chicken enchanced? BIG IRON EDIT-End-
-
+	var/list/feathers = list(/obj/item/feather/chicken = 2)
 	footstep_type = FOOTSTEP_MOB_CLAW
 
 /mob/living/simple_animal/chicken/Initialize()
@@ -374,6 +378,7 @@
 	pixel_x = rand(-6, 6)
 	pixel_y = rand(0, 10)
 	++chicken_count
+	butcher_results += feathers
 
 /mob/living/simple_animal/chicken/Destroy()
 	--chicken_count
@@ -391,6 +396,12 @@
 				feed(O)
 				return
 	. = ..()
+/obj/item/feather/chicken
+	name = "Chicken feather"
+	desc = "a feather from a common chicken."
+	icon_state = "feather-chicken"
+	var/enchant_type = 0
+
 //BIG IRON EDIT -end-
 /mob/living/simple_animal/chicken/attackby(obj/item/O, mob/user, params)
 	var/isfood = FALSE//BIG IRON EDIT -start- checks if the item you use is acceptable as food
@@ -464,24 +475,70 @@
 		amount_grown += rand(1,2)
 		if(amount_grown >= 100)
 			visible_message("[src] hatches with a quiet cracking sound.")
-			new /mob/living/simple_animal/chick(get_turf(src))
+			var/C = new /mob/living/simple_animal/chick(loc)
+			var/mob/living/simple_animal/chick/newchick = C
+			if(mutation)
+				newchick.mutation = mutation
 			STOP_PROCESSING(SSobj, src)
 			qdel(src)
 	else
 		STOP_PROCESSING(SSobj, src)
-//EGGS TYPES
+//CHICKEN TYPES
+
+//FIRE CHICKEN
+/mob/living/simple_animal/chicken/fire
+	name = "\improper Fire chicken"
+	desc = "Spicy Wings."
+	icon_state = "chicken_fire"
+	icon_living = "chicken_fire"
+	icon_dead = "chicken_fire_dead"
+	egg_type = /obj/item/reagent_containers/food/snacks/egg/firegg
+	food_type = list(WHEAT, PUNGA)
+	validColors = list("fire")
+	parentegg = /obj/item/reagent_containers/food/snacks/egg
+	feathers = list(/obj/item/feather/chicken/fire = 2)
+
+/obj/item/feather/chicken/fire
+	name = "Fire feather"
+	desc = "a hot feather, good for burning."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "feather-chicken-fire"
+	force = 15
+	damtype = BURN
+	enchant_type = 1
+
+
+/obj/item/feather/chicken/fire/pickup(mob/living/user)
+	..()
+	if(!iscarbon(user))
+		return FALSE
+	var/mob/living/carbon/C = user
+	if(C.gloves)
+		return FALSE
+	if(HAS_TRAIT(C, TRAIT_RESISTHEAT))
+		return FALSE
+	var/hit_zone = (C.held_index_to_dir(C.active_hand_index) == "l" ? "l_":"r_") + "arm"
+	var/obj/item/bodypart/affecting = C.get_bodypart(hit_zone)
+	if(affecting)
+		if(affecting.receive_damage(0, force))
+			C.update_damage_overlays()
+	to_chat(C, "<span class='userdanger'>The feather burns your bare hand!</span>")
+	return TRUE
+	
+
 //each egg has at least 3 kind of uses: self use, feeding use and a throw use
-/obj/item/reagent_containers/food/snacks/egg/firegg// BIG IRON EDIT start- 
-/*fire eggs
+/*FIRE EGGS
 SElF USE: makes a pretty neat welder
 FEED USE: gives one use of fire breath
 throw use: makes a firy explosion and works as a flash*/
+/obj/item/reagent_containers/food/snacks/egg/firegg// BIG IRON EDIT start- 
 	name = "Fire egg"
 	desc = "this egg is warm to the touch"
 	list_reagents = list(/datum/reagent/fuel = 20)
 	filling_color = "#f14f04"
 	var/obj/effect/proc_holder/spell/power = /obj/effect/proc_holder/spell/aimed/firebreath
 	icon_state = "egg-firegg"
+	mutation = /mob/living/simple_animal/chicken/fire
 
 /obj/item/reagent_containers/food/snacks/egg/firegg/attack_self(mob/user)
 	to_chat(user, "<span class='notice'>you crack open a bit of the top of the egg.</span>")
@@ -503,8 +560,34 @@ throw use: makes a firy explosion and works as a flash*/
 	M.AddSpell(power)
 	addtimer(CALLBACK(M, /mob/living.proc/RemoveSpell, power), 60 SECONDS)
 	qdel(src)
-/* WATER EGG
-SElF USE: wets everything in a 2x2 area, extinguishing fires and wetting floors
+// WATER CHICKEN
+
+/mob/living/simple_animal/chicken/water
+	name = "\improper Water chicken"
+	desc = "Transparent liquid ooze from it's skin, so it's always wet."
+	icon_state = "chicken_water"
+	icon_living = "chicken_water"
+	icon_dead = "chicken_water_dead"
+	egg_type = /obj/item/reagent_containers/food/snacks/egg/wategg
+	food_type = list(WHEAT, PUNGA)
+	validColors = list("water")
+	parentegg = /obj/item/reagent_containers/food/snacks/egg
+	feathers = list(/obj/item/feather/chicken/water = 2)
+
+/obj/item/feather/chicken/water
+	name = "Water feather"
+	desc = "a hot feather, good for burning."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "feather-chicken-water"
+	enchant_type = 2
+
+
+/obj/item/feather/chicken/water/attack(mob/living/M, mob/living/user, attackchain_flags, damage_multiplier)
+	. = ..()
+	M.ExtinguishMob()
+	playsound(loc, 'sound/effects/slosh.ogg', 25, TRUE)
+
+/*SElF USE: wets everything in a 2x2 area, extinguishing fires and wetting floors
 FEED USE: clear mutations by feeding mutadone
 throw use: make some foam */
 /obj/item/reagent_containers/food/snacks/egg/wategg
@@ -513,6 +596,7 @@ throw use: make some foam */
 	list_reagents = list(/datum/reagent/water/purified = 20)
 	filling_color = "#788ce2"
 	icon_state = "egg-wategg"
+	mutation = /mob/living/simple_animal/chicken/water
 
 /obj/item/reagent_containers/food/snacks/egg/wategg/attack_self(mob/user)
 	for(var/turf/open/T in range(2, user))
