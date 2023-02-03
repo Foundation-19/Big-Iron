@@ -27,8 +27,6 @@
 	var/overlay_state = "woodenrod"
 	var/mutable_appearance/overlay
 	var/wield_force = 15
-	var/enchanted = FALSE
-	var/fire_enchant = FALSE
 
 /obj/item/melee/smith/Initialize()
 	. = ..()
@@ -39,29 +37,6 @@
 	add_overlay(overlay)
 	if(force < 0)
 		force = 0
-
-/obj/item/melee/smith/attackby(obj/item/W, mob/user, params)
-	. = ..()
-	if(!enchanted)
-		if(istype(W, /obj/item/feather/chicken))
-			var/obj/item/feather/chicken/enchafeather = W
-			if(!enchafeather.enchant_type)
-				to_chat(user, "This feather doesn't hold any enchantment!")
-				return
-			switch(enchafeather.enchant_type)
-				if(1)
-					fire_enchant = TRUE
-			to_chat(user, "You enchant the [W] with the [src]!")
-			enchanted = TRUE
-			qdel(W)
-
-
-/obj/item/melee/smith/attack(mob/living/M, mob/living/user, attackchain_flags, damage_multiplier)
-	. = ..()
-	if(fire_enchant && prob(20))
-		M.IgniteMob()
-		//hehe
-		M.adjust_fire_stacks(1)
 
 /obj/item/twohanded/smithed // compatible with the Eris wield stuff
 	icon = 'modular_BD2/blacksmith/icons/blacksmith.dmi'

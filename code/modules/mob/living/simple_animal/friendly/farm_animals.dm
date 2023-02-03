@@ -400,7 +400,6 @@
 	name = "Chicken feather"
 	desc = "a feather from a common chicken."
 	icon_state = "feather-chicken"
-	var/enchant_type = 0
 
 //BIG IRON EDIT -end-
 /mob/living/simple_animal/chicken/attackby(obj/item/O, mob/user, params)
@@ -505,7 +504,10 @@
 	icon_state = "feather-chicken-fire"
 	force = 15
 	damtype = BURN
-	enchant_type = 1
+	light_range = 6
+	light_power = 9
+	light_color = "#ebb17a"
+	slot_flags = ITEM_SLOT_NECK
 
 
 /obj/item/feather/chicken/fire/pickup(mob/living/user)
@@ -576,16 +578,28 @@ throw use: makes a firy explosion and works as a flash*/
 
 /obj/item/feather/chicken/water
 	name = "Water feather"
-	desc = "a hot feather, good for burning."
+	desc = "no matter how much time it passes, it never dries0"
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "feather-chicken-water"
-	enchant_type = 2
 
 
 /obj/item/feather/chicken/water/attack(mob/living/M, mob/living/user, attackchain_flags, damage_multiplier)
 	. = ..()
 	M.ExtinguishMob()
 	playsound(loc, 'sound/effects/slosh.ogg', 25, TRUE)
+
+/obj/item/feather/chicken/water/attackby(obj/item/W, mob/user, params)
+	. = ..()
+	if(istype(W, /obj/item/reagent_containers))
+		var/obj/item/reagent_containers/RG = W
+		if(RG.is_refillable())
+			if(!RG.reagents.holder_full())
+				RG.reagents.add_reagent(/datum/reagent/water, RG.volume - RG.reagents.total_volume)
+				to_chat(user, "<span class='notice'>You fill [RG] from [src].</span>")
+				return TRUE
+			to_chat(user, "<span class='notice'>\The [RG] is full.</span>")
+			return FALSE
+
 
 /*SElF USE: wets everything in a 2x2 area, extinguishing fires and wetting floors
 FEED USE: clear mutations by feeding mutadone
@@ -632,6 +646,32 @@ SElF USE: creates 15 sheets of metal and 5 plasteel
 FEED USE: creates 15 sheets of glass and 5 reinforced glass
 throw use: hurts and knocksback
 WHEN DESTROYED: create 2 egg shells that can be used as caltrops or knifes */
+
+/mob/living/simple_animal/chicken/iron
+	name = "\improper Iron chicken"
+	desc = "it's feather are hard and sharp, weights quite a bit."
+	icon_state = "chicken_iron"
+	icon_living = "chicken_iron"
+	icon_dead = "chicken_iron_dead"
+	egg_type = /obj/item/reagent_containers/food/snacks/egg/ironegg
+	food_type = list(WHEAT, PUNGA)
+	validColors = list("iron")
+	parentegg = /obj/item/reagent_containers/food/snacks/egg
+	feathers = list(/obj/item/feather/chicken/iron = 2)
+
+/obj/item/feather/chicken/iron
+	name = "Iron feather"
+	desc = "a sharp, heavy feather, with an aerodynamic desing."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "feather-chicken-iron"
+	force = 20
+	throwforce = 23
+	armour_penetration = 0.25
+	bare_wound_bonus = 15
+	throw_speed = 5
+	throw_range = 7
+	embedding = list("pain_mult" = 4, "embed_chance" = 70, "fall_chance" = 5)
+
 /obj/item/reagent_containers/food/snacks/egg/ironegg
 	name = "Iron egg"
 	desc = "this egg is hard as steel"
@@ -640,9 +680,9 @@ WHEN DESTROYED: create 2 egg shells that can be used as caltrops or knifes */
 	filling_color = "#6464669a"
 	throwforce = 15
 	custom_materials = list(/datum/material/iron=40000, /datum/material/glass=40000, /datum/material/plasma=5000)
+	mutation = /mob/living/simple_animal/chicken/iron
 	var/throw_distance = 1
 	var/knockback_anchored = FALSE
-
 
 /obj/item/reagent_containers/food/snacks/egg/ironegg/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	if(iscarbon(hit_atom))
@@ -720,17 +760,40 @@ WHEN DESTROYED: create 2 egg shells that can be used as caltrops or knifes */
 	new /obj/item/stack/sheet/glass(location, 15)
 	M.visible_message("[src] spits out some glass!")
 	qdel(src)
+
+//WINE  CHICKEN
+
+/mob/living/simple_animal/chicken/wine
+	name = "\improper Wine chicken"
+	desc = "it stumbles with each step and slurs her cluckings."
+	icon_state = "chicken_wine"
+	icon_living = "chicken_winee"
+	icon_dead = "chicken_wine_dead"
+	egg_type = /obj/item/reagent_containers/food/snacks/egg/winegg
+	food_type = list(WHEAT, PUNGA)
+	validColors = list("wine")
+	parentegg = /obj/item/reagent_containers/food/snacks/egg
+	feathers = list(/obj/item/feather/chicken/wine = 2)
+
+/obj/item/feather/chicken/wine
+	name = "Wine feather"
+	desc = "smells strongly of alcohol."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "feather-chicken-wine"
+
 /*WINE EGG
 SElF USE: creates some random drinks
-FEED USE: serves someone a random drink, if its a chicken make sthem cheery
+FEED USE: serves someone a random drink, if its a chicken makes them cheery
 throw use: feed someone alcohol
 */
+
 /obj/item/reagent_containers/food/snacks/egg/winegg
 	name = "Wine egg"
 	desc = "this egg smells like wine"
 	icon_state = "egg-winegg"
 	list_reagents = list(/datum/reagent/consumable/ethanol/wine = 20)
 	filling_color = "#420232"
+	mutation = /mob/living/simple_animal/chicken/wine
 
 /obj/item/reagent_containers/food/snacks/egg/winegg/attack_self(mob/user)
 	var/location = get_turf(user)
