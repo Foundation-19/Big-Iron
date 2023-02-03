@@ -202,6 +202,44 @@
 //COTC//
 ////////
 
+/obj/item/book/manual/ritualbook
+	name = "Ritual Book"
+	icon_state = "the_book_3"
+	author = "High Priest Atlas"
+	title = "Ritual Book"
+	dat = {"<html>
+				<p><strong>THE RITUAL OF HEALING</strong></p>
+<p>A Supplicant enters the Garden, wounded, dying, or dead. The world has not been kind to them, but the Father will show mercy to them.</p>
+<p>A Supplicant&rsquo;s belongings are their own. They keep their rags, for they have not yet accepted the Father, nor he them. Those who have erred against the Church waive this right, their belongings forfeit.</p>
+<p>A Supplicant&rsquo;s wounds are tended, and payment must be rendered. The Father demands a price. The price is first to be paid in belongings. Caps, coins, trinkets and baubles, they must pay for the Mercy of the Father&rsquo;s Servants.</p>
+<p>A Supplicant cannot pay with their worldly belongings, and so the second mercy is offered. Inform the Garden, and all those who would hear, of their plight. Let any man step up, and pay their debts.</p>
+<p>A Supplicant cannot pay, and none will step forward to pay for them. They have been outcast by this world, with no possessions or friends to aid them. But the Father is merciful, and their appearance a divine gift. This wayward soul, without a penny or a friend, is welcomed into the Faith, to serve the Father in payment, forever.</p>
+<p>&nbsp;</p>
+<p><strong>THE NEOPHYTE VOWS</strong></p>
+<p>The Supplicant has been granted the Father&rsquo;s mercy, and must be made to say the words, and seal themselves to the Father forevermore. Should the Supplicant be unwilling, or the words said in deceit, the Listener is to instruct them, harshly, until they are ready.</p>
+<p>Supplicant: I swear my life to the Church, and bind my soul to the Father. I swear my undying service to the Church.</p>
+<p>Listener: The Church accepts your offering. The Father claims your life in service.</p>
+<p>Supplicant: I am but a humble vessel for the Father&rsquo;s mercy, a tool by which the Vineyard is allowed to grow. All my works are devoted to His cause.</p>
+<p>Listener: The Vineyard grows through broken soil, with your aid. The Father accepts your labor.</p>
+<p>Supplicant: I banish all worldly desires and pleasures, atomized in the cleansing fire of the Holy Flame. The Father&rsquo;s love washes over me, and I live only for Him.</p>
+<p>Listener: Be cleansed, and live your life anew for Him. Supplicant: I swear to be faithful to my Brothers and Sisters in the faith, to obey all commands, and to never betray the Faith&rsquo;s secrets. The Church is my family now, and the Unbeliever my enemy.</p>
+<p>Listener: We welcome you into our family. May the Father guide and protect you. May the Vineyard shelter you from the Unbeliever's Horde. May the Holy Flame purify and inspire you. The Listener must now apply the brand of the Church.</p>
+<p>&nbsp;</p>
+<p><strong>PRAYERS</strong></p>
+<p>Healing Prayer:</p>
+<p>May the Father&rsquo;s mercy wash over you, and mend your wounds. May the Vineyard&rsquo;s life flow through your veins, and fortify your blood. May the Holy Flame purify the wounds, and keep them clean of infection. Through the will of the Father, may you be healed. Amen.</p>
+<p>Ritual of Castigation:</p>
+<p>This ritual requires a Sinner, and a Teacher.</p>
+<p>Teacher: I channel the spirit of the Holy Flame through me. May it give me the strength to purify your sin, and cleanse you of corruption.</p>
+<p>The Teacher may now strike the Sinner until the punishment is complete.</p>
+<p>Battle Prayer:</p>
+<p>Father, we go to do battle in your name. Give us the strength to fight the Unbeliever&rsquo;s hordes, and to be victorious over them. Lend us the vitality of your Vineyard, let us be as certain in our cause as the roots of the great trees that grow within it. Lend us the might of the Holy Flame, that we may purify this world of your enemies. Grant us victory, and grant us the mercy of serving you in death, should we fall.</p>
+<p>Blessing:</p>
+<p>May the Father bless you, and bring you fortune and peace. May the Father be merciful, and grant you a long and happy life. May the Father protect you, and grant you safety and fortitude. In the name of the Father and the Holy Flame, we bless you.</p>
+				</html>
+			"}
+
+
 /obj/item/book/manual/thebook
 	name = "The Book"
 	icon_state = "the_book_2"

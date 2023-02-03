@@ -1555,7 +1555,7 @@
 /area/f13/wasteland)
 "aEV" = (
 /obj/structure/blacksmith/furnace,
-/turf/open/indestructible/ground/outside/wood,
+/turf/open/floor/plasteel/f13/vault_floor/misc,
 /area/f13/wasteland)
 "aFd" = (
 /obj/structure/flora/grass/coyote/twentyone,
@@ -13995,10 +13995,11 @@
 	},
 /area/f13/wasteland)
 "fQm" = (
-/obj/structure/blacksmith/furnace/sandstone,
-/obj/item/twohanded/sledgehammer/simple,
-/obj/item/clothing/gloves/f13/blacksmith,
-/turf/open/indestructible/ground/outside/wood,
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4
+	},
+/obj/structure/blacksmith/quenching,
+/turf/open/floor/plasteel/f13/vault_floor/misc,
 /area/f13/wasteland)
 "fQr" = (
 /obj/structure/chair/wood/normal,
@@ -23206,6 +23207,10 @@
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/savannah/topcenter,
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/mineral/titanium/fifty,
+/turf/open/floor/plasteel/f13/vault_floor/misc,
 /area/f13/wasteland)
 "jAR" = (
 /obj/structure/displaycase,
@@ -46151,6 +46156,12 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
+"tKC" = (
+/obj/structure/flora/grass/wasteland{
+	icon_state = "tall_grass_4"
+	},
+/turf/open/indestructible/ground/outside/wood,
+/area/f13/wasteland)
 "tKY" = (
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/barber{
@@ -51878,6 +51889,12 @@
 	icon_state = "verticalinnermain0"
 	},
 /area/f13/wasteland)
+"wsA" = (
+/obj/structure/table,
+/obj/item/clothing/gloves/f13/blacksmith,
+/obj/item/twohanded/sledgehammer/simple,
+/turf/open/floor/plasteel/f13/vault_floor/misc,
+/area/f13/wasteland)
 "wsC" = (
 /obj/structure/campfire,
 /turf/open/indestructible/ground/outside/dirt,
@@ -54018,6 +54035,12 @@
 	icon_state = "bar"
 	},
 /area/f13/building)
+"xkI" = (
+/obj/structure/flora/grass/wasteland{
+	icon_state = "tall_grass_2"
+	},
+/turf/open/indestructible/ground/outside/wood,
+/area/f13/wasteland)
 "xlb" = (
 /obj/structure/bed/old,
 /obj/machinery/light/built{
@@ -105421,12 +105444,12 @@ hMz
 edF
 cJj
 eUD
-fdV
-jIz
-gVp
-ofL
-mvv
-odZ
+tKC
+stD
+xkI
+tKC
+stD
+fCM
 bir
 inr
 iJo
@@ -105679,11 +105702,12 @@ iHR
 uOu
 eXn
 rXN
+stD
 jAM
 fQm
 aEV
+wsA
 stD
-mvv
 mvv
 vDb
 kaP

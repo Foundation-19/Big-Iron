@@ -76,6 +76,8 @@
 	It isn't meant to be used, it just dictates procs and all that stuff to the subtypes, such as t45b and so on. \
 	Now begone, report this to coders. NOW!"
 	slowdown = 1.75
+	equip_delay_self = 50
+	equip_delay_other = 60
 
 // T-45B
 /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b
