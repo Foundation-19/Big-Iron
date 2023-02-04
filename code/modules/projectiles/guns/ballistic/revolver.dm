@@ -377,9 +377,9 @@
 	name = "Thompson Contender"
 	desc = "A heavy, unwieldy pistol that seems to only hold one shot, yet boasts impressive accuracy. Chambered in .45 LC."
 	icon_state = "contender"
-	mag_type = obj/item/ammo_box/magazine/internal/
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45/gunslinger/contender
 	weapon_weight = WEAPON_MEDIUM
-	extra damage = 40
+	extra_damage = 40
 	extra_penetration = 0.1
 	fire_delay = 4.5
 	spread = 0
