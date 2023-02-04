@@ -110,3 +110,9 @@
 	ammo_type = /obj/item/ammo_casing/a45lc
 	caliber = "a45lc"
 	max_ammo = 6
+
+/obj/item/ammo_box/magazine/internal/cylinder/rev45/gunslinger/contender
+	name = ".45 LC break-action cylinder"
+	ammo_type = /obj/item/ammo_casing/a45lc
+	caliber = "a45lc"
+	max_ammo = 1

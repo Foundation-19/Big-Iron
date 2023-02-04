@@ -372,6 +372,18 @@
 	recoil = 0.5
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 
+// Thompson Contender			Keywords: .45 Long Colt, Break-Action, One round
+/obj/item/gun/ballistic/revolver/contender
+	name = "Thompson Contender"
+	desc = "A heavy, unwieldy pistol that seems to only hold one shot, yet boasts impressive accuracy. Chambered in .45 LC."
+	icon_state = "contender"
+	mag_type = obj/item/ammo_box/magazine/internal/
+	weapon_weight = WEAPON_MEDIUM
+	extra damage = 40
+	extra_penetration = 0.1
+	fire_delay = 4.5
+	spread = 0
+	fire_sound = 'sound/f13weapons/boltfire.ogg'
 
 
 /////////////
