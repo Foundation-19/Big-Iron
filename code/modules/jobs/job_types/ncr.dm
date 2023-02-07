@@ -994,8 +994,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "NCR Off-Duty"
 	jobtype	= /datum/job/ncr/f13offdutyncr
 	id = /obj/item/card/id/dogtag/ncrtrooper
-	head = /obj/item/clothing/head/beret/ncr_dresscap
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/ncr_dressjack
+	head = /obj/item/clothing/head/f13/ncr/ncr_cap
+	suit = null
 	belt = null
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
