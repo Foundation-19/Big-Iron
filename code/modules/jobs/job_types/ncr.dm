@@ -282,7 +282,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	total_positions = 3
 	spawn_positions = 3
-	description = "You are the direct superior to the enlisted troops, working with the chain of command you echo the orders of your superiors and ensure that the enlisted follow them to the letter. Additionally, you are responsible for the wellbeing of the troops and their ongoing training with the NCR."
+	description = "You are a squad leader, your duties relate to organizing a squad, enforcing and carrying out the orders of your superiors, keeping the enlisted in line, maintaining proper conduct of your troops, and disciplining them when necessary."
 	supervisors = "Lieutenant and Above"
 
 	outfit = /datum/outfit/job/ncr/f13sergeant
@@ -734,7 +734,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_MILITARYPOLICE
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are NOT allowed to participate in front-line combat outside the base/embassy. You are tasked with the supervision of the NCRA to maintain internal order and disciplice and to prevent any warcrimes from happening."
+	description = "As an MP you should avoid engaging directly in combat with the enemy whenever possible, but you are allowed to act as a rear unit to prevent retreat. You are tasked with the supervision of the NCRA to maintain internal order, uphold the chain of command, ensure military code (for instance the uniform regulations) is being followed, and upholding NCR and military law."
 	supervisors = "NCRA Officers"
 	exp_requirements = 300
 
