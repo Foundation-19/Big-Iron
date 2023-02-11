@@ -6,6 +6,7 @@
 	name = "salvaged power helmet"
 	desc = "It's a salvaged power armor helmet of what..? YOU CAN'T SEE ME! STOP! REPORT TO CODERS!!"
 	slowdown = 0.1
+	equip_delay_self = 20
 
 // T-45B
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b

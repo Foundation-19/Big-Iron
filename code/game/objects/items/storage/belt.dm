@@ -102,6 +102,12 @@
 /obj/item/storage/belt/utility/waster
 	name = "wastelander toolbelt"
 	desc = "Holds a collection of simple tools."
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+	icon_state = "belt_blacksmith"
+	item_state = "belt_blacksmith"
 
 /obj/item/storage/belt/utility/waster/ComponentInitialize()
 	. = ..()
@@ -195,6 +201,7 @@
 	icon_state = "bandolier"
 	item_state = "bandolier"
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_BELT
 
 /obj/item/storage/belt/bandolier/ComponentInitialize()
 	. = ..()
@@ -343,6 +350,7 @@
 	icon_state = "explorer1"
 	item_state = "explorer1"
 	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_BELT
 
 /obj/item/storage/belt/mining/ComponentInitialize()
 	. = ..()
@@ -444,6 +452,7 @@
 	icon_state = "militarywebbing"
 	item_state = "militarywebbing"
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_BELT
 
 /obj/item/storage/belt/military/ComponentInitialize()
 	. = ..()

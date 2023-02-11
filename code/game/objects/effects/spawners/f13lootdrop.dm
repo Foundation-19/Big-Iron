@@ -758,11 +758,20 @@
 	icon_state = "gun_loot"
 
 //Energy Weapon Spawners
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/hobo
+	name = "hobo tier energy gun"
+	loot = list(/obj/effect/spawner/bundle/f13/wattz,
+				/obj/item/gun/ballistic/rifle/hobo/lasmusket,
+				/obj/item/gun/energy/laser/rechargerrifle,
+				)
+
+
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low
 	name = "low tier energy gun"
-	loot = list(/obj/effect/spawner/bundle/f13/wattz = 40,
-				/obj/effect/spawner/bundle/f13/wattzm = 25,
-				/obj/effect/spawner/bundle/f13/laserpistol = 35
+	loot = list(/obj/effect/spawner/bundle/f13/wattz = 25,
+				/obj/effect/spawner/bundle/f13/wattzm = 15,
+				/obj/effect/spawner/bundle/f13/laserpistol = 30,
+				/obj/item/gun/energy/laser/rechargerrifle = 30,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid
@@ -822,7 +831,6 @@
 	name = "very low tier non-hobo ballistic gun"
 	loot = list(/obj/effect/spawner/bundle/f13/ninemil,
 				/obj/effect/spawner/bundle/f13/caravan_shotgun,
-				/obj/effect/spawner/bundle/f13/mosin,
 				/obj/effect/spawner/bundle/f13/remington,
 				/obj/effect/spawner/bundle/f13/widowmaker,
 				/obj/effect/spawner/bundle/f13/varmint
@@ -932,9 +940,8 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/pistol10mmvariant //more N99s than type-17s, but you still have the type-17
 	name = "random spawner for 10mm pistols"
-	loot = list(/obj/effect/spawner/bundle/f13/revolverm29,
-				/obj/effect/spawner/bundle/f13/n99 = 3,
-				/obj/effect/spawner/bundle/f13/type17 = 1,
+	loot = list(/obj/effect/spawner/bundle/f13/n99 = 3,
+				/obj/effect/spawner/bundle/f13/type17 = 1
 				)
 
 /*	------------------------------------------------
@@ -950,14 +957,14 @@
 				/obj/item/gun/ballistic/revolver/hobo/knucklegun,
 				/obj/effect/spawner/bundle/f13/autopipe,
 				/obj/effect/spawner/bundle/f13/pistol22,
-				/obj/item/gun/ballistic/revolver/winchesterrebored
+				/obj/item/gun/ballistic/revolver/winchesterrebored,
+				/obj/item/gun/energy/laser/rechargerrifle
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2
 	name = "tier two firearms"
 	loot = list(/obj/effect/spawner/bundle/f13/ninemil,
 				/obj/effect/spawner/bundle/f13/caravan_shotgun,
-				/obj/effect/spawner/bundle/f13/mosin,
 				/obj/effect/spawner/bundle/f13/widowmaker,
 				/obj/effect/spawner/bundle/f13/varmint,
 				/obj/effect/spawner/lootdrop/f13/weapon/pistol10mmvariant,
@@ -975,7 +982,7 @@
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/police_pistol,
 				/obj/effect/spawner/bundle/f13/m1carbine,
-				/obj/effect/spawner/bundle/f13/service,
+				/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/cowboy,
 				/obj/effect/spawner/bundle/f13/dkssniper,
 				/obj/effect/spawner/bundle/f13/greasegun,
@@ -983,6 +990,7 @@
 				/obj/effect/spawner/bundle/f13/guns/auto5,
 				/obj/effect/spawner/bundle/f13/guns/tommygun = 5,
 				/obj/effect/spawner/bundle/f13/laserpistol,
+				/obj/item/gun/energy/laser/wattz/recharger,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4
@@ -1019,7 +1027,6 @@
 	name = "tier six firearms"
 	loot = list(/obj/effect/spawner/bundle/f13/amr = 10,
 				/obj/effect/spawner/bundle/f13/brushgun = 15,
-				/obj/effect/spawner/bundle/f13/rangemaster = 15,
 				/obj/item/gun/ballistic/rocketlauncher = 5,
 				/obj/effect/spawner/bundle/f13/assault_rifle = 20,
 				/obj/effect/spawner/bundle/f13/r84 = 10,
@@ -1050,13 +1057,6 @@
 				/obj/item/ammo_box/shotgun/improvised
 				)
 
-/obj/effect/spawner/bundle/f13/mosin
-	name = "mosin nagant and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/rifle/mosin,
-				/obj/item/ammo_box/a762
-				)
-
 /obj/effect/spawner/bundle/f13/remington
 	name = "Hunting rifle and ammo spawner"
 	items = list(
@@ -1081,7 +1081,7 @@
 /obj/effect/spawner/bundle/f13/type17
 	name = "chinese 10mm pistol and ammo spawner"
 	items = list(
-			/obj/item/gun/ballistic/automatic/pistol/type17,
+				/obj/item/gun/ballistic/automatic/pistol/type17,
 				/obj/item/ammo_box/magazine/m10mm_adv/simple/
 				)
 

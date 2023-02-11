@@ -61,6 +61,12 @@ GLOBAL_LIST_INIT(command_positions, list(
 
 	"Enclave Lieutenant",
 
+	"Merchant",
+
+	"High Priest",
+
+	"Listener",
+
 	//For Alternative maptypes - Kitsunemitsu
 	"Chief",
 
@@ -146,23 +152,6 @@ GLOBAL_LIST_INIT(brotherhood_positions, list(
 	"BoS Off-Duty",
 ))
 
-GLOBAL_LIST_INIT(oasis_positions, list(
-	"Mayor",
-	"Secretary",
-	"Chief of Police",
-	"Doctor",
-	"Citizen",
-	"Officer",
-	"Shopkeeper",
-	"Shop Assistant",
-	"Farmer",
-	"Prospector",
-	"Detective",
-	"Barkeep",
-	"Town Doctor",
-	"Preacher"
-))
-
 GLOBAL_LIST_INIT(legion_command_positions, list(
 	"Legate",
 	"Legion Centurion",
@@ -238,6 +227,30 @@ GLOBAL_LIST_INIT(enclave_positions, list(
 	"Enclave Bunker Duty",
 ))
 
+GLOBAL_LIST_INIT(church_positions, list(
+	"High Priest",
+	"Servitor",
+	"Acolyte",
+	"Neophyte",
+))
+
+GLOBAL_LIST_INIT(merchant_positions, list(
+	"Merchant",
+	"Apprentice",
+	"Mercenary",
+	"Bartender",
+))
+
+GLOBAL_LIST_INIT(rustwalker_positions, list(
+	"Listener",
+	"Rustwalker",
+))
+
+GLOBAL_LIST_INIT(kebab_positions, list(
+	"Scab",
+	"Radio Host",
+))
+
 GLOBAL_LIST_INIT(security_positions, list(
 	"Vault-tec Security",
 	"Officer",
@@ -264,9 +277,12 @@ GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_LEGION = list("jobs" = legion_positions, "color" = "#f81717"),
 	EXP_TYPE_WASTELAND = list("jobs" = wasteland_positions, "color" = "#5a5a5a"),
 	EXP_TYPE_ENCLAVE = list("jobs" = enclave_positions, "color" = "#323232"),
-	EXP_TYPE_OASIS = list("jobs" = oasis_positions, "color" = "#d7b088"),
-	EXP_TYPE_TRIBAL = list("jobs" = tribal_positions, "color" = "#006666"),
-	EXP_TYPE_VAULT = list("jobs" = vault_positions, "color" = "#ccffcc"),
+	EXP_TYPE_KEBAB = list("jobs" = kebab_positions, "color" = "#c3d5d5"),
+//	EXP_TYPE_TRIBAL = list("jobs" = tribal_positions, "color" = "#006666"),
+//	EXP_TYPE_VAULT = list("jobs" = vault_positions, "color" = "#ccffcc"),
+	EXP_TYPE_CHURCH = list("jobs" = church_positions, "color" = "#d580ff"),
+	EXP_TYPE_MERCHANT = list("jobs" = merchant_positions, "color" = "#dcba97"),
+	EXP_TYPE_RUSTWALKER = list("jobs" = rustwalker_positions, "color" = "#ff8080"),
 ))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
@@ -280,22 +296,25 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_SILICON = list("titles" = list("AI","Cyborg")),
 	EXP_TYPE_SERVICE = list("titles" = civilian_positions),
 
-	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | oasis_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | tribal_positions | enclave_positions),
+	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | kebab_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | church_positions | merchant_positions | rustwalker_positions | tribal_positions | enclave_positions),
 
 	EXP_TYPE_OUTLAW = list("titles" = list("Outlaw","Den Mob Boss","Den Mob Enforcer","Den Doctor",)),
 	EXP_TYPE_BROTHERHOOD = list("titles" = brotherhood_positions),
-	EXP_TYPE_OASIS = list("titles" = oasis_positions ),
 	EXP_TYPE_LEGION = list("titles" = legion_positions),
 	EXP_TYPE_NCR = list("titles" = ncr_positions),
 	EXP_TYPE_VAULT = list("titles" = vault_positions),
 	EXP_TYPE_WASTELAND = list("titles" = wasteland_positions),
+	EXP_TYPE_CHURCH = list("titles" = church_positions),
+	EXP_TYPE_MERCHANT = list("titles" = merchant_positions),
+	EXP_TYPE_RUSTWALKER = list("titles" = rustwalker_positions),
+	EXP_TYPE_KEBAB = list("titles" = kebab_positions),
 	EXP_TYPE_TRIBAL = list("titles" = tribal_positions),
 	EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
 
 	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Prime Decanus", "Legion Recruit Decanus")),
 	EXP_TYPE_BROTHERHOODCOMMAND = list("titles" = list("Head Paladin", "Head Scribe")),
 	EXP_TYPE_OASISCOMMAND = list("titles" = list("Secretary", "Officer")),
-	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCR Sergeant")),
+	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCR Sergeant", "NCR Medical Officer", "NCR Military Police")),
 	EXP_TYPE_RANGER = list("titles" = list("NCR Ranger"))
 ))
 
