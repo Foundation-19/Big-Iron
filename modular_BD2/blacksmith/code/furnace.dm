@@ -59,7 +59,7 @@
 				return
 		else
 			to_chat(user, "The furnace isn't working!.")
-			return TRUE
+			return
 	if(istype(I, /obj/item/stack/ore))
 		var/obj/item/stack/ore/G = I
 		if(working)
@@ -68,16 +68,16 @@
 				G.furnace_smelt()
 		else
 			to_chat(user, "The furnace isn't working!.")
-			return TRUE
+			return
 	if(I.reagents)
 		I.reagents.trans_to(src, 250)
-		return TRUE
+		return
 	if(istype(I, /obj/item/stack/sheet/coke/))
 		var/obj/item/stack/sheet/coke/C = I
 		src.reagents.add_reagent(/datum/reagent/fuel, 5)
 		C.use(1)
 		to_chat(user, "You add some lumps of coke to the furnace.")
-		return TRUE
+		return
 	else
 		return ..()
 
