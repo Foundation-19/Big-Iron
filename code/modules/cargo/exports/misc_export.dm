@@ -8,15 +8,7 @@
 	export_types = list(/obj/item/reagent_containers/hypospray/medipen/stimpak,
 	/obj/item/reagent_containers/hypospray/medipen/medx,
 	/obj/item/reagent_containers/blood/radaway,
-<<<<<<< HEAD
-<<<<<<< HEAD
 	//obj/item/reagent_containers/hypospray/medipen/steady, doesn't exist yet
-=======
-	/obj/item/reagent_containers/hypospray/medipen/steady,
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-	//obj/item/reagent_containers/hypospray/medipen/steady, doesn't exist yet
->>>>>>> 49496a7bcd (review fix)
 	/obj/item/storage/pill_bottle/chem_tin/mentats,
 	/obj/item/reagent_containers/pill/patch/healingpowder,
 	/obj/item/storage/pill_bottle/chem_tin/buffout,
@@ -48,15 +40,7 @@
 		/obj/item/gun/ballistic/revolver/detective,
 		/obj/item/gun/ballistic/revolver/colt357,
 		/obj/item/gun/ballistic/revolver/police,
-<<<<<<< HEAD
-<<<<<<< HEAD
 		///obj/item/gun/ballistic/revolver/colt6250, not in the codebase
-=======
-		/obj/item/gun/ballistic/revolver/colt6250,
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-		///obj/item/gun/ballistic/revolver/colt6250, not in the codebase
->>>>>>> 49496a7bcd (review fix)
 		/obj/item/gun/ballistic/automatic/pistol/m1911,
 		/obj/item/gun/ballistic/revolver/thatgun,
 		/obj/item/gun/energy/laser/wattz,
@@ -69,15 +53,7 @@
 		/obj/item/gun/energy/laser/wattz/magneto,
 		/obj/item/gun/energy/laser/pistol,
 		/obj/item/gun/ballistic/automatic/pistol/m1911/custom,
-<<<<<<< HEAD
-<<<<<<< HEAD
 		//obj/item/gun/ballistic/automatic/pistol/autoloader, atombomb gun
-=======
-		/obj/item/gun/ballistic/automatic/pistol/autoloader,
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-		//obj/item/gun/ballistic/automatic/pistol/autoloader, atombomb gun
->>>>>>> 49496a7bcd (review fix)
 		/obj/item/gun/ballistic/automatic/pistol/deagle,
 		/obj/item/gun/ballistic/automatic/pistol/automag,
 		/obj/item/gun/ballistic/automatic/pistol/pistol14,
@@ -109,15 +85,7 @@
 	export_types = list(
 		/obj/item/gun/ballistic/automatic/m1carbine,
 		/obj/item/gun/ballistic/automatic/combat,
-<<<<<<< HEAD
-<<<<<<< HEAD
 		///obj/item/gun/ballistic/automatic/sportcarbine, not here
-=======
-		/obj/item/gun/ballistic/automatic/sportcarbine,
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-		///obj/item/gun/ballistic/automatic/sportcarbine, not here
->>>>>>> 49496a7bcd (review fix)
 		/obj/item/gun/ballistic/automatic/varmint,
 		/obj/item/gun/ballistic/rifle/repeater/cowboy,
 		/obj/item/gun/ballistic/rifle/repeater/trail,
@@ -148,15 +116,8 @@
 		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5,
 		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever,
 		/obj/item/gun/ballistic/shotgun/automatic/combat/neostead,
-<<<<<<< HEAD
-<<<<<<< HEAD
-		///obj/item/gun/ballistic/automatic/shotgun/citykiller, not here
-=======
 		/obj/item/gun/ballistic/automatic/shotgun/citykiller,
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
 		///obj/item/gun/ballistic/automatic/shotgun/citykiller, not here
->>>>>>> 49496a7bcd (review fix)
 		/obj/item/gun/ballistic/automatic/shotgun/riot,
 		/obj/item/gun/ballistic/automatic/shotgun/pancor,
 		/obj/item/gun/ballistic/revolver/grenadelauncher,
@@ -178,15 +139,7 @@
 		/obj/item/gun/ballistic/automatic/m1garand,
 		/obj/item/gun/ballistic/automatic/assault_carbine/worn,
 		/obj/item/gun/ballistic/rifle/repeater/brush,
-<<<<<<< HEAD
-<<<<<<< HEAD
 		//obj/item/gun/ballistic/automatic/sniper, not implemented
-=======
-		/obj/item/gun/ballistic/automatic/sniper,
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-		//obj/item/gun/ballistic/automatic/sniper, not implemented
->>>>>>> 49496a7bcd (review fix)
 		/obj/item/gun/ballistic/rifle/mag/antimateriel
 	)
 
@@ -204,17 +157,8 @@
 		/obj/item/gun/ballistic/automatic/assault_carbine,
 		/obj/item/gun/ballistic/automatic/fnfal,
 		/obj/item/gun/ballistic/automatic/bar,
-<<<<<<< HEAD
-<<<<<<< HEAD
 		///obj/item/gun/ballistic/automatic/m14, not implemented
-=======
-		/obj/item/gun/ballistic/automatic/m14,
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-		///obj/item/gun/ballistic/automatic/m14, not implemented
->>>>>>> 49496a7bcd (review fix)
 		/obj/item/gun/ballistic/automatic/g11,
-
 	)
 
 /datum/export/item/lmg
@@ -263,15 +207,7 @@
 				/obj/item/book/granter/trait/techno,
 				/obj/item/book/granter/crafting_recipe/ODF,
 				/obj/item/book/granter/action/drink_fling,
-<<<<<<< HEAD
-<<<<<<< HEAD
 				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one)
-=======
-				/obj/item/book/granter/crafting_recipe/gunsmith_one)
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one)
->>>>>>> 49496a7bcd (review fix)
 
 /datum/export/item/traitbooks
 	cost = 550
@@ -283,21 +219,9 @@
 				/obj/item/book/granter/trait/explosives,
 				/obj/item/book/granter/trait/explosives_advanced,
 				/obj/item/book/granter/trait/rifleman,
-<<<<<<< HEAD
-<<<<<<< HEAD
 				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,
 				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three,
 				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four)
-=======
-				/obj/item/book/granter/crafting_recipe/gunsmith_two,
-				/obj/item/book/granter/crafting_recipe/gunsmith_three,
-				/obj/item/book/granter/crafting_recipe/gunsmith_four)
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,
-				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three,
-				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four)
->>>>>>> 49496a7bcd (review fix)
 
 /datum/export/item/crops
 	cost = 20
@@ -329,15 +253,7 @@
 		/obj/item/reagent_containers/food/snacks/grown/datura,
 		/obj/item/reagent_containers/food/snacks/grown/eggplant,
 		/obj/item/reagent_containers/food/snacks/grown/feracactus,
-<<<<<<< HEAD
-<<<<<<< HEAD
 		///obj/item/reagent_containers/food/snacks/grown/fever_blossom, not ingame
-=======
-		/obj/item/reagent_containers/food/snacks/grown/fever_blossom,
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-		///obj/item/reagent_containers/food/snacks/grown/fever_blossom, not ingame
->>>>>>> 49496a7bcd (review fix)
 		/obj/item/reagent_containers/food/snacks/grown/poppy,
 		/obj/item/reagent_containers/food/snacks/grown/poppy/lily,
 		/obj/item/reagent_containers/food/snacks/grown/poppy/geranium,
@@ -388,15 +304,7 @@
 	unit_name = "exotic produce"
 	export_types = list(/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus,
 		/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
-<<<<<<< HEAD
-<<<<<<< HEAD
 		///obj/item/reagent_containers/food/snacks/grown/apple/gold, RIP killed batg
-=======
-		/obj/item/reagent_containers/food/snacks/grown/apple/gold,
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-		///obj/item/reagent_containers/food/snacks/grown/apple/gold, RIP killed batg
->>>>>>> 49496a7bcd (review fix)
 		/obj/item/reagent_containers/food/snacks/grown/banana/banana_spider_spawnable,
 		/obj/item/reagent_containers/food/snacks/grown/koibeans,
 		/obj/item/reagent_containers/food/snacks/grown/berries/poison,
@@ -423,15 +331,7 @@
 		/obj/item/reagent_containers/food/snacks/grown/bee_balm,
 		/obj/item/grown/rose,
 		/obj/item/grown/carbon_rose,
-<<<<<<< HEAD
-<<<<<<< HEAD
 		///obj/item/reagent_containers/food/snacks/grown/holymelon, F, killed by BATG
-=======
-		/obj/item/reagent_containers/food/snacks/grown/holymelon,
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-		///obj/item/reagent_containers/food/snacks/grown/holymelon, F, killed by BATG
->>>>>>> 49496a7bcd (review fix)
 		/obj/item/reagent_containers/food/snacks/grown/cherry_bomb,
 		/obj/item/reagent_containers/food/snacks/grown/mushroom/angel,
 		/obj/item/reagent_containers/food/snacks/grown/mushroom/walkingmushroom,

@@ -181,15 +181,7 @@
 
 /datum/supply_pack/emergency/mre
 	name = "MRE Packs (Emergency Rations)"
-<<<<<<< HEAD
-<<<<<<< HEAD
 	desc = "Bacteria, radioactive contamination, bugs and worms, who wants to deal with that? Order our Vaultec branded MRE kits today! This pack contains 5 MRE packs with a randomized menu."
-=======
-	desc = "Bacteria, radioactive contamination, bugs and worms, who wants to deal with that? Order our NT branded MRE kits today! This pack contains 5 MRE packs with a randomized menu."
->>>>>>> ed2b1ef110 (port cargo stuff from AB)
-=======
-	desc = "Bacteria, radioactive contamination, bugs and worms, who wants to deal with that? Order our Vaultec branded MRE kits today! This pack contains 5 MRE packs with a randomized menu."
->>>>>>> 49496a7bcd (review fix)
 	cost = 2000
 	contains = list(/obj/item/reagent_containers/food/snacks/f13/mre,
 					/obj/item/storage/box/mre/menu1/safe,
