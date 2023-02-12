@@ -191,11 +191,11 @@
 	desc = "Bacteria, radioactive contamination, bugs and worms, who wants to deal with that? Order our Vaultec branded MRE kits today! This pack contains 5 MRE packs with a randomized menu."
 >>>>>>> 49496a7bcd (review fix)
 	cost = 2000
-	contains = list(/obj/item/storage/box/mre/menu1/safe,
+	contains = list(/obj/item/reagent_containers/food/snacks/f13/mre,
 					/obj/item/storage/box/mre/menu1/safe,
+					/obj/item/reagent_containers/food/snacks/f13/mre,
 					/obj/item/storage/box/mre/menu2/safe,
-					/obj/item/storage/box/mre/menu2/safe,
-					/obj/item/storage/box/mre/menu3,
+					/obj/item/reagent_containers/food/snacks/f13/galette,
 					/obj/item/storage/box/mre/menu4/safe)
 	crate_name = "MRE crate (emergency rations)"
 
