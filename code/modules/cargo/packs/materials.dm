@@ -70,9 +70,13 @@
 	contains = list(/obj/item/blacksmith/ingot/adamantine,
 					/obj/item/blacksmith/ingot/adamantine,
 <<<<<<< HEAD
+<<<<<<< HEAD
 					/obj/item/blacksmith/ingot/adamantine,
 =======
 >>>>>>> ed2b1ef110 (port cargo stuff from AB)
+=======
+					/obj/item/blacksmith/ingot/adamantine,
+>>>>>>> 49496a7bcd (review fix)
 					/obj/item/blacksmith/ingot/adamantine
 					)
 
