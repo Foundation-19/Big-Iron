@@ -637,8 +637,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 
 	loadout_options = list(	// ALL: .45 Revolver, Reinforced Machete
-		/datum/outfit/loadout/expscout,	// Commando Carbine, Smokebomb, C4
-		/datum/outfit/loadout/expsniper,	// SKS, Frag grenades, Bottlecap mine
+		/datum/outfit/loadout/expscout,	// Commando Carbine, Uzi, Smokebomb, C4
+		/datum/outfit/loadout/expsniper,	// Hunting Rifle, Smokebomb, Bottlecap mine
 		/datum/outfit/loadout/exphunter,	// Crossbow (improved version), C4, Bottlecap mine, Smokebomb, bow autodraw, explosives, trapper
 		)
 
@@ -685,7 +685,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit_store = /obj/item/gun/ballistic/automatic/delisle/commando
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45exp = 3,
-		/obj/item/gun/ballistic/automatic/smg/mini_uzi,
+		/obj/item/gun/ballistic/automatic/smg/mini_uzi = 1,
 		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		/obj/item/attachments/scope = 1,
 		/obj/item/grenade/smokebomb = 1,
