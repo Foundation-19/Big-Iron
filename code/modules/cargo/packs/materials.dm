@@ -69,6 +69,7 @@
 	cost = 2775
 	contains = list(/obj/item/blacksmith/ingot/adamantine,
 					/obj/item/blacksmith/ingot/adamantine,
+					/obj/item/blacksmith/ingot/adamantine,
 					/obj/item/blacksmith/ingot/adamantine
 					)
 

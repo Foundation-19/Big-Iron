@@ -8,7 +8,7 @@
 	export_types = list(/obj/item/reagent_containers/hypospray/medipen/stimpak,
 	/obj/item/reagent_containers/hypospray/medipen/medx,
 	/obj/item/reagent_containers/blood/radaway,
-	/obj/item/reagent_containers/hypospray/medipen/steady,
+	//obj/item/reagent_containers/hypospray/medipen/steady, doesn't exist yet
 	/obj/item/storage/pill_bottle/chem_tin/mentats,
 	/obj/item/reagent_containers/pill/patch/healingpowder,
 	/obj/item/storage/pill_bottle/chem_tin/buffout,
@@ -40,7 +40,7 @@
 		/obj/item/gun/ballistic/revolver/detective,
 		/obj/item/gun/ballistic/revolver/colt357,
 		/obj/item/gun/ballistic/revolver/police,
-		/obj/item/gun/ballistic/revolver/colt6250,
+		///obj/item/gun/ballistic/revolver/colt6250, not in the codebase
 		/obj/item/gun/ballistic/automatic/pistol/m1911,
 		/obj/item/gun/ballistic/revolver/thatgun,
 		/obj/item/gun/energy/laser/wattz,
@@ -53,7 +53,7 @@
 		/obj/item/gun/energy/laser/wattz/magneto,
 		/obj/item/gun/energy/laser/pistol,
 		/obj/item/gun/ballistic/automatic/pistol/m1911/custom,
-		/obj/item/gun/ballistic/automatic/pistol/autoloader,
+		//obj/item/gun/ballistic/automatic/pistol/autoloader, atombomb gun
 		/obj/item/gun/ballistic/automatic/pistol/deagle,
 		/obj/item/gun/ballistic/automatic/pistol/automag,
 		/obj/item/gun/ballistic/automatic/pistol/pistol14,
@@ -85,7 +85,7 @@
 	export_types = list(
 		/obj/item/gun/ballistic/automatic/m1carbine,
 		/obj/item/gun/ballistic/automatic/combat,
-		/obj/item/gun/ballistic/automatic/sportcarbine,
+		///obj/item/gun/ballistic/automatic/sportcarbine, not here
 		/obj/item/gun/ballistic/automatic/varmint,
 		/obj/item/gun/ballistic/rifle/repeater/cowboy,
 		/obj/item/gun/ballistic/rifle/repeater/trail,
@@ -116,7 +116,7 @@
 		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5,
 		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever,
 		/obj/item/gun/ballistic/shotgun/automatic/combat/neostead,
-		/obj/item/gun/ballistic/automatic/shotgun/citykiller,
+		///obj/item/gun/ballistic/automatic/shotgun/citykiller, not here
 		/obj/item/gun/ballistic/automatic/shotgun/riot,
 		/obj/item/gun/ballistic/automatic/shotgun/pancor,
 		/obj/item/gun/ballistic/revolver/grenadelauncher,
@@ -138,7 +138,7 @@
 		/obj/item/gun/ballistic/automatic/m1garand,
 		/obj/item/gun/ballistic/automatic/assault_carbine/worn,
 		/obj/item/gun/ballistic/rifle/repeater/brush,
-		/obj/item/gun/ballistic/automatic/sniper,
+		//obj/item/gun/ballistic/automatic/sniper, not implemented
 		/obj/item/gun/ballistic/rifle/mag/antimateriel
 	)
 
@@ -156,7 +156,7 @@
 		/obj/item/gun/ballistic/automatic/assault_carbine,
 		/obj/item/gun/ballistic/automatic/fnfal,
 		/obj/item/gun/ballistic/automatic/bar,
-		/obj/item/gun/ballistic/automatic/m14,
+		///obj/item/gun/ballistic/automatic/m14, not implemented
 		/obj/item/gun/ballistic/automatic/g11,
 
 	)
@@ -207,7 +207,7 @@
 				/obj/item/book/granter/trait/techno,
 				/obj/item/book/granter/crafting_recipe/ODF,
 				/obj/item/book/granter/action/drink_fling,
-				/obj/item/book/granter/crafting_recipe/gunsmith_one)
+				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one)
 
 /datum/export/item/traitbooks
 	cost = 550
@@ -219,9 +219,9 @@
 				/obj/item/book/granter/trait/explosives,
 				/obj/item/book/granter/trait/explosives_advanced,
 				/obj/item/book/granter/trait/rifleman,
-				/obj/item/book/granter/crafting_recipe/gunsmith_two,
-				/obj/item/book/granter/crafting_recipe/gunsmith_three,
-				/obj/item/book/granter/crafting_recipe/gunsmith_four)
+				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,
+				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three,
+				/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four)
 
 /datum/export/item/crops
 	cost = 20
@@ -253,7 +253,7 @@
 		/obj/item/reagent_containers/food/snacks/grown/datura,
 		/obj/item/reagent_containers/food/snacks/grown/eggplant,
 		/obj/item/reagent_containers/food/snacks/grown/feracactus,
-		/obj/item/reagent_containers/food/snacks/grown/fever_blossom,
+		///obj/item/reagent_containers/food/snacks/grown/fever_blossom, not ingame
 		/obj/item/reagent_containers/food/snacks/grown/poppy,
 		/obj/item/reagent_containers/food/snacks/grown/poppy/lily,
 		/obj/item/reagent_containers/food/snacks/grown/poppy/geranium,
@@ -304,7 +304,7 @@
 	unit_name = "exotic produce"
 	export_types = list(/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus,
 		/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
-		/obj/item/reagent_containers/food/snacks/grown/apple/gold,
+		///obj/item/reagent_containers/food/snacks/grown/apple/gold, RIP killed batg
 		/obj/item/reagent_containers/food/snacks/grown/banana/banana_spider_spawnable,
 		/obj/item/reagent_containers/food/snacks/grown/koibeans,
 		/obj/item/reagent_containers/food/snacks/grown/berries/poison,
@@ -331,7 +331,7 @@
 		/obj/item/reagent_containers/food/snacks/grown/bee_balm,
 		/obj/item/grown/rose,
 		/obj/item/grown/carbon_rose,
-		/obj/item/reagent_containers/food/snacks/grown/holymelon,
+		///obj/item/reagent_containers/food/snacks/grown/holymelon, F, killed by BATG
 		/obj/item/reagent_containers/food/snacks/grown/cherry_bomb,
 		/obj/item/reagent_containers/food/snacks/grown/mushroom/angel,
 		/obj/item/reagent_containers/food/snacks/grown/mushroom/walkingmushroom,
