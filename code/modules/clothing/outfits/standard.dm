@@ -441,3 +441,13 @@
 	/datum/mind/proc/AddSpell(obj/effect/proc_holder/spell/S)
 		spell_list += S
 		S.action.Grant(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt(null))
+
+	do_sparks(7, TRUE, src)//spawns in, lightning effect also produced, what this mean is upto you
+
+	ADD_TRAIT(H, TRAIT_XRAY_VISION, src)
+	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
+	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
+	ADD_TRAIT(H, TRAIT_NOLIMBDISABLE, src)
