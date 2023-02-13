@@ -401,6 +401,7 @@
 /datum/outfit/debug //Debug objs plus hardsuit
 	name = "Debug outfit"
 	uniform = /obj/item/clothing/under/misc/patriotsuit
+	head = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug
 	suit = /obj/item/clothing/suit/space/hardsuit/syndi/elite/debug
 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
 	ears = /obj/item/radio/headset/headset_cent/alt
