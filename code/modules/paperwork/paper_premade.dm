@@ -244,7 +244,7 @@
 	<br>
 	<b>Step 1
 	<br>
-	Aquire Xander root,broc flowers,barrel cactii and bottles of Sarsaparilla.
+	Aquire Xander root,broc flowers,barrel cactii and empty beakers
 	<br>
 	Step 2
 	<br> 
@@ -252,6 +252,6 @@
 	<br>
 	<b>Step 3
 	<br>
-	Mix the fermented results of Xander root, barrel cactii,broc flowers and Sarsaparilla together in a large glass beaker.</b>
+	Mix the fermented results of Xander root, barrel cactii, broc flowers together in equal parts.</b>
 	<br>
 	Bitter drink should be the result which can then be bottled by crafting. It is a very potent drink, so more than two should not be consumed."}

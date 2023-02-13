@@ -396,6 +396,27 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "med_headset"
 	keyslot = new /obj/item/encryptionkey/headset_med
 
+/obj/item/radio/headset/headset_merchant
+	name = "Merchant headset"
+	desc = "A headset used by the Merchant.\nTo access the Merchant channel, use :u."
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_cargo
+	keyslot2 = new /obj/item/encryptionkey/headset_town
+
+/obj/item/radio/headset/headset_church
+	name = "Church headset"
+	desc = "A headset used by the Church.\nTo access the Church channel, use :m."
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_med
+	keyslot2 = new /obj/item/encryptionkey/headset_town
+
+/obj/item/radio/headset/headset_rustwalker
+	name = "Rustwalker headset"
+	desc = "A headset used by the Rustwalkers.\nTo access the Rustwalker channel, use :e."
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_eng
+	keyslot2 = new /obj/item/encryptionkey/headset_town
+
 /obj/item/radio/headset/headset_cent
 	name = "\improper Vault-Tec headset"
 	desc = "A headset used by the upper echelons of Vault-Tec.\nTo access the Vault-Tec channel, use :y."

@@ -229,29 +229,6 @@
 	else
 		..()
 
-
-//Mosin-Nagant							Keywords: 7.62, Bolt-action, 5 rounds internal
-/obj/item/gun/ballistic/rifle/mosin
-	name = "Mosin-Nagant m38"
-	desc = "A rusty old Russian bolt action chambered in 7.62."
-	icon_state = "mosin"
-	item_state = "308"
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
-	extra_damage = 37
-	extra_speed = 600
-	fire_delay = 3
-	force = 18
-	can_scope = TRUE
-	scope_state = "scope_mosin"
-	scope_x_offset = 3
-	scope_y_offset = 13
-	can_bayonet = TRUE
-	bayonet_state = "bayonet"
-	knife_x_offset = 22
-	knife_y_offset = 21
-	pump_sound = 'sound/weapons/boltpump.ogg'
-	fire_sound = 'sound/f13weapons/boltfire.ogg'
-
 //Lee-Enfield,SMLE 						Keywords: 7.62, Bolt-action, 5 rounds internal, very fast firing rate, high stamina cost on working bolt
 /obj/item/gun/ballistic/rifle/enfield
 	name = "Lee-Enfield rifle"
