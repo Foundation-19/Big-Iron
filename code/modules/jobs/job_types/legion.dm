@@ -230,10 +230,10 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Ranger-Hunter Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
 	head = /obj/item/clothing/head/helmet/f13/legion/rangercent
-	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper
 	backpack_contents = list(
 		/obj/item/storage/belt/holster/rugged/revolver_hunting = 1,
-		/obj/item/ammo_box/magazine/amr = 2,
+		/obj/item/ammo_box/magazine/w308 = 2,
 		/obj/item/ammo_box/c4570 = 3,
 		/obj/item/melee/onehanded/machete/spatha = 1
 		)
@@ -638,7 +638,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 	loadout_options = list(	// ALL: .45 Revolver, Reinforced Machete
 		/datum/outfit/loadout/expscout,	// Commando Carbine, Smokebomb, C4
-		/datum/outfit/loadout/expsniper,	// SKS, Frag grenades, Bottlecap mine
+		/datum/outfit/loadout/expsniper,	// Hunting Rifle, Smokebomb, Bottlecap mine
 		/datum/outfit/loadout/exphunter,	// Crossbow (improved version), C4, Bottlecap mine, Smokebomb, bow autodraw, explosives, trapper
 		)
 
@@ -685,7 +685,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit_store = /obj/item/gun/ballistic/automatic/delisle/commando
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45exp = 3,
-		/obj/item/gun/ballistic/automatic/smg/mini_uzi,
+		/obj/item/gun/ballistic/automatic/smg/mini_uzi = 1,
 		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		/obj/item/attachments/scope = 1,
 		/obj/item/grenade/smokebomb = 1,
