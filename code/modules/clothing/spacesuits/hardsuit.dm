@@ -384,7 +384,7 @@
 	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fireproofing. It is in combat mode."
 	icon_state = "hardsuit0-syndielite"
 	hardsuit_type = "syndielite"
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
@@ -398,6 +398,7 @@
 	armor = list("melee" = 99, "bullet" = 95, "laser" = 95, "energy" = 95, "bomb" = 95, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 100)
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite/debug/Initialize()
+	. = ..()
 	do_sparks(7, FALSE, src)//spawns in, lightning effect also produced, what this mean is upto you
 
 //The Owl Hardsuit
