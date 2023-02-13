@@ -1891,3 +1891,13 @@
 	item_state = "mausgothlolidress"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
+
+
+//camo
+
+/obj/item/clothing/under/f13/camo/desert
+	name = "desert camouflage uniform"
+	desc = "A pre-war camouflaged military uniform, mercs and collectors love these."
+	icon_state = "camo_desert"
+	item_state = "camo_desert"
+	can_adjust = TRUE

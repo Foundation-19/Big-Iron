@@ -173,7 +173,7 @@
 	name = "Officer Pingsky"
 	desc = "It's Officer Pingsky! Delegated to satellite guard duty for harbouring anti-human sentiment."
 	radio_channel = RADIO_CHANNEL_AI_PRIVATE
-
+/*
 /mob/living/simple_animal/bot/secbot/Initialize()
 	. = ..()
 	update_icon()
@@ -184,7 +184,7 @@
 	//SECHUD
 	var/datum/atom_hud/secsensor = GLOB.huds[DATA_HUD_SECURITY_ADVANCED]
 	secsensor.add_hud_to(src)
-
+*/
 /mob/living/simple_animal/bot/secbot/update_icon()
 	if(mode == BOT_HUNT)
 		icon_state = "[initial(icon_state)]-c"

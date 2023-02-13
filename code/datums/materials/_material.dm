@@ -52,10 +52,10 @@ Simple datum which is instanced once per type and is used for every object of sa
 
 	if(material_flags & MATERIAL_ADD_PREFIX)
 		source.name = "[name] [source.name]"
-
+/* MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate on 2023-01-20
 	if(beauty_modifier)
 		addtimer(CALLBACK(source, /datum.proc/_AddElement, list(/datum/element/beauty, beauty_modifier * amount)), 0)
-
+*/
 	if(istype(source, /obj)) //objs
 		on_applied_obj(source, amount, material_flags)
 

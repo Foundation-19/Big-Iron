@@ -436,7 +436,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 /obj/item/statuebust/Initialize()
 	. = ..()
 	AddElement(/datum/element/art, impressiveness)
-	addtimer(CALLBACK(src, /datum.proc/_AddElement, list(/datum/element/beauty, 1000)), 0)
+//	addtimer(CALLBACK(src, /datum.proc/_AddElement, list(/datum/element/beauty, 1000)), 0) MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate on 2023-01-20
 
 /obj/item/tailclub
 	name = "tail club"

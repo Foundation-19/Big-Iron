@@ -1,3 +1,4 @@
+/* MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate on 2023-01-20
 /datum/element/beauty
 	element_flags = ELEMENT_BESPOKE|ELEMENT_DETACH
 	id_arg_index = 2
@@ -35,3 +36,4 @@
 		return
 	A.totalbeauty -= beauty
 	A.update_beauty()
+*/
