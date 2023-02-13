@@ -89,7 +89,7 @@
 			if(do_after(user, 30, target = src))
 				to_chat(user, "<span class='notice'>You finish anchoring \the [src] to the ground.</span>")
 				anchored = TRUE
-		if(anchored)
+		else
 			to_chat(user, "<span class='notice'>You begin unanchoring \the [src] to the ground.</span>")
 			if(do_after(user, 20, target = src))
 				to_chat(user, "<span class='notice'>You finish unanchoring \the [src] to the ground.</span>")
