@@ -428,6 +428,17 @@
 /datum/outfit/debug/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
 		return
+	ADD_TRAIT(H, TRAIT_XRAY_VISION, src)
+	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
+	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
+	ADD_TRAIT(H, TRAIT_NOLIMBDISABLE, src)
+	if(H.mind)
+		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
+		var/obj/effect/proc_holder/spell/targeted/ethereal_jaunt/S = new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt
+		H.mind.AddSpell(S)
 
 	var/obj/item/implant/mindshield/L = new 
 	L.implant(H, null, 1)
@@ -439,16 +450,5 @@
 	W.registered_name = H.real_name
 	W.update_label(W.registered_name, W.assignment)
 
-	/datum/mind/proc/AddSpell(obj/effect/proc_holder/spell/S)
-		spell_list += S
-		S.action.Grant(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt(null))
-
 	do_sparks(7, TRUE, src)//spawns in, lightning effect also produced, what this mean is upto you
 
-	ADD_TRAIT(H, TRAIT_XRAY_VISION, src)
-	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
-	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
-	ADD_TRAIT(H, TRAIT_NOLIMBDISABLE, src)
