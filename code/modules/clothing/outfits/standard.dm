@@ -436,9 +436,9 @@
 	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
 	ADD_TRAIT(H, TRAIT_NOLIMBDISABLE, src)
 	if(H.mind)
-		H.mind.AddSpell(/obj/effect/proc_holder/spell/terrifying_presence(null))
-		H.mind.AddSpell(/obj/effect/proc_holder/spell/targeted/ethereal_jaunt(null))
-		H.mind.AddSpell(/obj/effect/proc_holder/spell/aoe_turf/knock(null))
+		H.mind.AddSpell(/obj/effect/proc_holder/spell/terrifying_presence)
+		H.mind.AddSpell(/obj/effect/proc_holder/spell/targeted/ethereal_jaunt)
+		H.mind.AddSpell(/obj/effect/proc_holder/spell/aoe_turf/knock)
 
 	var/obj/item/implant/mindshield/L = new 
 	L.implant(H, null, 1)
