@@ -402,7 +402,7 @@
 	name = "Debug outfit"
 	uniform = /obj/item/clothing/under/misc/patriotsuit
 	suit = /obj/item/clothing/suit/space/hardsuit/syndi/elite/debug
-	glasses = /obj/item/clothing/glasses/sunglasses
+	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
 	ears = /obj/item/radio/headset/headset_cent/alt
 	mask = /obj/item/clothing/mask/gas/welding/up
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
