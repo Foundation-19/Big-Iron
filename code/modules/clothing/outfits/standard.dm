@@ -402,22 +402,24 @@
 	name = "Debug outfit"
 	uniform = /obj/item/clothing/under/misc/patriotsuit
 	suit = /obj/item/clothing/suit/space/hardsuit/syndi/elite/debug
-	glasses = /obj/item/clothing/glasses/debug
-	ears = /obj/item/radio/headset/headset_cent/commander
+	glasses = /obj/item/clothing/glasses/sunglasses
+	ears = /obj/item/radio/headset/headset_cent/alt
 	mask = /obj/item/clothing/mask/gas/welding/up
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
-	l_pocket = /obj/item/gun/magic/wand/resurrection/debug
-	r_pocket = /obj/item/gun/magic/wand/death/debug
 	shoes = /obj/item/clothing/shoes/magboots/advance/debug
+	belt = /obj/item/storage/belt/utility/full/engi
 	id = /obj/item/card/id/debug
-	suit_store = /obj/item/tank/internals/oxygen
+	suit_store = /obj/item/tank/internals/emergency_oxygen/double
 	back = /obj/item/storage/backpack/holding
 	box = /obj/item/storage/box/debugtools
-	internals_slot = ITEM_SLOT_SUITSTORE
+	internals_slot = SLOT_R_STORE
 	backpack_contents = list(
 		/obj/item/melee/transforming/energy/axe=1,\
 		/obj/item/storage/part_replacer/bluespace/tier4=1,\
 		/obj/item/debug/human_spawner=1,\
+		/obj/item/gun/magic/wand/death/debug=1,\
+		/obj/item/gun/magic/wand/resurrection/debug=1,\
+		/obj/item/clothing/glasses/debug=1,\
 		)
 
 /datum/outfit/debug/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
