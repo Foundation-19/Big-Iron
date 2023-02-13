@@ -422,7 +422,16 @@
 		/obj/item/clothing/glasses/debug=1,\
 		)
 
-/datum/outfit/debug/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/debug/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	if(visualsOnly)
+		return
+
+	var/obj/item/implant/mindshield/L = new 
+	L.implant(H, null, 1)
+
 	var/obj/item/card/id/W = H.wear_id
+	W.icon_state = "centcom"
+	W.access = get_all_accesses()//Obviously
+	W.assignment = "Administrator"
 	W.registered_name = H.real_name
-	W.update_label()
+	W.update_label(W.registered_name, W.assignment)
