@@ -420,6 +420,7 @@
 		/obj/item/gun/magic/wand/death/debug=1,\
 		/obj/item/gun/magic/wand/resurrection/debug=1,\
 		/obj/item/clothing/glasses/debug=1,\
+		/obj/item/stock_parts/cell/pulse/pistol=1,\
 		)
 
 /datum/outfit/debug/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
@@ -435,3 +436,7 @@
 	W.assignment = "Administrator"
 	W.registered_name = H.real_name
 	W.update_label(W.registered_name, W.assignment)
+
+	/datum/mind/proc/AddSpell(obj/effect/proc_holder/spell/S)
+		spell_list += S
+		S.action.Grant(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt(null))
