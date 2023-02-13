@@ -359,7 +359,7 @@
 	ears = /obj/item/radio/headset/headset_cent/alt
 
 	backpack_contents = list(/obj/item/storage/box=1,\
-		/obj/item/ammo_box/tube/m44=2,\
+		/obj/item/ammo_box/tube/m44=1,\
 		/obj/item/storage/firstaid/regular=1,\
 		/obj/item/storage/box/flashbangs=1,\
 		/obj/item/flashlight=1,\
