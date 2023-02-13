@@ -201,6 +201,7 @@
 	icon_state = "bandolier"
 	item_state = "bandolier"
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_BELT
 
 /obj/item/storage/belt/bandolier/ComponentInitialize()
 	. = ..()
@@ -349,6 +350,7 @@
 	icon_state = "explorer1"
 	item_state = "explorer1"
 	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_BELT
 
 /obj/item/storage/belt/mining/ComponentInitialize()
 	. = ..()
@@ -450,6 +452,7 @@
 	icon_state = "militarywebbing"
 	item_state = "militarywebbing"
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
+	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_BELT
 
 /obj/item/storage/belt/military/ComponentInitialize()
 	. = ..()
