@@ -995,7 +995,8 @@
 				/obj/effect/spawner/bundle/f13/beretta/select,
 				/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/guns/commando,
-				/obj/effect/spawner/bundle/f13/wattz
+				/obj/effect/spawner/bundle/f13/wattz,
+				/obj/effect/spawner/bundle/f13/contender
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3
@@ -1542,6 +1543,13 @@
 	items = list(
 				/obj/item/gun/ballistic/revolver/hunting,
 				/obj/item/ammo_box/c4570/
+	)
+
+/obj/effect/spawner/bundle/f13/contender
+	name = "Thompson Contender and ammo spawner"
+	items = list(
+			/obj/item/gun/ballistic/revolver/contender,
+			/obj/item/ammo_casing/a45lc
 	)
 
 /obj/effect/spawner/bundle/f13/riotshotgun
