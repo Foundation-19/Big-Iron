@@ -6658,14 +6658,6 @@
 /obj/item/twohanded/spear/scrapspear,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
-"cSd" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/ammo_box/magazine/ammobelt,
-/obj/item/ammo_box/magazine/ammobelt,
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/ncr)
 "cSB" = (
 /obj/item/trash/f13/dog,
 /turf/open/indestructible/ground/inside/mountain,
@@ -9733,15 +9725,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"ehv" = (
-/obj/structure/HMG{
-	dir = 8;
-	name = "Defender of the Faith"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
-/area/f13/cotc)
 "ehx" = (
 /obj/structure/barricade/wooden/strong,
 /obj/structure/decoration/rag{
@@ -13446,10 +13429,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "fCp" = (
-/obj/structure/destructible/tribal_torch/lit{
-	layer = ABOVE_MOB_LAYER;
-	pixel_x = 10
-	},
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#e4e4e4"
 	},
@@ -18741,17 +18721,13 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "hFY" = (
-/obj/effect/overlay/junk/oldpipes{
-	layer = 2
+/obj/structure/rack/shelf_metal,
+/obj/item/ammo_box/magazine/ammobelt,
+/obj/item/ammo_box/magazine/ammobelt,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
 	},
-/obj/structure/destructible/tribal_torch/lit{
-	layer = ABOVE_MOB_LAYER;
-	pixel_x = -8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	color = "#e4e4e4"
-	},
-/area/f13/legion)
+/area/f13/ncr)
 "hGe" = (
 /obj/structure/table/reinforced,
 /obj/structure/barricade/bars,
@@ -23011,15 +22987,10 @@
 	},
 /area/f13/raiders)
 "juF" = (
-/obj/structure/destructible/tribal_torch/lit{
-	layer = ABOVE_MOB_LAYER;
-	light_power = 0.7;
-	light_range = 5;
-	pixel_x = 8
-	},
 /obj/structure/decoration/legion/tentpole{
 	pixel_x = 15
 	},
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#e4e4e4"
 	},
@@ -24999,15 +24970,10 @@
 	},
 /area/f13/building)
 "klk" = (
-/obj/structure/destructible/tribal_torch/lit{
-	layer = ABOVE_MOB_LAYER;
-	light_power = 0.7;
-	light_range = 5;
-	pixel_x = -7
-	},
 /obj/structure/decoration/legion/tentpole{
 	pixel_x = -16
 	},
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#e4e4e4"
 	},
@@ -44855,6 +44821,15 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"tbp" = (
+/obj/structure/HMG{
+	dir = 8;
+	name = "Defender of the Faith"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/cotc)
 "tbG" = (
 /obj/structure/table/wood,
 /obj/item/grown/log,
@@ -62942,7 +62917,7 @@ wcb
 tCQ
 rUp
 rUp
-cSd
+hFY
 wcb
 kiL
 tCQ
@@ -91847,7 +91822,7 @@ nyV
 jJs
 oli
 oli
-ehv
+tbp
 oli
 bor
 nyV
@@ -118886,7 +118861,7 @@ gcK
 ktB
 dXH
 ePh
-hFY
+ePh
 gqE
 xQE
 xRp
@@ -119400,7 +119375,7 @@ gcK
 ktB
 ici
 xRp
-xRp
+fCp
 xpI
 ydY
 igZ
@@ -119914,7 +119889,7 @@ gcK
 ktB
 ici
 xRp
-xRp
+fCp
 xpI
 ydY
 xRp
@@ -120428,7 +120403,7 @@ gcK
 ktB
 fBN
 xRp
-fCp
+xRp
 xpI
 hlX
 ikn
