@@ -15,7 +15,7 @@
 	spawn_positions = 8
 	description = "You're somebody - maybe an old Oasis refugee, maybe a simple nomad or a wandering wastelander who's grown tired of having no place to stay. Whatever's brought you here, you're a member of the Blackwater community, a small 'town' made of a variety of different people. There's no leaders, no Gods and no masters, only each other."
 	supervisors = "your fellows"
-	selection_color = "#3e4461"
+	selection_color = "#3753bf"
 
 	outfit = /datum/outfit/job/wasteland/blackwater
 
@@ -56,7 +56,7 @@
 	name = "Hunter"
 	r_hand = /obj/item/gun/ballistic/rifle/hunting/remington
 	belt = /obj/item/storage/belt/military/army
-	suit = /obj/item/clothing/suit/armored/medium/combat/duster
+	suit = /obj/item/clothing/suit/armored/light/duster
 	backpack_contents = list(
 		/obj/item/ammo_box/a308 = 2,
 		/obj/item/melee/onehanded/knife/hunting = 1,
