@@ -2175,9 +2175,9 @@
 	},
 /area/f13/tunnel)
 "bBA" = (
-/obj/structure/fluff/railing,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start/f13/seniorscribe,
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "bBM" = (
@@ -3991,10 +3991,10 @@
 /turf/closed/wall/f13/wood,
 /area/f13/building)
 "cTR" = (
-/obj/structure/fluff/railing{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "cTS" = (
@@ -4109,14 +4109,15 @@
 /turf/closed/wall/f13/wood,
 /area/f13/building)
 "daD" = (
-/obj/structure/fluff/railing{
-	dir = 10
-	},
 /obj/structure/destructible/clockwork/wall_gear{
 	pixel_y = 32
 	},
 /obj/machinery/light/floor{
 	pixel_y = 32
+	},
+/obj/structure/railing{
+	dir = 10;
+	layer = 4.1
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
@@ -5929,12 +5930,12 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "etm" = (
-/obj/structure/fluff/railing,
 /obj/structure/table_frame,
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "etr" = (
@@ -7079,11 +7080,12 @@
 	},
 /area/f13/clinic)
 "fnq" = (
-/obj/structure/fluff/railing{
-	dir = 5
-	},
 /obj/machinery/light/small{
 	dir = 8
+	},
+/obj/structure/railing{
+	color = null;
+	dir = 5
 	},
 /turf/open/floor/wood/f13/stage_t{
 	icon_state = "housewood_stage_top_right"
@@ -8921,8 +8923,8 @@
 	},
 /area/f13/clinic)
 "gBR" = (
-/obj/structure/fluff/railing/corner,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/railing/corner,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "gCd" = (
@@ -9989,7 +9991,7 @@
 	},
 /area/f13/building)
 "huC" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -10109,7 +10111,7 @@
 	dir = 10
 	},
 /obj/machinery/light/floor,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
@@ -10477,7 +10479,7 @@
 	dir = 6
 	},
 /obj/machinery/light/floor,
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
@@ -11020,7 +11022,7 @@
 	},
 /area/f13/bunker)
 "ipB" = (
-/obj/structure/fluff/railing,
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood/leisure)
 "iqp" = (
@@ -11501,10 +11503,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/enclave)
 "iOu" = (
-/obj/structure/fluff/railing/corner{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing/corner{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "iOJ" = (
@@ -11566,10 +11568,10 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "iRl" = (
-/obj/structure/fluff/railing/corner{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing/corner{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "iRK" = (
@@ -12533,11 +12535,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "jEu" = (
-/obj/structure/fluff/railing{
-	dir = 9
-	},
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/structure/railing{
+	color = null;
+	dir = 9
 	},
 /turf/open/floor/wood/f13/stage_t{
 	icon_state = "housewood_stage_top_left"
@@ -15560,7 +15563,7 @@
 	dir = 9
 	},
 /obj/machinery/light/floor,
-/obj/structure/fluff/railing,
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood/leisure)
 "mmi" = (
@@ -19076,8 +19079,8 @@
 	},
 /area/f13/bunker)
 "pyg" = (
-/obj/structure/fluff/railing,
 /obj/effect/landmark/start/f13/seniorscribe,
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "pyK" = (
@@ -20278,7 +20281,7 @@
 	dir = 5
 	},
 /obj/machinery/light/floor,
-/obj/structure/fluff/railing,
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood/leisure)
 "qBZ" = (
@@ -21578,8 +21581,7 @@
 /obj/structure/mirror{
 	pixel_y = 32
 	},
-/obj/structure/sink{
-	dir = 1;
+/obj/structure/sink/greyscale{
 	pixel_y = 15
 	},
 /turf/open/floor/f13{
@@ -21823,7 +21825,8 @@
 	},
 /area/f13/brotherhood/operations)
 "rJc" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
+	color = null;
 	dir = 5
 	},
 /turf/open/floor/wood/f13/stage_t{
@@ -21972,10 +21975,10 @@
 	},
 /area/f13/enclave)
 "rNh" = (
-/obj/structure/fluff/railing{
+/obj/structure/table/wood/fancy/monochrome,
+/obj/structure/railing{
 	dir = 1
 	},
-/obj/structure/table/wood/fancy/monochrome,
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/brotherhood)
 "rNr" = (
@@ -22048,7 +22051,6 @@
 	},
 /area/f13/tcoms)
 "rQp" = (
-/obj/structure/fluff/railing,
 /obj/structure/table_frame,
 /obj/item/shard{
 	icon_state = "medium";
@@ -22058,6 +22060,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "rQO" = (
@@ -23184,8 +23187,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "sQa" = (
-/obj/structure/fluff/railing{
-	dir = 9
+/obj/structure/railing{
+	dir = 9;
+	layer = 4.1
 	},
 /turf/open/floor/wood/f13/stage_t{
 	icon_state = "housewood_stage_top_left"
@@ -26306,11 +26310,6 @@
 	sunlight_state = 1
 	},
 /area/f13/brotherhood)
-"vAk" = (
-/turf/open/floor/plasteel/f13/vault_floor/red{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/brotherhood/rnd)
 "vAv" = (
 /obj/structure/plasticflaps,
 /obj/effect/decal/cleanable/dirt{
@@ -27115,8 +27114,9 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "wej" = (
-/obj/structure/fluff/railing{
-	dir = 6
+/obj/structure/railing{
+	dir = 6;
+	layer = 4.1
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
@@ -27745,8 +27745,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
 "wGn" = (
-/obj/structure/fluff/railing{
-	dir = 10
+/obj/structure/railing{
+	dir = 10;
+	layer = 4.1
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
@@ -27779,14 +27780,15 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "wHH" = (
-/obj/structure/fluff/railing{
-	dir = 6
-	},
 /obj/structure/destructible/clockwork/wall_gear{
 	pixel_y = 32
 	},
 /obj/machinery/light/floor{
 	pixel_y = 32
+	},
+/obj/structure/railing{
+	dir = 6;
+	layer = 4.1
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
@@ -27859,10 +27861,10 @@
 	},
 /area/f13/bunker)
 "wKI" = (
-/obj/structure/fluff/railing{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "wKL" = (
@@ -28983,7 +28985,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "xHW" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
 	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
@@ -29070,10 +29072,10 @@
 	},
 /area/f13/caves)
 "xMi" = (
-/obj/structure/fluff/railing/corner{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing/corner{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/rnd)
 "xMv" = (
@@ -29413,7 +29415,7 @@
 /area/f13/tunnel)
 "yaK" = (
 /obj/structure/table/glass,
-/obj/structure/fluff/railing,
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "yaU" = (
@@ -76617,8 +76619,8 @@ ddv
 ddv
 ddv
 ddv
-mNE
-vfj
+ddv
+ddv
 ddv
 ddv
 ddv
@@ -91120,7 +91122,7 @@ xNs
 xNs
 xNs
 xNs
-vAk
+xNs
 xNs
 xNs
 xNs
