@@ -421,6 +421,7 @@
 		/obj/item/gun/magic/wand/resurrection/debug=1,\
 		/obj/item/clothing/glasses/debug=1,\
 		/obj/item/stock_parts/cell/pulse/pistol=1,\
+		/obj/item/holosign_creator/security=1,\
 		)
 
 /datum/outfit/debug/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
