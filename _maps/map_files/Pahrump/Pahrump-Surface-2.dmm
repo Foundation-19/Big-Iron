@@ -2238,10 +2238,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"aUJ" = (
-/obj/structure/blacksmith/quenching,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "aUL" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_2";
@@ -13394,6 +13390,7 @@
 /area/f13/wasteland)
 "fCp" = (
 /obj/structure/destructible/tribal_torch/lit{
+	layer = ABOVE_MOB_LAYER;
 	pixel_x = 10
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -13415,12 +13412,7 @@
 /area/f13/caves)
 "fCM" = (
 /obj/structure/flora/grass/wasteland,
-/obj/structure/destructible/tribal_torch/wall/lit{
-	dir = 4
-	},
-/obj/structure/blacksmith/anvil/obtainable,
 /turf/open/indestructible/ground/outside/wood,
-/turf/open/indestructible/ground/outside/savannah/topcenter,
 /area/f13/wasteland)
 "fCO" = (
 /obj/effect/decal/fakelattice{
@@ -15247,10 +15239,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/raiders)
-"gnr" = (
-/obj/machinery/mineral/wasteland_trader/general,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "gnG" = (
 /obj/machinery/light{
 	dir = 8
@@ -16252,10 +16240,6 @@
 "gFR" = (
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/wasteland)
-"gGs" = (
-/mob/living/simple_animal/hostile/retaliate/goat/bighorn,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/building)
 "gGu" = (
 /obj/structure/simple_door/metal/store{
 	icon_state = "brokenstore"
@@ -18872,6 +18856,7 @@
 	layer = 2
 	},
 /obj/structure/destructible/tribal_torch/lit{
+	layer = ABOVE_MOB_LAYER;
 	pixel_x = -8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -21073,12 +21058,6 @@
 	name = "metal plating"
 	},
 /area/f13/merchant)
-"iBx" = (
-/obj/machinery/mineral/wasteland_trader/general,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticalleftborderleft0"
-	},
-/area/f13/wasteland)
 "iBF" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13{
@@ -23154,6 +23133,7 @@
 /area/f13/raiders)
 "juF" = (
 /obj/structure/destructible/tribal_torch/lit{
+	layer = ABOVE_MOB_LAYER;
 	light_power = 0.7;
 	light_range = 5;
 	pixel_x = 8
@@ -24493,12 +24473,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"kae" = (
-/obj/machinery/mineral/wasteland_trader/general,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontalbottomborderbottom2"
-	},
-/area/f13/wasteland)
 "kaf" = (
 /obj/structure/rack,
 /turf/open/floor/carpet,
@@ -25117,6 +25091,7 @@
 /area/f13/building)
 "klk" = (
 /obj/structure/destructible/tribal_torch/lit{
+	layer = ABOVE_MOB_LAYER;
 	light_power = 0.7;
 	light_range = 5;
 	pixel_x = -7
@@ -35384,10 +35359,6 @@
 "oKW" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
-/area/f13/building)
-"oLa" = (
-/mob/living/simple_animal/chicken,
-/turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "oLm" = (
 /obj/structure/simple_door/house,
@@ -51771,9 +51742,7 @@
 /obj/structure/barricade/bars,
 /obj/structure/barricade/wooden/planks/pregame,
 /obj/structure/barricade/wooden/strong,
-/turf/open/floor/wood/f13/oak{
-	icon_state = "oakfloor3"
-	},
+/turf/open/space/basic,
 /area/f13/legion)
 "wil" = (
 /obj/structure/chair,
@@ -52468,10 +52437,6 @@
 	},
 /turf/open/floor/wood,
 /area/f13/village)
-"wzu" = (
-/obj/structure/fence/corner/wooden,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/building)
 "wzJ" = (
 /obj/structure/flora/grass/coyote/twentyfive,
 /turf/open/indestructible/ground/outside/desert/sonora/rough{
@@ -52840,10 +52805,6 @@
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/darkblue/corner,
-/area/f13/building)
-"wHt" = (
-/obj/structure/fence/wooden,
-/turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "wHD" = (
 /obj/machinery/hydroponics/soil/plowed,
@@ -88647,7 +88608,7 @@ nyV
 nyV
 nyV
 nmS
-iBx
+ybI
 jps
 jps
 hkW
@@ -95606,7 +95567,7 @@ xrj
 usx
 iFR
 usx
-kae
+sBk
 vCc
 qvQ
 wGJ
@@ -96454,11 +96415,11 @@ ktB
 ktB
 gcK
 gcK
-uqa
-gCh
-uqa
-iFn
-uqa
+gcK
+gcK
+gcK
+gcK
+gcK
 gcK
 gbL
 gcK
@@ -96711,13 +96672,13 @@ ktB
 ktB
 gcK
 gcK
-uqa
-fil
-cbr
-aFK
-gCh
-cbK
-cbK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
 gcK
 aVc
 fyf
@@ -96968,13 +96929,13 @@ ktB
 ktB
 gcK
 gcK
-iFn
-cbr
-oLa
-cbr
-auw
-cbK
-cbK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
 qOV
 cWG
 cWG
@@ -97225,13 +97186,13 @@ ktB
 ktB
 gcK
 gcK
-uqa
-cbr
-oLa
-cbr
-gDn
-cbK
-cbK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
 tBN
 mvv
 mvv
@@ -97482,12 +97443,12 @@ ktB
 ktB
 gcK
 gcK
-uqa
-pnQ
-cbr
-cbr
-auw
-cbK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
 fyf
 tBN
 mvv
@@ -97739,12 +97700,12 @@ ktB
 ktB
 gcK
 gcK
-uqa
-cbr
-cbr
-cbr
-auw
-cbK
+gcK
+gcK
+gcK
+gcK
+gcK
+gcK
 fyf
 tBN
 mvv
@@ -97997,10 +97958,10 @@ ktB
 gcK
 gcK
 uqa
-wHt
-wHt
-wHt
-wzu
+gCh
+uqa
+iFn
+uqa
 fyf
 fyf
 tBN
@@ -98768,7 +98729,7 @@ ktB
 gcK
 gcK
 uqa
-gGs
+cbr
 aby
 cbr
 gDn
@@ -99025,7 +98986,7 @@ ktB
 gcK
 gcK
 uqa
-gGs
+cbr
 cbr
 cbr
 auw
@@ -102344,8 +102305,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-aUJ
+sas
+ayd
 mwp
 mwp
 mwp
@@ -102601,8 +102562,8 @@ gcK
 gcK
 gcK
 gcK
-oKE
-hCN
+gcK
+gcK
 bfN
 bfN
 bfN
@@ -118627,7 +118588,7 @@ qpM
 nsE
 oUV
 mrq
-gnr
+fyf
 fyf
 fyf
 fyf
