@@ -6,7 +6,7 @@
  *attackby on the target. If it returns TRUE, the chain will be stopped.
  *and lastly
  *afterattack. The return value does not matter.
-*/
+ */
 /obj/item/proc/melee_attack_chain(mob/user, atom/target, params, attackchain_flags, damage_multiplier = 1)
 	if(isliving(user))
 		var/mob/living/L = user
@@ -89,9 +89,10 @@
 		to_chat(user, "<span class='warning'>You don't want to harm other living beings!</span>")
 		return
 
-	var/bigleagues = 8 //flat additive
-	var/buffout = force*0.25 
-	var/smutant = force*0.25// using damage multiplier just seems less convoluted for permanent modifiers
+	var/bigleagues = 10 //flat additive
+	var/buffout = force*0.25
+	var/smutant = force*0.25
+	var/ghoulmelee = force*0.25 //negative trait, this will cut 25% of the damage done by melee
 
 	//var/regular = force*(user.special_s/100)//SPECIAL integration
 
@@ -106,11 +107,8 @@
 	if (force >= 5 && HAS_TRAIT(user, TRAIT_SMUTANT))
 		force += smutant
 
-	if	HAS_TRAIT(user, TRAIT_GHOULMELEE) //negative trait
-		damage_multiplier = 0.8
-
-	if	HAS_TRAIT(user, TRAIT_FEMALE) //negative trait
-		damage_multiplier = 0.8
+	if (force >= 5 && HAS_TRAIT(user, TRAIT_GHOULMELEE)) //negative trait
+		force -= ghoulmelee
 
 	if(!force)
 		playsound(loc, 'sound/weapons/tap.ogg', get_clamped_volume(), 1, -1)
@@ -136,6 +134,9 @@
 
 	if (force >= 5 && HAS_TRAIT(user, TRAIT_SMUTANT))
 		force -= smutant
+
+	if (force >= 5 && HAS_TRAIT(user, TRAIT_GHOULMELEE))
+		force += ghoulmelee
 
 //the equivalent of the standard version of attack() but for object targets.
 /obj/item/proc/attack_obj(obj/O, mob/living/user)

@@ -276,7 +276,7 @@
 	item_state = "daemon_armor"
 
 /obj/item/clothing/suit/armor/f13/legion/vet/explorer
-	name = "legion scout armor"
+	name = "legion explorer armor"
 	desc = "Armor based on layered strips of laminated linen and leather, the technique giving it surprising resilience for low weight."
 	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
 	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
@@ -296,8 +296,8 @@
 	slowdown = 0.12
 
 /obj/item/clothing/suit/armor/f13/legion/venator
-	name = "legion explorer armor"
-	desc = "Explorer armor reinforced with metal plates and chainmail."
+	name = "legion speculator armor"
+	desc = "Speculator armor reinforced with metal plates and chainmail."
 	icon_state = "legion_venator"
 	item_state = "legion_venator"
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 10, "energy" = 20, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
@@ -330,7 +330,7 @@
 
 /obj/item/clothing/suit/armor/f13/legion/legate
 	name = "legion legate armor"
-	desc = " Made by the most skilled blacksmiths in Arizona, the bronzed steel of this rare armor offers good protection, and the scars on its metal proves it has seen use on the field."
+	desc = "Made by the most skilled blacksmiths in Arizona, the bronzed steel of this rare armor offers good protection, and the scars on its metal proves it has seen use on the field."
 	icon_state = "legion_legate"
 	item_state = "legion_legate"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
@@ -354,7 +354,7 @@
 	desc = "It's a set of standard legion armor strengthened using numerous parts taken from a suit of power armor, sacrificing speed and bullet protection for greater protection against laser-based weaponary."
 	icon_state = "legion-heavy"
 	item_state = "legion-heavy"
-	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 15, "bomb" = 45, "bio" = 65, "rad" = 40, "fire" = 70, "acid" = 25, "wound" = 40)
+	armor = list("melee" = 60, "bullet" = 65, "laser" = 55, "energy" = 15, "bomb" = 40, "bio" = 55, "rad" = 25, "fire" = 55, "acid" = 15, "wound" = 30)
 	slowdown = 1.5
 
 /obj/item/clothing/suit/armor/f13/slavelabor

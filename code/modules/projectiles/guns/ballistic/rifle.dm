@@ -227,7 +227,6 @@
 	else
 		..()
 
-
 //Mosin-Nagant							Keywords: 7.62, Bolt-action, 5 rounds internal
 /obj/item/gun/ballistic/rifle/mosin
 	name = "Mosin-Nagant m38"
