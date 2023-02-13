@@ -116,8 +116,7 @@
 		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5,
 		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever,
 		/obj/item/gun/ballistic/shotgun/automatic/combat/neostead,
-		/obj/item/gun/ballistic/automatic/shotgun/citykiller,
-		///obj/item/gun/ballistic/automatic/shotgun/citykiller, not here
+		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller,
 		/obj/item/gun/ballistic/automatic/shotgun/riot,
 		/obj/item/gun/ballistic/automatic/shotgun/pancor,
 		/obj/item/gun/ballistic/revolver/grenadelauncher,
