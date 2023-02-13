@@ -397,6 +397,8 @@
 	slowdown = 0
 	armor = list("melee" = 99, "bullet" = 95, "laser" = 95, "energy" = 95, "bomb" = 95, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 100)
 
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/debug/Initialize()
+	do_sparks(7, TRUE, src)//spawns in, lightning effect also produced, what this mean is upto you
 
 //The Owl Hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/owl
