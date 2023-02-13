@@ -187,7 +187,7 @@
 	head = /obj/item/clothing/head/centhat
 	belt = /obj/item/gun/ballistic/revolver/m29/snub
 	r_pocket = /obj/item/lighter
-	l_pocket = /obj/item/ammo_box/a357
+	l_pocket = /obj/item/ammo_box/tube/m44
 	back = /obj/item/storage/backpack/satchel/leather
 	id = /obj/item/card/id
 
@@ -359,7 +359,7 @@
 	ears = /obj/item/radio/headset/headset_cent/alt
 
 	backpack_contents = list(/obj/item/storage/box=1,\
-		/obj/item/ammo_box/a357=1,\
+		/obj/item/ammo_box/tube/m44=2,\
 		/obj/item/storage/firstaid/regular=1,\
 		/obj/item/storage/box/flashbangs=1,\
 		/obj/item/flashlight=1,\
