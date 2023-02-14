@@ -251,6 +251,11 @@ GLOBAL_LIST_INIT(kebab_positions, list(
 	"Radio Host",
 ))
 
+GLOBAL_LIST_INIT(bw_positions, list(
+	"Blackwater Settler",
+	"Blackwater Deputy",
+))
+
 GLOBAL_LIST_INIT(security_positions, list(
 	"Vault-tec Security",
 	"Officer",
