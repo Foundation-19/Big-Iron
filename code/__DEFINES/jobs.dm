@@ -132,6 +132,11 @@
 #define F13SCAB			(1<<1)
 #define F13RADIOHOST	(1<<2)
 
+#define DEP_BW 		(1<<10)
+
+#define F13BWSETTLER	(1<<1)
+#define F13BWDEPUTY		(1<<2)
+
 #define VAULT			(1<<7)
 
 #define F13OVERSEER		(1<<0)
