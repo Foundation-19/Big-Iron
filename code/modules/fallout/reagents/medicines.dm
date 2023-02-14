@@ -46,7 +46,7 @@
 	if(prob(20))
 		M.AdjustAllImmobility(-20, 0)
 		M.AdjustUnconscious(-20, 0)
-	if(!M.reagents.has_reagent(/datum/reagent/medicine) && !M.reagents.has_reagent(/datum/reagent/consumable) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found.We only check for the less powerful chems, so the least powerful one always heals.
+	if(!M.reagents.has_reagent(/datum/reagent/medicine)) && !M.reagents.has_reagent(/datum/reagent/consumable) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found.We only check for the less powerful chems, so the least powerful one always heals.
 		M.adjustBruteLoss(-4*REAGENTS_EFFECT_MULTIPLIER)
 		M.adjustFireLoss(-4*REAGENTS_EFFECT_MULTIPLIER)
 		M.AdjustStun(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
