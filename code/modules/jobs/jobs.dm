@@ -213,6 +213,8 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Vigilante",
 	"Tribal",
 	"Wastelander",
+	"Blackwater Settler",
+	"Blackwater Deputy",
 ))
 
 GLOBAL_LIST_INIT(enclave_positions, list(
@@ -249,11 +251,6 @@ GLOBAL_LIST_INIT(rustwalker_positions, list(
 GLOBAL_LIST_INIT(kebab_positions, list(
 	"Scab",
 	"Radio Host",
-))
-
-GLOBAL_LIST_INIT(bw_positions, list(
-	"Blackwater Settler",
-	"Blackwater Deputy",
 ))
 
 GLOBAL_LIST_INIT(security_positions, list(
