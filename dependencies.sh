@@ -24,7 +24,7 @@ export PYTHON_VERSION=3.7.9
 export AUXMOS_REPOSITORY=sunset-wasteland/auxmos
 
 # Auxmos git tag
-export AUXMOS_VERSION=v2.3.0
+export AUXMOS_VERSION=v2.3.1
 
 # Extools git tag
 export EXTOOLS_VERSION=v0.0.7
