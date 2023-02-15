@@ -504,7 +504,8 @@ Senior Knight
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
+		/obj/item/storage/box/bos/senior = 1
 		)
 
 /datum/outfit/loadout/ska
@@ -599,6 +600,7 @@ Knight
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival  = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/storage/box/bos = 1
 		)
 
 /datum/outfit/loadout/knighta
