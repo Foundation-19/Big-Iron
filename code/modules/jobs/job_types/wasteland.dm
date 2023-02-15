@@ -871,7 +871,7 @@ Raider
 /datum/job/wasteland/f13bwsettler
 	title = "Blackwater Settler"
 	flag = F13BWSETTLER
-	total_positions = -1
+	total_positions = 8
 	spawn_positions = -1
 	faction = FACTION_WASTELAND
 	description = "You are a settler living on the frontier. Brahmin rustlers, raider gangs, and simple starvation threaten you, despite this, you've managed to settle down on the small frontier town of Blackwater."
@@ -985,7 +985,6 @@ Raider
 
 
 /datum/job/wasteland/f13bwdeputy
-	title = "Blackwater Settler"
 	title = "Blackwater Deputy"
 	flag = F13BWDEPUTY
 	faction = FACTION_WASTELAND
