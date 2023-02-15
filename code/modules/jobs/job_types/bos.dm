@@ -628,8 +628,8 @@ Knight
 	name = "Junior Knight-Scout"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/juniorknight = 1,
-		/obj/item/gun/ballistic/automatic/delisle/commando = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/gun/ballistic/automatic/combat = 1,
+		/obj/item/ammo_box/magazine/tommygunm45/stick = 3,
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
@@ -637,9 +637,9 @@ Knight
 /datum/outfit/loadout/knightd
 	name = "Knight-Scout"
 	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/knight = 1,
-		/obj/item/gun/ballistic/automatic/delisle/commando = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/clothing/accessory/bos/juniorknight = 1,
+		/obj/item/gun/ballistic/automatic/combat = 1,
+		/obj/item/ammo_box/magazine/tommygunm45/stick = 3,
 		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
