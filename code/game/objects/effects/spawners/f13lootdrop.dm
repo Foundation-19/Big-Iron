@@ -2249,8 +2249,7 @@
 		/obj/item/book/granter/crafting_recipe/blueprint/smg10mm,
 		/obj/item/book/granter/crafting_recipe/blueprint/aep7,
 		/obj/item/book/granter/crafting_recipe/blueprint/scoutcarbine,
-		/obj/item/book/granter/crafting_recipe/blueprint/magnum_revolver,
-		/obj/item/book/granter/crafting_recipe/blueprint/sniper,
+		/obj/item/book/granter/crafting_recipe/blueprint/sniper
 	)
 
 
@@ -2277,7 +2276,6 @@
 	loot = list(
 		/obj/item/book/granter/crafting_recipe/blueprint/neostead,
 		/obj/item/book/granter/crafting_recipe/blueprint/riotshotgun,
-		/obj/item/book/granter/crafting_recipe/blueprint/rcw,
 	)
 
 /obj/effect/spawner/lootdrop/f13/blueprintVHighBallistics
