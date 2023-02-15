@@ -915,6 +915,8 @@
 	item_state = "slr"
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/m762
+	extra_damage = 35
+	extra_penetration = 0.1
 	burst_size = 1
 	fire_delay = 2
 	slowdown = 0.25

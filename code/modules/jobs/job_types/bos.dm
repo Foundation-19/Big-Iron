@@ -520,11 +520,11 @@ Senior Knight
 /datum/outfit/loadout/skb
 	name = "Senior Knight-Marksman"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/marksman = 1,
-		/obj/item/ammo_box/magazine/m556/rifle = 3,
-		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
-		/obj/item/ammo_box/magazine/m9mm = 2,
-		/obj/item/binoculars = 1
+		/obj/item/gun/ballistic/automatic/slr = 1,
+		/obj/item/ammo_box/magazine/m762 = 3,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/attachments/scope = 1
 		)
 		
 /datum/outfit/loadout/skc

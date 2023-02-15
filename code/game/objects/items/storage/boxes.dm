@@ -1463,7 +1463,7 @@ list(/obj/item/stack/sheet/metal = 20,
 	desc = "A box used by the BoS to store Blueprints."
 	
 /obj/item/storage/box/bos/PopulateContents()
-	for(var/i in 1 to 4)
+	for(var/i in 1 to 2)
 		var/randomgun = pick(
 							/obj/item/book/granter/crafting_recipe/blueprint/service,
 							/obj/item/book/granter/crafting_recipe/blueprint/trailcarbine,
@@ -1479,7 +1479,7 @@ list(/obj/item/stack/sheet/metal = 20,
 	desc = "A box used by the BoS to store Blueprints. This one seems robust."
 	
 /obj/item/storage/box/bos/PopulateContents()
-	for(var/i in 1 to 4)
+	for(var/i in 1 to 2)
 		var/randomgun = pick(
 							/obj/item/book/granter/crafting_recipe/blueprint/leveraction,
 							/obj/item/book/granter/crafting_recipe/blueprint/r91,
