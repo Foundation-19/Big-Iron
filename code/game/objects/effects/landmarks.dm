@@ -619,7 +619,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/campfollower
-	name = "Camp Duty"
+	name = "Camp Follower"
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/slave

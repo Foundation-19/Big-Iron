@@ -12,8 +12,7 @@
 /datum/supply_pack/emergency/vehicle
 	name = "Biker Gang Kit" //TUNNEL SNAKES OWN THIS TOWN
 	desc = "TUNNEL SNAKES OWN THIS TOWN. Contains an unbranded All Terrain Vehicle, two cans of spraypaint, and a complete gang outfit -- consists of black gloves, a menacing skull bandanna, and a SWEET leather overcoat!"
-	cost = 2500
-	contraband = TRUE
+	cost = 1000000
 	contains = list(/obj/vehicle/ridden/atv,
 					/obj/item/key,
 					/obj/item/toy/crayon/spraycan,
@@ -25,9 +24,10 @@
 	crate_name = "Biker Kit"
 	crate_type = /obj/structure/closet/crate/large
 
+/* Bio outbreaks are disabled so - this is pointless for F13.
 /datum/supply_pack/emergency/bio
 	name = "Biological Emergency Crate"
-	desc = "This crate holds 2 full bio suits which will protect you from viruses, along with a bio bag and two spaceacillin syringes."
+	desc = "This crate holds 2 full bio suits which will protect you from viruses, along with a bio bag and two penicillin syringes."
 	cost = 2000
 	contains = list(/obj/item/clothing/head/bio_hood,
 					/obj/item/clothing/head/bio_hood,
@@ -39,7 +39,9 @@
 					/obj/item/clothing/gloves/color/latex/nitrile,
 					/obj/item/clothing/gloves/color/latex/nitrile)
 	crate_name = "bio suit crate"
+*/
 
+/* //atmospherics ain't a thing, here. why was it even so expensive
 /datum/supply_pack/emergency/equipment
 	name = "Emergency Bot/Internals Crate"
 	desc = "Explosions got you down? These supplies are guaranteed to patch up holes, in stations and people alike! Comes with two floorbots, two medbots, five oxygen masks and five small oxygen tanks."
@@ -60,6 +62,7 @@
 					/obj/item/clothing/mask/gas)
 	crate_name = "emergency crate"
 	crate_type = /obj/structure/closet/crate/internals
+*/
 
 /datum/supply_pack/emergency/medicalemergency
 	name = "Emergency Medical Supplies" //Almost all of this can be ordered seperatly for a much cheaper price, but the HUD increases it.
@@ -106,28 +109,18 @@
 
 /datum/supply_pack/emergency/radiatione_emergency
 	name = "Emergency Radiation Protection Crate"
-	desc = "Survive the Nuclear Apocalypse and Supermatter Engine alike with two sets of Radiation suits. Each set contains a helmet, suit, and Geiger counter. We'll even throw in a few pill bottles that are able to handles radiation and the affects of the poisoning."
-	cost = 2500
+	desc = "Survive the harshest of nuclear wastelands! Each set contains a helmet, suit, and Geiger counter. Rad-X and Radaway not included."
+	cost = 2000
 	contains = list(/obj/item/clothing/head/radiation,
 					/obj/item/clothing/head/radiation,
 					/obj/item/clothing/suit/radiation,
 					/obj/item/clothing/suit/radiation,
 					/obj/item/geiger_counter,
-					/obj/item/geiger_counter,
-					/obj/item/storage/pill_bottle/mutarad,
-					/obj/item/storage/firstaid/radbgone)
+					/obj/item/geiger_counter)
 	crate_name = "radiation protection crate"
 	crate_type = /obj/structure/closet/crate/radiation
 
-/datum/supply_pack/emergency/rcds
-	name = "Emergency RCDs"
-	desc = "Bombs going off on station? SME blown and now you need to fix the hole it left behind? Well this crate has a pare of RCDs to be able to easily fix up any problem you may have!"
-	cost = 1500
-	contains = list(/obj/item/construction/rcd,
-					/obj/item/construction/rcd)
-	crate_name = "emergency rcds"
-	crate_type = /obj/structure/closet/crate/internals
-
+/* //we need none of these.
 /datum/supply_pack/emergency/bomb
 	name = "Explosive Emergency Crate"
 	desc = "Science gone bonkers? Beeping behind the airlock? Buy now and become the hero the station des... I mean needs! Time not included, but a full bomb suit and hood, as well as a mask and defusal kit are! Non-Nuclear ordnances only."
@@ -184,27 +177,21 @@
 					/obj/item/tank/internals/air)
 	crate_name = "internals crate"
 	crate_type = /obj/structure/closet/crate/internals
-
-/datum/supply_pack/emergency/metalfoam
-	name = "Metal Foam Grenade Crate"
-	desc = "Seal up those pesky hull breaches with 14 Metal Foam Grenades."
-	cost = 1500
-	contains = list(/obj/item/storage/box/metalfoam,
-					/obj/item/storage/box/metalfoam)
-	crate_name = "metal foam grenade crate"
+*/
 
 /datum/supply_pack/emergency/mre
 	name = "MRE Packs (Emergency Rations)"
-	desc = "The lights are out. Oxygen's running low. You've run out of food except space weevils. Don't let this be you! Order our NT branded MRE kits today! This pack contains 5 MRE packs with a randomized menu and an oxygen tank."
+	desc = "Bacteria, radioactive contamination, bugs and worms, who wants to deal with that? Order our Vaultec branded MRE kits today! This pack contains 5 MRE packs with a randomized menu."
 	cost = 2000
-	contains = list(/obj/item/storage/box/mre/menu1/safe,
+	contains = list(/obj/item/reagent_containers/food/snacks/f13/mre,
 					/obj/item/storage/box/mre/menu1/safe,
+					/obj/item/reagent_containers/food/snacks/f13/mre,
 					/obj/item/storage/box/mre/menu2/safe,
-					/obj/item/storage/box/mre/menu2/safe,
-					/obj/item/storage/box/mre/menu3,
+					/obj/item/reagent_containers/food/snacks/f13/galette,
 					/obj/item/storage/box/mre/menu4/safe)
 	crate_name = "MRE crate (emergency rations)"
 
+/*
 /datum/supply_pack/emergency/plasma_spacesuit
 	name = "Plasmaman Space Envirosuits"
 	desc = "Contains two space-worthy envirosuits for Plasmamen. Order now and we'll throw in two free helmets! Requires EVA access to open."
@@ -244,7 +231,7 @@
 					/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass)
 	crate_name = "radiation protection crate"
 	crate_type = /obj/structure/closet/crate/radiation
-/*
+
 /datum/supply_pack/emergency/spacesuit
 	name = "Space Suit Crate"
 	desc = "Contains two aging suits from Space-Goodwill. Requires EVA access to open."
@@ -286,7 +273,7 @@
 */
 /datum/supply_pack/emergency/specialops
 	name = "Special Ops Supplies"
-	desc = "(*!&@#NEED SOMETHING TO DEAL WITH THE GREYTIDE, HUH OPERATIVE? WELL, THIS LITTLE ORDER CAN HELP YOU OUT IN A PINCH. CONTAINS A BOX OF FIVE EMP GRENADES, THREE SMOKEBOMBS, AN INCENDIARY GRENADE, AND A \"SLEEPY PEN\" FULL OF NICE TOXINS!#@*$"
+	desc = "(*!&@#NCL4VE DEEP-COVER-OPERATIVE SUPPLIES. CONTAINS A BOX OF FIVE EMP GRENADES, THREE SMOKEBOMBS, AN INCENDIARY GRENADE, AND A \"SLEEPY PEN\" FULL OF NICE TOXI#@*$"
 	hidden = TRUE
 	cost = 2200
 	contains = list(/obj/item/storage/box/emps,
@@ -302,7 +289,7 @@
 	name = "Weed Control Crate"
 	desc = "Keep those invasive species OUT. Contains a scythe, gasmask, two sprays of Plant-B-Gone, and two anti-weed chemical grenades. Warranty void if used on ambrosia. Requires Hydroponics access to open."
 	cost = 1800
-	access = ACCESS_HYDROPONICS
+	access = list(ACCESS_HYDROPONICS, ACCESS_BOS)
 	contains = list(/obj/item/scythe,
 					/obj/item/clothing/mask/gas,
 					/obj/item/grenade/chem_grenade/antiweed,
