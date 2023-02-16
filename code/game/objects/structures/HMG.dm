@@ -5,7 +5,7 @@
 //Class
 /obj/structure/HMG
 	name = "M1919 Browning"
-	desc = "A heavy machine gun capable of rapidly firing 7.62mm rounds. Alt-Click to unload; wrench to repair; screwdriver to unanchor."
+	desc = "A heavy machine gun capable of rapidly firing 7.62mm rounds. Alt-Click to unload; screwdriver to repair; wrench to unanchor."
 	icon = 'icons/obj/HMG.dmi'
 	icon_state = "m2"
 	can_buckle = TRUE
@@ -72,7 +72,7 @@
 					update_icon()
 			return
 	//Repair
-	else if(istype(I, /obj/item/wrench))
+	else if(istype(I, /obj/item/screwdriver))
 		var/repair = max_integrity - obj_integrity
 		if(!repair)
 			to_chat(user, "<span class='notice'>\The [src] is at full health.</span>")
@@ -83,7 +83,7 @@
 			obj_integrity += repair
 		return
 	//Anchoring
-	else if(istype(I, /obj/item/screwdriver))
+	else if(istype(I, /obj/item/wrench))
 		if(!anchored)
 			to_chat(user, "<span class='notice'>You begin anchoring \the [src] to the ground.</span>")
 			if(do_after(user, 30, target = src))
