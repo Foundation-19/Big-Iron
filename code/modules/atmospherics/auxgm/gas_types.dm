@@ -200,7 +200,7 @@
 
 /datum/gas/pluoxium/generate_TLV()
 	return new/datum/tlv(-1, -1, 5, 6)
-
+/*
 /datum/gas/miasma
 	id = GAS_MIASMA
 	specific_heat = 20
@@ -210,7 +210,7 @@
 	name = "Miasma"
 	gas_overlay = "miasma"
 	moles_visible = MOLES_GAS_VISIBLE * 60
-
+*/
 /datum/gas/methane
 	id = GAS_METHANE
 	specific_heat = 30

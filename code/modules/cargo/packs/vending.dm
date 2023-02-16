@@ -49,9 +49,8 @@
 
 /datum/supply_pack/vending/dinner
 	name = "Engineering Supply Crate"
-	desc = "Packs of tools waiting to be used for repairing. Contains a tool and engineering vending machine refill. Requires CE access."
+	desc = "Packs of tools waiting to be used for repairing. Contains a tool and engineering vending machine refill."
 	cost = 5500 //Powerfull
-	access = ACCESS_CE
 	contains = list(/obj/item/vending_refill/tool,
 					/obj/item/vending_refill/engivend)
 	crate_name = "engineering supply crate"
@@ -85,9 +84,8 @@
 
 /datum/supply_pack/vending/security
 	name = "SecTech Supply Crate"
-	desc = "Officer Paul bought all the donuts? Then refill the security vendor with ths crate. Requires Security Access to open."
+	desc = "Deputy Paul bought all the donuts? Then refill the security vendor with ths crate."
 	cost = 1500
-	access = ACCESS_SECURITY
 	contains = list(/obj/machinery/vending/security)
 	crate_name = "SecTech supply crate"
 	crate_type = /obj/structure/closet/crate/secure/gear
