@@ -172,7 +172,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
-	
+
 	loadout_options = list(
 		/datum/outfit/loadout/palacent,		// M1919, Goliath, 10mm pistol
 		/datum/outfit/loadout/rangerhunter,	// Hunting revolver, Sniper, Spatha
@@ -298,7 +298,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/storage/survivalkit/medical/legion
 	l_pocket = /obj/item/flashlight/lantern
-	
+
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/storage/bag/money/small/legofficers = 1,
@@ -360,16 +360,16 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	spawn_positions = 1
 	description = "A experienced officer, often commanding the camp. Give orders, lead patrols."
 	supervisors = "the Veteran Decanus and the Centurion"
-	
+
 	loadout_options = list(	//ALL: Gladius, Smokebomb
 		/datum/outfit/loadout/decprimfront,	// Lever action, .44 revolver, Legion lance, Throwing knives
 		/datum/outfit/loadout/decprimrear,	// Legion shield, Ballistic fist
 		/datum/outfit/loadout/decprimboom, // Grenade rifle, .44 revolver, Frag grenades, Coffepot bomb
 		/datum/outfit/loadout/decprimwar // Spatha, .44 revolver, Bolas
 		)
-		
+
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
-	
+
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1)
 
@@ -409,7 +409,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/binoculars = 1,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 1
 		)
-		
+
 /datum/outfit/loadout/decprimfront
 	name = "Aspiring Prime Decanus"
 	suit_store = /obj/item/twohanded/spear/lance
@@ -441,7 +441,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/grenade/f13/frag = 2,
 		/obj/item/grenade/homemade/coffeepotbomb = 1
 		)
-		
+
 /datum/outfit/loadout/decprimwar
 	name = "Warmonger Prime Decanus"
 	suit_store = /obj/item/melee/onehanded/machete/spatha
@@ -462,14 +462,14 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	spawn_positions = 1
 	description = "The junior officer, you must train the recruits and test them, and if a suicide charge is needed, lead them to a glorious death."
 	supervisors = "the Prime/Veteran Decanus and the Centurion"
-	
+
 	loadout_options = list(
 		/datum/outfit/loadout/recdeclegion,	// Uzi, Bumper sword, Smokebomb
 		/datum/outfit/loadout/recdectribal	// SKS, Throwing spears, Reinforced machete, Bottlecap mine
 		)
-	
+
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
-	
+
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1)
 
@@ -506,7 +506,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/storage/bag/money/small/legofficers = 1,
 		/obj/item/warpaint_bowl = 1
 		)
-		
+
 /datum/outfit/loadout/recdeclegion
 	name = "Frontier Decanus"
 	suit_store = /obj/item/twohanded/fireaxe/bmprsword
@@ -545,9 +545,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	description = "You are a Veteran of proven bravery. When not fighting, relay orders from the commander and act as a bodyguard."
 	supervisors = "the Veteran Decanus and Centurion"
 	exp_requirements = 720
-	
+
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
-	
+
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION2, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION2, ACCESS_LEGION_COMMAND)
 
@@ -631,16 +631,11 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	total_positions = 3
 	spawn_positions = 3
-	description = "Scout the area, secure key points, ignore orders and wordlessly die some place. A good explorer helps his unit by taking initiative and helping the commander without needing micro-managment. When moving slowly they are hard for enemies to hear."
-	supervisors = "the Decanus and Centurion must be obeyed. You are equivalent to a Prime, but you are a specialist"
+
+	description = "You are a scout; in charge of gathering intel, keeping your superiors well informed, and occasionally ambushing the enemy if the opportunity presents itself. Take initiative and help paint a picture of the situation for your commander."
+	supervisors = "the decanii"
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
-
-	loadout_options = list(	// ALL: .45 Revolver, Reinforced Machete
-		/datum/outfit/loadout/expscout,	// Commando Carbine, Smokebomb, C4
-		/datum/outfit/loadout/expsniper,	// Hunting Rifle, Smokebomb, Bottlecap mine
-		/datum/outfit/loadout/exphunter,	// Crossbow (improved version), C4, Bottlecap mine, Smokebomb, bow autodraw, explosives, trapper
-		)
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -666,57 +661,19 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	id = /obj/item/card/id/dogtag/legion/prime
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/explorer
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	belt = /obj/item/storage/backpack/spearquiver
 	neck = /obj/item/storage/belt/holster
+	suit_store = /obj/item/gun/ballistic/rifle/hunting
 	r_pocket = /obj/item/flashlight
 	l_pocket = /obj/item/binoculars
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/revolver45 = 1,
-		/obj/item/ammo_box/c45rev = 1,
-		/obj/item/reagent_containers/pill/patch/healingpowder = 1,
 		/obj/item/storage/bag/money/small/legenlisted = 1,
-		/obj/item/melee/onehanded/machete/forgedmachete = 1,
+		/obj/item/attachments/scope = 1,
+		/obj/item/melee/onehanded/machete = 1,
 		/obj/item/restraints/handcuffs = 1,
-		/obj/item/restraints/legcuffs/bola/tactical = 1,
-		/obj/item/storage/survivalkit/medical/legion = 1
+		/obj/item/ammo_box/a308 = 2,
 		)
-		
-/datum/outfit/loadout/expscout
-	name = "Scout"
-	suit_store = /obj/item/gun/ballistic/automatic/delisle/commando
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45exp = 3,
-		/obj/item/gun/ballistic/automatic/smg/mini_uzi = 1,
-		/obj/item/ammo_box/magazine/uzim9mm = 2,
-		/obj/item/attachments/scope = 1,
-		/obj/item/grenade/smokebomb = 1,
-		/obj/item/grenade/plastic/c4 = 1
-		)
-		
-/datum/outfit/loadout/expsniper
-	name = "Sniper"
-	suit_store = /obj/item/gun/ballistic/rifle/hunting
-	backpack_contents = list(
-		/obj/item/ammo_box/a308 = 3,
-		/obj/item/attachments/scope = 1,
-		/obj/item/grenade/smokebomb = 1,
-		/obj/item/bottlecap_mine = 1
-		)
-		
-/datum/outfit/loadout/exphunter
-	name = "Hunter"
-	suit_store = /obj/item/gun/ballistic/bow/crossbow
-	backpack_contents = list(
-		/obj/item/storage/belt/tribe_quiver = 1,
-		/obj/item/ammo_casing/caseless/arrow/broadhead = 5,
-		/obj/item/ammo_casing/caseless/arrow/serrated = 5,
-		/obj/item/bottlecap_mine = 1,
-		/obj/item/grenade/smokebomb = 1,
-		/obj/item/grenade/plastic/c4 = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
-		/obj/item/book/granter/trait/explosives = 1,
-		/obj/item/book/granter/trait/bowman = 1
-		)
-
 
 // ----------------- FRUMENTARIUS ---------------------
 
@@ -730,9 +687,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	total_positions = 1
 	spawn_positions = 1
 	exp_requirements = 600
-	
+
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13frumentarius
-	
+
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 
@@ -888,7 +845,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	spawn_positions = 4
 	description = "A front line soldier who has shown ability to obey and fought in some battles. The Legions muscle, the young men who will build the future with their own blood and sacrifice, for Caesar."
 	supervisors = "the Decani and Centurion"
-	
+
 	loadout_options = list(	//ALL: Forged Machete
 		/datum/outfit/loadout/primelancer,	// .357 revolver, Buckler, Bola
 		/datum/outfit/loadout/primerifle,	// Cowboy repeater, Firebomb
@@ -896,7 +853,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/datum/outfit/loadout/primepila,		// Legion Lance, Extra Medicine
 		/datum/outfit/loadout/primecrossbow		// Legion crossbow, bow autodraw, Extra Medicine
 		)
-	
+
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
 
 	matchmaking_allowed = list(
@@ -974,7 +931,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		/obj/item/book/granter/trait/bowman = 1
 		)
-		
+
 // ----------------- RECRUIT --------------------- //
 
 /datum/job/CaesarsLegion/Legionnaire/f13recleg
@@ -1008,6 +965,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
 	name = "Recruit Legionnaire"
@@ -1024,7 +982,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/storage/bag/money/small/legenlisted = 1,
 		/obj/item/reagent_containers/pill/patch/healingpowder = 1,
 		)
-		
+
 /datum/outfit/loadout/recruittribal
 	name = "Tribal Recruit"
 	suit_store = /obj/item/twohanded/sledgehammer/simple
@@ -1035,7 +993,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/reagent_containers/pill/patch/healingpowder = 3,
 		/obj/item/warpaint_bowl = 1
 		)
-		
+
 /datum/outfit/loadout/recruitbowman
 	name = "Recruit Bowman"
 	suit_store = /obj/item/gun/ballistic/bow/sturdy
@@ -1058,29 +1016,29 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/reagent_containers/pill/patch/healpoultice=1,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 1
 		)
-		
+
 //......................//////////////////////////////////................................................
 						//								//
 						// 			SUPPORT ROLES		//
 						//								//
 						//////////////////////////////////
 
-// ----------------- CAMP DUTY --------------------- //
+// ----------------- CAMP FOLLOWER --------------------- //
 
-/datum/job/CaesarsLegion/Legionnaire/f13campduty
-	title = "Camp Duty"
-	flag = F13CAMPDUTY
-	display_order = JOB_DISPLAY_ORDER_CAMPDUTY
-	total_positions = 3
-	spawn_positions = 3
-	description = "A legionnaire assigned to camp duty ranges in purposes. Duties may vary from cleaning up, watching the slaves or helping the Forgemaster in the Forge."
+/datum/job/CaesarsLegion/f13campfollower
+	title = "Camp Follower"
+	flag = F13CAMPFOLLOWER
+	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
+	total_positions = 4
+	spawn_positions = 4
+	description = "A Camp Follower ranges in purposes. A Camp Follower is a legionnaire who got assigned to keeping the camp in order. Duties may vary from medical specialities, weapon crafting or other skilled-labor tasks."
 	supervisors = "Officers first, then warriors."
 
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campduty
+	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13campduty
-	name = "Camp Duty"
-	id = /obj/item/card/id/dogtag/legcampduty
+/datum/outfit/job/CaesarsLegion/f13campfollower
+	name = "Camp Follower"
+	id = /obj/item/card/id/dogtag/legfollower
 	mask = /obj/item/clothing/mask/bandana/legion/dark
 	uniform = /obj/item/clothing/under/f13/legskirt
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -1094,7 +1052,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/mop = 1
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13campduty/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
 		return
@@ -1150,7 +1108,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/loadout/slaveservant
 	name = "Servant"
 	head = /obj/item/clothing/head/f13/servant
-	uniform	= /obj/item/clothing/under/f13/slavefemale
+	uniform	= /obj/item/clothing/under/f13/campfollowermale
 	gloves = /obj/item/clothing/gloves/f13/crudemedical
 	shoes =	/obj/item/clothing/shoes/roman
 	r_pocket = /obj/item/flashlight/lantern

@@ -680,7 +680,7 @@
 		return list("success" = FALSE, "message" = "Hyper-nob formation isn't removing the right amount of heat! Should be 23,000,000,000, is instead [G.thermal_energy()]")
 	return ..()
 
-
+/*
 /datum/gas_reaction/miaster	//dry heat sterilization: clears out pathogens in the air
 	priority = -10 //after all the heating from fires etc. is done
 	name = "Dry Heat Sterilization"
@@ -722,7 +722,7 @@
 	if(result != NO_REACTION)
 		return list("success" = FALSE, "message" = "Miasma sterilization not stopping due to water vapor correctly!")
 	return ..()
-
+*/
 /datum/gas_reaction/nitric_oxide
 	priority = -5
 	name = "Nitric oxide decomposition"
