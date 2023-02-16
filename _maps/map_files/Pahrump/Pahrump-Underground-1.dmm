@@ -4109,14 +4109,15 @@
 /turf/closed/wall/f13/wood,
 /area/f13/building)
 "daD" = (
-/obj/structure/fluff/railing{
-	dir = 10
-	},
 /obj/structure/destructible/clockwork/wall_gear{
 	pixel_y = 32
 	},
 /obj/machinery/light/floor{
 	pixel_y = 32
+	},
+/obj/structure/railing{
+	dir = 10;
+	layer = 4.1
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
@@ -5929,12 +5930,12 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "etm" = (
-/obj/structure/fluff/railing,
 /obj/structure/table_frame,
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "etr" = (
@@ -7079,11 +7080,12 @@
 	},
 /area/f13/clinic)
 "fnq" = (
-/obj/structure/fluff/railing{
-	dir = 5
-	},
 /obj/machinery/light/small{
 	dir = 8
+	},
+/obj/structure/railing{
+	color = null;
+	dir = 5
 	},
 /turf/open/floor/wood/f13/stage_t{
 	icon_state = "housewood_stage_top_right"
@@ -12533,11 +12535,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "jEu" = (
-/obj/structure/fluff/railing{
-	dir = 9
-	},
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/structure/railing{
+	color = null;
+	dir = 9
 	},
 /turf/open/floor/wood/f13/stage_t{
 	icon_state = "housewood_stage_top_left"
@@ -21578,8 +21581,7 @@
 /obj/structure/mirror{
 	pixel_y = 32
 	},
-/obj/structure/sink{
-	dir = 1;
+/obj/structure/sink/greyscale{
 	pixel_y = 15
 	},
 /turf/open/floor/f13{
@@ -21823,7 +21825,8 @@
 	},
 /area/f13/brotherhood/operations)
 "rJc" = (
-/obj/structure/fluff/railing{
+/obj/structure/railing{
+	color = null;
 	dir = 5
 	},
 /turf/open/floor/wood/f13/stage_t{
@@ -21972,10 +21975,10 @@
 	},
 /area/f13/enclave)
 "rNh" = (
-/obj/structure/fluff/railing{
+/obj/structure/table/wood/fancy/monochrome,
+/obj/structure/railing{
 	dir = 1
 	},
-/obj/structure/table/wood/fancy/monochrome,
 /turf/open/floor/wood/f13/stage_t,
 /area/f13/brotherhood)
 "rNr" = (
@@ -22048,7 +22051,6 @@
 	},
 /area/f13/tcoms)
 "rQp" = (
-/obj/structure/fluff/railing,
 /obj/structure/table_frame,
 /obj/item/shard{
 	icon_state = "medium";
@@ -22058,6 +22060,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "rQO" = (
@@ -23184,8 +23187,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "sQa" = (
-/obj/structure/fluff/railing{
-	dir = 9
+/obj/structure/railing{
+	dir = 9;
+	layer = 4.1
 	},
 /turf/open/floor/wood/f13/stage_t{
 	icon_state = "housewood_stage_top_left"
@@ -26306,15 +26310,6 @@
 	sunlight_state = 1
 	},
 /area/f13/brotherhood)
-"vAk" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Fargo Outpost";
-	req_access_txt = "265"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/red{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/brotherhood/rnd)
 "vAv" = (
 /obj/structure/plasticflaps,
 /obj/effect/decal/cleanable/dirt{
@@ -27119,8 +27114,9 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "wej" = (
-/obj/structure/fluff/railing{
-	dir = 6
+/obj/structure/railing{
+	dir = 6;
+	layer = 4.1
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
@@ -27749,8 +27745,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
 "wGn" = (
-/obj/structure/fluff/railing{
-	dir = 10
+/obj/structure/railing{
+	dir = 10;
+	layer = 4.1
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
@@ -27783,14 +27780,15 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "wHH" = (
-/obj/structure/fluff/railing{
-	dir = 6
-	},
 /obj/structure/destructible/clockwork/wall_gear{
 	pixel_y = 32
 	},
 /obj/machinery/light/floor{
 	pixel_y = 32
+	},
+/obj/structure/railing{
+	dir = 6;
+	layer = 4.1
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
@@ -29417,7 +29415,7 @@
 /area/f13/tunnel)
 "yaK" = (
 /obj/structure/table/glass,
-/obj/structure/fluff/railing,
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "yaU" = (
@@ -76621,8 +76619,8 @@ ddv
 ddv
 ddv
 ddv
-mNE
-vfj
+ddv
+ddv
 ddv
 ddv
 ddv
@@ -91124,7 +91122,7 @@ xNs
 xNs
 xNs
 xNs
-vAk
+xNs
 xNs
 xNs
 xNs
