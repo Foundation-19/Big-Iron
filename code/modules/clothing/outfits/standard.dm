@@ -425,8 +425,8 @@
 		/obj/item/gun/energy/pulse/pistol=1,\
 		/obj/item/holosign_creator/security=1,\
 		/obj/item/storage/firstaid/tactical/nukeop=1,\
-		/obj/item/ammo_box/magazine/m2mm=2,\
-		/obj/item/gun/ballistic/automatic/m72=1,\
+		/obj/item/ammo_box/magazine/m473=2,\
+		/obj/item/gun/ballistic/automatic/g11=1,\
 		)
 
 /datum/outfit/debug/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
