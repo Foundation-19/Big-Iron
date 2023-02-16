@@ -413,7 +413,8 @@
 	back = /obj/item/storage/backpack/holding
 	box = /obj/item/storage/box/debugtools
 	neck = /obj/item/storage/belt/holster/ranger4570bayonet
-	internals_slot = SLOT_R_STORE
+	l_pocket = /obj/item/ammo_box/tube/m44
+	r_pocket = /obj/item/gun/ballistic/revolver/m29/snub
 	backpack_contents = list(
 		/obj/item/melee/transforming/energy/axe=1,\
 		/obj/item/storage/part_replacer/bluespace/tier4=1,\
