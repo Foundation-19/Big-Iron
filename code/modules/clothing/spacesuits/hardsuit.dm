@@ -377,7 +377,8 @@
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug/Initialize()
 	. = ..()
 	do_sparks(7, FALSE, src)//spawns in, lightning effect also produced, what this mean is upto you
-	soundloop.volume = 0
+	playsound(src, "sparks", 100, 1)
+	soundloop.volume = 0.5
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite
 	name = "elite syndicate hardsuit"
