@@ -371,7 +371,7 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug
-	name = "administrator helmet"
+	name = "chronicler helmet"
 	armor = list("melee" = 99, "bullet" = 95, "laser" = 95, "energy" = 95, "bomb" = 95, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 100)
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug/Initialize()
@@ -394,7 +394,7 @@
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_SNEK_TAURIC|STYLE_PAW_TAURIC
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite/debug
-	name = "administrator hardsuit"
+	name = "chronicler hardsuit"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug
 	slowdown = 0
 	armor = list("melee" = 99, "bullet" = 95, "laser" = 95, "energy" = 95, "bomb" = 95, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 100)
