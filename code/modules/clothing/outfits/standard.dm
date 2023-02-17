@@ -454,7 +454,7 @@
 	var/obj/item/card/id/W = H.wear_id
 	W.icon_state = "centcom"
 	W.access = get_all_accesses()//Obviously
-	W.assignment = "Administrator"
+	W.assignment = "Chronicler"
 	W.registered_name = H.real_name
 	W.update_label(W.registered_name, W.assignment)
 
