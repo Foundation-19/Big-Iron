@@ -13,7 +13,7 @@
 	var/datum/track/selection = null
 	var/obj/item/lock_part/lock = null //ATOM EDIT START 
 	var/open_tray = FALSE //usted to determine if the jukebox is open or not, needs a key
-	var/list/record_disks = list() //list of inserted disk inthe jukebox
+	var/list/obj/item/record_disk/record_disks = list() //list of inserted disk inthe jukebox
 	var/obj/item/record_disk/selected_disk = null //the disk chosen to view or ejection
 
 /obj/machinery/jukebox/constructed //ATOM EDIT start- a sub jukebox with access for everyone
@@ -83,6 +83,9 @@
 				to_chat(usr, "The Disk Tray is not open!")
 				return
 			var/obj/item/record_disk/I = O
+			if(!I.R.song_associated_id)
+				to_chat(user, span_warning("This record is empty!"))
+				return
 			for(var/datum/track/RT in SSjukeboxes.songs)
 				if(I.R.song_associated_id == SSjukeboxes.songs[RT].song_associated_id)
 					to_chat(user, span_warning("this track is already added to the jukebox!"))
@@ -119,29 +122,7 @@
 		to_chat(user,"<span class='warning'>Error: No music tracks have been authorized for your station. Petition Central Command to resolve this issue.</span>")
 		playsound(src, 'sound/misc/compiler-failure.ogg', 25, TRUE)
 		return UI_CLOSE
-	var/list/dat = list()
-	dat +="<div class='statusDisplay' style='text-align:center'>"
-	dat += "<b><A href='?src=[REF(src)];action=toggle'>[!active ? "BREAK IT DOWN" : "SHUT IT DOWN"]<b></A><br>"
-	dat += "</div><br>"
-	dat += "<A href='?src=[REF(src)];action=select'> Select Track</A><br>"
-	dat += "<A href='?src=[REF(src)];action=loaded_tracks'> manage loaded tracks</A><br>" // ATOM EDIT- used for track management
-	dat += "<A href='?src=[REF(src)];action=eject_disk'> eject the currently selected disk</A><br>" //ATOM EDIT- ejects the chosen disk
-	if(istype(selection))
-		dat += "Track Selected: [selection.song_name]<br>"
-		dat += "Track Length: [DisplayTimeText(selection.song_length)]<br><br>"
-	else
-		dat += "Track Selected: None!<br><br>"
-	if(record_disks.len) //ATOM EDIT -start shows information of a the current music library
-		dat += "number of loaded tracks: [record_disks.len]<br>"
-	if(istype(selected_disk))
-		dat += "disk Selected: [selected_disk]<br>"
-		dat += "with song: [selected_disk.R.song_name]<br>"
-		dat += "Track duration: [DisplayTimeText(selected_disk.R.song_length)])<br>" //custom tracks should come out as number but just in case
-	else
-		dat += "Disk Selected: None!<br><br>" //ATOM EDIT -end
-	var/datum/browser/popup = new(user, "vending", "[name]", 400, 350)
-	popup.set_content(dat.Join())
-	popup.open()
+	return ..()
 	
 /obj/machinery/jukebox/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
@@ -161,6 +142,12 @@
 	data["track_selected"] = null
 	data["track_length"] = null
 	data["track_beat"] = null
+	data["disks"] = list()
+	for(var/obj/item/record_disk/RD in record_disks)
+		var/list/tracks_data = list(
+			name = RD
+		)
+		data["disks"] += list(tracks_data)
 	data["disk_selected"] = null //ATOM EDIT- start more tracks data
 	data["disk_selected_lenght"] = null
 	data["disk_beat"] = null //ATOM EDIT -end
@@ -168,19 +155,11 @@
 		data["track_selected"] = selection.song_name
 		data["track_length"] = DisplayTimeText(selection.song_length)
 		data["track_beat"] = selection.song_beat
-	data["volume"] = volume
-	data["loaded tracks"] = list() //ATOM EDIT -start- most of these are shown if at least a disk is in the jukebox
-	var/TN = 1
-	for(var/obj/item/record_disk in record_disks[TN])
-		var/list/track_data = list(
-			name = record_disks[TN]
-		)
-		data["loaded tracks"] += list(track_data)
-		TN ++
 	if(selected_disk)
-		data["disk_selected"] = selected_disk.R.song_name
-		data["disk_selected_lengt"] = selected_disk.R.song_length
-		data["disk_beat"] = selected_disk.R.song_beat //ATOM EDIT- end
+		data["disk_selected"] = selected_disk
+		data["disk_selected_length"] = DisplayTimeText(selected_disk.R.song_length)
+		data["disk_selected_beat"] = selected_disk.R.song_beat
+	data["volume"] = volume
 	return data
 
 /obj/machinery/jukebox/ui_act(action, list/params)
@@ -215,82 +194,14 @@
 				return
 			selection = available[selected]
 			return TRUE
-		if("loaded_tracks") //ATOM EDIT -start - this one chooeses a disk to manage
-			var/list/availabletracks = list()
-			for(var/obj/item/record_disk/RD in record_disks)
-				availabletracks[RD.name] = RD
-			var/selecteddisk = params["disk"]
-			if(QDELETED(src) || !selecteddisk || !istype(availabletracks[selecteddisk], /obj/item/record_disk))
-				return
-			selected_disk = availabletracks[selecteddisk]
-			return TRUE
-		if("eject_disk") // this one ejects a currently selected disk
-			if(!selected_disk)
-				to_chat(usr, span_warning("Error: no disk selected."))
-			return TRUE
-//ATOM EDIT -end
-
-		if("set_volume")
-			var/new_volume = params["volume"]
-			if(new_volume  == "reset")
-				volume = initial(volume)
-				return TRUE
-			else if(new_volume == "min")
-				volume = 0
-				return TRUE
-			else if(new_volume == "max")
-				volume = 100
-				return TRUE
-			else if(text2num(new_volume) != null)
-				volume = text2num(new_volume)
-				return TRUE
-		
-/obj/machinery/jukebox/Topic(href, href_list)
-	if(..())
-		return
-	add_fingerprint(usr)
-	switch(href_list["action"])
-		if("toggle")
-			if (QDELETED(src))
-				return
-			if(!active)
-				if(stop > world.time)
-					to_chat(usr, "<span class='warning'>Error: The device is still resetting from the last activation, it will be ready again in [DisplayTimeText(stop-world.time)].</span>")
-					playsound(src, 'sound/misc/compiler-failure.ogg', 50, 1)
-					return
-				if(!istype(selection))
-					to_chat(usr, "<span class='warning'>Error: Severe user incompetence detected.</span>")
-					playsound(src, 'sound/misc/compiler-failure.ogg', 50, 1)
-					return
-				if(!activate_music())
-					to_chat(usr, "<span class='warning'>Error: Generic hardware failure.</span>")
-					playsound(src, 'sound/misc/compiler-failure.ogg', 50, 1)
-					return
-				updateUsrDialog()
-			else if(active)
-				stop = 0
-				updateUsrDialog()
-		if("select")
-			if(active)
-				to_chat(usr, "<span class='warning'>Error: You cannot change the song until the current one is over.</span>")
-				return
-
-			var/list/available = list()
-			for(var/datum/track/S in SSjukeboxes.songs)
-				available[S.song_name] = S
-			var/selected = input(usr, "Choose your song", "Track:") as null|anything in available
-			if(QDELETED(src) || !selected || !istype(available[selected], /datum/track))
-				return
-			selection = available[selected]
-			updateUsrDialog()
-		if("loaded_tracks") //ATOM EDIT -start- how an user chooses a disk
+		if("select_record") //ATOM EDIT -start- how an user chooses a disk
 			if(!record_disks.len)
 				to_chat(usr, "<span class='warning'>Error: no tracks on the bin!.</span>")
 				return
 			var/list/availabledisks = list()
 			for(var/obj/item/record_disk/RR in record_disks)
 				availabledisks[RR.name] = RR
-			var/selecteddisk = input(usr, "Choose a disk to eject", "disk:") as null|anything in availabledisks
+			var/selecteddisk = params["record"]
 			if(QDELETED(src) || !selecteddisk || !istype(availabledisks[selecteddisk], /obj/item/record_disk))
 				return
 			selected_disk = availabledisks[selecteddisk]
@@ -305,6 +216,20 @@
 			selected_disk = null
 			updateUsrDialog()
 //ATOM EDIT -end
+		if("set_volume")
+			var/new_volume = params["volume"]
+			if(new_volume  == "reset")
+				volume = initial(volume)
+				return TRUE
+			else if(new_volume == "min")
+				volume = 0
+				return TRUE
+			else if(new_volume == "max")
+				volume = 100
+				return TRUE
+			else if(text2num(new_volume) != null)
+				volume = text2num(new_volume)
+				return TRUE
 
 /obj/machinery/jukebox/proc/activate_music()
 	var/jukeboxslottotake = SSjukeboxes.addjukebox(src, selection, 2)
