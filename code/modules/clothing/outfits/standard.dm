@@ -441,7 +441,7 @@
 	ADD_TRAIT(H, TRAIT_NOLIMBDISABLE, src)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift/golem)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/knock)
 
 	var/obj/item/implant/mindshield/L = new 
