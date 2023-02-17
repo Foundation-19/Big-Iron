@@ -439,10 +439,14 @@
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
 	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
 	ADD_TRAIT(H, TRAIT_NOLIMBDISABLE, src)
+	ADD_TRAIT(H, TRAIT_SILENT_STEP, src)
+	ADD_TRAIT(H, TRAIT_SHOCKIMMUNE, src)
+	ADD_TRAIT(H, TRAIT_PERFECT_ATTACKER, src)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift/golem)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/knock)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/voice_of_god)
 
 	var/obj/item/implant/mindshield/L = new 
 	L.implant(H, null, 1)
