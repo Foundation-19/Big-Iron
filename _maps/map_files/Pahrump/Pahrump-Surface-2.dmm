@@ -20298,6 +20298,15 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"iqj" = (
+/obj/structure/flora/grass/wasteland{
+	icon_state = "tall_grass_4";
+	pixel_x = 4;
+	pixel_y = 13
+	},
+/obj/effect/landmark/start/f13/kebab/scab,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "iqy" = (
 /obj/machinery/light/broken{
 	dir = 1
@@ -21348,6 +21357,9 @@
 /area/f13/building)
 "iOm" = (
 /obj/structure/closet/crate/coffin,
+/obj/structure/railing{
+	dir = 8
+	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "iOr" = (
@@ -40379,6 +40391,14 @@
 	icon_state = "desertsmooth2"
 	},
 /area/f13/wasteland)
+"rlB" = (
+/obj/structure/stairs/north{
+	color = "#A47449"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/wasteland)
 "rlN" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderlefttop"
@@ -52061,13 +52081,12 @@
 /turf/open/floor/carpet,
 /area/f13/village)
 "wEn" = (
-/obj/structure/flora/grass/wasteland{
-	icon_state = "tall_grass_4";
-	pixel_x = 4;
-	pixel_y = 13
+/obj/structure/railing{
+	dir = 4
 	},
-/obj/effect/landmark/start/f13/kebab/scab,
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
 /area/f13/wasteland)
 "wEo" = (
 /obj/structure/fence/corner{
@@ -53979,6 +53998,14 @@
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/wasteland)
+"xpd" = (
+/obj/effect/spawner/lootdrop/trash,
+/obj/structure/curtain{
+	color = "#845f58";
+	pixel_x = 32
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/kebab)
 "xpf" = (
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /obj/structure/table/wood,
@@ -78246,7 +78273,7 @@ qny
 nBy
 gAZ
 aOO
-wEn
+iqj
 ogm
 lcm
 roH
@@ -80822,7 +80849,7 @@ ogm
 ogm
 bDa
 piw
-rVQ
+xpd
 vqx
 wTy
 xzd
@@ -81079,7 +81106,7 @@ dEk
 ogm
 ogm
 ogm
-ogm
+jVM
 piw
 wTy
 xzd
@@ -81593,7 +81620,7 @@ jKF
 jKF
 jKF
 jKF
-hxa
+wEn
 rHT
 wTy
 xzd
@@ -81849,8 +81876,8 @@ ogm
 cTI
 qxf
 bDa
-sXU
-hxa
+jKF
+rlB
 qLT
 wTy
 xzd
@@ -82618,7 +82645,7 @@ hUR
 fqe
 jKF
 jKF
-jKF
+sXU
 jKF
 jKF
 jKF
