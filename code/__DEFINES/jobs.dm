@@ -106,21 +106,14 @@
 #define F13INITIATE		(1<<10)
 #define F13OFFDUTYBOS	(1<<11)
 
-#define MERCHANT        (1<<6)
-
-#define F13SHOPKEEPER	(1<<0)
-#define F13APPRENTICE	(1<<1)
-#define F13MERCENARY	(1<<2)
-#define F13BARTENDER	(1<<3)
-
-#define CHURCH			(1<<7)
+#define CHURCH			(1<<6)
 
 #define F13HIGHPRIEST	(1<<1)
 #define F13SERVITOR		(1<<2)
 #define F13ACOLYTE		(1<<3)
 #define F13NEOPHYTE		(1<<4)
 
-#define DEP_KEBAB 		(1<<8)
+#define DEP_KEBAB 		(1<<7)
 
 #define F13SHOPKEEPER	(1<<0)
 #define F13APPRENTICE	(1<<1)
@@ -130,7 +123,7 @@
 #define F13CITIZEN		(1<<5)
 #define F13RADIOHOST	(1<<6)
 
-#define VAULT			(1<<9)
+#define VAULT			(1<<8)
 
 #define F13OVERSEER		(1<<0)
 #define F13COS			(1<<1)
@@ -142,7 +135,7 @@
 #define F13AI			(1<<7)
 #define F13CYBORG		(1<<8)
 
-#define WASTELAND		(1<<10)
+#define WASTELAND		(1<<9)
 
 #define F13WASTELANDER	(1<<1)
 #define F13RAIDER		(1<<2)
@@ -150,7 +143,7 @@
 #define F13DETECTIVE	(1<<4)
 #define F13TRIBAL		(1<<5)
 
-#define ENCLAVE			(1<<11)
+#define ENCLAVE			(1<<10)
 
 #define F13USCPT		(1<<0)
 #define F13USLT			(1<<1)
@@ -162,7 +155,7 @@
 #define F13USBDUTY      (1<<7)
 #define F13USAI			(1<<8)
 
-#define TRIBAL			(1<<12)
+#define TRIBAL			(1<<11)
 
 #define F13CHIEF		(1<<0)
 #define F13SHAMAN		(1<<1)
