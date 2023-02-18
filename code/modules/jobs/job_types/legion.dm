@@ -685,11 +685,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit_store = /obj/item/gun/ballistic/automatic/delisle/commando
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m45exp = 3,
-		/obj/item/gun/ballistic/automatic/smg/mini_uzi = 1,
-		/obj/item/ammo_box/magazine/uzim9mm = 2,
-		/obj/item/attachments/scope = 1,
-		/obj/item/grenade/smokebomb = 1,
-		/obj/item/grenade/plastic/c4 = 1
+		/obj/item/attachments/scope = 1
 		)
 		
 /datum/outfit/loadout/expsniper
@@ -697,9 +693,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit_store = /obj/item/gun/ballistic/rifle/hunting
 	backpack_contents = list(
 		/obj/item/ammo_box/a308 = 3,
-		/obj/item/attachments/scope = 1,
-		/obj/item/grenade/smokebomb = 1,
-		/obj/item/bottlecap_mine = 1
+		/obj/item/attachments/scope = 1
 		)
 		
 /datum/outfit/loadout/exphunter
@@ -709,11 +703,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/storage/belt/tribe_quiver = 1,
 		/obj/item/ammo_casing/caseless/arrow/broadhead = 5,
 		/obj/item/ammo_casing/caseless/arrow/serrated = 5,
-		/obj/item/bottlecap_mine = 1,
-		/obj/item/grenade/smokebomb = 1,
-		/obj/item/grenade/plastic/c4 = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
-		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/trait/bowman = 1
 		)
 
