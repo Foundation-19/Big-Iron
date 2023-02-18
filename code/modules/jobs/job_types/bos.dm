@@ -505,7 +505,7 @@ Senior Knight
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/storage/box/bos/senior = 1
+		/obj/item/storage/box/bos = 1
 		)
 
 /datum/outfit/loadout/ska
