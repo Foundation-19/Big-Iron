@@ -1465,28 +1465,8 @@ list(/obj/item/stack/sheet/metal = 20,
 /obj/item/storage/box/bos/PopulateContents()
 	for(var/i in 1 to 2)
 		var/randomgun = pick(
-							/obj/item/book/granter/crafting_recipe/blueprint/service,
 							/obj/item/book/granter/crafting_recipe/blueprint/trailcarbine,
-							/obj/item/book/granter/crafting_recipe/blueprint/smg10mm,
 							/obj/item/book/granter/crafting_recipe/blueprint/scoutcarbine,
-							/obj/item/book/granter/crafting_recipe/blueprint/sniper,
 							/obj/item/book/granter/crafting_recipe/blueprint/marksman,
 							)
 		new randomgun(src)
-
-/obj/item/storage/box/bos/senior
-	name = "Senior Knight Blueprints"
-	desc = "A box used by the BoS to store Blueprints. This one seems robust."
-	
-/obj/item/storage/box/bos/PopulateContents()
-	for(var/i in 1 to 2)
-		var/randomgun = pick(
-							/obj/item/book/granter/crafting_recipe/blueprint/leveraction,
-							/obj/item/book/granter/crafting_recipe/blueprint/r91,
-							/obj/item/book/granter/crafting_recipe/blueprint/r84,
-							/obj/item/book/granter/crafting_recipe/blueprint/deagle,
-							/obj/item/book/granter/crafting_recipe/blueprint/combatrifle,
-							/obj/item/book/granter/crafting_recipe/blueprint/plasmapistol,
-							/obj/item/book/granter/crafting_recipe/blueprint/brushgun,
-							)
-		new randomgun(src)	
