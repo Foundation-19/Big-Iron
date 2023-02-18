@@ -87,7 +87,7 @@
 				to_chat(user, span_warning("This record is empty!"))
 				return
 			for(var/datum/track/RT in SSjukeboxes.songs)
-				if(I.R.song_associated_id == SSjukeboxes.songs[RT].song_associated_id)
+				if(I.R.song_associated_id == RT.song_associated_id)
 					to_chat(user, span_warning("this track is already added to the jukebox!"))
 					return
 			record_disks += I
@@ -98,10 +98,14 @@
 			return//ATOM EDIT -end
 	return ..()
 /obj/machinery/jukebox/proc/eject_record(obj/item/record_disk/M) //ATOM EDIT -start- ejects a record as defined and removes it's song from the list
+	if(!M)
+		visible_message("no disk to eject")
+		return
 	playsound(src, 'sound/effects/disk_tray.ogg', 100, 0)
 	src.visible_message("<span class ='notice'> ejected the [selected_disk] from the [src]!</span>")
 	M.forceMove(get_turf(src))
 	SSjukeboxes.remove_song(M.R)
+	record_disks -= M
 	selected_disk = null
 
 /obj/machinery/jukebox/update_icon_state()
@@ -145,7 +149,7 @@
 	data["disks"] = list()
 	for(var/obj/item/record_disk/RD in record_disks)
 		var/list/tracks_data = list(
-			name = RD
+			name = RD.name
 		)
 		data["disks"] += list(tracks_data)
 	data["disk_selected"] = null //ATOM EDIT- start more tracks data
@@ -198,11 +202,11 @@
 			if(!record_disks.len)
 				to_chat(usr, "<span class='warning'>Error: no tracks on the bin!.</span>")
 				return
-			var/list/availabledisks = list()
+			var/list/obj/item/record_disk/availabledisks = list()
 			for(var/obj/item/record_disk/RR in record_disks)
 				availabledisks[RR.name] = RR
 			var/selecteddisk = params["record"]
-			if(QDELETED(src) || !selecteddisk || !istype(availabledisks[selecteddisk], /obj/item/record_disk))
+			if(QDELETED(src) || !selecteddisk)
 				return
 			selected_disk = availabledisks[selecteddisk]
 			updateUsrDialog()
@@ -212,9 +216,11 @@
 				return
 			if(!selected_disk)
 				to_chat(usr,"<span class='warning'>Error: no disk chosen.</span>" )
+				return
+			if(selection == selected_disk.R)
+				selection = null
 			eject_record(selected_disk)
-			selected_disk = null
-			updateUsrDialog()
+			return TRUE
 //ATOM EDIT -end
 		if("set_volume")
 			var/new_volume = params["volume"]
@@ -232,6 +238,9 @@
 				return TRUE
 
 /obj/machinery/jukebox/proc/activate_music()
+	if(!selection)
+		visible_message("Track is no longer avaible")
+		return
 	var/jukeboxslottotake = SSjukeboxes.addjukebox(src, selection, 2)
 	if(jukeboxslottotake)
 		active = TRUE
@@ -721,7 +730,10 @@
 			loaded_song_name = music_file.song_name
 			loaded_song_length = music_file.song_length
 			loaded_song_beat = music_file.song_beat
-			loaded_song_associated_id = "CS[music_file.song_associated_id]"
+			if(!findtext(music_file.song_associated_id, "CS", 1, 2))
+				loaded_song_associated_id =  music_file.song_associated_id
+			else
+				loaded_song_associated_id = "CS[music_file.song_associated_id]"
 			diskProcess()
 		if("Burn custom music")
 			loaded_song_path = input(user, "Choose a custom song!") as null|sound //uses the server AllowedUpload, by the time of writting,it was about 1024kb

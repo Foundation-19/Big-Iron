@@ -32,19 +32,17 @@ export const Jukebox = (props, context) => {
         <Section
           title="Song Player"
           buttons={(
-            <Button
+            <><Button
               icon={active ? 'pause' : 'play'}
               content={active ? 'Stop' : 'Play'}
               selected={active}
               onClick={() => act('toggle')} />
-          )
-          (
             <Button
-              icon={active ? 'eject' : 'Eject'}
-              content={active ? 'eject' : 'Eject'}
-              selecteddisk={active}
-              onClick={() => act('eject_disk')} />
-          )} >
+              icon={active ? 'pause' : 'play'}
+              content={active ? 'Eject' : 'Eject'}
+              selected={active}
+              onClick={() => act('eject_disk')} /></>
+            )}>
           <LabeledList>
             <LabeledList.Item label="Track Selected">
               <Dropdown
@@ -63,7 +61,7 @@ export const Jukebox = (props, context) => {
                 width="240px"
                 options={disks.map(disk => disk.name)}
                 disabled={active}
-                selecteddisk={disk_selected || "Select a Disk"}
+                selected={disk_selected || "Select a Disk"}
                 onSelected={value => act('select_record', {
                   record: value,
                 })} />
