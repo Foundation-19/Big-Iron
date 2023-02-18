@@ -40,7 +40,7 @@ jobs:
           tools/bootstrap/python -m mapmerge2.dmm_test
           ~/dreamchecker > ${GITHUB_WORKSPACE}/output-annotations.txt 2>&1
       - name: Annotate Lints
-        uses: yogstation13/DreamAnnotate@v1
+        uses: yogstation13/DreamAnnotate@v2
         if: always()
         with:
           outputFile: output-annotations.txt
@@ -112,8 +112,8 @@ jobs:
       - name: Build
         if: steps.auxmos-cache.outputs.cache-hit != 'true'
         run: |
-          env PKG_CONFIG_ALLOW_CROSS=1 ~/.cargo/bin/cargo rustc --package auxmos --target=i686-unknown-linux-gnu --release --features "all_reaction_hooks katmos" -- -C target-cpu=native
-          mv -f target/i686-unknown-linux-gnu/release/libauxmos.so "$1/libauxmos.so"
+          cargo build --manifest-path auxmos/Cargo.toml --target=${{env.target}} --package auxmos --release --verbose
+          ldd auxmos/target/${{env.target}}/release/libauxmos.so
       
       - name: Upload libauxmos artifact
         uses: actions/upload-artifact@v2
