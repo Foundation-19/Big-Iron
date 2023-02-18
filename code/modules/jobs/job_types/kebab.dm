@@ -1,6 +1,7 @@
 /datum/job/kebab
 	exp_type = EXP_TYPE_KEBAB
 	faction = FACTION_KEBAB
+	department_flag = DEP_KEBAB
 	selection_color = "#c3d5d5"
 
 //merchant
@@ -8,7 +9,6 @@
 /datum/job/kebab/f13shopkeeper
 	title = "Merchant"
 	flag = F13SHOPKEEPER
-	department_flag = MERCHANT
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "free hand of the market"
@@ -75,7 +75,6 @@
 /datum/job/kebab/f13apprentice
 	title = "Apprentice"
 	flag = F13APPRENTICE
-	department_flag = MERCHANT
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Merchant"
@@ -140,7 +139,6 @@
 /datum/job/kebab/f13mercenary
 	title = "Mercenary"
 	flag = F13MERCENARY
-	department_flag = MERCHANT
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "the Merchant"
@@ -197,7 +195,6 @@
 /datum/job/kebab/f13militiacom
 	title = "Militia Commander"
 	flag = F13MILITIACOM
-	department_flag = MERCHANT
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Merchant"
@@ -254,7 +251,6 @@
 /datum/job/kebab/f13bartender
 	title = "Bartender"
 	flag = F13BARTENDER
-	department_flag = MERCHANT
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Merchant"
@@ -338,7 +334,6 @@
 /datum/job/kebab/f13citizen
 	title = "Citizen"
 	flag = F13CITIZEN
-	department_flag = DEP_KEBAB
 	total_positions = -1
 	spawn_positions = -1
 	supervisors = "the Merchant"
@@ -472,7 +467,6 @@
 /datum/job/kebab/f13radiohost
 	title = "Radio Host"
 	flag = F13RADIOHOST
-	department_flag = DEP_KEBAB
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "no one"
