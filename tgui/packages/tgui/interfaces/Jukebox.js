@@ -32,7 +32,7 @@ export const Jukebox = (props, context) => {
         <Section
           title="Song Player"
           buttons={(
-            <>(<Button
+            <><Button
               icon={active ? 'pause' : 'play'}
               content={active ? 'Stop' : 'Play'}
               selected={active}
@@ -41,7 +41,7 @@ export const Jukebox = (props, context) => {
               icon={active ? 'pause' : 'play'}
               content={active ? 'Eject' : 'Eject'}
               selected={active}
-              onClick={() => act('eject_disk')} />)
+              onClick={() => act('eject_disk')} />
             </>
           )}>
           <LabeledList>
