@@ -120,7 +120,7 @@ SUBSYSTEM_DEF(jukeboxes)
 			M.playsound_local(currentturf, null, 100, channel = jukeinfo[2], S = song_played, envwet = (inrange ? -250 : 0), envdry = (inrange ? 0 : -10000))
 			CHECK_TICK
 	return
-//ATOM EDIT start
+//BIG IRON EDIT start
 /datum/controller/subsystem/jukeboxes/proc/add_song(datum/track/NS) //proc usted to add a song, when a disk is added to a jukebox
 	if(SSjukeboxes.songs.len)
 		for(var/datum/track/CT in SSjukeboxes.songs)
@@ -133,4 +133,4 @@ SUBSYSTEM_DEF(jukeboxes)
 		if(NS.song_associated_id == RT.song_associated_id)
 			SSjukeboxes.songs -= NS
 			return TRUE
-//ATOM EDIT -end
+//BIG IRON EDIT -end
