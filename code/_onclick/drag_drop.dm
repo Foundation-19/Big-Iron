@@ -5,6 +5,9 @@
 	receiving object instead, so that's the default action.  This allows you to drag
 	almost anything into a trash can.
 */
+/client
+	var/mousePressed = FALSE
+
 /atom/MouseDrop(atom/over, src_location, over_location, src_control, over_control, params)
 	if(!usr || !over)
 		return
@@ -25,6 +28,7 @@
 
 
 /client/MouseDown(object, location, control, params)
+	mousePressed = TRUE //Added for HMGs
 	if (mouse_down_icon)
 		mouse_pointer_icon = mouse_down_icon
 	var/delay = mob.CanMobAutoclick(object, location, params)
@@ -39,6 +43,7 @@
 		active_mousedown_item.onMouseDown(object, location, params, mob)
 
 /client/MouseUp(object, location, control, params)
+	mousePressed = FALSE //Added for HMGs
 	if (mouse_up_icon)
 		mouse_pointer_icon = mouse_up_icon
 	selected_target[1] = null
