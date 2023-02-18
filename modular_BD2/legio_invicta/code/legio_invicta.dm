@@ -504,12 +504,18 @@
 
 
 /obj/item/clothing/suit/armor/light/legion/recruit
+	name = "legion recruit armor"
+	desc = "Well, it's better than nothing."
 	icon_state = "armor_recruit"
 
 /obj/item/clothing/suit/armor/light/legion/prime
+	name = "legion prime armor"
+	desc = "Legion primes have survived some skirmishes, and when promoted often recieve a set of armor, padded leather modeled on ancient baseball catcher uniforms and various plates of metal or boiled leather."
 	icon_state = "armor_prime"
 
 /obj/item/clothing/suit/armor/light/legion/explorer
+	name = "legion explorer armor"
+	desc = "Armor based on layered strips of laminated linen and leather, the technique giving it surprising resilience for low weight."
 	icon_state = "armor_explorer"
 
 /obj/item/clothing/suit/armor/medium/legion
@@ -519,9 +525,13 @@
 	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
 
 /obj/item/clothing/suit/armor/medium/legion/vet
+	name = "legion veteran armor"
+	desc = "Armor worn by veterans, salvaged bits of enemy armor and scrap metal often reinforcing the armor."
 	icon_state = "armor_veteran"
 
 /obj/item/clothing/suit/armor/medium/legion/vexil
+	name = "legion vexillarius armor"
+	desc = "Worn by the Vexillarius, this armor has been reinforced with circular metal plates on the chest and a back mounted pole for the flag of the Bull, making the wearer easy to see at a distance."
 	icon_state = "armor_vexillarius"
 
 /obj/item/clothing/suit/armor/medium/legion/orator
