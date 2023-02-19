@@ -15,9 +15,9 @@
 	obj_integrity = 300
 	buckle_lying = FALSE
 	layer = BELOW_MOB_LAYER
-	var/spread = 10
-	var/damage_modifier = 25
-	var/penetration_modifier = 10
+	var/spread = 4
+	var/damage_modifier = 15
+	var/penetration_modifier = 5
 	var/mag_type = /obj/item/ammo_box/magazine/mm762
 	var/obj/item/ammo_box/magazine/magazine = null
 	var/reload_time = 20
