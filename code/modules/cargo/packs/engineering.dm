@@ -9,7 +9,7 @@
 /datum/supply_pack/engineering
 	group = "Engineering"
 	crate_type = /obj/structure/closet/crate/engineering
-
+/*
 /datum/supply_pack/engineering/shieldgen
 	name = "Anti-breach Shield Projector Crate"
 	desc = "Hull breaches again? Say no more with the Nanotrasen Anti-Breach Shield Projector! Uses forcefield technology to keep the air in, and the space out. Contains two shield projectors."
@@ -17,7 +17,7 @@
 	contains = list(/obj/machinery/shieldgen,
 					/obj/machinery/shieldgen)
 	crate_name = "anti-breach shield projector crate"
-
+*/
 /datum/supply_pack/engineering/conveyor
 	name = "Conveyor Assembly Crate"
 	desc = "Keep production moving along with fifteen conveyor belts. Conveyor switch included. If you have any questions, check out the enclosed instruction book."
@@ -97,7 +97,7 @@
 	contains = list(/obj/item/inducer/sci/supply, /obj/item/inducer/sci/supply)
 	crate_name = "inducer crate"
 	crate_type = /obj/structure/closet/crate/engineering/electrical
-
+/*
 /datum/supply_pack/engineering/pacman
 	name = "P.A.C.M.A.N Generator Crate"
 	desc = "Engineers can't set up the engine? Not an issue for you, once you get your hands on this P.A.C.M.A.N. Generator! Takes in plasma and spits out sweet sweet energy."
@@ -121,7 +121,7 @@
 	contains = list(/obj/machinery/portable_atmospherics/scrubber,
 					/obj/machinery/portable_atmospherics/scrubber)
 	crate_name = "portable scrubber crate"
-
+*/
 /datum/supply_pack/engineering/power
 	name = "Power Cell Crate"
 	desc = "Looking for power overwhelming? Look no further. Contains three high-voltage power cells."
@@ -155,9 +155,9 @@
 	special = TRUE //Department resupply shuttle loan event.
 
 /datum/supply_pack/engineering/bsa
-	name = "Bluespace Artillery Parts"
-	desc = "The pride of Nanotrasen Naval Command. The legendary Bluespace Artillery Cannon is a devastating feat of human engineering and testament to wartime determination. Highly advanced research is required for proper construction. "
-	cost = 45000
+	name = "Long-Tom Artillery Parts"
+	desc = "The pride of the United States Army. The legendary Long Tom Nuclear Artillery Cannon is a devastating feat of human engineering and testament to wartime determination. Highly advanced research is required for proper construction. "
+	cost = 450000
 	special = TRUE
 	contains = list(/obj/item/circuitboard/machine/bsa/front,
 					/obj/item/circuitboard/machine/bsa/middle,
@@ -212,3 +212,12 @@
 	contains = list(/obj/item/circuitboard/computer/sat_control)
 	crate_name= "shield control board crate"
 */
+
+/datum/supply_pack/emergency/metalfoam
+	name = "Metal Foam Grenade Crate"
+	desc = "Seal up those pesky perimiter breaches with 14 Metal Foam Grenades. Or be a pain in someone's ass. We don't care."
+	cost = 1500
+	contains = list(/obj/item/storage/box/metalfoam,
+					/obj/item/storage/box/metalfoam)
+	crate_name = "metal foam grenade crate"
+

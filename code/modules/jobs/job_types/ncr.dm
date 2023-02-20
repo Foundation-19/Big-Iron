@@ -262,6 +262,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/ammo_box/magazine/garand308 = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
+		/obj/item/book/manual/ncr/jobguide/regs = 1,
 		/obj/item/storage/box/ration/menu_five = 1
 		)
 
@@ -302,6 +303,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	neck = /obj/item/storage/belt/holster/legholster
 	backpack_contents = list(
+		/obj/item/book/manual/ncr/jobguide/regs = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1
 		)
 
@@ -758,6 +760,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/ammo_box/shotgun/bean = 2,
 		/obj/item/melee/classic_baton/militarypolice = 1,
+		/obj/item/book/manual/ncr/jobguide/regs = 1,
 		/obj/item/storage/box/ration/menu_seven = 1
 		)
 
@@ -843,6 +846,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	head = /obj/item/clothing/head/f13/ncr/steelpot_goggles
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/book/manual/ncr/jobguide/regs = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/storage/box/ration/menu_one = 1
