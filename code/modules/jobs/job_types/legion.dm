@@ -637,9 +637,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
 
 	loadout_options = list(	// ALL: .45 Revolver, Reinforced Machete
-		/datum/outfit/loadout/expscout,	// Commando Carbine, Smokebomb, C4
-		/datum/outfit/loadout/expsniper,	// Hunting Rifle, Smokebomb, Bottlecap mine
-		/datum/outfit/loadout/exphunter,	// Crossbow (improved version), C4, Bottlecap mine, Smokebomb, bow autodraw, explosives, trapper
+		/datum/outfit/loadout/expsniper,	// Hunting Rifle,
+		/datum/outfit/loadout/exphunter,	// Crossbow (improved version), Autodraw for Bows
 		)
 
 	matchmaking_allowed = list(
@@ -678,14 +677,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/restraints/legcuffs/bola/tactical = 1,
 		/obj/item/storage/survivalkit/medical/legion = 1
-		)
-		
-/datum/outfit/loadout/expscout
-	name = "Scout"
-	suit_store = /obj/item/gun/ballistic/automatic/delisle/commando
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45exp = 3,
-		/obj/item/attachments/scope = 1
 		)
 		
 /datum/outfit/loadout/expsniper
