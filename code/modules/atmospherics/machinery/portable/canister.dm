@@ -58,7 +58,7 @@
 		"stimulum" = /obj/machinery/portable_atmospherics/canister/stimulum,
 		"pluoxium" = /obj/machinery/portable_atmospherics/canister/pluoxium,
 		"caution" = /obj/machinery/portable_atmospherics/canister,
-		"miasma" = /obj/machinery/portable_atmospherics/canister/miasma,
+//		"miasma" = /obj/machinery/portable_atmospherics/canister/miasma,
 		"methane" = /obj/machinery/portable_atmospherics/canister/methane,
 		"methyl bromide" = /obj/machinery/portable_atmospherics/canister/methyl_bromide
 	)
@@ -147,14 +147,14 @@
 	icon_state = "water_vapor"
 	gas_type = GAS_H2O
 	filled = 1
-
+/*
 /obj/machinery/portable_atmospherics/canister/miasma
 	name = "miasma canister"
 	desc = "Miasma. Makes you wish your nose were blocked."
 	icon_state = "miasma"
 	gas_type = GAS_MIASMA
 	filled = 1
-
+*/
 /obj/machinery/portable_atmospherics/canister/methane
 	name = "methane canister"
 	desc = "Methane. The simplest of hydrocarbons. Non-toxic but highly flammable."
