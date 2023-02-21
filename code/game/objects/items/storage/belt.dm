@@ -1034,6 +1034,18 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 7
 
+/obj/item/storage/belt/holster/cross_belt
+	name = "sam browne belt"
+	desc = "A belt traditionally worn by military officers. Has a holster attached."
+	icon_state = "cross_belt"
+	item_state = "cross_belt"
+
+/obj/item/storage/belt/holster/cross_belt/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_items = 6
+	STR.max_w_class = WEIGHT_CLASS_NORMAL
+
 //Regular Quiver
 /obj/item/storage/belt/tribe_quiver
 	name = "tribal quiver"
