@@ -399,6 +399,7 @@
 	if(!..())
 		return FALSE
 	visible_message("<b>[src]</b> points at [A].", "<span class='notice'>You point at [A].</span>")
+	log_message("<b>[src]</b> points at [A].", LOG_EMOTE)
 	return TRUE
 
 /mob/living/verb/succumb()
