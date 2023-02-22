@@ -245,13 +245,12 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/yankee
 	head = /obj/item/clothing/head/helmet/f13/raider/yankee
 	backpack_contents = list(
-		/obj/item/shishkebabpack = 1,
+		/obj/item/melee/onehanded/knife/cosmicdirty = 1,
 		/obj/item/storage/fancy/cigarettes/cigpack_cannabis = 1,
 		/obj/item/megaphone = 1,
 		/obj/item/radio/headset = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
-		/obj/item/book/granter/trait/trekking = 1
+		/obj/item/storage/pill_bottle/chem_tin/buffout = 1
 		)
 
 /datum/outfit/loadout/raider_blast
@@ -271,7 +270,7 @@ Raider
 	head = /obj/item/clothing/head/helmet/f13/raider/arclight
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/throwing = 5,
-		/obj/item/clothing/mask/gas/explorer/folded=1,
+		/obj/item/clothing/mask/gas/explorer/folded = 1,
 		/obj/item/storage/belt = 1,
 		/obj/item/restraints/legcuffs/beartrap = 2,
 		/obj/item/reverse_bear_trap = 1,
@@ -290,7 +289,6 @@ Raider
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 3,
 		/obj/item/reagent_containers/pill/patch/turbo = 2,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/radio/headset = 1
 		)
@@ -307,7 +305,6 @@ Raider
 		/obj/item/melee/onehanded/club/fryingpan = 1,
 		/obj/item/radio/headset = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/grenade/chem_grenade/cleaner = 2
 		)
 
@@ -315,7 +312,7 @@ Raider
 	name = "Quack Doctor"
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/followers
 	l_hand = /obj/item/storage/backpack/duffelbag/med/surgery
-	r_hand = /obj/item/book/granter/trait/midsurgery
+	r_hand = /obj/item/book/granter/trait/lowsurgery
 	suit_store = /obj/item/gun/energy/laser/wattz
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 1,
@@ -323,7 +320,6 @@ Raider
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/storage/pill_bottle/aranesp = 1,
 		/obj/item/storage/pill_bottle/happy = 1,
-		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/stack/sheet/mineral/silver = 2,
 		/obj/item/defibrillator/primitive = 1
 		)
@@ -335,7 +331,7 @@ Raider
 	id = /obj/item/card/id/rusted
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/service = 1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
 		/obj/item/radio/headset = 1,
@@ -352,8 +348,7 @@ Raider
 		/obj/item/storage/backpack/spearquiver = 1,
 		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
 		/obj/item/ammo_box/magazine/greasegun = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/book/granter/trait/trekking = 1
+		/obj/item/book/granter/trait/bigleagues = 1
 		)
 
 /datum/outfit/loadout/raider_bos
@@ -425,7 +420,6 @@ Raider
 		/obj/item/clothing/mask/cigarette/pipe = 1,
 		/obj/item/melee/onehanded/knife/bone = 1,
 		/obj/item/radio/tribal = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/book/granter/trait/trekking = 1
 		)
 
