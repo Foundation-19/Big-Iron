@@ -98,14 +98,14 @@
 	icon_state = "m2_flamethrower_on"
 	item_state = "m2flamethrower"
 	flags_1 = CONDUCT_1
-	slowdown = 0.5
+	slowdown = 1
 	slot_flags = null
 	w_class = WEIGHT_CLASS_HUGE
 	custom_materials = null
 	burst_size = 2
 	burst_shot_delay = 1
 	//automatic = 0
-	fire_delay = 2
+	fire_delay = 5
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/weapons/flamethrower.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/m2flamethrower
