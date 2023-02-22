@@ -554,10 +554,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/rangertrail
 	name = "Trail Ranger"
-	suit = /obj/item/gun/ballistic/rifle/repeater/trail
+	suit = /obj/item/clothing/suit/armor/f13/trailranger
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	neck = /obj/item/clothing/neck/mantle/ranger
-	suit_store = /obj/item/gun/ballistic/rifle/repeater/cowboy
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_lunch = 1,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
