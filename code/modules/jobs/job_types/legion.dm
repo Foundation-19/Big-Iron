@@ -1119,7 +1119,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	spawn_positions = 2
 	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
 	supervisors = "the Priestess, in absentia the Centurion"
-	outfit = /datum/outfit/job/CaesarsLegion/auxilia
+	outfit = /datum/outfit/job/CaesarsLegion/f13auxilia
 	exp_requirements = 120
 	
 	loadout_options = list(
@@ -1138,7 +1138,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 
-/datum/outfit/job/CaesarsLegion/auxilia
+/datum/outfit/job/CaesarsLegion/f13auxilia
 	name = "Legion Auxilia"
 	jobtype = /datum/job/CaesarsLegion/auxilia
 	id = /obj/item/card/id/dogtag/legauxilia
@@ -1202,7 +1202,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 
-/datum/outfit/job/CaesarsLegion/auxilia/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/f13auxilia/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
