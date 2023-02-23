@@ -27,7 +27,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	minimal_access = list(ACCESS_LEGION)
 
 /datum/outfit/job/CaesarsLegion
-	ears = null
+	ears = /obj/item/radio/headset/headset_legion
 	box = null
 
 /datum/outfit/job/CaesarsLegion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -57,7 +57,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	shoes = /obj/item/clothing/shoes/f13/military/legion
 	gloves = /obj/item/clothing/gloves/legion
 	box = /obj/item/storage/survivalkit/legion_rations
-
+/*
 /datum/outfit/job/CaesarsLegion/Legionnaire/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -70,14 +70,14 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 			var/obj/item/card/id/dogtag/L = H.wear_id
 			L.registered_name = H.name
 			L.update_label()
-
+*/
 /datum/outfit/job/CaesarsLegion/Legionnaire/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_TRIBAL, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_FEARLESS, src) //no phobias for legion!
+	ADD_TRAIT(H, TRAIT_FEARLESS, src) //no phobias for legionnaires!
 	ADD_TRAIT(H, TRAIT_BERSERKER, src)
 
 /obj/item/storage/box/legate
@@ -1066,21 +1066,213 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 						//								//
 						//////////////////////////////////
 
-// ----------------- CAMP FOLLOWER --------------------- //
+// ----------------- PRIESTESS OF MARS --------------------- //
+/datum/job/CaesarsLegion/f13priestess
+	title = "Priestess of Mars"
+	flag = F13PRIESTESS
+	display_order = JOB_DISPLAY_ORDER_PRIESTESS
+	total_positions = 1
+	spawn_positions = 1
+	description = "You are a spiritual and logistics advisor for the Legion forces in the area. Being raised in and from the homeland, you have fully adapted to the Legion's ideals and fully committed yourself to the role as mother and caretaker of the Legion's future. You are an icon to be respected, even by fellow Legion; and although a woman, your status does not allow you to be belittled."
+	supervisors = "the Centurion, Mars"
+	exp_requirements = 300
+	outfit = /datum/outfit/job/CaesarsLegion/f13priestess
 
+	/datum/outfit/job/CaesarsLegion/f13priestess
+	name = "Priestess of Mars"
+	uniform = /obj/item/clothing/under/f13/priestess
+	glasses = /obj/item/clothing/glasses/sunglasses/fakeblindfold
+	head	= /obj/item/clothing/head/helmet/f13/legion/marsheaddress
+	ears	= /obj/item/radio/headset/headset_legion
+	gloves	= /obj/item/clothing/gloves/fingerless
+	jobtype = /datum/job/CaesarsLegion/f13priestess
+	id = /obj/item/card/id/dogtag/legpriest
+	r_hand = /obj/item/twohanded/sledgehammer/marsstaff
+	shoes = /obj/item/clothing/shoes/roman
+	l_pocket = 		/obj/item/flashlight/lantern
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/healpoultice=2,
+		/obj/item/clothing/under/f13/pmarsrobe=1)
+
+/datum/outfit/job/CaesarsLegion/f13priestess/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	if(H.gender == MALE)
+		H.gender = FEMALE
+		H.real_name = random_unique_name(FEMALE)
+		H.name = H.real_name
+		if(H.wear_id)
+			var/obj/item/card/id/dogtag/L = H.wear_id
+			L.registered_name = H.name
+			L.update_label()
+	ADD_TRAIT(H, TRAIT_SPIRITUAL, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
+	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
+
+// --------------------- AUXILIA --------------------- //
+/datum/job/CaesarsLegion/auxilia
+	title = "Legion Auxilia"
+	flag = F13AUXILIA
+	display_order = JOB_DISPLAY_ORDER_AUXILIA
+	total_positions = 2
+	spawn_positions = 2
+	description = "A non-combat position in the Legion for free citizens who perform tasks that need special training, such as surgery. They are loyal to the Legion even if they are not treated as equals to warriors."
+	supervisors = "the Priestess, in absentia the Centurion"
+	outfit = /datum/outfit/job/CaesarsLegion/auxilia
+	exp_requirements = 120
+	
+	loadout_options = list(
+	/datum/outfit/loadout/auxassist, // Keep track of the money, handle trading beneath the warriors
+	/datum/outfit/loadout/auxmedicus, // Do surgery, medical tasks.
+	/datum/outfit/loadout/auxopifex, // Build defenses, craft necessary items
+	)
+
+	matchmaking_allowed = list(
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/CaesarsLegion,
+		),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/CaesarsLegion,
+		),
+		)
+
+
+/datum/outfit/job/CaesarsLegion/auxilia
+	name = "Legion Auxilia"
+	jobtype = /datum/job/CaesarsLegion/auxilia
+	id = /obj/item/card/id/dogtag/legauxilia
+	head = /obj/item/clothing/head/f13/auxilia
+	uniform = /obj/item/clothing/under/f13/legauxiliaf
+	shoes = /obj/item/clothing/shoes/roman
+	ears = /obj/item/radio/headset/headset_legion
+	gloves = null
+	belt = null
+	r_pocket = /obj/item/flashlight/lantern
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
+		/obj/item/warpaint_bowl = 1
+		)
+
+/datum/outfit/loadout/auxassist
+	name = "Arcarius (Treasurer)"
+	head = /obj/item/clothing/head/f13/auxilia
+	neck = /obj/item/clothing/neck/mantle/treasurer
+	shoes = /obj/item/clothing/shoes/sandal
+	backpack_contents = list(
+		/obj/item/folder/red = 1,
+		/obj/item/paper/natural = 2,
+		/obj/item/pen/fountain = 1,
+		/obj/item/storage/bag/money/small/legion = 4,
+		/obj/item/taperecorder = 1,
+		/obj/item/clothing/under/f13/legauxiliaf = 1
+		)
+
+/datum/outfit/loadout/auxmedicus
+	name = "Medicus (Surgeon)"
+	neck = /obj/item/clothing/neck/apron/medicus
+	gloves = /obj/item/clothing/gloves/f13/crudemedical
+	belt = /obj/item/storage/belt/medical/primitive
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/legenlisted = 1,
+		/obj/item/storage/firstaid/ancient = 1,
+		/obj/item/stack/sticky_tape/surgical = 1,
+		/obj/item/stack/medical/bone_gel = 1,
+		/obj/item/book/granter/trait/midsurgery = 1,
+		/obj/item/clothing/under/f13/legauxiliaf = 1
+		)
+
+/datum/outfit/loadout/auxopifex
+	name = "Opifex (Artisan)"
+	neck = /obj/item/clothing/neck/apron/labor/forge
+	gloves = /obj/item/clothing/gloves/legion/forgemaster
+	belt = /obj/item/storage/belt/utility/waster/forgemaster
+	glasses = /obj/item/clothing/glasses/welding
+	shoes = /obj/item/clothing/shoes/f13/military/plated
+	r_pocket = /obj/item/flashlight/lantern
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/legenlisted = 1,
+		/obj/item/stack/sheet/metal/twenty = 2,
+		/obj/item/stack/sheet/mineral/wood/twenty = 1,
+		/obj/item/stack/sheet/leather/twenty = 1,
+		/obj/item/stack/sheet/cloth/thirty = 1,
+		/obj/item/stack/sheet/prewar/twenty = 1,
+		/obj/item/weldingtool = 1,
+		/obj/item/book/granter/trait/explosives = 1
+		)
+
+
+	/datum/outfit/job/CaesarsLegion/auxilia/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_SURGERY_LOW, src)
+	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	var/datum/martial_art/cqc/under_siege/CQC = new
+	CQC.teach(H)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tailor/legionuniform)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warpaint)
+	
+// ----------------- CAMP FOLLOWER --------------------- //
 /datum/job/CaesarsLegion/f13campfollower
 	title = "Camp Follower"
 	flag = F13CAMPFOLLOWER
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
 	total_positions = 4
 	spawn_positions = 4
-	description = "A Camp Follower ranges in purposes. A Camp Follower is a legionnaire who got assigned to keeping the camp in order. Duties may vary from medical specialities, weapon crafting or other skilled-labor tasks."
-	supervisors = "Officers first, then warriors."
-
+	description = "You answer to any member of the Legion, but take orders directly from the Auxilia around the camp. Working as a Camp Follower for the Centuria, you bear the great honor of supporting Caesar's Army in its conquest of the Mojave in whatever capacity required from those whom you serve. You perform any tasks required of you, for you know how to serve the Legion well."
+	supervisors = "the entire legion"
 	outfit = /datum/outfit/job/CaesarsLegion/f13campfollower
+
+	loadout_options = list(
+		/datum/outfit/loadout/campfollowermatron,
+		/datum/outfit/loadout/campfollowerhealer,
+		/datum/outfit/loadout/campfolloweroffduty
+	)
 
 /datum/outfit/job/CaesarsLegion/f13campfollower
 	name = "Camp Follower"
+	jobtype = /datum/outfit/job/CaesarsLegion/f13campfollower
+	shoes = /obj/item/clothing/shoes/roman
+	r_hand = /obj/item/flashlight/lantern
+	uniform = /obj/item/clothing/under/f13/campfollowermale
+	id = /obj/item/card/id/dogtag/legfollower
+	gloves = /obj/item/clothing/gloves/legion
+
+/datum/outfit/loadout/campfollowermatron
+	name = "Mater (Matron)"
+	suit = /obj/item/clothing/suit/apron/chef
+	mask = /obj/item/clothing/mask/bandana/auxilia
+	backpack_contents = list(
+		/obj/item/kitchen/knife/butcher=1,
+		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus=1,
+		/obj/item/reagent_containers/food/condiment/flour=2,
+		/obj/item/storage/box/bowls=1,
+		/obj/item/reagent_containers/glass/beaker/large=1,
+		/obj/item/storage/bag/plants=1,
+		/obj/item/cultivator=1,
+		/obj/item/shovel/spade=1,
+		/obj/item/storage/fancy/egg_box=1,
+		/obj/item/clothing/under/f13/campfollowerfemale
+	)
+
+/datum/outfit/loadout/campfollowerhealer
+	name = "Medicus (Healer)"
+	suit = /obj/item/clothing/suit/armor/f13/medicus
+	mask = /obj/item/clothing/mask/bandana/auxilia
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/healingpowder=2,
+		/obj/item/reagent_containers/pill/patch/healpoultice=2,
+		/obj/item/smelling_salts/crafted=1,
+		/obj/item/clothing/under/f13/campfollowerfemale,
+		/obj/item/book/granter/trait/mars_teachings=1,
+		/obj/item/book/granter/trait/lowsurgery = 1
+	)
+
+/datum/outfit/loadout/campfolloweroffduty
+	name = "Off-Duty Legionary"
 	id = /obj/item/card/id/dogtag/legfollower
 	mask = /obj/item/clothing/mask/bandana/legion/dark
 	uniform = /obj/item/clothing/under/f13/legskirt
@@ -1114,7 +1306,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	total_positions = 4
 	spawn_positions = 4
 	description = "A slave that survives the breaking camps is given a Legion appropriate name (latin-tribal inspired) and bull tattoo. Be obedient, respectful, stay inside the camp. Work the farm, mine, make food, clean and help injured men. Do NOT escape on your own, up to you how to handle it if forcibly freed by outside forces."
-	supervisors = "Officers, then warriors"
+	supervisors = "Officers, then Auxilia, then warriors"
 
 	outfit = /datum/outfit/job/CaesarsLegion/f13slave
 
