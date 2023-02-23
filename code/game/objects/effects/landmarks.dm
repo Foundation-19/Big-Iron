@@ -585,6 +585,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/frumentarius
 	name = "Legion Frumentarius"
+	icon_state = "Legionary"
+	
+/obj/effect/landmark/start/f13/priestess
+	name = "Priestess of Mars"
+	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/decanvet
 	name = "Legion Veteran Decanus"
@@ -616,6 +621,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/explorer
 	name = "Legion Explorer"
+	icon_state = "Legionary"
+
+/obj/effect/landmark/start/f13/auxilia
+	name = "Auxilia"
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/campfollower
