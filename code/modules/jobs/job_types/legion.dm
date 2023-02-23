@@ -1111,7 +1111,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
 
 // --------------------- AUXILIA --------------------- //
-/datum/job/CaesarsLegion/auxilia
+/datum/job/CaesarsLegion/f13auxilia
 	title = "Legion Auxilia"
 	flag = F13AUXILIA
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
