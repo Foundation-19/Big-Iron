@@ -639,7 +639,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	loadout_options = list(	// ALL: .45 Revolver, Reinforced Machete
 		/datum/outfit/loadout/expscout,	// Commando Carbine, Smokebomb, C4
 		/datum/outfit/loadout/expsniper,	// Hunting Rifle, Smokebomb, Bottlecap mine
-		/datum/outfit/loadout/exphunter,	// Crossbow (improved version), C4, Bottlecap mine, Smokebomb, bow autodraw, explosives, trapper
+		/datum/outfit/loadout/exphunter,	// Crossbow (improved version), C4, Bottlecap mine, Smokebomb, bow autodraw, trapper
 		)
 
 	matchmaking_allowed = list(
@@ -713,7 +713,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/grenade/smokebomb = 1,
 		/obj/item/grenade/plastic/c4 = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
-		/obj/item/book/granter/trait/explosives = 1,
 		/obj/item/book/granter/trait/bowman = 1
 		)
 
@@ -1243,8 +1242,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/campfollowermatron
 	name = "Mater (Matron)"
-	suit = /obj/item/clothing/suit/apron/chef
-	mask = /obj/item/clothing/mask/bandana/auxilia
+	neck = /obj/item/clothing/neck/apron/chef
+	mask = /obj/item/clothing/mask/bandana/legion
 	backpack_contents = list(
 		/obj/item/kitchen/knife/butcher=1,
 		/obj/item/reagent_containers/food/snacks/grown/ambrosia/deus=1,
@@ -1260,14 +1259,13 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/campfollowerhealer
 	name = "Medicus (Healer)"
-	suit = /obj/item/clothing/suit/armor/f13/medicus
-	mask = /obj/item/clothing/mask/bandana/auxilia
+	neck = /obj/item/clothing/neck/apron/medicus
+	gloves = /obj/item/clothing/gloves/f13/crudemedical
+	mask = /obj/item/clothing/mask/bandana/legion
 	backpack_contents = list(
 		/obj/item/reagent_containers/pill/patch/healingpowder=2,
 		/obj/item/reagent_containers/pill/patch/healpoultice=2,
-		/obj/item/smelling_salts/crafted=1,
 		/obj/item/clothing/under/f13/campfollowerfemale,
-		/obj/item/book/granter/trait/mars_teachings=1,
 		/obj/item/book/granter/trait/lowsurgery = 1
 	)
 
