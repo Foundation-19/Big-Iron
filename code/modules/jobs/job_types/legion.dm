@@ -1078,7 +1078,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	exp_requirements = 300
 	outfit = /datum/outfit/job/CaesarsLegion/f13priestess
 
-	/datum/outfit/job/CaesarsLegion/f13priestess
+/datum/outfit/job/CaesarsLegion/f13priestess
 	name = "Priestess of Mars"
 	uniform = /obj/item/clothing/under/f13/priestess
 	glasses = /obj/item/clothing/glasses/sunglasses/fakeblindfold
@@ -1095,7 +1095,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/clothing/under/f13/pmarsrobe=1)
 
 /datum/outfit/job/CaesarsLegion/f13priestess/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
+	. = ..()
 	if(visualsOnly)
 		return
 	if(H.gender == MALE)
@@ -1203,7 +1203,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 
-	/datum/outfit/job/CaesarsLegion/auxilia/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/auxilia/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
