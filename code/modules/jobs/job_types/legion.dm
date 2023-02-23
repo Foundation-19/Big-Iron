@@ -1140,7 +1140,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/job/CaesarsLegion/f13auxilia
 	name = "Legion Auxilia"
-	jobtype = /datum/job/CaesarsLegion/auxilia
+	jobtype = /datum/job/CaesarsLegion/f13auxilia
 	id = /obj/item/card/id/dogtag/legauxilia
 	head = /obj/item/clothing/head/f13/auxilia
 	uniform = /obj/item/clothing/under/f13/legauxiliaf
