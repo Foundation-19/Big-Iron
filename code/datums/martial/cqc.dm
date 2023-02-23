@@ -215,12 +215,12 @@
 	to_chat(usr, "<b><i>In addition, by having your throw mode on when being attacked, you enter an active defense mode where you have a chance to block and sometimes even counter attacks done to you.</i></b>")
 	to_chat(usr, "<b><i>YOU DON'T INSTANTLY AGGRO GRAB ANYMORE. DON'T TRY IT BOSS.</i></b>")
 
-///Subtype of CQC. Only used for the chef.
+///Subtype of CQC. Only used for the Auxilia.
 /datum/martial_art/cqc/under_siege
-	name = "Close Quarters Cooking"
+	name = "Close Quarters Caretaking"
 
 ///Prevents use if the cook is not in the kitchen.
 /datum/martial_art/cqc/under_siege/can_use(mob/living/carbon/human/H) //this is used to make chef CQC only work in kitchen
-	if(!istype(get_area(H), /area/crew_quarters/kitchen))
+	if(!istype(get_area(H), /area/f13/legioncamp))
 		return FALSE
 	return ..()
