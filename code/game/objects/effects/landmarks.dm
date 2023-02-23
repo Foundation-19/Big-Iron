@@ -624,7 +624,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/auxilia
-	name = "Auxilia"
+	name = "Legion Servus"
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/campfollower
