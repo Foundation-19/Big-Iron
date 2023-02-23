@@ -1070,10 +1070,24 @@
 	item_state = "card-id_leg2"
 	assignment = "centurion medallion"
 
+/obj/item/card/id/dogtag/legpriest
+	name = "priestess medallion"
+	desc = "A golden disc awarded to the trusted spiritual guide of the nearby Legion."
+	icon_state = "legionmedallioncent"
+	item_state = "card-id_leg2"
+	assignment = "priestess medallion"
+
+/obj/item/card/id/dogtag/legauxilia
+	name = "auxilia medallion"
+	desc = "A heavily marked silver disc stamped with the Legion's Bull insignia. Belongs to a respected auxilia of the Legion."
+	icon_state = "legionmedallionveteran"
+	item_state = "card-id_leg"
+	assignment = "auxilia medallion"
+
 /obj/item/card/id/dogtag/legfollower
 	name = "camp follower medallion"
-	desc = "A silver disc given to Camp Followers of Caesar's Legion."
-	icon_state = "legionmedallionveteran"
+	desc = "A silver disc stamped with the Legion's Bull insignia. Belongs to a camp follower."
+	icon_state = "legionmedallionrecruit"
 	item_state = "card-id_leg"
 	assignment = "camp follower medallion"
 
