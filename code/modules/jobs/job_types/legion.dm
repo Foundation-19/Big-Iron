@@ -1070,8 +1070,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	title = "Priestess of Mars"
 	flag = F13PRIESTESS
 	display_order = JOB_DISPLAY_ORDER_PRIESTESS
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are a spiritual and logistics advisor for the Legion forces in the area. Being raised in and from the homeland, you have fully adapted to the Legion's ideals and fully committed yourself to the role as mother and caretaker of the Legion's future. You are an icon to be respected, even by fellow Legion; and although a woman, your status does not allow you to be belittled."
 	supervisors = "the Centurion, Mars"
 	exp_requirements = 300
@@ -1112,7 +1112,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // --------------------- AUXILIA --------------------- //
 /datum/job/CaesarsLegion/f13auxilia
-	title = "Legion Auxilia"
+	title = "Legion Servus"
 	flag = F13AUXILIA
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	total_positions = 2
@@ -1139,7 +1139,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 
 /datum/outfit/job/CaesarsLegion/f13auxilia
-	name = "Legion Auxilia"
+	name = "Legion Servus"
 	jobtype = /datum/job/CaesarsLegion/f13auxilia
 	id = /obj/item/card/id/dogtag/legauxilia
 	head = /obj/item/clothing/head/f13/auxilia
@@ -1301,8 +1301,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	title = "Legion Slave"
 	flag = F13LEGIONSLAVE
 	display_order = JOB_DISPLAY_ORDER_LEGIONSLAVE
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 0
+	spawn_positions = 0
 	description = "A slave that survives the breaking camps is given a Legion appropriate name (latin-tribal inspired) and bull tattoo. Be obedient, respectful, stay inside the camp. Work the farm, mine, make food, clean and help injured men. Do NOT escape on your own, up to you how to handle it if forcibly freed by outside forces."
 	supervisors = "Officers, then Auxilia, then warriors"
 
