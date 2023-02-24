@@ -128,10 +128,11 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
 
 /obj/item/clothing/suit/armor/f13/exile/ncrexile
-	name = "modified NCR armor"
-	desc = "A modified detoriated armor kit consisting of NCR gear and scrap metal."
-	icon_state = "ncrexile"
-	item_state = "ncrexile"
+	name = "NCR deserter vest"
+	desc = "A set of patrol armor with the NCR emblem removed and right pauldron taken off."
+	armor = list("melee" = 35, "bullet" = 23, "laser" = 13, "energy" = 20, "bomb" = 40, "bio" = 40, "rad" = 20, "fire" = 60, "acid" = 20)
+	icon_state = "ncr_deserter_vest"
+	item_state = "ncr_deserter_vest"
 
 /obj/item/clothing/suit/armor/f13/exile/ncrexile/Initialize()
 	. = ..()
