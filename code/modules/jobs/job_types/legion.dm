@@ -1070,7 +1070,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/assist
 	name = "Arcarius (Treasurer)"
-	head = /obj/item/clothing/head/f13/campfollower
 	neck = /obj/item/clothing/neck/mantle/treasurer
 	shoes = /obj/item/clothing/shoes/sandal
 	backpack_contents = list(
