@@ -1072,8 +1072,8 @@
 
 /obj/item/card/id/dogtag/legfollower
 	name = "camp follower medallion"
-	desc = "A silver disc given to Camp Followers of Caesar's Legion."
-	icon_state = "legionmedallionveteran"
+	desc = "A silver disc stamped with the Legion's Bull insignia. Belongs to a camp follower."
+	icon_state = "legionmedallionrecruit"
 	item_state = "card-id_leg"
 	assignment = "camp follower medallion"
 
