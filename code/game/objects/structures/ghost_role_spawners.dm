@@ -785,7 +785,7 @@
 	mob_name = "Veteran Legionary"
 	job_description = "Veteran Legionary"
 	assignedrole = "Veteran Legionary"
-	outfit = /datum/outfit/job/CaesarsLegion/Legionary/vetLegionary
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/vetlegionary
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44 = 3,
