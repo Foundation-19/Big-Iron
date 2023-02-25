@@ -588,9 +588,9 @@
 	flags_inv = null
 	flags_cover = null
 
-/obj/item/clothing/head/f13/servant/auxilia
-	name = "auxilia headwear"
-	desc = "A soft red cap with a black band, used by Auxilia outside camp."
+/obj/item/clothing/head/f13/servant/campfollower
+	name = "camp follower headwear"
+	desc = "A soft red cap with a black band, used by Camp Followers inside camp."
 	icon_state = "hat_auxilia"
 	item_state = "hat_auxilia"
 
@@ -670,7 +670,7 @@
 	initial_contents = list(
 		/obj/item/clothing/under/f13/legskirt = 3,
 		/obj/item/clothing/mask/bandana/legion/dark  = 2,
-		/obj/item/clothing/head/f13/servant/auxilia = 1,
+		/obj/item/clothing/head/f13/servant/campfollower = 1,
 		/obj/item/clothing/head/f13/servant = 1,
 		/obj/item/clothing/gloves/legion = 2,
 		/obj/item/clothing/gloves/blacksmith_mittens = 1,

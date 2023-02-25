@@ -519,9 +519,16 @@
 	item_color = "secondlieutenantrank"
 	minimize_when_attached = TRUE
 
+/obj/item/clothing/accessory/ncr/SSGT
+	name = "(E-6) StaffSergeant rank pins"
+	desc = "A Staff Sergeant should wear this."
+	icon_state = "ncrenlisted"
+	item_color = "ncrenlisted"
+	minimize_when_attached = TRUE
+
 /obj/item/clothing/accessory/ncr/SGT
 	name = "(E-5) Sergeant rank pins"
-	desc = "A trooper holding the rank of Sergeant should wear this."
+	desc = "A Sergeant should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
@@ -543,6 +550,13 @@
 /obj/item/clothing/accessory/ncr/CPL
 	name = "(E-4) Corporal rank pins"
 	desc = "A Corporal should wear this."
+	icon_state = "ncrenlisted"
+	item_color = "ncrenlisted"
+	minimize_when_attached = TRUE
+
+/obj/item/clothing/accessory/ncr/SPC
+	name = "(E-4) Specialist rank pins"
+	desc = "A Specialist should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
