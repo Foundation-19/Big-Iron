@@ -984,7 +984,7 @@
 	item_state = "explorer2"
 
 /obj/item/storage/belt/military/assault/legion
-	name = "legionnaire marching belt"
+	name = "legionary marching belt"
 	desc = "Sturdy leather belt with a red decorative sash."
 	icon = 'icons/fallout/clothing/belts.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
