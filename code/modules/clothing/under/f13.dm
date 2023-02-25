@@ -152,6 +152,14 @@
 	item_state = "ncr_dress"
 	item_color = "ncr_dress"
 
+/obj/item/clothing/under/f13/ncr/colonial
+	name = "colonial outfit"
+	desc = "A well-ironed dress shirt with a blue tie tucked into tan pants, whoever wears this must be one hell of an asshole."
+	can_adjust = TRUE
+	icon_state = "colonial_outfit"
+	item_state = "colonial_outfit"
+	item_color = "colonial_outfit"
+
 /obj/item/clothing/under/f13/ncrcf
 	name = "caravaneer outfit"
 	desc = "A cheap blue shirt and slacks, the letters 'NCRCF' emblazened on the back. A meek reminder of who owns you."
