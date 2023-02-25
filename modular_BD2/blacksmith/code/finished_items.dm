@@ -38,7 +38,6 @@
 	if(force < 0)
 		force = 0
 
-
 /obj/item/twohanded/smithed // compatible with the Eris wield stuff
 	icon = 'modular_BD2/blacksmith/icons/blacksmith.dmi'
 	lefthand_file = 'modular_BD2/blacksmith/icons/onmob/lefthand.dmi'

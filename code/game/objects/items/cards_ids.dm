@@ -1070,12 +1070,12 @@
 	item_state = "card-id_leg2"
 	assignment = "centurion medallion"
 
-/obj/item/card/id/dogtag/legcampduty
-	name = "camp duty medallion"
-	desc = "A silver disc given to legionnaires of Caesar's Legion assigned to camp duty."
-	icon_state = "legionmedallionveteran"
+/obj/item/card/id/dogtag/legfollower
+	name = "camp follower medallion"
+	desc = "A silver disc stamped with the Legion's Bull insignia. Belongs to a camp follower."
+	icon_state = "legionmedallionrecruit"
 	item_state = "card-id_leg"
-	assignment = "camp duty medallion"
+	assignment = "camp follower medallion"
 
 /obj/item/card/id/dogtag/legfrumentarius
 	name = "frumentarius medallion"
