@@ -1866,6 +1866,15 @@
 	sunlight_state = 1
 	},
 /area/f13/wasteland)
+"gm" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/transparent/openspace{
+	name = "air";
+	sunlight_state = 1
+	},
+/area/f13/cotc)
 "gn" = (
 /mob/living/simple_animal/hostile/gecko,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -2026,6 +2035,13 @@
 /obj/structure/curtain,
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
+"gK" = (
+/obj/structure/barricade/bars,
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowtop"
+	},
+/turf/open/floor/plating,
+/area/f13/kebab)
 "gL" = (
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 6;
@@ -2223,12 +2239,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
-"hF" = (
-/turf/open/indestructible/ground/outside/ruins{
-	dir = 6;
-	icon_state = "rubble"
-	},
-/area/f13/wasteland)
 "hJ" = (
 /obj/item/melee/onehanded/slavewhip{
 	name = "tool of the faith"
@@ -2376,6 +2386,15 @@
 	pixel_x = -10
 	},
 /turf/open/floor/wood/f13/carpet,
+/area/f13/building)
+"ie" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowleft"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
 /area/f13/building)
 "if" = (
 /turf/open/floor/f13/wood{
@@ -2668,12 +2687,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
-"ja" = (
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 8;
-	icon_state = "dirtcorner"
-	},
-/area/f13/wasteland)
 "jb" = (
 /obj/structure/window/reinforced/spawner{
 	dir = 1
@@ -4770,12 +4783,6 @@
 /obj/structure/barricade/bars,
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/building)
-"pq" = (
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 10;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland)
 "pr" = (
 /obj/structure/table/wood/fancy/green,
 /turf/open/floor/carpet/green,
@@ -6289,6 +6296,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
+"tG" = (
+/obj/structure/railing/corner,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/ncr)
 "tI" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -6823,11 +6834,6 @@
 	},
 /turf/open/floor/f13/wood/outside,
 /area/f13/wasteland)
-"vk" = (
-/turf/open/indestructible/ground/outside/ruins{
-	icon_state = "rubblecorner"
-	},
-/area/f13/wasteland)
 "vl" = (
 /obj/structure/railing,
 /turf/open/transparent/openspace{
@@ -7248,21 +7254,6 @@
 	},
 /turf/open/floor/wood/wood_large,
 /area/f13/ncr)
-"wC" = (
-/obj/structure/railing{
-	color = "#A47449";
-	dir = 6
-	},
-/obj/structure/railing{
-	color = "#A47449";
-	layer = 4.1;
-	pixel_x = -8
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/wasteland)
 "wD" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -7882,21 +7873,6 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
-"yB" = (
-/obj/structure/railing{
-	color = "#A47449";
-	dir = 1
-	},
-/obj/structure/railing{
-	color = "#A47449";
-	dir = 1;
-	pixel_x = -8
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/wasteland)
 "yC" = (
 /obj/structure/barricade/sandbags,
 /obj/structure/railing{
@@ -8029,9 +8005,6 @@
 /obj/structure/barricade/bars,
 /obj/structure/window/fulltile/store{
 	icon_state = "storewindowbottom"
-	},
-/obj/structure/window/fulltile/store{
-	icon_state = "storewindowvertical"
 	},
 /turf/open/floor/plating,
 /area/f13/kebab)
@@ -8238,9 +8211,12 @@
 /area/f13/building)
 "zF" = (
 /obj/structure/window/fulltile/store{
-	layer = 2.9
+	icon_state = "storewindowleft"
 	},
-/turf/open/floor/wood/f13/oak,
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
 /area/f13/kebab)
 "zG" = (
 /turf/open/floor/wood/f13/carpet,
@@ -9076,9 +9052,6 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/caves)
-"Cq" = (
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "Cr" = (
 /turf/open/transparent/openspace{
 	name = "air";
@@ -10467,11 +10440,6 @@
 	},
 /turf/open/floor/wood/wood_tiled,
 /area/f13/merchant)
-"GP" = (
-/turf/open/indestructible/ground/outside/ruins{
-	icon_state = "rubbleslab"
-	},
-/area/f13/wasteland)
 "GR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/gibs/down{
@@ -11366,19 +11334,6 @@
 	dir = 4
 	},
 /turf/open/floor/wood/wood_large,
-/area/f13/wasteland)
-"JN" = (
-/obj/structure/railing{
-	color = "#A47449";
-	dir = 4
-	},
-/obj/structure/railing{
-	color = "#A47449"
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
 /area/f13/wasteland)
 "JO" = (
 /obj/machinery/light/small{
@@ -13278,6 +13233,13 @@
 	sunlight_state = 1
 	},
 /area/f13/wasteland)
+"PM" = (
+/obj/effect/decal/marking{
+	icon_state = "dottedverticaldegraded";
+	pixel_x = -15
+	},
+/turf/closed/indestructible/rock,
+/area/f13/caves)
 "PO" = (
 /turf/closed/wall/f13/store,
 /area/f13/brotherhood/surface)
@@ -13909,6 +13871,15 @@
 /obj/machinery/vending/coffee,
 /turf/open/floor/plasteel/grimy,
 /area/f13/brotherhood/surface)
+"RH" = (
+/obj/structure/window/fulltile/store{
+	icon_state = "storewindowright"
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/kebab)
 "RI" = (
 /turf/open/floor/wood/f13/stage_r,
 /area/f13/wasteland)
@@ -16768,8 +16739,8 @@ kC
 kC
 kC
 kC
-AM
-AM
+kC
+kC
 ub
 ub
 kC
@@ -17025,8 +16996,8 @@ kC
 kC
 kC
 kC
-AM
-AM
+kC
+kC
 ub
 ub
 ub
@@ -17282,8 +17253,8 @@ kC
 kC
 kC
 kC
-AM
-AM
+kC
+kC
 ub
 ub
 ub
@@ -27535,7 +27506,7 @@ hm
 Ls
 hm
 hm
-hm
+tG
 jy
 hm
 aM
@@ -29583,7 +29554,7 @@ kC
 Al
 "}
 (52,1,1) = {"
-kC
+Al
 kC
 kC
 kC
@@ -29840,7 +29811,7 @@ kC
 Al
 "}
 (53,1,1) = {"
-kC
+Al
 kC
 kC
 kC
@@ -30097,7 +30068,7 @@ kC
 Al
 "}
 (54,1,1) = {"
-kC
+Al
 kC
 kC
 kC
@@ -30354,7 +30325,7 @@ kC
 Al
 "}
 (55,1,1) = {"
-kC
+Al
 kC
 kC
 kC
@@ -30611,7 +30582,7 @@ kC
 Al
 "}
 (56,1,1) = {"
-kC
+Al
 kC
 kC
 kC
@@ -30808,8 +30779,8 @@ PL
 PL
 PL
 PL
-ZU
-ZU
+PL
+PL
 ZU
 ZU
 ZU
@@ -30868,7 +30839,7 @@ kC
 Al
 "}
 (57,1,1) = {"
-kC
+Al
 kC
 kC
 kC
@@ -31065,8 +31036,8 @@ PL
 PL
 PL
 PL
-ZU
-ZU
+PL
+PL
 ZU
 ZU
 ZU
@@ -31125,7 +31096,7 @@ kC
 Al
 "}
 (58,1,1) = {"
-kC
+Al
 kC
 kC
 kC
@@ -31322,8 +31293,8 @@ PL
 PL
 PL
 PL
-ZU
-ZU
+PL
+PL
 ZU
 ZU
 ZU
@@ -31382,7 +31353,7 @@ kC
 Al
 "}
 (59,1,1) = {"
-xf
+PM
 xf
 xf
 xf
@@ -31579,8 +31550,8 @@ PL
 PL
 PL
 PL
-ZU
-ZU
+PL
+PL
 ZU
 ZU
 ZU
@@ -31639,7 +31610,7 @@ kC
 Al
 "}
 (60,1,1) = {"
-kC
+Al
 kC
 kC
 kC
@@ -31896,7 +31867,7 @@ kC
 Al
 "}
 (61,1,1) = {"
-kC
+Al
 kC
 kC
 kC
@@ -33121,8 +33092,8 @@ PL
 PL
 PL
 PL
-ZU
-ZU
+PL
+PL
 ZU
 ZU
 ZU
@@ -33378,16 +33349,16 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 ZU
 ZU
 ZU
@@ -33635,16 +33606,16 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 ZU
 ZU
 ZU
@@ -33892,16 +33863,16 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 ZU
 ZU
 ZU
@@ -34149,21 +34120,21 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -34406,21 +34377,21 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -34663,21 +34634,21 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -34920,21 +34891,21 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -35808,16 +35779,16 @@ kC
 kC
 kC
 kC
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
+kC
 PL
 PL
 PL
@@ -37923,7 +37894,7 @@ ZU
 ZU
 ZU
 ZU
-PL
+ZU
 PL
 PL
 PL
@@ -41544,9 +41515,9 @@ PL
 PL
 PL
 XE
-AP
-AP
-AP
+XE
+XE
+XE
 AP
 PL
 PL
@@ -41801,10 +41772,10 @@ XE
 XE
 XE
 XE
+XE
 AP
-PL
-PL
-PL
+AP
+AP
 PL
 PL
 Wx
@@ -42059,7 +42030,7 @@ XE
 XE
 XE
 AP
-PL
+AP
 PL
 PL
 PL
@@ -46187,8 +46158,8 @@ PL
 PL
 PL
 MA
-XT
-Yp
+ef
+ef
 ef
 ef
 LD
@@ -46444,11 +46415,11 @@ PL
 PL
 PL
 nv
-TZ
-MA
-nv
-nv
-nv
+XT
+Yp
+ef
+ef
+ef
 AP
 qD
 PL
@@ -46700,12 +46671,12 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
+nv
+TZ
+MA
+nv
+nv
+nv
 AP
 qD
 PL
@@ -47669,15 +47640,15 @@ PL
 PL
 PL
 PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
+PL
 PL
 PL
 PL
@@ -47967,7 +47938,7 @@ PL
 PL
 PL
 PL
-PL
+TM
 tY
 tY
 tY
@@ -47975,7 +47946,7 @@ tY
 tY
 tY
 tY
-PL
+KO
 PL
 PL
 PL
@@ -48222,9 +48193,9 @@ PL
 PL
 PL
 PL
-PL
+TM
 tY
-wC
+ar
 ol
 ol
 ol
@@ -48232,7 +48203,7 @@ ol
 ol
 ol
 Ar
-yB
+aJ
 PL
 PL
 PL
@@ -48449,8 +48420,8 @@ ZU
 ZU
 ZU
 ZU
-ZU
-ZU
+PL
+PL
 PL
 al
 dt
@@ -48937,18 +48908,18 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -48993,7 +48964,7 @@ HX
 xR
 va
 JI
-zF
+RH
 BD
 ol
 ol
@@ -49205,23 +49176,23 @@ ZU
 ZU
 ZU
 ZU
-PL
-PL
-PL
-PL
-PL
-PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
 ZU
 PL
 PL
+PL
+PL
+PL
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
 PL
 al
 wg
@@ -49462,7 +49433,7 @@ ZU
 ZU
 ZU
 ZU
-PL
+ZU
 PL
 PL
 PL
@@ -49475,8 +49446,8 @@ ZU
 ZU
 ZU
 ZU
-PL
-PL
+ZU
+ZU
 PL
 PL
 PL
@@ -49719,7 +49690,7 @@ ZU
 ZU
 ZU
 ZU
-PL
+ZU
 PL
 PL
 PL
@@ -49963,6 +49934,24 @@ PL
 PL
 PL
 PL
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+PL
+PL
+PL
+PL
 PL
 ZU
 ZU
@@ -49971,24 +49960,6 @@ ZU
 ZU
 ZU
 ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-PL
-PL
-PL
-PL
-PL
-PL
-ZU
-ZU
-ZU
-ZU
-ZU
-ZU
-PL
 PL
 PL
 PL
@@ -50219,8 +50190,6 @@ PL
 PL
 PL
 PL
-PL
-PL
 ZU
 ZU
 ZU
@@ -50233,7 +50202,9 @@ ZU
 ZU
 ZU
 ZU
-PL
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -50476,8 +50447,6 @@ PL
 PL
 PL
 PL
-PL
-PL
 ZU
 ZU
 ZU
@@ -50490,13 +50459,15 @@ ZU
 ZU
 ZU
 ZU
-PL
-PL
-PL
-PL
+ZU
+ZU
+ZU
 PL
 PL
 PL
+PL
+PL
+ZU
 ZU
 ZU
 ZU
@@ -50540,12 +50511,12 @@ qD
 mM
 qD
 qD
-yU
+oO
 mM
-yU
+oO
 qD
 mM
-PL
+eU
 PL
 PL
 PL
@@ -50733,8 +50704,6 @@ PL
 PL
 PL
 PL
-PL
-PL
 ZU
 ZU
 ZU
@@ -50747,7 +50716,9 @@ ZU
 ZU
 ZU
 ZU
-PL
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -50990,8 +50961,6 @@ PL
 PL
 PL
 PL
-PL
-PL
 ZU
 ZU
 ZU
@@ -51004,7 +50973,9 @@ ZU
 ZU
 ZU
 ZU
-PL
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -51247,8 +51218,6 @@ PL
 PL
 PL
 PL
-PL
-PL
 ZU
 ZU
 ZU
@@ -51261,7 +51230,9 @@ ZU
 ZU
 ZU
 ZU
-PL
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -51504,8 +51475,6 @@ PL
 PL
 PL
 PL
-PL
-PL
 ZU
 ZU
 ZU
@@ -51518,7 +51487,9 @@ ZU
 ZU
 ZU
 ZU
-PL
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -51761,8 +51732,6 @@ PL
 PL
 PL
 PL
-PL
-PL
 ZU
 ZU
 ZU
@@ -51775,7 +51744,9 @@ ZU
 ZU
 ZU
 ZU
-PL
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -51822,12 +51793,12 @@ QA
 QA
 qD
 qD
+oO
+qD
+gK
 yU
 qD
-yU
-yU
-qD
-yU
+oO
 qD
 qD
 PL
@@ -52018,8 +51989,6 @@ PL
 PL
 PL
 PL
-PL
-PL
 ZU
 ZU
 ZU
@@ -52032,7 +52001,9 @@ ZU
 ZU
 ZU
 ZU
-PL
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -52275,8 +52246,6 @@ PL
 PL
 PL
 PL
-PL
-PL
 ZU
 ZU
 ZU
@@ -52289,21 +52258,23 @@ ZU
 ZU
 ZU
 ZU
-PL
-PL
-PL
-PL
+ZU
+ZU
+ZU
 PL
 PL
 PL
-am
-yH
-yH
-yH
-yH
-yH
-yH
-yz
+PL
+PL
+PL
+ZU
+ZU
+ZU
+ZU
+ZU
+PL
+PL
+PL
 PL
 ZU
 ZU
@@ -52352,7 +52323,7 @@ PL
 PL
 PL
 bM
-IG
+gm
 LY
 bM
 Wx
@@ -52532,8 +52503,6 @@ PL
 PL
 PL
 PL
-PL
-PL
 ZU
 ZU
 ZU
@@ -52546,21 +52515,23 @@ ZU
 ZU
 ZU
 ZU
-PL
-PL
-PL
-PL
+ZU
+ZU
+ZU
 PL
 PL
 PL
-wP
-Pj
-Pj
-Pj
-Pj
-Pj
-Pj
-gh
+PL
+PL
+PL
+am
+yH
+yH
+yH
+yH
+yH
+yH
+yz
 PL
 ZU
 ZU
@@ -52789,21 +52760,21 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
 ZU
 ZU
 ZU
 ZU
-PL
-PL
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -53046,21 +53017,21 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
-PL
 ZU
 ZU
 ZU
 ZU
-PL
-PL
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
+ZU
 PL
 PL
 PL
@@ -53868,7 +53839,7 @@ PL
 PL
 PL
 PL
-pq
+PL
 qD
 AP
 AP
@@ -54125,7 +54096,7 @@ PL
 PL
 PL
 PL
-ja
+PL
 qD
 qD
 qD
@@ -54382,9 +54353,9 @@ PL
 PL
 PL
 PL
-vk
-hF
-GP
+PL
+PL
+PL
 qD
 qD
 qD
@@ -55831,7 +55802,7 @@ kC
 kC
 kC
 kC
-Al
+kC
 PL
 PL
 PL
@@ -56408,7 +56379,7 @@ PL
 PL
 PL
 PL
-dc
+wP
 Pj
 Pj
 Pj
@@ -56665,8 +56636,8 @@ PL
 PL
 PL
 PL
-PL
 dc
+Pj
 Pj
 Pj
 Pj
@@ -56923,8 +56894,8 @@ PL
 PL
 PL
 PL
-PL
 dc
+Pj
 Pj
 Pj
 Pj
@@ -57181,8 +57152,8 @@ PL
 PL
 PL
 PL
-PL
-wP
+dc
+Pj
 Pj
 Pj
 Pj
@@ -57439,11 +57410,11 @@ PL
 PL
 PL
 PL
-dc
-RI
-RI
-RI
-KB
+wP
+Pj
+Pj
+Pj
+gh
 PL
 PL
 PL
@@ -57696,11 +57667,11 @@ PL
 PL
 PL
 PL
-PL
-PL
-PL
-PL
-PL
+dc
+RI
+RI
+RI
+KB
 PL
 PL
 PL
@@ -66028,7 +65999,7 @@ YB
 GB
 cP
 Ly
-Jx
+ie
 pb
 nO
 nO
@@ -66647,7 +66618,7 @@ AM
 sq
 tY
 PR
-JN
+ar
 Gl
 Gl
 AM
@@ -73105,7 +73076,7 @@ PL
 PL
 PL
 PL
-PL
+bD
 Rj
 FK
 GD
@@ -76836,7 +76807,7 @@ EZ
 xX
 qQ
 Sq
-Cq
+Sq
 nM
 cw
 WX
@@ -78850,9 +78821,9 @@ PL
 PL
 PL
 PL
-nH
-nH
-nH
+PL
+PL
+PL
 PL
 PL
 PL
@@ -79107,9 +79078,9 @@ PL
 PL
 PL
 PL
-nH
-nH
-nH
+PL
+PL
+PL
 PL
 PL
 PL
@@ -79364,9 +79335,9 @@ PL
 PL
 PL
 PL
-nH
-nH
-nH
+PL
+PL
+PL
 PL
 PL
 PL
@@ -79621,9 +79592,9 @@ PL
 PL
 PL
 PL
-nH
-nH
-nH
+PL
+PL
+PL
 PL
 PL
 PL
