@@ -111,7 +111,7 @@
 		if(90)
 			new /obj/item/organ/heart(src)
 		if(91)
-			new /obj/item/soulstone/anybody(src)
+			new /obj/item/toy/dummy(src)
 		if(92)
 			new /obj/item/organ/heart(src)
 		if(93)
