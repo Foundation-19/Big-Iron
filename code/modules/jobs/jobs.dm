@@ -94,11 +94,11 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Legion Frumentarius",
 "Legion Vexillarius",
 "Legion Veteran Decanus",
-"Veteran Legionnaire",
+"Veteran Legionary",
 "Legion Prime Decanus",
-"Prime Legionnaire",
+"Prime Legionary",
 "Legion Recruit Decanus",
-"Recruit Legionnaire",
+"Recruit Legionary",
 "Legion Explorer",
 "Camp Duty",
 "Legion Slave",
@@ -167,9 +167,9 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Legion Recruit Decanus",
 	"Legion Vexillarius",
 	"Legion Explorer",
-	"Veteran Legionnaire",
-	"Prime Legionnaire",
-	"Recruit Legionnaire",
+	"Veteran Legionary",
+	"Prime Legionary",
+	"Recruit Legionary",
 	"Camp Duty",
 	"Legion Slave"
 ))
@@ -217,6 +217,7 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Blackwater Deputy",
 ))
 
+
 GLOBAL_LIST_INIT(enclave_positions, list(
 	"Enclave Captain",
 	"Enclave Lieutenant",
@@ -236,20 +237,13 @@ GLOBAL_LIST_INIT(church_positions, list(
 	"Neophyte",
 ))
 
-GLOBAL_LIST_INIT(merchant_positions, list(
+GLOBAL_LIST_INIT(kebab_positions, list(
 	"Merchant",
 	"Apprentice",
 	"Mercenary",
+	"Militia Commander",
 	"Bartender",
-))
-
-GLOBAL_LIST_INIT(rustwalker_positions, list(
-	"Listener",
-	"Rustwalker",
-))
-
-GLOBAL_LIST_INIT(kebab_positions, list(
-	"Scab",
+	"Citizen",
 	"Radio Host",
 ))
 
@@ -283,8 +277,6 @@ GLOBAL_LIST_INIT(position_categories, list(
 //	EXP_TYPE_TRIBAL = list("jobs" = tribal_positions, "color" = "#006666"),
 //	EXP_TYPE_VAULT = list("jobs" = vault_positions, "color" = "#ccffcc"),
 	EXP_TYPE_CHURCH = list("jobs" = church_positions, "color" = "#d580ff"),
-	EXP_TYPE_MERCHANT = list("jobs" = merchant_positions, "color" = "#dcba97"),
-	EXP_TYPE_RUSTWALKER = list("jobs" = rustwalker_positions, "color" = "#ff8080"),
 ))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
@@ -298,7 +290,7 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_SILICON = list("titles" = list("AI","Cyborg")),
 	EXP_TYPE_SERVICE = list("titles" = civilian_positions),
 
-	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | kebab_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | church_positions | merchant_positions | rustwalker_positions | tribal_positions | enclave_positions),
+	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | kebab_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | church_positions | tribal_positions | enclave_positions),
 
 	EXP_TYPE_OUTLAW = list("titles" = list("Outlaw","Den Mob Boss","Den Mob Enforcer","Den Doctor",)),
 	EXP_TYPE_BROTHERHOOD = list("titles" = brotherhood_positions),
@@ -307,8 +299,6 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_VAULT = list("titles" = vault_positions),
 	EXP_TYPE_WASTELAND = list("titles" = wasteland_positions),
 	EXP_TYPE_CHURCH = list("titles" = church_positions),
-	EXP_TYPE_MERCHANT = list("titles" = merchant_positions),
-	EXP_TYPE_RUSTWALKER = list("titles" = rustwalker_positions),
 	EXP_TYPE_KEBAB = list("titles" = kebab_positions),
 	EXP_TYPE_TRIBAL = list("titles" = tribal_positions),
 	EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
