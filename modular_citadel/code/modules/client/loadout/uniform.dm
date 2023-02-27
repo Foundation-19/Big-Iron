@@ -674,6 +674,24 @@
 	name = "ranger flannel outfit"
 	path = /obj/item/clothing/under/f13/ranger/vet
 
+/datum/gear/uniform/ncrexile
+	name = "NCR deserter fatigues"
+	path = /obj/item/clothing/under/f13/exile
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
+	restricted_desc = "Wastelander"
+	restricted_roles = list("Wastelander",
+							"Outlaw"
+						)
+
+/datum/gear/uniform/legexile
+	name = "Legion deserter fatigues"
+	path = /obj/item/clothing/under/f13/exile/legion
+	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
+	restricted_desc = "Wastelander"
+	restricted_roles = list("Wastelander",
+							"Outlaw"
+						)
+
 //Oasis
 
 /datum/gear/uniform/suit/blueshift
