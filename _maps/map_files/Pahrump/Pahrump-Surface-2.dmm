@@ -4676,6 +4676,7 @@
 /obj/structure/chair/comfy/brown{
 	dir = 4
 	},
+/obj/effect/landmark/start/f13/merchant/militiacom,
 /turf/open/floor/carpet/green,
 /area/f13/merchant)
 "bVo" = (
@@ -6743,7 +6744,7 @@
 "cWS" = (
 /obj/machinery/door/airlock/wood{
 	req_access_txt = "148";
-	name = "evidence"
+	name = "Kebab Militia Headquarters"
 	},
 /turf/open/floor/f13{
 	color = "#818181";
@@ -12343,10 +12344,6 @@
 /obj/effect/spawner/lootdrop/clothing_middle,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"fkC" = (
-/obj/structure/stairs/north,
-/turf/open/floor/wood/f13/oak,
-/area/f13/merchant)
 "fkF" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	color = "#e4e4e4"
@@ -16458,7 +16455,7 @@
 "gRM" = (
 /obj/machinery/door/airlock/wood{
 	req_access_txt = "148";
-	name = "commander's office"
+	name = "Militia Commander's Office"
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/merchant)
@@ -23076,16 +23073,6 @@
 	name = "metal plating"
 	},
 /area/f13/wasteland)
-"jEU" = (
-/obj/machinery/door/airlock/wood{
-	req_access_txt = "148";
-	name = "office"
-	},
-/turf/open/floor/f13{
-	color = "#818181";
-	icon_state = "floorrustysolid"
-	},
-/area/f13/merchant)
 "jFc" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/radio/intercom{
@@ -29668,6 +29655,9 @@
 /area/f13/wasteland)
 "mvB" = (
 /obj/structure/table/wood,
+/obj/machinery/computer/terminal{
+	dir = 8
+	},
 /turf/open/floor/carpet/green,
 /area/f13/merchant)
 "mvS" = (
@@ -33331,14 +33321,6 @@
 	},
 /turf/open/indestructible/ground/inside/dirt/stamped,
 /area/f13/legion)
-"oeE" = (
-/obj/structure/stairs/north{
-	dir = 4
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/merchant)
 "oeL" = (
 /obj/structure/closet/crate/bin/trashbin,
 /turf/open/floor/f13/wood,
@@ -35084,6 +35066,7 @@
 /area/f13/wasteland)
 "oWU" = (
 /obj/structure/chair/office/dark,
+/obj/effect/landmark/start/f13/merchant/militiacom,
 /turf/open/floor/f13{
 	icon_state = "neutralrustyfull"
 	},
@@ -49485,7 +49468,7 @@
 "vvu" = (
 /obj/machinery/door/airlock/wood{
 	req_access_txt = "148";
-	name = "militia HQ"
+	name = "Kebab Militia Headquarters"
 	},
 /turf/open/floor/f13{
 	icon_state = "neutralrustyfull"
@@ -49696,6 +49679,12 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
+"vBF" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/open/floor/carpet/green,
+/area/f13/merchant)
 "vBG" = (
 /obj/structure/stairs/south,
 /turf/open/floor/f13{
@@ -76933,7 +76922,7 @@ cNO
 lZV
 gAZ
 sKL
-mvB
+vBF
 mvB
 gAZ
 xzd
@@ -77703,7 +77692,7 @@ mvv
 nza
 gAZ
 iHQ
-fkC
+glo
 qny
 lOx
 gAZ
@@ -79755,10 +79744,10 @@ qny
 qny
 gAZ
 iHQ
-oeE
 iHQ
 iHQ
-jEU
+iHQ
+cWS
 iHQ
 vvu
 vvu
