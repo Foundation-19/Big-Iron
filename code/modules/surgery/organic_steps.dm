@@ -19,7 +19,8 @@
 		var/mob/living/carbon/human/H = target
 		if (!(NOBLOOD in H.dna.species.species_traits))
 			display_results(user, target, "<span class='notice'>Blood pools around the incision in [H]'s [parse_zone(target_zone)].</span>",
-				"Blood pools around the incision in [H]'s [parse_zone(target_zone)].")
+				"Blood pools around the incision in [H]'s [parse_zone(target_zone)].",
+				"")
 			var/obj/item/bodypart/BP = target.get_bodypart(target_zone)
 			if(BP)
 				BP.generic_bleedstacks += 10

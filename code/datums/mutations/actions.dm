@@ -193,7 +193,7 @@
 		return ..()
 
 
-/*/datum/mutation/human/olfaction
+/datum/mutation/human/olfaction
 	name = "Transcendent Olfaction"
 	desc = "Your sense of smell is comparable to that of a canine."
 	quality = POSITIVE
@@ -241,6 +241,7 @@
 		user.adjust_disgust(sensitivity * 45)
 		to_chat(user, "<span class='warning'>With your overly sensitive nose, you get a whiff of stench and feel sick! Try moving to a cleaner area!</span>")
 		return
+*/
 	var/atom/sniffed = user.get_active_held_item()
 	if(sniffed)
 		var/old_target = tracking_target
@@ -285,7 +286,7 @@
 	var/direction_text = "[dir2text(get_dir(usr, tracking_target))]"
 	if(direction_text)
 		to_chat(user,"<span class='notice'>You consider [tracking_target]'s scent. The trail leads <b>[direction_text].</b></span>")
-*/
+
 
 /datum/mutation/human/self_amputation
 	name = "Autotomy"
