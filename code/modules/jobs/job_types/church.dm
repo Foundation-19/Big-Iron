@@ -18,7 +18,7 @@
 	forbids = "Exposing the secrets of the Church, fraternizing with the NCR, treating patients for nothing in return, consuming alcohol, and using chems."
 	enforces = "Preaching the faith, following the faith's internal structure and rules."
 	exp_type = EXP_TYPE_CHURCH
-	exp_requirements = 100
+	exp_requirements = 130
 
 	outfit = /datum/outfit/job/church/f13highpriest
 	access = list(ACCESS_COTC, ACCESS_COTC_ARMORY, ACCESS_COTC_SECRET)
@@ -37,7 +37,7 @@
 	name = "High Priest"
 	jobtype = /datum/job/church/f13highpriest
 
-	id = /obj/item/card/id/yuma/cotc
+	id = /obj/item/card/id/yuma/cotc/brand
 	uniform = /obj/item/clothing/under/f13/chaplain
 	suit = /obj/item/clothing/suit/hooded/robes/cotc/highpriest
 	suit_store = /obj/item/gun/energy/laser/plasma/pistol
@@ -51,11 +51,11 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	backpack_contents = list(
 		/obj/item/book/manual/thebook = 1,
+		/obj/item/book/manual/ritualbook = 1,
 		/obj/item/book/manual/thebook/purple = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/storage/fancy/candle_box = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/storage/bag/money/small/settler
 		)
 /datum/outfit/job/church/f13highpriest/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -64,6 +64,7 @@
 	H.grant_language(/datum/language/shorthand)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak5)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/church)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
@@ -85,7 +86,7 @@
 	forbids = "Exposing the secrets of the Church, fraternizing with the NCR, treating patients for nothing in return, consuming alcohol, and using chems."
 	enforces = "Preaching the faith, following the faith's internal structure and rules."
 	exp_type = EXP_TYPE_CHURCH
-	exp_requirements = 30
+	exp_requirements = 100
 
 	outfit = /datum/outfit/job/church/f13servitor
 	access = list(ACCESS_COTC, ACCESS_COTC_ARMORY, ACCESS_COTC_SECRET)
@@ -104,7 +105,7 @@
 	name = "Servitor"
 	jobtype = /datum/job/church/f13servitor
 
-	id = /obj/item/card/id/yuma/cotc
+	id = /obj/item/card/id/yuma/cotc/brand
 	uniform = /obj/item/clothing/under/f13/chaplain
 	suit = /obj/item/clothing/suit/hooded/robes/cotc/servitor
 	suit_store = /obj/item/gun/energy/laser/wattz2k
@@ -114,13 +115,15 @@
 	duffelbag =	/obj/item/storage/backpack/duffelbag/med
 	gloves = null
 	l_pocket = null
-	r_pocket = null
+	r_pocket = /obj/item/storage/bag/money/small/settler
 	shoes = /obj/item/clothing/shoes/laceup
 	backpack_contents = list(
 		/obj/item/book/manual/thebook = 1,
+		/obj/item/book/manual/ritualbook = 1,
 		/obj/item/melee/classic_baton = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/stack/medical/bruise_pack = 1,
+		/obj/item/restraints/handcuffs/cable = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2
 		)
 
@@ -131,11 +134,12 @@
 	H.grant_language(/datum/language/shorthand)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak5)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/church)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 
 /*--------------------------------------------------------------*/
@@ -176,7 +180,7 @@
 	name = "Acolyte"
 	jobtype = /datum/job/church/f13acolyte
 
-	id = /obj/item/card/id/yuma/cotc
+	id = /obj/item/card/id/yuma/cotc/brand
 	uniform = /obj/item/clothing/under/f13/brahminm
 	ears = /obj/item/radio/headset/headset_church
 	backpack = /obj/item/storage/backpack/satchel/sec
@@ -188,17 +192,26 @@
 	shoes = /obj/item/clothing/shoes/f13/rag
 	backpack_contents = list(
 		/obj/item/restraints/handcuffs/cable = 1,
+		/obj/item/book/manual/ritualbook = 1,
 		/obj/item/book/manual/thebook = 1
 		)
+
+/datum/outfit/job/church/f13acolyte/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak5)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/church)
 
 /datum/outfit/loadout/proselytizer
 	name = "Enforcer"
 	suit = /obj/item/clothing/suit/hooded/robes/cotc/proselytizer
-	suit_store = /obj/item/gun/energy/laser/pistol
+	suit_store = /obj/item/gun/energy/laser/aer9
 	backpack_contents = list(
 		/obj/item/melee/classic_baton = 1,
 		/obj/item/restraints/legcuffs/bola = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
 		)
 
@@ -228,6 +241,13 @@
 
 	outfit = /datum/outfit/job/church/neophyte
 
+	loadout_options = list(
+		/datum/outfit/loadout/neophyte/enforcer,
+		/datum/outfit/loadout/neophyte/healer,
+		/datum/outfit/loadout/neophyte/sanitation,
+		/datum/outfit/loadout/neophyte/gardener,
+		)
+
 	access = list(ACCESS_COTC)
 	minimal_access = list(ACCESS_COTC)
 	matchmaking_allowed = list(
@@ -243,19 +263,16 @@
 	name = "Neophyte"
 	jobtype = /datum/job/church/f13neophyte
 
-	id = /obj/item/card/id/yuma/cotc
+	id = /obj/item/card/id/yuma/cotc/brand
 	ears = 	/obj/item/radio/headset/headset_church
 	suit = /obj/item/clothing/suit/hooded/robes/cotc
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	l_pocket = null
 	r_pocket = /obj/item/flashlight/flare
-	belt = /obj/item/storage/bag/plants
 	shoes = /obj/item/clothing/shoes/f13/rag
 	backpack_contents = list(
-		/obj/item/cultivator=1,
-		/obj/item/hatchet=1,
-		/obj/item/shovel/spade=1)
+		/obj/item/book/manual/thebook = 1)
 
 /datum/outfit/job/church/neophyte/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -263,9 +280,43 @@
 		return
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak5)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/church)
 	uniform = pick(
 		/obj/item/clothing/under/f13/settler,
 		/obj/item/clothing/under/f13/brahminm,
-		/obj/item/clothing/under/f13/machinist,
-		/obj/item/clothing/under/f13/lumberjack,
-		/obj/item/clothing/under/f13/roving)
+		/obj/item/clothing/under/f13/raiderharness,
+		/obj/item/clothing/under/f13/rag,
+		/obj/item/clothing/under/f13/raiderrags)
+
+/datum/outfit/loadout/neophyte/enforcer
+	name = "Enforcer"
+	backpack_contents = list(
+		/obj/item/melee/classic_baton = 1,
+		/obj/item/restraints/handcuffs/cable = 1,
+		/obj/item/restraints/legcuffs/bola = 1
+		)
+
+/datum/outfit/loadout/neophyte/healer
+	name = "Healer"
+	backpack_contents = list(
+		/obj/item/book/granter/trait/lowsurgery = 1,
+		/obj/item/stack/medical/bruise_pack = 1
+		)
+
+/datum/outfit/loadout/neophyte/sanitation
+	name = "Janitor"
+	backpack_contents = list(
+		/obj/item/mop = 1,
+		/obj/item/reagent_containers/glass/bucket = 1,
+		/obj/item/soap/homemade = 1,
+		/obj/item/storage/bag/trash = 1
+		)
+
+/datum/outfit/loadout/neophyte/gardener
+	name = "Gardener"
+	backpack_contents = list(
+		/obj/item/cultivator = 1,
+		/obj/item/hatchet = 1,
+		/obj/item/shovel/spade = 1,
+		/obj/item/storage/bag/plants = 1
+		)

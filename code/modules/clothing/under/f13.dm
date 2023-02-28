@@ -152,6 +152,14 @@
 	item_state = "ncr_dress"
 	item_color = "ncr_dress"
 
+/obj/item/clothing/under/f13/ncr/colonial
+	name = "colonial outfit"
+	desc = "A well-ironed dress shirt with a blue tie tucked into tan pants, whoever wears this must be one hell of an asshole."
+	can_adjust = TRUE
+	icon_state = "colonial_outfit"
+	item_state = "colonial_outfit"
+	item_color = "colonial_outfit"
+
 /obj/item/clothing/under/f13/ncrcf
 	name = "caravaneer outfit"
 	desc = "A cheap blue shirt and slacks, the letters 'NCRCF' emblazened on the back. A meek reminder of who owns you."
@@ -346,16 +354,16 @@
 
 //Legion
 
-/obj/item/clothing/under/f13/slavemale
-	name = "male slave robe"
+/obj/item/clothing/under/f13/campfollowermale
+	name = "camp follower male robe"
 	desc = "Olive colored cloth with a red belt."
 	icon_state = "legcamp"
 	item_state = "brownjsuit"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
-/obj/item/clothing/under/f13/slavefemale
-	name = "female slave robe"
+/obj/item/clothing/under/f13/campfollowerfemale
+	name = "camp follower female robe"
 	desc = "Olive colored cloth with a red sash."
 	icon_state = "legcamp_f"
 	item_state = "legcamp_f"

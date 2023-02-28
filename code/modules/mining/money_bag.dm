@@ -54,7 +54,7 @@
 	new /obj/item/stack/f13Cash/random/denarius/med(src)
 	new /obj/item/stack/f13Cash/random/aureus/high(src)
 
-// Legion enlisted. Spawns with the Legionnaires. Average 12 caps.
+// Legion enlisted. Spawns with the Legionaries. Average 12 caps.
 /obj/item/storage/bag/money/small/legenlisted/PopulateContents()
 	new /obj/item/stack/f13Cash/random/denarius/low(src)
 

@@ -506,9 +506,9 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	job_list = list(
 		"Legion Slave",
 		"Legion Citizen",
-		"Recruit Legionnaire",
-		"Prime Legionnaire",
-		"Veteran Legionnaire",
+		"Recruit Legionary",
+		"Prime Legionary",
+		"Veteran Legionary",
 		)
 	job_req = list(
 		"Legate",

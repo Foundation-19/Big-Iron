@@ -80,6 +80,21 @@
 	name = "khan door"
 	req_access_txt = "125"
 
+//COTC
+/obj/machinery/door/unpowered/securedoor/church
+	name = "Church door"
+	req_access_txt = "145"
+
+//COTC
+/obj/machinery/door/unpowered/securedoor/militia
+	name = "Militia door"
+	req_access_txt = "148"
+
+//COTC
+/obj/machinery/door/unpowered/securedoor/merchant
+	name = "Merchant door"
+	req_access_txt = "34"
+
 
 // ------------------------------------
 // NCR SECURE REINFORCED DOOR - tough airlock replacement
@@ -190,6 +205,7 @@
 	explosion_block = FALSE
 	proj_pass_rate = 95
 	req_access_txt = "123"
+	opacity = FALSE
 
 /obj/machinery/door/unpowered/secure_legion/update_icon()
 	if(density)
