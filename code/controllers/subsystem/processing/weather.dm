@@ -1,3 +1,4 @@
+/*
 #define STARTUP_STAGE 1
 #define MAIN_STAGE 2
 #define WIND_DOWN_STAGE 3
@@ -77,3 +78,4 @@ PROCESSING_SUBSYSTEM_DEF(weather)
 			A = W
 			break
 	return A
+*/

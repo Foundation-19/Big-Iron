@@ -1,4 +1,5 @@
 //Causes fire damage to anyone not standing on a dense object.
+/* Removing weather because of crashes
 /datum/weather/floor_is_lava
 	name = "the floor is lava"
 	desc = "The ground turns into surprisingly cool lava, lightly damaging anything on the floor."
@@ -35,3 +36,4 @@
 	if(!L.client) //Only sentient people are going along with it!
 		return
 	L.adjustFireLoss(3)
+*/
