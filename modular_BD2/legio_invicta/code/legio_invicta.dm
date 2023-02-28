@@ -507,6 +507,8 @@
 	name = "legion recruit armor"
 	desc = "Well, it's better than nothing."
 	icon_state = "armor_recruit"
+	armor = list("melee" = 30, "bullet" = 15, "laser" = 5, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	slowdown = 0.04
 
 /obj/item/clothing/suit/armor/light/legion/prime
 	name = "legion prime armor"
