@@ -2675,6 +2675,10 @@
 "iY" = (
 /obj/machinery/workbench/advanced,
 /obj/item/stack/ore/blackpowder/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/ten{
+	amount = 25
+	},
 /turf/open/floor/f13{
 	icon_state = "darkredfull"
 	},
@@ -3017,9 +3021,7 @@
 /area/f13/brotherhood/surface)
 "kd" = (
 /obj/structure/table/wood,
-/obj/machinery/computer/terminal{
-	termtag = "Secret"
-	},
+/obj/machinery/cell_charger,
 /turf/open/floor/f13{
 	icon_state = "darkredfull"
 	},
@@ -4181,9 +4183,6 @@
 	icon_state = "oakfloor3"
 	},
 /area/f13/wasteland)
-"nH" = (
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/caves)
 "nI" = (
 /obj/structure/bed,
 /obj/effect/spawner/lootdrop/bedsheet,
@@ -6135,6 +6134,12 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/ncr)
+"th" = (
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowhorizontal"
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/ncr)
 "tj" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -7735,6 +7740,13 @@
 	},
 /turf/open/floor/carpet/red,
 /area/f13/merchant)
+"yc" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowright"
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/ncr)
 "yf" = (
 /obj/structure/window/fulltile/wood,
 /obj/structure/decoration/rag,
@@ -10764,7 +10776,6 @@
 /obj/structure/chair/sofa/right{
 	color = "#800000"
 	},
-/obj/item/stack/ore/blackpowder/fifty,
 /turf/open/floor/wood/f13/oak,
 /area/f13/ncr)
 "HX" = (
@@ -13664,9 +13675,10 @@
 /area/f13/wasteland)
 "Rd" = (
 /obj/structure/window/fulltile/house{
-	icon_state = "storewindowhorizontal"
+	dir = 2;
+	icon_state = "storewindowleft"
 	},
-/turf/open/space/basic,
+/turf/open/floor/wood/f13/oak,
 /area/f13/ncr)
 "Re" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -16153,6 +16165,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/cotc)
+"Zb" = (
+/obj/structure/table,
+/obj/structure/fluff/paper/stack{
+	desc = "A stack of various papers, describing the arrival of mining equipment from Camp McCarran to this buildings garage, along with orders from Colonel Hsu about usage of such equipment on the nearby mountains by any and all Republican Prisoners.";
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/ncr)
 "Zc" = (
 /obj/structure/table/wood/fancy/purple,
 /obj/effect/decal/cleanable/dirt,
@@ -18178,9 +18198,9 @@ kC
 kC
 kC
 kC
-nH
-nH
-nH
+PL
+PL
+PL
 PL
 PL
 PL
@@ -18257,7 +18277,7 @@ Ee
 Um
 Av
 Ee
-Rd
+th
 EZ
 EZ
 EZ
@@ -18435,9 +18455,9 @@ PL
 kC
 kC
 kC
-nH
-nH
-nH
+PL
+PL
+PL
 PL
 PL
 PL
@@ -18514,7 +18534,7 @@ mR
 Hs
 qp
 Ee
-Rd
+th
 EZ
 EZ
 EZ
@@ -18692,9 +18712,9 @@ PL
 kC
 kC
 PL
-nH
-nH
-nH
+PL
+PL
+PL
 PL
 PL
 PL
@@ -18771,7 +18791,7 @@ mR
 js
 wk
 wk
-Rd
+yc
 EZ
 EZ
 EZ
@@ -18949,9 +18969,9 @@ PL
 PL
 kC
 PL
-nH
-nH
-nH
+PL
+PL
+PL
 PL
 PL
 PL
@@ -23646,7 +23666,7 @@ Al
 yu
 gP
 oc
-SH
+Zb
 SH
 Tg
 jS
