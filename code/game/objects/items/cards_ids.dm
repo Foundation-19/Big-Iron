@@ -914,6 +914,9 @@
 			update_label()
 	return ..()
 
+/obj/item/card/id/dogtag/deputy/kebab
+	access = list(ACCESS_MILITIA)
+
 /obj/item/card/id/dogtag/sheriff
 	name = "Chief of Police's badge"
 	desc = "A golden chief's badge."
@@ -1277,3 +1280,4 @@
 	uses_overlays = FALSE
 	assignment = "neophyte identification papers"
 	access = list(ACCESS_COTC)
+

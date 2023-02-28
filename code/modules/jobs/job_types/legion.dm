@@ -48,7 +48,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatmk2)
 
 
-/datum/outfit/job/CaesarsLegion/Legionnaire
+/datum/outfit/job/CaesarsLegion/Legionary
 	belt = /obj/item/storage/belt/military/legion
 	ears = /obj/item/radio/headset/headset_legion
 	backpack = /obj/item/storage/backpack/marching_satchel
@@ -58,7 +58,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	gloves = /obj/item/clothing/gloves/legion
 	box = /obj/item/storage/survivalkit/legion_rations
 /*
-/datum/outfit/job/CaesarsLegion/Legionnaire/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -71,13 +71,14 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 			L.registered_name = H.name
 			L.update_label()
 */
-/datum/outfit/job/CaesarsLegion/Legionnaire/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+
+/datum/outfit/job/CaesarsLegion/Legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_TRIBAL, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_FEARLESS, src) //no phobias for legionnaires!
+	ADD_TRAIT(H, TRAIT_FEARLESS, src) //no phobias for legionaries!
 	ADD_TRAIT(H, TRAIT_BERSERKER, src)
 
 /obj/item/storage/box/legate
@@ -100,7 +101,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // LEGATE
 
-/datum/job/CaesarsLegion/Legionnaire/f13legate
+/datum/job/CaesarsLegion/Legionary/f13legate
 	title = "Legion Legate"
 	flag = F13LEGATE
 	head_announce = list("Security")
@@ -109,11 +110,11 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	req_admin_notify = 1
 	total_positions = 0
 	spawn_positions = 0
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legate
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13legate
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13legate/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/f13legate/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -125,9 +126,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13legate	// 14mm Pistol, Goliath
+/datum/outfit/job/CaesarsLegion/Legionary/f13legate	// 14mm Pistol, Goliath
 	name = "Legate"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13legate
+	jobtype = /datum/job/CaesarsLegion/Legionary/f13legate
 	shoes =	/obj/item/clothing/shoes/f13/military/legate
 	suit = /obj/item/clothing/suit/armor/f13/legion/legate
 	head = /obj/item/clothing/head/helmet/f13/legion/legate
@@ -154,7 +155,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // ----------------- CENTURION ---------------------
 
-/datum/job/CaesarsLegion/Legionnaire/f13centurion
+/datum/job/CaesarsLegion/Legionary/f13centurion
 	title = "Legion Centurion"
 	flag = F13CENTURION
 	display_order = JOB_DISPLAY_ORDER_CENTURION
@@ -168,7 +169,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	supervisors = "the Legate"
 	exp_requirements = 600
 
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13centurion
 
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
@@ -179,7 +180,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/datum/outfit/loadout/centurion,	// City-Killer shotgun, 14mm pistol
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/f13centurion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -191,9 +192,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
+/datum/outfit/job/CaesarsLegion/Legionary/f13centurion
 	name = "Legion Centurion"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13centurion
+	jobtype = /datum/job/CaesarsLegion/Legionary/f13centurion
 	id = /obj/item/card/id/dogtag/legion/centurion
 	mask = /obj/item/clothing/mask/bandana/legion/centurion
 	ears = /obj/item/radio/headset/headset_legion/cent
@@ -254,7 +255,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // ----------------- VETERAN DECANUS ---------------------
 
-/datum/job/CaesarsLegion/Legionnaire/f13decanvet
+/datum/job/CaesarsLegion/Legionary/f13decanvet
 	title = "Legion Veteran Decanus"
 	flag = F13DECANVET
 	display_order = JOB_DISPLAY_ORDER_DECANVET
@@ -265,7 +266,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	supervisors = "the Centurion"
 	exp_requirements = 600
 
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13decanvet
 
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
@@ -277,7 +278,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/datum/outfit/loadout/decvetbrave // Trench shotgun, .44 revolver, Ballistic fist
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/f13decanvet/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -286,9 +287,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
+/datum/outfit/job/CaesarsLegion/Legionary/f13decanvet
 	name = "Legion Veteran Decanus"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decanvet
+	jobtype = /datum/job/CaesarsLegion/Legionary/f13decanvet
 	id = /obj/item/card/id/dogtag/legveteran
 	suit = /obj/item/clothing/suit/armor/f13/legion/heavy
 	mask = /obj/item/clothing/mask/bandana/legion
@@ -352,7 +353,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // ----------------- PRIME DECANUS ---------------------
 
-/datum/job/CaesarsLegion/Legionnaire/f13decan
+/datum/job/CaesarsLegion/Legionary/f13decan
 	title = "Legion Prime Decanus"
 	flag = F13DECAN
 	display_order = JOB_DISPLAY_ORDER_DECAN
@@ -367,9 +368,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/datum/outfit/loadout/decprimboom, // Grenade rifle, .44 revolver, Frag grenades, Coffepot bomb
 		/datum/outfit/loadout/decprimwar // Spatha, .44 revolver, Bolas
 		)
-		
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
-	
+
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13decan
+
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1)
 
@@ -382,7 +383,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		),
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decan/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/f13decan/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -391,9 +392,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
+/datum/outfit/job/CaesarsLegion/Legionary/f13decan
 	name = "Prime Decanus"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decan
+	jobtype = /datum/job/CaesarsLegion/Legionary/f13decan
 	id = /obj/item/card/id/dogtag/legveteran
 	suit = /obj/item/clothing/suit/armor/f13/legion/prime/decan
 	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
@@ -454,7 +455,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // ----------------- RECRUIT DECANUS ---------------------
 
-/datum/job/CaesarsLegion/Legionnaire/f13decanrec
+/datum/job/CaesarsLegion/Legionary/f13decanrec
 	title = "Legion Recruit Decanus"
 	flag = F13DECANREC
 	display_order = JOB_DISPLAY_ORDER_DECANREC
@@ -467,9 +468,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/datum/outfit/loadout/recdeclegion,	// Uzi, Bumper sword, Smokebomb
 		/datum/outfit/loadout/recdectribal	// SKS, Throwing spears, Reinforced machete, Bottlecap mine
 		)
-	
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
-	
+
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13decanrec
+
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1)
 
@@ -482,7 +483,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		),
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/f13decanrec/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -490,9 +491,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
+/datum/outfit/job/CaesarsLegion/Legionary/f13decanrec
 	name = "Legion Recruit Decanus"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decanrec
+	jobtype = /datum/job/CaesarsLegion/Legionary/f13decanrec
 	id = /obj/item/card/id/dogtag/legion
 	suit = /obj/item/clothing/suit/armor/f13/legion/recruit/decan
 	head = /obj/item/clothing/head/helmet/f13/legion/recruit/decan
@@ -536,18 +537,18 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // ----------------- VEXILLARIUS ---------------------
 
-/datum/job/CaesarsLegion/Legionnaire/f13vexillarius
+/datum/job/CaesarsLegion/Legionary/f13vexillarius
 	title = "Legion Vexillarius"
 	flag = F13VEXILLARIUS
 	display_order = JOB_DISPLAY_ORDER_VEXILLARIUS
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "You are a Veteran of proven bravery. When not fighting, relay orders from the commander and act as a bodyguard."
 	supervisors = "the Veteran Decanus and Centurion"
 	exp_requirements = 720
-	
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
-	
+
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13vexillarius
+
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION2, ACCESS_LEGION_COMMAND)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION2, ACCESS_LEGION_COMMAND)
 
@@ -566,7 +567,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		),
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/f13vexillarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -574,9 +575,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
+/datum/outfit/job/CaesarsLegion/Legionary/f13vexillarius
 	name = "Vexillarius"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13vexillarius
+	jobtype = /datum/job/CaesarsLegion/Legionary/f13vexillarius
 	id = /obj/item/card/id/dogtag/legion/veteran
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet/vexil
 	mask = /obj/item/clothing/mask/bandana/legion
@@ -625,16 +626,16 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // ----------------- EXPLORER ---------------------
 
-/datum/job/CaesarsLegion/Legionnaire/f13explorer
+/datum/job/CaesarsLegion/Legionary/f13explorer
 	title = "Legion Explorer"
 	flag = F13EXPLORER
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	total_positions = 3
 	spawn_positions = 3
-	description = "Scout the area, secure key points, ignore orders and wordlessly die some place. A good explorer helps his unit by taking initiative and helping the commander without needing micro-managment. When moving slowly they are hard for enemies to hear."
-	supervisors = "the Decanus and Centurion must be obeyed. You are equivalent to a Prime, but you are a specialist"
+	description = "You are a scout; in charge of gathering intel, keeping your superiors well informed, and occasionally ambushing the enemy if the opportunity presents itself. Take initiative and help paint a picture of the situation for your commander."
+	supervisors = "the Decanii"
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13explorer
 
 	loadout_options = list(	// ALL: .45 Revolver, Reinforced Machete
 		/datum/outfit/loadout/expscout,	// Commando Carbine, Smokebomb, C4
@@ -651,7 +652,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 			),
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/f13explorer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
 		return
@@ -660,9 +661,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_SILENT_STEP, src)
 
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
+/datum/outfit/job/CaesarsLegion/Legionary/f13explorer
 	name = "Legion Explorer"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13explorer
+	jobtype = /datum/job/CaesarsLegion/Legionary/f13explorer
 	id = /obj/item/card/id/dogtag/legion/prime
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/explorer
@@ -719,7 +720,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // ----------------- FRUMENTARIUS ---------------------
 
-/datum/job/CaesarsLegion/Legionnaire/f13frumentarius
+/datum/job/CaesarsLegion/Legionary/f13frumentarius
 	title = "Legion Frumentarius"
 	flag = F13FRUMENTARIUS
 	display_order = JOB_DISPLAY_ORDER_FRUMENTARIUS
@@ -729,15 +730,15 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	total_positions = 1
 	spawn_positions = 1
 	exp_requirements = 600
-	
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13frumentarius
-	
+
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13frumentarius
+  
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13frumentarius	// .357 Revolver, Spatha
+/datum/outfit/job/CaesarsLegion/Legionary/f13frumentarius	// .357 Revolver, Spatha
 	name = "Legion Frumentarius"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13frumentarius
+	jobtype = /datum/job/CaesarsLegion/Legionary/f13frumentarius
 	neck = /obj/item/storage/belt/holster
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	suit = /obj/item/clothing/suit/armor/f13/legion/frumentarius
@@ -755,7 +756,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13frumentarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/f13frumentarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -772,8 +773,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // ----------------- VETERAN --------------------- //
 
-/datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	title = "Veteran Legionnaire"
+/datum/job/CaesarsLegion/Legionary/vetlegionary
+	title = "Veteran Legionary"
 	flag = F13VETLEGIONARY
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
 	total_positions = 3
@@ -788,7 +789,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/datum/outfit/loadout/vetrifle		// Trail gun, .357 Revolver, Throwing knives
 		)
 
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/vetlegionary
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -799,7 +800,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 			),
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/vetlegionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -808,9 +809,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	name = "Veteran Legionnaire"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
+/datum/outfit/job/CaesarsLegion/Legionary/vetlegionary
+	name = "Veteran Legionary"
+	jobtype = /datum/job/CaesarsLegion/Legionary/vetlegionary
 	id = /obj/item/card/id/dogtag/legion/veteran
 	mask = /obj/item/clothing/mask/bandana/legion
 	head = /obj/item/clothing/head/helmet/f13/legion/vet
@@ -879,8 +880,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 // ----------------- PRIME --------------------- //
 
-/datum/job/CaesarsLegion/Legionnaire/f13legionary
-	title = "Prime Legionnaire"
+/datum/job/CaesarsLegion/Legionary/f13legionary
+	title = "Prime Legionary"
 	flag = F13LEGIONARY
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
 	total_positions = 4
@@ -895,8 +896,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/datum/outfit/loadout/primepila,		// Legion Lance, Extra Medicine
 		/datum/outfit/loadout/primecrossbow		// Legion crossbow, bow autodraw, Extra Medicine
 		)
-	
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
+
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13legionary
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -907,16 +908,16 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		),
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/f13legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
-	name = "Prime Legionnaire"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13legionary
+/datum/outfit/job/CaesarsLegion/Legionary/f13legionary
+	name = "Prime Legionary"
+	jobtype = /datum/job/CaesarsLegion/Legionary/f13legionary
 	id = /obj/item/card/id/dogtag/legion/prime
 	mask = /obj/item/clothing/mask/bandana/legion
 	head = /obj/item/clothing/head/helmet/f13/legion/prime
@@ -976,8 +977,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		
 // ----------------- RECRUIT --------------------- //
 
-/datum/job/CaesarsLegion/Legionnaire/f13recleg
-	title = "Recruit Legionnaire"
+/datum/job/CaesarsLegion/Legionary/f13recleg
+	title = "Recruit Legionary"
 	flag = F13RECRUITLEG
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
 	total_positions = 6
@@ -985,7 +986,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion. Respect the soldiers of higher rank."
 	supervisors = "the Decani and Centurion"
 
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13recleg
 
 	loadout_options = list(
 		/datum/outfit/loadout/recruittribal,	// Sledgehammer, bola, throwing spear quiver, trekking
@@ -1002,16 +1003,16 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		),
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionary/f13recleg/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
-	name = "Recruit Legionnaire"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13recleg
+/datum/outfit/job/CaesarsLegion/Legionary/f13recleg
+	name = "Recruit Legionary"
+	jobtype = /datum/job/CaesarsLegion/Legionary/f13recleg
 	id = /obj/item/card/id/dogtag/legion
 	shoes = /obj/item/clothing/shoes/f13/military/leather
 	suit = /obj/item/clothing/suit/armor/f13/legion/recruit
@@ -1075,7 +1076,11 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	description = "You are a spiritual and logistics advisor for the Legion forces in the area. Being raised in and from the homeland, you have fully adapted to the Legion's ideals and fully committed yourself to the role as mother and caretaker of the Legion's future. You are an icon to be respected, even by fellow Legion; and although a woman, your status does not allow you to be belittled."
 	supervisors = "the Centurion, Mars"
 	exp_requirements = 300
+  
 	outfit = /datum/outfit/job/CaesarsLegion/f13priestess
+ 
+  access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
+	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 
 /datum/outfit/job/CaesarsLegion/f13priestess
 	name = "Priestess of Mars"
@@ -1272,15 +1277,16 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/loadout/campfolloweroffduty
 	name = "Off-Duty Legionary"
 	id = /obj/item/card/id/dogtag/legfollower
-	mask = /obj/item/clothing/mask/bandana/legion/dark
-	uniform = /obj/item/clothing/under/f13/legskirt
-	glasses = /obj/item/clothing/glasses/sunglasses
-	shoes = /obj/item/clothing/shoes/f13/military/leather
-	l_pocket = /obj/item/flashlight/lantern
-	suit_store = /obj/item/melee/onehanded/slavewhip
+	head = /obj/item/clothing/head/f13/servant/campfollower
+	uniform = /obj/item/clothing/under/f13/campfollowerfemale
+	shoes = /obj/item/clothing/shoes/roman
+	ears = /obj/item/radio/headset/headset_legion
+	gloves = null
+	belt = null
+	r_pocket = /obj/item/flashlight/lantern
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healingpowder = 1,
-		/obj/item/storage/bag/money/small/legenlisted = 1,
+		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
+		/obj/item/warpaint_bowl = 1,
 		/obj/item/reagent_containers/glass/bucket = 1,
 		/obj/item/mop = 1
 		)
@@ -1292,8 +1298,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_TRIBAL, src)
 	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/armor_legion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tailor/legionuniform)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/warpaint)
 
 // LEGION SLAVES - Servant cook, and assist with medical, low surgery. Worker farm and mine.
 
@@ -1327,7 +1334,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/hydra)
 
 /datum/outfit/job/CaesarsLegion/f13slave
 	name = "Legion Slave"
@@ -1341,7 +1347,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/loadout/slaveservant
 	name = "Servant"
 	head = /obj/item/clothing/head/f13/servant
-	uniform	= /obj/item/clothing/under/f13/campfollowermale
 	gloves = /obj/item/clothing/gloves/f13/crudemedical
 	shoes =	/obj/item/clothing/shoes/roman
 	r_pocket = /obj/item/flashlight/lantern
@@ -1392,9 +1397,9 @@ Plans: Add recipes/traits to keep refining support roles, others will need some 
 // Really only used for ID console
 /datum/job/ncr/f13legioncitizen
 	title = "Legion Citizen"
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legioncitizen
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13legioncitizen
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13legioncitizen
+/datum/outfit/job/CaesarsLegion/Legionary/f13legioncitizen
 	name = "Legion Citizen (Role)"
 	uniform = /obj/item/clothing/under/f13/doctor
 	shoes = /obj/item/clothing/shoes/f13/fancy
