@@ -53,6 +53,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
@@ -88,6 +89,7 @@
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/plating/ashplanet/wateryrock
@@ -99,6 +101,7 @@
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/plating/ashplanet/wateryrock/Initialize()
@@ -115,6 +118,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/plating/beach/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
@@ -159,6 +163,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/plating/ironsand/Initialize()
@@ -186,6 +191,7 @@
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/plating/ice/Initialize()
@@ -227,6 +233,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/plating/snowed/cavern

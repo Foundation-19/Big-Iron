@@ -32,7 +32,7 @@
 	. = ..()
 	if(strikes_to_lose_limb == 0)
 		if(prob(1))
-			victim.visible_message("<span class='danger'>The infection on the remnants of [victim]'s [limb.name] shift and bubble nauseatingly!</span>", "<span class='warning'>You can feel the infection on the remnants of your [limb.name] coursing through your veins!</span>")
+			victim.visible_message("<span class='danger'>The skin on the remnants of [victim]'s [limb.name] blister and blacken!</span>", "<span class='warning'>You can feel the infection on the remnants of your [limb.name] coursing through your veins!</span>")
 		return
 
 	if(victim.reagents)
@@ -264,8 +264,8 @@
 // we don't even care about first degree burns, straight to second
 /datum/wound/burn/moderate
 	name = "Second Degree Burns"
-	desc = "Patient is suffering considerable burns with mild skin penetration, weakening limb integrity and increased burning sensations."
-	treat_text = "Apply penicillin, miner's salve, abraxo cleaner to clear infection, and use bandages, synthetic flesh, ointment, or regenerative mesh to heal the damaged tissue."
+	desc = "Patient is suffering considerable burns with significant skin damage and severe pain."
+	treat_text = "Apply penicillin to clear infection, and use bandages, synthetic flesh, ointment, or regenerative mesh to heal the damaged tissue."
 	examine_desc = "is badly burned and breaking out in blisters"
 	occur_text = "breaks out with violent red burns"
 	severity = WOUND_SEVERITY_MODERATE
@@ -279,7 +279,7 @@
 /datum/wound/burn/severe
 	name = "Third Degree Burns"
 	desc = "Patient is suffering extreme burns with full skin penetration, creating serious risk of infection and greatly reduced limb integrity."
-	treat_text = "Apply penicillin, miner's salve, abraxo cleaner to clear infection, and use bandages, synthetic flesh, ointment, or regenerative mesh to heal the damaged tissue. Surgery will help treat infection, but not the burn itself."
+	treat_text = "Apply penicillin to clear infection, and use bandages, synthetic flesh, ointment, or regenerative mesh to heal the damaged tissue. Surgery will help treat infection, but not the burn itself."
 	examine_desc = "appears seriously charred, with aggressive red splotches"
 	occur_text = "chars rapidly, exposing ruined tissue and spreading angry red burns"
 	severity = WOUND_SEVERITY_SEVERE
