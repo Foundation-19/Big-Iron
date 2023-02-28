@@ -585,6 +585,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/frumentarius
 	name = "Legion Frumentarius"
+	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/decanvet
 	name = "Legion Veteran Decanus"
@@ -595,7 +596,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "Vexillarius"
 
 /obj/effect/landmark/start/f13/vetlegionary
-	name = "Veteran Legionnaire"
+	name = "Veteran Legionary"
 	icon_state = "Veteran Legionnaire"
 
 /obj/effect/landmark/start/f13/decan
@@ -603,7 +604,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "Decanus"
 
 /obj/effect/landmark/start/f13/legionary
-	name = "Prime Legionnaire"
+	name = "Prime Legionary"
 	icon_state = "Veteran Legionnaire"
 
 /obj/effect/landmark/start/f13/decanrec
@@ -611,7 +612,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "Decanus"
 
 /obj/effect/landmark/start/f13/recleg
-	name = "Recruit Legionnaire"
+	name = "Recruit Legionary"
 	icon_state = "Legionary"
 
 /obj/effect/landmark/start/f13/explorer
@@ -845,24 +846,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/start/f13/guardian
 	icon_state = "Tribal"
 
-//MERCHANT
-
-/obj/effect/landmark/start/f13/merchant/merchant
-	name = "Merchant"
-	icon_state = "Shopkeeper"
-
-/obj/effect/landmark/start/f13/merchant/apprentice
-	name = "Apprentice"
-	icon_state = "Quartermaster"
-
-/obj/effect/landmark/start/f13/merchant/mercenary
-	name = "Mercenary"
-	icon_state = "Officer"
-
-/obj/effect/landmark/start/f13/merchant/bartender
-	name = "Bartender"
-	icon_state = "Barkeep"
-
 //COTC
 
 /obj/effect/landmark/start/f13/cotc/highpriest
@@ -881,22 +864,32 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Neophyte"
 	icon_state = "Neophyte"
 
-//Rustwalkers
-
-/obj/effect/landmark/start/f13/rustwalker/listener
-	name = "Listener"
-	icon_state = "Tribal"
-
-/obj/effect/landmark/start/f13/rustwalker/rustwalker
-	name = "Rustwalker"
-	icon_state = "Tribal"
-
 //kebab
+
+/obj/effect/landmark/start/f13/merchant/merchant
+	name = "Merchant"
+	icon_state = "Shopkeeper"
+
+/obj/effect/landmark/start/f13/merchant/apprentice
+	name = "Apprentice"
+	icon_state = "Quartermaster"
+
+/obj/effect/landmark/start/f13/merchant/mercenary
+	name = "Mercenary"
+	icon_state = "Officer"
+
+/obj/effect/landmark/start/f13/merchant/militiacom
+	name = "Militia Commander"
+	icon_state = "Officer"
+
+/obj/effect/landmark/start/f13/merchant/bartender
+	name = "Bartender"
+	icon_state = "Barkeep"
 
 /obj/effect/landmark/start/f13/kebab/radiohost
 	name = "Radio Host"
 	icon_state = "template"
 
 /obj/effect/landmark/start/f13/kebab/scab
-	name = "Scab"
+	name = "Citizen"
 	icon_state = "Wastelander"

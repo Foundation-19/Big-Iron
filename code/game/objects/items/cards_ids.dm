@@ -914,6 +914,9 @@
 			update_label()
 	return ..()
 
+/obj/item/card/id/dogtag/deputy/kebab
+	access = list(ACCESS_MILITIA)
+
 /obj/item/card/id/dogtag/sheriff
 	name = "Chief of Police's badge"
 	desc = "A golden chief's badge."
@@ -1072,8 +1075,8 @@
 
 /obj/item/card/id/dogtag/legfollower
 	name = "camp follower medallion"
-	desc = "A silver disc given to Camp Followers of Caesar's Legion."
-	icon_state = "legionmedallionveteran"
+	desc = "A silver disc stamped with the Legion's Bull insignia. Belongs to a camp follower."
+	icon_state = "legionmedallionrecruit"
 	item_state = "card-id_leg"
 	assignment = "camp follower medallion"
 
@@ -1263,3 +1266,4 @@
 	uses_overlays = FALSE
 	assignment = "neophyte identification papers"
 	access = list(ACCESS_COTC)
+
