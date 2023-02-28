@@ -162,6 +162,7 @@ GLOBAL_LIST_INIT(legion_command_positions, list(
 GLOBAL_LIST_INIT(legion_positions, list(
 	"Legion Centurion",
 	"Legion Frumentarius",
+	"Priestess of Mars",
 	"Legion Veteran Decanus",
 	"Legion Prime Decanus",
 	"Legion Recruit Decanus",
@@ -170,7 +171,8 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Veteran Legionary",
 	"Prime Legionary",
 	"Recruit Legionary",
-	"Camp Duty",
+	"Legion Servus",
+	"Camp Follower",
 	"Legion Slave"
 ))
 
