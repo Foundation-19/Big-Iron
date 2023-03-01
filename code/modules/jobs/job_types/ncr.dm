@@ -1048,7 +1048,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/box/ration/menu_one = 1,
 		/obj/item/storage/firstaid/regular = 1,
 		)
-
 /datum/outfit/job/ncr/f13corporal/paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	..()
 	var/obj/item/card/id/W = H.wear_id
