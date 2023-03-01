@@ -363,7 +363,7 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 /obj/item/shard/welder_act(mob/living/user, obj/item/I)
 	..()
 	if(I.use_tool(src, user, 0, volume=50))
-		var/obj/item/stack/sheet/glass/NG = new (user.loc)
+		new /obj/item/stack/sheet/glass (user.loc)
 /*		for(var/obj/item/stack/sheet/glass/G in user.loc)
 			if(G == NG)
 				continue
