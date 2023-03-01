@@ -413,7 +413,7 @@
 	back = /obj/item/storage/backpack/holding
 	box = /obj/item/storage/box/debugtools
 	neck = /obj/item/storage/belt/holster/ranger4570bayonet
-	l_pocket = /obj/item/ammo_box/tube/m44
+	l_pocket = /obj/item/holosign_creator/security
 	r_pocket = /obj/item/gun/ballistic/revolver/m29/snub
 	backpack_contents = list(
 		/obj/item/melee/transforming/energy/axe=1,\
@@ -423,9 +423,9 @@
 		/obj/item/gun/magic/wand/resurrection/debug=1,\
 		/obj/item/clothing/glasses/debug=1,\
 		/obj/item/gun/energy/pulse/pistol=1,\
-		/obj/item/holosign_creator/security=1,\
+		/obj/item/ammo_box/tube/m44=1,\
 		/obj/item/storage/firstaid/tactical/nukeop=1,\
-		/obj/item/ammo_box/magazine/m473=2,\
+		/obj/item/ammo_box/magazine/m473=3,\
 		/obj/item/gun/ballistic/automatic/g11=1,\
 		)
 
