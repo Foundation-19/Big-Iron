@@ -13567,7 +13567,7 @@
 /obj/effect/turf_decal/bot,
 /mob/living/simple_animal/hostile/securitron/sentrybot/chew/strong{
 	faction = list("raider");
-	loot = list(/obj/effect/decal/cleanable/robot_debris,/obj/item/stack/crafting/electronicparts/five,/obj/item/keycard/enclave,obj/item/stock_parts/cell/ammo/mfc)
+	loot = list(/obj/effect/decal/cleanable/robot_debris,/obj/item/stack/crafting/electronicparts/five,/obj/item/keycard/vault,obj/item/stock_parts/cell/ammo/mfc)
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/bunker)
@@ -14540,7 +14540,10 @@
 	dir = 1
 	},
 /obj/machinery/door/keycard/cheese{
-	puzzle_id = "enclave"
+	puzzle_id = "vault"
+	},
+/obj/machinery/door/keycard/cheese{
+	puzzle_id = "vault"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/whitebluefull,
 /area/f13/bunker)
