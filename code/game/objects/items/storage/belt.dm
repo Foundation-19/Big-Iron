@@ -1041,6 +1041,15 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 7
 
+/obj/item/storage/belt/military/NCR_Bandolier/ammo556/PopulateContents()
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+
 /obj/item/storage/belt/holster/cross_belt
 	name = "sam browne belt"
 	desc = "A belt traditionally worn by military officers. Has a holster attached."

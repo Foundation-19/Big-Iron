@@ -267,7 +267,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
+c
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
@@ -1036,6 +1036,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/socom
+	belt = /obj/item/storage/belt/military/NCR_Bandolier/ammo556
 	glasses = /obj/item/clothing/glasses/night/polarizing
 	head = /obj/item/clothing/head/f13/ncr/steelpot_goggles
 	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
@@ -1045,11 +1046,12 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/attachments/scope = 1,
 		/obj/item/suppressor = 1,
-		/obj/item/storage/box/ration/menu_one = 1
+		/obj/item/storage/box/ration/menu_one = 1,
+		/obj/item/storage/firstaid/regular = 1,
 		)
 
 /datum/outfit/job/ncr/f13corporal/paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
-
+	..()
 	var/obj/item/card/id/W = H.wear_id
 	W.assignment = "NCR Paratrooper"
 	W.registered_name = H.real_name
