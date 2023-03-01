@@ -1041,7 +1041,7 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 7
 
-/obj/item/storage/belt/military/NCR_Bandolier/ammo556/PopulateContents()
+/obj/item/storage/belt/military/NCR_Bandolier/rappeldrop/PopulateContents()
 	new /obj/item/ammo_box/magazine/m556/rifle(src)
 	new /obj/item/ammo_box/magazine/m556/rifle(src)
 	new /obj/item/ammo_box/magazine/m556/rifle(src)

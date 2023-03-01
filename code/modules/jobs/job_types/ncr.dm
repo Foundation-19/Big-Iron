@@ -1035,7 +1035,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/socom
-	belt = /obj/item/storage/belt/military/NCR_Bandolier/ammo556
+	belt = /obj/item/storage/belt/military/NCR_Bandolier/rappeldrop
 	glasses = /obj/item/clothing/glasses/night/polarizing
 	head = /obj/item/clothing/head/f13/ncr/steelpot_goggles
 	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
@@ -1055,3 +1055,4 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	W.assignment = "NCR Paratrooper"
 	W.registered_name = H.real_name
 	W.update_label(W.registered_name, W.assignment)
+	playsound(loc, 'sound/items/rappel.ogg', 50, TRUE)
