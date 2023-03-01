@@ -337,9 +337,9 @@
 	remove_mutations = list(RADIOACTIVE)
 /*/obj/item/dnainjector/olfaction
 	name = "\improper DNA injector (Olfaction)"
-	add_mutations = list(OLFACTION)*/
+	add_mutations = list(OLFACTION)
 
-/*/obj/item/dnainjector/antiolfaction
+/obj/item/dnainjector/antiolfaction
 	name = "\improper DNA injector (Anti-Olfaction)"
 	remove_mutations = list(OLFACTION)*/
 
