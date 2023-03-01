@@ -848,6 +848,13 @@
 	icon_state = "holster_leg"
 	item_state = "holster_leg"
 
+/obj/item/storage/belt/holster/legholster/socom/PopulateContents()
+	. = ..()
+	new /obj/item/gun/ballistic/automatic/pistol/mk23
+	new /obj/item/ammo_box/magazine/m45exp(src)
+	new /obj/item/ammo_box/magazine/m45exp(src)
+	new /obj/item/ammo_box/magazine/m45exp(src)
+
 /obj/item/storage/belt/holster/legholster/police/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/police(src)
 	new /obj/item/ammo_box/a357(src)

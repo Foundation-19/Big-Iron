@@ -1027,3 +1027,31 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle = 2
 		)
+
+// NCR Paratrooper
+/datum/outfit/job/ncr/f13corporal/paratrooper
+	name = "NCR Paratrooper"
+	id = /obj/item/card/id/dogtag/ncrtrooper
+	accessory = /obj/item/clothing/accessory/ncr/CPL
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
+	mask = /obj/item/clothing/mask/ncr_facewrap
+	neck = /obj/item/storage/belt/holster/legholster/socom
+	glasses = /obj/item/clothing/glasses/night/polarizing
+	head = /obj/item/clothing/head/f13/ncr/steelpot_goggles
+	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
+	backpack_contents = list(
+		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/storage/bag/money/small/ncrenlisted = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/attachments/scope = 1,
+		/obj/item/suppressor = 1,
+		/obj/item/storage/box/ration/menu_one = 1
+		)
+
+/datum/outfit/job/ncr/f13corporal/paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	if(visualsOnly)
+
+	var/obj/item/card/id/W = H.wear_id
+	W.assignment = "NCR Paratrooper"
+	W.registered_name = H.real_name
+	W.update_label(W.registered_name, W.assignment)

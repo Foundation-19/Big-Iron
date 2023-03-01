@@ -399,7 +399,7 @@
 	suit_store = /obj/item/tank/internals/oxygen
 
 /datum/outfit/debug //Debug objs plus hardsuit
-	name = "Debug outfit"
+	name = "Debug outfit(Chronicler)"
 	uniform = /obj/item/clothing/under/misc/patriotsuit
 	suit = /obj/item/clothing/suit/space/hardsuit/syndi/elite/debug
 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
@@ -444,11 +444,16 @@
 	ADD_TRAIT(H, TRAIT_PERFECT_ATTACKER, src)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift/golem)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/knock)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/voice_of_god)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift/golem)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift) //need to have both when one is cycling
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/knock)
+
 
 	var/obj/item/implant/mindshield/L = new 
+	L.implant(H, null, 1)
+
+	var/obj/item/implant/krav_maga/L = new 
 	L.implant(H, null, 1)
 
 	var/obj/item/card/id/W = H.wear_id
