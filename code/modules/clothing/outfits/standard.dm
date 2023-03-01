@@ -441,16 +441,13 @@
 	ADD_TRAIT(H, TRAIT_SILENT_STEP, src)
 	ADD_TRAIT(H, TRAIT_SHOCKIMMUNE, src)
 	ADD_TRAIT(H, TRAIT_PERFECT_ATTACKER, src)
+	ADD_TRAIT(H, TRAIT_MINDSHIELD, src)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/voice_of_god)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift/golem)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift) //need to have both when one is cycling
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/knock)
-
-
-	var/obj/item/implant/mindshield/L = new 
-	L.implant(H, null, 1)
 
 	var/obj/item/implant/krav_maga/L = new 
 	L.implant(H, null, 1)

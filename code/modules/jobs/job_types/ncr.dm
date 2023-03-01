@@ -1049,7 +1049,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/job/ncr/f13corporal/paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
-	if(visualsOnly)
 
 	var/obj/item/card/id/W = H.wear_id
 	W.assignment = "NCR Paratrooper"
