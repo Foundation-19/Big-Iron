@@ -1055,4 +1055,4 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	W.assignment = "NCR Paratrooper"
 	W.registered_name = H.real_name
 	W.update_label(W.registered_name, W.assignment)
-	playsound(loc, 'sound/items/rappel.ogg', 50, TRUE)
+	playsound(src, 'sound/items/rappel.ogg', 50, TRUE)
