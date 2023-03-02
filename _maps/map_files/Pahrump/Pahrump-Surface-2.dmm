@@ -7946,23 +7946,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"dpP" = (
-/obj/item/bedsheet/blanket2{
-	pixel_x = 5
-	},
-/obj/item/reagent_containers/medspray/sterilizine{
-	pixel_x = -12
-	},
-/obj/structure/rack{
-	pixel_x = -3;
-	pixel_y = -15
-	},
-/obj/item/storage/box/matches{
-	pixel_y = -10;
-	pixel_x = -6
-	},
-/turf/closed/wall/f13/wood/house,
-/area/f13/building)
 "dpY" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/leather/twenty,
@@ -10019,12 +10002,6 @@
 	},
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
-"egw" = (
-/obj/structure/campfire/stove{
-	pixel_y = -16
-	},
-/turf/closed/wall/f13/wood/house,
-/area/f13/building)
 "egy" = (
 /obj/structure/barricade/wooden,
 /obj/structure/fence/wooden{
@@ -14987,16 +14964,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/clinic)
-"gaQ" = (
-/obj/machinery/hydroponics/soil{
-	name = "riverbed soil";
-	yieldmod = 1.3
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 9;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland)
 "gaV" = (
 /obj/machinery/chem_master/advanced,
 /obj/structure/table,
@@ -16604,12 +16571,12 @@
 	},
 /area/f13/wasteland)
 "gHV" = (
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 1;
-	icon_state = "dirtcorner"
+/obj/machinery/hydroponics/soil{
+	name = "riverbed soil";
+	yieldmod = 1.3
 	},
 /turf/open/indestructible/ground/outside/dirt{
-	dir = 1;
+	dir = 9;
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
@@ -22215,23 +22182,6 @@
 /obj/item/folder/red,
 /turf/open/floor/carpet/red,
 /area/f13/merchant)
-"iRB" = (
-/obj/item/storage/belt/medical/primitive{
-	pixel_y = -3;
-	pixel_x = 6
-	},
-/obj/item/reagent_containers/glass/bottle/formaldehyde{
-	pixel_x = -5
-	},
-/obj/item/crafting/duct_tape{
-	pixel_y = -15
-	},
-/obj/structure/rack{
-	pixel_x = 3;
-	pixel_y = -15
-	},
-/turf/closed/wall/f13/wood/house,
-/area/f13/building)
 "iRC" = (
 /obj/structure/fence/corner{
 	dir = 1
@@ -22723,18 +22673,29 @@
 	},
 /area/f13/pitrats)
 "jdM" = (
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 4;
-	icon_state = "dirtcorner"
+/obj/item/storage/belt/medical/primitive{
+	pixel_y = -3;
+	pixel_x = 6
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/obj/item/reagent_containers/glass/bottle/formaldehyde{
+	pixel_x = -5
+	},
+/obj/item/crafting/duct_tape{
+	pixel_y = -15
+	},
+/obj/structure/rack{
+	pixel_x = 3;
+	pixel_y = -15
+	},
+/turf/closed/wall/f13/wood/house,
+/area/f13/building)
 "jdS" = (
-/turf/open/indestructible/ground/outside/dirt{
-	icon_state = "dirtcorner"
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "spittoon bucket"
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/turf/open/floor/wood/wood_large,
+/area/f13/building)
 "jec" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/shovel,
@@ -23653,12 +23614,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "jxm" = (
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 8;
-	icon_state = "dirt"
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
+/obj/structure/spider/stickyweb,
+/turf/open/floor/wood/f13,
+/area/f13/building)
 "jxp" = (
 /obj/structure/closet,
 /obj/item/crafting/lunchbox,
@@ -24660,10 +24618,6 @@
 "jUo" = (
 /obj/structure/stairs/north{
 	color = "#A47449"
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 8;
-	icon_state = "dirtcorner"
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -27198,9 +27152,6 @@
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 8
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	icon_state = "dirt"
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -31057,6 +31008,13 @@
 	icon_state = "darkredfull"
 	},
 /area/f13/bunker)
+"mEx" = (
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket"
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "mEK" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -39536,6 +39494,12 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/building)
+"qlE" = (
+/obj/structure/campfire/stove{
+	pixel_y = -16
+	},
+/turf/closed/wall/f13/wood/house,
+/area/f13/building)
 "qlS" = (
 /obj/structure/mirelurkegg,
 /turf/open/indestructible/ground/inside/mountain,
@@ -42848,13 +42812,6 @@
 	dir = 8
 	},
 /area/f13/clinic)
-"rRa" = (
-/obj/item/reagent_containers/glass/bucket{
-	desc = "It smells awful.";
-	name = "spittoon bucket"
-	},
-/turf/open/floor/wood/wood_large,
-/area/f13/building)
 "rRe" = (
 /obj/structure/rack,
 /obj/item/advanced_crafting_components/alloys,
@@ -49062,13 +49019,6 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/molerat,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
-"utD" = (
-/obj/item/reagent_containers/glass/bucket{
-	desc = "It smells awful.";
-	name = "waste bucket"
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/building)
 "uuc" = (
 /obj/item/storage/trash_stack{
 	icon_state = "trash_2"
@@ -55882,8 +55832,21 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "xso" = (
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13,
+/obj/item/bedsheet/blanket2{
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/medspray/sterilizine{
+	pixel_x = -12
+	},
+/obj/structure/rack{
+	pixel_x = -3;
+	pixel_y = -15
+	},
+/obj/item/storage/box/matches{
+	pixel_y = -10;
+	pixel_x = -6
+	},
+/turf/closed/wall/f13/wood/house,
 /area/f13/building)
 "xsw" = (
 /obj/structure/chair/comfy/bathtub,
@@ -88678,7 +88641,7 @@ ktB
 (120,1,1) = {"
 ktB
 gcK
-egw
+qlE
 fgL
 ijK
 fPv
@@ -88935,7 +88898,7 @@ ktB
 (121,1,1) = {"
 ktB
 gcK
-iRB
+jdM
 aby
 tyF
 wRk
@@ -89192,7 +89155,7 @@ ktB
 (122,1,1) = {"
 ktB
 gcK
-dpP
+xso
 aby
 yfT
 wRk
@@ -90747,8 +90710,8 @@ dCL
 mfD
 mcf
 fyf
-jdS
-jdM
+fyf
+fyf
 fyf
 tBN
 mvv
@@ -90991,7 +90954,7 @@ ktB
 (129,1,1) = {"
 ktB
 gcK
-utD
+mEx
 owo
 xdF
 xGH
@@ -91520,8 +91483,8 @@ ddd
 kut
 lPT
 jUo
-jxm
-gHV
+mvv
+bpD
 fyf
 tBN
 bpD
@@ -92796,14 +92759,14 @@ gcK
 gcK
 sYX
 iAP
-xso
+jxm
 owo
 myu
 myu
 nKC
 nvG
 fcy
-rRa
+jdS
 sYX
 aRl
 oVt
@@ -93824,7 +93787,7 @@ gbL
 gbL
 sYX
 fQu
-xso
+jxm
 sYX
 fqH
 nKC
@@ -95117,7 +95080,7 @@ mvv
 qTe
 qTe
 qTe
-gaQ
+gHV
 mcf
 fyf
 qOV
@@ -97976,7 +97939,7 @@ mfD
 mfD
 xGH
 mvv
-fyf
+mvv
 gcK
 gcK
 gcK
@@ -98233,7 +98196,7 @@ fFu
 dhD
 mWC
 mvv
-cWG
+mvv
 gcK
 gcK
 gcK
