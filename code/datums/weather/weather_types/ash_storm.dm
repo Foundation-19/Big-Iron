@@ -149,4 +149,5 @@
 			L.adjustStaminaLossBuffered(4)
 		return
 	L.adjustToxLoss(7.5)
+	
 */
