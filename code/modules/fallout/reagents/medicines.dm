@@ -682,7 +682,7 @@
 	metabolization_rate = 15 * REAGENTS_METABOLISM
 	..()
 
-// HYDRA - Basically Determination chem but made by Legionnaires.
+// HYDRA - Basically Determination chem but made by Legionaries.
 
 /datum/reagent/medicine/hydra
 	name = "Hydra"

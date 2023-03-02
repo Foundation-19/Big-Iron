@@ -68,8 +68,8 @@ Elder
 	suit =	/obj/item/clothing/suit/f13/elder
 	glasses = /obj/item/clothing/glasses/sunglasses
 	accessory =	/obj/item/clothing/accessory/bos/elder
-	suit_store = /obj/item/gun/energy/laser/pistol
-	neck =	/obj/item/clothing/neck/mantle/bos/right
+	suit_store = /obj/item/gun/energy/laser/plasma/pistol
+	neck =	/obj/item/clothing/neck/mantle/bos
 	ears = /obj/item/radio/headset/headset_bos/command
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
@@ -155,7 +155,6 @@ Head Paladin
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	if(H.mind)
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
@@ -184,14 +183,14 @@ Head Scribe
 /datum/outfit/job/bos/f13headscribe
 	name = "Head Scribe"
 	jobtype = /datum/job/bos/f13headscribe
-	accessory = 	/obj/item/clothing/accessory/bos/headscribe
-	glasses =       /obj/item/clothing/glasses/sunglasses
-	suit = 			/obj/item/clothing/suit/armor/f13/headscribe
-	belt = 			/obj/item/storage/belt/utility/full/engi
+	accessory =		/obj/item/clothing/accessory/bos/headscribe
+	glasses =		/obj/item/clothing/glasses/sunglasses
+	suit =			/obj/item/clothing/suit/armor/f13/headscribe
+	suit_store =	/obj/item/gun/energy/laser/pistol
+	belt =			/obj/item/storage/belt/utility/full/engi
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
-		/obj/item/gun/energy/laser/plasma/pistol = 1,
 		/obj/item/gun/medbeam = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
@@ -223,9 +222,9 @@ Head Knight
 	exp_requirements = 600
 
 	loadout_options = list(
-	/datum/outfit/loadout/hka, //Sniper
-	/datum/outfit/loadout/hkb,	//AER14
-	/datum/outfit/loadout/hkc //RCW holy fuck can you at least get a path right kimi
+	/datum/outfit/loadout/hka,	//Sniper
+	/datum/outfit/loadout/hkb,	//AER12
+	/datum/outfit/loadout/hkc	//RCW
 	)
 	outfit = /datum/outfit/job/bos/f13headknight
 
@@ -260,7 +259,7 @@ Head Knight
 /datum/outfit/loadout/hkb
 	name = "Frontline Head Knight"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer14 = 1,
+		/obj/item/gun/energy/laser/aer12 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 3
 		)
 		
@@ -302,8 +301,8 @@ Paladin
 
 	loadout_options = list(
 	/datum/outfit/loadout/paladina, //Frontline P
-	/datum/outfit/loadout/paladinb,	//Heavy P
-	/datum/outfit/loadout/paladinc, //Frontline SP
+	/datum/outfit/loadout/paladinb,	//Frontline SP
+	/datum/outfit/loadout/paladinc, //Heavy P
 	/datum/outfit/loadout/paladind	//Heavy SP
 	)
 
@@ -338,7 +337,7 @@ Paladin
 /datum/outfit/loadout/paladina
 	name = "Frontline Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/gun/energy/laser/aer9 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
@@ -348,7 +347,7 @@ Paladin
 /datum/outfit/loadout/paladinb
 	name = "Frontline Senior Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/gun/energy/laser/aer9 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
@@ -379,7 +378,6 @@ Paladin
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /*
 Scribe
@@ -395,9 +393,9 @@ Scribe
 	supervisors = "the Senior Scribe"
 
 	loadout_options = list(
-	/datum/outfit/loadout/scribea,
-	/datum/outfit/loadout/scribeb,
-	/datum/outfit/loadout/scribec
+	/datum/outfit/loadout/scribea,	//Junior pin
+	/datum/outfit/loadout/scribeb,	//Normal pin
+	/datum/outfit/loadout/scribec	//Senior pin
 	)
 
 	outfit = /datum/outfit/job/bos/f13scribe
@@ -470,9 +468,9 @@ Senior Knight
 	supervisors = "the Head Knight"
 	
 	loadout_options = list(
-	/datum/outfit/loadout/ska,
-	/datum/outfit/loadout/skb,
-	/datum/outfit/loadout/skc
+	/datum/outfit/loadout/ska,	//AER9, MK23 pistol
+	/datum/outfit/loadout/skb,	//Marksman Rifle, Sig pistol
+	/datum/outfit/loadout/skc	//Auto-5 Shotgun, MK23 pistol
 	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
@@ -510,7 +508,7 @@ Senior Knight
 /datum/outfit/loadout/ska
 	name = "Senior Knight-Footman"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/gun/energy/laser/aer9 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 3,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2
