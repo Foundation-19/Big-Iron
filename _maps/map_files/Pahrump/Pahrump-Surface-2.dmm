@@ -5870,15 +5870,9 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "ctE" = (
-/obj/machinery/hydroponics/soil{
-	name = "riverbed soil";
-	yieldmod = 1.3
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 9;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland)
+/obj/structure/spider/stickyweb,
+/turf/open/floor/wood/f13,
+/area/f13/building)
 "ctY" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -9908,15 +9902,6 @@
 /obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/clinic)
-"eeY" = (
-/obj/structure/fence{
-	dir = 4
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 10;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland)
 "efg" = (
 /obj/structure/rack,
 /obj/item/shovel,
@@ -16581,15 +16566,12 @@
 	},
 /area/f13/wasteland)
 "gHV" = (
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 1;
-	icon_state = "dirtcorner"
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "waste bucket"
 	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 1;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland)
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "gHX" = (
 /obj/structure/chair/stool{
 	icon_state = "bench"
@@ -19621,13 +19603,6 @@
 	dir = 4
 	},
 /turf/open/floor/wood/f13/carpet,
-/area/f13/building)
-"hOf" = (
-/obj/item/reagent_containers/glass/bucket{
-	desc = "It smells awful.";
-	name = "spittoon bucket"
-	},
-/turf/open/floor/wood/wood_large,
 /area/f13/building)
 "hOi" = (
 /obj/structure/chair/wood{
@@ -22690,18 +22665,21 @@
 	},
 /area/f13/pitrats)
 "jdM" = (
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 4;
-	icon_state = "dirtcorner"
+/obj/structure/fence{
+	dir = 4
 	},
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 10;
+	icon_state = "dirt"
+	},
 /area/f13/wasteland)
 "jdS" = (
-/turf/open/indestructible/ground/outside/dirt{
-	icon_state = "dirtcorner"
+/obj/item/reagent_containers/glass/bucket{
+	desc = "It smells awful.";
+	name = "spittoon bucket"
 	},
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/turf/open/floor/wood/wood_large,
+/area/f13/building)
 "jec" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/shovel,
@@ -23619,13 +23597,6 @@
 /obj/item/storage/belt/utility/full,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"jxm" = (
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 8;
-	icon_state = "dirt"
-	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
 "jxp" = (
 /obj/structure/closet,
 /obj/item/crafting/lunchbox,
@@ -24627,10 +24598,6 @@
 "jUo" = (
 /obj/structure/stairs/north{
 	color = "#A47449"
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 8;
-	icon_state = "dirtcorner"
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
@@ -27166,9 +27133,6 @@
 	color = "#A47449";
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/dirt{
-	icon_state = "dirt"
-	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "kXg" = (
@@ -28706,10 +28670,6 @@
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"lGd" = (
-/obj/structure/spider/stickyweb,
-/turf/open/floor/wood/f13,
-/area/f13/building)
 "lGf" = (
 /obj/machinery/light,
 /turf/open/floor/f13{
@@ -55839,12 +55799,15 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "xso" = (
-/obj/item/reagent_containers/glass/bucket{
-	desc = "It smells awful.";
-	name = "waste bucket"
+/obj/machinery/hydroponics/soil{
+	name = "riverbed soil";
+	yieldmod = 1.3
 	},
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/building)
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 9;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "xsw" = (
 /obj/structure/chair/comfy/bathtub,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -90707,8 +90670,8 @@ dCL
 mfD
 mcf
 fyf
-jdS
-jdM
+fyf
+fyf
 fyf
 tBN
 mvv
@@ -90951,7 +90914,7 @@ ktB
 (129,1,1) = {"
 ktB
 gcK
-xso
+gHV
 owo
 xdF
 xGH
@@ -91480,8 +91443,8 @@ ddd
 kut
 lPT
 jUo
-jxm
-gHV
+mvv
+bpD
 fyf
 tBN
 bpD
@@ -92756,14 +92719,14 @@ gcK
 gcK
 sYX
 iAP
-lGd
+ctE
 owo
 myu
 myu
 nKC
 nvG
 fcy
-hOf
+jdS
 sYX
 aRl
 oVt
@@ -93784,7 +93747,7 @@ gbL
 gbL
 sYX
 fQu
-lGd
+ctE
 sYX
 fqH
 nKC
@@ -95077,7 +95040,7 @@ mvv
 qTe
 qTe
 qTe
-ctE
+xso
 mcf
 fyf
 qOV
@@ -100762,7 +100725,7 @@ fyf
 fyf
 coD
 xdF
-eeY
+jdM
 mvv
 mvv
 bpD
