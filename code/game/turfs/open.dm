@@ -11,6 +11,7 @@
 	var/barefootstep = null
 	var/clawfootstep = null
 	var/heavyfootstep = null
+	var/gallopfootstep = null
 	var/depth = 0
 
 /turf/open/ComponentInitialize()
@@ -51,6 +52,7 @@
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = TRUE
 
@@ -69,6 +71,7 @@
 	footstep = null
 	barefootstep = null
 	clawfootstep = null
+	gallopfootstep = null
 	heavyfootstep = null
 	var/sound
 
@@ -92,6 +95,7 @@
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
@@ -105,6 +109,7 @@
 	footstep = FOOTSTEP_LAVA
 	barefootstep = FOOTSTEP_LAVA
 	clawfootstep = FOOTSTEP_LAVA
+	gallopfootstep = FOOTSTEP_LAVA
 	heavyfootstep = FOOTSTEP_LAVA
 	tiled_dirt = FALSE
 
@@ -148,6 +153,7 @@
 	footstep = null
 	barefootstep = null
 	clawfootstep = null
+	gallopfootstep = null
 	heavyfootstep = null
 	tiled_dirt = FALSE
 
@@ -159,6 +165,7 @@
 	footstep = null
 	barefootstep = null
 	clawfootstep = null
+	gallopfootstep = null
 	heavyfootstep = null
 
 /turf/open/indestructible/airblock
@@ -174,6 +181,7 @@
 	footstep = FOOTSTEP_PLATING
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/clock_spawn_room/Entered()
