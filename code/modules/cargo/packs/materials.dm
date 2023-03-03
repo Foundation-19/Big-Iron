@@ -66,7 +66,7 @@
 	goody = PACK_GOODY_PUBLIC
 	name = "4 Pre-War Ingots"
 	desc = "Ingots salvaged from a Pre-War factory, valuable in the right hands."
-	cost = 2775
+	cost = 12500
 	contains = list(/obj/item/blacksmith/ingot/adamantine,
 					/obj/item/blacksmith/ingot/adamantine,
 					/obj/item/blacksmith/ingot/adamantine,
