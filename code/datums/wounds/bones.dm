@@ -187,9 +187,9 @@
 /datum/wound/blunt/moderate
 	name = "Joint Dislocation"
 	desc = "Patient's bone has been unset from socket, causing pain and reduced motor function."
-	treat_text = "Recommended application of bonesetter to affected limb, though manual relocation by applying an aggressive grab to the patient and helpfully interacting with afflicted limb may suffice."
+	treat_text = "Recommended application of bonesetter or Hydra to affected limb, though manual relocation by applying an aggressive grab to the patient and helpfully interacting with afflicted limb may suffice."
 	examine_desc = "is awkwardly jammed out of place"
-	occur_text = "jerks violently and becomes unseated"
+	occur_text = "is twisted out of alignment, the joint popping out of its socket"
 	severity = WOUND_SEVERITY_MODERATE
 	viable_zones = list(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 	interaction_efficiency_penalty = 1.5
@@ -200,6 +200,7 @@
 	wound_flags = (BONE_WOUND)
 	status_effect_type = /datum/status_effect/wound/blunt/moderate
 	scar_keyword = "bluntmoderate"
+	treatable_by = list(/obj/item/reagent_containers/pill/patch/hydra)
 
 /datum/wound/blunt/moderate/crush()
 	if(prob(33))
@@ -278,6 +279,7 @@
 		user.visible_message("<span class='danger'>[user] finishes resetting [victim]'s [limb.name]!</span>", "<span class='nicegreen'>You finish resetting [victim]'s [limb.name]!</span>", victim)
 		to_chat(victim, "<span class='userdanger'>[user] resets your [limb.name]!</span>")
 
+	qdel(I)
 	victim.emote("scream")
 	qdel(src)
 
@@ -289,8 +291,8 @@
 	name = "Hairline Fracture"
 	desc = "Patient's bone has suffered a crack in the foundation, causing serious pain and reduced limb functionality."
 	treat_text = "Recommended light surgical application of bone gel, though a sling of medical gauze will prevent worsening situation."
-	examine_desc = "appears grotesquely swollen, its attachment weakened"
-	occur_text = "sprays chips of bone and develops a nasty looking bruise"
+	examine_desc = "appears bruised and swollen, this is not just superficial tissue damage"
+	occur_text = "becomes numb with pain, a nasty looking bruise swelling up"
 
 	severity = WOUND_SEVERITY_SEVERE
 	interaction_efficiency_penalty = 2
@@ -309,7 +311,7 @@
 	name = "Compound Fracture"
 	desc = "Patient's bones have suffered multiple gruesome fractures, causing significant pain and near uselessness of limb."
 	treat_text = "Immediate binding of affected limb, followed by surgical intervention ASAP."
-	examine_desc = "is mangled and pulped, seemingly held together by tissue alone"
+	examine_desc = "is badly mangled, pieces of bones protruding from the wound"
 	occur_text = "cracks apart, exposing broken bones to open air"
 
 	severity = WOUND_SEVERITY_CRITICAL
@@ -330,8 +332,8 @@
 // doesn't make much sense for "a" bone to stick out of your head
 /datum/wound/blunt/critical/apply_wound(obj/item/bodypart/L, silent, datum/wound/old_wound, smited)
 	if(L.body_zone == BODY_ZONE_HEAD)
-		occur_text = "splits open, exposing a bare, cracked skull through the flesh and blood"
-		examine_desc = "has an unsettling indent, with bits of skull poking out"
+		occur_text = "is audibly cracked, blood streaming down, a part of the cranium shattered"
+		examine_desc = "has an unsettling indentation in their skull, their cranium obviously partially crushed."
 	. = ..()
 
 /// if someone is using bone gel on our wound
