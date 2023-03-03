@@ -9374,6 +9374,7 @@
 /obj/item/clothing/under/f13/cowboyb,
 /obj/item/lock_construct,
 /obj/item/key,
+/obj/effect/holodeck_effect/cards,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "dVS" = (
@@ -11226,7 +11227,11 @@
 /turf/open/floor/wood,
 /area/f13/building)
 "eDg" = (
-/obj/structure/junk/jukebox,
+/obj/machinery/jukebox,
+/obj/item/reagent_containers/food/drinks/bottle/sunset{
+	pixel_y = -5;
+	pixel_x = -9
+	},
 /turf/open/floor/wood/wood_large,
 /area/f13/building)
 "eDp" = (
@@ -18037,6 +18042,7 @@
 /obj/item/reagent_containers/glass/bottle/nutrient/ez,
 /obj/item/reagent_containers/glass/bottle/nutrient/l4z,
 /obj/item/reagent_containers/glass/bottle/nutrient/l4z,
+/obj/item/crowbar,
 /turf/open/indestructible/ground/outside/wood,
 /area/f13/building)
 "hjE" = (
@@ -25524,6 +25530,7 @@
 	},
 /obj/item/clothing/under/f13/bartenderalt,
 /obj/item/clothing/under/rank/bartender,
+/obj/effect/holodeck_effect/cards,
 /turf/open/floor/wood/f13,
 /area/f13/building)
 "kmz" = (
@@ -33692,6 +33699,16 @@
 	color = "#845f58";
 	pixel_y = -32
 	},
+/obj/structure/closet/crate/large,
+/obj/item/circuitboard/machine/seed_extractor,
+/obj/item/circuitboard/machine/biogenerator,
+/obj/item/stock_parts/matter_bin,
+/obj/item/stock_parts/matter_bin/adv,
+/obj/item/stock_parts/manipulator,
+/obj/item/stock_parts/manipulator,
+/obj/item/stack/sheet/glass/five,
+/obj/item/stack/sheet/metal/ten,
+/obj/item/stack/cable_coil/ten,
 /turf/open/indestructible/ground/outside/wood,
 /area/f13/building)
 "nJq" = (
@@ -36279,6 +36296,18 @@
 /obj/item/seeds/cannabis,
 /obj/item/seeds/cotton,
 /obj/item/seeds/ambrosia,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/item/seeds/tato,
+/obj/item/seeds/tato,
 /turf/open/indestructible/ground/outside/wood,
 /area/f13/building)
 "oVo" = (
@@ -42363,6 +42392,7 @@
 /obj/item/ammo_box/shotgun/improvised,
 /obj/item/storage/box/matches,
 /obj/item/clothing/head/helmet/f13/vaquerohat,
+/obj/effect/holodeck_effect/cards,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirtcorner"
@@ -54995,6 +55025,7 @@
 /obj/structure/closet/cabinet/anchored,
 /obj/effect/spawner/lootdrop/weapons/selfdefence,
 /obj/item/storage/belt/holster/rugged,
+/obj/effect/holodeck_effect/cards,
 /turf/open/floor/wood/wood_large,
 /area/f13/building)
 "xdC" = (
@@ -60696,7 +60727,7 @@ bfu
 gcK
 gcK
 gcK
-gcK
+gbL
 gcK
 gcK
 fyf
@@ -60954,7 +60985,7 @@ gcK
 gcK
 gcK
 gcK
-gcK
+gbL
 gcK
 gcK
 kGc
@@ -61211,8 +61242,8 @@ cpK
 ggK
 ggK
 ggK
-gcK
-gcK
+gbL
+gbL
 gcK
 kGc
 unI
@@ -63268,7 +63299,7 @@ gcK
 gcK
 wOS
 wOS
-gcK
+gbL
 gcK
 gcK
 unI
@@ -63525,7 +63556,7 @@ gcK
 gcK
 gcK
 wOS
-gcK
+gbL
 gcK
 gcK
 unI
@@ -63780,9 +63811,9 @@ koD
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
 gcK
 gcK
 unI
@@ -64037,9 +64068,9 @@ koD
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
 gcK
 gcK
 unI
@@ -64293,8 +64324,8 @@ gmX
 koD
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -65580,7 +65611,7 @@ dMW
 gcK
 gcK
 gcK
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -66093,7 +66124,7 @@ koD
 gcK
 gcK
 gcK
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -67377,8 +67408,8 @@ gmX
 koD
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -69176,8 +69207,8 @@ gmX
 sBk
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -69432,9 +69463,9 @@ czu
 gmX
 koD
 gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -69690,8 +69721,8 @@ gmX
 koD
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -69947,8 +69978,8 @@ gmX
 koD
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -70203,9 +70234,9 @@ czu
 gmX
 koD
 gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -70461,8 +70492,8 @@ gmX
 koD
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -70717,9 +70748,9 @@ czu
 gmX
 koD
 gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -70975,8 +71006,8 @@ gmX
 koD
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -75318,8 +75349,8 @@ lin
 mGC
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -75576,8 +75607,8 @@ mGC
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -75820,8 +75851,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -75834,8 +75865,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -76077,8 +76108,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -76092,8 +76123,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -76330,12 +76361,12 @@ gcK
 gcK
 gcK
 gcK
+gbL
+gbL
+gbL
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -76350,7 +76381,7 @@ gcK
 gcK
 gcK
 gcK
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -76587,12 +76618,12 @@ gcK
 gcK
 gcK
 gcK
+gbL
+gbL
+gbL
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -76607,8 +76638,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -76845,11 +76876,11 @@ gcK
 gcK
 gcK
 gcK
+gbL
 gcK
 gcK
-gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -76865,8 +76896,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -77105,8 +77136,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -77124,7 +77155,7 @@ gcK
 gcK
 gcK
 gcK
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -77362,8 +77393,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -78404,15 +78435,15 @@ gcK
 gcK
 gcK
 gcK
+gbL
+gcK
+gbL
+gbL
 gcK
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -78642,9 +78673,9 @@ gcK
 gcK
 gcK
 gcK
+gbL
 gcK
-gcK
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -78661,16 +78692,16 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
+gbL
+gbL
+gbL
+gbL
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -78898,10 +78929,10 @@ gcK
 gcK
 gcK
 gcK
+gbL
+gbL
 gcK
-gcK
-gcK
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -79154,11 +79185,11 @@ gcK
 gcK
 gcK
 gcK
+gbL
+gbL
 gcK
 gcK
-gcK
-gcK
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -79410,12 +79441,12 @@ gcK
 gcK
 gcK
 gcK
+gbL
+gbL
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -79665,14 +79696,14 @@ gcK
 gcK
 gcK
 gcK
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -79921,9 +79952,9 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -80683,10 +80714,10 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -80941,10 +80972,10 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -81200,8 +81231,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -81971,12 +82002,12 @@ gcK
 gcK
 gcK
 gcK
+gbL
+gbL
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -82227,15 +82258,15 @@ gcK
 gcK
 gcK
 gcK
+gbL
+gbL
+gbL
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -82484,14 +82515,14 @@ gcK
 gcK
 gcK
 gcK
+gbL
+gbL
+gbL
+gbL
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -82738,15 +82769,15 @@ ktB
 gcK
 gcK
 gcK
+gbL
+gbL
 gcK
 gcK
+gbL
+gbL
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -82995,8 +83026,8 @@ ktB
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -83511,8 +83542,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -97386,7 +97417,7 @@ ktB
 ktB
 gcK
 gcK
-gcK
+gbL
 gbL
 gbL
 gbL
@@ -97641,7 +97672,7 @@ ktB
 "}
 (155,1,1) = {"
 ktB
-gcK
+gbL
 gcK
 hch
 gcK
@@ -97899,7 +97930,7 @@ ktB
 (156,1,1) = {"
 ktB
 gcK
-gcK
+gbL
 iOk
 nVS
 gcK
@@ -98156,7 +98187,7 @@ ktB
 (157,1,1) = {"
 ktB
 gcK
-gcK
+gbL
 tbg
 ggK
 wnA
@@ -98179,7 +98210,7 @@ gcK
 gcK
 gcK
 gcK
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -98434,9 +98465,9 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -98669,8 +98700,8 @@ ktB
 "}
 (159,1,1) = {"
 ktB
-gcK
-gcK
+gbL
+gbL
 ggK
 gcK
 gcK
@@ -98690,8 +98721,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -98926,7 +98957,7 @@ ktB
 "}
 (160,1,1) = {"
 ktB
-gcK
+gbL
 gcK
 gcK
 gcK
@@ -98946,8 +98977,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 kJu
 kJu
@@ -99201,9 +99232,9 @@ mDM
 qbD
 dzc
 gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
 gcK
 gcK
 kKk
@@ -99698,7 +99729,7 @@ ktB
 (163,1,1) = {"
 ktB
 gcK
-gcK
+gbL
 gcK
 qbD
 byv
@@ -100213,7 +100244,7 @@ ktB
 ktB
 gcK
 gcK
-gcK
+gbL
 qbD
 boD
 bRG
@@ -100469,8 +100500,8 @@ ktB
 (166,1,1) = {"
 ktB
 gcK
-gcK
-gcK
+gbL
+gbL
 qbD
 qbD
 qbD
@@ -100726,7 +100757,7 @@ ktB
 (167,1,1) = {"
 ktB
 gcK
-gcK
+gbL
 gcK
 gcK
 qbD
@@ -100983,8 +101014,8 @@ ktB
 (168,1,1) = {"
 ktB
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 qbD
 daH
@@ -101241,8 +101272,8 @@ ktB
 ktB
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 qbD
 cLX
 cqr
@@ -101498,8 +101529,8 @@ ktB
 ktB
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 qbD
 daH
 cLX
@@ -101770,9 +101801,9 @@ mEh
 qbD
 gcK
 gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -102027,10 +102058,10 @@ lxW
 qbD
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -102284,10 +102315,10 @@ qbD
 qbD
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -102528,8 +102559,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -102782,11 +102813,11 @@ ktB
 (175,1,1) = {"
 ktB
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
@@ -103039,11 +103070,11 @@ ktB
 (176,1,1) = {"
 ktB
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+gbL
+gbL
+gbL
+gbL
+gbL
 gcK
 gcK
 gcK
