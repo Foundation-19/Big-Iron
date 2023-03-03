@@ -118,11 +118,11 @@
 		try_treating(I, user)
 
 /datum/wound/pierce/moderate
-	name = "Minor Breakage"
-	desc = "Patient's skin has been broken open, causing severe bruising and minor internal bleeding in affected area."
-	treat_text = "Treat affected site with bandaging or exposure to extreme cold. In dire cases, brief exposure to vacuum may suffice." // space is cold in ss13, so it's like an ice pack!
-	examine_desc = "has a small, circular hole, gently bleeding"
-	occur_text = "spurts out a thin stream of blood"
+	name = "Flesh Wound"
+	desc = "The wound is neither wide nor very deep, but its enough to cause bleeding and increased risk for infections."
+	treat_text = "Treat affected site with bandaging or exposure to extreme cold."
+	examine_desc = "has a flesh wound, slowly bleeding"
+	occur_text = "recieves a flesh wound, blood dripping"
 	sound_effect = 'sound/effects/wounds/pierce1.ogg'
 	severity = WOUND_SEVERITY_MODERATE
 	initial_flow = 1.5
@@ -135,11 +135,11 @@
 	scar_keyword = "piercemoderate"
 
 /datum/wound/pierce/severe
-	name = "Open Puncture"
+	name = "Deep Puncture Wound"
 	desc = "Patient's internal tissue is penetrated, causing sizeable internal bleeding and reduced limb stability."
 	treat_text = "Repair punctures in skin by suture or cautery, extreme cold may also work."
-	examine_desc = "is pierced clear through, with bits of tissue obscuring the open hole"
-	occur_text = "looses a violent spray of blood, revealing a pierced wound"
+	examine_desc = "has a deep puncture wound"
+	occur_text = "is pierced in a spray of blood"
 	sound_effect = 'sound/effects/wounds/pierce2.ogg'
 	severity = WOUND_SEVERITY_SEVERE
 	initial_flow = 2.25
@@ -152,11 +152,11 @@
 	scar_keyword = "piercesevere"
 
 /datum/wound/pierce/critical
-	name = "Ruptured Cavity"
-	desc = "Patient's internal tissue and circulatory system is shredded, causing significant internal bleeding and damage to internal organs."
+	name = "Lethal Puncture Wound"
+	desc = "Patient's internal organs are likely damaged, significant internal bleeding is assured."
 	treat_text = "Surgical repair of puncture wound, followed by supervised resanguination."
-	examine_desc = "is ripped clear through, barely held together by exposed bone"
-	occur_text = "blasts apart, sending chunks of viscera flying in all directions"
+	examine_desc = "has been pierced straight through, blood welling up from damaged tissue deep inside"
+	occur_text = "is ripped through, blood spatter covering anything nearby"
 	sound_effect = 'sound/effects/wounds/pierce3.ogg'
 	severity = WOUND_SEVERITY_CRITICAL
 	initial_flow = 3

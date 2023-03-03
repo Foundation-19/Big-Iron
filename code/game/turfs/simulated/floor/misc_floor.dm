@@ -143,6 +143,7 @@
 	footstep = FOOTSTEP_PLATING
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	var/dropped_brass
 	var/uses_overlay = TRUE
@@ -275,7 +276,8 @@
 	footstep = FOOTSTEP_RUST
 	barefootstep = FOOTSTEP_RUST
 	clawfootstep = FOOTSTEP_RUST
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_RUST
 
 /turf/open/floor/plating/rust/rust_heretic_act()
-	return 
+	return
