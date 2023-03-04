@@ -1030,34 +1030,76 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 // NCR Paratrooper
 /datum/outfit/job/ncr/f13corporal/paratrooper
-	name = "NCR Paratrooper"
+	name = "NCR Paratrooper (Assault)"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/ncr/CPL
 	suit = /obj/item/clothing/suit/armored/light/rangerrig 
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/socom
-	belt = /obj/item/storage/belt/military/NCR_Bandolier/rappeldrop
+	belt = /obj/item/storage/belt/military/NCR_Bandolier/556loaded
 	glasses = /obj/item/clothing/glasses/night/polarizing
 	head = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
-	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
+	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	r_pocket = /obj/item/binoculars
 	l_pocket = /obj/item/storage/bag/flare
+	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/melee/onehanded/knife/trench = 1,
-		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/clothing/head/beret/ncr/ncr_sof = 1,
 		/obj/item/attachments/scope = 1,
-		/obj/item/suppressor = 2,
+		/obj/item/suppressor = 1,
 		/obj/item/storage/box/ration/menu_one = 1,
 		/obj/item/storage/firstaid/regular = 1,
 		/obj/item/grenade/f13/he_grenade = 2,
 		)
 
 /datum/outfit/job/ncr/f13corporal/paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
-	..()
+	if(visualsOnly)
+		return
 	var/obj/item/card/id/W = H.wear_id
-	W.assignment = "NCR Paratrooper"
+	W.assignment = "NCR Paratrooper (Assault)"
 	W.registered_name = H.real_name
 	W.update_label(W.registered_name, W.assignment)
 	playsound(src, 'sound/items/rappel.ogg', 50, TRUE)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+
+/datum/outfit/job/ncr/f13corporal/paratrooper_medic
+	name = "NCR Paratrooper (Medic)"
+	id = /obj/item/card/id/dogtag/ncrtrooper
+	accessory = /obj/item/clothing/accessory/armband/medblue
+	suit = /obj/item/clothing/suit/armored/light/rangerrig 
+	mask = /obj/item/clothing/mask/ncr_facewrap
+	neck = /obj/item/storage/belt/holster/legholster/socom
+	belt = /obj/item/storage/belt/military/NCR_Bandolier/rappeldrop
+	glasses = /obj/item/clothing/glasses/night/polarizing
+	head = /obj/item/clothing/head/f13/ncr/steelpot_med
+	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
+	r_pocket = /obj/item/binoculars
+	l_pocket = /obj/item/storage/bag/flare
+	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
+	backpack_contents = list(
+		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/melee/onehanded/knife/trench = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/storage/hypospraykit/cmo = 1,
+		/obj/item/clothing/head/beret/ncr/ncr_medic = 1,
+		/obj/item/defibrillator/compact/combat/loaded = 1,
+		/obj/item/storage/belt/medical/primitive = 1,
+		/obj/item/attachments/scope = 1,
+		/obj/item/suppressor = 2,
+		/obj/item/storage/box/ration/menu_one = 1,
+		/obj/item/storage/firstaid/regular = 1,
+		)
+
+/datum/outfit/job/ncr/f13corporal/paratrooper_medic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	if(visualsOnly)
+		return
+	var/obj/item/card/id/W = H.wear_id
+	W.assignment = "NCR Medical Paratrooper "
+	W.registered_name = H.real_name
+	W.update_label(W.registered_name, W.assignment)
+	playsound(src, 'sound/items/rappel.ogg', 50, TRUE)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)

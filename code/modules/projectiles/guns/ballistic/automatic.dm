@@ -562,7 +562,7 @@
 	burst_size = 1
 	fire_delay = 2.5
 	spread = 2
-	extra_damage = 20
+	extra_damage = 22
 	extra_penetration = 0.1
 	slowdown = 0.05
 	automatic_burst_overlay = FALSE
@@ -601,6 +601,7 @@
 	icon_state = "m1a1carbine"
 	var/stock = FALSE
 	w_class = WEIGHT_CLASS_NORMAL
+	slowdown = 0
 
 /obj/item/gun/ballistic/automatic/m1carbine/compact/AltClick(mob/user)
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))

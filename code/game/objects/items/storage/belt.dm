@@ -850,7 +850,7 @@
 
 /obj/item/storage/belt/holster/legholster/socom/PopulateContents()
 	. = ..()
-	new /obj/item/gun/ballistic/automatic/pistol/mk23
+	new /obj/item/gun/ballistic/automatic/pistol/mk23(src)
 	new /obj/item/ammo_box/magazine/m45exp(src)
 	new /obj/item/ammo_box/magazine/m45exp(src)
 	new /obj/item/ammo_box/magazine/m45exp(src)
@@ -1050,6 +1050,14 @@
 	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
 	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
 
+/obj/item/storage/belt/military/NCR_Bandolier/556loaded/PopulateContents()
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
 
 /obj/item/storage/belt/holster/cross_belt
 	name = "sam browne belt"
