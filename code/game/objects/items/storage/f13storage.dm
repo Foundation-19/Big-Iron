@@ -206,7 +206,7 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_w_class = WEIGHT_CLASS_SMALL
 	STR.max_items = 15
-	STR.can_hold = typecacheof(list(/obj/item/flashlight/flare))
+	STR.can_hold = (list(/obj/item/flashlight/flare))
 
 /obj/item/storage/bag/flare/PopulateContents()
 	. = ..()
