@@ -425,6 +425,7 @@
 		/obj/item/gun/energy/pulse/pistol=1,\
 		/obj/item/storage/firstaid/tactical/nukeop=1,\
 		/obj/item/ammo_box/magazine/m473=3,\
+		/obj/item/bodybag/bluespace=1,\
 		/obj/item/gun/ballistic/automatic/g11=1,\
 		)
 
