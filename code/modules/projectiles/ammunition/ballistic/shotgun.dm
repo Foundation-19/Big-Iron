@@ -167,14 +167,6 @@
 	variance = 25
 	custom_materials = list(/datum/material/iron=4000)
 
-/obj/item/ammo_casing/shotgun/magnumshot
-	name = "12 gauge magnum buckshot shell"
-	desc = "A 12 gauge magnum buckshot shell."
-	icon_state = "magshell"
-	projectile_type = /obj/item/projectile/bullet/pellet/magnum_buckshot
-	pellets = 4
-	variance = 15
-
 /obj/item/ammo_casing/shotgun/trainshot
 	name = "12 gauge trainshot shell"
 	desc = "It's a 12-gauge, 3-pellet tungsten trainshot shotgun shell. Sometimes referred to as the tungsten trinity."

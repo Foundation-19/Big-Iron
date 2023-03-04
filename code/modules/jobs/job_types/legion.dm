@@ -248,7 +248,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 2,
 		/obj/item/ammo_box/shotgun/slug = 1,
-		/obj/item/ammo_box/shotgun/magnum = 2,
+		/obj/item/ammo_box/shotgun/trainshot = 3,
 		)
 
 

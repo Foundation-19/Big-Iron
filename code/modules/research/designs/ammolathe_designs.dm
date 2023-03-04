@@ -293,14 +293,6 @@
 	build_path = /obj/item/ammo_box/m5mmbox
 	category = list("initial", "Basic Ammo")
 
-/*
-/datum/design/ammolathe/magnumshot
-	name = "magnum buckshot shotgun box"
-	id = "magnumshot"
-	materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1500)
-	build_path = /obj/item/ammo_box/shotgun/magnum
-	category = list("initial", "Basic Ammo")
-*/
 /datum/design/ammolathe/slugshot
 	name = "slug shotgun box"
 	id = "slugshot"

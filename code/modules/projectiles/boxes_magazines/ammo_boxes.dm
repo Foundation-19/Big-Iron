@@ -26,11 +26,6 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
 	icon_state = "gbox"
 
-/obj/item/ammo_box/shotgun/magnum
-	name = "Magnum buckshot shotgun ammo box"
-	desc = "A box full of shotgun shells."
-	ammo_type = /obj/item/ammo_casing/shotgun/magnumshot
-	icon_state = "mbox"
 
 /obj/item/ammo_box/shotgun/bean
 	name = "Beanbag shotgun ammo box"
