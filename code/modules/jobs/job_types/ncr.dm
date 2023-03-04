@@ -1038,7 +1038,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	neck = /obj/item/storage/belt/holster/legholster/socom
 	belt = /obj/item/storage/belt/military/NCR_Bandolier/rappeldrop
 	glasses = /obj/item/clothing/glasses/night/polarizing
-	head = obj/item/clothing/head/f13/ncr/steelpot_bandolier
+	head = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
 	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	r_pocket = /obj/item/binoculars
 	l_pocket = /obj/item/storage/bag/flare
