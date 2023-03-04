@@ -1033,21 +1033,25 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "NCR Paratrooper"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/ncr/CPL
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
+	suit = /obj/item/clothing/suit/armored/light/rangerrig 
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/socom
 	belt = /obj/item/storage/belt/military/NCR_Bandolier/rappeldrop
 	glasses = /obj/item/clothing/glasses/night/polarizing
-	head = /obj/item/clothing/head/f13/ncr/steelpot_goggles
-	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
+	head = obj/item/clothing/head/f13/ncr/steelpot_bandolier
+	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
+	r_pocket = /obj/item/binoculars
+	l_pocket = /obj/item/storage/survivalkit/legion_rations
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/melee/onehanded/knife/trench = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/attachments/scope = 1,
-		/obj/item/suppressor = 1,
+		/obj/item/suppressor = 2,
 		/obj/item/storage/box/ration/menu_one = 1,
 		/obj/item/storage/firstaid/regular = 1,
+		/obj/item/grenade/f13/he_grenade = 2,
 		)
 
 /datum/outfit/job/ncr/f13corporal/paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)

@@ -153,6 +153,7 @@
 	STR.max_items = 6000
 	STR.can_hold = typecacheof(list(/obj/item/ammo_casing))
 
+
 /obj/item/storage/bag/casings/equipped(mob/user)
 	. = ..()
 	if(listeningTo == user)
@@ -191,6 +192,32 @@
 		user.visible_message("<span class='notice'>[user] scoops up the casings beneath [user.p_them()].</span>", \
 			"<span class='notice'>You scoop up the casings beneath you with your [name].</span>")
 	spam_protection = FALSE
+
+
+//Flare Pouch 
+/obj/item/storage/bag/flare
+	name = "flare pouch"
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "flare_pouch"
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/storage/bag/flare/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_SMALL
+	STR.max_items = 15
+	STR.can_hold = typecacheof(list(/obj/item/flashlight/flare))
+
+/obj/item/storage/bag/flare/PopulateContents()
+	. = ..()
+	new /obj/item/flashlight/flare(src)
+	new /obj/item/flashlight/flare(src)
+	new /obj/item/flashlight/flare(src)
+	new /obj/item/flashlight/flare(src)
+	new /obj/item/flashlight/flare(src)
+	new /obj/item/flashlight/flare(src)
+	new /obj/item/flashlight/flare(src)
+	new /obj/item/flashlight/flare(src)
 
 /*
  * Ration boxes
