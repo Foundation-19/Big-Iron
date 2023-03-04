@@ -171,8 +171,8 @@ ATTACHMENTS
 	var/burst_size = 1
 	/// The time between shots in burst.
 	var/burst_shot_delay = 3
-	/// The time between firing actions, this means between bursts if this is burst weapon. The reason this is 0 is because you are still, by default, limited by clickdelay.
-	var/fire_delay = 0
+	/// The time between firing actions, this means between bursts if this is burst weapon(?) CLICK_CD_RANGE need no longer apply.
+	var/fire_delay = 5
 	//Time between individual shots when firing full-auto.
 	var/autofire_shot_delay = 3
 	/// Last world.time this was fired
@@ -426,7 +426,7 @@ ATTACHMENTS
 		return
 
 	if (automatic == 0)
-		user.DelayNextAction(ranged_attack_speed)
+		user.DelayNextAction(fire_delay)
 	if (automatic == 1)
 		user.DelayNextAction(autofire_shot_delay)
 
@@ -468,7 +468,7 @@ ATTACHMENTS
 
 /obj/item/gun/proc/get_clickcd()
 	if (automatic == 0)
-		return isnull(chambered?.click_cooldown_override)? CLICK_CD_RANGE : chambered.click_cooldown_override
+		return isnull(chambered?.click_cooldown_override)? fire_delay : chambered.click_cooldown_override
 	if (automatic == 1)
 		return isnull(chambered?.click_cooldown_override)? autofire_shot_delay : chambered.click_cooldown_override
 
