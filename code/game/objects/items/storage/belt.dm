@@ -1050,7 +1050,7 @@
 	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
 	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
 
-/obj/item/storage/belt/military/NCR_Bandolier/m556loaded/PopulateContents()
+/obj/item/storage/belt/military/NCR_Bandolier/loaded/PopulateContents()
 	new /obj/item/ammo_box/magazine/m556/rifle(src)
 	new /obj/item/ammo_box/magazine/m556/rifle(src)
 	new /obj/item/ammo_box/magazine/m556/rifle(src)
