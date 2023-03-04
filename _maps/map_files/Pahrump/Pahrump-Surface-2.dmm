@@ -1928,6 +1928,10 @@
 	icon_state = "verticalrightborderright3"
 	},
 /area/f13/wasteland)
+"aMx" = (
+/obj/effect/holodeck_effect/cards,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "aMJ" = (
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleslab"
@@ -2646,6 +2650,25 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
+"bbE" = (
+/obj/structure/closet/cardboard,
+/obj/item/reagent_containers/food/drinks/bottle/brown/beer{
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer=100)
+	},
+/obj/item/reagent_containers/food/drinks/bottle/brown/beer{
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer=100)
+	},
+/obj/item/reagent_containers/food/drinks/bottle/brown/beer{
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer=100)
+	},
+/obj/item/reagent_containers/food/drinks/bottle/brown/beer{
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer=100)
+	},
+/obj/item/reagent_containers/food/drinks/bottle/brown/beer{
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer=100)
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/caves)
 "bbQ" = (
 /obj/structure/window/fulltile/house/broken,
 /obj/structure/barricade/bars,
@@ -3141,6 +3164,10 @@
 	icon_state = "lantern-on"
 	},
 /obj/item/clothing/neck/apron/chef,
+/obj/item/reagent_containers/glass/primitive_chem_isolator{
+	pixel_y = 25;
+	pixel_x = -6
+	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "blu" = (
@@ -4110,7 +4137,10 @@
 /obj/item/reagent_containers/food/snacks/grown/wheat{
 	pixel_x = 8
 	},
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
 /area/f13/building)
 "bFe" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -4532,6 +4562,25 @@
 /obj/machinery/recycler,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/tunnel)
+"bNZ" = (
+/obj/item/reagent_containers/food/drinks/bottle/fernet,
+/obj/item/reagent_containers/food/drinks/bottle/cognac,
+/obj/item/reagent_containers/food/drinks/bottle/gin,
+/obj/item/reagent_containers/food/drinks/bottle/hcider,
+/obj/item/reagent_containers/food/drinks/bottle/kahlua,
+/obj/item/reagent_containers/food/drinks/bottle/nukashine,
+/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/bottle/grappa,
+/obj/item/reagent_containers/food/drinks/ale,
+/obj/item/reagent_containers/food/drinks/bottle/amaretto,
+/obj/structure/closet/crate/large{
+	anchored = 1
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 9;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "bOe" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -6747,6 +6796,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
 /area/f13/building)
+"cPN" = (
+/obj/structure/flora/wasteplant/wild_tato,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "cPW" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/f13/wood,
@@ -9240,6 +9293,13 @@
 /obj/item/clothing/suit/armor/f13/raider/supafly,
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"dRY" = (
+/obj/structure/sink/puddle,
+/obj/structure/flora/wasteplant/wild_punga{
+	pixel_y = 8
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "dSh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/pew,
@@ -12441,11 +12501,24 @@
 	},
 /area/f13/wasteland)
 "fcy" = (
-/obj/structure/table/rolling{
-	dir = 8
-	},
-/turf/open/floor/wood/wood_large,
-/area/f13/building)
+/obj/structure/closet/fridge,
+/obj/item/reagent_containers/food/drinks/bottle/lemonjuice,
+/obj/item/reagent_containers/food/drinks/bottle/lemonjuice,
+/obj/item/reagent_containers/food/drinks/bottle/limejuice,
+/obj/item/reagent_containers/food/drinks/bottle/limejuice,
+/obj/item/reagent_containers/food/drinks/bottle/orangejuice,
+/obj/item/reagent_containers/food/drinks/bottle/orangejuice,
+/obj/item/reagent_containers/food/drinks/bottle/pineapplejuice,
+/obj/item/reagent_containers/food/drinks/bottle/pineapplejuice,
+/obj/item/reagent_containers/food/drinks/bottle/strawberryjuice,
+/obj/item/reagent_containers/food/drinks/bottle/strawberryjuice,
+/obj/item/reagent_containers/food/drinks/bottle/tomatojuice,
+/obj/item/reagent_containers/food/drinks/bottle/tomatojuice,
+/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/food/drinks/bottle/cream,
+/obj/item/reagent_containers/food/drinks/bottle/cream,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "fcE" = (
 /obj/structure/fence/corner/wooden,
 /obj/structure/fence/wooden{
@@ -14446,23 +14519,8 @@
 	},
 /area/f13/building)
 "fQV" = (
-/obj/item/reagent_containers/food/drinks/bottle/fernet,
-/obj/item/reagent_containers/food/drinks/bottle/cognac,
-/obj/item/reagent_containers/food/drinks/bottle/gin,
-/obj/item/reagent_containers/food/drinks/bottle/hcider,
-/obj/item/reagent_containers/food/drinks/bottle/kahlua,
-/obj/item/reagent_containers/food/drinks/bottle/nukashine,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/bottle/grappa,
-/obj/item/reagent_containers/food/drinks/ale,
-/obj/item/reagent_containers/food/drinks/bottle/amaretto,
-/obj/structure/closet/crate/large{
-	anchored = 1
-	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 9;
-	icon_state = "dirt"
-	},
+/obj/structure/reagent_dispensers/keg/milk,
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "fQW" = (
 /obj/structure/sign/poster/contraband/pinup_pink,
@@ -15644,10 +15702,7 @@
 /obj/structure/barricade/tentleathercorner{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 8;
-	icon_state = "dirt"
-	},
+/turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "gpp" = (
 /obj/structure/table/wood/settler,
@@ -17181,25 +17236,6 @@
 /mob/living/simple_animal/hostile/deathclaw/mother,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"gSQ" = (
-/obj/structure/closet/fridge,
-/obj/item/reagent_containers/food/drinks/bottle/lemonjuice,
-/obj/item/reagent_containers/food/drinks/bottle/lemonjuice,
-/obj/item/reagent_containers/food/drinks/bottle/limejuice,
-/obj/item/reagent_containers/food/drinks/bottle/limejuice,
-/obj/item/reagent_containers/food/drinks/bottle/orangejuice,
-/obj/item/reagent_containers/food/drinks/bottle/orangejuice,
-/obj/item/reagent_containers/food/drinks/bottle/pineapplejuice,
-/obj/item/reagent_containers/food/drinks/bottle/pineapplejuice,
-/obj/item/reagent_containers/food/drinks/bottle/strawberryjuice,
-/obj/item/reagent_containers/food/drinks/bottle/strawberryjuice,
-/obj/item/reagent_containers/food/drinks/bottle/tomatojuice,
-/obj/item/reagent_containers/food/drinks/bottle/tomatojuice,
-/obj/item/reagent_containers/food/condiment/soymilk,
-/obj/item/reagent_containers/food/drinks/bottle/cream,
-/obj/item/reagent_containers/food/drinks/bottle/cream,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "gTp" = (
 /obj/structure/simple_door/metal/store,
 /obj/machinery/door/poddoor/shutters{
@@ -20429,7 +20465,10 @@
 	pixel_x = 13
 	},
 /obj/item/reagent_containers/food/snacks/grown/wheat,
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
 /area/f13/building)
 "ici" = (
 /obj/effect/turf_decal/shadow/floor,
@@ -21368,6 +21407,12 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"iyQ" = (
+/obj/structure/barricade/tentleatheredge{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/building)
 "iyR" = (
 /obj/machinery/smartfridge/bottlerack/lootshelf/cans,
 /obj/item/stack/sheet/metal/five,
@@ -22264,6 +22309,24 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/merchant)
+"iRJ" = (
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/structure/closet/crate/large{
+	anchored = 1
+	},
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtcorner"
+	},
+/area/f13/wasteland)
 "iSi" = (
 /obj/structure/closet/crate/wicker,
 /obj/effect/spawner/lootdrop/f13/cash_legion_low,
@@ -25127,6 +25190,13 @@
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
+"keL" = (
+/obj/structure/legion_extractor{
+	pixel_y = 6;
+	pixel_x = 7
+	},
+/turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "keR" = (
 /obj/effect/landmark/start/f13/pusher,
@@ -28465,7 +28535,11 @@
 	},
 /area/f13/wasteland)
 "lzn" = (
-/obj/effect/holodeck_effect/cards,
+/obj/machinery/hydroponics/soil{
+	name = "riverbed soil";
+	yieldmod = 1.3
+	},
+/obj/item/cultivator/rake,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "lzo" = (
@@ -29399,6 +29473,12 @@
 /obj/structure/campfire/barrel,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"lUf" = (
+/obj/structure/table/rolling{
+	dir = 8
+	},
+/turf/open/floor/wood/wood_large,
+/area/f13/building)
 "lUr" = (
 /obj/structure/barricade/tentclothedge{
 	dir = 8
@@ -32798,6 +32878,10 @@
 	},
 /turf/open/floor/plasteel/darkblue/corner,
 /area/f13/building)
+"nlp" = (
+/obj/structure/chair/wood/modern,
+/turf/open/floor/wood/wood_large,
+/area/f13/building)
 "nlN" = (
 /obj/structure/table/wood,
 /obj/item/instrument/guitar,
@@ -34273,9 +34357,32 @@
 	icon_state = "verticalleftborderright0"
 	},
 /area/f13/wasteland)
+"nXe" = (
+/obj/structure/reagent_dispensers/compostbin{
+	pixel_x = -3;
+	pixel_y = 6
+	},
+/obj/structure/fluff/railing{
+	icon = 'modular_BD2/general/icons/fence.dmi';
+	icon_state = "straight_wood"
+	},
+/obj/structure/fluff/railing/corner{
+	icon = 'modular_BD2/general/icons/fence.dmi';
+	icon_state = "straight_wood";
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "nXq" = (
 /obj/structure/table/wood,
-/obj/machinery/reagentgrinder,
+/obj/item/reagent_containers/glass/mortar{
+	pixel_y = 6;
+	pixel_x = 5
+	},
+/obj/item/pestle{
+	pixel_y = 8;
+	pixel_x = 5
+	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "nXr" = (
@@ -38766,6 +38873,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/building)
+"pUS" = (
+/obj/machinery/hydroponics/soil{
+	name = "riverbed soil";
+	yieldmod = 1.3
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "pUV" = (
 /obj/structure/simple_door/metal/dirtystore,
 /turf/open/floor/f13{
@@ -42620,10 +42734,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"rJT" = (
-/obj/structure/reagent_dispensers/keg/milk,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "rKx" = (
 /obj/structure/destructible/tribal_torch/lit{
 	pixel_x = 18;
@@ -44404,6 +44514,10 @@
 	name = "metal plating"
 	},
 /area/f13/wasteland)
+"sxU" = (
+/obj/structure/flora/wasteplant/wild_mutfruit,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "syo" = (
 /obj/structure/table/reinforced,
 /obj/item/phone,
@@ -45036,23 +45150,11 @@
 /turf/open/water,
 /area/f13/caves)
 "sKG" = (
-/obj/item/reagent_containers/food/drinks/bottle/sunset,
-/obj/item/reagent_containers/food/drinks/bottle/sunset,
-/obj/item/reagent_containers/food/drinks/bottle/sunset,
-/obj/item/reagent_containers/food/drinks/bottle/sunset,
-/obj/item/reagent_containers/food/drinks/bottle/sunset,
-/obj/structure/closet/crate/large{
-	anchored = 1
-	},
-/obj/item/reagent_containers/food/drinks/bottle/sunset,
-/obj/item/reagent_containers/food/drinks/bottle/sunset,
-/obj/item/reagent_containers/food/drinks/bottle/sunset,
-/obj/item/reagent_containers/food/drinks/bottle/sunset,
-/obj/item/reagent_containers/food/drinks/bottle/sunset,
 /turf/open/indestructible/ground/outside/dirt{
-	icon_state = "dirtcorner"
+	dir = 9;
+	icon_state = "dirt"
 	},
-/area/f13/wasteland)
+/area/f13/caves)
 "sKH" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
@@ -46132,6 +46234,17 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
+"tjg" = (
+/obj/structure/fermenting_barrel,
+/obj/item/reagent_containers/glass/beaker/flask/spouty{
+	pixel_y = 13
+	},
+/obj/item/reagent_containers/glass/beaker/flask/large{
+	pixel_x = -8;
+	pixel_y = -10
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/caves)
 "tjo" = (
 /obj/structure/campfire/stove{
 	pixel_x = -7;
@@ -46667,6 +46780,15 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/f13{
 	icon_state = "yellowrustyfull"
+	},
+/area/f13/building)
+"ttO" = (
+/obj/structure/barricade/tentleatheredge{
+	dir = 4
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 9;
+	icon_state = "dirt"
 	},
 /area/f13/building)
 "ttP" = (
@@ -51358,6 +51480,9 @@
 	icon_state = "horizontalinnermain1"
 	},
 /area/f13/wasteland)
+"vwC" = (
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/caves)
 "vwL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood,
@@ -51596,6 +51721,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/green/white,
 /area/f13/building)
+"vCZ" = (
+/obj/item/reagent_containers/glass/bucket/wood,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "vDb" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4"
@@ -53075,9 +53204,9 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "wol" = (
-/obj/structure/chair/wood/modern,
-/turf/open/floor/wood/wood_large,
-/area/f13/building)
+/obj/machinery/workbench/bottler,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/caves)
 "won" = (
 /obj/effect/decal/remains{
 	icon_state = "remains"
@@ -86141,7 +86270,7 @@ gcK
 gbL
 gbL
 lwj
-ggK
+xZh
 gcK
 gcK
 gcK
@@ -86657,7 +86786,7 @@ gcK
 gcK
 gcK
 fyf
-fyf
+dRY
 wnX
 kvB
 oXD
@@ -86914,7 +87043,7 @@ gcK
 gcK
 ftE
 fyf
-fyf
+vCZ
 uqa
 hia
 kvB
@@ -87680,9 +87809,9 @@ ktB
 gcK
 gcK
 gbL
-fyf
-fyf
-fyf
+pUS
+nXe
+cPN
 fyf
 fyf
 fyf
@@ -87936,13 +88065,13 @@ ktB
 ktB
 gcK
 gcK
+pUS
+pUS
+lzn
 fyf
+keL
 fyf
-fyf
-fyf
-fyf
-fyf
-fyf
+sxU
 xXi
 fyf
 sYX
@@ -91537,12 +91666,12 @@ gcK
 gOO
 dDC
 fyf
-gSQ
-sKG
+fcy
+iRJ
 ltK
-fQV
+bNZ
 bBJ
-rJT
+fQV
 jix
 ddd
 kut
@@ -92056,7 +92185,7 @@ kZT
 wtX
 sYX
 ozX
-fcy
+lUf
 tYH
 fPU
 myu
@@ -93600,7 +93729,7 @@ owo
 myu
 myu
 myu
-wol
+nlp
 wYQ
 jeO
 sYX
@@ -95650,8 +95779,8 @@ gcK
 gcK
 gcK
 gpl
-oqK
-oqK
+iyQ
+ttO
 oqK
 oqK
 jOM
@@ -95905,10 +96034,10 @@ gcK
 gcK
 gcK
 gcK
-gcK
-fyf
-fyf
-fyf
+tjg
+vwC
+sKG
+mcf
 fyf
 fyf
 fyf
@@ -96162,8 +96291,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-fyf
+wol
+vwC
 uqa
 jUm
 jUm
@@ -96420,7 +96549,7 @@ gcK
 gcK
 gcK
 gcK
-fyf
+bbE
 bEP
 oXD
 krS
@@ -97451,7 +97580,7 @@ gbL
 gbL
 gbL
 gbL
-lzn
+aMx
 fyf
 fyf
 fyf
