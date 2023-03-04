@@ -12441,10 +12441,9 @@
 	},
 /area/f13/wasteland)
 "fcy" = (
-/obj/structure/chair/wood/modern{
+/obj/structure/table/rolling{
 	dir = 8
 	},
-/obj/effect/landmark/start/f13/bwsettler,
 /turf/open/floor/wood/wood_large,
 /area/f13/building)
 "fcE" = (
@@ -14447,21 +14446,24 @@
 	},
 /area/f13/building)
 "fQV" = (
-/obj/item/reagent_containers/food/drinks/bottle/fernet{
-	pixel_y = 26;
-	pixel_x = -6
+/obj/item/reagent_containers/food/drinks/bottle/fernet,
+/obj/item/reagent_containers/food/drinks/bottle/cognac,
+/obj/item/reagent_containers/food/drinks/bottle/gin,
+/obj/item/reagent_containers/food/drinks/bottle/hcider,
+/obj/item/reagent_containers/food/drinks/bottle/kahlua,
+/obj/item/reagent_containers/food/drinks/bottle/nukashine,
+/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/food/drinks/bottle/grappa,
+/obj/item/reagent_containers/food/drinks/ale,
+/obj/item/reagent_containers/food/drinks/bottle/amaretto,
+/obj/structure/closet/crate/large{
+	anchored = 1
 	},
-/obj/item/reagent_containers/food/drinks/bottle/gin{
-	pixel_y = 19;
-	layer = 3.1
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 9;
+	icon_state = "dirt"
 	},
-/obj/item/reagent_containers/food/drinks/bottle/goldschlager{
-	pixel_y = 27;
-	pixel_x = 6
-	},
-/obj/machinery/smartfridge/bottlerack,
-/turf/open/floor/wood/wood_large,
-/area/f13/building)
+/area/f13/wasteland)
 "fQW" = (
 /obj/structure/sign/poster/contraband/pinup_pink,
 /turf/closed/wall/f13/store{
@@ -16436,17 +16438,28 @@
 "gDn" = (
 /obj/item/reagent_containers/food/drinks/bottle/rum{
 	pixel_y = 22;
-	pixel_x = -2
+	pixel_x = -2;
+	layer = 3.1
 	},
 /obj/item/reagent_containers/food/drinks/bottle/rotgut{
 	pixel_x = -7;
-	pixel_y = 21
+	pixel_y = 21;
+	layer = 3.2
 	},
 /obj/item/reagent_containers/food/drinks/bottle/patron{
 	pixel_y = 20;
-	pixel_x = 8
+	pixel_x = 8;
+	layer = 3.2
 	},
 /obj/machinery/smartfridge/bottlerack,
+/obj/item/reagent_containers/food/drinks/bottle/goldschlager{
+	pixel_y = 30;
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/food/drinks/bottle/nukashine{
+	pixel_y = 21;
+	pixel_x = -7
+	},
 /turf/open/floor/wood/wood_large,
 /area/f13/building)
 "gDs" = (
@@ -17168,6 +17181,25 @@
 /mob/living/simple_animal/hostile/deathclaw/mother,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"gSQ" = (
+/obj/structure/closet/fridge,
+/obj/item/reagent_containers/food/drinks/bottle/lemonjuice,
+/obj/item/reagent_containers/food/drinks/bottle/lemonjuice,
+/obj/item/reagent_containers/food/drinks/bottle/limejuice,
+/obj/item/reagent_containers/food/drinks/bottle/limejuice,
+/obj/item/reagent_containers/food/drinks/bottle/orangejuice,
+/obj/item/reagent_containers/food/drinks/bottle/orangejuice,
+/obj/item/reagent_containers/food/drinks/bottle/pineapplejuice,
+/obj/item/reagent_containers/food/drinks/bottle/pineapplejuice,
+/obj/item/reagent_containers/food/drinks/bottle/strawberryjuice,
+/obj/item/reagent_containers/food/drinks/bottle/strawberryjuice,
+/obj/item/reagent_containers/food/drinks/bottle/tomatojuice,
+/obj/item/reagent_containers/food/drinks/bottle/tomatojuice,
+/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/food/drinks/bottle/cream,
+/obj/item/reagent_containers/food/drinks/bottle/cream,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "gTp" = (
 /obj/structure/simple_door/metal/store,
 /obj/machinery/door/poddoor/shutters{
@@ -21421,7 +21453,8 @@
 /obj/item/reagent_containers/food/drinks/bottle/brown/beer{
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer=100);
 	pixel_x = 5;
-	pixel_y = 15
+	pixel_y = 15;
+	layer = 3.1
 	},
 /obj/item/toy/figure/bartender{
 	pixel_y = 15;
@@ -22693,9 +22726,15 @@
 	},
 /area/f13/pitrats)
 "jdM" = (
+/obj/structure/chair/wood/modern{
+	dir = 8
+	},
+/obj/effect/landmark/start/f13/bwsettler,
 /obj/item/reagent_containers/glass/bucket{
 	desc = "It smells awful.";
-	name = "spittoon bucket"
+	name = "spittoon bucket";
+	pixel_y = -6;
+	pixel_x = 10
 	},
 /turf/open/floor/wood/wood_large,
 /area/f13/building)
@@ -23299,6 +23338,14 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "joJ" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lantern{
+	pixel_y = 15;
+	on = 1;
+	light_on = 1;
+	icon_state = "lantern-on";
+	pixel_x = 2
+	},
 /obj/structure/railing{
 	color = "#A47449";
 	dir = 4
@@ -24692,8 +24739,8 @@
 	},
 /area/f13/kebab)
 "jVO" = (
-/obj/structure/chair/stool/retro{
-	pixel_x = -6
+/obj/structure/chair/wood/modern{
+	dir = 1
 	},
 /obj/structure/railing/corner{
 	color = "#A47449";
@@ -28418,26 +28465,9 @@
 	},
 /area/f13/wasteland)
 "lzn" = (
-/obj/item/reagent_containers/food/drinks/bottle/nukashine{
-	pixel_y = 20;
-	pixel_x = -2
-	},
-/obj/item/reagent_containers/food/drinks/bottle/kahlua{
-	pixel_x = 7;
-	pixel_y = 20
-	},
-/obj/item/reagent_containers/food/drinks/bottle/cognac{
-	pixel_y = 21;
-	pixel_x = -7
-	},
-/obj/item/reagent_containers/food/drinks/bottle/applejack{
-	pixel_x = 5;
-	pixel_y = 27;
-	layer = 2.9
-	},
-/obj/machinery/smartfridge/bottlerack,
-/turf/open/floor/wood/wood_large,
-/area/f13/building)
+/obj/effect/holodeck_effect/cards,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "lzo" = (
 /obj/structure/decoration/legion/tentpole/rope{
 	dir = 8;
@@ -28889,7 +28919,9 @@
 /obj/item/locked_box/misc/attachments,
 /obj/effect/spawner/lootdrop/weapons/selfdefence,
 /obj/effect/spawner/lootdrop/weapons/selfdefence,
-/obj/structure/closet/crate/large,
+/obj/structure/closet/crate/large{
+	anchored = 1
+	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
 "lKm" = (
@@ -42393,6 +42425,7 @@
 /obj/item/storage/box/matches,
 /obj/item/clothing/head/helmet/f13/vaquerohat,
 /obj/effect/holodeck_effect/cards,
+/obj/item/instrument/guitar,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirtcorner"
@@ -42587,6 +42620,10 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"rJT" = (
+/obj/structure/reagent_dispensers/keg/milk,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "rKx" = (
 /obj/structure/destructible/tribal_torch/lit{
 	pixel_x = 18;
@@ -44999,30 +45036,23 @@
 /turf/open/water,
 /area/f13/caves)
 "sKG" = (
-/obj/item/reagent_containers/food/drinks/bottle/hcider{
-	pixel_y = 19;
-	pixel_x = -4;
-	layer = 3.1
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/structure/closet/crate/large{
+	anchored = 1
 	},
-/obj/item/reagent_containers/food/drinks/bottle/grappa{
-	pixel_y = 27;
-	pixel_x = -8
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/obj/item/reagent_containers/food/drinks/bottle/sunset,
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirtcorner"
 	},
-/obj/item/reagent_containers/food/drinks/ale{
-	pixel_y = 25
-	},
-/obj/item/reagent_containers/food/drinks/beer{
-	pixel_x = 3;
-	pixel_y = 19;
-	layer = 3.1
-	},
-/obj/item/reagent_containers/food/drinks/bottle/amaretto{
-	pixel_x = 9;
-	pixel_y = 23
-	},
-/obj/machinery/smartfridge/bottlerack,
-/turf/open/floor/wood/wood_large,
-/area/f13/building)
+/area/f13/wasteland)
 "sKH" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
@@ -53045,9 +53075,7 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "wol" = (
-/obj/structure/chair/stool/retro/black{
-	pixel_y = 12
-	},
+/obj/structure/chair/wood/modern,
 /turf/open/floor/wood/wood_large,
 /area/f13/building)
 "won" = (
@@ -91509,12 +91537,12 @@ gcK
 gOO
 dDC
 fyf
-fyf
-qOV
+gSQ
+sKG
 ltK
-dCL
+fQV
 bBJ
-fyf
+rJT
 jix
 ddd
 kut
@@ -92028,11 +92056,11 @@ kZT
 wtX
 sYX
 ozX
-myu
+fcy
 tYH
 fPU
+myu
 usk
-eDg
 sYX
 pQk
 oVt
@@ -92288,8 +92316,8 @@ evM
 myu
 fqH
 fPU
-tcX
 myu
+tcX
 aFK
 jJx
 oVt
@@ -92545,8 +92573,8 @@ gDn
 myu
 cdU
 fPU
-fil
 myu
+fil
 aFK
 aRl
 oVt
@@ -92802,7 +92830,7 @@ myu
 myu
 nKC
 nvG
-fcy
+myu
 jdM
 sYX
 aRl
@@ -93055,8 +93083,8 @@ sYX
 cop
 fPv
 sYX
-lzn
-myu
+fqH
+nKC
 nKC
 fPU
 myu
@@ -93312,10 +93340,10 @@ sYX
 xoX
 fPv
 sYX
-fQV
+eDg
+dOA
+dOA
 myu
-fqH
-wol
 usk
 myu
 nMB
@@ -93568,11 +93596,11 @@ gbL
 sYX
 afs
 fPv
-sYX
-sKG
+owo
 myu
-nKC
-fPU
+myu
+myu
+wol
 wYQ
 jeO
 sYX
@@ -93826,10 +93854,10 @@ sYX
 fQu
 jdS
 sYX
-fqH
-nKC
-nKC
-fPU
+usk
+myu
+myu
+myu
 ykG
 ykG
 aFK
@@ -94082,10 +94110,10 @@ gbL
 sYX
 egk
 fPv
-owo
+sYX
 joJ
 jVO
-dOA
+myu
 bCM
 eOC
 mha
@@ -97423,7 +97451,7 @@ gbL
 gbL
 gbL
 gbL
-fyf
+lzn
 fyf
 fyf
 fyf
