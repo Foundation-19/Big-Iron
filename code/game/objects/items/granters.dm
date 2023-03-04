@@ -594,7 +594,7 @@
 	desc = "An extremely rare issue of Guns and Bullets, showing some design flaws of weapons and how to rectify them. It's barely holding up, and looks like only one person can study the knowledge from it."
 	icon_state = "gab4"
 	remarks = list("Always keep your gun well lubricated...", "Keep your barrel free of grime...", "Perfect fitment is the key to a good firearm...", "Maintain a proper trigger pull length...", "Keep your sights zeroed to proper range...")
-	crafting_recipe_types = list(/datum/crafting_recipe/flux, /datum/crafting_recipe/lenses, /datum/crafting_recipe/conductors, /datum/crafting_recipe/receiver, /datum/crafting_recipe/assembly, /datum/crafting_recipe/alloys)
+	crafting_recipe_types = list(/datum/crafting_recipe/flux, /datum/crafting_recipe/lenses, /datum/crafting_recipe/conductors, /datum/crafting_recipe/receiver, /datum/crafting_recipe/assembly, /datum/crafting_recipe/alloys, /datum/crafting_recipe/assault_carbine_repair)
 	autolathe_level = "advanced"
 
 /obj/item/book/granter/crafting_recipe/scav_one
