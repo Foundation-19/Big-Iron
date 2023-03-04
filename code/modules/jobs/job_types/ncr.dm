@@ -1039,6 +1039,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	belt = /obj/item/storage/belt/military/NCR_Bandolier/loaded
 	glasses = /obj/item/clothing/glasses/night/polarizing
 	head = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
+	gloves = /obj/item/clothing/gloves/color/brown
 	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
 	r_pocket = /obj/item/binoculars
 	l_pocket = /obj/item/storage/bag/flare
@@ -1072,6 +1073,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armored/light/rangerrig 
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/socom
+	gloves = /obj/item/clothing/gloves/color/brown
 	belt = /obj/item/storage/belt/military/NCR_Bandolier/rappeldrop
 	glasses = /obj/item/clothing/glasses/night/polarizing
 	head = /obj/item/clothing/head/f13/ncr/steelpot_med
