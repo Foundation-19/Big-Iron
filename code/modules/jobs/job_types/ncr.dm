@@ -1041,7 +1041,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	head = obj/item/clothing/head/f13/ncr/steelpot_bandolier
 	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	r_pocket = /obj/item/binoculars
-	l_pocket = /obj/item/storage/survivalkit/legion_rations
+	l_pocket = /obj/item/storage/bag/flare
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/melee/onehanded/knife/trench = 1,
