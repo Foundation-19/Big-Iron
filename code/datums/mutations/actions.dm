@@ -235,6 +235,7 @@
 
 /obj/effect/proc_holder/spell/targeted/olfaction/cast(list/targets, mob/living/user = usr)
 	//can we sniff? is there miasma in the air?
+ 
 	var/datum/gas_mixture/air = user.loc.return_air()
 
 	if(air.get_moles(GAS_MIASMA))
