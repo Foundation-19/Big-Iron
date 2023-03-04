@@ -1036,7 +1036,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armored/light/rangerrig 
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/socom
-	belt = /obj/item/storage/belt/military/NCR_Bandolier/556loaded
+	belt = /obj/item/storage/belt/military/NCR_Bandolier/m556loaded
 	glasses = /obj/item/clothing/glasses/night/polarizing
 	head = /obj/item/clothing/head/f13/ncr/steelpot_bandolier
 	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
