@@ -1,3 +1,4 @@
+/* Removing weather because of crashes
 /datum/weather/rad_storm
 	name = "radiation storm"
 	desc = "A cloud of intense radiation passes through the area dealing rad damage to those who are unprotected."
@@ -52,3 +53,4 @@
 
 	var/atom/movable/virtualspeaker/virt = new(null)
 	frequency.post_signal(virt, signal)
+*/ 
