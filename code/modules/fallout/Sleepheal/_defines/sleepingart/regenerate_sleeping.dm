@@ -43,7 +43,11 @@
 
 	// We use L, not parent, this is cause L has all the procs we need to adjust damage values and stuff <3 But we set the parent as L.
 	var/mob/living/L = parent
-
+	//Check to see if it's in a dungeon :)
+	var/dungeon_areas = list(/area/f13/bunker, /area/f13/casino)
+	if(is_type_in_list(get_area(L), dungeon_areas))
+		L.gib()
+		return
 	// A list ready to store the damage values
 	var/list/DamageTypes = list()
 
@@ -66,9 +70,15 @@
 // heal more if you are bucled to a bed inside
 	var/obj/buckled_obj = L.buckled
 	var/area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
+	var/bad_beds = list(/obj/structure/bed/old, /obj/structure/bed/oldalt, /obj/structure/bed/alien)
+	var/good_beds = list(/obj/structure/bed/dogbed, /obj/structure/bed/wooden)
 	if(buckled_obj && istype(buckled_obj, /obj/structure/bed))
 		if(!is_type_in_list(get_area(L), area_types))
 			healAmount += BED_HEAL_BONUS
+			if(is_type_in_list(buckled_obj, bad_beds))
+				healAmount -= BED_HEAL_BONUS/2
+			if(is_type_in_list(buckled_obj, good_beds))
+				healAmount += BED_HEAL_BONUS
 
 	// Now pick a random element from the list, if it is BRUTE, OXY, TOX or BURN, (defined on code\__DEFINES\combat.dm) apply the heal amount to one of them.
 	switch(pick(DamageTypes))
