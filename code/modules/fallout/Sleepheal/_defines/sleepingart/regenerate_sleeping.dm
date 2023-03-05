@@ -15,7 +15,7 @@
 
 // Definition!
 /datum/component/sleeping_regeneration
-	var/maxHealAmount = 0.02 // idfk
+	var/maxHealAmount = 0.02 
 
 // We want to check to make sure the component is a /mob/living, if it isnt, this component is incompatible.
 /datum/component/sleeping_regeneration/Initialize(...)
@@ -45,32 +45,33 @@
 	var/mob/living/L = parent
 
 	// A list ready to store the damage values
-	var/list/damagedParts = list()
+	var/list/DamageTypes = list()
 
-	// this checks if there's any damage on each type and if there is, add it to the list. |= adds it to the list but stops you adding it twice.
+	// this checks if there's any damage of each type and if there is, add it to the list. |= adds it to the list but stops you adding it twice.
 	if(L.getBruteLoss() > 0)
-		damagedParts += BRUTE
+		DamageTypes += BRUTE
 	if(L.getOxyLoss() > 0)
-		damagedParts += OXY
+		DamageTypes += OXY
 	if(L.getToxLoss() > 0)
-		damagedParts += TOX
+		DamageTypes += TOX
 	if(L.getFireLoss() > 0)
-		damagedParts += BURN
+		DamageTypes += BURN
 
-	if(!damagedParts.len) // We're done here!
+	if(!DamageTypes.len) // We're done here!
 		return
 
 	// get a heal amount from 0 to the maxHealAmount.
 	var/healAmount = rand(0,maxHealAmount)
 
+// heal more if you are bucled to a bed inside
 	var/obj/buckled_obj = L.buckled
 	var/area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/ruins)
 	if(buckled_obj && istype(buckled_obj, /obj/structure/bed))
 		if(!is_type_in_list(get_area(L), area_types))
 			healAmount += BED_HEAL_BONUS
 
-	// Now pick a random element from the list, if it is BRUTE, OXY, TOX or BURN, apply the heal amount to one of them.
-	switch(pick(damagedParts))
+	// Now pick a random element from the list, if it is BRUTE, OXY, TOX or BURN, (defined on code\__DEFINES\combat.dm) apply the heal amount to one of them.
+	switch(pick(DamageTypes))
 		if(BRUTE)
 			L.adjustBruteLoss(-healAmount)
 		if(OXY)
