@@ -528,14 +528,14 @@
 			C.update_damage_overlays()
 	to_chat(C, "<span class='userdanger'>The feather burns your bare hand!</span>")
 	return TRUE
-	
+
 
 //each egg has at least 3 kind of uses: self use, feeding use and a throw use
 /*FIRE EGGS
 SElF USE: makes a pretty neat welder
 FEED USE: gives one use of fire breath
 throw use: makes a firy explosion and works as a flash*/
-/obj/item/reagent_containers/food/snacks/egg/firegg// BIG IRON EDIT start- 
+/obj/item/reagent_containers/food/snacks/egg/firegg// BIG IRON EDIT start-
 	name = "Fire egg"
 	desc = "this egg is warm to the touch"
 	list_reagents = list(/datum/reagent/fuel = 20)
@@ -833,7 +833,7 @@ throw use: feed someone alcohol
 		target.cheery = TRUE
 		M.visible_message("[M] eats the [src]! she seems really happy")
 		qdel(src)
-	else 
+	else
 		to_chat(user, "you crack the [src] with [M]'s head and reveal the riches inside")
 		var/location = get_turf(M)
 		var/boozetype = get_random_drink()
@@ -1044,7 +1044,7 @@ throw use: feed someone alcohol
 			to_chat(user, "<span class='warning'>You need to claim the brahmin with a bridle before you can rename it!</span>")
 			return
 
-		name = input("Choose a new name for your brahmin!","Name", name)
+		name = stripped_input(user, "Choose a new name for your brahmin. [MAX_NAME_LEN] character limit.","Name", null, MAX_NAME_LEN)
 
 		if(!name)
 			return
