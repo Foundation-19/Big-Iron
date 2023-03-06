@@ -70,7 +70,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	flag = F13COLONEL
 	head_announce = list("Security")
 	supervisors = "The Republic Senate, High Command"
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 	req_admin_notify = 1
 
 	total_positions = 0
@@ -1029,11 +1029,23 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 // NCR Paratrooper
-/datum/outfit/job/ncr/f13corporal/paratrooper
+/datum/job/ncr/f13paratrooperassault
+	title = "NCR Paratrooper (Assault)"
+	total_positions = 0
+	spawn_positions = 0
+	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
+	supervisors = "Sergeant and Above"
+
+	outfit = /datum/outfit/job/ncr/paratrooper
+
+	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+
+
+/datum/outfit/job/ncr/paratrooper
 	name = "NCR Paratrooper (Assault)"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/ncr/CPL
-	suit = /obj/item/clothing/suit/armored/light/rangerrig 
+	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/socom
 	belt = /obj/item/storage/belt/military/NCR_Bandolier/loaded
@@ -1059,18 +1071,24 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/job/ncr/f13corporal/paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
 		return
-	var/obj/item/card/id/W = H.wear_id
-	W.assignment = "NCR Paratrooper (Assault)"
-	W.registered_name = H.real_name
-	W.update_label(W.registered_name, W.assignment)
-	playsound(src, 'sound/items/rappel.ogg', 50, TRUE)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-/datum/outfit/job/ncr/f13corporal/paratrooper_medic
+/datum/job/ncr/f13paratroopermedic
+	title = "NCR Paratrooper (medic)"
+	total_positions = 0
+	spawn_positions = 0
+	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
+	supervisors = "Sergeant and Above"
+
+	outfit = /datum/outfit/job/ncr/paratrooper_medic
+
+	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+
+/datum/outfit/job/ncr/f13paratrooper_medic
 	name = "NCR Paratrooper (Medic)"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/armband/medblue
-	suit = /obj/item/clothing/suit/armored/light/rangerrig 
+	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/socom
 	gloves = /obj/item/clothing/gloves/color/brown
@@ -1088,20 +1106,14 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/hypospraykit/cmo = 1,
 		/obj/item/clothing/head/beret/ncr/ncr_medic = 1,
 		/obj/item/defibrillator/compact/combat/loaded = 1,
-		/obj/item/storage/belt/medical/primitive = 1,
+		/obj/item/storage/belt/medical/surgery_belt = 1,
 		/obj/item/attachments/scope = 1,
 		/obj/item/suppressor = 2,
-		/obj/item/storage/box/ration/menu_one = 1,
 		/obj/item/storage/firstaid/regular = 1,
 		)
 
 /datum/outfit/job/ncr/f13corporal/paratrooper_medic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
 		return
-	var/obj/item/card/id/W = H.wear_id
-	W.assignment = "NCR Medical Paratrooper "
-	W.registered_name = H.real_name
-	W.update_label(W.registered_name, W.assignment)
-	playsound(src, 'sound/items/rappel.ogg', 50, TRUE)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
