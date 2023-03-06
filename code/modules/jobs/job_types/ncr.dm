@@ -1165,7 +1165,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Sergeant and Above"
 
-	outfit = /datum/outfit/job/ncr/paratrooper_medic
+	outfit = /datum/outfit/job/ncr/f13paratrooper_medic
 
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
