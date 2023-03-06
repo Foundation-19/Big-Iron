@@ -292,7 +292,14 @@
 		/obj/item/handsaw
 		))
 
-
+/obj/item/storage/belt/medical/surgery_belt/PopulateContents()
+	new /obj/item/scalpel(src)
+	new /obj/item/retractor(src)
+	new /obj/item/hemostat(src)
+	new /obj/item/cautery(src)
+	new /obj/item/circular_saw(src)
+	new /obj/item/bonesetter(src)
+	new /obj/item/surgical_drapes/advanced(src)
 
 /obj/item/storage/belt/medical/surgery_belt_adv
 	name = "surgical supply belt"

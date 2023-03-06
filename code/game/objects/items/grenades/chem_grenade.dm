@@ -452,6 +452,11 @@
 	beakers += B1
 	beakers += B2
 
+//Not an actual smoke grenadebut placeholder
+/obj/item/grenade/chem_grenade/teargas/signal
+	name = "signaling smoke grenade"
+	desc = "Used for signaling airborne unit. Contents under pressure. Do not directly inhale contents."	
+
 
 /obj/item/grenade/chem_grenade/facid
 	name = "acid grenade"

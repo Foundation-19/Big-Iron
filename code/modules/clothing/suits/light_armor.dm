@@ -369,6 +369,9 @@
 	item_state = "r_gear_rig"
 	heat_protection = CHEST | GROIN | LEGS| ARMS | HEAD
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 20, "rad" = 10, "fire" = 25, "acid" = 0)
+/obj/item/clothing/suit/armored/light/rangerrig/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armored/light/trailranger
 	name = "ranger vest"

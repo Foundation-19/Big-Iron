@@ -560,7 +560,7 @@
 	item_state = "rifle"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
 	burst_size = 1
-	fire_delay = 2.5
+	fire_delay = 1.5
 	spread = 2
 	extra_damage = 22
 	extra_penetration = 0.1
