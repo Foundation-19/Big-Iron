@@ -1067,7 +1067,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/grenade/smokebomb = 3,
 		/obj/item/clothing/mask/breath = 1,
 		)
-
+	var/obj/item/card/id/W = H.wear_id
+	W.assignment = "NCR Assault Paratrooper"
 /datum/outfit/job/ncr/f13paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
 		return
@@ -1110,6 +1111,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/clothing/mask/breath = 1,
 		)
 
+	var/obj/item/card/id/W = H.wear_id
+	W.assignment = "NCR Paratroper Squad Leader"
+
 /datum/outfit/job/ncr/f13paratrooper_heavy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
 		return
@@ -1151,6 +1155,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/grenade/f13/he_grenade = 2,
 		/obj/item/clothing/mask/breath = 1,
 		)
+
+	var/obj/item/card/id/W = H.wear_id
+	W.assignment = "NCR Shock Paratrooper"
 
 /datum/outfit/job/ncr/f13paratrooper_heavy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
@@ -1196,6 +1203,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/firstaid/regular = 1,
 		/obj/item/clothing/mask/breath = 1,
 		)
+
+	var/obj/item/card/id/W = H.wear_id
+	W.assignment = "NCR Medic Paratrooper"
 
 /datum/outfit/job/ncr/f13paratrooper_medic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
