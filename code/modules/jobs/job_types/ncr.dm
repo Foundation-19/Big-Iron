@@ -1031,7 +1031,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // NCR Paratrooper
 /datum/job/ncr/f13paratrooperassault
 	title = "NCR Assault Paratrooper"
-	flag = NONE
+	flag = F13CAPTAIN
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
@@ -1074,7 +1074,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/job/ncr/f13paratroopersquadleader
 	title = "NCR Paratrooper Squad Leader"
-	flag = NONE
+	flag = F13CAPTAIN
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
@@ -1114,8 +1114,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/job/ncr/f13paratrooperheavy
-	title = "NCR Paratrooper (Heavy)"
-	flag = NONE
+	title = "NCR Shock Troop Paratrooper"
+	flag = F13CAPTAIN
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
@@ -1124,19 +1124,20 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
 /datum/outfit/job/ncr/paratrooper_heavy
-	name = "NCR Paratrooper (Heavy)"
+	name = "NCR Shocktroop Paratrooper"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/ncr/SGT
-	suit = /obj/item/clothing/suit/armored/light/rangerrig
+	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/ranger44
 	belt = /obj/item/storage/belt/military/NCR_Bandolier/loaded
 	glasses = /obj/item/clothing/glasses/night/polarizing
-	head = /obj/item/clothing/head/beret/ncr/ncr_sof
+	head = /obj/item/clothing/head/helmet/f13/combat/mk2/ncr
 	gloves = /obj/item/clothing/gloves/color/brown
 	suit_store = /obj/item/gun/ballistic/automatic/service/r82
 	r_pocket = /obj/item/binoculars
 	l_pocket = /obj/item/storage/bag/flare
+	r_hand = /obj/item/clothing/head/beret/ncr/ncr_sof
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
@@ -1156,8 +1157,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/job/ncr/f13paratroopermedic
-	title = "NCR Paratrooper (medic)"
-	flag = NONE
+	title = "NCR Paratrooper Medic"
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
