@@ -1096,7 +1096,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	glasses = /obj/item/clothing/glasses/night/polarizing
 	head = /obj/item/clothing/head/beret/ncr
 	gloves = /obj/item/clothing/gloves/color/brown
-	suit_store = /obj/item/gun/ballistic/automatic/bar
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle
 	r_pocket = /obj/item/binoculars
 	l_pocket = /obj/item/storage/bag/flare
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
@@ -1137,7 +1137,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	glasses = /obj/item/clothing/glasses/night/polarizing
 	head = /obj/item/clothing/head/beret/ncr/ncr_sof
 	gloves = /obj/item/clothing/gloves/color/brown
-	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle
+	suit_store = /obj/item/gun/ballistic/automatic/service/r82
 	r_pocket = /obj/item/binoculars
 	l_pocket = /obj/item/storage/bag/flare
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
