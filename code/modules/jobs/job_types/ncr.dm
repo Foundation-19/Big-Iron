@@ -1030,14 +1030,13 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 // NCR Paratrooper
 /datum/job/ncr/f13paratrooperassault
-	title = "NCR Paratrooper (Assault)"
+	title = "NCR Assault Paratrooper"
+	flag = NONE
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Sergeant and Above"
-
 	outfit = /datum/outfit/job/ncr/paratrooper
-
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
 
@@ -1073,18 +1072,14 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-	var/obj/item/card/id/W = H.wear_id
-	W.assignment = "NCR Assault Paratrooper"
-
 /datum/job/ncr/f13paratroopersquadleader
-	title = "NCR Paratrooper (Squad Leader)"
+	title = "NCR Paratrooper Squad Leader"
+	flag = NONE
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Captain and Above"
-
 	outfit = /datum/outfit/job/ncr/paratrooper_squadleader
-
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
 /datum/outfit/job/ncr/paratrooper_squadleader
@@ -1113,23 +1108,19 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 
-/datum/outfit/job/ncr/f13paratrooper_heavy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+/datum/outfit/job/ncr/f13paratrooper_squadleader/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-	var/obj/item/card/id/W = H.wear_id
-	W.assignment = "NCR Paratroper Squad Leader"
-
 /datum/job/ncr/f13paratrooperheavy
 	title = "NCR Paratrooper (Heavy)"
+	flag = NONE
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Captain and Above"
-
 	outfit = /datum/outfit/job/ncr/paratrooper_heavy
-
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
 /datum/outfit/job/ncr/paratrooper_heavy
@@ -1164,18 +1155,14 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-	var/obj/item/card/id/W = H.wear_id
-	W.assignment = "NCR Shock Paratrooper"
-
 /datum/job/ncr/f13paratroopermedic
 	title = "NCR Paratrooper (medic)"
+	flag = NONE
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Sergeant and Above"
-
 	outfit = /datum/outfit/job/ncr/f13paratrooper_medic
-
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
 /datum/outfit/job/ncr/f13paratrooper_medic
@@ -1213,6 +1200,3 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
-
-	var/obj/item/card/id/W = H.wear_id
-	W.assignment = "NCR Medic Paratrooper"
