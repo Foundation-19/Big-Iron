@@ -891,6 +891,7 @@
 	name = "high tier ballistic gun"
 	loot = list(/obj/effect/spawner/bundle/f13/assault_rifle = 20,
 				/obj/effect/spawner/bundle/f13/r84 = 10,
+				/obj/effect/spawner/bundle/f13/assault_carbine = 10,
 				/obj/effect/spawner/bundle/f13/dkssniper = 15,
 				/obj/effect/spawner/bundle/f13/pistol14 = 15,
 				/obj/item/gun/ballistic/revolver/grenadelauncher = 5,
@@ -1138,7 +1139,7 @@
 				)
 
 /obj/effect/spawner/bundle/f13/sig
-	name = " p220 pistol and ammo spawner"
+	name = "p220 pistol and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/pistol/sig,
 				/obj/item/ammo_box/magazine/m9mm/
