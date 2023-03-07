@@ -455,8 +455,11 @@
 //Not an actual smoke grenadebut placeholder
 /obj/item/grenade/chem_grenade/teargas/signal
 	name = "signaling smoke grenade"
-	desc = "Used for signaling airborne unit. Contents under pressure. Do not directly inhale contents."	
+	desc = "Used for signaling airborne unit. Contents under pressure. Do not directly inhale contents, and does not work underground."	
 
+/obj/item/grenade/chem_grenade/teargas/examine(mob/user)
+	. = ..()
+	. += "<span class='notice'>You could call in supplies or additional troop with this.</span>"
 
 /obj/item/grenade/chem_grenade/facid
 	name = "acid grenade"
