@@ -1031,7 +1031,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // NCR Paratrooper
 /datum/job/ncr/f13paratrooperassault
 	title = "NCR Assault Paratrooper"
-	flag = F13CAPTAIN
+	flag = F13PARATROOPER
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
@@ -1074,7 +1074,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/job/ncr/f13paratroopersquadleader
 	title = "NCR Paratrooper Squad Leader"
-	flag = F13CAPTAIN
+	flag = F13PARATROOPER
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
@@ -1115,7 +1115,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/job/ncr/f13paratrooperheavy
 	title = "NCR Shock Troop Paratrooper"
-	flag = F13CAPTAIN
+	flag = F13PARATROOPER
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
@@ -1124,7 +1124,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
 /datum/outfit/job/ncr/paratrooper_heavy
-	name = "NCR Shocktroop Paratrooper"
+	name = "NCR Paratrooper (heavy)"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/ncr/SGT
 	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
@@ -1158,6 +1158,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/job/ncr/f13paratroopermedic
 	title = "NCR Paratrooper Medic"
+	flag = F13PARATROOPER
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
