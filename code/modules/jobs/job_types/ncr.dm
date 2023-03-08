@@ -1029,6 +1029,47 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 // NCR Paratrooper
+/datum/job/ncr/f13paratrooper
+	title = "NCR Paratrooper"
+	flag = F13PARATROOPER
+	total_positions = 0
+	spawn_positions = 0
+	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
+	supervisors = "Sergeant and Above"
+	outfit = /datum/outfit/job/ncr/paratrooper
+	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+
+/datum/outfit/job/ncr/paratrooper
+	name = "NCR Paratrooper"
+	id = /obj/item/card/id/dogtag/ncrtrooper
+	accessory = /obj/item/clothing/accessory/ncr/CPL
+	suit = /obj/item/clothing/suit/armored/light/rangerrig
+	mask = /obj/item/clothing/mask/ncr_facewrap
+	neck = /obj/item/storage/belt/holster/legholster/socom
+	belt = /obj/item/storage/belt/military/NCR_Bandolier
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstormzing
+	head = /obj/item/clothing/head/beret/ncr/ncr_sof
+	gloves = /obj/item/clothing/gloves/color/brown
+	r_pocket = /obj/item/binoculars
+	l_pocket = /obj/item/storage/bag/flare
+	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
+	backpack_contents = list(
+		/obj/item/melee/onehanded/knife/trench = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/attachments/scope = 1,
+		/obj/item/suppressor = 1,
+		/obj/item/storage/box/ration/menu_one = 1,
+		/obj/item/storage/firstaid/regular = 1,
+		/obj/item/grenade/smokebomb = 3,
+		/obj/item/grenade/chem_grenade/teargas/signal = 1,
+		/obj/item/clothing/mask/breath = 1,
+		)
+
+/datum/outfit/job/ncr/f13paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+
 /datum/job/ncr/f13paratrooperassault
 	title = "NCR Assault Paratrooper"
 	flag = F13PARATROOPER
@@ -1039,19 +1080,18 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/paratrooper
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
-
-/datum/outfit/job/ncr/paratrooper
+/datum/outfit/job/ncr/paratrooperassault
 	name = "NCR Assault Paratrooper"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/ncr/CPL
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/socom
-	belt = /obj/item/storage/belt/military/NCR_Bandolier/loaded
-	glasses = /obj/item/clothing/glasses/night/polarizing
+	belt = /obj/item/storage/belt/military/NCR_Bandolier/rappeldrop
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstormzing
 	head = /obj/item/clothing/head/beret/ncr/ncr_sof
 	gloves = /obj/item/clothing/gloves/color/brown
-	suit_store = /obj/item/gun/ballistic/automatic/service/carbine
+	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	r_pocket = /obj/item/binoculars
 	l_pocket = /obj/item/storage/bag/flare
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
@@ -1060,17 +1100,18 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/melee/onehanded/knife/trench = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/attachments/scope = 1,
-		/obj/item/suppressor = 1,
+		/obj/item/suppressor = 2,
 		/obj/item/storage/box/ration/menu_one = 1,
 		/obj/item/storage/firstaid/regular = 1,
 		/obj/item/grenade/smokebomb = 3,
 		/obj/item/clothing/mask/breath = 1,
 		)
 
-/datum/outfit/job/ncr/f13paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+/datum/outfit/job/ncr/f13paratrooperassault/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+
 
 /datum/job/ncr/f13paratroopersquadleader
 	title = "NCR Paratrooper Squad Leader"
@@ -1090,7 +1131,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/socom
 	belt = /obj/item/storage/belt/military/NCR_Bandolier/loaded
-	glasses = /obj/item/clothing/glasses/night/polarizing
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
 	head = /obj/item/clothing/head/beret/ncr
 	gloves = /obj/item/clothing/gloves/color/brown
 	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle
@@ -1131,7 +1172,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/ranger44
 	belt = /obj/item/storage/belt/military/NCR_Bandolier/loaded
-	glasses = /obj/item/clothing/glasses/night/polarizing
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
 	head = /obj/item/clothing/head/helmet/f13/combat/mk2/ncr
 	gloves = /obj/item/clothing/gloves/color/brown
 	suit_store = /obj/item/gun/ballistic/automatic/service/r82
@@ -1175,11 +1216,12 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	neck = /obj/item/storage/belt/holster/legholster/socom
 	gloves = /obj/item/clothing/gloves/color/brown
 	belt = /obj/item/storage/belt/military/NCR_Bandolier/rappeldrop
-	glasses = /obj/item/clothing/glasses/night/polarizing
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
 	head = /obj/item/clothing/head/beret/ncr/ncr_medic
 	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
 	r_pocket = /obj/item/binoculars
 	l_pocket = /obj/item/storage/bag/flare
+	r_hand = /obj/item/clothing/glasses/hud/health/sunglasses
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
@@ -1199,3 +1241,4 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+	ADD_TRAIT(h, TRAIT_NIGHT_VISION, src)
