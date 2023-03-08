@@ -1,3 +1,4 @@
+/* Removing weather because of crashes
 /datum/weather/heat_wave
 	name = "heat wave"
 	desc = "Harsh heat wave will grip an entire area."
@@ -28,3 +29,4 @@
 
 /datum/weather/heat_wave/weather_act(mob/living/L)
 	L.adjust_bodytemperature(rand(10, 20))
+*/ 

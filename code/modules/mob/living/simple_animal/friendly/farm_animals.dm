@@ -198,6 +198,8 @@
 		if(is_calf)
 			if((prob(3)))
 				is_calf = 0
+				resize = 1.3
+				update_transform()
 				udder = new()
 				if (name == "brahmin calf")
 					name = "brahmin"
