@@ -1041,7 +1041,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 
 /datum/outfit/job/ncr/paratrooper
-	name = "NCR Paratrooper (Assault)"
+	name = "NCR Assault Paratrooper"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/ncr/CPL
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
@@ -1083,7 +1083,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
 /datum/outfit/job/ncr/paratroopersquadleader
-	name = "NCR Paratrooper (Squad Leader)"
+	name = "NCR Paratrooper Squad Leader"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/ncr/SGT
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
@@ -1114,7 +1114,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/job/ncr/f13paratrooperheavy
-	title = "NCR Shock Troop Paratrooper"
+	title = "NCR Shocktroop Paratrooper"
 	flag = F13PARATROOPER
 	total_positions = 0
 	spawn_positions = 0
@@ -1124,7 +1124,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
 /datum/outfit/job/ncr/paratrooperheavy
-	name = "NCR Paratrooper (heavy)"
+	name = "NCR Shocktroop Paratrooper"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/ncr/SGT
 	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
@@ -1167,7 +1167,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
 /datum/outfit/job/ncr/f13paratroopermedic
-	name = "NCR Paratrooper (Medic)"
+	name = "NCR Paratrooper Medic"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
