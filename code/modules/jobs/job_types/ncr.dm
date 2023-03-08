@@ -1045,7 +1045,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	accessory = /obj/item/clothing/accessory/ncr/CPL
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
-	neck = /obj/item/storage/belt/holster/legholster/socom
+	neck = /obj/item/storage/belt/holster/legholster/colt
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	glasses = /obj/item/clothing/glasses/f13/goggles_sandstormzing
 	head = /obj/item/clothing/head/beret/ncr/ncr_sof
@@ -1069,6 +1069,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
 
 /datum/job/ncr/f13paratrooperassault
 	title = "NCR Assault Paratrooper"
@@ -1077,7 +1079,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Sergeant and Above"
-	outfit = /datum/outfit/job/ncr/paratrooper
+	outfit = /datum/outfit/job/ncr/paratrooperassault
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
 /datum/outfit/job/ncr/paratrooperassault
@@ -1111,7 +1113,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
 
 /datum/job/ncr/f13paratroopersquadleader
 	title = "NCR Paratrooper Squad Leader"
@@ -1153,6 +1156,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
 
 /datum/job/ncr/f13paratrooperheavy
 	title = "NCR Shocktroop Paratrooper"
@@ -1196,6 +1201,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
 /datum/job/ncr/f13paratroopermedic
 	title = "NCR Paratrooper Medic"
@@ -1240,5 +1248,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
 	ADD_TRAIT(h, TRAIT_NIGHT_VISION, src)

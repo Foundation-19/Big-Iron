@@ -862,6 +862,13 @@
 	new /obj/item/ammo_box/magazine/m45exp(src)
 	new /obj/item/ammo_box/magazine/m45exp(src)
 
+/obj/item/storage/belt/holster/legholster/colt/PopulateContents()
+	. = ..()
+	new /obj/item/gun/ballistic/automatic/pistol/m1911/custom(src)
+	new /obj/item/ammo_box/magazine/m45(src)
+	new /obj/item/ammo_box/magazine/m45(src)
+	new /obj/item/ammo_box/magazine/m45(src)
+
 /obj/item/storage/belt/holster/legholster/police/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/police(src)
 	new /obj/item/ammo_box/a357(src)
