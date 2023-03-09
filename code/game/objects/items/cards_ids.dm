@@ -455,13 +455,13 @@
 		var/obj/item/card/id/I = O
 		src.access |= I.access
 		if(isliving(user) && user.mind)
-			if(user.mind.assigned_role == Legion Frumentarius)
+			if(user.mind.assigned_role == "Legion Frumentarius")
 				to_chat(usr, "<span class='notice'>The card's microscanners activate as you pass it over the ID, copying its access.</span>")
 
 /obj/item/card/id/syndicate/attack_self(mob/user)
 	if(isliving(user) && user.mind)
 		var/first_use = registered_name ? FALSE : TRUE
-		if(!(user.mind.assigned_role == Legion Frumentarius))
+		if(!(user.mind.assigned_role == "Legion Frumentarius"))
 			return ..()
 
 		var/popup_input
