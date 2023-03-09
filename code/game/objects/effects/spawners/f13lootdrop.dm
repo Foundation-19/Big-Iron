@@ -776,22 +776,23 @@
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid
 	name = "mid tier energy gun"
-	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 26,
-				/obj/effect/spawner/bundle/f13/aer12 = 13,
-				/obj/effect/spawner/bundle/f13/wattz2k = 26,
-				/obj/effect/spawner/bundle/f13/wattz2kext = 15,
-				/obj/effect/spawner/bundle/f13/plasmapistol = 15,
+	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 30,
+				/obj/effect/spawner/bundle/f13/aer12 = 5,
+				/obj/effect/spawner/bundle/f13/wattz2k = 30,
+				/obj/effect/spawner/bundle/f13/wattz2kext = 10,
+				/obj/effect/spawner/bundle/f13/plasmapistol = 5,
 				/obj/effect/spawner/bundle/f13/ionrifle = 5
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh //overlaps with midtier
 	name = "mid-high tier energy gun"
-	loot = list(/obj/effect/spawner/bundle/f13/aer12,
-				/obj/effect/spawner/bundle/f13/plasmapistol,
-				/obj/effect/spawner/bundle/f13/wattz2kext,
-				/obj/effect/spawner/bundle/f13/ionrifle,
-				/obj/effect/spawner/bundle/f13/aer14
+	loot = list(/obj/effect/spawner/bundle/f13/aer12 = 25,
+				/obj/effect/spawner/bundle/f13/plasmapistol = 20,
+				/obj/effect/spawner/bundle/f13/wattz2kext = 25,
+				/obj/effect/spawner/bundle/f13/ionrifle = 15,
+				/obj/effect/spawner/bundle/f13/aer14 = 10
 				)
+
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/high
 	name = "high tier energy gun"
 	loot = list(/obj/effect/spawner/bundle/f13/plasmarifle = 25,
