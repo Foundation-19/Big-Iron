@@ -1072,8 +1072,8 @@ Raider
 	r_hand = /obj/item/storage/bag/salvage 
 	l_hand = /obj/item/gun/ballistic/revolver/colt357
 	backpack_contents =  list(/obj/item/ammo_box/a357 = 1,
-		/obj/item/ammo_box/a357box/improvised = 1
-		/obj/item/book/granter/trait/trekking = 1,
+		/obj/item/ammo_box/a357box/improvised = 1,
+		/obj/item/book/granter/trait/trekking = 1
 		)
 		
 /datum/outfit/loadout/settlerpoacher
