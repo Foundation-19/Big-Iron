@@ -2411,31 +2411,11 @@
 /area/f13/building)
 "aXy" = (
 /obj/structure/table/wood,
-/obj/item/card/id/dogtag/sheriff{
-	pixel_y = 5;
-	name = "sheriff's badge";
-	access = list(281)
-	},
-/obj/item/card/id/dogtag/deputy{
-	pixel_x = -5;
-	pixel_y = -10;
-	layer = 3.3;
-	access = list(281);
-	name = "deputy's badge"
-	},
-/obj/item/card/id/dogtag/deputy{
-	pixel_x = 3;
-	pixel_y = -20;
-	layer = 3.5;
-	access = list(281);
-	name = "deputy's badge"
-	},
-/obj/item/card/id/dogtag/deputy{
-	pixel_x = 5;
-	pixel_y = -6;
-	layer = 3.4;
-	access = list(281);
-	name = "deputy's badge"
+/obj/item/candle/infinite{
+	light_range = 4;
+	layer = 3.1;
+	pixel_x = -8;
+	pixel_y = 9
 	},
 /turf/open/floor/wood,
 /area/f13/building)
@@ -6129,10 +6109,13 @@
 	pixel_x = -3
 	},
 /obj/item/lock_construct{
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 11
 	},
 /obj/item/key{
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 11;
+	layer = 3.1
 	},
 /turf/open/floor/wood,
 /area/f13/building)
@@ -49110,12 +49093,6 @@
 "urB" = (
 /obj/structure/chair/bench{
 	pixel_y = 10
-	},
-/obj/item/candle/infinite{
-	light_range = 4;
-	layer = 3.1;
-	pixel_x = 13;
-	pixel_y = 13
 	},
 /obj/effect/landmark/start/f13/bwdeputy,
 /turf/open/floor/wood,
