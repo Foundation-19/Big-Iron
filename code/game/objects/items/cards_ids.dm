@@ -518,6 +518,9 @@
 			return
 	return ..()
 
+/obj/item/card/id/syndicate/anyone // does nothing, keeping it so i don't have to make map edits
+	anyone = TRUE
+
 /obj/item/card/id/syndicate/nuke_leader
 	name = "lead agent card"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
