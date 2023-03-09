@@ -637,6 +637,12 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13explorer
 
+	loadout_options = list(	// ALL: .45 Revolver, Reinforced Machete
+		/datum/outfit/loadout/expscout,	// Commando Carbine, Smokebomb, C4
+		/datum/outfit/loadout/expsniper,	// Hunting Rifle, Smokebomb, Bottlecap mine
+		/datum/outfit/loadout/exphunter,	// Crossbow (improved version), C4, Bottlecap mine, Smokebomb, bow autodraw, trapper
+		)
+
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/CaesarsLegion,
@@ -661,19 +667,56 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	id = /obj/item/card/id/dogtag/legion/prime
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/explorer
-	glasses = /obj/item/clothing/glasses/sunglasses/big
-	belt = /obj/item/storage/backpack/spearquiver
 	neck = /obj/item/storage/belt/holster
-	suit_store = /obj/item/gun/ballistic/rifle/hunting
 	r_pocket = /obj/item/flashlight
 	l_pocket = /obj/item/binoculars
 	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/revolver45 = 1,
+		/obj/item/ammo_box/c45rev = 1,
+		/obj/item/reagent_containers/pill/patch/healingpowder = 1,
 		/obj/item/storage/bag/money/small/legenlisted = 1,
-		/obj/item/attachments/scope = 1,
-		/obj/item/melee/onehanded/machete = 1,
+		/obj/item/melee/onehanded/machete/forgedmachete = 1,
 		/obj/item/restraints/handcuffs = 1,
-		/obj/item/ammo_box/a308 = 2,
+		/obj/item/restraints/legcuffs/bola/tactical = 1,
+		/obj/item/storage/survivalkit/medical/legion = 1
 		)
+		
+/datum/outfit/loadout/expscout
+	name = "Scout"
+	suit_store = /obj/item/gun/ballistic/automatic/delisle/commando
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m45exp = 3,
+		/obj/item/gun/ballistic/automatic/smg/mini_uzi = 1,
+		/obj/item/ammo_box/magazine/uzim9mm = 2,
+		/obj/item/attachments/scope = 1,
+		/obj/item/grenade/smokebomb = 1,
+		/obj/item/grenade/plastic/c4 = 1
+		)
+		
+/datum/outfit/loadout/expsniper
+	name = "Sniper"
+	suit_store = /obj/item/gun/ballistic/rifle/hunting
+	backpack_contents = list(
+		/obj/item/ammo_box/a308 = 3,
+		/obj/item/attachments/scope = 1,
+		/obj/item/grenade/smokebomb = 1,
+		/obj/item/bottlecap_mine = 1
+		)
+		
+/datum/outfit/loadout/exphunter
+	name = "Hunter"
+	suit_store = /obj/item/gun/ballistic/bow/crossbow
+	backpack_contents = list(
+		/obj/item/storage/belt/tribe_quiver = 1,
+		/obj/item/ammo_casing/caseless/arrow/broadhead = 5,
+		/obj/item/ammo_casing/caseless/arrow/serrated = 5,
+		/obj/item/bottlecap_mine = 1,
+		/obj/item/grenade/smokebomb = 1,
+		/obj/item/grenade/plastic/c4 = 1,
+		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
+		/obj/item/book/granter/trait/bowman = 1
+		)
+
 
 // ----------------- FRUMENTARIUS ---------------------
 
@@ -699,7 +742,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	neck = /obj/item/storage/belt/holster
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	suit = /obj/item/clothing/suit/armor/f13/legion/frumentarius
-	id = /obj/item/card/id/dogtag/legfrumentarius
+	id = /obj/item/card/id/syndicate
 	gloves = null
 	backpack = /obj/item/storage/backpack/legionr
 	shoes = /obj/item/clothing/shoes/roman
