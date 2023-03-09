@@ -1006,7 +1006,7 @@ Raider
 	name = "Blackwater Deputy"
 	jobtype = /datum/job/wasteland/f13bwdeputy
 	head = /obj/item/clothing/head/f13/town/deputy
-	id = null
+	id = /obj/item/card/id/dogtag/deputy/bw
 	ears = /obj/item/radio/headset/headset_bw
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
