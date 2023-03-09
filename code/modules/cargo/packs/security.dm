@@ -288,7 +288,7 @@
 /datum/supply_pack/security/laserlowtier
 	name = "Weapons - Laser Grab-Bag"
 	desc = "Contains three low-powered laser guns, probably in need of some love. Batteries included in shocking excess! Don't want 'em? Sell 'em back! Seriously! We don't judge!"
-	cost = 1600
+	cost = 2000
 	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low,
 					/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low,
 					/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low)
@@ -297,9 +297,9 @@
 /datum/supply_pack/security/lasermidtier
 	name = "Weapons - Energy Grab-Bag"
 	desc = "Contains two energy guns, probably in need of some love. Batteries included!"
-	cost = 3750
+	cost = 5000
 	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
-					/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh)
+					/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid)
 	crate_name = "energy crate"
 
 /datum/supply_pack/security/mods
@@ -331,16 +331,16 @@
 /datum/supply_pack/security/gunsuperhightier
 	name = "Weapons - Prewar Gun"
 	desc = "A sealed crate of a Prewar firearm, an exceptional weapon machined with lost technology."
-	cost = 20000
-	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh)
+	cost = 12000
+	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high)
 	crate_name = "prewar gun crate"
 
 /datum/supply_pack/security/gunhightier
 	name = "Weapons - High-Tier Guns"
 	desc = "Two high-powered ballistics, perfect for taking down the meanest of muties."
-	cost = 6250
-	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high,
-					/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high)
+	cost = 4000
+	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
+					/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid)
 	crate_name = "gun crate"
 
 /datum/supply_pack/security/ballisticstrash
