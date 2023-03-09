@@ -434,6 +434,7 @@
 
 /obj/item/card/id/syndicate
 	name = "frumentarius medallion"
+	icon_state = "legionmedallioncent"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE)
 	var/anyone = FALSE //Can anyone forge the ID or just syndicate?
 	var/forged = FALSE //have we set a custom name and job assignment, or will we use what we're given when we chameleon change?
@@ -454,13 +455,13 @@
 		var/obj/item/card/id/I = O
 		src.access |= I.access
 		if(isliving(user) && user.mind)
-			if(user.mind.assigned_role == Legion Frumentarius || anyone)
+			if((user.mind.assigned_role == Legion Frumentarius) || anyone)
 				to_chat(usr, "<span class='notice'>The card's microscanners activate as you pass it over the ID, copying its access.</span>")
 
 /obj/item/card/id/syndicate/attack_self(mob/user)
 	if(isliving(user) && user.mind)
 		var/first_use = registered_name ? FALSE : TRUE
-		if(!(user.mind.assigned_role == Legion Frumentarius || anyone)) //Unless anyone is allowed, only syndies can use the card, to stop metagaming.
+		if(!((user.mind.assigned_role == Legion Frumentarius) || anyone)) //Unless anyone is allowed, only syndies can use the card, to stop metagaming.
 			if(first_use) //If a non-syndie is the first to forge an unassigned agent ID, then anyone can forge it.
 				anyone = TRUE
 			else
