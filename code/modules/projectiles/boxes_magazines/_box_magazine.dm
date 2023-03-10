@@ -111,7 +111,6 @@
 		if(A)
 			if(!user.put_in_hands(A))
 				A.bounce_away(FALSE, NONE)
-				START_PROCESSING(SSobj, A)
 			playsound(src, 'sound/weapons/bulletinsert.ogg', 60, 1)
 			to_chat(user, "<span class='notice'>You remove a round from \the [src]!</span>")
 			update_icon()

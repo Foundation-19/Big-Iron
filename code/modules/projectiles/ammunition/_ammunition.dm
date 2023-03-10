@@ -22,7 +22,6 @@
 	var/heavy_metal = TRUE
 	var/harmful = TRUE //pacifism check for boolet, set to FALSE if bullet is non-lethal
 	var/is_pickable = TRUE
-	var/timeout = 0
 
 /obj/item/ammo_casing/spent
 	name = "spent bullet casing"
@@ -36,6 +35,7 @@
 	pixel_y = rand(-10, 10)
 	setDir(pick(GLOB.alldirs))
 	update_icon()
+	cleanup()
 
 /obj/item/ammo_casing/Destroy()
 	if(BB)
@@ -95,11 +95,8 @@
 	else if(T && T.bullet_bounce_sound)
 		addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, src, T.bullet_bounce_sound, 60, 1), bounce_delay) //Soft / non-solid turfs that shouldn't make a sound when a shell casing is ejected over them.
 
-/obj/item/ammo_casing/process()
+/obj/item/ammo_casing/proc/cleanup()
 	if(isturf(loc))
-		timeout++
-	else
-		timeout = 0
-		STOP_PROCESSING(SSobj, src)
-	if(timeout == 60)
 		qdel(src)
+	else
+		addtimer(CALLBACK(src, .proc/cleanup), 18000)
