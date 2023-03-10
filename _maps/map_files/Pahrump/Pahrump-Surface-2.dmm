@@ -1934,8 +1934,11 @@
 	},
 /area/f13/wasteland)
 "aMx" = (
-/obj/effect/holodeck_effect/cards,
-/turf/open/indestructible/ground/outside/desert,
+/obj/structure/flora/wasteplant/wild_xander,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 5;
+	icon_state = "dirt"
+	},
 /area/f13/wasteland)
 "aMJ" = (
 /turf/open/indestructible/ground/outside/ruins{
@@ -3020,10 +3023,6 @@
 /area/f13/wasteland)
 "bjb" = (
 /obj/structure/table/wood/settler,
-/obj/machinery/iv_drip{
-	pixel_x = -21;
-	pixel_y = 20
-	},
 /obj/item/clothing/gloves/f13/crudemedical,
 /obj/item/flashlight/lamp{
 	pixel_y = 15
@@ -3477,6 +3476,7 @@
 /area/f13/brotherhood/surface)
 "brw" = (
 /obj/structure/bed/wooden,
+/obj/item/bedsheet/blanket2,
 /turf/open/floor/wood/f13,
 /area/f13/building)
 "brE" = (
@@ -5287,14 +5287,7 @@
 /area/f13/wasteland)
 "cdA" = (
 /obj/structure/fence/corner/wooden{
-	dir = 4;
-	pixel_x = 5
-	},
-/obj/structure/fence/wooden{
-	climbable = 0;
-	dir = 4;
-	layer = 6.1;
-	pixel_x = -13
+	dir = 4
 	},
 /turf/open/floor/wood/f13/stage_b,
 /area/f13/building)
@@ -7402,7 +7395,10 @@
 /area/f13/village)
 "ddU" = (
 /obj/structure/fermenting_barrel,
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 9;
+	icon_state = "dirt"
+	},
 /area/f13/caves)
 "deg" = (
 /obj/machinery/light/small{
@@ -9064,7 +9060,10 @@
 /area/f13/wasteland)
 "dLm" = (
 /obj/machinery/mineral/wasteland_vendor/camp,
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
+	},
 /area/f13/building)
 "dLO" = (
 /turf/closed/wall/f13/tunnel,
@@ -12544,12 +12543,6 @@
 /area/f13/wasteland)
 "fcE" = (
 /obj/structure/fence/corner/wooden,
-/obj/structure/fence/wooden{
-	climbable = 0;
-	dir = 4;
-	layer = 6.1;
-	pixel_x = -13
-	},
 /turf/open/floor/wood/f13/stage_br,
 /area/f13/building)
 "fcH" = (
@@ -13390,7 +13383,10 @@
 /obj/structure/closet/crate/grave,
 /obj/item/stack/sheet/bone,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirtcorner"
+	},
 /area/f13/wasteland)
 "ftF" = (
 /obj/structure/bed/old,
@@ -17408,6 +17404,25 @@
 	dir = 4
 	},
 /area/f13/clinic)
+"gWm" = (
+/obj/item/flashlight/lantern{
+	pixel_y = 15;
+	on = 1;
+	light_on = 1;
+	icon_state = "lantern-on"
+	},
+/obj/structure/table/wood,
+/obj/item/card/id{
+	desc = "An old, rusty metal key. Seems to go to a jukebox?";
+	icon = 'icons/fallout/objects/keys.dmi';
+	icon_state = "empty_key";
+	access = list(25);
+	pixel_x = -3;
+	pixel_y = -3;
+	name = "spare jukebox key"
+	},
+/turf/open/floor/wood/wood_large,
+/area/f13/building)
 "gWo" = (
 /obj/structure/table,
 /obj/structure/barricade/bars{
@@ -20130,7 +20145,10 @@
 /area/f13/building)
 "hWd" = (
 /obj/machinery/mineral/wasteland_vendor/medical,
-/turf/open/indestructible/ground/outside/desert,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
+	},
 /area/f13/building)
 "hWe" = (
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
@@ -22986,6 +23004,8 @@
 "jgr" = (
 /obj/structure/bookcase,
 /obj/item/book/granter/trait/lowsurgery,
+/obj/item/book/manual/wiki/medicine,
+/obj/item/book/manual/wiki/surgery,
 /turf/open/floor/wood/f13,
 /area/f13/building)
 "jgs" = (
@@ -24583,13 +24603,8 @@
 /obj/structure/dresser{
 	pixel_y = 5
 	},
-/obj/item/reagent_containers/blood{
-	pixel_y = 15;
-	pixel_x = -3
-	},
-/obj/item/reagent_containers/blood{
-	pixel_y = 16;
-	pixel_x = 3
+/obj/item/assembly/timer{
+	pixel_y = 15
 	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
@@ -25690,6 +25705,15 @@
 /obj/effect/holodeck_effect/cards,
 /obj/item/clothing/under/f13/westender,
 /obj/item/clothing/suit/f13/westender,
+/obj/item/card/id{
+	desc = "An old, rusty metal key. Seems to go to a jukebox?";
+	icon = 'icons/fallout/objects/keys.dmi';
+	icon_state = "empty_key";
+	access = list(25);
+	pixel_x = -3;
+	pixel_y = -3;
+	name = "spare jukebox key"
+	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
 "kmz" = (
@@ -27518,10 +27542,15 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "lbT" = (
-/obj/structure/barricade/sandbags,
-/obj/structure/flora/wasteplant/wild_fungus,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/structure/flora/grass/wasteland{
+	icon_state = "tall_grass_2";
+	pixel_x = -6
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 8;
+	icon_state = "dirt"
+	},
+/area/f13/wasteland)
 "lbZ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/computer/terminal{
@@ -36517,8 +36546,7 @@
 /obj/structure/fence/wooden{
 	climbable = 0;
 	dir = 4;
-	layer = 6.1;
-	pixel_x = -13
+	layer = 6.1
 	},
 /turf/open/floor/wood/f13/stage_b,
 /area/f13/building)
@@ -40740,6 +40768,15 @@
 /obj/item/gun/ballistic/revolver/detective{
 	pixel_y = -3;
 	pixel_x = -3
+	},
+/obj/item/card/id{
+	desc = "An old, rusty metal key. Seems to go to a jukebox?";
+	icon = 'icons/fallout/objects/keys.dmi';
+	icon_state = "empty_key";
+	access = list(25);
+	pixel_x = -3;
+	pixel_y = -3;
+	name = "spare jukebox key"
 	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
@@ -47132,6 +47169,22 @@
 	pixel_y = 10;
 	pixel_x = -10;
 	light_range = 4
+	},
+/obj/item/lock_construct,
+/obj/item/key,
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbear1";
+	pixel_x = 16;
+	pixel_y = -15
+	},
+/obj/effect/decal/cleanable/blood/old{
+	pixel_y = 10;
+	pixel_x = -10
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor2";
+	pixel_x = 15;
+	pixel_y = 6
 	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
@@ -56587,6 +56640,8 @@
 	pixel_x = -12;
 	light_range = 4
 	},
+/obj/item/book/manual/wiki/medicine,
+/obj/item/book/manual/wiki/surgery,
 /turf/open/floor/wood/f13,
 /area/f13/building)
 "xDV" = (
@@ -57962,8 +58017,25 @@
 	name = "surgical dining table";
 	desc = "Used for painful, primitive medical procedures, also dinner."
 	},
-/obj/item/key,
-/obj/item/lock_construct,
+/obj/machinery/iv_drip{
+	pixel_x = 15;
+	pixel_y = 18;
+	layer = 2.7
+	},
+/obj/item/reagent_containers/blood{
+	pixel_y = 3;
+	pixel_x = -3
+	},
+/obj/item/reagent_containers/blood{
+	pixel_y = 5;
+	pixel_x = 3
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibmid1"
+	},
+/obj/item/melee/onehanded/straight_razor{
+	pixel_x = -13
+	},
 /turf/open/floor/wood/f13,
 /area/f13/building)
 "ygb" = (
@@ -86356,7 +86428,7 @@ gcK
 gcK
 gbL
 gcK
-lbT
+nSc
 nSc
 gcK
 giZ
@@ -86860,7 +86932,7 @@ gcK
 gcK
 aDP
 ddU
-fyf
+mcf
 dRY
 wnX
 kvB
@@ -92799,7 +92871,7 @@ sYX
 jNk
 sYX
 sYX
-fyf
+wDc
 vSS
 fyf
 hll
@@ -93050,13 +93122,13 @@ usk
 myu
 myu
 sYX
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
+qOV
+cWG
+ltK
+mvv
+dCL
+mfD
+mcf
 fyf
 fyf
 fyf
@@ -93287,7 +93359,7 @@ sYX
 cop
 fPv
 sYX
-fqH
+gWm
 nKC
 nKC
 fPU
@@ -93307,12 +93379,12 @@ eqd
 myu
 mTJ
 aFK
-fyf
-fyf
-fyf
-fyf
-vSS
-fyf
+tBN
+dCL
+mfD
+xGH
+aMx
+wDc
 fyf
 hll
 fyf
@@ -93564,7 +93636,7 @@ oFi
 bBK
 eVv
 aFK
-fyf
+xdF
 sYX
 sYX
 iFn
@@ -94072,7 +94144,7 @@ mvv
 mvv
 mvv
 mvv
-bpD
+wjO
 sYX
 sYX
 hvu
@@ -94329,12 +94401,12 @@ mvv
 mvv
 mvv
 mvv
-bpD
-fyf
-fyf
-fyf
-fyf
-fyf
+mvv
+mvv
+mvv
+mvv
+dCL
+mcf
 fyf
 iFn
 uxv
@@ -94586,11 +94658,11 @@ mvv
 mvv
 mvv
 mvv
-bpD
-fyf
-fyf
-fyf
-fyf
+dCL
+xGH
+mvv
+dCL
+mcf
 fyf
 fyf
 sYX
@@ -94844,9 +94916,9 @@ mvv
 mvv
 mvv
 bpD
-fyf
-fyf
-fyf
+xdF
+mfD
+mcf
 coD
 fyf
 fyf
@@ -95108,12 +95180,12 @@ fyf
 fyf
 fyf
 fyf
-fyf
-iGM
-fyf
-fyf
-fyf
-fyf
+xdF
+lbT
+xGH
+wjO
+cWG
+wDc
 fyf
 fyf
 fyf
@@ -95367,10 +95439,10 @@ cWG
 cWG
 cWG
 cWG
-cWG
-cWG
-cWG
-cWG
+ltK
+mvv
+mvv
+wjO
 cWG
 cWG
 cWG
@@ -96135,10 +96207,10 @@ mvv
 mvv
 mvv
 mvv
-mvv
-mvv
-mvv
-mvv
+dCL
+mfD
+mfD
+xGH
 mvv
 mvv
 mvv
@@ -96388,14 +96460,14 @@ cWG
 ltK
 dCL
 mfD
-mfD
-mfD
-mfD
-mfD
-mfD
-mfD
-mfD
-mfD
+xGH
+mvv
+mvv
+mvv
+wjO
+cWG
+wDc
+xdF
 mfD
 mfD
 mfD
@@ -96645,7 +96717,7 @@ esB
 dCL
 mcf
 fyf
-fyf
+xdF
 sYX
 sYX
 agj
@@ -97655,7 +97727,7 @@ gbL
 gbL
 gbL
 gbL
-aMx
+fyf
 fyf
 fyf
 fyf
