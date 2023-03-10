@@ -72,6 +72,7 @@
 /obj/item/gun/ballistic/rifle/proc/pump_unload(mob/M)
 	if(chambered)//We have a shell in the chamber
 		chambered.forceMove(drop_location())//Eject casing
+		START_PROCESSING(SSobj, chambered)
 		chambered.bounce_away()
 		chambered = null
 

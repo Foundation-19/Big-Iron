@@ -35,6 +35,7 @@
 	if(istype(AC)) //there's a chambered round
 		if(casing_ejector)
 			AC.forceMove(drop_location()) //Eject casing onto ground.
+			START_PROCESSING(SSobj, AC)
 			AC.bounce_away(TRUE)
 			chambered = null
 		else if(empty_chamber)

@@ -41,6 +41,7 @@
 		CB = magazine.get_round(0)
 		if(CB)
 			CB.forceMove(drop_location())
+			START_PROCESSING(SSobj, CB)
 			CB.bounce_away(FALSE, NONE)
 			num_unloaded++
 	if (num_unloaded)
