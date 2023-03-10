@@ -5,7 +5,7 @@
 
 # byond version
 export BYOND_MAJOR=514
-export BYOND_MINOR=1589
+export BYOND_MINOR=1584
 
 #rust_g git tag
 export RUST_G_VERSION=0.5.0
@@ -24,7 +24,7 @@ export PYTHON_VERSION=3.7.9
 export AUXMOS_REPOSITORY=sunset-wasteland/auxmos
 
 # Auxmos git tag
-export AUXMOS_VERSION=v2.3.0
+export AUXMOS_VERSION=v2.3.1
 
 # Extools git tag
 export EXTOOLS_VERSION=v0.0.7

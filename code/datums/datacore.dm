@@ -139,14 +139,8 @@
 		if(rank in GLOB.kebab_positions)
 			kebab[name] = rank
 			department = 1
-		if(rank in GLOB.merchant_positions)
-			merchant[name] = rank
-			department =1
 		if(rank in GLOB.church_positions)
 			church[name] = rank
-			department = 1
-		if(rank in GLOB.rustwalker_positions)
-			rustwalker[name] = rank
 			department = 1
 		if(rank in GLOB.legion_positions)
 			leg[name] = rank

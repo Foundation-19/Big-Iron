@@ -70,7 +70,7 @@
 	material_id = /datum/material/iron
 	export_types = list(
 		/obj/item/stack/sheet/metal, /obj/item/stack/tile/plasteel,
-		/obj/item/stack/sheet/plasteel, /obj/item/stack/rods, 
+		/obj/item/stack/sheet/plasteel, /obj/item/stack/rods,
 		/obj/item/stack/ore, /obj/item/coin)
 
 /datum/export/material/glass
@@ -81,7 +81,7 @@
 		/obj/item/shard)
 
 /datum/export/material/adamantine
-	cost = 300
+	cost = 100
 	material_id = /datum/material/adamantine
 	message = "cm3 of pre-war ingots"
 	export_types = list(/obj/item/stack/sheet/mineral/adamantine,

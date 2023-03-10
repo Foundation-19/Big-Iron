@@ -14,6 +14,7 @@
 	footstep = FOOTSTEP_WATER
 	barefootstep = FOOTSTEP_WATER
 	clawfootstep = FOOTSTEP_WATER
+	gallopfootstep = FOOTSTEP_WATER
 	heavyfootstep = FOOTSTEP_WATER
 
 	//fortuna edit

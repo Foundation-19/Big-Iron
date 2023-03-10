@@ -85,8 +85,6 @@
 #define EXP_TYPE_TRIBAL			"Tribal"
 #define EXP_TYPE_OUTLAW			"Outlaw"
 #define EXP_TYPE_CHURCH    		"Church"
-#define EXP_TYPE_MERCHANT		"Merchant"
-#define EXP_TYPE_RUSTWALKER		"Rustwalker"
 
 //Flags in the players table in the db
 #define DB_FLAG_EXEMPT 							(1<<0)

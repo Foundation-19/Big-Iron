@@ -85,6 +85,16 @@
 	name = "Church door"
 	req_access_txt = "145"
 
+//COTC
+/obj/machinery/door/unpowered/securedoor/militia
+	name = "Militia door"
+	req_access_txt = "148"
+
+//COTC
+/obj/machinery/door/unpowered/securedoor/merchant
+	name = "Merchant door"
+	req_access_txt = "34"
+
 
 // ------------------------------------
 // NCR SECURE REINFORCED DOOR - tough airlock replacement

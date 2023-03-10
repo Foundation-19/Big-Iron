@@ -247,7 +247,7 @@
 		/obj/effect/spawner/bundle/f13/rangemaster = 5,
 		/obj/effect/spawner/bundle/f13/remington = 4,
 		/obj/item/gun/energy/laser/aer9 = 4,
-		/obj/item/gun/ballistic/automatic/assault_carbine = 3,
+		/obj/item/gun/ballistic/automatic/assault_carbine/worn = 3,
 		/obj/item/gun/energy/laser/wattz2k = 3,
 		/obj/effect/spawner/bundle/f13/infiltrator = 1,
 		/obj/item/melee/onehanded/knife/bayonet = 10,

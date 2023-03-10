@@ -1,4 +1,5 @@
 //Ash storms happen frequently on lavaland. They heavily obscure vision, and cause high fire damage to anyone caught outside.
+/* Removing weather because of crashes
 /datum/weather/ash_storm
 	name = "ash storm"
 	desc = "An intense atmospheric storm lifts ash off of the planet's surface and billows it down across the area, dealing intense fire damage to the unprotected."
@@ -148,3 +149,5 @@
 			L.adjustStaminaLossBuffered(4)
 		return
 	L.adjustToxLoss(7.5)
+	
+*/

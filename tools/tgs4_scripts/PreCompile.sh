@@ -70,21 +70,22 @@ cd ..
 apt-get install -y build-essential g++-multilib libc6-i386 libstdc++6:i386
 
 # Update auxmos
+rm -r auxmos
 if [ ! -d "auxmos" ]; then
-	echo "Cloning auxmos..."
-	git clone "https://github.com/${AUXMOS_REPOSITORY}"
-	cd auxmos
-	~/.cargo/bin/rustup target add i686-unknown-linux-gnu
+    echo "Cloning auxmos..."
+    git clone "https://github.com/${AUXMOS_REPOSITORY}"
+    cd auxmos
+    ~/.cargo/bin/rustup target add i686-unknown-linux-gnu
 else
-	echo "Fetching auxmos..."
-	cd auxmos
-	git fetch
-	~/.cargo/bin/rustup target add i686-unknown-linux-gnu
+    echo "Fetching auxmos..."
+    cd auxmos
+    git fetch
+    ~/.cargo/bin/rustup target add i686-unknown-linux-gnu
 fi
 
 echo "Deploying auxmos..."
 git checkout "$AUXMOS_VERSION"
-env PKG_CONFIG_ALLOW_CROSS=1 ~/.cargo/bin/cargo rustc --package auxmos --target=i686-unknown-linux-gnu --release --features "all_reaction_hooks katmos" -- -C target-cpu=native
+env PKG_CONFIG_ALLOW_CROSS=1 ~/.cargo/bin/cargo rustc --package auxmos --target=i686-unknown-linux-gnu --release --features "all_reaction_hooks" -- -C target-cpu=native
 mv -f target/i686-unknown-linux-gnu/release/libauxmos.so "$1/libauxmos.so"
 cd ..
 

@@ -198,6 +198,8 @@
 		if(is_calf)
 			if((prob(3)))
 				is_calf = 0
+				resize = 1.3
+				update_transform()
 				udder = new()
 				if (name == "brahmin calf")
 					name = "brahmin"
@@ -1431,3 +1433,209 @@ throw use: feed someone alcohol
 	else
 		..()
 */
+
+/mob/living/simple_animal/horse //SlapDrink#0083 |he made the sprite :0|
+	name = "horse"
+	desc = "Horses commonly used for logistics and transportation over long distances. Surprisingly this horse isn't fully mutated like the rest of the animals."
+	icon = 'icons/fallout/mobs/animals/horse.dmi'
+	icon_state = "horse"
+	icon_living = "horse"
+	icon_dead = "horse_dead"
+	turns_per_move = 5
+	speak = list("Naaay?","Naaay","NAAAAYY")
+	speak_emote = list("nays","nays hauntingly")
+	emote_hear = list("brays.")
+	emote_see = list("shakes its head.")
+	health = 100
+	maxHealth = 100
+	speak_chance = 1
+	see_in_dark = 6
+	guaranteed_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 4, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/sheet/bone = 3)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 4, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/sheet/bone = 1)
+	butcher_difficulty = 1
+	response_help_simple  = "pets"
+	response_disarm_simple = "gently pushes aside"
+	response_harm_simple   = "kicks"
+	faction = list("neutral")
+	mob_biotypes = MOB_ORGANIC|MOB_BEAST
+	attack_verb_simple = "rams"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	idlesound = list('sound/f13npc/horse/horse_1.ogg', 'sound/f13npc/horse/horse_2.ogg', 'sound/f13npc/horse/horse_3.ogg', 'sound/f13npc/horse/horse_4.ogg', 'sound/f13npc/horse/horse_5.ogg')
+	footstep_type = FOOTSTEP_MOB_GALLOP
+	melee_damage_lower = 25
+	melee_damage_upper = 20
+	environment_smash = ENVIRONMENT_SMASH_NONE
+	stop_automated_movement_when_pulled = 1
+	var/obj/item/inventory_back
+	var/is_calf = 0
+	var/food_type = /obj/item/reagent_containers/food/snacks/grown/wheat
+	var/has_calf = 0
+	var/young_type = /mob/living/simple_animal/horse
+	var/datum/component/riding/driving_component
+
+/*
+Bags for storage
+Collar for a novelty name
+Bridle for the stop/follow mechanic and temporary ownership
+Saddle for ridin'
+Brand for permanently marking brahmin as yours (won't stop people stealing em and riding em)
+*/
+
+	var/mob/living/owner = null
+	var/follow = FALSE
+
+	var/bags = FALSE
+	var/collar = FALSE
+	var/bridle = FALSE
+	var/saddle = FALSE
+	var/brand = ""
+
+///////////
+//horse//
+///////////
+
+/mob/living/simple_animal/horse/attackby(obj/item/I, mob/user)
+	. = ..()
+	if(istype(I,/obj/item/brahminbags))
+		if(stat == DEAD)
+			to_chat(user, "<span class='warning'>You cannot add anything to a dead horse!</span>")
+			return
+		if(bags)
+			to_chat(user, "<span class='warning'>The horse already has bags attached!</span>")
+			return
+		if(is_calf)
+			to_chat(user, "<span class='warning'>The calf cannot carry the bags!</span>")
+			return
+		to_chat(user, "<span class='notice'>You add [I] to [src]...</span>")
+		bags = TRUE
+		qdel(I)
+		src.ComponentInitialize()
+		return
+
+	if(istype(I,/obj/item/brahmincollar))
+		if(stat == DEAD)
+			to_chat(user, "<span class='warning'>You cannot add anything to a dead horse!</span>")
+			return
+		if(user != owner)
+			to_chat(user, "<span class='warning'>You need to claim the brahmin with a bridle before you can rename it!</span>")
+			return
+
+		name = input("Choose a new name for your horse!","Name", name)
+
+		if(!name)
+			return
+
+		collar = TRUE
+		to_chat(user, "<span class='notice'>You add [I] to [src]...</span>")
+		message_admins("<span class='notice'>[ADMIN_LOOKUPFLW(user)] renamed a horse to [name].</span>") //So people don't name their brahmin the N-Word without notice
+		qdel(I)
+		return
+
+	if(istype(I,/obj/item/brahminbridle))
+		if(stat == DEAD)
+			to_chat(user, "<span class='warning'>You cannot add anything to a dead horse!</span>")
+			return
+		if(bridle)
+			to_chat(user, "<span class='warning'>This horse already has a bridle!</span>")
+			return
+
+		owner = user
+		bridle = TRUE
+		tame = TRUE
+		to_chat(user, "<span class='notice'>You add [I] to [src], claiming it as yours.</span>")
+		desc += "<br>It has a bridle and reins attached to its head."
+		qdel(I)
+		return
+
+	if(istype(I,/obj/item/brahminsaddle))
+		if(stat == DEAD)
+			to_chat(user, "<span class='warning'>You cannot add anything to a dead horse!</span>")
+			return
+		if(saddle)
+			to_chat(user, "<span class='warning'>This horse already has a saddle!</span>")
+			return
+
+		saddle = TRUE
+		can_buckle = TRUE
+		buckle_lying = FALSE
+		driving_component = LoadComponent(/datum/component/riding)
+		driving_component.set_riding_offsets(RIDING_OFFSET_ALL, list(TEXT_NORTH = list(16, 10), TEXT_SOUTH = list(16, 10), TEXT_EAST = list(18, 11), TEXT_WEST = list(18, 11)))
+		driving_component.set_vehicle_dir_layer(SOUTH, ABOVE_MOB_LAYER)
+		driving_component.set_vehicle_dir_layer(NORTH, OBJ_LAYER)
+		driving_component.set_vehicle_dir_layer(EAST, OBJ_LAYER)
+		driving_component.set_vehicle_dir_layer(WEST, OBJ_LAYER)
+		driving_component.drive_verb = "ride"
+		to_chat(user, "<span class='notice'>You add [I] to [src].</span>")
+		qdel(I)
+		return
+
+	if(istype(I,/obj/item/brahminbrand))
+		if(brand)
+			to_chat(user, "<span class='warning'>This horse already has a brand!</span>")
+			return
+
+		brand = input("What would you like to brand on your horse?","Brand", brand)
+
+		if(!brand)
+			return
+
+
+/mob/living/simple_animal/horse/updatehealth()
+	LoadComponent(/datum/component/riding)
+	. = ..()
+	update_driving_speed()
+
+/mob/living/simple_animal/horse/proc/update_driving_speed()
+	if(health <= maxHealth * 0.25)
+		driving_component.vehicle_move_delay = 2.20
+	else if(health <= maxHealth * 0.50)
+		driving_component.vehicle_move_delay = 1.90
+	else if(health <= maxHealth * 0.75)
+		driving_component.vehicle_move_delay = 1.60
+	else if (health <= maxHealth)
+		driving_component.vehicle_move_delay = 1.40
+
+/mob/living/simple_animal/horse/death(gibbed)
+	. = ..()
+	if(can_buckle)
+		can_buckle = FALSE
+	if(buckled_mobs)
+		for(var/mob/living/M in buckled_mobs)
+			unbuckle_mob(M)
+
+/mob/living/simple_animal/horse/proc/handle_following()
+	if(owner)
+		if(!follow)
+			return
+		else if(CHECK_MOBILITY(src, MOBILITY_MOVE) && isturf(loc))
+			step_to(src, owner)
+
+/mob/living/simple_animal/horse/CtrlShiftClick(mob/user)
+	if(get_dist(user, src) > 1)
+		return
+
+	if(bridle && user.a_intent == INTENT_DISARM)
+		bridle = FALSE
+		tame = FALSE
+		owner = null
+		to_chat(user, "<span class='notice'>You remove the bridle gear from [src], dropping it on the ground.</span>")
+		new /obj/item/brahminbridle(user.loc)
+
+	if(collar && user.a_intent == INTENT_GRAB)
+		collar = FALSE
+		name = initial(name)
+		to_chat(user, "<span class='notice'>You remove the collar from [src], dropping it on the ground.</span>")
+		new /obj/item/brahmincollar(user.loc)
+
+	if(user == owner)
+		if(bridle && user.a_intent == INTENT_HELP)
+			if(follow)
+				to_chat(user, "<span class='notice'>You tug on the reins of [src], telling it to stay.</span>")
+				follow = FALSE
+				return
+			else if(!follow)
+				to_chat(user, "<span class='notice'>You tug on the reins of [src], telling it to follow.</span>")
+				follow = TRUE
+				return
+
+////////////////////
