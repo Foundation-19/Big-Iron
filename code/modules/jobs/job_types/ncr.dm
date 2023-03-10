@@ -1065,7 +1065,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/clothing/mask/breath = 1,
 		)
 
-/datum/outfit/job/ncr/f13paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+/datum/outfit/job/ncr/f13paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
@@ -1109,7 +1109,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/clothing/mask/breath = 1,
 		)
 
-/datum/outfit/job/ncr/f13paratrooperassault/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+/datum/outfit/job/ncr/f13paratrooperassault/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
@@ -1152,7 +1152,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 
-/datum/outfit/job/ncr/f13paratroopersquadleader/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+/datum/outfit/job/ncr/f13paratroopersquadleader/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
@@ -1197,7 +1197,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 
-/datum/outfit/job/ncr/f13paratrooper_heavy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+/datum/outfit/job/ncr/f13paratrooper_heavy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
@@ -1244,7 +1244,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/clothing/mask/breath = 1,
 		)
 
-/datum/outfit/job/ncr/f13paratroopermedic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE, client/preference_source)
+/datum/outfit/job/ncr/f13paratroopermedic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
