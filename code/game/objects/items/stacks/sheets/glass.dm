@@ -363,14 +363,14 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 /obj/item/shard/welder_act(mob/living/user, obj/item/I)
 	..()
 	if(I.use_tool(src, user, 0, volume=50))
-		var/obj/item/stack/sheet/glass/NG = new (user.loc)
-		for(var/obj/item/stack/sheet/glass/G in user.loc)
+		new /obj/item/stack/sheet/glass (user.loc)
+/*		for(var/obj/item/stack/sheet/glass/G in user.loc)
 			if(G == NG)
 				continue
 			if(G.amount >= G.max_amount)
 				continue
 			G.attackby(NG, user)
-		to_chat(user, "<span class='notice'>You add the newly-formed glass to the stack. It now contains [NG.amount] sheet\s.</span>")
+		to_chat(user, "<span class='notice'>You add the newly-formed glass to the stack. It now contains [NG.amount] sheet\s.</span>")*/
 		qdel(src)
 	return TRUE
 

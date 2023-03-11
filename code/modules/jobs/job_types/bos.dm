@@ -529,7 +529,7 @@ Senior Knight
 	backpack_contents = list(
 		/obj/item/storage/belt/utility/full/engi = 1,
 		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5 = 1,
-		/obj/item/ammo_box/shotgun/magnum = 2,
+		/obj/item/ammo_box/shotgun/buck = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2
 		)
