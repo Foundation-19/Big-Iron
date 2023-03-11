@@ -462,8 +462,8 @@
 			for(var/obj/machinery/light/L in GLOB.machines)
 				L.fix()
 
-		/*if("floorlava") Removing weather because of crashes
-			SSweather.run_weather(/datum/weather/floor_is_lava)*/
+		if("floorlava")
+			SSweather.run_weather(/datum/weather/floor_is_lava)
 
 		if("virus")
 			if(!check_rights(R_FUN))

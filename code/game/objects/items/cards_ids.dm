@@ -917,9 +917,6 @@
 /obj/item/card/id/dogtag/deputy/kebab
 	access = list(ACCESS_MILITIA)
 
-/obj/item/card/id/dogtag/deputy/bw
-	access = list(ACCESS_TOWN_SEC)
-
 /obj/item/card/id/dogtag/sheriff
 	name = "Chief of Police's badge"
 	desc = "A golden chief's badge."

@@ -1,4 +1,3 @@
-/* Removing weather because of crashes
 /datum/weather/rain
 	name = "rain"
 	desc = "Rain will fall on the Wasteland, cleaning it."
@@ -146,4 +145,3 @@
 	sound_ai.stop()
 
 	return ..()
-*/

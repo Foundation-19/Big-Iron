@@ -195,7 +195,7 @@
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "combat_armor_mk2"
 	item_state = "combat_armor_mk2"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 55)
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 55)
 	slowdown = 0.15
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 

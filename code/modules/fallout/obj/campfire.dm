@@ -16,7 +16,7 @@
 
 /obj/structure/campfire/Initialize()
 	. = ..()
-	campfire_loop = new(list(src), FALSE)
+	campfire_loop = new(src, FALSE)
 
 /obj/structure/campfire/Destroy()
 	SSobj.processing.Remove(src)
@@ -162,7 +162,9 @@
 	density = TRUE
 	plane = GAME_PLANE // so the smoke covers mobs
 	layer = ABOVE_MOB_LAYER // so the smoke covers mobs
+
 /datum/looping_sound/campfire
 	mid_length = 70
 	mid_sounds = list('modular_BD2/kitchen_50s/sound/campfire.ogg'=1)
 	volume = 30
+

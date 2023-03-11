@@ -1,4 +1,3 @@
-/* Removing weather because of crashes
 /datum/weather/cold_wave
 	name = "cold wave"
 	desc = "Harsh cold wave will grip an entire area."
@@ -29,4 +28,3 @@
 
 /datum/weather/cold_wave/weather_act(mob/living/L)
 	L.adjust_bodytemperature(-rand(5, 15))
-*/ 

@@ -498,13 +498,6 @@
 	item_color = "colonelrank"
 	minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/ncr/MAJ
-	name = "(O-4) Major rank pin"
-	desc = "An officer holding the rank of Major should wear this."
-	icon_state = "majorrank"
-	item_color = "majorrank"
-	minimize_when_attached = TRUE
-
 /obj/item/clothing/accessory/ncr/CPT
 	name = "(O-3) Captain rank pin"
 	desc = "An officer holding the rank of Captain should wear this."
@@ -527,7 +520,7 @@
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/ncr/SSGT
-	name = "(E-6) Staff Sergeant rank pins"
+	name = "(E-6) StaffSergeant rank pins"
 	desc = "A Staff Sergeant should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
@@ -539,6 +532,14 @@
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
+
+/obj/item/clothing/accessory/armband/engine/ncr
+	name = "Engineering Personnel armband (E-4 Engineer)"
+	desc = "An armband worn by NCR Engineers to display their rank and speciality. This one is orange with a reflective strip!"
+
+/obj/item/clothing/accessory/armband/med/ncr
+	name = "Medical Personnel armband (E-4 Medic)"
+	desc = "An armband worn by NCR Medics to display their rank and speciality. This one is white."
 
 /obj/item/clothing/accessory/armband/black
 	name = "Military Police armband"
@@ -562,14 +563,14 @@
 
 /obj/item/clothing/accessory/ncr/TPR
 	name = "(E-3) Private First Class rank pins"
-	desc = "A PFC should wear this."
+	desc = "A trooper should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/ncr/REC
 	name = "(E-2) Private rank pins"
-	desc = "A Private should wear this."
+	desc = "A conscript should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE

@@ -46,7 +46,7 @@
 #define MINDREAD	/datum/mutation/human/mindreader
 #define INSULATED	/datum/mutation/human/insulated
 #define SHOCKTOUCH	/datum/mutation/human/shock
-//#define OLFACTION	/datum/mutation/human/olfaction
+#define OLFACTION	/datum/mutation/human/olfaction
 #define ACIDFLESH	/datum/mutation/human/acidflesh
 #define BADBLINK	/datum/mutation/human/badblink
 #define SPASTIC		/datum/mutation/human/spastic

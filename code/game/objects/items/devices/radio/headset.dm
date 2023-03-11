@@ -19,8 +19,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	RADIO_CHANNEL_TOWN = RADIO_TOKEN_TOWN,
 	RADIO_CHANNEL_LEGION = RADIO_TOKEN_LEGION,
 	RADIO_CHANNEL_RANGER = RADIO_TOKEN_RANGER,
-	RADIO_CHANNEL_KHANS = RADIO_TOKEN_KHANS,
-	RADIO_CHANNEL_BW = RADIO_TOKEN_BW
+	RADIO_CHANNEL_KHANS = RADIO_TOKEN_KHANS
 ))
 
 /obj/item/radio/headset
@@ -384,12 +383,6 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "syndie_headset"
 	item_state = "headset_alt"
 	keyslot = new /obj/item/encryptionkey/headset_khans
-
-/obj/item/radio/headset/headset_bw
-	name = "blackwater radio headset"
-	desc = "This is used by the town of Blackwater.\nTo access the Blackwater channel, use :q."
-	icon_state = "mine_headset"
-	keyslot = new /obj/item/encryptionkey/headset_bw
 
 /obj/item/radio/headset/headset_town
 	name = "town radio headset"

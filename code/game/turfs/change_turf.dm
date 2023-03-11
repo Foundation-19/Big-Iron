@@ -105,8 +105,6 @@ GLOBAL_LIST_INIT(blacklisted_automated_baseturfs, typecacheof(list(
 
 	changing_turf = TRUE
 	qdel(src)	//Just get the side effects and call Destroy
-	if(islist(path))
-		path = pick(path)
 	var/turf/W = new path(src)
 
 	for(var/i in transferring_comps)

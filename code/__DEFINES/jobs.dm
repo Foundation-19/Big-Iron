@@ -142,8 +142,6 @@
 #define F13PUSHER		(1<<3)
 #define F13DETECTIVE	(1<<4)
 #define F13TRIBAL		(1<<5)
-#define F13BWSETTLER	(1<<6)
-#define F13BWDEPUTY		(1<<7)
 
 #define ENCLAVE			(1<<10)
 

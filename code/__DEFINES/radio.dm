@@ -77,10 +77,6 @@
 #define RADIO_KEY_KHANS "a"
 #define RADIO_TOKEN_KHANS ":a"
 
-#define RADIO_CHANNEL_BW "Blackwater"
-#define RADIO_KEY_BW "q"
-#define RADIO_TOKEN_BW ":q"
-
 #define RADIO_CHANNEL_CTF_RED "Red Team"
 #define RADIO_CHANNEL_CTF_BLUE "Blue Team"
 
@@ -107,7 +103,6 @@
 #define FREQ_RANGER 1373 //Ranger
 #define FREQ_DEN 1375 //Den
 #define FREQ_KHANS 1376 //Khans
-#define FREQ_BW 1377 //Blackwater
 
 #define FREQ_HOLOGRID_SOLUTION 1433
 #define FREQ_STATUS_DISPLAYS 1435
