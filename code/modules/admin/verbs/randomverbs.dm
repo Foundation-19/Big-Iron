@@ -1153,7 +1153,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 	var/datum/atom_hud/A = GLOB.huds[ANTAG_HUD_TRAITOR]
 	return A.hudusers[mob]
 
-
+/* Removing weather because of crashes
 /client/proc/run_weather()
 	set category = "Admin.Events"
 	set name = "Run Weather"
@@ -1166,12 +1166,12 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 	if(!weather_type)
 		return
 
-	SSweather.run_weather(weather_type)
+	SSweather.run_weather(weather_type) Removing weather because of crashes
 
 	message_admins("[key_name_admin(usr)] started weather of type [weather_type].")
 	log_admin("[key_name(usr)] started weather of type [weather_type].")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Run Weather")
-
+*/
 /client/proc/mass_zombie_infection()
 	set category = "Admin.Fun"
 	set name = "Mass Zombie Infection"

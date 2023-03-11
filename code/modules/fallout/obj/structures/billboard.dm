@@ -75,27 +75,27 @@
 /obj/structure/billboard/robco
 	name = "RobCo billboard"
 	desc = "A pre-War advertisement for RobCo Industries."
-	icon_state = "robco1"
+	icon_state = "robco"
 
 /obj/structure/billboard/poseidenenergy
 	name = "Poseiden Energy billboard"
 	desc = "A pre-War advertisement for Poseiden Energy."
-	icon_state = "poseiden1"
+	icon_state = "poseidon1"
 
 /obj/structure/billboard/poseidenenergy/vandalized
 	name = "Poseiden Energy billboard"
 	desc = "A pre-War advertisement for Poseiden Energy. This one appears to be vandalized."
-	icon_state = "poseiden2"
+	icon_state = "poseidon2"
 
 /obj/structure/billboard/poseidenenergy/vandalized/supermutants
 	name = "Poseiden Energy billboard"
 	desc = "A pre-War advertisement for Poseiden Energy. This one appears to be vandalized."
-	icon_state = "poseiden3"
+	icon_state = "poseidon3"
 
 /obj/structure/billboard/sunset
 	name = "Sunset Sasaparilla billboard"
 	desc = "A pre-War advertisement for Sunset Sasaparilla."
-	icon_state = "sunset1"
+	icon_state = "sunset"
 
 /obj/structure/billboard/generalatomics
 	name = "General Atomics billboard"
@@ -110,7 +110,7 @@
 /obj/structure/billboard/radiationking
 	name = "Radiation King billboard"
 	desc = "A pre-War advertisement for Radiation King."
-	icon_state = "radiationking1"
+	icon_state = "radiationking"
 
 /obj/structure/billboard/nukagirl
 	name = "Nuka-Cola billboard"

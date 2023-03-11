@@ -604,7 +604,7 @@ Weapons NCRR	Cowboy Repeater, Hunting Rifle, Hunting Shotgun, Caracan Shotgun
 	display_order = JOB_DISPLAY_ORDER_HEAVYTROOPER
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the most elite of the enlisted, sergeant in rank but forgoing regular command roles to lead in battle only. You are expected to be on the frontlines of every engagement, and to provide firing support for the rank and file. Your power armor lacks the protection the full working sets have, but you have trained with it and can use it in battle well. General Oliver praises you and your other Heavy Troopers, prove to him you're no exception to the rule."
+	description = "You are the most elite of the enlisted, specialist in rank but forgoing regular command roles to lead in battle only. You are expected to be on the frontlines of every engagement, and to provide firing support for the rank and file. Your power armor lacks the protection the full working sets have, but you have trained with it and can use it in battle well. General Oliver praises you and your other Heavy Troopers, prove to him you're no exception to the rule."
 	supervisors = "Lieutenant and Above"
 
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
@@ -622,7 +622,7 @@ Weapons NCRR	Cowboy Repeater, Hunting Rifle, Hunting Shotgun, Caracan Shotgun
 	jobtype	= /datum/job/ncr/f13heavytrooper
 	id = /obj/item/card/id/dogtag/ncrsergeant
 	uniform = /obj/item/clothing/under/f13/ncr
-	accessory =	/obj/item/clothing/accessory/ncr/SGT
+	accessory =	/obj/item/clothing/accessory/ncr/SPC
 	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
 	head = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr
 	suit = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr
@@ -731,11 +731,8 @@ Weapons NCRR	Cowboy Repeater, Hunting Rifle, Hunting Shotgun, Caracan Shotgun
 	if(visualsOnly)
 		return
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/servicerifle)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/tools/forged/entrenching_tool)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ninemil)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/m1911)
-	ADD_TRAIT(H, TRAIT_GUNSMITH_FOUR, src)
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/scoutcarbine)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/R82)
 
 // MILITARY POLICE
 

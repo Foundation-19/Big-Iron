@@ -480,7 +480,6 @@ Senior Knight
 		/obj/item/melee/onehanded/knife/survival  = 1,
 		/obj/item/grenade/f13/he_grenade = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
-		)
 
 /datum/outfit/job/bos/f13seniorknight/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()

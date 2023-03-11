@@ -95,6 +95,12 @@
 					)
 	crate_name = "blueprint crate"
 
+/datum/supply_pack/security/highmelee
+	name = "Bludgeon Bill's Melee Super-pack"
+	desc = "Bludgeon Bill is offering his latestly engineered close-quarters weapons in a mystery crate to select retailers. Available only for a limited time!"
+	cost = 6000
+	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/melee/random_high)
+
 /datum/supply_pack/security/combatknives_single
 	name = "Combat Knife Single-Pack"
 	desc = "Some good ol' sharp knives. Guaranteed to fit snugly inside any cowboy-standard boot. You know what's better than one knife? Three of 'em!"
@@ -102,7 +108,7 @@
 	contains = list(/obj/item/melee/onehanded/knife/hunting,
 					/obj/item/melee/onehanded/knife/hunting,
 					/obj/item/melee/onehanded/knife/hunting)
-					
+
 /* /datum/supply_pack/security/dueling_stam
 	name = "Dueling Pistols"
 	desc = "Resolve all your quarrels with some nonlethal fun."
@@ -284,11 +290,10 @@
 					/obj/effect/spawner/lootdrop/f13/traitbooks/low,
 					/obj/effect/spawner/lootdrop/f13/traitbooks/low)
 
-
 /datum/supply_pack/security/laserlowtier
 	name = "Weapons - Laser Grab-Bag"
 	desc = "Contains three low-powered laser guns, probably in need of some love. Batteries included in shocking excess! Don't want 'em? Sell 'em back! Seriously! We don't judge!"
-	cost = 1600
+	cost = 2000
 	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low,
 					/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low,
 					/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low)
@@ -297,10 +302,17 @@
 /datum/supply_pack/security/lasermidtier
 	name = "Weapons - Energy Grab-Bag"
 	desc = "Contains two energy guns, probably in need of some love. Batteries included!"
-	cost = 3750
+	cost = 5000
 	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
-					/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh)
+					/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid)
 	crate_name = "energy crate"
+	
+/datum/supply_pack/security/laserhightier
+	name = "Weapons - Van Graff's Cache"
+	desc = "Contains one high-power energy gun. Battery included!"
+	cost = 10000
+	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh)
+	crate_name = "prewar energy crate"
 
 /datum/supply_pack/security/mods
 	name = "Weapons - Gun Mods"
@@ -331,16 +343,16 @@
 /datum/supply_pack/security/gunsuperhightier
 	name = "Weapons - Prewar Gun"
 	desc = "A sealed crate of a Prewar firearm, an exceptional weapon machined with lost technology."
-	cost = 20000
-	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh)
+	cost = 12000
+	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high)
 	crate_name = "prewar gun crate"
 
 /datum/supply_pack/security/gunhightier
 	name = "Weapons - High-Tier Guns"
 	desc = "Two high-powered ballistics, perfect for taking down the meanest of muties."
-	cost = 6250
-	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high,
-					/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high)
+	cost = 4000
+	contains = list(/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
+					/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid)
 	crate_name = "gun crate"
 
 /datum/supply_pack/security/ballisticstrash
