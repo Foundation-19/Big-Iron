@@ -82,6 +82,8 @@
 	new /obj/item/throwing_star/spear(src)
 	new /obj/item/throwing_star/spear(src)
 	new /obj/item/throwing_star/spear(src)
+	new /obj/item/throwing_star/spear(src)
+	new /obj/item/throwing_star/spear(src)
 
 /obj/item/storage/backpack/spearquiver/AltClick(mob/living/carbon/user)
 	. = ..()

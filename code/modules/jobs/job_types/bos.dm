@@ -73,7 +73,8 @@ Elder
 	ears = /obj/item/radio/headset/headset_bos/command
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/melee/onehanded/knife/hunting = 1
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
 	)
 
 
@@ -91,11 +92,10 @@ Head Paladin
 	description = "You are the acting field commander until the Brotherhood regains its strength enough to place an Elder for the bunker. You are a veteran of many battles and sorties in pursuit of Brotherhood goals; your only weakness may just be your hubris. Your main goals are defense of the Chapter and surveillance of the surrounding region for technology."
 	supervisors = "the Elder"
 	exp_requirements = 600
-	
+
 	loadout_options = list(
-	/datum/outfit/loadout/hpa, //Laser Gatling, Super Sledge
-	/datum/outfit/loadout/hpb, //Tribeam, Powerfist
-	/datum/outfit/loadout/hpc //14mm pistol, Shield, Pre-war Ripper
+	/datum/outfit/loadout/hpa, //Laser Gatling
+	/datum/outfit/loadout/hpc //Power Fist
 	)
 
 	outfit = /datum/outfit/job/bos/f13headpaladin
@@ -116,36 +116,21 @@ Head Paladin
 	ears =			/obj/item/radio/headset/headset_bos/command
 	neck = 			/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
-		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/melee/onehanded/knife/survival  = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
 		)
-		
+
 /datum/outfit/loadout/hpa
 	name = "Heavy Weapons Head Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpack = 1,
-		/obj/item/stock_parts/cell/ammo/ecp = 3,
-		/obj/item/twohanded/sledgehammer/supersledge = 1
+		/obj/item/minigunpack = 1
 		)
 
-/datum/outfit/loadout/hpb
-	name = "Frontline Head Paladin"
-	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
-		/obj/item/melee/unarmed/powerfist = 1
-		)
-		
 
 /datum/outfit/loadout/hpc
 	name = "Bulldozer Head Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
-		/obj/item/ammo_box/magazine/m14mm = 3,
-		/obj/item/shield/riot/bullet_proof = 1,
-		/obj/item/melee/powered/ripper/prewar = 1
+		/obj/item/melee/unarmed/powerfist = 1
 		)
 
 /datum/outfit/job/bos/f13headpaladin/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -191,7 +176,6 @@ Head Scribe
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
-		/obj/item/gun/medbeam = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
 
@@ -221,11 +205,6 @@ Head Knight
 	supervisors = "the Elder"
 	exp_requirements = 600
 
-	loadout_options = list(
-	/datum/outfit/loadout/hka,	//Sniper
-	/datum/outfit/loadout/hkb,	//AER12
-	/datum/outfit/loadout/hkc	//RCW
-	)
 	outfit = /datum/outfit/job/bos/f13headknight
 
 	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_KITCHEN, ACCESS_BAR, ACCESS_SEC_DOORS, ACCESS_CHANGE_IDS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_BOS3, ACCESS_BOS4, ACCESS_PUBLIC)
@@ -234,40 +213,21 @@ Head Knight
 /datum/outfit/job/bos/f13headknight
 	name = "Head Knight"
 	jobtype = /datum/job/bos/f13headknight
-
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
 	glasses =		/obj/item/clothing/glasses/night
 	accessory =		/obj/item/clothing/accessory/bos/headknight
 	belt =			/obj/item/storage/belt/security/full
+	suit_store =	/obj/item/gun/energy/laser/aer9
 	neck =			/obj/item/storage/belt/holster
 	mask =			/obj/item/clothing/mask/gas/sechailer
 	head =			/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
-		/obj/item/ammo_box/magazine/m14mm = 2,
-		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		)
-		
-/datum/outfit/loadout/hka
-	name = "Sniper Head Knight"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
-		/obj/item/ammo_box/magazine/w308 = 3
-		)
-
-/datum/outfit/loadout/hkb
-	name = "Frontline Head Knight"
-	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12 = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3
-		)
-		
-/datum/outfit/loadout/hkc
-	name = "Backliner Head Knight"
-	backpack_contents = list(
-		/obj/item/gun/energy/laser/rcw = 1,
-		/obj/item/stock_parts/cell/ammo/ecp = 3
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/melee/onehanded/knife/survival  = 1,
+		/obj/item/grenade/f13/he_grenade = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
 		)
 
 /datum/outfit/job/bos/f13headknight/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -300,10 +260,10 @@ Paladin
 	exp_requirements = 300
 
 	loadout_options = list(
-	/datum/outfit/loadout/paladina, //Frontline P
-	/datum/outfit/loadout/paladinb,	//Frontline SP
 	/datum/outfit/loadout/paladinc, //Heavy P
-	/datum/outfit/loadout/paladind	//Heavy SP
+	/datum/outfit/loadout/paladind,	//Heavy SP
+	/datum/outfit/loadout/paladine,
+	/datum/outfit/loadout/paladinf
 	)
 
 	outfit = /datum/outfit/job/bos/f13paladin
@@ -326,52 +286,43 @@ Paladin
 	name =	"Paladin"
 	jobtype =	/datum/job/bos/f13paladin
 	uniform =	/obj/item/clothing/under/f13/recon
+	suit =	/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos
+	head =	/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos
 	mask =	/obj/item/clothing/mask/gas/sechailer
 	belt =	/obj/item/storage/belt/military/assault
 	neck =	/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
-		/obj/item/melee/powered/ripper = 1,
+		/obj/item/melee/onehanded/knife/survival  = 1
 	)
 
-/datum/outfit/loadout/paladina
-	name = "Frontline Paladin"
-	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9 = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
-		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
-		/obj/item/clothing/accessory/bos/paladin = 1
-		)
-
-/datum/outfit/loadout/paladinb
-	name = "Frontline Senior Paladin"
-	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9 = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
-		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
-		/obj/item/clothing/accessory/bos/seniorpaladin = 1
-		)
-		
 /datum/outfit/loadout/paladinc
-	name = "Heavy Paladin"
+	name = "Melee Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpackbal5mm = 1,
-		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
-		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
-		/obj/item/clothing/accessory/bos/paladin = 1
+		/obj/item/clothing/accessory/bos/paladin = 1,
+		/obj/item/melee/unarmed/powerfist = 1
 		)
 
 /datum/outfit/loadout/paladind
 	name = "Heavy Senior Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpackbal5mm = 1,
-		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
-		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
+		/obj/item/melee/unarmed/powerfist = 1,
 		/obj/item/clothing/accessory/bos/seniorpaladin = 1
 		)
 
+/datum/outfit/loadout/paladine
+	name = "Heavy Weapons Paladin"
+	backpack_contents = list(
+		/obj/item/minigunpack = 1,
+		/obj/item/clothing/accessory/bos/paladin = 1
+		)
+
+/datum/outfit/loadout/paladinf
+	name = "Heavy Weapons Senior Paladin"
+	backpack_contents = list(
+		/obj/item/minigunpack = 1,
+		/obj/item/clothing/accessory/bos/seniorpaladin = 1
+		)
 
 /datum/outfit/job/bos/f13paladin/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -420,12 +371,12 @@ Scribe
 	jobtype = /datum/job/bos/f13scribe
 	belt = 			/obj/item/storage/belt/utility/full/engi
 	suit = 			/obj/item/clothing/suit/f13/scribe
+	suit_store =	/obj/item/gun/energy/laser/pistol
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 2,
-		/obj/item/gun/energy/laser/pistol = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/storage/firstaid/regular = 1
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
 		)
 
 /datum/outfit/loadout/scribea
@@ -466,12 +417,6 @@ Senior Knight
 	spawn_positions = 2
 	description = "You report directly to the Head Knight. You are the Brotherhood Senior Knight. Having served the Knight Caste for some time now, you are versatile and experienced in both basic combat and repairs, and also a primary maintainer of the Bunker's facilities. As your seniormost Knight, you may be assigned initiates or Junior Knights to mentor."
 	supervisors = "the Head Knight"
-	
-	loadout_options = list(
-	/datum/outfit/loadout/ska,	//AER9, MK23 pistol
-	/datum/outfit/loadout/skb,	//Marksman Rifle, Sig pistol
-	/datum/outfit/loadout/skc	//Auto-5 Shotgun, MK23 pistol
-	)
 
 	outfit = /datum/outfit/job/bos/f13seniorknight
 
@@ -497,41 +442,17 @@ Senior Knight
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
 	glasses =       /obj/item/clothing/glasses/night
 	mask =			/obj/item/clothing/mask/gas/sechailer
+	suit_store =	/obj/item/gun/energy/laser/aer9
 	belt = 			/obj/item/storage/belt/military/assault
 	neck =			/obj/item/storage/belt/holster
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
 	backpack_contents = list(
-		/obj/item/melee/onehanded/knife/hunting = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2
-		)
-
-/datum/outfit/loadout/ska
-	name = "Senior Knight-Footman"
-	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9 = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2
-		)
-
-/datum/outfit/loadout/skb
-	name = "Senior Knight-Marksman"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/marksman = 1,
-		/obj/item/ammo_box/magazine/m556/rifle = 3,
-		/obj/item/gun/ballistic/automatic/pistol/sig = 1,
-		/obj/item/ammo_box/magazine/m9mm = 2,
-		/obj/item/binoculars = 1
-		)
-		
-/datum/outfit/loadout/skc
-	name = "Senior Knight-Engineer"
-	backpack_contents = list(
-		/obj/item/storage/belt/utility/full/engi = 1,
-		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5 = 1,
-		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/melee/onehanded/knife/survival  = 1,
+		/obj/item/grenade/f13/he_grenade = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
 		)
 
 /datum/outfit/job/bos/f13seniorknight/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -562,9 +483,6 @@ Knight
 	loadout_options = list(
 	/datum/outfit/loadout/knighta, //AER9 Junior
 	/datum/outfit/loadout/knightb, //AER9 Knight
-	/datum/outfit/loadout/knightc, //Commando Junior
-	/datum/outfit/loadout/knightd //Commando Knight
-	
 	)
 
 	outfit = /datum/outfit/job/bos/f13knight
@@ -593,51 +511,25 @@ Knight
 	mask =			/obj/item/clothing/mask/gas/sechailer
 	belt = 			/obj/item/storage/belt/utility/full
 	neck =			/obj/item/storage/belt/holster
+	suit_store =	/obj/item/gun/energy/laser/aer9
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood
 	backpack_contents = list(
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/melee/onehanded/knife/survival  = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/grenade/f13/he_grenade = 1
 		)
 
 /datum/outfit/loadout/knighta
 	name = "Junior Footknight"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/juniorknight = 1,
-		/obj/item/gun/energy/laser/aer9 = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2
 		)
 
 /datum/outfit/loadout/knightb
 	name = "Footknight"
 	backpack_contents = list(
 		/obj/item/clothing/accessory/bos/knight = 1,
-		/obj/item/gun/energy/laser/aer9 = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2
-		)
-		
-
-/datum/outfit/loadout/knightc
-	name = "Junior Knight-Scout"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/juniorknight = 1,
-		/obj/item/gun/ballistic/automatic/delisle/commando = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
-		/obj/item/gun/energy/laser/pistol = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 2
-		)
-
-/datum/outfit/loadout/knightd
-	name = "Knight-Scout"
-	backpack_contents = list(
-		/obj/item/clothing/accessory/bos/knight = 1,
-		/obj/item/gun/ballistic/automatic/delisle/commando = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
-		/obj/item/gun/energy/laser/pistol = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
 
 /datum/outfit/job/bos/f13knight/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

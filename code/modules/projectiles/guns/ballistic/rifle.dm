@@ -116,7 +116,7 @@
 	icon_state = "cowboyrepeater"
 	item_state = "cowboyrepeater"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube357
-	extra_damage = 35
+	extra_damage = 21
 	extra_speed = 300
 	fire_sound = 'sound/f13weapons/cowboyrepeaterfire.ogg'
 
@@ -162,7 +162,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_delay = 4
-	extra_damage = 37
+	extra_damage = 27
 	extra_penetration = 0.20
 	extra_speed = 800
 	spread = 0

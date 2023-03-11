@@ -58,7 +58,7 @@
 	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
 	icon_state = "machete_lawnmower"
 	item_state = "machete_lawnmower"
-	force = 34
+	force = 7
 	block_chance = 7
 	throwforce = 20
 	wound_bonus = 10
@@ -69,7 +69,7 @@
 	desc = "A forged machete made of high quality steel."
 	icon_state = "machete"
 	item_state = "machete"
-	force = 35
+	force = 15
 	wound_bonus = 20
 	block_chance = 8
 
@@ -93,8 +93,8 @@
 	desc = "A heavy cutting blade, made for war and mass produced in Legion territory."
 	icon_state = "gladius"
 	item_state = "gladius"
-	force = 36
-	wound_bonus = 30
+	force = 19
+	wound_bonus = 20
 	block_chance = 10
 
 /obj/item/melee/onehanded/machete/spatha
@@ -102,8 +102,8 @@
 	desc = "This long blade is favoured by Legion officers and leaders, a finely crafted weapon with good steel and hilt made from bronze and bone."
 	icon_state = "spatha"
 	item_state = "spatha"
-	force = 38
-	wound_bonus = 30
+	force = 23
+	wound_bonus = 25
 	block_chance = 18
 
 /obj/item/melee/onehanded/machete/spatha/longblade
@@ -111,7 +111,7 @@
 	desc = "A long one-handed blade sporting lovingly applied wraps and a wonderfully forged and engraved guard. The blade looks to be carefully sharpened."
 	icon_state = "longblade"
 	item_state = "longblade"
-	force = 38
+	force = 27
 	block_chance = 18
 
 /obj/item/melee/onehanded/machete/scrapsabre
@@ -122,7 +122,7 @@
 	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
 	icon_state = "scrapsabre"
 	item_state = "scrapsabre"
-	force = 37
+	force = 17
 	block_chance = 15
 
 /obj/item/throwing_star/spear
@@ -132,8 +132,8 @@
 	righthand_file = 'icons/mob/inhands/items_righthand.dmi'
 	icon_state = "throw_spear"
 	item_state = "tribalspear"
-	force = 20
-	throwforce = 35
+	force = 33
+	throwforce = 33
 	armour_penetration = 0.10
 	max_reach = 2
 	embedding = list("pain_mult" = 4, "embed_chance" = 65, "fall_chance" = 8)
@@ -165,7 +165,7 @@
 	item_state = "knife"
 	flags_1 = CONDUCT_1
 	w_class = WEIGHT_CLASS_SMALL
-	throwforce = 15
+	throwforce = 5
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	armour_penetration = 0.05
 	throw_speed = 3
@@ -200,8 +200,8 @@
 	icon_state = "knife_hunting"
 	desc = "Dependable hunting knife."
 	embedding = list("pain_mult" = 4, "embed_chance" = 65, "fall_chance" = 10, "ignore_throwspeed_threshold" = TRUE)
-	force = 27
-	throwforce = 25
+	force = 10
+	throwforce = 10
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "cut")
 
 /obj/item/melee/onehanded/knife/survival
@@ -209,14 +209,14 @@
 	icon_state = "knife_survival"
 	desc = "Multi-purpose knife with blackened steel."
 	embedding = list("pain_mult" = 4, "embed_chance" = 35, "fall_chance" = 10)
-	force = 27
-	throwforce = 25
+	force = 7
+	throwforce = 7
 
 /obj/item/melee/onehanded/knife/bayonet
 	name = "bayonet knife"
 	icon_state = "knife_bayonet"
 	desc = "This weapon is made for stabbing, not much use for other things."
-	force = 26
+	force = 19
 	bayonet = TRUE
 
 /obj/item/melee/onehanded/knife/bowie
@@ -224,8 +224,8 @@
 	icon_state = "knife_bowie"
 	item_state = "knife_bowie"
 	desc = "A large clip point fighting knife."
-	force = 30
-	throwforce = 25
+	force = 19
+	throwforce = 20
 	attack_verb = list("slashed", "stabbed", "sliced", "shanked", "ripped", "lacerated")
 
 /obj/item/melee/onehanded/knife/trench
@@ -233,7 +233,7 @@
 	icon_state = "knife_trench"
 	item_state = "knife_trench"
 	desc = "This blade is designed for brutal close quarters combat."
-	force = 31
+	force = 19
 	custom_materials = list(/datum/material/iron=8000)
 	attack_verb = list("slashed", "stabbed", "sliced", "shanked", "ripped", "lacerated")
 
@@ -245,8 +245,8 @@
 	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
 	desc = "A sharpened bone. The bare minimum in survival."
 	embedding = list("pain_mult" = 4, "embed_chance" = 35, "fall_chance" = 10)
-	force = 24
-	throwforce = 20
+	force = 5
+	throwforce = 5
 	custom_materials = null
 
 /obj/item/melee/onehanded/knife/ritualdagger
@@ -254,7 +254,7 @@
 	desc = "An ancient blade used to carry out the spiritual rituals of the Wayfarer people."
 	icon_state = "knife_ritual"
 	item_state = "knife_ritual"
-	force = 25
+	force = 10
 	armour_penetration = 0.1
 	custom_materials = null
 
@@ -262,7 +262,7 @@
 	name = "switchblade"
 	desc = "A sharp, concealable, spring-loaded knife."
 	icon_state = "knife_switch"
-	force = 3
+	force = 5
 	throwforce = 5
 	hitsound = 'sound/weapons/genhit.ogg'
 	attack_verb = list("stubbed", "poked")
@@ -305,7 +305,7 @@
 	desc = "A high-quality kitchen knife made from Saturnite alloy, this one is covered in oxidation. Perhaps Abraxo might clean it up?"
 	icon_state = "knife_cosmic_dirty"
 	item_state = "knife"
-	force = 15
+	force = 7
 	throwforce = 10
 	armour_penetration = 0.2
 
@@ -329,7 +329,7 @@
 	desc = "A high-quality kitchen knife made from Saturnite alloy, can be heated with a welder for easier cutting of frozen butter."
 	icon_state = "knife_cosmic"
 	item_state = "knife"
-	force = 25
+	force = 17
 	throwforce = 15
 	armour_penetration = 0.2
 
@@ -350,7 +350,7 @@
 	icon_state = "knife_cosmic_heated"
 	item_state = "knife"
 	damtype = BURN
-	force = 35
+	force = 20
 	throwforce = 20
 	armour_penetration = 0.4
 	w_class = WEIGHT_CLASS_NORMAL // Its super hot, not comfy to put back in your pocket.
@@ -378,7 +378,7 @@
 	icon_state = "pipe"
 	item_state = "pipe"
 	attack_verb = list("mashed", "bashed", "piped", "hit", "bludgeoned", "whacked", "bonked")
-	force = 26
+	force = 7
 	throwforce = 10
 	throw_speed = 3
 	throw_range = 3
@@ -398,7 +398,7 @@
 	icon_state = "warclub"
 	item_state = "warclub"
 	attack_verb = list("mashed", "bashed", "hit", "bludgeoned", "whacked")
-	force = 30
+	force = 10
 	throwforce = 25
 	block_chance = 5
 
@@ -414,7 +414,7 @@
 	desc = "A rusty old tire iron, normally used for loosening nuts from car tires.<br>Though it has a short reach, it has decent damage and a fast swing."
 	icon_state = "tire"
 	item_state = "tire"
-	force = 30
+	force = 7
 	custom_materials = list(/datum/material/iron = 4000)
 
 // NCR Flag			Keywords: NCR, Damage 26, Stamina damage, Block
@@ -425,7 +425,7 @@
 	item_state = "flag-ncr"
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = null
-	force = 26
+	force = 20
 	block_chance = 30
 	attack_verb = list("smacked", "thwacked", "democratized", "freedomed")
 
@@ -439,7 +439,7 @@
 	lefthand_file = 'icons/mob/inhands/equipment/security_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/security_righthand.dmi'
 	slot_flags = ITEM_SLOT_BELT
-	force = 18
+	force = 10
 	w_class = WEIGHT_CLASS_NORMAL
 	wound_bonus = 15
 	var/stun_stam_cost_coeff = 1.25
@@ -737,33 +737,33 @@
 	to_chat(usr, "<span class='notice'>[src] is ready to be worn on another hand.</span>")
 
 
-// Brass knuckles	Keywords: Damage 23
+// Brass knuckles
 /obj/item/melee/unarmed/brass
 	name = "brass knuckles"
 	desc = "Hardened knuckle grip that is actually made out of steel. They protect your hand, and do more damage, in unarmed combat."
 	icon_state = "brass"
 	item_state = "brass"
 	attack_verb = list("punched", "jabbed", "whacked")
-	force = 24
+	force = 12
 	custom_materials = list(/datum/material/iron = 2000)
 
-// Spiked knuckles	Keywords: Damage 24
+// Spiked knuckles
 /obj/item/melee/unarmed/brass/spiked
 	name = "spiked knuckes"
 	desc = "Unlike normal brass knuckles, these have a metal plate across the knuckles with four spikes on, one for each knuckle. So not only does the victim feel the force of the punch, but also the devastating effects of spikes being driven in."
 	icon_state = "spiked"
 	item_state = "spiked"
 	sharpness = SHARP_POINTY
-	force = 25
+	force = 17
 
-// Sappers			Keywords: Damage 25
+// Sappers
 /obj/item/melee/unarmed/sappers
 	name = "sappers"
 	desc = "Lead filled gloves which are ideal for beating the crap out of opponents."
 	icon_state = "sapper"
 	item_state = "sapper"
 	w_class = WEIGHT_CLASS_NORMAL
-	force = 25
+	force = 15
 
 /obj/item/melee/unarmed/sappers/attack(mob/living/M, mob/living/user)
 	. = ..()
@@ -780,39 +780,39 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	sharpness = SHARP_POINTY
-	force = 31
+	force = 13
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
-// Lacerator		Keywords: Damage 27, Edged, Wound bonus
+// Lacerator
 /obj/item/melee/unarmed/lacerator
 	name = "lacerator"
 	desc = "Leather gloves with razor blades built into the back of the hand."
 	icon_state = "lacerator"
 	item_state = "lacerator"
 	w_class = WEIGHT_CLASS_NORMAL
-	force = 27
+	force = 14
 	bare_wound_bonus = 5
 	sharpness = SHARP_EDGED
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
-// Mace Glove		Keywords: Damage 30
+// Mace Glove
 /obj/item/melee/unarmed/maceglove
 	name = "mace glove"
 	desc = "Weighted metal gloves that are covered in spikes.  Don't expect to grab things with this."
 	icon_state = "mace_glove"
 	item_state = "mace_glove"
 	w_class = WEIGHT_CLASS_BULKY
-	force = 30
+	force = 18
 	sharpness = SHARP_NONE
 
-// Punch Dagger		Keywords: Damage 29, Pointy
+// Punch Dagger	
 /obj/item/melee/unarmed/punchdagger
 	name = "punch dagger"
 	desc = "A dagger designed to be gripped in the user�s fist with the blade protruding between the middle and ring fingers, to increase the penetration of a punch."
 	icon_state = "punch_dagger"
 	item_state = "punch_dagger"
-	force = 29
+	force = 13
 	sharpness = SHARP_POINTY
 	attack_verb = list("stabbed", "sliced", "pierced", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
@@ -824,7 +824,7 @@
 	item_state = "tiger_claw"
 	force = 40 //Assaultron, so, makes sense.
 
-// Deathclaw Gauntlet	Keywords: Damage 28, AP 0.6
+// Deathclaw Gauntlet
 /obj/item/melee/unarmed/deathclawgauntlet
 	name = "deathclaw gauntlet"
 	desc = "The severed hand of a mighty Deathclaw, cured, hollowed out, and given a harness to turn it into the deadliest gauntlet the wastes have ever seen."
@@ -832,7 +832,7 @@
 	item_state = "deathclaw_g"
 	slot_flags = ITEM_SLOT_GLOVES
 	w_class = WEIGHT_CLASS_NORMAL
-	force = 28
+	force = 13
 	armour_penetration = 0.6
 	sharpness = SHARP_EDGED
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
@@ -870,7 +870,7 @@
 	desc = "An ancient cast iron frying pan.<br>It's heavy, but fairly useful if you need to keep the mutants away, and don't have a better weapon around."
 	icon_state = "pan"
 	item_state = "pan"
-	force = 24 //Just try to swing a frying pan//BONK
+	force = 10 //Just try to swing a frying pan//BONK
 	throw_speed = 1
 	throw_range = 3
 	throwforce = 20
@@ -887,7 +887,7 @@
 	icon_state = "entrenching_tool"
 	item_state = "trench"
 	w_class = WEIGHT_CLASS_NORMAL
-	force = 30
+	force = 10
 	throwforce = 15
 	toolspeed = 0.7
 	sharpness = SHARP_EDGED
