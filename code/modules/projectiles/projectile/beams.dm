@@ -365,7 +365,7 @@
 
 /obj/item/projectile/beam/laser/pistol/hitscan/stun //compliance regulator beam
 	name = "compliance beam"
-	damage = 33
+	damage = 8
 	armour_penetration = 0.05
 	damage_type = STAMINA
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
@@ -416,7 +416,7 @@
 
 /obj/item/projectile/beam/laser/pistol/wattz/hitscan //hitscan wattz
 	name = "weak laser beam"
-	damage = 15
+	damage = 7
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
@@ -424,7 +424,7 @@
 
 /obj/item/projectile/beam/laser/pistol/wattz/magneto //upgraded Wattz
 	name = "penetrating laser beam"
-	damage = 33
+	damage = 8
 	armour_penetration = 0.20
 
 /obj/item/projectile/beam/laser/pistol/wattz/magneto/hitscan
