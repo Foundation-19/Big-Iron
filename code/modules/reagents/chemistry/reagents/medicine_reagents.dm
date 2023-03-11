@@ -274,7 +274,7 @@
 	reagent_state = LIQUID
 	pH = 7.2
 	color = "#ffeac9"
-	metabolization_rate = 5 * REAGENTS_METABOLISM
+	metabolization_rate = 1 * REAGENTS_METABOLISM
 	overdose_threshold = 50
 
 /datum/reagent/medicine/silver_sulfadiazine/reaction_obj(obj/O, reac_volume)
@@ -305,7 +305,7 @@
 	..()
 
 /datum/reagent/medicine/silver_sulfadiazine/on_mob_life(mob/living/carbon/M)
-	M.adjustFireLoss(-2*REM, 0)
+	M.adjustFireLoss(-0.6*REM, 0)
 	..()
 	. = 1
 
@@ -352,7 +352,7 @@
 	reagent_state = LIQUID
 	color = "#FF9696"
 	pH = 6.7
-	metabolization_rate = 5 * REAGENTS_METABOLISM
+	metabolization_rate = 1 * REAGENTS_METABOLISM
 	overdose_threshold = 50
 
 /datum/reagent/medicine/styptic_powder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
@@ -383,7 +383,7 @@
 		G.use(reac_volume)
 
 /datum/reagent/medicine/styptic_powder/on_mob_life(mob/living/carbon/M)
-	M.adjustBruteLoss(-2*REM, 0)
+	M.adjustBruteLoss(-0.6*REM, 0)
 	..()
 	. = 1
 

@@ -38,11 +38,7 @@
 		return
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/stack/medical/suture(src)
-	new /obj/item/stack/medical/suture(src)
 	new /obj/item/stack/medical/ointment(src)
-	new /obj/item/stack/medical/ointment(src)
-	new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
-	new /obj/item/healthanalyzer(src)
 
 /obj/item/storage/firstaid/emergency
 	icon_state = "medbriefcase"

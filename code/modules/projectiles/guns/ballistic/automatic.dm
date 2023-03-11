@@ -247,7 +247,7 @@
 	item_state = "smg9mm"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
 	spread = 8
-	extra_damage = 19
+	extra_damage = 9
 	slowdown = 0.3
 	burst_shot_delay = 2.75
 	is_automatic = TRUE
@@ -330,7 +330,7 @@
 	autofire_shot_delay = 2.25
 	spread = 12
 	slowdown = 0.3
-	extra_damage = 20
+	extra_damage = 13
 	extra_penetration = 0.1
 	recoil = 0.05
 	fire_delay = 3.25
@@ -777,7 +777,7 @@
 	fire_delay = 1
 	burst_size = 1
 	spread = 1
-	extra_damage = 25
+	extra_damage = 12
 	extra_penetration = 0.1
 	can_attachments = TRUE
 	automatic_burst_overlay = FALSE
@@ -834,7 +834,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 2
 	extra_penetration = 0.1
-	extra_damage = 34
+	extra_damage = 16
 	slowdown = 0.2
 	burst_size = 1
 	spread = 1
@@ -1362,7 +1362,7 @@
 	item_state = "R84"
 	slowdown = 1.5
 	mag_type = /obj/item/ammo_box/magazine/lmg
-	extra_damage = 23
+	extra_damage = 14
 	fire_delay = 6
 	burst_shot_delay = 2.5
 	is_automatic = TRUE

@@ -94,7 +94,7 @@
 	name = "Skirmisher"
 	r_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun = 3,
+		/obj/item/ammo_box/magazine/greasegun = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/storage/belt/holster = 1,
 		/obj/item/book/granter/trait/trekking = 1
@@ -284,7 +284,7 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/badlands
 	head = /obj/item/clothing/head/helmet/f13/fiend
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/wattz/magneto = 2,
+		/obj/item/gun/energy/laser/wattz = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 3,
 		/obj/item/reagent_containers/pill/patch/turbo = 2,
