@@ -373,20 +373,20 @@
 	color = "#6D6374"
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
 	overdose_threshold = 16
-	addiction_threshold = 6
+	addiction_threshold = 5
 
 /datum/reagent/medicine/medx/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel tougher, able to shrug off pain more easily.</span>")
-		M.maxHealth += 40
-		M.health += 40
+		M.maxHealth += 25
+		M.health += 25
 
 /datum/reagent/medicine/medx/on_mob_delete(mob/living/carbon/human/M)
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel as vulnerable to pain as a normal person.</span>")
-		M.maxHealth -= 40
-		M.health -= 40
+		M.maxHealth -= 25
+		M.health -= 25
 	switch(current_cycle)
 		if(1 to 40)
 			M.confused += 10
