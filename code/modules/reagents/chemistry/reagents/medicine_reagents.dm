@@ -274,7 +274,7 @@
 	reagent_state = LIQUID
 	pH = 7.2
 	color = "#ffeac9"
-	metabolization_rate = 5 * REAGENTS_METABOLISM
+	metabolization_rate = 1 * REAGENTS_METABOLISM
 	overdose_threshold = 50
 
 /datum/reagent/medicine/silver_sulfadiazine/reaction_obj(obj/O, reac_volume)

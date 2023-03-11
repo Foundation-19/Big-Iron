@@ -95,7 +95,6 @@ Head Paladin
 	
 	loadout_options = list(
 	/datum/outfit/loadout/hpa, //Laser Gatling
-	/datum/outfit/loadout/hpb, //Tribeam
 	/datum/outfit/loadout/hpc //Power Fist
 	)
 
@@ -126,15 +125,7 @@ Head Paladin
 	backpack_contents = list(
 		/obj/item/minigunpack = 1
 		)
-
-/datum/outfit/loadout/hpb
-	name = "Frontline Head Paladin"
-	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		)
 		
-
 /datum/outfit/loadout/hpc
 	name = "Bulldozer Head Paladin"
 	backpack_contents = list(
@@ -269,8 +260,6 @@ Paladin
 	exp_requirements = 300
 
 	loadout_options = list(
-	/datum/outfit/loadout/paladina, //Frontline P
-	/datum/outfit/loadout/paladinb,	//Frontline SP
 	/datum/outfit/loadout/paladinc, //Heavy P
 	/datum/outfit/loadout/paladind,	//Heavy SP
 	/datum/outfit/loadout/paladine,
@@ -306,22 +295,6 @@ Paladin
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		/obj/item/melee/onehanded/knife/survival  = 1
 	)
-
-/datum/outfit/loadout/paladina
-	name = "Frontline Paladin"
-	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/clothing/accessory/bos/paladin = 1
-		)
-
-/datum/outfit/loadout/paladinb
-	name = "Frontline Senior Paladin"
-	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
-		/obj/item/clothing/accessory/bos/seniorpaladin = 1
-		)
 		
 /datum/outfit/loadout/paladinc
 	name = "Melee Paladin"
