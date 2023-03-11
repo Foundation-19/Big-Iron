@@ -120,10 +120,10 @@ Raider
 	head_announce = list("Security")
 	faction = FACTION_WASTELAND
 	social_faction = FACTION_RAIDERS
-	total_positions = 24
-	spawn_positions = 24
+	total_positions = 8
+	spawn_positions = 8
 	description = "You are an undesirable figure of some kind- perhaps a corrupt official, or a cannibalistic bartender, or a devious conman, to name a few examples. You have more freedom than anyone else in the wastes, and are not bound by the same moral code as others, but though you may only be interested in self-gain, you still have a responsibility to make your time here interesting, fun, and engaging for others- this means that whatever path you pursue should be more nuanced and flavorful than simple highway robbery or slavery. (Adminhelp if you require help setting up your character for the round.)"
-	supervisors = "Your desire to make things interesting and fun. Don't play this as wastelander+."
+	supervisors = "Your desire to make things interesting and fun. Don't play this as wastelander+." // maybe you should've mechanically limited them if you didn't want them to be waster+ moron
 	selection_color = "#ff4747"
 	exp_requirements = 0
 	exp_type = EXP_TYPE_FALLOUT
@@ -166,8 +166,7 @@ Raider
 	/datum/outfit/loadout/raider_legion,
 	/datum/outfit/loadout/raider_bos,
 	/datum/outfit/loadout/quack_doctor,
-	/datum/outfit/loadout/raider_powder,
-	/datum/outfit/loadout/raider_tribal
+	/datum/outfit/loadout/raider_powder
 	)
 
 
