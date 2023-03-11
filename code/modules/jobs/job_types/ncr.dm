@@ -1042,6 +1042,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/job/ncr/paratrooper
 	name = "NCR Paratrooper"
 	id = /obj/item/card/id/dogtag/ncrtrooper
+	jobtype	= /datum/job/ncr/f13paratrooper
 	accessory = /obj/item/clothing/accessory/ncr/CPL
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
@@ -1085,6 +1086,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/job/ncr/paratrooperassault
 	name = "NCR Assault Paratrooper"
 	id = /obj/item/card/id/dogtag/ncrtrooper
+	jobtype	= /datum/job/ncr/f13paratrooperassault
 	accessory = /obj/item/clothing/accessory/ncr/CPL
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
@@ -1129,6 +1131,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/job/ncr/paratroopersquadleader
 	name = "NCR Paratrooper Squad Leader"
 	id = /obj/item/card/id/dogtag/ncrtrooper
+	jobtype	= /datum/job/ncr/f13paratroopersquadleader
 	accessory = /obj/item/clothing/accessory/ncr/SGT
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
@@ -1172,6 +1175,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/job/ncr/paratrooperheavy
 	name = "NCR Shocktroop Paratrooper"
 	id = /obj/item/card/id/dogtag/ncrtrooper
+	jobtype	= /datum/job/ncr/f13paratrooperheavy
 	accessory = /obj/item/clothing/accessory/ncr/SGT
 	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
 	mask = /obj/item/clothing/mask/ncr_facewrap
@@ -1218,6 +1222,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/job/ncr/f13paratroopermedic
 	name = "NCR Paratrooper Medic"
 	id = /obj/item/card/id/dogtag/ncrtrooper
+	jobtype	= /datum/job/ncr/f13paratroopermedic
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
