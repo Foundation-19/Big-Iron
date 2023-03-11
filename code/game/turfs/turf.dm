@@ -124,6 +124,8 @@
 
 	ComponentInitialize()
 
+	RegisterSignal(src, COMSIG_ATOM_ENTERED, .proc/cleanbloatup)
+
 	return INITIALIZE_HINT_NORMAL
 
 /turf/proc/__auxtools_update_turf_temp_info()
@@ -619,3 +621,9 @@
 	. = ..()
 	if(. != BULLET_ACT_FORCE_PIERCE)
 		. =  BULLET_ACT_TURF
+
+/turf/proc/cleanbloatup()
+	while(contents.len >= 200)
+		var/obj/loser = pick(contents)
+		if(istype(loser))
+			qdel(loser)
