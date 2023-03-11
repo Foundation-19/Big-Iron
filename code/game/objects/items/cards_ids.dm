@@ -433,7 +433,8 @@
 	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 
 /obj/item/card/id/syndicate
-	name = "agent card"
+	name = "frumentarius medallion"
+	icon_state = "legionmedallioncent"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE)
 	var/anyone = FALSE //Can anyone forge the ID or just syndicate?
 	var/forged = FALSE //have we set a custom name and job assignment, or will we use what we're given when we chameleon change?
@@ -454,17 +455,14 @@
 		var/obj/item/card/id/I = O
 		src.access |= I.access
 		if(isliving(user) && user.mind)
-			if(user.mind.special_role || anyone)
+			if(user.mind.assigned_role == "Legion Frumentarius")
 				to_chat(usr, "<span class='notice'>The card's microscanners activate as you pass it over the ID, copying its access.</span>")
 
 /obj/item/card/id/syndicate/attack_self(mob/user)
 	if(isliving(user) && user.mind)
 		var/first_use = registered_name ? FALSE : TRUE
-		if(!(user.mind.special_role || anyone)) //Unless anyone is allowed, only syndies can use the card, to stop metagaming.
-			if(first_use) //If a non-syndie is the first to forge an unassigned agent ID, then anyone can forge it.
-				anyone = TRUE
-			else
-				return ..()
+		if(!(user.mind.assigned_role == "Legion Frumentarius"))
+			return ..()
 
 		var/popup_input
 		if(bank_support == ID_FREE_BANK_ACCOUNT)
@@ -485,7 +483,7 @@
 				else
 					input_name = "[pick(GLOB.first_names)] [pick(GLOB.last_names)]"
 
-			var/target_occupation = stripped_input(user, "What occupation would you like to put on this card?\nNote: This will not grant any access levels other than Maintenance.", "Agent card job assignment", assignment ? assignment : "Assistant", MAX_MESSAGE_LEN)
+			var/target_occupation = stripped_input(user, "What occupation would you like to put on this card?\nNote: This will not grant any access levels.", "Agent card job assignment", assignment ? assignment : "Assistant", MAX_MESSAGE_LEN)
 			if(!target_occupation)
 				return
 			registered_name = input_name
@@ -520,7 +518,7 @@
 			return
 	return ..()
 
-/obj/item/card/id/syndicate/anyone
+/obj/item/card/id/syndicate/anyone // does nothing, keeping it so i don't have to make map edits
 	anyone = TRUE
 
 /obj/item/card/id/syndicate/nuke_leader
@@ -1083,7 +1081,7 @@
 	item_state = "card-id_leg"
 	assignment = "camp follower medallion"
 
-/obj/item/card/id/dogtag/legfrumentarius
+/obj/item/card/id/dogtag/legfrumentarius // replaced by agent/syndicate ID
 	name = "frumentarius medallion"
 	desc = "A golden disc with a string threaded through the top, displaying official markings confirming a frumentarius' status."
 	icon_state = "legionmedallioncent"
