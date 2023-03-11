@@ -560,9 +560,9 @@
 	item_state = "rifle"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
 	burst_size = 1
-	fire_delay = 1.5
+	fire_delay = 1
 	spread = 2
-	extra_damage = 22
+	extra_damage = 25
 	extra_penetration = 0.1
 	slowdown = 0.05
 	automatic_burst_overlay = FALSE
@@ -591,7 +591,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "ncr-m1carbine"
 	item_state = "rifle"
-	extra_damage = 25
+	extra_damage = 27
 
 
 //M1A1 Carbine				Keywords: 10mm, Semi-auto, 12/24 rounds, Long barrel, Folding stock.
