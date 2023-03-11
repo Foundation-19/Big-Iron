@@ -7,8 +7,8 @@
 	reagent_state = LIQUID
 	color = "#eb0000"
 	taste_description = "grossness"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 35
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+	overdose_threshold = 40
 	addiction_threshold = 25
 	value = REAGENT_VALUE_COMMON
 	ghoulfriendly = TRUE
@@ -47,11 +47,11 @@
 		M.AdjustAllImmobility(-20, 0)
 		M.AdjustUnconscious(-20, 0)
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found.We only check for the less powerful chems, so the least powerful one always heals.
-		M.adjustBruteLoss(-4*REAGENTS_EFFECT_MULTIPLIER)
-		M.adjustFireLoss(-4*REAGENTS_EFFECT_MULTIPLIER)
-		M.AdjustStun(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.AdjustKnockdown(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
+		M.adjustBruteLoss(-1.4*REAGENTS_EFFECT_MULTIPLIER)
+		M.adjustFireLoss(-1.4*REAGENTS_EFFECT_MULTIPLIER)
+		M.AdjustStun(-1.4*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.AdjustKnockdown(-1.4*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustStaminaLoss(-1.4*REAGENTS_EFFECT_MULTIPLIER)
 		. = TRUE
 	..()
 
@@ -74,10 +74,10 @@
 	ghoulfriendly = TRUE
 
 /datum/reagent/medicine/stimpakimitation/on_mob_life(mob/living/carbon/M)
-	M.adjustBruteLoss(-2.5*REAGENTS_EFFECT_MULTIPLIER)
-	M.adjustFireLoss(-2.5*REAGENTS_EFFECT_MULTIPLIER)
-	M.AdjustKnockdown(-5*REAGENTS_EFFECT_MULTIPLIER, 0)
-	M.adjustStaminaLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
+	M.adjustBruteLoss(-1*REAGENTS_EFFECT_MULTIPLIER)
+	M.adjustFireLoss(-1*REAGENTS_EFFECT_MULTIPLIER)
+	M.AdjustKnockdown(-1*REAGENTS_EFFECT_MULTIPLIER, 0)
+	M.adjustStaminaLoss(-1*REAGENTS_EFFECT_MULTIPLIER)
 	..()
 
 /datum/reagent/medicine/super_stimpak
@@ -87,7 +87,7 @@
 	reagent_state = LIQUID
 	color = "#e50d0d"
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 25
+	overdose_threshold = 30
 	addiction_threshold = 16
 	ghoulfriendly = TRUE
 
@@ -117,11 +117,11 @@
 		M.AdjustAllImmobility(-20, 0)
 		M.AdjustUnconscious(-20, 0)
 	if(!M.reagents.has_reagent(/datum/reagent/medicine/healing_powder/poultice) && !M.reagents.has_reagent(/datum/reagent/medicine/stimpak) && !M.reagents.has_reagent(/datum/reagent/medicine/healing_powder)) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found. We only check for the less powerful chems, so the least powerful one always heals.
-		M.adjustBruteLoss(-8*REAGENTS_EFFECT_MULTIPLIER)
-		M.adjustFireLoss(-8*REAGENTS_EFFECT_MULTIPLIER)
-		M.AdjustStun(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.AdjustKnockdown(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
-		M.adjustStaminaLoss(-4*REAGENTS_EFFECT_MULTIPLIER)
+		M.adjustBruteLoss(-2.7*REAGENTS_EFFECT_MULTIPLIER)
+		M.adjustFireLoss(-2.7*REAGENTS_EFFECT_MULTIPLIER)
+		M.AdjustStun(-2.7*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.AdjustKnockdown(-2.7*REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustStaminaLoss(-2.7*REAGENTS_EFFECT_MULTIPLIER)
 		. = TRUE
 	..()
 
@@ -241,10 +241,10 @@
 	reagent_state = LIQUID
 	color ="#A9FBFB"
 	taste_description = "bitterness"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM //in between powder/stimpaks and poultice/superstims?
-	overdose_threshold = 31
-	var/heal_factor = -3 //Subtractive multiplier if you do not have the perk.
-	var/heal_factor_perk = -5.2 //Multiplier if you have the right perk.
+	metabolization_rate = 1 * REAGENTS_METABOLISM //in between powder/stimpaks and poultice/superstims?
+	overdose_threshold = 40
+	var/heal_factor = -0.8 //Subtractive multiplier if you do not have the perk.
+	var/heal_factor_perk = -1.2 //Multiplier if you have the right perk.
 	ghoulfriendly = TRUE
 	thirst_factor = THIRST_FACTOR * 8 // It's a drink, after all
 
@@ -278,10 +278,10 @@
 	reagent_state = SOLID
 	color = "#A9FBFB"
 	taste_description = "bitterness"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 30
-	var/heal_factor = -1.5 //Subtractive multiplier if you do not have the perk.
-	var/heal_factor_perk = -2.9 //Multiplier if you have the right perk.
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+	overdose_threshold = 60
+	var/heal_factor = -0.4 //Subtractive multiplier if you do not have the perk.
+	var/heal_factor_perk = -0.6 //Multiplier if you have the right perk.
 	ghoulfriendly = TRUE
 
 /datum/reagent/medicine/healing_powder/on_mob_life(mob/living/carbon/M)
@@ -317,9 +317,9 @@
 	name = "Healing poultice"
 	description = "Restores limb condition and heals rapidly."
 	color = "#C8A5DC"
-	overdose_threshold = 20
-	heal_factor = -2
-	heal_factor_perk = -4 //same as stimpak
+	overdose_threshold = 30
+	heal_factor = -1.8
+	heal_factor_perk = -2.7 //same as superstimpak
 
 // ---------------------------
 // RAD-X REAGENT

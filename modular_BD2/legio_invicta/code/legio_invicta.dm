@@ -359,7 +359,9 @@
 	new /obj/item/stack/medical/gauze/improvised(src)
 	new /obj/item/stack/medical/suture(src)
 	new /obj/item/stack/medical/mesh/aloe(src)
-	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
 
 // proc to make the quiver look empty when empty
 /obj/item/storage/survivalkit/medical/legion/update_icon_state()

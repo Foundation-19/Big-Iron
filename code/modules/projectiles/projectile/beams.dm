@@ -329,7 +329,7 @@
 
 /obj/item/projectile/beam/laser/lasgun/hitscan //hitscan aer9 test
 	name = "laser beam"
-	damage = 22
+	damage = 15
 	armour_penetration = 0.02 //mostly just to allow scratch damage, so you arent SOL just mostly fucced
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser
@@ -343,7 +343,7 @@
 
 /obj/item/projectile/beam/laser/gatling/hitscan //Gatling Laser
 	name = "laser beam"
-	damage = 12
+	damage = 7
 	armour_penetration = 0
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser
@@ -356,7 +356,7 @@
 
 /obj/item/projectile/beam/laser/pistol/hitscan //hitscan AEP7
 	name = "laser beam"
-	damage = 19
+	damage = 8
 	hitscan = TRUE
 	armour_penetration = 0.02
 	tracer_type = /obj/effect/projectile/tracer/laser
@@ -456,7 +456,7 @@
 
 /obj/item/projectile/beam/laser/tribeam/hitscan
 	name = "tribeam laser"
-	damage = 25 //if all bullets connect, this will do 75.
+	damage = 24 //if all bullets connect, this will do 75.
 	hitscan = TRUE
 	bare_wound_bonus = -30 //tribeam is bad at wounding, as basically its only real downside
 	tracer_type = /obj/effect/projectile/tracer/laser

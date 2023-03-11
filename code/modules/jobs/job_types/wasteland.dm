@@ -94,7 +94,7 @@
 	name = "Skirmisher"
 	r_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/greasegun = 3,
+		/obj/item/ammo_box/magazine/greasegun = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/storage/belt/holster = 1,
 		/obj/item/book/granter/trait/trekking = 1

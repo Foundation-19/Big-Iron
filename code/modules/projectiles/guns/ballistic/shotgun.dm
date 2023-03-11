@@ -94,8 +94,46 @@
 
 
 ////////////////////////////////////////
-//DOUBLE BARREL & PUMP ACTION SHOTGUNS//
+//BARREL & PUMP ACTION SHOTGUNS//
 ////////////////////////////////////////
+
+
+//Single shotgun							Keywords: Shotgun, Single barrel, saw-off, extra damage +1
+/obj/item/gun/ballistic/revolver/single_shotgun
+	name = "single shotgun"
+	desc = "An common over-under single barreled shotgun."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon_state = "caravan"
+	item_state = "shotgundouble"
+	icon_prefix = "shotgundouble"
+	extra_damage = 5
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	fire_delay = 1
+	force = 15
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/single
+	sawn_desc = "Short and concealable, terribly uncomfortable to fire, but worse on the other end."
+	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
+
+/obj/item/gun/ballistic/revolver/single_shotgun/attackby(obj/item/A, mob/user, params)
+	..()
+	if(istype(A, /obj/item/circular_saw) || istype(A, /obj/item/gun/energy/plasmacutter) | istype(A, /obj/item/twohanded/chainsaw))
+		sawoff(user)
+	if(istype(A, /obj/item/melee/transforming/energy))
+		var/obj/item/melee/transforming/energy/W = A
+		if(W.active)
+			sawoff(user)
+
+/obj/item/gun/ballistic/revolver/single_shotgun/update_icon_state()
+	if(sawn_off)
+		icon_state = "[initial(icon_state)]-sawn"
+	else if(!magazine || !magazine.ammo_count(0))
+		icon_state = "[initial(icon_state)]-e"
+	else
+		icon_state = "[initial(icon_state)]"
+
 
 
 //Caravan shotgun							Keywords: Shotgun, Double barrel, saw-off, extra damage +1
@@ -110,6 +148,7 @@
 	icon_prefix = "shotgundouble"
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
+	extra_damage = 4
 	fire_delay = 0.5
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual/simple
@@ -176,6 +215,7 @@
 	desc = "A traditional hunting shotgun with wood furniture and a four-shell capacity underneath."
 	icon_state = "pump"
 	item_state = "shotgunpump"
+	extra_damage = 7
 	icon_prefix = "shotgunpump"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal
 	fire_delay = 1
@@ -297,9 +337,10 @@
 	icon_state = "shotgunlever"
 	item_state = "shotgunlever"
 	icon_prefix = "shotgunlever"
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/trench
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/shotgunlever
 	fire_delay = 4
-	recoil = 0.5
+	extra_damage = 5
+	recoil = 0.8
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
 	fire_sound = 'sound/f13weapons/shotgun.ogg'

@@ -13,7 +13,7 @@
 	hitsound = 'sound/weapons/resonator_blast.ogg'
 	flags_1 = CONDUCT_1
 	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 22
+	force = 27
 	throwforce = 10
 	throw_range = 3
 	armour_penetration = 0.5
