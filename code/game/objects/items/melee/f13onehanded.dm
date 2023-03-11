@@ -132,7 +132,7 @@
 	righthand_file = 'icons/mob/inhands/items_righthand.dmi'
 	icon_state = "throw_spear"
 	item_state = "tribalspear"
-	force = 33
+	force = 19
 	throwforce = 33
 	armour_penetration = 0.10
 	max_reach = 2
