@@ -307,8 +307,10 @@
 	M.AdjustKnockdown(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
 	if(M.reagents.has_reagent(/datum/reagent/medicine/medx))
 		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 8)
-		if(M.dizziness < 10)
-			M.dizziness = clamp(M.dizziness + 3, 0, 10) // copied from dizzying solution, might not work
+		if(M.confused < 21)
+			M.confused = clamp(M.confused + 5, 0, 20)
+		if(M.dizziness < 21)
+			M.dizziness = clamp(M.dizziness + 5, 0, 20) // copied from dizzying solution, might not work
 		to_chat(M, "<span class='userdanger'>I shouldn't have mixed Med-X and Buffout!</span>")
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
