@@ -1,3 +1,4 @@
+/* Removing weather because of crashes
 /datum/weather/acid_rain
 	name = "acid rain"
 	desc = "The planet's thunderstorms are by nature acidic, and will incinerate anyone standing beneath them without protection."
@@ -41,3 +42,4 @@
 			qdel(O)
 	for(var/obj/item/ammo_casing/C in T)
 		qdel(C)
+*/

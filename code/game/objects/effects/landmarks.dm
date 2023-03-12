@@ -901,3 +901,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/start/f13/kebab/scab
 	name = "Citizen"
 	icon_state = "Wastelander"
+
+/obj/effect/landmark/start/f13/bwsettler
+	name = "Blackwater Settler"
+	icon_state = "Settler"
+
+/obj/effect/landmark/start/f13/bwdeputy
+	name = "Blackwater Deputy"
+	icon_state = "Officer"

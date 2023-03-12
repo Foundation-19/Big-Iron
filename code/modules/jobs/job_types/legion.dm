@@ -248,7 +248,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 2,
 		/obj/item/ammo_box/shotgun/slug = 1,
-		/obj/item/ammo_box/shotgun/magnum = 2,
+		/obj/item/ammo_box/shotgun/buck = 2,
 		)
 
 
@@ -1008,7 +1008,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Born in the East"
 	suit_store = /obj/item/gun/ballistic/revolver/caravan_shotgun
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/magnum = 2,
+		/obj/item/ammo_box/shotgun/slug = 2,
 		/obj/item/reagent_containers/food/drinks/bottle/molotov/filled = 2,
 		/obj/item/melee/onehanded/machete = 1,
 		/obj/item/storage/backpack/spearquiver = 1,

@@ -646,13 +646,13 @@ GENETICS SCANNER
 
 		playsound(src, 'sound/effects/pop.ogg', 100)
 		var/area/user_area = T.loc
-		var/datum/weather/ongoing_weather = null
+		//var/datum/weather/ongoing_weather = null
 
 		if(!user_area.outdoors)
 			to_chat(user, "<span class='warning'>[src]'s barometer function won't work indoors!</span>")
 			return
 
-		for(var/V in SSweather.processing)
+		/*for(var/V in SSweather.processing) Removing weather because of crashes
 			var/datum/weather/W = V
 			if(W.barometer_predictable && (T.z in W.impacted_z_levels) && is_path_in_list(user_area.type, W.area_types) && !(W.stage == END_STAGE))
 				ongoing_weather = W
@@ -672,7 +672,7 @@ GENETICS SCANNER
 			if(fixed < 0)
 				to_chat(user, "<span class='warning'>[src]'s barometer function was unable to trace any weather patterns.</span>")
 			else
-				to_chat(user, "<span class='warning'>[src]'s barometer function says a storm will land in approximately [butchertime(fixed)].</span>")
+				to_chat(user, "<span class='warning'>[src]'s barometer function says a storm will land in approximately [butchertime(fixed)].</span>")*/
 		cooldown = TRUE
 		addtimer(CALLBACK(src,/obj/item/analyzer/proc/ping), cooldown_time)
 

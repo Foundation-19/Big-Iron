@@ -138,7 +138,7 @@ Difficulty: Medium
 				last_legion = FALSE
 				break
 		if(last_legion)
-			loot = list(/obj/item/staff/storm)
+			//loot = list(/obj/item/staff/storm)
 			elimination = 0
 		else if(prob(20))
 			loot = list(/obj/structure/closet/crate/necropolis/tendril/random) //This one spawns a chest that could be any of the three types
@@ -152,7 +152,7 @@ Difficulty: Medium
 
 
 //Loot
-
+/* Removing weather because of crashes
 /obj/item/staff/storm
 	name = "staff of storms"
 	desc = "An ancient staff retrieved from the remains of Legion. The wind stirs as you move it."
@@ -196,6 +196,7 @@ Difficulty: Medium
 			A.wind_down()
 			log_game("[user] ([key_name(user)]) has dispelled a storm at [AREACOORD(user_turf)]")
 			return
+	
 	else
 		A = new storm_type(list(user_turf.z))
 		A.name = "staff storm"
@@ -211,3 +212,4 @@ Difficulty: Medium
 	playsound(user, 'sound/magic/staff_change.ogg', 200, 0)
 	A.telegraph()
 	storm_cooldown = world.time + 200
+	*/
