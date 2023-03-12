@@ -946,7 +946,7 @@
 	mag_type = /obj/item/ammo_box/magazine/garand308
 	extra_damage = 38
 	extra_penetration = 0.1
-	fire_delay = 2
+	fire_delay = 1.5
 	burst_size = 1
 	spread = 1
 	en_bloc = 1

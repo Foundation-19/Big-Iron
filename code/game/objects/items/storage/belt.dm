@@ -1073,6 +1073,16 @@
 	new /obj/item/ammo_box/magazine/m556/rifle(src)
 	new /obj/item/ammo_box/magazine/m556/rifle(src)
 
+/obj/item/storage/belt/military/NCR_Bandolier/garandenbloc/PopulateContents()
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+
+
 /obj/item/storage/belt/holster/cross_belt
 	name = "sam browne belt"
 	desc = "A belt traditionally worn by military officers. Has a holster attached."

@@ -1090,11 +1090,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/socom
-	belt = /obj/item/storage/belt/military/NCR_Bandolier/rappeldrop
+	belt = /obj/item/storage/belt/military/NCR_Bandolier/garandenbloc
 	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
 	head = /obj/item/clothing/head/beret/ncr/ncr_sof
 	gloves = /obj/item/clothing/gloves/color/brown
-	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
+	suit_store = /obj/item/gun/ballistic/automatic/m1garand
 	r_pocket = /obj/item/binoculars
 	l_pocket = /obj/item/storage/bag/flare
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
@@ -1103,7 +1103,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/melee/onehanded/knife/trench = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/attachments/scope = 1,
-		/obj/item/suppressor = 2,
+		/obj/item/suppressor = 1,
 		/obj/item/storage/box/ration/menu_one = 1,
 		/obj/item/storage/firstaid/regular = 1,
 		/obj/item/grenade/smokebomb = 3,
