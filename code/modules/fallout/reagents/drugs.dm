@@ -275,7 +275,7 @@
 
 /datum/reagent/drug/buffout
 	name = "Buffout Powder"
-	description = "A powerful steroid which increases the user's strength and endurance."
+	description = "A powerful steroid which increases the user's strength and endurance. Lethally dangerous when mixed with opiates like Med-X."
 	color = "#FF9900"
 	reagent_state = SOLID
 	overdose_threshold = 20
@@ -305,6 +305,11 @@
 /datum/reagent/drug/buffout/on_mob_life(mob/living/carbon/M)
 	M.AdjustStun(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
+	if(M.reagents.has_reagent(/datum/reagent/medicine/medx))
+		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 8)
+		if(M.dizziness < 10)
+		M.dizziness = clamp(M.dizziness + 3, 0, 5) // copied from dizzying solution, might not work
+		to_chat(M, "<span class='userdanger'>I shouldn't have mixed Med-X and Buffout!</span>")
 	if(M.mind)
 		var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 		if(istype(job))
