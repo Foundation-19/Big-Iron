@@ -1056,8 +1056,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/trench = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-		/obj/item/attachments/scope = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		/obj/item/suppressor = 1,
 		/obj/item/storage/box/ration/menu_one = 1,
 		/obj/item/storage/firstaid/regular = 1,
