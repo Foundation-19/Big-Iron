@@ -195,6 +195,16 @@
 	subcategory = CAT_FARMING
 	category = CAT_MISC
 
+/datum/crafting_recipe/butter_churn
+	name = "Butter Churn"
+	result = /obj/structure/butter_churn
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 10,
+				/obj/item/stack/rods = 1)
+	tools = list(TOOL_SCREWDRIVER)
+	time = 80
+	subcategory = CAT_FARMING
+	category = CAT_MISC
+
 /datum/crafting_recipe/fishingrod
 	name = "Fishing Rod"
 	result = /obj/item/fishingrod
