@@ -62,6 +62,7 @@
 	if(visualsOnly)
 		return
 	H.grant_language(/datum/language/shorthand)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak5)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/superstimpak)
@@ -134,6 +135,7 @@
 	if(visualsOnly)
 		return
 	H.grant_language(/datum/language/shorthand)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak5)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/superstimpak)
@@ -204,6 +206,7 @@
 	..()
 	if(visualsOnly)
 		return
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak5)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/superstimpak)
