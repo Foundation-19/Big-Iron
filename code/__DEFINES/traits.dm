@@ -257,6 +257,7 @@
 #define TRAIT_LONGPORKLOVER		"Cannibal" //guess
 #define TRAIT_TRIBAL			"Tribalistic Person" //has access to tribal crafting recipes
 #define TRAIT_BERSERKER			"berserker" //currently unused
+#define TRAIT_DAYTRIPPER		"daytripper"
 #define TRAIT_TECHNOPHREAK		"technophreak"	//boosts salvage return
 #define TRAIT_PA_WEAR           "pa_wear" //guess
 #define TRAIT_MEDICALEXPERT		"Medicinal Expert" //Can do revival surgery

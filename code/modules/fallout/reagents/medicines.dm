@@ -373,20 +373,22 @@
 	color = "#6D6374"
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
 	overdose_threshold = 16
-	addiction_threshold = 6
+	addiction_threshold = 5
+	var/addiction_factor = 5
+	var/addiction_factor_perk = 9.9
 
 /datum/reagent/medicine/medx/on_mob_add(mob/living/carbon/human/M)
 	..()
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel tougher, able to shrug off pain more easily.</span>")
-		M.maxHealth += 40
-		M.health += 40
+		M.maxHealth += 25
+		M.health += 25
 
 /datum/reagent/medicine/medx/on_mob_delete(mob/living/carbon/human/M)
 	if(isliving(M))
 		to_chat(M, "<span class='notice'>You feel as vulnerable to pain as a normal person.</span>")
-		M.maxHealth -= 40
-		M.health -= 40
+		M.maxHealth -= 25
+		M.health -= 25
 	switch(current_cycle)
 		if(1 to 40)
 			M.confused += 10
@@ -422,6 +424,10 @@
 	..()
 
 /datum/reagent/medicine/medx/on_mob_life(mob/living/carbon/M)
+	var/is_daytripper = FALSE
+	if(HAS_TRAIT(M, TRAIT_DAYTRIPPER))
+		is_daytripper = TRUE
+	var/addiction_threshold = (is_daytripper ? addiction_factor_perk : addiction_factor)
 	M.AdjustStun(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustUnconscious(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
