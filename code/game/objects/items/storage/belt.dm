@@ -292,7 +292,14 @@
 		/obj/item/handsaw
 		))
 
-
+/obj/item/storage/belt/medical/surgery_belt/PopulateContents()
+	new /obj/item/scalpel(src)
+	new /obj/item/retractor(src)
+	new /obj/item/hemostat(src)
+	new /obj/item/cautery(src)
+	new /obj/item/circular_saw(src)
+	new /obj/item/bonesetter(src)
+	new /obj/item/surgical_drapes/advanced(src)
 
 /obj/item/storage/belt/medical/surgery_belt_adv
 	name = "surgical supply belt"
@@ -848,6 +855,20 @@
 	icon_state = "holster_leg"
 	item_state = "holster_leg"
 
+/obj/item/storage/belt/holster/legholster/socom/PopulateContents()
+	. = ..()
+	new /obj/item/gun/ballistic/automatic/pistol/mk23(src)
+	new /obj/item/ammo_box/magazine/m45exp(src)
+	new /obj/item/ammo_box/magazine/m45exp(src)
+	new /obj/item/ammo_box/magazine/m45exp(src)
+
+/obj/item/storage/belt/holster/legholster/colt/PopulateContents()
+	. = ..()
+	new /obj/item/gun/ballistic/automatic/pistol/m1911/custom(src)
+	new /obj/item/ammo_box/magazine/m45(src)
+	new /obj/item/ammo_box/magazine/m45(src)
+	new /obj/item/ammo_box/magazine/m45(src)
+
 /obj/item/storage/belt/holster/legholster/police/PopulateContents()
 	new /obj/item/gun/ballistic/revolver/police(src)
 	new /obj/item/ammo_box/a357(src)
@@ -1033,6 +1054,34 @@
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 7
+
+/obj/item/storage/belt/military/NCR_Bandolier/rappeldrop/PopulateContents()
+	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv/ext(src)
+
+/obj/item/storage/belt/military/NCR_Bandolier/loaded/PopulateContents()
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+	new /obj/item/ammo_box/magazine/m556/rifle(src)
+
+/obj/item/storage/belt/military/NCR_Bandolier/garandenbloc/PopulateContents()
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+	new /obj/item/ammo_box/magazine/garand308(src)
+
 
 /obj/item/storage/belt/holster/cross_belt
 	name = "sam browne belt"

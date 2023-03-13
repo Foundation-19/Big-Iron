@@ -399,7 +399,7 @@
 	suit_store = /obj/item/tank/internals/oxygen
 
 /datum/outfit/debug //Debug objs plus hardsuit
-	name = "Debug outfit"
+	name = "Debug outfit(Chronicler)"
 	uniform = /obj/item/clothing/under/misc/patriotsuit
 	suit = /obj/item/clothing/suit/space/hardsuit/syndi/elite/debug
 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
@@ -413,8 +413,8 @@
 	back = /obj/item/storage/backpack/holding
 	box = /obj/item/storage/box/debugtools
 	neck = /obj/item/storage/belt/holster/ranger4570bayonet
-	l_pocket = /obj/item/ammo_box/tube/m44
-	r_pocket = /obj/item/gun/ballistic/revolver/m29/snub
+	l_pocket = /obj/item/holosign_creator/security
+	r_pocket = /obj/item/ammo_box/tube/c4570
 	backpack_contents = list(
 		/obj/item/melee/transforming/energy/axe=1,\
 		/obj/item/storage/part_replacer/bluespace/tier4=1,\
@@ -423,9 +423,9 @@
 		/obj/item/gun/magic/wand/resurrection/debug=1,\
 		/obj/item/clothing/glasses/debug=1,\
 		/obj/item/gun/energy/pulse/pistol=1,\
-		/obj/item/holosign_creator/security=1,\
 		/obj/item/storage/firstaid/tactical/nukeop=1,\
-		/obj/item/ammo_box/magazine/m473=2,\
+		/obj/item/ammo_box/magazine/m473=3,\
+		/obj/item/bodybag/bluespace=1,\
 		/obj/item/gun/ballistic/automatic/g11=1,\
 		)
 
@@ -442,13 +442,15 @@
 	ADD_TRAIT(H, TRAIT_SILENT_STEP, src)
 	ADD_TRAIT(H, TRAIT_SHOCKIMMUNE, src)
 	ADD_TRAIT(H, TRAIT_PERFECT_ATTACKER, src)
+	ADD_TRAIT(H, TRAIT_MINDSHIELD, src)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/terrifying_presence)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift/golem)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/knock)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/voice_of_god)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift/golem)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt/shift) //need to have both when one is cycling
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/knock)
 
-	var/obj/item/implant/mindshield/L = new 
+	var/obj/item/implant/krav_maga/L = new 
 	L.implant(H, null, 1)
 
 	var/obj/item/card/id/W = H.wear_id

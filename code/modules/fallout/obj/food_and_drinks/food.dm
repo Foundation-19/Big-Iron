@@ -702,10 +702,23 @@
 	tastes = list("mushy kibble" = 4, "musty meat" = 2)
 	foodtype = MEAT
 
+/obj/effect/spawner/lootdrop/ration_spawner
+	loot = list(
+		/obj/item/reagent_containers/food/snacks/f13/canned/ncr/brahmin_chili = 10,
+		/obj/item/reagent_containers/food/snacks/f13/canned/ncr/bighorner_sausage = 10,
+		/obj/item/reagent_containers/food/snacks/f13/canned/ncr/igauna_bits = 10,
+		/obj/item/reagent_containers/food/snacks/f13/canned/ncr/grilled_radstag = 10,
+		/obj/item/reagent_containers/food/snacks/f13/canned/ncr/ham_and_eggs = 10,
+		/obj/item/reagent_containers/food/snacks/f13/canned/ncr/yaoguai_meatballs = 10,
+		/obj/item/reagent_containers/food/snacks/f13/canned/ncr/cranberry_cobbler = 10,
+		/obj/item/reagent_containers/food/snacks/f13/canned/ncr/vegetable_soup = 10,
+		/obj/item/reagent_containers/food/snacks/f13/canned/ncr/molerat_stew = 10,
+		/obj/item/reagent_containers/food/snacks/f13/canned/ncr/candied_mutfruit = 10,
+	)
+
 /obj/item/reagent_containers/food/snacks/f13/canned/ncr
 	name = "canned military ration"
-	desc = "If you see this, call an admin."
-	filling_color = "#B22222"
+	desc = "generic brand name military ration" // DO NOT FUCKING DESCRIPTION AN ITEM ' CALL AN ADMIN' YOU FUCKING MORON BECAUSE THEN YOU WILL GET AHELP OUT OF THE BLUE OVER SHIT THAT DOES NOT MATTER AND IT CLOGS UP THE TICKET
 	list_reagents = list(/datum/reagent/consumable/nutriment = 35, /datum/reagent/consumable/nutriment/vitamin = 3)
 	icon_state = "c_ration_1"
 

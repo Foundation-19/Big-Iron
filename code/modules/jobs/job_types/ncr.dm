@@ -70,7 +70,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	flag = F13COLONEL
 	head_announce = list("Security")
 	supervisors = "The Republic Senate, High Command"
-	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 	req_admin_notify = 1
 
 	total_positions = 0
@@ -1027,3 +1027,229 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle = 2
 		)
+
+// NCR Paratrooper
+/datum/job/ncr/f13paratrooper
+	title = "NCR Paratrooper"
+	flag = F13PARATROOPER
+	total_positions = 0
+	spawn_positions = 0
+	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
+	supervisors = "Sergeant and Above"
+	outfit = /datum/outfit/job/ncr/paratrooper
+	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+
+/datum/outfit/job/ncr/paratrooper
+	name = "NCR Paratrooper"
+	id = /obj/item/card/id/dogtag/ncrtrooper
+	jobtype	= /datum/job/ncr/f13paratrooper
+	accessory = /obj/item/clothing/accessory/ncr/CPL
+	suit = /obj/item/clothing/suit/armored/light/rangerrig
+	mask = /obj/item/clothing/mask/ncr_facewrap
+	neck = /obj/item/storage/belt/holster/legholster/colt
+	belt = /obj/item/storage/belt/military/NCR_Bandolier
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
+	head = /obj/item/clothing/head/beret/ncr/ncr_sof
+	gloves = /obj/item/clothing/gloves/color/brown
+	r_pocket = /obj/item/binoculars
+	l_pocket = /obj/item/storage/bag/flare
+	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
+	backpack_contents = list(
+		/obj/item/melee/onehanded/knife/trench = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/suppressor = 1,
+		/obj/item/storage/box/ration/menu_one = 1,
+		/obj/item/storage/firstaid/regular = 1,
+		/obj/item/grenade/smokebomb = 3,
+		/obj/item/grenade/chem_grenade/teargas/signal = 1,
+		/obj/item/clothing/mask/breath = 1,
+		)
+
+/datum/outfit/job/ncr/f13paratrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
+
+/datum/job/ncr/f13paratrooperassault
+	title = "NCR Assault Paratrooper"
+	flag = F13PARATROOPER
+	total_positions = 0
+	spawn_positions = 0
+	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
+	supervisors = "Sergeant and Above"
+	outfit = /datum/outfit/job/ncr/paratrooperassault
+	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+
+/datum/outfit/job/ncr/paratrooperassault
+	name = "NCR Assault Paratrooper"
+	id = /obj/item/card/id/dogtag/ncrtrooper
+	jobtype	= /datum/job/ncr/f13paratrooperassault
+	accessory = /obj/item/clothing/accessory/ncr/SPC
+	suit = /obj/item/clothing/suit/armored/light/rangerrig
+	mask = /obj/item/clothing/mask/ncr_facewrap
+	neck = /obj/item/storage/belt/holster/legholster/socom
+	belt = /obj/item/storage/belt/military/NCR_Bandolier/garandenbloc
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
+	head = /obj/item/clothing/head/beret/ncr/ncr_sof
+	gloves = /obj/item/clothing/gloves/color/brown
+	suit_store = /obj/item/gun/ballistic/automatic/m1garand
+	r_pocket = /obj/item/binoculars
+	l_pocket = /obj/item/storage/bag/flare
+	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
+	backpack_contents = list(
+		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/melee/onehanded/knife/trench = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/attachments/scope = 1,
+		/obj/item/suppressor = 1,
+		/obj/item/storage/box/ration/menu_one = 1,
+		/obj/item/storage/firstaid/regular = 1,
+		/obj/item/grenade/smokebomb = 3,
+		/obj/item/clothing/mask/breath = 1,
+		)
+
+/datum/outfit/job/ncr/f13paratrooperassault/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
+
+/datum/job/ncr/f13paratroopersquadleader
+	title = "NCR Paratrooper Squad Leader"
+	flag = F13PARATROOPER
+	total_positions = 0
+	spawn_positions = 0
+	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
+	supervisors = "Captain and Above"
+	outfit = /datum/outfit/job/ncr/paratroopersquadleader
+	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+
+/datum/outfit/job/ncr/paratroopersquadleader
+	name = "NCR Paratrooper Squad Leader"
+	id = /obj/item/card/id/dogtag/ncrtrooper
+	jobtype	= /datum/job/ncr/f13paratroopersquadleader
+	accessory = /obj/item/clothing/accessory/ncr/SGT
+	suit = /obj/item/clothing/suit/armored/light/rangerrig
+	mask = /obj/item/clothing/mask/ncr_facewrap
+	neck = /obj/item/storage/belt/holster/legholster/socom
+	belt = /obj/item/storage/belt/military/NCR_Bandolier/loaded
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
+	head = /obj/item/clothing/head/beret/ncr
+	gloves = /obj/item/clothing/gloves/color/brown
+	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle
+	r_pocket = /obj/item/binoculars
+	l_pocket = /obj/item/storage/bag/flare
+	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
+	backpack_contents = list(
+		/obj/item/melee/onehanded/knife/trench = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/storage/box/ration/menu_one = 1,
+		/obj/item/storage/firstaid/regular = 1,
+		/obj/item/grenade/chem_grenade/teargas/signal = 3,
+		/obj/item/clothing/mask/breath = 1,
+		)
+
+
+/datum/outfit/job/ncr/f13paratroopersquadleader/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
+
+/datum/job/ncr/f13paratrooperheavy
+	title = "NCR Shocktroop Paratrooper"
+	flag = F13PARATROOPER
+	total_positions = 0
+	spawn_positions = 0
+	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
+	supervisors = "Captain and Above"
+	outfit = /datum/outfit/job/ncr/paratrooperheavy
+	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+
+/datum/outfit/job/ncr/paratrooperheavy
+	name = "NCR Shocktroop Paratrooper"
+	id = /obj/item/card/id/dogtag/ncrtrooper
+	jobtype	= /datum/job/ncr/f13paratrooperheavy
+	accessory = /obj/item/clothing/accessory/ncr/SPC
+	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
+	mask = /obj/item/clothing/mask/ncr_facewrap
+	neck = /obj/item/storage/belt/holster/ranger44
+	belt = /obj/item/storage/belt/military/NCR_Bandolier/loaded
+	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
+	head = /obj/item/clothing/head/helmet/f13/combat/mk2/ncr
+	gloves = /obj/item/clothing/gloves/color/brown
+	suit_store = /obj/item/gun/ballistic/automatic/service/r82
+	r_pocket = /obj/item/binoculars
+	l_pocket = /obj/item/storage/bag/flare
+	r_hand = /obj/item/clothing/head/beret/ncr/ncr_sof
+	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
+	backpack_contents = list(
+		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/melee/onehanded/knife/trench = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/attachments/scope = 1,
+		/obj/item/storage/box/ration/menu_one = 1,
+		/obj/item/storage/firstaid/regular = 1,
+		/obj/item/grenade/f13/he_grenade = 2,
+		/obj/item/clothing/mask/breath = 1,
+		)
+
+
+/datum/outfit/job/ncr/f13paratrooper_heavy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+
+/datum/job/ncr/f13paratroopermedic
+	title = "NCR Paratrooper Medic"
+	flag = F13PARATROOPER
+	total_positions = 0
+	spawn_positions = 0
+	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
+	supervisors = "Sergeant and Above"
+	outfit = /datum/outfit/job/ncr/f13paratroopermedic
+	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
+
+/datum/outfit/job/ncr/f13paratroopermedic
+	name = "NCR Paratrooper Medic"
+	id = /obj/item/card/id/dogtag/ncrtrooper
+	jobtype	= /datum/job/ncr/f13paratroopermedic
+	accessory = /obj/item/clothing/accessory/ncr/SPC
+	suit = /obj/item/clothing/suit/armored/light/rangerrig
+	mask = /obj/item/clothing/mask/ncr_facewrap
+	neck = /obj/item/storage/belt/holster/legholster/socom
+	gloves = /obj/item/clothing/gloves/color/brown
+	belt = /obj/item/storage/belt/military/NCR_Bandolier/rappeldrop
+	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
+	head = /obj/item/clothing/head/beret/ncr/ncr_medic
+	suit_store = /obj/item/gun/ballistic/automatic/m1carbine/compact
+	r_pocket = /obj/item/binoculars
+	l_pocket = /obj/item/storage/bag/flare
+	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
+	backpack_contents = list(
+		/obj/item/melee/onehanded/knife/bayonet = 1,
+		/obj/item/melee/onehanded/knife/trench = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/storage/hypospraykit/cmo = 1,
+		/obj/item/defibrillator/compact/combat/loaded = 1,
+		/obj/item/storage/belt/medical/surgery_belt = 1,
+		/obj/item/attachments/scope = 1,
+		/obj/item/suppressor = 2,
+		/obj/item/storage/firstaid/regular = 1,
+		/obj/item/clothing/mask/breath = 1,
+		)
+
+/datum/outfit/job/ncr/f13paratroopermedic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)

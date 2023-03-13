@@ -513,6 +513,14 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	delete_after_roundstart = FALSE
 	icon_state = "Assistant"
 
+/obj/effect/landmark/start/f13/ncrparatrooper
+	name = "NCR Assault Paratrooper"
+	icon_state = "NCR Colonel"
+
+/obj/effect/landmark/start/f13/ncrparatroopermedic
+	name = "NCR Paratrooper Medic"
+	icon_state = "NCR Colonel"
+
 /obj/effect/landmark/start/f13/ncrcolonel
 	name = "NCR Colonel"
 	icon_state = "NCR Colonel"
