@@ -1036,7 +1036,7 @@
 				/obj/effect/spawner/bundle/f13/pistol14,
 				/obj/item/gun/ballistic/revolver/grenadelauncher,
 				/obj/effect/spawner/bundle/f13/citykiller,
-				/obj/effect/spawner/bundle/f13/plasmaglock,
+				/obj/effect/spawner/bundle/f13/rcw,
 				/obj/effect/spawner/bundle/f13/ionrifle
 				)
 
@@ -1047,10 +1047,10 @@
 				/obj/effect/spawner/bundle/f13/amr = 10,
 				/obj/effect/spawner/bundle/f13/bar = 10,
 				/obj/item/gun/ballistic/rocketlauncher = 10,
-				/obj/item/gun/ballistic/automatic/g11 = 5,
-				/obj/effect/spawner/bundle/f13/plasmarifle,
-				/obj/effect/spawner/bundle/f13/rcw,
-				/obj/effect/spawner/bundle/f13/aer14,
+				/obj/item/gun/ballistic/automatic/g11 = 10,
+				/obj/effect/spawner/bundle/f13/plasmarifle = 5,
+				/obj/effect/spawner/bundle/f13/plasmaglock = 5,
+				/obj/effect/spawner/bundle/f13/aer14 = 10,
 				)
 
 //Gun Bundles
@@ -1709,7 +1709,7 @@
 	lootdoubles = TRUE
 
 	loot = list(
-				/obj/item/ammo_box/shotgun/buck,
+				/obj/item/ammo_box/shotgun/magnum,
 				/obj/item/ammo_box/magazine/uzim9mm,
 				/obj/item/ammo_box/magazine/m10mm_adv/simple,
 				/obj/item/ammo_box/magazine/greasegun,

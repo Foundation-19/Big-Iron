@@ -145,6 +145,8 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	damage = 0
 	pixels_per_second = 4000
 	zone_accuracy_factor = 100
+	wound_bonus = 40
+	bare_wound_bonus = 40
 
 /obj/item/projectile/bullet/a50MG/incendiary
 	damage = -10
@@ -323,6 +325,8 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 	damage = 0
 	armour_penetration = 0.9 //if only one bullet has built in AP, its this one
 	pixels_per_second = TILES_TO_PIXELS(100)
+	wound_bonus = 60
+	bare_wound_bonus = 60
 
 /obj/item/projectile/bullet/c2mm/blender //welcome to pain town
 	name = "2mm blender projectile"
