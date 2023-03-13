@@ -123,7 +123,8 @@
 				/obj/item/reagent_containers/syringe = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 5
-	category = CAT_MEDICAL	
+	category = CAT_MEDICAL
+	always_available = FALSE
 
 /datum/crafting_recipe/stimpak5
 	name = "Stimpak x5"
@@ -134,6 +135,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_MEDICAL
+	always_available = FALSE
 
 /datum/crafting_recipe/superstimpak
 	name = "Super Stimpak"
@@ -144,6 +146,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_MEDICAL
+	always_available = FALSE
 
 /datum/crafting_recipe/superstimpak5
 	name = "Super Stimpak (x5)"
@@ -154,6 +157,7 @@
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_MEDICAL
+	always_available = FALSE
 
 /datum/crafting_recipe/salvage_stimpak
 	name = "Salvage injector"
