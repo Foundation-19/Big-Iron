@@ -563,6 +563,7 @@ Raider
 							/obj/item/healthanalyzer = 1,
 							/obj/item/gun/energy/laser/rechargerrifle = 1,
 							/obj/item/reagent_containers/glass/bottle/epinephrine = 2,
+							/obj/item/book/granter/trait/followerschemistry = 1,
 							/obj/item/storage/backpack/duffelbag/med/surgery = 1,
 							/obj/item/paper_bin = 1,
 							/obj/item/folder = 1,

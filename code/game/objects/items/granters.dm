@@ -805,7 +805,15 @@
 	granted_trait = TRAIT_CHEMWHIZ
 	traitname = "chemistry"
 	remarks = list("Always ensure a safe working environment, promptly clean any chemical mess.", "Improperly stored chemicals can quickly lead to safety hazards.", "Do not abuse chemicals for recreational use in the laboratory!", "Labcoats and goggles not only protect you from burns, but give an aura of authority.", "Keep your laboratory clean and organized, utilize cabinets and shelves.", "Potassium and water should not be mixed, or they will react violently.")
-	crafting_recipe_types = list(/datum/crafting_recipe/jet, /datum/crafting_recipe/turbo, /datum/crafting_recipe/psycho, /datum/crafting_recipe/medx, /datum/crafting_recipe/buffout)
+	crafting_recipe_types = list(/datum/crafting_recipe/stimpak, /datum/crafting_recipe/stimpak5, /datum/crafting_recipe/jet, /datum/crafting_recipe/turbo, /datum/crafting_recipe/psycho, /datum/crafting_recipe/medx, /datum/crafting_recipe/buffout)
+
+/obj/item/book/granter/trait/followerschemistry
+	name = "Primer on the Followers of the Apocalypse"
+	desc = "This heavy textbook describes the complete history of the Followers, and what it really means to be one."
+	granted_trait = TRAIT_CHEMWHIZ
+	traitname = "chemistry"
+	remarks = list("First, do no harm.", "The Republic means its best, but fails miserably.", "...keep magazine collections?", "Affiliating with the Followers might save your life!", "Rationing your supplies is best when you're on the road, make sure to take stock of everything.", "Years ago, we arose from the Boneyards of Adytum...", "Our aim is to gradually shape a better brighter future for the wasteland.")
+	crafting_recipe_types = list(/datum/crafting_recipe/stimpak, /datum/crafting_recipe/stimpak5, /datum/crafting_recipe/superstimpak, /datum/crafting_recipe/superstimpak5, /datum/crafting_recipe/jet, /datum/crafting_recipe/turbo, /datum/crafting_recipe/psycho, /datum/crafting_recipe/medx, /datum/crafting_recipe/buffout)
 
 /obj/item/book/granter/trait/bigleagues
 	name = "Grognak the Barbarian"
