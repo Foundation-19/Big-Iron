@@ -19,6 +19,8 @@ SUBSYSTEM_DEF(job)
 
 	var/list/disabled_factions = list()
 
+	var/list/flagcaptured = list()
+
 /datum/controller/subsystem/job/Initialize(timeofday)
 	SSmapping.HACK_LoadMapConfig()
 	if(!occupations.len)
