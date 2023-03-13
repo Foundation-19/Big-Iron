@@ -4,6 +4,8 @@
 	color = "#60A584" // rgb: 96, 165, 132
 	overdose_threshold = 20
 	addiction_threshold = 12.5
+	var/addiction_factor = 12.5
+	var/addiction_factor_perk = 20
 	ghoulfriendly = TRUE
 
 /datum/reagent/drug/jet/on_mob_add(mob/living/carbon/human/M)
@@ -18,6 +20,10 @@
 		M.confused += 2
 
 /datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
+	var/is_daytripper = FALSE
+	if(HAS_TRAIT(M, TRAIT_DAYTRIPPER))
+		is_daytripper = TRUE
+	var/addiction_threshold = (is_daytripper ? addiction_factor_perk : addiction_factor)
 	M.adjustStaminaLoss(-20, 0)
 	M.set_drugginess(20)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !isspaceturf(M.loc) && prob(10))
@@ -91,6 +97,8 @@
 	color = "#FAFAFA"
 	overdose_threshold = 14
 	addiction_threshold = 9
+	var/addiction_factor = 9
+	var/addiction_factor_perk = 14
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	ghoulfriendly = TRUE
 
@@ -103,6 +111,10 @@
 	..()
 
 /datum/reagent/drug/turbo/on_mob_life(mob/living/carbon/M)
+	var/is_daytripper = FALSE
+	if(HAS_TRAIT(M, TRAIT_DAYTRIPPER))
+		is_daytripper = TRUE
+	var/addiction_threshold = (is_daytripper ? addiction_factor_perk : addiction_factor)
 	var/high_message = pick("You feel hyper.", "You feel like you need to go faster.", "You feel like you can run the world.")
 	if(prob(5))
 		to_chat(M, "<span class='notice'>[high_message]</span>")
@@ -175,13 +187,19 @@
 	reagent_state = LIQUID
 	color = "#FF0000"
 	overdose_threshold = 15
-	addiction_threshold = 12.5
+	addiction_threshold = 10
+	var/addiction_factor = 10
+	var/addiction_factor_perk = 15
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 	ghoulfriendly = TRUE
 
 
 /datum/reagent/drug/psycho/on_mob_life(mob/living/carbon/M)
+	var/is_daytripper = FALSE
+	if(HAS_TRAIT(M, TRAIT_DAYTRIPPER))
+		is_daytripper = TRUE
+	var/addiction_threshold = (is_daytripper ? addiction_factor_perk : addiction_factor)
 	var/high_message = pick("<br><font color='#FF0000'><b>FUCKING KILL!</b></font>", "<br><font color='#FF0000'><b>RAAAAR!</b></font>", "<br><font color='#FF0000'><b>BRING IT!</b></font>")
 	if(prob(20))
 		to_chat(M, "<span class='notice'>[high_message]</span>")
@@ -279,7 +297,9 @@
 	color = "#FF9900"
 	reagent_state = SOLID
 	overdose_threshold = 20
-	addiction_threshold = 11
+	addiction_threshold = 10
+	var/addiction_factor = 10
+	var/addiction_factor_perk = 20
 	metabolization_rate = 1.25 * REAGENTS_METABOLISM
 	var/datum/brain_trauma/special/psychotic_brawling/bath_salts/rage
 	ghoulfriendly = TRUE
@@ -303,6 +323,10 @@
 		M.health -= 25
 
 /datum/reagent/drug/buffout/on_mob_life(mob/living/carbon/M)
+	var/is_daytripper = FALSE
+	if(HAS_TRAIT(M, TRAIT_DAYTRIPPER))
+		is_daytripper = TRUE
+	var/addiction_threshold = (is_daytripper ? addiction_factor_perk : addiction_factor)
 	M.AdjustStun(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-10*REAGENTS_EFFECT_MULTIPLIER, 0)
 	if(M.reagents.has_reagent(/datum/reagent/medicine/medx))
