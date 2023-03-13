@@ -7,6 +7,8 @@
 	name = "flag"
 	desc = "A cloth banner on a metal rod."
 	icon = 'icons/obj/holdableflags.dmi'
+	lefthand_file = 'icons/obj/holdableflags.dmi'
+	righthand_file = 'icons/obj/holdableflags.dmi'
 	icon_state = "ncrholdable"
 	resistance_flags = INDESTRUCTIBLE
 	w_class = WEIGHT_CLASS_HUGE
@@ -14,20 +16,14 @@
 /obj/item/flagholdable/ncrholdable
 	name = "\improper NCR flag"
 	desc = "Proudly displaying the two-headed bear of the Republic."
-	icon = 'icons/obj/holdableflags.dmi'
 	icon_state = "ncrholdable"
 	item_state = "ncrholdable"
-	lefthand_file = 'icons/obj/holdableflags.dmi'
-	righthand_file = 'icons/obj/holdableflags.dmi'
 
 /obj/item/flagholdable/legionholdable
 	name = "\improper Legion flag"
 	desc = "The red of the Legion army trimmed in gold, featuring the mighty bull."
-	icon = 'icons/obj/holdableflags.dmi'
 	icon_state = "legionholdable"
 	item_state = "legionholdable"
-	lefthand_file = 'icons/obj/holdableflags.dmi'
-	righthand_file = 'icons/obj/holdableflags.dmi'
 
 //The structure variants
 /obj/structure/flag
@@ -44,7 +40,6 @@
 /obj/structure/flag/ncr
 	name = "\improper NCR flag"
 	desc = "Proudly displaying the two-headed bear of the Republic."
-	icon = 'icons/obj/flags.dmi'
 	icon_state = "ncrflag"
 	flag_faction = FACTION_NCR
 	flag_type = NCR_FLAG
@@ -52,7 +47,6 @@
 /obj/structure/flag/legion
 	name = "\improper Legion flag"
 	desc = "The red of the Legion army trimmed in gold, featuring the mighty bull."
-	icon = 'icons/obj/flags.dmi'
 	icon_state = "legionflag"
 	flag_faction = FACTION_LEGION
 	flag_type = LEGION_FLAG
