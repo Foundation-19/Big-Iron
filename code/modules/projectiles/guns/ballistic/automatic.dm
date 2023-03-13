@@ -601,7 +601,7 @@
 	icon_state = "m1a1carbine"
 	var/stock = FALSE
 	w_class = WEIGHT_CLASS_NORMAL
-	slowdown = 0
+	slowdown = 0.03
 
 /obj/item/gun/ballistic/automatic/m1carbine/compact/AltClick(mob/user)
 	if(!istype(user) || !user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
