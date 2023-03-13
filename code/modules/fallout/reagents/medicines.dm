@@ -374,6 +374,8 @@
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
 	overdose_threshold = 16
 	addiction_threshold = 5
+	var/addiction_factor = 5
+	var/addiction_factor_perk = 9.9
 
 /datum/reagent/medicine/medx/on_mob_add(mob/living/carbon/human/M)
 	..()
@@ -422,6 +424,10 @@
 	..()
 
 /datum/reagent/medicine/medx/on_mob_life(mob/living/carbon/M)
+	var/is_daytripper = FALSE
+	if(HAS_TRAIT(M, TRAIT_DAYTRIPPER))
+		is_daytripper = TRUE
+	var/addiction_threshold = (is_daytripper ? addiction_factor_perk : addiction_factor)
 	M.AdjustStun(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustKnockdown(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.AdjustUnconscious(-30*REAGENTS_EFFECT_MULTIPLIER, 0)
