@@ -8,10 +8,11 @@
 	righthand_file = 'icons/mob/inhands/equipment/backpack_righthand.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_HUGE
+	slowdown = 2
 	var/obj/item/gun/ballistic/minigunbal5mm/gun
 	var/armed = 0 //whether the gun is attached, 0 is attached, 1 is the gun is wielded.
 	var/overheat = 0
-	var/overheat_max = 80
+	var/overheat_max = 120
 	var/heat_diffusion = 2.5 //How much heat is lost per tick
 
 /obj/item/minigunpackbal5mm/Initialize()
@@ -97,7 +98,6 @@
 	icon_state = "minigunbal_spin"
 	item_state = "minigun"
 	flags_1 = CONDUCT_1
-	slowdown = 2
 	slot_flags = null
 	w_class = WEIGHT_CLASS_HUGE
 	burst_size = 1
