@@ -35,7 +35,7 @@
 	pixel_y = rand(-10, 10)
 	setDir(pick(GLOB.alldirs))
 	update_icon()
-	cleanup()
+	addtimer(CALLBACK(src, .proc/cleanup), 18000)
 
 /obj/item/ammo_casing/Destroy()
 	if(BB)

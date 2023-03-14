@@ -623,7 +623,16 @@
 		. =  BULLET_ACT_TURF
 
 /turf/proc/cleanbloatup()
-	while(contents.len >= 200)
+	while(contents.len >= 201)
 		var/obj/loser = pick(contents)
-		if(istype(loser))
-			qdel(loser)
+		var/list/turf/openhomes = get_adjacent_open_turfs(src)
+		var/list/turf/homecandidates = list()
+		for(var/turf/home in openhomes)
+			if(home.contents.len <= 199)
+				homecandidates[home] = home
+		if(homecandidates.len)
+			var/turf/newhome = pick(homecandidates)
+			loser.forceMove(newhome)
+		else
+			if(istype(loser))
+				qdel(loser)
