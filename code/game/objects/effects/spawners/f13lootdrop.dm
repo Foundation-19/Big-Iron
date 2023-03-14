@@ -1006,6 +1006,7 @@
 				/obj/effect/spawner/bundle/f13/miniuzi,
 				/obj/effect/spawner/bundle/f13/auto5,
 				/obj/effect/spawner/bundle/f13/m1garand,
+				/obj/effect/spawner/bundle/f13/type93,
 				/obj/effect/spawner/bundle/f13/deagle,
 				/obj/effect/spawner/bundle/f13/automag,
 				/obj/item/gun/ballistic/automatic/smg/american180,
@@ -1390,6 +1391,12 @@
 	name = "american 180 spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/smg/american180
+				)
+/obj/effect/spawner/bundle/f13/type93
+	name = "worn chinese assault rifle and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/type93/worn,
+				/obj/item/ammo_box/magazine/m556/rifle/assault/
 				)
 
 /obj/effect/spawner/bundle/f13/assault_rifle
