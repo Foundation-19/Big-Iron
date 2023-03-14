@@ -1082,6 +1082,14 @@
 	new /obj/item/ammo_box/magazine/garand308(src)
 	new /obj/item/ammo_box/magazine/garand308(src)
 
+/obj/item/storage/belt/military/NCR_Bandolier/loadedshotgun/PopulateContents()
+	new /obj/item/ammo_box/shotgun/slug(src)
+	new /obj/item/ammo_box/shotgun/slug(src)
+	new /obj/item/ammo_box/shotgun/slug(src)
+	new /obj/item/ammo_box/shotgun/buck(src)
+	new /obj/item/ammo_box/shotgun/buck(src)
+	new /obj/item/ammo_box/shotgun/buck(src)
+	new /obj/item/ammo_box/shotgun/buck(src)
 
 /obj/item/storage/belt/holster/cross_belt
 	name = "sam browne belt"
