@@ -451,7 +451,14 @@
 	name = "7.62 HMG belt"
 	id = "m762 belt"
 	materials = list(/datum/material/iron = 43000, /datum/material/blackpowder = 4500)
-	build_path = /obj/item/ammo_box/magazine/ammobelt
+	build_path = /obj/item/ammo_box/magazine/ammobelt/m1919
+	category = list("initial", "Intermediate Magazines")
+
+/datum/design/ammolathe/a50belt
+	name = ".50 HMG belt"
+	id = "a50belt"
+	materials = list(/datum/material/iron = 43000, /datum/material/blackpowder = 4500)
+	build_path = /obj/item/ammo_box/magazine/ammobelt/m2
 	category = list("initial", "Intermediate Magazines")
 
 /datum/design/ammolathe/w308
