@@ -217,7 +217,7 @@
 	if(!magazine)
 		. += "<span class='notice'>\The [src] is unloaded.</span>"
 	else
-		. += "<span class='notice'>[magazine.ammo_count()] rounds are left in \the [src].</span>")
+		. += "<span class='notice'>[magazine.ammo_count()] rounds are left in \the [src].</span>"
 
 /obj/structure/HMG/cotc
 	name = "Defender of the Faith"
