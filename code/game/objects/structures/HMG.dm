@@ -224,12 +224,11 @@
 	desc = "A repaired M2 Browning capable of rapidly discharging .50 BMG rounds. How did this get here? It is a mystery. Alt-Click to unload; screwdriver to repair; wrench to unanchor."
 	icon = 'icons/obj/HMG.dmi'
 	icon_state = "m2"
-	var/spread = 16
-	var/damage_modifier = 40
-	var/penetration_modifier = 0.5
-	var/mag_type = /obj/item/ammo_box/magazine/ammobelt/m2
-	var/obj/item/ammo_box/magazine/magazine = null
-	var/reload_time = 25
+	spread = 16
+	damage_modifier = 40
+	penetration_modifier = 0.5
+	mag_type = /obj/item/ammo_box/magazine/ammobelt/m2
+	reload_time = 20
 
 //////////////
 //Ammo Belts//
