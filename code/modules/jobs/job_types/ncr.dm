@@ -1028,7 +1028,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/magazine/m556/rifle = 2
 		)
 
-// NCR Paratrooper
+// NCR Paratrooper to be used for any funny and event
 /datum/job/ncr/f13paratrooper
 	title = "NCR Paratrooper"
 	flag = F13PARATROOPER
@@ -1043,7 +1043,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "NCR Paratrooper"
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	jobtype	= /datum/job/ncr/f13paratrooper
-	accessory = /obj/item/clothing/accessory/ncr/CPL
+	accessory = /obj/item/clothing/accessory/ncr/SPC
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
 	neck = /obj/item/storage/belt/holster/legholster/colt
@@ -1072,20 +1072,21 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
 
-/datum/job/ncr/f13paratrooperassault
-	title = "NCR Assault Paratrooper"
+//NCR Highway Patrol and ERT here
+/datum/job/ncr/f13rrcassault
+	title = "NCR Highway Patrol Trooper"
 	flag = F13PARATROOPER
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Sergeant and Above"
-	outfit = /datum/outfit/job/ncr/paratrooperassault
+	outfit = /datum/outfit/job/ncr/rrcassault
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
-/datum/outfit/job/ncr/paratrooperassault
-	name = "NCR Assault Paratrooper"
+/datum/outfit/job/ncr/rrcassault
+	name = "NCR RRC Standard"
 	id = /obj/item/card/id/dogtag/ncrtrooper
-	jobtype	= /datum/job/ncr/f13paratrooperassault
+	jobtype	= /datum/job/ncr/f13rrcassault
 	accessory = /obj/item/clothing/accessory/ncr/SPC
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
@@ -1117,20 +1118,20 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
 
-/datum/job/ncr/f13paratroopersquadleader
-	title = "NCR Paratrooper Squad Leader"
+/datum/job/ncr/f13rrcsquadleader
+	title = "NCR Highway Patrol (Squad Leader)"
 	flag = F13PARATROOPER
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Captain and Above"
-	outfit = /datum/outfit/job/ncr/paratroopersquadleader
+	outfit = /datum/outfit/job/ncr/rrcsquadleader
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
-/datum/outfit/job/ncr/paratroopersquadleader
-	name = "NCR Paratrooper Squad Leader"
+/datum/outfit/job/ncr/rrcsquadleader
+	name = "NCR RRC Squad Leader"
 	id = /obj/item/card/id/dogtag/ncrtrooper
-	jobtype	= /datum/job/ncr/f13paratroopersquadleader
+	jobtype	= /datum/job/ncr/f13rrcsquadleader
 	accessory = /obj/item/clothing/accessory/ncr/SGT
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
@@ -1153,27 +1154,27 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 
-/datum/outfit/job/ncr/f13paratroopersquadleader/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/ncr/f13rrcsquadleader/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
 	ADD_TRAIT(H, TRAIT_NIGHT_VISION, src)
 
-/datum/job/ncr/f13paratrooperbreacher
-	title = "NCR Breacher Paratrooper"
+/datum/job/ncr/f13rrcbreacher
+	title = "NCR Highway Patrol (Breacher)"
 	flag = F13PARATROOPER
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Captain and Above"
-	outfit = /datum/outfit/job/ncr/paratrooperbreacher
+	outfit = /datum/outfit/job/ncr/rrcbreacher
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_CHANGE_IDS, ACCESS_NCR_COMMAND)
 
-/datum/outfit/job/ncr/paratrooperbreacher
-	name = "NCR Breacher Paratrooper"
+/datum/outfit/job/ncr/rrcbreacher
+	name = "NCR RRC Breacher"
 	id = /obj/item/card/id/dogtag/ncrtrooper
-	jobtype	= /datum/job/ncr/f13paratrooperbreacher
+	jobtype	= /datum/job/ncr/f13rrcbreacher
 	accessory = /obj/item/clothing/accessory/ncr/SPC
 	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/ncr
 	mask = /obj/item/clothing/mask/gas/welding/up 
@@ -1206,20 +1207,20 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 
-/datum/job/ncr/f13paratroopermedic
-	title = "NCR Paratrooper Medic"
+/datum/job/ncr/f13rrcmedic
+	title = "NCR Highway Patrol (Medic)"
 	flag = F13PARATROOPER
 	total_positions = 0
 	spawn_positions = 0
 	description = "You are a senior enlisted trooper. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
 	supervisors = "Sergeant and Above"
-	outfit = /datum/outfit/job/ncr/f13paratroopermedic
+	outfit = /datum/outfit/job/ncr/f13rrcmedic
 	access = list(ACCESS_NCR, ACCESS_NCR1, ACCESS_NCR2, ACCESS_PUBLIC, ACCESS_NCR_ARMORY, ACCESS_NCR_COMMAND)
 
-/datum/outfit/job/ncr/f13paratroopermedic
-	name = "NCR Paratrooper Medic"
+/datum/outfit/job/ncr/f13rrcmedic
+	name = "NCR RRC Medic"
 	id = /obj/item/card/id/dogtag/ncrtrooper
-	jobtype	= /datum/job/ncr/f13paratroopermedic
+	jobtype	= /datum/job/ncr/f13rrcmedic
 	accessory = /obj/item/clothing/accessory/ncr/SPC
 	suit = /obj/item/clothing/suit/armored/light/rangerrig
 	mask = /obj/item/clothing/mask/ncr_facewrap
@@ -1246,7 +1247,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 
-/datum/outfit/job/ncr/f13paratroopermedic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/ncr/f13rrcmedic/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
