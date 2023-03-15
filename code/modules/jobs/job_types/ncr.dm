@@ -1074,7 +1074,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 //NCR Highway Patrol and ERT here
 /datum/job/ncr/f13rrcassault
-	title = "NCR Highway Patrol Trooper"
+	title = "NCR Highway Patrol"
 	flag = F13PARATROOPER
 	total_positions = 0
 	spawn_positions = 0
