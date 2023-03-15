@@ -235,7 +235,7 @@
 //Ammo Belts//
 //////////////
 
-/obj/item/ammo_box/magazine/ammobelt/
+/obj/item/ammo_box/magazine/ammobelt
 	name = "ammo belt template"
 	desc = "this should not exist, report this as a bug"
 	icon_state = "762belt"
