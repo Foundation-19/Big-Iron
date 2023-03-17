@@ -103,31 +103,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/list/features = list("mcolor" = "FFFFFF",
 		"mcolor2" = "FFFFFF",
 		"mcolor3" = "FFFFFF",
-		"tail_lizard" = "Smooth",
-		"tail_human" = "None",
-		"snout" = "Round",
-		"horns" = "None",
-		"horns_color" = "85615a",
-		"ears" = "None",
-		"wings" = "None",
-		"wings_color" = "FFF",
-		"frills" = "None",
-		"deco_wings" = "None",
-		"spines" = "None",
-		"body_markings" = "None",
-		"legs" = "Plantigrade",
-		"insect_wings" = "Plain",
-		"insect_fluff" = "None",
-		"insect_markings" = "None",
-		"mam_body_markings" = "Plain",
-		"mam_ears" = "None",
-		"mam_snouts" = "None",
-		"mam_tail" = "None",
-		"mam_tail_animated" = "None",
-		"xenodorsal" = "Standard",
-		"xenohead" = "Standard",
-		"xenotail" = "Xenomorph Tail",
-		"taur" = "None",
 		"has_cock" = FALSE,
 		"cock_shape" = DEF_COCK_SHAPE,
 		"cock_length" = COCK_SIZE_DEF,
@@ -1753,18 +1728,6 @@ Records disabled until a use for them is found
 						pref_species = new newtype()
 						//let's ensure that no weird shit happens on species swapping.
 						custom_species = null
-						if(!parent.can_have_part("body_markings"))
-							features["body_markings"] = "None"
-						if(!parent.can_have_part("mam_body_markings"))
-							features["mam_body_markings"] = "None"
-						if(parent.can_have_part("mam_body_markings"))
-							if(features["mam_body_markings"] == "None")
-								features["mam_body_markings"] = "Plain"
-						if(parent.can_have_part("tail_lizard"))
-							features["tail_lizard"] = "Smooth"
-						if(pref_species.id == "felinid")
-							features["mam_tail"] = "Cat"
-							features["mam_ears"] = "Cat"
 
 						//Now that we changed our species, we must verify that the mutant colour is still allowed.
 						var/temp_hsv = RGBtoHSV(features["mcolor"])
@@ -1773,7 +1736,7 @@ Records disabled until a use for them is found
 						if(features["mcolor2"] == "#000000" || (!(MUTCOLORS_PARTSONLY in pref_species.species_traits) && ReadHSV(temp_hsv)[3] < ReadHSV("#202020")[3]))
 							features["mcolor2"] = pref_species.default_color
 						if(features["mcolor3"] == "#000000" || (!(MUTCOLORS_PARTSONLY in pref_species.species_traits) && ReadHSV(temp_hsv)[3] < ReadHSV("#202020")[3]))
-							features["mcolor3"] = pref_species.default_color
+/*							features["mcolor3"] = pref_species.default_color
 
 				if("custom_species")
 					var/new_species = reject_bad_name(input(user, "Choose your species subtype, if unique. This will show up on examinations and health scans. Do not abuse this:", "Character Preference", custom_species) as null|text)
@@ -1781,7 +1744,7 @@ Records disabled until a use for them is found
 						custom_species = new_species
 					else
 						custom_species = null
-/*
+
 				if("mutant_color")
 					var/new_mutantcolor = input(user, "Choose your character's alien/mutant color:", "Character Preference","#"+features["mcolor"]) as color|null
 					if(new_mutantcolor)
@@ -1839,7 +1802,7 @@ Records disabled until a use for them is found
 					new_ipc_antenna = input(user, "Choose your character's antenna:", "Character Preference") as null|anything in snowflake_antenna_list
 					if(new_ipc_antenna)
 						features["ipc_antenna"] = new_ipc_antenna
-*/
+
 				if("tail_lizard")
 					var/new_tail
 					new_tail = input(user, "Choose your character's tail:", "Character Preference") as null|anything in GLOB.tails_list_lizard
@@ -1887,13 +1850,13 @@ Records disabled until a use for them is found
 							features["taur"] = "None"
 							features["tail_human"] = "None"
 							features["tail_lizard"] = "None"
-
+*/
 				if("meat_type")
 					var/new_meat
 					new_meat = input(user, "Choose your character's meat type:", "Character Preference") as null|anything in GLOB.meat_types
 					if(new_meat)
 						features["meat_type"] = new_meat
-
+/*
 				if("snout")
 					var/list/snowflake_snouts_list = list()
 					for(var/path in GLOB.snouts_list)
@@ -1974,13 +1937,13 @@ Records disabled until a use for them is found
 						features["body_markings"] = new_body_markings
 						if(new_body_markings != "None")
 							features["mam_body_markings"] = "None"
-
+*/
 				if("legs")
 					var/new_legs
 					new_legs = input(user, "Choose your character's legs:", "Character Preference") as null|anything in GLOB.legs_list
 					if(new_legs)
 						features["legs"] = new_legs
-
+/*
 				if("insect_wings")
 					var/new_insect_wings
 					new_insect_wings = input(user, "Choose your character's wings:", "Character Preference") as null|anything in GLOB.insect_wings_list
@@ -2004,7 +1967,7 @@ Records disabled until a use for them is found
 					new_insect_markings = input(user, "Choose your character's markings:", "Character Preference") as null|anything in GLOB.insect_markings_list
 					if(new_insect_markings)
 						features["insect_markings"] = new_insect_markings
-
+*/
 				if("s_tone")
 					var/list/choices = GLOB.skin_tones - GLOB.nonstandard_skin_tones
 					if(CONFIG_GET(flag/allow_custom_skintones))
@@ -2024,7 +1987,7 @@ Records disabled until a use for them is found
 						else
 							use_custom_skin_tone = FALSE
 							skin_tone = new_s_tone
-
+/*
 				if("taur")
 					var/list/snowflake_taur_list = list()
 					for(var/path in GLOB.taur_list)
@@ -2118,7 +2081,7 @@ Records disabled until a use for them is found
 					new_dors = input(user, "Choose your character's dorsal tube type:", "Character Preference") as null|anything in GLOB.xeno_dorsal_list
 					if(new_dors)
 						features["xenodorsal"] = new_dors
-
+*/
 				//Genital code
 				if("cock_color")
 					var/new_cockcolor = input(user, "Penis color:", "Character Preference","#"+features["cock_color"]) as color|null
