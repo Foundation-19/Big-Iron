@@ -445,7 +445,7 @@
 
 /datum/crafting_recipe/tribalwar/legendaryclawcloak
 	name = "Legendary Deathclaw Cloak"
-	result = /obj/item/clothing/suit/hooded/cloak/hhunter
+	result = /obj/item/clothing/suit/hooded/cloak/razorclaw
 	time = 300
 	reqs = list(/obj/item/melee/unarmed/deathclawgauntlet = 1,
 				/obj/item/stack/sheet/animalhide/chitin = 10,
