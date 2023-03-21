@@ -1466,6 +1466,7 @@ throw use: feed someone alcohol
 	melee_damage_upper = 20
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	stop_automated_movement_when_pulled = 1
+	stop_automated_movement_when_buckled = 1
 	var/obj/item/inventory_back
 	var/is_calf = 0
 	var/food_type = /obj/item/reagent_containers/food/snacks/grown/wheat
@@ -1565,6 +1566,7 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 		driving_component.set_vehicle_dir_layer(EAST, OBJ_LAYER)
 		driving_component.set_vehicle_dir_layer(WEST, OBJ_LAYER)
 		driving_component.drive_verb = "ride"
+		update_driving_speed()
 		to_chat(user, "<span class='notice'>You add [I] to [src].</span>")
 		qdel(I)
 		return
@@ -1583,17 +1585,18 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 /mob/living/simple_animal/horse/updatehealth()
 	LoadComponent(/datum/component/riding)
 	. = ..()
-	update_driving_speed()
+	if (driving_component)
+		update_driving_speed()
 
 /mob/living/simple_animal/horse/proc/update_driving_speed()
 	if(health <= maxHealth * 0.25)
 		driving_component.vehicle_move_delay = 2.20
 	else if(health <= maxHealth * 0.50)
-		driving_component.vehicle_move_delay = 1.90
+		driving_component.vehicle_move_delay = 1.80
 	else if(health <= maxHealth * 0.75)
-		driving_component.vehicle_move_delay = 1.60
+		driving_component.vehicle_move_delay = 1.50
 	else if (health <= maxHealth)
-		driving_component.vehicle_move_delay = 1.40
+		driving_component.vehicle_move_delay = 1.30
 
 /mob/living/simple_animal/horse/death(gibbed)
 	. = ..()
@@ -1602,6 +1605,11 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 	if(buckled_mobs)
 		for(var/mob/living/M in buckled_mobs)
 			unbuckle_mob(M)
+
+/mob/living/simple_animal/horse/BiologicalLife(seconds, times_fired)
+	if(!(. = ..()))
+		return
+	handle_following()
 
 /mob/living/simple_animal/horse/proc/handle_following()
 	if(owner)
