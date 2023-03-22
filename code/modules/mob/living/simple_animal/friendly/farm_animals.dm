@@ -1556,6 +1556,9 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 			to_chat(user, "<span class='warning'>This horse already has a saddle!</span>")
 			return
 
+		icon_state = "horse_saddle"
+		icon_living = "horse_saddle"
+		icon_dead = "horse_saddle_dead"
 		saddle = TRUE
 		can_buckle = TRUE
 		buckle_lying = FALSE
