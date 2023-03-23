@@ -7733,6 +7733,13 @@
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel/darkred,
 /area/f13/village)
+"dkL" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/mortar_kit,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/ncr)
 "dkP" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleft2top"
@@ -16769,6 +16776,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/closet/crate/mortar_shells,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -34878,6 +34886,12 @@
 /mob/living/simple_animal/chicken,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"ogX" = (
+/obj/structure/closet/crate/mortar_shells,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/ncr)
 "ogZ" = (
 /obj/structure/noticeboard{
 	layer = 2.5;
@@ -40268,6 +40282,13 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
+"qzx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate/mortar_shells,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	color = "#e4e4e4"
+	},
+/area/f13/legion)
 "qzI" = (
 /obj/structure/flora/rock/pile/largejungle,
 /obj/effect/turf_decal/weather/dirt{
@@ -51857,6 +51878,7 @@
 "vDe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack/shelf_wood,
+/obj/item/mortar_kit,
 /turf/open/floor/wood/f13/oak{
 	icon_state = "oakfloor2"
 	},
@@ -57171,6 +57193,14 @@
 	icon_state = "outerbordercorner"
 	},
 /area/f13/village)
+"xOc" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/rack,
+/obj/item/mortar_kit,
+/turf/open/floor/wood/f13/oak,
+/area/f13/merchant)
 "xOi" = (
 /obj/machinery/light/small/broken{
 	dir = 1
@@ -64342,7 +64372,7 @@ fWP
 uKz
 uKz
 uKz
-uKz
+ogX
 nfg
 cpK
 bkk
@@ -64598,7 +64628,7 @@ nfg
 fGx
 fGx
 dJn
-kMV
+dkL
 bdo
 nfg
 lKG
@@ -84488,7 +84518,7 @@ xiQ
 cOg
 sqZ
 dRs
-cOg
+xOc
 gIZ
 ftu
 cOg
@@ -117740,7 +117770,7 @@ pkZ
 uGH
 xLu
 xLu
-xLu
+qzx
 uUS
 txw
 cNe
