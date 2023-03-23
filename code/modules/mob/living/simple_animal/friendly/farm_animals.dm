@@ -1434,6 +1434,64 @@ throw use: feed someone alcohol
 		..()
 */
 
+
+///////////////////////////
+//Erabite's Horse Armor//
+//////////////////////////
+
+/obj/item/horsearmor
+	name = "horse armor"
+	desc = "A armor made for horses using metal and armor plates, this protects horses in exchange for speed."
+	icon = 'icons/fallout/clothing/horse_armor.dmi'
+	icon_state = "horse_armor"
+
+/obj/item/horsearmorncr
+	name = "ncr horse armor"
+	desc = "A armor made for NCR horses using metal and armor plates, this protects horses in exchange for speed."
+	icon = 'icons/fallout/clothing/horse_armor.dmi'
+	icon_state = "horse_armor_ncr"
+
+/obj/item/horsearmorlegion
+	name = "legion horse armor"
+	desc = "A armor made for legion horses using metal and armor plates, this protects horses in exchange for speed."
+	icon = 'icons/fallout/clothing/horse_armor.dmi'
+	icon_state = "horse_armor_legion"
+
+/datum/crafting_recipe/horsearmor
+	name = "Horse Armor"
+	result = /obj/item/horsearmor
+	time = 120
+	reqs = list(/obj/item/stack/crafting/armor_plate = 10,
+				/obj/item/stack/sheet/metal = 30)
+	tools = list(TOOL_FORGE)
+	subcategory = CAT_ARMOR
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/horsearmorncr
+	name = "NCR Horse Armor"
+	result = /obj/item/horsearmorncr
+	time = 60
+	reqs = list(/obj/item/horsearmor = 1,
+				/obj/item/toy/crayon/spraycan = 1)
+	subcategory = CAT_ARMOR
+	category = CAT_CLOTHING
+	always_available = FALSE
+
+/datum/crafting_recipe/horsearmorlegion
+	name = "Legion Horse Armor"
+	result = /obj/item/horsearmorlegion
+	time = 60
+	reqs = list(/obj/item/horsearmor = 1,
+				/obj/item/toy/crayon/spraycan = 1)
+	subcategory = CAT_ARMOR
+	category = CAT_CLOTHING
+	always_available = FALSE
+
+///////////////////////////////
+//End Erabite's Horse Armor//
+//////////////////////////////
+
+
 /mob/living/simple_animal/horse //SlapDrink#0083 |he made the sprite :0|
 	name = "horse"
 	desc = "Horses commonly used for logistics and transportation over long distances. Surprisingly this horse isn't fully mutated like the rest of the animals."
@@ -1467,6 +1525,13 @@ throw use: feed someone alcohol
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	stop_automated_movement_when_pulled = 1
 	stop_automated_movement_when_buckled = 1
+	
+	//Variables for horse speed allowing for easier editing//
+	var/full_speed = 1.3 
+	var/high_speed = 1.5
+	var/medium_speed = 1.8
+	var/low_speed = 2.2 
+	////////////////////////////////////////////////////////
 	var/obj/item/inventory_back
 	var/is_calf = 0
 	var/food_type = /obj/item/reagent_containers/food/snacks/grown/wheat
@@ -1489,6 +1554,9 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 	var/collar = FALSE
 	var/bridle = FALSE
 	var/saddle = FALSE
+	var/wearing_horse_armor = FALSE
+	var/wearing_ncr_horse_armor = FALSE
+	var/wearing_legion_horse_armor = FALSE
 	var/brand = ""
 
 ///////////
@@ -1583,6 +1651,45 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 
 		if(!brand)
 			return
+	
+	if(istype(I,/obj/item/horsearmor) || istype(I,/obj/item/horsearmorncr) || istype(I,/obj/item/horsearmorlegion))
+		if(stat == DEAD)
+			to_chat(user, "<span class='warning'>You cannot add anything to a dead horse!</span>")
+			return
+		if(wearing_horse_armor)
+			to_chat(user, "<span class='warning'>This horse already has armor!</span>")
+			return
+		if(!saddle)
+			to_chat(user, "<span class='warning'>You need to add a saddle to the horse before adding armor!</span>")
+			return
+
+		wearing_horse_armor = TRUE
+
+		if(istype(I,/obj/item/horsearmorncr))
+			wearing_ncr_horse_armor = TRUE
+			icon_state = "horse_armor_ncr"
+			icon_living = "horse_armor_ncr"
+			icon_dead = "horse_armor_ncr_dead"
+		else if(istype(I,/obj/item/horsearmorlegion))
+			wearing_legion_horse_armor = TRUE
+			icon_state = "horse_armor_legion"
+			icon_living = "horse_armor_legion"
+			icon_dead = "horse_armor_legion_dead"
+		else
+			icon_state = "horse_armor"
+			icon_living = "horse_armor"
+			icon_dead = "horse_armor_dead"
+
+		maxHealth = 200
+		health = health * 2
+		full_speed += 0.2
+		high_speed += 0.2
+		medium_speed += 0.2
+		low_speed += 0.2
+		update_driving_speed()
+		to_chat(user, "<span class='notice'>You add [I] to [src], giving it extra protection.</span>")
+		qdel(I)
+		return
 
 
 /mob/living/simple_animal/horse/updatehealth()
@@ -1593,13 +1700,13 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 
 /mob/living/simple_animal/horse/proc/update_driving_speed()
 	if(health <= maxHealth * 0.25)
-		driving_component.vehicle_move_delay = 2.20
+		driving_component.vehicle_move_delay = low_speed
 	else if(health <= maxHealth * 0.50)
-		driving_component.vehicle_move_delay = 1.80
+		driving_component.vehicle_move_delay = medium_speed
 	else if(health <= maxHealth * 0.75)
-		driving_component.vehicle_move_delay = 1.50
+		driving_component.vehicle_move_delay = high_speed
 	else if (health <= maxHealth)
-		driving_component.vehicle_move_delay = 1.30
+		driving_component.vehicle_move_delay = full_speed
 
 /mob/living/simple_animal/horse/death(gibbed)
 	. = ..()
@@ -1637,6 +1744,37 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 		name = initial(name)
 		to_chat(user, "<span class='notice'>You remove the collar from [src], dropping it on the ground.</span>")
 		new /obj/item/brahmincollar(user.loc)
+	
+	if((saddle || wearing_horse_armor) && user.a_intent == INTENT_HARM)
+		if(wearing_horse_armor)
+			wearing_horse_armor = FALSE
+			maxHealth = 100
+			health = health / 2
+			full_speed -= 0.2
+			high_speed -= 0.2
+			medium_speed -= 0.2
+			low_speed -= 0.2
+			update_driving_speed()
+			icon_state = "horse_saddle"
+			icon_living = "horse_saddle"
+			icon_dead = "horse_saddle_dead"
+			to_chat(user, "<span class='notice'>You remove the armor from [src], dropping it on the ground.</span>")
+			if(wearing_ncr_horse_armor)
+				wearing_ncr_horse_armor = FALSE
+				new /obj/item/horsearmorncr(user.loc)
+			else if(wearing_legion_horse_armor)
+				wearing_legion_horse_armor = FALSE
+				new /obj/item/horsearmorlegion(user.loc)
+			else
+				new /obj/item/horsearmor(user.loc)
+		else
+			saddle = FALSE
+			can_buckle = FALSE
+			icon_state = "horse"
+			icon_living = "horse"
+			icon_dead = "horse_dead"
+			to_chat(user, "<span class='notice'>You remove the saddle from [src], dropping it on the ground.</span>")
+			new /obj/item/brahminsaddle(user.loc)
 
 	if(user == owner)
 		if(bridle && user.a_intent == INTENT_HELP)
