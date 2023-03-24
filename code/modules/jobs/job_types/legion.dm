@@ -414,12 +414,12 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Aspiring Prime Decanus"
 	suit_store = /obj/item/twohanded/spear/lance
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/ammo_box/magazine/uzim9mm = 2,
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 3,
 		/obj/item/restraints/legcuffs/bola = 1,
 		/obj/item/melee/onehanded/knife/throwing = 2,
-		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever = 1
+		/obj/item/gun/ballistic/automatic/smg/mp5 = 1
 		)
 
 /datum/outfit/loadout/decprimrear
@@ -449,7 +449,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 2,
-		/obj/item/restraints/legcuffs/bola = 2
+		/obj/item/restraints/legcuffs/bola = 2,
+		/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 3,
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		)
 
 // ----------------- RECRUIT DECANUS ---------------------
@@ -741,6 +743,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Legion Frumentarius"
 	jobtype = /datum/job/CaesarsLegion/Legionary/f13frumentarius
 	neck = /obj/item/storage/belt/holster
+	mask = /obj/item/clothing/mask/bandana/legion
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	suit = /obj/item/clothing/suit/armor/f13/legion/frumentarius
 	id = /obj/item/card/id/syndicate
@@ -754,7 +757,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/binoculars = 1,
 		/obj/item/ammo_box/a357 = 2,
-		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
+		/obj/item/storage/survivalkit/medical/legion = 1
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionary/f13frumentarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
