@@ -445,9 +445,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/decprimwar
 	name = "Warmonger Prime Decanus"
-	suit_store = /obj/item/melee/onehanded/machete/spatha
+	suit_store = /obj/item/melee/powered/ripper
 	backpack_contents = list(
-		/obj/item/melee/onehanded/machete/spatha = 1,
+		/obj/item/melee/powered/ripper = 1,
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 2,
 		/obj/item/restraints/legcuffs/bola = 2,
