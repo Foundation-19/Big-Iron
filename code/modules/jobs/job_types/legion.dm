@@ -424,6 +424,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/decprimrear
 	name = "Battleborn Prime Decanus"
+	suit_store = /obj/item/gun/ballistic/automatic/smg/american180 // token gun
 	backpack_contents = list(
 		/obj/item/shield/riot/legion = 1,
 		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
