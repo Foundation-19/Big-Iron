@@ -13,10 +13,8 @@
 	/datum/surgery_step/clamp_bleeders,
 	/datum/surgery_step/incise,
 	/datum/surgery_step/graft_synthtissue,
-	/datum/surgery_step/close
-	)
+	/datum/surgery_step/close)
 	requires_trait = 2
-	requires_trait = "MEDICALGRADUATE"
 
 //repair organs
 /datum/surgery_step/graft_synthtissue
