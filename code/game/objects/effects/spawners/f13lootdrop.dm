@@ -1004,6 +1004,7 @@
 	name ="tier three firearms"
 	loot = list(/obj/effect/spawner/bundle/f13/trail,
 				/obj/effect/spawner/bundle/f13/miniuzi,
+				/obj/effect/spawner/bundle/f13/worn_assault_carbine,
 				/obj/effect/spawner/bundle/f13/auto5,
 				/obj/effect/spawner/bundle/f13/m1garand,
 				/obj/effect/spawner/bundle/f13/deagle,
@@ -1401,6 +1402,13 @@
 
 /obj/effect/spawner/bundle/f13/assault_carbine
 	name = "assault carbine and ammo spawner"
+	items = list(
+				/obj/item/gun/ballistic/automatic/assault_carbine,
+				/obj/item/ammo_box/magazine/m5mm
+				)
+
+/obj/effect/spawner/bundle/f13/worn_assault_carbine
+	name = "worn assault carbine and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/assault_carbine/worn,
 				/obj/item/ammo_box/magazine/m5mm
