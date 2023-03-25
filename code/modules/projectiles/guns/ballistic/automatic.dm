@@ -1280,7 +1280,7 @@
 	icon_state = "assault_carbine"
 	fire_delay = 3.5
 	burst_shot_delay = 2.2
-	spread = 14
+	spread = 20
 	extra_damage = 15
 
 //FN-FAL				Keywords: 7.62mm, Automatic, 10/20 round magazine
