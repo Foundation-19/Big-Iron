@@ -354,7 +354,6 @@
 	taste_description = "clean water"
 	glass_name = "glass of purified water"
 	glass_desc = "A glass of water clean of radiation or any contamination."
-	value = REAGENT_VALUE_AMAZING
 	radiation_amount = 0
 	thirst_factor = THIRST_FACTOR * 30 // 22.5 per 5 units; 225 per 50; 1125 per 250
 	can_synth = FALSE
