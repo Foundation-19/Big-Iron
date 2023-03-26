@@ -4816,7 +4816,11 @@
 	},
 /area/f13/bunker)
 "bRW" = (
-/mob/living/simple_animal/hostile/raider/junker/boss,
+/mob/living/simple_animal/hostile/raider/junker/boss{
+	robust_searching = 1;
+	minimum_distance = 2;
+	retreat_distance = 5
+	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "bSi" = (
@@ -4941,6 +4945,13 @@
 	},
 /turf/open/floor/wood/f13/stage_bl,
 /area/f13/building)
+"bVV" = (
+/obj/effect/decal/waste{
+	icon_state = "goo5"
+	},
+/mob/living/simple_animal/hostile/ghoul/glowing,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "bVW" = (
 /obj/structure/barricade/bars,
 /obj/structure/window/fulltile/store{
@@ -6891,8 +6902,7 @@
 /turf/open/indestructible/ground/inside/dirt/stamped,
 /area/f13/legion)
 "cRr" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/effect/decal/waste,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
 "cRM" = (
@@ -7897,7 +7907,6 @@
 /area/f13/building)
 "dmJ" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -9004,8 +9013,8 @@
 /area/f13/village)
 "dJn" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/ammo_box/magazine/ammobelt,
-/obj/item/ammo_box/magazine/ammobelt,
+/obj/item/ammo_box/magazine/ammobelt/m1919,
+/obj/item/ammo_box/magazine/ammobelt/m1919,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -10927,6 +10936,10 @@
 "euO" = (
 /obj/structure/chair/office/light{
 	dir = 1
+	},
+/obj/effect/decal/waste{
+	pixel_x = -5;
+	pixel_y = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
@@ -13890,9 +13903,8 @@
 	},
 /area/f13/ncr)
 "fCg" = (
-/obj/structure/HMG{
-	dir = 8;
-	name = "Defender of the Faith"
+/obj/structure/HMG/cotc{
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
@@ -15254,7 +15266,6 @@
 /area/f13/building)
 "gfL" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
 /obj/effect/spawner/lootdrop/f13/cash_legion_med,
 /turf/open/indestructible/ground/outside/dirt{
 	icon_state = "dirtcorner"
@@ -15399,11 +15410,6 @@
 /obj/structure/simple_door/bunker,
 /obj/machinery/door/poddoor/shutters{
 	id = "raiderhubarmory"
-	},
-/obj/structure/fence{
-	climbable = 1;
-	dir = 1;
-	resistance_flags = 64
 	},
 /obj/effect/turf_decal/climb{
 	dir = 4
@@ -17289,7 +17295,10 @@
 /turf/open/floor/wood/wood_large,
 /area/f13/building)
 "gSH" = (
-/mob/living/simple_animal/hostile/deathclaw/mother,
+/mob/living/simple_animal/hostile/deathclaw/mother{
+	speed = 0.45;
+	name = "alpha mother deathclaw"
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "gTp" = (
@@ -17819,7 +17828,7 @@
 /area/f13/kebab)
 "heh" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -18912,9 +18921,11 @@
 	},
 /area/f13/wasteland)
 "hwy" = (
-/obj/item/twohanded/sledgehammer/simple,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
+/mob/living/simple_animal/hostile/raider/junker/creator,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/building)
 "hwC" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/wasteland)
@@ -21692,9 +21703,15 @@
 	},
 /area/f13/legion)
 "iDX" = (
-/obj/item/clothing/head/helmet/f13/combat/rangerbroken,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/waste{
+	icon_state = "goo10"
+	},
+/obj/effect/mob_spawn/human/corpse/raider,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "iEa" = (
 /obj/structure/chair/sofa/left,
 /turf/open/floor/wood/f13/carpet,
@@ -23885,7 +23902,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "jyp" = (
-/obj/machinery/vending/medical,
+/obj/machinery/vending/medical{
+	integrity_failure = 1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/clinic)
 "jyr" = (
@@ -23988,11 +24007,11 @@
 /area/f13/building)
 "jBy" = (
 /obj/structure/rack,
-/obj/item/book/granter/trait/trekking,
 /obj/machinery/light{
 	dir = 4;
 	pixel_y = -16
 	},
+/obj/effect/spawner/lootdrop/f13/traitbooks,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "jBD" = (
@@ -26848,6 +26867,7 @@
 /obj/effect/overlay/junk/mirror{
 	pixel_y = 32
 	},
+/mob/living/simple_animal/hostile/raider/baseball,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -33266,8 +33286,8 @@
 	},
 /area/f13/village)
 "nrZ" = (
-/obj/structure/simple_door/bunker,
 /obj/structure/barricade/wooden,
+/obj/structure/obstacle/jammed_door,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
 	},
@@ -33810,8 +33830,6 @@
 /obj/machinery/light/fo13colored/Red{
 	dir = 8
 	},
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -34391,6 +34409,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/effect/decal/waste,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
 "nUF" = (
@@ -35272,9 +35291,15 @@
 /turf/closed/wall/f13/wood,
 /area/f13/legion)
 "oqa" = (
-/obj/machinery/vending/medical,
-/turf/open/floor/plasteel/f13/vault_floor/green/white,
-/area/f13/building)
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/waste{
+	icon_state = "goo12"
+	},
+/mob/living/simple_animal/hostile/ghoul/legendary,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "oqe" = (
 /obj/machinery/light/lampost,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -40398,7 +40423,10 @@
 	},
 /area/f13/kebab)
 "qBK" = (
-/mob/living/simple_animal/hostile/raider/junker/boss,
+/mob/living/simple_animal/hostile/raider/junker/boss{
+	minimum_distance = 2;
+	robust_searching = 1
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -40687,6 +40715,12 @@
 /area/f13/legion)
 "qJs" = (
 /obj/item/gun/ballistic/revolver/revolver44/desert_ranger,
+/obj/structure/closet/secure_closet/goodies{
+	anchored = 1;
+	name = "ranger cache"
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5,
+/obj/item/clothing/head/helmet/f13/combat/rangerbroken,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "qJv" = (
@@ -42120,6 +42154,14 @@
 	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
+"rpJ" = (
+/obj/effect/decal/waste{
+	pixel_x = 20;
+	pixel_y = 1
+	},
+/mob/living/simple_animal/hostile/ghoul/glowing,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/clinic)
 "rpO" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp,
@@ -42948,7 +42990,6 @@
 "rKC" = (
 /obj/structure/rack,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "whitedirtysolid"
 	},
@@ -42999,10 +43040,11 @@
 	},
 /area/f13/wasteland)
 "rMT" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
-/turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/clinic)
+/obj/structure/stairs/south{
+	color = "#A47449"
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "rNa" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
@@ -47060,6 +47102,9 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/effect/decal/waste{
+	icon_state = "goo8"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
 "tvh" = (
@@ -47328,7 +47373,6 @@
 /area/f13/building)
 "tzt" = (
 /obj/structure/table/reinforced,
-/obj/effect/spawner/lootdrop/f13/medical/vault/meds,
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
@@ -48281,8 +48325,13 @@
 	},
 /area/f13/building)
 "tXm" = (
-/obj/structure/table/reinforced,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/mob/living/simple_animal/hostile/handy/nsb,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
 "tXo" = (
@@ -51419,7 +51468,6 @@
 /obj/structure/rack,
 /obj/item/reagent_containers/blood/radaway,
 /obj/item/reagent_containers/blood/radaway,
-/obj/item/book/granter/trait/lowsurgery,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/clinic)
 "vnR" = (
@@ -52885,7 +52933,8 @@
 	dir = 4
 	},
 /obj/machinery/vending/medical{
-	pixel_x = -3
+	pixel_x = -3;
+	integrity_failure = 1
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -55801,7 +55850,6 @@
 	color = "000000"
 	},
 /obj/structure/closet/crate/large,
-/obj/item/ammo_box/magazine/ammobelt,
 /turf/open/floor/wood/f13/oak,
 /area/f13/merchant)
 "xjc" = (
@@ -57686,9 +57734,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/side,
 /area/f13/clinic)
 "xUW" = (
-/obj/effect/spawner/lootdrop/f13/blueprintMid,
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/blueprintLowMid,
+/obj/effect/spawner/lootdrop/f13/blueprintHigh,
+/obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -57738,6 +57786,10 @@
 /obj/structure/table,
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/reagent_containers/glass/beaker,
+/obj/effect/decal/waste{
+	pixel_x = 18;
+	pixel_y = 12
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
 "xWl" = (
@@ -59703,7 +59755,7 @@ gcK
 gcK
 mwp
 mwp
-mwp
+sas
 mwp
 xuY
 gcK
@@ -60987,7 +61039,7 @@ gcK
 gcK
 gcK
 mwp
-mwp
+yax
 gcK
 gcK
 gcK
@@ -61759,6 +61811,7 @@ mwp
 mwp
 mwp
 mxl
+sas
 mwp
 mwp
 mwp
@@ -61766,7 +61819,6 @@ mwp
 mwp
 mwp
 mwp
-iDX
 gcK
 gcK
 gcK
@@ -62636,7 +62688,7 @@ gbL
 ktB
 uqa
 rpu
-vXh
+hwy
 uqa
 uqa
 itJ
@@ -77141,7 +77193,7 @@ koD
 dMW
 fyf
 thG
-hwy
+fyf
 fyf
 fyf
 fyf
@@ -81515,7 +81567,7 @@ fyf
 fyf
 fyf
 fyf
-fyf
+rMT
 kEI
 xkx
 kuH
@@ -105173,7 +105225,7 @@ vht
 yjB
 xwE
 vht
-cRr
+tjJ
 kSb
 dDJ
 dDJ
@@ -105425,7 +105477,7 @@ rOF
 vht
 oUG
 jwD
-rMT
+oUG
 vht
 yjB
 xwE
@@ -105949,7 +106001,7 @@ lKm
 hAB
 fmU
 vht
-rMT
+oUG
 cet
 gwN
 vht
@@ -106202,7 +106254,7 @@ vdV
 rOF
 vht
 vTf
-tXm
+tjJ
 tja
 mpk
 vht
@@ -106720,8 +106772,8 @@ nEe
 nNa
 gaJ
 vht
-vyN
-tja
+rpJ
+iDX
 euO
 nMb
 vdV
@@ -106966,7 +107018,7 @@ yjB
 fWL
 vht
 vyN
-sIm
+tXm
 ndM
 vht
 vdV
@@ -106978,8 +107030,8 @@ nNa
 wFi
 vht
 meq
-tja
-vyN
+oqa
+cRr
 kdu
 akM
 xwE
@@ -107236,7 +107288,7 @@ vnM
 vht
 xxr
 fvm
-vyN
+bVV
 vht
 yjB
 rOF
@@ -121367,7 +121419,7 @@ sYX
 opD
 rtk
 uqa
-oqa
+uhh
 uhh
 uhh
 uhh
