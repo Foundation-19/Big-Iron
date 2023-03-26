@@ -78,7 +78,7 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	icon_state = "patch_healingpowder"
 	list_reagents = list(/datum/reagent/medicine/healing_powder = 10)
-	self_delay = 0
+	self_delay = 5
 
 // ---------------------------------
 // HEALING POULTICE
@@ -89,7 +89,7 @@
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 	list_reagents = list(/datum/reagent/medicine/healing_powder/poultice = 10)
 	icon_state = "patch_healingpoultice"
-	self_delay = 0
+	self_delay = 5
 
 
 // ---------------------------------
@@ -111,7 +111,7 @@
 	desc = "A strong herbal healing concoction which enables wounded soldiers and travelers to tend to their wounds without stopping during journeys."
 	icon_state = "patch_bitterdrink"
 	list_reagents = list(/datum/reagent/medicine/bitter_drink = 15)
-	self_delay = 0
+	self_delay = 10
 	icon = 'icons/fallout/objects/medicine/drugs.dmi'
 
 // ---------------------------------
