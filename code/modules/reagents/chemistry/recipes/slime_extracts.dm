@@ -50,13 +50,6 @@
 
 //Green
 
-/datum/chemical_reaction/slime/slimemutate
-	name = "Mutation Toxin"
-	id = /datum/reagent/slime_toxin
-	results = list(/datum/reagent/slime_toxin = 1)
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
-	required_other = TRUE
-	required_container = /obj/item/slime_extract/green
 
 /datum/chemical_reaction/slime/slimehuman
 	name = "Human Mutation Toxin"
@@ -65,23 +58,6 @@
 	required_reagents = list(/datum/reagent/blood = 1)
 	required_other = TRUE
 	required_container = /obj/item/slime_extract/green
-
-/datum/chemical_reaction/slime/slimelizard
-	name = "Lizard Mutation Toxin"
-	id = /datum/reagent/mutationtoxin/lizard
-	results = list(/datum/reagent/mutationtoxin/lizard = 1)
-	required_reagents = list(/datum/reagent/radium = 1)
-	required_other = TRUE
-	required_container = /obj/item/slime_extract/green
-
-/datum/chemical_reaction/slime/slimemammal
-	name = "Mammal Mutation Toxin"
-	id = /datum/reagent/mutationtoxin/mammal
-	results = list(/datum/reagent/mutationtoxin/mammal = 1)
-	required_reagents = list(/datum/reagent/water = 1)
-	required_other = TRUE
-	required_container = /obj/item/slime_extract/green
-
 
 //Metal
 /datum/chemical_reaction/slime/slimemetal
