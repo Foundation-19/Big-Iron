@@ -590,11 +590,11 @@
 	righthand_file = 'icons/mob/inhands/equipment/backpack_righthand.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_HUGE
-	slowdown = 1
+	slowdown = 0.8
 	var/obj/item/gun/energy/minigun/gun
 	var/armed = 0 //whether the gun is attached, 0 is attached, 1 is the gun is wielded.
 	var/overheat = 0
-	var/overheat_max = 120
+	var/overheat_max = 160
 	var/heat_diffusion = 2 //How much heat is lost per tick (slower than the minigun)
 
 /obj/item/minigunpack/Initialize()
