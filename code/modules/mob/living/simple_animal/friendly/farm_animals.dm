@@ -1504,8 +1504,8 @@ throw use: feed someone alcohol
 	speak_emote = list("nays","nays hauntingly")
 	emote_hear = list("brays.")
 	emote_see = list("shakes its head.")
-	health = 100
-	maxHealth = 100
+	health = 75
+	maxHealth = 75
 	speak_chance = 1
 	see_in_dark = 6
 	guaranteed_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 4, /obj/item/stack/sheet/sinew = 2, /obj/item/stack/sheet/bone = 3)
@@ -1527,9 +1527,9 @@ throw use: feed someone alcohol
 	stop_automated_movement_when_buckled = 1
 	
 	//Variables for horse speed allowing for easier editing//
-	var/full_speed = 1.3 
-	var/high_speed = 1.5
-	var/medium_speed = 1.8
+	var/full_speed = 1.4
+	var/high_speed = 1.6
+	var/medium_speed = 1.9
 	var/low_speed = 2.2 
 	////////////////////////////////////////////////////////
 	var/obj/item/inventory_back
@@ -1538,7 +1538,9 @@ throw use: feed someone alcohol
 	var/has_calf = 0
 	var/young_type = /mob/living/simple_animal/horse
 	var/datum/component/riding/driving_component
-
+	var/datum/action/cooldown/horse/action = null
+	var/base_action = /datum/action/cooldown/horse
+	
 /*
 Bags for storage
 Collar for a novelty name
@@ -1558,6 +1560,28 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 	var/wearing_ncr_horse_armor = FALSE
 	var/wearing_legion_horse_armor = FALSE
 	var/brand = ""
+
+//
+// Horse sprint ability
+
+	var/sprint_duration = 20
+	var/sprinting = FALSE  // Is the horse currently sprinting?
+
+// Object to block the player from using two-handed weapons when riding a horse. 
+	var/saddle_held = FALSE
+
+/obj/item/saddlehand
+	name = "Saddle"
+	desc = "Your holding onto the saddle while riding the horse."
+	icon = 'icons/fallout/objects/tools.dmi'
+	icon_state = "brahminsaddle"
+
+
+/obj/item/saddlehand/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
+
+//
 
 ///////////
 //horse//
@@ -1624,6 +1648,7 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 			to_chat(user, "<span class='warning'>This horse already has a saddle!</span>")
 			return
 
+		action = new base_action(src)
 		icon_state = "horse_saddle"
 		icon_living = "horse_saddle"
 		icon_dead = "horse_saddle_dead"
@@ -1680,7 +1705,7 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 			icon_living = "horse_armor"
 			icon_dead = "horse_armor_dead"
 
-		maxHealth = 200
+		maxHealth = 150
 		health = health * 2
 		full_speed += 0.2
 		high_speed += 0.2
@@ -1691,6 +1716,41 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 		qdel(I)
 		return
 
+/mob/living/simple_animal/horse/post_buckle_mob(mob/living/M)
+	. = ..()
+	action.Grant(M)	
+
+/mob/living/simple_animal/horse/post_unbuckle_mob(mob/living/M)
+	. = ..()
+	action.Remove(M)
+
+/datum/action/cooldown/horse/Trigger()
+	. = ..()
+	var/mob/living/simple_animal/horse/M = target
+
+	if(M.sprinting)
+		return
+
+	if(!IsAvailable())
+		return
+
+	M.sprinting = TRUE
+	M.full_speed -= 0.4
+	M.high_speed -= 0.4
+	M.medium_speed -= 0.4
+	M.low_speed -= 0.4
+	M.update_driving_speed()
+
+	sleep(M.sprint_duration)
+
+	M.sprinting = FALSE 
+	M.full_speed += 0.4
+	M.high_speed += 0.4
+	M.medium_speed += 0.4
+	M.low_speed += 0.4
+	M.update_driving_speed()
+
+	StartCooldown()
 
 /mob/living/simple_animal/horse/updatehealth()
 	LoadComponent(/datum/component/riding)
@@ -1719,6 +1779,12 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 /mob/living/simple_animal/horse/BiologicalLife(seconds, times_fired)
 	if(!(. = ..()))
 		return
+	if(!Move() && has_buckled_mobs())
+		var/mob/living/carbon/human/M = buckled_mobs[1]
+		var/H = M.is_holding_item_of_type(/obj/item/saddlehand)
+		if(H)
+			qdel(H)
+			saddle_held = FALSE
 	handle_following()
 
 /mob/living/simple_animal/horse/proc/handle_following()
@@ -1748,7 +1814,7 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 	if((saddle || wearing_horse_armor) && user.a_intent == INTENT_HARM)
 		if(wearing_horse_armor)
 			wearing_horse_armor = FALSE
-			maxHealth = 100
+			maxHealth = 75
 			health = health / 2
 			full_speed -= 0.2
 			high_speed -= 0.2
@@ -1787,4 +1853,28 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 				follow = TRUE
 				return
 
+/mob/living/simple_animal/horse/Moved()
+	. = ..()
+	horseslot()
+
+/mob/living/simple_animal/horse/proc/horseslot()
+	if(has_buckled_mobs() && !saddle_held)
+		var/mob/living/carbon/human/M = buckled_mobs[1]
+		var/lhand = M.get_empty_held_index_for_side("l")
+		var/rhand = M.get_empty_held_index_for_side("r")
+		if(lhand)
+			M.put_in_l_hand(new /obj/item/saddlehand(M))
+			saddle_held = TRUE
+		else if(rhand)
+			M.put_in_r_hand(new /obj/item/saddlehand(M))
+			saddle_held = TRUE
+		else
+			M.drop_all_held_items()
+
+/datum/action/cooldown/horse
+	name = "Horse Sprint"
+	desc = "The horse will sprint for a short time."
+	icon_icon = 'icons/mob/actions/actions_animal.dmi' 
+	button_icon_state = "horse_sprint"
+	cooldown_time = 100
 ////////////////////
