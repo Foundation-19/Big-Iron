@@ -1,4 +1,4 @@
-/datum/computer_file/program/job_management
+/* /datum/computer_file/program/job_management
 	filename = "plexagoncore"
 	filedesc = "Plexagon HR Core"
 	program_icon_state = "id"
@@ -136,4 +136,4 @@
 		priority += job.title
 	data["prioritized"] = priority
 	return data
-
+*/
