@@ -451,7 +451,14 @@
 	name = "7.62 HMG belt"
 	id = "m762 belt"
 	materials = list(/datum/material/iron = 43000, /datum/material/blackpowder = 4500)
-	build_path = /obj/item/ammo_box/magazine/ammobelt
+	build_path = /obj/item/ammo_box/magazine/ammobelt/m1919
+	category = list("initial", "Intermediate Magazines")
+
+/datum/design/ammolathe/a50belt
+	name = ".50 HMG belt"
+	id = "a50belt"
+	materials = list(/datum/material/iron = 43000, /datum/material/blackpowder = 4500)
+	build_path = /obj/item/ammo_box/magazine/ammobelt/m2
 	category = list("initial", "Intermediate Magazines")
 
 /datum/design/ammolathe/w308
@@ -526,14 +533,14 @@
 	materials = list(/datum/material/iron = 6000)
 	build_path = /obj/item/ammo_box/magazine/m10mm_p90/empty
 	category = list("initial", "Advanced Magazines")
-
+/* //Disabled, weapon is built around less ammo capacity. There's a reason why m556_rifle_extended is also disabled under the advanced category
 /datum/design/ammolathe/smg14stacked
 	name = "empty smg stacked magazine (14mm)"
 	id = "m127ssmg"
 	materials = list(/datum/material/iron = 8000)
 	build_path = /obj/item/ammo_box/magazine/smg14/stacked/empty
 	category = list("initial", "Advanced Magazines")
-
+*/
 /datum/design/ammolathe/rifleassault556
 	name = "empty 30rd rifle magazine (5.56mm)"
 	id = "rifleassault556"

@@ -17,8 +17,8 @@
 	layer = BELOW_MOB_LAYER
 	var/spread = 10
 	var/damage_modifier = 25
-	var/penetration_modifier = 10
-	var/mag_type = /obj/item/ammo_box/magazine/ammobelt
+	var/penetration_modifier = 0.2
+	var/mag_type = /obj/item/ammo_box/magazine/ammobelt/m1919
 	var/obj/item/ammo_box/magazine/magazine = null
 	var/reload_time = 20
 
@@ -213,22 +213,31 @@
 
 //Examine
 /obj/structure/HMG/examine(mob/user)
-	..()
+	. = ..()
 	if(!magazine)
-		to_chat(user, "<span class='notice'>\The [src] is unloaded.</span>")
+		. += "<span class='notice'>\The [src] is unloaded.</span>"
 	else
-		to_chat(user, "<span class='notice'>[magazine.ammo_count()] rounds are left in \the [src].</span>")
+		. += "<span class='notice'>[magazine.ammo_count()] rounds are left in \the [src].</span>"
+
+/obj/structure/HMG/cotc
+	name = "Defender of the Faith"
+	desc = "A repaired M2 Browning capable of rapidly discharging .50 BMG rounds. How did this get here? It is a mystery. Alt-Click to unload; screwdriver to repair; wrench to unanchor."
+	icon = 'icons/obj/HMG.dmi'
+	icon_state = "m2"
+	spread = 16
+	damage_modifier = 40
+	penetration_modifier = 0.5
+	mag_type = /obj/item/ammo_box/magazine/ammobelt/m2
+	reload_time = 20
 
 //////////////
 //Ammo Belts//
 //////////////
 
 /obj/item/ammo_box/magazine/ammobelt
-	name = "ammo belt (7.62mm)"
+	name = "ammo belt template"
+	desc = "this should not exist, report this as a bug"
 	icon_state = "762belt"
-	ammo_type = /obj/item/ammo_casing/a762
-	max_ammo = 80
-	caliber = "a762"
 
 /obj/item/ammo_box/magazine/ammobelt/can_load()
 	return 0
@@ -245,3 +254,16 @@
 	if(ammo_count() < 1)
 		del src
 
+/obj/item/ammo_box/magazine/ammobelt/m1919
+	name = "ammo belt (7.62mm)"
+	icon_state = "762belt"
+	ammo_type = /obj/item/ammo_casing/a762
+	max_ammo = 80
+	caliber = "a762"
+
+/obj/item/ammo_box/magazine/ammobelt/m2
+	name = "ammo belt (.50)"
+	icon_state = "762belt"
+	ammo_type = /obj/item/ammo_casing/a50MG
+	max_ammo = 50
+	caliber = "a50MG"
