@@ -373,7 +373,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_enclaveremnant
 	name = "old ear piece"
-	desc = "An old, depricated headset used by the Enclave. It's still working, surprisingly.\nTo access the enclave channel, use :z. Protects ears from flashbangs."
+	desc = "An old, worn-down headset used by the Enclave. It's still working, surprisingly.\nTo access the enclave channel, use :z. Protects ears from flashbangs."
 	icon_state = "syndie_headset"
 	linked_faction = FACTION_ENCLAVE
 	factionized = TRUE
