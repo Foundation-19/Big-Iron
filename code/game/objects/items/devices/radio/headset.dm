@@ -371,6 +371,14 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	factionized = TRUE
 	keyslot = new /obj/item/encryptionkey/headset_enclave
 
+/obj/item/radio/headset/headset_enclaveremnant
+	name = "old ear piece"
+	desc = "This is used by the enclave although it seems to be quite damage it's suprisingly still working.\nTo access the enclave channel, use :z. Protects ears from flashbangs."
+	icon_state = "syndie_headset"
+	linked_faction = FACTION_ENCLAVE
+	factionized = TRUE
+	keyslot = new /obj/item/encryptionkey/headset_enclave
+
 /obj/item/radio/headset/headset_enclave/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))

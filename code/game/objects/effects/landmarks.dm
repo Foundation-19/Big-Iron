@@ -803,6 +803,14 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Enclave Private"
 	icon_state = "uspvt"
 
+/obj/effect/landmark/start/f13/usremnant
+	name = "Enclave Remnant"
+	icon_state = "uspvt"
+
+/obj/effect/landmark/start/f13/usremnantmedic
+	name = "Enclave Remnant Medic"
+	icon_state = "usscientist"
+
 /obj/effect/landmark/start/f13/usscientist
 	name = "Enclave Scientist"
 	icon_state = "usscientist"
