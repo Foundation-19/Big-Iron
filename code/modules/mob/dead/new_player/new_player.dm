@@ -453,6 +453,10 @@
 		alert(src, "An administrator has disabled spawning as the [job.faction] faction!")
 		return FALSE
 
+	if(job.faction && (job.faction in SSjob.flagcaptured))
+		alert(src, "The [job.faction] flag has been captured! Spawning as them is disabled. ")
+		return FALSE
+
 	if(SSticker.late_join_disabled)
 		alert(src, "An administrator has disabled late join spawning.")
 		return FALSE

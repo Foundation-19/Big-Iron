@@ -1,18 +1,10 @@
 /datum/surgery/brain_surgery
 	name = "Brain surgery"
-	steps = list(
-	/datum/surgery_step/incise,
-	/datum/surgery_step/retract_skin,
-	/datum/surgery_step/saw,
-	/datum/surgery_step/clamp_bleeders,
-	/datum/surgery_step/fix_brain,
-	/datum/surgery_step/close)
-
+	steps = list(/datum/surgery_step/incise, /datum/surgery_step/retract_skin, /datum/surgery_step/saw, /datum/surgery_step/clamp_bleeders, /datum/surgery_step/fix_brain, /datum/surgery_step/close)
 	target_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey)
 	possible_locs = list(BODY_ZONE_HEAD)
 	requires_bodypart_type = BODYPART_ORGANIC
-
-	requires_trait = 2
+	requires_trait = 2 // no clue why this doesn't work... maybe target_mobtypes?
 
 /datum/surgery_step/fix_brain
 	name = "fix brain"

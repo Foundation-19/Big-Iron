@@ -58,6 +58,7 @@ Weapons NCRR	Cowboy Repeater, Hunting Rifle, Hunting Shotgun, Caracan Shotgun
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmetmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/horsearmorncr)
 
 ///////////////////////
 /// Colonel - Admin ///
