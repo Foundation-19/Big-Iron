@@ -32,6 +32,8 @@
 	var/wander = 1
 	///When set to 1 this stops the animal from moving when someone is pulling it.
 	var/stop_automated_movement_when_pulled = 1
+	///When set to 1 this stops the animal from moving when someone is buckled to it.
+	var/stop_automated_movement_when_buckled = 1
 
 	///When someone interacts with the simple animal.
 	///Help-intent verb in present continuous tense.
@@ -212,7 +214,7 @@
 		if((isturf(src.loc) || allow_movement_on_non_turfs) && CHECK_MULTIPLE_BITFIELDS(mobility_flags, MOBILITY_STAND|MOBILITY_MOVE) && !buckled)		//This is so it only moves if it's not inside a closet, gentics machine, etc.
 			turns_since_move++
 			if(turns_since_move >= turns_per_move)
-				if(!(stop_automated_movement_when_pulled && pulledby)) //Some animals don't move when pulled
+				if(!(stop_automated_movement_when_pulled && pulledby) && !(stop_automated_movement_when_buckled && has_buckled_mobs())) //Some animals don't move when pulled or if they have a mob buckled to it.
 					var/anydir = pick(GLOB.cardinals)
 					if(Process_Spacemove(anydir))
 						Move(get_step(src, anydir), anydir)
