@@ -21,7 +21,8 @@
 	var/datum/wound/operated_wound								//The actual wound datum instance we're targeting
 	var/datum/wound/targetable_wound							//The wound type this surgery targets
 	var/requires_trait = 1
-	//	0 = low, 1 = mid, 2 = high
+	//	0 = none, 1 = low, 2 = medium, 3 = high
+	// 3 bypasses medical graduate requirement
 	//	(CMO biological/prewar knoweldge expert) MEDICALEXPERT
 	//	(Follower) Medical Graduate
 	//	(Senior BOS scribe) cyberneticist (BOS Head Scribe) cyberneticist & cyberneticist_expert
@@ -99,8 +100,8 @@
 		else
 			return FALSE
 
-	if(requires_trait== "MEDICALGRADUATE") //doctoring trait for offmap tuition, bypasses at mid level knowledge.
-		if(HAS_TRAIT(user,TRAIT_MEDICALGRADUATE) || HAS_TRAIT(user,TRAIT_ABDUCTOR_SCIENTIST_TRAINING))
+	if(requires_trait== "MEDICALGRADUATE") //doctoring trait for offmap tuition, bypasses at high level knowledge. < totally [i think he lied]
+		if(HAS_TRAIT(user,TRAIT_MEDICALGRADUATE)||HAS_TRAIT(user,TRAIT_SURGERY_HIGH)||HAS_TRAIT(user,TRAIT_MEDICALEXPERT)||HAS_TRAIT(user,TRAIT_ABDUCTOR_SCIENTIST_TRAINING))
 			return TRUE
 		else
 			return FALSE

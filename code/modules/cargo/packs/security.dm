@@ -285,7 +285,8 @@
 /datum/supply_pack/security/traitbooks
 	name = "Technical manuals"
 	desc = "A box crammed full of manuals, for reading. SCAV issues, Guns and Ammo, how to operate chem-machines, it's all here! Come in groups of three."
-	cost = 2500
+	goody = PACK_GOODY_PUBLIC
+	cost = 3000
 	contains = list(/obj/effect/spawner/lootdrop/f13/traitbooks,
 					/obj/effect/spawner/lootdrop/f13/traitbooks/low,
 					/obj/effect/spawner/lootdrop/f13/traitbooks/low)
