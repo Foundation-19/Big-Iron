@@ -9,10 +9,9 @@
 		/datum/surgery_step/clamp_bleeders,
 		/datum/surgery_step/incise,
 		/datum/surgery_step/hepatectomy,
-		/datum/surgery_step/close
-		)
+		/datum/surgery_step/close)
 	requires_trait = 2
-	requires_trait = "MEDICALGRADUATE"
+
 
 /datum/surgery/hepatectomy/can_start(mob/user, mob/living/carbon/target)
 	var/obj/item/organ/liver/L = target.getorganslot(ORGAN_SLOT_LIVER)

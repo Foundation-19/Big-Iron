@@ -2325,6 +2325,15 @@
 	sunlight_state = 1
 	},
 /area/f13/wasteland)
+"hq" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/f13{
+	icon_state = "greendirtyfull"
+	},
+/area/f13/building)
 "ht" = (
 /obj/structure/decoration/rag{
 	desc = "A string of bones and skulls.<br>A common warning from tribals and raiders to outsiders.";
@@ -4966,6 +4975,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/f13{
 	icon_state = "greendirtyfull"
 	},
@@ -5205,9 +5215,8 @@
 /area/f13/building)
 "pJ" = (
 /obj/structure/table,
-/obj/item/storage/backpack/duffelbag/med/surgery,
 /obj/item/healthanalyzer,
-/obj/item/reagent_containers/hypospray/medipen/medx,
+/obj/item/locked_box/medical/drugs,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
 "pK" = (
@@ -5391,6 +5400,7 @@
 /area/f13/village)
 "qh" = (
 /obj/structure/simple_door/house,
+/obj/effect/decal/cleanable/oil/slippery,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -6438,6 +6448,15 @@
 	},
 /turf/closed/wall/f13/supermart,
 /area/f13/building)
+"td" = (
+/obj/structure/simple_door/house{
+	hard_open = 1
+	},
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/building)
 "te" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
@@ -6451,6 +6470,19 @@
 /obj/structure/window/spawner/north,
 /turf/open/floor/f13,
 /area/f13/brotherhood/surface)
+"tf" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/mob/living/simple_animal/hostile/handy/protectron,
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/f13{
+	icon_state = "greendirtyfull"
+	},
+/area/f13/building)
 "tg" = (
 /obj/structure/chair/sofa/corp/right,
 /obj/machinery/light{
@@ -7605,6 +7637,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/obj/effect/decal/cleanable/oil/slippery,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -9171,7 +9204,7 @@
 /area/f13/village)
 "Bm" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/medipen/medx,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
@@ -12421,7 +12454,6 @@
 "Ln" = (
 /obj/structure/table,
 /obj/item/organ/heart,
-/obj/item/reagent_containers/hypospray/medipen/stimpak/super,
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
 /obj/machinery/light,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
@@ -15832,7 +15864,8 @@
 /area/f13/caves)
 "VM" = (
 /obj/structure/rack/shelf_metal,
-/obj/item/ammo_box/magazine/ammobelt,
+/obj/item/ammo_box/magazine/ammobelt/m2,
+/obj/item/ammo_box/magazine/ammobelt/m2,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/cotc)
 "VN" = (
@@ -16100,6 +16133,10 @@
 /area/f13/clinic)
 "WJ" = (
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/supermutant/nightkin{
+	name = "The Surgeon";
+	speed = 0.6
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
 	icon_state = "whitedirtysolid"
 	},
@@ -68375,7 +68412,7 @@ gI
 gI
 gI
 gI
-Ny
+td
 gI
 gI
 fG
@@ -68895,7 +68932,7 @@ bc
 RY
 QG
 OG
-HC
+hq
 IJ
 Tv
 HC
@@ -69663,7 +69700,7 @@ lu
 AJ
 HC
 Fg
-RY
+tf
 jb
 xy
 RY
