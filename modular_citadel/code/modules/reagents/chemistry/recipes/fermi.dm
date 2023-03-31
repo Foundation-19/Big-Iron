@@ -168,8 +168,8 @@
 	name = "MKUltra"
 	id = /datum/reagent/fermi/enthrall
 	results = list(/datum/reagent/fermi/enthrall = 5)
-	required_reagents = list(/datum/reagent/consumable/coco = 1, /datum/reagent/bluespace = 1, /datum/reagent/toxin/mindbreaker = 1, /datum/reagent/medicine/psicodine = 1, /datum/reagent/drug/happiness = 1)
-	required_catalysts = list(/datum/reagent/blood = 1)
+	//required_reagents = list(/datum/reagent/consumable/coco = 1, /datum/reagent/bluespace = 1, /datum/reagent/toxin/mindbreaker = 1, /datum/reagent/medicine/psicodine = 1, /datum/reagent/drug/happiness = 1)
+	//required_catalysts = list(/datum/reagent/blood = 1)
 	mix_message = "the reaction gives off a burgundy plume of smoke!"
 	//FermiChem vars:
 	OptimalTempMin 			= 780
@@ -313,7 +313,7 @@
 	name = "Yamerol"
 	id = /datum/reagent/fermi/yamerol
 	results = list(/datum/reagent/fermi/yamerol = 3)
-	required_reagents = list(/datum/reagent/medicine/perfluorodecalin = 1, /datum/reagent/medicine/salbutamol = 1, /datum/reagent/water = 1)
+	//required_reagents = list(/datum/reagent/medicine/perfluorodecalin = 1, /datum/reagent/medicine/salbutamol = 1, /datum/reagent/water = 1)
 	//FermiChem vars:
 	OptimalTempMin 	= 300
 	OptimalTempMax 	= 500
@@ -333,7 +333,7 @@
 	name = "Zeolites"
 	id = /datum/reagent/fermi/zeolites
 	results = list(/datum/reagent/fermi/zeolites = 5) //We make a lot!
-	required_reagents = list(/datum/reagent/medicine/potass_iodide = 1, /datum/reagent/aluminium = 1, /datum/reagent/silicon = 1, /datum/reagent/oxygen = 1)
+	//required_reagents = list(/datum/reagent/medicine/potass_iodide = 1, /datum/reagent/aluminium = 1, /datum/reagent/silicon = 1, /datum/reagent/oxygen = 1)
 	//FermiChem vars:
 	OptimalTempMin 	= 300
 	OptimalTempMax 	= 900
@@ -348,35 +348,3 @@
 	HIonRelease 	= 0.01
 	RateUpLim 		= 15
 	FermiChem 		= TRUE
-
-/datum/chemical_reaction/fermi/eigenstate
-	name = "Eigenstasium"
-	id = /datum/reagent/fermi/eigenstate
-	results = list(/datum/reagent/fermi/eigenstate = 1)
-	required_reagents = list(/datum/reagent/bluespace = 1, /datum/reagent/stable_plasma = 1, /datum/reagent/consumable/caramel = 1)
-	mix_message = "the reaction zaps suddenly!"
-	//FermiChem vars:
-	OptimalTempMin 		= 350 // Lower area of bell curve for determining heat based rate reactions
-	OptimalTempMax		= 600 // Upper end for above
-	ExplodeTemp			= 650 //Temperature at which reaction explodes
-	OptimalpHMin		= 7 // Lowest value of pH determining pH a 1 value for pH based rate reactions (Plateu phase)
-	OptimalpHMax		= 9 // Higest value for above
-	ReactpHLim			= 5 // How far out pH wil react, giving impurity place (Exponential phase)
-	CatalystFact		= 0 // How much the catalyst affects the reaction (0 = no catalyst)
-	CurveSharpT 		= 1.5 // How sharp the temperature exponential curve is (to the power of value)
-	CurveSharppH 		= 3 // How sharp the pH exponential curve is (to the power of value)
-	ThermicConstant		= 10 //Temperature change per 1u produced
-	HIonRelease 		= -0.02 //pH change per 1u reaction
-	RateUpLim 			= 3 //Optimal/max rate possible if all conditions are perfect
-	FermiChem 			= TRUE//If the chemical uses the Fermichem reaction mechanics
-	FermiExplode 		= FALSE //If the chemical explodes in a special way
-	PurityMin			= 0.4 //The minimum purity something has to be above, otherwise it explodes.
-
-/datum/chemical_reaction/fermi/eigenstate/FermiFinish(datum/reagents/holder, atom/my_atom)//Strange how this doesn't work but the other does.
-	var/datum/reagent/fermi/eigenstate/E = locate(/datum/reagent/fermi/eigenstate) in my_atom.reagents.reagent_list
-	if(!E)
-		return
-	var/turf/open/location = get_turf(my_atom)
-	if(location)
-		E.location_created = location
-		E.data["location_created"] = location

@@ -75,30 +75,35 @@
 /datum/supply_pack/medical/firstaidbruises_single
 	name = "Bruise Treatment Kit Single-Pack"
 	desc = "A single brute first-aid kit, perfect for recovering from being crushed by a super-mutant. Did you know people get crushed by super-mutants all the time? Interesting..."
+	goody = PACK_GOODY_PUBLIC
 	cost = 330
 	contains = list(/obj/item/storage/firstaid/brute)
 
 /datum/supply_pack/medical/firstaidburns_single
 	name = "Burn Treatment Kit Single-Pack"
 	desc = "A single burn first-aid kit. The advertisement displays a winking Brotherhood scribe giving a thumbs up, saying \"Mistakes happen!\""
+	goody = PACK_GOODY_PUBLIC
 	cost = 330
 	contains = list(/obj/item/storage/firstaid/fire)
 
 /datum/supply_pack/medical/firstaid_single
 	name = "First Aid Kit Single-Pack"
 	desc = "A single first-aid kit, fit for healing most types of bodily harm."
+	goody = PACK_GOODY_PUBLIC
 	cost = 250
 	contains = list(/obj/item/storage/firstaid/regular)
 
 /datum/supply_pack/medical/firstaidoxygen_single
 	name = "Oxygen Deprivation Kit Single-Pack"
 	desc = "A single oxygen deprivation first-aid kit, marketed heavily to those with crippling fears of asphyxiation."
+	goody = PACK_GOODY_PUBLIC
 	cost = 330
 	contains = list(/obj/item/storage/firstaid/o2)
 
 /datum/supply_pack/medical/firstaidtoxins_single
 	name = "Toxin Treatment Kit Single-Pack"
 	desc = "A single first aid kit focused on healing damage dealt by heavy toxins."
+	goody = PACK_GOODY_PUBLIC
 	cost = 330
 	contains = list(/obj/item/storage/firstaid/toxin)
 

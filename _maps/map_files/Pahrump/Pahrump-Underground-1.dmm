@@ -274,8 +274,8 @@
 /obj/item/clothing/under/f13/combat,
 /obj/item/clothing/gloves/f13/military,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/random_mid,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random_high,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/bunker)
 "ajp" = (
@@ -546,6 +546,7 @@
 "avG" = (
 /obj/structure/simple_door/room,
 /obj/structure/barricade/wooden,
+/obj/item/mine/stun,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "avH" = (
@@ -564,9 +565,9 @@
 /area/f13/bunker)
 "axe" = (
 /obj/structure/closet/crate/secure,
-/obj/effect/spawner/lootdrop/f13/blueprintLowPartsWeighted,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
+/obj/effect/spawner/lootdrop/f13/blueprintVHighBallistics,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "axA" = (
@@ -864,8 +865,8 @@
 /obj/item/clothing/suit/armor/f13/combat/mk2,
 /obj/item/clothing/head/helmet/f13/combat/mk2,
 /obj/item/clothing/mask/gas/syndicate,
-/obj/effect/spawner/lootdrop/f13/blueprintLowPartsWeighted,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
+/obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "aJo" = (
@@ -1663,6 +1664,16 @@
 /obj/structure/wreck/trash/brokenvendor,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"biS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/mine/explosive{
+	layer = 1
+	},
+/obj/item/trash/f13/k_ration,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/caves)
 "biT" = (
 /obj/structure/rack,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
@@ -4842,10 +4853,10 @@
 	},
 /area/f13/bunker)
 "dzw" = (
-/obj/structure/simple_door/room,
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
+/obj/structure/barricade/wooden/strong,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "dzH" = (
@@ -4995,7 +5006,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "dFt" = (
-/obj/machinery/smartfridge/bottlerack/lootshelf/books,
+/obj/machinery/smartfridge/bottlerack/lootshelf,
+/obj/item/bottlecap_mine{
+	layer = 2.8
+	},
 /turf/open/floor/f13/wood,
 /area/f13/caves)
 "dFv" = (
@@ -5895,7 +5909,7 @@
 /obj/structure/closet/crate/medical,
 /obj/item/reagent_containers/blood/radaway,
 /obj/item/reagent_containers/blood/radaway,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "emT" = (
@@ -7178,6 +7192,7 @@
 /area/f13/bunker)
 "fmg" = (
 /obj/structure/table/wood/settler,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
 	},
@@ -7316,10 +7331,9 @@
 /area/f13/bunker)
 "frm" = (
 /obj/structure/closet,
-/obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random_mid,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -7630,6 +7644,11 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/ant_meat,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"fAg" = (
+/obj/structure/simple_door/wood,
+/obj/item/mine/explosive,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "fAi" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
@@ -7901,6 +7920,10 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/enclave)
+"fKx" = (
+/obj/structure/nest/supermutant/ranged,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "fKy" = (
 /obj/structure/nest/supermutant,
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -9559,7 +9582,6 @@
 /obj/structure/bed,
 /obj/item/bedsheet/blue,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
-/obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "gRA" = (
@@ -10446,6 +10468,7 @@
 /obj/structure/spider/stickyweb,
 /obj/structure/spider/stickyweb,
 /obj/structure/spider/stickyweb,
+/obj/item/book/granter/trait/bigleagues,
 /turf/open/floor/plating/tunnel,
 /area/f13/caves)
 "hKS" = (
@@ -11171,7 +11194,16 @@
 	},
 /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant,
 /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant,
-/obj/item/clothing/glasses/hud/health/f13,
+/mob/living/simple_animal/hostile/ghoul/glowing/strong{
+	aggro_vision_range = 21;
+	speed = 0.4;
+	name = "La Creatura";
+	environment_smash = 2;
+	health = 300;
+	maxHealth = 300;
+	damage_coeff = list("brute" = 1, "fire" = 3, "tox" = 1, "clone" = 1, "stamina" = 0, "oxy" = 1);
+	desc = "Something that can't even be compared to a feral ghoul anymore. It's as bright as the sun, with putrid green hide. You should run."
+	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "iou" = (
@@ -12828,6 +12860,16 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
+"jFZ" = (
+/mob/living/simple_animal/hostile/handy/gutsy{
+	icon_living = "pvtgutsy";
+	icon_state = "pvtgutsy";
+	name = "Mr. Gutsy"
+	},
+/turf/open/floor/f13{
+	icon_state = "purplefull"
+	},
+/area/f13/clinic)
 "jGk" = (
 /obj/structure/decoration/warning,
 /turf/closed/indestructible/f13vaultrusted,
@@ -13412,7 +13454,7 @@
 /area/f13/den)
 "khL" = (
 /obj/structure/table,
-/obj/item/reagent_containers/hypospray/combat,
+/obj/effect/spawner/lootdrop/f13/medical/vault/equipment,
 /turf/open/floor/f13{
 	icon_state = "purplefull"
 	},
@@ -18037,6 +18079,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/ruins,
 /area/f13/tunnel)
+"osf" = (
+/obj/structure/barricade/wooden/strong,
+/turf/open/floor/f13/wood,
+/area/f13/bunker)
 "osv" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -19119,6 +19165,19 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"pmB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/trash/f13/porknbeans{
+	pixel_y = 6;
+	pixel_x = 2
+	},
+/obj/item/mine/explosive{
+	layer = 1
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/caves)
 "pmY" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -19483,6 +19542,13 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/blueprintLowPartsWeighted,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
+/mob/living/simple_animal/hostile/raider/junker/boss{
+	robust_searching = 1;
+	minimum_distance = 2;
+	retreat_distance = 5;
+	melee_damage_lower = 80;
+	melee_damage_upper = 80
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
 "pCJ" = (
@@ -19943,7 +20009,6 @@
 /area/f13/brotherhood)
 "pYF" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/glasses/hud/health/f13,
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "pYZ" = (
@@ -22268,6 +22333,10 @@
 	icon_state = "purplefull"
 	},
 /area/f13/clinic)
+"rMm" = (
+/mob/living/simple_animal/hostile/raider/firefighter,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "rMJ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -22801,7 +22870,7 @@
 "shM" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/blueprintLowPartsWeighted,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "shY" = (
@@ -22901,7 +22970,6 @@
 /obj/effect/overlay/junk/toilet{
 	pixel_y = 12
 	},
-/obj/effect/spawner/lootdrop/f13/medical/vault/equipment,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
 "smf" = (
@@ -23639,7 +23707,7 @@
 /area/f13/bunker)
 "sVP" = (
 /obj/structure/rack,
-/obj/item/book/granter/trait/bigleagues,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -24109,7 +24177,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "tru" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "trC" = (
@@ -24448,6 +24516,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/mob/living/simple_animal/hostile/raider/firefighter,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "tGk" = (
@@ -25162,6 +25231,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
+/mob/living/simple_animal/hostile/raider/ranged/boss,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -26211,6 +26281,11 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/bunker)
+"vgA" = (
+/obj/effect/decal/remains/human,
+/obj/structure/stalkeregg,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "vgC" = (
 /obj/effect/decal/remains{
 	icon_state = "remains";
@@ -26311,6 +26386,12 @@
 	},
 /turf/open/floor/carpet/red,
 /area/f13/den)
+"vlk" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
+	},
+/area/f13/caves)
 "vlu" = (
 /turf/open/floor/f13{
 	icon_state = "neutralrustyfull"
@@ -26755,6 +26836,10 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/f13/enclave)
+"vFc" = (
+/obj/machinery/telecomms/server/presets/bw,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
 "vFl" = (
 /obj/machinery/light{
 	dir = 1
@@ -27809,9 +27894,9 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/brotherhood)
 "wtK" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
-/turf/closed/wall/f13/wood/house,
-/area/f13/bunker)
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "wuj" = (
 /obj/structure/sign/poster/contraband/communist_state{
 	desc = "All hail the Chinese Communist Party!"
@@ -29207,6 +29292,16 @@
 /obj/machinery/light/floor,
 /turf/open/floor/carpet/red,
 /area/f13/den)
+"xAb" = (
+/mob/living/simple_animal/hostile/handy/gutsy{
+	icon_living = "pvtgutsy";
+	icon_state = "pvtgutsy";
+	name = "Mr. Gutsy"
+	},
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/clinic)
 "xAe" = (
 /obj/structure/lattice{
 	layer = 3
@@ -29446,14 +29541,10 @@
 	},
 /area/f13/clinic)
 "xIV" = (
-/obj/effect/decal/waste,
-/obj/structure/nest/supermutant/melee{
-	max_mobs = 3;
-	spawn_once = 1;
-	spawn_time = 10
-	},
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
+/obj/structure/barricade/wooden/planks,
+/obj/structure/simple_door/wood,
+/turf/open/floor/f13/wood,
+/area/f13/bunker)
 "xJp" = (
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/operating)
@@ -32889,9 +32980,9 @@ aoj
 vPg
 vPg
 eLE
-aoj
-aoj
-aoj
+eLE
+eLE
+eLE
 lnr
 lnr
 lnr
@@ -33146,8 +33237,8 @@ vPg
 vPg
 vPg
 eLE
-aoj
-aoj
+eLE
+eLE
 tru
 gpM
 lnr
@@ -33403,7 +33494,7 @@ vPg
 vPg
 vPg
 eLE
-aoj
+eLE
 lnr
 gpM
 lnr
@@ -33660,7 +33751,7 @@ vPg
 vPg
 vPg
 eLE
-aoj
+eLE
 lnr
 lnr
 lnr
@@ -33917,7 +34008,7 @@ aoj
 vPg
 vPg
 eLE
-aoj
+eLE
 lnr
 lnr
 kGx
@@ -34174,7 +34265,7 @@ vPg
 vPg
 vPg
 eLE
-aoj
+eLE
 lnr
 lnr
 ncl
@@ -34624,7 +34715,7 @@ dJw
 xIF
 dOx
 xIF
-xIF
+jFZ
 wvi
 xIF
 oEC
@@ -35207,7 +35298,7 @@ aoj
 aoj
 aoj
 lnr
-lnr
+wtK
 aoj
 aoj
 aoj
@@ -36237,7 +36328,7 @@ eLE
 aoj
 aoj
 lnr
-lnr
+wtK
 aoj
 aoj
 eLE
@@ -36495,7 +36586,7 @@ aoj
 aoj
 aoj
 lnr
-lnr
+eLU
 aoj
 aoj
 eLE
@@ -36673,7 +36764,7 @@ ise
 ise
 vcM
 bJn
-ise
+xAb
 sor
 wVD
 ise
@@ -37520,7 +37611,7 @@ aoj
 aoj
 lnr
 lzk
-lnr
+eLU
 lnr
 xkM
 lnr
@@ -39075,7 +39166,7 @@ eLE
 aoj
 aoj
 lnr
-lnr
+wtK
 aoj
 aoj
 aoj
@@ -41901,7 +41992,7 @@ ncl
 lnr
 ncl
 lnr
-lnr
+wtK
 lnr
 vPg
 vPg
@@ -49539,7 +49630,7 @@ mDq
 lLu
 rrZ
 npt
-rrZ
+rMm
 ydu
 mug
 sLW
@@ -49797,8 +49888,8 @@ ajV
 enc
 bxT
 bxT
-vEd
-byp
+fAg
+rMm
 kGo
 mDq
 vPg
@@ -50056,7 +50147,7 @@ bxT
 dWB
 ydu
 tGj
-rrZ
+byp
 mDq
 vPg
 vPg
@@ -51301,7 +51392,7 @@ imd
 lnr
 lnr
 vPg
-lnr
+dpV
 oSc
 lnr
 lnr
@@ -57759,9 +57850,9 @@ aty
 aty
 aty
 aty
-bMV
+xIV
 aty
-wtK
+aty
 rex
 vPg
 vPg
@@ -58013,8 +58104,8 @@ aty
 aTB
 bKc
 bKc
-bMV
 bKc
+osf
 ede
 bKc
 cvv
@@ -64417,14 +64508,14 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 vPg
@@ -64670,22 +64761,22 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 vPg
 vPg
 aoj
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
 dXE
 oXr
 wFD
@@ -64926,8 +65017,8 @@ vPg
 vPg
 vPg
 vPg
-aoj
-vPg
+eLE
+eLE
 vPg
 vPg
 vPg
@@ -65183,7 +65274,7 @@ aoj
 vPg
 aoj
 aoj
-vPg
+eLE
 vPg
 vPg
 jrm
@@ -65440,7 +65531,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 aoj
 lnr
@@ -65696,8 +65787,8 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
+eLE
+eLE
 vPg
 lnr
 lnr
@@ -65953,7 +66044,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 jPC
 poZ
@@ -65968,9 +66059,9 @@ qDR
 qDR
 vPg
 aoj
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
 dXE
 dNH
 wFD
@@ -66210,7 +66301,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 jPC
 lnr
 lnr
@@ -66220,12 +66311,12 @@ lnr
 lnr
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 dXE
@@ -66466,8 +66557,8 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
+eLE
+eLE
 jrm
 lnr
 lnr
@@ -66476,7 +66567,7 @@ lnr
 lnr
 jrm
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -66723,7 +66814,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 aoj
 lnr
@@ -66732,8 +66823,8 @@ lnr
 lnr
 jPC
 vPg
-vPg
-vPg
+eLE
+eLE
 aoj
 aoj
 vPg
@@ -66980,7 +67071,7 @@ vPg
 vPg
 aoj
 aoj
-vPg
+eLE
 vPg
 aoj
 jPC
@@ -66989,7 +67080,7 @@ lnr
 lnr
 vPg
 vPg
-vPg
+eLE
 aoj
 aoj
 aoj
@@ -67237,7 +67328,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -67246,7 +67337,7 @@ rzg
 jPC
 aoj
 vPg
-vPg
+eLE
 vPg
 aoj
 vPg
@@ -67495,21 +67586,21 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
+eLE
+eLE
 vPg
 jPC
 lnr
 jPC
 aoj
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 vPg
@@ -67753,7 +67844,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 aoj
 lnr
@@ -67766,7 +67857,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -67988,29 +68079,29 @@ vPg
 vPg
 vPg
 vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 vPg
 vPg
 vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-aoj
-aoj
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
 vPg
 aoj
 lnr
@@ -68023,7 +68114,7 @@ cAp
 cAp
 vPg
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -68245,29 +68336,29 @@ vPg
 vPg
 vPg
 vPg
+eLE
 vPg
 vPg
 vPg
 vPg
+eLE
+eLE
 vPg
 vPg
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
+eLE
 aoj
 aoj
 aoj
 vPg
 vPg
 vPg
+eLE
 vPg
 vPg
 vPg
-vPg
-vPg
+eLE
 vPg
 vPg
 lnr
@@ -68280,7 +68371,7 @@ cAp
 cAp
 cAp
 aoj
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -68502,28 +68593,28 @@ aoj
 aoj
 aoj
 aoj
-vPg
+eLE
 vPg
 lnr
 vPg
 vPg
 vPg
+eLE
+eLE
 vPg
 vPg
 vPg
-vPg
-vPg
-vPg
+eLE
 aoj
 aoj
 jWV
 jWV
 vPg
 vPg
+eLE
 vPg
 vPg
-vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -68537,7 +68628,7 @@ cAp
 cAp
 cAp
 aoj
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -68759,28 +68850,28 @@ aoj
 aoj
 aoj
 vPg
-vPg
+eLE
 vPg
 vPg
 lnr
 lnr
 vPg
 vPg
+eLE
+eLE
 vPg
 vPg
-vPg
-vPg
-vPg
+eLE
 aoj
 jWV
 jWV
 jWV
 jWV
 aoj
+eLE
 vPg
 vPg
-vPg
-vPg
+eLE
 vPg
 aoj
 jPC
@@ -68794,7 +68885,7 @@ cAp
 cAp
 cAp
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -69016,28 +69107,28 @@ aoj
 aoj
 vPg
 vPg
-vPg
-vPg
+eLE
+eLE
 vPg
 vPg
 lnr
 lnr
 vPg
 vPg
+eLE
+vPg
+vPg
+eLE
 aoj
-vPg
-vPg
-vPg
-aoj
 jWV
 jWV
 jWV
 jWV
 vPg
+eLE
 vPg
 vPg
-vPg
-vPg
+eLE
 vPg
 aoj
 lnr
@@ -69051,7 +69142,7 @@ cAp
 cAp
 vPg
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -69273,18 +69364,18 @@ aoj
 aoj
 vPg
 vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
 vPg
 vPg
 lnr
 lnr
 vPg
-aoj
+eLE
 vPg
 vPg
-vPg
+eLE
 vPg
 jWV
 jWV
@@ -69292,15 +69383,15 @@ jWV
 jWV
 jPC
 vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
 vPg
 jPC
 lnr
 lnr
 vPg
-aoj
+eLE
 vPg
 vPg
 cAp
@@ -69308,7 +69399,7 @@ cAp
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -69539,9 +69630,9 @@ vPg
 lnr
 vPg
 vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
 vPg
 vPg
 jWV
@@ -69557,7 +69648,7 @@ lnr
 lnr
 lnr
 vPg
-vPg
+eLE
 vPg
 vPg
 cAp
@@ -69565,7 +69656,7 @@ cAp
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -69799,7 +69890,7 @@ jPC
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 jWV
 jWV
@@ -69814,6 +69905,7 @@ lnr
 lnr
 aoj
 vPg
+eLE
 vPg
 vPg
 vPg
@@ -69821,8 +69913,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -70056,7 +70147,7 @@ jWV
 vPg
 vPg
 vPg
-vPg
+eLE
 aoj
 vPg
 vPg
@@ -70070,16 +70161,16 @@ lnr
 lnr
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 vPg
@@ -70314,18 +70405,20 @@ jWV
 jrm
 jPC
 vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
 jPC
 lnr
-lnr
+cRs
 lnr
 aoj
 vPg
 vPg
 vPg
+eLE
+eLE
 vPg
 vPg
 vPg
@@ -70334,9 +70427,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
-vPg
-aoj
+eLE
 vPg
 vPg
 vPg
@@ -70580,9 +70671,9 @@ lnr
 lnr
 jPC
 vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
 vPg
 vPg
 jPC
@@ -70593,7 +70684,7 @@ vPg
 vPg
 lnr
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -70634,7 +70725,7 @@ mjG
 vLK
 hQE
 aXd
-uuq
+aXd
 aXd
 uuq
 hQE
@@ -70850,7 +70941,7 @@ aoj
 lnr
 vPg
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -71107,7 +71198,7 @@ lnr
 lnr
 vPg
 aoj
-aoj
+eLE
 vPg
 vPg
 vPg
@@ -71364,7 +71455,7 @@ lnr
 jPC
 vPg
 aoj
-aoj
+eLE
 vPg
 vPg
 vPg
@@ -71621,7 +71712,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -71859,26 +71950,26 @@ lnr
 lnr
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 jPC
 jrm
 aoj
 vPg
 aoj
-aoj
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 vPg
@@ -71920,8 +72011,8 @@ vLK
 hQE
 aXd
 jPC
-lzb
-uqE
+biS
+pmB
 hQE
 aoj
 aoj
@@ -72120,14 +72211,14 @@ vPg
 jPC
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-aoj
-aoj
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 vPg
@@ -72378,7 +72469,7 @@ lnr
 lnr
 vPg
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -72635,7 +72726,7 @@ lnr
 lnr
 lnr
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -72893,7 +72984,7 @@ lnr
 lnr
 jPC
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -72946,7 +73037,7 @@ mjG
 mjG
 vLK
 hQE
-aXd
+uuq
 ngX
 dXE
 dXE
@@ -73150,7 +73241,7 @@ lnr
 lnr
 lnr
 vPg
-vPg
+eLE
 mDq
 mDq
 mDq
@@ -73407,7 +73498,7 @@ lnr
 lnr
 vPg
 vPg
-vPg
+eLE
 mDq
 tYA
 tYA
@@ -73663,7 +73754,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 mDq
 jOw
@@ -73915,11 +74006,11 @@ lnr
 lnr
 lnr
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 mDq
@@ -74172,7 +74263,7 @@ lnr
 lnr
 jPC
 vPg
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -74429,7 +74520,7 @@ aoj
 aoj
 aoj
 aoj
-aoj
+eLE
 vPg
 vPg
 vPg
@@ -74677,16 +74768,16 @@ eLE
 eLE
 vPg
 vPg
+eLE
+vPg
+aoj
+vPg
+vPg
+vPg
 vPg
 vPg
 aoj
-vPg
-vPg
-vPg
-vPg
-vPg
-aoj
-aoj
+eLE
 vPg
 vPg
 vPg
@@ -74934,16 +75025,16 @@ aoj
 aoj
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-aoj
-aoj
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 vPg
@@ -78330,7 +78421,7 @@ vPg
 vPg
 vPg
 vPg
-tur
+dyw
 ccq
 fvp
 fvp
@@ -82511,7 +82602,7 @@ rzg
 vPg
 vPg
 lnr
-ncl
+vgA
 lnr
 eLE
 eLE
@@ -83283,7 +83374,7 @@ gQO
 vPg
 vPg
 vPg
-lnr
+jdt
 eLE
 eLE
 vPg
@@ -90696,7 +90787,7 @@ nBk
 nBk
 nwe
 nBk
-nBk
+fKx
 nBk
 vPg
 eLE
@@ -91702,7 +91793,7 @@ hQE
 hQE
 foY
 lhr
-fRK
+vlk
 hQE
 nBk
 nBk
@@ -91971,7 +92062,7 @@ nBk
 nBk
 gWJ
 nBk
-nBk
+fKx
 nLP
 nBk
 nBk
@@ -92337,7 +92428,7 @@ cZA
 tNq
 pHv
 ogq
-qLD
+vFc
 eQC
 fZG
 oSx
@@ -93252,7 +93343,7 @@ nBk
 gWJ
 nBk
 hSh
-nBk
+fKx
 nBk
 gWJ
 nBk
@@ -93267,7 +93358,7 @@ gWJ
 nBk
 nBk
 fUf
-xIV
+ayp
 nBk
 eLE
 vPg

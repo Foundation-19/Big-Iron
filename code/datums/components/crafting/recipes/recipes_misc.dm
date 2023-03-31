@@ -185,7 +185,7 @@
 	result = /obj/item/circuitboard/machine/vr_sleeper
 	category = CAT_CRAFTING
 	subcategory = CAT_SCAVENGING
-
+/*
 /datum/crafting_recipe/set_vrboard
 	category = CAT_CRAFTING
 	subcategory = CAT_SCAVENGING
@@ -203,7 +203,7 @@
 	result = /obj/item/circuitboard/machine/vr_sleeper/followers
 	reqs = list(/obj/item/circuitboard/machine/vr_sleeper = 1)
 	tools = list(/obj/item/multitool)
-
+*/
 //////////////////////
 //Burial & Execution//
 //////////////////////

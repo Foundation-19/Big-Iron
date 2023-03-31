@@ -213,7 +213,10 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Vigilante",
 	"Tribal",
 	"Wastelander",
+	"Blackwater Settler",
+	"Blackwater Deputy",
 ))
+
 
 GLOBAL_LIST_INIT(enclave_positions, list(
 	"Enclave Captain",
