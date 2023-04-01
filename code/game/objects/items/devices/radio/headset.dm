@@ -372,9 +372,9 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	keyslot = new /obj/item/encryptionkey/headset_enclave
 
 /obj/item/radio/headset/headset_enclaveremnant
-	name = "old ear piece"
-	desc = "An old, worn-down headset used by the Enclave. It's still working, surprisingly.\nTo access the enclave channel, use :z. Protects ears from flashbangs."
-	icon_state = "syndie_headset"
+	name = "radio headset"
+	desc = "An updated, modular intercom that fits over the head. Takes encryption keys.\nTo access the enclave channel, use :z."
+	icon_state = "headset"
 	linked_faction = FACTION_ENCLAVE
 	factionized = TRUE
 	keyslot = new /obj/item/encryptionkey/headset_enclave
