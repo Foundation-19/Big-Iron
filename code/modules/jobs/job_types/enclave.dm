@@ -335,7 +335,6 @@
 // ENCLAVE REMNANTS
 
 // Operative
-
 /datum/job/enclave/operative
 	title = "Enclave Remnant"
 	flag = F13USREMNANT
@@ -358,7 +357,7 @@
 	jobtype = /datum/job/enclave/operative
 	head = /obj/item/clothing/head/helmet/armyhelmet
 	suit = /obj/item/clothing/suit/armored/medium/combat/duster
-	id = null
+	id = /obj/item/card/id/remnant
 	backpack = /obj/item/storage/backpack/trekker
 	satchel = null
 	ears = /obj/item/radio/headset/headset_enclaveremnant
@@ -397,8 +396,13 @@
 		/obj/item/ammo_box/magazine/m45 = 3
 		)
 
-// Medical Operative //
+/datum/outfit/job/enclave/operative/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_ENCLAVE_REMNANT, src)
 
+// Medical Operative //
 /datum/job/enclave/operativemedical
 	title = "Enclave Remnant Medic"
 	flag = F13USREMNANTMEDIC
@@ -416,7 +420,7 @@
 	head = /obj/item/clothing/head/helmet/armyhelmet
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13
 	r_hand = /obj/item/storage/backpack/duffelbag/med/surgery 
-	id = null
+	id = /obj/item/card/id/remnant
 	backpack = /obj/item/storage/backpack/trekker
 	satchel = null
 	ears = /obj/item/radio/headset/headset_enclaveremnant
@@ -440,6 +444,7 @@
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
+	ADD_TRAIT(H, TRAIT_ENCLAVE_REMNANT, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak5)
