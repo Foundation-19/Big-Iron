@@ -228,6 +228,8 @@ GLOBAL_LIST_INIT(enclave_positions, list(
 	"Enclave Scientist",
 	"Enclave Private",
 	"Enclave Bunker Duty",
+	"Enclave Remnant",
+	"Enclave Remnant Medic",
 ))
 
 GLOBAL_LIST_INIT(church_positions, list(

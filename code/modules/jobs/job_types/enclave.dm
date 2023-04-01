@@ -332,6 +332,125 @@
 		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		)
 
+// ENCLAVE REMNANTS
+
+// Operative
+/datum/job/enclave/operative
+	title = "Enclave Remnant"
+	flag = F13USREMNANT
+	display_order = JOB_DISPLAY_ORDER_F13USREMNANT
+	total_positions = 5
+	spawn_positions = 5
+	description = "You are an operative for the remnants of the Enclave."
+	supervisors = "You are not supervised by anyone and work with your fellow operatives"
+
+	outfit = /datum/outfit/job/enclave/operative
+
+	loadout_options = list(
+		/datum/outfit/loadout/enclaveremnantrifle, 
+		/datum/outfit/loadout/enclaveremnantshotgun,
+		/datum/outfit/loadout/enclaveremnantpistol
+		)
+
+/datum/outfit/job/enclave/operative
+	name = "Enclave Remnant"
+	jobtype = /datum/job/enclave/operative
+	head = /obj/item/clothing/head/helmet/armyhelmet
+	suit = /obj/item/clothing/suit/armored/medium/combat/duster
+	id = /obj/item/card/id/remnant
+	backpack = /obj/item/storage/backpack/trekker
+	satchel = null
+	ears = /obj/item/radio/headset/headset_enclaveremnant
+	glasses = null
+	belt = /obj/item/storage/belt
+	r_pocket = /obj/item/flashlight/seclite
+	shoes = /obj/item/clothing/shoes/jackboots
+	box = /obj/item/storage/survivalkit_adv
+	gloves = /obj/item/clothing/gloves/f13/military
+
+	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/pda = 1,
+		/obj/item/storage/bag/money/small/wastelander = 1,
+		/obj/item/melee/onehanded/knife/survival = 1,
+		)
+
+/datum/outfit/loadout/enclaveremnantrifle
+	name = "Rifleman"
+	suit_store = /obj/item/gun/ballistic/automatic/m1carbine
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m10mm_adv = 3
+		)
+
+/datum/outfit/loadout/enclaveremnantshotgun
+	name = "Shotgunner"
+	suit_store = /obj/item/gun/ballistic/shotgun/hunting
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/buck = 3
+		)
+
+/datum/outfit/loadout/enclaveremnantpistol
+	name = "Pistol"
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m45 = 3
+		)
+
+/datum/outfit/job/enclave/operative/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_ENCLAVE_REMNANT, src)
+
+// Medical Operative //
+/datum/job/enclave/operativemedical
+	title = "Enclave Remnant Medic"
+	flag = F13USREMNANTMEDIC
+	display_order = JOB_DISPLAY_ORDER_F13USREMNANTMEDIC
+	total_positions = 1
+	spawn_positions = 1
+	description = "You are an medical operative for the remnants of the Enclave."
+	supervisors = "You are not supervised by anyone and work with your fellow operatives"
+
+	outfit = /datum/outfit/job/enclave/operativemedical
+
+/datum/outfit/job/enclave/operativemedical
+	name = "Enclave Remnant Medic"
+	jobtype = /datum/job/enclave/operativemedical
+	head = /obj/item/clothing/head/helmet/armyhelmet
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13
+	r_hand = /obj/item/storage/backpack/duffelbag/med/surgery 
+	id = /obj/item/card/id/remnant
+	backpack = /obj/item/storage/backpack/trekker
+	satchel = null
+	ears = /obj/item/radio/headset/headset_enclaveremnant
+	glasses = null
+	belt = /obj/item/storage/belt
+	r_pocket = /obj/item/flashlight/seclite
+	shoes = /obj/item/clothing/shoes/jackboots
+	box = /obj/item/storage/survivalkit_adv
+	gloves = /obj/item/clothing/gloves/f13/military
+
+	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
+		/obj/item/pda = 1,
+		/obj/item/storage/bag/money/small/wastelander = 1,
+		/obj/item/melee/onehanded/knife/survival = 1,
+		)
+
+/datum/outfit/job/enclave/operativemedical/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	. = ..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
+	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
+	ADD_TRAIT(H, TRAIT_ENCLAVE_REMNANT, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak5)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/superstimpak)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/superstimpak5)
+
 //NON-COMBATANTS
 
 //Scientist
