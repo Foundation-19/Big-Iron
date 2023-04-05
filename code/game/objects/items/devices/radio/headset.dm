@@ -371,6 +371,14 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	factionized = TRUE
 	keyslot = new /obj/item/encryptionkey/headset_enclave
 
+/obj/item/radio/headset/headset_enclaveremnant
+	name = "radio headset"
+	desc = "An updated, modular intercom that fits over the head. Takes encryption keys.\nTo access the enclave channel, use :z."
+	icon_state = "headset"
+	linked_faction = FACTION_ENCLAVE
+	factionized = TRUE
+	keyslot = new /obj/item/encryptionkey/headset_enclave
+
 /obj/item/radio/headset/headset_enclave/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
