@@ -46,7 +46,7 @@
 	name = "50 Plastic Sheets"
 	desc = "Build a limitless amount of toys with fifty plastic sheets!"
 	cost = 200 // double their export
-	contains = list(/obj/item/stack/sheet/plastic/twenty)
+	contains = list(/obj/item/stack/sheet/plastic/fifty)
 
 /datum/supply_pack/materials/sandstone30
 	goody = PACK_GOODY_PUBLIC
