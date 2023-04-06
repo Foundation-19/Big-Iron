@@ -1270,3 +1270,113 @@
 	assignment = "neophyte identification papers"
 	access = list(ACCESS_COTC)
 
+
+
+/////////////////////////////////
+// Enclave Remnant Agent ID's///
+///////////////////////////////
+
+// This code is just a direct copy of the syndicate Agent ID code with some changes made for enclave remnants. Not the most elegant way to go about it but the easiest.
+
+/obj/item/card/id/remnant
+	name = "remnant operative card"
+	icon_state = "enclavetrooper"
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE)
+	var/anyone = FALSE //Can anyone forge the ID or just remnants?
+	var/forged = FALSE //have we set a custom name and job assignment, or will we use what we're given when we chameleon change?
+	var/exploding = FALSE // Is the ID currently in the process of exploding?
+
+/obj/item/card/id/remnant/Initialize()
+	. = ..()
+	var/datum/action/item_action/chameleon/change/chameleon_action = new(src)
+	chameleon_action.chameleon_type = /obj/item/card/id
+	chameleon_action.chameleon_name = "ID Card"
+	chameleon_action.initialize_disguises()
+	if(!anyone)
+		AddComponent(/datum/component/identification/syndicate, ID_COMPONENT_DEL_ON_IDENTIFY, ID_COMPONENT_EFFECT_NO_ACTIONS, NONE)		//no deconstructive analyzer usage.
+
+/obj/item/card/id/remnant/afterattack(obj/item/O, mob/user, proximity)
+	if(!proximity)
+		return
+	if(istype(O, /obj/item/card/id))
+		var/obj/item/card/id/I = O
+		src.access |= I.access
+		if(isliving(user) && user.mind)
+			if(HAS_TRAIT(user, TRAIT_ENCLAVE_REMNANT))
+				to_chat(usr, "<span class='notice'>The card's microscanners activate as you pass it over the ID, copying its access.</span>")
+
+/obj/item/card/id/remnant/attack_self(mob/user)
+	if(isliving(user) && user.mind)
+		var/first_use = registered_name ? FALSE : TRUE
+		if(!(HAS_TRAIT(user, TRAIT_ENCLAVE_REMNANT)))
+			if(!exploding)
+				to_chat(usr, "<span class='notice'>Non-authorised user detected, initialising self-destruction protocol.</span>")
+				var/time_left = 3
+				exploding = TRUE
+				playsound(src, 'sound/weapons/armbomb.ogg', 50, 1)
+				for(var/i = 0, i <= time_left, i++)
+					to_chat(usr, "<span class='notice'>Self-destructing in [time_left].</span>")
+					time_left -= 1
+					sleep(10)
+
+				explosion(src, 1, 1, 1, flame_range = 1)
+				qdel(src)
+
+			return ..()
+
+		var/popup_input
+		if(bank_support == ID_FREE_BANK_ACCOUNT)
+			popup_input = alert(user, "Choose Action", "Agent ID", "Show", "Forge/Reset", "Change Account ID")
+		else
+			popup_input = alert(user, "Choose Action", "Agent ID", "Show", "Forge/Reset")
+		if(!user.canUseTopic(src, BE_CLOSE, FALSE))
+			return
+		if(popup_input == "Forge/Reset" && !forged)
+			var/input_name = stripped_input(user, "What name would you like to put on this card? Leave blank to randomise.", "Agent card name", registered_name ? registered_name : (ishuman(user) ? user.real_name : user.name), MAX_NAME_LEN)
+			input_name = reject_bad_name(input_name)
+			if(!input_name)
+				// Invalid/blank names give a randomly generated one.
+				if(user.gender == MALE)
+					input_name = "[pick(GLOB.first_names_male)] [pick(GLOB.last_names)]"
+				else if(user.gender == FEMALE)
+					input_name = "[pick(GLOB.first_names_female)] [pick(GLOB.last_names)]"
+				else
+					input_name = "[pick(GLOB.first_names)] [pick(GLOB.last_names)]"
+
+			var/target_occupation = stripped_input(user, "What occupation would you like to put on this card?\nNote: This will not grant any access levels.", "Agent card job assignment", assignment ? assignment : "Assistant", MAX_MESSAGE_LEN)
+			if(!target_occupation)
+				return
+			registered_name = input_name
+			assignment = target_occupation
+			update_label()
+			forged = TRUE
+			to_chat(user, "<span class='notice'>You successfully forge the ID card.</span>")
+			log_game("[key_name(user)] has forged \the [initial(name)] with name \"[registered_name]\" and occupation \"[assignment]\".")
+
+			// First time use automatically sets the account id to the user.
+			if (first_use && !registered_account)
+				if(ishuman(user))
+					var/mob/living/carbon/human/accountowner = user
+
+					for(var/bank_account in SSeconomy.bank_accounts)
+						var/datum/bank_account/account = bank_account
+						if(account.account_id == accountowner.account_id)
+							account.bank_cards += src
+							registered_account = account
+							to_chat(user, "<span class='notice'>Your account number has been automatically assigned.</span>")
+			return
+		else if (popup_input == "Forge/Reset" && forged)
+			registered_name = initial(registered_name)
+			assignment = initial(assignment)
+			log_game("[key_name(user)] has reset \the [initial(name)] named \"[src]\" to default.")
+			update_label()
+			forged = FALSE
+			to_chat(user, "<span class='notice'>You successfully reset the ID card.</span>")
+			return
+		else if (popup_input == "Change Account ID")
+			set_new_account(user)
+			return
+	return ..()
+
+/obj/item/card/id/remnant/anyone
+	anyone = TRUE
