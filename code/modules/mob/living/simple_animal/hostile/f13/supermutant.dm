@@ -76,8 +76,8 @@
 	name = "Brah-Min"
 	desc = "A large, docile supermutant. Adopted by Kebab-town as a sort of watch dog for their brahmin herd."
 	icon = 'icons/fallout/mobs/supermutant.dmi'
-	icon_state = "hulk_brahmin_s"
-	icon_dead = "hulk_brahmin_s"
+	icon_state = "mutant_private"
+	icon_dead = "mutant_private"
 	maxHealth = 300
 	health = 300
 	speak_chance = 7 //30 //Oh my god he never shuts up.
