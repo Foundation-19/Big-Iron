@@ -184,8 +184,8 @@
 	title = "Enclave Armored Infantry"
 	flag = F13USAI
 	display_order = JOB_DISPLAY_ORDER_F13USAI
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "You are a specialist trained in the use of heavy equipment and X0-2 Power armor. Your job is to be he anchor of your unit."
 	supervisors = "The Lieutenant and the Sergeants"
 	outfit = /datum/outfit/job/enclave/peacekeeper/Armoredinfantry
