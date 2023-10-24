@@ -1360,7 +1360,9 @@
 	},
 /area/f13/tunnel)
 "baC" = (
-/obj/machinery/door/unpowered/securedoor,
+/obj/machinery/door/unpowered/securedoor{
+	name = "Private Room"
+	},
 /obj/structure/curtain{
 	color = "#5c131b"
 	},
@@ -1507,6 +1509,14 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/sewer)
+"bdk" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/table{
+	color = "#c1b6a5"
+	},
+/obj/item/restraints/handcuffs/cable,
+/turf/open/floor/plasteel/f13/vault_floor/red,
+/area/f13/enclave)
 "bdt" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -1747,8 +1757,8 @@
 /area/f13/tunnel)
 "bkZ" = (
 /obj/machinery/door/airlock/hatch{
-	name = "Fort Hazard Billet";
-	req_one_access_txt = "269"
+	name = "Specialist Barracks";
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
@@ -2462,7 +2472,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Restroom";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -3867,8 +3877,8 @@
 /area/f13/bunker)
 "cLc" = (
 /obj/machinery/door/airlock/hatch{
-	name = "Fort Hazard Billet";
-	req_one_access_txt = "269"
+	name = "Scientist Barracks";
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/f13{
 	icon_state = "bluerustyfull"
@@ -4614,7 +4624,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Medical";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
@@ -6851,7 +6861,7 @@
 "eTY" = (
 /obj/machinery/door/airlock/vault{
 	name = "Fort Hazard";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -6997,7 +7007,7 @@
 "faQ" = (
 /obj/machinery/door/airlock/vault{
 	name = "Fort Hazard";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
@@ -7025,7 +7035,7 @@
 "fcz" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Holding Cell";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -7117,7 +7127,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/vault{
 	name = "Fort Hazard Maintenance System";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelrusty"
@@ -8683,8 +8693,8 @@
 /area/f13/tunnel)
 "gkr" = (
 /obj/machinery/door/airlock/hatch{
-	name = "Fort Hazardous Material Storage";
-	req_one_access_txt = "269"
+	name = "Fort Hazard Security";
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -8861,7 +8871,7 @@
 "gqA" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Canteen";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -9721,7 +9731,7 @@
 "gVW" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Interrogation";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -11607,7 +11617,7 @@
 "iET" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Farm";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -13160,7 +13170,7 @@
 /obj/machinery/door/airlock/hatch{
 	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi';
 	name = "Fort Hazard Admin Accommodation";
-	req_one_access_txt = "269"
+	req_one_access_txt = "272"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -15238,7 +15248,7 @@
 "lHj" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Medical";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -16858,7 +16868,7 @@
 "nlm" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard R&D";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -19441,7 +19451,7 @@
 "ptr" = (
 /obj/machinery/door/airlock/vault{
 	name = "Fort Hazard Maintenance System";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -22815,7 +22825,7 @@
 /obj/machinery/door/airlock/hatch{
 	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi';
 	name = "Fort Hazard Administration Centre";
-	req_one_access_txt = "269"
+	req_one_access_txt = "272"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -23779,7 +23789,7 @@
 "sUC" = (
 /obj/machinery/door/airlock/freezer{
 	name = "Fort Hazard Food Storage";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/f13/enclave)
@@ -24891,6 +24901,13 @@
 /obj/item/pen/blue,
 /turf/open/floor/plasteel,
 /area/f13/tcoms)
+"tTc" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Fort Hazard Barracks";
+	req_one_access_txt = "134"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "tTj" = (
 /obj/structure/spider/stickyweb{
 	icon_state = "stickyweb2"
@@ -27164,7 +27181,7 @@
 "vJI" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fort Hazard Supply Department";
-	req_one_access_txt = "269"
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -27327,6 +27344,9 @@
 /area/f13/caves)
 "vNW" = (
 /obj/structure/closet/locker,
+/obj/item/storage/box/handcuffs,
+/obj/item/reagent_containers/spray/pepper,
+/obj/item/melee/classic_baton/telescopic,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/enclave)
 "vOq" = (
@@ -28651,8 +28671,8 @@
 /area/f13/clinic)
 "wQF" = (
 /obj/machinery/door/airlock/hatch{
-	name = "Fort Polk Exclusion Zone";
-	req_one_access_txt = "269"
+	name = "Fort Hazard Armory";
+	req_one_access_txt = "134"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
@@ -28673,6 +28693,13 @@
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"wRX" = (
+/obj/machinery/door/airlock/hatch{
+	name = "NCO Barracks";
+	req_one_access_txt = "134"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/enclave)
 "wSc" = (
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/armory)
@@ -29538,9 +29565,6 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
 "xDt" = (
-/obj/item/storage/box/handcuffs,
-/obj/item/melee/classic_baton/telescopic,
-/obj/item/reagent_containers/spray/pepper,
 /obj/structure/fans/tiny{
 	pixel_y = 32
 	},
@@ -29583,9 +29607,10 @@
 	},
 /area/f13/brotherhood/leisure)
 "xGd" = (
+/obj/structure/table{
+	color = "#c1b6a5"
+	},
 /obj/item/storage/box/handcuffs,
-/obj/item/melee/classic_baton/telescopic,
-/obj/item/reagent_containers/spray/pepper,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/enclave)
 "xGu" = (
@@ -32404,7 +32429,7 @@ yhP
 ijw
 ijw
 ijw
-bkZ
+wRX
 ijw
 uSO
 ijw
@@ -32672,7 +32697,7 @@ vKj
 vKj
 ycB
 ycB
-bkZ
+tTc
 xQW
 xQW
 mES
@@ -36265,7 +36290,7 @@ vQa
 vpv
 iOk
 erd
-erd
+bdk
 vpv
 iNw
 iNw
@@ -36522,7 +36547,7 @@ rwC
 ijw
 nFx
 uxZ
-mcD
+xGd
 ijw
 ijw
 ijw
@@ -36779,7 +36804,7 @@ rwC
 ijw
 xDt
 uxZ
-xGd
+mcD
 ijw
 aKH
 hwD
