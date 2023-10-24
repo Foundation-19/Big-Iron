@@ -102,7 +102,7 @@
 	description = "You are probably the last operating cell of the Enclave in the US, as far as you know. Now that the lore is out of the way, just make the round fun. You set the policies and the attitude of the Enclave this week."
 	supervisors = "Enclave Department of the Army."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
-	exp_requirements = 600
+	exp_requirements = 1500
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt
 	name = "Enclave Lieutenant"
@@ -148,7 +148,7 @@
 	description = "Second in command after Lieutenant, your role is to direct their orders directly to the sergeants and regular troops."
 	supervisors = "The Lieutenant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13gysergeant
-	exp_requirements = 2000
+	exp_requirements = 600
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant
 	name = "Enclave Gunnery Sergeant"
@@ -238,7 +238,7 @@
 	description = "Entrusted with the command of the squads assigned to the bunker, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
-	exp_requirements = 1500
+	exp_requirements = 600
 
 /datum/outfit/job/enclave/peacekeeper/enclavesgt
 	name = "Enclave Sergeant"
@@ -275,7 +275,7 @@
 	description = "You are an operative for the remnants of the Enclave. You, unlike the normal privates, have recieved specialist training in either engineering or medicine."
 	supervisors = "The Lieutenant and the Sergeants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13specialist
-	exp_requirements = 800
+	exp_requirements = 300
 
 /datum/outfit/job/enclave/peacekeeper/f13specialist
 	name = "Enclave Specialist"
@@ -312,8 +312,6 @@
 	description = "You are an operative for the remnants of the Enclave. Obey your Lieutenant. He sets the Enclave's policies."
 	supervisors = "The Lieutenant and the Sergeants"
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
-	exp_type = EXP_TYPE_FALLOUT
-	exp_requirements = 600
 
 /datum/outfit/job/enclave/peacekeeper/enclavespy
 	name = "Enclave Private"
