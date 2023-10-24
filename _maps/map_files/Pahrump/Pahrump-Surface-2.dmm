@@ -40019,7 +40019,9 @@
 "qpr" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/machinery/door/airlock/grunge/abandoned,
+/obj/machinery/door/airlock/grunge/abandoned{
+	req_one_access_txt = "134"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
 	},
