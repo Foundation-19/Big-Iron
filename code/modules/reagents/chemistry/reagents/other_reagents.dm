@@ -252,7 +252,6 @@
 	taste_description = "water"
 	overdose_threshold = 150 //Imagine drinking a gallon of water
 	var/cooling_temperature = 2
-	var/radiation_amount = 3			// 15 per 5 units; 150 per 50; 750 per 250
 	thirst_factor = THIRST_FACTOR * 15	// 11.25 per 5 units; 112.5 per 50; 562.5 per 250
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of water"
