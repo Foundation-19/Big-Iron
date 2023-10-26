@@ -252,7 +252,6 @@
 	taste_description = "water"
 	overdose_threshold = 150 //Imagine drinking a gallon of water
 	var/cooling_temperature = 2
-	var/radiation_amount = 3			// 15 per 5 units; 150 per 50; 750 per 250
 	thirst_factor = THIRST_FACTOR * 15	// 11.25 per 5 units; 112.5 per 50; 562.5 per 250
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of water"
@@ -323,8 +322,6 @@
 	if(method == TOUCH)
 		M.adjust_fire_stacks(-(reac_volume / 10))
 		M.ExtinguishMob()
-	if((method == INGEST) && radiation_amount > 0)
-		M.radiation += radiation_amount * reac_volume // This water isn't pure!
 	..()
 
 /datum/reagent/water/overdose_start(mob/living/M)
@@ -354,7 +351,6 @@
 	taste_description = "clean water"
 	glass_name = "glass of purified water"
 	glass_desc = "A glass of water clean of radiation or any contamination."
-	radiation_amount = 0
 	thirst_factor = THIRST_FACTOR * 30 // 22.5 per 5 units; 225 per 50; 1125 per 250
 	can_synth = FALSE
 
@@ -383,7 +379,6 @@
 	glass_name = "glass of holy water"
 	glass_desc = "A glass of holy water."
 	pH = 7.5 //God is alkaline
-	radiation_amount = 2 // Less radioactive
 	thirst_factor = THIRST_FACTOR * 18 // Cool water
 
 	// Holy water. Mostly the same as water, it also heals the plant a little with the power of the spirits. Also ALSO increases instability.
