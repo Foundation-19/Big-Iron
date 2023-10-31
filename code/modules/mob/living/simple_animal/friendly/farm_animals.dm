@@ -1779,6 +1779,13 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 /mob/living/simple_animal/horse/BiologicalLife(seconds, times_fired)
 	if(!(. = ..()))
 		return
+	if(!Move() && has_buckled_mobs())
+		var/mob/living/carbon/human/M = buckled_mobs[1]
+		var/H = M.is_holding_item_of_type(/obj/item/saddlehand)
+		if(H)
+			qdel(H)
+			saddle_held = FALSE
+	handle_following()
 
 /mob/living/simple_animal/horse/proc/handle_following()
 	if(owner)
