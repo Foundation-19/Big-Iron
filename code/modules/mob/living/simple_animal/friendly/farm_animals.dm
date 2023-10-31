@@ -1853,9 +1853,9 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 				follow = TRUE
 				return
 
-/mob/living/simple_animal/horse/Moved()
-	. = ..()
-	horseslot()
+// /mob/living/simple_animal/horse/Moved()
+//	. = ..()
+//	horseslot()
 
 // /mob/living/simple_animal/horse/proc/horseslot()
 //	if(has_buckled_mobs() && !saddle_held)
