@@ -28,16 +28,16 @@ SUBSYSTEM_DEF(nightcycle)
 	var/current_sun_power = 230
 
 	// Variables for badmining
-	var/sunrise_sun_color = "#ffd1b3"
-	var/sunrise_sun_power = 80
-	var/morning_sun_color = "#fff2e6"
-	var/morning_sun_power = 160
-	var/daytime_sun_color = "#FFFFFF"
-	var/daytime_sun_power = 230
-	var/afternoon_sun_color = "#fff2e6"
-	var/afternoon_sun_power = 160
-	var/sunset_sun_color = "#ffcccc"
-	var/sunset_sun_power = 80
+	var/sunrise_sun_color = "#00111a"
+	var/sunrise_sun_power = 10
+	var/morning_sun_color = "#00111a"
+	var/morning_sun_power = 10
+	var/daytime_sun_color = "#00111a"
+	var/daytime_sun_power = 10
+	var/afternoon_sun_color = "#00111a"
+	var/afternoon_sun_power = 10
+	var/sunset_sun_color = "#00111a"
+	var/sunset_sun_power = 10
 	var/nighttime_sun_color = "#00111a"
 	var/nighttime_sun_power = 10
 	/// How does it take to get darker or brighter each step.
