@@ -91,7 +91,7 @@
 
 
 /obj/item/gun/ballistic/minigunbal5mm
-	name = "CZ53 personal minigun"
+	name = "broken CZ53 personal minigun"
 	desc = "Boasting an extreme rate of fire, the Rockwell CZ53 personal minigun is the perfect weapon for suppressing fire."
 	icon = 'icons/obj/guns/minigun.dmi'
 	icon_state = "minigunbal_spin"
@@ -101,12 +101,12 @@
 	slot_flags = null
 	w_class = WEIGHT_CLASS_HUGE
 	burst_size = 1
-	automatic = 1
-	autofire_shot_delay = 1
+	automatic = 0
+	autofire_shot_delay = 4
 	burst_shot_delay = 1
-	fire_delay = 1
+	fire_delay = 4
 	ranged_attack_speed = CLICK_CD_RAPID
-	spread = 12
+	spread = 32
 	weapon_weight = WEAPON_HEAVY
 	extra_penetration = 0.01
 	extra_damage = 10

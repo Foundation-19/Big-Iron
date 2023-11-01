@@ -567,7 +567,7 @@
 /obj/item/clothing/suit/armor/f13/power_armor/t45b
 	name = "T-45b power armor"
 	desc = "It's a set of early-model T-45 power armor with a custom air conditioning module and restored servomotors. Bulky, but almost as good as the real thing."
-	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 65)
+	armor = list("melee" = 65, "bullet" = 65, "laser" = 65, "energy" = 22, "bomb" = 55, "bio" = 65, "rad" = 55, "fire" = 85, "acid" = 0, "wound" = 65)
 	slowdown = 0.75
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b
 
@@ -577,7 +577,7 @@
 	icon_state = "t45dpowerarmor"
 	item_state = "t45dpowerarmor"
 	slowdown = 0.75
-	armor = list("melee" = 72.5, "bullet" = 72.5, "laser" = 72.5, "energy" = 25, "bomb" = 65, "bio" = 75, "rad" = 80, "fire" = 85, "acid" = 30, "wound" = 70)
+	armor = list("melee" = 68, "bullet" = 68, "laser" = 62, "energy" = 25, "bomb" = 65, "bio" = 75, "rad" = 80, "fire" = 85, "acid" = 30, "wound" = 70)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45d
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d/knightcaptain
@@ -614,7 +614,7 @@
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
 	slowdown = 0.75 //+0.05 from helmet = total 0.255
-	armor = list("melee" = 72.5, "bullet" = 72.5, "laser" = 72.5, "energy" = 30, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 72)
+	armor = list("melee" = 70, "bullet" = 65, "laser" = 65, "energy" = 30, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 72)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 25)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t51b
 
@@ -652,7 +652,7 @@
 	icon_state = "t60powerarmor"
 	item_state = "t60powerarmor"
 	slowdown = 0.75
-	armor = list("melee" = 80, "bullet" = 70, "laser" = 80, "energy" = 30, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 50, "wound" = 80)
+	armor = list("melee" = 75, "bullet" = 65, "laser" = 65, "energy" = 30, "bomb" = 82, "bio" = 100, "rad" = 100, "fire" = 95, "acid" = 50, "wound" = 80)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 30)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t60
 
@@ -671,17 +671,17 @@
 	icon_state = "advpowerarmor1"
 	item_state = "advpowerarmor1"
 	slowdown = 0.75
-	armor = list("melee" = 80, "bullet" = 80, "laser" = 85, "energy" = 35, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 90)
+	armor = list("melee" = 80, "bullet" = 70, "laser" = 75, "energy" = 35, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 90)
 
 
-//Peacekeeper armor adjust as needed
+//Peacekeeper armor adjust as needed - ok
 /obj/item/clothing/suit/armor/f13/power_armor/x02
-	name = "Enclave power armor"
-	desc = "Upgraded pre-war power armor design used by the Enclave. It is mildly worn due to it's age and lack of maintenance after the fall of the Enclave."
+	name = "Repaired enclave power armor"
+	desc = "What once used to be the upgraded pre-war power armor design used by the Enclave. It is mildly worn due to it's age and lack of maintenance after the fall of the Enclave."
 	icon_state = "advanced"
 	item_state = "advanced"
-	slowdown = 0.75 //+0.1 from helmet = total 0.35
-	armor = list("melee" = 85, "bullet" = 85, "laser" = 85, "energy" = 65, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 75)
+	slowdown = 0.85 //+0.1 from helmet = total 0.35
+	armor = list("melee" = 65, "bullet" = 65, "laser" = 55, "energy" = 65, "bomb" = 70, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 75)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/x02 // Oh the misery
 
 /obj/item/clothing/suit/armor/f13/power_armor/x02/altumfire
@@ -701,7 +701,7 @@
 	desc = "A deep black suit of Enclave-manufactured heavy power armor, based on pre-war designs such as the T-51 and improving off of data gathered by post-war designs such as the X-01. Most commonly fielded on the East Coast, no suit rivals it's strength."
 	icon_state = "hellfire"
 	item_state = "hellfire"
-	armor = list("melee" = 90, "bullet" = 90, "laser" = 90, "energy" = 70, "bomb" = 80, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 90)
+	armor = list("melee" = 80, "bullet" = 80, "laser" = 70, "energy" = 70, "bomb" = 80, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 90)
 
 /obj/item/clothing/suit/armor/f13/enclave/armorvest
 	name = "armored vest"

@@ -581,8 +581,8 @@
 
 //The ammo/gun is stored in a back slot item
 /obj/item/minigunpack
-	name = "backpack power source"
-	desc = "The massive external power source for the laser gatling gun."
+	name = "rusted backpack power source"
+	desc = "This used to be a massive external power source for the laser gatling gun."
 	icon = 'icons/obj/guns/minigun.dmi'
 	icon_state = "holstered"
 	item_state = "backpack"
@@ -593,8 +593,8 @@
 	var/obj/item/gun/energy/minigun/gun
 	var/armed = 0 //whether the gun is attached, 0 is attached, 1 is the gun is wielded.
 	var/overheat = 0
-	var/overheat_max = 90
-	var/heat_diffusion = 2 //How much heat is lost per tick
+	var/overheat_max = 60
+	var/heat_diffusion = 10 //How much heat is lost per tick
 
 /obj/item/minigunpack/Initialize()
 	. = ..()
@@ -682,11 +682,11 @@
 	w_class = WEIGHT_CLASS_HUGE
 	custom_materials = null
 	burst_size = 1
-	burst_shot_delay = 1
-	automatic = 1
-	autofire_shot_delay = 1.75
+	burst_shot_delay = 4
+	automatic = 0
+	autofire_shot_delay = 5
 	spread = 8
-	fire_delay = 1
+	fire_delay = 4
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/weapons/laser.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/gatling/hitscan)
