@@ -656,7 +656,6 @@
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 30)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t60
 
-
 /obj/item/clothing/suit/armor/f13/power_armor/excavator
 	name = "excavator power armor"
 	desc = "Developed by Garrahan Mining Co. in collaboration with West Tek, the Excavator-class power armor was designed to protect miners from rockfalls and airborne contaminants while increasing the speed at which they could work. "
@@ -673,6 +672,11 @@
 	slowdown = 0.75
 	armor = list("melee" = 80, "bullet" = 80, "laser" = 85, "energy" = 35, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 90)
 
+/obj/item/clothing/suit/armor/f13/power_armor/t51green/enclave
+	name = "advanced power armor mk2"
+	desc = "A mass-produced version of the original APA. It sports less plating, but is easier to repair and maintain."
+	icon_state = "PA_x02"
+	item_state = "PA_x02"
 
 //Peacekeeper armor adjust as needed
 /obj/item/clothing/suit/armor/f13/power_armor/x02
