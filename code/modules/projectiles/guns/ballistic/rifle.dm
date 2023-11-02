@@ -303,13 +303,14 @@
 	desc = "The Hecate II is a heavy, high-powered bolt action sniper rifle chambered in .50 caliber ammunition. Lacks an iron sight."
 	icon_state = "amr"
 	item_state = "amr"
+	extra_speed = 0
 	mag_type = /obj/item/ammo_box/magazine/amr
 	fire_delay = 12 //Heavy round, tiny bit slower
-	extra_damage = 50
+	extra_damage = 65
 	extra_penetration = 0.6
 	recoil = 1
 	spread = 0
-	force = 65 //Big clumsy and sensitive scope, makes for a poor club
+	force = 10 //Big clumsy and sensitive scope, makes for a poor club
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
