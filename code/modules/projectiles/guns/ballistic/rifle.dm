@@ -264,7 +264,7 @@
 /obj/item/gun/ballistic/rifle/mag
 	name = "magazine fed bolt-action rifle template"
 	desc = "should not exist."
-	extra_speed = 800
+	extra_speed = 0
 
 /obj/item/gun/ballistic/rifle/mag/examine(mob/user)
 	. = ..()
@@ -309,7 +309,7 @@
 	extra_penetration = 0.6
 	recoil = 1
 	spread = 0
-	force = 10 //Big clumsy and sensitive scope, makes for a poor club
+	force = 65 //Big clumsy and sensitive scope, makes for a poor club
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
