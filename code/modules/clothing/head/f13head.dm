@@ -424,7 +424,7 @@
 	icon_state = "pinkhelmet"
 	item_state = "pinkhelmet"
 
-/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/enclave/update_icon_state()
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened/enclave/update_icon_state()
 	icon_state = "pinkhelmet[light_on]"
 	item_state = "pinkhelmet[light_on]"
 
