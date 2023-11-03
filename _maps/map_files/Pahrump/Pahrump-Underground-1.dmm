@@ -541,9 +541,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "avu" = (
-/obj/structure/HMG{
-	dir = 4
-	},
+/obj/structure/rack,
+/obj/effect/spawner/bundle/f13/armor/t45d,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "avG" = (
@@ -568,9 +567,9 @@
 /area/f13/bunker)
 "axe" = (
 /obj/structure/closet/crate/secure,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /obj/effect/spawner/lootdrop/f13/blueprintVHighBallistics,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "axA" = (
@@ -1877,7 +1876,7 @@
 "bpY" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/blueprintLowPartsWeighted,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /turf/open/floor/f13{
 	icon_state = "greenrustyfull"
 	},
@@ -2068,6 +2067,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "yellowrustysolid"
 	},
+/area/f13/enclave)
+"bwC" = (
+/obj/structure/ladder/unbreakable{
+	desc = "An extremely sturdy metal ladder. This one leads back up through the shattered ceiling plating.";
+	height = 2;
+	id = "EnclaveBunker"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "bwM" = (
 /obj/structure/falsewall/rust,
@@ -5196,6 +5203,16 @@
 /obj/structure/decoration/shock,
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/bunker)
+"dMQ" = (
+/obj/structure/ladder/unbreakable{
+	desc = "An extremely sturdy metal ladder. This one leads back up through the shattered ceiling plating.";
+	height = 2;
+	id = "Bigchewchewbunker"
+	},
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelchess2"
+	},
+/area/f13/caves)
 "dNb" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/f13/wood,
@@ -8770,6 +8787,8 @@
 "glc" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/rack,
+/obj/item/gun/energy/laser/aer9,
+/obj/item/gun/energy/laser/aer9,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 1
 	},
@@ -9545,6 +9564,12 @@
 /obj/machinery/door/window/brigdoor{
 	dir = 8;
 	req_access_txt = "1"
+	},
+/obj/item/clothing/head/helmet/f13/combat/swat,
+/obj/item/clothing/head/helmet/f13/combat/swat,
+/obj/item/clothing/suit/space/swat{
+	desc = "A suit jointly developed by the United States military and local police force with the goal of making a suit good for any kind of riot be it a normal riot or an armed conflict, This model never came out of the prototype phase and was outcompeted by a different group who made far better and lighter riot suits which are now most employed by the NCR";
+	name = "Bulky SWAT suit"
 	},
 /turf/open/floor/plasteel/darkred/side{
 	dir = 4
@@ -14435,7 +14460,7 @@
 	pixel_x = -6;
 	pixel_y = 4
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
 /turf/open/floor/f13{
 	icon_state = "greendirtyfull"
 	},
@@ -16600,6 +16625,7 @@
 "mYL" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/blueprintHigh,
+/obj/item/locked_box/misc/blueprints/tier3,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "mYV" = (
@@ -18113,7 +18139,7 @@
 /obj/effect/decal/waste{
 	icon_state = "goo10"
 	},
-/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/obj/effect/spawner/lootdrop/f13/armor/tier4,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "ooF" = (
@@ -19909,6 +19935,10 @@
 	},
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
+"pQb" = (
+/obj/structure/HMG,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/bunker)
 "pQq" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/f13{
@@ -20172,6 +20202,10 @@
 /obj/item/clothing/under/rank/prisoner,
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/brotherhood)
+"qbo" = (
+/obj/effect/spawner/lootdrop/f13/armor/tier5,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "qcD" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2";
@@ -24032,7 +24066,7 @@
 	color = "#363636"
 	},
 /obj/effect/decal/cleanable/blood/gibs,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/bunker)
 "tgB" = (
@@ -26230,8 +26264,9 @@
 /area/f13/enclave)
 "vbk" = (
 /obj/effect/turf_decal/bot,
-/obj/item/gun/energy/laser/aer9,
 /obj/structure/rack,
+/obj/item/gun/energy/laser/aer12,
+/obj/item/gun/energy/laser/aer9,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 1
 	},
@@ -35731,7 +35766,7 @@ aoj
 eLE
 aoj
 lAL
-vDN
+qbo
 gpM
 lnr
 xkM
@@ -41864,7 +41899,7 @@ dXE
 dXE
 uPr
 dXE
-fRK
+dMQ
 yiw
 gSS
 rtG
@@ -68164,7 +68199,7 @@ aoj
 ykJ
 dRF
 hBY
-vKj
+bwC
 uRF
 ykJ
 vPg
@@ -69258,7 +69293,7 @@ fLU
 ase
 fxu
 fxu
-fxu
+pQb
 vPg
 vPg
 eLE
