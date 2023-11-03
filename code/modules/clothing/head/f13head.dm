@@ -421,8 +421,8 @@
 /obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened/enclave
 	name = "advanced power armor helmet mk2"
 	desc = "An intimidating-looking helmet, made by the Enclave. It looks threatening, though cheap."
-	icon_state = "pinkhelmet"
-	item_state = "pinkhelmet"
+	icon_state = "pinkhelmet0"
+	item_state = "pinkhelmet0"
 
 /obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened/enclave/update_icon_state()
 	icon_state = "pinkhelmet[light_on]"
