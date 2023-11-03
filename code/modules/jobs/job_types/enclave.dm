@@ -199,7 +199,7 @@
 /datum/outfit/job/enclave/peacekeeper/Armoredinfantry
 	name = "Enclave Armored Infantry"
 	jobtype = /datum/job/enclave/Armoredinfantry
-	head = /obj/item/clothing/head/helmet/f13/power_armor/t51/bos/hardened/enclave
+	head = /obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened/enclave
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51green/enclave
 	accessory = /obj/item/clothing/accessory/enclave/specialist
 
