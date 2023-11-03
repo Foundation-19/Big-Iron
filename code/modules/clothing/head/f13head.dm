@@ -424,6 +424,10 @@
 	icon_state = "pinkhelmet"
 	item_state = "pinkhelmet"
 
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/enclave/update_icon_state()
+	icon_state = "pinkhelmet[light_on]"
+	item_state = "pinkhelmet[light_on]"
+
 /obj/item/clothing/head/helmet/f13/power_armor/t60
 	name = "T-60a power helmet"
 	desc = "The T-60 powered helmet, equipped with targetting software suite, Friend-or-Foe identifiers, dynamic HuD, and an internal music player."
