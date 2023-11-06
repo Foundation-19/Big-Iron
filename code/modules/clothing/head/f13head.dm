@@ -418,11 +418,15 @@
 	desc = "It's a T-51b power helmet, typically used by the Brotherhood. This one sports the markings of the Head Paladin."
 	armor = list("melee" = 75, "bullet" = 75, "laser" = 75, "energy" = 27, "bomb" = 64, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 75)
 
-/obj/item/clothing/head/helmet/f13/power_armor/t51/bos/hardened/enclave
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened/enclave
 	name = "advanced power armor helmet mk2"
 	desc = "An intimidating-looking helmet, made by the Enclave. It looks threatening, though cheap."
-	icon_state = "pinkhelmet"
-	item_state = "pinkhelmet"
+	icon_state = "pinkhelmet0"
+	item_state = "pinkhelmet0"
+
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened/enclave/update_icon_state()
+	icon_state = "pinkhelmet[light_on]"
+	item_state = "pinkhelmet[light_on]"
 
 /obj/item/clothing/head/helmet/f13/power_armor/t60
 	name = "T-60a power helmet"
