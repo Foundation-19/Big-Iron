@@ -107,7 +107,7 @@ Head Paladin
 	jobtype = /datum/job/bos/f13headpaladin
 	uniform = 		/obj/item/clothing/under/f13/recon
 	suit = 			/obj/item/clothing/suit/armor/f13/power_armor/t51green
-	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos
+	head = 			/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened
 	accessory = 	/obj/item/clothing/accessory/bos/headpaladin
 	glasses =       /obj/item/clothing/glasses/sunglasses
 	belt =			/obj/item/storage/belt/military/assault

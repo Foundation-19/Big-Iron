@@ -1853,23 +1853,24 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 				follow = TRUE
 				return
 
-/mob/living/simple_animal/horse/Moved()
-	. = ..()
-	horseslot()
+// /mob/living/simple_animal/horse/Moved()
+//	. = ..()
+//	horseslot()
 
-/mob/living/simple_animal/horse/proc/horseslot()
-	if(has_buckled_mobs() && !saddle_held)
-		var/mob/living/carbon/human/M = buckled_mobs[1]
-		var/lhand = M.get_empty_held_index_for_side("l")
-		var/rhand = M.get_empty_held_index_for_side("r")
-		if(lhand)
-			M.put_in_l_hand(new /obj/item/saddlehand(M))
-			saddle_held = TRUE
-		else if(rhand)
-			M.put_in_r_hand(new /obj/item/saddlehand(M))
-			saddle_held = TRUE
-		else
-			M.drop_all_held_items()
+// /mob/living/simple_animal/horse/proc/horseslot()
+//	if(has_buckled_mobs() && !saddle_held)
+//		var/mob/living/carbon/human/M = buckled_mobs[1]
+//		var/lhand = M.get_empty_held_index_for_side("l")
+//		var/rhand = M.get_empty_held_index_for_side("r")
+//		if(lhand)
+//			M.put_in_l_hand(new /obj/item/saddlehand(M))
+//			saddle_held = TRUE
+//		else if(rhand)
+//			M.put_in_r_hand(new /obj/item/saddlehand(M))
+//			saddle_held = TRUE
+//		else
+//			M.drop_all_held_items()
+														//Commented out until a better solution is found/made.
 
 /datum/action/cooldown/horse
 	name = "Horse Sprint"
