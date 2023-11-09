@@ -885,7 +885,7 @@
 	traitname = "explosive crafting"
 	remarks = list("If you want to get started making bombs, you're going to need a lot of igniters and black powder.", "Did a Follower write this book, or something?", "All thermite takes is some aluminum and iron.", "Coconut shells make acceptable grenade casings in a pinch.")
 	crafting_recipe_types = list(/datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang,
-/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/a40mm, /datum/crafting_recipe/a40mm_box, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket)
+/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/a40mmHE, /datum/crafting_recipe/a40mmHE_box, /datum/crafting_recipe/a40mmHEDP, /datum/crafting_recipe/a40mmHEDP_box, /datum/crafting_recipe/a40mmS, /datum/crafting_recipe/a40mmS_box, /datum/crafting_recipe/a40mmCS, /datum/crafting_recipe/a40mmCS_box, /datum/crafting_recipe/a40mmM, /datum/crafting_recipe/a40mmM_box, /datum/crafting_recipe/a40mmF, /datum/crafting_recipe/a40mmF_box, /datum/crafting_recipe/a40mmI, /datum/crafting_recipe/a40mmI_box, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket)
 
 /obj/item/book/granter/trait/explosives_advanced
 	name = "Advanced Techniques for Winning at Postal Chess"
@@ -894,7 +894,7 @@
 	traitname = "advanced explosive crafting"
 	remarks = list("Is this actually a legal chess move...?", "If you hook electronic parts up to a flux capacitor-oh, that makes a lot of sense, actually.", "Radium? What would you use radium f-oh no.", "Why would anyone actually publish this?")
 	crafting_recipe_types = list(/datum/crafting_recipe/incendiary, /obj/item/grenade/f13/he_grenade, /datum/crafting_recipe/radgrenade, /datum/crafting_recipe/empgrenade, /datum/crafting_recipe/incendiaryrocket, /datum/crafting_recipe/strongrocket, /datum/crafting_recipe/frag_shrapnel, /datum/crafting_recipe/stinger, /datum/crafting_recipe/flashbang,
-/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/a40mm, /datum/crafting_recipe/a40mm_box, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket)
+/datum/crafting_recipe/smokebomb, /datum/crafting_recipe/a40mmHE, /datum/crafting_recipe/a40mmHE_box, /datum/crafting_recipe/a40mmHEDP, /datum/crafting_recipe/a40mmHEDP_box, /datum/crafting_recipe/a40mmS, /datum/crafting_recipe/a40mmS_box, /datum/crafting_recipe/a40mmCS, /datum/crafting_recipe/a40mmCS_box, /datum/crafting_recipe/a40mmM, /datum/crafting_recipe/a40mmM_box, /datum/crafting_recipe/a40mmF, /datum/crafting_recipe/a40mmF_box, /datum/crafting_recipe/a40mmI, /datum/crafting_recipe/a40mmI_box, /datum/crafting_recipe/rocket_base, /datum/crafting_recipe/weakrocket)
 
 /obj/item/book/granter/trait/gunslinger
 	name = "Tycho: Life of a Lawman"
