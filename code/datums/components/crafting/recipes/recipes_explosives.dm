@@ -287,9 +287,9 @@
 	always_available = FALSE
 	granting_trait = TRAIT_ADVANCED_EXPLOSIVE_CRAFTING
 	
-/datum/crafting_recipe/a40mm
-	name = "40mm grenade"
-	result = /obj/item/ammo_casing/a40mm
+/datum/crafting_recipe/a40mmHE
+	name = "40mm HE grenade"
+	result = /obj/item/ammo_casing/a40mmHE
 	category = CAT_EXPLOSIVE
 	reqs = list(
 				/obj/item/stack/sheet/metal = 10,
@@ -305,15 +305,225 @@
 	always_available = FALSE
 	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
 	
-/datum/crafting_recipe/a40mm_box
-	name = "Ammo box (40mm grenades)"
-	result = /obj/item/ammo_box/a40mm
+/datum/crafting_recipe/a40mmHE_box
+	name = "Ammo box (40mmHE grenades)"
+	result = /obj/item/ammo_box/a40mmHE
 	category = CAT_EXPLOSIVE
 	reqs = list(
 				/obj/item/stack/sheet/metal = 40,
 				/obj/item/stack/sheet/mineral/titanium = 20,
 				/obj/item/stack/crafting/metalparts = 32,
 				/obj/item/stack/crafting/goodparts = 8,
+				/obj/item/stack/crafting/electronicparts = 60,
+				/obj/item/stack/ore/blackpowder = 32,
+				/obj/item/assembly/igniter = 4
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 20
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+
+/datum/crafting_recipe/a40mmHEDP
+	name = "40mm HEDP grenade"
+	result = /obj/item/ammo_casing/a40mmHEDP
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/sheet/mineral/titanium = 5,
+				/obj/item/stack/crafting/metalparts = 2,
+				/obj/item/stack/crafting/goodparts = 8,
+				/obj/item/stack/crafting/electronicparts = 20,
+				/obj/item/stack/ore/blackpowder = 10,
+				/obj/item/assembly/igniter = 1
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 5
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+	
+/datum/crafting_recipe/a40mmHEDP_box
+	name = "Ammo box (40mmHEDP grenades)"
+	result = /obj/item/ammo_box/a40mmHEDP
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 40,
+				/obj/item/stack/sheet/mineral/titanium = 20,
+				/obj/item/stack/crafting/metalparts = 8,
+				/obj/item/stack/crafting/goodparts = 32,
+				/obj/item/stack/crafting/electronicparts = 80,
+				/obj/item/stack/ore/blackpowder = 40,
+				/obj/item/assembly/igniter = 4
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 20
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+
+/datum/crafting_recipe/a40mmS
+	name = "40mm SMOKE grenade"
+	result = /obj/item/ammo_casing/a40mmS
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/sheet/mineral/titanium = 5,
+				/obj/item/stack/crafting/metalparts = 5,
+				/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/stack/crafting/electronicparts = 10,
+				/obj/item/stack/ore/blackpowder = 5,
+				/obj/item/assembly/igniter = 1
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 5
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+	
+/datum/crafting_recipe/a40mmS_box
+	name = "Ammo box (40mmSMOKE grenades)"
+	result = /obj/item/ammo_box/a40mmS
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 40,
+				/obj/item/stack/sheet/mineral/titanium = 20,
+				/obj/item/stack/crafting/metalparts = 20,
+				/obj/item/stack/crafting/goodparts = 8,
+				/obj/item/stack/crafting/electronicparts = 40,
+				/obj/item/stack/ore/blackpowder = 20,
+				/obj/item/assembly/igniter = 4
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 20
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+
+/datum/crafting_recipe/a40mmCS
+	name = "40mm CS grenade"
+	result = /obj/item/ammo_casing/a40mmCS
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/sheet/mineral/titanium = 5,
+				/obj/item/stack/crafting/metalparts = 5,
+				/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/stack/crafting/electronicparts = 10,
+				/obj/item/stack/ore/blackpowder = 8,
+				/obj/item/assembly/igniter = 1
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 5
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+	
+/datum/crafting_recipe/a40mmCS_box
+	name = "Ammo box (40mmCS grenades)"
+	result = /obj/item/ammo_box/a40mmCS
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 40,
+				/obj/item/stack/sheet/mineral/titanium = 20,
+				/obj/item/stack/crafting/metalparts = 20,
+				/obj/item/stack/crafting/goodparts = 8,
+				/obj/item/stack/crafting/electronicparts = 40,
+				/obj/item/stack/ore/blackpowder = 32,
+				/obj/item/assembly/igniter = 4
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 20
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+
+/datum/crafting_recipe/a40mmM
+	name = "40mm METAL grenade"
+	result = /obj/item/ammo_casing/a40mmM
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 20,
+				/obj/item/stack/sheet/mineral/titanium = 10,
+				/obj/item/stack/crafting/metalparts = 10,
+				/obj/item/stack/crafting/goodparts = 5,
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 5
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+	
+/datum/crafting_recipe/a40mmM_box
+	name = "Ammo box (40mm METAL grenades)"
+	result = /obj/item/ammo_box/a40mmM
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 80,
+				/obj/item/stack/sheet/mineral/titanium = 40,
+				/obj/item/stack/crafting/metalparts = 40,
+				/obj/item/stack/crafting/goodparts = 20,
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 20
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+
+/datum/crafting_recipe/a40mmF
+	name = "40mm FLASH grenade"
+	result = /obj/item/ammo_casing/a40mmF
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/sheet/mineral/titanium = 5,
+				/obj/item/stack/crafting/metalparts = 8,
+				/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/stack/crafting/electronicparts = 15,
+				/obj/item/stack/ore/blackpowder = 15,
+				/obj/item/assembly/igniter = 1
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 5
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+	
+/datum/crafting_recipe/a40mmF_box
+	name = "Ammo box (40mm FLASH grenades)"
+	result = /obj/item/ammo_box/a40mmF
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 40,
+				/obj/item/stack/sheet/mineral/titanium = 20,
+				/obj/item/stack/crafting/metalparts = 32,
+				/obj/item/stack/crafting/goodparts = 8,
+				/obj/item/stack/crafting/electronicparts = 60,
+				/obj/item/stack/ore/blackpowder = 60,
+				/obj/item/assembly/igniter = 4
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 20
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+
+/datum/crafting_recipe/a40mmI
+	name = "40mm INCENDARY grenade"
+	result = /obj/item/ammo_casing/a40mmI
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/stack/sheet/mineral/titanium = 5,
+				/obj/item/stack/crafting/metalparts = 8,
+				/obj/item/stack/crafting/goodparts = 1,
+				/obj/item/stack/crafting/electronicparts = 15,
+				/obj/item/stack/ore/blackpowder = 8,
+				/obj/item/assembly/igniter = 1
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 5
+	always_available = FALSE
+	granting_trait = list(list(TRAIT_EXPLOSIVE_CRAFTING, TRAIT_ADVANCED_EXPLOSIVE_CRAFTING))
+	
+/datum/crafting_recipe/a40mmI_box
+	name = "Ammo box (40mm INCENDARY grenades)"
+	result = /obj/item/ammo_box/a40mmI
+	category = CAT_EXPLOSIVE
+	reqs = list(
+				/obj/item/stack/sheet/metal = 40,
+				/obj/item/stack/sheet/mineral/titanium = 20,
+				/obj/item/stack/crafting/metalparts = 32,
+				/obj/item/stack/crafting/goodparts = 4,
 				/obj/item/stack/crafting/electronicparts = 60,
 				/obj/item/stack/ore/blackpowder = 32,
 				/obj/item/assembly/igniter = 4
