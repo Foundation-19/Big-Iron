@@ -7,7 +7,6 @@
 	damage = 30
 	armour_penetration = 0.25
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
-	shrapnel_magnitude = 4
 
 /obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
@@ -61,7 +60,7 @@
 	damage_type = STAMINA
 	damage = 80//If you get hit with this directly? Ouch...
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
-	var/datum/effect_system/smoke_spread/bad/smoke
+	var/datum/effect_system/smoke_spread/bad
 
 /obj/item/projectile/bullet/a40mmS/Initialize()
 	. = ..()
