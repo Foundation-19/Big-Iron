@@ -26,7 +26,7 @@
 
 /obj/item/projectile/bullet/a40mmCS/Initialize()
 	. = ..()
-	src.smoke = new /datum/effect_system/smoke_spread/teargas
+	src.smoke = new /datum/effect_system/smoke_spread/bad
 	src.smoke.attach(src)
 	smoke.set_up(4, src)
 
@@ -60,11 +60,11 @@
 	damage_type = STAMINA
 	damage = 80//If you get hit with this directly? Ouch...
 	pixels_per_second = TILES_TO_PIXELS(10) //slower than bullets
-	var/datum/effect_system/smoke_spread/bad
+	var/datum/effect_system/smoke_spread/bad/smoke
 
 /obj/item/projectile/bullet/a40mmS/Initialize()
 	. = ..()
-	src.smoke = new /datum/effect_system/smoke_spread/teargas
+	src.smoke = new /datum/effect_system/smoke_spread/bad
 	src.smoke.attach(src)
 	smoke.set_up(4, src)
 
