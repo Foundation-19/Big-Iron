@@ -72,12 +72,54 @@
 	projectile_type = /obj/item/projectile/bullet/m5mm/shock
 
 // 40mm (Grenade Launcher)
-/obj/item/ammo_casing/a40mm
+/obj/item/ammo_casing/a40mmHE
 	name = "40mm HE shell"
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
 	caliber = "40mm"
 	icon_state = "40mmHE"
-	projectile_type = /obj/item/projectile/bullet/a40mm
+	projectile_type = /obj/item/projectile/bullet/rocket/a40mmHE
+
+/obj/item/ammo_casing/a40mmCS
+	name = "40mm CS shell"
+	desc = "A thin, cased tear gas grenade. Only activates once it impacts the ground at high speed."
+	caliber = "40mmg"
+	icon_state = "40mmTG"
+	projectile_type = /obj/item/projectile/bullet/a40mmCS
+
+/obj/item/ammo_casing/a40mmS
+	name = "40mm Smoke shell"
+	desc = "A thin, cased tear gas grenade. Only activates once it impacts the ground at high speed."
+	caliber = "40mmg"
+	icon_state = "40mmTG"
+	projectile_type = /obj/item/projectile/bullet/a40mmS
+
+/obj/item/ammo_casing/a40mmHEDP
+	name = "40mm HEDP shell"
+	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
+	caliber = "40mm"
+	icon_state = "40mmHE"
+	projectile_type = /obj/item/projectile/bullet/rocket/a40mmHEDP
+
+/obj/item/ammo_casing/a40mmM
+	name = "40mm METAL shell"
+	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
+	caliber = "40mm"
+	icon_state = "40mmHE"
+	projectile_type = /obj/item/projectile/bullet/rocket/a40mmM
+
+/obj/item/ammo_casing/a40mmF
+	name = "40mm FLASH shell"
+	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
+	caliber = "40mm"
+	icon_state = "40mmHE"
+	projectile_type = /obj/item/projectile/bullet/rocket/a40mmF
+
+/obj/item/ammo_casing/a40mmI
+	name = "40mm INCENDARY shell"
+	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."
+	caliber = "40mm"
+	icon_state = "40mmHE"
+	projectile_type = /obj/item/projectile/bullet/rocket/a40mmI
 
 // 2mm EC
 /obj/item/ammo_casing/c2mm
