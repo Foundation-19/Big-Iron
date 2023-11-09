@@ -436,7 +436,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Loud Prime Decanus"
 	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher
 	backpack_contents = list(
-		/obj/item/ammo_box/a40mm = 2,
+		/obj/item/ammo_box/a40mmHE = 1,
+		/obj/item/ammo_box/a40mmHEDP = 1,
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 3,
 		/obj/item/grenade/f13/frag = 2,
