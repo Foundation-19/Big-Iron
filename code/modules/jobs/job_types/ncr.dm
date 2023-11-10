@@ -557,11 +557,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit = /obj/item/clothing/suit/armor/f13/trailranger
 	belt = /obj/item/storage/belt/military/NCR_Bandolier
 	neck = /obj/item/clothing/neck/mantle/ranger
-	suit_store = /obj/item/gun/ballistic/rifle/repeater/cowboy
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_lunch = 1,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
-		/obj/item/ammo_box/tube/a357 = 4
+		/obj/item/ammo_box/tube/m44 = 4
 		)
 
 /datum/outfit/loadout/rangerpatrol
@@ -704,13 +704,13 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 /datum/outfit/loadout/combatengineerdestroyer
 	name = "Explosives Expert"
-	suit_store = /obj/item/gun/ballistic/shotgun/hunting
+	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher
 	backpack_contents = list(
 		/obj/item/storage/box/ration/menu_ten = 1,
+		/obj/item/ammo_box/a40mm = 2,
 		/obj/item/grenade/plastic/c4 = 1,
 		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
-		/obj/item/book/granter/trait/explosives = 1,
-		/obj/item/ammo_box/shotgun/buck = 3
+		/obj/item/book/granter/trait/explosives = 1
 		)
 
 /datum/outfit/job/ncr/f13combatengineer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
