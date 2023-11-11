@@ -151,7 +151,7 @@
 	exp_requirements = 600
 
 	loadout_options = list(
-		/datum/outfit/loadout/gysergeantshotgun // shotgun + ripper
+		/datum/outfit/loadout/gysergeantshotgun, // shotgun + ripper
 		/datum/outfit/loadout/gysergeantrifle // infiltrator + deagle
 		)
 
@@ -295,7 +295,7 @@
 	exp_requirements = 300
 
 	loadout_options = list(
-		/datum/outfit/loadout/specmedic
+		/datum/outfit/loadout/specmedic,
 		/datum/outfit/loadout/specengi
 		)
 
