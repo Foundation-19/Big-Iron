@@ -161,13 +161,12 @@
 	head = /obj/item/clothing/head/helmet/f13/enclave/marine
 	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
 	accessory = /obj/item/clothing/accessory/enclave/master_sergeant
-
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/grenade/flashbang = 1,
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
-		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/melee/onehanded/knife/survival = 1
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
