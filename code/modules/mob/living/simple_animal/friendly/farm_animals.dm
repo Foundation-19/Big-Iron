@@ -1718,11 +1718,14 @@ Brand for permanently marking brahmin as yours (won't stop people stealing em an
 
 /mob/living/simple_animal/horse/post_buckle_mob(mob/living/M)
 	. = ..()
-	action.Grant(M)	
+	action.Grant(M)
+	ADD_TRAIT(M, TRAIT_NOGUNS)
+
 
 /mob/living/simple_animal/horse/post_unbuckle_mob(mob/living/M)
 	. = ..()
 	action.Remove(M)
+	REMOVE_TRAIT(M, TRAIT_NOGUNS)
 
 /datum/action/cooldown/horse/Trigger()
 	. = ..()
