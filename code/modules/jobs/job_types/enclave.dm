@@ -317,8 +317,8 @@
 
 /datum/outfit/loadout/specmedic
 	name = "Medic"
-	suit_store = /obj/item/gun/medbeam = 1
 	backpack_contents = list(
+		/obj/item/gun/medbeam = 1,
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 4,
 		/obj/item/book/granter/trait/midsurgery = 1,
@@ -327,8 +327,8 @@
 
 /datum/outfit/loadout/specengi
 	name = "Engineer"
-	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher = 1
 	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/grenadelauncher = 1,
 		/obj/item/ammo_box/a40mm = 2,
 		/obj/item/storage/belt/utility/full/engi = 1,
 		/obj/item/book/granter/trait/techno = 1,
