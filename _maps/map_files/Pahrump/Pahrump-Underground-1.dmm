@@ -1674,9 +1674,6 @@
 /area/f13/tunnel)
 "biS" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/mine/explosive{
-	layer = 1
-	},
 /obj/item/trash/f13/k_ration,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood3-broken"
@@ -3666,10 +3663,6 @@
 /obj/structure/bed/mattress,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"cCF" = (
-/obj/effect/spawner/bundle/f13/armor/combat/mk2,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "cCG" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/open/floor/f13/wood{
@@ -7150,10 +7143,6 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/enclave)
-"fgP" = (
-/obj/effect/spawner/bundle/f13/armor/combat,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "fgT" = (
 /obj/structure/spider/cocoon,
 /obj/item/reagent_containers/hypospray/medipen/stimpak{
@@ -16625,8 +16614,8 @@
 /area/f13/enclave)
 "mYL" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/blueprintHigh,
 /obj/item/locked_box/misc/blueprints/tier3,
+/obj/effect/spawner/lootdrop/f13/blueprintVHigh,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "mYV" = (
@@ -17235,10 +17224,13 @@
 /turf/closed/mineral/random/high_chance,
 /area/f13/tunnel)
 "nDf" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/blueprintLowPartsWeighted,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
+/obj/structure/bookshelf,
+/obj/effect/spawner/lootdrop/f13/traitbooks,
+/obj/effect/spawner/lootdrop/f13/traitbooks,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood3-broken"
+	},
+/area/f13/caves)
 "nDK" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "prison3"
@@ -19297,9 +19289,6 @@
 	pixel_y = 6;
 	pixel_x = 2
 	},
-/obj/item/mine/explosive{
-	layer = 1
-	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
 	},
@@ -19668,13 +19657,6 @@
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/blueprintLowPartsWeighted,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
-/mob/living/simple_animal/hostile/raider/junker/boss{
-	robust_searching = 1;
-	minimum_distance = 2;
-	retreat_distance = 5;
-	melee_damage_lower = 80;
-	melee_damage_upper = 80
-	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/building)
 "pCJ" = (
@@ -33193,7 +33175,7 @@ lnr
 lnr
 lnr
 gpM
-fgP
+bcq
 aoj
 aoj
 aoj
@@ -35259,7 +35241,7 @@ lnr
 gyS
 lnr
 gpM
-cCF
+vDN
 lAL
 eLE
 eLE
@@ -51597,7 +51579,7 @@ imd
 lnr
 lnr
 vPg
-dpV
+lnr
 oSc
 lnr
 lnr
@@ -71959,7 +71941,7 @@ vLK
 hQE
 aXd
 jPC
-jzO
+nDf
 dFt
 hQE
 dXE
@@ -89267,7 +89249,7 @@ vPg
 vPg
 eLE
 vPg
-nDf
+qUv
 nBk
 xkh
 iCA
