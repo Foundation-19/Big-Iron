@@ -1,0 +1,3 @@
+
+/datum/antagonist/nuke
+	
