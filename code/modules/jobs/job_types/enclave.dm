@@ -152,7 +152,7 @@
 
 	loadout_options = list(
 		/datum/outfit/loadout/gysergeantshotgun, // shotgun + ripper
-		/datum/outfit/loadout/gysergeantrifle // infiltrator + deagle
+		/datum/outfit/loadout/gysergeantrifle // carbine, suppressor, ESDs
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -170,6 +170,8 @@
 	accessory = /obj/item/clothing/accessory/enclave/master_sergeant
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
 		/obj/item/grenade/flashbang = 1,
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
@@ -187,11 +189,11 @@
 
 /datum/outfit/loadout/gysergeantrifle
 	name = "Support Sergeant"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle/infiltrator
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 4,
-		/obj/item/gun/ballistic/automatic/pistol/deagle = 1,
-		/obj/item/ammo_box/magazine/m44 = 2
+		/obj/item/ammo_box/magazine/m5mm = 4,
+		/obj/item/ammo_box/m5mmbox/shock = 1,
+		/obj/item/suppressor = 1
 		)
 
 //Armored Infantry
