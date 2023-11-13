@@ -1523,7 +1523,22 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 	always_available = FALSE
-
+//Chinese Assault Rifle Repair
+/datum/crafting_recipe/worn_type93_repair
+	name = "Repair a Worn Type 93"
+	result = /obj/item/gun/ballistic/automatic/type93
+	reqs = list(/obj/item/stack/sheet/metal = 3,
+				/obj/item/stack/crafting/goodparts = 15,
+				/obj/item/gun/ballistic/automatic/type93/worn = 1,
+				/obj/item/stack/sheet/prewar = 20,
+				/obj/item/attachments/auto_sear = 1,
+				/obj/item/stack/sheet/mineral/wood = 5,
+				)
+	tools = list(TOOL_AWORKBENCH, TOOL_SCREWDRIVER)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
 
 //////////////////////////////////
 ///GUN ATTACHMENT/PARTS CRAFTING//
