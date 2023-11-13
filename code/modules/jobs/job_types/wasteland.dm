@@ -753,7 +753,7 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/tribal
 	head = /obj/item/clothing/head/helmet/f13/deathskull
 	backpack_contents = list(
-		/obj/item/twohanded/fireaxe/bmprsword = 1,
+		/obj/item/melee/transforming/cleaving_saw/old_rusty = 1,
 		/obj/item/restraints/legcuffs/bola = 2,
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		/obj/item/stack/medical/gauze = 1
