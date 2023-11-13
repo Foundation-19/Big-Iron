@@ -284,7 +284,7 @@
 	suit_store = /obj/item/gun/ballistic/automatic/r93
 	accessory = /obj/item/clothing/accessory/enclave/specialist
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
-	head = /obj/item/clothing/head/helmet/f13/enclave/specialist
+	head = /obj/item/clothing/head/beret/enclave/science
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/pda = 1,
