@@ -429,7 +429,7 @@
 				/obj/item/stack/sheet/mineral/wood = 20,
 				/obj/item/stack/sheet/cloth = 10,
 				/obj/item/stack/sheet/leather = 2,
-				/obj/item/stack/sheet/titanium = 10,
+				/obj/item/stack/sheet/mineral/titanium = 10,
 				/obj/item/stack/crafting/metalparts = 3,
 				/obj/item/stack/sheet/mineral/silver = 2)
 	category = CAT_TRIBAL
