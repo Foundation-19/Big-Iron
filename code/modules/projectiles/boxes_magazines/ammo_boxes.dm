@@ -536,7 +536,7 @@
 	name = "ammo box (40mm HE grenades)"
 	caliber = "40mm"
 	icon_state = "40mm"
-	ammo_type = /obj/item/ammo_casing/a40mmHE
+	ammo_type = /obj/item/ammo_casing/40mmHESHELL
 	max_ammo = 4
 	multiple_sprites = 1
 
@@ -544,42 +544,42 @@
 	name = "ammo box (40mm HEDP grenades)"
 	caliber = "40mm"
 	icon_state = "40mmHEDP"
-	ammo_type = /obj/item/ammo_casing/a40mmHEDP
+	ammo_type = /obj/item/ammo_casing/40mmHEDPSHELL
 	max_ammo = 4
 	multiple_sprites = 1
 
 /obj/item/ammo_box/a40mmCS
 	name = "ammo box (40mm CS grenades)"
 	icon_state = "40mmCS"
-	ammo_type = /obj/item/ammo_casing/a40mmCS
+	ammo_type = /obj/item/ammo_casing/40mmCSSHELL
 	max_ammo = 4
 	multiple_sprites = 1
 
 /obj/item/ammo_box/a40mmS
 	name = "ammo box (40mm SMOKE grenades)"
 	icon_state = "40mmSmoke"
-	ammo_type = /obj/item/ammo_casing/a40mmS
+	ammo_type = /obj/item/ammo_casing/40mmSmokeSHELL
 	max_ammo = 4
 	multiple_sprites = 1
 
 /obj/item/ammo_box/a40mmM
 	name = "ammo box (40mm METAL grenades)"
 	icon_state = "40mmShot"
-	ammo_type = /obj/item/ammo_casing/a40mmM
+	ammo_type = /obj/item/ammo_casing/a40mmShotSHELL
 	max_ammo = 4
 	multiple_sprites = 1
 
 /obj/item/ammo_box/a40mmF
 	name = "ammo box (40mm FLASH grenades)"
 	icon_state = "40mmFlash"
-	ammo_type = /obj/item/ammo_casing/a40mmF
+	ammo_type = /obj/item/ammo_casing/a40mmFlashSHELL
 	max_ammo = 4
 	multiple_sprites = 1
 
 /obj/item/ammo_box/a40mmI
 	name = "ammo box (40mm INCENDARY grenades)"
 	icon_state = "40mmIncen"
-	ammo_type = /obj/item/ammo_casing/a40mmI
+	ammo_type = /obj/item/ammo_casing/a40mmIncenSHELL
 	max_ammo = 4
 	multiple_sprites = 1
 
