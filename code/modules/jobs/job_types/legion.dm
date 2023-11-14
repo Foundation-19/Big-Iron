@@ -637,6 +637,11 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	supervisors = "the Decanii"
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
 	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13explorer
+	
+	loadout_options = list(
+		/datum/outfit/loadout/sniper,	// scoped rifle
+		/datum/outfit/loadout/skirmisher, 		// SMG and tools
+		)
 
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
@@ -663,17 +668,32 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/explorer
 	glasses = /obj/item/clothing/glasses/sunglasses/big
-	belt = /obj/item/storage/backpack/spearquiver
 	neck = /obj/item/storage/belt/holster
-	suit_store = /obj/item/gun/ballistic/rifle/hunting
 	r_pocket = /obj/item/flashlight
 	l_pocket = /obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legenlisted = 1,
-		/obj/item/attachments/scope = 1,
 		/obj/item/melee/onehanded/machete = 1,
-		/obj/item/restraints/handcuffs = 1,
-		/obj/item/ammo_box/a308 = 2,
+		/obj/item/storage/survivalkit/medical/legion = 1,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 1
+		)
+
+/datum/outfit/loadout/sniper
+	name = "Sniper Explorer"
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
+	backpack_contents = list(
+		/obj/item/ammo_box/tube/m44 = 4,
+		/obj/item/attachments/scope = 1
+		)
+
+/datum/outfit/loadout/skirmisher
+	name = "Skirmishing Explorer"
+	suit_store = /obj/item/gun/ballistic/automatic/smg/cg45
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/cg45 = 2,
+		/obj/item/book/granter/trait/explosives = 1,
+		/obj/item/grenade/plastic/c4 = 1,
+		/obj/item/grenade/smokebomb = 2
 		)
 
 // ----------------- FRUMENTARIUS ---------------------
