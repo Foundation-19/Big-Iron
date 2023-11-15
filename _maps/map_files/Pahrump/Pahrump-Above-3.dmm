@@ -55,6 +55,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
+"ak" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/plasteel/f13/vault_floor/dark{
+	icon_state = "darkrusty";
+	name = "grimy tile"
+	},
+/area/f13/brotherhood/surface)
 "al" = (
 /turf/closed/wall/f13/store,
 /area/f13/building)
@@ -434,6 +442,7 @@
 "bu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/bin/trashbin,
+/obj/structure/wreck/trash/machinepile,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/brotherhood/surface)
 "bv" = (
@@ -1514,6 +1523,11 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/ncr)
+"eG" = (
+/obj/structure/table/wood/settler,
+/obj/item/storage/box/medicine/stimpaks/stimpaks5,
+/turf/open/floor/wood/f13/oak,
+/area/f13/ncr)
 "eH" = (
 /obj/structure/railing{
 	dir = 1
@@ -1859,6 +1873,12 @@
 	smooth = 1
 	},
 /area/f13/building)
+"fL" = (
+/obj/item/chair,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 8
+	},
+/area/f13/clinic)
 "fM" = (
 /obj/item/reagent_containers/food/drinks/bottle/brown/beer,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -1950,10 +1970,8 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/obj/item/seeds/ambrosia/gaia{
-	pixel_x = -16;
-	pixel_y = 5
-	},
+/obj/item/reagent_containers/food/drinks/bottle/holywater,
+/obj/item/seeds/ambrosia/deus,
 /turf/open/floor/f13{
 	icon_state = "greendirtyfull"
 	},
@@ -2266,6 +2284,14 @@
 	},
 /turf/open/floor/f13,
 /area/f13/brotherhood/surface)
+"hd" = (
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "gibbearcore"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 4
+	},
+/area/f13/clinic)
 "hg" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/f13/wood{
@@ -5268,6 +5294,12 @@
 /obj/structure/window/spawner/north,
 /turf/open/floor/f13,
 /area/f13/brotherhood/surface)
+"pP" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 4
+	},
+/area/f13/clinic)
 "pQ" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -5665,6 +5697,17 @@
 	sunlight_state = 1
 	},
 /area/f13/building)
+"qW" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 8
+	},
+/area/f13/clinic)
 "qX" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -8191,6 +8234,14 @@
 	},
 /turf/open/floor/carpet/red,
 /area/f13/merchant)
+"yc" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 8
+	},
+/area/f13/clinic)
 "yd" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/wood/wood_large,
@@ -9151,6 +9202,12 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
+"Bd" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 1
+	},
+/area/f13/clinic)
 "Be" = (
 /obj/item/melee/onehanded/machete/training,
 /turf/open/floor/wood/f13/oak{
@@ -9662,6 +9719,12 @@
 	},
 /turf/open/floor/f13,
 /area/f13/brotherhood/surface)
+"CB" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 1
+	},
+/area/f13/clinic)
 "CD" = (
 /obj/structure/barricade/wooden,
 /obj/structure/fence/wooden{
@@ -10130,6 +10193,12 @@
 	sunlight_state = 1
 	},
 /area/f13/wasteland)
+"DS" = (
+/obj/structure/wreck/trash/machinepile,
+/turf/open/floor/plasteel/f13/vault_floor/blue/side{
+	dir = 4
+	},
+/area/f13/clinic)
 "DT" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
@@ -11873,6 +11942,7 @@
 	pixel_y = -7
 	},
 /obj/effect/decal/remains/human,
+/mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13/vault_floor/dark{
 	icon_state = "darkdirty"
 	},
@@ -13459,6 +13529,15 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
+"Ox" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/effect/decal/cleanable/blood/old{
+	icon_state = "floor2"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/clinic)
 "Oy" = (
 /obj/structure/window/fulltile/house,
 /turf/open/floor/wood/f13/carpet,
@@ -14385,6 +14464,10 @@
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/building)
 "Rk" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/obj/effect/decal/cleanable/blood/gibs/down{
+	icon_state = "gib6-old"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/blue/side{
 	dir = 5;
 	icon_state = "bluerusty"
@@ -15514,6 +15597,14 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/wasteland)
+"UI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/plasteel/f13/vault_floor/dark{
+	icon_state = "darkrusty";
+	name = "grimy tile"
+	},
+/area/f13/brotherhood/surface)
 "UJ" = (
 /obj/item/chair/stool,
 /obj/effect/decal/cleanable/dirt,
@@ -16566,6 +16657,13 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"Yd" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "#363636"
+	},
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/floor/plasteel/f13/vault_floor/purple,
+/area/f13/clinic)
 "Yf" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -18984,7 +19082,7 @@ AX
 Ee
 Um
 Av
-Ee
+eG
 Rd
 EZ
 EZ
@@ -49603,8 +49701,8 @@ PO
 LH
 RC
 YC
-tl
-tl
+ak
+UI
 bu
 PO
 Qj
@@ -51659,7 +51757,7 @@ PO
 py
 VR
 VR
-tl
+ak
 YL
 tl
 PO
@@ -60704,12 +60802,12 @@ pS
 pS
 IW
 Wn
+qW
 Wn
-Wn
 DU
+yc
 DU
-DU
-DU
+fL
 DU
 ee
 EY
@@ -60961,7 +61059,7 @@ Wn
 St
 Ig
 zd
-zd
+Ox
 zd
 JY
 zd
@@ -61217,11 +61315,11 @@ gy
 gy
 fS
 Rk
-gy
+hd
 JP
-gy
-gy
-gy
+pP
+DS
+DS
 yl
 WP
 Fm
@@ -63007,7 +63105,7 @@ eB
 eB
 PL
 pS
-Ig
+CB
 WG
 EY
 MF
@@ -63264,7 +63362,7 @@ XV
 eB
 PL
 pS
-Ig
+CB
 HG
 Jg
 tF
@@ -64305,7 +64403,7 @@ Kt
 Ew
 Ew
 Ry
-Ry
+Yd
 EY
 ZD
 dY
@@ -64806,7 +64904,7 @@ Gc
 eB
 PL
 pS
-Ig
+Bd
 HG
 EY
 NC
