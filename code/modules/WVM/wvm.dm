@@ -696,8 +696,6 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	name = "Wasteland Vending Machine - Weapons"
 	icon_state = "weapon_idle"
 	prize_list = list(
-,		new /datum/data/wasteland_equipment("Low-Mid Tier Melee Lucky Box",      /obj/item/locked_box/weapon/melee/tier1_3                      220),
-		new /datum/data/wasteland_equipment("Low-Mid Tier Ballistic Lucky Box",  /obj/item/locked_box/weapon/range/tier1_3                      440),
 		new /datum/data/wasteland_equipment("survival knife",				/obj/item/melee/onehanded/knife/survival, 							70),
 		new /datum/data/wasteland_equipment(".22 Pistol",					/obj/item/gun/ballistic/automatic/pistol/pistol22,					110),
 		new /datum/data/wasteland_equipment("9mm pistol",					/obj/item/gun/ballistic/automatic/pistol/ninemil,					150),
@@ -710,11 +708,11 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Guns and Bullets, Part 1",		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one, 				100),
 		new /datum/data/wasteland_equipment("Guns and Bullets, Part 2",		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,				200),
 		new /datum/data/wasteland_equipment("Guns and Bullets, Part 3",		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three, 				300),
-		new /datum/data/wasteland_equipment("Guns and Bullets, Part 4",		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four, 				400)
+		new /datum/data/wasteland_equipment("Guns and Bullets, Part 4",		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four, 				400),
+		new /datum/data/wasteland_equipment("Low-Mid Tier Melee Lucky Box",      /obj/item/locked_box/weapon/melee/tier1_3,                      220),
+		new /datum/data/wasteland_equipment("Low-Mid Tier Ballistic Lucky Box",  /obj/item/locked_box/weapon/range/tier1_3,                      440),
 		)
 	highpop_list = list(
-		new /datum/data/wasteland_equipment("Low Tier Melee Lucky Box",          /obj/item/locked_box/weapon/melee/tier1_3                      440),
-		new /datum/data/wasteland_equipment("Low-Mid Tier Ballistic Lucky Box",  /obj/item/locked_box/weapon/range/tier1_3                      880),
 		new /datum/data/wasteland_equipment("survival knife",				/obj/item/melee/onehanded/knife/survival, 							40),
 		new /datum/data/wasteland_equipment(".22 Pistol",					/obj/item/gun/ballistic/automatic/pistol/pistol22,					50),
 		new /datum/data/wasteland_equipment("9mm pistol",					/obj/item/gun/ballistic/automatic/pistol/beretta,					60),
@@ -726,7 +724,9 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Guns and Bullets, Part 1",		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one, 				100),
 		new /datum/data/wasteland_equipment("Guns and Bullets, Part 2",		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,				200),
 		new /datum/data/wasteland_equipment("Guns and Bullets, Part 3",		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three, 				300),
-		new /datum/data/wasteland_equipment("Guns and Bullets, Part 4",		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four, 				400)
+		new /datum/data/wasteland_equipment("Guns and Bullets, Part 4",		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four, 				400),
+		new /datum/data/wasteland_equipment("Low Tier Melee Lucky Box",          /obj/item/locked_box/weapon/melee/tier1_3,                      440),
+		new /datum/data/wasteland_equipment("Low-Mid Tier Ballistic Lucky Box",  /obj/item/locked_box/weapon/range/tier1_3,                      880),
 		)
 
 /obj/machinery/mineral/wasteland_vendor/ammo
@@ -898,9 +898,9 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 	name = "Wasteland Vending Machine - Crafting"
 	icon_state = "generic_idle"
 	prize_list = list(
-        new /datum/data/wasteland_equipment("Salvage Part",                     /obj/item/salvage/low                                               10),
-		new /datum/data/wasteland_equipment("High Quality Salvage Part",        /obj/item/salvage/high                                              50),
-		new /datum/data/wasteland_equipment("Tool Salvage Part",                /obj/item/salvage/tool                                              150),
+        new /datum/data/wasteland_equipment("Salvage Part",                     /obj/item/salvage/low,                                              10),
+		new /datum/data/wasteland_equipment("High Quality Salvage Part",        /obj/item/salvage/high,                                             50),
+		new /datum/data/wasteland_equipment("Tool Salvage Part",                /obj/item/salvage/tool,                                             150),
 		new /datum/data/wasteland_equipment("High Quality Parts",				/obj/item/stack/crafting/goodparts,									25),
 		new /datum/data/wasteland_equipment("Metal Parts",						/obj/item/stack/crafting/metalparts,								10),
 		new /datum/data/wasteland_equipment("Electronic Parts",					/obj/item/stack/crafting/electronicparts,							5),
@@ -911,9 +911,9 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Sacks of Concrete x 10",			/obj/item/stack/sheet/mineral/concrete/ten,							25)
 		)
 	highpop_list = list(
-        new /datum/data/wasteland_equipment("Salvage Part",                     /obj/item/salvage/low                                               10),
-		new /datum/data/wasteland_equipment("High Quality Salvage Part",        /obj/item/salvage/high                                              50),
-		new /datum/data/wasteland_equipment("Tool Salvage Part",                /obj/item/salvage/tool                                              150),		
+        new /datum/data/wasteland_equipment("Salvage Part",                     /obj/item/salvage/low,                                              10),
+		new /datum/data/wasteland_equipment("High Quality Salvage Part",        /obj/item/salvage/high,                                             50),
+		new /datum/data/wasteland_equipment("Tool Salvage Part",                /obj/item/salvage/tool,                                             150),		
 		new /datum/data/wasteland_equipment("High Quality Parts",				/obj/item/stack/crafting/goodparts,									25),
 		new /datum/data/wasteland_equipment("Metal Parts",						/obj/item/stack/crafting/metalparts,								10),
 		new /datum/data/wasteland_equipment("Electronic Parts",					/obj/item/stack/crafting/electronicparts,							5),
@@ -940,7 +940,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Automatic mining scanner",	/obj/item/t_scanner/adv_mining_scanner/lesser,				200),
 		new /datum/data/wasteland_equipment("Advanced mining scanner",	/obj/item/t_scanner/adv_mining_scanner,						300),
 		new /datum/data/wasteland_equipment("Proto-kinetic crusher",	/obj/item/kinetic_crusher,				                    500),
-		new /datum/data/wasteland_equipment("Ore Silo Board",           /obj/item/circuitboard/machine/ore_silo                     1000),
+		new /datum/data/wasteland_equipment("Ore Silo Board",           /obj/item/circuitboard/machine/ore_silo,                    1000),
 		new /datum/data/wasteland_equipment("ORM Board",				/obj/item/circuitboard/machine/ore_redemption,				150)
 		)
 	highpop_list = list(
@@ -950,7 +950,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Automatic mining scanner",	/obj/item/t_scanner/adv_mining_scanner/lesser,				200),
 		new /datum/data/wasteland_equipment("Advanced mining scanner",	/obj/item/t_scanner/adv_mining_scanner,						300),
 		new /datum/data/wasteland_equipment("Proto-kinetic crusher",	/obj/item/kinetic_crusher,				                    500),
-		new /datum/data/wasteland_equipment("Ore Silo Board",           /obj/item/circuitboard/machine/ore_silo                     1000),
+		new /datum/data/wasteland_equipment("Ore Silo Board",           /obj/item/circuitboard/machine/ore_silo,                    1000),
 		new /datum/data/wasteland_equipment("ORM Board",				/obj/item/circuitboard/machine/ore_redemption,				150)
 		)
 
