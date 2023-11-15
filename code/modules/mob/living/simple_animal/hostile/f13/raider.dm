@@ -315,12 +315,12 @@
 	icon_state = "junker_boss"
 	icon_living = "junker_boss"
 	icon_dead = "junker_dead"
-	maxHealth = 450
-	health = 450
+	maxHealth = 400
+	health = 400
 	ranged = TRUE
 	retreat_distance = 4
 	minimum_distance = 6
-	extra_projectiles = 9
-	ranged_cooldown_time = 15
+	extra_projectiles = 5
+	ranged_cooldown_time = 30
 	projectiletype = /obj/item/projectile/bullet/shrapnel
 	projectilesound = 'sound/f13weapons/auto5.ogg'
