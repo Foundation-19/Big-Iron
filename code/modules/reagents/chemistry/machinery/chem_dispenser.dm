@@ -695,7 +695,7 @@
 /obj/machinery/chem_dispenser/indusmutagensaltpeter
 	name = "Industrial botanical chemical dispenser"
 	desc = "Creates and dispenses chemicals useful for botany."
-//	circuit = /obj/item/circuitboard/machine/indusmutagensaltpeter
+	circuit = /obj/item/circuitboard/machine/indusmutagensaltpeter
 	powerefficiency = 0.03
 //	cell_type = /obj/item/stock_parts/fc
 //	flags_1 = NODECONSTRUCT_1
@@ -716,7 +716,7 @@
 		/datum/reagent/diethylamine)
 		//same as above.
 	upgrade_reagents = null
-	upgrade_reagents2 = /datum/reagent/medicine/cryoxadone
+	upgrade_reagents2 = null
 	upgrade_reagents3 = null
 
 /obj/machinery/chem_dispenser/fullupgrade //fully ugpraded stock parts, emagged
@@ -807,7 +807,7 @@
 	icon_state = "minidispenser"
 	working_state = "minidispenser_working"
 	nopower_state = "minidispenser_nopower"
-//	circuit = /obj/item/circuitboard/machine/induschem
+	circuit = /obj/item/circuitboard/machine/induschem
 //	cell_type = /obj/item/stock_parts/fc
 	powerefficiency = 0.02
 	dispensable_reagents = list(
@@ -829,9 +829,10 @@
 		/datum/reagent/medicine/tricordrazine,
 		/datum/reagent/medicine/neo_jelly,
 		/datum/reagent/medicine/psicodine,
+		/datum/reagent/medicine/synthflesh,
 		/datum/reagent/medicine/silibinin)
 
-	upgrade_reagents =	/datum/reagent/medicine/synthflesh
+	upgrade_reagents =	null
 
 ///An unique, less efficient model found in the medbay apothecary room.
 /obj/machinery/chem_dispenser/apothecary
