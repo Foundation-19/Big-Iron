@@ -10,7 +10,7 @@
 
 /obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
-	explosion(target, -1, -1, 0, 3, 0, flame_range = 3)
+	explosion(target, 0, 4, 4, 0, 0, flame_range = 4)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
 	return BULLET_ACT_HIT
 
@@ -48,7 +48,7 @@
 
 /obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
-	explosion(target, -1, -1, 0, 3, 0, flame_range = 3)
+	explosion(target, 1, 2, 4, 1, 0, flame_range = 4)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
 	return BULLET_ACT_HIT
 
@@ -85,7 +85,7 @@
 
 /obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
-	explosion(target, -1, -1, 0, 0, 0, flame_range = 0)
+	explosion(target, 0, 0, 0, 0, 0, flame_range = 0)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
 	return BULLET_ACT_HIT
 
@@ -100,7 +100,7 @@
 
 /obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
-	explosion(target, -1, -1, 0, 0, 5, flame_range = 0)
+	explosion(target, 0, 0, 8, 0, 0, flame_range = 0)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
 	return BULLET_ACT_HIT
 
@@ -115,6 +115,6 @@
 
 /obj/item/projectile/bullet/rocket/on_hit(atom/target, blocked = FALSE)
 	..()
-	explosion(target, -1, -1, 0, 0, 0, flame_range = 8)
+	explosion(target, 0, 2, 5, 7, 0, flame_range = 8)
 	new /obj/effect/temp_visual/explosion(get_turf(target))
 	return BULLET_ACT_HIT
