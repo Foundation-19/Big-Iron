@@ -500,7 +500,6 @@
 		/datum/reagent/consumable/coffee,
 		/datum/reagent/consumable/cream,
 		/datum/reagent/consumable/tea,
-		/datum/reagent/consumable/icetea,
 		/datum/reagent/consumable/space_cola,
 		/datum/reagent/consumable/spacemountainwind,
 		/datum/reagent/consumable/dr_gibb,
@@ -509,57 +508,41 @@
 		/datum/reagent/consumable/sodawater,
 		/datum/reagent/consumable/lemon_lime,
 		/datum/reagent/consumable/pwr_game,
-		/datum/reagent/consumable/shamblers,
 		/datum/reagent/consumable/sugar,
 		/datum/reagent/consumable/pineapplejuice,
 		/datum/reagent/consumable/orangejuice,
-		/datum/reagent/consumable/grenadine,
 		/datum/reagent/consumable/limejuice,
 		/datum/reagent/consumable/tomatojuice,
 		/datum/reagent/consumable/lemonjuice,
-		/datum/reagent/consumable/menthol,
 		/datum/reagent/consumable/sunset,
-		/datum/reagent/consumable/bawls,
-		/datum/reagent/consumable/vim,
 		/datum/reagent/consumable/nuka_cola,
-		/datum/reagent/consumable/grapejuice,
-		/datum/reagent/consumable/tea/forest,
-		/datum/reagent/consumable/tea/red,
-		/datum/reagent/consumable/tea/green,
-		/datum/reagent/consumable/grey_bull,
-		/datum/reagent/consumable/sol_dry,
-		/datum/reagent/consumable/cream_soda
+		/datum/reagent/consumable/grenadine,
+		/datum/reagent/consumable/menthol,
 	)
 	upgrade_reagents = list(
 		/datum/reagent/consumable/banana,
 		/datum/reagent/consumable/berryjuice,
 		/datum/reagent/consumable/strawberryjuice,
+		/datum/reagent/consumable/vanilla,
+	)
+	upgrade_reagents2 = list(
 		/datum/reagent/consumable/applejuice,
 		/datum/reagent/consumable/carrotjuice,
 		/datum/reagent/consumable/pumpkinjuice,
 		/datum/reagent/consumable/watermelonjuice,
-		/datum/reagent/consumable/parsnipjuice,
-		/datum/reagent/consumable/bungojuice,
-		/datum/reagent/consumable/aloejuice,
-		/datum/reagent/consumable/peachjuice,
-		/datum/reagent/consumable/blumpkinjuice
-	)
-	upgrade_reagents2 = list(
-		/datum/reagent/consumable/vanilla,
-		/datum/reagent/consumable/coco,
-		/datum/reagent/consumable/lemonade,
-		/datum/reagent/consumable/buzz_fuzz,
-		/datum/reagent/consumable/menthol
+		/datum/reagent/consumable/cherryjelly,
 	)
 	upgrade_reagents3 = list(
 		/datum/reagent/drug/mushroomhallucinogen,
-		/datum/reagent/consumable/laughter,
-		/datum/reagent/consumable/monkey_energy
+		/datum/reagent/consumable/peachjuice,
+		/datum/reagent/consumable/bluecherryjelly,
 	)
 	emagged_reagents = list(
+		/datum/reagent/toxin/mindbreaker,
+		/datum/reagent/toxin/staminatoxin,
 		/datum/reagent/medicine/cryoxadone,
 		/datum/reagent/iron,
-		/datum/reagent/consumable/superlaughter
+		/datum/reagent/consumable/shamblers,
 	)
 
 /obj/machinery/chem_dispenser/drinks/fullupgrade //fully ugpraded stock parts, emagged
@@ -587,9 +570,8 @@
 	icon_state = "booze_dispenser"
 	circuit = /obj/item/circuitboard/machine/chem_dispenser/drinks/beer
 	dispensable_reagents = list(
-		/datum/reagent/consumable/ethanol/kahlua,
 		/datum/reagent/consumable/ethanol/beer,
-		/datum/reagent/consumable/ethanol/beer/light,
+		/datum/reagent/consumable/ethanol/kahlua,
 		/datum/reagent/consumable/ethanol/whiskey,
 		/datum/reagent/consumable/ethanol/wine,
 		/datum/reagent/consumable/ethanol/vodka,
@@ -607,29 +589,25 @@
 		/datum/reagent/consumable/ethanol/triple_sec,
 		/datum/reagent/consumable/ethanol/sake,
 		/datum/reagent/consumable/ethanol/applejack,
-		/datum/reagent/consumable/ethanol/champagne,
-		/datum/reagent/consumable/ethanol/fernet
 	)
 	upgrade_reagents = list(
 		/datum/reagent/consumable/ethanol,
-		/datum/reagent/consumable/ethanol/atomicbomb,
-		/datum/reagent/consumable/ethanol/thirteenloko,
-		/datum/reagent/consumable/ethanol/changelingsting,
-		/datum/reagent/consumable/ethanol/alexander,
-		/datum/reagent/consumable/ethanol/beer/green,
-		/datum/reagent/consumable/ethanol/trappist
+		/datum/reagent/consumable/ethanol/fernet,
 	)
 	upgrade_reagents2 = list(
 		/datum/reagent/consumable/ethanol/hooch,
 		/datum/reagent/consumable/ethanol/mead
-	)
+		)
 	upgrade_reagents3 = list(
-		/datum/reagent/medicine/antihol
-	)
-	emagged_reagents = list(
-	/datum/reagent/consumable/ethanol/rotgut
-	)
+		/datum/reagent/consumable/ethanol/atomicbomb,
+		/datum/reagent/consumable/ethanol/thirteenloko,
+		)
 
+	emagged_reagents = list(
+		/datum/reagent/consumable/ethanol/alexander,
+		/datum/reagent/toxin/minttoxin,
+		/datum/reagent/consumable/ethanol/changelingsting,
+	)
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade //fully ugpraded stock parts, emagged
 	desc = "Contains a large reservoir of the good stuff. This model has had its safeties shorted out."
 	obj_flags = CAN_BE_HIT | EMAGGED
@@ -659,7 +637,7 @@
 /obj/machinery/chem_dispenser/mutagensaltpeter
 	name = "botanical chemical dispenser"
 	desc = "Creates and dispenses chemicals useful for botany."
-	flags_1 = NODECONSTRUCT_1
+//	flags_1 = NODECONSTRUCT_1
 
 	dispensable_reagents = list(
 		/datum/reagent/toxin/mutagen,
@@ -692,7 +670,7 @@
 	component_parts += new /obj/item/stock_parts/cell/bluespace(null)
 	RefreshParts()
 
-	/obj/machinery/chem_dispenser/indusmutagensaltpeter
+/obj/machinery/chem_dispenser/indusmutagensaltpeter
 	name = "Industrial botanical chemical dispenser"
 	desc = "Creates and dispenses chemicals useful for botany."
 	circuit = /obj/item/circuitboard/machine/indusmutagensaltpeter
@@ -710,7 +688,7 @@
 		/datum/reagent/toxin/plantbgone,
 		/datum/reagent/toxin/plantbgone/weedkiller,
 		/datum/reagent/toxin/pestkiller,
-		/datum/reagent/medicine/cryoxadone,
+//		/datum/reagent/medicine/cryoxadone,
 		/datum/reagent/ammonia,
 		/datum/reagent/ash,
 		/datum/reagent/diethylamine)
@@ -718,6 +696,8 @@
 	upgrade_reagents = null
 	upgrade_reagents2 = /datum/reagent/medicine/cryoxadone
 	upgrade_reagents3 = null
+
+
 
 /obj/machinery/chem_dispenser/fullupgrade //fully ugpraded stock parts, emagged
 	desc = "Creates and dispenses chemicals. This model has had its safeties shorted out."
@@ -801,7 +781,7 @@
 	component_parts += new /obj/item/stock_parts/cell/bluespace(null)
 	RefreshParts()
 
-	/obj/machinery/chem_dispenser/induschem
+/obj/machinery/chem_dispenser/induschem
 	name = "Industrial medicine dispenser"
 	desc = "A heavier duty industrial machine meant for chemical synthesis."
 	icon_state = "minidispenser"
@@ -833,6 +813,7 @@
 
 	upgrade_reagents =	/datum/reagent/medicine/synthflesh
 
+
 ///An unique, less efficient model found in the medbay apothecary room.
 /obj/machinery/chem_dispenser/apothecary
 	name = "apothecary chem dispenser"
@@ -841,7 +822,7 @@
 	working_state = "minidispenser_working"
 	nopower_state = "minidispenser_nopower"
 	circuit = /obj/item/circuitboard/machine/chem_dispenser/apothecary
-	powerefficiency = 0.0833333
+	powerefficiency = 0.03
 	dispensable_reagents = list( //radium and stable plasma moved to upgrade tier 1 and 2, they've little to do with most medicines anyway.
 		/datum/reagent/hydrogen,
 		/datum/reagent/lithium,
