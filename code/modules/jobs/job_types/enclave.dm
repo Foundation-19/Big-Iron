@@ -150,23 +150,9 @@
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13gysergeant
 	exp_requirements = 600
 
-/datum/outfit/job/enclave/peacekeeper/f13gysergeant
-	name = "Enclave Gunnery Sergeant"
-	jobtype = /datum/job/enclave/f13gysergeant
-	head = /obj/item/clothing/head/helmet/f13/enclave/marine
-	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
-	accessory = /obj/item/clothing/accessory/enclave/master_sergeant
-
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m45exp = 2,
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/grenade/flashbang = 1,
-		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/pda = 1,
-		/obj/item/storage/bag/money/small/wastelander = 1,
-		/obj/item/melee/onehanded/knife/survival = 1,
+	loadout_options = list(
+		/datum/outfit/loadout/gysergeantshotgun, // shotgun + ripper
+		/datum/outfit/loadout/gysergeantrifle // carbine, suppressor, ESDs
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -176,6 +162,39 @@
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
+/datum/outfit/job/enclave/peacekeeper/f13gysergeant
+	name = "Enclave Gunnery Sergeant"
+	jobtype = /datum/job/enclave/f13gysergeant
+	head = /obj/item/clothing/head/helmet/f13/enclave/marine
+	suit = /obj/item/clothing/suit/armor/f13/enclave/marine
+	accessory = /obj/item/clothing/accessory/enclave/master_sergeant
+	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 2,
+		/obj/item/grenade/flashbang = 1,
+		/obj/item/pda = 1,
+		/obj/item/storage/bag/money/small/wastelander = 1,
+		/obj/item/melee/onehanded/knife/survival = 1
+		)
+
+/datum/outfit/loadout/gysergeantshotgun
+	name = "CQC Sergeant"
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/slug = 2,
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/melee/powered/ripper/prewar = 1
+		)
+
+/datum/outfit/loadout/gysergeantrifle
+	name = "Support Sergeant"
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m5mm = 4,
+		/obj/item/ammo_box/m5mmbox/shock = 1,
+		/obj/item/suppressor = 1
+		)
 
 //Armored Infantry
 
@@ -277,6 +296,11 @@
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13specialist
 	exp_requirements = 300
 
+	loadout_options = list(
+		/datum/outfit/loadout/specmedic,
+		/datum/outfit/loadout/specengi
+		)
+
 /datum/outfit/job/enclave/peacekeeper/f13specialist
 	name = "Enclave Specialist"
 	jobtype = /datum/job/enclave/f13specialist
@@ -290,9 +314,27 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/storage/firstaid/ancient = 1,
-		/obj/item/gun/medbeam = 1,
 		/obj/item/ammo_box/magazine/m556/rifle = 3,
+		)
+
+/datum/outfit/loadout/specmedic
+	name = "Medic"
+	backpack_contents = list(
+		/obj/item/gun/medbeam = 1,
+		/obj/item/storage/firstaid/ancient = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 4,
+		/obj/item/book/granter/trait/midsurgery = 1,
+		/obj/item/book/granter/trait/chemistry = 1
+		)
+
+/datum/outfit/loadout/specengi
+	name = "Engineer"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/revolver/grenadelauncher = 1,
+		/obj/item/ammo_box/a40mm = 2,
+		/obj/item/storage/belt/utility/full/engi = 1,
+		/obj/item/book/granter/trait/techno = 1,
+		/obj/item/book/granter/trait/explosives = 1
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13specialist/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
