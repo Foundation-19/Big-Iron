@@ -841,14 +841,16 @@
 /turf/open/floor/wood/wood_large,
 /area/f13/ncr)
 "aYW" = (
-/obj/structure/table/wood/junk,
-/obj/item/binoculars,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/flashlight/lantern{
+/obj/structure/table/reinforced,
+/obj/machinery/computer/terminal{
+	icon_state = "lab";
+	pixel_y = 3;
+	layer = 4
+	},
+/obj/item/reagent_containers/food/drinks/bottle/sunset{
 	pixel_y = 15;
-	on = 1;
-	light_on = 1;
-	icon_state = "lantern-on"
+	pixel_x = 10
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
@@ -883,6 +885,24 @@
 /obj/item/paper/crumpled,
 /turf/open/floor/f13,
 /area/f13/brotherhood/surface)
+"bcq" = (
+/obj/structure/bed/wooden{
+	pixel_y = 15
+	},
+/obj/structure/bed/wooden,
+/obj/structure/fence/post{
+	pixel_x = -16;
+	layer = 3;
+	name = "metal end piece";
+	desc = "That's a metal end piece"
+	},
+/obj/structure/fence/post{
+	pixel_x = 16;
+	desc = "That's a metal end piece";
+	name = "metal end piece"
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/kebab)
 "bdL" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
@@ -3720,6 +3740,36 @@
 "emg" = (
 /turf/open/floor/wood/f13/oak,
 /area/f13/village)
+"emA" = (
+/obj/structure/curtain{
+	color = "#363636";
+	pixel_y = 31;
+	layer = 4
+	},
+/obj/structure/filingcabinet{
+	pixel_y = 9;
+	layer = 4
+	},
+/obj/structure/filingcabinet{
+	pixel_x = -10;
+	pixel_y = 9;
+	layer = 4
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-18";
+	pixel_y = 9;
+	layer = 8;
+	pixel_x = 12
+	},
+/obj/machinery/photocopier{
+	layer = 4.2;
+	pixel_y = -11;
+	pixel_x = -6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/kebab)
 "emF" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -5663,9 +5713,7 @@
 /obj/machinery/light/small{
 	pixel_x = 10
 	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "gMa" = (
 /obj/item/trash/candy,
@@ -5704,10 +5752,11 @@
 	},
 /area/f13/clinic)
 "gNj" = (
-/obj/structure/sign/poster/contraband/space_cola{
-	pixel_y = 32
-	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/dresser,
+/obj/item/storage/photo_album{
+	pixel_y = 12
+	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "gNt" = (
@@ -6620,6 +6669,10 @@
 	},
 /turf/open/floor/holofloor/carpet,
 /area/f13/building)
+"hLk" = (
+/obj/structure/chair/office/dark,
+/turf/open/floor/wood/f13/oak,
+/area/f13/kebab)
 "hMh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/window{
@@ -6649,7 +6702,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
 "hNf" = (
-/obj/structure/chair/wood/worn{
+/obj/structure/chair/folding{
 	dir = 1
 	},
 /turf/open/floor/wood/f13/oak,
@@ -7736,6 +7789,21 @@
 	icon_state = "neutralrustyfull"
 	},
 /area/f13/building)
+"jnk" = (
+/obj/structure/curtain{
+	color = "#363636";
+	pixel_y = 31;
+	layer = 6
+	},
+/obj/structure/guncase,
+/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy{
+	pixel_y = 9;
+	layer = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/kebab)
 "jpn" = (
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid,
 /area/f13/merchant)
@@ -8163,6 +8231,14 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"jMH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/sofa/right{
+	color = "#800000";
+	dir = 8
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/kebab)
 "jMY" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -9393,6 +9469,14 @@
 	pixel_y = 17
 	},
 /turf/open/floor/carpet/black,
+/area/f13/kebab)
+"lpk" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
+/obj/item/kirbyplants{
+	pixel_y = 23
+	},
+/turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "lqw" = (
 /obj/structure/decoration/legion/tentpole/rope{
@@ -11866,6 +11950,13 @@
 /obj/structure/table,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
+"odq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
+/obj/item/pen,
+/obj/item/paper_bin,
+/turf/open/floor/wood/f13/oak,
+/area/f13/kebab)
 "odL" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -12343,7 +12434,8 @@
 /obj/structure/filingcabinet{
 	density = 0;
 	pixel_x = -9;
-	pixel_y = 21
+	pixel_y = 21;
+	layer = 5
 	},
 /obj/structure/filingcabinet{
 	density = 0;
@@ -14043,6 +14135,13 @@
 	icon_state = "oakfloor3-broken"
 	},
 /area/f13/wasteland)
+"qFN" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/folding{
+	dir = 1
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/kebab)
 "qGE" = (
 /obj/machinery/door/unpowered/securedoor{
 	req_access_txt = "145";
@@ -14341,6 +14440,13 @@
 /obj/structure/chair/office/dark,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
+"qWP" = (
+/obj/structure/flag,
+/obj/item/stack/sheet/leather/five,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/kebab)
 "qXf" = (
 /obj/structure/decoration/clock/active{
 	pixel_y = 29
@@ -14513,15 +14619,6 @@
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
-"rmk" = (
-/obj/machinery/door/airlock/wood{
-	req_access_txt = "148";
-	name = "evidence"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
-/area/f13/kebab)
 "rmH" = (
 /obj/structure/chair/comfy/black,
 /obj/effect/decal/cleanable/dirt,
@@ -16153,6 +16250,16 @@
 	icon_state = "darkredfull"
 	},
 /area/f13/ncr)
+"tcB" = (
+/obj/structure/curtain{
+	color = "#363636";
+	pixel_y = 31;
+	layer = 6
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/kebab)
 "tcC" = (
 /obj/structure/table/booth,
 /turf/open/floor/wood/f13/oak{
@@ -16669,6 +16776,25 @@
 	},
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/merchant)
+"tIt" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/vending/coffee,
+/obj/item/reagent_containers/food/drinks/bottle/instacocoa{
+	pixel_y = 20;
+	layer = 4
+	},
+/obj/item/reagent_containers/food/drinks/bottle/instacoffee{
+	pixel_y = 19;
+	pixel_x = 3;
+	layer = 5
+	},
+/obj/item/reagent_containers/food/drinks/mug/coco{
+	pixel_y = 15;
+	pixel_x = -6;
+	layer = 5.5
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/kebab)
 "tIy" = (
 /obj/structure/bed/wooden,
 /turf/open/floor/carpet/red,
@@ -17735,9 +17861,8 @@
 /area/f13/building)
 "vdi" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/obj/structure/simple_door/metal/dirtystore,
+/turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "vdm" = (
 /turf/closed/wall/mineral/wood,
@@ -18021,10 +18146,8 @@
 /turf/closed/wall/f13/wood,
 /area/f13/building)
 "vsj" = (
-/obj/structure/chair/wood/worn{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "vsY" = (
@@ -18591,13 +18714,6 @@
 "vTc" = (
 /turf/open/floor/wood/f13,
 /area/f13/wasteland)
-"vTX" = (
-/obj/machinery/door/airlock/wood{
-	req_access_txt = "148";
-	name = "evidence"
-	},
-/turf/open/floor/wood/f13/oak,
-/area/f13/kebab)
 "vUh" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/radio/headset/headset_town,
@@ -20208,7 +20324,16 @@
 /turf/open/floor/plasteel/f13/vault_floor/neutral,
 /area/f13/brotherhood/surface)
 "xSz" = (
-/obj/structure/closet/crate/wooden,
+/obj/structure/bed/wooden,
+/obj/structure/curtain{
+	color = "#5c131b";
+	layer = 5
+	},
+/obj/item/bedsheet/hos,
+/obj/structure/stone_tile/slab{
+	layer = 7;
+	pixel_y = 29
+	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "xTm" = (
@@ -20327,6 +20452,17 @@
 	},
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/wasteland)
+"xYR" = (
+/obj/structure/chair/sofa/left{
+	color = "#800000";
+	dir = 8
+	},
+/obj/machinery/light/small{
+	dir = 4;
+	light_color = "red"
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/kebab)
 "xZb" = (
 /obj/structure/chair/f13chair2{
 	dir = 4
@@ -48398,9 +48534,9 @@ oIJ
 oIJ
 dfz
 xSz
-xSz
+nIq
+bcq
 orn
-eFZ
 eFZ
 eFZ
 eFZ
@@ -48656,8 +48792,8 @@ dfz
 dfz
 gNj
 nIq
+wvD
 orn
-eFZ
 oIJ
 oIJ
 oIJ
@@ -48908,10 +49044,10 @@ usv
 wfB
 vTc
 vqt
-ezs
+emA
 gmE
-jUj
-jUj
+odq
+qFN
 hyh
 orn
 eFZ
@@ -49166,10 +49302,10 @@ wfB
 vTc
 dfz
 ezs
-nIq
+hLk
 vsj
-vsj
-vsj
+qFN
+jUj
 orn
 eFZ
 oIJ
@@ -49422,11 +49558,11 @@ jvn
 wfB
 vTc
 vqt
-ezs
+tcB
 aYW
-vsj
+lpk
 hNf
-hNf
+nIq
 orn
 eFZ
 oIJ
@@ -49681,9 +49817,9 @@ cYP
 dfz
 ezs
 nIq
-vsj
-vsj
-hNf
+jUj
+jUj
+nIq
 orn
 eFZ
 oIJ
@@ -49936,10 +50072,10 @@ usv
 wfB
 dKG
 vqt
-ezs
-jUj
-djY
-jUj
+jnk
+jMH
+xYR
+tIt
 jUj
 orn
 eFZ
@@ -50194,10 +50330,10 @@ wfB
 cYP
 dfz
 dfz
-vTX
 dfz
 dfz
 dfz
+izH
 orn
 eFZ
 oIJ
@@ -50449,11 +50585,11 @@ usv
 wfB
 wfB
 vTc
-rmk
+ezs
 ezs
 vdi
-vdi
-vdi
+jUj
+jUj
 gLO
 orn
 eFZ
@@ -50706,9 +50842,9 @@ usv
 wfB
 oIJ
 oIJ
+ezs
+qWP
 dfz
-dfz
-vQd
 vQd
 vQd
 dfz
