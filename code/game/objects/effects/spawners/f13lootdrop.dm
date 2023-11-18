@@ -1013,14 +1013,13 @@
 				/obj/item/gun/ballistic/automatic/smg/american180,
 				/obj/effect/spawner/bundle/f13/aer9,
 				/obj/effect/spawner/bundle/f13/wattz2k,
-				/obj/effect/spawner/lootdrop/f13/weapon/revolver44variants,
-				/obj/effect/spawner/bundle/f13/mp5,
-				/obj/effect/spawner/bundle/f13/smg10mm
+				/obj/effect/spawner/lootdrop/f13/weapon/revolver44variants
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4
 	name = "tier four firearms"
-	loot = list(
+	loot = list(/obj/effect/spawner/bundle/f13/mp5,
+				/obj/effect/spawner/bundle/f13/smg10mm,
 				/obj/effect/spawner/bundle/f13/worn_assault_carbine,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/guns/tommygun,
@@ -1028,14 +1027,12 @@
 				/obj/effect/spawner/bundle/f13/aer12,
 				/obj/effect/spawner/bundle/f13/dkssniper,
 				/obj/effect/spawner/bundle/f13/plasmapistol,
-				/obj/effect/spawner/bundle/f13/wattz2kext,
-				/obj/effect/spawner/bundle/f13/r82
+				/obj/effect/spawner/bundle/f13/wattz2kext
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier5
 	name = "tier five firearms"
 	loot = list(/obj/effect/spawner/bundle/f13/assault_rifle,
-				/obj/effect/spawner/bundle/f13/infiltrator,
 				/obj/effect/spawner/bundle/f13/r84,
 				/obj/effect/spawner/bundle/f13/brushgun,
 				/obj/effect/spawner/bundle/f13/assault_carbine,
