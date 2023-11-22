@@ -6022,6 +6022,12 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
+"crW" = (
+/obj/structure/railing/wood{
+	icon_state = "post_wood"
+	},
+/turf/open/indestructible/ground/outside/savannah,
+/area/f13/wasteland)
 "crX" = (
 /obj/machinery/door/unpowered/securedoor{
 	req_access_txt = "145";
@@ -6828,6 +6834,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/machinery/workbench,
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "cLo" = (
@@ -9634,6 +9641,13 @@
 /obj/structure/simple_door/metal/fence,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"dRq" = (
+/obj/structure/railing/wood{
+	dir = 6;
+	icon_state = "post_wood"
+	},
+/turf/open/indestructible/ground/outside/savannah,
+/area/f13/wasteland)
 "dRs" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -10147,7 +10161,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/building)
 "eaF" = (
-/obj/structure/simple_door/metal/barred,
+/obj/machinery/door/airlock/wood/glass{
+	req_one_access_txt = "148"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -10507,10 +10523,6 @@
 /obj/item/key,
 /turf/open/floor/wood/f13,
 /area/f13/building)
-"ego" = (
-/obj/machinery/autolathe,
-/turf/open/floor/wood/f13/oak,
-/area/f13/kebab)
 "egr" = (
 /obj/effect/decal/fakelattice,
 /turf/open/transparent/openspace{
@@ -12313,6 +12325,10 @@
 	icon_state = "verticalleftborderright0"
 	},
 /area/f13/wasteland)
+"eNZ" = (
+/obj/structure/railing/wood,
+/turf/open/indestructible/ground/outside/savannah,
+/area/f13/wasteland)
 "eOc" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "topshadowleft"
@@ -13090,6 +13106,9 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/ncr)
+"fdT" = (
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/kebab)
 "fdV" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_4"
@@ -22387,7 +22406,7 @@
 	},
 /area/f13/wasteland)
 "iCf" = (
-/obj/structure/railing/wood/underlayer{
+/obj/structure/railing/wood{
 	dir = 4
 	},
 /turf/open/indestructible/ground/outside/savannah,
@@ -25012,6 +25031,12 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/darkblue/corner,
 /area/f13/building)
+"jFr" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirtcorner"
+	},
+/area/f13/kebab)
 "jFx" = (
 /obj/structure/fluff/railing{
 	dir = 9
@@ -33528,6 +33553,13 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"mWU" = (
+/obj/effect/landmark/start/f13/kebab/scab,
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 5;
+	icon_state = "dirt"
+	},
+/area/f13/kebab)
 "mWY" = (
 /obj/structure/chair/stool,
 /obj/effect/decal/cleanable/cobweb,
@@ -35509,6 +35541,7 @@
 /obj/effect/spawner/lootdrop/trash,
 /obj/effect/spawner/lootdrop/trash,
 /obj/effect/spawner/lootdrop/druggie_pill,
+/obj/machinery/autolathe,
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "nLd" = (
@@ -37293,6 +37326,12 @@
 /obj/item/storage/toolbox/electrical,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/building)
+"oyX" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 1;
+	icon_state = "dirt"
+	},
+/area/f13/kebab)
 "ozc" = (
 /obj/machinery/vending/tool,
 /obj/effect/decal/cleanable/dirt{
@@ -44998,10 +45037,10 @@
 	},
 /area/f13/building)
 "rKG" = (
-/obj/structure/railing/wood/underlayer{
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/railing/wood{
 	dir = 4
 	},
-/obj/structure/flora/ausbushes/ppflowers,
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland)
 "rKR" = (
@@ -46823,16 +46862,12 @@
 	color = "#800000";
 	dir = 4
 	},
-/obj{
-	name = "---Merge conflict marker---"
-	},
 /obj/machinery/light{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/machinery/jukebox/constructed,
 /turf/open/floor/wood/wood_large,
 /area/f13/kebab)
 "svW" = (
@@ -47623,6 +47658,12 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"sLr" = (
+/obj/effect/decal/fakelattice,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/merchant)
 "sLB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/weightmachine/stacklifter,
@@ -51041,6 +51082,7 @@
 /obj/item/detective_scanner,
 /obj/item/camera/detective,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/card/id/dogtag/deputy/kebab,
 /turf/open/floor/wood/wood_large,
 /area/f13/kebab)
 "ueT" = (
@@ -53663,6 +53705,12 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland)
+"vgN" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 4;
+	icon_state = "dirt"
+	},
+/area/f13/kebab)
 "vgO" = (
 /obj/structure/chair/stool/retro/backed{
 	dir = 8
@@ -55702,9 +55750,8 @@
 	icon_state = "lantern-on"
 	},
 /obj/effect/decal/fakelattice,
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
 	},
 /area/f13/merchant)
 "wdo" = (
@@ -76673,7 +76720,7 @@ tNu
 eVb
 eZa
 qJN
-lUK
+eNZ
 hxa
 hxa
 hxa
@@ -77187,7 +77234,7 @@ tQk
 tNu
 rXN
 mXm
-lUK
+eNZ
 svL
 bfS
 hxa
@@ -77444,7 +77491,7 @@ eZa
 rXN
 kSJ
 tQk
-kje
+crW
 jIz
 qLT
 mvv
@@ -77701,7 +77748,7 @@ mXm
 tQk
 mYM
 nlg
-lUK
+eNZ
 mVB
 mvv
 mjb
@@ -77958,7 +78005,7 @@ rXN
 kSJ
 rXN
 rXN
-kje
+crW
 jIz
 qLT
 qLT
@@ -78215,7 +78262,7 @@ nlg
 rXN
 grM
 kSJ
-lUK
+eNZ
 jIz
 mvv
 qLT
@@ -78472,7 +78519,7 @@ tSk
 iCf
 tSk
 rKG
-eei
+dRq
 mjb
 mvv
 iPp
@@ -79005,7 +79052,7 @@ cdL
 hxa
 hxa
 tie
-xzd
+sFO
 xJt
 fEu
 agw
@@ -79266,7 +79313,7 @@ xzd
 xzd
 xzd
 xzd
-xzd
+sFO
 yac
 wTy
 xzd
@@ -83650,9 +83697,9 @@ gQt
 dGm
 gQt
 oNA
-osE
-hfq
-xzd
+mWU
+vgN
+jFr
 fyf
 cax
 plq
@@ -83908,8 +83955,8 @@ gQt
 fhh
 gQt
 osE
-hfq
-xzd
+fdT
+oyX
 cax
 rkr
 xoh
@@ -84165,8 +84212,8 @@ ogm
 ogm
 ogm
 ogm
-ogm
-xzd
+hfq
+hfq
 rkr
 sgz
 xoh
@@ -88527,7 +88574,7 @@ cwl
 oXi
 rVQ
 nHH
-ego
+dgv
 ogm
 hvc
 osx
@@ -91325,10 +91372,10 @@ ixe
 igz
 llq
 gAZ
+sLr
 egr
 mmu
 mmu
-iJp
 iJp
 hxa
 qLT
@@ -91583,9 +91630,9 @@ bFJ
 llq
 gAZ
 wdj
+egr
 mmu
 mmu
-iJp
 iJp
 hxa
 wPu
