@@ -6,7 +6,7 @@
 	icon_state = "charlie"
 	icon_living = "charlie"
 	icon_dead = "charlie_dead"
-	gender = FEMALE
+	gender = MALE
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	speak = list("moo?","moo","MOOOOOO")
 	speak_emote = list("moos","moos hauntingly")
@@ -15,7 +15,6 @@
 	speak_chance = 1
 	turns_per_move = 5
 	see_in_dark = 6
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 6)
 	response_help_continuous  = "pets"
 	response_help_simple = "pet"
 	response_disarm_continuous = "gently pushes aside"
@@ -27,51 +26,44 @@
 	attack_sound = 'sound/weapons/punch1.ogg'
 	health = 50
 	maxHealth = 50
-	var/obj/item/udder/udder = null
-	var/datum/reagent/milk_reagent = /datum/reagent/consumable/milk
-	var/food_type = /obj/item/reagent_containers/food/snacks/grown/wheat
 	gold_core_spawnable = FRIENDLY_SPAWN
-	var/is_calf = 0
-	var/has_calf = 0
-	var/young_type = null
 	blood_volume = 480
 
 	footstep_type = FOOTSTEP_MOB_SHOE
 
-/mob/living/simple_animal/cow/Initialize()
-	udder = new(null, milk_reagent)
-	. = ..()
 
-/mob/living/simple_animal/cow/Destroy()
-	qdel(udder)
-	udder = null
-
-
-/mob/living/simple_animal/cow/attackby(obj/item/O, mob/user, params)
-
-	return ..()
-
-/mob/living/simple_animal/cow/BiologicalLife(seconds, times_fired)
-	if(!(. = ..()))
-		return
-
-/mob/living/simple_animal/cow/on_attack_hand(mob/living/carbon/M)
-	new /mob/living/simple_animal/nugget(get_turf(src))
-	new /mob/living/simple_animal/nugget(get_turf(src))
+/mob/living/simple_animal/charlie/death()
+	addtimer(CALLBACK(src, .proc/Revive), 5 MINUTES)
+	new /obj/item/reagent_containers/food/snacks/meat/slab(get_turf(src))
+	new /obj/item/reagent_containers/food/snacks/meat/slab(get_turf(src))
 	..()
 
-/obj/item/charlieegg
-	name = "lil nugget"
-	desc = "A tiny"
-	icon = 'icons/fallout/objects/food&drinks/food.dmi'
-	icon_state = "nugget"
-	icon_living = "nugget"
+/mob/living/simple_animal/charlie/attackby(obj/item/O, mob/user, params)
+	qdel(O)
+	to_chat(user, "<span class='warning'>[src] eats the [O]!</span>")
+	new /obj/item/charlieegg(get_turf(src))
+	..()
 
+/mob/living/simple_animal/charlie/proc/Revive()
+	revive(full_heal = 1)
+
+/obj/item/charlieegg
+	name = "meat egg"
+	desc = "A tiny egg that presumably contains meat."
+	icon = 'icons/fallout/objects/food&drinks/food.dmi'
+	icon_state = "antegg"
+
+/obj/item/charlieegg/Initialize()
+	. = ..()
+	addtimer(CALLBACK(src, .proc/Evolve), 3 MINUTES)
+
+/obj/item/charlieegg/proc/Evolve()
+	new /mob/living/simple_animal/nugget(get_turf(src))
 
 //The Goobers
 /mob/living/simple_animal/nugget
 	name = "lil nugget"
-	desc = "A tiny"
+	desc = "A tiny guy made of meat"
 	icon = 'icons/fallout/mobs/animals/farmanimals.dmi'
 	icon_state = "nugget"
 	icon_living = "nugget"
