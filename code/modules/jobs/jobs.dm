@@ -213,8 +213,6 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Vigilante",
 	"Tribal",
 	"Wastelander",
-	"Blackwater Settler",
-	"Blackwater Deputy",
 ))
 
 
@@ -247,6 +245,8 @@ GLOBAL_LIST_INIT(kebab_positions, list(
 	"Bartender",
 	"Citizen",
 	"Radio Host",
+	"Kebab blackwater Settler",
+	"Kebab blackwater Deputy",
 ))
 
 GLOBAL_LIST_INIT(security_positions, list(

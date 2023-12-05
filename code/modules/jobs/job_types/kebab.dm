@@ -198,7 +198,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Merchant"
-	description = "You command kebab's militia and have been placed in charge of the town's defense and maintaining order in the streets."
+	description = "You command kebab's militia and have been placed in charge of the town's defense and maintaining order in the streets. They also have authority over the Blackwater deputies."
 	exp_requirements = 0
 
 	outfit = /datum/outfit/job/kebab/f13militiacom
@@ -436,6 +436,24 @@
 		/obj/item/storage/bag/plants = 1
 		)
 
+/datum/outfit/loadout/f13citizen/legionsubject
+	name = "Legion subject"
+	glasses = /obj/item/clothing/glasses/orange
+	uniform = /obj/item/clothing/under/f13/keksweater
+	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy
+	shoes = /obj/item/clothing/shoes/f13/military/fashion/cowboy_boots
+	suit = /obj/item/clothing/suit/f13/cowboygvest
+	belt = /obj/item/storage/belt/holster/rugged/revolver_357
+	suit_store = /obj/item/melee/onehanded/machete
+	backpack_contents = list(
+		/obj/item/card/id/dogtag/town/legion = 1,
+		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/brahminbridle = 1,
+		/obj/item/brahminsaddle = 1,
+		/obj/item/brahminbrand = 1,
+		/obj/item/melee/smith/hammer/premade = 1
+		)
+
 /datum/outfit/loadout/f13citizen/vault
 	name = "Vault Refugee"
 	uniform = /obj/item/clothing/under/f13/vault
@@ -460,6 +478,20 @@
 	backpack_contents = list(
 		/obj/item/twohanded/baseball/spiked = 1,
 		/obj/item/gun/ballistic/revolver/hobo/knucklegun = 1
+		)
+
+/datum/outfit/loadout/f13citizen/nouveauriche
+	name = "Nouveau Riche"
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	suit = /obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy
+	uniform = /obj/item/clothing/under/rank/civilian/victorianblackdress
+	backpack_contents = list(
+		/obj/item/clothing/under/suit/tan = 1,
+		/obj/item/clothing/under/rank/civilian/victorian_purple = 1,
+		/obj/item/clothing/under/suit/black/skirt = 1,
+		/obj/item/clothing/under/dress/sundress = 1,
+		/obj/item/gun/ballistic/revolver/colt357 = 1,
+		/obj/item/stack/f13Cash/caps/onezerozero = 1
 		)
 
 /*--------------------------------------------------------------*/

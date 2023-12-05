@@ -2249,6 +2249,7 @@
 "aMn" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/tree/jungle/small,
+/obj/structure/flora/tree/pine/xmas/presents,
 /turf/open/indestructible/ground/outside/savannah/leftcenter,
 /area/f13/wasteland)
 "aMp" = (
@@ -2568,7 +2569,6 @@
 /obj/item/storage/box/handcuffs{
 	pixel_y = 13
 	},
-/obj/structure/car/rubbish1,
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "aSA" = (
@@ -4791,6 +4791,16 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
+"bHe" = (
+/obj/structure/railing{
+	color = "#A47449";
+	dir = 6
+	},
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
+	},
+/turf/open/water,
+/area/f13/wasteland)
 "bHp" = (
 /obj/item/storage/trash_stack{
 	icon_state = "trash_2"
@@ -4812,6 +4822,13 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
+"bHJ" = (
+/mob/living/simple_animal/chicken,
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
+	},
+/turf/open/indestructible/ground/outside/savannah,
+/area/f13/wasteland)
 "bHL" = (
 /obj/structure/table,
 /obj/item/kitchen/rollingpin,
@@ -5536,6 +5553,12 @@
 "bTA" = (
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
+"bTK" = (
+/obj/structure/flora/tree/pine/xmas/presents{
+	layer = 4
+	},
+/turf/open/indestructible/ground/outside/savannah,
+/area/f13/wasteland)
 "bTR" = (
 /obj/structure/flora/tallgrass3,
 /turf/open/indestructible/ground/outside/desert,
@@ -13054,6 +13077,12 @@
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/wood/f13/oak,
 /area/f13/village)
+"eLl" = (
+/obj/structure/flora/tree/pine/xmas/presents{
+	layer = 8
+	},
+/turf/open/indestructible/ground/outside/savannah,
+/area/f13/wasteland)
 "eLr" = (
 /obj/structure/wreck/trash/brokenvendor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -13096,6 +13125,8 @@
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker/large,
+/obj/item/clothing/under/f13/mutiesanta,
+/obj/item/clothing/shoes/winterboots/santaboots,
 /turf/open/floor/plasteel/cult,
 /area/f13/cotc)
 "eMp" = (
@@ -14700,6 +14731,7 @@
 	light_power = 0.8;
 	pixel_y = 24
 	},
+/obj/item/clothing/head/santa,
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "fsB" = (
@@ -19334,6 +19366,7 @@
 "gUp" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/head/helmet/space/santahat,
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "gUB" = (
@@ -20329,6 +20362,7 @@
 /obj/item/clothing/under/rank/civilian/victorian_purple,
 /obj/item/clothing/under/rank/civilian/victorian_redsleeves,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/item/clothing/suit/space/santa/fluff,
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "hmm" = (
@@ -23735,6 +23769,15 @@
 	},
 /turf/open/floor/carpet,
 /area/f13/building)
+"ivc" = (
+/obj/structure/window/fulltile/wood/broken{
+	layer = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/kebab)
 "ive" = (
 /obj/item/reagent_containers/pill/patch/jet,
 /obj/structure/bed/mattress{
@@ -26025,6 +26068,14 @@
 /obj/structure/car/rubbish1,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop0"
+	},
+/area/f13/wasteland)
+"jnM" = (
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
 	},
 /area/f13/wasteland)
 "jnN" = (
@@ -29167,6 +29218,9 @@
 	},
 /obj/structure/fluff/railing{
 	color = "#A47449"
+	},
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
 	},
 /turf/open/water,
 /area/f13/wasteland)
@@ -33562,6 +33616,7 @@
 /obj/structure/rack/shelf_wood,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/suit/space/santa,
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "mhy" = (
@@ -33998,7 +34053,6 @@
 	pixel_y = 24
 	},
 /obj/effect/landmark/start/f13/bwdeputy,
-/obj/structure/car/rubbish2,
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "moV" = (
@@ -38666,6 +38720,7 @@
 	pixel_y = -13
 	},
 /obj/structure/flora/tree/jungle,
+/obj/structure/flora/tree/pine/xmas/presents,
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland)
 "oaZ" = (
@@ -40113,10 +40168,6 @@
 /obj/machinery/icecream_vat,
 /turf/open/floor/plasteel/freezer,
 /area/f13/caves)
-"oFG" = (
-/obj/structure/car/rubbish3,
-/turf/open/floor/wood/f13/oak,
-/area/f13/kebab)
 "oFK" = (
 /obj/structure/chair/booth{
 	icon_state = "booth_west_north"
@@ -50364,6 +50415,17 @@
 /obj/structure/simple_door/room,
 /turf/open/floor/plasteel/green,
 /area/f13/building)
+"sCK" = (
+/obj/structure/flora/ausbushes/fullgrass{
+	pixel_x = -1;
+	pixel_y = 4
+	},
+/obj/structure/flora/tree/pine/xmas/presents{
+	layer = 8;
+	pixel_y = -1
+	},
+/turf/open/indestructible/ground/outside/savannah/topcenter,
+/area/f13/wasteland)
 "sCO" = (
 /obj/item/wrench/basic,
 /turf/open/indestructible/ground/outside/desert,
@@ -51646,7 +51708,9 @@
 	},
 /area/f13/building)
 "sYG" = (
-/obj/structure/bonfire,
+/obj/structure/flora/tree/pine/xmas/presents{
+	layer = 8
+	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/kebab)
 "sYH" = (
@@ -55650,6 +55714,12 @@
 /obj/structure/simple_door/dirtyglass,
 /turf/open/floor/wood/f13/oak,
 /area/f13/village)
+"uxV" = (
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/head/santa,
+/turf/open/floor/wood/f13/oak,
+/area/f13/kebab)
 "uyg" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/glass/fifty,
@@ -59762,6 +59832,9 @@
 /area/f13/legion)
 "wjR" = (
 /obj/structure/destructible/tribal_torch/lit,
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
+	},
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland)
 "wjS" = (
@@ -64657,6 +64730,13 @@
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
+"xRF" = (
+/obj/effect/turf_decal/stripes/asteroid/line{
+	dir = 4
+	},
+/obj/structure/flora/tree/pine/xmas,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "xRI" = (
 /obj/structure/chair/stool{
 	dir = 4;
@@ -81003,7 +81083,7 @@ hxa
 tGI
 cPj
 fst
-gUp
+uxV
 gUp
 oxl
 oxl
@@ -82021,7 +82101,7 @@ pxx
 tDb
 kTN
 rXN
-kSJ
+bHJ
 gWX
 rXN
 ksj
@@ -82297,7 +82377,7 @@ bSw
 gej
 dgu
 rPN
-hxa
+jnM
 hxa
 cup
 rBQ
@@ -83329,7 +83409,7 @@ tDb
 hxa
 gRF
 xzd
-xzd
+ivc
 xzd
 xzd
 sdb
@@ -84856,7 +84936,7 @@ kUI
 erh
 phF
 kVk
-lql
+xRF
 lql
 qLT
 cFn
@@ -88713,7 +88793,7 @@ lnc
 gvb
 iBv
 ueA
-bSw
+bHe
 hxa
 qLT
 ueh
@@ -91556,7 +91636,7 @@ hxa
 hxa
 mAi
 mVw
-rXN
+eLl
 xKs
 fjW
 bdw
@@ -92578,7 +92658,7 @@ iBv
 qLT
 qLT
 hxa
-urd
+bTK
 tHF
 qnl
 hxa
@@ -94893,7 +94973,7 @@ hxa
 qLT
 iZp
 pUs
-tHF
+sCK
 ohg
 qmE
 qLT
@@ -94912,7 +94992,7 @@ rHg
 wLu
 jKF
 vEv
-oFG
+bDa
 bDa
 liZ
 hxa
