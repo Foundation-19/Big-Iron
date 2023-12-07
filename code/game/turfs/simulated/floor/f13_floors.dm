@@ -530,3 +530,39 @@
 	icon = 'icons/turf/ice.dmi'
 	icon_state = "ice_floor"
 	
+/// Rooftops
+
+/turf/open/floor/plating/f13/outside/roof
+	name = "\proper rooftop"
+	desc = "It's a roof. What more do you want?"
+	icon = 'icons/fallout/turfs/f13rooftop.dmi'
+	icon_state = "brick_1"
+
+/turf/open/floor/plating/f13/outside/roof/red
+	icon_state = "brick_r"
+
+/turf/open/floor/plating/f13/outside/roof/blue
+	icon_state = "brick_b"
+
+/turf/open/floor/plating/f13/outside/roof/metal
+	name = "\proper metal roof"
+	icon_state = "rust_1"
+
+/turf/open/floor/plating/f13/outside/roof/metal/verdigris
+	icon_state = "rust_c"
+
+/turf/open/floor/plating/f13/outside/roof/metal/corrugated
+	icon_state = "shingles_1"
+
+/turf/open/floor/plating/f13/outside/roof/metal/corrugated/red
+	icon_state = "shingles_r"
+
+/turf/open/floor/plating/f13/outside/roof/metal/corrugated/green
+	icon_state = "shingles_g"
+
+/turf/open/floor/plating/f13/outside/roof/wood
+	name = "\proper wooden roof"
+	icon_state = "wood_1"
+
+/turf/open/floor/plating/f13/outside/roof/wood/old
+	icon_state = "wood_2"
