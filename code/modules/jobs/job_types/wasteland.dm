@@ -863,8 +863,8 @@ Raider
 		/obj/item/book/granter/crafting_recipe/tribal/bone = 1
 	)
 
-/datum/job/wasteland/f13bwsettler
-	title = "Kebab blackwater Settler"
+/* /datum/job/wasteland/f13bwsettler
+	title = "Blackwater Settler"
 	flag = F13BWSETTLER
 	total_positions = 8
 	spawn_positions = -1
@@ -908,7 +908,7 @@ Raider
 	)
 
 /datum/outfit/job/wasteland/f13bwsettler
-	name = "Kebab blackwater Settler"
+	name = "Blackwater Settler"
 	jobtype = /datum/job/wasteland/f13bwsettler
 	ears = /obj/item/radio/headset/headset_town
 	belt = null
@@ -1104,8 +1104,8 @@ Raider
 		)
 
 
-/datum/job/wasteland/f13bwdeputy
-	title = "Kebab blackwater Deputy"
+//datum/job/wasteland/f13bwdeputy
+	title = "Blackwater Deputy"
 	flag = F13BWDEPUTY
 	faction = F13CITIZEN
 	total_positions = 3
@@ -1159,4 +1159,5 @@ Raider
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-/*--------------------------------------------------------------*/
+*/
+

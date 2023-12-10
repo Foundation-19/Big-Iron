@@ -336,18 +336,24 @@
 	flag = F13CITIZEN
 	total_positions = -1
 	spawn_positions = -1
-	supervisors = "the Merchant"
+	supervisors = "the Merchant, militia commander"
 	description = "Welcome to Kebab, you by some means or another have found yourself to be a resident of this shanty town. You are free to do as your please, to find work, commit petty theft, perhaps you are a member of the town militia attempting to keep the town in order and relative peace."
 
 	outfit = /datum/outfit/job/kebab/f13citizen
 
 	loadout_options = list(
-		/datum/outfit/loadout/f13citizen/militia,
+		/datum/outfit/loadout/f13citizen/nouveauriche,
 		/datum/outfit/loadout/f13citizen/pusher,
 		/datum/outfit/loadout/f13citizen/ncrsettler,
 		/datum/outfit/loadout/f13citizen/vault,
 		/datum/outfit/loadout/f13citizen/worker,
 		/datum/outfit/loadout/f13citizen/gangster,
+		/datum/outfit/loadout/f13citizen/settlerprospector,
+		/datum/outfit/loadout/f13citizen/settlerdoc,
+		/datum/outfit/loadout/f13citizen/settlerfarmer,
+		/datum/outfit/loadout/f13citizen/settlergambler,
+		/datum/outfit/loadout/f13citizen/legionsubject,
+		/datum/outfit/loadout/f13citizen/settlermerchant,
 		)
 
 	access = list(ACCESS_BAR)
@@ -394,17 +400,6 @@
 		/obj/item/clothing/shoes/f13/explorer,
 		/obj/item/clothing/shoes/f13/raidertreads)
 
-/datum/outfit/loadout/f13citizen/militia
-	name = "Militia"
-	head = /obj/item/clothing/head/helmet/blueshirt
-	suit = /obj/item/clothing/suit/armor/vest
-	belt = /obj/item/storage/belt/security
-	neck = /obj/item/storage/belt/holster/legholster/police
-	backpack_contents = list(
-		/obj/item/restraints/handcuffs = 2,
-		/obj/item/melee/classic_baton/police = 1,
-		/obj/item/card/id/dogtag/deputy/kebab = 1
-		)
 
 /datum/outfit/loadout/f13citizen/pusher
 	name = "Pusher"
@@ -491,9 +486,228 @@
 		/obj/item/clothing/under/suit/black/skirt = 1,
 		/obj/item/clothing/under/dress/sundress = 1,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
-		/obj/item/stack/f13Cash/caps/onezerozero = 1
+		/obj/item/stack/f13Cash/caps/onezerozero = 2
 		)
 
+/datum/outfit/loadout/f13citizen/settlermerchant
+	name = "General Trader"
+	uniform = /obj/item/clothing/under/f13/merchant
+	head = /obj/item/clothing/head/f13/stormchaser
+	glasses = /obj/item/clothing/glasses/f13/biker
+	r_hand = /obj/item/gun/ballistic/revolver/detective
+	l_hand = /obj/item/crowbar/smithedunitool
+	backpack_contents =  list(/obj/item/storage/box/vendingmachine = 1,
+							/obj/item/storage/bag/money/small/settler = 1,
+							/obj/item/ammo_box/c38box = 2,
+							/obj/item/storage/keys_set = 1,
+							/obj/item/radio/headset/headset_bw = 1,
+							/obj/item/reagent_containers/food/snacks/f13/caravanlunch = 1
+							)
+
+/datum/outfit/loadout/f13citizen/settlerdoc
+	name = "Barber-Doctor"
+	uniform = /obj/item/clothing/under/f13/westender
+	gloves = /obj/item/clothing/gloves/color/latex
+	neck = /obj/item/clothing/neck/apron/chef
+	r_hand = /obj/item/melee/onehanded/straight_razor
+	l_hand = /obj/item/cosmetics/haircomb
+	backpack_contents =  list(/obj/item/reagent_containers/medspray/synthflesh = 2,
+							/obj/item/healthanalyzer = 1,
+							/obj/item/reagent_containers/glass/bottle/epinephrine = 2,
+							/obj/item/cosmetics/mirror_makeup = 1,
+							/obj/item/storage/firstaid/ancient = 1,
+							/obj/item/clothing/neck/stethoscope = 1,
+							/obj/item/radio/headset/headset_bw = 1,
+							/obj/item/book/granter/trait/midsurgery = 1,
+							/obj/item/storage/backpack/duffelbag/med/surgery/primitive = 1
+							)
+
+/datum/outfit/loadout/f13citizen/settlerfarmer
+	name = "Frontier Farmer"
+	suit = /obj/item/clothing/suit/overalls/farmer
+	head = /obj/item/clothing/head/f13/ranger_hat/tan
+	suit_store = /obj/item/gun/ballistic/revolver/caravan_shotgun
+	r_hand = /obj/item/hatchet
+	l_hand = /obj/item/cultivator/rake
+	backpack_contents =  list(/obj/item/pickaxe/mini = 1,
+		/obj/item/reagent_containers/glass/bucket/wood = 1,
+		/obj/item/reagent_containers/glass/bottle/nutrient/ez = 3,
+		/obj/item/storage/bag/plants = 1,
+		/obj/item/radio/headset/headset_bw = 1,
+		/obj/item/reagent_containers/spray/pestspray = 1,
+		/obj/item/storage/bag/money/small/raider = 1,
+		/obj/item/ammo_box/shotgun/improvised = 1,
+		/obj/item/brahminbridle = 1,
+		/obj/item/brahminsaddle = 1,
+		/obj/item/brahminbags = 1,
+		/obj/item/seeds/tato = 1,
+		/obj/item/seeds/xander = 1,
+		/obj/item/seeds/poppy/broc = 1,
+		/obj/item/seeds/mutfruit = 1,
+		/obj/item/seeds/ambrosia = 1
+		)
+
+/datum/outfit/loadout/f13citizen/settlerprospector
+	name = "Wasteland Prospector"
+	uniform = /obj/item/clothing/under/f13/rustic
+	belt = /obj/item/storage/belt/utility/waster 
+	glasses = /obj/item/clothing/glasses/welding
+	neck = /obj/item/storage/belt/holster/rugged
+	r_hand = /obj/item/storage/bag/salvage 
+	l_hand = /obj/item/gun/ballistic/revolver/colt357
+	backpack_contents =  list(/obj/item/ammo_box/a357 = 1,
+		/obj/item/ammo_box/a357box/improvised = 1,
+		/obj/item/radio/headset/headset_bw = 1,
+		/obj/item/book/granter/trait/trekking = 1
+		)
+		
+/datum/outfit/loadout/f13citizen/settlerpoacher
+	name = "Wasteland Poacher"
+	suit = /obj/item/clothing/suit/armored/light/leathersuit
+	suit_store = /obj/item/gun/ballistic/automatic/varmint
+	r_hand = /obj/item/ammo_box/magazine/m556/rifle/small
+	l_hand = /obj/item/melee/onehanded/knife/bowie
+	backpack_contents =  list(/obj/item/ammo_box/a556/sport/improvised = 1,
+		/obj/item/ammo_box/a357box/improvised = 1,
+		/obj/item/book/granter/trait/trekking = 1,
+		/obj/item/radio/headset/headset_bw = 1,
+		/obj/item/reagent_containers/food/snacks/meatsalted = 2
+		)
+		
+/datum/outfit/loadout/f13citizen/settlergambler
+	name = "Frontier Gambler"
+	uniform = /obj/item/clothing/under/f13/densuit
+	suit = /obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy 
+	head = /obj/item/clothing/head/f13/gambler
+	r_hand = /obj/item/gun/ballistic/revolver/detective
+	l_hand = /obj/item/storage/bag/money/small/wastelander
+	backpack_contents =  list(/obj/item/storage/fancy/cigarettes/cigpack_bigboss  = 1,
+		/obj/item/ammo_box/c38box/improvised = 1,
+		/obj/item/reagent_containers/food/drinks/flask = 1,
+		/obj/item/toy/cards/deck = 1,
+		/obj/item/radio/headset/headset_bw = 1,
+		/obj/item/dice = 1
+		)
+
+//Militian
+
+/datum/job/kebab/f13militian
+	title = "Militian"
+	flag = F13CITIZEN
+	total_positions = -4
+	spawn_positions = -1
+	supervisors = "The Militia commander"
+	description = "You are a normal citizen that decided to take arms to defend the town."
+	outfit = /datum/outfit/job/kebab/f13militian
+
+	loadout_options = list(
+		/datum/outfit/loadout/f13militian/badasscop,
+		/datum/outfit/loadout/f13militian/reformedraider,
+		/datum/outfit/loadout/f13militian/vaultsec,
+		/datum/outfit/loadout/f13militian/bwcowboy,
+		/datum/outfit/loadout/f13militian/volunteer)
+
+	access = list(ACCESS_BAR)
+	minimal_access = list(ACCESS_BAR)
+	matchmaking_allowed = list(
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/kebab,
+		),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/kebab,
+		),
+	)
+
+/datum/outfit/job/kebab/f13militian/pre_equip(mob/living/carbon/human/H)
+	. = ..()
+	uniform = pick(
+		/obj/item/clothing/under/f13/merca,
+		/obj/item/clothing/under/f13/mercc,
+		/obj/item/clothing/under/f13/cowboyb,
+		/obj/item/clothing/under/f13/cowboyg,
+		/obj/item/clothing/under/f13/doctor,
+		/obj/item/clothing/under/f13/settler,
+		/obj/item/clothing/under/pants/f13/ghoul)
+
+	shoes = pick(
+		/obj/item/clothing/shoes/f13/explorer,)
+
+/datum/outfit/job/kebab/f13militian
+	name = "Militian"
+	jobtype = /datum/job/kebab/f13militian
+	ears = null
+	belt = /obj/item/storage/belt/holster/legholster/police
+	ears = /obj/item/radio/headset/headset_town
+	id = /obj/item/card/id/dogtag/deputy/kebab
+	backpack = /obj/item/storage/backpack/satchel/explorer
+	r_pocket = /obj/item/flashlight/flare
+	backpack_contents = list(
+		/obj/item/restraints/handcuffs = 2,
+		/obj/item/ammo_box/a357 = 3,
+		/obj/item/melee/onehanded/knife/bowie = 1,
+		/obj/item/melee/classic_baton = 1,
+		)
+	
+/datum/outfit/loadout/f13militian/reformedraider
+	name = "Reformed Raider"
+	glasses = /obj/item/clothing/glasses/sunglasses
+	backpack_contents = list(
+		/obj/item/clothing/suit/armor/f13/shankduster = 1,
+		/obj/item/gun/ballistic/automatic/autopipe = 1,
+		/obj/item/clothing/head/helmet/skull = 1,
+		/obj/item/reagent_containers/pill/patch/jet = 2,
+		/obj/item/reagent_containers/pill/patch/turbo = 2,
+		/obj/item/reagent_containers/hypospray/medipen/psycho = 2,
+		/obj/item/reagent_containers/hypospray/medipen/medx = 2,
+		)
+
+/datum/outfit/loadout/f13militian/badasscop
+	name = "Badass Cop"
+	glasses = /obj/item/clothing/glasses/sunglasses
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/police/trooper = 1,
+		/obj/item/clothing/suit/armored/light/vest/bulletproof = 1,
+		/obj/item/clothing/head/f13/police = 1,
+		/obj/item/clothing/neck/mantle/commander =1,
+		/obj/item/gun/ballistic/automatic/pistol/beretta/automatic = 1,
+		/obj/item/ammo_box/magazine/m9mmds = 2,
+		)
+	
+/datum/outfit/loadout/f13militian/volunteer
+	name = "Volunteer"
+	glasses = /obj/item/clothing/glasses/sunglasses
+	backpack_contents = list(
+		/obj/item/clothing/suit/armor/f13/metalarmor/steelbib/oasis = 1,
+		/obj/item/clothing/head/helmet/blueshirt = 1,
+		/obj/item/gun/ballistic/automatic/m1garand = 1,
+		/obj/item/ammo_box/magazine/garand308 = 2
+		)
+
+/datum/outfit/loadout/f13militian/bwcowboy
+	name = "Blackwater Cowboy"
+	glasses = /obj/item/clothing/glasses/sunglasses
+	backpack_contents = list(
+		/obj/item/clothing/suit/armor/f13/town/deputy = 1,
+		/obj/item/clothing/head/helmet/blueshirt = 1,
+		/obj/item/storage/belt/holster/rugged/revolver_357 = 1,
+		/obj/item/ammo_box/a357 = 2,
+		/obj/item/clothing/head/f13/town/deputy = 1,
+		/obj/item/clothing/suit/armor/f13/town/deputy = 1,
+		/obj/item/clothing/shoes/f13/military/fashion/cowboy_boots = 1,
+		/obj/item/radio/headset/headset_bw = 1,
+		)
+
+/datum/outfit/loadout/f13militian/vaultsec
+	name = "Vault sec Remnant"
+	backpack_contents = list(
+		/obj/item/clothing/suit/armor/f13/town/deputy = 1,
+		/obj/item/clothing/under/f13/vault = 1,
+		/obj/item/clothing/head/helmet/riot/vaultsec = 1,
+		/obj/item/clothing/suit/armor/vest/oasis = 1,
+		/obj/item/clothing/shoes/jackboots = 1,
+		/obj/item/gun/energy/laser/aer9 = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		)
 /*--------------------------------------------------------------*/
 
 /datum/job/kebab/f13radiohost

@@ -989,6 +989,14 @@
 /obj/structure/bed/mattress,
 /turf/open/floor/wood/f13,
 /area/f13/building)
+"aqk" = (
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
+	},
+/turf/open/indestructible/ground/outside/wood{
+	icon_state = "wood"
+	},
+/area/f13/wasteland)
 "aqv" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowhorizontal"
@@ -2249,7 +2257,9 @@
 "aMn" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/tree/jungle/small,
-/obj/structure/flora/tree/pine/xmas/presents,
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
+	},
 /turf/open/indestructible/ground/outside/savannah/leftcenter,
 /area/f13/wasteland)
 "aMp" = (
@@ -4936,6 +4946,12 @@
 	},
 /turf/closed/wall/f13/wood/house,
 /area/f13/raiders)
+"bJJ" = (
+/obj/effect/landmark/start/f13/merchant/militian,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/kebab)
 "bJN" = (
 /obj/machinery/light{
 	dir = 8
@@ -5554,8 +5570,8 @@
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
 "bTK" = (
-/obj/structure/flora/tree/pine/xmas/presents{
-	layer = 4
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
 	},
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland)
@@ -9309,6 +9325,16 @@
 /obj/item/trash/pistachios,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"dsO" = (
+/obj/structure/railing{
+	color = "#A47449";
+	dir = 8
+	},
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
+	},
+/turf/open/water,
+/area/f13/wasteland)
 "dte" = (
 /obj/structure/car/rubbish2,
 /turf/open/indestructible/ground/outside/road{
@@ -9896,7 +9922,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "dDG" = (
-/obj/structure/simple_door/metal/iron,
+/obj/machinery/door/unpowered/securedoor/militia,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -11455,6 +11481,9 @@
 /area/f13/building)
 "eiV" = (
 /obj/item/mop,
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
+	},
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/kebab)
 "ejb" = (
@@ -34251,7 +34280,6 @@
 	},
 /area/f13/village)
 "mrM" = (
-/obj/effect/landmark/start/f13/bwsettler,
 /turf/open/floor/wood/f13/old/ruinedcornerbr,
 /area/f13/kebab)
 "mrQ" = (
@@ -34937,6 +34965,9 @@
 "mGT" = (
 /obj/structure/flora/ausbushes/reedbush,
 /obj/effect/decal/fakelattice,
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
+	},
 /turf/open/water,
 /area/f13/wasteland)
 "mGZ" = (
@@ -36643,6 +36674,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oak,
 /area/f13/legion)
+"njV" = (
+/obj/structure/flora/tree/pine/xmas/presents,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "nkp" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 4;
@@ -37920,6 +37955,7 @@
 	color = "#800000";
 	dir = 1
 	},
+/obj/effect/landmark/start/f13/merchant/militian,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/kebab)
 "nJq" = (
@@ -38282,7 +38318,7 @@
 /area/f13/wasteland)
 "nRV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/f13/bwdeputy,
+/obj/effect/landmark/start/f13/merchant/militian,
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "nSc" = (
@@ -38720,7 +38756,9 @@
 	pixel_y = -13
 	},
 /obj/structure/flora/tree/jungle,
-/obj/structure/flora/tree/pine/xmas/presents,
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
+	},
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland)
 "oaZ" = (
@@ -50420,9 +50458,8 @@
 	pixel_x = -1;
 	pixel_y = 4
 	},
-/obj/structure/flora/tree/pine/xmas/presents{
-	layer = 8;
-	pixel_y = -1
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
 	},
 /turf/open/indestructible/ground/outside/savannah/topcenter,
 /area/f13/wasteland)
@@ -54277,6 +54314,10 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"tYf" = (
+/obj/machinery/door/unpowered/securedoor/militia,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/kebab)
 "tYi" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/matches,
@@ -55768,6 +55809,9 @@
 "uyL" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
+	},
+/obj/structure/flora/tree/pine/xmas{
+	layer = 8
 	},
 /turf/open/water,
 /area/f13/wasteland)
@@ -83398,7 +83442,7 @@ hbI
 mvv
 mvv
 mvv
-mvv
+njV
 tDb
 mvv
 mvv
@@ -84413,10 +84457,10 @@ wTy
 whR
 gKo
 nzG
-nzG
+bJJ
 srG
 whR
-nzG
+bJJ
 nzG
 qwB
 egp
@@ -86213,7 +86257,7 @@ whR
 whR
 whR
 whR
-oAk
+tYf
 whR
 qwB
 jvr
@@ -93472,7 +93516,7 @@ uCW
 vCc
 pOC
 pfl
-rZT
+fyf
 fyf
 fYH
 bKy
@@ -94724,7 +94768,7 @@ bzr
 fjq
 rCV
 rCV
-rCV
+dsO
 rCV
 pRI
 bDa
@@ -104744,7 +104788,7 @@ xzd
 wTy
 wTy
 ooE
-qLT
+aqk
 hxa
 hKu
 qmE
