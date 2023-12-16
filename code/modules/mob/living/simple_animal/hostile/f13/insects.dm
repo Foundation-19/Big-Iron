@@ -466,3 +466,16 @@
 	aggrosound = list('sound/creatures/radroach_chitter.ogg',)
 	idlesound = list('sound/f13npc/roach/idle1.ogg', 'sound/f13npc/roach/idle2.ogg', 'sound/f13npc/roach/idle3.ogg',)
 	death_sound = 'sound/f13npc/roach/roach_death.ogg'
+
+
+//radioactive roach
+//worse melee, can shoot glowing globs
+/mob/living/simple_animal/hostile/radroach/glowroach
+	name = "glowroach"
+	desc = "A large mutated insect that glows from its radioactive blood."
+	harm_intent_damage = 6
+	obj_damage = 15
+	light_system = MOVABLE_LIGHT
+	light_range = 1
+	projectiletype = /obj/item/projectile/neurotox
+	projectilesound = 'sound/f13npc/centaur/spit.ogg'
