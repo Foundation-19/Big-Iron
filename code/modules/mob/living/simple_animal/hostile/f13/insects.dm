@@ -473,9 +473,33 @@
 /mob/living/simple_animal/hostile/radroach/glowroach
 	name = "glowroach"
 	desc = "A large mutated insect that glows from its radioactive blood."
+	icon_state = "glowroach"
+	icon_living = "glowroach"
+	icon_dead = "glowroach_dead"
+
 	harm_intent_damage = 6
 	obj_damage = 15
 	light_system = MOVABLE_LIGHT
 	light_range = 1
 	projectiletype = /obj/item/projectile/neurotox
 	projectilesound = 'sound/f13npc/centaur/spit.ogg'
+
+//the mighty ROACHOR
+//boss radroach
+//placeholder stats
+//please give it unique gimmicks down the line
+/mob/living/simple_animal/hostile/radroach/glowroach/roachor
+	name = "Roachor"
+	desc = "A very large mutated insect the size of a car. You speculate it has been absorbing radiation this whole time"
+	icon = 'icons/fallout/mobs/animals/roachor.dmi'
+	icon_state = "roachor"
+	icon_living = "roachor"
+	icon_dead = "roachor_dead"
+	icon_gib = "radroach_gib"
+
+	maxHealth = 500 //tanky
+	health = 500
+	harm_intent_damage = 8
+	obj_damage = 20
+	melee_damage_lower = 25
+	melee_damage_upper = 34 //3-4 hit kill
