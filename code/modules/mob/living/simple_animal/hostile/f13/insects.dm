@@ -437,6 +437,7 @@
 	icon_living = "radroach"
 	icon_dead = "radroach_dead"
 	icon_gib = "radroach_gib"
+	faction = list("roach")
 
 	speed = 1
 	maxHealth = 40
@@ -496,10 +497,15 @@
 	icon_living = "roachor"
 	icon_dead = "roachor_dead"
 	icon_gib = "radroach_gib"
+	move_to_delay = 5
+	stat_attack = SOFT_CRIT
+	robust_searching = TRUE
 
-	maxHealth = 500 //tanky
-	health = 500
+	light_range = 3
+	maxHealth = 800 //tanky
+	health = 800
 	harm_intent_damage = 8
-	obj_damage = 20
+	obj_damage = 300 //more than a deathclaw
+	armour_penetration = 0.1
 	melee_damage_lower = 25
 	melee_damage_upper = 34 //3-4 hit kill
