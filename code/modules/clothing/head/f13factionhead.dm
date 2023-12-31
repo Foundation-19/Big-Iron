@@ -233,6 +233,7 @@
 	desc = "Blue beret signifying the wearer is a Science Officer of the Enclave."
 	icon_state = "hat_enclave_science"
 	item_state = "hat_enclave_science"
+	armor = list("melee" = 30, "bullet" = 50, "laser" = 25, "energy" = 25, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 50)
 
 /obj/item/clothing/head/beret/enclave/intel
 	name = "intel beret"
@@ -290,7 +291,7 @@
 	desc = "Wheeled hat with a cap made of light-weight armored alloys beneath."
 	icon_state = "hat_enclave_officer"
 	item_state = "hat_enclave_officer"
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 25, "energy" = 22, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 55)
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 35, "energy" = 32, "bomb" = 65, "bio" = 70, "rad" = 20, "fire" = 70, "acid" = 30, "wound" = 65)
 
 
 //////////
