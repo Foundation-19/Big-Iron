@@ -242,9 +242,6 @@
 "fU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/item/paper/crumpled/bloody/docsdeathnote{
-	info = "it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns it burns "
-	},
 /turf/open/floor/f13{
 	icon_state = "redrustyfull"
 	},
@@ -412,9 +409,6 @@
 "lM" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/paper/crumpled/bloody/docsdeathnote{
-	info = "Initial tests of the modified FEV on our subjects is promising, with an increase in strength and indurance and no notable decrease in intelligence. Further testin is require for now, however, and tests with the soldiers can begin soon...."
-	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtyfull"
 	},
@@ -469,17 +463,6 @@
 	icon_state = "bluedirtyfull"
 	},
 /area/f13/tunnel)
-"mZ" = (
-/obj/item/paper/crumpled/bloody/docsdeathnote{
-	info = "DON'T MAKE OUR MISTAKE"
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
-	},
-/area/f13/tunnel)
 "nz" = (
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
 /obj/machinery/light/small{
@@ -524,25 +507,12 @@
 	},
 /area/f13/tunnel)
 "pf" = (
-/mob/living/simple_animal/hostile/enclave/soldier{
-	aggro_vision_range = 15;
-	armour_penetration = 1;
-	desc = "What visibly appears to be a proud Enclave soldier clad in armor is in actuality a grotesque, FEV-exposed mutant grafted to the interior of his suit, never able to leave. You've gotten a lot farther than you should have...";
-	extra_projectiles = 10;
-	faction = list("wastebot");
-	health = 3000;
-	loot = list(/obj/item/keycard/library);
-	maxHealth = 3000;
-	melee_damage_lower = 100;
-	melee_damage_upper = 100;
-	melee_queue_distance = 10;
-	name = "Captain Arlem";
-	speak = list("Die... mutie!","AAAAUHGHHHH!","DIE!","Perish!","FOR THE ENCLAVE!");
-	speak_chance = 10;
-	speak_emote = list("shouts");
-	speed = -1
-	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/megafauna/captainarlem{
+	pixel_x = 0;
+	faction = list("wastebot");
+	desc = "What visibly appears to be a proud Enclave soldier clad in armor is in actuality a grotesque, FEV-exposed mutant grafted to the interior of his suit, never able to leave. You've gotten a lot farther than you should have..."
+	},
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "pg" = (
@@ -2634,7 +2604,7 @@ If
 Zh
 us
 hL
-mZ
+yT
 NS
 RZ
 kE
