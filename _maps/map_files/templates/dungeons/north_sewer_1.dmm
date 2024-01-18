@@ -507,12 +507,25 @@
 	},
 /area/f13/tunnel)
 "pf" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/megafauna/captainarlem{
-	pixel_x = 0;
+/mob/living/simple_animal/hostile/enclave/soldier{
+	aggro_vision_range = 15;
+	armour_penetration = 1;
+	desc = "What visibly appears to be a proud Enclave soldier clad in armor is in actuality a grotesque, FEV-exposed mutant grafted to the interior of his suit, never able to leave. You've gotten a lot farther than you should have...";
+	extra_projectiles = 10;
 	faction = list("wastebot");
-	desc = "What visibly appears to be a proud Enclave soldier clad in armor is in actuality a grotesque, FEV-exposed mutant grafted to the interior of his suit, never able to leave. You've gotten a lot farther than you should have..."
+	health = 3000;
+	loot = list(/obj/item/keycard/library);
+	maxHealth = 3000;
+	melee_damage_lower = 100;
+	melee_damage_upper = 100;
+	melee_queue_distance = 10;
+	name = "Captain Arlem";
+	speak = list("Die... mutie!","AAAAUHGHHHH!","DIE!","Perish!","FOR THE ENCLAVE!");
+	speak_chance = 10;
+	speak_emote = list("shouts");
+	speed = -1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "pg" = (

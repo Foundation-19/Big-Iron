@@ -10127,33 +10127,10 @@
 /turf/open/water,
 /area/f13/underground/cave)
 "rrk" = (
-/mob/living/simple_animal/hostile/enclave/soldier{
-	aggro_vision_range = 15;
-	armour_penetration = 1;
-	desc = "A grotesque, Enclave-manufactured and Enclave-loyal prime super mutant given cybernetic augmentations, unique hardened power armor, and an arm-mounted plasma repeater, alongside drug cocktails administered by his suit. Your ride's over mutie, time to die.";
-	environment_smash = 2;
-	extra_projectiles = 10;
-	faction = list("wastebot");
-	health = 3000;
-	icon = 'icons/fallout/mobs/bigmob.dmi';
-	icon_dead = "arlem";
-	icon_gib = "arlem";
-	icon_living = "arlem";
-	icon_state = "arlem";
-	loot = list(/obj/item/keycard/library);
-	maxHealth = 3000;
-	melee_damage_lower = 100;
-	melee_damage_upper = 100;
-	melee_queue_distance = 10;
-	name = "Captain Arlem";
-	obj_damage = 300;
-	ranged_ignores_vision = 1;
-	speak = list("Die... mutie!","AAAAUHGHHHH!","DIE!","Perish!","FOR THE ENCLAVE!");
-	speak_chance = 10;
-	speak_emote = list("shouts");
-	speed = -1
-	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/megafauna/captainarlem{
+	pixel_x = 0
+	},
 /turf/open/floor/plating/tunnel,
 /area/awaymission/caves)
 "rrs" = (
