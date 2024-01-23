@@ -59,12 +59,6 @@
 		else
 			INVOKE_ASYNC(src, .proc/triple_charge)
 			visible_message("<span class='colossus'>\"<b>YOUR RIDE IS OVER MUTIE, TIME TO DIE!</b>\"</span>")
-			
-/mob/living/simple_animal/hostile/enclave/captainarlem/Initialize()
-	. = ..()
-	for(var/mob/living/simple_animal/hostile/enclave/captainarlem/B in GLOB.mob_list)
-		if(B != src)
-			return INITIALIZE_HINT_QDEL //There can be only one
 
 /mob/living/simple_animal/hostile/enclave/captainarlem/do_attack_animation(atom/A, visual_effect_icon, obj/item/used_item, no_effect)
 	if(charging)
