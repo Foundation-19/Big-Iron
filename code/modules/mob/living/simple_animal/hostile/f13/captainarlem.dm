@@ -21,10 +21,10 @@
 	melee_damage_upper = 50
 	vision_range = 30
 	aggro_vision_range = 30
-	speed = -1
-	move_to_delay = 8
+	speed = 1
+	move_to_delay = 3
 	ranged_cooldown_time = 10
-	rapid_melee = 2
+	rapid_melee = 4
 	melee_queue_distance = 20 // as far as possible really, need this because of charging
 	ranged = 1
 	pixel_x = -16
@@ -87,9 +87,9 @@
 
 /mob/living/simple_animal/hostile/enclave/captainarlem/proc/triple_charge()
 	charge()
-	sleep(10)
+	sleep(5)
 	charge()
-	sleep(10)
+	sleep(5)
 	charge()
 
 /mob/living/simple_animal/hostile/enclave/captainarlem/proc/charge()
@@ -103,7 +103,7 @@
 	setDir(get_dir(src, T))
 	var/obj/effect/temp_visual/decoy/D = new /obj/effect/temp_visual/decoy(loc,src)
 	animate(D, alpha = 0, color = "#11d839", transform = matrix()*2, time = 5)
-	sleep(5)
+	sleep(2.5)
 	throw_at(T, get_dist(src, T), 1, src, 0)
 	charging = 0
 	Goto(target, move_to_delay, minimum_distance)
@@ -136,7 +136,7 @@
 	if(!isnum(set_angle) && (!marker || marker == loc))
 		return
 	var/turf/startloc = get_turf(src)
-	var/obj/item/projectile/P = new /obj/item/projectile/f13plasma/plasmacaster/arlem(startloc)
+	var/obj/item/projectile/P = new /obj/item/projectile/plasmacarbine(startloc)
 	P.preparePixelProjectile(marker, startloc)
 	P.firer = src
 	if(target)
