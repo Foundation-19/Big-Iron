@@ -3,6 +3,7 @@
 	desc = "A grotesque, Enclave-manufactured and Enclave-loyal prime super mutant given cybernetic augmentations, unique hardened power armor, and an arm-mounted plasma repeater, alongside drug cocktails administered by his suit. Your ride's over mutie, time to die."
 	health = 3000
 	maxHealth = 3000
+	stat_attack = UNCONSCIOUS
 	obj_damage = 400
 	icon_state = "arlem"
 	icon_living = "arlem"
