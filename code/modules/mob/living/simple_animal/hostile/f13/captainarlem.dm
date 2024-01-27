@@ -123,7 +123,7 @@
 
 	else if(isliving(hit_atom))
 		var/mob/living/L = hit_atom
-		L.visible_message("<span class='danger'>[src] laughs maniacally as he rends[L]!</span>", "<span class='userdanger'>[src] slams into you, laughing maniacally!</span>")
+		L.visible_message("<span class='danger'>[src] laughs maniacally as he rends [L]!</span>", "<span class='userdanger'>[src] slams into you, laughing maniacally!</span>")
 		L.apply_damage(50, BRUTE)
 		playsound(get_turf(L), 'sound/effects/meteorimpact.ogg', 100, 1)
 		shake_camera(L, 4, 3)
@@ -137,7 +137,7 @@
 	if(!isnum(set_angle) && (!marker || marker == loc))
 		return
 	var/turf/startloc = get_turf(src)
-	var/obj/item/projectile/P = new /obj/item/projectile/plasmacarbine(startloc)
+	var/obj/item/projectile/P = new /obj/item/projectile/f13plasma(startloc)
 	P.preparePixelProjectile(marker, startloc)
 	P.firer = src
 	if(target)
