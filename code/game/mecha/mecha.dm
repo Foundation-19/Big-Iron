@@ -121,8 +121,7 @@
 	var/datum/action/innate/mecha/strafe/strafing_action = new
 	var/datum/action/innate/mecha/klaxon/klaxon_action = new
 	var/datum/action/innate/mecha/sirens/sirens_action = new
-	//var/datum/action/innate/mecha/rotorup/rotorup_action = new
-	//var/datum/action/innate/mecha/rotordown/rotordown_action = new
+
 
 	//Action vars
 	var/thrusters_active = FALSE

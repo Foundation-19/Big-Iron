@@ -298,29 +298,5 @@
 /datum/action/innate/mecha/sirens/Activate()
 	playsound(chassis,'sound/f13machines/police.ogg', 50, 1)
 
-//// UP AND DOWN ?
-/*
-/datum/action/innate/mecha/rotorup
-    name = "Toggle Rotors Up"
-    button_icon_state = "mech_internals_off"
-
-/datum/action/innate/mecha/rotorup/Activate()
-    var/obj/mecha/combat/phazon/vertibird/V = target
-    if(!owner || !chassis || chassis.occupant != owner)
-        return
-    if(chassis.get_charge() > 0)
-        V.zMove(chassis, UP, TRUE)
-
-/datum/action/innate/mecha/rotordown
-    name = "Toggle Rotors Down"
-    button_icon_state = "mech_internals_on"
-
-/datum/action/innate/mecha/rotordown/Activate()
-    var/obj/mecha/combat/phazon/vertibird/V = target
-    if(!owner || !chassis || chassis.occupant != owner)
-        return
-    if(chassis.get_charge() > 0)
-        V.zMove(chassis, DOWN, TRUE)
-*/
 
 
