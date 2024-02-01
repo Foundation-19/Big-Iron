@@ -196,6 +196,18 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/melee/onehanded/knife/trench = 1
 		)
 
+/datum/outfit/job/ncr/f13captain/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
+	if(H.mind)
+		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
+		H.mind.AddSpell(S)
+
 /datum/outfit/loadout/captainbackline
 	name = "The Officer"
 	suit_store = /obj/item/gun/ballistic/automatic/r84
@@ -212,19 +224,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/clothing/suit/armor/f13/ncrarmor/captain = 1,
 		/obj/item/storage/box/ration/menu_eight = 1
 		)
-
-/datum/outfit/job/ncr/f13captain/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
-	if(H.mind)
-		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
-		H.mind.AddSpell(S)
-
 
 // LIEUTENANT
 
@@ -244,8 +243,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_NCR3)
 
 	loadout_options = list(
-		/datum/outfit/loadout/captainbackline,	// Commander's Coat
-		/datum/outfit/loadout/captainfrontline // Captain's Armor
+		/datum/outfit/loadout/LTbackline,	// Commander's Coat
+		/datum/outfit/loadout/LTfrontline // Captain's Armor
 		)
 
 /datum/outfit/job/ncr/f13lieutenant		// Republic's Pride, Binoculars, Bayonet, 9mm pistol
@@ -271,6 +270,21 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/book/manual/ncr/jobguide/regs = 1,
 		/obj/item/storage/box/ration/menu_five = 1,
 		/obj/item/ammo_box/magazine/m14mm = 3
+		)
+/datum/outfit/loadout/LTfrontline
+	name = "The Officer"
+	suit_store = /obj/item/gun/ballistic/automatic/r84
+	backpack_contents = list(
+		/obj/item/clothing/suit/armor/f13/ncrarmor/captain/ncr_officer_coat = 1,
+		/obj/item/storage/box/ration/menu_two = 1
+		)
+
+/datum/outfit/loadout/LTbackline
+	name = "The Law"
+	suit_store = /obj/item/twohanded/sledgehammer/rockethammer/courtmartial
+	backpack_contents = list(
+		/obj/item/clothing/suit/armor/f13/ncrarmor/captain = 1,
+		/obj/item/storage/box/ration/menu_eight = 1
 		)
 
 /datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
