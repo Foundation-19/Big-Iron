@@ -119,6 +119,10 @@
 	var/datum/action/innate/mecha/mech_switch_damtype/switch_damtype_action = new
 	var/datum/action/innate/mecha/mech_toggle_phasing/phasing_action = new
 	var/datum/action/innate/mecha/strafe/strafing_action = new
+	var/datum/action/innate/mecha/klaxon/klaxon_action = new
+	var/datum/action/innate/mecha/sirens/sirens_action = new
+	var/datum/action/innate/mecha/rotorup/rotorup_action = new
+	var/datum/action/innate/mecha/rotordown/rotordown_action = new
 
 	//Action vars
 	var/thrusters_active = FALSE
@@ -266,7 +270,7 @@
 		C.forceMove(src)
 		cell = C
 		return
-	cell = new /obj/item/stock_parts/cell/high/plus(src)
+	cell = new /obj/item/stock_parts/cell(src)
 
 /obj/mecha/proc/add_cabin()
 	cabin_air = new

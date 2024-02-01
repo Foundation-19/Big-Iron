@@ -182,7 +182,6 @@
 		chassis.mecha_log_message("Toggled thrusters.")
 		chassis.occupant_message("<font color='[chassis.thrusters_active ?"blue":"red"]'>Thrusters [chassis.thrusters_active ?"en":"dis"]abled.")
 
-
 /datum/action/innate/mecha/mech_defense_mode
 	name = "Toggle Defense Mode"
 	button_icon_state = "mech_defense_mode_off"
@@ -284,4 +283,43 @@
 	chassis.phasing = !chassis.phasing
 	button_icon_state = "mech_phasing_[chassis.phasing ? "on" : "off"]"
 	chassis.occupant_message("<font color=\"[chassis.phasing?"#00f\">En":"#f00\">Dis"]abled phasing.</font>")
-	UpdateButtonIcon()
+
+/datum/action/innate/mecha/klaxon
+	name = "Klaxon"
+	button_icon_state = "mech_damtype_brute"
+
+/datum/action/innate/mecha/klaxon/Activate()
+	playsound(chassis,'sound/f13machines/klaxon.ogg', 50, 1)
+
+/datum/action/innate/mecha/sirens
+	name = "Sirens"
+	button_icon_state = "mech_damtype_brute"
+
+/datum/action/innate/mecha/sirens/Activate()
+	playsound(chassis,'sound/f13machines/police.ogg', 50, 1)
+
+//// UP AND DOWN ?
+
+/datum/action/innate/mecha/rotorup
+    name = "Toggle Rotors Up"
+    button_icon_state = "mech_internals_off"
+
+/datum/action/innate/mecha/rotorup/Activate()
+    var/obj/mecha/combat/phazon/vertibird/V = target
+    if(!owner || !chassis || chassis.occupant != owner)
+        return
+    if(chassis.get_charge() > 0)
+        V.zMove(chassis, UP, TRUE)
+
+/datum/action/innate/mecha/rotordown
+    name = "Toggle Rotors Down"
+    button_icon_state = "mech_internals_on"
+
+/datum/action/innate/mecha/rotordown/Activate()
+    var/obj/mecha/combat/phazon/vertibird/V = target
+    if(!owner || !chassis || chassis.occupant != owner)
+        return
+    if(chassis.get_charge() > 0)
+        V.zMove(chassis, DOWN, TRUE)
+
+

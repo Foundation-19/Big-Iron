@@ -262,8 +262,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	exp_type = EXP_TYPE_LEGIONCOMMAND
 	total_positions = 1
 	spawn_positions = 1
-	description = "You answer directly to the Centurion, his second in command. Lead the camp, ensure its defended, keep track of the Explorers and use your veterans to their full potential."
-	supervisors = "the Centurion"
+	description = "You are the leader of the Seaside cavalery outpost. Lead the outpost, ensure its defended, organise operation, show your mens the way towards victory."
+	supervisors = "The word of Caesar, Centurions and Legate"
 	exp_requirements = 600
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13decanvet
@@ -312,14 +312,14 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit_store = /obj/item/twohanded/sledgehammer/supersledge
 	neck = /obj/item/storage/belt/sabre/heavy
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/smg10mm = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
+		/obj/item/gun/ballistic/automatic/smg/smg14 = 1,
+		/obj/item/ammo_box/magazine/smg14 = 4,
 		/obj/item/grenade/smokebomb = 1
 		)
 
 /datum/outfit/loadout/decvetwolf
 	name = "Mark of the Wolf"
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
+	head = /obj/item/clothing/head/helmet/f13/legion/heavy
 	suit_store = /obj/item/twohanded/thermic_lance
 	neck = /obj/item/storage/belt/sabre/heavy
 	backpack_contents = list(
@@ -330,7 +330,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/decvetsnake
 	name = "Mark of the Snake"
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
+	head = /obj/item/clothing/head/helmet/f13/legion/heavy
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	neck = /obj/item/storage/belt/holster
 	backpack_contents = list(
@@ -342,7 +342,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/decvetbrave
 	name = "Mark of the Brave"
-	head = /obj/item/clothing/head/helmet/f13/legion/vet/decan
+	head = /obj/item/clothing/head/helmet/f13/legion/heavy
 	suit_store = /obj/item/gun/ballistic/shotgun/trench
 	neck = /obj/item/storage/belt/holster
 	backpack_contents = list(
@@ -362,11 +362,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	description = "A experienced officer, often commanding the camp. Give orders, lead patrols."
 	supervisors = "the Veteran Decanus and the Centurion"
 
-	loadout_options = list(	//ALL: Gladius, Smokebomb
-		/datum/outfit/loadout/decprimfront,	// Lever action, .44 revolver, Legion lance, Throwing knives
-		/datum/outfit/loadout/decprimrear,	// Legion shield, Ballistic fist
-		/datum/outfit/loadout/decprimboom, // Grenade rifle, .44 revolver, Frag grenades, Coffepot bomb
-		/datum/outfit/loadout/decprimwar // Spatha, .44 revolver, Bolas
+	loadout_options = list(	
+		/datum/outfit/loadout/decprimheavy
 		)
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13decan
@@ -396,8 +393,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Prime Decanus"
 	jobtype = /datum/job/CaesarsLegion/Legionary/f13decan
 	id = /obj/item/card/id/dogtag/legveteran
-	suit = /obj/item/clothing/suit/armor/f13/legion/prime/decan
-	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
 	mask = /obj/item/clothing/mask/bandana/legion
 	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
 	shoes = /obj/item/clothing/shoes/f13/military/plated
@@ -412,7 +407,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 /datum/outfit/loadout/decprimfront
-	name = "Aspiring Prime Decanus"
+	name = "Warmonger Light Prime Decanus"
+	suit = /obj/item/clothing/suit/armor/f13/legion/prime/decan
+	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
 	suit_store = /obj/item/twohanded/spear/lance
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 2,
@@ -420,37 +417,25 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/ammo_box/m44 = 3,
 		/obj/item/restraints/legcuffs/bola = 1,
 		/obj/item/melee/onehanded/knife/throwing = 2,
-		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever = 1
-		)
-
-/datum/outfit/loadout/decprimrear
-	name = "Battleborn Prime Decanus"
-	backpack_contents = list(
-		/obj/item/shield/riot/legion = 1,
-		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
-		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/restraints/legcuffs/bola = 1
-		)
-
-/datum/outfit/loadout/decprimboom
-	name = "Loud Prime Decanus"
-	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher
-	backpack_contents = list(
-		/obj/item/ammo_box/a40mm = 2,
-		/obj/item/gun/ballistic/revolver/m29 = 1,
-		/obj/item/ammo_box/m44 = 3,
-		/obj/item/grenade/f13/frag = 2,
-		/obj/item/grenade/homemade/coffeepotbomb = 1
-		)
-
-/datum/outfit/loadout/decprimwar
-	name = "Warmonger Prime Decanus"
-	suit_store = /obj/item/melee/onehanded/machete/spatha
-	backpack_contents = list(
+		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever = 1,
 		/obj/item/melee/onehanded/machete/spatha = 1,
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 2,
 		/obj/item/restraints/legcuffs/bola = 2
+		)
+
+/datum/outfit/loadout/decprimheavy
+	name = "Battleborn Heavy Prime Decanus"
+	suit = /obj/item/clothing/suit/armored/heavy/legion/breacher
+	head = /obj/item/clothing/head/helmet/f13/legion/legionsalvagedhelmet
+	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher
+	backpack_contents = list(
+		/obj/item/shield/riot/legion = 1,
+		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
+		/obj/item/restraints/legcuffs/bola = 1,
+		/obj/item/ammo_box/a40mm = 2,
+		/obj/item/gun/ballistic/revolver/m29 = 1,
+		/obj/item/ammo_box/m44 = 3,
 		)
 
 // ----------------- RECRUIT DECANUS ---------------------
@@ -541,9 +526,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	title = "Legion Vexillarius"
 	flag = F13VEXILLARIUS
 	display_order = JOB_DISPLAY_ORDER_VEXILLARIUS
-	total_positions = 1
-	spawn_positions = 1
-	description = "You are a Veteran of proven bravery. When not fighting, relay orders from the commander and act as a bodyguard."
+	total_positions = 2
+	spawn_positions = 2
+	description = "You are actually a bit special in the force, since combat ain't your primary roles. You, are in charge of hosting tournament under Kebab, slave trade, musician, and bodyguarding, when a higher up is here... Oh, you might not be a combat role, but do feel free to show that you ain't a Auxilia, and kick some ass."
 	supervisors = "the Veteran Decanus and Centurion"
 	exp_requirements = 720
 
@@ -607,10 +592,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 /datum/outfit/loadout/vexfox
 	name = "Desert Fox"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
-	suit_store = /obj/item/gun/ballistic/automatic/smg/smg14
 	neck = /obj/item/storage/belt/holster
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/smg14 = 2,
+		
 		/obj/item/melee/onehanded/machete/spatha = 1
 		)
 
@@ -703,10 +687,10 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	flag = F13FRUMENTARIUS
 	display_order = JOB_DISPLAY_ORDER_FRUMENTARIUS
 	description = "The Eyes and Ears of Caesar. Frumentarii cover a wide range of specializations, from Ambassadors to local Tribes, Infiltrators of enemy societies, Couriers, Intelligence Gatherers and the Secret Police of Legion Camps. Unlike the lesser Legionaries, a Frumentarius is given much unsupervised freedom to do as one pleases, so long as the Legion's goals are accomplished. You are one of these Frumentarius. Spread Caesar's Will, for Mars is watching."
-	supervisors = "the Centurion"
+	supervisors = "the Vet Decanus"
 	selection_color = "#ffdddd"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	exp_requirements = 600
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13frumentarius
