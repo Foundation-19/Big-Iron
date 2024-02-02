@@ -13897,12 +13897,6 @@
 	color = "#e4e4e4"
 	},
 /area/f13/legion)
-"ePs" = (
-/obj/machinery/computer/mech_bay_power_console{
-	dir = 8
-	},
-/turf/closed/wall/rust,
-/area/f13/ncr)
 "ePx" = (
 /obj/structure/flora/grass/wasteland{
 	pixel_x = -11
@@ -18070,30 +18064,6 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/wasteland)
-"gmQ" = (
-/obj/structure/railing/wood/underlayer{
-	dir = 1;
-	pixel_y = -6
-	},
-/obj/structure/railing/wood/underlayer{
-	dir = 1;
-	pixel_y = -11
-	},
-/obj/structure/railing/wood/underlayer{
-	dir = 1;
-	pixel_y = 3
-	},
-/obj/structure/railing/wood/underlayer{
-	dir = 1;
-	pixel_y = 8
-	},
-/obj/structure/wreck/trash/engine{
-	pixel_y = -14
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/ncr)
 "gmR" = (
 /turf/open/floor/wood/f13/oak,
 /area/f13/wasteland)
@@ -36662,6 +36632,18 @@
 	icon_state = "desertsmooth8"
 	},
 /area/f13/wasteland)
+"mNt" = (
+/obj/machinery/mech_bay_recharge_port{
+	on = 1
+	},
+/obj/machinery/mech_bay_recharge_port{
+	on = 1
+	},
+/turf/open/floor/f13{
+	color = "#818181";
+	icon_state = "floorrustysolid"
+	},
+/area/f13/ncr)
 "mNB" = (
 /obj/structure/closet/cabinet,
 /turf/open/floor/f13/wood,
@@ -38446,7 +38428,14 @@
 	},
 /area/f13/village)
 "nrZ" = (
-/turf/closed/indestructible/rock,
+/turf/closed/indestructible/rock{
+	desc = "A pre-War wall made of solid concrete.";
+	icon = 'icons/turf/walls/f13store.dmi';
+	icon_state = "store";
+	icon_type_smooth = "store";
+	name = "Concrete wall";
+	smooth = 1
+	},
 /area/f13/bunker)
 "nsf" = (
 /obj/structure/fence{
@@ -59729,12 +59718,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
-"vnC" = (
-/obj/machinery/computer/mech_bay_power_console{
-	dir = 8
-	},
-/turf/closed/wall/f13/ruins,
-/area/f13/ncr)
 "vnG" = (
 /turf/closed/wall/f13/tentwall,
 /area/f13/legion)
@@ -61428,9 +61411,6 @@
 "wbA" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/clinic)
-"wbO" = (
-/turf/closed/indestructible/rock,
-/area/f13/building)
 "wbR" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/bowls,
@@ -65532,7 +65512,7 @@
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/f13{
-	icon_state = "hydrofloor"
+	icon_state = "greendirtyfull"
 	},
 /area/f13/ncr)
 "xws" = (
@@ -67412,6 +67392,16 @@
 	icon_state = "outerturn"
 	},
 /area/f13/wasteland)
+"ycg" = (
+/turf/closed/indestructible/rock{
+	desc = "A pre-War wall made of solid concrete.";
+	icon = 'icons/turf/walls/f13store.dmi';
+	icon_state = "store";
+	icon_type_smooth = "store";
+	name = "Concrete wall";
+	smooth = 1
+	},
+/area/f13/caves)
 "yci" = (
 /obj/machinery/autolathe/constructionlathe,
 /obj/item/stack/sheet/metal/twenty,
@@ -69552,9 +69542,9 @@ bud
 vcg
 mfW
 mfW
-ePs
-ePs
-vnC
+rUM
+rUM
+rUM
 rUM
 xvP
 gLA
@@ -69808,11 +69798,11 @@ guU
 iOu
 guU
 nfg
-gmQ
+pUb
 wfu
 wfu
-wfu
-wfu
+mNt
+mNt
 gLA
 gLA
 guU
@@ -73350,8 +73340,8 @@ rpu
 rpu
 rpu
 xjA
-uqa
-ktB
+rpu
+ycg
 ktB
 ktB
 uqa
@@ -73602,13 +73592,13 @@ dCV
 dCV
 dCV
 ktB
-wbO
-wbO
-wbO
-wbO
+sGp
+sGp
+sGp
+sGp
 rpu
-uqa
-ktB
+rpu
+ycg
 ktB
 gcK
 rct
@@ -73864,7 +73854,7 @@ dVT
 oiP
 nrZ
 gfF
-qbD
+gfF
 qbD
 ktB
 uqa
