@@ -3368,7 +3368,9 @@
 /turf/open/floor/plasteel/grimy,
 /area/f13/ncr)
 "bec" = (
-/obj/structure/bookcase/random,
+/obj/machinery/autolathe,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/wood/wood_large{
 	color = "#845f58"
 	},
@@ -28611,6 +28613,14 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"jVb" = (
+/obj/machinery/autolathe/ammo/unlocked_basic,
+/obj/item/stack/ore/blackpowder/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/turf/open/floor/wood/wood_large{
+	color = "#845f58"
+	},
+/area/f13/ncr)
 "jVi" = (
 /obj/structure/handrail/g_central{
 	pixel_y = -16
@@ -28977,6 +28987,8 @@
 /obj/item/brahminbridle,
 /obj/item/brahminsaddle,
 /obj/item/brahminsaddle,
+/obj/item/horsearmorncr,
+/obj/item/horsearmorncr,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "kaJ" = (
@@ -32147,6 +32159,12 @@
 	icon_state = "wood"
 	},
 /area/f13/wasteland)
+"ljs" = (
+/obj/structure/campfire/barrel,
+/turf/open/indestructible/ground/outside/wood{
+	icon_state = "wood"
+	},
+/area/f13/wasteland)
 "ljt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/drip,
@@ -32676,6 +32694,16 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/clinic)
+"ltk" = (
+/obj/structure/railing/wood{
+	dir = 8
+	},
+/mob/living/simple_animal/horse,
+/turf/open/indestructible/ground/outside/desert/sonora{
+	dir = 4;
+	icon_state = "desertsmooth1"
+	},
+/area/f13/wasteland)
 "ltp" = (
 /obj/structure/flora/tallgrass2,
 /obj/structure/flora/ausbushes/fullgrass{
@@ -36933,12 +36961,6 @@
 	icon_state = "desertsmooth1"
 	},
 /area/f13/wasteland)
-"mSf" = (
-/obj/structure/wreck/trash/machinepile,
-/turf/open/indestructible/ground/outside/wood{
-	icon_state = "wood"
-	},
-/area/f13/wasteland)
 "mSg" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/f13/wood,
@@ -38040,6 +38062,11 @@
 /area/f13/kebab)
 "nlj" = (
 /obj/structure/rack/shelf_wood,
+/obj/item/horsearmorlegion,
+/obj/item/horsearmorlegion,
+/obj/item/horsearmorlegion,
+/obj/item/horsearmorlegion,
+/obj/item/horsearmorlegion,
 /obj/item/horsearmorlegion,
 /turf/open/indestructible/ground/outside/desert/sonora{
 	dir = 4;
@@ -45723,6 +45750,10 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/building)
+"qej" = (
+/mob/living/simple_animal/horse,
+/turf/open/indestructible/ground/outside/desert/sonora/coarse,
+/area/f13/wasteland)
 "qel" = (
 /obj/structure/flora/tallgrass6,
 /obj/structure/flora/ausbushes/fullgrass{
@@ -47947,6 +47978,17 @@
 /obj/item/brahminsaddle,
 /obj/item/brahminsaddle,
 /obj/item/brahminsaddle,
+/obj/item/brahminsaddle,
+/obj/item/brahminsaddle,
+/obj/item/brahminsaddle,
+/obj/item/brahminsaddle,
+/obj/item/brahminsaddle,
+/obj/item/brahminbridle,
+/obj/item/brahminbridle,
+/obj/item/brahminbridle,
+/obj/item/brahminbridle,
+/obj/item/brahminbridle,
+/obj/item/brahminbridle,
 /turf/open/indestructible/ground/outside/desert/sonora{
 	dir = 4;
 	icon_state = "desertsmooth1"
@@ -49210,9 +49252,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building)
 "ryF" = (
-/obj/structure/table/wood{
-	pixel_x = 2
-	},
 /obj/item/flashlight/lamp/green{
 	pixel_x = -5;
 	pixel_y = 10
@@ -49223,6 +49262,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/workbench,
 /turf/open/floor/wood/wood_large{
 	color = "#845f58"
 	},
@@ -56080,6 +56120,14 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"tZr" = (
+/mob/living/simple_animal/horse,
+/obj/machinery/button/door{
+	id = "POLICE";
+	pixel_x = -24
+	},
+/turf/open/indestructible/ground/outside/savannah,
+/area/f13/wasteland)
 "tZs" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -61762,13 +61810,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"wiE" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/campfire/barrel,
-/turf/open/indestructible/ground/outside/wood{
-	icon_state = "wood"
-	},
-/area/f13/wasteland)
 "wiJ" = (
 /obj/structure/barricade/tentclothcorner{
 	dir = 8
@@ -63191,6 +63232,10 @@
 	icon_state = "dirtcorner"
 	},
 /area/f13/legion)
+"wMX" = (
+/mob/living/simple_animal/horse,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "wMY" = (
 /obj/effect/overlay/junk/toilet{
 	dir = 8
@@ -65299,7 +65344,6 @@
 	icon_state = "tall_grass_6"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/wreck/trash/machinepiletwo,
 /turf/open/indestructible/ground/outside/wood{
 	icon_state = "wood"
 	},
@@ -65929,6 +65973,12 @@
 /obj/item/flashlight/seclite,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain1"
+	},
+/area/f13/wasteland)
+"xEN" = (
+/obj/structure/wreck/trash/machinepiletwo,
+/turf/open/indestructible/ground/outside/wood{
+	icon_state = "wood"
 	},
 /area/f13/wasteland)
 "xEQ" = (
@@ -76715,8 +76765,8 @@ iOb
 mvv
 mvv
 jQl
-mvv
-mvv
+wMX
+wMX
 mvv
 ayH
 ayH
@@ -86499,7 +86549,7 @@ yhB
 yhB
 cRR
 iMN
-bec
+jVb
 ryF
 bec
 bSX
@@ -89657,7 +89707,7 @@ fHb
 mJh
 ueA
 iHQ
-gWX
+tZr
 rXN
 rXN
 rkb
@@ -93275,7 +93325,7 @@ hxa
 hxa
 qLT
 qLT
-wiE
+qmE
 ogm
 ogm
 enz
@@ -93530,7 +93580,7 @@ hxa
 rXN
 rXN
 hxa
-qLT
+ljs
 qLT
 xsv
 fhT
@@ -93787,9 +93837,9 @@ mAi
 mVw
 eLl
 ahz
+xEN
 nWh
 nWh
-mSf
 ogm
 bDa
 oRp
@@ -130103,7 +130153,7 @@ oYb
 tTx
 uew
 uMd
-npG
+ltk
 uMd
 npG
 xbx
@@ -130617,7 +130667,7 @@ oYb
 duN
 vIu
 xgE
-xAd
+jrR
 xXP
 buw
 xAd
@@ -130877,7 +130927,7 @@ udP
 xAd
 wue
 xAd
-vIu
+qej
 vkP
 szK
 vnG
@@ -131129,11 +131179,11 @@ wCd
 nrs
 oYb
 dyG
-xAd
+jrR
 wue
 vIu
 udP
-xAd
+jrR
 xAd
 xFc
 vnG
