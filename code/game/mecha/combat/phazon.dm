@@ -1284,8 +1284,6 @@
 	ME.attach(src)
 	ME = new /obj/item/mecha_parts/mecha_equipment/seat
 	ME.attach(src)
-	ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
-	ME.attach(src)
 	
 //truckcaravan
 
