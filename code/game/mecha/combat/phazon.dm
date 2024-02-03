@@ -701,8 +701,8 @@
 /obj/mecha/combat/phazon/buggy/ranger
 	name = "\improper Ranger Buggy"
 	desc = "A light vehicle, not very powerfull or solid, running on a powercell. This one as been recolored by the Rangers."
-	icon = 'icons/mecha/buggyranger.dmi'
-	icon_state = "buggyranger"
+	icon = 'icons/mecha/hanlonbuggy.dmi'
+	icon_state = "hanlonbuggy"
 	pixel_x = -15
 	pixel_y = 0
 	can_be_locked = TRUE
