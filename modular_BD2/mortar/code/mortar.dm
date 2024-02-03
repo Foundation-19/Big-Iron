@@ -149,10 +149,20 @@
 
 			for(var/mob/M in range(7))
 				shake_camera(M, 3, 1)
+			
+			var/area/target_area = get_area(T)
+			
+				
 			spawn(travel_time) //What goes up
 				playsound(T, 'modular_BD2/mortar/sound/mortar_long_whistle.ogg', 50, 1)
 				spawn(45) //Must go down //This should always be 45 ticks!
-					mortar_shell.detonate(T)
+					if(target_area.outdoors)
+						mortar_shell.detonate(T)
+					else
+						for(var/mob/M in range(7))
+							shake_camera(M, 3, 1)
+						
+						playsound(T, 'sound/effects/explosionfar.ogg', 70, 1)
 
 					qdel(mortar_shell)
 					xdial = 0//Reset after each shell.
