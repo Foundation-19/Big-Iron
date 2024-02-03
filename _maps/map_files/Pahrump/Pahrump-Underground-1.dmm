@@ -2707,7 +2707,15 @@
 /area/f13/building)
 "bFe" = (
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/cig_packs,
+/obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster,
+/obj/item/mecha_parts/mecha_equipment/medical/sleeper,
 /turf/open/floor/wood/f13/oak,
 /area/f13/merchant)
 "bFl" = (
@@ -3160,6 +3168,17 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/tunnel)
+"bUC" = (
+/obj/effect/decal/riverbank{
+	color = "#669999";
+	name = "Dock";
+	dir = 8
+	},
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/merchant)
 "bUK" = (
 /obj/item/reagent_containers/glass/bucket/wood{
 	pixel_y = -7;
@@ -4625,7 +4644,10 @@
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
 "cRV" = (
-/turf/open/indestructible/cobble,
+/obj/structure/stairs/south{
+	color = "#A47449"
+	},
+/turf/open/indestructible/cobble/side,
 /area/f13/cotc)
 "cRW" = (
 /obj/structure/chair/stool/retro/backed{
@@ -15520,9 +15542,7 @@
 	},
 /area/f13/bunker)
 "kko" = (
-/obj/mecha/combat/phazon/buggy/ranger/loaded{
-	icon_state = "buggyranger-open"
-	},
+/obj/mecha/combat/phazon/buggy/ranger/loaded,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -16590,11 +16610,6 @@
 /obj/machinery/light,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
-"lcg" = (
-/turf/open/indestructible/cobble/corner{
-	dir = 4
-	},
-/area/f13/caves)
 "lco" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/indestructible/ground/inside/mountain,
@@ -17799,12 +17814,6 @@
 "lRL" = (
 /turf/open/floor/wood/f13/oakbroken4,
 /area/f13/building)
-"lSz" = (
-/obj/structure/stairs/south{
-	color = "#A47449"
-	},
-/turf/open/indestructible/cobble/side,
-/area/f13/caves)
 "lTu" = (
 /obj/structure/chair/office/dark,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -21318,7 +21327,10 @@
 	},
 /area/f13/sewer)
 "oMl" = (
-/turf/open/indestructible/cobble/side{
+/obj/structure/stairs/south{
+	color = "#A47449"
+	},
+/turf/open/indestructible/cobble/corner{
 	dir = 8
 	},
 /area/f13/cotc)
@@ -23329,7 +23341,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "qhQ" = (
-/turf/open/indestructible/cobble/side{
+/turf/open/indestructible/cobble/corner{
 	dir = 4
 	},
 /area/f13/cotc)
@@ -29590,6 +29602,10 @@
 "uII" = (
 /obj/structure/rack,
 /obj/structure/rack,
+/obj/item/mecha_ammo/scattershot,
+/obj/item/mecha_ammo/lmg,
+/obj/item/mecha_ammo/lmg,
+/obj/item/mecha_ammo/missiles_he,
 /turf/open/floor/wood/f13/oak,
 /area/f13/merchant)
 "uJq" = (
@@ -31509,14 +31525,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2,
 /area/f13/bunker)
-"vTn" = (
-/obj/structure/stairs/south{
-	color = "#A47449"
-	},
-/turf/open/indestructible/cobble/corner{
-	dir = 8
-	},
-/area/f13/caves)
 "vTD" = (
 /turf/open/floor/mineral/plastitanium,
 /area/f13/enclave)
@@ -32024,6 +32032,12 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/caves)
+"wmF" = (
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/merchant)
 "wmJ" = (
 /turf/open/floor/f13{
 	dir = 8;
@@ -63466,10 +63480,10 @@ uXW
 jvv
 bMt
 wgx
-dJi
 xDn
+wmF
 qKc
-qKc
+bUC
 vow
 jMT
 jMT
@@ -63986,7 +64000,7 @@ sXL
 sXL
 sXL
 jIQ
-jMT
+aZR
 oVi
 iFF
 dJi
@@ -67573,9 +67587,9 @@ oeu
 oeu
 oeu
 rZf
-vPg
-rrq
-vPg
+gtS
+gtS
+gtS
 lAv
 uqF
 mnK
@@ -70922,7 +70936,7 @@ vPg
 mdU
 imJ
 oMl
-vTn
+vPg
 vPg
 qqW
 nHM
@@ -71179,7 +71193,7 @@ ogO
 mZa
 uUk
 cRV
-lSz
+vPg
 vPg
 qqW
 nHM
@@ -71436,7 +71450,7 @@ xVz
 eLX
 hki
 qhQ
-lcg
+vPg
 vPg
 qqW
 nHM

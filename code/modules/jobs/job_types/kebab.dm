@@ -317,7 +317,7 @@
 
 /datum/outfit/job/kebab/f13mechanic
 	name = "Mechanic"
-	jobtype = /datum/job/kebab/f13highconstable
+	jobtype = /datum/job/kebab/f13mechanic
 	ears = /obj/item/radio/headset/headset_town
 	id = /obj/item/card/id/dogtag/town
 	backpack = /obj/item/storage/backpack/satchel/explorer
