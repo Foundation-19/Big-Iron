@@ -162,6 +162,7 @@
 	head = /obj/item/clothing/head/f13/army/beret/airborne
 	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
+	id = /obj/item/card/id/dogtag/enclave/officer
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
