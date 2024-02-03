@@ -151,7 +151,7 @@
 	var/angle_to_target = Get_Angle(src, target_turf)
 	if(isnum(set_angle))
 		angle_to_target = set_angle
-	var/static/list/plasmacaster_angles = list(2.5, -2.5)
+	var/static/list/plasmacaster_angles = list(7.5, 2.5, -2.5, -7.5)
 	for(var/i in plasmacaster_angles)
 		fire_plasmacaster(target_turf, angle_to_target + i)
 
