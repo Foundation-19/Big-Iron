@@ -906,7 +906,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Militia Commander"
 	icon_state = "Officer"
 
-
 /obj/effect/landmark/start/f13/merchant/highconstable
 	name = "Kebab High Constable"
 	icon_state = "Officer"
