@@ -23,7 +23,7 @@
 	filling_color = "#FFA500"
 	bitesize_mod = 2
 	foodtype = VEGETABLES
-	juice_results = list(/datum/reagent/consumable/carrotjuice = 0)
+	juice_results = list(/datum/reagent/consumable/carrotjuice = 1)
 	wine_power = 30
 
 // Parsnip
@@ -45,7 +45,7 @@
 	icon_state = "parsnip"
 	bitesize_mod = 2
 	foodtype = VEGETABLES
-	juice_results = list(/datum/reagent/consumable/parsnipjuice = 0)
+	juice_results = list(/datum/reagent/consumable/parsnipjuice = 1)
 	wine_power = 35
 
 
