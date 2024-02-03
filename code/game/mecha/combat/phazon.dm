@@ -1072,7 +1072,7 @@
 //pickuptruck
 
 /obj/mecha/combat/phazon/pickuptruck
-	name = "\improper pickuptruck"
+	name = "\improper pickup truck"
 	desc = "A old vehicule, runing on powercell."
 	icon = 'icons/mecha/pickuptruck.dmi'
 	icon_state = "pickuptruck"
@@ -1127,7 +1127,7 @@
 //pickuptruck blue
 
 /obj/mecha/combat/phazon/pickuptruck/blue
-	name = "\improper pickuptruck"
+	name = "\improper pickup truck"
 	desc = "A old vehicule, runing on powercell."
 	icon = 'icons/mecha/pickuptruck-blue.dmi'
 	icon_state = "pickuptruck"
@@ -1182,7 +1182,7 @@
 //pickuptruck bos
 
 /obj/mecha/combat/phazon/pickuptruck/bos
-	name = "\improper BoS pickuptruck"
+	name = "\improper BoS pickup truck"
 	desc = "A old vehicule, runing on powercell."
 	icon = 'icons/mecha/pickuptruck-bos.dmi'
 	icon_state = "pickuptruck"
@@ -1235,7 +1235,7 @@
 //pickuptruck bos AND Kiana
 
 /obj/mecha/combat/phazon/pickuptruck/bos/armed
-	name = "\improper BoS pickuptruck with gunner"
+	name = "\improper BoS pickup truck with gunner"
 	desc = "A old vehicule, runing on powercell. Its a A modified brotherhood truck, with the addition of a laser rifle at the back, maned by Paladin Kiana Davberg. Consumes more and is a more fragile."
 	icon = 'icons/mecha/pickuptruck-gunbos.dmi'
 	icon_state = "pickuptruck"
@@ -1288,8 +1288,8 @@
 //truckcaravan
 
 /obj/mecha/combat/phazon/truckcaravan
-	name = "\improper Legion Truck caravan"
-	desc = "A vehicle, not very powerfull or solid, running on a power cell... Okay, its a lie. Its pulled by to brahmins...The cell is here to make sure that some componant of the half buggy pulled by brahmins works."
+	name = "\improper Truck caravan"
+	desc = "A vehicle, not very powerfull or solid, running on a power cell... Okay, its a lie. Its pulled by two brahmins...The cell is here to make sure that some componant of the half buggy pulled by brahmins works."
 	icon = 'icons/mecha/truckcaravan.dmi'
 	icon_state = "truckcaravan"
 	pixel_x = -20
