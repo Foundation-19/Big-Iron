@@ -41,7 +41,7 @@
 	can_be_locked = TRUE
 	dna_lock
 	step_in = 0.6
-	dir_in = 1
+	dir_in = 2
 	step_energy_drain = 1.5
 	max_integrity = 300
 	deflect_chance = 30
@@ -98,7 +98,7 @@
 	addtimer(CALLBACK(src,.proc/go_critical),breach_time)
 
 /obj/mecha/combat/phazon/vertibird/proc/go_critical()
-	explosion(get_turf(loc), 3, 5, 10, 20, 30)
+	explosion(get_turf(loc), 3, 5, 10)
 	Destroy(src)
 
 /obj/mecha/combat/phazon/vertibird/loaded/Initialize()
@@ -128,7 +128,7 @@
 	can_be_locked = TRUE
 	dna_lock
 	step_in = 0.8
-	dir_in = 1
+	dir_in = 2
 	step_energy_drain = 1.4
 	max_integrity = 350
 	deflect_chance = 30
@@ -209,7 +209,7 @@
 	can_be_locked = TRUE
 	dna_lock
 	step_in = 0.6
-	dir_in = 1
+	dir_in = 2
 	step_energy_drain = 1.5
 	max_integrity = 300
 	deflect_chance = 30
@@ -261,8 +261,6 @@
 	. = ..()
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
 	ME.attach(src)
-	ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching
-	ME.attach(src)
 	ME = new /obj/item/mecha_parts/mecha_equipment/seat
 	ME.attach(src)
 	ME = new /obj/item/mecha_parts/mecha_equipment/seat
@@ -275,7 +273,7 @@
 
 /obj/mecha/combat/phazon/vertibird/brotherhood
 	name = "\improper Brotherhood Vertibird"
-	desc = "A real useable, and working vertibird, maintained with luck, sweat, and ducktape. This one seems to be more focused toward combat, and be stored in a ship. Thats peak Enclave tech."
+	desc = "A real useable, and working vertibird, maintained with luck, sweat, and ducktape. This one seems to be more focused toward combat, and marked with brotherhood markings."
 	icon = 'icons/mecha/vb-vertibird-bos.dmi'
 	icon_state = "vb"
 	pixel_x = -138
@@ -284,7 +282,7 @@
 	can_be_locked = TRUE
 	dna_lock
 	step_in = 0.6
-	dir_in = 1
+	dir_in = 2
 	step_energy_drain = 1.5
 	max_integrity = 300
 	deflect_chance = 30
@@ -335,8 +333,6 @@
 /obj/mecha/combat/phazon/vertibird/brotherhood/loaded/Initialize()
 	. = ..()
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
-	ME.attach(src)
-	ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/breaching
 	ME.attach(src)
 	ME = new /obj/item/mecha_parts/mecha_equipment/seat
 	ME.attach(src)

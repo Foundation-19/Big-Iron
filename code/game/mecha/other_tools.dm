@@ -183,7 +183,7 @@
 		occupant_message("<span class='warning'>[target] will not fit into the seat because of the creatures attached to it!</span>")
 		return
 	if(patient)
-		occupant_message("<span class='warning'>The sleeper is already occupied!</span>")
+		occupant_message("<span class='warning'>The seater is already occupied!</span>")
 		return
 	return 1
 

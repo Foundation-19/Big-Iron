@@ -426,8 +426,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/decprimheavy
 	name = "Battleborn Heavy Prime Decanus"
-	suit = /obj/item/clothing/suit/armored/heavy/legion/breacher
-	head = /obj/item/clothing/head/helmet/f13/legion/legionsalvagedhelmet
+	suit = /obj/item/clothing/suit/armored/heavy/legion/heavydecanus
+	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
 	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher
 	backpack_contents = list(
 		/obj/item/shield/riot/legion = 1,

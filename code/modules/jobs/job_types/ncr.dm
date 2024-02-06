@@ -377,6 +377,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/greasegun = 4,
 		/obj/item/book/manual/ncr/jobguide/regs = 1,
+		/obj/item/melee/onehanded/knife/bowie =1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1
 		)
 
