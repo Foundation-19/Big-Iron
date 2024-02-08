@@ -890,6 +890,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Militia Commander"
 	icon_state = "Officer"
 
+/obj/effect/landmark/start/f13/merchant/militian
+	name = "Militian"
+	icon_state = "Officer"
+
 /obj/effect/landmark/start/f13/merchant/bartender
 	name = "Bartender"
 	icon_state = "Barkeep"
@@ -903,9 +907,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "Wastelander"
 
 /obj/effect/landmark/start/f13/bwsettler
-	name = "Blackwater Settler"
+	name = "Kebab blackwater Settler"
 	icon_state = "Settler"
 
 /obj/effect/landmark/start/f13/bwdeputy
-	name = "Blackwater Deputy"
+	name = "Kebab blackwater Deputy"
 	icon_state = "Officer"
