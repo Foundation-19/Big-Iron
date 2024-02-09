@@ -937,7 +937,7 @@
 	item_state = "enclave_seva"
 
 /obj/item/clothing/suit/armor/f13/combat/swat/enclave
-	name = "enclave combat armor"
+	name = "mass-produced enclave combat armor"
 	desc = "A set of standard issue combat armor used by the Enclave. Looks Cheaply made."
 	icon_state = "Enclave_combatarmor"
 	item_state = "Enclave_combatarmor"
@@ -947,10 +947,22 @@
 	equip_delay_other = 60
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/remnant
-	name = "remnant combat armor"
+	name = "enclave combat armor"
 	desc = "A dark armor, used commonly in espionage or shadow ops."
 	icon_state = "remnant"
 	item_state = "remnant"
+
+/obj/item/clothing/suit/armor/f13/enclaveairman
+	name = "enclave paratrooper armor"
+	desc = "Form-fitting & aerodynamic combat armor, typically used by US Marines during aerial operations."
+	icon_state = "marine_security"
+	item_state = "marine_security"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	blocks_shove_knockdown = TRUE
+	armor = list("melee" = 52.5, "bullet" = 52.5, "laser" = 52.5, "energy" = 35, "bomb" = 45, "bio" = 60, "rad" = 50, "fire" = 60, "acid" = 35, "wound" = 50)
+	strip_delay = 70
+	equip_delay_other = 60
+	slowdown = 0.12
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
