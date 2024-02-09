@@ -98,9 +98,9 @@
 	var/melee_can_hit = 1
 	var/attack_knockdown = 0 // For how much time it will knockdown a target in melee
 
-	var/exit_delay = 40 //Time to exit mech
+	var/exit_delay = 5 //Time to exit mech
 	var/destruction_sleep_duration = 50 //Time that mech pilot is put to sleep for if mech is destroyed
-	var/enter_delay = 40 //Time taken to enter the mech
+	var/enter_delay = 5 //Time taken to enter the mech
 
 	var/is_currently_ejecting = FALSE //Mech cannot use equiptment when true, set to true if pilot is trying to exit mech
 
@@ -119,6 +119,9 @@
 	var/datum/action/innate/mecha/mech_switch_damtype/switch_damtype_action = new
 	var/datum/action/innate/mecha/mech_toggle_phasing/phasing_action = new
 	var/datum/action/innate/mecha/strafe/strafing_action = new
+	var/datum/action/innate/mecha/klaxon/klaxon_action = new
+	var/datum/action/innate/mecha/sirens/sirens_action = new
+
 
 	//Action vars
 	var/thrusters_active = FALSE
@@ -266,7 +269,7 @@
 		C.forceMove(src)
 		cell = C
 		return
-	cell = new /obj/item/stock_parts/cell/high/plus(src)
+	cell = new /obj/item/stock_parts/cell(src)
 
 /obj/mecha/proc/add_cabin()
 	cabin_air = new

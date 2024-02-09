@@ -182,7 +182,6 @@
 		chassis.mecha_log_message("Toggled thrusters.")
 		chassis.occupant_message("<font color='[chassis.thrusters_active ?"blue":"red"]'>Thrusters [chassis.thrusters_active ?"en":"dis"]abled.")
 
-
 /datum/action/innate/mecha/mech_defense_mode
 	name = "Toggle Defense Mode"
 	button_icon_state = "mech_defense_mode_off"
@@ -245,7 +244,7 @@
 		chassis.mecha_log_message("Toggled zoom mode.")
 		chassis.occupant_message("<font color='[chassis.zoom_mode?"blue":"red"]'>Zoom mode [chassis.zoom_mode?"en":"dis"]abled.</font>")
 		if(chassis.zoom_mode)
-			owner.client.change_view(12)
+			owner.client.change_view(16)
 			SEND_SOUND(owner, sound('sound/mecha/imag_enh.ogg',volume=50))
 		else
 			owner.client.change_view(CONFIG_GET(string/default_view)) //world.view - default mob view size
@@ -284,4 +283,20 @@
 	chassis.phasing = !chassis.phasing
 	button_icon_state = "mech_phasing_[chassis.phasing ? "on" : "off"]"
 	chassis.occupant_message("<font color=\"[chassis.phasing?"#00f\">En":"#f00\">Dis"]abled phasing.</font>")
-	UpdateButtonIcon()
+
+/datum/action/innate/mecha/klaxon
+	name = "Klaxon"
+	button_icon_state = "mech_damtype_brute"
+
+/datum/action/innate/mecha/klaxon/Activate()
+	playsound(chassis,'sound/f13machines/klaxon.ogg', 50, 1)
+
+/datum/action/innate/mecha/sirens
+	name = "Sirens"
+	button_icon_state = "mech_damtype_brute"
+
+/datum/action/innate/mecha/sirens/Activate()
+	playsound(chassis,'sound/f13machines/police.ogg', 50, 1)
+
+
+

@@ -606,6 +606,17 @@
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
+/obj/item/clothing/suit/armor/f13/bomber/ncr
+	name = "NCR bomber jacket"
+	desc = "The NCR divers got it out of the water, dried it, added some armor piece, then gave them to the pilot !"
+	icon_state = "bomberalt"
+	item_state = "bomberalt"
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 20, "energy" = 15, "bomb" = 45, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
+
+/obj/item/clothing/suit/armor/f13/bomber/ncr/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
+
 /obj/item/clothing/suit/armor/f13/ncrcfjacket
 	name = "NCRCF jacket"
 	icon_state = "ncrcfjacket"
