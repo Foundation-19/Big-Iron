@@ -267,7 +267,7 @@
 	item_state = "enclave_marine"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 35, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 55)
 
 /obj/item/clothing/head/helmet/f13/enclave/marine/Initialize()
 	. = ..()
@@ -278,6 +278,19 @@
 	desc = "A dark helmet with yellow lenses, used commonly in espionage or shadow ops."
 	icon_state = "remnant_helmet"
 	item_state = "remnant_helmet"
+
+/obj/item/clothing/head/helmet/f13/enclave/airman
+	name = "enclave paratrooper helmet"
+	desc = "A familiar helmet with a glossy orange visor"
+	icon_state = "marine_security_enclave"
+	item_state = "marine_security_enclave"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	armor = list("melee" = 52.5, "bullet" = 52.5, "laser" = 52.5, "energy" = 35, "bomb" = 45, "bio" = 60, "rad" = 50, "fire" = 60, "acid" = 35, "wound" = 50)
+	
+/obj/item/clothing/head/helmet/f13/enclave/airman/update_icon_state()
+	icon_state = "marine_security_enclave[light_on]"
+	item_state = "marine_security_enclave[light_on]"
 
 /obj/item/clothing/head/helmet/f13/combat/swat/enclave
 	name = "enclave combat armor helmet"
