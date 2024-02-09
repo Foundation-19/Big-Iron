@@ -521,6 +521,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Captain"
 	icon_state = "NCR Captain"
 
+/obj/effect/landmark/start/f13/ncrstaffsarge
+	name = "NCR Staff Sergeant"
+	icon_state = "NCR Lieutenant"
+
 /obj/effect/landmark/start/f13/ncrlieutenant
 	name = "NCR Lieutenant"
 	icon_state = "NCR Lieutenant"
@@ -547,6 +551,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/ncrmp
 	name = "NCR Military Police"
+	icon_state = "NCR Trooper"
+
+/obj/effect/landmark/start/f13/ncrpilot
+	name = "NCR Pilot"
 	icon_state = "NCR Trooper"
 
 /obj/effect/landmark/start/f13/ncrcombatengineer
@@ -669,6 +677,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Knight"
 	icon_state = "Knight"
 
+/obj/effect/landmark/start/f13/Lancer
+	name = "Lancer"
+	icon_state = "Knight"
+
 /obj/effect/landmark/start/f13/initiate
 	name = "Initiate"
 	icon_state = "Initiate"
@@ -776,7 +788,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 // Enclave
 
 /obj/effect/landmark/start/f13/uscpt
-	name = "Enclave Captain"
+	name = "Enclave Navy Captain"
 	icon_state = "usgunnery"
 
 /obj/effect/landmark/start/f13/uslt
@@ -801,6 +813,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/usspy
 	name = "Enclave Private"
+	icon_state = "uspvt"
+
+/obj/effect/landmark/start/f13/uspilot
+	name = "Enclave Navy Pilot"
 	icon_state = "uspvt"
 
 /obj/effect/landmark/start/f13/usremnant
@@ -890,12 +906,20 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Militia Commander"
 	icon_state = "Officer"
 
+/obj/effect/landmark/start/f13/merchant/highconstable
+	name = "Kebab High Constable"
+	icon_state = "Officer"
+
 /obj/effect/landmark/start/f13/merchant/militian
 	name = "Militian"
 	icon_state = "Officer"
 
 /obj/effect/landmark/start/f13/merchant/bartender
 	name = "Bartender"
+	icon_state = "Barkeep"
+
+/obj/effect/landmark/start/f13/merchant/mechanic
+	name = "Mechanic"
 	icon_state = "Barkeep"
 
 /obj/effect/landmark/start/f13/kebab/radiohost
