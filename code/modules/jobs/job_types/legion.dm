@@ -594,7 +594,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
 	neck = /obj/item/storage/belt/holster
 	backpack_contents = list(
-		
+		/obj/item/gun/ballistic/automatic/smg/smg14 = 1,
+		/obj/item/ammo_box/magazine/smg14 = 4,
 		/obj/item/melee/onehanded/machete/spatha = 1
 		)
 

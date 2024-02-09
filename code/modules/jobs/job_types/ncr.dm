@@ -260,22 +260,20 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gloves = /obj/item/clothing/gloves/f13/leather
 	ears = /obj/item/radio/headset/headset_ncr_com
 	r_pocket = /obj/item/binoculars
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan = 1,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
-		/obj/item/ammo_box/magazine/garand308 = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/book/manual/ncr/jobguide/regs = 1,
 		/obj/item/storage/box/ration/menu_five = 1,
 		/obj/item/ammo_box/magazine/m14mm = 3
 		)
 /datum/outfit/loadout/LTfrontline
-	name = "The Officer"
-	suit_store = /obj/item/gun/ballistic/automatic/r84
+	name = "The Frontline"
+	suit_store = /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	backpack_contents = list(
-		/obj/item/clothing/suit/armor/f13/ncrarmor/captain/ncr_officer_coat = 1,
+		/obj/item/ammo_box/magazine/garand308 = 3,
 		/obj/item/storage/box/ration/menu_two = 1
 		)
 
