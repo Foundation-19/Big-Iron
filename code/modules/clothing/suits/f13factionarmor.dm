@@ -884,12 +884,12 @@
 //Enclave
 
 /obj/item/clothing/suit/armor/f13/enclave/marine
-	name = "old United States Marine Corp Armor"
+	name = "old us marine armor"
 	desc = "An advanced model of combat armor worn by marines aboard the USS Democracy, second only to power armor in protection used by the USMC For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
 	icon_state = "enclave_marine"
 	item_state = "enclave_marine"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 20, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/enclave/marine/Initialize()
@@ -937,7 +937,7 @@
 	item_state = "enclave_seva"
 
 /obj/item/clothing/suit/armor/f13/combat/swat/enclave
-	name = "enclave combat armor"
+	name = "mass-produced enclave combat armor"
 	desc = "A set of standard issue combat armor used by the Enclave. Looks Cheaply made."
 	icon_state = "Enclave_combatarmor"
 	item_state = "Enclave_combatarmor"
@@ -947,10 +947,22 @@
 	equip_delay_other = 60
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/remnant
-	name = "remnant combat armor"
+	name = "enclave combat armor"
 	desc = "A dark armor, used commonly in espionage or shadow ops."
 	icon_state = "remnant"
 	item_state = "remnant"
+
+/obj/item/clothing/suit/armor/f13/enclaveairman
+	name = "enclave paratrooper armor"
+	desc = "Form-fitting & aerodynamic combat armor, typically used by US Marines during aerial operations."
+	icon_state = "marine_security"
+	item_state = "marine_security"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	blocks_shove_knockdown = TRUE
+	armor = list("melee" = 52.5, "bullet" = 52.5, "laser" = 52.5, "energy" = 35, "bomb" = 45, "bio" = 60, "rad" = 50, "fire" = 60, "acid" = 35, "wound" = 50)
+	strip_delay = 70
+	equip_delay_other = 60
+	slowdown = 0.12
 
 //THE GRAVEYARD
 //UNUSED or LEGACY - RETAINED IN CASE DESIRED FOR ADMIN SPAWN OR REIMPLEMENATION. MAY NOT BE EVERYTHING THAT'S UNUSED. TEST BEFORE USING
