@@ -214,6 +214,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/clothing/suit/armor/f13/ncrarmor/captain/ncr_officer_coat = 1,
 		/obj/item/ammo_box/magazine/lmg = 1,
+		/obj/item/clothing/head/beret/ncr = 1,
 		/obj/item/storage/box/ration/menu_two = 1
 		)
 
@@ -222,6 +223,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/twohanded/sledgehammer/rockethammer/courtmartial
 	backpack_contents = list(
 		/obj/item/clothing/suit/armor/f13/ncrarmor/captain = 1,
+		/obj/item/clothing/head/beret/ncr = 1,
 		/obj/item/storage/box/ration/menu_eight = 1
 		)
 

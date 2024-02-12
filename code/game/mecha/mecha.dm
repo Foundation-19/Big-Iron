@@ -269,7 +269,7 @@
 		C.forceMove(src)
 		cell = C
 		return
-	cell = new /obj/item/stock_parts/cell(src)
+	cell = new /obj/item/stock_parts/cell/upgraded/plus(src)
 
 /obj/mecha/proc/add_cabin()
 	cabin_air = new
