@@ -22357,12 +22357,11 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/computer/terminal{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/item/taperecorder,
+/obj/item/pda/engineering,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -27868,15 +27867,6 @@
 	icon_state = "desertcracked3"
 	},
 /area/f13/wasteland)
-"jAk" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/effect/landmark/start/f13/ncrheavytrooper,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/ncr)
 "jAq" = (
 /obj/structure/fence{
 	dir = 4
@@ -36701,7 +36691,6 @@
 /obj/structure/chair/office/dark{
 	dir = 8
 	},
-/obj/effect/landmark/start/f13/ncrcombatengineer,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -44321,9 +44310,19 @@
 /turf/open/indestructible/ground/inside/dirt/stamped,
 /area/f13/legion)
 "psk" = (
-/obj/structure/chair/office/light,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
+	},
+/obj/machinery/radioterminal/ncr{
+	pixel_y = 13;
+	pixel_x = -2
+	},
+/obj/structure/table/reinforced,
+/obj/item/paper_bin{
+	pixel_y = -4
+	},
+/obj/item/pen/fountain{
+	pixel_y = -4
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -46664,12 +46663,11 @@
 /area/f13/building)
 "qhG" = (
 /obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/obj/item/pen/fountain,
-/obj/item/taperecorder,
-/obj/item/pda/engineering,
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
+	},
+/obj/machinery/computer/terminal{
+	dir = 1
 	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -53868,12 +53866,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/effect/landmark/start/f13/ncrcombatengineer,
-/obj/structure/chair/office/dark{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkrustysolid"
+/obj/structure/chair/office/light,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
 	},
 /area/f13/ncr)
 "sSQ" = (
@@ -59347,7 +59342,6 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/effect/landmark/start/f13/ncrcombatmedic,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -76526,14 +76520,14 @@ hOl
 hOl
 koD
 ruN
-mMl
+sSP
 qhG
 mMl
 ruN
 cao
 bVP
 bVP
-sSP
+mGe
 jWv
 bVP
 mGe
@@ -78332,9 +78326,9 @@ bVP
 vQs
 bVP
 bVP
-jAk
 bVP
-jAk
+bVP
+bVP
 bVP
 bVP
 dcJ
