@@ -7011,13 +7011,8 @@
 	},
 /area/f13/building)
 "cwi" = (
-/obj/effect/decal/fakelattice{
-	density = 0;
-	pixel_x = 17
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
-	},
+/obj/effect/landmark/start/f13/merchant/bartender,
+/turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
 "cwk" = (
 /obj/structure/simple_door/metal/store,
@@ -19926,6 +19921,7 @@
 	name = "Kebab radio";
 	can_be_unanchored = 1
 	},
+/obj/machinery/seed_extractor,
 /turf/open/floor/wood/wood_tiled,
 /area/f13/merchant)
 "gVa" = (
@@ -21849,10 +21845,6 @@
 /area/f13/kebab)
 "hzZ" = (
 /obj/effect/landmark/start/f13/kebab/scab,
-/obj/effect/decal/fakelattice{
-	pixel_x = -17
-	},
-/obj/effect/landmark/start/f13/kebab/scab,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 5;
 	icon_state = "dirt"
@@ -22396,13 +22388,6 @@
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/wasteland)
-"hIK" = (
-/obj/machinery/light/small{
-	brightness = 3;
-	dir = 8
-	},
-/turf/open/floor/wood/f13/oak,
-/area/f13/kebab)
 "hIL" = (
 /obj/structure/barricade/wooden,
 /obj/item/clothing/head/helmet/f13/deathskull{
@@ -24373,14 +24358,6 @@
 	name = "metal plating"
 	},
 /area/f13/merchant)
-"isE" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/trash/f13/electronic/toaster/oven{
-	pixel_y = 21
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/rust,
-/area/f13/kebab)
 "isV" = (
 /obj/machinery/light/small{
 	brightness = 3;
@@ -25004,11 +24981,6 @@
 	},
 /area/f13/tunnel)
 "iFL" = (
-/obj/effect/landmark/start/f13/kebab/scab,
-/obj/effect/decal/fakelattice{
-	density = 0;
-	pixel_x = 17
-	},
 /obj/effect/landmark/start/f13/kebab/scab,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/kebab)
@@ -27060,14 +27032,6 @@
 	pixel_x = 4;
 	pixel_y = 13
 	},
-/obj/effect/decal/fakelattice{
-	pixel_x = -17
-	},
-/obj/structure/flora/grass/wasteland{
-	icon_state = "tall_grass_4";
-	pixel_x = 4;
-	pixel_y = 13
-	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/kebab)
 "jrH" = (
@@ -27906,6 +27870,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/caves)
 "jHR" = (
+/obj/effect/landmark/start/f13/kebab/scab,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
 	icon_state = "dirt"
@@ -28015,15 +27980,6 @@
 	},
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland)
-"jKz" = (
-/obj/structure/rack/shelf_metal,
-/obj/item/trash/f13/electronic/toaster/oven{
-	pixel_y = 21
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/f13/oak,
-/area/f13/kebab)
 "jKC" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -39551,7 +39507,7 @@
 /obj/effect/decal/marking{
 	icon_state = "dottedhorizontalcorroded"
 	},
-/obj/machinery/smartfridge/bottlerack/seedbin,
+/obj/machinery/seed_extractor,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
 	},
@@ -39799,13 +39755,6 @@
 /obj/item/reagent_containers/glass/bucket/wood,
 /turf/open/indestructible/ground/outside/wood,
 /area/f13/wasteland)
-"nVz" = (
-/obj/structure/chair/wood/modern{
-	dir = 4;
-	icon_state = "wooden_chair_settler"
-	},
-/turf/open/floor/wood/f13/oak,
-/area/f13/kebab)
 "nVM" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/f13/ncr)
@@ -40654,7 +40603,7 @@
 /obj/item/reagent_containers/food/drinks/flask/survival,
 /obj/item/reagent_containers/food/drinks/flask/survival,
 /obj/item/reagent_containers/food/drinks/flask/survival,
-/obj/machinery/light/built{
+/obj/machinery/light{
 	dir = 4
 	},
 /turf/open/floor/wood/f13/oak,
@@ -42601,13 +42550,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/village)
-"paq" = (
-/obj/structure/simple_door/metal/dirtystore,
-/obj/structure/simple_door/tentflap_leather{
-	layer = 4
-	},
-/turf/open/floor/wood/f13/oak,
-/area/f13/kebab)
 "pas" = (
 /obj/structure/chair/f13chair1,
 /turf/open/floor/f13{
@@ -44996,11 +44938,9 @@
 	},
 /area/f13/building)
 "pQG" = (
-/obj/structure/table/wood/junk,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/f13/oak{
-	icon_state = "oakfloor3-broken";
-	color = "#845f58"
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
 	},
 /area/f13/kebab)
 "pQI" = (
@@ -48317,14 +48257,9 @@
 	},
 /area/f13/building)
 "rdg" = (
-/obj/structure/bed/old,
-/obj/structure/bed/old{
-	pixel_y = 12;
-	layer = 2
-	},
-/obj/structure/bed/old,
-/turf/open/floor/wood/f13/oak,
-/area/f13/kebab)
+/obj/machinery/seed_extractor,
+/turf/closed/wall/r_wall/rust,
+/area/f13/merchant)
 "rdi" = (
 /mob/living/simple_animal/hostile/supermutant/rangedmutant,
 /turf/open/indestructible/ground/outside/desert,
@@ -49595,12 +49530,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "rEn" = (
-/obj/structure/bed/dogbed,
-/turf/open/floor/wood/f13/oak{
-	icon_state = "oakfloor4-broken";
-	color = "#845f58"
+/obj/structure/window/fulltile/house,
+/obj/structure/barricade/bars,
+/obj/machinery/seed_extractor,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
 	},
-/area/f13/kebab)
+/area/f13/merchant)
 "rEy" = (
 /obj/structure/rack,
 /obj/item/storage/backpack,
@@ -52143,9 +52079,15 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "sAT" = (
-/obj/structure/bed/old,
-/turf/closed/wall/rust,
-/area/f13/kebab)
+/obj/structure/curtain{
+	color = "#5c131b";
+	pixel_y = -32
+	},
+/obj/machinery/seed_extractor,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/merchant)
 "sBa" = (
 /obj/structure/fluff/railing{
 	color = "#A47449"
@@ -57797,6 +57739,7 @@
 /area/f13/building)
 "uGm" = (
 /obj/structure/flora/tallgrass6,
+/obj/effect/landmark/start/f13/kebab/scab,
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 4;
 	icon_state = "dirtcorner"
@@ -58126,11 +58069,9 @@
 /area/f13/kebab)
 "uNC" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/raider/thief,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/f13/oak{
-	icon_state = "oakfloor4-broken";
-	color = "#845f58"
+/turf/open/indestructible/ground/outside/wood{
+	icon_state = "wood"
 	},
 /area/f13/kebab)
 "uNH" = (
@@ -59201,7 +59142,6 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/building)
 "vgo" = (
-/obj/machinery/seed_extractor,
 /turf/open/indestructible/ground/outside/wood,
 /area/f13/kebab)
 "vgE" = (
@@ -90008,7 +89948,7 @@ rSH
 dGm
 gQt
 fhh
-cwi
+gQt
 iFL
 eft
 jHR
@@ -90263,9 +90203,9 @@ qgD
 yaW
 qsL
 bmB
-ogm
-ogm
-ogm
+gQt
+gQt
+gQt
 ogm
 hfq
 hfq
@@ -90520,10 +90460,10 @@ nZn
 tmg
 yaW
 pgg
-cPj
-nVz
-hIK
-rdg
+gQt
+gQt
+gQt
+gQt
 ogm
 ogm
 bDy
@@ -90545,10 +90485,10 @@ eme
 huD
 uPP
 fyf
-xAa
-xAa
-xAa
-xAa
+fyf
+fyf
+fyf
+fyf
 fyf
 qLT
 dYV
@@ -90777,10 +90717,10 @@ cPj
 ogm
 ale
 oop
-aXE
+gQt
 pQG
 uNC
-irY
+oop
 pul
 pul
 oAF
@@ -90802,10 +90742,10 @@ uaf
 pBX
 pfl
 vRG
-xAa
-xAa
-xAa
-xAa
+fyf
+fyf
+fyf
+fyf
 fyf
 fyf
 wlc
@@ -91004,8 +90944,8 @@ dFL
 hXb
 lke
 gvb
-uyp
-pXR
+sAT
+rEn
 hxa
 hhb
 qLT
@@ -91034,10 +90974,10 @@ gwY
 wTy
 fpl
 dGm
-cPj
-nBa
-nHH
-sAT
+dGm
+dGm
+oop
+dGm
 pul
 bDa
 pht
@@ -91291,10 +91231,10 @@ bxX
 wTy
 oop
 uUz
-cPj
-rEn
-nHH
-ogm
+dGm
+dGm
+oop
+dGm
 pul
 ebL
 nJn
@@ -91548,10 +91488,10 @@ xyh
 wTy
 oop
 vpx
-paq
-bDa
-jKz
-isE
+dGm
+dGm
+uNC
+oop
 pul
 bMX
 cCF
@@ -93102,7 +93042,7 @@ fyf
 lKH
 hSk
 pPa
-bDa
+cwi
 xIc
 bOC
 faR
@@ -95891,7 +95831,7 @@ qny
 fbF
 xmO
 cOg
-gAZ
+rdg
 exL
 hZy
 euA
@@ -96665,7 +96605,7 @@ gOK
 fBD
 mvv
 gMh
-uuD
+jIz
 qpm
 hxa
 hxa
