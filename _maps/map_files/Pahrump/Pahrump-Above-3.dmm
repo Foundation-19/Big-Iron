@@ -7731,7 +7731,9 @@
 	},
 /area/f13/wasteland)
 "atZ" = (
-/obj/structure/simple_door/room,
+/obj/structure/simple_door/room{
+	name = "Janitorial"
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -8946,7 +8948,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/side,
 /area/f13/clinic)
 "axu" = (
-/obj/structure/simple_door/room,
+/obj/structure/simple_door/room{
+	name = "Bathrooms & Laundry"
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
@@ -17281,7 +17285,9 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/legion)
 "aTX" = (
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Meeting Room"
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
@@ -17401,8 +17407,11 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
-/area/f13/caves)
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plating/f13/outside/roof/metal,
+/area/f13/wasteland)
 "aUn" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 1;
@@ -19566,6 +19575,12 @@
 /obj/item/ammo_casing/a556,
 /turf/open/indestructible/ground/outside/woodalt,
 /area/f13/kebab)
+"bsh" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/closed/wall/r_wall/rust,
+/area/f13/wasteland)
 "bsN" = (
 /obj/machinery/light{
 	dir = 4
@@ -19608,6 +19623,15 @@
 "byf" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan,
 /area/f13/kebab)
+"byG" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/indestructible/ground/outside/roof,
+/area/f13/wasteland)
 "bzB" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/pizzaparty,
@@ -19931,6 +19955,15 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/ncr)
+"dFQ" = (
+/obj/structure/simple_door/room{
+	name = "NCR General Offices"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "dHd" = (
 /obj/machinery/light/floor,
 /turf/open/floor/plating/f13/outside/roof/metal,
@@ -20039,6 +20072,15 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"edd" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/turf_decal/arrows/white{
+	dir = 8
+	},
+/turf/open/indestructible/ground/outside/roof,
+/area/f13/wasteland)
 "eez" = (
 /obj/structure/table/wood,
 /obj/machinery/light/small{
@@ -20285,7 +20327,9 @@
 /turf/open/floor/plating/f13/outside/roof/metal,
 /area/f13/kebab)
 "fkA" = (
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Private Room"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/ncr)
 "fmz" = (
@@ -20342,9 +20386,9 @@
 /area/f13/wasteland)
 "fxB" = (
 /obj/structure/ladder/unbreakable{
-	pixel_y = 9;
 	id = "housetower";
-	layer = 5
+	icon_state = "manhole_open";
+	height = 2
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/kebab)
@@ -20432,6 +20476,15 @@
 	sunlight_state = 1
 	},
 /area/f13/kebab)
+"fLD" = (
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "Secure Wing"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "fMs" = (
 /obj/structure/railing{
 	dir = 4
@@ -20463,6 +20516,9 @@
 	inertia_dir = null;
 	pixel_x = -7;
 	pixel_y = 7
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
 	},
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
@@ -20675,6 +20731,9 @@
 "gUz" = (
 /obj/structure/railing{
 	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -21038,6 +21097,16 @@
 	sunlight_state = 1
 	},
 /area/f13/kebab)
+"ixP" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/turf_decal/arrows/white,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/indestructible/ground/outside/roof,
+/area/f13/wasteland)
 "iCU" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -21280,6 +21349,15 @@
 	color = "000000"
 	},
 /turf/open/floor/plating/f13/outside/roof,
+/area/f13/wasteland)
+"jTW" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plating/f13/outside/roof/metal/corrugated,
 /area/f13/wasteland)
 "kbH" = (
 /obj/structure/fence{
@@ -21624,6 +21702,15 @@
 	},
 /turf/open/indestructible/ground/outside/roof,
 /area/f13/merchant)
+"lXr" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/turf_decal/caution/white{
+	pixel_y = -17
+	},
+/turf/open/indestructible/ground/outside/roof,
+/area/f13/wasteland)
 "lYK" = (
 /obj/structure/curtain{
 	color = "#5c131b";
@@ -22191,6 +22278,15 @@
 /mob/living/simple_animal/hostile/ghoul/scorched/ranged,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+"ppQ" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plating/f13/outside/roof/wood/old,
+/area/f13/wasteland)
 "ppU" = (
 /obj/machinery/door/airlock/hatch{
 	desc = "An airtight door, built to withstand a nuclear blast.";
@@ -22781,6 +22877,18 @@
 	sunlight_state = 1
 	},
 /area/f13/kebab)
+"soe" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plating/f13/outside/roof/metal,
+/area/f13/wasteland)
 "sqK" = (
 /obj/effect/turf_decal{
 	dir = 4
@@ -22869,6 +22977,15 @@
 	sunlight_state = 1
 	},
 /area/f13/kebab)
+"sNe" = (
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR 2nd Trooper Quarters"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "sNQ" = (
 /obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor,
@@ -23029,6 +23146,17 @@
 	pixel_y = 31
 	},
 /turf/open/indestructible/ground/outside/woodalt,
+/area/f13/wasteland)
+"tJH" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/railing{
+	color = "#A47449";
+	dir = 4;
+	pixel_x = 3
+	},
+/turf/open/indestructible/ground/outside/roof,
 /area/f13/wasteland)
 "tKa" = (
 /obj/structure/chair/stool/retro/black,
@@ -23226,6 +23354,13 @@
 	},
 /turf/open/floor/wood/f13/housewoodbroken4,
 /area/f13/kebab)
+"uBC" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/turf_decal/arrows/white,
+/turf/open/indestructible/ground/outside/roof,
+/area/f13/wasteland)
 "uBQ" = (
 /obj/structure/table/wood,
 /obj/item/kirbyplants{
@@ -23366,7 +23501,9 @@
 	},
 /area/f13/wasteland)
 "vdR" = (
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Secure Storage"
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
@@ -24966,14 +25103,14 @@ akC
 akC
 akC
 akC
-aUm
-aUm
-aUm
 aZT
 aZT
 aZT
 aZT
 aZT
+aZT
+jTW
+jTW
 aEZ
 aEZ
 aEZ
@@ -25225,12 +25362,12 @@ akC
 akC
 aZT
 aZT
+jTW
 aZT
 aZT
 aZT
 aZT
-aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -25482,12 +25619,12 @@ akC
 akC
 aZT
 aZT
+jTW
+jTW
 aZT
 aZT
 aZT
-aZT
-aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -25744,7 +25881,7 @@ aZT
 aZT
 aZT
 aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -25997,7 +26134,7 @@ akC
 aZT
 aZT
 aZT
-aZT
+jTW
 aZT
 aZT
 aZT
@@ -26253,8 +26390,8 @@ akC
 akC
 aZT
 aZT
-aZT
-aZT
+jTW
+jTW
 aZT
 aZT
 aZT
@@ -26513,7 +26650,7 @@ aZT
 aZT
 aZT
 aZT
-aZT
+jTW
 aZT
 aZT
 aEZ
@@ -26770,7 +26907,7 @@ aZT
 aZT
 aZT
 aZT
-aZT
+jTW
 aZT
 aZT
 aEZ
@@ -27023,11 +27160,11 @@ akC
 akC
 akC
 aZT
+jTW
 aZT
 aZT
 aZT
-aZT
-aZT
+jTW
 aZT
 aZT
 aEZ
@@ -27048,11 +27185,11 @@ agP
 aGZ
 aTg
 obT
-aTX
+fLD
 obT
 obT
 obT
-atZ
+dFQ
 obT
 obT
 aho
@@ -27280,13 +27417,13 @@ akC
 akC
 akC
 aZT
+jTW
 aZT
 aZT
 aZT
 aZT
 aZT
-aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -27537,13 +27674,13 @@ akC
 akC
 akC
 aZT
+jTW
+aZT
+jTW
 aZT
 aZT
 aZT
-aZT
-aZT
-aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -27796,11 +27933,11 @@ akC
 aZT
 aZT
 aZT
+jTW
 aZT
 aZT
 aZT
-aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -28053,8 +28190,8 @@ akC
 aZT
 aZT
 aZT
-aZT
-aZT
+jTW
+jTW
 aZT
 aZT
 aZT
@@ -28600,7 +28737,7 @@ obT
 obT
 obT
 obT
-aTX
+sNe
 obT
 obT
 awv
@@ -29599,7 +29736,7 @@ aZT
 aZT
 aZT
 aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -29856,7 +29993,7 @@ aZT
 aZT
 aZT
 aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -30107,13 +30244,13 @@ akC
 akC
 akC
 aZT
+jTW
+jTW
 aZT
 aZT
 aZT
 aZT
-aZT
-aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -30365,12 +30502,12 @@ akC
 akC
 aZT
 aZT
+jTW
+jTW
 aZT
 aZT
 aZT
-aZT
-aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -30623,7 +30760,7 @@ akC
 aZT
 aZT
 aZT
-aZT
+jTW
 aZT
 aZT
 aZT
@@ -30883,7 +31020,7 @@ aZT
 aZT
 aZT
 aZT
-aZT
+jTW
 aZT
 aEZ
 aEZ
@@ -31396,7 +31533,7 @@ aZT
 aZT
 aZT
 aZT
-aZT
+jTW
 aZT
 aZT
 aEZ
@@ -31426,19 +31563,19 @@ aJd
 aea
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
 aPL
 aPL
 aPL
@@ -31651,7 +31788,7 @@ akC
 aZT
 aZT
 aZT
-aZT
+jTW
 aZT
 aZT
 aZT
@@ -31683,19 +31820,19 @@ aJd
 aea
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+aUm
+soe
+aUm
+aUm
+aUm
+soe
+aUm
+aUm
+aUm
+soe
+aUm
+aUm
+aUm
 aPL
 aPL
 aPL
@@ -31906,13 +32043,13 @@ akC
 akC
 akC
 aZT
+jTW
+aZT
+jTW
 aZT
 aZT
 aZT
-aZT
-aZT
-aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -31940,19 +32077,19 @@ pvB
 aea
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+aUm
+soe
+soe
+aUm
+aUm
+soe
+aUm
+aUm
+aUm
+soe
+soe
+aUm
+aUm
 aPL
 aPL
 aPL
@@ -32163,13 +32300,13 @@ aEZ
 akC
 akC
 aZT
+jTW
 aZT
 aZT
 aZT
 aZT
 aZT
-aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -32197,19 +32334,19 @@ aqs
 avq
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+aUm
+aUm
+aUm
+aUm
+aUm
+soe
+aUm
+aUm
+aUm
+aUm
+soe
+soe
+aUm
 aPL
 aPL
 aPL
@@ -32426,7 +32563,7 @@ aZT
 aZT
 aZT
 aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -32454,19 +32591,19 @@ avh
 ajz
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+soe
+aUm
 aPL
 aPL
 aPL
@@ -32683,7 +32820,7 @@ aZT
 aZT
 aZT
 aZT
-aZT
+jTW
 aEZ
 aEZ
 aEZ
@@ -32711,19 +32848,19 @@ gWV
 aSH
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+soe
+aUm
+aUm
+aUm
+aUm
+aUm
 aPL
 aPL
 aPL
@@ -32968,19 +33105,19 @@ gWV
 aSH
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+aUm
+aUm
+aUm
+aUm
+soe
+aUm
+aUm
+soe
+aUm
+aUm
+aUm
+aUm
+aUm
 aPL
 aPL
 aPL
@@ -33225,19 +33362,19 @@ aqk
 ajz
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+aUm
+aUm
+aUm
+soe
+soe
+aUm
+aUm
+soe
+aUm
+aUm
+aUm
+aUm
+aUm
 aPL
 aPL
 aPL
@@ -33482,19 +33619,19 @@ aOm
 mpC
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+soe
+aUm
+aUm
+soe
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+soe
+aUm
+aUm
 aPL
 aPL
 aPL
@@ -33739,19 +33876,19 @@ pvB
 aea
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+soe
+soe
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
+soe
+aUm
+aUm
 aPL
 aPL
 aPL
@@ -33996,19 +34133,19 @@ aPF
 aea
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+aUm
+aUm
+aUm
+aUm
+aUm
+soe
+soe
+aUm
+aUm
+soe
+soe
+aUm
+aUm
 aPL
 aPL
 aPL
@@ -34029,7 +34166,7 @@ aPL
 aPL
 aPL
 aPL
-aPL
+azB
 azB
 azB
 azB
@@ -34253,19 +34390,19 @@ pvB
 aea
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+soe
+aUm
+aUm
+aUm
+aUm
+aUm
+soe
+aUm
+aUm
+aUm
+aUm
+aUm
+aUm
 aPL
 aPL
 aPL
@@ -34997,12 +35134,12 @@ aEZ
 aEZ
 aEZ
 aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
-aEZ
+aBr
+ayC
+ayC
+ayC
+ayC
+aJM
 aEZ
 aEZ
 aEZ
@@ -35254,12 +35391,12 @@ aEZ
 aEZ
 aEZ
 aEZ
-aEZ
+aeE
 aBg
 aBg
 aBg
 aBg
-aEZ
+aeH
 aEZ
 aEZ
 aEZ
@@ -35511,12 +35648,12 @@ aEZ
 aEZ
 aEZ
 aEZ
-aEZ
+aeE
 aBg
 aBg
+ppQ
 aBg
-aBg
-aEZ
+aeH
 aEZ
 aEZ
 aEZ
@@ -35768,12 +35905,12 @@ aEZ
 aEZ
 aEZ
 aEZ
-aEZ
+aeE
 aBg
 aBg
 aBg
 aBg
-aEZ
+aeH
 aEZ
 aEZ
 aEZ
@@ -36025,12 +36162,12 @@ aEZ
 aEZ
 aEZ
 aEZ
-aEZ
+aeE
 aBg
 aBg
 aBg
 aBg
-ayC
+ayS
 ayC
 ayC
 ayC
@@ -36282,8 +36419,8 @@ akC
 aEZ
 akC
 aEZ
-aEZ
-aBg
+aeE
+ppQ
 aBg
 aBg
 aBg
@@ -36318,7 +36455,7 @@ aEZ
 aEZ
 aEZ
 aEZ
-aBg
+ppQ
 aBg
 aBg
 aBg
@@ -36540,18 +36677,18 @@ akC
 akC
 aEZ
 akC
+ppQ
 aBg
 aBg
 aBg
-aBg
+auq
+byG
+byG
 auq
 auq
 auq
 auq
-auq
-auq
-auq
-auq
+byG
 auq
 auq
 auq
@@ -36566,7 +36703,7 @@ aEZ
 aEZ
 aEZ
 aeE
-auq
+edd
 akC
 akC
 aEZ
@@ -36575,9 +36712,9 @@ aEZ
 aEZ
 aEZ
 aEZ
+ppQ
 aBg
-aBg
-aBg
+ppQ
 aBg
 aBg
 aBg
@@ -36805,13 +36942,13 @@ auq
 auq
 auq
 auq
+bsh
 auq
 auq
+byG
 auq
-auq
-auq
-auq
-auq
+bsh
+byG
 auq
 aSe
 aEZ
@@ -36832,10 +36969,10 @@ aEZ
 aEZ
 aEZ
 aEZ
+ppQ
 aBg
-aBg
-aBg
-aBg
+ppQ
+ppQ
 aBg
 aBg
 aBg
@@ -37062,13 +37199,13 @@ auq
 auq
 auq
 auq
+bsh
+byG
 auq
 auq
 auq
-auq
-auq
-auq
-auq
+bsh
+byG
 auq
 aSe
 aEZ
@@ -37080,7 +37217,7 @@ aEZ
 aEZ
 aEZ
 aeE
-auq
+byG
 akC
 aEZ
 aEZ
@@ -37092,7 +37229,7 @@ aPL
 aBg
 aBg
 aBg
-aBg
+ppQ
 aBg
 aBg
 aBg
@@ -37320,7 +37457,7 @@ auq
 auq
 auq
 auq
-auq
+byG
 auq
 auq
 auq
@@ -37337,7 +37474,7 @@ aEZ
 aEZ
 aEZ
 aeE
-auq
+byG
 akC
 aEZ
 aEZ
@@ -37349,7 +37486,7 @@ aPL
 aBg
 aBg
 aBg
-aBg
+ppQ
 aBg
 aBg
 aBg
@@ -37572,7 +37709,7 @@ akC
 akC
 akC
 akC
-auq
+byG
 auq
 auq
 auq
@@ -37594,7 +37731,7 @@ aEZ
 aEZ
 aEZ
 aeE
-auq
+byG
 akC
 aEZ
 aEZ
@@ -37608,7 +37745,7 @@ aBg
 aBg
 aBg
 aBg
-aBg
+ppQ
 aBg
 aPL
 aEZ
@@ -37829,16 +37966,16 @@ akC
 akC
 akC
 akC
+byG
+byG
+auq
+auq
+bsh
+byG
 auq
 auq
 auq
-auq
-auq
-auq
-auq
-auq
-auq
-auq
+bsh
 auq
 auq
 aSe
@@ -37851,7 +37988,7 @@ aEZ
 aEZ
 aEZ
 aeE
-auq
+byG
 akC
 aEZ
 aEZ
@@ -37865,7 +38002,7 @@ aBg
 aBg
 aBg
 aBg
-aBg
+ppQ
 aBg
 aPL
 aEZ
@@ -38090,13 +38227,13 @@ akC
 akC
 auq
 auq
+bsh
 auq
 auq
 auq
 auq
-auq
-auq
-auq
+bsh
+byG
 auq
 aSe
 aEZ
@@ -38122,7 +38259,7 @@ aBg
 aBg
 aBg
 aBg
-aBg
+ppQ
 aBg
 aPL
 aEZ
@@ -38376,7 +38513,7 @@ aPL
 aPL
 aBg
 aBg
-aBg
+ppQ
 aBg
 aBg
 aBg
@@ -38608,9 +38745,9 @@ auq
 auq
 auq
 auq
+byG
 auq
-auq
-auq
+byG
 auq
 aSe
 aPL
@@ -38632,7 +38769,7 @@ aPL
 aPL
 aPL
 aBg
-aBg
+ppQ
 aBg
 aBg
 aBg
@@ -38861,13 +38998,13 @@ akC
 akC
 auq
 auq
+bsh
 auq
 auq
 auq
-auq
-auq
-auq
-auq
+byG
+bsh
+byG
 auq
 aSe
 aPL
@@ -38893,7 +39030,7 @@ aBg
 aBg
 aBg
 aBg
-aBg
+ppQ
 aBg
 aPL
 aEZ
@@ -39118,12 +39255,12 @@ akC
 akC
 auq
 auq
+bsh
+byG
 auq
 auq
 auq
-auq
-auq
-auq
+bsh
 auq
 auq
 aSe
@@ -39373,7 +39510,7 @@ akC
 akC
 akC
 akC
-auq
+byG
 auq
 auq
 auq
@@ -39393,7 +39530,7 @@ atS
 atS
 atS
 atX
-auq
+edd
 akC
 akC
 akC
@@ -39630,9 +39767,9 @@ akC
 akC
 akC
 akC
-auq
-auq
-auq
+byG
+byG
+uBC
 auq
 auq
 auq
@@ -39641,15 +39778,15 @@ auq
 auq
 auq
 arK
+uBC
 auq
 auq
+byG
+byG
+byG
 auq
 auq
-auq
-auq
-auq
-auq
-auq
+ixP
 gdB
 akC
 akC
@@ -39887,17 +40024,17 @@ akC
 akC
 akC
 akC
+byG
 auq
 auq
 auq
+byG
+byG
+byG
 auq
 auq
-auq
-auq
-auq
-auq
-auq
-auq
+byG
+byG
 akC
 akC
 akC
@@ -40144,8 +40281,8 @@ akC
 akC
 akC
 akC
-akC
-akC
+auq
+auq
 akC
 akC
 akC
@@ -40401,8 +40538,8 @@ akC
 akC
 akC
 akC
-akC
-akC
+auq
+auq
 akC
 akC
 akC
@@ -40658,8 +40795,8 @@ akC
 akC
 akC
 akC
-akC
-akC
+edd
+byG
 akC
 akC
 akC
@@ -40915,8 +41052,8 @@ akC
 akC
 akC
 akC
-akC
-akC
+auq
+byG
 akC
 akC
 akC
@@ -41172,8 +41309,8 @@ akC
 akC
 akC
 akC
-akC
-akC
+auq
+tJH
 akC
 akC
 akC
@@ -41429,8 +41566,8 @@ akC
 akC
 akC
 akC
-akC
-akC
+lXr
+aPL
 akC
 akC
 akC

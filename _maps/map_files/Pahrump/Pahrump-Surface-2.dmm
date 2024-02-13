@@ -1013,7 +1013,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
 "apI" = (
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Captain"
+	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -2297,11 +2299,11 @@
 /area/f13/cotc)
 "aNG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/obj/item/pen/fountain,
 /obj/machinery/light{
 	dir = 4
+	},
+/obj/effect/turf_decal/arrows/white{
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
@@ -3115,15 +3117,11 @@
 /turf/open/floor/carpet/blue,
 /area/f13/ncr)
 "bca" = (
-/obj/structure/chair/comfy/plywood{
-	dir = 1
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Prison Cells"
 	},
-/obj/item/fishingrod,
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 1;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland)
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "bcb" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -5833,7 +5831,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
 "bWb" = (
-/obj/structure/simple_door/metal/store,
+/obj/structure/simple_door/metal/store{
+	name = "NCR Medbay"
+	},
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -8929,7 +8929,9 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "dcJ" = (
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Armory"
+	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -10662,7 +10664,9 @@
 	},
 /area/f13/bunker)
 "dIC" = (
-/obj/machinery/door/airlock/freezer,
+/obj/machinery/door/airlock/freezer{
+	name = "Freezer"
+	},
 /turf/open/floor/plasteel/freezer,
 /area/f13/ncr)
 "dIF" = (
@@ -12146,7 +12150,9 @@
 /turf/open/water,
 /area/f13/wasteland)
 "ekd" = (
-/obj/structure/simple_door/interior,
+/obj/structure/simple_door/interior{
+	name = "Mess Hall"
+	},
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "ekG" = (
@@ -14563,7 +14569,9 @@
 	},
 /area/f13/ncr)
 "eZI" = (
-/obj/structure/simple_door/metal/barred,
+/obj/structure/simple_door/metal/barred{
+	name = "cell 06"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "eZT" = (
@@ -15796,7 +15804,9 @@
 	},
 /area/f13/kebab)
 "fvN" = (
-/obj/structure/simple_door/metal/store,
+/obj/structure/simple_door/metal/store{
+	name = "NCR Barracks"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "fwf" = (
@@ -16426,7 +16436,9 @@
 /turf/open/floor/carpet/red,
 /area/f13/merchant)
 "fGx" = (
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Representative"
+	},
 /turf/open/floor/carpet/blue,
 /area/f13/ncr)
 "fGC" = (
@@ -17284,6 +17296,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"fVl" = (
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "Bathroom"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "fVH" = (
 /obj/machinery/icecream_vat,
 /turf/open/floor/f13{
@@ -17605,7 +17623,9 @@
 	},
 /area/f13/raiders)
 "gbd" = (
-/obj/structure/simple_door/metal/barred,
+/obj/structure/simple_door/metal/barred{
+	name = "cell 05"
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
@@ -18106,6 +18126,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/village)
+"glH" = (
+/obj/structure/simple_door/metal/barred{
+	name = "cell 01"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "glP" = (
 /obj/structure/chair{
 	dir = 1
@@ -21515,6 +21541,14 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
+"hpr" = (
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Lieutenant"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "hpv" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -22197,6 +22231,14 @@
 	icon_state = "wasteland33"
 	},
 /area/f13/wasteland)
+"hAF" = (
+/obj/structure/railing{
+	color = "#A47449";
+	dir = 4;
+	pixel_x = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "hAN" = (
 /obj/item/stack/sheet/mineral/wood,
 /turf/open/floor/f13/wood,
@@ -23545,6 +23587,17 @@
 	color = "#e4e4e4"
 	},
 /area/f13/village)
+"hWT" = (
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Radio Central"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
+	},
+/area/f13/ncr)
 "hWY" = (
 /obj/effect/landmark/latejoin,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -26069,9 +26122,9 @@
 /area/f13/building)
 "iSq" = (
 /obj/machinery/chem_heater{
+	pixel_x = 3;
 	pixel_y = 5
 	},
-/obj/structure/table,
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -28001,7 +28054,8 @@
 /obj/structure/ladder/unbreakable{
 	icon_state = "ladder10";
 	pixel_y = 18;
-	id = "housetower"
+	id = "housetower";
+	height = 1
 	},
 /mob/living/simple_animal/hostile/raider/thief,
 /turf/open/floor/wood/f13/oak,
@@ -31291,7 +31345,8 @@
 /obj/structure/ladder/unbreakable{
 	height = 2;
 	icon_state = "manhole_open";
-	id = "ncrpassage"
+	id = "ncrpassage";
+	name = "underground passage"
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain1"
@@ -33986,7 +34041,9 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/village)
 "lJx" = (
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Armory"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -35280,7 +35337,7 @@
 "mfK" = (
 /obj/machinery/door/poddoor/gate/preopen{
 	id = "hangar2";
-	name = "hangar gate"
+	name = "vehicle bay"
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -35572,6 +35629,12 @@
 /obj/machinery/chem_dispenser/drinks,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/building)
+"mld" = (
+/obj/structure/simple_door/metal/barred{
+	name = "cell 03"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "mle" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
@@ -35981,6 +36044,14 @@
 	color = "#845f58"
 	},
 /area/f13/kebab)
+"mrv" = (
+/obj/structure/simple_door{
+	name = "NCR Pilot"
+	},
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
+	},
+/area/f13/ncr)
 "mrz" = (
 /obj/structure/flora/tree/cactus,
 /obj/structure/flora/tree/tall,
@@ -36917,7 +36988,9 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
 "mJz" = (
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Guardhouse"
+	},
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
 	},
@@ -38684,6 +38757,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/village)
+"nmB" = (
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "Military Police Armory"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "nmE" = (
 /obj/structure/chair/wood/modern{
 	dir = 8
@@ -41081,7 +41160,7 @@
 "okm" = (
 /obj/machinery/door/poddoor/gate{
 	id = "ncr_gate";
-	name = "gate"
+	name = "NCR Main Gate"
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright2top"
@@ -42062,7 +42141,9 @@
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/kebab)
 "oGt" = (
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Trooper Quarters"
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -43381,7 +43462,7 @@
 	},
 /area/f13/tunnel)
 "pdD" = (
-/obj/structure/chair/office/dark,
+/obj/structure/stairs/north,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "pdO" = (
@@ -44968,7 +45049,9 @@
 /turf/open/water,
 /area/f13/wasteland)
 "pDR" = (
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Medical Office"
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -48174,6 +48257,12 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
+"qNF" = (
+/obj/structure/simple_door/metal/barred{
+	name = "cell 02"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "qNI" = (
 /obj/effect/decal/marking{
 	icon_state = "doublehorizontal"
@@ -52855,6 +52944,16 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
+"szF" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "ncrlockdown";
+	name = "Lockdown Shutters"
+	},
+/obj/structure/simple_door/metal/store{
+	name = "NCR Barber"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "szK" = (
 /obj/structure/barricade/wooden,
 /turf/closed/wall/f13/tentwall,
@@ -53738,7 +53837,9 @@
 	},
 /area/f13/building)
 "sPC" = (
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "Military Police Office"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "sPR" = (
@@ -54416,6 +54517,17 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"teA" = (
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Secure Armory"
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
+	},
+/area/f13/ncr)
 "teC" = (
 /obj/structure/railing/wood{
 	dir = 1
@@ -55485,7 +55597,9 @@
 "tvX" = (
 /obj/structure/table,
 /obj/structure/window/spawner,
-/obj/structure/closet/crate/freezer/blood,
+/obj/structure/closet/crate/freezer/blood{
+	pixel_y = 9
+	},
 /turf/open/floor/f13{
 	icon_state = "bluedirtychess2"
 	},
@@ -58896,6 +59010,14 @@
 /mob/living/simple_animal/hostile/retaliate/frog,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
+"uLH" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/chair/comfy/plywood{
+	dir = 1
+	},
+/obj/item/fishingrod,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/wasteland)
 "uLS" = (
 /obj/structure/flora/wasteplant/wild_xander,
 /turf/open/indestructible/ground/outside/dirt,
@@ -60687,7 +60809,9 @@
 	},
 /area/f13/wasteland)
 "vtg" = (
-/obj/structure/simple_door,
+/obj/structure/simple_door{
+	name = "NCR Staff Sergeant"
+	},
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -61757,7 +61881,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/machinery/door/unpowered/secure_NCR,
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Secure Armory"
+	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
@@ -62183,7 +62309,7 @@
 "waf" = (
 /obj/machinery/door/poddoor/gate/preopen{
 	id = "hangar1";
-	name = "hangar gate"
+	name = "vehicle bay"
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -62563,6 +62689,16 @@
 	},
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/wasteland)
+"wie" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "ncrlockdown";
+	name = "Lockdown Shutters"
+	},
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "NCR Prison"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "wil" = (
 /obj/structure/chair,
 /turf/open/floor/f13/wood{
@@ -65112,6 +65248,16 @@
 	icon_state = "desertsmooth7"
 	},
 /area/f13/food_preparation)
+"xbL" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "ncrlockdown";
+	name = "Lockdown Shutters"
+	},
+/obj/machinery/door/unpowered/secure_NCR{
+	name = "Prison Courtyard"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "xbQ" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -67707,6 +67853,12 @@
 	color = "#e4e4e4"
 	},
 /area/f13/building)
+"xTg" = (
+/obj/structure/simple_door/metal/barred{
+	name = "cell 04"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "xTk" = (
 /obj/structure/chair{
 	dir = 4
@@ -70115,7 +70267,7 @@ nNn
 vtg
 nNn
 nNn
-vtg
+mrv
 cqX
 dje
 eXy
@@ -70373,7 +70525,7 @@ gIw
 pqa
 gIw
 gIw
-sPC
+fVl
 qQQ
 hEX
 jpA
@@ -73712,7 +73864,7 @@ nNn
 nNn
 nNn
 nNn
-apI
+hpr
 nNn
 nNn
 nNn
@@ -76780,7 +76932,7 @@ ruN
 mMl
 mMl
 mMl
-dcJ
+hWT
 bVP
 bVP
 bVP
@@ -77293,7 +77445,7 @@ rKR
 ayH
 ayH
 ayH
-dcJ
+teA
 ruN
 ayH
 ruN
@@ -78881,7 +79033,7 @@ wGJ
 uVo
 koD
 dMW
-fyf
+sYX
 sYX
 sYX
 xqC
@@ -79585,8 +79737,8 @@ oTe
 oTe
 oTe
 qnz
-qpm
-bca
+uLH
+bpD
 fyf
 fyf
 fyf
@@ -81142,11 +81294,11 @@ raT
 ayH
 ayH
 ayH
-dnb
+szF
 ayH
 ayH
 ayH
-dnb
+wie
 ayH
 ayH
 ayH
@@ -82688,7 +82840,7 @@ ayH
 ayH
 ayH
 ayH
-sPC
+bca
 ayH
 ayH
 ayH
@@ -82943,14 +83095,14 @@ ktB
 ayH
 okv
 jNs
-eZI
+glH
 xGv
 xGv
 jNs
 jNs
 vEs
 xGv
-dnb
+xbL
 mvv
 mvv
 mvv
@@ -83714,11 +83866,11 @@ ktB
 ayH
 wVT
 jNs
-eZI
+qNF
 jNs
 xGv
 jNs
-eZI
+xTg
 xGv
 jWM
 ayH
@@ -84485,7 +84637,7 @@ ktB
 ayH
 okv
 jNs
-eZI
+mld
 xGv
 xGv
 xGv
@@ -86025,13 +86177,13 @@ gcK
 gcK
 gcK
 ayH
-xGv
+hAF
 nnP
 jNs
 xGv
 irP
 jNs
-sPC
+nmB
 xGv
 xGv
 xGv
