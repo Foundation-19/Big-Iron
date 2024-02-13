@@ -8928,6 +8928,15 @@
 /obj/item/flashlight/lantern,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"dcJ" = (
+/obj/machinery/door/unpowered/secure_NCR,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
+	},
+/area/f13/ncr)
 "dcK" = (
 /obj/structure/railing{
 	dir = 4
@@ -22351,6 +22360,9 @@
 /obj/machinery/computer/terminal{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -31285,6 +31297,16 @@
 	icon_state = "verticalinnermain2"
 	},
 /area/f13/wasteland)
+"kKt" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	icon_state = "manhole_open";
+	id = "ncrpassage"
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalinnermain1"
+	},
+/area/f13/wasteland)
 "kKv" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -37123,6 +37145,14 @@
 /obj/structure/camera_assembly,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/building)
+"mMl" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/ncr)
 "mMu" = (
 /obj/structure/chair/stool/retro/backed{
 	dir = 8
@@ -40835,6 +40865,10 @@
 	color = "000000"
 	},
 /obj/structure/closet/cabinet,
+/obj/machinery/light/small{
+	dir = 8;
+	light_color = "#d8b1b1"
+	},
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "ogD" = (
@@ -44286,6 +44320,15 @@
 /obj/effect/shadow/wall,
 /turf/open/indestructible/ground/inside/dirt/stamped,
 /area/f13/legion)
+"psk" = (
+/obj/structure/chair/office/light,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/ncr)
 "psu" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -44584,6 +44627,9 @@
 /area/f13/wasteland)
 "pyf" = (
 /obj/structure/closet,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -46622,6 +46668,9 @@
 /obj/item/pen/fountain,
 /obj/item/taperecorder,
 /obj/item/pda/engineering,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
 	},
@@ -51077,15 +51126,17 @@
 	},
 /area/f13/building)
 "rTj" = (
-/obj/structure/ladder/unbreakable{
-	height = 2;
-	icon_state = "manhole_open";
-	id = "ncrpassage"
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
 	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalinnermain1"
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
 	},
-/area/f13/tunnel)
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/ncr)
 "rTr" = (
 /obj/item/storage/bag/trash,
 /turf/open/floor/f13{
@@ -61713,6 +61764,9 @@
 	color = "000000"
 	},
 /obj/machinery/door/unpowered/secure_NCR,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -69015,7 +69069,7 @@ vaA
 vaA
 oZc
 uhk
-rTj
+aNj
 aNj
 rWK
 nIm
@@ -69272,7 +69326,7 @@ nQM
 psR
 unI
 qvQ
-hOl
+kKt
 pMO
 koD
 hEX
@@ -76215,9 +76269,9 @@ hOl
 pMO
 koD
 ayH
-gox
+psk
 hDd
-gOx
+mMl
 ayH
 ruN
 vEG
@@ -76472,9 +76526,9 @@ hOl
 hOl
 koD
 ruN
-gOx
+mMl
 qhG
-gOx
+mMl
 ruN
 cao
 bVP
@@ -76729,10 +76783,10 @@ sgz
 hOl
 koD
 ruN
-gOx
-gOx
-gOx
-lJx
+mMl
+mMl
+mMl
+dcJ
 bVP
 bVP
 bVP
@@ -76987,8 +77041,8 @@ hOl
 koD
 ayH
 pyf
-vsF
-gOx
+rTj
+mMl
 ruN
 bQh
 yjI
@@ -77245,7 +77299,7 @@ rKR
 ayH
 ayH
 ayH
-lJx
+dcJ
 ruN
 ayH
 ruN
@@ -78026,7 +78080,7 @@ bVP
 bVP
 bVP
 bVP
-lJx
+dcJ
 cpK
 cpK
 ayH
@@ -78283,7 +78337,7 @@ bVP
 jAk
 bVP
 bVP
-lJx
+dcJ
 cpK
 cpK
 ayH
