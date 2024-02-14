@@ -4140,6 +4140,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/machinery/computer/mech_bay_power_console{
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -6984,15 +6987,10 @@
 /turf/open/water,
 /area/f13/kebab)
 "cst" = (
-/obj/machinery/mech_bay_recharge_port{
-	dir = 8;
-	on = 1;
-	pixel_x = -21
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "platingdmg3"
-	},
-/area/f13/ncr)
+/obj/machinery/light,
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/wasteland)
 "csC" = (
 /obj/structure/table,
 /obj/machinery/computer/terminal{
@@ -7544,10 +7542,11 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
 /obj/machinery/mech_bay_recharge_port{
-	dir = 8;
-	on = 1;
-	pixel_x = -21
+	pixel_x = 6
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
@@ -9892,7 +9891,9 @@
 	},
 /area/f13/village)
 "dts" = (
-/obj/structure/cargocrate,
+/obj/structure/cargocrate{
+	pixel_y = -13
+	},
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 7;
 	icon_state = "outerpavement"
@@ -10109,12 +10110,6 @@
 	},
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
-"dxQ" = (
-/obj/structure/barricade/sandbags,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalleftborderright2bottom"
-	},
 /area/f13/wasteland)
 "dxU" = (
 /obj/structure/rack,
@@ -14546,11 +14541,7 @@
 	},
 /area/f13/legion)
 "eZD" = (
-/obj/machinery/mech_bay_recharge_port{
-	dir = 8;
-	on = 1;
-	pixel_x = -22
-	},
+/obj/item/wrench/basic,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -19282,12 +19273,6 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/building)
-"gDq" = (
-/obj/structure/table/wood,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalinnermain1"
-	},
-/area/f13/wasteland)
 "gDs" = (
 /obj/structure/fluff/rails{
 	dir = 4
@@ -20821,12 +20806,6 @@
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
-	},
-/obj/machinery/mech_bay_recharge_port{
-	dir = 8;
-	on = 1;
-	pixel_x = -5;
-	pixel_y = -6
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
@@ -23426,15 +23405,6 @@
 	icon_state = "housewood2"
 	},
 /area/f13/village)
-"hUt" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "000000"
-	},
-/obj/item/wrench/basic,
-/turf/open/floor/plasteel/f13{
-	icon_state = "plating"
-	},
-/area/f13/ncr)
 "hUM" = (
 /obj/structure/closet/locker,
 /obj/item/storage/fancy/candle_box,
@@ -31906,6 +31876,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/machinery/computer/mech_bay_power_console{
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -35573,6 +35546,9 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/machinery/mech_bay_recharge_port{
+	pixel_x = 6
+	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "platingdmg3"
 	},
@@ -36256,6 +36232,15 @@
 	icon_state = "outerborder"
 	},
 /area/f13/wasteland)
+"muZ" = (
+/obj/structure/rack,
+/obj/item/flashlight/lantern{
+	on = 1;
+	light_on = 1;
+	icon_state = "lantern-on"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "mvq" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -38636,11 +38621,21 @@
 	},
 /area/f13/wasteland)
 "nkS" = (
-/obj/structure/barricade/sandbags,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalrightborderleft2bottom"
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
 	},
-/area/f13/wasteland)
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 8;
+	pixel_y = 3;
+	pixel_x = -2
+	},
+/turf/open/floor/plasteel/f13{
+	icon_state = "plating"
+	},
+/area/f13/ncr)
 "nkW" = (
 /obj/machinery/hydroponics/soil,
 /turf/open/indestructible/ground/inside/mountain,
@@ -43545,6 +43540,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/structure/table,
 /turf/open/floor/plasteel/f13{
 	icon_state = "platingdmg3"
 	},
@@ -44571,6 +44567,18 @@
 	dir = 5
 	},
 /area/f13/building)
+"puQ" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/structure/table,
+/obj/item/storage/toolbox/mechanical/old{
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/f13{
+	icon_state = "platingdmg3"
+	},
+/area/f13/ncr)
 "puY" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 10;
@@ -47354,7 +47362,9 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/storage/toolbox/mechanical/old,
+/obj/item/storage/toolbox/mechanical/old{
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -47674,7 +47684,12 @@
 	color = "000000"
 	},
 /obj/structure/table,
-/obj/item/flashlight/lantern,
+/obj/item/flashlight/lantern{
+	pixel_y = 15;
+	on = 1;
+	light_on = 1;
+	icon_state = "lantern-on"
+	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -48262,6 +48277,20 @@
 	name = "cell 02"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
+"qNG" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/computer/mech_bay_power_console{
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/f13{
+	icon_state = "plating"
+	},
 /area/f13/ncr)
 "qNI" = (
 /obj/effect/decal/marking{
@@ -51126,6 +51155,17 @@
 	dir = 1
 	},
 /area/f13/building)
+"rSj" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/mech_bay_recharge_port{
+	pixel_x = 6
+	},
+/turf/open/floor/plasteel/f13{
+	icon_state = "plating"
+	},
+/area/f13/ncr)
 "rSl" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/glasses/sunglasses/blindfold,
@@ -53946,12 +53986,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/mech_bay_recharge_port{
-	dir = 8;
-	on = 1;
-	pixel_x = -5;
-	pixel_y = -6
-	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "platingdmg3"
 	},
@@ -55297,12 +55331,6 @@
 /obj/structure/car/rubbish2,
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertop0"
-	},
-/area/f13/wasteland)
-"trG" = (
-/obj/structure/table/wood,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "innershade"
 	},
 /area/f13/wasteland)
 "trI" = (
@@ -62481,12 +62509,6 @@
 	name = "tile"
 	},
 /area/f13/building)
-"wek" = (
-/obj/structure/chair/wood,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "verticalinnermain1"
-	},
-/area/f13/wasteland)
 "wet" = (
 /obj/effect/decal/remains{
 	icon_state = "remains"
@@ -65881,6 +65903,7 @@
 "xlo" = (
 /obj/structure/grille,
 /obj/structure/window/fulltile,
+/obj/structure/table,
 /turf/open/floor/f13{
 	icon_state = "whitegreenrustychess"
 	},
@@ -70228,7 +70251,7 @@ gcK
 gcK
 gcK
 nfg
-wzb
+rSj
 btj
 nDu
 lMl
@@ -70999,8 +71022,8 @@ gcK
 gcK
 gcK
 nfg
-cst
-hUt
+aZG
+lMl
 cqA
 lMl
 cqA
@@ -71257,7 +71280,7 @@ gcK
 gcK
 nfg
 euT
-cqA
+eZD
 uoC
 mfW
 mfW
@@ -72027,8 +72050,8 @@ gcK
 gcK
 gcK
 nfg
-wzb
-amp
+rSj
+qNG
 dMR
 lMl
 lMl
@@ -72288,8 +72311,8 @@ cqA
 vMm
 rYW
 hnl
-amp
-amp
+cDA
+nkS
 nfg
 kGc
 uaf
@@ -72798,7 +72821,7 @@ gcK
 gcK
 gcK
 nfg
-eZD
+cqA
 rhK
 lMl
 phN
@@ -74648,8 +74671,8 @@ unI
 qvQ
 hOl
 pMO
-koD
-mGx
+bdN
+cst
 ruN
 ayH
 ayH
@@ -74859,7 +74882,7 @@ kVH
 nDu
 mfW
 pfb
-mfW
+puQ
 nfg
 jML
 uaf
@@ -75116,7 +75139,7 @@ kbx
 oyE
 lMl
 lMl
-lMl
+kDx
 nfg
 gsV
 uaf
@@ -75161,8 +75184,8 @@ hOl
 hOl
 hOl
 hOl
-trG
-dxQ
+pMO
+tUb
 tUb
 aJb
 xbX
@@ -75373,7 +75396,7 @@ oWa
 oyE
 aZG
 lMl
-lMl
+qBL
 nfg
 kGc
 uCW
@@ -75418,8 +75441,8 @@ sgz
 hOl
 pMO
 hOl
-wek
-xWO
+hOl
+hOl
 hOl
 cdp
 hOl
@@ -75625,7 +75648,7 @@ gcK
 gcK
 gcK
 nfg
-cDA
+lMl
 lMl
 lMl
 uoC
@@ -75675,8 +75698,8 @@ pMO
 pMO
 pMO
 hOl
-gDq
-nkS
+hOl
+ymb
 ymb
 btW
 kaM
@@ -76190,8 +76213,8 @@ unI
 qvQ
 pMO
 pMO
-koD
-mGx
+bdN
+cst
 ruN
 ruN
 ruN
@@ -76915,7 +76938,7 @@ lMl
 nYA
 hnl
 mkh
-amp
+nkS
 nfg
 kGc
 bFJ
@@ -80518,7 +80541,7 @@ fyf
 fyf
 dwp
 jiR
-jiR
+muZ
 dlR
 kGc
 unI
