@@ -69,7 +69,7 @@
 	dat += "Gold Bars: 10 caps<br>"
 	dat += "Cut Diamonds : 20 caps<br>"
 	dat += "Jet/Psycho/MedX : 10/20/75 caps<br>"
-	dat += "Healing Powder/Healing Paultice : 25/50 caps<br>"
+	dat += "Healing Powder/Healing Poultice : 25/50 caps<br>"
 	dat += "Stimpak/Super Stimpak : 25/50 caps<br>"
 	dat += ""
 	dat += "</div>"
