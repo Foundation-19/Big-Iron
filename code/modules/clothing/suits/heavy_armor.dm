@@ -163,6 +163,14 @@
 	item_state = "legion_heavy"
 	armor = list("melee" = 65, "bullet" = 45, "laser" = 30, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 30, "acid" = 5)
 
+/obj/item/clothing/suit/armored/heavy/legion/heavydecanus
+	name = "legion heavy decanus armor"
+	desc = "A very well protected suit, but a bit heavy to carry."
+	icon_state = "legion-orator-heavy"
+	item_state = "legion-orator-heavy"
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 30, "acid" = 5)
+	slowdown = 0.5
+
 /obj/item/clothing/suit/armored/heavy/legion/centurion
 	name = "legion centurion armor"
 	desc = "The Legion centurion armor is by far the strongest suit of armor available to Caesar's Legion. The armor is composed from other pieces of armor taken from that of the wearer's defeated opponents in combat."

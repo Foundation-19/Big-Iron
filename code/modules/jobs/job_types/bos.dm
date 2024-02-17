@@ -237,7 +237,7 @@ Head Knight
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
 	glasses =		/obj/item/clothing/glasses/night
 	accessory =		/obj/item/clothing/accessory/bos/headknight
-	belt =			/obj/item/storage/belt/security/full
+	belt =			/obj/item/storage/belt/utility/full/engi
 	neck =			/obj/item/storage/belt/holster
 	mask =			/obj/item/clothing/mask/gas/sechailer
 	head =			/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
@@ -722,6 +722,41 @@ Initiate
 		return
 	ADD_TRAIT(H, TRAIT_SURGERY_LOW, src)
 
+// LANCER//
+
+/datum/job/bos/f13lancer
+	title = "Lancer"
+	flag = F13LANCER
+	display_order = JOB_DISPLAY_ORDER_LANCER
+	total_positions = 3
+	spawn_positions = 3
+	description = "You are reinforcement that arrived to help out this chapter, after the Mojave chapter went to Hidding. You pilot the Vertibirds and supports the knights and paladins."
+	supervisors = "All Heads"
+
+	outfit = /datum/outfit/job/bos/f13lancer
+
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
+	
+/datum/outfit/job/bos/f13lancer
+	name = "Lancer"
+	jobtype = /datum/job/bos/f13lancer
+	ears = /obj/item/radio/headset/headset_bos
+	suit = /obj/item/clothing/suit/bomber_open
+	suit_store = /obj/item/gun/energy/laser/aer9
+	head = /obj/item/clothing/head/f13/boscap
+	belt = /obj/item/storage/belt/military/army
+	glasses = /obj/item/clothing/glasses/hud/diagnostic/sunglasses
+	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/breeder = 2,
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood = 1
+		)
+
+
 /*
 Off-Duty
 */
@@ -730,21 +765,21 @@ Off-Duty
 	title = "BoS Off-Duty"
 	flag = F13OFFDUTYBOS
 	display_order = JOB_DISPLAY_ORDER_OFFDUTYBOS
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 5
+	spawn_positions = 5
 	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties of the bunker, and you may spend your time doing whatever you please, within reason. However, you may not leave the bunker, and you may not get in the way of on-duty personnel. Do not pull rank or give orders. Should the bunker be attacked, you are expected NOT to participate in the fighting, and must instead head to the lower levels for safety (i.e. despawn yourself at the matrix point)."
 	supervisors = "Everyone else"
 
 	outfit = /datum/outfit/job/bos/f13offdutybos
 
-	access = list(ACCESS_BOS)
-	minimal_access = list(ACCESS_BOS)
-
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
+	
 /datum/outfit/job/bos/f13offdutybos
 	name = "BoS Off-Duty"
 	jobtype = /datum/job/bos/f13offdutybos
-	ears = 			/obj/item/radio/headset
-	belt = 			/obj/item/storage/belt/military/army
+	ears = /obj/item/radio/headset
+	belt = /obj/item/storage/belt/military/army
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/encryptionkey/headset_bos = 1,
