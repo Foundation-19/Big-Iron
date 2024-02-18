@@ -1004,12 +1004,12 @@
 			if("Pugilist")
 				granted_trait = TRAIT_IRONFIST
 				traitname = "using your fists"
-			if("Padded Feet")
-				granted_trait = TRAIT_LIGHT_STEP
-				traitname = "treading carefully"
-			if("Veteran Table Climber")
-				granted_trait = TRAIT_FREERUNNING
-				traitname = "....climbing tables"
+			if("Owl Ritual")
+				granted_trait = TRAIT_NIGHT_VISION
+				traitname = "night vision"
+			if("Hunter")
+				granted_trait = TRAIT_TRAPPER
+				traitname = "hunting"
 			if("Basic Surgery")
 				granted_trait = TRAIT_SURGERY_LOW
 				traitname = "basic surgery"
