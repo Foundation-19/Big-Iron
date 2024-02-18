@@ -180,7 +180,7 @@ GLOBAL_LIST_INIT(backbaglist, list(DBACKPACK, DSATCHEL, DDUFFELBAG, //everything
 	"Explorer Messanger Bag" = /obj/item/storage/backpack/messenger/explorer,
 	"Security Messenger Bag" = /obj/item/storage/backpack/messenger/security,
 	"Blueshield Messenger Bag" = /obj/item/storage/backpack/messenger/blue,
-    ))
+	))
 
 //Suit/Skirt
 #define PREF_SUIT "Jumpsuit"
