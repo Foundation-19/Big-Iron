@@ -392,6 +392,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	jobtype = /datum/job/CaesarsLegion/Legionary/f13decan
 	id = /obj/item/card/id/dogtag/legveteran
 	mask = /obj/item/clothing/mask/bandana/legion
+	neck = /obj/item/storage/belt/holster/rugged
 	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
 	shoes = /obj/item/clothing/shoes/f13/military/plated
 	r_pocket = /obj/item/storage/survivalkit/medical/legion
@@ -481,6 +482,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit = /obj/item/clothing/suit/armor/f13/legion/recruit/decan
 	head = /obj/item/clothing/head/helmet/f13/legion/recruit/decan
 	mask = /obj/item/clothing/mask/bandana/legion
+	neck = /obj/item/storage/belt/holster/rugged
 	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
 	r_pocket = /obj/item/storage/survivalkit/medical/legion
 	l_pocket = /obj/item/flashlight/lantern
@@ -648,6 +650,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	id = /obj/item/card/id/dogtag/legion/prime
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/explorer
+	neck = /obj/item/storage/belt/holster/rugged
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster
 	r_pocket = /obj/item/flashlight
@@ -974,6 +977,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit = /obj/item/clothing/suit/armor/f13/legion/recruit
 	head = /obj/item/clothing/head/helmet/f13/legion/recruit
 	mask = /obj/item/clothing/mask/bandana/legion/recruit
+	neck = /obj/item/storage/belt/holster/rugged
 	glasses = /obj/item/clothing/glasses/f13/goggles_sandstorm
 	r_pocket = /obj/item/storage/survivalkit/medical/legion
 	l_pocket = /obj/item/flashlight/lantern
