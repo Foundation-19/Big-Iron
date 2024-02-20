@@ -453,12 +453,10 @@
 "aUN" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/wood,
-/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one,
-/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two,
-/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three,
 /obj/structure/sign/poster/prewar/poster84{
 	pixel_y = 32
 	},
+/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_four,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/bunker)
 "aVw" = (
@@ -858,14 +856,6 @@
 /obj/effect/decal/cleanable/blood/splats,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
-"bEy" = (
-/obj/structure/ladder/unbreakable{
-	height = 1;
-	id = "jail_mines";
-	pixel_x = -16
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "bET" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
@@ -1161,10 +1151,6 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
-"bYu" = (
-/mob/living/simple_animal/hostile/radscorpion/black,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "bYA" = (
 /turf/closed/mineral/random/low_chance,
 /area/f13/underground/cave)
@@ -1180,12 +1166,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/underground/cave)
 "cbi" = (
-/mob/living/simple_animal/hostile/raider/junker/boss{
-	minimum_distance = 2;
-	robust_searching = 1
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/awaymission/caves)
+/turf/open/space/basic,
+/area/f13/underground/cave)
 "ccc" = (
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -1749,6 +1731,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"dai" = (
+/mob/living/simple_animal/hostile/radscorpion/black,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "dee" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/five_tires,
@@ -5002,10 +4988,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
-"hSC" = (
-/mob/living/simple_animal/hostile/radscorpion/blue,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/underground/cave)
 "hSN" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 7;
@@ -8291,6 +8273,10 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
+"mEZ" = (
+/mob/living/simple_animal/hostile/radscorpion/blue,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "mFp" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -10454,6 +10440,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/cafeteria,
 /area/f13/bunker)
+"pDU" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "jail_mines";
+	pixel_x = -16
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "pER" = (
 /obj/structure/simple_door/tentflap_cloth{
 	pixel_y = -3
@@ -11638,6 +11632,15 @@
 /obj/structure/dresser,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
+	},
+/area/awaymission/caves)
+"rDh" = (
+/mob/living/simple_animal/hostile/raider/junker/boss{
+	minimum_distance = 2;
+	robust_searching = 1
+	},
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom0"
 	},
 /area/awaymission/caves)
 "rDB" = (
@@ -15307,9 +15310,7 @@
 	minimum_distance = 2;
 	robust_searching = 1
 	},
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontaltopborderbottom0"
-	},
+/turf/open/indestructible/ground/inside/mountain,
 /area/awaymission/caves)
 "xYg" = (
 /obj/structure/table/wood,
@@ -15915,7 +15916,7 @@ heT
 heT
 heT
 heT
-heT
+cbi
 heT
 heT
 heT
@@ -24680,7 +24681,7 @@ iex
 wgk
 dhg
 oNI
-xXV
+rDh
 xns
 oTz
 bgh
@@ -26984,7 +26985,7 @@ frt
 frt
 heT
 wgk
-cbi
+xXV
 mHo
 wgk
 wgk
@@ -66921,7 +66922,7 @@ bYA
 bYA
 bYA
 wPz
-hSC
+mEZ
 wPz
 wPz
 bYA
@@ -70765,7 +70766,7 @@ heT
 heT
 bYA
 wPz
-bEy
+pDU
 wPz
 kIJ
 wPz
@@ -77711,7 +77712,7 @@ bYA
 wxj
 bYA
 wPz
-bYu
+dai
 wPz
 bYA
 bYA
