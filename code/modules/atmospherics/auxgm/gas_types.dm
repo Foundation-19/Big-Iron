@@ -99,7 +99,7 @@
 	enthalpy = 81600
 	heat_resistance = 6
 
-/datum/gas/tritium  Big irom edit: removed tritium
+/datum/gas/tritium
 	id = GAS_TRITIUM
 	specific_heat = 10
 	name = "Tritium"
