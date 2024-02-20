@@ -11,10 +11,10 @@
 //General assmos defines.
 #define WATER_VAPOR_FREEZE					200
 #define NITRYL_FORMATION_ENERGY				100000
-#define TRITIUM_BURN_OXY_FACTOR				100
-#define TRITIUM_BURN_TRIT_FACTOR			10
-#define TRITIUM_BURN_RADIOACTIVITY_FACTOR	5000 	//The neutrons gotta go somewhere. Completely arbitrary number.
-#define TRITIUM_MINIMUM_RADIATION_ENERGY	0.1  	//minimum 0.01 moles trit or 10 moles oxygen to start producing rads
+//#define TRITIUM_BURN_OXY_FACTOR				100
+//#define TRITIUM_BURN_TRIT_FACTOR			10
+//#define TRITIUM_BURN_RADIOACTIVITY_FACTOR	5000 	//The neutrons gotta go somewhere. Completely arbitrary number.
+//#define TRITIUM_MINIMUM_RADIATION_ENERGY	0.1  	//minimum 0.01 moles trit or 10 moles oxygen to start producing rads
 #define SUPER_SATURATION_THRESHOLD			96
 #define STIMULUM_HEAT_SCALE					100000
 #define STIMULUM_FIRST_RISE					0.65
@@ -32,9 +32,9 @@
 //Plasma fusion properties
 #define FUSION_ENERGY_THRESHOLD				3e9 	//Amount of energy it takes to start a fusion reaction
 #define FUSION_MOLE_THRESHOLD				250 	//Mole count required (tritium/plasma) to start a fusion reaction
-#define FUSION_TRITIUM_CONVERSION_COEFFICIENT (1e-10)
+//#define FUSION_TRITIUM_CONVERSION_COEFFICIENT (1e-10)
 #define INSTABILITY_GAS_POWER_FACTOR 		0.003
-#define FUSION_TRITIUM_MOLES_USED  			1
+//#define FUSION_TRITIUM_MOLES_USED  			1
 #define PLASMA_BINDING_ENERGY  				20000000
 #define TOROID_VOLUME_BREAKEVEN			1000
 #define FUSION_TEMPERATURE_THRESHOLD	    10000
