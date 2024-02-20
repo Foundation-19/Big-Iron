@@ -11,10 +11,10 @@
 //General assmos defines.
 #define WATER_VAPOR_FREEZE					200
 #define NITRYL_FORMATION_ENERGY				100000
-//#define TRITIUM_BURN_OXY_FACTOR				100
-//#define TRITIUM_BURN_TRIT_FACTOR			10
-//#define TRITIUM_BURN_RADIOACTIVITY_FACTOR	5000 	//The neutrons gotta go somewhere. Completely arbitrary number.
-//#define TRITIUM_MINIMUM_RADIATION_ENERGY	0.1  	//minimum 0.01 moles trit or 10 moles oxygen to start producing rads
+#define TRITIUM_BURN_OXY_FACTOR				100
+#define TRITIUM_BURN_TRIT_FACTOR			10
+#define TRITIUM_BURN_RADIOACTIVITY_FACTOR	0 	//The neutrons gotta go somewhere. Completely arbitrary number.
+#define TRITIUM_MINIMUM_RADIATION_ENERGY	0  	//minimum 0.01 moles trit or 10 moles oxygen to start producing rads
 #define SUPER_SATURATION_THRESHOLD			96
 #define STIMULUM_HEAT_SCALE					100000
 #define STIMULUM_FIRST_RISE					0.65

@@ -264,7 +264,7 @@
 #define GAS_NITROUS				"n2o"
 #define GAS_NITRYL				"no2"
 #define GAS_HYDROGEN			"hydrogen"
-//#define GAS_TRITIUM				"tritium" Big irom edit: removed tritium
+#define GAS_TRITIUM				"tritium"
 #define GAS_BZ					"bz"
 #define GAS_STIMULUM			"stim"
 #define GAS_PLUOXIUM			"pluox"
