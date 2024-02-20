@@ -99,7 +99,7 @@
 	enthalpy = 81600
 	heat_resistance = 6
 
-/*/datum/gas/tritium  Big irom edit: removed tritium
+/datum/gas/tritium  Big irom edit: removed tritium
 	id = GAS_TRITIUM
 	specific_heat = 10
 	name = "Tritium"
@@ -113,13 +113,13 @@
 	fire_products = list(GAS_H2O = 1)
 	enthalpy = 300000
 	fire_burn_rate = 2
-	fire_radiation_released = 50 // arbitrary number, basically 60 moles of trit burning will just barely start to harm you
+	fire_radiation_released = 0 // arbitrary number, basically 60 moles of trit burning will just barely start to harm you
 	fire_temperature = FIRE_MINIMUM_TEMPERATURE_TO_EXIST - 50
 
 /datum/gas/tritium/New()
 	if(world.system_type == UNIX)
 		fire_temperature = null
-*/
+
 /datum/gas/nitric_oxide
 	id = GAS_NITRIC
 	specific_heat = 20
