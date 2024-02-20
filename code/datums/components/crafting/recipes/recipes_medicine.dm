@@ -62,7 +62,7 @@
 	time = 5
 	category = CAT_MEDICAL
 
-/* bugged since forever, die in a fire
+
 /datum/crafting_recipe/bitterdrink5
 	name = "Batch of bitterdrink (x5)"
 	result = /obj/item/storage/box/medicine/bitterdrink5
@@ -76,7 +76,7 @@
 	reqs = list(/datum/reagent/medicine/bitter_drink = 750)
 	time = 5
 	category = CAT_MEDICAL
-*/
+
 /datum/crafting_recipe/berserker_powder
 	name = "Berserker powder"
 	result = /obj/item/reagent_containers/pill/patch/healingpowder/berserker

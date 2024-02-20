@@ -13,7 +13,9 @@
 
 	if(!direct)
 		direct = get_dir(src, newloc)
-	setDir(direct)
+
+	if(set_dir_on_move)
+		setDir(direct)
 
 	if(!loc.Exit(src, newloc))
 		return
@@ -23,9 +25,6 @@
 
 	if (SEND_SIGNAL(src, COMSIG_MOVABLE_PRE_MOVE, newloc) & COMPONENT_MOVABLE_BLOCK_PRE_MOVE)
 		return
-
-	if(set_dir_on_move)
-		setDir(direct)
 
 	// Past this is the point of no return
 	var/atom/oldloc = loc
