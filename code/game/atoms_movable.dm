@@ -57,6 +57,8 @@
 	var/list/affected_dynamic_lights
 	///Highest-intensity light affecting us, which determines our visibility.
 	var/affecting_dynamic_lumi = 0
+	///is the mob currently ascending or descending through z levels?
+	var/currently_z_moving
 
 
 /atom/movable/Initialize(mapload)
