@@ -4474,8 +4474,7 @@
 /area/f13/wasteland)
 "aqE" = (
 /obj/machinery/door/unpowered/secure_steeldoor{
-	req_one_access_txt = "62";
-	name = "armory"
+	req_one_access_txt = "148"
 	},
 /turf/open/floor/f13{
 	tag = "icon-floorrusty";
@@ -5567,9 +5566,6 @@
 /area/f13/building)
 "auB" = (
 /obj/structure/lattice/catwalk,
-/obj/effect/turf_decal/caution{
-	pixel_y = -13
-	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/transparent/openspace{
 	name = "air";
@@ -7104,7 +7100,6 @@
 /area/f13/caves)
 "aAL" = (
 /obj/structure/lattice/catwalk,
-/obj/effect/turf_decal/caution,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -10418,8 +10413,7 @@
 /area/f13/caves)
 "aNf" = (
 /obj/machinery/door/unpowered/secure_steeldoor{
-	req_one_access_txt = "62";
-	name = "armory"
+	req_one_access_txt = "148"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
@@ -14756,6 +14750,12 @@
 	sunlight_state = 1
 	},
 /area/f13/brotherhood/surface)
+"kYH" = (
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/city)
 "kZg" = (
 /obj/effect/turf_decal/arrows/white{
 	dir = 4
@@ -14782,6 +14782,12 @@
 	},
 /turf/open/floor/plating/f13/outside/roof/metal/verdigris,
 /area/f13/wasteland)
+"lBz" = (
+/obj/effect/turf_decal/caution{
+	pixel_y = -13
+	},
+/turf/closed/wall/r_wall/rust,
+/area/f13/city)
 "lTS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/wood/settler,
@@ -15009,6 +15015,10 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ncr)
+"owz" = (
+/obj/effect/turf_decal/caution,
+/turf/closed/wall/r_wall/rust,
+/area/f13/city)
 "ozv" = (
 /turf/open/floor/plating/f13/outside/roof/metal/corrugated/red,
 /area/f13/wasteland)
@@ -18559,9 +18569,9 @@ aPL
 aPL
 aKK
 rEo
-aWW
+kYH
 ajI
-aWW
+kYH
 rEo
 aJo
 asT
@@ -19587,9 +19597,9 @@ aPL
 aPL
 ikK
 rEo
-aWW
+kYH
 iFb
-aWW
+kYH
 rEo
 aKw
 asT
@@ -22165,10 +22175,10 @@ aPL
 aPL
 aPL
 aGe
-asT
+lBz
 rEo
 rEo
-asT
+owz
 alB
 hbX
 hbX
@@ -22678,12 +22688,12 @@ aPL
 aPL
 aPL
 aPL
-amU
+aPL
 auB
 aNg
 aNg
 aAL
-aAb
+hbX
 hbX
 hbX
 hbX
