@@ -234,7 +234,7 @@ Head Knight
 	name = "Head Knight"
 	jobtype = /datum/job/bos/f13headknight
 
-	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
+	suit = 			/obj/item/clothing/suit/armor/f13/combat/mk2/brotherhood/captain
 	glasses =		/obj/item/clothing/glasses/night
 	accessory =		/obj/item/clothing/accessory/bos/headknight
 	belt =			/obj/item/storage/belt/utility/full/engi
@@ -492,7 +492,7 @@ Senior Knight
 /datum/outfit/job/bos/f13seniorknight
 	name = "Senior Knight"
 	jobtype = /datum/job/bos/f13seniorknight
-	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
+	suit = 			/obj/item/clothing/suit/armor/f13/combat/mk2/brotherhood/senior
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
 	glasses =       /obj/item/clothing/glasses/night
 	mask =			/obj/item/clothing/mask/gas/sechailer
