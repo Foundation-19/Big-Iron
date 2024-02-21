@@ -27028,7 +27028,7 @@
 	id = 87;
 	name = "Interior door button";
 	pixel_x = 22;
-	pixel_y = 3
+	pixel_y = 2
 	},
 /obj/machinery/button/door{
 	id = 43;
@@ -31862,10 +31862,20 @@
 /area/f13/village)
 "mJb" = (
 /obj/machinery/button/door{
-	id = "outerkebab_window";
-	name = "outer gate window shutters"
+	id = "kebab_window";
+	name = "gate window shutters";
+	pixel_x = -21;
+	pixel_y = 2
 	},
-/turf/closed/wall/r_wall/rust,
+/obj/machinery/button/door{
+	id = "outerkebab_window";
+	name = "outer gate window shutters";
+	pixel_y = 11;
+	pixel_x = -21
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
 /area/f13/city)
 "mJk" = (
 /obj/structure/bed/dogbed,
@@ -46082,13 +46092,6 @@
 /obj/item/storage/toolbox/mechanical/old,
 /turf/open/floor/plasteel/dark,
 /area/f13/building)
-"sEA" = (
-/obj/machinery/button/door{
-	id = "kebab_window";
-	name = "gate window shutters"
-	},
-/turf/closed/wall/rust,
-/area/f13/city)
 "sEO" = (
 /obj/structure/decoration/legion/tentpole{
 	pixel_x = -16
@@ -65838,10 +65841,10 @@ lTb
 fyf
 fXh
 fXh
-mJb
+fXh
 fXh
 egV
-sEA
+wBc
 wBc
 fXh
 fof
@@ -66098,7 +66101,7 @@ fXh
 oGY
 fof
 fof
-fof
+mJb
 fof
 egV
 fof
