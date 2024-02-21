@@ -589,7 +589,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx,)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/buffout)
 
-//Bunker Duty
+/*/Bunker Duty
 /datum/job/enclave/f13BDUTY
 	title = "Enclave Ship Duty"
 	flag = F13USBDUTY
@@ -675,7 +675,7 @@
 		/obj/item/storage/box/ingredients/wildcard = 4,
 		/obj/item/kitchen/knife/butcher = 1,
 		)
-
+*/
 // Enclave Citizen
 // Really only used for ID console
 /datum/job/enclave/f13enclavecitizen

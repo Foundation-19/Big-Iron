@@ -254,7 +254,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
 	shoes =	/obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	accessory = /obj/item/clothing/accessory/ncr/LT1
-	head = /obj/item/clothing/head/helmet/f13/combat/ncr_patrol
+	head = /obj/item/clothing/head/beret/ncr
 	neck = /obj/item/storage/belt/holster/legholster
 	glasses = /obj/item/clothing/glasses/sunglasses/f13
 	gloves = /obj/item/clothing/gloves/f13/leather
@@ -274,6 +274,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/m1garand/republicspride
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/garand308 = 3,
+		/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant = 1,
 		/obj/item/storage/box/ration/menu_two = 1
 		)
 
