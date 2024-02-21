@@ -240,7 +240,7 @@ Head Knight
 	belt =			/obj/item/storage/belt/utility/full/engi
 	neck =			/obj/item/storage/belt/holster
 	mask =			/obj/item/clothing/mask/gas/sechailer
-	head =			/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
+	head =			/obj/item/clothing/head/helmet/f13/combat/mk2/brotherhood/captain
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 2,
@@ -498,7 +498,7 @@ Senior Knight
 	mask =			/obj/item/clothing/mask/gas/sechailer
 	belt = 			/obj/item/storage/belt/military/assault
 	neck =			/obj/item/storage/belt/holster
-	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
+	head = 			/obj/item/clothing/head/helmet/f13/combat/mk2/brotherhood/senior
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2
