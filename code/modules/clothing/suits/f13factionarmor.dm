@@ -664,13 +664,13 @@
 	icon_state = "brotherhood_armor_knight"
 	item_state = "brotherhood_armor_knight"
 
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
+/obj/item/clothing/suit/armor/f13/combat/mk2/brotherhood/senior
 	name = "brotherhood senior knight armor"
 	desc = "A renforced combat armor set made by the Brotherhood of Steel, standard issue for all Senior Knights. It bears a silver stripe."
 	icon_state = "brotherhood_armor_senior"
 	item_state = "brotherhood_armor_senior"
 
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
+/obj/item/clothing/suit/armor/f13/combat/mk2/brotherhood/captain
 	name = "brotherhood head knight armor"
 	desc = "A renforced combat armor set made by the Brotherhood of Steel, standard issue for all Head Knights. It bears golden embroidery."
 	icon_state = "brotherhood_armor_captain"
@@ -683,7 +683,7 @@
 	item_state = "brotherhood_armor"
 	slowdown = 0.13
 
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
+/obj/item/clothing/suit/armor/f13/combat/mk2/brotherhood
 	name = "reinforced knight armor"
 	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design This one is kitted with additional plates and, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor_mk2"
