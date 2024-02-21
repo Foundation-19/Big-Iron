@@ -98,7 +98,7 @@
 	icon_state = "m2_flamethrower_on"
 	item_state = "m2flamethrower"
 	flags_1 = CONDUCT_1
-	slowdown = 0.4
+	slowdown = 1
 	slot_flags = null
 	w_class = WEIGHT_CLASS_HUGE
 	custom_materials = null
