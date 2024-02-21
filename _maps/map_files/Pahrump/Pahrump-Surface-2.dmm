@@ -835,6 +835,11 @@
 /obj/item/restraints/handcuffs,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+"apt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/autolathe,
+/turf/open/floor/plasteel/cult,
+/area/f13/cotc)
 "apI" = (
 /obj/machinery/door/unpowered/secure_NCR{
 	name = "NCR Captain"
@@ -1680,10 +1685,15 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "aFM" = (
-/obj/structure/fluff/railing/corner,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/carpet/purple,
-/area/f13/cotc)
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 4;
+	light_power = 0.4;
+	light_range = 5;
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/turf/open/floor/grass,
+/area/f13/city)
 "aFR" = (
 /obj/effect/decal/cleanable/oil/slippery,
 /turf/open/indestructible/ground/outside/desert,
@@ -13558,6 +13568,11 @@
 /obj/item/storage/fancy/cigarettes/cigpack_robustgold,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/building)
+"fqU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing,
+/turf/open/floor/plasteel/cult,
+/area/f13/cotc)
 "fra" = (
 /turf/open/indestructible/ground/outside/dirt{
 	dir = 1;
@@ -17738,6 +17753,7 @@
 	color = "000000"
 	},
 /obj/structure/rack,
+/obj/item/pickaxe,
 /obj/item/pickaxe,
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -25185,6 +25201,9 @@
 /obj/structure/rack/shelf_metal,
 /obj/item/storage/box/handcuffs,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/melee/onehanded/slavewhip{
+	name = "tool of the faith"
+	},
 /turf/open/floor/plasteel/cult,
 /area/f13/cotc)
 "jWa" = (
@@ -25404,6 +25423,8 @@
 	dir = 4
 	},
 /obj/structure/closet/cabinet/anchored,
+/obj/effect/spawner/lootdrop/clothing_middle,
+/obj/effect/spawner/lootdrop/clothing_middle,
 /turf/open/floor/wood/f13/oak,
 /area/f13/city)
 "kaa" = (
@@ -25974,10 +25995,12 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "kmz" = (
-/obj/item/stack/sheet/plasteel/fifty,
 /obj/item/stack/sheet/mineral/sandstone/thirty,
 /obj/item/stack/sheet/mineral/sandstone/thirty,
 /obj/structure/rack,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -28172,6 +28195,7 @@
 /area/f13/tunnel)
 "liJ" = (
 /obj/structure/closet/cabinet/anchored,
+/obj/effect/spawner/lootdrop/clothing_middle,
 /turf/open/floor/carpet/blue,
 /area/f13/city)
 "ljm" = (
@@ -29459,12 +29483,13 @@
 	},
 /area/f13/city)
 "lLp" = (
-/obj/structure/railing{
-	dir = 4
+/obj/structure/destructible/tribal_torch/wall/lit{
+	dir = 8;
+	pixel_x = -3;
+	pixel_y = -3
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/cult,
-/area/f13/cotc)
+/turf/open/floor/grass,
+/area/f13/city)
 "lLB" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/crafting,
@@ -31753,10 +31778,7 @@
 	},
 /area/f13/wasteland)
 "mHg" = (
-/obj/structure/table,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/glass/fifty,
+/obj/machinery/workbench/forge,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -33957,7 +33979,6 @@
 	persistence_id = "oasis_public";
 	pixel_y = 32
 	},
-/obj/machinery/gear_painter,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -34343,6 +34364,13 @@
 /obj/item/stack/cable_coil/ten,
 /turf/open/indestructible/ground/outside/wood,
 /area/f13/building)
+"nJc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/workbench,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/turf/open/floor/plasteel/cult,
+/area/f13/cotc)
 "nJn" = (
 /obj/machinery/light,
 /turf/open/indestructible/ground/outside/dirt{
@@ -40998,8 +41026,6 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/rack,
-/obj/item/pickaxe,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "qrR" = (
@@ -41285,6 +41311,25 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building)
+"qzo" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/card/id/yuma/cotc/neophyte,
+/obj/item/card/id/yuma/cotc/neophyte,
+/obj/item/card/id/yuma/cotc/neophyte,
+/obj/item/card/id/yuma/cotc/neophyte,
+/obj/item/card/id/yuma/cotc/neophyte,
+/obj/item/card/id/yuma/cotc/neophyte,
+/obj/item/card/id/yuma/cotc/neophyte,
+/obj/item/radio/headset/headset_church,
+/obj/item/radio/headset/headset_church,
+/obj/item/radio/headset/headset_church,
+/obj/item/radio/headset/headset_church,
+/obj/item/radio/headset/headset_church,
+/obj/item/radio/headset/headset_church,
+/obj/item/radio/headset/headset_church,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/cult,
+/area/f13/cotc)
 "qzt" = (
 /obj/structure/fence/corner,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -46090,6 +46135,15 @@
 /obj/item/storage/toolbox/mechanical/old,
 /turf/open/floor/plasteel/dark,
 /area/f13/building)
+"sEA" = (
+/obj/machinery/gear_painter{
+	pixel_x = -10;
+	pixel_y = 1
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	icon_state = "dirt"
+	},
+/area/f13/city)
 "sEO" = (
 /obj/structure/decoration/legion/tentpole{
 	pixel_x = -16
@@ -47345,8 +47399,9 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
 	},
-/obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table/wood/settler,
+/obj/machinery/cell_charger,
 /turf/open/floor/plasteel/cult,
 /area/f13/cotc)
 "tfy" = (
@@ -52488,6 +52543,8 @@
 /area/f13/building)
 "vgo" = (
 /obj/structure/closet/cabinet/anchored,
+/obj/effect/spawner/lootdrop/clothing_middle,
+/obj/effect/spawner/lootdrop/clothing_middle,
 /turf/open/floor/wood/f13/oak,
 /area/f13/city)
 "vgE" = (
@@ -54988,6 +55045,7 @@
 /obj/item/assembly/signaler,
 /obj/item/assembly/signaler,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/fluff/railing/corner,
 /turf/open/floor/plasteel/cult,
 /area/f13/cotc)
 "wml" = (
@@ -65873,7 +65931,7 @@ sjv
 wwG
 iLc
 iLc
-jBs
+sEA
 yiG
 wXW
 fXh
@@ -68950,7 +69008,7 @@ rXn
 rXn
 rXn
 rXn
-rXn
+lLp
 rXn
 rXn
 rXn
@@ -69191,8 +69249,8 @@ ixA
 ybT
 ybT
 ybT
-ixA
-nyV
+fqU
+abL
 nyV
 bIm
 bIm
@@ -69210,7 +69268,7 @@ xUW
 rXn
 rXn
 xUW
-rXn
+aFM
 rXn
 vDu
 yiG
@@ -69446,10 +69504,10 @@ ixA
 rIN
 ixA
 ybT
-aFM
 ybT
-lLp
-nyV
+ybT
+ixA
+qUi
 nyV
 pXh
 bIm
@@ -69704,8 +69762,8 @@ ezp
 ixA
 ixA
 tfp
-qUi
-abL
+apt
+nJc
 nyV
 nyV
 nyV
@@ -69953,7 +70011,7 @@ fXh
 ktB
 nyV
 hrI
-ixA
+qzo
 rZg
 ybT
 ixA
@@ -70238,7 +70296,7 @@ rXn
 rXn
 rXn
 xUW
-rXn
+lLp
 rXn
 vDu
 yiG
@@ -70492,7 +70550,7 @@ rXn
 rXn
 rXn
 xUW
-rXn
+aFM
 rXn
 rXn
 rXn
