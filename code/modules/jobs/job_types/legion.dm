@@ -1,4 +1,4 @@
-8888/*
+/*
 Legion Design notes:
 "Standard issue", AVOID identical kits and guns. Legion got spotty logistics and the hodgepodge aesthetic suits them, don't ruin it.
 Sunglasses	For vets mainly, most lower ranks should have sandstorm goggles.
