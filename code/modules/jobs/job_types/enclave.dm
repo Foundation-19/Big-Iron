@@ -147,8 +147,8 @@
 	title = "Enclave Pilot"
 	flag = F13USPILOT
 	display_order = JOB_DISPLAY_ORDER_F13USPILOT
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 1
+	spawn_positions = 1
 	description = "As a Pilot in the Enclave, your primary duty is the operation of vertibirds. You will answer only to Officers of the United States."
 	supervisors = "The Captain, Lieutenant, and Major."
 	outfit = /datum/outfit/job/enclave/enclavepilot
