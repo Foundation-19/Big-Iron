@@ -55,8 +55,8 @@
 	description = "You are the active Captain & defacto leader of the Enclave forces in the region. You answer only to the Major & Enclave Command."
 	flag = F13USCPT
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_US
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	head_announce = list("Security")
 	req_admin_notify = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_ENCLAVE3, ACCESS_PUBLIC)
@@ -249,8 +249,8 @@
 	title = "Enclave Armored Infantry"
 	flag = F13USAI
 	display_order = JOB_DISPLAY_ORDER_F13USAI
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "You are a specialist trained in the use of heavy equipment and X0-2 Power armor. Your job is to be he anchor of your unit."
 	supervisors = "The Captain, Lieutenant and the Sergeants"
 	outfit = /datum/outfit/job/enclave/peacekeeper/Armoredinfantry
@@ -590,7 +590,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx,)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/buffout)
 
-//Bunker Duty
+/*/Bunker Duty
 /datum/job/enclave/f13BDUTY
 	title = "Enclave Ship Duty"
 	flag = F13USBDUTY
@@ -676,7 +676,7 @@
 		/obj/item/storage/box/ingredients/wildcard = 4,
 		/obj/item/kitchen/knife/butcher = 1,
 		)
-
+*/
 // Enclave Citizen
 // Really only used for ID console
 /datum/job/enclave/f13enclavecitizen
