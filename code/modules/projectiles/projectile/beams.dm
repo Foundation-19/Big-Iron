@@ -456,7 +456,7 @@
 
 /obj/item/projectile/beam/laser/tribeam/hitscan
 	name = "tribeam laser"
-	damage = 25 //if all bullets connect, this will do 75.
+	damage = 18 //if all bullets connect, this will do 54
 	hitscan = TRUE
 	bare_wound_bonus = -30 //tribeam is bad at wounding, as basically its only real downside
 	tracer_type = /obj/effect/projectile/tracer/laser

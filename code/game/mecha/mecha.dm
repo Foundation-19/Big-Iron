@@ -269,7 +269,7 @@
 		C.forceMove(src)
 		cell = C
 		return
-	cell = new /obj/item/stock_parts/cell(src)
+	cell = new /obj/item/stock_parts/cell/upgraded(src)
 
 /obj/mecha/proc/add_cabin()
 	cabin_air = new
@@ -583,7 +583,7 @@
 /obj/mecha/proc/mechturn(direction)
 	setDir(direction)
 	if(turnsound)
-		playsound(src,turnsound,40,1)
+		playsound(src,turnsound,20,1)
 	return 1
 
 /obj/mecha/proc/mechstep(direction)
@@ -592,13 +592,13 @@
 	if(strafe)
 		setDir(current_dir)
 	if(result && stepsound)
-		playsound(src,stepsound,40,1)
+		playsound(src,stepsound,20,1)
 	return result
 
 /obj/mecha/proc/mechsteprand()
 	var/result = step_rand(src)
 	if(result && stepsound)
-		playsound(src,stepsound,40,1)
+		playsound(src,stepsound,20,1)
 	return result
 
 /obj/mecha/Bump(atom/obstacle)
