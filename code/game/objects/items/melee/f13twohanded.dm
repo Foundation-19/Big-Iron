@@ -175,6 +175,7 @@
 /datum/block_parry_data/shield/bumper
 	block_damage_multiplier = 0.3
 	block_slowdown = 0.2
+	block_lock_sprinting = FALSE
 	block_damage_absorption = 7.5
 	block_damage_limit = 45
 	block_projectile_mitigation = 40
