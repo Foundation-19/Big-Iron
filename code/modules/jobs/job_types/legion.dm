@@ -1,4 +1,4 @@
-/*
+8888/*
 Legion Design notes:
 "Standard issue", AVOID identical kits and guns. Legion got spotty logistics and the hodgepodge aesthetic suits them, don't ruin it.
 Sunglasses	For vets mainly, most lower ranks should have sandstorm goggles.
@@ -47,7 +47,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombat)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/horsearmorlegion)
-	H.mind.teach_crafting_recipe(/datum/crafting_recipe/Legionshield)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionshield)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/steeltower)
 
 
 
