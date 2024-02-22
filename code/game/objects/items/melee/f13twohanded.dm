@@ -433,8 +433,8 @@
 
 // Unique Golf Club		Keywords: Damage 25/435, Damage bonus Stamina Knockback
 /obj/item/twohanded/baseball/golfclub/ncr
-	name = "NCR Board member Golf Club."
-	desc = "So apparently, this extremely well made golf club has been given to a NCR LT by a member of the board of command, for their services in the 3th MM Platoon. You don't remember if it was a congress man or a brahmin baron. But hey. A Gift is a gift."
+	name = "california 9 iron"
+	desc = "Supposedly this very well-made golf club was hand-delivered to an NCR Lieutenant by Command for their service in the 3th MM Platoon. You aren't sure if it was a Senator or a Brahmin Baron. But hey, a gift is a gift."
 	icon_state = "golfclub"
 	icon_prefix = "golfclub"
 	attack_verb = list("taxed", "bashed", "bribed", "hit", "whacked")
