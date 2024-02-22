@@ -160,8 +160,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	req_admin_notify = 1
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the commanding officer of the 3th MM Platoon, the base director, and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command and the Board of command  are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
-	supervisors = "The Command Board, Some shady Colonel with highcommand, and work with The Rep."
+	description = "You are the commanding officer of the NCR forces in the region, aka the 3th MM Platoon. You are the base director and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
+	supervisors = "The Command Board, Colonel, The NCR Representative."
 	exp_requirements = 600
 
 	outfit = /datum/outfit/job/ncr/f13captain
