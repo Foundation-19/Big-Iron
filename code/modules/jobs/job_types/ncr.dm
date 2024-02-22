@@ -160,7 +160,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	req_admin_notify = 1
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the commanding officer of the NCR forces in the region, aka the 3th MM Platoon. You are the base director and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
+	description = "You are the commanding officer of the NCR forces in the region, aka the 3rd Mechanized division. You are the base director and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "The Command Board, Colonel, The NCR Representative."
 	exp_requirements = 600
 
@@ -236,7 +236,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_type = EXP_TYPE_NCRCOMMAND
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the direct superior to the NCOs and Enlisted, and under special circumstances, Rangers. Why are you here ? Because you wanted to be a captain. How did you get in there ? By telling Oliver and his cabal to fuck themselfs. And you are second in charge of the 3th MM Platoon. You Assist the captain, and basically give orders and go where its too dangerous for them to go."
+	description = "You are the direct superior to the NCOs and Enlisted, and under special circumstances, Rangers. You are second in charge of the local NCR forces. You Assist the Captain and take a more proactive role in leadership."
 	supervisors = "The Captain, The Command Board."
 	exp_requirements = 600
 
@@ -306,7 +306,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_type = EXP_TYPE_NCRCOMMAND
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the third in command of the NCR 3th MM Platoon. You follow the order of the Lieutenant, and order the soldiers and other fuckups in the forces. You make sure that squads are formed, and that there is somekind of organisation. You can also have a say on the use of trucks."
+	description = "You are third in command of the NCR forces in the region, the 3rd Mechanized division. You follow the orders of your superior officers, personally commanding the troopers. You make sure that squads are formed, and maintain some level of organisation."
 	supervisors = "The Command Board, the Lieutnant, The Captain."
 	exp_requirements = 400
 
@@ -358,7 +358,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_PILOT_NCR
 	total_positions = 1
 	spawn_positions = 1
-	description = "Coming straight up from the long 15, with a repainted Vertibird ! Normaly in a other branch of the NCR army, you got some special orders and a HUDGE paycheck from the Command Board. You are here to serve as a support for the NCR 3th MM Platoon! Your Vertibird is a bit more solid that the BoS and Enclave ones, but are nearly unarmed. They mostly serve as medevac and air transport rather than combat. You got the rank of Sergeant."
+	description = "You are a Pilot within the NCR, here to serve as a support for the 3rd Mechanized division. Your primary objective is the operation and maintenance of your vertibird. Though you are a flight officer, you will respect the rank of anyone above the rank of Sergeant."
 	supervisors = "Command Board, Lieutenants, Captain."
 
 	outfit = /datum/outfit/job/ncr/f13ncrpilot
@@ -392,7 +392,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are a Sergeant of the NCR 3th MM Platoon. They got some of the most capable sergeants … Normally. They order the troops around, and are divided in categories. The Head Mechanics deal with the trucks, and are the ones that are driving, the Heavy Troopers make use of a heavy SPA and big guns to get rid of the skirties and other dangers around,the Field sergeants are those who lead charges and infantry, the Recon leads… Well, recon missions."
+	description = "You are a Sergeant assigned to the NCR forces in the region, the 3rd Mechanized division. You will lead the troopers in the field and adhere to the word of your Commanding Officers."
 	supervisors = "Lieutenant and Above"
 
 	outfit = /datum/outfit/job/ncr/f13sergeant
@@ -478,7 +478,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_REPRESENTATIVE
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are an influential representative for the NCR and experienced bureaucrat. You are here to further the objective and ensure the interests of the NCR, and - blablabla. You are mostly here to keep a eye on your own interess, and thoe of your friends at the Board of Command."
+	description = "You are an influential representative for the NCR and experienced bureaucrat. You are here to further the objectives and interests of the NCR."
 	supervisors = "Only god."
 	exp_requirements = 300
 
@@ -1118,7 +1118,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	total_positions = 1
 	spawn_positions = 1
-	description = "Couple days ago, you received a enormous paycheck from the Board of Command, with a note saying that you were to support the 3th Motorized Mobile Division in Yuma. The trick is, you have little to no clinic, or supplies. Your job is to get the medical side moving, check the physical and mental health of the troops, and of course, to act as a doctor."
+	description = "You are the effective leadership of the medical division of the NCR forces in the region. Your job is to get the medical side moving, check the physical and mental health of the troops, and of course, to act as a doctor."
 	supervisors = "Lieutenant and Above"
 	exp_requirements = 300
 
@@ -1168,7 +1168,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_OFFDUTYNCR
 	total_positions = 6
 	spawn_positions = 6
-	description = "You are a off-duty NCRA soldier, from the 3th MM division, or from a other campaign. While off-duty, you are relieved of both your duties and your authority. Since there is no real base, you are in... Vacation. So go where you please ! You better not be fighting, or you can kiss your rank goodbye. You are no better than a civilian, so you can be out of uniform."
+	description = "You are an off-duty NCRA soldier. While off-duty, you are relieved of both your duties and your authority. You are no better than a civilian, so you can be out of uniform. However, you may still be punished by COs for abhorrent behaviors."
 	supervisors = "Everyone else"
 
 	outfit = /datum/outfit/job/ncr/f13offdutyncr
