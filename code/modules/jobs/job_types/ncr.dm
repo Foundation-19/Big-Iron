@@ -189,9 +189,12 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/ncr = 1,
+		/obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan = 1,
+		/obj/item/ammo_box/magazine/m14mm = 3
 		/obj/item/megaphone = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
 		/obj/item/storage/lockbox/medal = 1,
+		/obj/item/clothing/suit/armor/f13/ncrarmor/captain = 1,
 		/obj/item/melee/onehanded/knife/trench = 1
 		)
 
@@ -220,7 +223,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "The Law"
 	suit_store = /obj/item/twohanded/sledgehammer/rockethammer/courtmartial
 	backpack_contents = list(
-		/obj/item/clothing/suit/armor/f13/ncrarmor/captain = 1,
+		/obj/item/clothing/suit/armor/f13/ncrarmor/captain/ncr_officer_coat = 1,
 		/obj/item/storage/box/ration/menu_eight = 1
 		)
 
@@ -261,13 +264,14 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/gun/ballistic/automatic/pistol/deagle/elcapitan = 1,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 3,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/book/manual/ncr/jobguide/regs = 1,
 		/obj/item/storage/box/ration/menu_five = 1,
-		/obj/item/ammo_box/magazine/m14mm = 3
 		)
+
 /datum/outfit/loadout/LTfrontline
 	name = "The Frontline"
 	suit_store = /obj/item/gun/ballistic/automatic/m1garand/republicspride
