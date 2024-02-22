@@ -163,9 +163,21 @@
 	mob_overlay_icon = 'icons/fallout/onmob/backslot_weapon.dmi'
 	icon_prefix = "bumper"
 	icon_state = "bumper"
+	block_parry_data = /datum/block_parry_data/shield/bumper
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 40)
+	max_integrity = 800
 	wound_bonus = null
 	sharpness = SHARP_NONE
 	resistance_flags = null
+	repair_material = /obj/item/stack/sheet/metal
+	shield_flags = SHIELD_FLAGS_LIGHT
+
+/datum/block_parry_data/shield/bumper
+	block_damage_multiplier = 0.3
+	block_slowdown = 0.2
+	block_damage_absorption = 7.5
+	block_damage_limit = 45
+	block_projectile_mitigation = 40
 
 /obj/item/twohanded/fireaxe/bmprsword/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
