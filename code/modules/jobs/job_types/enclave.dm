@@ -50,12 +50,12 @@
 ///////////////////////
 
 /datum/job/enclave/enclavecpt
-	title = "Enclave Navy Captain"
-	description = "Multiple day ago, USS 'Eminent Domaine'made contact with the remains of a enclave cell. Before that you tought you and your mens were the last operating cell of the Enclave in the US. And now, you took them in. They aren't Navy, but you are bound by the flag : set the policies and the attitude of the Enclave this week. IMPORTANT : You are the captain of the SHIP. BUT FOR NOW, you are helping in the bunker."
+	title = "Enclave Captain"
+	description = "You are a Captain in the real United States military, the Enclave. You answer only to Enclave High Command, and dictate what all men under you will do."
 	flag = F13USCPT
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_US
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	head_announce = list("Security")
 	req_admin_notify = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_ENCLAVE3, ACCESS_PUBLIC)
