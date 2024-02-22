@@ -323,6 +323,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gloves = /obj/item/clothing/gloves/f13/leather
 	ears = /obj/item/radio/headset/headset_ncr_com
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
+	suit_store = /obj/item/gun/ballistic/automatic/m1garand
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
@@ -331,6 +332,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/book/manual/ncr/jobguide/regs = 1,
+		/obj/item/storage/box/ration/menu_eleven = 1,
+		/obj/item/ammo_box/magazine/garand308 = 4,
+		/obj/item/attachments/scope = 1,
 		/obj/item/storage/box/ration/menu_five = 1
 		)
 
@@ -341,38 +345,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-
-	loadout_options = list(
-		/datum/outfit/loadout/sergeantmechanics,
-		/datum/outfit/loadout/sniperssgt
-		)
-
-/datum/outfit/loadout/sergeantmechanics
-	name = "Mechanics"
-	backpack_contents = list(
-		/obj/item/storage/box/ration/menu_eleven = 1,
-		/obj/item/ammo_box/magazine/greasegun = 4,
-		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
-		/obj/item/clothing/mask/gas = 1,
-		/obj/item/grenade/smokebomb = 2,
-		/obj/item/melee/onehanded/knife/trench = 1,
-		/obj/item/clothing/under/rank/engineering/engineer/mechanic = 1,
-		/obj/item/weldingtool/largetank = 1,
-		/obj/item/clothing/head/hardhat/ncr = 1,
-		/obj/item/storage/toolbox/mechanical = 1
-		)
-
-/datum/outfit/loadout/sniperssgt
-	name = "Rifle"
-	head = /obj/item/clothing/head/f13/ncr/steelpot_goggles/trenchraider
-	backpack_contents = list(
-		/obj/item/storage/box/ration/menu_eleven = 1,
-		/obj/item/ammo_box/magazine/garand308 = 4,
-		/obj/item/gun/ballistic/automatic/m1garand = 3,
-		/obj/item/attachments/scope = 1,
-		/obj/item/melee/onehanded/knife/trench = 1,
-		)
-
 
 // SERGEANT PILOT
 
@@ -425,7 +397,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	loadout_options = list(
 		/datum/outfit/loadout/sergeantrifleman, 
-		/datum/outfit/loadout/sergeantmechanics,
 		/datum/outfit/loadout/sergeantHTminingun,
 		/datum/outfit/loadout/sergeantscout,
 		/datum/outfit/loadout/sergeantHTLMG
