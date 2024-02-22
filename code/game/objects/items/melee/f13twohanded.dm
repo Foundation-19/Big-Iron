@@ -169,8 +169,7 @@
 	wound_bonus = null
 	sharpness = SHARP_NONE
 	resistance_flags = null
-	repair_material = /obj/item/stack/sheet/metal
-	shield_flags = SHIELD_FLAGS_LIGHT
+	var/repair_material = /obj/item/stack/sheet/metal
 
 /datum/block_parry_data/shield/bumper
 	block_damage_multiplier = 0.3
