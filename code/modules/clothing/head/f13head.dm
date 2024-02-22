@@ -822,6 +822,8 @@
 /obj/item/clothing/head/helmet/f13/legion/venator/diohelmet
 	name = "galerum lacertarex"
 	desc = "The hide of a deadly green gecko affixed over a reinforced legion helmet. Its ghastly appearance serves as an intimidating gesture to those who do not yet fear the Lizard King."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/head.dmi'
 	icon_state = "diohelmet"
 	item_state = "diohelmet"
 

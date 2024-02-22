@@ -25,7 +25,7 @@
 	filling_color = "#E9967A"
 	bitesize = 100
 	foodtype = VEGETABLES
-	juice_results = list(/datum/reagent/consumable/tato_juice = 0)
+	juice_results = list(/datum/reagent/consumable/tato_juice = 1)
 	distill_reagent = /datum/reagent/consumable/ethanol/tatovodka
 
 /obj/item/reagent_containers/food/snacks/grown/tato/wedges

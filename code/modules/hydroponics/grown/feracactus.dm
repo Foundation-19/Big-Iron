@@ -25,5 +25,5 @@
 	icon_state = "feracactus"
 	filling_color = "#FF6347"
 	foodtype = FRUIT
-	juice_results = list(/datum/reagent/consumable/ferajuice = 0)
+	juice_results = list(/datum/reagent/consumable/ferajuice = 1)
 	distill_reagent = /datum/reagent/consumable/ethanol/yellowpulque
