@@ -26,7 +26,7 @@
 	trash = /obj/item/grown/corncob
 	bitesize_mod = 2
 	foodtype = VEGETABLES
-	juice_results = list(/datum/reagent/consumable/corn_starch = 0)
+	juice_results = list(/datum/reagent/consumable/corn_starch = 1)
 	tastes = list("corn" = 1)
 	distill_reagent = /datum/reagent/consumable/ethanol/whiskey
 

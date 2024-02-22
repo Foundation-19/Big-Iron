@@ -15,7 +15,7 @@
 
 /datum/reagent/consumable/yuccajuice
 	name = "Yucca Juice"
-	description = "The raw essence of a	banana yucca."
+	description = "The raw essence of a banana yucca."
 	color = "#863333" // rgb: 175, 175, 0
 	taste_description = "sand and bunker-air"
 	glass_icon_state = "banana"
