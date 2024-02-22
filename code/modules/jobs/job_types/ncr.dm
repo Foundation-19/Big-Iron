@@ -160,7 +160,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	req_admin_notify = 1
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the commanding officer of the NCR forces in the region, aka the 3rd Mechanized division. You are the base director and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
+	description = "You are the commanding officer of the NCR forces in the region, aka the 3rd Motorized division. You are the base director and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
 	supervisors = "The Command Board, Colonel, The NCR Representative."
 	exp_requirements = 600
 
@@ -306,7 +306,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_type = EXP_TYPE_NCRCOMMAND
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are third in command of the NCR forces in the region, the 3rd Mechanized division. You follow the orders of your superior officers, personally commanding the troopers. You make sure that squads are formed, and maintain some level of organisation."
+	description = "You are third in command of the NCR forces in the region, the 3rd Motorized division. You follow the orders of your superior officers, personally commanding the troopers. You make sure that squads are formed, and maintain some level of organisation."
 	supervisors = "The Command Board, the Lieutnant, The Captain."
 	exp_requirements = 400
 
@@ -358,7 +358,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_PILOT_NCR
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are a Pilot within the NCR, here to serve as a support for the 3rd Mechanized division. Your primary objective is the operation and maintenance of your vertibird. Though you are a flight officer, you will respect the rank of anyone above the rank of Sergeant."
+	description = "You are a Pilot within the NCR, here to serve as a support for the 3rd Motorized division. Your primary objective is the operation and maintenance of your vertibird. Though you are a flight officer, you will respect the rank of anyone above the rank of Sergeant."
 	supervisors = "Command Board, Lieutenants, Captain."
 
 	outfit = /datum/outfit/job/ncr/f13ncrpilot
@@ -392,7 +392,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are a Sergeant assigned to the NCR forces in the region, the 3rd Mechanized division. You will lead the troopers in the field and adhere to the word of your Commanding Officers."
+	description = "You are a Sergeant assigned to the NCR forces in the region, the 3rd Motorized division. You will lead the troopers in the field and adhere to the word of your Commanding Officers."
 	supervisors = "Lieutenant and Above"
 
 	outfit = /datum/outfit/job/ncr/f13sergeant
