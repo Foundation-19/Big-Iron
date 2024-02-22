@@ -129,6 +129,7 @@
 		if(require_twohands)
 			to_chat(user, "<span class='notice'>[parent] is too cumbersome to carry in one hand!</span>")
 			user.dropItemToGround(parent, force=TRUE)
+			return
 		else
 			if(!user.dropItemToGround(other_item, force=FALSE)) //If you cannot remove the item in your hand, don't try and wield.
 				to_chat(user, "<span class='notice'>You cannot seem to drop the item in your other hand!</span>")
