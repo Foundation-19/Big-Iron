@@ -131,7 +131,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	jobtype = /datum/job/ncr/f13aide
 	id = /obj/item/card/id/dogtag/ncrsergeant
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_dress
-	accessory = /obj/item/clothing/accessory/ncr/SGT
+	accessory = /obj/item/clothing/accessory/ncr/SSGT
 	shoes = /obj/item/clothing/shoes/f13/military/ncr_officer_boots
 	head = /obj/item/clothing/head/f13/ncr/ncr_campaign
 	neck = /obj/item/storage/belt/holster
@@ -150,7 +150,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /////////////////////////////////
 
 // CAPTAIN
-// Dav here, Captain is disabled, no base arround !
 
 /datum/job/ncr/f13captain
 	title = "NCR Captain"
@@ -159,10 +158,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_type = EXP_TYPE_NCRCOMMAND
 	head_announce = list("Security")
 	req_admin_notify = 1
-	total_positions = 0
-	spawn_positions = 0
-	description = "You are the commanding officer of your company and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command and the Board of command  are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
-	supervisors = "the Colonel"
+	total_positions = 1
+	spawn_positions = 1
+	description = "You are the commanding officer of the 3th MM Platoon, the base director, and direct superior to the Veteran Ranger and Lieutenant. Coordinating with your staff, you must ensure that the objectives of High Command and the Board of command  are completed to the letter. Working closely with your subordinates on logistics, mission planning and special operations with the Rangers, you are here to establish a strong foothold for the NCR within the region."
+	supervisors = "The Command Board, Some shady Colonel with highcommand, and work with The Rep."
 	exp_requirements = 600
 
 	outfit = /datum/outfit/job/ncr/f13captain
@@ -234,8 +233,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_type = EXP_TYPE_NCRCOMMAND
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the direct superior to the NCOs and Enlisted, and under special circumstances, Rangers. Why are you here ? Because you wanted to be a captain. How did you get in there ? By telling Oliver and his cabal to fuck themselfs. And you are in charge of the 3th Mobile Motorized Division. You plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel."
-	supervisors = "The Command Board."
+	description = "You are the direct superior to the NCOs and Enlisted, and under special circumstances, Rangers. Why are you here ? Because you wanted to be a captain. How did you get in there ? By telling Oliver and his cabal to fuck themselfs. And you are second in charge of the 3th MM Platoon. You Assist the captain, and basically give orders and go where its too dangerous for them to go."
+	supervisors = "The Captain, The Command Board."
 	exp_requirements = 600
 
 	outfit = /datum/outfit/job/ncr/f13lieutenant
@@ -280,9 +279,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/LTbackline
 	name = "The Law"
-	suit_store = /obj/item/twohanded/sledgehammer/rockethammer/courtmartial
+	suit_store = /obj/item/twohanded/baseball/golfclub/ncr
 	backpack_contents = list(
-		/obj/item/clothing/suit/armor/f13/ncrarmor/captain = 1,
+		/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant = 1,
 		/obj/item/storage/box/ration/menu_eight = 1
 		)
 
@@ -303,8 +302,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_type = EXP_TYPE_NCRCOMMAND
 	total_positions = 1
 	spawn_positions = 1
-	description = "You are the second in command of the NCR 3th Mobile Motorized Division. You follow the order of the Lieutenant, and order the soldiers and other fuckups in the forces. You basically  plan patrols, training and missions, working in some cases with Rangers in accomplishing objectives otherwise beyond the capabilities of ordinary enlisted personnel, when the LT ain’t here. And if they are, you can assist them, or act as the fun police. You guys are pretty a penal unit. "
-	supervisors = "The Command Board, the Lieutnant."
+	description = "You are the third in command of the NCR 3th MM Platoon. You follow the order of the Lieutenant, and order the soldiers and other fuckups in the forces. You make sure that squads are formed, and that there is somekind of organisation. You can also have a say on the use of trucks."
+	supervisors = "The Command Board, the Lieutnant, The Captain."
 	exp_requirements = 400
 
 	outfit = /datum/outfit/job/ncr/f13staffsergeant
@@ -325,13 +324,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ears = /obj/item/radio/headset/headset_ncr_com
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	r_pocket = /obj/item/binoculars
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
 		/obj/item/ammo_box/magazine/m9mmds = 3,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
-		/obj/item/ammo_box/magazine/garand308 = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/book/manual/ncr/jobguide/regs = 1,
 		/obj/item/storage/box/ration/menu_five = 1
@@ -345,6 +342,37 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
+	loadout_options = list(
+		/datum/outfit/loadout/sergeantmechanics,
+		/datum/outfit/loadout/sniperssgt
+		)
+
+/datum/outfit/loadout/sergeantmechanics
+	name = "Mechanics"
+	backpack_contents = list(
+		/obj/item/storage/box/ration/menu_eleven = 1,
+		/obj/item/ammo_box/magazine/greasegun = 4,
+		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
+		/obj/item/clothing/mask/gas = 1,
+		/obj/item/grenade/smokebomb = 2,
+		/obj/item/melee/onehanded/knife/trench = 1,
+		/obj/item/clothing/under/rank/engineering/engineer/mechanic = 1,
+		/obj/item/weldingtool/largetank = 1,
+		/obj/item/clothing/head/hardhat/ncr = 1,
+		/obj/item/storage/toolbox/mechanical = 1
+		)
+
+/datum/outfit/loadout/sniperssgt
+	name = "Rifle"
+	head = /obj/item/clothing/head/f13/ncr/steelpot_goggles/trenchraider
+	backpack_contents = list(
+		/obj/item/storage/box/ration/menu_eleven = 1,
+		/obj/item/ammo_box/magazine/garand308 = 4,
+		/obj/item/gun/ballistic/automatic/m1garand = 3,
+		/obj/item/attachments/scope = 1,
+		/obj/item/melee/onehanded/knife/trench = 1,
+		)
+
 
 // SERGEANT PILOT
 
@@ -354,8 +382,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_PILOT_NCR
 	total_positions = 1
 	spawn_positions = 1
-	description = "Coming straight up from the long 15, with a repainted Vertibird ! Normaly in a other branch of the NCR army, you got some special orders and a HUDGE paycheck from the Command Board. You are here to serve as a support for the NCR 3th Mobile Motorized Division! Your Vertibird is a bit more solid that the BoS and Enclave ones, but are nearly unarmed. They mostly serve as medevac and air transport rather than combat. You got the rank of Sergeant."
-	supervisors = "Command Board, Lieutenants, Junior grade Lieutenants."
+	description = "Coming straight up from the long 15, with a repainted Vertibird ! Normaly in a other branch of the NCR army, you got some special orders and a HUDGE paycheck from the Command Board. You are here to serve as a support for the NCR 3th MM Platoon! Your Vertibird is a bit more solid that the BoS and Enclave ones, but are nearly unarmed. They mostly serve as medevac and air transport rather than combat. You got the rank of Sergeant."
+	supervisors = "Command Board, Lieutenants, Captain."
 
 	outfit = /datum/outfit/job/ncr/f13ncrpilot
 
@@ -388,7 +416,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	total_positions = 2
 	spawn_positions = 2
-	description = "You are a Sergeant of the NCR 3th Mobile Motorized Division. They got some of the most capable sergeants … Normally. They order the troops around, and are divided in categories. The Head Mechanics deal with the trucks, and are the ones that are driving, the Heavy Troopers make use of a heavy SPA and big guns to get rid of the skirties and other dangers around,the Field sergeants are those who lead charges and infantry, the Recon leads… Well, recon missions."
+	description = "You are a Sergeant of the NCR 3th MM Platoon. They got some of the most capable sergeants … Normally. They order the troops around, and are divided in categories. The Head Mechanics deal with the trucks, and are the ones that are driving, the Heavy Troopers make use of a heavy SPA and big guns to get rid of the skirties and other dangers around,the Field sergeants are those who lead charges and infantry, the Recon leads… Well, recon missions."
 	supervisors = "Lieutenant and Above"
 
 	outfit = /datum/outfit/job/ncr/f13sergeant
@@ -424,24 +452,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		/obj/item/storage/box/ration/menu_one = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1
-		)
-
-/datum/outfit/loadout/sergeantmechanics
-	name = "Lead Mechanics"
-	suit_store = /obj/item/gun/ballistic/shotgun/trench
-	head = /obj/item/clothing/head/f13/ncr/steelpot_goggles/trenchraider
-	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced/trenchraider
-	backpack_contents = list(
-		/obj/item/storage/box/ration/menu_eleven = 1,
-		/obj/item/ammo_box/magazine/greasegun = 4,
-		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
-		/obj/item/clothing/mask/gas = 1,
-		/obj/item/grenade/smokebomb = 2,
-		/obj/item/melee/onehanded/knife/trench = 1,
-		/obj/item/clothing/under/rank/engineering/engineer/mechanic = 1,
-		/obj/item/weldingtool/largetank = 1,
-		/obj/item/clothing/head/hardhat/ncr = 1,
-		/obj/item/storage/toolbox/mechanical = 1
 		)
 
 /datum/outfit/loadout/sergeantHTminingun
@@ -814,7 +824,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	total_positions = 2
 	spawn_positions = 2
 	description = "You are a senior enlisted trooper with an engineering skill set. You work closely with your squad, taking orders from the officers. You have the authority to command troopers if there are no non-commissioned officers present."
-	supervisors = "Corporals and Above. Sergeants acting as Lead Mechanics orders takes priority, unless orders are from the Lieutenants"
+	supervisors = "Corporals and Above. Staff Sergeants acting as Lead Mechanics orders takes priority, unless orders are from the Captain"
 
 	outfit = /datum/outfit/job/ncr/f13combatengineer
 
@@ -889,7 +899,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	display_order = JOB_DISPLAY_ORDER_MILITARYPOLICE
 	total_positions = 2
 	spawn_positions = 2
-	description = "Here to conduct any kind of investigation, or serve as bodyguards for a rep. Since there is no base, they can follow the 3th mobile unit around. Or find a nice office to work. They only take orders from the Lieutenant and Rep. They also need Arrest Warrants from the Command Board (via a Ahelp), unless they witness a war crime or dangerous behavior."
+	description = "Here to conduct any kind of investigation, or serve as bodyguards for a rep. They only take orders from the Captain, Lieutenant and Rep. They also need Arrest Warrants from the Command Board (via a Ahelp), unless they witness a war crime or dangerous behavior."
 	supervisors = "NCRA Officers"
 	exp_requirements = 300
 
@@ -936,7 +946,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	total_positions = 2
 	spawn_positions = 2
 	description = "You are a senior enlisted with a medical skill set. You work closely with your squad, taking orders from your officers. You have the authority to command troopers if there are no non-commissioned officers present."
-	supervisors = "Corporals and Above. The Medical Officer orders, however takes priority, unless orders are from the Lieutenants"
+	supervisors = "Corporals and Above. The Medical Officer orders, however takes priority, unless orders are from the Captain"
 
 	outfit = /datum/outfit/job/ncr/f13combatmedic
 

@@ -54,8 +54,8 @@
 	description = "Multiple day ago, USS 'Eminent Domaine'made contact with the remains of a enclave cell. Before that you tought you and your mens were the last operating cell of the Enclave in the US. And now, you took them in. They aren't Navy, but you are bound by the flag : set the policies and the attitude of the Enclave this week. IMPORTANT : You are the captain of the SHIP. BUT FOR NOW, you are helping in the bunker."
 	flag = F13USCPT
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_US
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	head_announce = list("Security")
 	req_admin_notify = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_ENCLAVE3, ACCESS_PUBLIC)
@@ -160,7 +160,7 @@
 	suit = /obj/item/clothing/suit/co_bomber
 	glasses = /obj/item/clothing/glasses/hud/diagnostic/sunglasses
 	head = /obj/item/clothing/head/f13/army/beret/airborne
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/worn
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
 	id = /obj/item/card/id/dogtag/enclave/officer
 
@@ -234,7 +234,7 @@
 
 /datum/outfit/loadout/gysergeantrifle
 	name = "Support Sergeant"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/worn
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 4,
 		/obj/item/ammo_box/m5mmbox/shock = 1,
@@ -309,7 +309,7 @@
 	jobtype = /datum/job/enclave/enclavesgt
 	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/remnant
 	head = /obj/item/clothing/head/helmet/f13/combat/mk2/remnant
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/worn
 	accessory = /obj/item/clothing/accessory/enclave/sergeant
 
 	backpack_contents = list(
@@ -343,7 +343,8 @@
 
 	loadout_options = list(
 		/datum/outfit/loadout/specmedic,
-		/datum/outfit/loadout/specengi
+		/datum/outfit/loadout/specengi,
+		/datum/outfit/loadout/specsniper
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13specialist
@@ -380,6 +381,18 @@
 		/obj/item/storage/belt/utility/full/engi = 1,
 		/obj/item/book/granter/trait/techno = 1,
 		/obj/item/book/granter/trait/explosives = 1
+		)
+		
+/datum/outfit/loadout/specsniper
+	name = "Sniper"
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/m1garand/sks = 1,
+		/obj/item/ammo_box/magazine/sks = 3,
+		/obj/item/attachments/scope = 1,
+		/obj/item/binoculars = 1,
+		/obj/item/storage/belt/utility/full/engi = 1,
+		/obj/item/book/granter/trait/rifleman = 1,
+		/obj/item/book/granter/trait/trekking = 1
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13specialist/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -589,7 +602,7 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx,)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/buffout)
 
-/*/Bunker Duty
+//Bunker Duty
 /datum/job/enclave/f13BDUTY
 	title = "Enclave Ship Duty"
 	flag = F13USBDUTY
@@ -675,7 +688,7 @@
 		/obj/item/storage/box/ingredients/wildcard = 4,
 		/obj/item/kitchen/knife/butcher = 1,
 		)
-*/
+
 // Enclave Citizen
 // Really only used for ID console
 /datum/job/enclave/f13enclavecitizen

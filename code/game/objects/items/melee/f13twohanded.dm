@@ -431,6 +431,25 @@
 		return
 	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
 
+// Unique Golf Club		Keywords: Damage 25/40, Damage bonus Stamina Knockback
+/obj/item/twohanded/baseball/golfclub/ncr
+	name = "NCR Board member Golf Club."
+	desc = "So apparently, this extremely well made golf club has been given to a NCR LT by a member of the board of command, for their services in the 3th MM Platoon. You don't remember if it was a congress man or a brahmin baron. But hey. A Gift is a gift."
+	icon_state = "golfclub"
+	icon_prefix = "golfclub"
+	attack_verb = list("taxed", "bashed", "bribed", "hit", "whacked")
+	color ="#5d815d"
+
+/obj/item/twohanded/baseball/golfclub/ncr/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 40, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/knockback, 1, FALSE, TRUE)
+
+/obj/item/twohanded/baseball/golfclub/ncr/attack(mob/living/M, mob/living/user)
+	. = ..()
+	if(!istype(M))
+		return
+	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
 
 
 ///////////////////
