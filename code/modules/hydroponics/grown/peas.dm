@@ -62,7 +62,7 @@
 	filling_color = "#ee7bee"
 	bitesize_mod = 2
 	foodtype = VEGETABLES
-	juice_results = list (/datum/reagent/consumable/laughsyrup = 0)
+	juice_results = list (/datum/reagent/consumable/laughsyrup = 0.5)
 	tastes = list ("a prancing rabbit" = 1) //Vib Ribbon sends her regards.. wherever she is.
 	wine_power = 90
 	wine_flavor = "a vector-graphic rabbit dancing on your tongue"

@@ -23,5 +23,5 @@
 	desc = "This tobacco like plant is commonly used by tribals for a great variety of medicinal and ceremonial purposes."
 	icon_state = "Coyote Tobacco"
 	filling_color = "#008000"
-	juice_results = list(/datum/reagent/consumable/coyotejuice = 0)
+	juice_results = list(/datum/reagent/consumable/coyotejuice = 1)
 	distill_reagent = /datum/reagent/consumable/ethanol/deathroach

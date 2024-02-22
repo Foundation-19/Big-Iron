@@ -233,6 +233,17 @@
 	desc = "Legion prime decanus armor-an extra reinforced baseball uniform."
 	armor = list("melee" = 45, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
+/obj/item/clothing/suit/armor/f13/legion/prime/heavydecan	// Heavy Prime
+	name = "legion heavy prime decanus armor"
+	desc = "A very well protected suit, but a bit heavy to carry."
+	icon_state = "legion_orator_heavy"
+	item_state = "legion_orator_heavy"
+	icon = 'icons/fallout/clothing/armored_heavy.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 25, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 30, "acid" = 5)
+	slowdown = 0.5
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4) // Because shit armor
+
 /obj/item/clothing/suit/armor/f13/legion/frumentarius
 	name = "Legion Frumentarius armor"
 	desc = "The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."

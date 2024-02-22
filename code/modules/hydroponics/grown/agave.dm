@@ -25,5 +25,5 @@
 	desc = "A strange kind of fleshy grass often used as a primitive burn medication that rapidly depletes stored nutrients in the body."
 	icon_state = "Agave Leaf"
 	icon = 'icons/obj/flora/wastelandflora.dmi'
-	juice_results = list(/datum/reagent/consumable/agavejuice = 0)
+	juice_results = list(/datum/reagent/consumable/agavejuice = 1)
 	distill_reagent = /datum/reagent/consumable/ethanol/tequila

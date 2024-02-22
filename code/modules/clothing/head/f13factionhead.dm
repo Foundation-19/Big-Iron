@@ -1263,8 +1263,8 @@
 	desc = "A People's Liberation Army cap, worn by enlisted and non-commissioned officers."
 	icon = 'icons/fallout/clothing/hats.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
-	icon_state = "chinese_soldier"
-	item_state = "chinese_soldier"
+	icon_state = "chinese_cap"
+	item_state = "chinese_cap"
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/head/f13/chinese/officer
