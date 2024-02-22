@@ -5,8 +5,8 @@
 	step_in = 2
 	dir_in = 2 //Facing South.
 	step_energy_drain = 3
-	max_integrity = 200
-	deflect_chance = 30
+	max_integrity = 100
+	deflect_chance = 10
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	max_temperature = 25000
 	infra_luminosity = 3
@@ -43,8 +43,8 @@
 	step_in = 0.6
 	dir_in = 2
 	step_energy_drain = 1.5
-	max_integrity = 300
-	deflect_chance = 30
+	max_integrity = 200
+	deflect_chance = 10
 	armor = list("melee" = 50, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	max_temperature = 25000
 	infra_luminosity = 1
@@ -130,8 +130,8 @@
 	step_in = 0.8
 	dir_in = 2
 	step_energy_drain = 1.4
-	max_integrity = 350
-	deflect_chance = 30
+	max_integrity = 225
+	deflect_chance = 10
 	armor = list("melee" = 50, "bullet" = 40, "laser" = 40, "energy" = 20, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	max_temperature = 25000
 	infra_luminosity = 1
@@ -211,8 +211,8 @@
 	step_in = 0.6
 	dir_in = 2
 	step_energy_drain = 1.5
-	max_integrity = 300
-	deflect_chance = 30
+	max_integrity = 200
+	deflect_chance = 10
 	armor = list("melee" = 50, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	max_temperature = 25000
 	infra_luminosity = 1
@@ -284,8 +284,8 @@
 	step_in = 0.6
 	dir_in = 2
 	step_energy_drain = 1.5
-	max_integrity = 300
-	deflect_chance = 30
+	max_integrity = 200
+	deflect_chance = 10
 	armor = list("melee" = 50, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	max_temperature = 25000
 	infra_luminosity = 1
@@ -356,9 +356,9 @@
 	step_in = 1.3
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 600
+	max_integrity = 300
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 8
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -433,9 +433,9 @@
 	step_in = 1.25
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 600
+	max_integrity = 300
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 10, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 4
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -497,9 +497,9 @@
 	step_in = 1.2
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 200
+	max_integrity = 100
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 10, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 2
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -553,9 +553,9 @@
 	step_in = 1.2
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 200
+	max_integrity = 100
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 10, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 2
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -604,9 +604,9 @@
 	step_in = 1.2
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 200
+	max_integrity = 100
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 10, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 2
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -655,9 +655,9 @@
 	step_in = 1.2
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 200
+	max_integrity = 100
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 10, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 2
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -706,9 +706,9 @@
 	step_in = 1.2
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 200
+	max_integrity = 100
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 10, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 2
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -757,9 +757,9 @@
 	step_in = 1.2
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 200
+	max_integrity = 100
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 10, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 3
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -813,9 +813,9 @@
 	step_in = 1.2
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 0.8
+	step_energy_drain = 0.4
 	max_temperature = 20000
-	max_integrity = 250
+	max_integrity = 125
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 10, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 2
 	stepsound = 'sound/effects/footstep/gallop2.ogg'
@@ -864,9 +864,9 @@
 	step_in = 1.2
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 0.8
+	step_energy_drain = 0.4
 	max_temperature = 20000
-	max_integrity = 250
+	max_integrity = 125
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 10, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 3
 	stepsound = 'sound/effects/footstep/gallop2.ogg'
@@ -920,9 +920,9 @@
 	step_in = 0.9
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 250
+	max_integrity = 125
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 20, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 2
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -971,9 +971,9 @@
 	step_in = 1.1
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 280
+	max_integrity = 140
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 3
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -1024,9 +1024,9 @@
 	step_in = 1.0
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1.3
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 280
+	max_integrity = 140
 	armor = list("melee" = 45, "bullet" = 30, "laser" = 25, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 3
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -1079,9 +1079,9 @@
 	step_in = 1.4
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 300
+	max_integrity = 150
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 4
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -1134,9 +1134,9 @@
 	step_in = 1.4
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 300
+	max_integrity = 150
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 4
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -1189,9 +1189,9 @@
 	step_in = 1.4
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 300
+	max_integrity = 150
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 4
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -1242,9 +1242,9 @@
 	step_in = 1.4
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 1.5
+	step_energy_drain = 0.6
 	max_temperature = 20000
-	max_integrity = 300
+	max_integrity = 150
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 4
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
@@ -1295,9 +1295,9 @@
 	step_in = 1.6
 	opacity = 0
 	dir_in = 8
-	step_energy_drain = 0.6
+	step_energy_drain = 0.4
 	max_temperature = 20000
-	max_integrity = 250
+	max_integrity = 125
 	armor = list("melee" = 30, "bullet" = 15, "laser" = 10, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 100, "fire" = 100, "acid" = 100)
 	max_equip = 2
 	stepsound = 'sound/effects/footstep/gallop2.ogg'
