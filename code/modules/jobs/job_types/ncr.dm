@@ -269,7 +269,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/book/manual/ncr/jobguide/regs = 1,
-		/obj/item/storage/box/ration/menu_five = 1,
+		/obj/item/storage/box/ration/menu_five = 1
 		)
 
 /datum/outfit/loadout/LTfrontline
@@ -740,7 +740,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Shock Heavy Trooper"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 1,
-		/obj/item/storage/box/lethalslugs = 2
+		/obj/item/storage/box/lethalslugs = 2,
 		/obj/item/storage/box/ration/menu_four = 1
 		)
 
