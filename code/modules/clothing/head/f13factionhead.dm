@@ -483,7 +483,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-rangercent"
 	item_state = "legion-rangercent"
-	armor = list("melee" = 45, "bullet" = 60, "laser" = 30, "energy" = 25, "bomb" = 35, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0, "wound" = 55)
+	armor = list("melee" = 35, "bullet" = 60, "laser" = 30, "energy" = 25, "bomb" = 35, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0, "wound" = 55)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 3)
 
@@ -494,7 +494,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-palacent"
 	item_state = "legion-palacent"
-	armor = list("melee" = 35, "bullet" = 60, "laser" = 40, "energy" = 35, "bomb" = 35, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 75)
+	armor = list("melee" = 35, "bullet" = 55, "laser" = 40, "energy" = 35, "bomb" = 35, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 75)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 3)
 
