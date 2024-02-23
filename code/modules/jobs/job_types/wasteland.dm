@@ -167,7 +167,8 @@ Raider
 	/datum/outfit/loadout/raider_bos,
 	/datum/outfit/loadout/quack_doctor,
 	/datum/outfit/loadout/raider_powder,
-	/datum/outfit/loadout/raider_tribal
+	/datum/outfit/loadout/raider_tribal,
+	/datum/outfit/loadout/den
 	)
 
 
@@ -434,6 +435,21 @@ Raider
 		/obj/item/ammo_box/magazine/greasegun = 2,
 		/obj/item/grenade/f13/dynamite = 2,
 		/obj/item/book/granter/trait/explosives = 1
+		)
+
+/datum/outfit/loadout/den
+	name = "Den Gangster"
+	suit = /obj/item/clothing/suit/armor/vest
+	uniform = /obj/item/clothing/under/f13/densuit
+	head = /obj/item/clothing/head/fedora
+	gloves = /obj/item/clothing/gloves/color/white
+	id = /obj/item/card/id/denid
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 2,
+		/obj/item/radio/headset = 1,
+		/obj/item/clothing/mask/bandana/durathread = 1
 		)
 
 /datum/job/wasteland/f13wastelander
