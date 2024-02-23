@@ -15,13 +15,16 @@
 	},
 /area/f13/building)
 "aae" = (
+/obj/machinery/door/poddoor/shutters/old{
+	id = "Enclavehangar"
+	},
+/obj/structure/railing{
+	dir = 4
+	},
 /obj/effect/turf_decal{
 	dir = 4
 	},
-/obj/machinery/computer/mech_bay_power_console{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/turf/open/floor/plasteel/f13/vault_floor,
 /area/f13/enclave)
 "aag" = (
 /obj/structure/fluff/railing,
@@ -1224,11 +1227,6 @@
 	},
 /turf/open/floor/f13,
 /area/f13/brotherhood/surface)
-"aes" = (
-/obj/mecha/combat/phazon/vertibird/enclave/loaded,
-/obj/effect/turf_decal/delivery/white,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/enclave)
 "aeu" = (
 /obj/structure/railing/corner{
 	color = "#A47449"
@@ -5444,17 +5442,6 @@
 "aub" = (
 /turf/open/floor/carpet/red,
 /area/f13/ncr)
-"auc" = (
-/obj/structure/lattice/catwalk,
-/obj/effect/turf_decal/delivery/white,
-/obj/machinery/mech_bay_recharge_port{
-	on = 1
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/brotherhood/surface)
 "aud" = (
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
@@ -6532,17 +6519,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
 "ayt" = (
-/obj/effect/turf_decal{
-	dir = 8
-	},
-/obj/machinery/light/floor,
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/machinery/door/poddoor/shutters/old{
-	id = "Enclavehangar"
-	},
-/turf/open/floor/plasteel/f13/vault_floor,
+/turf/closed/indestructible/rock,
 /area/f13/enclave)
 "ayu" = (
 /turf/closed/wall/mineral/concrete/blastproof,
@@ -6958,16 +6935,6 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
-"aAh" = (
-/obj/effect/turf_decal{
-	dir = 4
-	},
-/obj/machinery/light/floor,
-/obj/machinery/door/poddoor/shutters/old{
-	id = "Enclavehangar"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/enclave)
 "aAj" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 8
@@ -10557,18 +10524,6 @@
 /obj/machinery/iv_drip,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/clinic)
-"aND" = (
-/obj/effect/turf_decal{
-	dir = 4
-	},
-/obj/structure/railing{
-	dir = 4
-	},
-/obj/machinery/door/poddoor/shutters/old{
-	id = "Enclavehangar"
-	},
-/turf/open/floor/plasteel/f13/vault_floor,
-/area/f13/enclave)
 "aNE" = (
 /obj/structure/decoration/rag{
 	icon_state = "skulls"
@@ -11212,13 +11167,6 @@
 "aPO" = (
 /turf/closed/wall/f13/store,
 /area/f13/brotherhood/surface)
-"aPQ" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/machinery/mech_bay_recharge_port{
-	on = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/enclave)
 "aPU" = (
 /obj/structure/chair/booth{
 	icon_state = "booth_east_south"
@@ -12487,8 +12435,14 @@
 /turf/open/floor/plating/f13/outside/roof/metal,
 /area/f13/wasteland)
 "aUn" = (
-/obj/effect/turf_decal/arrows/white,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
+/obj/machinery/door/poddoor/shutters/old{
+	id = "Enclavehangar"
+	},
+/obj/machinery/light/floor,
+/obj/effect/turf_decal{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/enclave)
 "aUp" = (
 /obj/effect/decal/cleanable/dirt{
@@ -12969,9 +12923,6 @@
 	},
 /area/f13/legion)
 "aWc" = (
-/obj/structure/lattice/catwalk,
-/obj/effect/turf_decal/arrows/white,
-/obj/effect/turf_decal,
 /turf/open/transparent/openspace{
 	name = "air";
 	sunlight_state = 1
@@ -14114,11 +14065,6 @@
 	},
 /turf/open/floor/plating/f13/outside/roof/red,
 /area/f13/wasteland)
-"cVg" = (
-/obj/mecha/combat/phazon/vertibird/brotherhood/loaded,
-/obj/effect/turf_decal/delivery/white,
-/turf/open/floor/plating/f13/outside/roof/metal,
-/area/f13/brotherhood/surface)
 "daT" = (
 /obj/structure/table,
 /obj/item/organ/heart,
@@ -14462,18 +14408,6 @@
 	icon_state = "housewood1-broken"
 	},
 /area/f13/ncr)
-"hmg" = (
-/obj/effect/turf_decal{
-	dir = 4
-	},
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/wasteland)
 "hsJ" = (
 /obj/structure/chair/wood/normal{
 	dir = 8
@@ -14719,18 +14653,6 @@
 	},
 /turf/open/floor/plating/f13/outside/roof/metal,
 /area/f13/brotherhood/surface)
-"kAh" = (
-/obj/effect/turf_decal{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
-	},
-/area/f13/wasteland)
 "kCr" = (
 /turf/open/floor/plating/f13/outside/roof/wood,
 /area/f13/wasteland)
@@ -15017,16 +14939,21 @@
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
 "nTT" = (
-/obj/structure/lattice/catwalk,
-/obj/effect/turf_decal/delivery,
-/obj/machinery/computer/mech_bay_power_console{
+/obj/effect/turf_decal{
 	dir = 8
 	},
-/turf/open/transparent/openspace{
-	name = "air";
-	sunlight_state = 1
+/obj/structure/railing{
+	dir = 8
 	},
-/area/f13/brotherhood/surface)
+/obj/machinery/door/poddoor/shutters/old{
+	id = "Enclavehangar"
+	},
+/obj/machinery/light/floor,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor,
+/area/f13/enclave)
 "nUN" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/purple,
@@ -15071,13 +14998,10 @@
 /turf/open/floor/plating/f13/outside/roof/wood/old,
 /area/f13/wasteland)
 "ppU" = (
-/obj/machinery/door/airlock/hatch{
-	desc = "An airtight door, built to withstand a nuclear blast.";
-	max_integrity = 10000;
-	name = "Brotherhood of Steel";
-	req_access_txt = "265"
+/turf/open/floor/plasteel/f13/vault_floor/dark{
+	icon_state = "darkrusty";
+	name = "grimy tile"
 	},
-/turf/open/floor/plating/f13/outside/roof/metal,
 /area/f13/brotherhood/surface)
 "pqC" = (
 /obj/structure/table/reinforced,
@@ -15992,7 +15916,7 @@ akC
 akC
 akC
 akC
-akC
+aAl
 aAl
 aAl
 aAl
@@ -16241,7 +16165,7 @@ akC
 akC
 akC
 akC
-akC
+aAl
 aAl
 aAl
 aAl
@@ -16513,7 +16437,7 @@ aoy
 aoy
 aRG
 sqK
-sqK
+ayt
 aPL
 aPL
 aPL
@@ -16769,9 +16693,9 @@ auV
 aoy
 aoy
 aoy
-aoy
 aJI
-aCS
+ayt
+aPL
 aPL
 aPL
 aPL
@@ -17024,11 +16948,11 @@ wMx
 aoy
 auo
 auo
-aae
 auo
 auo
-aAh
-hmg
+aUn
+ayt
+aPL
 aPL
 aPL
 aPL
@@ -17281,10 +17205,10 @@ wMx
 aGx
 aBS
 aBS
-aPQ
 aBS
-aUn
+aBS
 aDt
+ayt
 aWc
 aPL
 aPL
@@ -17538,10 +17462,10 @@ wMx
 aGx
 aBS
 aBS
-aes
 aBS
-aUn
+aBS
 aDt
+ayt
 aWc
 aPL
 aPL
@@ -17783,7 +17707,7 @@ akC
 akC
 akC
 akC
-akC
+aAl
 aAl
 aAl
 sqK
@@ -17797,9 +17721,9 @@ aGP
 aGP
 acJ
 aGP
-aGP
+nTT
 ayt
-kAh
+aPL
 aPL
 aPL
 aPL
@@ -18054,9 +17978,9 @@ aba
 xsH
 xsH
 xsH
-xsH
-aND
-aCS
+aae
+ayt
+aPL
 aPL
 aPL
 aPL
@@ -18312,7 +18236,7 @@ sqK
 sqK
 sqK
 sqK
-sqK
+ayt
 aPL
 aPL
 aPL
@@ -18569,7 +18493,7 @@ aAl
 aAl
 aAl
 aAl
-akC
+aAl
 akC
 aPL
 aPL
@@ -45688,7 +45612,7 @@ alY
 aOF
 gZM
 awG
-nTT
+fxr
 awG
 awG
 awG
@@ -45945,7 +45869,7 @@ alY
 mmx
 gZM
 kNQ
-auc
+kNQ
 kNQ
 awG
 awG
@@ -46202,7 +46126,7 @@ aOF
 aOF
 gZM
 iop
-cVg
+iZr
 iZr
 gZM
 aOF
@@ -47485,7 +47409,7 @@ alY
 alY
 alY
 alY
-ppU
+aOF
 alY
 alY
 alY

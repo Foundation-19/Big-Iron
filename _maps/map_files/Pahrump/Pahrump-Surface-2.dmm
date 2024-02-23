@@ -5123,14 +5123,6 @@
 	icon_state = "housewood2"
 	},
 /area/f13/village)
-"bXS" = (
-/obj/machinery/computer/mech_bay_power_console{
-	pixel_y = 5
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/tunnel)
 "bYe" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress2"
@@ -6821,13 +6813,6 @@
 	},
 /turf/open/floor/wood/wood_tiled,
 /area/f13/building)
-"cIk" = (
-/obj/machinery/mech_bay_recharge_port{
-	dir = 8;
-	on = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/brotherhood/surface)
 "cIx" = (
 /obj/structure/reagent_dispensers/barrel/four,
 /turf/open/indestructible/ground/outside/desert/sonora/rough{
@@ -7002,14 +6987,6 @@
 /obj/structure/flora/junglebush/c,
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
-"cMv" = (
-/obj/machinery/mech_bay_recharge_port{
-	pixel_x = 6
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/tunnel)
 "cMw" = (
 /obj/structure/cross,
 /obj/effect/decal/remains{
@@ -7543,12 +7520,6 @@
 /obj/item/chair/stool,
 /turf/open/floor/plasteel/darkred,
 /area/f13/village)
-"cXJ" = (
-/obj/mecha/combat/phazon/buggy/dune/loaded,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/tunnel)
 "cXS" = (
 /obj/structure/chair/bench,
 /turf/open/indestructible/ground/outside/dirt{
@@ -7650,12 +7621,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/kebab)
-"cZH" = (
-/obj/mecha/combat/phazon/pickuptruck/bos/armed/loaded{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/brotherhood/surface)
 "cZK" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_6";
@@ -9905,10 +9870,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"dXw" = (
-/obj/machinery/computer/mech_bay_power_console,
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/brotherhood/surface)
 "dXy" = (
 /obj/structure/mirror,
 /turf/closed/wall/r_wall/rust,
@@ -10411,15 +10372,6 @@
 /obj/structure/barricade/wooden,
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/clinic)
-"eeZ" = (
-/obj/machinery/door/airlock/hatch{
-	desc = "An airtight door, built to withstand a nuclear blast.";
-	max_integrity = 10000;
-	name = "Brotherhood of Steel";
-	req_access_txt = "265"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/brotherhood/surface)
 "efg" = (
 /turf/open/floor/f13{
 	tag = "icon-floorrusty";
@@ -12934,7 +12886,16 @@
 /area/f13/wasteland)
 "fcY" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall/rust,
+/obj/structure/decoration/vent/rusty{
+	desc = "It's very old and rusty.";
+	name = "rusty grate";
+	pixel_x = -2;
+	pixel_y = -3
+	},
+/obj/machinery/shower{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/brotherhood/surface)
 "fdf" = (
 /obj/structure/table/wood,
@@ -15021,10 +14982,7 @@
 /turf/open/floor/carpet,
 /area/f13/village)
 "fWj" = (
-/obj/structure/ladder/unbreakable{
-	height = 2;
-	id = "bos_entrance"
-	},
+/obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/brotherhood/surface)
 "fWl" = (
@@ -17565,9 +17523,7 @@
 /area/f13/clinic)
 "gWl" = (
 /obj/effect/decal/cleanable/blood/tracks,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkdirtysolid"
-	},
+/turf/closed/indestructible/rock,
 /area/f13/tunnel)
 "gWo" = (
 /obj/structure/closet/cabinet,
@@ -20038,11 +19994,6 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
-"hPN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/flag/bos,
-/turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/brotherhood/surface)
 "hPO" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2"
@@ -21261,7 +21212,7 @@
 	},
 /obj/machinery/button{
 	pixel_x = -23;
-	id = "Radioguy3"
+	id = "Radioguy2"
 	},
 /turf/open/floor/plasteel/grimy,
 /area/f13/city)
@@ -21474,6 +21425,12 @@
 /obj/effect/turf_decal/weather/dirt,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "enclave_shutters";
+	name = "vehicle shutters";
+	pixel_y = 4
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
@@ -21728,15 +21685,6 @@
 /obj/structure/closet/fridge/standard,
 /turf/open/floor/wood/f13/oak,
 /area/f13/city)
-"izt" = (
-/obj/structure/ladder/unbreakable{
-	height = 2;
-	id = "enclave_entrance"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkrustysolid"
-	},
-/area/f13/enclave)
 "izv" = (
 /obj/structure/flora/grass/coyote/one,
 /obj/structure/flora/rock/pile/largejungle{
@@ -40830,7 +40778,6 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
 	},
-/obj/machinery/light/small/broken,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
 	},
@@ -41973,16 +41920,6 @@
 	icon_state = "desertsmooth1"
 	},
 /area/f13/wasteland)
-"qOg" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/mech_bay_recharge_port{
-	dir = 8;
-	on = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/brotherhood/surface)
 "qOn" = (
 /obj/structure/simple_door/metal/fence{
 	door_type = "fence_wood";
@@ -44066,10 +44003,6 @@
 "rJw" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/machinery/door/airlock/hatch{
-	name = "mysterious door";
-	req_one_access_txt = "134"
-	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
 	},
@@ -46301,16 +46234,6 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
-"sHU" = (
-/obj/machinery/door/airlock/hatch{
-	desc = "An airtight door, built to withstand a nuclear blast.";
-	max_integrity = 10000;
-	name = "Brotherhood of Steel";
-	req_access_txt = "265"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/brotherhood/surface)
 "sIb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/wreck/trash/autoshaft,
@@ -47070,17 +46993,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/village)
-"sWz" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/tunnel)
 "sWG" = (
 /obj/machinery/smartfridge/bottlerack/seedbin,
 /turf/open/floor/wood{
@@ -47481,10 +47393,6 @@
 "tgC" = (
 /obj/machinery/light{
 	dir = 1
-	},
-/obj/structure/ladder/unbreakable{
-	height = 2;
-	id = "enclave_entrance"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
@@ -48047,15 +47955,6 @@
 /obj/structure/barricade/wooden,
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"tqC" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/tunnel)
 "tqP" = (
 /obj/structure/rack,
 /obj/item/storage/bag/ore,
@@ -48831,17 +48730,6 @@
 	icon_state = "desertsmooth1"
 	},
 /area/f13/legion)
-"tHo" = (
-/obj/machinery/button/door{
-	id = "enclave_shutters";
-	name = "vehicle shutters";
-	pixel_y = 4
-	},
-/obj/structure/table/reinforced,
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/tunnel)
 "tHN" = (
 /obj/structure/fluff/railing/corner{
 	dir = 4
@@ -50976,16 +50864,6 @@
 	icon_state = "desertsmooth4"
 	},
 /area/f13/wasteland)
-"uAn" = (
-/obj/mecha/combat/phazon/buggy/dune/loaded,
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/tunnel)
 "uAp" = (
 /obj/structure/rack,
 /obj/item/crafting/abraxo,
@@ -53007,16 +52885,18 @@
 	},
 /area/f13/wasteland)
 "vrh" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/decoration/vent/rusty{
+	desc = "It's very old and rusty.";
+	name = "rusty grate";
+	pixel_x = 2;
+	pixel_y = -3
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
+/obj/machinery/shower{
+	dir = 8
 	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
-	icon_state = "darkdirtysolid"
-	},
-/area/f13/tunnel)
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/brotherhood/surface)
 "vrm" = (
 /obj/structure/closet/crate/trashcart,
 /obj/item/trash/candy,
@@ -54994,12 +54874,6 @@
 	icon_state = "desertsmooth1"
 	},
 /area/f13/wasteland)
-"wlp" = (
-/obj/mecha/combat/phazon/pickuptruck/bos/loaded{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
-/area/f13/brotherhood/surface)
 "wls" = (
 /obj/structure/table/wood/settler,
 /obj/item/paper,
@@ -57488,6 +57362,10 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
+/obj/machinery/door/airlock/hatch{
+	name = "mysterious door";
+	req_one_access_txt = "134"
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "xff" = (
@@ -58918,6 +58796,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/blood/tracks,
+/obj/machinery/light/small/broken,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
 	},
@@ -64318,11 +64197,11 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
-gcK
-gcK
-gcK
+ktB
+ktB
+ktB
+ktB
+ktB
 gcK
 gcK
 gcK
@@ -64578,9 +64457,9 @@ ktB
 ktB
 gcK
 gcK
-mnl
-mnl
 klJ
+oNa
+suf
 gcK
 gcK
 gcK
@@ -64836,11 +64715,11 @@ ahu
 gcK
 ohi
 iFJ
-mnl
+oNa
 eSE
 rJw
-mwp
-mwp
+suf
+suf
 cpK
 unI
 mQj
@@ -65086,7 +64965,7 @@ gcK
 gcK
 xae
 ahu
-izt
+uKj
 uKj
 iFO
 qgw
@@ -65350,8 +65229,8 @@ ahu
 gcK
 itN
 uni
-mnl
-tHo
+oNa
+suf
 gcK
 gcK
 uaf
@@ -65600,15 +65479,15 @@ gcK
 gcK
 xae
 ahu
-izt
+uKj
 uKj
 lqm
 ahu
 ktB
 eWm
 mnl
-mnl
-mnl
+oNa
+suf
 gcK
 gcK
 uCW
@@ -65862,11 +65741,11 @@ ahu
 ahu
 ahu
 ktB
-mnl
-mnl
-mnl
-mnl
 hCo
+mnl
+oNa
+suf
+suf
 uaf
 uCW
 cpK
@@ -66119,11 +65998,11 @@ ktB
 ktB
 ktB
 ktB
-cMv
-bXS
-mnl
-mnl
 hCo
+mnl
+oNa
+suf
+suf
 uaf
 cpK
 cpK
@@ -66375,11 +66254,11 @@ gcK
 gcK
 gcK
 gcK
-gcK
-sWz
-uAn
-mnl
-cXJ
+ktB
+oNa
+oNa
+oNa
+suf
 gcK
 uCW
 cpK
@@ -66633,10 +66512,10 @@ gcK
 gcK
 gcK
 gcK
-vrh
-tqC
-mnl
-mnl
+suf
+suf
+suf
+suf
 gcK
 gcK
 cpK
@@ -90931,8 +90810,8 @@ gcK
 fyf
 wOv
 wOv
-eeZ
-eeZ
+mPg
+mPg
 wOv
 gts
 kfB
@@ -91701,8 +91580,8 @@ gcK
 gcK
 wOv
 ooa
-cZH
-wlp
+mPg
+mPg
 mPg
 mPg
 dCV
@@ -91958,9 +91837,9 @@ gcK
 gcK
 wOv
 ooa
-qOg
-cIk
-dXw
+qRa
+mPg
+mPg
 mPg
 dCV
 gts
@@ -92475,7 +92354,7 @@ wOv
 ooa
 wOv
 wOv
-eeZ
+mPg
 wOv
 wOv
 wOv
@@ -93237,10 +93116,10 @@ fyf
 gbL
 wOv
 ooa
-fcY
-fcY
-fcY
 wHW
+fcY
+fry
+fry
 cBg
 fry
 ooa
@@ -93494,10 +93373,10 @@ fyf
 gcK
 wOv
 ooa
-fcY
-ooa
-ooa
-fWj
+fry
+ccF
+ccF
+ccF
 ccF
 uFs
 ooa
@@ -93751,10 +93630,10 @@ fyf
 gcK
 wOv
 ooa
-fcY
-ooa
-ooa
+fry
+ccF
 fWj
+ccF
 ccF
 wVB
 kwn
@@ -94008,14 +93887,14 @@ fyf
 gcK
 wOv
 ooa
-fcY
-ooa
-ooa
-fWj
+fry
+ccF
+ccF
+ccF
 ccF
 wVB
 wVB
-sHU
+wVB
 wVB
 uoG
 xNK
@@ -94265,9 +94144,9 @@ fyf
 gcK
 wOv
 ooa
-fcY
-ooa
-ooa
+fry
+ccF
+ccF
 fWj
 ccF
 wVB
@@ -94522,10 +94401,10 @@ gcK
 gcK
 wOv
 ooa
-fcY
-ooa
-ooa
-fWj
+fry
+ccF
+ccF
+ccF
 ccF
 uFs
 ooa
@@ -94779,9 +94658,9 @@ fCB
 gcK
 wOv
 ooa
-fcY
-fcY
-fcY
+fry
+vrh
+fry
 fry
 pSR
 fry
@@ -95049,7 +94928,7 @@ bvt
 bck
 wOv
 wOv
-hPN
+fry
 fry
 bck
 pAW
