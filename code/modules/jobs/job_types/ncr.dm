@@ -559,7 +559,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_type = EXP_TYPE_RANGER
 	total_positions = 1
 	spawn_positions = 1
-	description = "You answer directly to the LT, working either independently or in a team to complete your mission objectives however required, operating either alone, in a squad or with the NCR Army. Your primary mission is to improve general opinion of the Republic and to neutralize slavers and raiders operating in the area."
+	description = "You answer directly to the Captain, working either independently or in a team to complete your mission objectives however required, operating either alone, in a squad or with the NCR Army. Your primary mission is to improve general opinion of the Republic and to neutralize slavers and raiders operating in the area."
 	supervisors = "the NCRA Lieutenant, above and High Command"
 	exp_requirements = 1200
 
@@ -600,14 +600,14 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/vrclassic
 	name = "Sniper Veteran Ranger"
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/sniperranger
+	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_dinner = 1,
-		/obj/item/ammo_box/magazine/w308 = 2
+		/obj/item/ammo_box/magazine/amr = 2
 		)
 
 /datum/outfit/loadout/vrlite
-	name = "Rifler Veteran Ranger"
+	name = "Rifleman Veteran Ranger"
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_lunch = 1,
@@ -616,7 +616,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/vrshotgunner
 	name = "Veteran Ranger Shotgunner"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
 		/obj/item/ammo_box/shotgun/buck = 3
