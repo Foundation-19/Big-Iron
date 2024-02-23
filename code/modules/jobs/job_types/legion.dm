@@ -308,7 +308,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	head = /obj/item/clothing/head/helmet/f13/legion/heavy
 	suit_store = /obj/item/twohanded/sledgehammer/supersledge
 	backpack_contents = list(
-		/obj/item/restraints/legcuffs/bola/tactical = 1
+		/obj/item/restraints/legcuffs/bola/tactical = 1,
 		/obj/item/grenade/smokebomb = 1
 		)
 
@@ -329,7 +329,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/c4570 = 3,
 		/obj/item/attachments/scope = 1,
-		/obj/item/melee/onehanded/machete/spatha
+		/obj/item/melee/onehanded/machete/spatha,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		)
 
@@ -338,7 +338,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	head = /obj/item/clothing/head/helmet/f13/legion/heavy
 	suit_store = /obj/item/gun/ballistic/automatic/smg/cg45
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/cg45 = 2
+		/obj/item/ammo_box/magazine/cg45 = 2,
 		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
 		/obj/item/ammo_box/shotgun/buck = 2
 		)
@@ -424,7 +424,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/restraints/legcuffs/bola = 1,
 		/obj/item/ammo_box/a40mm = 2,
 		/obj/item/gun/ballistic/revolver/m29 = 1,
-		/obj/item/ammo_box/m44 = 3,
+		/obj/item/ammo_box/m44 = 3
 		)
 
 // ----------------- RECRUIT DECANUS ---------------------
@@ -799,7 +799,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
 		/obj/item/ammo_box/a357 = 1,
-		/obj/item/melee/onehanded/machete/gladius = 1
+		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2
 		)
 
@@ -893,14 +893,14 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/cowboy
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/a357 = 2,
-		/obj/item/grenade/homemade/firebomb = 2,
+		/obj/item/grenade/homemade/firebomb = 2
 		)
 
 /datum/outfit/loadout/primebrave
 	name = "Heart of the Bull"
 	suit_store = /obj/item/twohanded/fireaxe/bmprsword
 	backpack_contents = list(
-		/obj/item/storage/backpack/spearquiver = 1
+		/obj/item/storage/backpack/spearquiver = 1,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
 		/obj/item/ammo_box/a357 = 3,
 		/obj/item/restraints/legcuffs/bola = 1
