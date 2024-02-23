@@ -241,7 +241,7 @@
 	icon = 'icons/fallout/clothing/armored_heavy.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	armor = list("melee" = 60, "bullet" = 40, "laser" = 25, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 30, "acid" = 5)
-	slowdown = 0.5
+	slowdown = 0.2
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4) // Because shit armor
 
 /obj/item/clothing/suit/armor/f13/legion/frumentarius
