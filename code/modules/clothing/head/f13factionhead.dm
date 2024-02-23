@@ -402,10 +402,8 @@
 	icon = 'icons/fallout/clothing/hats.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	desc = "This helmet is decorated with the pelt of a nightstalker."
-	icon_state = "legion-vex"
-	item_state = "legion-vex"
-//	icon_state = "legion-vex-night" wheres the icons even
-//	item_state = "legion-vex-night"
+	icon_state = "legion-vex-night"
+	item_state = "legion-vex-night"
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/head/helmet/f13/legion/venator
@@ -1266,8 +1264,8 @@
 	desc = "A People's Liberation Army cap, worn by enlisted and non-commissioned officers."
 	icon = 'icons/fallout/clothing/hats.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
-	icon_state = "chinese_soldier"
-	item_state = "chinese_soldier"
+	icon_state = "chinese_cap"
+	item_state = "chinese_cap"
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/head/f13/chinese/officer

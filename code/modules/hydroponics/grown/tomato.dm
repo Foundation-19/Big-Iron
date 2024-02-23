@@ -24,8 +24,8 @@
 	filling_color = "#FF6347"
 	bitesize_mod = 2
 	foodtype = FRUIT
-	grind_results = list(/datum/reagent/consumable/ketchup = 0)
-	juice_results = list(/datum/reagent/consumable/tomatojuice = 0)
+	grind_results = list(/datum/reagent/consumable/ketchup = 0.7)
+	juice_results = list(/datum/reagent/consumable/tomatojuice = 1)
 	distill_reagent = /datum/reagent/consumable/enzyme
 
 // Blood Tomato
@@ -48,7 +48,7 @@
 	splat_type = /obj/effect/gibspawner/generic
 	filling_color = "#FF0000"
 	foodtype = FRUIT | GROSS
-	grind_results = list(/datum/reagent/consumable/ketchup = 0, /datum/reagent/blood/tomato = 0)
+	grind_results = list(/datum/reagent/consumable/ketchup = 0.5, /datum/reagent/blood/tomato = 0.5)
 	distill_reagent = /datum/reagent/consumable/ethanol/bloody_mary
 
 // Blue Tomato
