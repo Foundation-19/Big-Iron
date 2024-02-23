@@ -311,8 +311,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit_store = /obj/item/twohanded/sledgehammer/supersledge
 	neck = /obj/item/storage/belt/sabre/heavy
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/smg14 = 1,
-		/obj/item/ammo_box/magazine/smg14 = 4,
+		/obj/item/gun/ballistic/automatic/smg/cg45 = 1,
+		/obj/item/ammo_box/magazine/cg45 = 4,
 		/obj/item/grenade/smokebomb = 1
 		)
 
@@ -593,8 +593,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Desert Fox"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/smg14 = 1,
-		/obj/item/ammo_box/magazine/smg14 = 4,
+		/obj/item/gun/ballistic/automatic/smg/cg45 = 1,
+		/obj/item/ammo_box/magazine/cg45 = 4,
 		/obj/item/melee/onehanded/machete/spatha = 1
 		)
 
