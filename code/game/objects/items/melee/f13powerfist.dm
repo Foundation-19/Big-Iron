@@ -2,7 +2,7 @@
 // POWER FISTS //
 /////////////////		-Uses power (gas currently) for knockback. Heavy AP, specialized for attacking heavy armor
 
-// Power Fist			Throws targets. Max damage 44. Full AP.
+// Power Fist			Throws targets. Max damage 44. Half AP.
 /obj/item/melee/unarmed/powerfist
 	name = "power fist"
 	desc = "A metal gauntlet with a piston-powered ram on top for that extra 'oomph' in your punch."
@@ -13,10 +13,10 @@
 	hitsound = 'sound/weapons/resonator_blast.ogg'
 	flags_1 = CONDUCT_1
 	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 35
+	force = 25
 	throwforce = 10
 	throw_range = 3
-	armour_penetration = 1
+	armour_penetration = 0.5
 	w_class = WEIGHT_CLASS_NORMAL
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
 	var/throw_distance = 1 //multipled by power to give actual throw dist
@@ -56,7 +56,7 @@
 	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
 	icon_state = "goliath"
 	item_state = "goliath"
-	force = 35
+	force = 25
 	throw_distance = 3
 
 
