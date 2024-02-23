@@ -443,6 +443,7 @@ Raider
 	uniform = /obj/item/clothing/under/f13/densuit
 	head = /obj/item/clothing/head/fedora
 	gloves = /obj/item/clothing/gloves/color/white
+	shoes = /obj/item/clothing/shoes/laceup
 	id = /obj/item/card/id/denid
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
