@@ -526,9 +526,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	title = "Legion Vexillarius"
 	flag = F13VEXILLARIUS
 	display_order = JOB_DISPLAY_ORDER_VEXILLARIUS
-	total_positions = 2
-	spawn_positions = 2
-	description = "You are actually a bit special in the force, since combat ain't your primary roles. You, are in charge of hosting tournament under Kebab, slave trade, musician, and bodyguarding, when a higher up is here... Oh, you might not be a combat role, but do feel free to show that you ain't a Auxilia, and kick some ass."
+	total_positions = 1
+	spawn_positions = 1
+	description = "Carry the battle of the Legion into battle, and kick some serious ass with your bare hands in the name of Caesar."
 	supervisors = "the Veteran Decanus and Centurion"
 	exp_requirements = 720
 
@@ -586,7 +586,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/melee/unarmed/tigerclaw = 1,
 		/obj/item/melee/powered/ripper = 1,
-		/obj/item/book/granter/martial/berserker = 1
+		/obj/item/book/granter/martial/wrestling = 1
 		)
 
 /datum/outfit/loadout/vexfox
