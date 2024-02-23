@@ -449,7 +449,7 @@ Raider
 		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
 		/obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
-		/obj/item/ammo_box/magazine/greasegun = 1
+		/obj/item/ammo_box/magazine/greasegun = 1,
 		/obj/item/radio/headset = 1,
 		/obj/item/clothing/mask/bandana/durathread = 1
 		)
