@@ -62,7 +62,7 @@ GLOBAL_LIST_INIT(command_positions, list(
 
 	"Chief of Police",
 
-	"Enclave Navy Captain",
+	"Enclave Captain",
 	"Enclave Lieutenant",
 
 	"Merchant",
@@ -119,10 +119,10 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Detective",
 "Shop Assistant",
 
-"Enclave Navy Captain",
+"Enclave Captain",
 "Enclave Lieutenant",
 "Enclave Gunnery Sergeant",
-"Enclave Navy Pilot",
+"Enclave Pilot",
 "Enclave Sergeant",
 "Enclave Armored Infantry",
 "Enclave Specialist",
@@ -187,7 +187,7 @@ GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
 ))
 
 GLOBAL_LIST_INIT(ncr_positions, list(
-	//"NCR Captain",
+	"NCR Captain",
 	"NCR Lieutenant",
 	"NCR Staff Sergeant",
 	"NCR Veteran Ranger",
@@ -229,10 +229,10 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 
 
 GLOBAL_LIST_INIT(enclave_positions, list(
-	"Enclave Navy Captain",
+	"Enclave Captain",
 	"Enclave Lieutenant",
 	"Enclave Gunnery Sergeant",
-	"Enclave Navy Pilot",
+	"Enclave Pilot",
 	"Enclave Sergeant",
 	"Enclave Armored Infantry",
 	"Enclave Specialist",
