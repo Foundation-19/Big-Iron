@@ -307,7 +307,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Mark of The Bull"
 	head = /obj/item/clothing/head/helmet/f13/legion/heavy
 	suit_store = /obj/item/twohanded/sledgehammer/supersledge
-	neck = /obj/item/storage/belt/sabre/heavy
 	backpack_contents = list(
 		/obj/item/restraints/legcuffs/bola/tactical = 1
 		/obj/item/grenade/smokebomb = 1
