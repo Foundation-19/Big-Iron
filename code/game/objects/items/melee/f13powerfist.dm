@@ -13,10 +13,10 @@
 	hitsound = 'sound/weapons/resonator_blast.ogg'
 	flags_1 = CONDUCT_1
 	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 22
+	force = 35
 	throwforce = 10
 	throw_range = 3
-	armour_penetration = 0.5
+	armour_penetration = 1
 	w_class = WEIGHT_CLASS_NORMAL
 	var/transfer_prints = TRUE //prevents runtimes with forensics when held in glove slot
 	var/throw_distance = 1 //multipled by power to give actual throw dist
@@ -56,7 +56,7 @@
 	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
 	icon_state = "goliath"
 	item_state = "goliath"
-	force = 25
+	force = 35
 	throw_distance = 3
 
 
