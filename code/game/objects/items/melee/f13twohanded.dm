@@ -431,6 +431,25 @@
 		return
 	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
 
+// Unique Golf Club		Keywords: Damage 25/435, Damage bonus Stamina Knockback
+/obj/item/twohanded/baseball/golfclub/ncr
+	name = "california 9 iron"
+	desc = "Supposedly this very well-made golf club was hand-delivered to an NCR Lieutenant by Command for their service in the 3rd Motorized division. You aren't sure if it was a Senator or a Brahmin Baron. But hey, a gift is a gift."
+	icon_state = "golfclub"
+	icon_prefix = "golfclub"
+	attack_verb = list("taxed", "bashed", "bribed", "hit", "whacked")
+	color ="#5d815d"
+
+/obj/item/twohanded/baseball/golfclub/ncr/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 35, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/knockback, 1, FALSE, TRUE)
+
+/obj/item/twohanded/baseball/golfclub/ncr/attack(mob/living/M, mob/living/user)
+	. = ..()
+	if(!istype(M))
+		return
+	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
 
 
 ///////////////////
