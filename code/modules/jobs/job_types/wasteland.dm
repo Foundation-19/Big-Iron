@@ -480,7 +480,9 @@ Raider
 	/datum/outfit/loadout/warrior,
 	/datum/outfit/loadout/ncrcitizen,
 	/datum/outfit/loadout/legioncivilian,
-	/datum/outfit/loadout/wastelander_desert_ranger
+	/datum/outfit/loadout/wastelander_desert_ranger,
+	/datum/outfit/loadout/brotherhoodremnant,
+	/datum/outfit/loadout/enclaveremnant
 	)
 
 /datum/outfit/job/wasteland/f13wastelander
@@ -650,6 +652,35 @@ Raider
 		/obj/item/radio = 1
 		)
 
+/datum/outfit/loadout/brotherhoodremnant
+	name = "Brotherhood Remnant"
+	uniform = /obj/item/clothing/under/syndicate/brotherhood
+	shoes = /obj/item/clothing/shoes/jackboots
+	suit = /obj/item/clothing/suit/armor/f13/exile/bosexile
+	head = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
+	gloves = /obj/item/clothing/gloves/f13/military
+	backpack_contents = list(
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_one = 1,
+		/obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_two = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2
+		)
+
+/datum/outfit/loadout/enclaveremnant
+	name = "Enclave Remnant"
+	mask = /obj/item/clothing/mask/gas/enclave
+	neck = /obj/item/storage/belt/holster/legholster
+	uniform = /obj/item/clothing/under/f13/enclave/peacekeeper
+	gloves = /obj/item/clothing/gloves/f13/military
+	shoes = /obj/item/clothing/shoes/jackboots
+	suit = /obj/item/clothing/suit/armored/medium/combat/duster
+	head = /obj/item/clothing/head/helmet/armyhelmet
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
+		/obj/item/ammo_box/magazine/m45 = 3,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2
+		)
 
 //New tribal role. Replaces old tribe stuff.
 /datum/job/wasteland/f13tribal
