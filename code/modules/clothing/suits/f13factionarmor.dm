@@ -227,6 +227,7 @@
 	icon_state = "armor_prime"
 	item_state = "armor_prime"
 	armor = list("melee" = 50, "bullet" = 30, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/f13/legion/prime/decan
 	name = "legion prime decanus armor"
@@ -241,7 +242,7 @@
 	icon = 'icons/fallout/clothing/armored_heavy.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
 	armor = list("melee" = 60, "bullet" = 40, "laser" = 25, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 30, "acid" = 5)
-	slowdown = 0.2
+	slowdown = 0.15
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4) // Because shit armor
 
 /obj/item/clothing/suit/armor/f13/legion/frumentarius
@@ -304,7 +305,7 @@
 	icon_state = "armor_vexillarius"
 	item_state = "armor_vexillarius"
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
-	slowdown = 0.12
+	slowdown = 0.08
 
 /obj/item/clothing/suit/armor/f13/legion/venator
 	name = "legion speculator armor"
