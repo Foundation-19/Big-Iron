@@ -221,7 +221,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit_store = /obj/item/gun/ballistic/automatic/m1919
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m762 = 3,
-		/obj/item/melee/unarmed/powerfist/goliath = 1,
 		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2
 		)
@@ -230,10 +229,10 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Ranger-Hunter Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
 	head = /obj/item/clothing/head/helmet/f13/legion/rangercent
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/snipervenator
+	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/hunting = 1,
-		/obj/item/ammo_box/magazine/w308 = 2,
+		/obj/item/ammo_box/magazine/amr = 2,
 		/obj/item/ammo_box/c4570 = 3,
 		/obj/item/melee/onehanded/machete/spatha = 1
 		)
@@ -242,12 +241,11 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Warlord Centurion"
 	suit = /obj/item/clothing/suit/armored/heavy/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 2,
-		/obj/item/ammo_box/shotgun/slug = 1,
-		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/melee/unarmed/powerfist/goliath = 1,
+		/obj/item/book/granter/martial/wrestling = 1
 		)
 
 
@@ -311,19 +309,17 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit_store = /obj/item/twohanded/sledgehammer/supersledge
 	neck = /obj/item/storage/belt/sabre/heavy
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/cg45 = 1,
-		/obj/item/ammo_box/magazine/cg45 = 4,
+		/obj/item/restraints/legcuffs/bola/tactical = 1
 		/obj/item/grenade/smokebomb = 1
 		)
 
 /datum/outfit/loadout/decvetwolf
 	name = "Mark of the Wolf"
 	head = /obj/item/clothing/head/helmet/f13/legion/heavy
-	suit_store = /obj/item/twohanded/thermic_lance
+	suit_store = /obj/item/melee/powered/ripper
 	neck = /obj/item/storage/belt/sabre/heavy
 	backpack_contents = list(
-		/obj/item/melee/onehanded/machete/spatha = 1,
-		/obj/item/gun/ballistic/revolver/revolver45 = 1,
+		/obj/item/grenade/smokebomb = 1,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		)
 
@@ -332,20 +328,20 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	head = /obj/item/clothing/head/helmet/f13/legion/heavy
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	backpack_contents = list(
-		/obj/item/melee/powered/ripper = 1,
 		/obj/item/ammo_box/tube/c4570 = 3,
 		/obj/item/attachments/scope = 1,
+		/obj/item/melee/onehanded/machete/spatha
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		)
 
 /datum/outfit/loadout/decvetbrave
 	name = "Mark of the Brave"
 	head = /obj/item/clothing/head/helmet/f13/legion/heavy
-	suit_store = /obj/item/gun/ballistic/shotgun/trench
+	suit_store = /obj/item/gun/ballistic/automatic/smg/cg45
 	backpack_contents = list(
+		/obj/item/ammo_box/magazine/cg45 = 2
 		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
-		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/gun/ballistic/revolver/m29 = 1,
+		/obj/item/ammo_box/shotgun/buck = 2
 		)
 
 // ----------------- PRIME DECANUS ---------------------
@@ -406,21 +402,17 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 /datum/outfit/loadout/decprimfront
-	name = "Warmonger Light Prime Decanus"
+	name = "Frontline Prime Decanus"
 	suit = /obj/item/clothing/suit/armor/f13/legion/prime/decan
 	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
 	suit_store = /obj/item/twohanded/spear/lance
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever = 1,
 		/obj/item/gun/ballistic/revolver/m29 = 1,
 		/obj/item/ammo_box/m44 = 3,
 		/obj/item/restraints/legcuffs/bola = 1,
-		/obj/item/melee/onehanded/knife/throwing = 2,
-		/obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever = 1,
-		/obj/item/melee/onehanded/machete/spatha = 1,
-		/obj/item/gun/ballistic/revolver/m29 = 1,
-		/obj/item/ammo_box/m44 = 2,
-		/obj/item/restraints/legcuffs/bola = 2
+		/obj/item/melee/onehanded/machete/spatha = 1
 		)
 
 /datum/outfit/loadout/decprimheavy
@@ -429,7 +421,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
 	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher
 	backpack_contents = list(
-		/obj/item/shield/riot/legion = 1,
 		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
 		/obj/item/restraints/legcuffs/bola = 1,
 		/obj/item/ammo_box/a40mm = 2,
@@ -559,6 +550,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 
 /datum/outfit/job/CaesarsLegion/Legionary/f13vexillarius
 	name = "Vexillarius"
@@ -663,20 +655,20 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 /datum/outfit/loadout/sniper
-	name = "Sniper Explorer"
+	name = "Sniper"
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44 = 4,
-		/obj/item/attachments/scope = 1
+		/obj/item/attachments/scope = 1,
+		/obj/item/melee/onehanded/machete/gladius = 1
 		)
 
 /datum/outfit/loadout/skirmisher
-	name = "Skirmishing Explorer"
+	name = "Skirmisher"
 	suit_store = /obj/item/gun/ballistic/automatic/smg/cg45
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/cg45 = 2,
-		/obj/item/book/granter/trait/explosives = 1,
-		/obj/item/grenade/plastic/c4 = 1,
+		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/grenade/smokebomb = 2
 		)
 
@@ -793,9 +785,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 /datum/outfit/loadout/vetaxe
-	name = "Enforcer"
+	name = "Frontline"
 	suit_store = /obj/item/twohanded/legionaxe
-	neck = /obj/item/storage/belt/sabre/heavy
 	backpack_contents = list(
 		/obj/item/melee/unarmed/tigerclaw = 1,
 		/obj/item/restraints/legcuffs/bola = 1,
@@ -806,10 +797,10 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Flanker"
 	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
 	backpack_contents = list(
-		/obj/item/twohanded/spear/lance = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
 		/obj/item/ammo_box/a357 = 1,
+		/obj/item/melee/onehanded/machete/gladius = 1
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2
 		)
 
@@ -817,11 +808,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Berserker"
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/slug = 1,
 		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/twohanded/spear/lance = 1,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/restraints/legcuffs/bola = 2
+		/obj/item/restraints/legcuffs/bola = 1
 		)
 
 /datum/outfit/loadout/vetrifle
@@ -831,7 +820,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/ammo_box/tube/m44/ = 3,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
 		/obj/item/ammo_box/a357 = 1,
-		/obj/item/melee/onehanded/knife/throwing = 2,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 1,
 		/obj/item/restraints/legcuffs/beartrap = 1
 		)
@@ -897,11 +885,12 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
 		/obj/item/ammo_box/a357 = 3,
-		/obj/item/restraints/legcuffs/bola = 2,
+		/obj/item/restraints/legcuffs/bola = 1,
+		/obj/item/melee/onehanded/machete/gladius = 1
 		)
 
 /datum/outfit/loadout/primerifle
-	name = "Gunner"
+	name = "Sharpshooter"
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/cowboy
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/a357 = 2,
@@ -909,19 +898,23 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 /datum/outfit/loadout/primebrave
-	name = "Skirmish"
-	suit_store = /obj/item/gun/ballistic/shotgun/trench
+	name = "Heart of the Bull"
+	suit_store = /obj/item/twohanded/fireaxe/bmprsword
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/buck = 1,
-		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/storage/backpack/spearquiver = 1,
+		/obj/item/storage/backpack/spearquiver = 1
+		/obj/item/gun/ballistic/revolver/colt357 = 1,
+		/obj/item/ammo_box/a357 = 3,
+		/obj/item/restraints/legcuffs/bola = 1
 		)
 
 /datum/outfit/loadout/primepila
-	name = "Pilum"
+	name = "Spearman"
 	suit_store = /obj/item/twohanded/spear/lance
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/healpoultice = 2
+		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
+		/obj/item/gun/ballistic/revolver/colt357 = 1,
+		/obj/item/ammo_box/a357 = 3,
+		/obj/item/restraints/legcuffs/bola = 1
 		)
 
 /datum/outfit/loadout/primecrossbow
@@ -929,6 +922,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit_store = /obj/item/gun/ballistic/bow/xbow
 	backpack_contents = list(
 		/obj/item/storage/belt/tribe_quiver = 1,
+		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		/obj/item/book/granter/trait/bowman = 1
@@ -992,8 +986,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/storage/backpack/spearquiver = 1,
 		/obj/item/restraints/legcuffs/bola = 1,
-		/obj/item/book/granter/trait/trekking = 1,
-		/obj/item/reagent_containers/pill/patch/healingpowder = 3,
+		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
 		/obj/item/warpaint_bowl = 1
 		)
 
@@ -1002,22 +995,18 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	suit_store = /obj/item/gun/ballistic/bow/sturdy
 	backpack_contents = list(
 		/obj/item/storage/belt/tribe_quiver = 1,
-		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/warpaint_bowl = 1,
 		/obj/item/book/granter/trait/bowman = 1
 		)
 
 /datum/outfit/loadout/recruitlegion
-	name = "Born in the East"
-	suit_store = /obj/item/gun/ballistic/revolver/caravan_shotgun
+	name = "Straight Outta Drymouth"
+	suit_store = /obj/item/melee/onehanded/machete
 	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/slug = 2,
-		/obj/item/reagent_containers/food/drinks/bottle/molotov/filled = 2,
-		/obj/item/melee/onehanded/machete = 1,
 		/obj/item/storage/backpack/spearquiver = 1,
 		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
-		/obj/item/reagent_containers/pill/patch/healpoultice=1,
-		/obj/item/reagent_containers/pill/patch/bitterdrink = 1
+		/obj/item/gun/ballistic/revolver/colt357 = 1,
+		/obj/item/ammo_box/a357 = 3
 		)
 
 //......................//////////////////////////////////................................................
