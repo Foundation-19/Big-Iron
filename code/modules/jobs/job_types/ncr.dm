@@ -740,7 +740,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Shock Heavy Trooper"
 	backpack_contents = list(
 		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 1,
-		/obj/item/storage/box/lethalslugs = 2,
+		/obj/item/ammo_box/shotgun/slug = 2,
 		/obj/item/storage/box/ration/menu_four = 1
 		)
 
