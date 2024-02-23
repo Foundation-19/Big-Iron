@@ -45,14 +45,13 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmetmk2)
 
 
-///////////////////////////
-/// Major - Admin - TBD ///
-///////////////////////////
+///////////////////////
+/// Captain - Admin ///
+///////////////////////
 
-//Captain
 /datum/job/enclave/enclavecpt
 	title = "Enclave Captain"
-	description = "You are the active Captain & defacto leader of the Enclave forces in the region. You answer only to the Major & Enclave Command."
+	description = "You are a Captain in the real United States military, the Enclave. You answer only to Enclave High Command, and dictate what all men under you will do."
 	flag = F13USCPT
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_US
 	total_positions = 0
@@ -105,8 +104,8 @@
 	total_positions = 1
 	spawn_positions = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_ENCLAVE3, ACCESS_PUBLIC)
-	description = "You are a Lieutenant of the Enclave, subservient only to the Captain & Major."
-	supervisors = "The Captain & Major."
+	description = "Multiple weeks ago, while your bunker had some issues, you made contact with the USS Eminent Domaine. They took you in, you and your mens. You are now the second in command of this enclave cell."
+	supervisors = "The Captain, and command."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
 	exp_requirements = 1000
 
@@ -141,16 +140,16 @@
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
 
-//Pilot
+// NAVY Pilot
 
 /datum/job/enclave/enclavepilot
-	title = "Enclave Pilot"
+	title = "Enclave Navy Pilot"
 	flag = F13USPILOT
 	display_order = JOB_DISPLAY_ORDER_F13USPILOT
-	total_positions = 1
-	spawn_positions = 1
-	description = "As a Pilot in the Enclave, your primary duty is the operation of vertibirds. You will answer only to Officers of the United States."
-	supervisors = "The Captain, Lieutenant, and Major."
+	total_positions = 3
+	spawn_positions = 3
+	description = "Seeing new face arround the ship sure is refreshing, but you got a job to do. You are a Enclave pilot, and have been on the USS Eminant Domaine for a long time, probably even born on it. You support the troops on the ground, and to recon mission. Carefull, they skies are disputed here. WARNING : You are normaly from the SHIP. But you are down to the bunker to help."
+	supervisors = "The Captain."
 	outfit = /datum/outfit/job/enclave/enclavepilot
 	exp_requirements = 600
 
