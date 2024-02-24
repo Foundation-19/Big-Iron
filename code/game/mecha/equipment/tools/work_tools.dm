@@ -479,3 +479,57 @@
 	//NC.mergeConnectedNetworksOnTurf()
 	last_piece = NC
 	return 1
+
+/obj/item/mecha_parts/mecha_equipment/trunk
+	name = "Modular Trunk"
+	desc = "Equipment made to hold and transport big ammounts of cargo."
+	icon_state = "car_trunk"
+	equip_cooldown = 15
+	energy_drain = 0
+	harmful = FALSE
+	mech_flags = EXOSUIT_MODULE_PHAZON
+	var/component_type = /datum/component/storage/concrete/trunk
+	var/in_use = FALSE
+	w_class = WEIGHT_CLASS_GIGANTIC
+	resistance_flags = NONE
+	max_integrity = 1000
+	var/datum/component/storage/concrete/trunk/storagespace
+
+/obj/item/mecha_parts/mecha_equipment/trunk/get_dumping_location(/obj/item/mecha_parts/mecha_equipment/trunk/source,mob/user)
+	return src
+
+/obj/item/mecha_parts/mecha_equipment/trunk/Initialize()
+	. = ..()
+	PopulateContents()
+
+/obj/item/mecha_parts/mecha_equipment/trunk/ComponentInitialize()
+	AddComponent(component_type)
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	//STR.storage_flags = STORAGE_FLAGS_VOLUME_DEFAULT
+	STR.max_combined_w_class = 2100
+	STR.max_w_class = WEIGHT_CLASS_GIGANTIC
+	STR.max_items = 2100
+	storagespace = STR
+
+
+/obj/item/mecha_parts/mecha_equipment/trunk/AllowDrop()
+	return !QDELETED(src)
+
+/obj/item/mecha_parts/mecha_equipment/trunk/contents_explosion(severity, target)
+	var/in_storage = istype(loc, /obj/item/storage)? (max(0, severity - 1)) : (severity)
+	for(var/atom/A in contents)
+		A.ex_act(in_storage, target)
+		CHECK_TICK
+
+//Cyberboss says: "USE THIS TO FILL IT, NOT INITIALIZE OR NEW"
+
+/obj/item/mecha_parts/mecha_equipment/trunk/proc/PopulateContents()
+
+/obj/item/mecha_parts/mecha_equipment/trunk/attach()
+	. = ..()
+	storagespace.RegisterSignal(chassis, COMSIG_MOUSEDROPPED_ONTO, /datum/component/storage/concrete/trunk.proc/mousedrop_onto)
+
+/obj/item/mecha_parts/mecha_equipment/trunk/detach()
+		storagespace.UnregisterSignal(chassis, COMSIG_MOUSEDROPPED_ONTO)
+		. = ..()
+
