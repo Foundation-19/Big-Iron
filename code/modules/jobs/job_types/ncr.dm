@@ -945,7 +945,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	loadout_options = list(
 		/datum/outfit/loadout/corporalpathfinder,			 // Service Rifle
 		/datum/outfit/loadout/corporalcqc,					 // Hunting Shotgun
-		/datum/outfit/loadout/corporaldesignatedmarksman	 // Hunting Rifle + Scope
+		/datum/outfit/loadout/corporaldesignatedmarksman,	 // Hunting Rifle + Scope
 		/datum/outfit/loadout/corporalraider				 // Melee Monkey
 		)
 
