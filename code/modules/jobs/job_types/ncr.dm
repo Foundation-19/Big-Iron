@@ -946,6 +946,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/datum/outfit/loadout/corporalpathfinder,			 // Service Rifle
 		/datum/outfit/loadout/corporalcqc,					 // Hunting Shotgun
 		/datum/outfit/loadout/corporaldesignatedmarksman	 // Hunting Rifle + Scope
+		/datum/outfit/loadout/corporalraider
 		)
 
 /datum/outfit/job/ncr/f13corporal
@@ -991,7 +992,15 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/box/ration/menu_four = 1
 		)
 
-
+/datum/outfit/loadout/corporalraider
+	name = "Prince of the Trenches"
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m45 = 2,
+		/obj/item/shovel/trench = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/storage/box/ration/menu_seven = 1
+		)
 
 // TROOPER
 
