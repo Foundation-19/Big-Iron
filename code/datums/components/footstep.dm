@@ -85,27 +85,31 @@
 	return T
 
 /datum/component/footstep/proc/play_simplestep()
-	var/turf/open/T = prepare_step()
-	if(!T)
-		return
-	if(isfile(footstep_sounds) || istext(footstep_sounds))
-		playsound(T, footstep_sounds, volume)
-		return
-	var/turf_footstep
-	switch(footstep_type)
-		if(FOOTSTEP_MOB_CLAW)
-			turf_footstep = T.clawfootstep
-		if(FOOTSTEP_MOB_GALLOP)
-			turf_footstep = T.gallopfootstep
-		if(FOOTSTEP_MOB_BAREFOOT)
-			turf_footstep = T.barefootstep
-		if(FOOTSTEP_MOB_HEAVY)
-			turf_footstep = T.heavyfootstep
-		if(FOOTSTEP_MOB_SHOE)
-			turf_footstep = T.footstep
-	if(!turf_footstep)
-		return
-	playsound(T, pick(footstep_sounds[turf_footstep][1]), footstep_sounds[turf_footstep][2] * volume, TRUE, footstep_sounds[turf_footstep][3] + e_range)
+  var/turf/open/T = prepare_step()
+  if(!T)
+    return
+
+  var/sound_to_play
+  switch(footstep_type)
+    if(FOOTSTEP_MOB_CLAW)
+      sound_to_play = T.clawfootstep
+    if(FOOTSTEP_MOB_GALLOP)  
+      sound_to_play = T.gallopfootstep
+    if(FOOTSTEP_MOB_BAREFOOT)
+      sound_to_play = T.barefootstep
+    if(FOOTSTEP_MOB_HEAVY)
+      sound_to_play = T.heavyfootstep 
+    if(FOOTSTEP_MOB_SHOE)
+      sound_to_play = T.footstep
+
+  if(!sound_to_play)
+    return
+    
+  var/sound_file = pick(sound_to_play[1])
+  var/sound_volume = sound_to_play[2] * volume
+  var/sound_vary = sound_to_play[3] + e_range
+
+  playsound(T, sound_file, sound_volume, TRUE, sound_vary)
 
 /datum/component/footstep/proc/play_humanstep()
 	var/turf/open/T = prepare_step()
