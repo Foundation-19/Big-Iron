@@ -103,8 +103,10 @@
 	display_order = JOB_DISPLAY_ORDER_F13USLT
 	total_positions = 1
 	spawn_positions = 1
+	head_announce = list("Security")
+	req_admin_notify = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_ENCLAVE3, ACCESS_PUBLIC)
-	description = "Multiple weeks ago, while your bunker had some issues, you made contact with the USS Eminent Domaine. They took you in, you and your mens. You are now the second in command of this enclave cell."
+	description = "You are a Lieutenant of the Enclave, subservient only to the Captain & Major."
 	supervisors = "The Captain, and command."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
 	exp_requirements = 1000
@@ -140,15 +142,15 @@
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
 
-// NAVY Pilot
+//Pilot
 
 /datum/job/enclave/enclavepilot
-	title = "Enclave Navy Pilot"
+	title = "Enclave Pilot"
 	flag = F13USPILOT
 	display_order = JOB_DISPLAY_ORDER_F13USPILOT
 	total_positions = 3
 	spawn_positions = 3
-	description = "Seeing new face arround the ship sure is refreshing, but you got a job to do. You are a Enclave pilot, and have been on the USS Eminant Domaine for a long time, probably even born on it. You support the troops on the ground, and to recon mission. Carefull, they skies are disputed here. WARNING : You are normaly from the SHIP. But you are down to the bunker to help."
+	description = "As a Pilot in the Enclave, your primary duty is the operation of vertibirds. You will answer only to Officers of the United States."
 	supervisors = "The Captain."
 	outfit = /datum/outfit/job/enclave/enclavepilot
 	exp_requirements = 600
@@ -190,7 +192,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_PUBLIC)
-	description = "Third in command after Lieutenant, your role is to direct their orders directly to the sergeants and regular troops."
+	description = "Second in command after the Lieutenant, your role is to relay their orders directly to the sergeants, privates, and so forth."
 	supervisors = "The Captain and the Lieutenant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13gysergeant
 	exp_requirements = 600
@@ -299,7 +301,7 @@
 	display_order = JOB_DISPLAY_ORDER_F13USSGT
 	total_positions = 2
 	spawn_positions = 2
-	description = "Entrusted with the command of the squads assigned to the USS Eminant Domaine, your job is to assist the Lieutenant alongside the scientists."
+	description = "Entrusted with the command of the squads assigned to the local Enclave forces, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Captain, the Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
 	exp_requirements = 600
@@ -409,7 +411,7 @@
 	display_order = JOB_DISPLAY_ORDER_F13USPRIVATE
 	total_positions = 5
 	spawn_positions = 5
-	description = "Either you are one of the soldiers that left the bunker, or one of the original crew on board this ship : You are an operative for the remnants of the Enclave. Obey your Captain and Lieutenant. He sets the Enclave's policies. WARNING : You are still in bunker. if you are from the ship, you are merly here to help."
+	description = "You are a soldier with the rank of Private in the real United States military, the Enclave. You will follow the orders of your superior officers to the letter, God bless America. God bless the Enclave."
 	supervisors = "The Captain, Lieutenant and the Sergeants"
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
 
@@ -559,7 +561,7 @@
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_PUBLIC)
 	total_positions = 2
 	spawn_positions = 2
-	description = "Before you arrived, the USS Eminant Domaine didn't have any science crew, only a medbay. You and your Fellow scientist brought the equipement from the bunker here. You're responsible for the maintenance of the ship, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant. WARNING : The bunker is still being moved to the ship. Act as normal."
+	description = "You're responsible for the maintenance of the bunker, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant."
 	supervisors = "Enclave Research and Development Division."
 	outfit = /datum/outfit/job/enclave/noncombat/enclavesci
 	exp_requirements = 300
@@ -604,12 +606,12 @@
 
 //Bunker Duty
 /datum/job/enclave/f13BDUTY
-	title = "Enclave Ship Duty"
+	title = "Enclave Duty"
 	flag = F13USBDUTY
 	display_order = JOB_DISPLAY_ORDER_F13USPRIVATE
 	total_positions = 5
 	spawn_positions = 5
-	description = "You were assigned to ship duty this week, clean up, cook up, preach up or chem up your fellow Americans and remember don't join any raids or battles from your fellow Americans, after all it's none of your concern this week is it. "
+	description = "You were assigned to bunker duty this week, clean up, cook up, preach up or chem up your fellow Americans and remember don't join any raids or battles from your fellow Americans, after all it's none of your concern this week."
 	enforces = "You are not permited to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface."
 	supervisors = "Everyone else."
 	outfit = /datum/outfit/job/enclave/noncombat/f13BDUTY
