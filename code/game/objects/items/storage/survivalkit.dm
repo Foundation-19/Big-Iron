@@ -101,7 +101,7 @@
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/stack/medical/suture(src)
 	new /obj/item/stack/medical/ointment(src)
-	new /obj/item/tank/internals/emergency_oxygen(src)
+	new /obj/item/flashlight/flare(src)
 
 /obj/item/storage/survivalkit_aid_adv
 	name = "advanced-individual first aid kit"
