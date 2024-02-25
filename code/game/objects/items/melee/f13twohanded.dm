@@ -639,7 +639,7 @@
 
 /obj/item/twohanded/sledgehammer/rockethammer/courtmartial/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
-	if(!proximity || !wielded || IS_STAMCRIT(user))
+	if(!proximity || !wielded || IS_STAMCRIT(user) || QDELETED(A))
 		return
 	if(istype(A, /obj/structure))
 		var/obj/structure/W = A
