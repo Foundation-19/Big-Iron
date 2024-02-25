@@ -2635,6 +2635,11 @@
 	icon_state = "housewood2"
 	},
 /area/f13/building)
+"aZm" = (
+/obj/mecha/combat/phazon/pickuptruck/bos/armed/loaded,
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/brotherhood/surface)
 "aZr" = (
 /obj/structure/flora/tree/wasteland/dark{
 	pixel_x = -7
@@ -6771,6 +6776,15 @@
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/plasteel/grimy,
 /area/f13/brotherhood/surface)
+"cHo" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/tunnel)
 "cHq" = (
 /obj/structure/simple_door/metal/fence,
 /turf/open/indestructible/ground/outside/dirt,
@@ -12885,18 +12899,14 @@
 	},
 /area/f13/wasteland)
 "fcY" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/decoration/vent/rusty{
-	desc = "It's very old and rusty.";
-	name = "rusty grate";
-	pixel_x = -2;
-	pixel_y = -3
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "enclave_entrance"
 	},
-/obj/machinery/shower{
-	dir = 4
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/dark,
-/area/f13/brotherhood/surface)
+/area/f13/enclave)
 "fdf" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/pill/patch/healingpowder,
@@ -17523,7 +17533,9 @@
 /area/f13/clinic)
 "gWl" = (
 /obj/effect/decal/cleanable/blood/tracks,
-/turf/closed/indestructible/rock,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkdirtysolid"
+	},
 /area/f13/tunnel)
 "gWo" = (
 /obj/structure/closet/cabinet,
@@ -19242,12 +19254,8 @@
 /turf/open/floor/grass,
 /area/f13/city)
 "hCo" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "enclave_shutters"
-	},
-/obj/machinery/door/airlock/hatch{
-	name = "mysterious door";
-	req_one_access_txt = "134"
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
@@ -19904,6 +19912,16 @@
 /obj/item/clothing/head/cone,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"hMI" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "enclave_shutters"
+	},
+/obj/machinery/door/airlock/hatch{
+	name = "mysterious door";
+	req_one_access_txt = "134"
+	},
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/tunnel)
 "hMM" = (
 /obj/machinery/light/small/broken{
 	dir = 8
@@ -21967,6 +21985,14 @@
 	icon_state = "rubble"
 	},
 /area/f13/wasteland)
+"iHo" = (
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 8;
+	pixel_y = 3;
+	pixel_x = 3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/brotherhood/surface)
 "iHu" = (
 /obj/structure/barricade/tentclothedge{
 	dir = 1;
@@ -26022,6 +26048,13 @@
 /obj/item/circuitboard/machine/chem_dispenser,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/building)
+"kou" = (
+/obj/mecha/combat/phazon/buggy/dune/loaded,
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/tunnel)
 "kow" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -27143,6 +27176,13 @@
 	},
 /turf/open/floor/f13,
 /area/f13/building)
+"kNu" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/brotherhood/surface)
 "kNy" = (
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/indestructible/ground/outside/savannah,
@@ -30416,6 +30456,15 @@
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
+"mgv" = (
+/obj/machinery/door/airlock/hatch{
+	desc = "An airtight door, built to withstand a nuclear blast.";
+	max_integrity = 10000;
+	name = "Brotherhood of Steel";
+	req_access_txt = "265"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/brotherhood/surface)
 "mgO" = (
 /obj/machinery/light{
 	dir = 4
@@ -34018,6 +34067,13 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/raiders)
+"nBr" = (
+/obj/machinery/door/airlock/hatch{
+	name = "mysterious door";
+	req_one_access_txt = "134"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "nBA" = (
 /obj/machinery/light,
 /obj/structure/table/booth,
@@ -35268,6 +35324,13 @@
 	},
 /turf/open/floor/wood/f13/carpet,
 /area/f13/kebab)
+"oew" = (
+/obj/machinery/mech_bay_recharge_port{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/brotherhood/surface)
 "oeI" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -37125,6 +37188,13 @@
 /obj/machinery/light/sign/chiken_ranch,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
+"oUN" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "bos_entrance"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/brotherhood/surface)
 "oUV" = (
 /obj/machinery/mineral/wasteland_vendor/special,
 /turf/open/indestructible/ground/outside/desert,
@@ -37482,6 +37552,16 @@
 	dir = 6
 	},
 /area/f13/clinic)
+"paO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/hatch{
+	desc = "An airtight door, built to withstand a nuclear blast.";
+	max_integrity = 10000;
+	name = "Brotherhood of Steel";
+	req_access_txt = "265"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/brotherhood/surface)
 "pbc" = (
 /obj/machinery/light/small/broken{
 	dir = 1
@@ -44762,6 +44842,15 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"sbm" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
+/area/f13/brotherhood/surface)
 "sbt" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -45817,6 +45906,11 @@
 	icon_state = "verticalrightborderleft2"
 	},
 /area/f13/city)
+"szp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/cobweb,
+/turf/closed/wall/r_wall/rust,
+/area/f13/brotherhood/surface)
 "szF" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "ncrlockdown";
@@ -47394,6 +47488,10 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "enclave_entrance"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
 	},
@@ -47471,6 +47569,15 @@
 /obj/item/clothing/under/f13/brahmin,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"thN" = (
+/obj/machinery/mech_bay_recharge_port{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/tunnel)
 "tie" = (
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/drinks/beer{
@@ -50820,6 +50927,16 @@
 	icon_state = "horizontaltopbordertop2left"
 	},
 /area/f13/wasteland)
+"uyX" = (
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 8;
+	pixel_y = 3;
+	pixel_x = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/tunnel)
 "uzv" = (
 /obj/effect/decal/waste,
 /turf/open/indestructible/ground/inside/mountain,
@@ -52886,16 +53003,7 @@
 /area/f13/wasteland)
 "vrh" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/decoration/vent/rusty{
-	desc = "It's very old and rusty.";
-	name = "rusty grate";
-	pixel_x = 2;
-	pixel_y = -3
-	},
-/obj/machinery/shower{
-	dir = 8
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/turf/closed/wall/r_wall/rust,
 /area/f13/brotherhood/surface)
 "vrm" = (
 /obj/structure/closet/crate/trashcart,
@@ -57362,10 +57470,6 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/obj/machinery/door/airlock/hatch{
-	name = "mysterious door";
-	req_one_access_txt = "134"
-	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "xff" = (
@@ -58796,7 +58900,6 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/machinery/light/small/broken,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
 	},
@@ -64197,11 +64300,11 @@ gcK
 gcK
 gcK
 gcK
-ktB
-ktB
-ktB
-ktB
-ktB
+gcK
+gcK
+gcK
+gcK
+gcK
 gcK
 gcK
 gcK
@@ -64455,11 +64558,11 @@ ktB
 ktB
 ktB
 ktB
+ktB
 gcK
-gcK
+mnl
+mnl
 klJ
-oNa
-suf
 gcK
 gcK
 gcK
@@ -64715,11 +64818,11 @@ ahu
 gcK
 ohi
 iFJ
-oNa
+mnl
 eSE
 rJw
-suf
-suf
+nBr
+mwp
 cpK
 unI
 mQj
@@ -64965,7 +65068,7 @@ gcK
 gcK
 xae
 ahu
-uKj
+fcY
 uKj
 iFO
 qgw
@@ -65229,8 +65332,8 @@ ahu
 gcK
 itN
 uni
-oNa
-suf
+mnl
+klJ
 gcK
 gcK
 uaf
@@ -65479,15 +65582,15 @@ gcK
 gcK
 xae
 ahu
-uKj
+fcY
 uKj
 lqm
 ahu
-ktB
+gcK
 eWm
 mnl
-oNa
-suf
+mnl
+mnl
 gcK
 gcK
 uCW
@@ -65740,12 +65843,12 @@ gTH
 ahu
 ahu
 ahu
-ktB
-hCo
+gcK
 mnl
-oNa
-suf
-suf
+mnl
+mnl
+mnl
+hMI
 uaf
 uCW
 cpK
@@ -65997,12 +66100,12 @@ ktB
 ktB
 ktB
 ktB
-ktB
+gcK
 hCo
+cHo
 mnl
-oNa
-suf
-suf
+mnl
+hMI
 uaf
 cpK
 cpK
@@ -66254,11 +66357,11 @@ gcK
 gcK
 gcK
 gcK
-ktB
-oNa
-oNa
-oNa
-suf
+gcK
+mnl
+kou
+mnl
+mnl
 gcK
 uCW
 cpK
@@ -66512,10 +66615,10 @@ gcK
 gcK
 gcK
 gcK
-suf
-suf
-suf
-suf
+mnl
+thN
+uyX
+mnl
 gcK
 gcK
 cpK
@@ -90810,8 +90913,8 @@ gcK
 fyf
 wOv
 wOv
-mPg
-mPg
+mgv
+mgv
 wOv
 gts
 kfB
@@ -91323,8 +91426,8 @@ gcK
 gcK
 wOv
 ooa
-qRa
-mPg
+sbm
+kNu
 mPg
 ooa
 gts
@@ -91581,7 +91684,7 @@ gcK
 wOv
 ooa
 mPg
-mPg
+aZm
 mPg
 mPg
 dCV
@@ -91838,8 +91941,8 @@ gcK
 wOv
 ooa
 qRa
-mPg
-mPg
+oew
+iHo
 mPg
 dCV
 gts
@@ -92354,7 +92457,7 @@ wOv
 ooa
 wOv
 wOv
-mPg
+mgv
 wOv
 wOv
 wOv
@@ -93116,10 +93219,10 @@ fyf
 gbL
 wOv
 ooa
+szp
+vrh
+vrh
 wHW
-fcY
-fry
-fry
 cBg
 fry
 ooa
@@ -93373,9 +93476,9 @@ fyf
 gcK
 wOv
 ooa
-fry
-ccF
-ccF
+vrh
+ooa
+oUN
 ccF
 ccF
 uFs
@@ -93630,9 +93733,9 @@ fyf
 gcK
 wOv
 ooa
-fry
-ccF
-fWj
+vrh
+ooa
+oUN
 ccF
 ccF
 wVB
@@ -93887,14 +93990,14 @@ fyf
 gcK
 wOv
 ooa
-fry
-ccF
-ccF
+vrh
+ooa
+oUN
 ccF
 ccF
 wVB
 wVB
-wVB
+paO
 wVB
 uoG
 xNK
@@ -94144,9 +94247,9 @@ fyf
 gcK
 wOv
 ooa
-fry
-ccF
-ccF
+vrh
+ooa
+oUN
 fWj
 ccF
 wVB
@@ -94401,9 +94504,9 @@ gcK
 gcK
 wOv
 ooa
-fry
-ccF
-ccF
+vrh
+ooa
+oUN
 ccF
 ccF
 uFs
@@ -94658,9 +94761,9 @@ fCB
 gcK
 wOv
 ooa
-fry
 vrh
-fry
+vrh
+vrh
 fry
 pSR
 fry
