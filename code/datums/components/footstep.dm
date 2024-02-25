@@ -105,12 +105,8 @@
 
   if(!sound_to_play) 
     return
-
-  var/sound_file = pick(sound_to_play[1])
-  var/sound_volume = sound_to_play[2] * volume
   
-  playsound(T, sound_file, sound_volume, TRUE, sound_to_play[3])
-
+  playsound(T, pick(sound_to_play[1]), sound_to_play[2] * volume, TRUE, sound_to_play[3])
 /datum/component/footstep/proc/play_humanstep()
 	var/turf/open/T = prepare_step()
 	if(!T)
