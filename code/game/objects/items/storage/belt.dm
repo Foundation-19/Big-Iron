@@ -932,8 +932,10 @@
 	/obj/item/twohanded/sledgehammer/simple,
 	/obj/item/melee/transforming/energy/axe/protonaxe,
 	/obj/item/melee/powered/ripper)
-	starting_sword = null
+//	starting_sword = null
 
+/obj/item/storage/belt/sabre/PopulateContents()
+	return
 
 /obj/item/storage/belt/sabre/rapier
 	name = "rapier sheath"
