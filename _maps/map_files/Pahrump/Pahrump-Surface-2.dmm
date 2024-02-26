@@ -10134,8 +10134,8 @@
 /turf/open/floor/carpet/green,
 /area/f13/city)
 "ebx" = (
-/obj/machinery/door/poddoor/gate{
-	id = 43
+/obj/machinery/door/poddoor/gate/preopen{
+	id = "town_outer"
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/city)
@@ -10471,7 +10471,9 @@
 /turf/open/floor/carpet,
 /area/f13/ncr)
 "egV" = (
-/obj/structure/simple_door/metal,
+/obj/structure/simple_door/metal{
+	req_one_access_txt = "148, 25, 145"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -14244,7 +14246,7 @@
 /obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "bar backroom";
-	req_one_access_txt = "28"
+	req_one_access_txt = "48"
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -26048,6 +26050,10 @@
 /obj/item/circuitboard/machine/chem_dispenser,
 /turf/open/floor/plasteel/f13/vault_floor/red/white,
 /area/f13/building)
+"kol" = (
+/obj/effect/landmark/start/f13/kebab/scab,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/city)
 "kou" = (
 /obj/mecha/combat/phazon/buggy/dune/loaded,
 /obj/effect/turf_decal/stripes/line,
@@ -27027,13 +27033,13 @@
 "kLc" = (
 /obj/structure/table,
 /obj/machinery/button/door{
-	id = 87;
+	id = "town_inner";
 	name = "Interior door button";
 	pixel_x = 22;
 	pixel_y = 2
 	},
 /obj/machinery/button/door{
-	id = 43;
+	id = "town_outer";
 	name = "Exterior door button";
 	pixel_x = 22;
 	pixel_y = 11
@@ -33946,8 +33952,8 @@
 	},
 /area/f13/building)
 "nyn" = (
-/obj/machinery/door/poddoor/gate{
-	id = 87
+/obj/machinery/door/poddoor/gate/preopen{
+	id = "town_inner"
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright2bottom"
@@ -36811,7 +36817,7 @@
 /obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "Bar";
-	req_one_access_txt = "28"
+	req_one_access_txt = "48"
 	},
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -42278,7 +42284,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/effect/landmark/start/bartender,
+/obj/effect/landmark/start/f13/barkeep,
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess{
 	icon_state = "redrustychess";
 	name = "tile"
@@ -45388,6 +45394,10 @@
 	color = "#e4e4e4"
 	},
 /area/f13/caves)
+"snw" = (
+/obj/effect/landmark/start/f13/kebab/scab,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/city)
 "snA" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -51646,6 +51656,10 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"uPe" = (
+/obj/effect/landmark/start/f13/merchant/merchant,
+/turf/open/floor/wood/f13/oak,
+/area/f13/city)
 "uPf" = (
 /obj/structure/tires,
 /turf/open/indestructible/ground/outside/road{
@@ -55146,7 +55160,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/effect/landmark/start/bartender,
+/obj/effect/landmark/start/f13/barkeep,
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess{
 	icon_state = "redrustychess";
 	name = "tile"
@@ -58015,7 +58029,7 @@
 /obj/machinery/door/unpowered/securedoor{
 	autoclose = 1;
 	name = "farmhouse";
-	req_one_access_txt = "28"
+	req_one_access_txt = "25"
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/city)
@@ -61806,13 +61820,13 @@ iLc
 iLc
 iLc
 kRc
-bIm
+snw
 iLc
 xyV
 wWC
 blk
 iLc
-bIm
+snw
 qAt
 kvP
 iLc
@@ -62576,7 +62590,7 @@ rrj
 wWC
 xXz
 uGm
-bIm
+snw
 bIm
 cdg
 wWC
@@ -62842,7 +62856,7 @@ xgm
 iLc
 jyB
 mZs
-yiG
+kol
 iLc
 xyV
 wWC
@@ -70041,7 +70055,7 @@ iLc
 iLc
 dCY
 iLc
-wWC
+uPe
 uDL
 iLc
 fXh
