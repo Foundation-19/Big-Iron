@@ -148,8 +148,8 @@
 	title = "Enclave Pilot"
 	flag = F13USPILOT
 	display_order = JOB_DISPLAY_ORDER_F13USPILOT
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 1
+	spawn_positions = 1
 	description = "As a Pilot in the Enclave, your primary duty is the operation of vertibirds. You will answer only to Officers of the United States."
 	supervisors = "The Captain."
 	outfit = /datum/outfit/job/enclave/enclavepilot
@@ -299,8 +299,8 @@
 	title = "Enclave Sergeant"
 	flag = F13USSGT
 	display_order = JOB_DISPLAY_ORDER_F13USSGT
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "Entrusted with the command of the squads assigned to the local Enclave forces, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Captain, the Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
@@ -336,8 +336,8 @@
 	title = "Enclave Specialist"
 	flag = F13USSPECIALIST
 	display_order = JOB_DISPLAY_ORDER_F13USSPECIALIST
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	description = "You are an operative for the remnants of the Enclave. You, unlike the normal privates, have recieved specialist training in either engineering or medicine."
 	supervisors = "The Captain, Lieutenant and the Sergeants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13specialist
@@ -409,8 +409,8 @@
 	title = "Enclave Private"
 	flag = F13USPRIVATE
 	display_order = JOB_DISPLAY_ORDER_F13USPRIVATE
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 3
+	spawn_positions = 3
 	description = "You are a soldier with the rank of Private in the real United States military, the Enclave. You will follow the orders of your superior officers to the letter, God bless America. God bless the Enclave."
 	supervisors = "The Captain, Lieutenant and the Sergeants"
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
@@ -559,8 +559,8 @@
 	flag = F13USSCIENTIST
 	display_order = JOB_DISPLAY_ORDER_F13USSCIENTIST
 	access = list(ACCESS_ENCLAVE, ACCESS_ENCLAVE1, ACCESS_ENCLAVE2, ACCESS_PUBLIC)
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "You're responsible for the maintenance of the bunker, the knowledge you've accumulated over the years is the only thing keeping the remnants alive. You've dabbled in enough to be considered a Professor in your field of research, but they call you Doctor. Support your dwindling forces and listen to the Lieutenant."
 	supervisors = "Enclave Research and Development Division."
 	outfit = /datum/outfit/job/enclave/noncombat/enclavesci
@@ -606,11 +606,11 @@
 
 //Bunker Duty
 /datum/job/enclave/f13BDUTY
-	title = "Enclave Duty"
+	title = "Enclave Bunker Duty"
 	flag = F13USBDUTY
 	display_order = JOB_DISPLAY_ORDER_F13USPRIVATE
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 3
+	spawn_positions = 3
 	description = "You were assigned to bunker duty this week, clean up, cook up, preach up or chem up your fellow Americans and remember don't join any raids or battles from your fellow Americans, after all it's none of your concern this week."
 	enforces = "You are not permited to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface."
 	supervisors = "Everyone else."
