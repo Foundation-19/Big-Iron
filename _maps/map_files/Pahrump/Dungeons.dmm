@@ -57,13 +57,11 @@
 	},
 /area/awaymission/caves)
 "aei" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/deathclaw/legendary{
-	faction = list("deathclaw","supermutant")
+/obj/structure/timeddoor/sixtyminute,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalinnermain0"
 	},
-/obj/structure/lattice,
-/turf/open/floor/plating/tunnel,
-/area/f13/bunker)
+/area/awaymission/caves)
 "aeM" = (
 /obj/machinery/camera/autoname{
 	dir = 10;
@@ -1335,6 +1333,8 @@
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /obj/item/organ/ears/cat,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "cqM" = (
@@ -2317,6 +2317,12 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/f13{
 	icon_state = "floordirty"
+	},
+/area/awaymission/caves)
+"dNx" = (
+/obj/structure/timeddoor/sixtyminute,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontalbottombordertop0"
 	},
 /area/awaymission/caves)
 "dNZ" = (
@@ -7098,20 +7104,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "lmi" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/deathclaw/power_armor{
-	desc = "A massive, reptilian creature with powerful muscles, razor-sharp claws, and aggression to match. Someone had managed to put power armor on him, the hydraulics of the arms seeming to be overcharged to allow for even quicker, more powerful swings! Wuh oh.";
-	faction = list("deathclaw","supermutant");
-	health = 5000;
-	loot = list(/obj/item/keycard/nml2);
-	melee_damage_lower = 50;
-	melee_damage_upper = 50;
-	rapid_melee = 2
-	},
-/turf/open/floor/f13{
-	icon_state = "freezerfloor"
-	},
-/area/f13/bunker)
+/obj/structure/timeddoor/sixtyminute,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/underground/cave)
 "lmk" = (
 /obj/structure/debris/v3,
 /turf/closed/indestructible/rock,
@@ -7993,6 +7988,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
+"mng" = (
+/obj/effect/decal/remains/human,
+/obj/structure/timeddoor/sixtyminute,
+/turf/open/floor/plating/tunnel,
+/area/f13/building)
 "mnh" = (
 /obj/machinery/light/broken{
 	dir = 4
@@ -8145,6 +8145,10 @@
 	icon_state = "yellowdirtysolid"
 	},
 /area/f13/bunker)
+"mvD" = (
+/obj/structure/timeddoor/sixtyminute,
+/turf/closed/wall/f13/ruins,
+/area/f13/building)
 "mvP" = (
 /turf/open/floor/f13{
 	icon_state = "freezerfloor"
@@ -8335,7 +8339,7 @@
 /area/f13/bunker)
 "mFy" = (
 /obj/effect/decal/remains/human,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5,
 /turf/open/water,
 /area/f13/tunnel)
 "mFX" = (
@@ -8628,6 +8632,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"mXP" = (
+/obj/structure/timeddoor/sixtyminute,
+/turf/closed/wall/f13/tunnel,
+/area/f13/building)
 "mYd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -9228,7 +9236,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/item/clothing/gloves/ring/diamond,
 /obj/effect/decal/remains/human,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "nTL" = (
@@ -11099,9 +11107,9 @@
 	},
 /area/awaymission/caves)
 "qwC" = (
-/mob/living/simple_animal/hostile/supermutant/legendary,
-/turf/open/floor/plasteel/f13/vault_floor/floor,
-/area/f13/bunker)
+/obj/structure/timeddoor/sixtyminute,
+/turf/open/floor/plating/tunnel,
+/area/f13/building)
 "qwH" = (
 /obj/machinery/light{
 	dir = 4
@@ -12646,6 +12654,10 @@
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
+"tbb" = (
+/obj/structure/simple_door/metal/ventilation,
+/turf/open/indestructible/ground/inside/mountain,
+/area/awaymission/caves)
 "tcp" = (
 /obj/item/ammo_casing/shotgun/executioner,
 /turf/open/floor/pod,
@@ -13188,6 +13200,8 @@
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet,
+/obj/effect/spawner/lootdrop/f13/armor/tier5,
+/obj/effect/spawner/lootdrop/f13/armor/tier5,
 /turf/open/floor/plasteel/darkred/side{
 	dir = 1
 	},
@@ -13559,6 +13573,12 @@
 /obj/item/stack/sheet/mineral/wood/twenty,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
+"uJC" = (
+/obj/structure/timeddoor/sixtyminute,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
+/area/f13/building)
 "uJJ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -14952,6 +14972,12 @@
 	icon_state = "redrustyfull"
 	},
 /area/awaymission/caves)
+"xhB" = (
+/obj/structure/timeddoor/sixtyminute,
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "horizontaltopborderbottom0"
+	},
+/area/awaymission/caves)
 "xiC" = (
 /obj/effect/turf_decal/stripes/red/line,
 /obj/effect/decal/cleanable/dirt,
@@ -15229,6 +15255,10 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
+"xNs" = (
+/obj/structure/timeddoor/sixtyminute,
+/turf/closed/wall/f13/tunnel,
+/area/awaymission/caves)
 "xNL" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/handy/assaultron,
@@ -29040,7 +29070,7 @@ oQY
 pVC
 xXj
 tEA
-qwC
+gBm
 hpz
 kJb
 bqR
@@ -29309,7 +29339,7 @@ kFj
 rNG
 acN
 cAW
-wPz
+lmi
 wPz
 wPz
 wPz
@@ -29566,7 +29596,7 @@ kKk
 adE
 uND
 wPz
-wPz
+lmi
 wPz
 blz
 wPz
@@ -29823,7 +29853,7 @@ hpz
 xiC
 acN
 drH
-wPz
+lmi
 wPz
 wPz
 wPz
@@ -31602,7 +31632,7 @@ heT
 trA
 nNg
 hWv
-aei
+aIK
 mnl
 whp
 xgB
@@ -31995,7 +32025,7 @@ luW
 luW
 luW
 sGb
-mHo
+tbb
 cnM
 cnM
 cnM
@@ -32117,7 +32147,7 @@ rRN
 gMq
 siS
 siS
-lmi
+whp
 mnl
 whp
 rRN
@@ -32372,7 +32402,7 @@ heT
 heT
 rRN
 rMG
-whp
+mnl
 uRz
 ukN
 uRz
@@ -45554,11 +45584,11 @@ heT
 heT
 heT
 heT
-drf
-dYx
-dvs
-rgy
-drf
+xNs
+xhB
+aei
+dNx
+xNs
 heT
 heT
 heT
@@ -51190,9 +51220,9 @@ heT
 heT
 heT
 heT
-caa
-dhi
-dhi
+mvD
+qwC
+qwC
 dhi
 dhi
 caa
@@ -51449,7 +51479,7 @@ eyh
 eyh
 eyh
 eNI
-dhi
+qwC
 eOb
 dhi
 frs
@@ -51706,7 +51736,7 @@ eyi
 dhi
 eBs
 eOb
-dhi
+qwC
 eZD
 dhi
 caa
@@ -51963,7 +51993,7 @@ eyQ
 ezw
 eBs
 eBs
-dhi
+qwC
 ezw
 fhJ
 caa
@@ -52220,7 +52250,7 @@ caa
 caa
 caa
 ePM
-eXZ
+uJC
 dkK
 fia
 caa
@@ -52477,7 +52507,7 @@ heT
 heT
 eyh
 ePY
-eUi
+mng
 dhi
 eUi
 caa
@@ -52734,7 +52764,7 @@ heT
 heT
 eyh
 eyh
-eyh
+mXP
 caa
 caa
 caa
