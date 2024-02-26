@@ -279,7 +279,7 @@
 	throw_speed = 1
 	throw_range = 3
 	attack_verb = list("roasted", "scorched", "burned")
-	grind_results = list(/datum/reagent/consumable/capsaicin = 0, /datum/reagent/consumable/condensedcapsaicin = 0)
+	grind_results = list(/datum/reagent/consumable/capsaicin = 0.25, /datum/reagent/consumable/condensedcapsaicin = 0.3)
 	tastes = list("cooked sunflower" = 1)
 
 /obj/item/grown/novaflower/add_juice()
