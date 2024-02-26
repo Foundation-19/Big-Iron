@@ -299,8 +299,8 @@
 	title = "Enclave Sergeant"
 	flag = F13USSGT
 	display_order = JOB_DISPLAY_ORDER_F13USSGT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "Entrusted with the command of the squads assigned to the local Enclave forces, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Captain, the Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
@@ -336,8 +336,8 @@
 	title = "Enclave Specialist"
 	flag = F13USSPECIALIST
 	display_order = JOB_DISPLAY_ORDER_F13USSPECIALIST
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "You are an operative for the remnants of the Enclave. You, unlike the normal privates, have recieved specialist training in either engineering or medicine."
 	supervisors = "The Captain, Lieutenant and the Sergeants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13specialist
@@ -409,8 +409,8 @@
 	title = "Enclave Private"
 	flag = F13USPRIVATE
 	display_order = JOB_DISPLAY_ORDER_F13USPRIVATE
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	description = "You are a soldier with the rank of Private in the real United States military, the Enclave. You will follow the orders of your superior officers to the letter, God bless America. God bless the Enclave."
 	supervisors = "The Captain, Lieutenant and the Sergeants"
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavespy
@@ -418,8 +418,8 @@
 /datum/outfit/job/enclave/peacekeeper/enclavespy
 	name = "Enclave Private"
 	jobtype = /datum/job/enclave/enclavespy
-	head = /obj/item/clothing/head/helmet/f13/combat/swat/enclave
-	suit = /obj/item/clothing/suit/armor/f13/combat/swat/enclave
+	head = /obj/item/clothing/head/helmet/f13/enclave/cheaphelmet
+	suit = /obj/item/clothing/suit/armor/f13/enclavecombatcheap
 	suit_store = /obj/item/gun/ballistic/automatic/r93
 	accessory = /obj/item/clothing/accessory/enclave
 
@@ -609,8 +609,8 @@
 	title = "Enclave Bunker Duty"
 	flag = F13USBDUTY
 	display_order = JOB_DISPLAY_ORDER_F13USPRIVATE
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	description = "You were assigned to bunker duty this week, clean up, cook up, preach up or chem up your fellow Americans and remember don't join any raids or battles from your fellow Americans, after all it's none of your concern this week."
 	enforces = "You are not permited to leave the base. You are a non-combatant. You cannot join any raids or battles on the surface."
 	supervisors = "Everyone else."
