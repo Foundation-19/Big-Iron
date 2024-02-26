@@ -742,7 +742,7 @@
 
 /datum/crafting_recipe/boscombatarmormk2
 	name = "reinforced knight armor"
-	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
+	result = /obj/item/clothing/suit/armor/f13/combat/mk2/brotherhood
 	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
@@ -753,7 +753,7 @@
 
 /datum/crafting_recipe/boscombathelmetmk2
 	name = "reinforced knight helmet"
-	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
+	result = /obj/item/clothing/head/helmet/f13/combat/mk2/brotherhood
 	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
