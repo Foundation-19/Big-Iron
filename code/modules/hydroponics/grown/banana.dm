@@ -25,7 +25,7 @@
 	filling_color = "#FFFF00"
 	bitesize = 5
 	foodtype = FRUIT
-	juice_results = list(/datum/reagent/consumable/banana = 0)
+	juice_results = list(/datum/reagent/consumable/banana = 1)
 
 /obj/item/reagent_containers/food/snacks/grown/banana/generate_trash(atom/location)
 	. = ..()

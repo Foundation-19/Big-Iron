@@ -463,3 +463,9 @@
 	id = "drink_neutralization"
 	results = list(/datum/reagent/water = 1)
 	required_reagents = list(/datum/reagent/medicine/bitter_drink = 1, /datum/reagent/medicine/healing_powder/poultice = 1)
+
+/datum/chemical_reaction/radshield
+	name = "Radshield"
+	id = /datum/reagent/medicine/radshield
+	results = list(/datum/reagent/medicine/radshield = 5)
+	required_reagents = list(/datum/reagent/medicine/radaway = 2, /datum/reagent/consumable/ethanol/vodka = 1, /datum/reagent/consumable/red_queen = 1)

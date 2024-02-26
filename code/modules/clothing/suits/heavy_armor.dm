@@ -151,6 +151,7 @@
 	item_state = "advanced_salvaged"
 	armor = list("melee" = 80, "bullet" = 80, "laser" = 70, "energy" = 35, "bomb" = 60, "bio" = 70, "rad" = 65, "fire" = 85, "acid" = 45, "wound" = 50)
 	slowdown = 1.75
+
 ////////////
 // LEGION //
 ////////////
@@ -162,14 +163,6 @@
 	icon_state = "legion_heavy"
 	item_state = "legion_heavy"
 	armor = list("melee" = 65, "bullet" = 45, "laser" = 30, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 30, "acid" = 5)
-
-/obj/item/clothing/suit/armored/heavy/legion/heavydecanus
-	name = "legion heavy decanus armor"
-	desc = "A very well protected suit, but a bit heavy to carry."
-	icon_state = "legion-orator-heavy"
-	item_state = "legion-orator-heavy"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 30, "acid" = 5)
-	slowdown = 0.5
 
 /obj/item/clothing/suit/armored/heavy/legion/centurion
 	name = "legion centurion armor"
