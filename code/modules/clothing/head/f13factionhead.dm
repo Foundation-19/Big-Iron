@@ -294,6 +294,14 @@
 	icon_state = "Enclave_combathelmetraider"
 	item_state = "Enclave_combathelmetraider"
 
+/obj/item/clothing/head/helmet/f13/enclave/cheaphelmet
+	name = "mass-produced enclave combat armor helmet"
+	desc = "Standard issue combat helmets used by the Enclave, looks & feels cheap."
+	icon_state = "Enclave_combathelmetraider"
+	item_state = "Enclave_combathelmetraider"
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 25, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 40)
+
 // Lieutenant's hat
 /obj/item/clothing/head/helmet/f13/enclave/officer
 	name = "enclave officer hat"
