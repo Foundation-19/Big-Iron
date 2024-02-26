@@ -948,12 +948,23 @@
 	item_state = "enclave_seva"
 
 /obj/item/clothing/suit/armor/f13/combat/swat/enclave
-	name = "mass-produced enclave combat armor"
-	desc = "A set of standard issue combat armor used by the Enclave. Looks Cheaply made."
+	name = "enclave combat armor"
+	desc = "A set of standard issue combat armor used by the Enclave."
 	icon_state = "Enclave_combatarmor"
 	item_state = "Enclave_combatarmor"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	blocks_shove_knockdown = TRUE
+	strip_delay = 80
+	equip_delay_other = 60
+
+/obj/item/clothing/suit/armor/f13/enclavecombatcheap
+	name = "mass-produced enclave combat armor"
+	desc = "A set of standard issue combat armor used by the Enclave. Looks cheaply-made."
+	icon_state = "Enclave_combatarmor"
+	item_state = "Enclave_combatarmor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	blocks_shove_knockdown = TRUE
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 25, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 40)
 	strip_delay = 80
 	equip_delay_other = 60
 
