@@ -339,6 +339,12 @@
 	icon_state = "neutralrustychess"
 	},
 /area/f13/den)
+"ajR" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/enclave)
 "ajV" = (
 /obj/machinery/workbench,
 /turf/open/floor/wood/f13/oak,
@@ -5561,6 +5567,16 @@
 "dxj" = (
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"dxr" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/computer/shuttle/enclaveelevator,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "bluerustyfull"
+	},
+/area/f13/enclave)
 "dxw" = (
 /obj/machinery/telecomms/server/presets/ranger,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
@@ -8865,6 +8881,18 @@
 	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/bunker)
+"fEA" = (
+/obj/docking_port/stationary{
+	area_type = /area/f13;
+	dwidth = 1;
+	height = 3;
+	id = "Enclave_Bunker";
+	name = "Enclave Bunker";
+	roundstart_template = /datum/map_template/shuttle/enclave_elevator;
+	width = 3
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/enclave)
 "fEP" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib2-old"
@@ -12020,12 +12048,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "hLC" = (
-/obj/structure/ladder/unbreakable{
-	height = 1;
-	id = "bos_entrance"
-	},
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "floorrustysolid"
+/obj/machinery/computer/shuttle/bosentryelevator,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
 	},
 /area/f13/brotherhood)
 "hLM" = (
@@ -18629,15 +18654,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "mvg" = (
-/obj/structure/railing{
-	dir = 1
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/f13{
-	icon_state = "bluerustyfull"
-	},
+/turf/open/floor/plasteel/elevatorshaft,
 /area/f13/enclave)
 "mvA" = (
 /obj/structure/table/wood,
@@ -32689,14 +32706,17 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/den)
 "wvv" = (
-/obj/structure/ladder/unbreakable{
-	height = 1;
-	id = "enclave_entrance"
+/obj/docking_port/stationary{
+	area_type = /area/f13;
+	dwidth = 1;
+	height = 4;
+	id = "bos_entryway";
+	name = "Level 0: Entryway";
+	roundstart_template = /datum/map_template/shuttle/entrance_elevator;
+	width = 5
 	},
-/turf/open/floor/f13{
-	icon_state = "bluerustyfull"
-	},
-/area/f13/enclave)
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/brotherhood)
 "wvR" = (
 /obj/structure/table/reinforced,
 /obj/structure/barricade/bars{
@@ -43870,8 +43890,8 @@ vbc
 ijw
 mmY
 mmY
+mmY
 fNF
-mES
 mES
 mES
 mES
@@ -44125,10 +44145,10 @@ vPg
 xiW
 tfL
 ijw
-wvv
-mES
+mvg
+mvg
+mvg
 tJU
-mES
 mES
 mES
 ijw
@@ -44382,9 +44402,9 @@ vPg
 xiW
 rwC
 uSO
-wvv
-mES
-mES
+mvg
+mvg
+fEA
 mES
 mES
 mES
@@ -44639,10 +44659,10 @@ vPg
 xiW
 rwC
 ijw
-wvv
-mES
 mvg
-xQW
+ajR
+mvg
+dxr
 mES
 mES
 ijw
@@ -93544,9 +93564,9 @@ tgQ
 dBk
 dBk
 wzU
-dBk
-hLC
-reI
+wzU
+wzU
+wzU
 mYG
 tPd
 lPR
@@ -93801,9 +93821,9 @@ umo
 umo
 dBk
 wzU
-dBk
-hLC
-reI
+wzU
+wzU
+wvv
 giA
 xSE
 xSE
@@ -94058,9 +94078,9 @@ mMb
 iJT
 dBk
 wzU
-dBk
-hLC
-reI
+wzU
+wzU
+wzU
 sMz
 xSE
 xSE
@@ -94315,11 +94335,11 @@ umo
 umo
 dBk
 wzU
-dBk
-hLC
-reI
+wzU
+wzU
+wzU
 mYG
-xSE
+hLC
 xSE
 xSE
 xSE
@@ -94572,9 +94592,9 @@ umo
 umo
 dBk
 wzU
-dBk
-hLC
-reI
+wzU
+wzU
+wzU
 giA
 ykY
 xSE
