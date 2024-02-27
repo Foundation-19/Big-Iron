@@ -343,7 +343,9 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plasteel/elevatorshaft,
+/turf/open/floor/f13{
+	icon_state = "bluerustyfull"
+	},
 /area/f13/enclave)
 "ajV" = (
 /obj/machinery/workbench,
@@ -5567,16 +5569,6 @@
 "dxj" = (
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
-"dxr" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/computer/shuttle/enclaveelevator,
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/floor/f13{
-	icon_state = "bluerustyfull"
-	},
-/area/f13/enclave)
 "dxw" = (
 /obj/machinery/telecomms/server/presets/ranger,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
@@ -8881,18 +8873,6 @@
 	},
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/bunker)
-"fEA" = (
-/obj/docking_port/stationary{
-	area_type = /area/f13;
-	dwidth = 1;
-	height = 3;
-	id = "Enclave_Bunker";
-	name = "Enclave Bunker";
-	roundstart_template = /datum/map_template/shuttle/enclave_elevator;
-	width = 3
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/enclave)
 "fEP" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib2-old"
@@ -12047,12 +12027,6 @@
 /obj/structure/wreck/trash/five_tires,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
-"hLC" = (
-/obj/machinery/computer/shuttle/bosentryelevator,
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/brotherhood)
 "hLM" = (
 /obj/structure/nest/fireant{
 	max_mobs = 4;
@@ -18654,7 +18628,13 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/enclave)
 "mvg" = (
-/turf/open/floor/plasteel/elevatorshaft,
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "enclave_ladder"
+	},
+/turf/open/floor/f13{
+	icon_state = "bluerustyfull"
+	},
 /area/f13/enclave)
 "mvA" = (
 /obj/structure/table/wood,
@@ -28773,14 +28753,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2,
 /area/f13/bunker)
-"tJU" = (
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/floor/f13{
-	icon_state = "bluerustyfull"
-	},
-/area/f13/enclave)
 "tKv" = (
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria{
@@ -32705,18 +32677,6 @@
 /obj/machinery/light/floor,
 /turf/open/floor/wood/f13/oak,
 /area/f13/den)
-"wvv" = (
-/obj/docking_port/stationary{
-	area_type = /area/f13;
-	dwidth = 1;
-	height = 4;
-	id = "bos_entryway";
-	name = "Level 0: Entryway";
-	roundstart_template = /datum/map_template/shuttle/entrance_elevator;
-	width = 5
-	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/brotherhood)
 "wvR" = (
 /obj/structure/table/reinforced,
 /obj/structure/barricade/bars{
@@ -32823,7 +32783,11 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/tunnel)
 "wzU" = (
-/turf/open/floor/plasteel/elevatorshaft,
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "bos_ladder"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
 "wAc" = (
 /obj/structure/bonfire/prelit,
@@ -43890,8 +43854,8 @@ vbc
 ijw
 mmY
 mmY
-mmY
 fNF
+mES
 mES
 mES
 mES
@@ -44146,9 +44110,9 @@ xiW
 tfL
 ijw
 mvg
-mvg
-mvg
-tJU
+mES
+mES
+mES
 mES
 mES
 ijw
@@ -44402,9 +44366,9 @@ vPg
 xiW
 rwC
 uSO
-mvg
-mvg
-fEA
+ijw
+mES
+mES
 mES
 mES
 mES
@@ -44661,8 +44625,8 @@ rwC
 ijw
 mvg
 ajR
-mvg
-dxr
+mES
+xQW
 mES
 mES
 ijw
@@ -93563,10 +93527,10 @@ dBk
 tgQ
 dBk
 dBk
+dBk
 wzU
-wzU
-wzU
-wzU
+iXo
+iXo
 mYG
 tPd
 lPR
@@ -93820,10 +93784,10 @@ umo
 umo
 umo
 dBk
-wzU
-wzU
-wzU
-wvv
+dBk
+dBk
+iXo
+iXo
 giA
 xSE
 xSE
@@ -94077,10 +94041,10 @@ umo
 mMb
 iJT
 dBk
+dBk
 wzU
-wzU
-wzU
-wzU
+iXo
+iXo
 sMz
 xSE
 xSE
@@ -94334,12 +94298,12 @@ iXo
 umo
 umo
 dBk
-wzU
-wzU
-wzU
-wzU
+dBk
+dBk
+iXo
+iXo
 mYG
-hLC
+xSE
 xSE
 xSE
 xSE
@@ -94591,10 +94555,10 @@ umo
 umo
 umo
 dBk
+dBk
 wzU
-wzU
-wzU
-wzU
+iXo
+iXo
 giA
 ykY
 xSE

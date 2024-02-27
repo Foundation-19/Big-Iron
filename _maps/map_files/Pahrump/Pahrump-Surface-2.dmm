@@ -5430,7 +5430,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "ccF" = (
-/turf/open/floor/plasteel/elevatorshaft,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/brotherhood/surface)
 "ccJ" = (
 /turf/open/indestructible/ground/outside/ruins{
@@ -6821,12 +6821,14 @@
 /turf/open/floor/plasteel/grimy,
 /area/f13/brotherhood/surface)
 "cHo" = (
-/obj/machinery/computer/shuttle/bosentryelevator{
-	dir = 8;
-	pixel_x = 2
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "enclave_ladder"
 	},
-/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
-/area/f13/brotherhood/surface)
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
+	},
+/area/f13/enclave)
 "cHq" = (
 /obj/structure/simple_door/metal/fence,
 /turf/open/indestructible/ground/outside/dirt,
@@ -21977,11 +21979,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "iFO" = (
-/obj/structure/railing{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 9
+	},
+/obj/structure/railing{
+	dir = 1
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
@@ -35569,14 +35571,8 @@
 	},
 /area/f13/building)
 "ohi" = (
-/obj/machinery/computer/shuttle/enclaveelevator{
-	dir = 8
-	},
 /obj/structure/railing{
 	dir = 1
-	},
-/obj/machinery/light{
-	dir = 4
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
@@ -37303,7 +37299,9 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
 "oUN" = (
-/turf/open/floor/plasteel/elevatorshaft,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
+	},
 /area/f13/enclave)
 "oUV" = (
 /obj/machinery/mineral/wasteland_vendor/special,
@@ -40968,7 +40966,9 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel/elevatorshaft,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
+	},
 /area/f13/enclave)
 "qmR" = (
 /obj/structure/table/wood/settler,
@@ -47706,15 +47706,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "thN" = (
-/obj/docking_port/stationary{
-	area_type = /area/f13;
-	dwidth = 1;
-	height = 4;
-	id = "bos_surface";
-	name = "Surface";
-	width = 5
-	},
-/turf/open/floor/plasteel/elevatorshaft,
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/r_wall/rust,
 /area/f13/brotherhood/surface)
 "tie" = (
 /obj/structure/table/wood,
@@ -53153,10 +53146,7 @@
 /area/f13/wasteland)
 "vrh" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/dark,
+/turf/closed/wall/f13/store,
 /area/f13/brotherhood/surface)
 "vrm" = (
 /obj/structure/closet/crate/trashcart,
@@ -57659,16 +57649,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "xfb" = (
-/obj/docking_port/stationary{
-	area_type = /area/f13;
-	dwidth = 1;
-	height = 3;
-	id = "Enclave_Surface";
-	name = "Enclave Surface";
-	width = 3
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "bos_ladder"
 	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/enclave)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/brotherhood/surface)
 "xff" = (
 /obj/structure/table,
 /obj/item/paper_bin,
@@ -76370,7 +76357,7 @@ gcK
 gcK
 ktB
 ahu
-oUN
+cHo
 oUN
 oUN
 iFO
@@ -76627,9 +76614,9 @@ gcK
 gcK
 ktB
 ahu
+ahu
 qmP
 oUN
-xfb
 wGf
 ahu
 mnl
@@ -76884,7 +76871,7 @@ gcK
 gcK
 ktB
 ahu
-oUN
+cHo
 oUN
 oUN
 ohi
@@ -93148,7 +93135,7 @@ fyf
 gbL
 wOv
 ooa
-ooa
+wOv
 ooa
 ooa
 ooa
@@ -93405,10 +93392,10 @@ fyf
 gbL
 wOv
 ooa
+vrh
+thN
+thN
 wHW
-cBg
-fry
-fry
 cBg
 fry
 ooa
@@ -93663,8 +93650,8 @@ gcK
 wOv
 ooa
 vrh
-ccF
-ccF
+ooa
+xfb
 ccF
 ccF
 uFs
@@ -93919,11 +93906,11 @@ fyf
 gcK
 wOv
 ooa
-fry
+vrh
+ooa
+ooa
+wVB
 ccF
-ccF
-ccF
-thN
 wVB
 kwn
 wOv
@@ -94176,9 +94163,9 @@ fyf
 gcK
 wOv
 ooa
-fry
-ccF
-ccF
+vrh
+ooa
+xfb
 ccF
 ccF
 wVB
@@ -94433,13 +94420,13 @@ fyf
 gcK
 wOv
 ooa
-fry
-ccF
-ccF
-ccF
+vrh
+ooa
+ooa
+wVB
 ccF
 wVB
-cHo
+ccF
 wOv
 aFu
 fry
@@ -94691,8 +94678,8 @@ gcK
 wOv
 ooa
 vrh
-ccF
-ccF
+ooa
+xfb
 ccF
 ccF
 uFs
@@ -94947,9 +94934,9 @@ fCB
 gcK
 wOv
 ooa
-fry
-pSR
-fry
+vrh
+thN
+thN
 fry
 pSR
 fry
@@ -95204,7 +95191,7 @@ uHT
 gcK
 wOv
 ooa
-ooa
+wOv
 ooa
 ooa
 ooa
