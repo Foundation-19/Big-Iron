@@ -6590,12 +6590,29 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"cCo" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "cCF" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	tag = "icon-verticalrightborderright2bottom";
 	icon_state = "verticalrightborderright2bottom"
 	},
 /area/f13/wasteland)
+"cCK" = (
+/obj/structure/simple_door/house{
+	icon_state = "interior"
+	},
+/turf/open/indestructible/ground/outside/sidewalk{
+	dir = 1;
+	icon_state = "outerpavement"
+	},
+/area/f13/building)
 "cCU" = (
 /obj/machinery/smartfridge/bottlerack/wardrobe/legion,
 /obj/effect/turf_decal/shadow/floor,
@@ -7960,6 +7977,14 @@
 	},
 /turf/open/floor/wood,
 /area/f13/village)
+"dfL" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "dfR" = (
 /obj/structure/barricade/wooden/strong,
 /turf/closed/wall/f13/wood,
@@ -21262,10 +21287,6 @@
 	name = "Kebab radio";
 	can_be_unanchored = 1
 	},
-/obj/machinery/button{
-	pixel_x = -23;
-	id = "Radioguy2"
-	},
 /turf/open/floor/plasteel/grimy,
 /area/f13/city)
 "ipD" = (
@@ -25602,6 +25623,22 @@
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+"kdP" = (
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_y = 6
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/item/pen{
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "kek" = (
 /obj/structure/debris/v3,
 /turf/open/water,
@@ -29144,6 +29181,15 @@
 	},
 /turf/open/indestructible/ground/outside/savannah,
 /area/f13/tunnel)
+"lDL" = (
+/obj/structure/table,
+/obj/machinery/light/small,
+/obj/item/reagent_containers/food/drinks/flask,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "lDO" = (
 /obj/structure/curtain{
 	color = "#845f58";
@@ -29990,7 +30036,7 @@
 /obj/structure/simple_door/wood,
 /obj/machinery/door/poddoor/shutters{
 	name = "Radio host";
-	id = "Radioguy2"
+	id = "radiohost_shutters"
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/city)
@@ -34223,6 +34269,14 @@
 /obj/structure/destructible/tribal_torch,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"nEG" = (
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "nEI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/ladder/unbreakable{
@@ -46044,6 +46098,16 @@
 	color = "#845f58"
 	},
 /area/f13/building)
+"sAB" = (
+/obj/structure/window/fulltile/house{
+	icon_state = "housewindowbrokenvertical"
+	},
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "sAG" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -49422,6 +49486,15 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"tTt" = (
+/obj/structure/table,
+/obj/machinery/button{
+	id = "radiohost_shutters";
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/turf/open/floor/wood/f13/oak,
+/area/f13/city)
 "tTx" = (
 /obj/structure/railing/wood{
 	dir = 8;
@@ -51001,9 +51074,6 @@
 /area/f13/wasteland)
 "uyX" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/weather/dirt{
-	pixel_y = 6
-	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "uzv" = (
@@ -51523,9 +51593,6 @@
 	dir = 8;
 	pixel_y = 3;
 	pixel_x = 4
-	},
-/obj/effect/turf_decal/weather/dirt{
-	pixel_y = 6
 	},
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -53097,6 +53164,17 @@
 /obj/item/trash/candy,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"vrw" = (
+/obj/structure/nest/ghoul{
+	layer = 2.7;
+	max_mobs = 1;
+	radius = 3
+	},
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "vry" = (
 /obj/structure/fireaxecabinet,
 /turf/closed/indestructible/rock{
@@ -64749,7 +64827,7 @@ fXh
 iLc
 dIF
 wWC
-rWe
+tTt
 pJn
 pJn
 fXh
@@ -75746,7 +75824,7 @@ qvQ
 pqO
 gmX
 koD
-kOz
+dMW
 fyf
 fyf
 fyf
@@ -76003,8 +76081,8 @@ qvQ
 pqO
 gmX
 koD
-kOz
-fyf
+dMW
+jxH
 fyf
 fyf
 fyf
@@ -76261,7 +76339,7 @@ gRj
 gmX
 koD
 dMW
-fyf
+jxH
 fyf
 fyf
 fyf
@@ -76518,11 +76596,11 @@ pqO
 gqf
 bdN
 kOz
-fyf
-fyf
-fyf
-fyf
-fyf
+sYX
+sAB
+sAB
+sYX
+qyk
 fyf
 fyf
 fyf
@@ -76774,13 +76852,13 @@ qvQ
 pqO
 gqf
 koD
-dMW
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
+sYX
+sYX
+mZD
+mZD
+sYX
+sYX
+sYX
 fyf
 fyf
 fyf
@@ -77031,13 +77109,13 @@ qvQ
 gRj
 gmX
 jwg
-dMW
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
+cCK
+mZD
+mZD
+mZD
+vrw
+nEG
+sYX
 fyf
 fyf
 fyf
@@ -77288,13 +77366,13 @@ qvQ
 pqO
 gmX
 koD
-dMW
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
+sYX
+kdP
+saA
+mZD
+tKw
+lDL
+sYX
 fyf
 fyf
 fyf
@@ -77545,13 +77623,13 @@ qvQ
 pqO
 gqf
 koD
-dMW
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
+sYX
+sYX
+dfL
+cCo
+aZL
+aZL
+sYX
 fyf
 fyf
 fyf
@@ -77803,12 +77881,12 @@ gRj
 gqf
 bdN
 kOz
-fyf
-fyf
-fyf
-fyf
-fyf
-fyf
+sYX
+sAB
+sAB
+sAB
+sYX
+sYX
 fyf
 fyf
 fyf
