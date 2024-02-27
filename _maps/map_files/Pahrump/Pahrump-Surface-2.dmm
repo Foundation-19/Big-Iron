@@ -11297,6 +11297,12 @@
 	icon_state = "oakfloor3"
 	},
 /area/f13/legion)
+"ewc" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "ewi" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress4";
@@ -16737,9 +16743,12 @@
 	},
 /area/f13/city)
 "gEg" = (
-/obj/effect/mob_spawn/human/corpse/raider,
-/turf/closed/mineral/random/low_chance,
-/area/f13/wasteland)
+/obj/structure/junk/machinery,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "gEr" = (
 /turf/open/floor/plating/f13/inside,
 /area/f13/building)
@@ -18327,7 +18336,11 @@
 	},
 /area/f13/wasteland)
 "hkA" = (
-/obj/structure/simple_door/bunker/glass,
+/obj/structure/table,
+/obj/structure/junk/small/tv{
+	pixel_x = 1;
+	pixel_y = 10
+	},
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2"
@@ -24129,18 +24142,15 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "jxI" = (
-/obj/docking_port/stationary{
-	area_type = /area/f13;
-	dir = 8;
-	dwidth = 1;
-	height = 3;
-	id = "Ground";
-	json_key = null;
-	name = "Ground";
-	roundstart_template = /datum/map_template/shuttle/bunker/elevator;
-	width = 4
+/obj/structure/table,
+/obj/item/reagent_containers/food/condiment/mayonnaise{
+	pixel_x = 3;
+	pixel_y = 9
 	},
-/turf/open/floor/plasteel/elevatorshaft,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
 /area/f13/building)
 "jxM" = (
 /obj/structure/simple_door/house,
@@ -28872,9 +28882,12 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/raiders)
 "lwu" = (
-/obj/structure/simple_door/bunker/glass,
-/turf/open/floor/f13{
-	icon_state = "floorrustysolid"
+/obj/structure/table,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/obj/effect/spawner/lootdrop/f13/foodspawner,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
 "lwS" = (
@@ -34101,6 +34114,13 @@
 /mob/living/simple_animal/hostile/bloatfly,
 /turf/open/floor/wood/f13/housewoodbroken3,
 /area/f13/building)
+"nzK" = (
+/obj/structure/junk/small,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "nzN" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -35634,9 +35654,9 @@
 /turf/open/indestructible/ground/outside/savannah/edgesnew,
 /area/f13/tunnel)
 "oil" = (
-/obj/machinery/computer/shuttle/northbunkerelevator,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/grimy,
+/obj/item/organ/ears/cat,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/plasteel/elevatorshaft,
 /area/f13/building)
 "ois" = (
 /obj/structure/fence/corner,
@@ -42834,7 +42854,11 @@
 	},
 /area/f13/wasteland)
 "rct" = (
-/turf/open/indestructible/ground/inside/mountain,
+/obj/structure/junk/small/table,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
 /area/f13/building)
 "rcC" = (
 /obj/machinery/light/small{
@@ -48581,18 +48605,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "tyd" = (
-/obj/docking_port/stationary{
-	area_type = /area/f13;
-	dwidth = 1;
-	height = 3;
-	id = "North_Ground";
-	json_key = null;
-	name = "Ground";
-	roundstart_template = /datum/map_template/shuttle/northbunker/elevator;
-	width = 4
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
 	},
-/turf/open/floor/plasteel/elevatorshaft,
-/area/f13/building)
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "tyw" = (
 /turf/open/indestructible/ground/outside/gravel/corner{
 	dir = 8
@@ -51450,14 +51467,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/village)
 "uHo" = (
-/obj/machinery/computer/shuttle/bunkerelevator{
-	dir = 4
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 5
 	},
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2"
-	},
-/area/f13/building)
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "uHq" = (
 /obj/machinery/light/small/broken{
 	dir = 8
@@ -54772,6 +54786,16 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"wct" = (
+/obj/structure/table,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "wcu" = (
 /obj/structure/decoration/legion/tentpole/rope{
 	dir = 8
@@ -56204,6 +56228,12 @@
 	icon_state = "desertsmooth4"
 	},
 /area/f13/legion)
+"wFe" = (
+/obj/effect/decal/remains{
+	icon_state = "remains"
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/f13/building)
 "wFg" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -60650,6 +60680,13 @@
 	},
 /turf/open/floor/f13,
 /area/f13/building)
+"ylb" = (
+/obj/structure/junk/micro,
+/turf/open/floor/plasteel/barber{
+	icon = 'icons/turf/f13floors2.dmi';
+	icon_state = "bluerustychess2"
+	},
+/area/f13/building)
 "ylg" = (
 /obj/item/instrument/guitar,
 /mob/living/simple_animal/hostile/raider/ranged,
@@ -64711,8 +64748,8 @@ tZT
 csk
 fzl
 qDV
-ggK
-ggK
+tyd
+mwp
 gcK
 gcK
 gcK
@@ -64968,9 +65005,9 @@ ueT
 csk
 fzl
 uha
-csk
-ggK
-ggK
+uHo
+ewc
+mwp
 gcK
 gcK
 gcK
@@ -65225,10 +65262,10 @@ fzl
 sKC
 fzl
 eYy
-ggK
-ggK
-ggK
-ggK
+mwp
+mwp
+mwp
+mwp
 gcK
 gcK
 gcK
@@ -65484,8 +65521,8 @@ fzl
 eYy
 sgk
 gcK
-ggK
-ggK
+mwp
+mwp
 gcK
 gcK
 gcK
@@ -65741,9 +65778,9 @@ fzl
 eYy
 eYy
 gcK
-ggK
-ggK
-ggK
+mwp
+mwp
+mwp
 gcK
 gcK
 gcK
@@ -65999,8 +66036,8 @@ eYy
 sgk
 gcK
 gcK
-ggK
-ggK
+mwp
+mwp
 gcK
 gcK
 gcK
@@ -66256,10 +66293,10 @@ eYy
 gcK
 gcK
 gcK
-ggK
-ggK
-ggK
-ggK
+mwp
+mwp
+mwp
+gcK
 gcK
 gcK
 gcK
@@ -66513,12 +66550,12 @@ eYy
 gcK
 gcK
 gcK
-ggK
-ggK
-ggK
-ggK
-ggK
-ggK
+mwp
+mwp
+mwp
+gcK
+gcK
+gcK
 gcK
 gcK
 gcK
@@ -66770,14 +66807,14 @@ eYy
 gcK
 gcK
 gcK
+mwp
+mwp
+mwp
 gcK
-ggK
-ggK
-ggK
-ggK
-ggK
-ggK
-ggK
+gcK
+gcK
+gcK
+gcK
 gcK
 gcK
 gcK
@@ -67027,16 +67064,16 @@ eYy
 gcK
 gcK
 gcK
+mwp
+mwp
 gcK
 gcK
 gcK
 gcK
-ggK
-ggK
-ggK
-ggK
-ggK
-ggK
+gcK
+gcK
+gcK
+gcK
 gcK
 gcK
 gcK
@@ -67284,16 +67321,16 @@ eYy
 eYy
 gcK
 gcK
-gcK
-gcK
+mwp
+mwp
 gcK
 gcK
 gcK
 gts
 gts
-rct
-rct
-rct
+gts
+gts
+gts
 gts
 gts
 gts
@@ -67541,8 +67578,8 @@ fzl
 eYy
 gts
 gts
-gts
-gts
+mwp
+mwp
 gts
 gts
 gts
@@ -67797,12 +67834,12 @@ csk
 fzl
 eYy
 gts
-mrq
-mrq
-mrq
-mrq
-mrq
-mrq
+lwu
+mZD
+mZD
+mZD
+nzK
+mZD
 gts
 bvP
 mZD
@@ -68054,12 +68091,12 @@ fzl
 cYz
 eYy
 gts
-mrq
-tOL
-tOL
-tOL
-tOL
-mrq
+wct
+mZD
+mZD
+hkA
+jxI
+kpr
 gts
 ckV
 mZD
@@ -68311,12 +68348,12 @@ ukh
 ggK
 eYy
 gts
-mrq
-tOL
-tOL
-tOL
-tOL
-mrq
+ylb
+mZD
+vPz
+mZD
+mZD
+mZD
 gts
 wWR
 vPz
@@ -68568,12 +68605,12 @@ oPV
 qlS
 ktB
 gts
-mrq
-tOL
-tOL
-jxI
-tOL
-mrq
+rct
+mZD
+mZD
+mZD
+mZD
+mZD
 gts
 hpx
 mZD
@@ -68825,12 +68862,12 @@ ggK
 gbL
 ktB
 gts
-mrq
-nsE
-hkA
-hkA
-nsE
-mrq
+gts
+jkT
+gts
+gts
+jkT
+gts
 gts
 tNm
 mZD
@@ -69082,7 +69119,7 @@ gbL
 gbL
 ktB
 gts
-uHo
+mZD
 mZD
 mZD
 mZD
@@ -69339,7 +69376,7 @@ ktB
 ktB
 ktB
 gts
-mZD
+gEg
 mZD
 mZD
 mZD
@@ -85663,7 +85700,7 @@ mrq
 mrq
 mrq
 mrq
-mrq
+giZ
 lOj
 cPF
 giZ
@@ -85920,7 +85957,7 @@ mrq
 tOL
 tOL
 tOL
-nsE
+giZ
 cPF
 cPF
 giZ
@@ -86055,7 +86092,7 @@ eAD
 miW
 hwC
 hwC
-gEg
+hwC
 hwC
 hwC
 hwC
@@ -86175,9 +86212,9 @@ gcK
 giZ
 mrq
 tOL
+wFe
 tOL
-tyd
-lwu
+giZ
 cPF
 cPF
 giZ
@@ -86432,9 +86469,9 @@ gcK
 giZ
 mrq
 tOL
+oil
 tOL
-tOL
-lwu
+giZ
 cPF
 cPF
 giZ
@@ -86691,7 +86728,7 @@ mrq
 tOL
 tOL
 tOL
-nsE
+giZ
 mnd
 cPF
 giZ
@@ -86948,8 +86985,8 @@ mrq
 mrq
 mrq
 mrq
-mrq
-oil
+giZ
+cPF
 cPF
 giZ
 pYH
