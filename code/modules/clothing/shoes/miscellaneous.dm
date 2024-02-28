@@ -491,3 +491,12 @@
 	to_chat(user, "<span class='notice'>You insert [I] into [src].</span>")
 	B.use(10)
 	icon_state = initial(icon_state)
+/obj/item/clothing/shoes/clown_shoes
+	desc = "The prankster's standard-issue clowning shoes. Damn, they're huge! Ctrl-click to toggle waddle dampeners."
+	name = "clown shoes"
+	icon_state = "clown"
+	item_state = "clown_shoes"
+	slowdown = SHOES_SLOWDOWN+0.5
+/obj/item/clothing/shoes/clown_shoes/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/squeak, list('sound/effects/clownstep1.ogg'=1,'sound/effects/clownstep2.ogg'=1), 50)

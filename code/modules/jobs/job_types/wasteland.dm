@@ -881,6 +881,36 @@ Raider
 		/obj/item/book/granter/crafting_recipe/tribal/bone = 1
 	)
 
+/datum/outfit/job/mime
+	name = "Mime"
+
+	uniform = /obj/item/clothing/under/rank/mime
+	suit = /obj/item/clothing/suit/suspenders
+	ears = /obj/item/radio/headset/headset_srv
+	gloves = /obj/item/clothing/gloves/color/white
+	head = /obj/item/clothing/head/frenchberet
+	mask = /obj/item/clothing/mask/gas/mime
+	shoes = /obj/item/clothing/shoes/laceup
+
+	backpack = /obj/item/storage/backpack
+
+/datum/outfit/job/clown
+	name = "Clown"
+	uniform = /obj/item/clothing/under/rank/clown
+	backpack_contents = list(
+		/obj/item/reagent_containers/spray/waterflower = 1,
+		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
+		/obj/item/instrument/bikehorn = 1,
+		)
+	ears = /obj/item/radio/headset/headset_srv
+	shoes = /obj/item/clothing/shoes/clown_shoes
+	mask = /obj/item/clothing/mask/gas/clown_hat
+	l_pocket = /obj/item/bikehorn
+
+	backpack = /obj/item/storage/backpack/
+
+	box = /obj/item/storage/box/survival
+
 /* /datum/job/wasteland/f13bwsettler
 	title = "Blackwater Settler"
 	flag = F13BWSETTLER

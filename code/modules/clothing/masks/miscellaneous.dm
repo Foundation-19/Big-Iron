@@ -493,3 +493,38 @@
 	visor_flags_inv = HIDEFACE
 	adjusted_flags = null
 	actions_types = list(/datum/action/item_action/adjust)
+
+/obj/item/clothing/mask/dallas
+	name = "dallas mask"
+	desc = "A mask often seen being worn by criminals during bank robberies."
+	icon_state = "pddallas"
+	item_state = "pddallas"
+	flags_cover = MASKCOVERSEYES
+
+/obj/item/clothing/mask/hoxton
+	name = "hoxton mask"
+	desc = "A mask often seen being worn by criminals during bank robberies."
+	icon_state = "pdhoxton"
+	item_state = "pdhoxton"
+	flags_cover = MASKCOVERSEYES
+
+/obj/item/clothing/mask/robwolf
+	name = "wolf mask"
+	desc = "A mask often seen being worn by criminals during bank robberies."
+	icon_state = "pdwolf"
+	item_state = "pdwolf"
+	flags_cover = MASKCOVERSEYES
+
+/obj/item/clothing/mask/chains
+	name = "chains mask"
+	desc = "A mask often seen being worn by criminals during bank robberies."
+	icon_state = "pdchains"
+	item_state = "pdchains"
+	flags_cover = MASKCOVERSEYES
+
+/obj/item/clothing/mask/richard
+	name = "rooster mask"
+	desc = "Perfect mask for killing russian mob thugs!"
+	flags_inv = HIDEEARS|HIDEFACE|HIDEFACIALHAIR|HIDEHAIR
+	icon_state = "richard"
+	item_state = "richard"
