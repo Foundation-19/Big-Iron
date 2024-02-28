@@ -883,7 +883,8 @@ Raider
 
 /datum/outfit/job/mime
 	name = "Mime"
-
+	jobtype = /datum/job/wasteland/f13wastelander
+	id = null
 	uniform = /obj/item/clothing/under/rank/mime
 	suit = /obj/item/clothing/suit/suspenders
 	ears = /obj/item/radio/headset/headset_srv
@@ -891,11 +892,11 @@ Raider
 	head = /obj/item/clothing/head/frenchberet
 	mask = /obj/item/clothing/mask/gas/mime
 	shoes = /obj/item/clothing/shoes/laceup
-
 	backpack = /obj/item/storage/backpack
 
 /datum/outfit/job/clown
 	name = "Clown"
+	jobtype = /datum/job/wasteland/f13wastelander
 	uniform = /obj/item/clothing/under/rank/clown
 	backpack_contents = list(
 		/obj/item/reagent_containers/spray/waterflower = 1,
@@ -906,9 +907,7 @@ Raider
 	shoes = /obj/item/clothing/shoes/clown_shoes
 	mask = /obj/item/clothing/mask/gas/clown_hat
 	l_pocket = /obj/item/bikehorn
-
-	backpack = /obj/item/storage/backpack/
-
+	backpack = /obj/item/storage/backpack
 	box = /obj/item/storage/box/survival
 
 /* /datum/job/wasteland/f13bwsettler
