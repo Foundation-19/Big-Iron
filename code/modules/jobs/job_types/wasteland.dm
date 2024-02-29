@@ -887,6 +887,7 @@ Raider
 	id = null
 	uniform = /obj/item/clothing/under/rank/mime
 	backpack = /obj/item/storage/backpack/mime
+	satchel = /obj/item/storage/backpack/mime
 	suit = /obj/item/clothing/suit/suspenders
 	ears = /obj/item/radio/headset/headset_srv
 	gloves = /obj/item/clothing/gloves/color/white
@@ -900,6 +901,7 @@ Raider
 	jobtype = /datum/job/wasteland/f13wastelander
 	uniform = /obj/item/clothing/under/rank/clown
 	backpack = /obj/item/storage/backpack/clown
+	satchel = /obj/item/storage/backpack/clown
 	backpack_contents = list(
 		/obj/item/reagent_containers/spray/waterflower = 1,
 		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
