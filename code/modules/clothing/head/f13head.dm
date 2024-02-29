@@ -418,6 +418,7 @@
 desc = "The pinnacle of Clown technology, appropriated by the Clownhood of Steel. Commonly worn by Head Pranksters."
 	icon_state = "hardsuit0-clown"
 	item_state = "hardsuit0-clown"
+	armor = list("melee" = 90, "bullet" = 90, "laser" = 90, "energy" = 70, "bomb" = 80, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 90)
 
 /obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened
 	name = "hardened T-51b power helmet"
