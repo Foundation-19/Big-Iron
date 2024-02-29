@@ -415,7 +415,7 @@
 
 /obj/item/clothing/head/helmet/f13/power_armor/clown
 	name = "Experimental C10wn Pranking Power Helmet"
-desc = "The pinnacle of Clown technology, appropriated by the Clownhood of Steel. Commonly worn by Head Pranksters."
+	desc = "The pinnacle of Clown technology, appropriated by the Clownhood of Steel. Commonly worn by Head Pranksters."
 	icon_state = "hardsuit0-clown"
 	item_state = "hardsuit0-clown"
 	armor = list("melee" = 90, "bullet" = 90, "laser" = 90, "energy" = 70, "bomb" = 80, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 90)
