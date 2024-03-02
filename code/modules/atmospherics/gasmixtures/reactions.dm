@@ -134,10 +134,10 @@
 			item.temperature_expose(air, temperature, CELL_VOLUME)
 		location.temperature_expose(air, temperature, CELL_VOLUME)
 
-/proc/radiation_burn(turf/open/location, rad_power)
+/* /proc/radiation_burn(turf/open/location, rad_power)
 	if(istype(location) && prob(10))
 		radiation_pulse(location, rad_power)
-
+*/
 /datum/gas_reaction/tritfire/react(datum/gas_mixture/air, datum/holder)
 	var/energy_released = 0
 	var/old_heat_capacity = air.heat_capacity()
