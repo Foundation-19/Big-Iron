@@ -69,7 +69,7 @@
 /datum/component/construction/unordered/mecha_chassis/spawn_result()
 	var/atom/parent_atom = parent
 	parent_atom.icon = 'icons/mecha/mech_construction.dmi'
-	if(istype(parent_atom, /obj/item/mecha_parts/chassis/phazon/car))
+	if(istype(parent_atom, /obj/item/mecha_parts/chassis/phazon/car) || istype(parent_atom, /obj/item/mecha_parts/chassis/phazon/bike))
 		parent_atom.icon = 'icons/fallout/vehicles/medium_vehicles.dmi'
 	parent_atom.density = TRUE
 	parent_atom.cut_overlays()
@@ -2221,6 +2221,150 @@
 			if(diff==FORWARD)
 				user.visible_message("[user] paints [parent] as a finishing touch.",
 					"<span class='notice'>You paint [parent] as a finishing touch.</span>")
+	return TRUE
+
+/datum/component/construction/unordered/mecha_chassis/phazon/pickuptruck/bos
+	result = /datum/component/construction/mecha/phazon/pickuptruck/bos
+/datum/component/construction/mecha/phazon/pickuptruck/bos
+	result = /obj/mecha/combat/phazon/pickuptruck/bos
+/datum/component/construction/unordered/mecha_chassis/phazon/pickuptruck/buggy
+	result = /datum/component/construction/mecha/phazon/pickuptruck/buggy
+/datum/component/construction/mecha/phazon/pickuptruck/buggy
+	result = /obj/mecha/combat/phazon/buggy
+/datum/component/construction/unordered/mecha_chassis/phazon/pickuptruck/ncrtruck
+	result = /datum/component/construction/mecha/phazon/pickuptruck/ncrtruck
+/datum/component/construction/mecha/phazon/pickuptruck/ncrtruck
+	result = /obj/mecha/combat/phazon/ncrtruck
+/datum/component/construction/unordered/mecha_chassis/phazon/pickuptruck/highwayman
+	result = /datum/component/construction/mecha/phazon/pickuptruck/highwayman
+/datum/component/construction/mecha/phazon/pickuptruck/highwayman
+	result = /obj/mecha/combat/phazon/highwayman
+/datum/component/construction/unordered/mecha_chassis/phazon/pickuptruck/coverage
+	result = /datum/component/construction/mecha/phazon/pickuptruck/coverage
+/datum/component/construction/mecha/phazon/pickuptruck/coverage
+	result = /obj/mecha/combat/phazon/corvega
+//BIKE
+/datum/component/construction/unordered/mecha_chassis/phazon/bike
+	result = /datum/component/construction/mecha/phazon/bike
+	steps = list(
+		/obj/item/mecha_parts/part/Car_autoshaft,
+		/obj/item/mecha_parts/part/Car_tire,
+		/obj/item/mecha_parts/part/Car_tire,
+		/obj/item/mecha_parts/part/Car_engine,
+		/obj/item/defibrillator/primitive
+	)
+
+/datum/component/construction/mecha/phazon/bike
+	result = /obj/vehicle/ridden/space/speedbike/f13
+	base_icon = "bikechassis"
+	steps = list(
+		//1
+		list(
+			"key" = TOOL_WRENCH,
+			"desc" = "The shaft is removed."
+		),
+		//2
+		list(
+			"key" = TOOL_SCREWDRIVER,
+			"desc" = "The wheels are installed."
+		),
+		//3
+		list(
+
+			"key" = /obj/item/light/bulb,
+			"back_key" = TOOL_CROWBAR,
+			"action" = ITEM_MOVE_INSIDE,
+			"desc" = "The wheels are secured."
+		),
+
+		//5
+		list(
+			"key" = /obj/item/stack/cable_coil,
+			"amount" = 5,
+			"back_key" = TOOL_CROWBAR,
+			"desc" = "The busted light is replaced."
+		),
+		//6
+		list(
+			"key" = TOOL_SCREWDRIVER,
+			"back_key" = TOOL_WIRECUTTER,
+			"desc" = "The headlights are wired."
+		),
+		//7
+		list(
+			"key" = /obj/item/stack/sheet/glass,
+			"amount" = 5,
+			"back_key" = TOOL_SCREWDRIVER,
+			"desc" = "The gearbox is installed."
+		),
+
+		//8
+		list(
+			"key" = TOOL_SCREWDRIVER,
+			"back_key" = TOOL_CROWBAR,
+			"desc" = "the Windshield is installed."
+		),
+		//9
+		list(
+			"key" = /obj/item/stock_parts/cell,
+			"action" = ITEM_MOVE_INSIDE,
+			"back_key" = TOOL_SCREWDRIVER,
+			"desc" = "The headlights are installed."
+		),
+		//10
+		list(
+			"key" = TOOL_SCREWDRIVER,
+			"back_key" = TOOL_CROWBAR,
+			"desc" = "The power cell is installed.",
+		)
+	)
+
+
+/datum/component/construction/mecha/phazon/bike/custom_action(obj/item/I, mob/living/user, diff)
+	if(!..())
+		return FALSE
+	//TODO: better messages.
+	switch(index)
+		if(1)
+			user.visible_message("[user] connects [parent] hydraulic systems", "<span class='notice'>You connect [parent] hydraulic systems.</span>")
+		if(2)
+			if(diff==FORWARD)
+				user.visible_message("[user] activates [parent] hydraulic systems.", "<span class='notice'>You activate [parent] hydraulic systems.</span>")
+			else
+				user.visible_message("[user] disconnects [parent] hydraulic systems", "<span class='notice'>You disconnect [parent] hydraulic systems.</span>")
+		if(3)
+			if(diff==FORWARD)
+				user.visible_message("[user] changes the lightbulb of [parent].", "<span class='notice'>You change the lightbulb of [parent].</span>")
+			else
+				user.visible_message("[user] deactivates [parent] hydraulic systems.", "<span class='notice'>You deactivate [parent] hydraulic systems.</span>")
+		if(4)
+			if(diff==FORWARD)
+				user.visible_message("[user] wires the lightbulb of [parent].", "<span class='notice'> You wire the lightbulb [parent].</span>")
+			else
+				user.visible_message("[user]  removes the lightbulb from[parent].", "<span class='notice'>You remove the lightbulb from [parent].</span>")
+		if(5)
+			if(diff==FORWARD)
+				user.visible_message("[user] installs the lightbulb [parent].", "<span class='notice'>You installs the lightbulbinto the [parent].</span>")
+			else
+				user.visible_message("[user] removes the lightbulb.", "<span class='notice'>You remove the lightbulb.</span>")
+		if(6)
+			if(diff==FORWARD)
+				user.visible_message("[user] Positions the Windshield.", "<span class='notice'>You Position the Windshield.</span>")
+			else
+				user.visible_message("[user] uninstall the windshield.", "<span class='notice'>You uninstall the windshield.</span>")
+		if(7)
+			if(diff==FORWARD)
+				user.visible_message("[user] installs the windshield of [parent].", "<span class='notice'>You install windshield of [parent].</span>")
+			else
+				user.visible_message("[user] removes the windshield.", "<span class='notice'>You remove the windshield.</span>")
+		if(8)
+			if(diff==FORWARD)
+				user.visible_message("[user] installs the battery.", "<span class='notice'>You install the battery.</span>")
+			else
+				user.visible_message("[user] uninstalls the windshield.", "<span class='notice'>You uninstall the windshield.</span>")
+		if(9)
+			if(diff==FORWARD)
+				user.visible_message("[user] secures the battery.", "<span class='notice'>You secure the battery.</span>")
 	return TRUE
 //ODYSSEUS
 

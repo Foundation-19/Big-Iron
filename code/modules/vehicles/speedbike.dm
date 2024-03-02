@@ -36,6 +36,14 @@
 	icon_state = "speedbike_red"
 	overlay_state = "cover_red"
 
+/obj/vehicle/ridden/space/speedbike/f13
+	icon_state = "speedbike_f13"
+	overlay_state = "cover_f13"
+
+/obj/vehicle/ridden/space/speedbike/f13/Move(newloc,move_dir)
+	if(has_buckled_mobs())
+		new /obj/effect/temp_visual/dir_setting/speedbike_trail/f13(loc,move_dir)
+	. = ..()
 //BM SPEEDWAGON
 
 /obj/vehicle/ridden/space/speedwagon
