@@ -42,7 +42,7 @@
 	chassis = /obj/item/mecha_parts/chassis/phazon/bike
 
 /obj/structure/wreck/car/bike/wrench_act(mob/living/user, obj/item/I)
- return
+	return
 	
 
 /obj/structure/wreck/bus
