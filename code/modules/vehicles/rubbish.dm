@@ -29,11 +29,11 @@
 	bound_width = 64
 	var/uses_left = 2
 	var/inuse = FALSE
+	var/randomchassis = pick(list(/obj/structure/wreck/car/bike, /obj/structure/wreck/car))
+	var/randomwheels = pick(list(/obj/structure/wreck/trash/two_tire, /obj/structure/wreck/trash/one_tire))
 	var/afterstrip = list(
-		/obj/structure/wreck/car,
-		/obj/structure/wreck/car/bike,
-		/obj/structure/wreck/trash/two_tire,
-		/obj/structure/wreck/trash/one_tire,
+		randomchassis,
+		randomwheels,
 		/obj/structure/wreck/trash/engine,
 		/obj/structure/wreck/trash/autoshaft,
 		/obj/item/defibrillator/primitive)
