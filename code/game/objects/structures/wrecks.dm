@@ -427,7 +427,36 @@
 	icon_state = "technical_pile3"
 	bound_width = 32
 	bound_height = 32
+	var/inuse = FALSE
 
+/obj/structure/wreck/trash/brokenvendor/attackby(obj/item/I, mob/living/user, params)
+	if(istype(I, /obj/item/weldingtool))
+		if(inuse) //this means that if mappers or admins want an nonharvestable version, set the uses_left to 0
+			return
+		inuse = TRUE //one at a time boys, this isn't some kind of weird party
+		if(!I.tool_start_check(user, amount=0)) //this seems to be called everywhere, so for consistency's sake
+			inuse = FALSE
+			return //the tool fails this check, so stop
+		user.visible_message("[user] starts disassembling [src].")
+		if(!I.use_tool(src, user, 0, volume=100)) //here is the dilemma, use_tool doesn't work like do_after, so moving away screws it(?)
+			inuse = FALSE
+			return //you can't use the tool, so stop
+		for(var/i1 in 1 to 2) //so, I hate waiting
+			if(!do_after(user, 1 SECONDS, target = src)) //this is my work around, because do_After does have a move away
+				user.visible_message("[user] stops disassembling [src].")
+				inuse = FALSE
+				return //you did something, like moving, so stop
+			var/fake_dismantle = pick("plating", "rod", "rim", "part of the frame")
+			user.visible_message("[user] slices through a [fake_dismantle].")
+			I.play_tool_sound(src, 100)
+		var/turf/usr_turf = get_turf(user)
+		var/list/canistergachalist = subtypesof(/obj/item/vending_refill)
+		var/canistergacha = pick(canistergachalist)
+		new canistergacha(usr_turf)
+		new /obj/item/circuitboard/machine/vendor(usr_turf)
+		inuse = FALSE //putting this after the -- because the first check prevents cheesing
+		visible_message("[src] falls apart, the final components having been removed.")
+		qdel(src)
 /obj/structure/wreck/trash/machinepile
 	name = "Broken Machinery"
 	desc = "Looks like broken machinery."
