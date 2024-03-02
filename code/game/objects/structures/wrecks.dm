@@ -41,6 +41,10 @@
 	icon_state = "rust_light_no_wheels"
 	chassis = /obj/item/mecha_parts/chassis/phazon/bike
 
+/obj/structure/wreck/car/bike/wrench_act(mob/living/user, obj/item/I)
+ return
+	
+
 /obj/structure/wreck/bus
 	name = "wrecked bus"
 	desc = "An old pre-war vehicle, rusted and destroyed with age and weathering."
