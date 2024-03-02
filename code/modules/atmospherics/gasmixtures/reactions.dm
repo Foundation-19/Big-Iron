@@ -242,7 +242,7 @@
 			air.set_moles(GAS_PLASMA, QUANTIZE(air.get_moles(GAS_PLASMA) - plasma_burn_rate))
 			air.set_moles(GAS_O2, QUANTIZE(air.get_moles(GAS_O2) - (plasma_burn_rate * oxygen_burn_rate)))
 			if (super_saturation)
-				air.adjust_moles(GAS_TRITIUM, plasma_burn_rate)
+				air.adjust_moles(GAS_O2, plasma_burn_rate)
 			else
 				air.adjust_moles(GAS_CO2, plasma_burn_rate)
 
