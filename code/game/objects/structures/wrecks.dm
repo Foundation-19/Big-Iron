@@ -470,6 +470,9 @@
 				new /obj/item/salvage/high(usr_turf)
 			if(prob(10))
 				new /obj/item/salvage/tool(usr_turf)
+		var/list/boardgachalist = subtypesof(/obj/item/circuitboard/computer)
+		var/boardgacha = pick(boardgachalist)
+		new boardgacha(usr_turf)
 		inuse = FALSE //putting this after the -- because the first check prevents cheesing
 		visible_message("[src] falls apart, the final components having been removed.")
 		qdel(src)
@@ -516,6 +519,9 @@
 				new /obj/item/salvage/high(usr_turf)
 			if(prob(10))
 				new /obj/item/salvage/tool(usr_turf)
+		var/list/boardgachalist = subtypesof(/obj/item/circuitboard/machine)
+		var/boardgacha = pick(boardgachalist)
+		new boardgacha(usr_turf)
 		inuse = FALSE //putting this after the -- because the first check prevents cheesing
 		visible_message("[src] falls apart, the final components having been removed.")
 		qdel(src)
