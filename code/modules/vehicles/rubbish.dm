@@ -29,6 +29,14 @@
 	bound_width = 64
 	var/uses_left = 2
 	var/inuse = FALSE
+	var/afterstrip = list(
+		/obj/structure/wreck/car,
+		/obj/structure/wreck/car/bike,
+		/obj/structure/wreck/trash/two_tire,
+		/obj/structure/wreck/trash/one_tire,
+		/obj/structure/wreck/trash/engine,
+		/obj/structure/wreck/trash/autoshaft,
+		/obj/item/defibrillator/primitive)
 
 
 
@@ -69,6 +77,8 @@
 	inuse = FALSE //putting this after the -- because the first check prevents cheesing
 	if(uses_left <= 0) //I prefer to put any qdel stuff at the very end, with src being the very last thing
 		visible_message("[src] falls apart, the final components having been removed.")
+		var/trashgacha = pick(afterstrip)
+		new trashgacha(loc)
 		qdel(src)
 
 

@@ -815,6 +815,17 @@
 	glass_name = "Nukashine"
 	glass_desc = "You've really hit rock bottom now... your liver packed its bags and left last night. Stronger than the normal stuff, whooboy."
 
+/datum/reagent/consumable/ethanol/nukashine/on_mob_end_metabolize(mob/living/L)
+	switch(current_cycle)
+		if(11)
+			to_chat(L, "<span class='warning'>You start to feel tired...</span>" )
+		if(12 to 24)
+			L.drowsyness += 1
+		if(24 to INFINITY)
+			L.Sleeping(40, 0)
+			. = 1
+	..()
+
 /datum/reagent/consumable/ethanol/olflakey
 	name = "Ol' Flakey"
 	description = "So smooth its flakey, leaves your throat confused and your body numb."
@@ -1009,7 +1020,7 @@
 /datum/reagent/consumable/ethanol/vaultboy/overdose_process(mob/living/M)
 	if(M && ishuman(M))
 		var/mob/living/carbon/human/H = M
-		H.hair_style = "Business Hair 4"
+		H.hair_style = "Business Hair"
 		H.facial_hair_style = "Clean shave (Hairless)"
 		H.facial_hair_color = "#FFFF99"
 		H.hair_color = "#FFFF99"
@@ -1044,7 +1055,7 @@
 /datum/reagent/consumable/ethanol/vaultgirl/overdose_process(mob/living/M)
 	if(M && ishuman(M))
 		var/mob/living/carbon/human/H = M
-		H.hair_style = "Over Eye"
+		H.hair_style = "Long (Overeye)"
 		H.facial_hair_style = "Clean shave (Hairless)"
 		H.facial_hair_color = "#FFFF99"
 		H.hair_color = "#FFFF99"

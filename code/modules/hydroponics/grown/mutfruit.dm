@@ -23,4 +23,4 @@
 	icon_state = "mutfruit"
 	filling_color = "#FF6347"
 	distill_reagent = /datum/reagent/consumable/ethanol/purplecider
-	juice_results = list(/datum/reagent/consumable/mutjuice = 0)
+	juice_results = list(/datum/reagent/consumable/mutjuice = 1)

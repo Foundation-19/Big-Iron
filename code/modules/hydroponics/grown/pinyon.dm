@@ -28,5 +28,5 @@
 	filling_color = "#F0E68C"
 	bitesize_mod = 2
 	foodtype = GRAIN
-	grind_results = list(/datum/reagent/consumable/flour = 0)
+	grind_results = list(/datum/reagent/consumable/flour = 0.8)
 	tastes = list("pine nuts" = 1)
