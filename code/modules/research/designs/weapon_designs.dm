@@ -412,7 +412,7 @@
 	materials = list (/datum/material/iron = 8000, /datum/material/glass = 2000, /datum/material/uranium = 1000, /datum/material/gold = 500)
 	build_path = /obj/item/gun/energy/laser/rechargerrifle
 	category = list("Weapons")
-	
+
 /datum/design/rechargerpistol
 	name = "Recharger Pistol"
 	desc = "A recharger pistol manufactured by the Followers of the Apocalpyse. As the name implies, it charges its capacitor banks over time using radioactive decay."
