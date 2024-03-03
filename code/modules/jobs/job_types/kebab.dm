@@ -971,6 +971,7 @@
 	ears = /obj/item/radio/headset/headset_town
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	r_pocket = /obj/item/gun/ballistic/revolver/police
+	l_pocket = /obj/item/circuitboard/radio_station
 	shoes = /obj/item/clothing/shoes/laceup
 	backpack = /obj/item/storage/backpack/satchel/leather
 	backpack_contents = list(
