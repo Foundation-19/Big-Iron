@@ -37,8 +37,8 @@
 		/obj/structure/wreck/trash/two_tire,)
 	
 	var/afterstrip = list(
-		/obj/structure/wreck/trash/one_tire/,
-		/obj/structure/wreck/car/,
+		/obj/structure/wreck/trash/one_tire,
+		/obj/structure/wreck/car,
 		/obj/structure/wreck/trash/engine,
 		/obj/structure/wreck/trash/autoshaft,
 		/obj/item/defibrillator/primitive)

@@ -10,21 +10,35 @@
 	icon_state = "derelict"
 	bound_width = 64
 
-/obj/structure/wreck/car/attacked_by(obj/item/I, mob/living/user, params)
-	if(I.tool_behaviour == TOOL_WELDER)
-		I.play_tool_sound(src)
-		user.visible_message("<span class='notice'>[user] starts preparing the [src] for a makeover...</span>", \
-							"<span class='notice'>You start preparing the [src] for a makeover...</span>")
-		if(!I.use_tool(src, user, 50))
-			return
-		playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)
-		user.visible_message("<span class='notice'>[user] dexterly opens up [src]'s space .</span>", \
-							"<span class='notice'>You dexterly open up [src]'s space.</span>")
-		new /obj/item/mecha_parts/chassis/phazon/car(loc)
-		qdel(src)
+/obj/structure/wreck/car/welder_act(mob/living/user, obj/item/I)
+	I.play_tool_sound(src)
+	user.visible_message("<span class='notice'>[user] starts preparing the [src] for a makeover...</span>", \
+						"<span class='notice'>You start preparing the [src] for a makeover...</span>")
+	if(!I.use_tool(src, user, 50))
 		return
-	. = ..()
+	playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)
+	user.visible_message("<span class='notice'>[user] dexterly opens up [src]'s space .</span>", \
+						"<span class='notice'>You dexterly open up [src]'s space.</span>")
+	new /obj/item/mecha_parts/chassis/phazon/car(loc)
+	qdel(src)
+	return TRUE
 
+
+/obj/structure/wreck/car/crowbar_act(mob/living/user, obj/item/I)
+	I.play_tool_sound(src)
+	user.visible_message("<span class='notice'>[user] starts taking the [src] appart for materials...</span>", \
+						"<span class='notice'>You start taking the [src] appart for materials...</span>")
+	if(!I.use_tool(src, user, 50))
+		return
+	playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)
+	user.visible_message("<span class='notice'>[user] wreck open the [src] and take the metal appart .</span>", \
+						"<span class='notice'>You wreck open the [src] and take the metal appart.</span>")
+	new /obj/item/stack/sheet/metal/ten(loc)
+	new /obj/item/stack/rods/ten(loc)
+	qdel(src)
+	return TRUE
+
+	
 /obj/structure/wreck/car/bike
 	name = "wrecked motorcycle"
 	desc = "An old pre-war motorcycle, rusted and destroyed with age and weathering."
