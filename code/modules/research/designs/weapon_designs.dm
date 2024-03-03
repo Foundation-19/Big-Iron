@@ -404,6 +404,7 @@
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 */
 
+
 /datum/design/rechargerrifle
 	name = "Recharger Rifle"
 	desc = "A locally produced copy of the recharger rifle. It's a bulky first-generation weapon designed to replenish its energy using radioactive decay."
