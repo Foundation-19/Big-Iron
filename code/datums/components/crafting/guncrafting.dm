@@ -126,6 +126,7 @@
 					stoplag(1)
 					qdel(checkitem)
 			baggy.in_use = FALSE
+			return
 	if(user.transferItemToLoc(W, drop_location()))
 		return 1
 
