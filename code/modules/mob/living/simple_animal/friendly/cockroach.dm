@@ -14,6 +14,7 @@
 	pass_flags = PASSTABLE | PASSGRILLE | PASSMOB
 	mob_size = MOB_SIZE_TINY
 	mob_biotypes = MOB_ORGANIC|MOB_BUG
+	faction = list("roach")
 	response_help_continuous = "pokes"
 	response_help_simple = "poke"
 	response_disarm_continuous = "shoos"
