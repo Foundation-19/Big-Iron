@@ -140,6 +140,9 @@
 /obj/structure/chair/post_buckle_mob(mob/living/M)
 	. = ..()
 	handle_layer()
+	if(M.stat == DEAD)
+		unbuckle_mob(M)
+		visible_message("<span class='notice'>[M] slips off the [src]!</span>")
 
 /obj/structure/chair/post_unbuckle_mob()
 	. = ..()

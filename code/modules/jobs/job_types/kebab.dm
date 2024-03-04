@@ -315,6 +315,7 @@
 		),
 	)
 
+
 /datum/outfit/job/kebab/f13mechanic
 	name = "Mechanic"
 	jobtype = /datum/job/kebab/f13mechanic
@@ -328,6 +329,12 @@
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	uniform = /obj/item/clothing/under/rank/engineering/engineer/mechanic
 
+/datum/outfit/job/kebab/f13mechanic/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
 /datum/outfit/loadout/kebabmechanic
 	name = "Merchant Mechanic"
 	backpack_contents = list(

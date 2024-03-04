@@ -52,7 +52,7 @@
 /datum/bccm_asn_panel/ui_data(mob/user, ui_key)
 	. = SSbccm.tgui_panel_asn_data
 
-/datum/bccm_asn_panel/ui_act(action, list/params, datum/tgui/ui, datum/tgui_state/state)
+/datum/bccm_asn_panel/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
 	if(..())
 		return
 	switch(action)
