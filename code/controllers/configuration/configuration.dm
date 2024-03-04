@@ -57,7 +57,7 @@
 
 	if (Master)
 		Master.OnConfigLoad()
-	if ("use_bccm")
+	if (CONFIG_GET(flag/use_bccm))
 		config.bccm = TRUE
 
 /datum/controller/configuration/proc/full_wipe()
