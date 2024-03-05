@@ -234,7 +234,7 @@
 		var/mob/living/carbon/mute = M
 		if(istype(mute))
 			var/empty_indexes = mute.get_empty_held_indexes() //How many hands the player has empty
-			var/obj/item/clothing/gloves/radio/G = mute.get_item_by_slot(ITEM_SLOT_GLOVES)
+			var/obj/item/clothing/gloves/radio/G = mute.get_item_by_slot(SLOT_GLOVES)
 			if(!istype(G))
 				return FALSE
 			if(length(empty_indexes) == 1)
