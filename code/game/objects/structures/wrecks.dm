@@ -1,4 +1,18 @@
-#define BLACKLISTED_BOARDS list(/obj/item/circuitboard/machine/gramophone_recorder, /obj/machinery/computer/custom_shuttle, /obj/item/circuitboard/computer/syndicate_shuttle, /obj/item/circuitboard/computer/labor_shuttle, /obj/item/circuitboard/computer/bos_control, /obj/item/circuitboard/computer/bos_entry_control, /obj/item/circuitboard/computer/enclave_control, /obj/item/circuitboard/computer/vault_control, /obj/item/circuitboard/computer/bunker_control, /obj/item/circuitboard/computer/northbunker_control, /obj/item/circuitboard/computer/mining_control, /obj/item/circuitboard/computer/vault113_control, /obj/item/circuitboard/computer/monastery_shuttle, /obj/item/circuitboard/computer/mining_shuttle, /obj/item/circuitboard/computer/shuttle)
+#define BLACKLISTED_BOARDS list(/obj/item/circuitboard/machine/gramophone_recorder,\
+								/obj/machinery/computer/custom_shuttle,\
+ 								/obj/item/circuitboard/computer/syndicate_shuttle,\
+								/obj/item/circuitboard/computer/labor_shuttle,\
+								/obj/item/circuitboard/computer/bos_control,\
+								/obj/item/circuitboard/computer/bos_entry_control,\
+								/obj/item/circuitboard/computer/enclave_control,\
+								/obj/item/circuitboard/computer/vault_control,\
+								/obj/item/circuitboard/computer/bunker_control,\
+								/obj/item/circuitboard/computer/northbunker_control,\
+								/obj/item/circuitboard/computer/mining_control,\
+								/obj/item/circuitboard/computer/vault113_control,\
+								/obj/item/circuitboard/computer/monastery_shuttle,\
+								/obj/item/circuitboard/computer/mining_shuttle,\
+								/obj/item/circuitboard/computer/shuttle)
 
 /obj/structure/wreck
 	anchored = 1
