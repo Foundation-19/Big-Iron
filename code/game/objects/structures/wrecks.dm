@@ -1,6 +1,6 @@
 #define BLACKLISTED_BOARDS list(/obj/item/circuitboard/machine/gramophone_recorder,\
 								/obj/machinery/computer/custom_shuttle,\
- 								/obj/item/circuitboard/computer/syndicate_shuttle,\
+								/obj/item/circuitboard/computer/syndicate_shuttle,\
 								/obj/item/circuitboard/computer/labor_shuttle,\
 								/obj/item/circuitboard/computer/bos_control,\
 								/obj/item/circuitboard/computer/bos_entry_control,\
