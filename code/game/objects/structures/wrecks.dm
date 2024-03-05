@@ -1,3 +1,5 @@
+#define BLACKLISTED_BOARDS list(/obj/item/circuitboard/machine/gramophone_recorder, /obj/machinery/computer/custom_shuttle, /obj/item/circuitboard/computer/syndicate_shuttle, /obj/item/circuitboard/computer/labor_shuttle, /obj/item/circuitboard/computer/bos_control, /obj/item/circuitboard/computer/bos_entry_control, /obj/item/circuitboard/computer/enclave_control, /obj/item/circuitboard/computer/vault_control, /obj/item/circuitboard/computer/bunker_control, /obj/item/circuitboard/computer/northbunker_control, /obj/item/circuitboard/computer/mining_control, /obj/item/circuitboard/computer/vault113_control, /obj/item/circuitboard/computer/monastery_shuttle, /obj/item/circuitboard/computer/mining_shuttle, /obj/item/circuitboard/computer/shuttle)
+
 /obj/structure/wreck
 	anchored = 1
 	density = 1
@@ -480,45 +482,48 @@
 	bound_height = 32
 	var/inuse = FALSE
 
-/obj/structure/wreck/trash/machinepile/attackby(obj/item/I, mob/living/user, params)
-	if(istype(I, /obj/item/weldingtool))
-		var/obj/item/weldingtool/W = I
-		if(inuse) //this means that if mappers or admins want an nonharvestable version, set the uses_left to 0
-			return
-		inuse = TRUE //one at a time boys, this isn't some kind of weird party
-		if(!I.tool_start_check(user, amount=0)) //this seems to be called everywhere, so for consistency's sake
+att
+
+/obj/structure/wreck/trash/machinepile/welder_act(mob/living/user, obj/item/I)
+	if(inuse) //this means that if mappers or admins want an nonharvestable version, set the uses_left to 0
+		return
+	inuse = TRUE //one at a time boys, this isn't some kind of weird party
+	if(!I.tool_start_check(user, amount=0)) //this seems to be called everywhere, so for consistency's sake
+		inuse = FALSE
+		return //the tool fails this check, so stop
+	user.visible_message("[user] starts disassembling [src].")
+	if(!I.use_tool(src, user, 0, volume=100)) //here is the dilemma, use_tool doesn't work like do_after, so moving away screws it(?)
+		inuse = FALSE
+		return //you can't use the tool, so stop
+	for(var/i1 in 1 to 2) //so, I hate waiting
+		if(!do_after(user, 1 SECONDS*I.toolspeed, target = src)) //this is my work around, because do_After does have a move away
+			user.visible_message("[user] stops disassembling [src].")
 			inuse = FALSE
-			return //the tool fails this check, so stop
-		user.visible_message("[user] starts disassembling [src].")
-		if(!I.use_tool(src, user, 0, volume=100)) //here is the dilemma, use_tool doesn't work like do_after, so moving away screws it(?)
-			inuse = FALSE
-			return //you can't use the tool, so stop
-		for(var/i1 in 1 to 2) //so, I hate waiting
-			if(!do_after(user, 1 SECONDS*W.toolspeed, target = src)) //this is my work around, because do_After does have a move away
-				user.visible_message("[user] stops disassembling [src].")
-				inuse = FALSE
-				return //you did something, like moving, so stop
-			var/fake_dismantle = pick("plating", "rod", "rim", "part of the frame")
-			user.visible_message("[user] slices through a [fake_dismantle].")
-			I.play_tool_sound(src, 100)
-		var/turf/usr_turf = get_turf(user)
-		var/modifier = 0
-		if(HAS_TRAIT(user,TRAIT_TECHNOPHREAK))
-			modifier = rand(1, 3)
-		for(var/i2 in 1 to (3+modifier))
-			if(prob(25))
-				new /obj/item/salvage/low(usr_turf)
-		for(var/i3 in 1 to (1+modifier)) //this is just less lines for the same thing
-			if(prob(10))
-				new /obj/item/salvage/high(usr_turf)
-			if(prob(10))
-				new /obj/item/salvage/tool(usr_turf)
-		var/list/boardgachalist = subtypesof(/obj/item/circuitboard/computer)
-		var/boardgacha = pick(boardgachalist)
-		new boardgacha(usr_turf)
-		inuse = FALSE //putting this after the -- because the first check prevents cheesing
-		visible_message("[src] falls apart, the final components having been removed.")
-		qdel(src)
+			return //you did something, like moving, so stop
+	var/fake_dismantle = pick("plating", "rod", "rim", "part of the frame")
+	user.visible_message("[user] slices through a [fake_dismantle].")
+	I.play_tool_sound(src, 100)
+	var/turf/usr_turf = get_turf(user)
+	var/modifier = 0
+	if(HAS_TRAIT(user,TRAIT_TECHNOPHREAK))
+		modifier = rand(1, 3)
+	for(var/i2 in 1 to (3+modifier))
+		if(prob(25))
+			new /obj/item/salvage/low(usr_turf)
+	for(var/i3 in 1 to (1+modifier)) //this is just less lines for the same thing
+		if(prob(10))
+			new /obj/item/salvage/high(usr_turf)
+		if(prob(10))
+			new /obj/item/salvage/tool(usr_turf)
+	var/list/boardgachalist = subtypesof(/obj/item/circuitboard/computer)
+	var/obj/boardgacha = pick(boardgachalist)
+	while(boardgacha in BLACKLISTED_BOARDS)
+		boardgacha = pick(boardgachalist)
+	new boardgacha(usr_turf)
+	inuse = FALSE //putting this after the -- because the first check prevents cheesing
+	visible_message("[src] falls apart, the final components having been removed.")
+	qdel(src)
+	return TRUE
 
 
 /obj/structure/wreck/trash/machinepiletwo
