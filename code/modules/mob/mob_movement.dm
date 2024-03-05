@@ -434,25 +434,6 @@
 	if(zMove(DOWN, TRUE))
 		to_chat(src, "<span class='notice'>You move down.</span>")
 
-<<<<<<< HEAD
-/mob/proc/zMove(dir, feedback = FALSE)	
-	if(dir != UP && dir != DOWN)	
-		return FALSE	
-	var/turf/target = get_step_multiz(src, dir)	
-	if(!target)	
-		if(feedback)	
-			to_chat(src, "<span class='warning'>There's nothing in that direction!</span>")	
-		return FALSE	
-	if(!canZMove(dir, target))	
-		if(feedback)	
-			to_chat(src, "<span class='warning'>You couldn't move there!</span>")	
-		return FALSE	
-	forceMove(target)	
-	return TRUE	
-
-
-/mob/proc/canZMove(direction, turf/target)	
-=======
 /mob/proc/zMove(dir, feedback = FALSE)
 	if(dir != UP && dir != DOWN)
 		return FALSE
@@ -469,5 +450,4 @@
 	return TRUE
 
 /mob/proc/canZMove(direction, turf/target)
->>>>>>> parent of e32fb577ff (z movement)
 	return FALSE
