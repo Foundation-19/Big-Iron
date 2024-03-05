@@ -211,8 +211,7 @@
 	icon_state = "police"
 	extra_damage = 28
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
-	w_class = WEIGHT_CLASS_SMALL
-	weapon_weight = WEAPON_LIGHT
+	w_class = WEIGHT_CLASS_TINY
 	spread = 2
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
 
@@ -263,8 +262,7 @@
 	name = "snubnose .44 magnum revolver"
 	desc = "A snubnose variant of the commonplace .44 magnum. An excellent holdout weapon for self defense."
 	icon_state = "m29_snub"
-	w_class = WEIGHT_CLASS_SMALL
-	weapon_weight = WEAPON_LIGHT
+	w_class = WEIGHT_CLASS_TINY
 	extra_damage = 35
 	spread = 3
 
