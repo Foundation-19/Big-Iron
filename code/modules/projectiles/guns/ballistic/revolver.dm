@@ -212,6 +212,7 @@
 	extra_damage = 28
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
 	w_class = WEIGHT_CLASS_SMALL
+	weapon_weight = WEAPON_LIGHT
 	spread = 2
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
 
@@ -263,6 +264,7 @@
 	desc = "A snubnose variant of the commonplace .44 magnum. An excellent holdout weapon for self defense."
 	icon_state = "m29_snub"
 	w_class = WEIGHT_CLASS_SMALL
+	weapon_weight = WEAPON_LIGHT
 	extra_damage = 35
 	spread = 3
 
@@ -379,8 +381,8 @@
 	icon_state = "contender"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45/gunslinger/contender
 	weapon_weight = WEAPON_MEDIUM
-	extra_damage = 40
-	extra_penetration = 0.1
+	extra_damage = 60
+	extra_penetration = 0.5
 	fire_delay = 4.5
 	spread = 0
 	fire_sound = 'sound/f13weapons/boltfire.ogg'
