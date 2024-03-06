@@ -310,6 +310,7 @@
 	recoil = 1
 	spread = 0
 	force = 10 //Big clumsy and sensitive scope, makes for a poor club
+	slowdown = 0.2
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13

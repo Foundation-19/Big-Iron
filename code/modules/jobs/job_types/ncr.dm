@@ -269,7 +269,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/book/manual/ncr/jobguide/regs = 1,
-		/obj/item/storage/box/ration/menu_five = 1,
+		/obj/item/storage/box/ration/menu_five = 1
 		)
 
 /datum/outfit/loadout/LTfrontline
@@ -282,7 +282,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/loadout/LTbackline
-	name = "The Law"
+	name = "Golf Enthusiast"
 	suit_store = /obj/item/twohanded/baseball/golfclub/ncr
 	backpack_contents = list(
 		/obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant = 1,
@@ -400,10 +400,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
 
 	loadout_options = list(
-		/datum/outfit/loadout/sergeantrifleman, 
-		/datum/outfit/loadout/sergeantHTminingun,
-		/datum/outfit/loadout/sergeantscout,
-		/datum/outfit/loadout/sergeantHTLMG
+		/datum/outfit/loadout/sergeantrifleman,
+		/datum/outfit/loadout/sergeantscout
 		)
 
 /datum/outfit/job/ncr/f13sergeant
@@ -427,35 +425,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		/obj/item/storage/box/ration/menu_one = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1
-		)
-
-/datum/outfit/loadout/sergeantHTminingun
-	name = "NCR Heavy Trooper Minigun"
-	head = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr
-	neck = /obj/item/storage/belt/holster/legholster
-	suit = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
-		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/storage/bag/money/small/ncrenlisted = 1,
-		/obj/item/storage/box/ration/menu_six = 1,
-		/obj/item/minigunpackbal5mm = 1
-		)
-
-/datum/outfit/loadout/sergeantHTLMG
-	name = "NCR Heavy Trooper LMG"
-	head = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr
-	neck = /obj/item/storage/belt/holster/legholster
-	suit = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b/ncr
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
-		/obj/item/ammo_box/magazine/m45exp = 2,
-		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/storage/bag/money/small/ncrenlisted = 1,
-		/obj/item/storage/box/ration/menu_six = 1,
-		/obj/item/gun/ballistic/automatic/r84 = 1,
-		/obj/item/ammo_box/magazine/lmg = 1
 		)
 	
 /datum/outfit/loadout/sergeantscout
@@ -559,7 +528,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	exp_type = EXP_TYPE_RANGER
 	total_positions = 1
 	spawn_positions = 1
-	description = "You answer directly to the LT, working either independently or in a team to complete your mission objectives however required, operating either alone, in a squad or with the NCR Army. Your primary mission is to improve general opinion of the Republic and to neutralize slavers and raiders operating in the area."
+	description = "You answer directly to the Captain, working either independently or in a team to complete your mission objectives however required, operating either alone, in a squad or with the NCR Army. Your primary mission is to improve general opinion of the Republic and to neutralize slavers and raiders operating in the area."
 	supervisors = "the NCRA Lieutenant, above and High Command"
 	exp_requirements = 1200
 
@@ -600,14 +569,14 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/vrclassic
 	name = "Sniper Veteran Ranger"
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/sniperranger
+	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_dinner = 1,
-		/obj/item/ammo_box/magazine/w308 = 2
+		/obj/item/ammo_box/magazine/amr = 2
 		)
 
 /datum/outfit/loadout/vrlite
-	name = "Rifler Veteran Ranger"
+	name = "Rifleman Veteran Ranger"
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_lunch = 1,
@@ -616,7 +585,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/vrshotgunner
 	name = "Veteran Ranger Shotgunner"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
 		/obj/item/ammo_box/shotgun/buck = 3
@@ -730,8 +699,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /// Specialists ////
 ////////////////////
 
-// HEAVY TROOPER
-/*
+//HEAVY TROOPER
+
 /datum/job/ncr/f13heavytrooper
 	title = "NCR Heavy Trooper"
 	flag = F13HEAVYTROOPER
@@ -744,7 +713,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
 
 	loadout_options = list(
-		/datum/outfit/loadout/shockht,	// Minigun
+		/datum/outfit/loadout/shockht,	// citykiller
 		/datum/outfit/loadout/supportht // R84
 		)
 
@@ -770,7 +739,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/shockht
 	name = "Shock Heavy Trooper"
 	backpack_contents = list(
-		/obj/item/minigunpackbal5mm = 1,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 1,
+		/obj/item/ammo_box/shotgun/slug = 2,
 		/obj/item/storage/box/ration/menu_four = 1
 		)
 
@@ -789,7 +759,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
-*/
+
 // COMBAT ENGINEER
 
 /datum/job/ncr/f13combatengineer
@@ -975,7 +945,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	loadout_options = list(
 		/datum/outfit/loadout/corporalpathfinder,			 // Service Rifle
 		/datum/outfit/loadout/corporalcqc,					 // Hunting Shotgun
-		/datum/outfit/loadout/corporaldesignatedmarksman	 // Hunting Rifle + Scope
+		/datum/outfit/loadout/corporaldesignatedmarksman,	 // Hunting Rifle + Scope
+		/datum/outfit/loadout/corporalraider				 // Melee Monkey
 		)
 
 /datum/outfit/job/ncr/f13corporal
@@ -1021,7 +992,16 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/box/ration/menu_four = 1
 		)
 
-
+/datum/outfit/loadout/corporalraider
+	name = "Prince of the Trenches"
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
+	backpack_contents = list(
+		/obj/item/clothing/head/f13/ncr/steelpot_goggles/trenchraider = 1,
+		/obj/item/ammo_box/magazine/m45 = 2,
+		/obj/item/shovel/trench = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/storage/box/ration/menu_seven = 1
+		)
 
 // TROOPER
 

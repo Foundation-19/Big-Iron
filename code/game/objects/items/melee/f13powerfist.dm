@@ -2,7 +2,7 @@
 // POWER FISTS //
 /////////////////		-Uses power (gas currently) for knockback. Heavy AP, specialized for attacking heavy armor
 
-// Power Fist			Throws targets. Max damage 44. Full AP.
+// Power Fist			Throws targets. Max damage 44. Half AP.
 /obj/item/melee/unarmed/powerfist
 	name = "power fist"
 	desc = "A metal gauntlet with a piston-powered ram on top for that extra 'oomph' in your punch."
@@ -13,7 +13,7 @@
 	hitsound = 'sound/weapons/resonator_blast.ogg'
 	flags_1 = CONDUCT_1
 	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 22
+	force = 25
 	throwforce = 10
 	throw_range = 3
 	armour_penetration = 0.5
