@@ -595,12 +595,6 @@
 	..()
 	update_icon()
 
-/obj/mecha/combat/phazon/ambulance/Destroy()
-	for(var/atom/movable/A in cargo)
-		A.forceMove(drop_location())
-		step_rand(A)
-	cargo.Cut()
-	return ..()
 
 /obj/mecha/combat/phazon/ambulance/GrantActions(mob/living/user, human_occupant = 0) 
 	cycle_action.Grant(user, src)
