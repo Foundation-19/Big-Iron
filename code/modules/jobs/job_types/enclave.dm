@@ -299,8 +299,8 @@
 	title = "Enclave Sergeant"
 	flag = F13USSGT
 	display_order = JOB_DISPLAY_ORDER_F13USSGT
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	description = "Entrusted with the command of the squads assigned to the local Enclave forces, your job is to assist the Lieutenant alongside the scientists."
 	supervisors = "The Captain, the Lieutenant and the Gunnery Sergeant."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavesgt
@@ -336,8 +336,8 @@
 	title = "Enclave Specialist"
 	flag = F13USSPECIALIST
 	display_order = JOB_DISPLAY_ORDER_F13USSPECIALIST
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	description = "You are an operative for the remnants of the Enclave. You, unlike the normal privates, have recieved specialist training in either engineering or medicine."
 	supervisors = "The Captain, Lieutenant and the Sergeants."
 	outfit = /datum/outfit/job/enclave/peacekeeper/f13specialist
