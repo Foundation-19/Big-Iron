@@ -209,7 +209,7 @@
 	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
 	icon_state = "armor_recruit"
 	item_state = "armor_recruit"
-	armor = list("melee" = 30, "bullet" = 15, "laser" = 5, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 40, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	slowdown = 0.04
 
 /obj/item/clothing/suit/armor/f13/legion/recruit/decan
@@ -226,12 +226,13 @@
 	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
 	icon_state = "armor_prime"
 	item_state = "armor_prime"
-	armor = list("melee" = 40, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 50, "bullet" = 30, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/f13/legion/prime/decan
 	name = "legion prime decanus armor"
 	desc = "Legion prime decanus armor-an extra reinforced baseball uniform."
-	armor = list("melee" = 45, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 55, "bullet" = 35, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/suit/armor/f13/legion/prime/heavydecan	// Heavy Prime
 	name = "legion heavy prime decanus armor"
@@ -240,8 +241,8 @@
 	item_state = "legion_orator_heavy"
 	icon = 'icons/fallout/clothing/armored_heavy.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_heavy.dmi'
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 25, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 30, "acid" = 5)
-	slowdown = 0.5
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 25, "energy" = 20, "bomb" = 30, "bio" = 20, "rad" = 25, "fire" = 30, "acid" = 5)
+	slowdown = 0.15
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4) // Because shit armor
 
 /obj/item/clothing/suit/armor/f13/legion/frumentarius
@@ -266,7 +267,7 @@
 	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
 	icon_state = "armor_veteran"
 	item_state = "armor_veteran"
-	armor = list("melee" = 50, "bullet" = 30, "laser" = 10, "energy" = 15, "bomb" = 30, "bio" = 5, "rad" = 5, "fire" = 35, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 55, "bullet" = 35, "laser" = 25, "energy" = 15, "bomb" = 30, "bio" = 5, "rad" = 5, "fire" = 35, "acid" = 0, "wound" = 40)
 	slowdown = 0.05
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 4) // Slightly better armor
 
@@ -275,7 +276,7 @@
 	desc = "A Legion veterans armor reinforced with a patched bulletproof vest, the wearer has the markings of a Decanus."
 	icon_state = "legion_heavy"
 	item_state = "legion_heavy"
-	armor = list("melee" = 50, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 50)
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 25, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 50)
 	slowdown = 0.1
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
 
@@ -295,7 +296,7 @@
 	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
 	icon_state = "armor_explorer"
 	item_state = "armor_explorer"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 5, "energy" = 10, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 40, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	slowdown = 0.03
 
 /obj/item/clothing/suit/armor/f13/legion/vet/vexil
@@ -304,7 +305,7 @@
 	icon_state = "armor_vexillarius"
 	item_state = "armor_vexillarius"
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
-	slowdown = 0.12
+	slowdown = 0.08
 
 /obj/item/clothing/suit/armor/f13/legion/venator
 	name = "legion speculator armor"
@@ -319,7 +320,7 @@
 	desc = "Every Centurion is issued some of the best armor available in the Legion, and adds better pieces from slain opponents over time."
 	icon_state = "legion_centurion"
 	item_state = "legion_centurion"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 25, "bomb" = 45, "bio" = 20, "rad" = 20, "fire" = 45, "acid" = 45, "wound" = 55)
+	armor = list("melee" = 75, "bullet" = 45, "laser" = 30, "energy" = 25, "bomb" = 45, "bio" = 20, "rad" = 20, "fire" = 45, "acid" = 45, "wound" = 55)
 	slowdown = 0.1
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10) // Rest in pieces
 
@@ -328,7 +329,7 @@
 	desc = "A Centurion able to defeat a Brotherhood Paladin gets the honorific title 'Paladin-Slayer', and adds bits of the looted armor to his own."
 	icon_state = "legion_palacent"
 	item_state = "legion_palacent"  // Inconsistent naming, clean all of the sprites and code up sometime
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 40, "energy" = 35, "bomb" = 35, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 75)
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 50, "energy" = 35, "bomb" = 35, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 75)
 	slowdown = 0.1
 
 /obj/item/clothing/suit/armor/f13/legion/rangercent //speed and bullet resist, sacrifices all else
@@ -336,7 +337,7 @@
 	desc = "Centurions who have led many patrols and ambushes against NCR Rangers have a distinct look from the many looted pieces of Ranger armor, and are often experienced in skirmishing."
 	icon_state = "legion_rangercent"
 	item_state = "legion_rangercent"
-	armor = list("melee" = 25, "bullet" = 35, "laser" = 15, "energy" = 25, "bomb" = 35, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0, "wound" = 55)
+	armor = list("melee" = 35, "bullet" = 55, "laser" = 30, "energy" = 25, "bomb" = 35, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0, "wound" = 55)
 	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/f13/legion/legate
@@ -419,8 +420,8 @@
 	icon_state = "ncr_infantry_vest"
 	item_state = "ncr_infantry_vest"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 15, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
-	slowdown = 0.15
+	armor = list("melee" = 20, "bullet" = 40, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	slowdown = 0.12
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bulletbelt/ncr
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
@@ -443,7 +444,7 @@
 	icon_state = "ncr_infantry_vest"
 	item_state = "ncr_infantry_vest"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 20, "bullet" = 25, "laser" = 10, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/conscript
 	name = "NCR flak vest"
@@ -457,24 +458,28 @@
 	desc = "A standard issue NCR Infantry vest reinforced with a groinpad."
 	icon_state = "ncr_reinforced_vest"
 	item_state = "ncr_reinforced_vest"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 15, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 25, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	slowdown = 0.15
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 3)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced/engineer
 	name = "NCR blast-padded reinforced patrol vest"
 	desc = "A standard issue NCR Engineer vest reinforced with a groinpad."
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 15, "energy" = 20, "bomb" = 85, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 30, "bullet" = 35, "laser" = 15, "energy" = 20, "bomb" = 85, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	slowdown = 0.15
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	name = "NCR reinforced mantle vest"
 	desc = "A standard issue NCR Infantry vest reinforced with a groinpad and a mantle."
 	icon_state = "ncr_reinforced_mantle"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 25, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	slowdown = 0.15
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced/trenchraider
 	name = "NCR reinforced trench mantle vest"
 	desc = "A standard issue NCR Infantry vest with a really long name and extra melee plating."
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	slowdown = 0.08
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
 	name = "NCR medical labcoat"
@@ -490,7 +495,8 @@
 	desc = "A reinforced set of NCR mantle armour, with added padding on the groin, neck and shoulders. Intended for use by the officer class."
 	icon_state = "ncr_lt_armour"
 	item_state = "ncr_lt_armour"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 50)
+	armor = list("melee" = 25, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 50)
+	slowdown = 0.15
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/treasurer
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/captain/ncr_officer_coat
@@ -498,7 +504,8 @@
 	desc = "A special issue NCR officer's armour with an added thick overcoat for protection from the elements."
 	icon_state = "ncr_officer_coat"
 	item_state = "ncr_officer_coat"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 55)
+	armor = list("melee" = 25, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 55)
+	slowdown = 0.08
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/captain
@@ -506,7 +513,8 @@
 	desc = "A heavily reinforced set of NCR mantle armour, with large ceramic plating fitted to cover the torso and back, with additional plating on the shoulders and arms. Intended for use by high ranking officers."
 	icon_state = "ncr_captain_armour"
 	item_state = "ncr_captain_armour"
-	armor = list("melee" = 35, "bullet" = 45, "laser" = 15, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 25, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	slowdown = 0.08
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/treasurer
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 10) // Le captain
 
@@ -583,7 +591,7 @@
 	desc = "A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 40)
+	armor = list("melee" = 25, "bullet" = 45, "laser" = 20, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 40)
 	slowdown = 0.15
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/Initialize()
@@ -609,7 +617,7 @@
 	item_state = "ranger"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	slowdown = 0.01
-	armor = list("melee" = 30, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 55)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 40, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 55)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/treasurer
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 
