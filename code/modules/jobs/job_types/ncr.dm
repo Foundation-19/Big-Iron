@@ -537,7 +537,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	loadout_options = list( // ALL: Binoculars, Bowie knife, Sequoia
 		/datum/outfit/loadout/vrclassic, // DKS
 		/datum/outfit/loadout/vrlite, // Brush
-		/datum/outfit/loadout/vrshotgunner // Lever Action Shotgun
+		/datum/outfit/loadout/vrshotgunner, // Lever Action Shotgun
 		/datum/outfit/loadout/vrcqc // Funny CQC Vet
 		)
 
