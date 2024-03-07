@@ -39,11 +39,34 @@
 /obj/vehicle/ridden/space/speedbike/f13
 	icon_state = "speedbike_f13"
 	overlay_state = "cover_f13"
+	key_type = /obj/item/key/custombike
+
+/obj/vehicle/ridden/space/speedbike/f13/attackby(obj/item/I, mob/user, params)
+	var/obj/item/key/custombike/nkf = I
+	if(istype(nkf) && nkf.keyfit != src)
+		to_chat(user, "<span class='danger'>[nkf] does not fit into [src]!</span>")
+		return
+	. = ..()
+	
 
 /obj/vehicle/ridden/space/speedbike/f13/Move(newloc,move_dir)
 	if(has_buckled_mobs())
 		new /obj/effect/temp_visual/dir_setting/speedbike_trail/f13(loc,move_dir)
 	. = ..()
+/obj/vehicle/ridden/space/speedbike/f13/Initialize()
+	. = ..()
+	var/datum/component/riding/D = GetComponent(/datum/component/riding)
+	D.vehicle_move_delay = 0.95
+	var/obj/item/key/custombike/NK = new(loc)
+	NK.keyfit = src
+
+/obj/vehicle/ridden/space/speedbike/f13/post_buckle_mob(mob/living/M)
+	. = ..()
+	ADD_TRAIT(M, TRAIT_NOGUNS, type)
+
+/obj/vehicle/ridden/space/speedbike/f13/post_unbuckle_mob(mob/living/M)
+	. = ..()
+	REMOVE_TRAIT(M, TRAIT_NOGUNS, type)
 //BM SPEEDWAGON
 
 /obj/vehicle/ridden/space/speedwagon

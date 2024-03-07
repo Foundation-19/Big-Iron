@@ -41,10 +41,12 @@
 		return
 	// Remove default mech power cell, as we replace it with a new one.
 	var/obj/mecha/M = new result(drop_location())
-	QDEL_NULL(M.cell)
+	if(istype(M))
+		QDEL_NULL(M.cell)
 
 	var/obj/item/mecha_parts/chassis/parent_chassis = parent
-	M.CheckParts(parent_chassis.contents)
+	if(istype(parent_chassis))
+		M.CheckParts(parent_chassis.contents)
 
 	SSblackbox.record_feedback("tally", "mechas_created", 1, M.name)
 	QDEL_NULL(parent)
