@@ -355,6 +355,7 @@
 #define ANTI_DROP_IMPLANT_TRAIT "anti-drop-implant"
 #define MARTIAL_ARTIST_TRAIT "martial_artist"
 #define BERSERKER_TRAIT "berserker"
+#define WRESTLING_TRAIT "wrestling"
 #define SLEEPING_CARP_TRAIT "sleeping_carp"
 #define RISING_BASS_TRAIT "rising_bass"
 #define ABDUCTOR_ANTAGONIST "abductor-antagonist"
