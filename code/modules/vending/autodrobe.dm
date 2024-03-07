@@ -85,10 +85,10 @@
 						/obj/item/clothing/mask/richard = 1,
 						/obj/item/clothing/mask/gas/mime = 3,
 						/obj/item/clothing/mask/gas/clown_hat = 3,
-						/obj/item/clothing/under/rank/clown = 1,
+						/obj/item/clothing/under/rank/clown = 3,
 						/obj/item/clothing/under/rank/mime = 2,
 						/obj/item/clothing/under/rank/mime/skirt = 2,
-						/obj/item/clothing/shoes/clown_shoes = 1,
+						/obj/item/clothing/shoes/clown_shoes = 3,
 						/obj/item/clothing/head/frenchberet = 3)
 	contraband = list(/obj/item/clothing/suit/judgerobe = 1,
 						/obj/item/clothing/head/powdered_wig = 1,
