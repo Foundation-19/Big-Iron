@@ -90,7 +90,7 @@
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	hitsound = 'sound/weapons/bap.ogg'
 	flags_1 = CONDUCT_1
-	force = 15
+	force = 25
 	throw_distance = 5
 	throwforce = 10
 	throw_range = 7
