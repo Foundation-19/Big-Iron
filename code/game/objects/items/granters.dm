@@ -480,6 +480,14 @@
 	greet = "<span class='sciradio'>You have mastered the rites of the berserker. Use the help verb to see your combos.</span>"
 	remarks = list("Rip and tear...", "Overwhelming force, immovable object...", "Focus... And you'll be able to incapacitate any foe in seconds...", "I must pierce armor for maximum damage...", "You are huge, that means you have huge guts...")
 
+/obj/item/book/granter/martial/wrestling
+	martial = /datum/martial_art/wrestling
+	name = "pro wrestling magazine"
+	martialname = "wrestling"
+	desc = "A magazine detailing various grapples, holds, suplexes and elbow drops. Oooh yeah, brother."
+	greet = "<span class='sciradio'>You have mastered the power of pro wrestling. Use the buttons at the top of your screen to harm others, grab to initiate a move.</span>"
+	remarks = list("Drop the leg...", "Cream of the crop...", "Hell yeah brother...", "The Macho Man is gonna...", "Warrior nation...", "One two three...")
+
 /obj/item/book/granter/martial/plasma_fist
 	martial = /datum/martial_art/plasma_fist
 	name = "frayed scroll"
