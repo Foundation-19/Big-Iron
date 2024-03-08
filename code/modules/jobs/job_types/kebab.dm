@@ -75,8 +75,8 @@
 /datum/job/kebab/f13apprentice
 	title = "Apprentice"
 	flag = F13APPRENTICE
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Merchant"
 	description = "You are the merchant's right hand and heir apparent; handle the menial duties of running the store, arrange deals on the merchant's behalf, and set quotas for the slaves."
 	exp_requirements = 0
@@ -139,8 +139,8 @@
 /datum/job/kebab/f13mercenary
 	title = "Mercenary"
 	flag = F13MERCENARY
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Merchant"
 	description = "You are a mercenary, hired by the Merchant; follow his bidding, keep his slaves in line, and make sure no one holds out payment from him."
 	exp_requirements = 0
@@ -292,8 +292,8 @@
 /datum/job/kebab/f13mechanic
 	title = "Mechanic"
 	flag = F13MECHANIC
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "The Merchant."
 	description = "You main the small garage in Kebab. Your job is to make profit by repairing cars, and offer recharges, or cell changes. You can sell car equiepement."
 	exp_requirements = 0
@@ -315,6 +315,7 @@
 		),
 	)
 
+
 /datum/outfit/job/kebab/f13mechanic
 	name = "Mechanic"
 	jobtype = /datum/job/kebab/f13mechanic
@@ -328,6 +329,12 @@
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	uniform = /obj/item/clothing/under/rank/engineering/engineer/mechanic
 
+/datum/outfit/job/kebab/f13mechanic/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
 /datum/outfit/loadout/kebabmechanic
 	name = "Merchant Mechanic"
 	backpack_contents = list(
@@ -471,8 +478,8 @@
 /datum/job/kebab/f13bartender
 	title = "Bartender"
 	flag = F13BARTENDER
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Merchant"
 	description = "You are the bartender, an employee of the Merchant. How you came into the Merchant's service is up to you, but what is known is that the Merchant owns the bar, and expects to see a return on investment. You are entitled to protection from the Merchant's guards, and are required to pay him whatever cut of the bar's profits he demands."
 
@@ -825,10 +832,10 @@
 //Militian
 
 /datum/job/kebab/f13militian
-	title = "Militian"
+	title = "Town Militia"
 	flag = F13MILITIA
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "The Militia commander"
 	description = "You are a normal citizen that decided to take arms to defend the town."
 	outfit = /datum/outfit/job/kebab/f13militian
@@ -946,8 +953,8 @@
 /datum/job/kebab/f13radiohost
 	title = "Radio Host"
 	flag = F13RADIOHOST
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "no one"
 	description = "You are the radio host, one of the town's few independent residents. You control the pre-war radio tower, and are expected to provide regular broadcasts and news to the surrounding wasteland. You are tolerated by the town's factions because of your ability to advertise for them, but none of them has thus far managed to assimilate you into their own group."
 
