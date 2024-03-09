@@ -67,6 +67,10 @@
 /obj/vehicle/ridden/space/speedbike/f13/post_unbuckle_mob(mob/living/M)
 	. = ..()
 	REMOVE_TRAIT(M, TRAIT_NOGUNS, type)
+	if(inserted_key)
+		if(!M.put_in_active_hand(inserted_key, FALSE, FALSE))
+			M.dropItemToGround(inserted_key)
+		inserted_key = null
 //BM SPEEDWAGON
 
 /obj/vehicle/ridden/space/speedwagon
