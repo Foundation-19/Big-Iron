@@ -84,12 +84,8 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "afS" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/deathclaw/legendary{
-	faction = list("deathclaw","supermutant")
-	},
-/obj/structure/lattice,
-/turf/open/floor/plating/tunnel,
+/obj/structure/chair,
+/turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
 "ahI" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -266,30 +262,6 @@
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
-/area/f13/bunker)
-"aHG" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/structure/sign/poster/official/twelve_gauge{
-	pixel_y = 32
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/safe,
-/obj/item/stack/sheet/mineral/gold,
-/obj/item/stack/spacecash/c1000,
-/obj/item/stack/spacecash/c1000,
-/obj/item/stack/spacecash/c1000,
-/obj/item/stack/spacecash/c1000,
-/obj/item/documents/syndicate/blue,
-/obj/item/disk/nuclear{
-	name = "Odd looking disk";
-	desc = "A weird looking disk that occasionally flashes variations between blue and white on the bottom part, maybe its some kind of authentication disk?";
-	icon_state = "datadisk0"
-	},
-/turf/open/floor/plasteel/darkred/side{
-	dir = 1
-	},
 /area/f13/bunker)
 "aHT" = (
 /obj/structure/window/reinforced/spawner/north,
@@ -1339,6 +1311,10 @@
 	icon_state = "bluedirtyfull"
 	},
 /area/awaymission/caves)
+"cqu" = (
+/mob/living/simple_animal/hostile/supermutant/legendary,
+/turf/open/floor/plasteel/f13/vault_floor/floor,
+/area/f13/bunker)
 "cqM" = (
 /turf/open/indestructible/ground/outside/water,
 /area/f13/caves)
@@ -3421,6 +3397,11 @@
 	},
 /obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/bunker)
+"fwp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/nest/supermutant/ranged,
+/turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "fxe" = (
 /obj/structure/girder/reinforced,
@@ -5842,10 +5823,6 @@
 	icon_state = "reddirtyfull"
 	},
 /area/awaymission/caves)
-"jqI" = (
-/obj/structure/chair,
-/turf/open/floor/mineral/plastitanium,
-/area/f13/bunker)
 "jro" = (
 /obj/effect/decal/cleanable/blood/old{
 	pixel_x = 12
@@ -7078,6 +7055,20 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"lmi" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
+/obj/item/organ/ears/cat,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/obj/item/clothing/suit/armor/f13/power_armor/midwest/reinforced{
+	armor = list("melee"=75,"bullet"=75,"laser"=75,"energy"=65,"bomb"=65,"bio"=60,"rad"=70,"fire"=70,"acid"=70,"wound"=75)
+	},
+/obj/item/clothing/head/helmet/f13/power_armor/midwest/hardened{
+	armor = list("melee"=75,"bullet"=75,"laser"=75,"energy"=65,"bomb"=65,"bio"=60,"rad"=70,"fire"=70,"acid"=70,"wound"=75)
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/bunker)
 "lmk" = (
 /obj/structure/debris/v3,
 /turf/closed/indestructible/rock,
@@ -7997,20 +7988,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/awaymission/caves)
-"mpy" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
-/obj/item/organ/ears/cat,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
-/obj/item/clothing/suit/armor/f13/power_armor/midwest/reinforced{
-	armor = list("melee"=75,"bullet"=75,"laser"=75,"energy"=65,"bomb"=65,"bio"=60,"rad"=70,"fire"=70,"acid"=70,"wound"=75)
-	},
-/obj/item/clothing/head/helmet/f13/power_armor/midwest/hardened{
-	armor = list("melee"=75,"bullet"=75,"laser"=75,"energy"=65,"bomb"=65,"bio"=60,"rad"=70,"fire"=70,"acid"=70,"wound"=75)
-	},
-/turf/open/floor/plating/tunnel,
-/area/f13/bunker)
 "mpQ" = (
 /obj/effect/decal/waste{
 	pixel_x = -4;
@@ -8455,6 +8432,30 @@
 /obj/effect/decal/cleanable/vomit/old,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
+/area/f13/bunker)
+"mMl" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/sign/poster/official/twelve_gauge{
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/safe,
+/obj/item/stack/sheet/mineral/gold,
+/obj/item/stack/spacecash/c1000,
+/obj/item/stack/spacecash/c1000,
+/obj/item/stack/spacecash/c1000,
+/obj/item/stack/spacecash/c1000,
+/obj/item/documents/syndicate/blue,
+/obj/item/disk/nuclear{
+	name = "Odd looking disk";
+	desc = "A weird looking disk that occasionally flashes variations between blue and white on the bottom part, maybe its some kind of authentication disk?";
+	icon_state = "datadisk0"
+	},
+/turf/open/floor/plasteel/darkred/side{
+	dir = 1
+	},
 /area/f13/bunker)
 "mNU" = (
 /obj/effect/decal/waste{
@@ -13171,7 +13172,10 @@
 /area/awaymission/caves)
 "uaa" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/nest/supermutant/ranged,
+/mob/living/simple_animal/hostile/deathclaw/legendary{
+	faction = list("deathclaw","supermutant")
+	},
+/obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "ual" = (
@@ -14230,10 +14234,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
 /turf/open/floor/mineral/plastitanium,
-/area/f13/bunker)
-"vNx" = (
-/mob/living/simple_animal/hostile/supermutant/legendary,
-/turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
 "vNM" = (
 /obj/effect/decal/cleanable/dirt,
@@ -30334,7 +30334,7 @@ oQY
 pVC
 xXj
 tEA
-vNx
+cqu
 hpz
 kJb
 bqR
@@ -30847,7 +30847,7 @@ wRr
 wRr
 wRr
 fyx
-uaa
+fwp
 rBN
 fyx
 knt
@@ -32896,7 +32896,7 @@ heT
 trA
 nNg
 hWv
-afS
+uaa
 mnl
 whp
 xgB
@@ -38562,7 +38562,7 @@ heT
 heT
 heT
 vHC
-mpy
+lmi
 vHC
 heT
 heT
@@ -39846,7 +39846,7 @@ jDU
 vHC
 heT
 acN
-aHG
+mMl
 cQs
 dBN
 pCy
@@ -43443,7 +43443,7 @@ hpz
 hpz
 dBI
 aIK
-jqI
+afS
 vNi
 htf
 rRN
