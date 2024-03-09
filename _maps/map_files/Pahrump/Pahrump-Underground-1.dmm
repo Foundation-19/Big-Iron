@@ -2829,6 +2829,12 @@
 /obj/structure/lattice/catwalk,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
+"bIb" = (
+/obj/effect/landmark/start/f13/dendoctor,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/f13/den)
 "bIc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -13796,7 +13802,11 @@
 /turf/closed/wall/rust,
 /area/f13/sewer)
 "iXZ" = (
-/obj/structure/simple_door/room,
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Den Medical";
+	req_one_access_txt = "87"
+	},
 /turf/open/floor/f13{
 	icon_state = "neutralfull2"
 	},
@@ -22083,6 +22093,7 @@
 "pdF" = (
 /obj/structure/bed/wooden,
 /obj/effect/spawner/lootdrop/bedsheet,
+/obj/effect/landmark/start/f13/enforcer,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "pdH" = (
@@ -29177,7 +29188,11 @@
 	},
 /area/f13/den)
 "ucg" = (
-/obj/structure/simple_door/metal/barred,
+/obj/machinery/door/unpowered/securedoor{
+	autoclose = 1;
+	name = "Den Store";
+	req_one_access_txt = "87"
+	},
 /turf/open/floor/wood/f13,
 /area/f13/den)
 "udj" = (
@@ -32314,6 +32329,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
+/obj/effect/landmark/start/f13/mobboss,
 /turf/open/floor/carpet/royalblack,
 /area/f13/den)
 "whA" = (
@@ -34324,6 +34340,12 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
+"xCf" = (
+/obj/effect/landmark/start/f13/enforcer,
+/turf/open/floor/f13{
+	icon_state = "floorgrime"
+	},
+/area/f13/den)
 "xCg" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
@@ -34772,6 +34794,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
 	},
+/obj/effect/landmark/start/f13/dendoctor,
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
@@ -66644,7 +66667,7 @@ xio
 xio
 vKq
 ofP
-wSf
+xCf
 ofP
 kbz
 rrm
@@ -70761,7 +70784,7 @@ ylz
 ylz
 iFg
 tbg
-tbg
+bIb
 voL
 ylz
 tbg
