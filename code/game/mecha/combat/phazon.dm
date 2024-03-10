@@ -373,7 +373,7 @@
 	stepsound = 'sound/f13ambience/ambigen_15.ogg'
 	turnsound = 'sound/f13ambience/ambigen_15.ogg'
 
-/obj/mecha/combat/phazon/vertibird/ncr/GrantActions(mob/living/user, human_occupant = 0) 
+/obj/mecha/combat/phazon/vertibird/balloon/GrantActions(mob/living/user, human_occupant = 0) 
 	internals_action.Grant(user, src)
 	cycle_action.Grant(user, src)
 	lights_action.Grant(user, src)
