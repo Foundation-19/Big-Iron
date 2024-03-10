@@ -402,7 +402,7 @@
 		to_chat(M, "<span class='brass'> The balloon is going to crash!</span>")
 		M.dust()
 	playsound(src, 'sound//f13machines//vertibird_crash.ogg', 100, 0)
-	src.visible_message("<span class = 'userdanger'>The reactor has gone critical, its going to blow!</span>")
+	src.visible_message("<span class = 'userdanger'>The balloon's burner is about to blow!</span>")
 	addtimer(CALLBACK(src,.proc/go_critical),breach_time)
 
 /obj/mecha/combat/phazon/vertibird/ncr/loaded/Initialize()
