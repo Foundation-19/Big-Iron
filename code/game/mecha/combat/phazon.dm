@@ -405,7 +405,7 @@
 	src.visible_message("<span class = 'userdanger'>The balloon's burner is about to blow!</span>")
 	addtimer(CALLBACK(src,.proc/go_critical),breach_time)
 
-/obj/mecha/combat/phazon/vertibird/ncr/loaded/Initialize()
+/obj/mecha/combat/phazon/vertibird/balloon/loaded/Initialize()
 	. = ..()
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
 	ME.attach(src)
