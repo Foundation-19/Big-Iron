@@ -397,7 +397,7 @@
 	//rotorup_action.Remove(user)
 	//rotordown_action.Remove(user)
 
-/obj/mecha/combat/phazon/vertibird/ncr/obj_destruction()
+/obj/mecha/combat/phazon/vertibird/balloon/obj_destruction()
 	for(var/mob/M in src)
 		to_chat(M, "<span class='brass'> The vertibird is going to Crash !</span>")
 		M.dust()
