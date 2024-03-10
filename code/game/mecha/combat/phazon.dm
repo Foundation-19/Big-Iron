@@ -399,7 +399,7 @@
 
 /obj/mecha/combat/phazon/vertibird/balloon/obj_destruction()
 	for(var/mob/M in src)
-		to_chat(M, "<span class='brass'> The vertibird is going to Crash !</span>")
+		to_chat(M, "<span class='brass'> The balloon is going to crash!</span>")
 		M.dust()
 	playsound(src, 'sound//f13machines//vertibird_crash.ogg', 100, 0)
 	src.visible_message("<span class = 'userdanger'>The reactor has gone critical, its going to blow!</span>")
