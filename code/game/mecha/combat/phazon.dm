@@ -385,7 +385,7 @@
 	//rotorup_action.Grant(user, src)
 	//rotordown_action.Grant(user, src)
 
-/obj/mecha/combat/phazon/vertibird/ncr/RemoveActions(mob/living/user, human_occupant = 0)
+/obj/mecha/combat/phazon/vertibird/balloon/RemoveActions(mob/living/user, human_occupant = 0)
 	internals_action.Remove(user)
 	cycle_action.Remove(user)
 	lights_action.Remove(user)
