@@ -587,7 +587,7 @@
 	stepsound = 'sound/f13machines/buggy_loop.ogg'
 	turnsound = 'sound/f13machines/buggy_loop.ogg'
 
-/obj/mecha/combat/phazon/go_out()
+/obj/mecha/combat/phazon/ambulance/go_out()
 	..()
 	update_icon()
 
