@@ -69,7 +69,7 @@
 	dat += "Gold Bars: 10 caps<br>"
 	dat += "Cut Diamonds : 20 caps<br>"
 	dat += "Jet/Psycho/MedX : 10/20/75 caps<br>"
-	dat += "Healing Powder/Healing Paultice : 25/50 caps<br>"
+	dat += "Healing Powder/Healing Poultice : 25/50 caps<br>"
 	dat += "Stimpak/Super Stimpak : 25/50 caps<br>"
 	dat += ""
 	dat += "</div>"
@@ -148,16 +148,28 @@
 /*
 
 ORGAN SELLER
+Change pathing to /obj/machinery/mineral/wasteland_trader/meat_o_mat when big map PR from host is done
 
 */
 
 /obj/machinery/mineral/wasteland_trader/organ
-	name = "Organ Grinder"
+	name = "Meat-O-Mat"
 	desc = "Organs go in, caps come out. How does it work? Nobody knows."
-	icon = 'icons/WVM/machines.dmi'
-	icon_state = "organs"
+	icon = 'icons/WVM/new_vendors.dmi'
+	icon_state = "trade_meat"
 
-	goods_list = list( /obj/item/organ/heart = 30,
+	goods_list = list(			/obj/item/stack/sheet/sinew = 1,
+								/obj/item/stack/sheet/bone = 1,
+								/obj/item/reagent_containers/food/snacks/meat/slab/human = 2, // have to include all subtypes since infinite synthmeat exists. That or write up a blacklist thing.
+								/obj/item/reagent_containers/food/snacks/meat/slab/molerat = 2,
+								/obj/item/reagent_containers/food/snacks/meat/slab/gecko = 2,
+								/obj/item/reagent_containers/food/snacks/meat/slab/radroach_meat = 2,
+								/obj/item/reagent_containers/food/snacks/meat/slab/ant_meat = 2,
+								/obj/item/reagent_containers/food/snacks/meat/slab/bloatfly_meat = 2,
+								/obj/item/reagent_containers/food/snacks/meat/slab/cazador_meat = 2,
+								/obj/item/reagent_containers/food/snacks/meat/slab/mirelurk = 2,
+								/obj/item/reagent_containers/food/snacks/meat/slab/wolf = 2,	
+								/obj/item/organ/heart = 30,
 								/obj/item/organ/ears = 5,
 								/obj/item/organ/eyes = 5,
 								/obj/item/organ/liver = 15,
@@ -182,11 +194,14 @@ ORGAN SELLER
 	dat += "Eyes : 5 caps<br>"
 	dat += "Ears : 5 caps<br>"
 	dat += "Tongue : 5 caps<br>"
+	dat += "Meat : 2 caps<br>"
+	dat += "Bone : 1 cap<br>"
+	dat += "Sinew : 1 cap<br>"
 	dat += "Brain : UNAVAILABLE<br>"
 	dat += ""
 	dat += "</div>"
 
-	var/datum/browser/popup = new(user, "tradingvendor", "Organ Grinder", 400, 500)
+	var/datum/browser/popup = new(user, "tradingvendor", "Meat-O-Mat", 400, 500)
 	popup.set_content(dat)
 	popup.open()
 	return
@@ -288,6 +303,8 @@ Fence
 /obj/machinery/mineral/wasteland_trader/gunbuyer
 	name = "Gun Repository"
 	desc = "Place weapon inside slot. Weapon is sent out of the region for post-processing. Recieve compensation. Yuma Wasteland Supply Inc. thanks you for disarming the wasteland."
+	icon = 'icons/WVM/new_vendors.dmi'
+	icon_state = "trade_gun"
 	goods_list = list(/obj/item/gun/ballistic/automatic/hobo/zipgun = 5,
 						/obj/item/gun/ballistic/revolver/detective = 5,
 						/obj/item/gun/ballistic/revolver/hobo/knucklegun = 8,
