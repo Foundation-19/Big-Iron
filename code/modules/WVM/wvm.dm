@@ -1,5 +1,6 @@
 /* Code by Tienn */
 /* Sprites by Moonmandoom*/
+/* new_vendors.dmi by Pebbles*/
 
 #define STATE_IDLE 0
 #define STATE_SERVICE 1
@@ -19,8 +20,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 /obj/machinery/trading_machine
 	name = "Wasteland Vending Machine"
 	desc = "Wasteland Vending Machine! Unlock with a key, load your goods, and profit!"
-
-	icon = 'icons/WVM/machines.dmi'
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "custom_idle"
 	obj_flags = UNIQUE_RENAME
 	var/idle_icon_state = "custom_idle"
@@ -56,7 +56,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 /* Weapon Vending Machine*/
 /obj/machinery/trading_machine/weapon
 	name = "Weapon Vending Machine"
-	icon = 'icons/WVM/machines.dmi'
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "weapon_idle"
 	idle_icon_state = "weapon_idle"
 	service_icon_state = "weapon_service"
@@ -65,7 +65,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 /* Ammo Vending Machine*/
 /obj/machinery/trading_machine/ammo
 	name = "Ammo Vending Machine"
-	icon = 'icons/WVM/machines.dmi'
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "ammo_idle"
 	idle_icon_state = "ammo_idle"
 	service_icon_state = "ammo_service"
@@ -74,7 +74,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 /* Armor Vending Machine*/
 /obj/machinery/trading_machine/armor
 	name = "Armor Vending Machine"
-	icon = 'icons/WVM/machines.dmi'
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "armor_idle"
 	idle_icon_state = "armor_idle"
 	service_icon_state = "armor_service"
@@ -83,7 +83,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 /* Medical Vending Machine*/
 /obj/machinery/trading_machine/medical
 	name = "Medicine Vending Machine"
-	icon = 'icons/WVM/machines.dmi'
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "med_idle"
 	idle_icon_state = "med_idle"
 	service_icon_state = "med_service"
@@ -508,7 +508,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 /obj/machinery/mineral/wasteland_vendor
 	name = "Wasteland Vending Machine"
 	desc = "Wasteland Vending Machine manned by old reprogrammed RobCo trading protectrons."
-	icon = 'icons/WVM/machines.dmi'
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "weapon_idle"
 
 	density = TRUE
@@ -545,6 +545,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/khanchem
 	name = "P.A.P.A"
+	icon = 'icons/WVM/machines.dmi'
 	icon_state = "khan_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Jet",							/obj/item/reagent_containers/pill/patch/jet,						30),
@@ -597,6 +598,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/denvendor
 	name = "Den Illegal Supply"
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "generic_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Type93 Assault Rifle",			/obj/item/gun/ballistic/automatic/type93,							700),
@@ -630,6 +632,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 //The DEN should not offer chems!!! they deal in goods like above!!! Use accordingly
 /obj/machinery/mineral/wasteland_vendor/denchem
 	name = "Chem Dispenser"
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "med_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Jet",							/obj/item/reagent_containers/pill/patch/jet,						60),
@@ -653,6 +656,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 /obj/machinery/mineral/wasteland_vendor/followerterminal
 	name = "Follower's Resupply Terminal"
 	desc = "a vending machine stocked with imported medical supplies. The pricing is to cover the cost of shipping and handling."
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "med_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Soap",							/obj/item/soap/deluxe,												50),
@@ -694,7 +698,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		
 /obj/machinery/mineral/wasteland_vendor/weapons
 	name = "Wasteland Vending Machine - Weapons"
-	icon_state = "weapon_idle"
+	icon = 'icons/WVM/new_vendors.dmi'
+	icon_state = "seller_weapons"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("survival knife",				/obj/item/melee/onehanded/knife/survival, 							70),
 		new /datum/data/wasteland_equipment(".22 Pistol",					/obj/item/gun/ballistic/automatic/pistol/pistol22,					110),
@@ -727,6 +732,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/ammo
 	name = "Wasteland Vending Machine - Ammo n Bombs"
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "ammo_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Handgun magazine (.45)",		/obj/item/ammo_box/magazine/m45,									50),
@@ -751,6 +757,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/clothing
 	name = "Wasteland Vending Machine - Clothing"
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "armor_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Worn outft",						/obj/item/clothing/under/f13/worn,								15),
@@ -771,6 +778,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/general
 	name = "Wasteland Vending Machine - General"
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "generic_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Drinking glass",				/obj/item/reagent_containers/food/drinks/drinkingglass,				5),
@@ -794,6 +802,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/camp
 	name = "Wasteland Camp-O-Vend"
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "generic_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Vault-Tec C.A.M.P. Basic Edition",			/obj/item/survivalcapsule,								150),
@@ -823,7 +832,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/pipboy
 	name = "Wasteland Pip-N-Walk"
-	icon_state = "generic_idle"
+	icon = 'icons/WVM/new_vendors.dmi'
+	icon_state = "pipboy"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Pip-boy 3000",			/obj/item/pda,																75),
 		new /datum/data/wasteland_equipment("Reprogrammable ID",	/obj/item/card/id/selfassign,												25),
@@ -842,6 +852,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/special
 	name = "Wasteland Vending Machine - Special"
+	icon = 'icons/WVM/machines.dmi'
 	icon_state = "liberationstation_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Random manual",					/obj/item/book/manual/random,									40),
@@ -858,7 +869,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/advcomponents
 	name = "Wasteland Vending Machine - Components"
-	icon_state = "generic_idle"
+	icon = 'icons/WVM/new_vendors.dmi'
+	icon_state = "seller_components"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Advanced Modular Receiver",		/obj/item/advanced_crafting_components/receiver,					200),
 		new /datum/data/wasteland_equipment("Weapon Assembly",					/obj/item/advanced_crafting_components/assembly,					200),
@@ -878,7 +890,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/attachments
 	name = "Wasteland Vending Machine - Attachments"
-	icon_state = "generic_idle"
+	icon = 'icons/WVM/new_vendors.dmi'
+	icon_state = "seller_attachments"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Weapon Optics",				/obj/item/attachments/scope,									150),
 		new /datum/data/wasteland_equipment("Recoil Compensator",			/obj/item/attachments/recoil_decrease,							100),
@@ -892,7 +905,8 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/crafting
 	name = "Wasteland Vending Machine - Crafting"
-	icon_state = "generic_idle"
+	icon = 'icons/WVM/new_vendors.dmi'
+	icon_state = "seller_crafting"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("High Quality Parts",				/obj/item/stack/crafting/goodparts,									25),
 		new /datum/data/wasteland_equipment("Metal Parts",						/obj/item/stack/crafting/metalparts,								10),
@@ -922,6 +936,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/mining
 	name = "Wasteland Vending Machine - Mining"
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "generic_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Pickaxe",					/obj/item/pickaxe,											25),
@@ -944,6 +959,7 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 
 /obj/machinery/mineral/wasteland_vendor/ingredients
 	name = "Vending Machine - Ingredients"
+	icon = 'icons/WVM/new_vendors.dmi'
 	icon_state = "generic_idle"
 	prize_list = list(
 		new /datum/data/wasteland_equipment("Randomized Bundle",		/obj/item/storage/box/ingredients/wildcard,						30),
@@ -1043,6 +1059,21 @@ GLOBAL_VAR_INIT(vendor_cash, 0)
 		new /datum/data/wasteland_equipment("Strawberry",				/obj/item/reagent_containers/food/snacks/grown/strawberry,		7),
 		new /datum/data/wasteland_equipment("Tomato",					/obj/item/reagent_containers/food/snacks/grown/tomato,			7)
 	)
+
+/obj/machinery/mineral/wasteland_vendor/scrap
+	name = "Wasteland Vending Machine - Scrap"
+	icon = 'icons/WVM/new_vendors.dmi'
+	icon_state = "seller_crafting"
+	prize_list = list(
+		new /datum/data/wasteland_equipment("Pre-war salvage",				/obj/item/salvage/low,											40),
+		new /datum/data/wasteland_equipment("Pre-war tool salvage",			/obj/item/salvage/tool,											60),
+		new /datum/data/wasteland_equipment("Advanced pre-war salvage",		/obj/item/salvage/high,											80)
+		)
+	highpop_list = list(
+		new /datum/data/wasteland_equipment("Pre-war salvage",				/obj/item/salvage/low,											60),
+		new /datum/data/wasteland_equipment("Pre-war tool salvage",			/obj/item/salvage/tool,											70),
+		new /datum/data/wasteland_equipment("Advanced pre-war salvage",		/obj/item/salvage/high,											100)
+		)
 
 /datum/data/wasteland_equipment
 	var/equipment_name = "generic"
