@@ -984,7 +984,7 @@
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. Chambered in 7.62x51."
 	icon_state = "republics_pride"
 	item_state = "scoped308"
-	extra_damage = 43
+	extra_damage = 45
 	extra_penetration = 0.3
 	zoomable = TRUE
 	zoom_amt = 10
