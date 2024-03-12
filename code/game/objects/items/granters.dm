@@ -480,6 +480,14 @@
 	greet = "<span class='sciradio'>You have mastered the rites of the berserker. Use the help verb to see your combos.</span>"
 	remarks = list("Rip and tear...", "Overwhelming force, immovable object...", "Focus... And you'll be able to incapacitate any foe in seconds...", "I must pierce armor for maximum damage...", "You are huge, that means you have huge guts...")
 
+/obj/item/book/granter/martial/wrestling
+	martial = /datum/martial_art/wrestling
+	name = "pro wrestling magazine"
+	martialname = "wrestling"
+	desc = "A magazine detailing various grapples, holds, suplexes and elbow drops. Oooh yeah, brother."
+	greet = "<span class='sciradio'>You have mastered the power of pro wrestling. Use the buttons at the top of your screen to harm others, grab to initiate a move.</span>"
+	remarks = list("Drop the leg...", "Cream of the crop...", "Hell yeah brother...", "The Macho Man is gonna...", "Warrior nation...", "One two three...")
+
 /obj/item/book/granter/martial/plasma_fist
 	martial = /datum/martial_art/plasma_fist
 	name = "frayed scroll"
@@ -594,7 +602,7 @@
 	desc = "An extremely rare issue of Guns and Bullets, showing some design flaws of weapons and how to rectify them. It's barely holding up, and looks like only one person can study the knowledge from it."
 	icon_state = "gab4"
 	remarks = list("Always keep your gun well lubricated...", "Keep your barrel free of grime...", "Perfect fitment is the key to a good firearm...", "Maintain a proper trigger pull length...", "Keep your sights zeroed to proper range...")
-	crafting_recipe_types = list(/datum/crafting_recipe/flux, /datum/crafting_recipe/lenses, /datum/crafting_recipe/conductors, /datum/crafting_recipe/receiver, /datum/crafting_recipe/assembly, /datum/crafting_recipe/alloys, /datum/crafting_recipe/assault_carbine_repair)
+	crafting_recipe_types = list(/datum/crafting_recipe/flux, /datum/crafting_recipe/lenses, /datum/crafting_recipe/conductors, /datum/crafting_recipe/receiver, /datum/crafting_recipe/assembly, /datum/crafting_recipe/alloys, /datum/crafting_recipe/assault_carbine_repair, /datum/crafting_recipe/worn_type93_repair)
 	autolathe_level = "advanced"
 
 /obj/item/book/granter/crafting_recipe/scav_one

@@ -140,9 +140,9 @@
 	icon_state = "brushgun"
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
-	extra_damage = 40
-	extra_penetration = 0.05
-	extra_speed = 100
+	extra_damage = 45
+	extra_penetration = 0.2
+	extra_speed = 200
 	fire_delay = 3
 	recoil = 0.15
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
@@ -310,6 +310,7 @@
 	recoil = 1
 	spread = 0
 	force = 10 //Big clumsy and sensitive scope, makes for a poor club
+	slowdown = 0.2
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13

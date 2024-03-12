@@ -26,4 +26,4 @@
 	desc = "Punga fruit plants flower at a single point at the terminus of their stems, gradually developing into large, fleshy fruits with a yellow/brown, thick skin. They are common throughout Point Lookout, due to the unique conditions offered by the swamps, and scrub radiation when ingested."
 	icon_state = "Punga Fruit"
 	filling_color = "#FF6347"
-	juice_results = list(/datum/reagent/consumable/ethanol/pungajuice = 0)
+	juice_results = list(/datum/reagent/consumable/ethanol/pungajuice = 1)

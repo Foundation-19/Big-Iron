@@ -89,6 +89,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	layer = 100
 	var/open = FALSE
+	var/locked = TRUE
 	var/id = null
 
 /obj/item/lock/New(location)
