@@ -884,7 +884,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	extra_damage = 33
-	extra_penetration = 0.3
+	extra_penetration = 0.2
 	extra_speed = 500
 	burst_size = 1
 	fire_delay = 4
@@ -944,7 +944,7 @@
 	slowdown = 0.2
 	mag_type = /obj/item/ammo_box/magazine/garand308
 	extra_damage = 40
-	extra_penetration = 0.3
+	extra_penetration = 0.2
 	fire_delay = 2
 	burst_size = 1
 	spread = 1
@@ -984,8 +984,8 @@
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. Chambered in 7.62x51."
 	icon_state = "republics_pride"
 	item_state = "scoped308"
-	extra_damage = 48
-	extra_penetration = 0.5
+	extra_damage = 43
+	extra_penetration = 0.3
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
