@@ -352,8 +352,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/m1garand
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/garand308 = 4,
-		/obj/item/melee/onehanded/knife/bowie = 1
-		/obj/item/attachments/scope = 1,
+		/obj/item/melee/onehanded/knife/bowie = 1,
+		/obj/item/attachments/scope = 1
 		)
 	
 /datum/outfit/loadout/staffsergeantmanatarms
@@ -361,7 +361,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/automatic/service/r82
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle = 3,
-		/obj/item/melee/onehanded/knife/bowie = 1,
+		/obj/item/melee/onehanded/knife/bowie = 1
 		)
 
 /datum/outfit/job/ncr/f13staffsergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
