@@ -1000,7 +1000,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/magazine/m45 = 2,
 		/obj/item/shovel/trench = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/storage/box/ration/menu_seven = 1
+		/obj/item/storage/box/ration/menu_seven = 1,
+		/obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced/trenchraider = 1
 		)
 
 // TROOPER
