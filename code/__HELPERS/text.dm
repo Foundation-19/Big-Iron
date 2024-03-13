@@ -826,3 +826,21 @@ GLOBAL_LIST_INIT(hex_muted3, list("0","2"))
 	if(prob(15))
 		corrupted_text += pick(corruption_options)
 	return corrupted_text
+
+
+/proc/sql_sanitize_text(text)
+	text = replacetext(text, "'", "''")
+	text = replacetext(text, ";", "")
+	text = replacetext(text, "&", "")
+	return text
+
+/proc/new_sql_sanitize_text(text)
+	text = replacetext(text, "'", "")
+	text = replacetext(text, ";", "")
+	text = replacetext(text, "&", "")
+	text = replacetext(text, "`", "")
+	return text
+
+/proc/remove_all_spaces(text)
+	text = replacetext(text, " ", "")
+	return text

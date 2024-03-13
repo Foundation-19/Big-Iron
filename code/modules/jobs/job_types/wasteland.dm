@@ -167,7 +167,8 @@ Raider
 	/datum/outfit/loadout/raider_bos,
 	/datum/outfit/loadout/quack_doctor,
 	/datum/outfit/loadout/raider_powder,
-	/datum/outfit/loadout/raider_tribal
+	/datum/outfit/loadout/raider_tribal,
+	/datum/outfit/loadout/den
 	)
 
 
@@ -434,6 +435,23 @@ Raider
 		/obj/item/ammo_box/magazine/greasegun = 2,
 		/obj/item/grenade/f13/dynamite = 2,
 		/obj/item/book/granter/trait/explosives = 1
+		)
+
+/datum/outfit/loadout/den
+	name = "Den Gangster"
+	suit = /obj/item/clothing/suit/armor/vest
+	uniform = /obj/item/clothing/under/f13/densuit
+	head = /obj/item/clothing/head/fedora
+	gloves = /obj/item/clothing/gloves/color/white
+	shoes = /obj/item/clothing/shoes/laceup
+	id = /obj/item/card/id/denid
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
+		/obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
+		/obj/item/ammo_box/magazine/greasegun = 1,
+		/obj/item/radio/headset = 1,
+		/obj/item/clothing/mask/bandana/durathread = 1
 		)
 
 /datum/job/wasteland/f13wastelander
@@ -863,14 +881,14 @@ Raider
 		/obj/item/book/granter/crafting_recipe/tribal/bone = 1
 	)
 
-/datum/job/wasteland/f13bwsettler
+/* /datum/job/wasteland/f13bwsettler
 	title = "Blackwater Settler"
 	flag = F13BWSETTLER
 	total_positions = 8
 	spawn_positions = -1
 	faction = FACTION_WASTELAND
-	description = "You are a settler living on the frontier. Brahmin rustlers, raider gangs, and simple starvation threaten you, despite this, you've managed to settle down on the small frontier town of Blackwater. Living on the frontier isn't easy, numerous raider gangs, such as the Great Khans settled nearby, occasionally harass your small town to supply themselves."
-	supervisors = "The Sheriff and his deputies, God"
+	description = "You are a settler of the frontier, that came to south kebab after the loss of your settlement. You are a normal Kebab citizen too."
+	supervisors = "The Sheriff and his deputies, the militia commander, the merchant. "
 	selection_color = "#dddddd"
 	outfit = /datum/outfit/job/wasteland/f13bwsettler
 	exp_requirements = 0
@@ -910,11 +928,12 @@ Raider
 /datum/outfit/job/wasteland/f13bwsettler
 	name = "Blackwater Settler"
 	jobtype = /datum/job/wasteland/f13bwsettler
-	ears = /obj/item/radio/headset/headset_bw
+	ears = /obj/item/radio/headset/headset_town
 	belt = null
-	id = null
+	id = /obj/item/card/id/dogtag/town
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	r_pocket = /obj/item/flashlight/lantern
+	l_pocket = /obj/item/radio/headset/headset_bw
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/raider = 1,
 		)
@@ -1103,14 +1122,14 @@ Raider
 		)
 
 
-/datum/job/wasteland/f13bwdeputy
+//datum/job/wasteland/f13bwdeputy
 	title = "Blackwater Deputy"
 	flag = F13BWDEPUTY
-	faction = FACTION_WASTELAND
+	faction = F13CITIZEN
 	total_positions = 3
 	spawn_positions = 3
-	description = "You are a lawman watching over the frontier town of Blackwater. The last Sheriff just retired, if you feel that you have what it takes to lead the other Deputies, the sheriff badge sits on the desk, otherwise, grab a deputy badge and head out."
-	supervisors = "the Sherif"
+	description = "You are a lawman watching over the town of Kebab and Blackwater since the towns fusions. The last Sheriff just retired too, if you feel you can lead, go ahead and takes his place, but you are still under the militia commander."
+	supervisors = "the Sherif, but the Militia Commander orders takes priority"
 	selection_color = "#dddddd"
 	exp_requirements = 0
 	exp_type = EXP_TYPE_FALLOUT
@@ -1133,8 +1152,8 @@ Raider
 	name = "Blackwater Deputy"
 	jobtype = /datum/job/wasteland/f13bwdeputy
 	head = /obj/item/clothing/head/f13/town/deputy
-	id = /obj/item/card/id/dogtag/deputy/bw
-	ears = /obj/item/radio/headset/headset_bw
+	id = /obj/item/card/id/dogtag/deputy/kebab
+	ears = /obj/item/radio/headset/headset_town
 	backpack = /obj/item/storage/backpack/satchel/explorer
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	belt = /obj/item/storage/belt
@@ -1148,7 +1167,8 @@ Raider
 		/obj/item/restraints/handcuffs = 2,
 		/obj/item/ammo_box/a357 = 3,
 		/obj/item/melee/onehanded/knife/bowie = 1,
-		/obj/item/melee/classic_baton = 1
+		/obj/item/melee/classic_baton = 1,
+		/obj/item/radio/headset/headset_bw = 1,
 		)
 
 /datum/outfit/job/wasteland/f13bwdeputy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1157,4 +1177,5 @@ Raider
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-/*--------------------------------------------------------------*/
+*/
+

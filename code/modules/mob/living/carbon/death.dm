@@ -7,6 +7,9 @@
 
 	if(!gibbed)
 		INVOKE_ASYNC(src, .proc/emote, "deathgasp")
+		if(istype(buckled, /obj/structure/chair))
+			buckled.unbuckle_mob(src)
+			visible_message("<span class='danger'>[src] slips off the chair!</span>")
 
 	. = ..()
 

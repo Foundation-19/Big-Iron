@@ -97,14 +97,14 @@
 	if(quirk_holder)
 		quirk_holder.remove_client_colour(/datum/client_colour/monochrome)
 
-/datum/quirk/maso
+/*/datum/quirk/maso
 	name = "Masochism"
 	desc = "You are aroused by pain."
 	value = 0
 	mob_trait = TRAIT_MASO
 	gain_text = "<span class='notice'>You desire to be hurt.</span>"
 	lose_text = "<span class='notice'>Pain has become less exciting for you.</span>"
-
+*/
 /datum/quirk/alcohol_intolerance
 	name = "Alcohol Intolerance"
 	desc = "You take toxin damage from alcohol rather than getting drunk."
@@ -138,3 +138,25 @@
 /datum/quirk/longtimer/on_spawn()
 	var/mob/living/carbon/C = quirk_holder
 	C.generate_fake_scars(rand(min_scars, max_scars))
+
+/datum/quirk/tongue_tied
+	name = "Tongue Tied"
+	desc = "Due to a past incident, your ability to communicate has been relegated to your hands."
+	value = 0
+	medical_record_text = "During physical examination, patient's tongue was found to be uniquely damaged."
+
+//Adds tongue & gloves
+/datum/quirk/tongue_tied/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/obj/item/organ/tongue/old_tongue = locate() in H.internal_organs
+	var/obj/item/organ/tongue/tied/new_tongue = new(get_turf(H))
+	var/obj/item/clothing/gloves/radio/gloves = new(get_turf(H))
+	old_tongue.Remove(H)
+	new_tongue.Insert(H)
+	qdel(old_tongue)
+	H.put_in_hands(gloves)
+	H.equip_to_slot(gloves, ITEM_SLOT_GLOVES)
+	H.regenerate_icons()
+
+/datum/quirk/tongue_tied/post_add()
+	to_chat(quirk_holder, "<span class='boldannounce'>Because you speak with your hands, having them full hinders your ability to communicate!</span>")

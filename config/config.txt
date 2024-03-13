@@ -21,16 +21,16 @@ $include policy.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
-SERVERNAME Fallout 13: Big Iron
+SERVERNAME Fallout 13: Big Iron - One Year Anniversary
 
 ## Server tagline: This will appear right below the server's title.
-SERVERTAGLINE Wasteland Code - Hail Mary Waiting Room
+SERVERTAGLINE Non-Furry Fallout - PvP/PvE Roleplay Mashup - Non-ERP - Rebase-in-Progress
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 SERVERSQLNAME fo13sql
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
-STATIONNAME Fallout 13: Big Iron
+STATIONNAME The Arizona Wasteland
 
 ## Put on byond hub: Uncomment this to put your server on the byond hub.
 HUB
@@ -545,3 +545,6 @@ FAIL2TOPIC_RULE_NAME _dd_fail2topic
 ## Uncomment to enable global ban DB using the provided URL. The API should expect to receive a ckey at the end of the URL.
 ## More API details can be found here: https://centcom.melonmesa.com
 CENTCOM_BAN_DB https://centcom.melonmesa.com/ban/search
+
+## Uncomment to enable BCCM (IP checking and ASN banning utility). Warning: requires an active database connection.
+USE_BCCM 1

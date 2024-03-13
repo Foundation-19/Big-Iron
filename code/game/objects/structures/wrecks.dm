@@ -10,6 +10,35 @@
 	icon_state = "derelict"
 	bound_width = 64
 
+/obj/structure/wreck/car/welder_act(mob/living/user, obj/item/I)
+	I.play_tool_sound(src)
+	user.visible_message("<span class='notice'>[user] starts preparing the [src] for a makeover...</span>", \
+						"<span class='notice'>You start preparing the [src] for a makeover...</span>")
+	if(!I.use_tool(src, user, 50))
+		return
+	playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)
+	user.visible_message("<span class='notice'>[user] dexterly opens up [src]'s space .</span>", \
+						"<span class='notice'>You dexterly open up [src]'s space.</span>")
+	new /obj/item/mecha_parts/chassis/phazon/car(loc)
+	qdel(src)
+	return TRUE
+
+
+/obj/structure/wreck/car/crowbar_act(mob/living/user, obj/item/I)
+	I.play_tool_sound(src)
+	user.visible_message("<span class='notice'>[user] starts taking the [src] appart for materials...</span>", \
+						"<span class='notice'>You start taking the [src] appart for materials...</span>")
+	if(!I.use_tool(src, user, 50))
+		return
+	playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)
+	user.visible_message("<span class='notice'>[user] wreck open the [src] and take the metal appart .</span>", \
+						"<span class='notice'>You wreck open the [src] and take the metal appart.</span>")
+	new /obj/item/stack/sheet/metal/ten(loc)
+	new /obj/item/stack/rods/ten(loc)
+	qdel(src)
+	return TRUE
+
+	
 /obj/structure/wreck/car/bike
 	name = "wrecked motorcycle"
 	desc = "An old pre-war motorcycle, rusted and destroyed with age and weathering."
@@ -231,6 +260,25 @@
 	bound_width = 32
 	bound_height = 32
 
+/obj/structure/wreck/trash/five_tires/attackby(obj/item/I, mob/living/user, params)
+	if(I.tool_behaviour == TOOL_ANALYZER)
+		I.play_tool_sound(src)
+		user.visible_message("<span class='notice'>[user] is checking the [src] for ones of appropiate pressure...</span>", \
+							"<span class='notice'>You start checking the [src] for ones of appropiate pressure...</span>")
+		if(!I.use_tool(src, user, 50))
+			return
+		playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)
+		user.visible_message("<span class='notice'>[user] finished checking both [src].</span>", \
+							"<span class='notice'>You finish checking both[src].</span>")
+		new /obj/item/mecha_parts/part/Car_tire(loc)
+		new /obj/item/mecha_parts/part/Car_tire(loc)
+		new /obj/item/mecha_parts/part/Car_tire(loc)
+		new /obj/item/mecha_parts/part/Car_tire(loc)
+		new /obj/item/mecha_parts/part/Car_tire(loc)
+		qdel(src)
+		return
+	. = ..()
+
 /obj/structure/wreck/trash/two_tire
 	name = "Tires"
 	desc = "A set of two tires, now where are the other two?"
@@ -239,6 +287,22 @@
 	bound_width = 32
 	bound_height = 32
 
+/obj/structure/wreck/trash/two_tire/attackby(obj/item/I, mob/living/user, params)
+	if(I.tool_behaviour == TOOL_ANALYZER)
+		I.play_tool_sound(src)
+		user.visible_message("<span class='notice'>[user] is checking the [src] for ones of appropiate pressure...</span>", \
+							"<span class='notice'>You start checking the [src] for ones of appropiate pressure...</span>")
+		if(!I.use_tool(src, user, 50))
+			return
+		playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)
+		user.visible_message("<span class='notice'>[user] finished checking both [src].</span>", \
+							"<span class='notice'>You finish checking both[src].</span>")
+		new /obj/item/mecha_parts/part/Car_tire(loc)
+		new /obj/item/mecha_parts/part/Car_tire(loc)
+		qdel(src)
+		return
+	. = ..()
+
 /obj/structure/wreck/trash/one_tire
 	name = "Tire"
 	desc = "A single tire."
@@ -246,6 +310,21 @@
 	icon_state = "one_t"
 	bound_width = 32
 	bound_height = 32
+
+/obj/structure/wreck/trash/one_tire/attackby(obj/item/I, mob/living/user, params)
+	if(I.tool_behaviour == TOOL_ANALYZER)
+		I.play_tool_sound(src)
+		user.visible_message("<span class='notice'>[user] is checking the [src] for pressure...</span>", \
+							"<span class='notice'>You start checking the [src] for pressure...</span>")
+		if(!I.use_tool(src, user, 50))
+			return
+		playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)
+		user.visible_message("<span class='notice'>[user] finished checking [src].</span>", \
+							"<span class='notice'>You finish checking [src].</span>")
+		new /obj/item/mecha_parts/part/Car_tire(loc)
+		qdel(src)
+		return
+	. = ..()
 
 /obj/structure/wreck/trash/halftire
 	name = "Buried Tire"
@@ -297,6 +376,21 @@
 	bound_width = 32
 	bound_height = 32
 
+/obj/structure/wreck/trash/engine/attackby(obj/item/I, mob/living/user, params)
+	if(I.tool_behaviour == TOOL_WRENCH)
+		I.play_tool_sound(src)
+		user.visible_message("<span class='notice'>[user] starts disassambling the [src] for easier transport...</span>", \
+							"<span class='notice'>You start disassambling the [src] for easier transport...</span>")
+		if(!I.use_tool(src, user, 50))
+			return
+		playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)
+		user.visible_message("<span class='notice'>[user] finishes dissasambling the [src].</span>", \
+							"<span class='notice'>You finish dissasambling the [src].</span>")
+		new /obj/item/mecha_parts/part/Car_engine(loc)
+		qdel(src)
+		return
+	. = ..()
+
 /obj/structure/wreck/trash/autoshaft
 	name = "Automobile Shaft"
 	desc = "It probably was in a vehicle at one time."
@@ -306,6 +400,21 @@
 	bound_height = 32
 	density = 0
 	layer = TURF_LAYER
+
+/obj/structure/wreck/trash/autoshaft/attackby(obj/item/I, mob/living/user, params)
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
+		I.play_tool_sound(src)
+		user.visible_message("<span class='notice'>[user] starts disassambling the [src] for easier transport...</span>", \
+							"<span class='notice'>You start disassambling the [src] for easier transport...</span>")
+		if(!I.use_tool(src, user, 50))
+			return
+		playsound(get_turf(src), 'sound/items/deconstruct.ogg', 50, 1)
+		user.visible_message("<span class='notice'>[user] finishes dissasambling the [src].</span>", \
+							"<span class='notice'>You finish dissasambling the [src].</span>")
+		new /obj/item/mecha_parts/part/Car_autoshaft(loc)
+		qdel(src)
+		return
+	. = ..()
 
 /obj/structure/wreck/trash/bus_door
 	name = "Lonely Bus Door"
@@ -332,7 +441,36 @@
 	icon_state = "technical_pile3"
 	bound_width = 32
 	bound_height = 32
+	var/inuse = FALSE
 
+/obj/structure/wreck/trash/brokenvendor/attackby(obj/item/I, mob/living/user, params)
+	if(istype(I, /obj/item/weldingtool))
+		if(inuse) //this means that if mappers or admins want an nonharvestable version, set the uses_left to 0
+			return
+		inuse = TRUE //one at a time boys, this isn't some kind of weird party
+		if(!I.tool_start_check(user, amount=0)) //this seems to be called everywhere, so for consistency's sake
+			inuse = FALSE
+			return //the tool fails this check, so stop
+		user.visible_message("[user] starts disassembling [src].")
+		if(!I.use_tool(src, user, 0, volume=100)) //here is the dilemma, use_tool doesn't work like do_after, so moving away screws it(?)
+			inuse = FALSE
+			return //you can't use the tool, so stop
+		for(var/i1 in 1 to 2) //so, I hate waiting
+			if(!do_after(user, 1 SECONDS, target = src)) //this is my work around, because do_After does have a move away
+				user.visible_message("[user] stops disassembling [src].")
+				inuse = FALSE
+				return //you did something, like moving, so stop
+			var/fake_dismantle = pick("plating", "rod", "rim", "part of the frame")
+			user.visible_message("[user] slices through a [fake_dismantle].")
+			I.play_tool_sound(src, 100)
+		var/turf/usr_turf = get_turf(user)
+		var/list/canistergachalist = subtypesof(/obj/item/vending_refill)
+		var/canistergacha = pick(canistergachalist)
+		new canistergacha(usr_turf)
+		new /obj/item/circuitboard/machine/vendor(usr_turf)
+		inuse = FALSE //putting this after the -- because the first check prevents cheesing
+		visible_message("[src] falls apart, the final components having been removed.")
+		qdel(src)
 /obj/structure/wreck/trash/machinepile
 	name = "Broken Machinery"
 	desc = "Looks like broken machinery."
@@ -375,6 +513,9 @@
 				new /obj/item/salvage/high(usr_turf)
 			if(prob(10))
 				new /obj/item/salvage/tool(usr_turf)
+		var/list/boardgachalist = subtypesof(/obj/item/circuitboard/computer)
+		var/boardgacha = pick(boardgachalist)
+		new boardgacha(usr_turf)
 		inuse = FALSE //putting this after the -- because the first check prevents cheesing
 		visible_message("[src] falls apart, the final components having been removed.")
 		qdel(src)
@@ -421,6 +562,9 @@
 				new /obj/item/salvage/high(usr_turf)
 			if(prob(10))
 				new /obj/item/salvage/tool(usr_turf)
+		var/list/boardgachalist = subtypesof(/obj/item/circuitboard/machine)
+		var/boardgacha = pick(boardgachalist)
+		new boardgacha(usr_turf)
 		inuse = FALSE //putting this after the -- because the first check prevents cheesing
 		visible_message("[src] falls apart, the final components having been removed.")
 		qdel(src)

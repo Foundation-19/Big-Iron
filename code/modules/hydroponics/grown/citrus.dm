@@ -32,7 +32,7 @@
 	foodtype = FRUIT | ANTITOXIC
 	icon_state = "lime"
 	filling_color = "#00FF00"
-	juice_results = list(/datum/reagent/consumable/limejuice = 0)
+	juice_results = list(/datum/reagent/consumable/limejuice = 1)
 
 // Orange
 /obj/item/seeds/orange
@@ -59,7 +59,7 @@
 	desc = "It's a tangy fruit."
 	icon_state = "orange"
 	filling_color = "#FFA500"
-	juice_results = list(/datum/reagent/consumable/orangejuice = 0)
+	juice_results = list(/datum/reagent/consumable/orangejuice = 1)
 	distill_reagent = /datum/reagent/consumable/ethanol/triple_sec
 
 
@@ -87,7 +87,7 @@
 	desc = "You can hardly wrap your head around this thing."
 	icon_state = "orang"
 	filling_color = "#FFA500"
-	juice_results = list(/datum/reagent/consumable/orangejuice = 0)
+	juice_results = list(/datum/reagent/consumable/orangejuice = 1)
 	distill_reagent = /datum/reagent/toxin/mindbreaker
 	tastes = list("polygons" = 1, "bluespace" = 1, "the true nature of reality" = 1)
 
@@ -123,7 +123,7 @@
 	desc = "When life gives you lemons, make lemonade."
 	icon_state = "lemon"
 	filling_color = "#FFD700"
-	juice_results = list(/datum/reagent/consumable/lemonjuice = 0)
+	juice_results = list(/datum/reagent/consumable/lemonjuice = 1)
 
 // Combustible lemon
 /obj/item/seeds/firelemon //combustible lemon is too long so firelemon
