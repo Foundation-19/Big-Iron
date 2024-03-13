@@ -102,7 +102,8 @@
 	desc = "This long blade is favoured by Legion officers and leaders, a finely crafted weapon with good steel and hilt made from bronze and bone."
 	icon_state = "spatha"
 	item_state = "spatha"
-	force = 38
+	force = 42
+	armour_penetration = 0.10
 	wound_bonus = 30
 	block_chance = 18
 
@@ -111,7 +112,7 @@
 	desc = "A long one-handed blade sporting lovingly applied wraps and a wonderfully forged and engraved guard. The blade looks to be carefully sharpened."
 	icon_state = "longblade"
 	item_state = "longblade"
-	force = 38
+	force = 39
 	block_chance = 18
 
 /obj/item/melee/onehanded/machete/scrapsabre
@@ -133,10 +134,10 @@
 	icon_state = "throw_spear"
 	item_state = "tribalspear"
 	force = 20
-	throwforce = 35
-	armour_penetration = 0.10
+	throwforce = 40
+	armour_penetration = 0.30
 	max_reach = 2
-	embedding = list("pain_mult" = 4, "embed_chance" = 65, "fall_chance" = 8)
+	embedding = list("pain_mult" = 4, "embed_chance" = 85, "fall_chance" = 8)
 	w_class = WEIGHT_CLASS_NORMAL
 
 
@@ -233,7 +234,8 @@
 	icon_state = "knife_trench"
 	item_state = "knife_trench"
 	desc = "This blade is designed for brutal close quarters combat."
-	force = 31
+	force = 33
+	wound_bonus = 10
 	custom_materials = list(/datum/material/iron=8000)
 	attack_verb = list("slashed", "stabbed", "sliced", "shanked", "ripped", "lacerated")
 
@@ -360,12 +362,12 @@
 	desc = "a finely balanced knife made from a lightweight alloy, designed for being thrown. You can easily embed these in someone, and you look darn cool while doing so."
 	icon_state = "knife_throw"
 	force = 20
-	throwforce = 23
+	throwforce = 27
 	armour_penetration = 0.25
 	bare_wound_bonus = 15 //keep your arteries covered
 	throw_speed = 5
 	throw_range = 7
-	embedding = list("pain_mult" = 4, "embed_chance" = 70, "fall_chance" = 5)
+	embedding = list("pain_mult" = 4, "embed_chance" = 75, "fall_chance" = 5)
 
 ///////////
 // CLUBS //
@@ -428,6 +430,14 @@
 	force = 26
 	block_chance = 30
 	attack_verb = list("smacked", "thwacked", "democratized", "freedomed")
+
+// Because it's extremely funny
+/obj/item/melee/onehanded/club/ncrflag(mob/living/M, mob/living/user)
+	. = ..()
+	if(!istype(M))
+		return
+	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
+
 
 // Classic Baton
 /obj/item/melee/classic_baton
@@ -754,7 +764,8 @@
 	icon_state = "spiked"
 	item_state = "spiked"
 	sharpness = SHARP_POINTY
-	force = 25
+	force = 26
+	armour_penetration = 0.2
 
 // Sappers			Keywords: Damage 25
 /obj/item/melee/unarmed/sappers
@@ -769,7 +780,7 @@
 	. = ..()
 	if(!istype(M))
 		return
-	M.apply_damage(15, STAMINA, "head", M.run_armor_check("head", "melee"))
+	M.apply_damage(25, STAMINA, "head", M.run_armor_check("head", "melee"))
 
 // Tiger claws		Keywords: Damage 31, Pointy, 0.1 AP
 /obj/item/melee/unarmed/tigerclaw
@@ -792,7 +803,7 @@
 	item_state = "lacerator"
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 27
-	bare_wound_bonus = 5
+	bare_wound_bonus = 15
 	sharpness = SHARP_EDGED
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
@@ -879,7 +890,13 @@
 	hitsound = 'sound/f13weapons/pan.ogg'
 	custom_materials = list(/datum/material/iron = 4000)
 
-// Entrenching tool P81
+/obj/item/melee/onehanded/club/fryingpan(mob/living/M, mob/living/user)
+	. = ..()
+	if(!istype(M))
+		return
+	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
+
+// Entrenching tool P81 (based, they deserve better if they're using this)
 /obj/item/shovel/trench
 	name = "p81 entrenching tool"
 	desc = "The 'Pattern 2281' Entrenching Tool is a new piece of infantry equipment given in limited quantity to infantry troops. An extremely robust shovel with a serrated edge for chopping wood."
@@ -889,7 +906,8 @@
 	icon_state = "entrenching_tool"
 	item_state = "trench"
 	w_class = WEIGHT_CLASS_NORMAL
-	force = 30
+	force = 35
+	armour_penetration = 0.2
 	throwforce = 15
 	toolspeed = 0.7
 	sharpness = SHARP_EDGED
