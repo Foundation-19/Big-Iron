@@ -56,7 +56,7 @@
 	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
 	icon_state = "goliath"
 	item_state = "goliath"
-	force = 25
+	force = 30
 	throw_distance = 3
 
 
@@ -122,8 +122,8 @@
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	force = 10
-	wound_bonus = 25
-	block_chance = 15
+	wound_bonus = 15
+	block_chance = 5
 	throw_speed = 3
 	throw_range = 4
 	throwforce = 10
@@ -135,7 +135,7 @@
 	var/on_item_state = "ripper_on"
 	var/off_item_state = "ripper"
 	var/weight_class_on = WEIGHT_CLASS_HUGE
-	var/force_on = 45
+	var/force_on = 43
 	var/force_off = 10
 	var/on = FALSE
 	var/on_icon_state = "ripper_on"
@@ -288,7 +288,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	item_flags = ABSTRACT  // don't put in storage
 	slot_flags = 0
-	force = 55
+	force = 60
 	damtype = "fire"
 	tool_behaviour = TOOL_WELDER
 	toolspeed = 0.3
