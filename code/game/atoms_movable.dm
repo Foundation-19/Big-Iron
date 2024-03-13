@@ -57,6 +57,11 @@
 	var/list/affected_dynamic_lights
 	///Highest-intensity light affecting us, which determines our visibility.
 	var/affecting_dynamic_lumi = 0
+	///is the mob currently ascending or descending through z levels?
+	var/currently_z_moving
+
+	/// Whether this atom should have its dir automatically changed when it moves. Setting this to FALSE allows for things such as directional windows to retain dir on moving without snowflake code all of the place.
+	var/set_dir_on_move = TRUE
 
 
 /atom/movable/Initialize(mapload)

@@ -347,6 +347,9 @@
 	else
 		icon_state = initial(icon_state)
 
+/obj/item/storage/survivalkit/legion_rations/empty/PopulateContents()
+	return
+
 // Leather pouch for medicines
 /obj/item/storage/survivalkit/medical/legion
 	name = "medicine bag"
@@ -368,6 +371,9 @@
 		icon_state = "[icon_state]_empty"
 	else
 		icon_state = initial(icon_state)
+
+/obj/item/storage/survivalkit/medical/legion/empty/PopulateContents()
+	return
 
 /obj/item/storage/survivalkit/medical/legion/advanced
 	desc = "Medical kit compliant with the laws of Caesar, of higher than average quality."

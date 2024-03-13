@@ -124,17 +124,19 @@ Head Paladin
 /datum/outfit/loadout/hpa
 	name = "Heavy Weapons Head Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpack = 1,
-		/obj/item/stock_parts/cell/ammo/ecp = 3,
-		/obj/item/twohanded/sledgehammer/supersledge = 1
+		/obj/item/gun/ballistic/automatic/m72 = 1,
+		/obj/item/ammo_box/magazine/m2mm = 2,
+		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
 
 /datum/outfit/loadout/hpb
-	name = "Frontline Head Paladin"
+	name = "Refined Head Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
-		/obj/item/melee/unarmed/powerfist = 1
+		/obj/item/gun/ballistic/automatic/bozar = 1,
+		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
 		
 
@@ -143,8 +145,8 @@ Head Paladin
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 3,
-		/obj/item/shield/riot/bullet_proof = 1,
-		/obj/item/melee/powered/ripper/prewar = 1
+		/obj/item/melee/powered/ripper/prewar = 1,
+		/obj/item/book/granter/trait/trekking = 1
 		)
 
 /datum/outfit/job/bos/f13headpaladin/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -185,7 +187,7 @@ Head Scribe
 	accessory =		/obj/item/clothing/accessory/bos/headscribe
 	glasses =		/obj/item/clothing/glasses/sunglasses
 	suit =			/obj/item/clothing/suit/armor/f13/headscribe
-	suit_store =	/obj/item/gun/energy/laser/pistol
+	suit_store =	/obj/item/gun/energy/laser/wattz/magneto
 	belt =			/obj/item/storage/belt/utility/full/engi
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival = 1,
@@ -234,13 +236,13 @@ Head Knight
 	name = "Head Knight"
 	jobtype = /datum/job/bos/f13headknight
 
-	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
+	suit = 			/obj/item/clothing/suit/armor/f13/combat/mk2/brotherhood/captain
 	glasses =		/obj/item/clothing/glasses/night
 	accessory =		/obj/item/clothing/accessory/bos/headknight
-	belt =			/obj/item/storage/belt/security/full
+	belt =			/obj/item/storage/belt/utility/full/engi
 	neck =			/obj/item/storage/belt/holster
 	mask =			/obj/item/clothing/mask/gas/sechailer
-	head =			/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
+	head =			/obj/item/clothing/head/helmet/f13/combat/mk2/brotherhood/captain
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/pistol/pistol14 = 1,
 		/obj/item/ammo_box/magazine/m14mm = 2,
@@ -251,8 +253,8 @@ Head Knight
 /datum/outfit/loadout/hka
 	name = "Sniper Head Knight"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
-		/obj/item/ammo_box/magazine/w308 = 3
+		/obj/item/gun/ballistic/rifle/mag/antimateriel = 1,
+		/obj/item/ammo_box/magazine/amr = 2
 		)
 
 /datum/outfit/loadout/hkb
@@ -336,8 +338,10 @@ Paladin
 /datum/outfit/loadout/paladina
 	name = "Frontline Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9 = 1,
+		/obj/item/gun/energy/laser/aer12 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/accessory/bos/paladin = 1
@@ -346,8 +350,10 @@ Paladin
 /datum/outfit/loadout/paladinb
 	name = "Frontline Senior Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9 = 1,
+		/obj/item/gun/energy/laser/aer12 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/accessory/bos/seniorpaladin = 1
@@ -356,7 +362,10 @@ Paladin
 /datum/outfit/loadout/paladinc
 	name = "Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpackbal5mm = 1,
+		/obj/item/gun/energy/laser/scatter = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/accessory/bos/paladin = 1
@@ -365,7 +374,10 @@ Paladin
 /datum/outfit/loadout/paladind
 	name = "Heavy Senior Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpackbal5mm = 1,
+		/obj/item/gun/energy/laser/scatter = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
 		/obj/item/clothing/accessory/bos/seniorpaladin = 1
@@ -492,13 +504,13 @@ Senior Knight
 /datum/outfit/job/bos/f13seniorknight
 	name = "Senior Knight"
 	jobtype = /datum/job/bos/f13seniorknight
-	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
+	suit = 			/obj/item/clothing/suit/armor/f13/combat/mk2/brotherhood/senior
 	accessory = 	/obj/item/clothing/accessory/bos/seniorknight
 	glasses =       /obj/item/clothing/glasses/night
 	mask =			/obj/item/clothing/mask/gas/sechailer
 	belt = 			/obj/item/storage/belt/military/assault
 	neck =			/obj/item/storage/belt/holster
-	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
+	head = 			/obj/item/clothing/head/helmet/f13/combat/mk2/brotherhood/senior
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/hunting = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2
@@ -722,6 +734,41 @@ Initiate
 		return
 	ADD_TRAIT(H, TRAIT_SURGERY_LOW, src)
 
+// LANCER//
+
+/datum/job/bos/f13lancer
+	title = "Lancer"
+	flag = F13LANCER
+	display_order = JOB_DISPLAY_ORDER_LANCER
+	total_positions = 3
+	spawn_positions = 3
+	description = "You are reinforcement that arrived to help out this chapter, after the Mojave chapter went to Hidding. You pilot the Vertibirds and supports the knights and paladins."
+	supervisors = "All Heads"
+
+	outfit = /datum/outfit/job/bos/f13lancer
+
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
+	
+/datum/outfit/job/bos/f13lancer
+	name = "Lancer"
+	jobtype = /datum/job/bos/f13lancer
+	ears = /obj/item/radio/headset/headset_bos
+	suit = /obj/item/clothing/suit/bomber_open
+	suit_store = /obj/item/gun/energy/laser/aer9
+	head = /obj/item/clothing/head/f13/boscap
+	belt = /obj/item/storage/belt/military/army
+	glasses = /obj/item/clothing/glasses/hud/diagnostic/sunglasses
+	backpack_contents = list(
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/breeder = 2,
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/clothing/head/helmet/f13/combat/brotherhood = 1
+		)
+
+
 /*
 Off-Duty
 */
@@ -730,21 +777,21 @@ Off-Duty
 	title = "BoS Off-Duty"
 	flag = F13OFFDUTYBOS
 	display_order = JOB_DISPLAY_ORDER_OFFDUTYBOS
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 5
+	spawn_positions = 5
 	description = "While off-duty, you are relieved of both your duties and your authority. You are not required to participate in any routine duties of the bunker, and you may spend your time doing whatever you please, within reason. However, you may not leave the bunker, and you may not get in the way of on-duty personnel. Do not pull rank or give orders. Should the bunker be attacked, you are expected NOT to participate in the fighting, and must instead head to the lower levels for safety (i.e. despawn yourself at the matrix point)."
 	supervisors = "Everyone else"
 
 	outfit = /datum/outfit/job/bos/f13offdutybos
 
-	access = list(ACCESS_BOS)
-	minimal_access = list(ACCESS_BOS)
-
+	access = list(ACCESS_BROTHERHOOD_COMMAND, ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_BROTHERHOOD_COMMAND,ACCESS_BOS, ACCESS_ENGINE_EQUIP, ACCESS_ENGINE, ACCESS_HYDROPONICS, ACCESS_BOS1, ACCESS_BOS2, ACCESS_PUBLIC)
+	
 /datum/outfit/job/bos/f13offdutybos
 	name = "BoS Off-Duty"
 	jobtype = /datum/job/bos/f13offdutybos
-	ears = 			/obj/item/radio/headset
-	belt = 			/obj/item/storage/belt/military/army
+	ears = /obj/item/radio/headset
+	belt = /obj/item/storage/belt/military/army
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 		/obj/item/encryptionkey/headset_bos = 1,

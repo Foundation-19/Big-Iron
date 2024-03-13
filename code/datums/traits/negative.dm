@@ -457,3 +457,12 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	gain_text = "<span class='notice'>You can't smell anything!</span>"
 	lose_text = "<span class='notice'>You can smell again!</span>"
 	medical_record_text = "Patient suffers from anosmia and is incapable of smelling gases or particulates."
+
+/datum/quirk/deafness
+	name = "Deaf"
+	desc = "You are incurably deaf."
+	value = -2
+	mob_trait = TRAIT_DEAF
+	gain_text = "<span class='danger'>You can't hear anything.</span>"
+	lose_text = "<span class='notice'>You're able to hear again!</span>"
+	medical_record_text = "Subject's cochlear nerve is incurably damaged."

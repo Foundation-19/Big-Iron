@@ -395,9 +395,10 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 
 /obj/item/radio/headset/headset_bw
 	name = "blackwater radio headset"
-	desc = "This is used by the town of Blackwater.\nTo access the Blackwater channel, use :q."
+	desc = "This is used by the town of Blackwater.\n Use :f to acces town channels. To access the Blackwater channel, use :q."
 	icon_state = "mine_headset"
 	keyslot = new /obj/item/encryptionkey/headset_bw
+	keyslot2 = new /obj/item/encryptionkey/headset_town
 
 /obj/item/radio/headset/headset_town
 	name = "town radio headset"
@@ -418,12 +419,51 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	keyslot = new /obj/item/encryptionkey/headset_cargo
 	keyslot2 = new /obj/item/encryptionkey/headset_town
 
+/obj/item/radio/headset/headset_merchant_leader
+	name = "Merchant leader headset"
+	desc = "A headset used by the Merchant.\nTo access the Merchant channel, use :u / Command, use :c / Town, use :f"
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_cargo
+	keyslot2 = new /obj/item/encryptionkey/headset_towncommand
+	command = TRUE
+
 /obj/item/radio/headset/headset_church
 	name = "Church headset"
 	desc = "A headset used by the Church.\nTo access the Church channel, use :m."
 	icon_state = "cent_headset"
 	keyslot = new /obj/item/encryptionkey/headset_med
 	keyslot2 = new /obj/item/encryptionkey/headset_town
+
+/obj/item/radio/headset/headset_church_leader
+	name = "Church leader headset"
+	desc = "A headset used by the Church high priest.\nTo access the Church channel, use :m / Command, use :c / Town, use :f"
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_med
+	keyslot2 = new /obj/item/encryptionkey/headset_towncommand
+	command = TRUE
+
+/obj/item/radio/headset/militia
+	name = "Town milita commander headset"
+	desc = "A headset used by Militia.\nTo access the Town, use :f and :s for militia."
+	icon_state = "sec_headset"
+	keyslot = new /obj/item/encryptionkey/headset_sec
+	keyslot2 = new /obj/item/encryptionkey/headset_town
+
+/obj/item/radio/headset/militiacom
+	name = "Town milita commander headset"
+	desc = "A headset used by Militia.\nTo access the Town, use :f and :s for militia."
+	icon_state = "sec_headset"
+	keyslot = new /obj/item/encryptionkey/headset_sec
+	keyslot2 = new /obj/item/encryptionkey/headset_towncommand
+	command = TRUE
+
+/obj/item/radio/headset/headset_constable
+	name = "Complete Town headset"
+	desc = "A headset used by the Church.\nTo access the Church channel, use :m / Command, use :c / Town, use :f / Blackwater, use :q / Rustwalkers, use :e"
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_constable
+	keyslot2 = new /obj/item/encryptionkey/headset_towncommand
+	command = TRUE
 
 /obj/item/radio/headset/headset_rustwalker
 	name = "Rustwalker headset"

@@ -33,10 +33,9 @@
 	filling_color = "#008000"
 	bitesize_mod = 3
 	foodtype = FRUIT
-	juice_results = list(/datum/reagent/consumable/watermelonjuice = 0)
+	juice_results = list(/datum/reagent/consumable/watermelonjuice = 1)
 	wine_power = 40
 
-/*
 
 // Holymelon
 /obj/item/seeds/watermelon/holy
@@ -76,4 +75,3 @@
 	to_chat(user, "<span class='warning'>[src] rapidly turns into ash!</span>")
 	qdel(src)
 	new /obj/effect/decal/cleanable/ash(drop_location())
-*/
