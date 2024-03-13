@@ -206,6 +206,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	if(H.mind)
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
@@ -296,6 +297,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
 
 //NCR STAFF SERGEANT
@@ -314,6 +317,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_NCR3)
 
+	loadout_options = list(
+		/datum/outfit/loadout/staffsergeantsharpshooter,
+		/datum/outfit/loadout/staffsergeantmanatarms
+		)
+
 /datum/outfit/job/ncr/f13staffsergeant	
 	name = "NCR Staff Sergeant"
 	jobtype	= /datum/job/ncr/f13staffsergeant
@@ -327,28 +335,44 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gloves = /obj/item/clothing/gloves/f13/leather
 	ears = /obj/item/radio/headset/headset_ncr_com
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mmds = 3,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 3,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/book/manual/ncr/jobguide/regs = 1,
 		/obj/item/storage/box/ration/menu_eleven = 1,
-		/obj/item/ammo_box/magazine/garand308 = 4,
-		/obj/item/attachments/scope = 1,
 		/obj/item/storage/box/ration/menu_five = 1
 		)
 
-/datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/loadout/staffsergeantsharpshooter
+	name = "Sharpshooter"
+	suit_store = /obj/item/gun/ballistic/automatic/m1garand
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/garand308 = 4,
+		/obj/item/melee/onehanded/knife/bowie = 1
+		/obj/item/attachments/scope = 1,
+		)
+	
+/datum/outfit/loadout/staffsergeantmanatarms
+	name = "Man-At-Arms"
+	suit_store = /obj/item/gun/ballistic/automatic/service/r82
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle = 3,
+		/obj/item/melee/onehanded/knife/bowie = 1,
+		)
+
+/datum/outfit/job/ncr/f13staffsergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
 // SERGEANT PILOT
 
@@ -438,6 +462,12 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/binoculars = 1
 		)
+
+/datum/outfit/job/ncr/f13sergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 // REPRESENATIVE
 
@@ -923,6 +953,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_LOW, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 
 /////////////////////////
