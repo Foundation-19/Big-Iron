@@ -98,7 +98,7 @@
 /obj/item/twohanded/fireaxe/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 100, 80, 0 , hitsound) //axes are not known for being precision butchering tools
-	AddComponent(/datum/component/two_handed, force_unwielded=26, force_wielded=46, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded=26, force_wielded=40, icon_wielded="[icon_prefix]2")
 
 /obj/item/twohanded/fireaxe/suicide_act(mob/user)
 	user.visible_message("<span class='suicide'>[user] axes [user.p_them()]self from head to toe! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -133,6 +133,8 @@
 	icon_state = "boneaxe"
 	icon_prefix = "boneaxe"
 	resistance_flags = null
+	supereffective_damage = 20
+	supereffective_faction = list("hostile", "ant", "supermutant", "deathclaw", "cazador", "raider", "china", "gecko", "wastebot", "radscorpion")
 
 /obj/item/twohanded/fireaxe/boneaxe/ComponentInitialize()
 	. = ..()
@@ -298,10 +300,11 @@
 	icon_prefix = "lance"
 	inhand_x_dimension = 64
 	inhand_y_dimension = 64
+	armour_penetration = 0.10
 
 /obj/item/twohanded/spear/lance/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=15, force_wielded=30, icon_wielded="[icon_prefix]_wield")
+	AddComponent(/datum/component/two_handed, force_unwielded=15, force_wielded=35, icon_wielded="[icon_prefix]_wield")
 
 
 // Scrap spear		Keywords: Damage 17/28, Reach, Throw bonus
