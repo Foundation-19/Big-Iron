@@ -480,16 +480,16 @@
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	slowdown = 0.08
 
-/obj/item/clothing/suit/armor/f13/ncr/heavygunner                        //NCR Trench Raider Armor
-    name = "\improper NCR Trench Raider Chestplates"
-    desc = "A heavily reinforced NCR vest. Rumors say that the leather for the lining comes from the best-fed Brahmins, and complete with extra armor padding."
-    icon = 'icons/fallout/clothing/armored_medium.dmi'
-    mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
-    icon_state = "steel_bib_ncra"
-    item_state = "steel_bib_ncra"
-    armor = list("melee" = 55, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
-    salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
-    slowdown = 0.08        //0.22 with helmet
+/obj/item/clothing/suit/armor/f13/ncr/heavygunner
+	name = "\improper NCR Trench Raider Chestplates"
+	desc = "A heavily reinforced NCR vest. Rumors say that the leather for the lining comes from the best-fed Brahmins, and complete with extra armor padding."
+	icon = 'icons/fallout/clothing/armored_medium.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
+	icon_state = "steel_bib_ncra"
+	item_state = "steel_bib_ncra"
+	armor = list("melee" = 55, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
+	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
+	slowdown = 0.08
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/labcoat
 	name = "NCR medical labcoat"
