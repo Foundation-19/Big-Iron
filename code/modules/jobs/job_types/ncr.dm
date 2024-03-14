@@ -745,7 +745,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	loadout_options = list(
 		/datum/outfit/loadout/shockht,	// BAR, nobody uses the citykiller lol
 		/datum/outfit/loadout/supportht, // R84
-		/datum/outfit/loadout/meleeht    // Rocket Sledge, lighter armor in exchange for mobility and melee
+		/datum/outfit/loadout/meleeht	// Rocket Sledge, lighter armor in exchange for mobility and melee
 		)
 
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
