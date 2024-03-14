@@ -743,8 +743,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
 
 	loadout_options = list(
-		/datum/outfit/loadout/shockht,	// citykiller
-		/datum/outfit/loadout/supportht // R84
+		/datum/outfit/loadout/shockht,	// BAR, nobody uses the citykiller lol
+		/datum/outfit/loadout/supportht, // R84
+		/datum/outfit/loadout/meleeht    // Rocket Sledge, lighter armor in exchange for mobility and melee
 		)
 
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
@@ -769,8 +770,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/shockht
 	name = "Shock Heavy Trooper"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 1,
-		/obj/item/ammo_box/shotgun/slug = 2,
+		/obj/item/gun/ballistic/automatic/bar = 1,
+		/obj/item/ammo_box/magazine/m762/ext = 2,
 		/obj/item/storage/box/ration/menu_four = 1
 		)
 
@@ -780,6 +781,16 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/box/ration/menu_six = 1,
 		/obj/item/gun/ballistic/automatic/r84 = 1,
 		/obj/item/ammo_box/magazine/lmg = 1
+		)
+
+/datum/outfit/loadout/meleeht
+	name = "Melee Heavy Trooper"
+	backpack_contents = list(
+		/obj/item/storage/box/ration/menu_six = 1,
+		/obj/item/clothing/head/helmet/f13/ncr/heavygunner = 1,
+		/obj/item/clothing/suit/armor/f13/ncr/heavygunner = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/twohanded/sledgehammer/rockethammer = 1
 		)
 
 /datum/outfit/job/ncr/f13heavytrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1027,7 +1038,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	name = "Prince of the Trenches"
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
 	backpack_contents = list(
-		/obj/item/clothing/head/f13/ncr/steelpot_goggles/trenchraider = 1,
+		/obj/item/clothing/head/helmet/f13/ncr/heavygunner = 1,
+		/obj/item/clothing/suit/armor/f13/ncr/heavygunner = 1,
 		/obj/item/ammo_box/magazine/m45 = 2,
 		/obj/item/shovel/trench = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
