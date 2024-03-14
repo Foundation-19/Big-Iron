@@ -664,7 +664,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Sniper"
 	suit_store = /obj/item/gun/ballistic/automatic/m1garand/sks
 	backpack_contents = list(
-		mag_type = /obj/item/ammo_box/magazine/sks = 3,
+		/obj/item/ammo_box/magazine/sks = 3,
 		/obj/item/attachments/scope = 1,
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/grenade/smokebomb = 2
