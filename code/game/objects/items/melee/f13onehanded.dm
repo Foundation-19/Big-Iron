@@ -86,7 +86,7 @@
 	. = ..()
 	if(!istype(M))
 		return
-	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
+	M.apply_damage(25, STAMINA, "chest", M.run_armor_check("chest", "melee"))
 
 /obj/item/melee/onehanded/machete/gladius
 	name = "gladius"
@@ -430,14 +430,6 @@
 	force = 26
 	block_chance = 30
 	attack_verb = list("smacked", "thwacked", "democratized", "freedomed")
-
-// Because it's extremely funny
-/obj/item/melee/onehanded/club/ncrflag(mob/living/M, mob/living/user)
-	. = ..()
-	if(!istype(M))
-		return
-	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
-
 
 // Classic Baton
 /obj/item/melee/classic_baton
@@ -889,12 +881,6 @@
 	throwforce = 20
 	hitsound = 'sound/f13weapons/pan.ogg'
 	custom_materials = list(/datum/material/iron = 4000)
-
-/obj/item/melee/onehanded/club/fryingpan(mob/living/M, mob/living/user)
-	. = ..()
-	if(!istype(M))
-		return
-	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
 
 // Entrenching tool P81 (based, they deserve better if they're using this)
 /obj/item/shovel/trench
