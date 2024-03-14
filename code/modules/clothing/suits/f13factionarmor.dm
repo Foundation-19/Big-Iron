@@ -481,13 +481,13 @@
 	slowdown = 0.08
 
 /obj/item/clothing/suit/armor/f13/ncr/heavygunner
-	name = "\improper NCR Trench Raider Chestplates"
+	name = "\improper NCR Trench Raider Chestplate"
 	desc = "A heavily reinforced NCR vest. Rumors say that the leather for the lining comes from the best-fed Brahmins, and complete with extra armor padding."
 	icon = 'icons/fallout/clothing/armored_medium.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
 	icon_state = "steel_bib_ncra"
 	item_state = "steel_bib_ncra"
-	armor = list("melee" = 55, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
+	armor = list("melee" = 60, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.08
 
