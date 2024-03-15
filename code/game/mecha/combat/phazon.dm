@@ -366,7 +366,7 @@
 	add_req_access = 1
 	internal_damage_threshold = 25
 	force = 15
-	max_equip = 8
+	max_equip = 4
 	opacity = 0
 	canstrafe = TRUE
 	movement_type = FLYING
@@ -412,16 +412,6 @@
 	ME = new /obj/item/mecha_parts/mecha_equipment/seat
 	ME.attach(src)
 	ME = new /obj/item/mecha_parts/mecha_equipment/seat
-	ME.attach(src)
-	ME = new /obj/item/mecha_parts/mecha_equipment/seat
-	ME.attach(src)
-	ME = new /obj/item/mecha_parts/mecha_equipment/seat
-	ME.attach(src)
-	ME = new /obj/item/mecha_parts/mecha_equipment/medical/sleeper
-	ME.attach(src)
-	ME = new /obj/item/mecha_parts/mecha_equipment/medical/sleeper
-	ME.attach(src)
-	max_ammo()
 
 
 //////////// NCR TRUCK //////////////
