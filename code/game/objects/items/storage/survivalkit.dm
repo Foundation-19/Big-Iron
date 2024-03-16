@@ -12,6 +12,10 @@
 	new /obj/item/flashlight/seclite(src)
 	new /obj/item/reagent_containers/pill/radx(src)
 
+/// Empty kit!
+/obj/item/storage/survivalkit/empty/PopulateContents()
+	return
+
 /obj/item/storage/survivalkit_khan
 	name = "survival kit"
 	desc = "A robust leather pouch containing essentials a Khan might need in the wasteland."
@@ -26,6 +30,9 @@
 	new /obj/item/reagent_containers/hypospray/medipen/medx(src)
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/reagent_containers/pill/radx(src)
+
+/obj/item/storage/survivalkit_khan/empty/PopulateContents()
+	return
 
 /obj/item/storage/survivalkit_tribal
 	name = "legion survival kit"
@@ -103,6 +110,9 @@
 	new /obj/item/stack/medical/ointment(src)
 	new /obj/item/flashlight/flare(src)
 
+/obj/item/storage/survivalkit_aid/empty/PopulateContents()
+	return
+
 /obj/item/storage/survivalkit_aid_adv
 	name = "advanced-individual first aid kit"
 	desc = "A robust leather pouch containing the essentials for trauma care."
@@ -120,3 +130,4 @@
 	new /obj/item/stack/medical/gauze/adv(src)
 	new /obj/item/stack/medical/suture/medicated(src)
 	new /obj/item/stack/medical/mesh/advanced(src)
+
