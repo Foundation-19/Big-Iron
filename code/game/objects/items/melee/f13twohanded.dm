@@ -40,6 +40,7 @@
 	icon_state = "legionaxe"
 	icon_prefix = "legionaxe"
 	force = 25
+	armour_penetration = 0.2
 	throwforce = 15
 	wound_bonus = 10
 	bare_wound_bonus = 10
@@ -85,6 +86,7 @@
 	icon_state = "fireaxe"
 	icon_prefix = "fireaxe"
 	force = 26
+	armour_penetration = 0.2
 	throwforce = 15
 	wound_bonus = 10
 	bare_wound_bonus = 10
@@ -443,6 +445,25 @@
 		return
 	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
 
+// Unique Golf Club		Keywords: Damage 25/435, Damage bonus Stamina Knockback
+/obj/item/twohanded/baseball/golfclub/ncr
+	name = "california 9 iron"
+	desc = "Supposedly this very well-made golf club was hand-delivered to an NCR Lieutenant by Command for their service in the 3rd Motorized division. You aren't sure if it was a Senator or a Brahmin Baron. But hey, a gift is a gift."
+	icon_state = "golfclub"
+	icon_prefix = "golfclub"
+	attack_verb = list("taxed", "bashed", "bribed", "hit", "whacked")
+	color ="#5d815d"
+
+/obj/item/twohanded/baseball/golfclub/ncr/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed, force_unwielded = 25, force_wielded = 35, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/knockback, 1, FALSE, TRUE)
+
+/obj/item/twohanded/baseball/golfclub/ncr/attack(mob/living/M, mob/living/user)
+	. = ..()
+	if(!istype(M))
+		return
+	M.apply_damage(20, STAMINA, "chest", M.run_armor_check("chest", "melee"))
 
 
 ///////////////////
@@ -482,7 +503,7 @@
 // ADVANCED TWO HANDED WEAPONS //
 /////////////////////////////////
 
-// Thermic Lance		Keywords: Damage 5/60, AP 0.1 Special Damage Type - Burn, bonus damage metal door
+// Thermic Lance		Keywords: Damage 5/60, AP 0.2 Special Damage Type - Burn, bonus damage metal door
 /obj/item/twohanded/thermic_lance
 	name = "thermic lance"
 	desc = "A versatile power-welding tool. Useful for cutting apart metal things like airlocks, bars, and probably limbs."
@@ -496,7 +517,7 @@
 	inhand_y_dimension = 64
 	damtype = "fire"
 	force = 5
-	armour_penetration = 0.1
+	armour_penetration = 0.2
 	throwforce = 5
 	throw_speed = 2
 	throw_range = 3
@@ -564,6 +585,7 @@
 	icon_state = "hammer-super"
 	icon_prefix = "hammer-super"
 	force = 25
+	armour_penetration = 0.2
 
 /obj/item/twohanded/sledgehammer/supersledge/ComponentInitialize()
 	. = ..()
@@ -632,7 +654,7 @@
 
 /obj/item/twohanded/sledgehammer/rockethammer/courtmartial/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
-	if(!proximity || !wielded || IS_STAMCRIT(user))
+	if(!proximity || !wielded || IS_STAMCRIT(user) || QDELETED(A))
 		return
 	if(istype(A, /obj/structure))
 		var/obj/structure/W = A
