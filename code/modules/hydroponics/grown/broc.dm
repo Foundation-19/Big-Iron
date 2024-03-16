@@ -24,5 +24,5 @@
 	desc = "This vibrant, orange flower grows on tall stalks in the wasteland and exhibits moderate healing properties, even when unprocessed."
 	icon_state = "broc"
 	filling_color = "#FF6347"
-	juice_results = list(/datum/reagent/consumable/brocjuice = 0)
+	juice_results = list(/datum/reagent/consumable/brocjuice = 1)
 	distill_reagent = /datum/reagent/consumable/ethanol/brocbrew

@@ -47,22 +47,36 @@
 	time = 5
 	category = CAT_MEDICAL
 
+/datum/crafting_recipe/healpowder50
+	name = "Batch of healing powders (x50)"
+	result = /obj/item/storage/box/medicine/powder50
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 100,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 100)
+	time = 5
+	category = CAT_MEDICAL
+
 /datum/crafting_recipe/bitterdrink
 	name = "Bottle bitterdrink"
 	result = /obj/item/reagent_containers/pill/patch/bitterdrink
-	reqs = list(/datum/reagent/medicine/bitter_drink = 30,
-				/obj/item/reagent_containers/glass/beaker = 1)
+	reqs = list(/datum/reagent/medicine/bitter_drink = 15)
 	time = 5
 	category = CAT_MEDICAL
-/* bugged since forever, die in a fire
+
+
 /datum/crafting_recipe/bitterdrink5
 	name = "Batch of bitterdrink (x5)"
 	result = /obj/item/storage/box/medicine/bitterdrink5
-	reqs = list(/datum/reagent/medicine/bitter_drink = 150,
-				/obj/item/reagent_containers/glass/beaker = 5)
+	reqs = list(/datum/reagent/medicine/bitter_drink = 75)
 	time = 5
 	category = CAT_MEDICAL
-*/
+
+/datum/crafting_recipe/bitterdrink50
+	name = "Batch of bitterdrink (x50)"
+	result = /obj/item/storage/box/medicine/bitterdrink50
+	reqs = list(/datum/reagent/medicine/bitter_drink = 750)
+	time = 5
+	category = CAT_MEDICAL
+
 /datum/crafting_recipe/berserker_powder
 	name = "Berserker powder"
 	result = /obj/item/reagent_containers/pill/patch/healingpowder/berserker
@@ -135,6 +149,16 @@
 	time = 5
 	category = CAT_MEDICAL
 
+/datum/crafting_recipe/stimpak50
+	name = "Stimpak x50"
+	result = /obj/item/storage/box/medicine/stimpaks/stimpaks50
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 100,
+				/obj/item/reagent_containers/food/snacks/grown/xander = 100,
+				/obj/item/reagent_containers/syringe = 50)
+	tools = list(TOOL_WORKBENCH)
+	time = 5
+	category = CAT_MEDICAL
+
 /datum/crafting_recipe/superstimpak
 	name = "Super Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak/super
@@ -151,6 +175,16 @@
 	reqs = list(/obj/item/reagent_containers/hypospray/medipen/stimpak = 5,
 				/obj/item/stack/sheet/leather = 10,
 				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 10)
+	tools = list(TOOL_WORKBENCH)
+	time = 5
+	category = CAT_MEDICAL
+
+/datum/crafting_recipe/superstimpak50
+	name = "Super Stimpak (x50)"
+	result = /obj/item/storage/box/medicine/stimpaks/superstimpaks50
+	reqs = list(/obj/item/reagent_containers/hypospray/medipen/stimpak = 50,
+				/obj/item/stack/sheet/leather = 100,
+				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 100)
 	tools = list(TOOL_WORKBENCH)
 	time = 5
 	category = CAT_MEDICAL
