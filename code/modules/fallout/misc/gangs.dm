@@ -195,10 +195,10 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 
 	var/datum/gang/G = gang
 	if(alert(C, "[src] invites you to join the [G.name].", "Gang invitation", "Yes", "No") == "No")
-		visible_message(C, "<span class='warning'>[C.name] refused an offer to join the [G.name]!</span>")
+		C.visible_message("<span class='warning'>[C.name] refused an offer to join the [G.name]!</span>")
 		return
 	else
-		visible_message(C, "<span class='notice'>[C.name] accepted an offer to join the [G.name]!</span>")
+		C.visible_message("<span class='notice'>[C.name] accepted an offer to join the [G.name]!</span>")
 
 	G.add_member(C)
 	C.gang = G
