@@ -53,13 +53,25 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Head Scribe", //Wasn't here before. Still technically command, I put it here - Kitsunemitsu
 
 	"NCR Captain",
+	"NCR Lieutenant",
 	"NCR Veteran Ranger",
+	"NCR Representative",
 
 	"Legion Centurion",
+	"Legion Veteran Decanus",
 
 	"Chief of Police",
 
+	"Enclave Captain",
 	"Enclave Lieutenant",
+
+	"Merchant",
+	"Militia Commander",
+	"Kebab High Constable",
+
+	"High Priest",
+
+	"Listener",
 
 	//For Alternative maptypes - Kitsunemitsu
 	"Chief",
@@ -70,7 +82,6 @@ GLOBAL_LIST_INIT(command_positions, list(
 GLOBAL_LIST_INIT(silicon_whitelist_positions, list(
 "Mr. Handy"))
 //Whitelisted positions list FO13 anything that shows up here requires that the user have an entry in the 'role_whitelist' table of id,ckey,"faction"
-//NCR Assistant and Legion Camp Follower re-added to whitelisting.  BoS Initiate removed from whitelist.
 
 GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Elder",
@@ -83,19 +94,21 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Knight",
 "Senior Scribe",
 "Scribe",
+"Lancer",
 "BoS Off-Duty",
 
 "Legion Centurion",
 "Legion Frumentarius",
 "Legion Vexillarius",
 "Legion Veteran Decanus",
-"Veteran Legionnaire",
+"Veteran Legionary",
 "Legion Prime Decanus",
-"Prime Legionnaire",
+"Prime Legionary",
 "Legion Recruit Decanus",
-"Recruit Legionnaire",
+"Recruit Legionary",
 "Legion Explorer",
 "Camp Follower",
+"Legion Slave",
 
 "Mayor",
 "Chief of Police",
@@ -109,6 +122,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Enclave Captain",
 "Enclave Lieutenant",
 "Enclave Gunnery Sergeant",
+"Enclave Pilot",
 "Enclave Sergeant",
 "Enclave Armored Infantry",
 "Enclave Specialist",
@@ -132,6 +146,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 ))
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
+	"Elder",
 	"Head Paladin",
 	"Head Knight",
 	"Head Scribe",
@@ -141,47 +156,30 @@ GLOBAL_LIST_INIT(brotherhood_positions, list(
 	"Knight",
 	"Senior Scribe",
 	"Scribe",
+	"Lancer",
 	"Initiate",
 	"BoS Off-Duty",
 ))
 
-GLOBAL_LIST_INIT(oasis_positions, list(
-	"Mayor",
-	"Secretary",
-	"Chief of Police",
-	"Doctor",
-	"Citizen",
-	"Officer",
-	"Shopkeeper",
-	"Shop Assistant",
-	"Farmer",
-	"Prospector",
-	"Detective",
-	"Barkeep",
-	"Town Doctor",
-	"Preacher"
-))
-
 GLOBAL_LIST_INIT(legion_command_positions, list(
 	"Legate",
-	"Legion Frumentarius",
 	"Legion Centurion",
-	"Legion Veteran Decanus",
+	"Legion Frumentarius",
+	"Legion Veteran Decanus"
 ))
 
 GLOBAL_LIST_INIT(legion_positions, list(
-	"Legion Frumentarius",
 	"Legion Centurion",
 	"Legion Veteran Decanus",
 	"Legion Prime Decanus",
 	"Legion Recruit Decanus",
 	"Legion Vexillarius",
 	"Legion Explorer",
-	"Veteran Legionnaire",
-	"Prime Legionnaire",
-	"Recruit Legionnaire",
-	"Legion Immune",
-	"Camp Follower"
+	"Veteran Legionary",
+	"Prime Legionary",
+	"Recruit Legionary",
+	"Camp Follower",
+	"Legion Slave"
 ))
 
 GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
@@ -191,11 +189,13 @@ GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
 GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Captain",
 	"NCR Lieutenant",
+	"NCR Staff Sergeant",
 	"NCR Veteran Ranger",
 	"NCR Representative",
 	"NCR Ranger",
 	"NCR Heavy Trooper",
 	"NCR Military Police",
+	"NCR Pilot",
 	"NCR Sergeant",
 	"NCR Corporal",
 	"NCR Combat Medic",
@@ -223,18 +223,44 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Vigilante",
 	"Tribal",
 	"Wastelander",
+	//"Blackwater Settler"
+	//"Blackwater Deputy"
 ))
+
 
 GLOBAL_LIST_INIT(enclave_positions, list(
 	"Enclave Captain",
 	"Enclave Lieutenant",
 	"Enclave Gunnery Sergeant",
+	"Enclave Pilot",
 	"Enclave Sergeant",
 	"Enclave Armored Infantry",
 	"Enclave Specialist",
 	"Enclave Scientist",
 	"Enclave Private",
 	"Enclave Bunker Duty",
+	"Enclave Remnant",
+	"Enclave Remnant Medic",
+))
+
+GLOBAL_LIST_INIT(church_positions, list(
+	"High Priest",
+	"Servitor",
+	"Acolyte",
+	"Neophyte",
+))
+
+GLOBAL_LIST_INIT(kebab_positions, list(
+	"Merchant",
+	"Apprentice",
+	"Mercenary",
+	"Militia Commander",
+	"Militian",
+	"Bartender",
+	"Citizen",
+	"Radio Host",
+	"Kebab High Constable",
+	"Mechanic",
 ))
 
 GLOBAL_LIST_INIT(security_positions, list(
@@ -263,9 +289,10 @@ GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_LEGION = list("jobs" = legion_positions, "color" = "#f81717"),
 	EXP_TYPE_WASTELAND = list("jobs" = wasteland_positions, "color" = "#5a5a5a"),
 	EXP_TYPE_ENCLAVE = list("jobs" = enclave_positions, "color" = "#323232"),
-	EXP_TYPE_OASIS = list("jobs" = oasis_positions, "color" = "#d7b088"),
-	EXP_TYPE_TRIBAL = list("jobs" = tribal_positions, "color" = "#006666"),
-	EXP_TYPE_VAULT = list("jobs" = vault_positions, "color" = "#ccffcc"),
+	EXP_TYPE_KEBAB = list("jobs" = kebab_positions, "color" = "#c3d5d5"),
+//	EXP_TYPE_TRIBAL = list("jobs" = tribal_positions, "color" = "#006666"),
+//	EXP_TYPE_VAULT = list("jobs" = vault_positions, "color" = "#ccffcc"),
+	EXP_TYPE_CHURCH = list("jobs" = church_positions, "color" = "#d580ff"),
 ))
 
 GLOBAL_LIST_INIT(exp_jobsmap, list(
@@ -279,22 +306,23 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_SILICON = list("titles" = list("AI","Cyborg")),
 	EXP_TYPE_SERVICE = list("titles" = civilian_positions),
 
-	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | oasis_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | tribal_positions | enclave_positions),
+	EXP_TYPE_FALLOUT = list("titles" = brotherhood_positions | kebab_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | church_positions | tribal_positions | enclave_positions),
 
 	EXP_TYPE_OUTLAW = list("titles" = list("Outlaw","Den Mob Boss","Den Mob Enforcer","Den Doctor",)),
 	EXP_TYPE_BROTHERHOOD = list("titles" = brotherhood_positions),
-	EXP_TYPE_OASIS = list("titles" = oasis_positions ),
 	EXP_TYPE_LEGION = list("titles" = legion_positions),
 	EXP_TYPE_NCR = list("titles" = ncr_positions),
 	EXP_TYPE_VAULT = list("titles" = vault_positions),
 	EXP_TYPE_WASTELAND = list("titles" = wasteland_positions),
+	EXP_TYPE_CHURCH = list("titles" = church_positions),
+	EXP_TYPE_KEBAB = list("titles" = kebab_positions),
 	EXP_TYPE_TRIBAL = list("titles" = tribal_positions),
 	EXP_TYPE_ENCLAVE = list("titles" = enclave_positions),
 
 	EXP_TYPE_LEGIONCOMMAND = list("titles" = list("Legion Prime Decanus", "Legion Recruit Decanus")),
 	EXP_TYPE_BROTHERHOODCOMMAND = list("titles" = list("Head Paladin", "Head Scribe")),
 	EXP_TYPE_OASISCOMMAND = list("titles" = list("Secretary", "Officer")),
-	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCR Sergeant")),
+	EXP_TYPE_NCRCOMMAND = list("titles" = list("NCR Sergeant", "NCR Medical Officer", "NCR Military Police")),
 	EXP_TYPE_RANGER = list("titles" = list("NCR Ranger"))
 ))
 

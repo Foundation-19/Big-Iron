@@ -51,23 +51,23 @@
 //Oasis doors
 /obj/machinery/door/unpowered/securedoor/town_clinic
 	name = "\improper Town Clinic"
-	req_access_txt = "133"
+	req_access_txt = "280"
 
 /obj/machinery/door/unpowered/securedoor/police
 	name = "\improper Armory"
-	req_access_txt = "62"
+	req_access_txt = "281"
 
 /obj/machinery/door/unpowered/securedoor/church
 	name = "\improper Church"
-	req_access_txt = "22"
+	req_access_txt = "278"
 
 /obj/machinery/door/unpowered/securedoor/farm
 	name = "\improper Farm"
-	req_access_txt = "28"
+	req_access_txt = "273"
 
 /obj/machinery/door/unpowered/securedoor/mayor
 	name = "\improper Mayor's Office"
-	req_access_txt = "130"
+	req_access_txt = "283"
 
 // SECURE DOOR - LEGION
 
@@ -79,6 +79,21 @@
 /obj/machinery/door/unpowered/securedoor/khandoor
 	name = "khan door"
 	req_access_txt = "125"
+
+//COTC
+/obj/machinery/door/unpowered/securedoor/church
+	name = "Church door"
+	req_access_txt = "145"
+
+//COTC
+/obj/machinery/door/unpowered/securedoor/militia
+	name = "Militia door"
+	req_access_txt = "148"
+
+//COTC
+/obj/machinery/door/unpowered/securedoor/merchant
+	name = "Merchant door"
+	req_access_txt = "34"
 
 
 // ------------------------------------
@@ -190,6 +205,7 @@
 	explosion_block = FALSE
 	proj_pass_rate = 95
 	req_access_txt = "123"
+	opacity = FALSE
 
 /obj/machinery/door/unpowered/secure_legion/update_icon()
 	if(density)

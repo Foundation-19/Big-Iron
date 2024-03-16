@@ -1,7 +1,7 @@
 /obj/item/projectile/beam
 	name = "laser"
 	icon_state = "laser"
-	pass_flags = PASSTABLE| PASSGLASS
+	pass_flags = PASSTABLE
 	damage = 20
 	light_range = 2
 	damage_type = BURN
@@ -385,6 +385,15 @@
 	impact_type = /obj/effect/projectile/impact/pulse
 	light_color = LIGHT_COLOR_BLUE
 
+/obj/item/projectile/beam/laser/rechargerrifle/hitscan
+	name = "recharger beam"
+	damage = 15
+	hitscan = TRUE
+	armour_penetration = 0
+	tracer_type = /obj/effect/projectile/tracer/pulse
+	muzzle_type = /obj/effect/projectile/muzzle/pulse
+	impact_type = /obj/effect/projectile/impact/pulse
+	light_color = LIGHT_COLOR_BLUE
 
 /obj/item/projectile/beam/laser/ultra_pistol //unused
 	name = "laser beam"
@@ -447,7 +456,7 @@
 
 /obj/item/projectile/beam/laser/tribeam/hitscan
 	name = "tribeam laser"
-	damage = 25 //if all bullets connect, this will do 75.
+	damage = 18 //if all bullets connect, this will do 54
 	hitscan = TRUE
 	bare_wound_bonus = -30 //tribeam is bad at wounding, as basically its only real downside
 	tracer_type = /obj/effect/projectile/tracer/laser

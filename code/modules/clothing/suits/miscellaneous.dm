@@ -210,6 +210,102 @@
 	flags_inv = HIDEJUMPSUIT|HIDESHOES
 	mutantrace_variation = NONE
 
+/////////////////////////////
+//Children Of the Cathadrel//
+/////////////////////////////
+
+/obj/item/clothing/suit/hooded/robes/cotc
+	name = "neophyte robes"
+	desc = "When was the last time these things were washed?"
+	icon_state = "neophyte"
+	item_state = "neophyte"
+	flags_inv = HIDESHOES|HIDEJUMPSUIT
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	hoodtype = /obj/item/clothing/head/hooded/robes/cotc
+	armor = list("melee" = 5, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 6, "bio" = 14, "rad" = 0, "fire" = 0, "acid" = 5, "wound" = 15)
+
+/obj/item/clothing/head/hooded/robes/cotc
+	name = "neophyte hood"
+	desc = "Perfect for concealing your identity."
+	icon_state = "neophyte"
+	item_state = "neophyte"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	flash_protect = 2
+	armor = list("melee" = 5, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 6, "bio" = 14, "rad" = 0, "fire" = 0, "acid" = 5, "wound" = 15)
+
+//acolyte
+
+/obj/item/clothing/suit/hooded/robes/cotc/acolyte
+	name = "acolyte robes"
+	desc = "When was the last time these things were washed?"
+	icon_state = "acolyte"
+	item_state = "acolyte"
+	hoodtype = /obj/item/clothing/head/hooded/robes/cotc/acolyte
+	armor = list("melee" = 5, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 5, "wound" = 15)
+
+
+/obj/item/clothing/head/hooded/robes/cotc/acolyte
+	name = "acolyte hood"
+	desc = "Perfect for concealing your identity."
+	icon_state = "acolyte"
+	icon_state = "acolyte"
+	armor = list("melee" = 5, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 5, "wound" = 15)
+
+//proselytizer
+
+/obj/item/clothing/suit/hooded/robes/cotc/proselytizer
+	name = "proselytizer robes"
+	desc = "When was the last time these things were washed?"
+	icon_state = "proselytizer"
+	item_state = "proselytizer"
+	hoodtype = /obj/item/clothing/head/hooded/robes/cotc/proselytizer
+	armor = list("melee" = 5, "bullet" = 25, "laser" = 15, "energy" = 15, "bomb" = 10, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 5, "wound" = 15)
+
+
+/obj/item/clothing/head/hooded/robes/cotc/proselytizer
+	name = "proselytizer hood"
+	desc = "Perfect for concealing your identity."
+	icon_state = "proselytizer"
+	icon_state = "proselytizer"
+	armor = list("melee" = 5, "bullet" = 25, "laser" = 15, "energy" = 15, "bomb" = 10, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 5, "wound" = 15)
+
+//servitor
+
+/obj/item/clothing/suit/hooded/robes/cotc/servitor
+	name = "servitor robes"
+	desc = "When was the last time these things were washed?"
+	icon_state = "priest"
+	item_state = "priest"
+	hoodtype = /obj/item/clothing/head/hooded/robes/cotc/servitor
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 5, "wound" = 15)
+
+/obj/item/clothing/head/hooded/robes/cotc/servitor
+	name = "servitor hood"
+	desc = "Perfect for concealing your identity."
+	icon_state = "servitor"
+	icon_state = "servitor"
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 5, "wound" = 15)
+
+//high priest
+
+/obj/item/clothing/suit/hooded/robes/cotc/highpriest
+	name = "high priest robes"
+	desc = "When was the last time these things were washed?"
+	icon_state = "priest"
+	item_state = "priest"
+	hoodtype = /obj/item/clothing/head/hooded/robes/cotc/highpriest
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 20, "acid" = 5, "wound" = 20)
+
+/obj/item/clothing/head/hooded/robes/cotc/highpriest
+	name = "high priest hood"
+	desc = "Perfect for concealing your identity."
+	icon_state = "highpriest"
+	icon_state = "highpriest"
+	armor = list("melee" = 10, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 20, "acid" = 5, "wound" = 20)
+
+/////////////////////////////////////////////////////////////////////
+
 /obj/item/clothing/suit/hooded/robes
 	name = "thick brown robes"
 	desc = "When was the last time these things were washed?"

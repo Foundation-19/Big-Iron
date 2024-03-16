@@ -16,6 +16,7 @@
 	footstep = FOOTSTEP_WOOD
 	barefootstep = FOOTSTEP_WOOD_BAREFOOT
 	clawfootstep = FOOTSTEP_WOOD_CLAW
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 
@@ -103,6 +104,7 @@
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_GRASS
 	clawfootstep = FOOTSTEP_GRASS
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	var/ore_type = /obj/item/stack/ore/glass
 	var/turfverb = "uproot"
@@ -186,6 +188,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/grass/snow/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
@@ -222,6 +225,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/grass/fakebasalt/Initialize()
@@ -245,6 +249,7 @@
 	footstep = FOOTSTEP_CARPET
 	barefootstep = FOOTSTEP_CARPET_BAREFOOT
 	clawfootstep = FOOTSTEP_CARPET_BAREFOOT
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 

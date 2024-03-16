@@ -121,7 +121,7 @@
 	var/datum/component/storage/concrete/stack/STR = GetComponent(/datum/component/storage/concrete/stack)
 	STR.allow_quick_empty = TRUE
 	STR.max_items = 14
-	STR.can_hold = typecacheof(list(/obj/item/stack/ore))
+	STR.can_hold = typecacheof(list(/obj/item/stack/ore, /obj/item/stack/sheet/mineral/limestone))
 	STR.max_w_class = WEIGHT_CLASS_HUGE
 	STR.max_combined_stack_amount = 50
 

@@ -44,7 +44,7 @@
 	var/cell_type = /obj/item/stock_parts/cell
 	var/vest_type = /obj/item/clothing/suit/armor/vest
 
-
+/*
 /mob/living/simple_animal/bot/ed209/Initialize(mapload,created_name,created_lasercolor)
 	. = ..()
 	if(created_name)
@@ -72,7 +72,7 @@
 	//SECHUD
 	var/datum/atom_hud/secsensor = GLOB.huds[DATA_HUD_SECURITY_ADVANCED]
 	secsensor.add_hud_to(src)
-
+*/
 /mob/living/simple_animal/bot/ed209/turn_on()
 	. = ..()
 	icon_state = "[lasercolor]ed209[on]"

@@ -77,13 +77,15 @@
 #define EXP_TYPE_NCR			"New California Republic"
 #define EXP_TYPE_RANGER			"Ranger"
 #define EXP_TYPE_OASISCOMMAND	"Oasis Command"
-#define EXP_TYPE_OASIS 			"Oasis"
+#define EXP_TYPE_KEBAB 			"Kebab"
 #define EXP_TYPE_LEGIONCOMMAND	"Caesar's Legion Command"
 #define EXP_TYPE_LEGION			"Caesar's Legion"
 #define EXP_TYPE_WASTELAND		"Wasteland"
 #define EXP_TYPE_ENCLAVE		"Enclave"
 #define EXP_TYPE_TRIBAL			"Tribal"
 #define EXP_TYPE_OUTLAW			"Outlaw"
+#define EXP_TYPE_CHURCH    		"Church"
+
 //Flags in the players table in the db
 #define DB_FLAG_EXEMPT 							(1<<0)
 #define DB_FLAG_AGE_CONFIRMATION_INCOMPLETE		(1<<1)

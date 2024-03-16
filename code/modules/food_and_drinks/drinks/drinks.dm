@@ -100,6 +100,14 @@
 	if(hotness && reagents)
 		reagents.expose_temperature(hotness)
 		to_chat(user, "<span class='notice'>You heat [name] with [I]!</span>")
+	if(istype(I, /obj/item/feather/chicken/wine) && list_reagents.len)
+		if(!reagents.total_volume)
+			add_initial_reagents()
+			to_chat(user, "<span class='warning'>you fill [src] with [I]!</span>")
+			playsound(loc, 'sound/effects/slosh.ogg', 25, TRUE)
+		else
+			to_chat(user,"<span class='warning'>empty [src] first!</span>")
+
 	..()
 
 /obj/item/reagent_containers/food/drinks/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)

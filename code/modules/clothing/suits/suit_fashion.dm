@@ -207,13 +207,13 @@
 	name = "fieldscribe suit"
 	desc = "A suit that protects against the weather, and looks stylish, but not much else."
 	icon_state = "fieldscribe"
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 25, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 10, "acid" = 40)
 
 /obj/item/clothing/suit/toggle/labcoat/scribecoat
 	name = "fieldscribe coat"
 	desc = "A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
 	icon_state = "scribecoat"
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 25, "bullet" = 20, "laser" = 20, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 10, "acid" = 40)
 
 /obj/item/clothing/suit/slavelabor
 	name = "old leather strips"
@@ -433,7 +433,7 @@
 	desc = "A nice leather jacket with a fur lined collar."
 	icon_state = "co_bomber"
 	item_state = "co_bomber"
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 20, "bomb" = 50, "bio" = 0, "rad" = 20, "fire" = 60, "acid" = 30)
+	armor = list("melee" = 30, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 0, "rad" = 20, "fire" = 60, "acid" = 30)
 	unique_reskin = list("M1" = "co_bomber" ,"M2" = "bomber_open")
 	always_reskinnable = "True"
 
@@ -446,7 +446,7 @@
 	desc = "A nice leather jacket with a fur lined collar that's been unzipped for comfort."
 	icon_state = "bomber_open"
 	item_state = "bomber_open"
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 20, "bomb" = 50, "bio" = 0, "rad" = 20, "fire" = 60, "acid" = 30)
+	armor = list("melee" = 30, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 0, "rad" = 20, "fire" = 60, "acid" = 30)
 
 /obj/item/clothing/suit/bomber_open/Initialize()
 	. = ..()

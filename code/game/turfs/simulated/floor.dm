@@ -9,6 +9,7 @@
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 	var/icon_regular_floor = "floor" //used to remember what icon the tile should have by default

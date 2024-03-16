@@ -54,7 +54,7 @@
 	desc = "An old military grade pre-war combat helmet."
 	icon_state = "combat_helmet"
 	item_state = "combat_helmet"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 55)
 	strip_delay = 50
 	flags_inv = HIDEEARS|HIDEHAIR
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
@@ -79,7 +79,7 @@
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms."
 	icon_state = "combat_helmet_mk2"
 	item_state = "combat_helmet_mk2"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 55)
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 35, "bomb" = 65, "bio" = 65, "rad" = 15, "fire" = 65, "acid" = 35, "wound" = 60)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
 	flags_cover = HEADCOVERSEYES
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
@@ -412,6 +412,21 @@
 /obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/update_icon_state()
 	icon_state = "t51bhelmet[light_on]"
 	item_state = "t51bhelmet[light_on]"
+
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened
+	name = "hardened T-51b power helmet"
+	desc = "It's a T-51b power helmet, typically used by the Brotherhood. This one sports the markings of the Head Paladin."
+	armor = list("melee" = 75, "bullet" = 75, "laser" = 75, "energy" = 27, "bomb" = 64, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 40, "wound" = 75)
+
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened/enclave
+	name = "advanced power armor helmet mk2"
+	desc = "An intimidating-looking helmet, made by the Enclave. It looks threatening, though cheap."
+	icon_state = "pinkhelmet0"
+	item_state = "pinkhelmet0"
+
+/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened/enclave/update_icon_state()
+	icon_state = "pinkhelmet[light_on]"
+	item_state = "pinkhelmet[light_on]"
 
 /obj/item/clothing/head/helmet/f13/power_armor/t60
 	name = "T-60a power helmet"
@@ -807,6 +822,8 @@
 /obj/item/clothing/head/helmet/f13/legion/venator/diohelmet
 	name = "galerum lacertarex"
 	desc = "The hide of a deadly green gecko affixed over a reinforced legion helmet. Its ghastly appearance serves as an intimidating gesture to those who do not yet fear the Lizard King."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/head.dmi'
 	icon_state = "diohelmet"
 	item_state = "diohelmet"
 

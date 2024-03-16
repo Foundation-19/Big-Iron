@@ -1,7 +1,7 @@
 	////////////
 	//SECURITY//
 	////////////
-#define UPLOAD_LIMIT		1048576	//Restricts client uploads to the server to 1MB //Could probably do with being lower.
+#define UPLOAD_LIMIT		4194304	//Restricts client uploads to the server to 1MB //Could probably do with being lower. BIG IRON EDIT changed it to 4mb,since 1mb is almost unusable
 
 GLOBAL_LIST_INIT(blacklisted_builds, list(
 	"1407" = "bug preventing client display overrides from working leads to clients being able to see things/mobs they shouldn't be able to see",
@@ -492,6 +492,15 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 	set waitfor = FALSE
 	alert(target, message)
 
+/client/proc/log_client_to_db_connection_log()
+	var/sql_ip = sql_sanitize_text(src.address)
+	var/sql_computerid = sql_sanitize_text(src.computer_id)
+	var/sql_ckey = sql_sanitize_text(src.ckey)
+	var/serverip = "[world.internet_address]:[world.port]"
+
+	var/datum/db_query/query_accesslog = SSdbcore.NewQuery("INSERT INTO `erro_connection_log`(`id`,`datetime`,`serverip`,`ckey`,`ip`,`computerid`) VALUES(null,Now(),'[serverip]','[sql_ckey]','[sql_ip]','[sql_computerid]');")
+	query_accesslog.Execute()
+	qdel(query_accesslog)
 
 //////////////
 //DISCONNECT//
@@ -583,6 +592,9 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 		qdel(query_client_in_db)
 		return
 
+	SSbccm.CollectClientData(src)
+	SSbccm.HandleClientAccessCheck(src)
+	SSbccm.HandleASNbanCheck(src)
 	//If we aren't an admin, and the flag is set
 	if(CONFIG_GET(flag/panic_bunker) && !holder && !GLOB.deadmins[ckey])
 		var/living_recs = CONFIG_GET(number/panic_bunker_living)

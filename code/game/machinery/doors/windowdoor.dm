@@ -21,21 +21,14 @@
 	var/shards = 2
 	var/rods = 2
 	var/cable = 1
-	var/list/debris = list()
 
 /obj/machinery/door/window/Initialize(mapload, set_dir)
 	. = ..()
 	if(set_dir)
 		setDir(set_dir)
-	if(src.req_access && src.req_access.len)
-		src.icon_state = "[src.icon_state]"
-		src.base_state = src.icon_state
-	for(var/i in 1 to shards)
-		debris += new /obj/item/shard(src)
-	if(rods)
-		debris += new /obj/item/stack/rods(src, rods)
-	if(cable)
-		debris += new /obj/item/stack/cable_coil(src, cable)
+	if(LAZYLEN(req_access))
+		icon_state = "[icon_state]"
+		base_state = icon_state
 
 /obj/machinery/door/window/ComponentInitialize()
 	. = ..()
@@ -43,9 +36,6 @@
 
 /obj/machinery/door/window/Destroy()
 	density = FALSE
-	QDEL_LIST(debris)
-	if(obj_integrity == 0)
-		playsound(src, "shatter", 70, 1)
 	electronics = null
 	return ..()
 
@@ -201,11 +191,17 @@
 
 /obj/machinery/door/window/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1) && !disassembled)
-		for(var/obj/fragment in debris)
-			fragment.forceMove(get_turf(src))
-			transfer_fingerprints_to(fragment)
-			debris -= fragment
+		for(var/i in 1 to shards)
+			drop_debris(new /obj/item/shard(src))
+		if(rods)
+			drop_debris(new /obj/item/stack/rods(src, rods))
+		if(cable)
+			drop_debris(new /obj/item/stack/cable_coil(src, cable))
 	qdel(src)
+
+/obj/machinery/door/window/proc/drop_debris(obj/item/debris)
+	debris.forceMove(loc)
+	transfer_fingerprints_to(debris)
 
 /obj/machinery/door/window/narsie_act()
 	add_atom_colour("#7D1919", FIXED_COLOUR_PRIORITY)
@@ -382,8 +378,6 @@
 
 /obj/machinery/door/window/clockwork/Initialize(mapload, set_dir)
 	. = ..()
-	for(var/i in 1 to 2)
-		debris += new/obj/item/clockwork/alloy_shards/medium/gear_bit/large(src)
 	change_construction_value(2)
 
 /obj/machinery/door/window/clockwork/setDir(direct)

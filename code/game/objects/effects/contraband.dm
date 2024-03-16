@@ -81,7 +81,7 @@
 		name = "poster - [name]"
 		desc = "A large piece of printed paper. [desc]"
 
-	AddElement(/datum/element/beauty, 300)
+//	AddElement(/datum/element/beauty, 300) MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate on 2023-01-20
 
 
 /obj/structure/sign/poster/Destroy()

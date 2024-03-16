@@ -19,7 +19,8 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	RADIO_CHANNEL_TOWN = RADIO_TOKEN_TOWN,
 	RADIO_CHANNEL_LEGION = RADIO_TOKEN_LEGION,
 	RADIO_CHANNEL_RANGER = RADIO_TOKEN_RANGER,
-	RADIO_CHANNEL_KHANS = RADIO_TOKEN_KHANS
+	RADIO_CHANNEL_KHANS = RADIO_TOKEN_KHANS,
+	RADIO_CHANNEL_BW = RADIO_TOKEN_BW
 ))
 
 /obj/item/radio/headset
@@ -370,6 +371,14 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	factionized = TRUE
 	keyslot = new /obj/item/encryptionkey/headset_enclave
 
+/obj/item/radio/headset/headset_enclaveremnant
+	name = "radio headset"
+	desc = "An updated, modular intercom that fits over the head. Takes encryption keys.\nTo access the enclave channel, use :z."
+	icon_state = "headset"
+	linked_faction = FACTION_ENCLAVE
+	factionized = TRUE
+	keyslot = new /obj/item/encryptionkey/headset_enclave
+
 /obj/item/radio/headset/headset_enclave/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
@@ -384,6 +393,13 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	item_state = "headset_alt"
 	keyslot = new /obj/item/encryptionkey/headset_khans
 
+/obj/item/radio/headset/headset_bw
+	name = "blackwater radio headset"
+	desc = "This is used by the town of Blackwater.\n Use :f to acces town channels. To access the Blackwater channel, use :q."
+	icon_state = "mine_headset"
+	keyslot = new /obj/item/encryptionkey/headset_bw
+	keyslot2 = new /obj/item/encryptionkey/headset_town
+
 /obj/item/radio/headset/headset_town
 	name = "town radio headset"
 	desc = "This is used by the town.\nTo access the town channel, use :f."
@@ -395,6 +411,66 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	desc = "This is used by the followers.\nTo access the town channel, use :f. \nTo access the medical channel, use :m"
 	icon_state = "med_headset"
 	keyslot = new /obj/item/encryptionkey/headset_med
+
+/obj/item/radio/headset/headset_merchant
+	name = "Merchant headset"
+	desc = "A headset used by the Merchant.\nTo access the Merchant channel, use :u."
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_cargo
+	keyslot2 = new /obj/item/encryptionkey/headset_town
+
+/obj/item/radio/headset/headset_merchant_leader
+	name = "Merchant leader headset"
+	desc = "A headset used by the Merchant.\nTo access the Merchant channel, use :u / Command, use :c / Town, use :f"
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_cargo
+	keyslot2 = new /obj/item/encryptionkey/headset_towncommand
+	command = TRUE
+
+/obj/item/radio/headset/headset_church
+	name = "Church headset"
+	desc = "A headset used by the Church.\nTo access the Church channel, use :m."
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_med
+	keyslot2 = new /obj/item/encryptionkey/headset_town
+
+/obj/item/radio/headset/headset_church_leader
+	name = "Church leader headset"
+	desc = "A headset used by the Church high priest.\nTo access the Church channel, use :m / Command, use :c / Town, use :f"
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_med
+	keyslot2 = new /obj/item/encryptionkey/headset_towncommand
+	command = TRUE
+
+/obj/item/radio/headset/militia
+	name = "Town milita commander headset"
+	desc = "A headset used by Militia.\nTo access the Town, use :f and :s for militia."
+	icon_state = "sec_headset"
+	keyslot = new /obj/item/encryptionkey/headset_sec
+	keyslot2 = new /obj/item/encryptionkey/headset_town
+
+/obj/item/radio/headset/militiacom
+	name = "Town milita commander headset"
+	desc = "A headset used by Militia.\nTo access the Town, use :f and :s for militia."
+	icon_state = "sec_headset"
+	keyslot = new /obj/item/encryptionkey/headset_sec
+	keyslot2 = new /obj/item/encryptionkey/headset_towncommand
+	command = TRUE
+
+/obj/item/radio/headset/headset_constable
+	name = "Complete Town headset"
+	desc = "A headset used by the Church.\nTo access the Church channel, use :m / Command, use :c / Town, use :f / Blackwater, use :q / Rustwalkers, use :e"
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_constable
+	keyslot2 = new /obj/item/encryptionkey/headset_towncommand
+	command = TRUE
+
+/obj/item/radio/headset/headset_rustwalker
+	name = "Rustwalker headset"
+	desc = "A headset used by the Rustwalkers.\nTo access the Rustwalker channel, use :e."
+	icon_state = "cent_headset"
+	keyslot = new /obj/item/encryptionkey/headset_eng
+	keyslot2 = new /obj/item/encryptionkey/headset_town
 
 /obj/item/radio/headset/headset_cent
 	name = "\improper Vault-Tec headset"

@@ -16,6 +16,8 @@
 	qdel(hud_used)
 	for(var/cc in client_colours)
 		qdel(cc)
+	QDEL_LIST(mob_spell_list)
+	QDEL_LIST(actions)
 	client_colours = null
 	ghostize()
 	..()
@@ -158,13 +160,14 @@
 			continue
 		//This entire if/else chain could be in two lines but isn't for readabilty's sake.
 		var/msg = message
-		if(M.see_invisible<invisibility || (T != loc && T != src))//if src is invisible to us or is inside something (and isn't a turf),
+		if(M.see_invisible < invisibility || (T != loc && T != src && !istype(loc, /mob/living)))//if src is invisible to us or is inside something (and isn't a turf),
 			msg = blind_message
 
 		if(visible_message_flags & EMOTE_MESSAGE && runechat_prefs_check(M, visible_message_flags) && !M.is_blind())
 			M.create_chat_message(src, raw_message = raw_msg, runechat_flags = visible_message_flags)
 
-		M.show_message(msg, MSG_VISUAL, blind_message, MSG_AUDIBLE)
+		if(msg)
+			M.show_message(msg, MSG_VISUAL, blind_message, MSG_AUDIBLE)
 
 ///Adds the functionality to self_message.
 /mob/visible_message(message, self_message, blind_message, vision_distance = DEFAULT_MESSAGE_RANGE, list/ignored_mobs, mob/target, target_message, visible_message_flags = NONE)
@@ -787,7 +790,9 @@ GLOBAL_VAR_INIT(exploit_warn_spam_prevention, 0)
 		var/obj/effect/proc_holder/spell/S = X
 		if(istype(S, spell))
 			mob_spell_list -= S
-			qdel(S)
+			S.action.Remove(src)//BIG IRON EDIT why wasn't this here before? it deletes the button when you don't have the spell
+			if(!QDELETED(S))
+				qdel(S)
 	if(client)
 		client << output(null, "statbrowser:check_spells")
 

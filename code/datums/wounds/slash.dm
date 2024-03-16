@@ -246,10 +246,10 @@
 
 
 /datum/wound/slash/moderate
-	name = "Rough Abrasion"
-	desc = "Patient's skin has been badly scraped, generating moderate blood loss."
+	name = "Shallow Cut"
+	desc = "The skin has been cut, down to the fat, but not deep enough to reach the muscles. Blood loss is the main concern."
 	treat_text = "Application of clean bandages or first-aid grade sutures, followed by food and rest."
-	examine_desc = "has an open cut"
+	examine_desc = "has an open wound, slowly dripping blood"
 	occur_text = "is cut open, slowly leaking blood"
 	sound_effect = 'sound/effects/wounds/blood1.ogg'
 	severity = WOUND_SEVERITY_MODERATE
@@ -263,11 +263,11 @@
 	scar_keyword = "slashmoderate"
 
 /datum/wound/slash/severe
-	name = "Open Laceration"
-	desc = "Patient's skin is ripped clean open, allowing significant blood loss."
+	name = "Severe Cut"
+	desc = "The wound is deep enough to have cut some muscle tissue as well as several veins, resulting in significant blood loss."
 	treat_text = "Speedy application of first-aid grade sutures and clean bandages, followed by vitals monitoring to ensure recovery."
-	examine_desc = "has a severe cut"
-	occur_text = "is ripped open, veins spurting blood"
+	examine_desc = "has a deep cut, dark blood soaking through the clothing"
+	occur_text = "recieves a severe cut, dark blood flowing from the wound "
 	sound_effect = 'sound/effects/wounds/blood2.ogg'
 	severity = WOUND_SEVERITY_SEVERE
 	initial_flow = 2.4375
@@ -281,11 +281,11 @@
 	scar_keyword = "slashsevere"
 
 /datum/wound/slash/critical
-	name = "Weeping Avulsion"
-	desc = "Patient's skin is completely torn open, along with significant loss of tissue. Extreme blood loss will lead to quick death without intervention."
+	name = "Arterial Bleeding"
+	desc = "An artery has been severed, bright red blood spraying out. Extreme blood loss will lead to loss of consciousness soon, followed by death, without intervention."
 	treat_text = "Immediate bandaging and either suturing or cauterization, followed by supervised resanguination."
-	examine_desc = "is carved down to the bone, spraying blood wildly"
-	occur_text = "is torn open, spraying blood wildly"
+	examine_desc = "has a very deep cut, spraying bright blood in spurts"
+	occur_text = "recieves a very deep cut, bright blood spurting out"
 	sound_effect = 'sound/effects/wounds/blood3.ogg'
 	severity = WOUND_SEVERITY_CRITICAL
 	initial_flow = 3.1875

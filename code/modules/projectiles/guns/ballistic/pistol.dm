@@ -106,7 +106,7 @@
 
 //Type 17								Keywords: 10mm, Semi-auto, 12/24 round magazine. Special modifiers: damage +1, spread +1
 /obj/item/gun/ballistic/automatic/pistol/type17
-	name = "Type 17"
+	name = "chinese type-17 pistol"
 	desc = "Chinese military sidearm at the time of the Great War. The ones around are old and worn, but somewhat popular due to the long barrel and rechambered in 10mm after the original ammo ran dry decades ago."
 	icon_state = "chinapistol"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple

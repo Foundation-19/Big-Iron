@@ -233,6 +233,7 @@
 	desc = "Blue beret signifying the wearer is a Science Officer of the Enclave."
 	icon_state = "hat_enclave_science"
 	item_state = "hat_enclave_science"
+	armor = list("melee" = 30, "bullet" = 50, "laser" = 25, "energy" = 25, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 50)
 
 /obj/item/clothing/head/beret/enclave/intel
 	name = "intel beret"
@@ -260,13 +261,13 @@
 	item_state = "enclave_sevahead"
 
 /obj/item/clothing/head/helmet/f13/enclave/marine
-	name = "old United States Marine Corp helmet"
+	name = "old us marine helmet"
 	desc = "An advanced model of combat helmet worn by marines aboard the USS Democracy, second only to power armor in protection used by the USMC For various tasks and operations, it's handled the nuclear wasteland somewhat better than the rest of the armors you've seen."
 	icon_state = "enclave_marine"
 	item_state = "enclave_marine"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 20, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 45, "energy" = 35, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 55)
 
 /obj/item/clothing/head/helmet/f13/enclave/marine/Initialize()
 	. = ..()
@@ -278,11 +279,28 @@
 	icon_state = "remnant_helmet"
 	item_state = "remnant_helmet"
 
+/obj/item/clothing/head/helmet/f13/enclave/airman
+	name = "enclave paratrooper helmet"
+	desc = "A familiar-looking helmet with a glossy orange visor."
+	icon_state = "marine_security_enclave"
+	item_state = "marine_security_enclave"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	armor = list("melee" = 52.5, "bullet" = 52.5, "laser" = 52.5, "energy" = 35, "bomb" = 45, "bio" = 60, "rad" = 50, "fire" = 60, "acid" = 35, "wound" = 50)
+
 /obj/item/clothing/head/helmet/f13/combat/swat/enclave
 	name = "enclave combat armor helmet"
 	desc = "Standard issue combat helmets used by the Enclave."
 	icon_state = "Enclave_combathelmetraider"
 	item_state = "Enclave_combathelmetraider"
+
+/obj/item/clothing/head/helmet/f13/enclave/cheaphelmet
+	name = "mass-produced enclave combat armor helmet"
+	desc = "Standard issue combat helmets used by the Enclave, looks & feels cheap."
+	icon_state = "Enclave_combathelmetraider"
+	item_state = "Enclave_combathelmetraider"
+	flags_inv = HIDEEARS|HIDEEYES|HIDEHAIR
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 25, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 40)
 
 // Lieutenant's hat
 /obj/item/clothing/head/helmet/f13/enclave/officer
@@ -290,7 +308,7 @@
 	desc = "Wheeled hat with a cap made of light-weight armored alloys beneath."
 	icon_state = "hat_enclave_officer"
 	item_state = "hat_enclave_officer"
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 25, "energy" = 22, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 55)
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 35, "energy" = 32, "bomb" = 65, "bio" = 70, "rad" = 20, "fire" = 70, "acid" = 30, "wound" = 65)
 
 
 //////////
@@ -320,6 +338,8 @@
 /obj/item/clothing/head/helmet/f13/legion/marsheaddress
 	name = "priestess' headdress"
 	desc = "A headdress made of feathers and decorated with two golden tassles."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-priestess"
 	item_state = "legion-priestess"
 	dynamic_hair_suffix = "+generic"
@@ -330,7 +350,7 @@
 	desc = "It's a leather skullcap issued to recruits."
 	icon_state = "legion-recruit"
 	item_state = "legion-recruit"
-	armor = list("melee" = 30, "bullet" = 15, "laser" = 5, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 40, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/helmet/f13/legion/prime
@@ -338,7 +358,7 @@
 	desc = "A helmet from reinforced leather with a red peak."
 	item_state = "legion-prime"
 	icon_state = "legion-prime"
-	armor = list("melee" = 40, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 50, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/helmet/f13/legion/prime/slavemaster
@@ -355,15 +375,19 @@
 	desc = "It's a metal legion veteran helmet, clearly inspired by old world sports uniforms."
 	icon_state = "legion-veteran"
 	item_state = "legion-veteran"
-	armor = list("melee" = 50, "bullet" = 30, "laser" = 10, "energy" = 15, "bomb" = 30, "bio" = 5, "rad" = 5, "fire" = 35, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 55, "bullet" = 35, "laser" = 25, "energy" = 15, "bomb" = 30, "bio" = 5, "rad" = 5, "fire" = 35, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
 /obj/item/clothing/head/helmet/f13/legion/vet/explorer
-	name = "legion scout hood"
+	name = "legion explorer hood"
 	desc = "It's a leather hood with metal reinforcments and built in headphones to plug the radio into."
-	icon_state = "legion_explorer"
-	item_state = "legion_explorer"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 5, "energy" = 10, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+	icon_state = "helmet_explorer"
+	item_state = "helmet_explorer"
+	armor = list("melee" = 40, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 40, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/head/helmet/f13/legion/vet/combvexil
 	name = "legion bear vexillarius helmet"
@@ -386,10 +410,8 @@
 	icon = 'icons/fallout/clothing/hats.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	desc = "This helmet is decorated with the pelt of a nightstalker."
-	icon_state = "legion-vex"
-	item_state = "legion-vex"
-//	icon_state = "legion-vex-night" wheres the icons even
-//	item_state = "legion-vex-night"
+	icon_state = "legion-vex-night"
+	item_state = "legion-vex-night"
 	armor = list("melee" = 50, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/head/helmet/f13/legion/venator
@@ -397,30 +419,26 @@
 	desc = "A leather hood with a sturdy metal skullcap and a gold bull insignia in the front."
 	icon_state = "legion-venator"
 	item_state = "legion-venator"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
-
-/obj/item/clothing/head/helmet/f13/legion/frumentarius
-	name = "laurel wreath"
-	desc = "A laurel wreath is made of branches and leaves of the laurel, a type of evergreen shrub or small tree. This one appears to be out of metal,however. In Ancient Rome, it was worn on the head as a symbol of triumph."
-	icon_state = "legion-orator"
-	item_state = "legion-orator"
-	flags_inv = null
-	armor = list("melee" = 50, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/head/helmet/f13/legion/recruit/decan
 	name = "legion recruit decanus helmet"
 	desc = "This reinforced leather helmet has a plume of black and dark red feathers."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-decrec"
 	item_state = "legion-decrec"
-	armor = list("melee" = 40, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/head/helmet/f13/legion/prime/decan
 	name = "legion prime decanus helmet"
 	desc = "This reinforced leather helmet with a red peak has a plume of black feathers."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	item_state = "legion-decprime"
 	icon_state = "legion-decprime"
-	armor = list("melee" = 45, "bullet" = 25, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 55, "bullet" = 35, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/head/helmet/f13/legion/heavy
 	name = "reinforced legion veteran decanus helmet"
@@ -429,7 +447,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-decvet"
 	item_state = "legion-decvet"
-	armor = list("melee" = 50, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 50)
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 25, "energy" = 20, "bomb" = 35, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 50)
 	actions_types = list(/datum/action/item_action/toggle)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
@@ -445,7 +463,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-decvet-alt"
 	item_state = "legion-decvet-alt"
-	armor = list("melee" = 50, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 50)
+	armor = list("melee" = 55, "bullet" = 40, "laser" = 20, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 50)
 
 /obj/item/clothing/head/helmet/f13/legion/vet/decan/daemon
 	name = "Customized Decanus helmet"
@@ -462,7 +480,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-centurion"
 	item_state = "legion-centurion"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 25, "bomb" = 45, "bio" = 20, "rad" = 20, "fire" = 45, "acid" = 45, "wound" = 55)
+	armor = list("melee" = 75, "bullet" = 45, "laser" = 30, "energy" = 25, "bomb" = 45, "bio" = 20, "rad" = 20, "fire" = 45, "acid" = 45, "wound" = 55)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 3)
 
@@ -473,7 +491,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-rangercent"
 	item_state = "legion-rangercent"
-	armor = list("melee" = 25, "bullet" = 35, "laser" = 15, "energy" = 25, "bomb" = 35, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0, "wound" = 55)
+	armor = list("melee" = 35, "bullet" = 55, "laser" = 30, "energy" = 25, "bomb" = 35, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0, "wound" = 55)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 3)
 
@@ -484,7 +502,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-palacent"
 	item_state = "legion-palacent"
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 40, "energy" = 35, "bomb" = 35, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 75)
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 50, "energy" = 35, "bomb" = 35, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 75)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 3)
 
@@ -508,7 +526,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-heavy"
 	item_state = "legion-heavy"
-	armor = list("melee" = 70, "bullet" = 70, "laser" = 60, "energy" = 15, "bomb" = 45, "bio" = 65, "rad" = 40, "fire" = 70, "acid" = 25, "wound" = 40)
+	armor = list("melee" = 60, "bullet" = 65, "laser" = 55, "energy" = 15, "bomb" = 40, "bio" = 55, "rad" = 25, "fire" = 55, "acid" = 15, "wound" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/legion
 	name = "Legion combat helmet"
@@ -529,11 +547,14 @@
 /obj/item/clothing/head/f13/servant
 	name = "servant headwear"
 	desc = "A simple uncoloured linen cloth wrapped around the head, the mark of a servant slave trained in household work."
-	icon = 'icons/fallout/clothing/hats.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
-	icon_state = "legion-servant"
-	item_state = "legion-servant"
-	flags_inv = HIDEEARS
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+	icon_state = "hat_servant"
+	item_state = "hat_servant"
+	dynamic_hair_suffix = "+generic"
+	flags_inv = null
 	flags_cover = null
 
 /obj/item/clothing/head/f13/auxilia
@@ -554,7 +575,7 @@
 	desc = "A standard issue NCR steel helmet. Looks like you can write on it and strap a few items on the helmet band."
 	icon_state = "ncr_steelpot"
 	item_state = "ncr_steelpot"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 15, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 20, "bullet" = 40, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 	strip_delay = 50
 	obj_flags = UNIQUE_RENAME
 	unique_reskin = list("M1" = "ncr_old")
@@ -603,7 +624,7 @@
 /obj/item/clothing/head/f13/ncr/steelpot_goggles/trenchraider
 	name = "NCR trench storm helmet"
 	desc = "A standard issue NCR steel helmet, issued with extra steel for close quarters fighting."
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 40, "bullet" = 35, "laser" = 15, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/head/f13/ncr/steelpot_med
 	name = "NCR medic helmet"
@@ -691,7 +712,7 @@
 	desc = "A green beret, standard issue for all commissioned NCR Officers."
 	icon_state = "ncr_officer_beret"
 	item_state = "ncr_officer_beret"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
+	armor = list("melee" = 25, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 40)
 
 /obj/item/clothing/head/beret/ncr/ncr_medic
 	name = "NCR medical beret"
@@ -717,14 +738,21 @@
 	desc = "A tan peaked cap with silver pin, designated for enlisted NCRA personnel."
 	icon_state = "ncr_dresscap"
 	item_state = "ncr_dresscap"
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 0)
 
 /obj/item/clothing/head/beret/ncr_codresscap
 	name = "NCR peaked cap"
 	desc = "A tan peaked cap with golden pin, designated for commissioned NCRA personnel."
 	icon_state = "ncr_codresscap"
 	item_state = "ncr_codresscap"
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 9, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 0)
+
+/obj/item/clothing/head/f13/ncr/ncr_pith_helmet
+	name = "NCR pith helmet"
+	desc = "A soft helmet made out of pressed plant material. Probably won't stop bullets."
+	icon_state = "ncr_flapcap"
+	item_state = "ncr_flapcap"
+	armor = list("melee" = 15, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 0)
 
 //NCR Ranger
 
@@ -771,7 +799,7 @@
 	item_state = "ncr_patrol_helmet"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 40)
+	armor = list("melee" = 25, "bullet" = 45, "laser" = 20, "energy" = 20, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 40)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
 /obj/item/clothing/head/helmet/f13/combat/ncr_patrol/Initialize()
@@ -784,7 +812,7 @@
 	desc = "An old combat helmet, out of use around the time of the war."
 	icon_state = "ranger"
 	item_state = "ranger"
-	armor = list("melee" = 30, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 55)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 40, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 60, "fire" = 90, "acid" = 20, "wound" = 55)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
@@ -859,19 +887,17 @@
 	item_state = "brotherhood_helmet_knight"
 
 
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/senior
+/obj/item/clothing/head/helmet/f13/combat/mk2/brotherhood/senior
 	name = "brotherhood senior knight helmet"
 	desc = "An improved combat helmet, bearing the symbol of a Senior Knight."
 	icon_state = "brotherhood_helmet_senior"
 	item_state = "brotherhood_helmet_senior"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
 
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
+/obj/item/clothing/head/helmet/f13/combat/mk2/brotherhood/captain
 	name = "brotherhood head knight helmet"
 	desc = "An improved combat helmet, bearing the symbol of the Head Knight."
 	icon_state = "brotherhood_helmet_captain"
 	item_state = "brotherhood_helmet_captain"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
 	name = "initiate helmet"
@@ -879,12 +905,11 @@
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
 
-/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
+/obj/item/clothing/head/helmet/f13/combat/mk2/brotherhood
 	name = "reinforced knight helmet"
 	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_helmet"
 	item_state = "brotherhood_helmet"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 50)
 
 /obj/item/clothing/head/helmet/f13/combat/brotherhood/outcast
 	name = "brotherhood helmet"
@@ -1244,8 +1269,8 @@
 	desc = "A People's Liberation Army cap, worn by enlisted and non-commissioned officers."
 	icon = 'icons/fallout/clothing/hats.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
-	icon_state = "chinese_soldier"
-	item_state = "chinese_soldier"
+	icon_state = "chinese_cap"
+	item_state = "chinese_cap"
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 30)
 
 /obj/item/clothing/head/f13/chinese/officer

@@ -110,6 +110,11 @@
 		jetpack = new jetpack(src)
 	return ..()
 
+/obj/item/clothing/suit/space/hardsuit/Destroy()
+	jetpack = null
+	helmet = null
+	return ..()
+
 /obj/item/clothing/suit/space/hardsuit/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/tank/jetpack/suit))
 		if(jetpack)
@@ -276,6 +281,14 @@
 	. = ..()
 	if(istype(loc, /obj/item/clothing/suit/space/hardsuit/syndi))
 		linkedsuit = loc
+		RegisterSignal(linkedsuit, COMSIG_PARENT_QDELETING, .proc/unlink_suit)
+
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/proc/unlink_suit()
+	linkedsuit = null
+
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/Destroy()
+	unlink_suit()
+	return ..()
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/attack_self(mob/user) //Toggle Helmet
 	if(!isturf(user.loc))
@@ -358,10 +371,14 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug
+	name = "chronicler helmet"
+	armor = list("melee" = 99, "bullet" = 95, "laser" = 95, "energy" = 95, "bomb" = 95, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 100)
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug/Initialize()
 	. = ..()
-	soundloop.volume = 0
+	do_sparks(7, FALSE, src)//spawns in, lightning effect also produced, what this mean is upto you
+	playsound(src, "sparks", 100, 1)
+	soundloop.volume = 0.5
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite
 	name = "elite syndicate hardsuit"
@@ -377,8 +394,10 @@
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_SNEK_TAURIC|STYLE_PAW_TAURIC
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite/debug
+	name = "chronicler hardsuit"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/debug
 	slowdown = 0
+	armor = list("melee" = 99, "bullet" = 95, "laser" = 95, "energy" = 95, "bomb" = 95, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 100)
 
 //The Owl Hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/owl
@@ -848,7 +867,6 @@
 	armor = list(melee = 50, bullet = 10, laser = 10, energy = 10, bomb = 50, bio = 100, rad = 50, fire = 100, acid = 100, "wound" = 30)
 	light_range = 7
 	var/energy_color = "#35FFF0"
-	var/obj/item/clothing/suit/space/hardsuit/lavaknight/linkedsuit = null
 	mutantrace_variation = NONE
 
 /obj/item/clothing/head/helmet/space/hardsuit/lavaknight/Initialize()

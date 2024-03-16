@@ -40,7 +40,7 @@
 	light_range = LIGHT_RANGE_FIRE
 	light_color = LIGHT_COLOR_FIRE
 	damage_type = BURN
-	damage = 12 //slight damage on impact
+	damage = 5 //slight damage on impact
 	range = 10
 
 /obj/item/projectile/incendiary/flamethrower/on_hit(atom/target)
@@ -147,8 +147,8 @@
 	..()
 
 /obj/item/projectile/bullet/pellet/trainshot
-	damage = 11 // less pellets, more dam + tiny bit of pen
-	armour_penetration = 0.4
+	damage = 13 // less pellets, more dam + tiny bit of pen
+	armour_penetration = 0.25
 	sharpness = SHARP_NONE
 
 /obj/item/projectile/bullet/pellet/trainshot/on_hit(atom/target)
@@ -178,7 +178,7 @@
 
 /obj/item/projectile/bullet/pellet/magnum_buckshot
 	name = "magnum buckshot pellet"
-	damage = 15
+	damage = 11
 	armour_penetration = 0.15
 	wound_bonus = 10
 	bare_wound_bonus = 10

@@ -16,7 +16,7 @@
 	display_name = "Cryostasis Technology"
 	description = "Smart freezing of objects to preserve them!"
 	prereq_ids = list("adv_engi", "biotech")
-	design_ids = list("splitbeaker", "noreactsyringe", "cryotube", "cryo_Grenade")
+	design_ids = list("splitbeaker", "noreactsyringe", "cryotube")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
 /*
 /datum/techweb_node/adv_defibrillator_tec
@@ -27,22 +27,6 @@
 	design_ids = list("defib_decay", "defib_shock", "defib_heal", "defib_speed")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 */
-/datum/techweb_node/plumbing
-	id = "plumbing"
-	display_name = "Reagent Plumbing Technology"
-	description = "Plastic tubes, and machinery used for manipulating things in them."
-	prereq_ids = list("base")
-	design_ids = list("acclimator", "disposer", "plumb_filter", "plumb_synth", "plumb_grinder", "reaction_chamber", "duct_print", "plumb_splitter", "pill_press", "plumb_pump", "plumb_in", "plumb_out", "plumb_tank", "medipen_refiller")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
-
-
-/datum/techweb_node/advplumbing
-	id = "advplumbing"
-	display_name = "Advanced Plumbing Technology"
-	description = "Plumbing RCD."
-	prereq_ids = list("plumbing", "adv_engi")
-	design_ids = list("plumb_rcd", "autohydrotray")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
 //////////////////////Cybernetics/////////////////////
 
@@ -148,5 +132,5 @@
 	display_name = "Alien Surgery"
 	description = "Abductors did nothing wrong."
 	prereq_ids = list("exp_surgery", "alientech")
-	design_ids = list("surgery_brainwashing","surgery_zombie", "surgery_ext_dissection", "surgery_heal_combo_upgrade_femto")
+	design_ids = list("surgery_brainwashing", "surgery_ext_dissection", "surgery_heal_combo_upgrade_femto")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)

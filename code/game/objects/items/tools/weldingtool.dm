@@ -428,6 +428,16 @@
 	toolspeed = 0.1
 	var/nextrefueltick = 0
 
+/obj/item/weldingtool/eggdingtool//BIG IRON EDIT -start- welder than can be spawned from fire eggs
+	name = "Fire egg Welder"
+	desc = "a super heated chicken egg capable of spewing out hot yolk that can be used as a welder bit of shell can be put on and off"
+	icon = 'icons/obj/food/food.dmi'
+	icon_state = "egg-firegg-welder"
+	item_state = "egg"
+	light_range = 0
+	toolspeed = 0.5
+	max_fuel = 30
+//BIG IRON EDIT -end
 /obj/item/weldingtool/hightech/process()
 	..()
 	if(get_fuel() < max_fuel && nextrefueltick < world.time)

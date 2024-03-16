@@ -17,7 +17,6 @@
 	cost = 100
 	unit_name = "large wooden crate"
 	export_types = list(/obj/structure/closet/crate/large)
-	exclude_types = list()
 
 /datum/export/large/crate/wooden/ore
 	unit_name = "ore box"
@@ -27,7 +26,6 @@
 	cost = 140
 	unit_name = "wooden crate"
 	export_types = list(/obj/structure/closet/crate/wooden)
-	exclude_types = list()
 
 /datum/export/large/barrel
 	cost = 300 //double the wooden cost of a coffin.
@@ -161,6 +159,51 @@
 	unit_name = "Padded Chair"
 	export_types = list(/obj/structure/chair/comfy)
 
+/datum/export/large/adv_chem_master
+	cost = 2500
+	unit_name = "old world refinery"
+	export_types = list(/obj/machinery/chem_master/advanced)
+
+/datum/export/large/chem_dispenser
+	cost = 3000
+	unit_name = "chem dispenser"
+	export_types = list(/obj/machinery/chem_dispenser)
+
+/datum/export/large/workbench
+	cost = 1000
+	unit_name = "workbench"
+	export_types = list(/obj/machinery/workbench)
+
+/datum/export/large/adv_workbench
+	cost = 4000
+	unit_name = "advanced workbench"
+	export_types = list(/obj/machinery/workbench/advanced)
+
+/datum/export/large/ammobench
+	cost = 3500
+	unit_name = "ammo bench"
+	export_types = list(/obj/machinery/autolathe/ammo)
+
+/datum/export/large/forge
+	cost = 2000
+	unit_name = "metalworking bench"
+	export_types = list(/obj/machinery/workbench/forge)
+
+/datum/export/large/grinder
+	cost = 950
+	unit_name = "all-in-one grinder"
+	export_types = list(/obj/machinery/reagentgrinder/constructed)
+
+/datum/export/large/microwave
+	cost = 750
+	unit_name = "microwave"
+	export_types = list(/obj/machinery/microwave)
+
+/datum/export/large/optable
+	cost = 1000
+	unit_name = "operating table"
+	export_types = list(/obj/structure/table/optable)
+
 /datum/export/large/gas_canister
 	cost = 10 //Base cost of canister. You get more for nice gases inside.
 	unit_name = "Gas Canister"
@@ -172,7 +215,7 @@
 	worth += C.air_contents.get_moles(GAS_BZ)*3
 	worth += C.air_contents.get_moles(GAS_STIMULUM)*25
 	worth += C.air_contents.get_moles(GAS_HYPERNOB)*20
-	worth += C.air_contents.get_moles(GAS_MIASMA)*2
+//	worth += C.air_contents.get_moles(GAS_MIASMA)*2
 	worth += C.air_contents.get_moles(GAS_TRITIUM)*7
 	worth += C.air_contents.get_moles(GAS_PLUOXIUM)*6
 	worth += C.air_contents.get_moles(GAS_NITRYL)*10
@@ -258,11 +301,11 @@
 	unit_name = "AI statue"
 	export_types = list(/obj/structure/statue/diamond/ai1, /obj/structure/statue/diamond/ai2)
 
-/datum/export/large/clownstatue
+/*/datum/export/large/clownstatue no fun allowed
 	cost = 2750
 	unit_name = "Clown statue"
 	export_types = list(/obj/structure/statue/bananium/clown)
-
+*/
 /datum/export/large/sandstatue
 	cost = 90 //Big cash
 	unit_name = "sandstone statue"
@@ -301,9 +344,14 @@
 	export_types = list(/obj/mecha/combat/durand)
 
 /datum/export/large/mech/phazon
-	cost = 35000 //Little over half due to needing a core
+	cost = 500 //Little over half due to needing a core
 	unit_name = "working phazon"
 	export_types = list(/obj/mecha/combat/phazon)
+
+/datum/export/large/mech/phazon/total_printout(datum/export_report/ex, notes = TRUE)
+	. = ..()
+	if(. && notes)
+		. += "We don't get it, why selling those cars and vehicules here when we do not want it while you can sell them from kebab for far more ? -Signed, train merchants."
 
 /datum/export/large/mech/marauder
 	cost = 15000 //Still a Combat class mech - CC tech as well! 150% "normal" boundy price.
@@ -325,16 +373,16 @@
 	unit_name = "working miner ripley"
 	export_types = list(/obj/mecha/working/ripley/mining)
 
-/datum/export/large/mech/honk
+/*/datum/export/large/mech/honk oof no funny mech
 	cost = 16000 //Still a "Combat class" mech - Comats bordem honk!
 	unit_name = "working honker"
 	export_types = list(/obj/mecha/combat/honker)
-
-/datum/export/large/mech/reticence
+*/
+/*/datum/export/large/mech/reticence Not on the code base
 	cost = 16000 //Still a "Combat class" mech - Has cloking and lethal weaponds.
 	unit_name = "working reticence"
 	export_types = list(/obj/mecha/combat/reticence)
-
+*/
 /datum/export/large/mech/seraph
 	cost = 25500 //Still a Combat class mech - CC tech as well! 150% "normal" boundy price.
 	unit_name = "working seraph"

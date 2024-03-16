@@ -3,7 +3,7 @@
 	desc = "Someone should clean that up."
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "shards"
-	beauty = -50
+//	beauty = -50 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/ash
 	name = "ashes"
@@ -11,7 +11,7 @@
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "ash"
 	mergeable_decal = FALSE
-	beauty = -50
+//	beauty = -50 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/ash/Initialize()
 	. = ..()
@@ -26,7 +26,7 @@
 /obj/effect/decal/cleanable/ash/large
 	name = "large pile of ashes"
 	icon_state = "big_ash"
-	beauty = -100
+//	beauty = -100 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/ash/large/Initialize()
 	. = ..()
@@ -37,7 +37,7 @@
 	desc = "Back to sand."
 	icon = 'icons/obj/shards.dmi'
 	icon_state = "tiny"
-	beauty = -100
+//	beauty = -100 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/glass/Initialize()
 	. = ..()
@@ -56,7 +56,7 @@
 	canSmoothWith = list(/obj/effect/decal/cleanable/dirt, /turf/closed/wall, /obj/structure/falsewall)
 	smooth = SMOOTH_FALSE
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	beauty = -75
+//	beauty = -75 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/dirt/Initialize()
 	. = ..()
@@ -93,7 +93,7 @@
 	light_range = 1
 	light_color = LIGHT_COLOR_GREEN
 	icon_state = "greenglow"
-	beauty = -300
+//	beauty = -300 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 	light_system = MOVABLE_LIGHT
 	light_range = 2
 	light_power = 0.8
@@ -109,7 +109,7 @@
 	layer = WALL_OBJ_LAYER
 	icon_state = "cobweb1"
 	resistance_flags = FLAMMABLE
-	beauty = -100
+//	beauty = -100 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/cobweb/cobweb2
 	icon_state = "cobweb2"
@@ -121,12 +121,12 @@
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "molten"
 	mergeable_decal = FALSE
-	beauty = -150
+//	beauty = -150 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/molten_object/large
 	name = "big gooey grey mass"
 	icon_state = "big_molten"
-	beauty = -300
+//	beauty = -300 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 //Vomit (sorry)
 /obj/effect/decal/cleanable/vomit
@@ -135,7 +135,7 @@
 	icon = 'icons/effects/blood.dmi'
 	icon_state = "vomit_1"
 	random_icon_states = list("vomit_1", "vomit_2", "vomit_3", "vomit_4")
-	beauty = -150
+//	beauty = -150 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/vomit/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	if(ishuman(user))
@@ -165,7 +165,7 @@
 	gender = NEUTER
 	icon = 'icons/effects/tomatodecal.dmi'
 	random_icon_states = list("tomato_floor1", "tomato_floor2", "tomato_floor3")
-	beauty = -100
+//	beauty = -100 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/plant_smudge
 	name = "plant smudge"

@@ -81,3 +81,5 @@
 	'sound/f13ambience/music/invisible_ghosts_ambience.ogg',\
 	'sound/f13ambience/music/mole_miners_ambience.ogg',\
 	'sound/f13ambience/music/portaltothepast_ambience.ogg','sound/f13ambience/music/wind_and_the_reeds_ambience.ogg')
+
+#define COTC_AMBIENCE list('sound/f13ambience/cotc.ogg','sound/f13ambience/cotc2.ogg')

@@ -55,20 +55,42 @@
 	cost = 150 // five times their export
 	contains = list(/obj/item/stack/sheet/mineral/sandstone/thirty)
 
-/datum/supply_pack/materials/wood50
+/datum/supply_pack/materials/concrete10
 	goody = PACK_GOODY_PUBLIC
-	name = "50 Wood Planks"
-	desc = "Turn cargo's boring metal groundwork into beautiful panelled flooring and much more with fifty wooden planks!"
-	cost = 400 // 6-7 planks shy from having equal import/export prices
-	contains = list(/obj/item/stack/sheet/mineral/wood/twenty)
+	name = "10 Concrete Slabs"
+	desc = "Turn cargo's boring metal groundwork into beautiful vault floors with expensive concrete!"
+	cost = 2000
+	contains = list(/obj/item/stack/sheet/mineral/concrete/ten)
 
+/datum/supply_pack/materials/prewaralloyingot
+	goody = PACK_GOODY_PUBLIC
+	name = "4 Pre-War Ingots"
+	desc = "Ingots salvaged from a Pre-War factory, valuable in the right hands."
+	cost = 2775
+	contains = list(/obj/item/blacksmith/ingot/adamantine,
+					/obj/item/blacksmith/ingot/adamantine,
+					/obj/item/blacksmith/ingot/adamantine,
+					/obj/item/blacksmith/ingot/adamantine
+					)
+
+/datum/supply_pack/materials/weaponparts
+	goody = PACK_GOODY_PUBLIC
+	name = "Weapon Parts"
+	desc = "A random collection of recovered weapon parts. A gunsmith's wet dream."
+	cost = 2500
+	contains = list(/obj/effect/spawner/lootdrop/f13/advcrafting,
+					/obj/effect/spawner/lootdrop/f13/advcrafting,
+					/obj/effect/spawner/lootdrop/f13/advcrafting,
+					/obj/effect/spawner/lootdrop/f13/advcrafting)
+
+/*
 /datum/supply_pack/materials/rcdammo
 	goody = PACK_GOODY_PUBLIC
 	name = "Large RCD ammo Single-Pack"
 	desc = "A single large compressed RCD matter pack, to help with any holes or projects people might be working on."
 	cost = 600
 	contains = list(/obj/item/rcd_ammo/large)
-
+*/
 //datum/supply_pack/materials/rawlumber
 //	name = "50 Towercap Logs"
 //	desc = "Raw logs from towercaps. Contains fifty logs."
@@ -84,7 +106,7 @@
 //////////////////////////////////////////////////////////////////////////////
 ///////////////////////////// Canisters //////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
-
+/*
 /datum/supply_pack/materials/bz
 	name = "BZ Canister Crate"
 	desc = "Contains a canister of BZ. Requires Toxins access to open."
@@ -134,7 +156,7 @@
 	contains = list(/obj/machinery/portable_atmospherics/canister/water_vapor)
 	crate_name = "water vapor canister crate"
 	crate_type = /obj/structure/closet/crate/large
-
+*/
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// Tanks ////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////

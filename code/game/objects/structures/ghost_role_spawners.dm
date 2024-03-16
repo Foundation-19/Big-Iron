@@ -763,15 +763,15 @@
 	new_spawn.real_name = random_unique_name(gender)
 
 /obj/effect/mob_spawn/human/fallout13/legion
-	name = "Prime Legionnaire Spawn"
+	name = "Prime Legionary Spawn"
 	desc = "An entry point for prime legionaries of Caesar's Legion to join a battle."
 	faction = "Legion"
-	mob_name = "Prime Legionnaire"
-	job_description = "Prime Legionnaire"
+	mob_name = "Prime Legionary"
+	job_description = "Prime Legionary"
 	short_desc = "You are a might warrior of Caesar's Legion. Retribution!"
 	flavour_text = "True to Caesar!"
-	assignedrole = "Prime Legionnaire"
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
+	assignedrole = "Prime Legionary"
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13legionary
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/cowboy
 	backpack_contents = list(
 		/obj/item/ammo_box/a357 = 3,
@@ -780,12 +780,12 @@
 		)
 
 /obj/effect/mob_spawn/human/fallout13/legion/veteran
-	name = "Veteran Legionnaire Spawn"
+	name = "Veteran Legionary Spawn"
 	desc = "An entry point for veteran legionaries of Caesar's Legion to join a battle."
-	mob_name = "Veteran Legionnaire"
-	job_description = "Veteran Legionnaire"
-	assignedrole = "Veteran Legionnaire"
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
+	mob_name = "Veteran Legionary"
+	job_description = "Veteran Legionary"
+	assignedrole = "Veteran Legionary"
+	outfit = /datum/outfit/job/CaesarsLegion/Legionary/vetlegionary
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44 = 3,

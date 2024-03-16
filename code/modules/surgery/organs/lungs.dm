@@ -311,7 +311,7 @@
 			var/existing = H.reagents.get_reagent_amount(/datum/reagent/stimulum)
 			H.reagents.add_reagent(/datum/reagent/stimulum, max(0, 5 - existing))
 		breath.adjust_moles(GAS_STIMULUM, -gas_breathed)
-
+/*
 	// Miasma
 		if (breath.get_moles(GAS_MIASMA))
 			var/miasma_pp = PP(breath,GAS_MIASMA)
@@ -356,7 +356,7 @@
 		handle_breath_temperature(breath, H)
 	return TRUE
 
-
+*/
 /obj/item/organ/lungs/proc/handle_too_little_breath(mob/living/carbon/human/H = null, breath_pp = 0, safe_breath_min = 0, true_pp = 0)
 	. = 0
 	if(!H || !safe_breath_min) //the other args are either: Ok being 0 or Specifically handled.

@@ -110,7 +110,7 @@ also: most hitscan weapons have more charge than their normal projectile counter
 /obj/item/ammo_casing/energy/laser/scatter/tribeam/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/tribeam/hitscan
 	pellets = 3
-	variance = 45
+	variance = 22
 	select_name = "tribeam"
 	e_cost = 200 //10 shots
 
@@ -135,8 +135,15 @@ also: most hitscan weapons have more charge than their normal projectile counter
 
 /obj/item/ammo_casing/energy/laser/pistol/recharger/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/recharger/hitscan
-	e_cost = 100 //20 shots
+	e_cost = 90 //20 shots
 	fire_sound = 'sound/f13weapons/aep7fire.ogg'
+
+/obj/item/ammo_casing/energy/laser/rechargerrifle/hitscan //recharger rifle
+	projectile_type = /obj/item/projectile/beam/laser/rechargerrifle/hitscan
+	e_cost = 100 //7 shots
+	fire_sound = 'sound/f13weapons/aep7fire.ogg'
+
+/obj/item/ammo_casing/energy/laser/rechargerrifle/hitscan
 
 /obj/item/ammo_casing/energy/laser/stun  //compliance regulator
 	projectile_type = /obj/item/projectile/beam/laser/pistol/hitscan/stun
@@ -247,7 +254,7 @@ also: most hitscan weapons have more charge than their normal projectile counter
 	e_cost = 250
 	fire_sound = 'sound/f13weapons/aer9fire.ogg'
 	fire_sound = 'sound/weapons/laser3.ogg'
-	
+
 //autolasers
 
 /obj/item/ammo_casing/energy/laser/autolaser

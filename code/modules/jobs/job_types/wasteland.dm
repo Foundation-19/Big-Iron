@@ -167,7 +167,8 @@ Raider
 	/datum/outfit/loadout/raider_bos,
 	/datum/outfit/loadout/quack_doctor,
 	/datum/outfit/loadout/raider_powder,
-	/datum/outfit/loadout/raider_tribal
+	/datum/outfit/loadout/raider_tribal,
+	/datum/outfit/loadout/den
 	)
 
 
@@ -245,13 +246,12 @@ Raider
 	suit = /obj/item/clothing/suit/armor/f13/raider/yankee
 	head = /obj/item/clothing/head/helmet/f13/raider/yankee
 	backpack_contents = list(
-		/obj/item/shishkebabpack = 1,
+		/obj/item/melee/onehanded/knife/cosmicdirty = 1,
 		/obj/item/storage/fancy/cigarettes/cigpack_cannabis = 1,
 		/obj/item/megaphone = 1,
 		/obj/item/radio/headset = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/storage/pill_bottle/chem_tin/buffout = 1,
-		/obj/item/book/granter/trait/trekking = 1
+		/obj/item/storage/pill_bottle/chem_tin/buffout = 1
 		)
 
 /datum/outfit/loadout/raider_blast
@@ -271,7 +271,7 @@ Raider
 	head = /obj/item/clothing/head/helmet/f13/raider/arclight
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/throwing = 5,
-		/obj/item/clothing/mask/gas/explorer/folded=1,
+		/obj/item/clothing/mask/gas/explorer/folded = 1,
 		/obj/item/storage/belt = 1,
 		/obj/item/restraints/legcuffs/beartrap = 2,
 		/obj/item/reverse_bear_trap = 1,
@@ -290,7 +290,6 @@ Raider
 		/obj/item/reagent_containers/hypospray/medipen/psycho = 3,
 		/obj/item/reagent_containers/pill/patch/turbo = 2,
 		/obj/item/reagent_containers/hypospray/medipen/medx = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/radio/headset = 1
 		)
@@ -307,7 +306,6 @@ Raider
 		/obj/item/melee/onehanded/club/fryingpan = 1,
 		/obj/item/radio/headset = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/grenade/chem_grenade/cleaner = 2
 		)
 
@@ -315,7 +313,7 @@ Raider
 	name = "Quack Doctor"
 	suit = /obj/item/clothing/suit/toggle/labcoat/f13/followers
 	l_hand = /obj/item/storage/backpack/duffelbag/med/surgery
-	r_hand = /obj/item/book/granter/trait/midsurgery
+	r_hand = /obj/item/book/granter/trait/lowsurgery
 	suit_store = /obj/item/gun/energy/laser/wattz
 	backpack_contents = list(
 		/obj/item/stock_parts/cell/ammo/ec = 1,
@@ -323,7 +321,6 @@ Raider
 		/obj/item/storage/firstaid/ancient = 1,
 		/obj/item/storage/pill_bottle/aranesp = 1,
 		/obj/item/storage/pill_bottle/happy = 1,
-		/obj/item/book/granter/trait/chemistry = 1,
 		/obj/item/stack/sheet/mineral/silver = 2,
 		/obj/item/defibrillator/primitive = 1
 		)
@@ -335,7 +332,7 @@ Raider
 	id = /obj/item/card/id/rusted
 	backpack_contents = list(
 		/obj/item/gun/ballistic/automatic/service = 1,
-		/obj/item/ammo_box/magazine/m556/rifle=2,
+		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
 		/obj/item/radio/headset = 1,
@@ -343,7 +340,7 @@ Raider
 		)
 
 /datum/outfit/loadout/raider_legion
-	name = "Disgraced Legionnaire"
+	name = "Disgraced Legionary"
 	suit = /obj/item/clothing/suit/armor/f13/exile/legexile
 	uniform = /obj/item/clothing/under/f13/exile/legion
 	id = /obj/item/card/id/rusted/rustedmedallion
@@ -352,8 +349,7 @@ Raider
 		/obj/item/storage/backpack/spearquiver = 1,
 		/obj/item/gun/ballistic/automatic/smg/greasegun = 1,
 		/obj/item/ammo_box/magazine/greasegun = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
-		/obj/item/book/granter/trait/trekking = 1
+		/obj/item/book/granter/trait/bigleagues = 1
 		)
 
 /datum/outfit/loadout/raider_bos
@@ -425,7 +421,6 @@ Raider
 		/obj/item/clothing/mask/cigarette/pipe = 1,
 		/obj/item/melee/onehanded/knife/bone = 1,
 		/obj/item/radio/tribal = 1,
-		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/book/granter/trait/trekking = 1
 		)
 
@@ -440,6 +435,23 @@ Raider
 		/obj/item/ammo_box/magazine/greasegun = 2,
 		/obj/item/grenade/f13/dynamite = 2,
 		/obj/item/book/granter/trait/explosives = 1
+		)
+
+/datum/outfit/loadout/den
+	name = "Den Gangster"
+	suit = /obj/item/clothing/suit/armor/vest
+	uniform = /obj/item/clothing/under/f13/densuit
+	head = /obj/item/clothing/head/fedora
+	gloves = /obj/item/clothing/gloves/color/white
+	shoes = /obj/item/clothing/shoes/laceup
+	id = /obj/item/card/id/denid
+	backpack_contents = list(
+		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
+		/obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
+		/obj/item/ammo_box/magazine/greasegun = 1,
+		/obj/item/radio/headset = 1,
+		/obj/item/clothing/mask/bandana/durathread = 1
 		)
 
 /datum/job/wasteland/f13wastelander
@@ -459,18 +471,15 @@ Raider
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/wasteland/f13wastelander,
-			/datum/job/oasis/f13detective,
 		),
 		/datum/matchmaking_pref/rival = list(
 			/datum/job/wasteland/f13wastelander,
-			/datum/job/oasis/f13detective,
 		),
 		/datum/matchmaking_pref/mentor = list(
 			/datum/job/wasteland/f13wastelander,
 		),
 		/datum/matchmaking_pref/disciple = list(
 			/datum/job/wasteland/f13wastelander,
-			/datum/job/oasis/f13detective,
 		),
 		/datum/matchmaking_pref/patron = list(
 			/datum/job/wasteland/f13wastelander,
@@ -550,8 +559,8 @@ Raider
 	l_hand = /obj/item/gun/ballistic/automatic/pistol/n99
 	belt = /obj/item/storage/belt
 	backpack_contents = list(
-		/obj/item/stack/sheet/metal = 50,
-		/obj/item/stack/sheet/mineral/wood = 50,
+		/obj/item/stack/sheet/metal/fifty = 1,
+		/obj/item/stack/sheet/mineral/wood/fifty = 1,
 		/obj/item/pickaxe/mini = 1,
 		/obj/item/toy/crayon/spraycan = 1,
 		/obj/item/cultivator = 1,
@@ -570,7 +579,7 @@ Raider
 	backpack_contents =  list(/obj/item/reagent_containers/medspray/synthflesh = 2,
 							/obj/item/smelling_salts = 1,
 							/obj/item/healthanalyzer = 1,
-							/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
+							/obj/item/gun/energy/laser/rechargerrifle = 1,
 							/obj/item/reagent_containers/glass/bottle/epinephrine = 2,
 							/obj/item/storage/backpack/duffelbag/med/surgery = 1,
 							/obj/item/paper_bin = 1,
@@ -699,7 +708,6 @@ Raider
 	ADD_TRAIT(H, TRAIT_TRAPPER, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 	ADD_TRAIT(H, TRAIT_AUTO_DRAW, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	H.grant_language(/datum/language/tribal)
 	var/list/recipes = list(
 		/datum/crafting_recipe/tribal_pa,
@@ -872,3 +880,302 @@ Raider
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
 		/obj/item/book/granter/crafting_recipe/tribal/bone = 1
 	)
+
+/* /datum/job/wasteland/f13bwsettler
+	title = "Blackwater Settler"
+	flag = F13BWSETTLER
+	total_positions = 8
+	spawn_positions = -1
+	faction = FACTION_WASTELAND
+	description = "You are a settler of the frontier, that came to south kebab after the loss of your settlement. You are a normal Kebab citizen too."
+	supervisors = "The Sheriff and his deputies, the militia commander, the merchant. "
+	selection_color = "#dddddd"
+	outfit = /datum/outfit/job/wasteland/f13bwsettler
+	exp_requirements = 0
+	exp_type = EXP_TYPE_FALLOUT
+	
+	loadout_options = list(
+	/datum/outfit/loadout/settlermerchant,
+	/datum/outfit/loadout/settlerdoc,
+	/datum/outfit/loadout/settlerbartender,
+	/datum/outfit/loadout/settlerfarmer,
+	/datum/outfit/loadout/settlerprospector,
+	/datum/outfit/loadout/settlerpoacher,
+	/datum/outfit/loadout/settlergambler,
+	)
+	
+	matchmaking_allowed = list(
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/wasteland/f13bwsettler,
+		),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/wasteland/f13bwsettler,
+		),
+		/datum/matchmaking_pref/mentor = list(
+			/datum/job/wasteland/f13bwsettler,
+		),
+		/datum/matchmaking_pref/disciple = list(
+			/datum/job/wasteland/f13bwsettler,
+		),
+		/datum/matchmaking_pref/patron = list(
+			/datum/job/wasteland/f13bwsettler,
+		),
+		/datum/matchmaking_pref/protegee = list(
+			/datum/job/wasteland/f13bwsettler,
+		),
+	)
+
+/datum/outfit/job/wasteland/f13bwsettler
+	name = "Blackwater Settler"
+	jobtype = /datum/job/wasteland/f13bwsettler
+	ears = /obj/item/radio/headset/headset_town
+	belt = null
+	id = /obj/item/card/id/dogtag/town
+	backpack = /obj/item/storage/backpack/satchel/explorer
+	r_pocket = /obj/item/flashlight/lantern
+	l_pocket = /obj/item/radio/headset/headset_bw
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/raider = 1,
+		)
+		
+
+/datum/outfit/job/wasteland/f13bwsettler/pre_equip(mob/living/carbon/human/H)
+	. = ..()
+	uniform = pick(
+		/obj/item/clothing/under/f13/merca,
+		/obj/item/clothing/under/f13/cowboyb,
+		/obj/item/clothing/under/f13/cowboyg,
+		/obj/item/clothing/under/f13/cowboyt,
+		/obj/item/clothing/under/f13/doctor,
+		/obj/item/clothing/under/f13/settler,
+		/obj/item/clothing/under/f13/relaxedwear,
+		/obj/item/clothing/under/f13/spring,
+		/obj/item/clothing/under/f13/rustic,
+		/obj/item/clothing/under/f13/brahmin,
+		/obj/item/clothing/under/pants/jeans,
+		/obj/item/clothing/under/f13/fashion/cowboy_angeleyes,
+		/obj/item/clothing/under/f13/fashion/cowboy_blondie)
+
+	head = pick(
+		/obj/item/clothing/head/f13/ranger_hat/tan,
+		/obj/item/clothing/head/f13/ranger_hat,
+		/obj/item/clothing/head/cowboyhat/white,
+		/obj/item/clothing/head/cowboyhat/black,
+		/obj/item/clothing/head/cowboyhat,
+		/obj/item/clothing/head/helmet/f13/rustedcowboyhat,
+		/obj/item/clothing/head/helmet/f13/brahmincowboyhat,
+		/obj/item/clothing/head/f13/cowboy,
+		/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy/blondie,
+		/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/cowboy,
+		/obj/item/clothing/head/helmet/f13/brahmincowboyhat/fashion/scarecrow,
+		/obj/item/clothing/head/helmet/f13/vaquerohat,
+		/obj/item/clothing/head/helmet/f13/marlowhat,
+		/obj/item/clothing/head/fluff/gambler,
+		/obj/item/clothing/head/flatcap,
+		/obj/item/clothing/head/f13/stormchaser,
+		/obj/item/clothing/head/welding)
+
+	suit = pick(
+		/obj/item/clothing/suit/f13/cowboygvest,
+		/obj/item/clothing/suit/f13/cowboybvest,
+		/obj/item/clothing/neck/mantle/poncho,
+		/obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy/blondie,
+		/obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy,
+		/obj/item/clothing/suit/jacket/leather,
+		/obj/item/clothing/suit/f13/duster,
+		/obj/item/clothing/suit/toggle/labcoat/f13/wanderer,
+		/obj/item/clothing/suit/tailcoat,
+		/obj/item/clothing/suit/toggle/lawyer/black,
+		/obj/item/clothing/suit/armored/light/tanvest,
+		/obj/item/clothing/suit/suspenders,
+		/obj/item/clothing/suit/overalls/farmer,
+		/obj/item/clothing/suit/armored/light/kit/shoulder,
+		/obj/item/clothing/suit/armored/light/kit/punk,
+		/obj/item/clothing/suit/armored/light/kit,
+		/obj/item/clothing/suit/hooded/cloak/desert)
+
+	shoes = pick(
+		/obj/item/clothing/shoes/f13/cowboy,
+		/obj/item/clothing/shoes/f13/explorer,
+		/obj/item/clothing/shoes/f13/military/fashion/cowboy_boots)
+
+
+	r_hand = pick(
+		/obj/item/gun/ballistic/revolver/hobo/knifegun,
+		/obj/item/gun/ballistic/automatic/hobo/zipgun,
+		/obj/item/kitchen/knife/butcher,
+		/obj/item/gun/ballistic/revolver/police,
+		/obj/item/gun/ballistic/revolver/detective,
+		/obj/item/shovel,
+		/obj/item/shovel/trench,
+		/obj/item/hatchet,
+		/obj/item/twohanded/fireaxe,
+		/obj/item/pickaxe,
+		/obj/item/pickaxe/mini)
+
+/datum/outfit/loadout/settlermerchant
+	name = "General Trader"
+	uniform = /obj/item/clothing/under/f13/merchant
+	head = /obj/item/clothing/head/f13/stormchaser
+	glasses = /obj/item/clothing/glasses/f13/biker
+	r_hand = /obj/item/gun/ballistic/revolver/detective
+	l_hand = /obj/item/crowbar/smithedunitool
+	backpack_contents =  list(/obj/item/storage/box/vendingmachine = 1,
+							/obj/item/storage/bag/money/small/settler = 1,
+							/obj/item/ammo_box/c38box = 2,
+							/obj/item/storage/keys_set = 1,
+							/obj/item/reagent_containers/food/snacks/f13/caravanlunch = 1
+							)
+
+/datum/outfit/loadout/settlerdoc
+	name = "Barber-Doctor"
+	uniform = /obj/item/clothing/under/f13/westender
+	gloves = /obj/item/clothing/gloves/color/latex
+	neck = /obj/item/clothing/neck/apron/chef
+	r_hand = /obj/item/melee/onehanded/straight_razor
+	l_hand = /obj/item/cosmetics/haircomb
+	backpack_contents =  list(/obj/item/reagent_containers/medspray/synthflesh = 2,
+							/obj/item/healthanalyzer = 1,
+							/obj/item/reagent_containers/glass/bottle/epinephrine = 2,
+							/obj/item/cosmetics/mirror_makeup = 1,
+							/obj/item/storage/firstaid/ancient = 1,
+							/obj/item/clothing/neck/stethoscope = 1,
+							/obj/item/book/granter/trait/midsurgery = 1,
+							/obj/item/storage/backpack/duffelbag/med/surgery/primitive = 1
+							)
+
+/datum/outfit/loadout/settlerbartender
+	name = "Saloon Bartender"
+	uniform = /obj/item/clothing/under/f13/bartenderalt
+	neck = /obj/item/clothing/neck/apron/bartender 
+	suit_store = /obj/item/gun/ballistic/revolver/widowmaker
+	r_hand = /obj/item/reagent_containers/food/drinks/shaker 
+	l_hand = /obj/item/storage/box/drinkingglasses
+	backpack_contents =  list(/obj/item/storage/bag/money/small/wastelander = 1,
+							/obj/item/ammo_box/shotgun/improvised = 1,
+							/obj/item/ammo_box/shotgun/bean = 1,
+							/obj/item/storage/keys_set = 1,
+							/obj/item/reagent_containers/food/drinks/flask = 3
+							)
+
+/datum/outfit/loadout/settlerfarmer
+	name = "Frontier Farmer"
+	suit = /obj/item/clothing/suit/overalls/farmer
+	head = /obj/item/clothing/head/f13/ranger_hat/tan
+	suit_store = /obj/item/gun/ballistic/revolver/caravan_shotgun
+	r_hand = /obj/item/hatchet
+	l_hand = /obj/item/cultivator/rake
+	backpack_contents =  list(/obj/item/pickaxe/mini = 1,
+		/obj/item/reagent_containers/glass/bucket/wood = 1,
+		/obj/item/reagent_containers/glass/bottle/nutrient/ez = 3,
+		/obj/item/storage/bag/plants = 1,
+		/obj/item/reagent_containers/spray/pestspray = 1,
+		/obj/item/storage/bag/money/small/raider = 1,
+		/obj/item/ammo_box/shotgun/improvised = 1,
+		/obj/item/brahminbridle = 1,
+		/obj/item/brahminsaddle = 1,
+		/obj/item/brahminbags = 1,
+		/obj/item/seeds/tato = 1,
+		/obj/item/seeds/xander = 1,
+		/obj/item/seeds/poppy/broc = 1,
+		/obj/item/seeds/mutfruit = 1,
+		/obj/item/seeds/ambrosia = 1
+		)
+
+/datum/outfit/loadout/settlerprospector
+	name = "Wasteland Prospector"
+	uniform = /obj/item/clothing/under/f13/rustic
+	belt = /obj/item/storage/belt/utility/waster 
+	glasses = /obj/item/clothing/glasses/welding
+	neck = /obj/item/storage/belt/holster/rugged
+	r_hand = /obj/item/storage/bag/salvage 
+	l_hand = /obj/item/gun/ballistic/revolver/colt357
+	backpack_contents =  list(/obj/item/ammo_box/a357 = 1,
+		/obj/item/ammo_box/a357box/improvised = 1,
+		/obj/item/book/granter/trait/trekking = 1
+		)
+		
+/datum/outfit/loadout/settlerpoacher
+	name = "Wasteland Poacher"
+	suit = /obj/item/clothing/suit/armored/light/leathersuit
+	suit_store = /obj/item/gun/ballistic/automatic/varmint
+	r_hand = /obj/item/ammo_box/magazine/m556/rifle/small
+	l_hand = /obj/item/melee/onehanded/knife/bowie
+	backpack_contents =  list(/obj/item/ammo_box/a556/sport/improvised = 1,
+		/obj/item/ammo_box/a357box/improvised = 1,
+		/obj/item/book/granter/trait/trekking = 1,
+		/obj/item/reagent_containers/food/snacks/meatsalted = 2
+		)
+		
+/datum/outfit/loadout/settlergambler
+	name = "Frontier Gambler"
+	uniform = /obj/item/clothing/under/f13/densuit
+	suit = /obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy 
+	head = /obj/item/clothing/head/f13/gambler
+	r_hand = /obj/item/gun/ballistic/revolver/detective
+	l_hand = /obj/item/storage/bag/money/small/wastelander
+	backpack_contents =  list(/obj/item/storage/fancy/cigarettes/cigpack_bigboss  = 1,
+		/obj/item/ammo_box/c38box/improvised = 1,
+		/obj/item/reagent_containers/food/drinks/flask = 1,
+		/obj/item/toy/cards/deck = 1,
+		/obj/item/dice = 1
+		)
+
+
+//datum/job/wasteland/f13bwdeputy
+	title = "Blackwater Deputy"
+	flag = F13BWDEPUTY
+	faction = F13CITIZEN
+	total_positions = 3
+	spawn_positions = 3
+	description = "You are a lawman watching over the town of Kebab and Blackwater since the towns fusions. The last Sheriff just retired too, if you feel you can lead, go ahead and takes his place, but you are still under the militia commander."
+	supervisors = "the Sherif, but the Militia Commander orders takes priority"
+	selection_color = "#dddddd"
+	exp_requirements = 0
+	exp_type = EXP_TYPE_FALLOUT
+
+	access = list(ACCESS_TOWN_SEC, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_TOWN_SEC, ACCESS_PUBLIC)
+	
+	outfit = /datum/outfit/job/wasteland/f13bwdeputy
+
+	matchmaking_allowed = list(
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/wasteland/f13bwdeputy,
+		),
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/wasteland/f13bwdeputy,
+		),
+	)
+
+/datum/outfit/job/wasteland/f13bwdeputy
+	name = "Blackwater Deputy"
+	jobtype = /datum/job/wasteland/f13bwdeputy
+	head = /obj/item/clothing/head/f13/town/deputy
+	id = /obj/item/card/id/dogtag/deputy/kebab
+	ears = /obj/item/radio/headset/headset_town
+	backpack = /obj/item/storage/backpack/satchel/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
+	belt = /obj/item/storage/belt
+	suit = /obj/item/clothing/suit/armor/f13/town/deputy
+	neck = /obj/item/storage/belt/holster/rugged/revolver_357
+	l_pocket = /obj/item/storage/bag/money/small/settler
+	r_pocket = /obj/item/flashlight/lantern
+	shoes = /obj/item/clothing/shoes/f13/military/fashion/cowboy_boots
+	uniform = /obj/item/clothing/under/f13/cowboyg
+	backpack_contents = list(
+		/obj/item/restraints/handcuffs = 2,
+		/obj/item/ammo_box/a357 = 3,
+		/obj/item/melee/onehanded/knife/bowie = 1,
+		/obj/item/melee/classic_baton = 1,
+		/obj/item/radio/headset/headset_bw = 1,
+		)
+
+/datum/outfit/job/wasteland/f13bwdeputy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+
+*/
+

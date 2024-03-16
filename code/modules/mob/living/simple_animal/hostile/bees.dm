@@ -108,7 +108,13 @@
 	. = ..()
 	if(!.)
 		return FALSE
-	if(isliving(the_target))
+	if(beehome && isliving(the_target))//Settled bees will only target things within 2 blocks of their home
+		if(get_dist(beehome, the_target) <=2)
+			var/mob/living/H = the_target
+			return !H.bee_friendly()
+		else
+			return FALSE
+	else//orphaned bees will target anyone on sight
 		var/mob/living/H = the_target
 		return !H.bee_friendly()
 

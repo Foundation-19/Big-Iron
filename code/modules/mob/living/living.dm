@@ -37,7 +37,10 @@
 	if(buckled)
 		buckled.unbuckle_mob(src,force=1)
 
+	QDEL_LIST(abilities)
+	QDEL_LIST(implants)
 	remove_from_all_data_huds()
+	cleanse_trait_datums()
 	GLOB.mob_living_list -= src
 	QDEL_LIST(diseases)
 	return ..()
@@ -396,6 +399,7 @@
 	if(!..())
 		return FALSE
 	visible_message("<b>[src]</b> points at [A].", "<span class='notice'>You point at [A].</span>")
+	log_message("<b>[src]</b> points at [A] at ([A.x], [A.y], [A.z]).", LOG_EMOTE)
 	return TRUE
 
 /mob/living/verb/succumb()
@@ -853,7 +857,7 @@
 	else
 		throw_alert("gravity", /obj/screen/alert/weightless)
 	if(!override && !is_flying())
-		INVOKE_ASYNC(src, /atom/movable.proc/float, !has_gravity)
+		float(!has_gravity)
 
 /mob/living/float(on)
 	if(throwing)

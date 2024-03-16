@@ -153,12 +153,12 @@
 		..()
 
 /obj/item/clothing/accessory/medal/conduct
-	name = "distinguished conduct medal"
-	desc = "A bronze medal awarded for distinguished conduct. Whilst a great honor, this is the most basic award given. It is often awarded by an officer to a member of their staff."
+	name = "distinguished service medal"
+	desc = "A bronze medal awarded for distinguished service. Whilst a great honor, this is the most basic award given. It is often awarded by a commanding officer to a member of their unit."
 
 /obj/item/clothing/accessory/medal/bronze_heart
-	name = "bronze heart medal"
-	desc = "A bronze heart-shaped medal awarded for sacrifice. It is often awarded posthumously or for severe injury in the line of duty."
+	name = "purple heart"
+	desc = "A purple heart awarded for sacrifice. It is often awarded posthumously or for severe injury in the line of duty."
 	icon_state = "bronze_heart"
 
 /obj/item/clothing/accessory/medal/engineer
@@ -193,12 +193,12 @@
 	custom_materials = list(/datum/material/silver=1000)
 
 /obj/item/clothing/accessory/medal/silver/valor
-	name = "medal of valor"
-	desc = "A silver medal awarded for acts of exceptional valor."
+	name = "medal of honor"
+	desc = "A silver medal awarded for acts of exceptional honor."
 
 /obj/item/clothing/accessory/medal/silver/security
-	name = "robust security award"
-	desc = "An award for distinguished combat. Often awarded to security staff."
+	name = "silver star medal"
+	desc = "An award for distinguished combat. Often awarded to elite units."
 
 /obj/item/clothing/accessory/medal/gold
 	name = "gold medal"
@@ -208,18 +208,18 @@
 	custom_materials = list(/datum/material/gold=1000)
 
 /obj/item/clothing/accessory/medal/gold/captain
-	name = "medal of competency"
-	desc = "A golden medal awarded exclusively to those promoted to a command role. It signifies the codified responsibilities of the commander to organization, and their undisputable authority over their staff."
+	name = "medal of commendation"
+	desc = "A golden medal awarded exclusively to those promoted to commissioned officer. It signifies the codified responsibilities of a CO to organization, and their undisputable authority over their unit."
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
 /obj/item/clothing/accessory/medal/gold/captain/family
-	name = "old medal"
+	name = "old commendation medal"
 	desc = "A rustic badge pure gold, has been through hell and back by the looks."
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10) //Pure gold
 	custom_materials = list(/datum/material/gold=2000)
 
 /obj/item/clothing/accessory/medal/gold/heroism
-	name = "medal of exceptional heroism"
+	name = "star of Sierra Madre"
 	desc = "An extremely rare golden medal awarded only by as the highest honor and as such, very few exist. This medal is almost never awarded to anybody."
 
 /obj/item/clothing/accessory/medal/plasma
@@ -237,7 +237,7 @@
 		qdel(src)
 
 /obj/item/clothing/accessory/medal/plasma/nobel_science
-	name = "nobel sciences award"
+	name = "medal of science"
 	desc = "A medal which represents significant contributions to the field of science or engineering."
 
 ////////////
@@ -288,14 +288,14 @@
 //////////////
 
 /obj/item/clothing/accessory/lawyers_badge
-	name = "attorney's badge"
-	desc = "Fills you with the conviction of JUSTICE. Lawyers tend to want to show it to everyone they meet."
+	name = "NCR Congressional ID"
+	desc = "A polished badge representing that the owner is a Congressman in the New California Republic House of Congress."
 	icon_state = "lawyerbadge"
 
 /obj/item/clothing/accessory/lawyers_badge/attack_self(mob/user)
 	if(prob(1))
-		user.say("The testimony contradicts the evidence!", forced = "attorney's badge")
-	user.visible_message("[user] shows [user.p_their()] attorney's badge.", "<span class='notice'>You show your attorney's badge.</span>")
+		user.say("The House of Congress disapproves!", forced = "Congressional ID")
+	user.visible_message("[user] shows [user.p_their()] Congressional ID.", span_notice("You show your Congressional ID."))
 
 /obj/item/clothing/accessory/lawyers_badge/on_uniform_equip(obj/item/clothing/under/U, user)
 	var/mob/living/L = user
@@ -336,13 +336,11 @@
 	desc = "A hunter's talisman, some say the old gods smile on those who wear it."
 	icon_state = "talisman"
 
-
 /obj/item/clothing/accessory/skullcodpiece
 	name = "skull codpiece"
 	desc = "A skull shaped ornament, intended to protect the important things in life."
 	icon_state = "skull"
 	above_suit = TRUE
-
 
 /obj/item/clothing/accessory/skullcodpiece/fake
 	name = "false codpiece"
@@ -500,6 +498,13 @@
 	item_color = "colonelrank"
 	minimize_when_attached = TRUE
 
+/obj/item/clothing/accessory/ncr/MAJ
+	name = "(O-4) Major rank pin"
+	desc = "An officer holding the rank of Major should wear this."
+	icon_state = "majorrank"
+	item_color = "majorrank"
+	minimize_when_attached = TRUE
+
 /obj/item/clothing/accessory/ncr/CPT
 	name = "(O-3) Captain rank pin"
 	desc = "An officer holding the rank of Captain should wear this."
@@ -521,20 +526,19 @@
 	item_color = "secondlieutenantrank"
 	minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/ncr/SGT
-	name = "(E-5) Sergeant rank pins"
-	desc = "A trooper holding the rank of Sergeant should wear this."
+/obj/item/clothing/accessory/ncr/SSGT
+	name = "(E-6) Staff Sergeant rank pins"
+	desc = "A Staff Sergeant should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/armband/engine/ncr
-	name = "Engineering Personnel armband (E-4 Engineer)"
-	desc = "An armband worn by NCR Engineers to display their rank and speciality. This one is orange with a reflective strip!"
-
-/obj/item/clothing/accessory/armband/med/ncr
-	name = "Medical Personnel armband (E-4 Medic)"
-	desc = "An armband worn by NCR Medics to display their rank and speciality. This one is white."
+/obj/item/clothing/accessory/ncr/SGT
+	name = "(E-5) Sergeant rank pins"
+	desc = "A Sergeant should wear this."
+	icon_state = "ncrenlisted"
+	item_color = "ncrenlisted"
+	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/armband/black
 	name = "Military Police armband"
@@ -549,16 +553,23 @@
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
 
+/obj/item/clothing/accessory/ncr/SPC
+	name = "(E-4) Specialist rank pins"
+	desc = "A Specialist should wear this."
+	icon_state = "ncrenlisted"
+	item_color = "ncrenlisted"
+	minimize_when_attached = TRUE
+
 /obj/item/clothing/accessory/ncr/TPR
 	name = "(E-3) Private First Class rank pins"
-	desc = "A trooper should wear this."
+	desc = "A PFC should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/ncr/REC
 	name = "(E-2) Private rank pins"
-	desc = "A conscript should wear this."
+	desc = "A Private should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE

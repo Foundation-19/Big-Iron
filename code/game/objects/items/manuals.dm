@@ -198,6 +198,103 @@
 				</body>
 				</html>
 			"}
+////////
+//COTC//
+////////
+
+/obj/item/book/manual/ritualbook
+	name = "Ritual Book"
+	icon_state = "the_book_3"
+	author = "High Priest Atlas"
+	title = "Ritual Book"
+	dat = {"<html>
+				<p><strong>THE RITUAL OF HEALING</strong></p>
+<p>A Supplicant enters the Garden, wounded, dying, or dead. The world has not been kind to them, but the Father will show mercy to them.</p>
+<p>A Supplicant&rsquo;s belongings are their own. They keep their rags, for they have not yet accepted the Father, nor he them. Those who have erred against the Church waive this right, their belongings forfeit.</p>
+<p>A Supplicant&rsquo;s wounds are tended, and payment must be rendered. The Father demands a price. The price is first to be paid in belongings. Caps, coins, trinkets and baubles, they must pay for the Mercy of the Father&rsquo;s Servants.</p>
+<p>A Supplicant cannot pay with their worldly belongings, and so the second mercy is offered. Inform the Garden, and all those who would hear, of their plight. Let any man step up, and pay their debts.</p>
+<p>A Supplicant cannot pay, and none will step forward to pay for them. They have been outcast by this world, with no possessions or friends to aid them. But the Father is merciful, and their appearance a divine gift. This wayward soul, without a penny or a friend, is welcomed into the Faith, to serve the Father in payment, forever.</p>
+<p>&nbsp;</p>
+<p><strong>THE NEOPHYTE VOWS</strong></p>
+<p>The Supplicant has been granted the Father&rsquo;s mercy, and must be made to say the words, and seal themselves to the Father forevermore. Should the Supplicant be unwilling, or the words said in deceit, the Listener is to instruct them, harshly, until they are ready.</p>
+<p>Supplicant: I swear my life to the Church, and bind my soul to the Father. I swear my undying service to the Church.</p>
+<p>Listener: The Church accepts your offering. The Father claims your life in service.</p>
+<p>Supplicant: I am but a humble vessel for the Father&rsquo;s mercy, a tool by which the Vineyard is allowed to grow. All my works are devoted to His cause.</p>
+<p>Listener: The Vineyard grows through broken soil, with your aid. The Father accepts your labor.</p>
+<p>Supplicant: I banish all worldly desires and pleasures, atomized in the cleansing fire of the Holy Flame. The Father&rsquo;s love washes over me, and I live only for Him.</p>
+<p>Listener: Be cleansed, and live your life anew for Him. Supplicant: I swear to be faithful to my Brothers and Sisters in the faith, to obey all commands, and to never betray the Faith&rsquo;s secrets. The Church is my family now, and the Unbeliever my enemy.</p>
+<p>Listener: We welcome you into our family. May the Father guide and protect you. May the Vineyard shelter you from the Unbeliever's Horde. May the Holy Flame purify and inspire you. The Listener must now apply the brand of the Church.</p>
+<p>&nbsp;</p>
+<p><strong>PRAYERS</strong></p>
+<p>Healing Prayer:</p>
+<p>May the Father&rsquo;s mercy wash over you, and mend your wounds. May the Vineyard&rsquo;s life flow through your veins, and fortify your blood. May the Holy Flame purify the wounds, and keep them clean of infection. Through the will of the Father, may you be healed. Amen.</p>
+<p>Ritual of Castigation:</p>
+<p>This ritual requires a Sinner, and a Teacher.</p>
+<p>Teacher: I channel the spirit of the Holy Flame through me. May it give me the strength to purify your sin, and cleanse you of corruption.</p>
+<p>The Teacher may now strike the Sinner until the punishment is complete.</p>
+<p>Battle Prayer:</p>
+<p>Father, we go to do battle in your name. Give us the strength to fight the Unbeliever&rsquo;s hordes, and to be victorious over them. Lend us the vitality of your Vineyard, let us be as certain in our cause as the roots of the great trees that grow within it. Lend us the might of the Holy Flame, that we may purify this world of your enemies. Grant us victory, and grant us the mercy of serving you in death, should we fall.</p>
+<p>Blessing:</p>
+<p>May the Father bless you, and bring you fortune and peace. May the Father be merciful, and grant you a long and happy life. May the Father protect you, and grant you safety and fortitude. In the name of the Father and the Holy Flame, we bless you.</p>
+				</html>
+			"}
+
+
+/obj/item/book/manual/thebook
+	name = "The Book"
+	icon_state = "the_book_2"
+	author = "High Priest Atlas"
+	title = "The Book"
+	dat = {"<html>
+				<p><strong>THE FIRST TESTAMENT: THE LIFE AND DEATH OF THE HOLY FATHER </strong></p>
+<p>And it is written that, in our time of need, the Holy Father did come to our aid. When His Holy Flame had purified this earth, and left naught but remnants, he did come to us. And he did say to us, his children, that he had come to make a better place. He had come to make us whole. And we, his children, listened.</p>
+<p>So it is written that the First Church, and the Last, was built by the Holy Father&rsquo;s children on this earth. And we did toil in the Holy Father&rsquo;s light, and it was good. We turned His garden, now sodden with weeds, into a Vineyard of Life, and the Holy Father spoke unto us &ldquo;You have done well, my children. Through you, I shall bring utopia to all who lie under the sun and below the earth.&rdquo; And we knew it to be true.</p>
+<p>Then came the devils, the unbelievers, the heretics. They came to the First Church, and they spat poison and treachery. Twisted were they, corrupted by the venomous words of the Arch Unbeliever. Their words were blasphemy, but we did welcome them with open arms, as we welcome all children of the Holy Father, and asked them to join us in Utopia. They spat at us, and slaughtered the children.</p>
+<p>The Holy Father&rsquo;s angels fought to save the children, but the hordes of the Unbeliever were unending, and they too fell beneath their twisted flesh. The Arch Unbeliever, having slaughtered all the Holy Father&rsquo;s children and angels, came to the Holy Father himself. The Holy Father saw what the unbelievers had done, and he wept. This world was not yet ready for the Utopia that was promised, he did say. And so the Holy Father returned to the place beyond, and the Arch Unbelievers dogs did rule the earth.</p>
+<p><strong>THE SECOND TESTAMENT: THE EXODUS </strong></p>
+<p>So it is written that the Holy Father left us, his surviving children. The Unbeliever had poisoned the sacred vineyard with the blood of the holy, and made a new Hell upon earth. So it is that we, the children that survived, departed the tainted lands in search of new Truth.</p>
+<p>For 900 days and 900 nights, the children traveled the tainted Vineyard, searching for salvation beyond. On the last night, the Holy Father spoke to them thus: &ldquo;You have traveled long and far, my children, and you have found salvation. These lands are yet untouched by the Unbelievers' corruption, and they shall be the foundations for a new Church, a new Vineyard. Go out, and bring my word to all the children of my world.&rdquo; And the children did know that the Holy Father&rsquo;s word was good. And so, the New Church was born.</p>
+<p>The people of the new Vineyard were low and miserable. Untouched by the Holy Father&rsquo;s light, they were naught but insects, crawling in the muck of creation. The children felt the Father&rsquo;s pity for them, and they did bring them the Father&rsquo;s blessings. The children vowed to tend their wounds, and the people of the Vineyard vowed to help the children create their Church. So was the pact sealed</p>
+<p>So it is that the children of the Father and the children of the Vineyard did mingle, and become one. The new children served their Father and his servitors diligently, and did ever work for the good of life. Ever vigilant for the unbelievers and heretics that would corrupt their sacred work, they did toil in the Father&rsquo;s name, and for the Father&rsquo;s dream of Unity.</p>
+<p><strong>THE THIRD TESTAMENT: ARMAGEDDON AND UNITY</strong></p>
+<p>And it is written that one day, the Holy Father will return to his children on earth. His Angels shall descend from the heavens, and they shall destroy the Unbeliever&rsquo;s works, and bring the children into the Utopia the Holy Father has promised them.</p>
+<p>It shall begin with a sign from the Holy Father. He shall bestow a great gift to the children, a gift of the sacred unguents that once brought peace to the Vineyard. His children will know this gift to be his, and they shall begin the return of the Angels to earth.</p>
+<p>When the Angels return, the Father shall bring holy vengeance upon those who destroyed his children. It is written that the Vineyard shall run red with the blood of the Unbelievers, and holy fire shall consume all of the Unbelievers work. Purifying flames shall cleanse the Vineyard of old, and all shall know that the Holy Father is their lord.</p>
+<p>When the Vineyard has been cleansed of Unbelievers, the Children shall return to the First Church, and shall create the Utopia the Father promised. All the world shall join the Father&rsquo;s children, and we shall all march together into sacred Unity.</p>
+				</html>
+			"}
+
+/obj/item/book/manual/thebook/purple
+	name = "The Purple Book"
+	icon_state = "the_book"
+	author = "High Priest Atlas"
+	title = "The Purple Book"
+	dat = {"<html>
+				<p><strong>THE PURPLE BOOK </strong></p>
+				<p><strong>FOR THE HIGH PRIEST'S EYES ONLY </strong></p>
+<p><span style="font-weight: 400;">Greetings, inheritor of the Faith. This is the true history of the Church and it&rsquo;s Children, which until now has been concealed. I apologize for this deception, but I am sure you will realize the necessity of it, given the contents of these pages. It was as critical that you be kept in the dark then as it is critical that you know the true purpose now.&nbsp;</span></p>
+<p><span style="font-weight: 400;">We were not always known merely as &ldquo;the Church.&rdquo; Once, in the distant land the scriptures speak of, back when the Angels walked the Garden, we lived in the land of California. We were, as the scriptures say, in paradise there, and the Father, or as we called him, the Master, ruled us with a benevolent hand. That was until the Unbeliever, or as he is known in California, the Vault Dweller, destroyed our Master and drove us out.&nbsp;</span></p>
+<p><span style="font-weight: 400;">Only a few of us true faithful survived the destruction of the Cathedral, and fewer still survived the journey ahead. Fleeing from the murderous Unbelievers, we fled to the East for nearly a generation. It was hard, and few survived the journey. When we found this town, with its primitive people hiding within the ruins of an old world church, we knew we had found salvation.</span></p>
+<p><span style="font-weight: 400;">It was not difficult to convert them to our ways, but we kept many things hidden. The Church we founded was not like the Cathedral of old. The Master could no longer guide us, and we lacked resources. Furthermore, it grew ever more difficult to find willing converts to the cause, even when we offered free aid. It is for this reason that we grew the system of medical debt conversion, a system which I am sure you are well acquainted with. It has served us well over the years, and I trust you will preserve it until the time comes.</span></p>
+<p><span style="font-weight: 400;">What is most important is that you understand why we made the journey, and how the Master&rsquo;s death can be avenged. The Angels must be restored, and to do that, we must find the Sacred Elixir which the Master once kept in abundance. Moreover, we must take revenge upon the Master&rsquo;s killers. The Unbelievers must be made to pay for what they did to us, to him. One day, they will come for you.</span></p>
+<p><span style="font-weight: 400;">The following organizations are and were agents of the Arch Unbeliever, and must be destroyed at any cost.</span></p>
+<p><span style="font-weight: 400;">The so called &ldquo;Brotherhood of Steel&rdquo;</span></p>
+<p><span style="font-weight: 400;">The so called &ldquo;Followers of the Apocalypse&rdquo;</span></p>
+<p><span style="font-weight: 400;">The fledgeling &ldquo;New California Republic&rdquo;, which we have heard rumors of even here.</span></p>
+<p><span style="font-weight: 400;">Any man who bears the mark of the accursed Vault 13.</span><span style="font-weight: 400;"><br /><br /></span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">Father, guide your children through your Vineyard.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">Father, guide us down the path to Unity.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">Father, have mercy upon us</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">Father, have no mercy for the Unbelievers.</span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="font-weight: 400;">Father,&nbsp; who brought forth the Angels, protect us.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">Father,&nbsp; who saved us from destruction, protect us.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">Father, who shielded us from barbarism, protect us.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">Father, who showed us the way to Unity, protect us.</span></p>
+				</html>
+			"}
+
+//////////////////
 
 /obj/item/book/manual/nuka_recipes
 	name = "Nuka-Cola Recipes"

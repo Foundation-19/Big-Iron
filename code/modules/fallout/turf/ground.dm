@@ -57,10 +57,10 @@
 	. = ..()
 	flags_2 |= GLOBAL_LIGHT_TURF_2
 
-#define GRASS_SPONTANEOUS_GROUND 		2
-#define GRASS_WEIGHT_GROUND			4
-#define LUSH_PLANT_SPAWN_LIST_GROUND list(/obj/structure/flora/grass/wasteland = 10, /obj/structure/flora/wasteplant/wild_broc = 7, /obj/structure/flora/wasteplant/wild_mesquite = 4, /obj/structure/flora/wasteplant/wild_feracactus = 5, /obj/structure/flora/wasteplant/wild_punga = 5, /obj/structure/flora/wasteplant/wild_coyote = 5, /obj/structure/flora/wasteplant/wild_tato = 5, /obj/structure/flora/wasteplant/wild_yucca = 5, /obj/structure/flora/wasteplant/wild_mutfruit = 5, /obj/structure/flora/wasteplant/wild_prickly = 5, /obj/structure/flora/wasteplant/wild_datura = 5, /obj/structure/flora/wasteplant/wild_buffalogourd = 5, /obj/structure/flora/wasteplant/wild_pinyon = 3, /obj/structure/flora/wasteplant/wild_xander = 5, /obj/structure/flora/wasteplant/wild_agave = 5, /obj/structure/flora/tree/joshua = 3, /obj/structure/flora/tree/cactus = 2, /obj/structure/flora/tree/wasteland = 2)
-#define DESOLATE_PLANT_SPAWN_LIST_GROUND list(/obj/structure/flora/grass/wasteland = 1)
+#define GRASS_SPONTANEOUS			2
+#define GRASS_WEIGHT				4
+#define LUSH_PLANT_SPAWN_LIST		list(/obj/structure/flora/grass/wasteland = 10, /obj/structure/flora/wasteplant/wild_broc = 7, /obj/structure/flora/wasteplant/wild_horsenettle = 6, /obj/structure/flora/wasteplant/wild_mesquite = 4, /obj/structure/flora/wasteplant/wild_feracactus = 5, /obj/structure/flora/wasteplant/wild_punga = 5, /obj/structure/flora/wasteplant/wild_coyote = 5, /obj/structure/flora/wasteplant/wild_tato = 5, /obj/structure/flora/wasteplant/wild_yucca = 5, /obj/structure/flora/wasteplant/wild_mutfruit = 5, /obj/structure/flora/wasteplant/wild_prickly = 5, /obj/structure/flora/wasteplant/wild_datura = 5, /obj/structure/flora/wasteplant/wild_buffalogourd = 5, /obj/structure/flora/wasteplant/wild_pinyon = 3, /obj/structure/flora/wasteplant/wild_xander = 5, /obj/structure/flora/wasteplant/wild_agave = 5, /obj/structure/flora/tree/joshua = 3, /obj/structure/flora/tree/cactus = 2, /obj/structure/flora/tree/wasteland = 2)
+#define DESOLATE_PLANT_SPAWN_LIST	list(/obj/structure/flora/grass/wasteland = 1)
 
 /turf/open/indestructible/ground/outside/dirthole
 	name = "Dirt hole"
@@ -91,6 +91,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 
 /turf/open/indestructible/ground/outside/savannah/center
 	icon_state = "savannahcenter"
@@ -142,6 +143,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 	var/dug = FALSE				//FALSE = has not yet been dug, TRUE = has already been dug
 	var/pit_sand = 1
 	var/storedindex = 0			//amount of stored items
@@ -168,8 +170,9 @@
 						/obj/item/stack/crafting/metalparts/five = 30,
 						)
 	footstep = FOOTSTEP_LOOSE_SAND
-	barefootstep = FOOTSTEP_LOOSE_SAND
+	barefootstep = FOOTSTEP_LOOSE_SAND_BAREFOOT
 	clawfootstep = FOOTSTEP_LOOSE_SAND
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 
 /turf/open/indestructible/ground/outside/desert/sonora/coarse
 	icon_state = "desertcoarse"
@@ -186,8 +189,7 @@
 /turf/open/indestructible/ground/outside/desert/Initialize()
 	. = ..()
 	if(prob(2))
-		var/obj/derp = pickweight(loots)
-		salvage = new derp()
+		salvage = pickweight(loots)
 	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
 		plantGrass()
 	if(icon_state != "wasteland")
@@ -232,8 +234,8 @@
 	var/randPlant = null
 
 	//spontaneously spawn grass
-	if(Plantforce || prob(GRASS_SPONTANEOUS_GROUND))
-		randPlant = pickweight(LUSH_PLANT_SPAWN_LIST_GROUND) //Create a new grass object at this location, and assign var
+	if(Plantforce || prob(GRASS_SPONTANEOUS))
+		randPlant = pickweight(LUSH_PLANT_SPAWN_LIST) //Create a new grass object at this location, and assign var
 		turfPlant = new randPlant(src)
 		. = TRUE //in case we ever need this to return if we spawned
 		return .
@@ -248,9 +250,9 @@
 
 		//If surrounded on 5+ sides, pick from lush
 		if(Weight == (5 * GRASS_WEIGHT))
-			randPlant = pickweight(LUSH_PLANT_SPAWN_LIST_GROUND)
+			randPlant = pickweight(LUSH_PLANT_SPAWN_LIST)
 		else
-			randPlant = pickweight(DESOLATE_PLANT_SPAWN_LIST_GROUND)
+			randPlant = pickweight(DESOLATE_PLANT_SPAWN_LIST)
 		turfPlant = new randPlant(src)
 		. = TRUE
 
@@ -275,6 +277,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 
 /turf/open/indestructible/ground/outside/dirt/MakeSlippery(wet_setting, min_wet_time, wet_time_to_add, max_wet_time, permanent)
 	return //same thing here, dirt absorbs the liquid... :(
@@ -301,6 +304,7 @@
 	icon = 'icons/fallout/turfs/asphalt.dmi'
 	footstep = FOOTSTEP_ROAD
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 //	step_sounds = list("human" = "erikafootsteps")
 
 /turf/open/indestructible/ground/outside/road_s
@@ -315,6 +319,7 @@
 	icon = 'icons/fallout/turfs/sidewalk.dmi'
 	footstep = FOOTSTEP_ROAD
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 //	step_sounds = list("human" = "erikafootsteps")
 
 /turf/open/indestructible/ground/outside/sidewalk_s
@@ -330,6 +335,7 @@
 	icon = 'icons/fallout/turfs/ground.dmi'
 	footstep = FOOTSTEP_ROAD
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 //	step_sounds = list("human" = "erikafootsteps")
 
 /turf/open/indestructible/ground/outside/wood
@@ -363,6 +369,7 @@
 	footstep = FOOTSTEP_WATER
 	barefootstep = FOOTSTEP_WATER
 	clawfootstep = FOOTSTEP_WATER
+	gallopfootstep = FOOTSTEP_WATER
 	heavyfootstep = FOOTSTEP_WATER
 
 /turf/open/indestructible/ground/outside/water/Initialize()
@@ -402,6 +409,8 @@
 	footstep = FOOTSTEP_SNOW
 	barefootstep = FOOTSTEP_SNOW
 	clawfootstep = FOOTSTEP_SNOW
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
+
 
 /turf/open/indestructible/ground/outside/ruins/ex_act(severity, target)
 	contents_explosion(severity, target)
@@ -527,6 +536,7 @@
 	icon = 'icons/fallout/turfs/sidewalkdirt.dmi'
 	footstep = FOOTSTEP_ROAD
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 //	step_sounds = list("human" = "erikafootsteps")
 
 //Obsolete but used in yucky Pahrump
@@ -534,6 +544,10 @@
 	name = "gravel"
 	icon_state = "graveldirt"
 	icon = 'icons/fallout/turfs/ground.dmi'
+	footstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL_BAREFOOT
+	clawfootstep = FOOTSTEP_GRAVEL
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 //	step_sounds = list("human" = "erikafootsteps")
 
 // New gravel, organized. Use directions for control. - Pebbles
@@ -542,8 +556,9 @@
 	icon_state = "gravel"
 	icon = 'icons/fallout/turfs/gravel.dmi'
 	footstep = FOOTSTEP_GRAVEL
-	barefootstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL_BAREFOOT
 	clawfootstep = FOOTSTEP_GRAVEL
+	gallopfootstep = FOOTSTEP_GENERIC_GALLOP
 
 /turf/open/indestructible/ground/outside/gravel/alt
 	name = "gravel"

@@ -12,7 +12,7 @@
 	var/obj/item/gun/ballistic/m2flamethrower/gun
 	var/armed = 0 //whether the gun is attached, 0 is attached, 1 is the gun is wielded.
 	var/overheat = 0
-	var/overheat_max = 12
+	var/overheat_max = 6
 	var/heat_diffusion = 1
 
 /obj/item/m2flamethrowertank/Initialize()
@@ -20,7 +20,8 @@
 	gun = new(src)
 	START_PROCESSING(SSobj, src)
 
-/obj/item/m2flamethrower/Destroy()
+/obj/item/m2flamethrowertank/Destroy()
+	QDEL_NULL(gun)
 	STOP_PROCESSING(SSobj, src)
 	return ..()
 
@@ -97,14 +98,14 @@
 	icon_state = "m2_flamethrower_on"
 	item_state = "m2flamethrower"
 	flags_1 = CONDUCT_1
-	slowdown = 0.3
+	slowdown = 0.4
 	slot_flags = null
 	w_class = WEIGHT_CLASS_HUGE
 	custom_materials = null
 	burst_size = 2
 	burst_shot_delay = 1
 	//automatic = 0
-	fire_delay = 2
+	fire_delay = 5
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/weapons/flamethrower.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/m2flamethrower
@@ -118,6 +119,10 @@
 	else
 		return INITIALIZE_HINT_QDEL //No pack, no gun
 
+	return ..()
+
+/obj/item/gun/ballistic/m2flamethrower/Destroy()
+	ammo_pack = null
 	return ..()
 
 /obj/item/gun/ballistic/m2flamethrower/attack_self(mob/living/user)

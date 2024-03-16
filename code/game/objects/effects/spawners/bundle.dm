@@ -121,8 +121,11 @@
 /obj/effect/spawner/bundle/costume/commie
 	name = "commie costume spawner"
 	items = list(
-		/obj/item/clothing/under/costume/soviet,
-		/obj/item/clothing/head/ushanka)
+		/obj/item/clothing/under/f13/chinese,
+		/obj/item/clothing/head/f13/chinese,
+		/obj/item/melee/onehanded/chinesesword,
+		/obj/item/clothing/shoes/jackboots,
+		)
 
 /obj/effect/spawner/bundle/costume/imperium_monk
 	name = "imperium monk costume spawner"
@@ -169,13 +172,6 @@
 			for(var/path in items)
 				new path(LC)
 	return INITIALIZE_HINT_QDEL
-
-/obj/effect/spawner/bundle/crate/mosin
-	name = "Mosin-Nagant spawner"
-	items = list(
-		/obj/item/gun/ballistic/rifle/mosin,
-		/obj/item/ammo_box/a762
-	)
 
 /obj/effect/spawner/bundle/crate/surplusrifle
 	name = "surplus rifle spawner"

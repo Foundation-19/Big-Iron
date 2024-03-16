@@ -1,4 +1,4 @@
-/datum/surgery/gender_reassignment_lower
+/*/datum/surgery/gender_reassignment_lower
 	name = "gender reassignment - lower surgery"
 	species = list(/mob/living/carbon/human)
 	possible_locs = list(BODY_ZONE_PRECISE_GROIN)

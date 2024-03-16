@@ -43,7 +43,7 @@
 /obj/item/grenade/f13/he_grenade
 	name = "high explosive grenade"
 	desc = "A prewar military-grade grenade with short fuse. Unlike its cousin, the frag grenade, it is worth using against armor."
-	icon_state = "he_incendinary"
+	icon_state = "high_explosive"
 	ex_dev = 1
 	ex_heavy = 3
 	ex_light = 4

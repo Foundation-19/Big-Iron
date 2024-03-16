@@ -82,36 +82,36 @@
 	key_third_person = "shrugs"
 	message = "shrugs."
 
-/datum/emote/living/carbon/human/wag
-	key = "wag"
-	key_third_person = "wags"
-	message = "wags their tail."
+// /datum/emote/living/carbon/human/wag
+//	key = "wag"
+//	key_third_person = "wags"
+//	message = "wags their tail."
 
-/datum/emote/living/carbon/human/wag/run_emote(mob/user, params)
-	. = ..()
-	if(!.)
-		return
-	var/mob/living/carbon/human/H = user
-	if(!istype(H) || !H.dna || !H.dna.species || !H.dna.species.can_wag_tail(H))
-		return
-	if(!H.dna.species.is_wagging_tail())
-		H.dna.species.start_wagging_tail(H)
-	else
-		H.dna.species.stop_wagging_tail(H)
+// /datum/emote/living/carbon/human/wag/run_emote(mob/user, params)
+//	. = ..()
+//	if(!.)
+//		return
+//	var/mob/living/carbon/human/H = user
+//	if(!istype(H) || !H.dna || !H.dna.species || !H.dna.species.can_wag_tail(H))
+//		return
+//	if(!H.dna.species.is_wagging_tail())
+//		H.dna.species.start_wagging_tail(H)
+//	else
+//		H.dna.species.stop_wagging_tail(H)
 
-/datum/emote/living/carbon/human/wag/can_run_emote(mob/user, status_check = TRUE)
-	if(!..())
-		return FALSE
-	var/mob/living/carbon/human/H = user
-	return H.dna && H.dna.species && H.dna.species.can_wag_tail(user)
+// /datum/emote/living/carbon/human/wag/can_run_emote(mob/user, status_check = TRUE)
+//	if(!..())
+//		return FALSE
+//	var/mob/living/carbon/human/H = user
+//	return H.dna && H.dna.species && H.dna.species.can_wag_tail(user)
 
-/datum/emote/living/carbon/human/wag/select_message_type(mob/user)
-	. = ..()
-	var/mob/living/carbon/human/H = user
-	if(!H.dna || !H.dna.species)
-		return
-	if(H.dna.species.is_wagging_tail())
-		. = null
+// /datum/emote/living/carbon/human/wag/select_message_type(mob/user)
+//	. = ..()
+//	var/mob/living/carbon/human/H = user
+//	if(!H.dna || !H.dna.species)
+//		return
+//	if(H.dna.species.is_wagging_tail())
+//		. = null
 
 /datum/emote/living/carbon/human/wing
 	key = "wing"

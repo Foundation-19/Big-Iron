@@ -472,8 +472,8 @@
 	..()
 
 /datum/reagent/consumable/cavefungusjuice
-	name = "Cave Fungus Juice"
-	description = "Juiced cave fungus fruiting bodies."
+	name = "fermented cave fungus pulp"
+	description = "Goop made from fungus fruiting bodies, has a strong odor."
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	color = "#274E13"
 	taste_description = "nuts"

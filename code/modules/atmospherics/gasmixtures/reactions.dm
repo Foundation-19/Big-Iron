@@ -136,7 +136,7 @@
 
 /proc/radiation_burn(turf/open/location, rad_power)
 	if(istype(location) && prob(10))
-		radiation_pulse(location, rad_power)
+		radiation_pulse(location, 0)
 
 /datum/gas_reaction/tritfire/react(datum/gas_mixture/air, datum/holder)
 	var/energy_released = 0
@@ -157,8 +157,8 @@
 
 	if(burned_fuel)
 		energy_released += (FIRE_HYDROGEN_ENERGY_RELEASED * burned_fuel)
-		if(location && prob(10) && burned_fuel > TRITIUM_MINIMUM_RADIATION_ENERGY) //woah there let's not crash the server
-			radiation_pulse(location, energy_released/TRITIUM_BURN_RADIOACTIVITY_FACTOR)
+//		if(location && prob(10) && burned_fuel > TRITIUM_MINIMUM_RADIATION_ENERGY) //woah there let's not crash the server
+//			radiation_pulse(location, energy_released/TRITIUM_BURN_RADIOACTIVITY_FACTOR)
 
 		air.adjust_moles(GAS_H2O, burned_fuel/TRITIUM_BURN_OXY_FACTOR)
 
@@ -458,8 +458,8 @@
 			var/particle_chance = ((PARTICLE_CHANCE_CONSTANT)/(reaction_energy-PARTICLE_CHANCE_CONSTANT)) + 1//Asymptopically approaches 100% as the energy of the reaction goes up.
 			if(prob(PERCENT(particle_chance)))
 				location.fire_nuclear_particle()
-			var/rad_power = max((FUSION_RAD_COEFFICIENT/instability) + FUSION_RAD_MAX,0)
-			radiation_pulse(location,rad_power)
+//			var/rad_power = max((FUSION_RAD_COEFFICIENT/instability) + FUSION_RAD_MAX,0)
+	//		radiation_pulse(location,rad_power)
 
 		var/new_heat_capacity = air.heat_capacity()
 		if(new_heat_capacity > MINIMUM_HEAT_CAPACITY)
@@ -680,7 +680,7 @@
 		return list("success" = FALSE, "message" = "Hyper-nob formation isn't removing the right amount of heat! Should be 23,000,000,000, is instead [G.thermal_energy()]")
 	return ..()
 
-
+/*
 /datum/gas_reaction/miaster	//dry heat sterilization: clears out pathogens in the air
 	priority = -10 //after all the heating from fires etc. is done
 	name = "Dry Heat Sterilization"
@@ -722,7 +722,7 @@
 	if(result != NO_REACTION)
 		return list("success" = FALSE, "message" = "Miasma sterilization not stopping due to water vapor correctly!")
 	return ..()
-
+*/
 /datum/gas_reaction/nitric_oxide
 	priority = -5
 	name = "Nitric oxide decomposition"

@@ -226,7 +226,7 @@
 
 /obj/item/gun/energy/laser/wattz/recharger
 	name = "Recharger Pistol"
-	desc = "A recharger pistol manufactured by the Followers of the Apocalpyse. As the name implied, it charges its capacitor banks over time using radioactive decay."
+	desc = "A recharger pistol manufactured by the Followers of the Apocalpyse. As the name implies, it charges its capacitor banks over time using radioactive decay."
 	can_remove = 0
 	can_charge = 0
 	selfcharge = 1
@@ -403,7 +403,7 @@
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 1
+	fire_delay = 0.5
 	slowdown = 0.2
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
@@ -415,6 +415,24 @@
 	desc = "A sturdy pre-war laser rifle. Emits beams of concentrated light to kill targets. This one has been jury-rigged against common sense to dump more power into its shots."
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan/focused)
 	fire_delay = 5
+
+//worse than the recharger pistol as per FNV, hobo-tier
+//it isnt the same as the one from FNV, sprite is different
+//8 shots, bulky, but infinite ammo, good for mob killing
+/obj/item/gun/energy/laser/rechargerrifle
+	name = "recharger rifle"
+	desc = "A locally produced copy of the recharger rifle. It's a bulky first-generation weapon designed to replenish its energy using radioactive decay."
+	icon = 'icons/fallout/objects/guns/longguns.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon_state = "rechargerrifle"
+	item_state = "rechargerrifle"
+	icon_prefix = "rechargerrifle"
+	can_remove = 0
+	can_charge = 0
+	selfcharge = 1
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/rechargerrifle/hitscan)
+	cell_type = /obj/item/stock_parts/cell/ammo/breeder/small
 
 //Ultracite Laser rifle
 /obj/item/gun/energy/laser/ultra_rifle
@@ -437,7 +455,7 @@
 	desc = "A modified AER9 equipped with a refraction kit that divides the laser shot into three separate beams. While powerful, it has a reputation for friendly fire."
 	icon_state = "tribeam"
 	item_state = "laser-rifle9"
-	fire_delay = 3
+	fire_delay = 5
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter/tribeam/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	equipsound = 'sound/f13weapons/equipsounds/tribeamequip.ogg'
@@ -451,7 +469,7 @@
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 1.5
+	fire_delay = 0.75
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
 	scope_y_offset = 20
@@ -466,7 +484,7 @@
 	item_state = "laser-rifle9"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer14/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	fire_delay = 1.5
+	fire_delay = 0.75
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
 	scope_y_offset = 20

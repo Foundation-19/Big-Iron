@@ -86,7 +86,7 @@
 #define ACCESS_NCR			121 //general NCR access
 #define ACCESS_NCR_ARMORY   122 //NCR armory access
 
-#define ACCESS_DEN			87	
+#define ACCESS_DEN			87
 /*general den access. This one has the same number as the line it's on, the rest should
 also be like that but I can't be arsed to go back and change them all*/
 
@@ -101,6 +101,12 @@ also be like that but I can't be arsed to go back and change them all*/
 #define ACCESS_NCROFFDUTY	132 //general NCR access
 #define ACCESS_CLINIC		133 //Oasis clinic access
 #define ACCESS_ENCLAVE 		134 //enclave minibunker
+
+#define ACCESS_COTC			145 //General Church
+#define ACCESS_COTC_ARMORY	146 //Church Armory
+#define ACCESS_COTC_SECRET	147 //Church Special Rooms
+
+#define ACCESS_MILITIA 148 //militia HQ
 
 	// DR2 VTCC Access, names should be self-explanatory
 
@@ -137,7 +143,7 @@ also be like that but I can't be arsed to go back and change them all*/
 
 #define ACCESS_NCR_COMMAND 253
 #define ACCESS_LEGION_COMMAND 254
-#define ACCESS_BROTHERHOOD_COMMAND 255 
+#define ACCESS_BROTHERHOOD_COMMAND 255
 
 	//NCR Clearance Level Access
 #define ACCESS_NCR1 256

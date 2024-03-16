@@ -38,3 +38,12 @@
 /obj/item/paper/pamphlet/ComponentInitialize()
 	. = ..()
 	AddElement(/datum/element/update_icon_blocker)
+
+/obj/item/paper/pamphlet/church1
+	name = "Let Faith Be Your Shield"
+	icon_state = "pamphlet1"
+	info = "<p><strong>LET FAITH BE YOUR SHIELD</strong></p> <p>Are you disillusioned with life? Starving, destitute? Do you desire community, brotherhood, and a structured life? No matter your background, past, or social status, the Church will accept you into the fold, free of charge. If you are suffering from indebtedness, the Church will even pay off any debts lower than 500 caps when you join the clergy, and will forgive any medical debt you may owe to the Faith itself. Let the Father guide you into the path of Unity! Speak to a Servitor today.</p>"
+/obj/item/paper/pamphlet/church2
+	name = "Hymn of the Faith"
+	icon_state = "pamphlet2"
+	info = "<p>Father, guide your children through your Vineyard.<br />Father, guide us down the path to Unity.<br />Father, have mercy upon us<br />Father, have no mercy for the Unbelievers.</p><p>Father, who brought forth the Angels, protect us.<br />Father, who saved us from destruction, protect us.<br />Father, who shielded us from barbarism, protect us.<br />Father, who showed us the way to Unity, protect us.</p>"

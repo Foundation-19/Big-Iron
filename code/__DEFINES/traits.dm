@@ -226,6 +226,7 @@
 #define TRAIT_PERFECT_ATTACKER	"perfect_attacker"
 #define TRAIT_BUFFOUT_BUFF		"buffout_buff"
 #define TRAIT_UNARMED_WEAPON	"unarmed_weapon"
+#define TRAIT_SIGN_LANG 		"sign_language" //Galactic Common Sign Language
 
 // mobility flag traits
 // IN THE FUTURE, IT WOULD BE NICE TO DO SOMETHING SIMILAR TO https://github.com/tgstation/tgstation/pull/48923/files (ofcourse not nearly the same because I have my.. thoughts on it)
@@ -355,6 +356,7 @@
 #define ANTI_DROP_IMPLANT_TRAIT "anti-drop-implant"
 #define MARTIAL_ARTIST_TRAIT "martial_artist"
 #define BERSERKER_TRAIT "berserker"
+#define WRESTLING_TRAIT "wrestling"
 #define SLEEPING_CARP_TRAIT "sleeping_carp"
 #define RISING_BASS_TRAIT "rising_bass"
 #define ABDUCTOR_ANTAGONIST "abductor-antagonist"
@@ -365,10 +367,10 @@
 #define MEGAFAUNA_TRAIT "megafauna"
 #define DEATHSQUAD_TRAIT "deathsquad"
 #define ROBOT_TRAIT "robot"
+#define TRAIT_ENCLAVE_REMNANT "enclave_remnant" // for enclave remnant specific functions
 /// This trait is added by the active directional block system.
 #define ACTIVE_BLOCK_TRAIT				"active_block"
 /// This trait is added by the parry system.
 #define ACTIVE_PARRY_TRAIT				"active_parry"
 #define STICKY_NODROP "sticky-nodrop" //sticky nodrop sounds like a bad soundcloud rapper's name
 #define TRAIT_SPACEWALK "spacewalk"
-#define TRAIT_FEMALE "female"

@@ -12,60 +12,105 @@
 /obj/structure/fermenting_barrel
 	name = "wooden barrel"
 	desc = "A large wooden barrel. You can ferment fruits and such inside it, or just use it to hold liquid."
-	icon = 'icons/fallout/farming/farming_structures.dmi'
+	icon = 'modular_BD2/general/icons/barrel.dmi'
 	icon_state = "barrel"
 	density = TRUE
 	anchored = FALSE
 	pressure_resistance = 2 * ONE_ATMOSPHERE
 	max_integrity = 300
 	proj_pass_rate = 70
-	pass_flags = LETPASSTHROW
 	pass_flags_self = PASSTABLE | LETPASSTHROW
 	climbable = TRUE
 	var/open = FALSE
 	var/speed_multiplier = 4 //How fast it distills. Defaults to 100% (1.0). Lower is better.
 
+	var/broc = FALSE // Overlay var
+	var/xander = FALSE // Overlay var
+	var/cactus = FALSE // Overlay var
+
 /obj/structure/fermenting_barrel/Initialize()
-	create_reagents(300, DRAINABLE | AMOUNT_VISIBLE) //Bluespace beakers, but without the portability or efficiency in circuits.
+	create_reagents(500, DRAINABLE | AMOUNT_VISIBLE) //Bluespace beakers, but without the portability or efficiency in circuits.
+	update_icon()
 	. = ..()
+
+/obj/structure/fermenting_barrel/update_overlays()
+	. = ..()
+	if(broc)
+		. += "broc"
+	if(xander)
+		. += "xander"
+	if(cactus)
+		. += "cactus"
+
+	if(reagents.total_volume && open)
+		var/mutable_appearance/filling = mutable_appearance('modular_BD2/general/icons/barrel.dmi', "[icon_state]10", color = mix_color_from_reagents(reagents.reagent_list))
+		switch (reagents.total_volume)
+			if (0 to 40)
+				filling.icon_state = "[icon_state]-10"
+			if (40 to 70)
+				filling.icon_state = "[icon_state]10"
+			if (70 to 140)
+				filling.icon_state = "[icon_state]25"
+			if (140 to 250)
+				filling.icon_state = "[icon_state]50"
+			if (251 to 400)
+				filling.icon_state = "[icon_state]75"
+			if (409 to 500)
+				filling.icon_state = "[icon_state]100"
+		. += filling
 
 /obj/structure/fermenting_barrel/examine(mob/user)
 	. = ..()
-	. += "<span class='notice'>It is currently [open?"open, letting you pour liquids in.":"closed, letting you draw liquids from the tap."]</span>"
+	. += span_notice("It is currently [open?"open, letting you pour liquids in.":"closed, letting you draw liquids from the tap."]")
 
-/obj/structure/fermenting_barrel/proc/makeWine(obj/item/reagent_containers/food/snacks/grown/fruit)
-	var/amount = fruit.seed.potency / 4
-	if(fruit.distill_reagent)
-		reagents.add_reagent(fruit.distill_reagent, amount)
-	else
-		var/data = list()
-		data["names"] = list("[initial(fruit.name)]" = 1)
-		data["color"] = fruit.filling_color
-		data["boozepwr"] = fruit.wine_power
-		if(fruit.wine_flavor)
-			data["tastes"] = list(fruit.wine_flavor = 1)
+/obj/structure/fermenting_barrel/proc/makeWine(list/obj/item/reagent_containers/food/snacks/grown/fruits)
+	for(var/obj/item/reagent_containers/food/snacks/grown/fruit in fruits)
+		var/amount = fruit.seed.potency / 4
+		if(fruit.distill_reagent)
+			reagents.add_reagent(fruit.distill_reagent, amount)
 		else
-			data["tastes"] = list(fruit.tastes[1] = 1)
-		reagents.add_reagent(/datum/reagent/consumable/ethanol/fruit_wine, amount, data)
-	qdel(fruit)
+			var/data = list()
+			data["names"] = list("[initial(fruit.name)]" = 1)
+			data["color"] = fruit.filling_color
+			data["boozepwr"] = fruit.wine_power
+			if(fruit.wine_flavor)
+				data["tastes"] = list(fruit.wine_flavor = 1)
+			else
+				data["tastes"] = list(fruit.tastes[1] = 1)
+			reagents.add_reagent(/datum/reagent/consumable/ethanol/fruit_wine, amount, data)
+		qdel(fruit)
+		update_icon() // new
 	playsound(src, 'sound/effects/bubbles.ogg', 50, TRUE)
 
 /obj/structure/fermenting_barrel/attackby(obj/item/I, mob/user, params)
 	var/obj/item/reagent_containers/food/snacks/grown/fruit = I
 	if(istype(fruit))
 		if(!fruit.can_distill)
-			to_chat(user, "<span class='warning'>You can't distill this into anything...</span>")
+			to_chat(user, span_warning("You can't ferment this into anything..."))
 			return TRUE
 		else if(!user.transferItemToLoc(I,src))
-			to_chat(user, "<span class='warning'>[I] is stuck to your hand!</span>")
+			to_chat(user, span_warning("[I] is stuck to your hand!"))
 			return TRUE
-		to_chat(user, "<span class='notice'>You place [I] into [src] to start the fermentation process.</span>")
-		addtimer(CALLBACK(src, .proc/makeWine, fruit), rand(80, 120) * speed_multiplier)
+		to_chat(user, span_notice("You place [I] into [src] to start the fermentation process."))
+		addtimer(CALLBACK(src, .proc/makeWine, list(fruit)), rand(8 SECONDS, 12 SECONDS) * speed_multiplier)
 		return TRUE
-	var/obj/item/W = I
-	if(W)
-		if(W.is_refillable())
-			return FALSE //so we can refill them via their afterattack.
+	else if(SEND_SIGNAL(I, COMSIG_CONTAINS_STORAGE) && do_after(user, 2 SECONDS, target = src))
+		var/list/storage_contents = list()
+		SEND_SIGNAL(I, COMSIG_TRY_STORAGE_RETURN_INVENTORY, storage_contents)
+		var/list/fruits = list()
+		for(var/obj/item in storage_contents)
+			fruit = item
+			if(!istype(fruit) || !fruit.can_distill || !SEND_SIGNAL(I, COMSIG_TRY_STORAGE_TAKE, fruit, src))
+				continue
+			fruits += fruit
+		if (length(fruits))
+			addtimer(CALLBACK(src, .proc/makeWine, fruits), rand(8 SECONDS, 12 SECONDS) * speed_multiplier)
+			to_chat(user, span_notice("You fill \the [src] from \the [I] and start the fermentation process."))
+		else
+			to_chat(user, span_warning("There's nothing in \the [I] that you can ferment!"))
+		return TRUE
+	if(I?.is_refillable())
+		return FALSE //so we can refill them via their afterattack.
 	else
 		return ..()
 
@@ -74,11 +119,11 @@
 	if(open)
 		DISABLE_BITFIELD(reagents.reagents_holder_flags, DRAINABLE)
 		ENABLE_BITFIELD(reagents.reagents_holder_flags, REFILLABLE)
-		to_chat(user, "<span class='notice'>You open [src], letting you fill it.</span>")
+		to_chat(user, span_notice("You open [src], letting you fill it."))
 	else
 		DISABLE_BITFIELD(reagents.reagents_holder_flags, REFILLABLE)
 		ENABLE_BITFIELD(reagents.reagents_holder_flags, DRAINABLE)
-		to_chat(user, "<span class='notice'>You close [src], letting you draw from its tap.</span>")
+		to_chat(user, span_notice("You close [src], letting you draw from its tap."))
 	update_icon()
 
 /obj/structure/fermenting_barrel/update_icon_state()
@@ -86,6 +131,27 @@
 		icon_state = "barrel_open"
 	else
 		icon_state = "barrel"
+
+/obj/structure/fermenting_barrel/broc // for bitter production without having to label
+	name = "broc fermenting barrel"
+	desc = "A large wooden barrel with a painted broc flower on it. You can ferment fruits and such inside it, or just use it to hold liquid."
+	icon = 'modular_BD2/general/icons/barrel.dmi'
+	broc = TRUE
+	xander = FALSE
+	cactus = FALSE
+
+/obj/structure/fermenting_barrel/broc/xander // for bitter production without having to label
+	name = "xander fermenting barrel"
+	desc = "A large wooden barrel with a painted xander root on it. You can ferment fruits and such inside it, or just use it to hold liquid."
+	broc = FALSE
+	xander = TRUE
+
+/obj/structure/fermenting_barrel/broc/cactus // for bitter production without having to label
+	name = "cactus fermenting barrel"
+	desc = "A large wooden barrel with a painted barrel cactus on it. You can ferment fruits and such inside it, or just use it to hold liquid."
+	broc = FALSE
+	cactus = TRUE
+
 
 
 //////////
@@ -288,6 +354,49 @@
 		to_chat(user, SPAN_WARNING("You can't extract any seeds from \the [O.name]!"))
 	else
 		return ..()
+
+
+
+////////////////////
+//  BUTTER CHURN  //
+//////////////////// - Made by Fel (I think)
+
+/obj/structure/butter_churn
+	name = "butter churn"
+	desc = "An old-fashioned wooden butter churn. A little bit of milk, and you'll have fresh butter! Just add an inordinate amount of effort."
+	icon = 'modular_BD2/general/icons/barrel.dmi'
+	icon_state = "butter_churn"
+	density = TRUE
+	anchored = FALSE
+	pressure_resistance = 2 * ONE_ATMOSPHERE
+	max_integrity = 160
+	proj_pass_rate = 80
+	pass_flags_self = PASSTABLE | LETPASSTHROW
+	climbable = TRUE
+
+/obj/structure/butter_churn/attackby(obj/item/I, mob/user, params)
+	var/obj/item/reagent_containers/R = I
+	if(!istype(R))
+		return ..()
+	if(!(R.reagents.reagents_holder_flags & DRAINABLE))
+		to_chat(user, span_warning("You need to be able to pour \the [I] into \the [src]."))
+		return TRUE
+	if(!R.reagents.has_reagent(/datum/reagent/consumable/milk, 15))
+		to_chat(user, span_warning("There's not enough milk in \the [I] to churn into butter."))
+		return TRUE
+	to_chat(user, span_notice("You start churning some butter out of \the [I]..."))
+	playsound(loc, 'sound/misc/desceration-03.ogg', 20, TRUE)
+	if(do_after(user, 4.5 SECONDS, target = src))
+		if(!R.reagents.has_reagent(/datum/reagent/consumable/milk, 15))
+			to_chat(user, span_warning("There's not enough milk in \the [I] to churn into butter."))
+			return TRUE
+		to_chat(user, span_notice("You churn some butter out of \the [I] using \the [src]."))
+		R.reagents.remove_reagent(/datum/reagent/consumable/milk, 15)
+		new /obj/item/reagent_containers/food/snacks/butter(src.loc)
+		return TRUE
+	to_chat(user, span_warning("You have to stand still to churn butter!"))
+	return TRUE
+
 
 #undef FABRIC_PER_SHEET
 #undef SPAN_WARNING

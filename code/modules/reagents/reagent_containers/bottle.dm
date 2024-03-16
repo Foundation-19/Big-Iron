@@ -232,12 +232,12 @@
 	list_reagents = list(/datum/reagent/fermi/zeolites = 30)
 
 // Viro bottles
-
+/*
 /obj/item/reagent_containers/glass/bottle/romerol
 	name = "romerol bottle"
 	desc = "A small bottle of Romerol. The REAL zombie powder."
 	list_reagents = list(/datum/reagent/romerol = 30)
-
+*/
 /obj/item/reagent_containers/glass/bottle/random_virus
 	name = "Experimental disease culture bottle"
 	desc = "A small bottle. Contains an untested viral culture in synthblood medium."

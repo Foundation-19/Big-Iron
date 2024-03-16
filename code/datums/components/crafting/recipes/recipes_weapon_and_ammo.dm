@@ -542,6 +542,19 @@
 	subcategory = CAT_AMMO
 
 
+/datum/crafting_recipe/lmgammo
+	name = "LMG Ammo for vehicules"
+	result = /obj/item/mecha_ammo/lmg/craftable
+	reqs = list(/obj/item/stack/crafting/metalparts = 5,
+	/obj/item/stack/sheet/prewar = 5,
+	/obj/item/ammo_box/a556 = 2,
+	/obj/item/stack/sheet/mineral/titanium = 1,
+	)
+	tools = list(TOOL_AWORKBENCH)
+	time = 5
+	category = CAT_WEAPONRY
+	subcategory = CAT_AMMO
+
 
 /////////////////
 ///GUN CRAFTING//
@@ -606,6 +619,19 @@
 	/obj/item/stack/sheet/mineral/wood = 2)
 	tools = list(TOOL_WORKBENCH)
 	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+
+/datum/crafting_recipe/gun/HMGvehicule
+	name = "Improvised HMG (for vehicules)"
+	result = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/hobo
+	reqs = list(/obj/item/gun/ballistic/automatic/autopipe = 2,
+	/obj/item/stack/crafting/metalparts = 10,
+	/obj/item/stack/sheet/prewar = 8,
+	/obj/item/stack/sheet/mineral/titanium = 8,
+	/obj/item/stack/rods = 2)
+	tools = list(TOOL_WORKBENCH)
+	time = 180
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
@@ -1492,7 +1518,7 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
-//R82 heavy service rifle
+//R93 PDW
 /datum/crafting_recipe/R93
 	name = "R93 PDW"
 	result = /obj/item/gun/ballistic/automatic/r93
@@ -1508,6 +1534,37 @@
 	subcategory = CAT_WEAPON
 	always_available = FALSE
 
+//Assault Carbine Repair
+/datum/crafting_recipe/assault_carbine_repair
+	name = "Repair a Worn Assault Carbine"
+	result = /obj/item/gun/ballistic/automatic/assault_carbine
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/stack/crafting/goodparts = 10,
+				/obj/item/gun/ballistic/automatic/assault_carbine/worn = 1,
+				/obj/item/stack/sheet/prewar = 15,
+				/obj/item/attachments/auto_sear = 1
+				)
+	tools = list(TOOL_AWORKBENCH, TOOL_SCREWDRIVER)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
+//Chinese Assault Rifle Repair
+/datum/crafting_recipe/worn_type93_repair
+	name = "Repair a Worn Type 93"
+	result = /obj/item/gun/ballistic/automatic/type93
+	reqs = list(/obj/item/stack/sheet/metal = 3,
+				/obj/item/stack/crafting/goodparts = 15,
+				/obj/item/gun/ballistic/automatic/type93/worn = 1,
+				/obj/item/stack/sheet/prewar = 20,
+				/obj/item/attachments/auto_sear = 1,
+				/obj/item/stack/sheet/mineral/wood = 5,
+				)
+	tools = list(TOOL_AWORKBENCH, TOOL_SCREWDRIVER)
+	time = 120
+	category = CAT_WEAPONRY
+	subcategory = CAT_WEAPON
+	always_available = FALSE
 
 //////////////////////////////////
 ///GUN ATTACHMENT/PARTS CRAFTING//

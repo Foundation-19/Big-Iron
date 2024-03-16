@@ -574,8 +574,8 @@
 	scope_state = "scope_medium"
 	scope_x_offset = 5
 	scope_y_offset = 14
-	can_attachments = TRUE
-	can_automatic = TRUE
+	can_attachments = FALSE
+	can_automatic = FALSE
 	semi_auto = TRUE
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
@@ -584,7 +584,7 @@
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 
 
-//M1/n Carbine				Keywords: NCR, 10mm, Semi-auto, 12/24 rounds, Long barrel, Damage +1
+//M1/n Carbine				Keywords: 10mm, Semi-auto, 12/24 rounds, Long barrel, Damage +1
 /obj/item/gun/ballistic/automatic/m1carbine/m1n
 	name = "M1/N carbine"
 	desc = "An M1 Carbine with markings identifying it as issued to the NCR Mojave Expedtionary Force. Looks beat up but functional."
@@ -778,6 +778,7 @@
 	burst_size = 1
 	spread = 1
 	extra_damage = 25
+	extra_penetration = 0.1
 	can_attachments = TRUE
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
@@ -785,7 +786,7 @@
 	bayonet_state = "bayonet"
 	knife_x_offset = 22
 	knife_y_offset = 21
-	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
+	fire_sound = 'sound/f13weapons/combatrifle.ogg'
 
 //ALR15			Keywords: Donor, 5.56mm, Semi-auto
 /obj/item/gun/ballistic/automatic/service/alr
@@ -815,7 +816,7 @@
 	icon_state = "scout_carbine"
 	spread = 1.2
 	slowdown = 0.05
-	extra_damage = 25
+	extra_damage = 30
 	extra_penetration = 0.1
 	can_scope = TRUE
 	scope_state = "scope_short"
@@ -875,15 +876,15 @@
 //Colt Rangemaster				Keywords:5.56/.223, Semi-auto, 10 round magazine, 30dmg
 /obj/item/gun/ballistic/automatic/rangemaster
 	name = "Colt Rangemaster"
-	desc = "A Colt Rangemaster semi-automatic rifle, chambered for 7.62x51. Single-shot only."
+	desc = "A Colt Rangemaster semi-automatic hunting rifle, chambered for .223 rounds. Single-shot only."
 	icon_state = "rangemaster"
 	item_state = "308"
 	icon_prefix = "308"
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
-	extra_damage = 30
-	extra_penetration = 0.1
+	extra_damage = 33
+	extra_penetration = 0.2
 	extra_speed = 500
 	burst_size = 1
 	fire_delay = 4
@@ -942,8 +943,8 @@
 	force = 20
 	slowdown = 0.2
 	mag_type = /obj/item/ammo_box/magazine/garand308
-	extra_damage = 38
-	extra_penetration = 0.1
+	extra_damage = 40
+	extra_penetration = 0.2
 	fire_delay = 2
 	burst_size = 1
 	spread = 1
@@ -1079,12 +1080,13 @@
 	item_state = "R84"
 	icon_prefix = "r82"
 	extra_damage = 20
-	fire_delay = 2.5
+	fire_delay = 1
 	is_automatic = TRUE
 	slowdown = 0.4
 	automatic = 1
-	autofire_shot_delay = 3
-	spread = 10
+	autofire_shot_delay = 2
+	burst_shot_delay = 2.2
+	spread = 5
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
@@ -1227,7 +1229,7 @@
 	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
 
 
-//Assault Carbine				Keywords: 5mm, Automatic, 30 round magazine, Flashlight, 20dmg/0.25AP
+//Assault Carbine				Keywords: 5mm, Automatic, 30 round magazine, Flashlight, 16dmg/0.1AP (80 DPS)
 /obj/item/gun/ballistic/automatic/assault_carbine
 	name = "assault carbine"
 	desc = "The U.S. army carbine version of the R91, made by Colt and issued to special forces."
@@ -1241,11 +1243,11 @@
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 2
-	extra_damage = 19
-	extra_penetration = 0.25
+	extra_damage = 16
+	extra_penetration = 0.1
 	spread = 10 //high-velocity
 	can_attachments = TRUE
-	can_scope = TRUE
+	can_scope = FALSE
 	scope_state = "scope_short"
 	scope_x_offset = 4
 	scope_y_offset = 15
@@ -1279,9 +1281,9 @@
 	icon_state = "assault_carbine"
 	fire_delay = 3.5
 	burst_shot_delay = 2.2
-	spread = 14
-	extra_damage = 18
-	extra_penetration = 0.12
+	spread = 20
+	extra_damage = 15
+
 //FN-FAL				Keywords: 7.62mm, Automatic, 10/20 round magazine
 /obj/item/gun/ballistic/automatic/fnfal
 	name = "FN FAL"
@@ -1305,7 +1307,7 @@
 /obj/item/gun/ballistic/automatic/bar
 	name = "automatic rifle (.308)"
 	desc = "An ancient machine gun that looks like outdated even by pre-war standards. It has Colt etched on one-side and Sierra Madre on the other. It is alarmingly heavy for a rifle."
-	icon = 'icons/fallout/objects/guns/bar.dmi'
+	icon = 'icons/fallout/objects/guns/longguns.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	icon_state = "BAR"
 	item_state = "BAR"
@@ -1483,7 +1485,7 @@
 	item_state = "sniper"
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m2mm
-	extra_damage = 40
+	extra_damage = 60
 	burst_size = 1
 	fire_delay = 10
 	zoomable = TRUE

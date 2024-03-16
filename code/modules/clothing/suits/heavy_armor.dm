@@ -76,6 +76,8 @@
 	It isn't meant to be used, it just dictates procs and all that stuff to the subtypes, such as t45b and so on. \
 	Now begone, report this to coders. NOW!"
 	slowdown = 1.75
+	equip_delay_self = 50
+	equip_delay_other = 60
 
 // T-45B
 /obj/item/clothing/suit/armored/heavy/salvaged_pa/t45b
@@ -149,6 +151,7 @@
 	item_state = "advanced_salvaged"
 	armor = list("melee" = 80, "bullet" = 80, "laser" = 70, "energy" = 35, "bomb" = 60, "bio" = 70, "rad" = 65, "fire" = 85, "acid" = 45, "wound" = 50)
 	slowdown = 1.75
+
 ////////////
 // LEGION //
 ////////////
@@ -165,7 +168,7 @@
 	name = "legion centurion armor"
 	desc = "The Legion centurion armor is by far the strongest suit of armor available to Caesar's Legion. The armor is composed from other pieces of armor taken from that of the wearer's defeated opponents in combat."
 	icon_state = "legion_centurion"
-	armor = list("melee" = 70, "bullet" = 50, "laser" = 35, "energy" = 35, "bomb" = 40, "bio" = 30, "rad" = 25, "fire" = 40, "acid" = 10)
+	armor = list("melee" = 70, "bullet" = 50, "laser" = 35, "energy" = 35, "bomb" = 40, "bio" = 30, "rad" = 25, "fire" = 40, "acid" = 10, "wound" = 55)
 
 /obj/item/clothing/suit/armored/heavy/legion/palacent
 	name = "paladin-slayer centurion armor"

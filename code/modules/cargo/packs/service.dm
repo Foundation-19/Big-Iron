@@ -42,20 +42,19 @@
 					/obj/item/stack/packageWrap,
 					/obj/item/stack/packageWrap)
 	crate_name = "cargo supplies crate"
-
+/*
 /datum/supply_pack/service/mule
 	name = "MULEbot Crate"
 	desc = "Pink-haired Quartermaster not doing her job? Replace her with this tireless worker, today!"
 	cost = 2000
 	contains = list(/mob/living/simple_animal/bot/mulebot)
 	crate_name = "\improper MULEbot Crate"
-	crate_type = /obj/structure/closet/crate/large
+	crate_type = /obj/structure/closet/crate/large*/
 
 /datum/supply_pack/service/minerkit
 	name = "Shaft Miner Starter Kit"
 	desc = "All the miners died too fast? Assistant wants to get a taste of life off-station? Either way, this kit is the best way to turn a regular crewman into an ore-producing, monster-slaying machine. Contains meson goggles, a pickaxe, advanced mining scanner, cargo headset, ore bag, gasmask, and explorer suit. Requires QM access to open."
 	cost = 2500
-	access = ACCESS_QM
 	contains = list(/obj/item/pickaxe/mini,
 			/obj/item/clothing/glasses/meson,
 			/obj/item/t_scanner/adv_mining_scanner/lesser,
@@ -66,7 +65,7 @@
 	crate_name = "shaft miner starter kit"
 	crate_type = /obj/structure/closet/crate/secure
 
-/datum/supply_pack/service/snowmobile
+/*/datum/supply_pack/service/snowmobile
 	name = "Snowmobile kit"
 	desc = "trapped on a frigid wasteland? need to get around fast? purchase a refurbished snowmobile, with a FREE 10 microsecond warranty!"
 	cost = 1500 // 1000 points cheaper than ATV
@@ -75,7 +74,7 @@
 			/obj/item/clothing/mask/gas/explorer = 1)
 	crate_name = "Snowmobile kit"
 	crate_type = /obj/structure/closet/crate/large
-
+*/
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////// Chef, Botanist, Bartender ////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
@@ -146,7 +145,7 @@
 /datum/supply_pack/service/cutlery
 	name = "Kitchen Cutlery Deluxe Set"
 	desc = "Need to slice and dice away those \"Tomatoes\"? Well we got what you need! From a nice set of knifes, forks, plates, glasses, and a whetstone for when you got some grizzle that is a bit harder to slice then normal."
-	cost = 10000
+	cost = 7500
 	contraband = TRUE
 	contains = list(/obj/item/sharpener, //Deluxe for a reason
 					/obj/item/trash/plate,
@@ -177,7 +176,7 @@
 /datum/supply_pack/service/advlighting
 	name = "Advanced Lighting crate"
 	desc = "Thanks to advanced lighting tech we here at the Lamp Factory have be able to produce more lamps and lamp items! This crate has three lamps, a box of lights and a state of the art rapid-light-device!"
-	cost = 2750
+	cost = 1800
 	contains = list(/obj/item/construction/rld,
 					/obj/item/flashlight/lamp,
 					/obj/item/flashlight/lamp,
@@ -195,12 +194,10 @@
 					/obj/item/storage/box/lights/mixed,
 					/obj/item/lightreplacer)
 	crate_name = "replacement lights"
-
 /datum/supply_pack/service/janitor/advanced
 	name = "Advanced Sanitation Crate"
 	desc = "Contains all the essentials for an advanced spacefaring cleanup crew. This kit includes a trashbag, an advanced mop, a bottle of space cleaner, a floor buffer, and a holosign projector. Requires Janitorial Access to Open"
 	cost = 5700
-	access = ACCESS_JANITOR
 	contains = list(/obj/item/storage/bag/trash/bluespace,
 					/obj/item/reagent_containers/spray/cleaner,
 					/obj/item/mop/advanced,
@@ -214,7 +211,6 @@
 	name = "Custodial Cruiser"
 	desc = "Clown steal your ride? Assistant lock it in the dorms? Order a new one and get back to cleaning in style!"
 	cost = 3000
-	access = ACCESS_JANITOR
 	contains = list(/obj/vehicle/ridden/janicart,
 					/obj/item/key/janitor)
 	crate_name = "janitor ride crate"
@@ -224,12 +220,11 @@
 	name = "Janitor Backpack Crate"
 	desc = "Call forth divine judgement upon dirt and grime with this high capacity janitor backpack. Contains 500 units of station-cleansing cleaner. Requires janitor access to open."
 	cost = 1000
-	access = ACCESS_JANITOR
 	contains = list(/obj/item/watertank/janitor)
 	crate_name = "janitor backpack crate"
 	crate_type = /obj/structure/closet/crate/secure
 
-/datum/supply_pack/service/janitor/janpremium
+/*/datum/supply_pack/service/janitor/janpremium
 	name = "Janitor Supplies (Premium)"
 	desc = "The custodial union is in a tizzy, so we've gathered up some better supplies for you. In this crate you can get a brand new chem, Drying Agent. This stuff is the work of slimes or magic! This crate also contains a rag to test out the Drying Angent magic, several cleaning grenades, some spare bottles of ammonia, and an MCE (or Massive Cleaning Explosive)."
 	cost = 2700
@@ -242,7 +237,7 @@
 					/obj/item/reagent_containers/glass/bottle/ammonia,
 					/obj/item/reagent_containers/glass/bottle/ammonia,
 					/obj/item/reagent_containers/spray/drying_agent)
-	crate_name = "premium janitorial crate"
+	crate_name = "premium janitorial crate"*/
 
 /datum/supply_pack/service/janitor/starter
 	name = "Janitorial Supplies (Standard)"

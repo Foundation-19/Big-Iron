@@ -362,6 +362,39 @@
 	. = TRUE
 	..()
 
+
+// ---------------------------
+// RADSHIELD REAGENT
+
+/datum/reagent/medicine/radshield
+	name = "Radshield"
+	
+	description = "A potent anti-rad refined made by refining radaway. More effective at removing rads at the cost of some anti-toxin capabilities. Can also clear away radioactive contamination from objects."
+	reagent_state = LIQUID
+	color = "#ff7200"
+	metabolization_rate = 8 * REAGENTS_METABOLISM
+	value = REAGENT_VALUE_COMMON
+	ghoulfriendly = TRUE
+
+/datum/reagent/medicine/radshield/on_mob_life(mob/living/carbon/M)	
+	var/datum/component/radioactive/contamination = M.GetComponent(/datum/component/radioactive)
+	M.adjustToxLoss(-2*REAGENTS_EFFECT_MULTIPLIER)
+	M.radiation -= min(M.radiation, 40)
+	if(ishuman(M) && prob(7))
+		var/mob/living/carbon/human/H = M
+		H.confused = max(M.confused, 3)
+	. = TRUE
+	if(contamination && contamination.strength > 0)
+		contamination.strength -= min(contamination.strength, 100)
+	..()
+	
+/datum/reagent/medicine/radshield/reaction_obj(obj/O, reac_volume)
+	var/datum/component/radioactive/contamination = O.GetComponent(/datum/component/radioactive)
+	if(contamination && reac_volume >= 5)
+		qdel(contamination)
+		return
+
+
 // ---------------------------
 // MED-X REAGENT
 
@@ -682,7 +715,7 @@
 	metabolization_rate = 15 * REAGENTS_METABOLISM
 	..()
 
-// HYDRA - Basically Determination chem but made by Legionnaires.
+// HYDRA - Basically Determination chem but made by Legionaries.
 
 /datum/reagent/medicine/hydra
 	name = "Hydra"
@@ -699,7 +732,7 @@
 		var/datum/wound/W = thing
 		var/obj/item/bodypart/wounded_part = W.limb
 		if(wounded_part)
-			wounded_part.heal_damage(125, 125)//Does this even work? AAAAAAAAAAAAAAAAA
+			wounded_part.heal_damage(25, 25)//Does this even work? AAAAAAAAAAAAAAAAA
 	..()
 
 /datum/reagent/medicine/hydra/overdose_process(mob/living/M)

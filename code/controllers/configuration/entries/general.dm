@@ -82,7 +82,7 @@
 
 /// Minimum time before a game-ending vote can be started by players.
 /datum/config_entry/number/min_end_vote_time
-	config_entry_value = 150 MINUTES
+	config_entry_value = 120 MINUTES
 	min_val = 0
 
 /datum/config_entry/number/vote_delay	// minimum time between voting sessions (deciseconds, 10 minute default)
@@ -393,6 +393,8 @@
 /datum/config_entry/flag/announce_admin_login
 
 /datum/config_entry/flag/allow_map_voting
+
+/datum/config_entry/flag/use_bccm
 
 /datum/config_entry/number/client_warn_version
 	config_entry_value = null

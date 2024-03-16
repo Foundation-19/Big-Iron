@@ -17,7 +17,7 @@
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 
-	
+
 
 /////////////////
 //Large Objects//
@@ -26,8 +26,34 @@
 /datum/crafting_recipe/ncrgate
 	name = "NCR reinforced door"
 	result = /obj/machinery/door/unpowered/secure_NCR
-	reqs = list(/obj/item/stack/sheet/metal = 20,
-				/obj/item/stack/sheet/mineral/wood = 20,)
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 25)
+	time = 60
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+	always_available = FALSE
+
+/datum/crafting_recipe/church
+	name = "Church door"
+	result = /obj/machinery/door/unpowered/securedoor/church
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 25)
+	time = 60
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+	always_available = FALSE
+
+/datum/crafting_recipe/merchant
+	name = "Merchant door"
+	result = /obj/machinery/door/unpowered/securedoor/merchant
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 25)
+	time = 60
+	subcategory = CAT_MISCELLANEOUS
+	category = CAT_MISC
+	always_available = FALSE
+
+/datum/crafting_recipe/militia
+	name = "Militia door"
+	result = /obj/machinery/door/unpowered/securedoor/militia
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 25)
 	time = 60
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
@@ -50,7 +76,7 @@
 	subcategory = CAT_MISCELLANEOUS
 	category = CAT_MISC
 	always_available = FALSE
-	
+
 /datum/crafting_recipe/gate_khanate
 	name = "Khans steel-reinforced wood door"
 	result = /obj/machinery/door/unpowered/securedoor/khandoor
@@ -159,7 +185,7 @@
 	result = /obj/item/circuitboard/machine/vr_sleeper
 	category = CAT_CRAFTING
 	subcategory = CAT_SCAVENGING
-
+/*
 /datum/crafting_recipe/set_vrboard
 	category = CAT_CRAFTING
 	subcategory = CAT_SCAVENGING
@@ -177,7 +203,7 @@
 	result = /obj/item/circuitboard/machine/vr_sleeper/followers
 	reqs = list(/obj/item/circuitboard/machine/vr_sleeper = 1)
 	tools = list(/obj/item/multitool)
-
+*/
 //////////////////////
 //Burial & Execution//
 //////////////////////

@@ -388,7 +388,7 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 
 /datum/species/proc/on_species_loss(mob/living/carbon/human/C, datum/species/new_species, pref_load)
 	if(C.dna.species.exotic_bloodtype)
-		if(!new_species.exotic_bloodtype)
+		if(!istype(new_species) || !new_species.exotic_bloodtype)
 			C.dna.blood_type = random_blood_type()
 		else
 			C.dna.blood_type = new_species.exotic_bloodtype
@@ -405,16 +405,17 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 		C.type_of_meat = initial(meat)
 
 	//If their inert mutation is not the same, swap it out
-	if((inert_mutation != new_species.inert_mutation) && LAZYLEN(C.dna.mutation_index) && (inert_mutation in C.dna.mutation_index))
+	if((!istype(new_species) || inert_mutation != new_species.inert_mutation) && LAZYLEN(C.dna.mutation_index) && (inert_mutation in C.dna.mutation_index))
 		C.dna.remove_mutation(inert_mutation)
-		//keep it at the right spot, so we can't have people taking shortcuts
-		var/location = C.dna.mutation_index.Find(inert_mutation)
-		C.dna.mutation_index[location] = new_species.inert_mutation
-		C.dna.default_mutation_genes[location] = C.dna.mutation_index[location]
-		C.dna.mutation_index[new_species.inert_mutation] = create_sequence(new_species.inert_mutation)
-		C.dna.default_mutation_genes[new_species.inert_mutation] = C.dna.mutation_index[new_species.inert_mutation]
+		if(istype(new_species))
+			//keep it at the right spot, so we can't have people taking shortcuts
+			var/location = C.dna.mutation_index.Find(inert_mutation)
+			C.dna.mutation_index[location] = new_species.inert_mutation
+			C.dna.default_mutation_genes[location] = C.dna.mutation_index[location]
+			C.dna.mutation_index[new_species.inert_mutation] = create_sequence(new_species.inert_mutation)
+			C.dna.default_mutation_genes[new_species.inert_mutation] = C.dna.mutation_index[new_species.inert_mutation]
 
-	if(!new_species.has_field_of_vision && has_field_of_vision && ishuman(C) && CONFIG_GET(flag/use_field_of_vision))
+	if((!istype(new_species) || !new_species.has_field_of_vision) && has_field_of_vision && ishuman(C) && CONFIG_GET(flag/use_field_of_vision))
 		var/datum/component/field_of_vision/F = C.GetComponent(/datum/component/field_of_vision)
 		if(F)
 			qdel(F)
@@ -577,9 +578,6 @@ GLOBAL_LIST_EMPTY(roundstart_race_names)
 	var/list/standing = list()
 
 	var/obj/item/bodypart/head/HD = H.get_bodypart(BODY_ZONE_HEAD)
-
-	if (H.dna.features["body_model"] == FEMALE) // Add FEMALE put here, seems to function well here
-		ADD_TRAIT(H, TRAIT_FEMALE, src)
 
 	if(HD && !(HAS_TRAIT(H, TRAIT_HUSK)))
 		// lipstick

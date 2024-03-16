@@ -63,7 +63,7 @@
 		var/obj/item/bodypart/affecting = H.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 		if(affecting && affecting.receive_damage( 0, 5 ))		// 5 burn damage
 			H.update_damage_overlays()
-		playsound(src, 'modular_BD2/blacksmith/sound/burned.ogg', 15, 1)
+		playsound(src, 'modular_BD2/blacksmith/sound/burned.ogg', 30, 1)
 		var/list/hand_items = list(H.get_active_held_item(),H.get_inactive_held_item())
 		if(src in hand_items)
 			H.dropItemToGround(src)
@@ -180,7 +180,7 @@
 		return ..()
 	else
 		to_chat(user, "<span class='warning'>You try to move the [src], but you burn your hand on it!</span>")
-		playsound(src, 'modular_BD2/blacksmith/sound/burned.ogg', 15, 1)
+		playsound(src, 'modular_BD2/blacksmith/sound/burned.ogg', 30, 1)
 	if(H)
 		var/obj/item/bodypart/affecting = H.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 		if(affecting && affecting.receive_damage( 0, 5 ))		// 5 burn damage

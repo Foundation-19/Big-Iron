@@ -447,6 +447,14 @@
 	for(var/i in 1 to 5)
 		new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
 
+/obj/item/storage/box/medicine/stimpaks/stimpaks50 
+	name = "box of stimpaks"
+	desc = "A box full of stimpaks."
+
+/obj/item/storage/box/medicine/stimpaks/stimpaks50/PopulateContents()
+	for(var/i in 1 to 50)
+		new /obj/item/reagent_containers/hypospray/medipen/stimpak(src)
+
 /obj/item/storage/box/medicine/stimpaks/imitation_stimpaks5
 	name = "box of imitation stimpaks"
 	desc = "Mmm. Delicious flower juice."
@@ -467,6 +475,15 @@
 	for(var/i in 1 to 5)
 		new /obj/item/reagent_containers/hypospray/medipen/stimpak/super(src)
 
+/obj/item/storage/box/medicine/stimpaks/superstimpaks50
+	name = "box of super stimpaks"
+	desc = "A box full of super stimpaks."
+	illustration = "overlay_superstim"
+
+/obj/item/storage/box/medicine/stimpaks/superstimpaks50/PopulateContents()
+	for(var/i in 1 to 50)
+		new /obj/item/reagent_containers/hypospray/medipen/stimpak/super(src)
+
 // -----------------------------------
 // POWDER BOX
 
@@ -477,7 +494,21 @@
 	illustration = "overlay_powder"
 
 /obj/item/storage/box/medicine/powder5/PopulateContents()
-	for(var/i in 1 to 5)
+	. = ..()
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+	new /obj/item/reagent_containers/pill/patch/healingpowder(src)
+
+/obj/item/storage/box/medicine/powder50
+	name = "box of fifty powders"
+	desc = "A box full of powders."
+	icon_state = "medicinebox_simple"
+	illustration = "overlay_powder"
+
+/obj/item/storage/box/medicine/powder50/PopulateContents()
+	for(var/i in 1 to 50)
 		new /obj/item/reagent_containers/pill/patch/healingpowder(src)
 
 // -----------------------------------
@@ -490,8 +521,13 @@
 	illustration = "overlay_poultice"
 
 /obj/item/storage/box/medicine/poultice5/PopulateContents()
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	. = ..()
+	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+	new /obj/item/reagent_containers/pill/patch/healpoultice(src)
+
 
 // -----------------------------------
 // BITTER DRINK BOX
@@ -504,5 +540,22 @@
 	illustration = "overlay_bitter"
 
 /obj/item/storage/box/medicine/bitterdrink5/PopulateContents()
-	for(var/i in 1 to 5)
+	. = ..()
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+	new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+
+/obj/item/storage/box/medicine/bitterdrink50
+	name = "box of bitter drinks"
+	desc = "A box full of bitter drinks."
+	icon = 'icons/fallout/objects/storage.dmi'
+	icon_state = "medicinebox_simple"
+	illustration = "overlay_bitter"
+
+/obj/item/storage/box/medicine/bitterdrink50/PopulateContents()
+	for(var/i in 1 to 50)
 		new /obj/item/reagent_containers/pill/patch/bitterdrink(src)
+
+

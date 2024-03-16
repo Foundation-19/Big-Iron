@@ -5,7 +5,7 @@
 	if(stat == DEAD)
 		stop_sound_channel(CHANNEL_HEARTBEAT)
 		handle_death()
-		rot()
+//		rot()
 		. = FALSE
 	if(!.)
 		return
@@ -259,7 +259,7 @@
 	if(breath.get_moles(GAS_NITRYL))
 		var/nitryl_partialpressure = (breath.get_moles(GAS_NITRYL)/breath.total_moles())*breath_pressure
 		adjustFireLoss(nitryl_partialpressure/4)
-
+/*
 	//MIASMA
 	if(breath.get_moles(GAS_MIASMA))
 		var/miasma_partialpressure = (breath.get_moles(GAS_MIASMA)/breath.total_moles())*breath_pressure
@@ -300,7 +300,7 @@
 	handle_breath_temperature(breath)
 
 	return 1
-
+*/
 //Fourth and final link in a breath chain
 /mob/living/carbon/proc/handle_breath_temperature(datum/gas_mixture/breath)
 	return
@@ -325,7 +325,7 @@
 			. = internal.remove_air_volume(volume_needed)
 			if(!.)
 				return FALSE //to differentiate between no internals and active, but empty internals
-
+/*
 // Make corpses rot, emitting miasma
 /mob/living/carbon/proc/rot()
 	// Properly stored corpses shouldn't create miasma
@@ -361,7 +361,7 @@
 	miasma_turf.assume_air(stank)
 
 	miasma_turf.air_update_turf()
-
+*/
 /mob/living/carbon/proc/handle_blood()
 	return
 

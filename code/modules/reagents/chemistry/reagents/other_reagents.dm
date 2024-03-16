@@ -252,7 +252,6 @@
 	taste_description = "water"
 	overdose_threshold = 150 //Imagine drinking a gallon of water
 	var/cooling_temperature = 2
-	var/radiation_amount = 3			// 15 per 5 units; 150 per 50; 750 per 250
 	thirst_factor = THIRST_FACTOR * 15	// 11.25 per 5 units; 112.5 per 50; 562.5 per 250
 	glass_icon_state = "glass_clear"
 	glass_name = "glass of water"
@@ -323,8 +322,6 @@
 	if(method == TOUCH)
 		M.adjust_fire_stacks(-(reac_volume / 10))
 		M.ExtinguishMob()
-	if((method == INGEST) && radiation_amount > 0)
-		M.radiation += radiation_amount * reac_volume // This water isn't pure!
 	..()
 
 /datum/reagent/water/overdose_start(mob/living/M)
@@ -354,8 +351,6 @@
 	taste_description = "clean water"
 	glass_name = "glass of purified water"
 	glass_desc = "A glass of water clean of radiation or any contamination."
-	value = REAGENT_VALUE_AMAZING
-	radiation_amount = 0
 	thirst_factor = THIRST_FACTOR * 30 // 22.5 per 5 units; 225 per 50; 1125 per 250
 	can_synth = FALSE
 
@@ -384,7 +379,6 @@
 	glass_name = "glass of holy water"
 	glass_desc = "A glass of holy water."
 	pH = 7.5 //God is alkaline
-	radiation_amount = 2 // Less radioactive
 	thirst_factor = THIRST_FACTOR * 18 // Cool water
 
 	// Holy water. Mostly the same as water, it also heals the plant a little with the power of the spirits. Also ALSO increases instability.
@@ -753,6 +747,7 @@
 	else
 		to_chat(H, "<span class='danger'>The pain vanishes suddenly. You feel no different.</span>")
 
+/* Big Iron edit: Mutation toxin disabled
 
 /datum/reagent/mutationtoxin/classic //The one from plasma on green slimes
 	name = "Mutation Toxin"
@@ -928,7 +923,7 @@
 			H.set_species(species_type)
 			H.reagents.del_reagent(type)
 			to_chat(H, "<span class='warning'>You've become \a jellyperson!</span>")
-
+*/
 
 /datum/reagent/mulligan
 	name = "Mulligan Toxin"
@@ -965,6 +960,7 @@
 	name = "Gluttony's Blessing"
 	description = "An advanced corruptive toxin produced by something terrible."
 	color = "#5EFF3B" //RGB: 94, 255, 59
+	can_synth = FALSE
 	taste_description = "decay"
 	value = REAGENT_VALUE_GLORIOUS
 	ghoulfriendly = TRUE
@@ -2277,7 +2273,7 @@
 	..()
 
 //Misc reagents
-
+/*
 /datum/reagent/romerol
 	name = "Romerol"
 	// the REAL zombie powder
@@ -2300,7 +2296,7 @@
 		var/obj/item/organ/zombie_infection/nodamage/ZI = new()
 		ZI.Insert(H)
 	..()
-
+*/
 /datum/reagent/magillitis
 	name = "Magillitis"
 	description = "An experimental serum which causes rapid muscular growth in Hominidae. Side-affects may include hypertrichosis, violent outbursts, and an unending affinity for bananas."
@@ -2322,7 +2318,6 @@
 	var/current_size = RESIZE_DEFAULT_SIZE
 	value = REAGENT_VALUE_COMMON
 	taste_description = "bitterness" // apparently what viagra tastes like
-
 /datum/reagent/growthserum/on_mob_life(mob/living/carbon/H)
 	var/newsize = current_size
 	switch(volume)
@@ -2336,12 +2331,10 @@
 			newsize = 2.5*RESIZE_DEFAULT_SIZE
 		if(200 to INFINITY)
 			newsize = 3.5*RESIZE_DEFAULT_SIZE
-
 	H.resize = newsize/current_size
 	current_size = newsize
 	H.update_transform()
 	..()
-
 /datum/reagent/growthserum/on_mob_end_metabolize(mob/living/M)
 	M.resize = RESIZE_DEFAULT_SIZE/current_size
 	current_size = RESIZE_DEFAULT_SIZE

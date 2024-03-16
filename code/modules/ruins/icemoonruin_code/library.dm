@@ -31,3 +31,10 @@
 	force = 0
 	throwforce = 0
 	w_class = WEIGHT_CLASS_TINY
+
+/obj/item/feather/attack(mob/living/M, mob/living/user, attackchain_flags = NONE, damage_multiplier = 1)
+	. = ..()
+	if(iscarbon(M))
+		to_chat(user, " you tickle [M] with the [src]!")
+		to_chat(M, " [user] tickles you with the [src]!")
+		M.emote("laugh")

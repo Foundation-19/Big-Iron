@@ -28,7 +28,7 @@
 
 /obj/item/stack/ore/coal // turns to coke when heated in a Furnace or ORM
 	name = "coal"
-	desc = "Pure coal needs heat-processing to become good fuel."
+	desc = "Pure coal needs heat-processing to become efficient fuel."
 	icon = 'modular_BD2/general/icons/stackable_items.dmi'
 	icon_state = "ore_coal"
 	singular_name = "lump of coal"
@@ -40,7 +40,7 @@
 
 /obj/item/stack/sheet/coke // Can be used to fuel Furnaces, Campfires, Barrel Fires, Potbelly stoves, Fireplaces, or grind for charcoal
 	name = "coke"
-	desc = "Coke is what you get when you heat-treat coal. It's a good fuel for burning."
+	desc = "Coke is what you get when you heat-treat coal. It's a good fuel for burning, use it in furnaces, grills, potbelly stoves and so on."
 	singular_name = "bag of coke"
 	icon = 'modular_BD2/general/icons/stackable_items.dmi'
 	icon_state = "sheet_coke"
@@ -99,6 +99,7 @@
 
 /obj/item/circuitboard/machine/autolathe/manual // not reinventing machine building entirely even if its dorky
 	name = "manual lathe kit"
+	build_path = /obj/machinery/autolathe/manual
 
 /datum/techweb/specialized/autounlocking/autolathe/manual
 	design_autounlock_buildtypes = AUTOLATHE_PRIMITIVE
@@ -158,7 +159,7 @@
 /datum/design/lantern
 	name = "Lantern"
 	id = "lantern"
-	materials = list(/datum/material/lead = QUARTER_SHEET, /datum/material/glass = ONE_SHEET)
+	materials = list(/datum/material/iron = ONE_SHEET, /datum/material/glass = ONE_SHEET)
 	build_path = /obj/item/flashlight/lantern
 	category = list("initial","Equipment")
 	build_type = AUTOLATHE_PRIMITIVE
@@ -589,10 +590,6 @@ species.dm adjusted for new hair an beard suffixes + changed names.
 hair_head.dm
 hair_face.dm
 */
-
-/obj/structure/rack/shelf_wood
-	name = "BUGGED VERSION, MURDER"
-	desc = "NO!!!."
 
 
 

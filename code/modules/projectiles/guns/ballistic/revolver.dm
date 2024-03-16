@@ -211,7 +211,7 @@
 	icon_state = "police"
 	extra_damage = 28
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_TINY
 	spread = 2
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
 
@@ -262,7 +262,7 @@
 	name = "snubnose .44 magnum revolver"
 	desc = "A snubnose variant of the commonplace .44 magnum. An excellent holdout weapon for self defense."
 	icon_state = "m29_snub"
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_TINY
 	extra_damage = 35
 	spread = 3
 
@@ -372,6 +372,18 @@
 	recoil = 0.5
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 
+// Thompson Contender			Keywords: .45 Long Colt, Break-Action, One round
+/obj/item/gun/ballistic/revolver/contender
+	name = "Thompson Contender"
+	desc = "A heavy, unwieldy pistol that seems to only hold one shot, yet boasts impressive accuracy. Chambered in .45 LC."
+	icon_state = "contender"
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45/gunslinger/contender
+	weapon_weight = WEAPON_MEDIUM
+	extra_damage = 60
+	extra_penetration = 0.5
+	fire_delay = 4.5
+	spread = 0
+	fire_sound = 'sound/f13weapons/boltfire.ogg'
 
 
 /////////////

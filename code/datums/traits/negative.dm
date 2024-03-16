@@ -61,9 +61,9 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 			heirloom_type = pick(/obj/item/clothing/neck/stethoscope,/obj/item/toy/tragicthegarnering)
 		if("Followers Administrator")
 			heirloom_type = pick(/obj/item/toy/nuke, /obj/item/wrench/medical, /obj/item/clothing/neck/tie/horrible)
-		if("Prime Legionnaire")
+		if("Prime Legionary")
 			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman, /obj/item/toy/plush/mr_buckety)
-		if("Recruit Legionnaire")
+		if("Recruit Legionary")
 			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman,/obj/item/clothing/accessory/skullcodpiece/fake)
 		if("Den Mob Boss")
 			heirloom_type = /obj/item/lighter/gold
@@ -457,3 +457,12 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	gain_text = "<span class='notice'>You can't smell anything!</span>"
 	lose_text = "<span class='notice'>You can smell again!</span>"
 	medical_record_text = "Patient suffers from anosmia and is incapable of smelling gases or particulates."
+
+/datum/quirk/deafness
+	name = "Deaf"
+	desc = "You are incurably deaf."
+	value = -2
+	mob_trait = TRAIT_DEAF
+	gain_text = "<span class='danger'>You can't hear anything.</span>"
+	lose_text = "<span class='notice'>You're able to hear again!</span>"
+	medical_record_text = "Subject's cochlear nerve is incurably damaged."

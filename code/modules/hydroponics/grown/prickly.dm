@@ -26,7 +26,7 @@
 	filling_color = "#FF6347"
 	foodtype = FRUIT
 	bitesize_mod = 2
-	juice_results = list(/datum/reagent/consumable/tea/pricklytea = 0)
+	juice_results = list(/datum/reagent/consumable/tea/pricklytea = 1)
 	tastes = list("sweet cactus" = 1)
 	distill_reagent = /datum/reagent/consumable/ethanol/pinkpulque
 

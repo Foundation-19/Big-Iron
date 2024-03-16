@@ -480,6 +480,14 @@
 	greet = "<span class='sciradio'>You have mastered the rites of the berserker. Use the help verb to see your combos.</span>"
 	remarks = list("Rip and tear...", "Overwhelming force, immovable object...", "Focus... And you'll be able to incapacitate any foe in seconds...", "I must pierce armor for maximum damage...", "You are huge, that means you have huge guts...")
 
+/obj/item/book/granter/martial/wrestling
+	martial = /datum/martial_art/wrestling
+	name = "pro wrestling magazine"
+	martialname = "wrestling"
+	desc = "A magazine detailing various grapples, holds, suplexes and elbow drops. Oooh yeah, brother."
+	greet = "<span class='sciradio'>You have mastered the power of pro wrestling. Use the buttons at the top of your screen to harm others, grab to initiate a move.</span>"
+	remarks = list("Drop the leg...", "Cream of the crop...", "Hell yeah brother...", "The Macho Man is gonna...", "Warrior nation...", "One two three...")
+
 /obj/item/book/granter/martial/plasma_fist
 	martial = /datum/martial_art/plasma_fist
 	name = "frayed scroll"
@@ -594,7 +602,7 @@
 	desc = "An extremely rare issue of Guns and Bullets, showing some design flaws of weapons and how to rectify them. It's barely holding up, and looks like only one person can study the knowledge from it."
 	icon_state = "gab4"
 	remarks = list("Always keep your gun well lubricated...", "Keep your barrel free of grime...", "Perfect fitment is the key to a good firearm...", "Maintain a proper trigger pull length...", "Keep your sights zeroed to proper range...")
-	crafting_recipe_types = list(/datum/crafting_recipe/flux, /datum/crafting_recipe/lenses, /datum/crafting_recipe/conductors, /datum/crafting_recipe/receiver, /datum/crafting_recipe/assembly, /datum/crafting_recipe/alloys)
+	crafting_recipe_types = list(/datum/crafting_recipe/flux, /datum/crafting_recipe/lenses, /datum/crafting_recipe/conductors, /datum/crafting_recipe/receiver, /datum/crafting_recipe/assembly, /datum/crafting_recipe/alloys, /datum/crafting_recipe/assault_carbine_repair, /datum/crafting_recipe/worn_type93_repair)
 	autolathe_level = "advanced"
 
 /obj/item/book/granter/crafting_recipe/scav_one
@@ -814,6 +822,13 @@
 	traitname = "hitting things"
 	remarks = list("Grognak hit the Death Knight only once, but that was enough.", "Grognak is surprisingly agile, never committing too heavily on an attack, dancing between his enemies.", "Grognak isn't good at talking, but he knows it has its place. He has friends to talk for him.", "Other barbarians might change their weapons, but Grognak could never leave his beloved axe.")
 
+/obj/item/book/granter/trait/specopguide
+	name = "Special Operation Guide"
+	desc = "A book about how to never miss again!."
+	granted_trait = TRAIT_INSANE_AIM
+	traitname = "perfect shooting"
+	remarks = list("Switching to your sidearm is always faster than reloading.", "Use a bola to slow down your target.", "A smoke grenade will make the enemy drop small item that they're holding", "Never chase an enemy alone even if you think you're winning.")
+
 /obj/item/book/granter/trait/lowsurgery
 	name = "First Aid Pamphlet"
 	desc = "A flimsy collection of vital tips and tricks for the average American with a sudden injury."
@@ -979,7 +994,7 @@
 /obj/item/book/granter/trait/selection/tribal
 	name = "Book of Ancient Knowledge"
 	desc = "A compendium of knowledge passed down from the elders. It looks to be in poor condition."
-	choices = list("Hit Them With Sticks","Technophilia","Pugilist","Padded Feet","Veteran Table Climber","Basic Surgery")
+	choices = list("Hit Them With Sticks","Technophilia","Pugilist","Padded Feet","Veteran Table Climber","Basic Surgery","Desert Affinity")
 
 /obj/item/book/granter/trait/selection/tribal/attack_self(mob/user)
 	if(!granted_trait)

@@ -43,7 +43,7 @@
 	emote_see = list("hops around","bounces up and down")
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 1)
 	egg_type = /obj/item/reagent_containers/food/snacks/egg/loaded
-	food_type = /obj/item/reagent_containers/food/snacks/grown/carrot
+	food_type = list(CARROT)//BIG IRON EDIT- makes it a list so it works with chicken changes
 	eggsleft = 10
 	eggsFertile = FALSE
 	icon_prefix = "rabbit"

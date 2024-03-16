@@ -3,7 +3,7 @@
 	name = "xeno blood"
 	desc = "It's green and acidic. It looks like... <i>blood?</i>"
 	color = BLOOD_COLOR_XENO
-	beauty = -250
+//	beauty = -250 MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 
 /obj/effect/decal/cleanable/blood/splatter/xeno
 	color = BLOOD_COLOR_XENO

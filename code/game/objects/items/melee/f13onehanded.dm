@@ -52,8 +52,12 @@
 /obj/item/melee/onehanded/machete
 	name = "simple machete"
 	desc = "A makeshift machete made of a lawn mower blade."
-	icon_state = "machete_imp"
-	item_state = "salvagedmachete"
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/beltslot.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	icon_state = "machete_lawnmower"
+	item_state = "machete_lawnmower"
 	force = 34
 	block_chance = 7
 	throwforce = 20
@@ -64,6 +68,7 @@
 	name = "machete"
 	desc = "A forged machete made of high quality steel."
 	icon_state = "machete"
+	item_state = "machete"
 	force = 35
 	wound_bonus = 20
 	block_chance = 8
@@ -112,6 +117,9 @@
 /obj/item/melee/onehanded/machete/scrapsabre
 	name = "scrap sabre"
 	desc = "Made from materials found in the wastes, a skilled blacksmith has turned it into a thing of deadly beauty."
+	icon = 'icons/fallout/objects/melee/melee.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
 	icon_state = "scrapsabre"
 	item_state = "scrapsabre"
 	force = 37
@@ -128,9 +136,23 @@
 	throwforce = 35
 	armour_penetration = 0.10
 	max_reach = 2
-	embedding = list("pain_mult" = 4, "embed_chance" = 60, "fall_chance" = 20)
+	embedding = list("pain_mult" = 4, "embed_chance" = 65, "fall_chance" = 8)
 	w_class = WEIGHT_CLASS_NORMAL
 
+
+/obj/item/melee/onehanded/chinesesword //[low damage, low wounding, very high block]
+	name = "chinese officer's sword"
+	desc = "A sword usually issued to chinese officers during the great war. Despite being ntended for ceremonial use, it's still very well made and functional. Not very heavy but in trained hands its an incredibly agile weapon."
+	icon = 'icons/fallout/objects/melee/melee.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
+	icon_state = "chinasword"
+	item_state = "spathasmith" //placeholder
+	force = 30 //worse than scrap sabre
+	wound_bonus = WOUNDING_BONUS_MODEST
+	block_chance = 25 //perfectly balanced
+	wound_bonus = 10
+	armour_penetration = 0.25 //high boost to pen from aiming for weakpoints
 
 
 ////////////
@@ -677,8 +699,8 @@
 	if(ishuman(user) && slot == SLOT_GLOVES)
 		ADD_TRAIT(user, TRAIT_UNARMED_WEAPON, "glove")
 		if(HAS_TRAIT(user, TRAIT_UNARMED_WEAPON))
-			H.dna.species.punchdamagehigh = force + 8 //The +8 damage is what brings up your punch damage to the unarmed weapon's force fully
-			H.dna.species.punchdamagelow = force + 8
+			H.dna.species.punchdamagehigh = force
+			H.dna.species.punchdamagelow = force
 			H.dna.species.attack_sound = hitsound
 			if(sharpness == SHARP_POINTY || sharpness ==  SHARP_EDGED)
 				H.dna.species.attack_verb = pick("slash","slice","rip","tear","cut","dice")
@@ -687,11 +709,11 @@
 	if(ishuman(user) && slot != SLOT_GLOVES && !H.gloves)
 		REMOVE_TRAIT(user, TRAIT_UNARMED_WEAPON, "glove")
 		if(!HAS_TRAIT(user, TRAIT_UNARMED_WEAPON))
-			H.dna.species.punchdamagehigh = 1
-			H.dna.species.punchdamagelow = 10
+			H.dna.species.punchdamagehigh = 10
+			H.dna.species.punchdamagelow = 1
 		if(HAS_TRAIT(user, TRAIT_IRONFIST))
-			H.dna.species.punchdamagehigh = 4
-			H.dna.species.punchdamagelow = 11
+			H.dna.species.punchdamagehigh = 11
+			H.dna.species.punchdamagelow = 4
 		H.dna.species.attack_sound = 'sound/weapons/punch1.ogg'
 		H.dna.species.attack_verb = "punch"
 
@@ -749,7 +771,7 @@
 		return
 	M.apply_damage(15, STAMINA, "head", M.run_armor_check("head", "melee"))
 
-// Tiger claws		Keywords: Damage 31, Pointy
+// Tiger claws		Keywords: Damage 31, Pointy, 0.1 AP
 /obj/item/melee/unarmed/tigerclaw
 	name = "tiger claws"
 	desc = "Gloves with short claws built into the palms."
@@ -759,6 +781,7 @@
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	sharpness = SHARP_POINTY
 	force = 31
+	armour_penetration = 0.1
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
 // Lacerator		Keywords: Damage 27, Edged, Wound bonus
@@ -774,7 +797,7 @@
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
-// Mace Glove		Keywords: Damage 30
+// Mace Glove		Keywords: Damage 30, 0.2 AP
 /obj/item/melee/unarmed/maceglove
 	name = "mace glove"
 	desc = "Weighted metal gloves that are covered in spikes.  Don't expect to grab things with this."
@@ -782,6 +805,7 @@
 	item_state = "mace_glove"
 	w_class = WEIGHT_CLASS_BULKY
 	force = 30
+	armour_penetration = 0.2
 	sharpness = SHARP_NONE
 
 // Punch Dagger		Keywords: Damage 29, Pointy
@@ -824,7 +848,7 @@
 	item_state = "deathclaw_g"
 	slot_flags = ITEM_SLOT_GLOVES
 	w_class = WEIGHT_CLASS_NORMAL
-	force = 20
+	force = 30
 	sharpness = SHARP_EDGED
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'

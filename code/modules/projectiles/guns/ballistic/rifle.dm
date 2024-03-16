@@ -140,9 +140,9 @@
 	icon_state = "brushgun"
 	item_state = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
-	extra_damage = 50
-	extra_penetration = 0.05
-	extra_speed = 100
+	extra_damage = 45
+	extra_penetration = 0.2
+	extra_speed = 200
 	fire_delay = 3
 	recoil = 0.15
 	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
@@ -229,29 +229,6 @@
 	else
 		..()
 
-
-//Mosin-Nagant							Keywords: 7.62, Bolt-action, 5 rounds internal
-/obj/item/gun/ballistic/rifle/mosin
-	name = "Mosin-Nagant m38"
-	desc = "A rusty old Russian bolt action chambered in 7.62."
-	icon_state = "mosin"
-	item_state = "308"
-	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
-	extra_damage = 37
-	extra_speed = 600
-	fire_delay = 3
-	force = 18
-	can_scope = TRUE
-	scope_state = "scope_mosin"
-	scope_x_offset = 3
-	scope_y_offset = 13
-	can_bayonet = TRUE
-	bayonet_state = "bayonet"
-	knife_x_offset = 22
-	knife_y_offset = 21
-	pump_sound = 'sound/weapons/boltpump.ogg'
-	fire_sound = 'sound/f13weapons/boltfire.ogg'
-
 //Lee-Enfield,SMLE 						Keywords: 7.62, Bolt-action, 5 rounds internal, very fast firing rate, high stamina cost on working bolt
 /obj/item/gun/ballistic/rifle/enfield
 	name = "Lee-Enfield rifle"
@@ -328,11 +305,12 @@
 	item_state = "amr"
 	mag_type = /obj/item/ammo_box/magazine/amr
 	fire_delay = 12 //Heavy round, tiny bit slower
-	extra_damage = 50
-	extra_penetration = 0.6
+	extra_damage = 37
+	extra_penetration = 1
 	recoil = 1
 	spread = 0
 	force = 10 //Big clumsy and sensitive scope, makes for a poor club
+	slowdown = 0.2
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13

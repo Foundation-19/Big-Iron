@@ -18,7 +18,7 @@
 	var/list/mode_names
 	var/list/mode_reports
 	var/list/mode_false_report_weight
-
+	var/bccm = FALSE
 	var/motd
 	// var/policy
 
@@ -57,6 +57,8 @@
 
 	if (Master)
 		Master.OnConfigLoad()
+	if (CONFIG_GET(flag/use_bccm))
+		config.bccm = TRUE
 
 /datum/controller/configuration/proc/full_wipe()
 	if(IsAdminAdvancedProcCall())

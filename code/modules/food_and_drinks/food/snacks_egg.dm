@@ -20,6 +20,7 @@
 	filling_color = "#F0E68C"
 	foodtype = MEAT
 	grind_results = list()
+	var/mutation = null
 
 /obj/item/reagent_containers/food/snacks/egg/gland
 	desc = "An egg! It looks weird..."

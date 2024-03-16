@@ -742,7 +742,7 @@
 
 /datum/crafting_recipe/boscombatarmormk2
 	name = "reinforced knight armor"
-	result = /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate/mk2
+	result = /obj/item/clothing/suit/armor/f13/combat/mk2/brotherhood
 	blacklist = list(/obj/item/clothing/suit/armor/f13/combat)
 	reqs = list(/obj/item/clothing/suit/armor/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
@@ -753,7 +753,7 @@
 
 /datum/crafting_recipe/boscombathelmetmk2
 	name = "reinforced knight helmet"
-	result = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate/mk2
+	result = /obj/item/clothing/head/helmet/f13/combat/mk2/brotherhood
 	blacklist = list(/obj/item/clothing/head/helmet/f13/combat)
 	reqs = list(/obj/item/clothing/head/helmet/f13/combat/mk2 = 1,
 				/obj/item/toy/crayon/spraycan)
@@ -976,7 +976,7 @@
 
 /datum/crafting_recipe/legionsalvagedhelmet_ncr
 	name = "Legion Salvaged Power Armor Helmet"
-	result = /obj/item/clothing/suit/armor/f13/legion/legionsalvaged
+	result = /obj/item/clothing/head/helmet/f13/legion/legionsalvagedhelmet
 	reqs = list(/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr = 1,
 				/obj/item/toy/crayon/spraycan)
 	time = 30
@@ -1580,6 +1580,17 @@
 	reqs = list(/obj/item/stack/sheet/cloth = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 5
+	category = CAT_CLOTHING
+	subcategory = CAT_MISCCLOTHING
+
+/datum/crafting_recipe/radiogloves
+	name = "Translation Gloves"
+	result = /obj/item/clothing/gloves/radio
+	time = 15
+	reqs = list(/obj/item/clothing/gloves/color/black = 1,
+				/obj/item/stack/cable_coil = 2,
+				/obj/item/radio = 1)
+	tools = list(TOOL_WIRECUTTER)
 	category = CAT_CLOTHING
 	subcategory = CAT_MISCCLOTHING
 

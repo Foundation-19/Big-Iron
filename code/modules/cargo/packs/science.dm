@@ -9,7 +9,7 @@
 /datum/supply_pack/science
 	group = "Science"
 	crate_type = /obj/structure/closet/crate/science
-
+/*
 /datum/supply_pack/science/ape  //Ape out!
 	name = "Ape Cube Crate"
 	desc = "Pss what a new test subject with supper strangth, speed, and love for bananas all at the same time? Say no more... Contains a single ape cube. Dont add water!"
@@ -18,7 +18,7 @@
 	contains = list (/obj/item/reagent_containers/food/snacks/cube/ape)
 	crate_name = "ape cube crate"
 	can_private_buy = FALSE
-
+*/
 /datum/supply_pack/science/beakers
 	name = "Chemistry Beakers Crate"
 	desc = "Glassware for any chemistry lab! Contains four small beakers, three large, two plastic, and one metamaterial. As well as three droppers and two pairs of latex gloves."
@@ -40,7 +40,7 @@
 					/obj/item/clothing/gloves/color/latex,
 					/obj/item/clothing/gloves/color/latex)
 	crate_name = "chemistry beaker crate"
-
+/*
 /datum/supply_pack/science/robotics/mecha_odysseus
 	name = "Circuit Crate (Odysseus)"
 	desc = "Ever wanted to build your own giant medical robot? Well, now you can! Contains the Odysseus main control board and Odysseus peripherals board. Requires Robotics access to open."
@@ -61,7 +61,7 @@
 					/obj/item/circuitboard/mecha/ripley/peripherals)
 	crate_name = "\improper APLU Ripley circuit crate"
 	crate_type = /obj/structure/closet/crate/secure/science
-
+*/
 /datum/supply_pack/science/circuitry
 	name = "Circuitry Starter Pack Crate"
 	desc = "Journey into the mysterious world of Circuitry with this starter pack. Contains a circuit printer, analyzer, debugger and wirer. Power cells not included."
@@ -81,14 +81,14 @@
 					/obj/item/glasswork/blowing_rod,
 					/obj/item/glasswork/blowing_rod)
 	crate_name = "glassblower gear crate"
-
+/*
 /datum/supply_pack/science/monkey
 	name = "Monkey Cube Crate"
 	desc = "Stop monkeying around! Contains seven monkey cubes. Just add water!"
 	cost = 1500
 	contains = list (/obj/item/storage/box/monkeycubes)
 	crate_name = "monkey cube crate"
-
+*/
 /datum/supply_pack/science/nitrilegloves
 	name = "Nitrile Gloves Crate"
 	desc = "Handling toxic chemicals? Well worry not, keep your flesh intact with some nitrile made gloves! Contains three pairs of nitrile gloves."
@@ -117,7 +117,7 @@
 					/obj/item/assembly/timer)
 	crate_name = "plasma assembly crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
-*/
+
 /datum/supply_pack/science/relic
 	name = "Relic Crate"
 	desc = "Ever wanted to play with old discounted toys? Look no further. Contains two relics."
@@ -191,7 +191,7 @@
 	crate_name = "tank transfer valves crate"
 	crate_type = /obj/structure/closet/crate/secure/science
 	dangerous = TRUE
-
+*/
 //////// RAW ANOMALY CORES
 /*
 /datum/supply_pack/science/raw_flux_anomaly

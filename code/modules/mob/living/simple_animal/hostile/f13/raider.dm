@@ -166,9 +166,8 @@
 	melee_damage_upper = 20
 	maxHealth = 200
 	health = 200
-	projectiletype = /obj/item/projectile/bullet/c45/op
+	projectiletype = /obj/item/projectile/bullet/a556/match
 	projectilesound = 'sound/f13weapons/magnum_fire.ogg'
-	casingtype = /obj/item/ammo_casing/a556
 	loot = list(/obj/item/gun/ballistic/revolver/thatgun, /obj/item/clothing/suit/armor/f13/combatrusted, /obj/item/clothing/head/helmet/f13/raidercombathelmet)
 
 /obj/effect/mob_spawn/human/corpse/raider/ranged/biker
@@ -316,12 +315,12 @@
 	icon_state = "junker_boss"
 	icon_living = "junker_boss"
 	icon_dead = "junker_dead"
-	maxHealth = 450
-	health = 450
+	maxHealth = 400
+	health = 400
 	ranged = TRUE
 	retreat_distance = 4
 	minimum_distance = 6
-	extra_projectiles = 9
-	ranged_cooldown_time = 15
+	extra_projectiles = 5
+	ranged_cooldown_time = 30
 	projectiletype = /obj/item/projectile/bullet/shrapnel
 	projectilesound = 'sound/f13weapons/auto5.ogg'

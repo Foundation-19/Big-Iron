@@ -31,6 +31,12 @@
 		var/datum/antagonist/changeling/changeling = mind.has_antag_datum(/datum/antagonist/changeling)
 		if(changeling && changeling.mimicing )
 			return changeling.mimicing
+	if(mind?.assigned_role == ("Enclave Remnant" || "Enclave Remnant Medic") && wear_id)
+		var/obj/item/card/id/idcard = wear_id.GetID()
+		if(istype(idcard))
+			return idcard.registered_name
+		else
+			return real_name	
 	if(GetSpecialVoice())
 		return GetSpecialVoice()
 	return real_name

@@ -304,7 +304,7 @@
 	desc = "Made from a ancient roadsign, with handles made of rope."
 	icon_state = "shield_stop"
 	item_state = "shield_stop"
-	armor = list("melee" = 65, "bullet" = 60, "laser" = 65, "energy" = 0, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
+	armor = list("melee" = 65, "bullet" = 60, "laser" = 65, "energy" = 20, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
 	max_integrity = 300
 	slowdown = 0
 	resistance_flags = null
@@ -318,7 +318,7 @@
 	icon_state = "shield_legion"
 	item_state = "shield_legion"
 	block_parry_data = /datum/block_parry_data/shield/legion
-	armor = list("melee" = 70, "bullet" = 60, "laser" = 60, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
+	armor = list("melee" = 70, "bullet" = 65, "laser" = 60, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
 	force = 13
 	slowdown = 0
 	max_integrity = 500
@@ -332,8 +332,8 @@
 
 /datum/block_parry_data/shield/legion
 	block_damage_multiplier = 0.3
-	block_damage_absorption = 7.5
-	block_damage_limit = 30
+	block_damage_absorption = 9.5
+	block_damage_limit = 45
 
 //Scrap shield. Somewhat cheaper, simpler and worse than Legion shield but basically similar.
 /obj/item/shield/riot/scrapshield
@@ -342,7 +342,7 @@
 	icon_state = "shield_scrap"
 	item_state = "shield_scrap"
 	block_parry_data = /datum/block_parry_data/shield/scrap
-	armor = list("melee" = 60, "bullet" = 60, "laser" = 60, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
+	armor = list("melee" = 60, "bullet" = 65, "laser" = 60, "energy" = 30, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 40)
 	max_integrity = 500
 	slowdown = 0.1
 	force = 13
@@ -352,7 +352,8 @@
 
 /datum/block_parry_data/shield/scrap
 	block_damage_multiplier = 0.3
-	block_damage_limit = 22
+	block_damage_absorption = 7.5
+	block_damage_limit = 40
 
 //Energy shield. Placeholder for the experimental BoS shield concept that never got implemented I suppose.
 /obj/item/shield/energy

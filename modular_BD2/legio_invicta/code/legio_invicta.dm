@@ -180,7 +180,7 @@
 
 
 // ------------------- BELT -----------------------------
-/* Already copied to main
+
 /obj/item/storage/belt/military/legion
 	name = "legion marching belt"
 	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
@@ -189,7 +189,7 @@
 	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
 	icon_state = "belt_legion"
 	item_state = "belt_legion"
-*/
+
 
 // ------------------- WEAPONS -----------------------------
 
@@ -245,7 +245,7 @@
 
 /obj/item/twohanded/chainsaw
 	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/backslot.dmi'
-
+*/
 /obj/item/clothing/glasses/f13/sunglasses
 	name = "sunglasses"
 	desc = "Makes the strong desert sun a lot more bearable. Some protection against blinding lights is a bonus."
@@ -262,7 +262,7 @@
 	item_state = "bigsunglasses"
 	layer = (FACEMASK_LAYER-0.1) // only reason for this is to make it look good over bandana masks.
 	alternate_worn_layer = (FACEMASK_LAYER-0.1)
-*/
+
 
 
 
@@ -313,23 +313,15 @@
 	icon_state = "mantle_legion"
 	item_state = "mantle_legion"
 	layer = NECK_LAYER
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/mantle
 
-/obj/item/clothing/neck/mantle/legion/ComponentInitialize()
+/datum/component/storage/concrete/pockets/mantle
+	max_items = 4
+	max_w_class = WEIGHT_CLASS_NORMAL
+
+/datum/component/storage/concrete/pockets/mantle/Initialize()
 	. = ..()
-	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 1
-	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.can_hold = typecacheof(list(
-		/obj/item/gun/ballistic/automatic/pistol,
-		/obj/item/gun/ballistic/revolver,
-		/obj/item/gun/energy/laser/solar,
-		/obj/item/gun/energy/laser/pistol,
-		/obj/item/gun/energy/laser/plasma/pistol,
-		/obj/item/gun/energy/laser/plasma/glock,
-		/obj/item/gun/energy/laser/plasma/glock/extended,
-		/obj/item/gun/energy/laser/wattz,
-		/obj/item/gun/energy/laser/wattz/magneto,
-		))
+	can_hold = GLOB.storage_holster_can_hold
 
 
 // ------------------- KITS & BAGS & HOLSTERS -----------------------------
@@ -355,6 +347,9 @@
 	else
 		icon_state = initial(icon_state)
 
+/obj/item/storage/survivalkit/legion_rations/empty/PopulateContents()
+	return
+
 // Leather pouch for medicines
 /obj/item/storage/survivalkit/medical/legion
 	name = "medicine bag"
@@ -376,6 +371,9 @@
 		icon_state = "[icon_state]_empty"
 	else
 		icon_state = initial(icon_state)
+
+/obj/item/storage/survivalkit/medical/legion/empty/PopulateContents()
+	return
 
 /obj/item/storage/survivalkit/medical/legion/advanced
 	desc = "Medical kit compliant with the laws of Caesar, of higher than average quality."
@@ -469,19 +467,29 @@
 
 // ------------------- CRAFTING -----------------------------
 
-/datum/crafting_recipe/blacksmith/smithed_armor_legion
-	name = "Legion metal armor set"
-	result = /obj/item/clothing/suit/armor/heavy/metal/smithed/legion
+/datum/crafting_recipe/tools/forged/armor_legion
+	name = "Legion plate armor"
+	result = /obj/item/clothing/suit/armor/f13/legion/vet/smithed
+	time = 20 SECONDS
 	reqs = list(
 		/obj/item/smithing/armor_piece = 2,
 		/obj/item/stack/sheet/leather = 2,
 		)
-	time = 200
 	tools = list(TOOL_FORGE)
 	category = CAT_CRAFTING
 	subcategory = CAT_FORGING
 	always_available = FALSE
 
+
+/datum/crafting_recipe/hydra
+	name = "Hydra"
+	result = /obj/item/reagent_containers/pill/patch/hydra
+	reqs = list(/obj/item/reagent_containers/food/snacks/meat/slab/radscorpion_meat = 2,
+				/datum/reagent/consumable/cavefungusjuice = 20,
+				/obj/item/reagent_containers/glass/beaker = 1)
+	time = 2 SECONDS
+	category = CAT_MEDICAL
+	always_available = FALSE
 
 
 //////////////////////////////////////////
@@ -502,12 +510,18 @@
 
 
 /obj/item/clothing/suit/armor/light/legion/recruit
+	name = "legion recruit armor"
+	desc = "Well, it's better than nothing."
 	icon_state = "armor_recruit"
 
 /obj/item/clothing/suit/armor/light/legion/prime
+	name = "legion prime armor"
+	desc = "Legion primes have survived some skirmishes, and when promoted often recieve a set of armor, padded leather modeled on ancient baseball catcher uniforms and various plates of metal or boiled leather."
 	icon_state = "armor_prime"
 
 /obj/item/clothing/suit/armor/light/legion/explorer
+	name = "legion explorer armor"
+	desc = "Armor based on layered strips of laminated linen and leather, the technique giving it surprising resilience for low weight."
 	icon_state = "armor_explorer"
 
 /obj/item/clothing/suit/armor/medium/legion
@@ -517,9 +531,13 @@
 	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
 
 /obj/item/clothing/suit/armor/medium/legion/vet
+	name = "legion veteran armor"
+	desc = "Armor worn by veterans, salvaged bits of enemy armor and scrap metal often reinforcing the armor."
 	icon_state = "armor_veteran"
 
 /obj/item/clothing/suit/armor/medium/legion/vexil
+	name = "legion vexillarius armor"
+	desc = "Worn by the Vexillarius, this armor has been reinforced with circular metal plates on the chest and a back mounted pole for the flag of the Bull, making the wearer easy to see at a distance."
 	icon_state = "armor_vexillarius"
 
 /obj/item/clothing/suit/armor/medium/legion/orator
@@ -545,7 +563,8 @@
 /obj/item/clothing/suit/armor/heavy/legion/legate
 	icon_state = "armor_legate"
 */
-/obj/item/clothing/suit/armor/heavy/metal/smithed/legion
+
+/obj/item/clothing/suit/armor/f13/legion/vet/smithed
 	name = "smithed legion armor"
 	desc = "A set of plates with leather straps, protecting some vital areas. This one is combined with football shoulder pads and marked with the red X of Caesars Legion."
 	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
@@ -575,9 +594,9 @@
 	flags_inv = null
 	flags_cover = null
 
-/obj/item/clothing/head/f13/servant/auxilia
-	name = "auxilia headwear"
-	desc = "A soft red cap with a black band, used by Auxilia outside camp."
+/obj/item/clothing/head/f13/servant/campfollower
+	name = "camp follower headwear"
+	desc = "A soft red cap with a black band, used by Camp Followers inside camp."
 	icon_state = "hat_auxilia"
 	item_state = "hat_auxilia"
 
@@ -657,7 +676,7 @@
 	initial_contents = list(
 		/obj/item/clothing/under/f13/legskirt = 3,
 		/obj/item/clothing/mask/bandana/legion/dark  = 2,
-		/obj/item/clothing/head/f13/servant/auxilia = 1,
+		/obj/item/clothing/head/f13/servant/campfollower = 1,
 		/obj/item/clothing/head/f13/servant = 1,
 		/obj/item/clothing/gloves/legion = 2,
 		/obj/item/clothing/gloves/blacksmith_mittens = 1,
@@ -814,6 +833,39 @@
 	icon_state = "bust_legion"
 
 
+// ------------------- BENCH MK 2 -----------------------------
+
+/obj/structure/chair/comfy/bench
+	name = "bench"
+	desc = "A classic wooden bench."
+	icon_state = "bench"
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	item_chair = null
+	buildstacktype = /obj/item/stack/sheet/mineral/wood
+
+/obj/structure/chair/comfy/bench/post_buckle_mob(mob/living/M)
+	. = ..()
+	handle_layer()
+	layer = OBJ_LAYER
+
+/obj/structure/chair/comfy/bench/GetArmrest()
+	return mutable_appearance('modular_BD2/legio_invicta/icons/icons_legion.dmi', "bench_sitting")
+
+
+// -------------- THRONE ----------------- 
+
+/obj/structure/chair/comfy/throne
+	name = "tribal throne"
+	desc = "Bone, wood, animal parts."
+	icon = 'modular_BD2/general/icons/thrones.dmi'
+	icon_state = "throne"
+	buildstacktype = /obj/item/stack/sheet/bone
+	buildstackamount = 4
+
+/obj/structure/chair/comfy/throne/GetArmrest()
+	return mutable_appearance('modular_BD2/general/icons/thrones.dmi', "throne_armrest")
+
+
 // -------------- BATHTUB ----------------- - only mood function, just for RP. Would be better if mood boost just fired if not weaing anything in uniform slot, or unable to buckle if dressed.
 
 /obj/structure/chair/comfy/bathtub
@@ -927,12 +979,16 @@
 	name = "guardhouse"
 	desc = "Sit in the gloom and wait for something to happen."
 
+/obj/structure/sign/legion/slavepen
+	name = "slave pen"
+	desc = "For keeping the livestock in order."
+
 
 // -------------- ID LOCKED DOORS BY RANK ----------------- 
 
 /obj/machinery/door/unpowered/securedoor/legion/warroom
 	name = "war room"
-	req_access_txt = "254" // ACCESS_LEGION_CPMMAND
+	req_access_txt = "123" // ACCESS_LEGION
 
 /obj/machinery/door/unpowered/securedoor/legion/centurion
 	name = "centurions quarters"
@@ -1065,7 +1121,7 @@ campfire.dm
 // New roof for tent
 /turf/open/floor/plating/f13/outside/roof/tent_leather 
 	name = "leather tent roof"
-	icon = 'icons/fallout/turfs/walls/tents.dmi'
+	icon = 'modular_BD2/general/icons/tents.dmi'
 	icon_state = "leather_roof"
 
 // shading under the pavillon
@@ -1076,13 +1132,18 @@ campfire.dm
 // Floorshading testing
 /obj/effect/turf_decal/shadow/floor
 	icon_state = "shadow_floor"
-	plane = GAME_PLANE
+	plane = -6
 
 // Wallshading testing
-/obj/effect/shadow_wall
+/obj/effect/turf_decal/shadow/floor/wall
+	icon_state = "shadow_wall"
+
+// Wallshading testing
+/obj/effect/shadow/wall
 	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
 	icon_state = "shadow_wall"
-	plane = GAME_PLANE
+	layer = ON_EDGED_TURF_LAYER
+	plane = -5
 	pixel_y = 32
 
 // stairs platform to make it prettier
@@ -1197,7 +1258,7 @@ campfire.dm
 			/obj/item/stack/crafting/metalparts/five = 10,
 			)
 	footstep = FOOTSTEP_LOOSE_SAND
-	barefootstep = FOOTSTEP_LOOSE_SAND
+	barefootstep = FOOTSTEP_LOOSE_SAND_BAREFOOT
 	clawfootstep = FOOTSTEP_LOOSE_SAND
 
 /turf/open/indestructible/ground/outside/desert/sonora/Initialize()
@@ -1228,16 +1289,6 @@ campfire.dm
 /obj/item/bedsheet/blanket2
 	icon_state = "blanket2"
 
-/obj/item/storage/belt/military/legion
-	name = "legion marching belt"
-	desc = "A belt capable of holding various supplies a warrior might need. Comes with a red sash."
-	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
-	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
-	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
-	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
-	icon_state = "belt_legion"
-	item_state = "belt_legion"
-
 
 /obj/item/clothing/shoes/sandals_leather
 	name = "leather sandals"
@@ -1252,3 +1303,21 @@ campfire.dm
 	equip_delay_other = 100
 	permeability_coefficient = 0.9
 	can_be_tied = FALSE
+
+/obj/item/paper/hydra
+	name = "Recipe for Hydra"
+	info = {"Hydra is a strong smelling disgusting medicine that is more potent the worse your wounds, and can be smeared on dislocated limbs to force muscle spasms, pulling it into place.
+	<br>
+	<b>Step 1
+	<br>
+	Aquire cave fungus and raw rad scorpion meat and a beaker or bottle
+	<br>
+	Step 2
+	<br> 
+	Ferment cave fungus
+	<br>
+	<b>Step 3
+	<br>
+	Using the alchemy table craft the medicine from the ingridients.</b>"}
+
+

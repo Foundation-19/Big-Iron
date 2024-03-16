@@ -80,7 +80,8 @@
 
 /obj/structure/leaper_bubble/Initialize()
 	. = ..()
-	INVOKE_ASYNC(src, /atom/movable.proc/float, TRUE)
+
+	float(TRUE)
 	QDEL_IN(src, 100)
 
 /obj/structure/leaper_bubble/Destroy()

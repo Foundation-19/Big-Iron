@@ -56,7 +56,7 @@
 
 /obj/item/clothing/neck/mantle/legion
 	name = "Legion Cape"
-	desc = "A deep crimson cape woven by fine legionnaire craftsmanship. A shoulder holster is added beneath for utility."
+	desc = "A deep crimson cape woven by fine legionary craftsmanship. A shoulder holster is added beneath for utility."
 	icon_state = "legion"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/bos/paladin
 
@@ -122,7 +122,7 @@
 
 /obj/item/clothing/neck/mantle/umbo
 	name = "Roman mantle"
-	desc = "A decorated mantle created in the ancient roman era, this one appears to be hand made by an auxilia likely with a large bust."
+	desc = "A decorated mantle created in the ancient roman era, this one appears to be hand made by an opifex likely with a large bust."
 	icon_state = "umbo"
 
 /obj/item/clothing/neck/mantle/snugglycape

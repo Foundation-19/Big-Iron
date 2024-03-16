@@ -90,8 +90,8 @@
 		base_opacity = initial(opacity)
 		directional_opacity = ALL_CARDINALS
 
-	for(var/atom/movable/AM in src)
-		Entered(AM)
+	for(var/atom/movable/contained as anything in src)
+		Entered(contained)
 
 	var/area/A = loc
 	if(!IS_DYNAMIC_LIGHTING(src) && IS_DYNAMIC_LIGHTING(A))
@@ -123,6 +123,8 @@
 	set_custom_materials(custom_materials)
 
 	ComponentInitialize()
+
+	RegisterSignal(src, COMSIG_ATOM_ENTERED, .proc/cleanbloatup)
 
 	return INITIALIZE_HINT_NORMAL
 
@@ -619,3 +621,18 @@
 	. = ..()
 	if(. != BULLET_ACT_FORCE_PIERCE)
 		. =  BULLET_ACT_TURF
+
+/turf/proc/cleanbloatup()
+	while(contents.len >= 201)
+		var/obj/loser = pick(contents)
+		var/list/turf/openhomes = get_adjacent_open_turfs(src)
+		var/list/turf/homecandidates = list()
+		for(var/turf/home in openhomes)
+			if(home.contents.len <= 199)
+				homecandidates[home] = home
+		if(homecandidates.len)
+			var/turf/newhome = pick(homecandidates)
+			loser.forceMove(newhome)
+		else
+			if(istype(loser))
+				qdel(loser)

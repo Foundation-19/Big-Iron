@@ -252,6 +252,7 @@
 /obj/item/stock_parts/cell/pulse/pistol //10 pulse shots
 	name = "pulse pistol power cell"
 	maxcharge = 2000
+	self_recharge = 1
 
 /obj/item/stock_parts/cell/high
 	name = "high-capacity power cell"
@@ -465,13 +466,19 @@
 	icon_state = "ec-full"
 	maxcharge = 1600
 
-// Microfusion breeder? Okay, sure.
+// Microfusion breeder
 /obj/item/stock_parts/cell/ammo/breeder
 	name = "microfusion breeder"
 	desc = "A miniature microfusion reactor connected to capacitor banks. This is not a removable part, you messed up."
 	icon = 'icons/fallout/objects/powercells.dmi'
 	icon_state = "ec-full"
-	maxcharge = 2000
+	maxcharge = 1800
+
+/obj/item/stock_parts/cell/ammo/breeder/small
+	desc = "An older first-generation miniature microfusion reactor connected to capacitor banks. This is not a removable part, you messed up."
+	icon = 'icons/fallout/objects/powercells.dmi'
+	icon_state = "ec-full"
+	maxcharge = 700
 
 /obj/item/stock_parts/cell/ammo/ec/update_icon()
 	switch(charge)

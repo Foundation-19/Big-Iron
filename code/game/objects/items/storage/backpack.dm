@@ -60,8 +60,12 @@
 /obj/item/storage/backpack/spearquiver
 	name = "sturdy quiver"
 	desc = "A leather and iron quiver designed to hold throwing spears and bolas."
-	icon = 'icons/fallout/clothing/belts.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
+	icon = 'modular_BD2/legio_invicta/icons/icons_legion.dmi'
+	righthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_righthand.dmi'
+	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
+	mob_overlay_icon = 'modular_BD2/legio_invicta/icons/onmob_legion.dmi'
+//	icon = 'icons/fallout/clothing/belts.dmi'
+//	mob_overlay_icon = 'icons/fallout/onmob/clothes/belt.dmi'
 	icon_state = "spearquiver"
 	item_state = "spearquiver"
 	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_BELT

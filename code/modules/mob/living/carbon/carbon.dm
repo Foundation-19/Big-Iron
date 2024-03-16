@@ -16,7 +16,6 @@
 	QDEL_LIST(internal_organs)
 	QDEL_LIST(stomach_contents)
 	QDEL_LIST(bodyparts)
-	QDEL_LIST(implants)
 	hand_bodyparts = null		//Just references out bodyparts, don't need to delete twice.
 	remove_from_all_data_huds()
 	QDEL_NULL(dna)
@@ -103,7 +102,7 @@
 	. = ..()
 	var/hurt = TRUE
 	var/extra_speed = 0
-	if(throwingdatum.thrower != src)
+	if(throwingdatum && throwingdatum?.thrower != src)
 		extra_speed = min(max(0, throwingdatum.speed - initial(throw_speed)), 3)
 	if(GetComponent(/datum/component/tackler))
 		return

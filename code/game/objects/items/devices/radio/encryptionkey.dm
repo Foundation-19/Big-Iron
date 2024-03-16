@@ -183,6 +183,18 @@
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_TOWN = 1)
 
+/obj/item/encryptionkey/headset_towncommand
+	name = "Town leader radio encryption key"
+	desc = "An encryption key for a radio headset.  To access the Town channel, use :f and :c for command."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_TOWN = 1, RADIO_CHANNEL_COMMAND = 1)
+
+/obj/item/encryptionkey/headset_constable
+	name = "Town leader radio encryption key"
+	desc = "An encryption key for a radio headset. Use :q For Blackwater / use :m For medical / :u for supply / :e for rustwalkers."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_ENGINEERING = 1, RADIO_CHANNEL_BW = 1, RADIO_CHANNEL_MEDICAL = 1, RADIO_CHANNEL_SUPPLY = 1)
+
 /obj/item/encryptionkey/headset_legion
 	name = "Legion radio encryption key"
 	desc = "An encryption key for a radio headset.  To access the Legion channel, use :l."
@@ -201,6 +213,12 @@
 	desc = "An encryption key for a radio headset.  To access the Khan channel, use :a."
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_KHANS = 1)
+
+/obj/item/encryptionkey/headset_bw
+	name = "Blackwater radio encryption key"
+	desc = "An encryption key for a radio headset.  To access the Blackwater channel, use :q."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_BW = 1)
 
 /obj/item/encryptionkey/ai //ported from NT, this goes 'inside' the AI.
 	channels = list(RADIO_CHANNEL_COMMAND = 1, RADIO_CHANNEL_SECURITY = 1, RADIO_CHANNEL_ENGINEERING = 1, RADIO_CHANNEL_SCIENCE = 1, RADIO_CHANNEL_MEDICAL = 1, RADIO_CHANNEL_SUPPLY = 1, RADIO_CHANNEL_SERVICE = 1, RADIO_CHANNEL_AI_PRIVATE = 1)

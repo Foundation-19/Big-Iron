@@ -79,10 +79,10 @@
 /obj/machinery/atmospherics/components/unary/tank/hypernoblium
 	icon_state = "blue"
 	gas_type = GAS_HYPERNOB
-
+/*
 /obj/machinery/atmospherics/components/unary/tank/miasma
 	gas_type = GAS_MIASMA
-
+*/
 /obj/machinery/atmospherics/components/unary/tank/nitryl
 	gas_type = GAS_NITRYL
 

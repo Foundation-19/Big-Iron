@@ -2,10 +2,12 @@
 //Reminders-
 // If you add something to this list, please group it by type and sort it alphabetically instead of just jamming it in like an animal
 // cost = 700- Minimum cost, or infinite points are possible.
+
+// IMPORTANT - ALL livestock moved to organic.dm to cover all farming and food needs in one file. This file is legacy.
 //////////////////////////////////////////////////////////////////////////////
 ////////////////////////////// Livestock /////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
-
+/*
 /datum/supply_pack/critter
 	group = "Livestock"
 	crate_type = /obj/structure/closet/crate/critter
@@ -180,3 +182,4 @@
 					/mob/living/simple_animal/hostile/retaliate/bat/secbat,
 					/mob/living/simple_animal/hostile/retaliate/bat/secbat)
 	crate_name = "security bat crate"
+*/

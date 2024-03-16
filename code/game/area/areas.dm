@@ -43,8 +43,8 @@
 	var/poweralm = TRUE
 	var/lightswitch = TRUE
 
-	var/totalbeauty = 0 //All beauty in this area combined, only includes indoor area.
-	var/beauty = 0 // Beauty average per open turf in the area
+//	var/totalbeauty = 0 //All beauty in this area combined, only includes indoor area.  MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
+//	var/beauty = 0 // Beauty average per open turf in the area MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 	var/beauty_threshold = 150 //If a room is too big it doesn't have beauty.
 
 	var/requires_power = TRUE
@@ -201,7 +201,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 /area/LateInitialize()
 	if(!base_area) //we don't want to run it twice.
 		power_change()		// all machines set to current power level, also updates icon
-	update_beauty()
+//	update_beauty() MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate on 2023-01-20
 
 /area/proc/reg_in_areas_in_z()
 	if(contents.len)
@@ -416,6 +416,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
  * Im not sure what the heck this does, somethign to do with weather being able to set icon
  * states on areas?? where the heck would that even display?
  */
+/* Removing weather because of crashes
 /area/update_icon_state()
 	var/weather_icon
 	for(var/V in SSweather.processing)
@@ -425,7 +426,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 			weather_icon = TRUE
 	if(!weather_icon)
 		icon_state = null
-
+*/
 /**
  * Update the icon of the area (overridden to always be null for space
  */
@@ -469,7 +470,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 			A.power_light = power_light
 			A.power_equip = power_equip
 			A.power_environ = power_environ
-			INVOKE_ASYNC(A, .proc/power_change)
+			A.power_change()
 	update_icon()
 
 /area/proc/usage(chan)
@@ -556,7 +557,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 			SEND_SOUND(L, sound(sound, repeat = 0, wait = 0, volume = 25, channel = CHANNEL_AMBIENCE))
 			L.client.played = TRUE
 			addtimer(CALLBACK(L.client, /client/proc/ResetAmbiencePlayed), 600)
-
+/* MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 ///Divides total beauty in the room by roomsize to allow us to get an average beauty per tile.
 /area/proc/update_beauty()
 	if(!areasize)
@@ -566,7 +567,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 		beauty = 0
 		return FALSE //Too big
 	beauty = totalbeauty / areasize
-
+*/
 /area/Exited(atom/movable/M)
 	SEND_SIGNAL(src, COMSIG_AREA_EXITED, M)
 	SEND_SIGNAL(M, COMSIG_EXIT_AREA, src) //The atom that exits the area
