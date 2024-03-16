@@ -175,6 +175,12 @@ GLOBAL_LIST_INIT(leather_recipes, list ( \
 	new/datum/stack_recipe("leather jacket", /obj/item/clothing/suit/jacket/leather, 7), \
 	new/datum/stack_recipe("leather shoes", /obj/item/clothing/shoes/laceup, 2), \
 	new/datum/stack_recipe("leather overcoat", /obj/item/clothing/suit/jacket/leather/overcoat, 10), \
+	null, \
+	new/datum/stack_recipe("survival pouch", /obj/item/storage/survivalkit/empty, 5),
+	new/datum/stack_recipe("rugged pouch", /obj/item/storage/survivalkit_khan/empty, 5),
+	new/datum/stack_recipe("medical pouch", /obj/item/storage/survivalkit_aid/empty, 5),
+	new/datum/stack_recipe("rations pouch", /obj/item/storage/survivalkit/legion_rations/empty, 5),
+	new/datum/stack_recipe("medicine pouch", /obj/item/storage/survivalkit/medical/legion/empty, 5),
 ))
 
 /obj/item/stack/sheet/leather/get_main_recipes()

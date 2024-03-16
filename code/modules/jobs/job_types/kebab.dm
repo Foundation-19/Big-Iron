@@ -832,13 +832,12 @@
 //Militian
 
 /datum/job/kebab/f13militian
-	title = "Town Militia"
+	title = "Militian"
 	flag = F13MILITIA
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "The Militia commander"
 	description = "You are a normal citizen that decided to take arms to defend the town."
-	outfit = /datum/outfit/job/kebab/f13militian
 
 	loadout_options = list(
 		/datum/outfit/loadout/f13militian/badasscop,
@@ -846,7 +845,7 @@
 		/datum/outfit/loadout/f13militian/vaultsec,
 		/datum/outfit/loadout/f13militian/bwcowboy,
 		/datum/outfit/loadout/f13militian/volunteer)
-
+	outfit = /datum/outfit/job/kebab/f13militian
 	access = list(ACCESS_MILITIA)
 	minimal_access = list(ACCESS_MILITIA)
 	matchmaking_allowed = list(
