@@ -1102,3 +1102,17 @@
 	log_admin("Man up global: [key_name(usr)] told everybody to man up")
 	message_admins("<span class='adminnotice'>[key_name_admin(usr)] told everybody to man up.</span>")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Man Up Global")
+
+/proc/log_and_message_staff(message as text, mob/user = usr, turf/location)
+	var/turf/T = location ? location : (user ? get_turf(user) : null)
+	message = append_admin_tools(message, user, T)
+
+	log_admin(user ? "[key_name(user)] [message]" : "EVENT [message]")
+	message_admins(user ? "[key_name_admin(user)] [message]" : "EVENT [message]")
+
+/proc/append_admin_tools(message, mob, turf/location)
+	if(location)
+		message = message + " [ADMIN_JMP(location)]"
+	if(mob)
+		message = message + " (<a HREF='?_src_=holder;adminplayerobservefollow=\ref[mob]'>MOB</a>)"
+	return message

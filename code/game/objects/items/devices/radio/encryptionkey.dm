@@ -183,6 +183,18 @@
 	icon_state = "cypherkey"
 	channels = list(RADIO_CHANNEL_TOWN = 1)
 
+/obj/item/encryptionkey/headset_towncommand
+	name = "Town leader radio encryption key"
+	desc = "An encryption key for a radio headset.  To access the Town channel, use :f and :c for command."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_TOWN = 1, RADIO_CHANNEL_COMMAND = 1)
+
+/obj/item/encryptionkey/headset_constable
+	name = "Town leader radio encryption key"
+	desc = "An encryption key for a radio headset. Use :q For Blackwater / use :m For medical / :u for supply / :e for rustwalkers."
+	icon_state = "cypherkey"
+	channels = list(RADIO_CHANNEL_ENGINEERING = 1, RADIO_CHANNEL_BW = 1, RADIO_CHANNEL_MEDICAL = 1, RADIO_CHANNEL_SUPPLY = 1)
+
 /obj/item/encryptionkey/headset_legion
 	name = "Legion radio encryption key"
 	desc = "An encryption key for a radio headset.  To access the Legion channel, use :l."
