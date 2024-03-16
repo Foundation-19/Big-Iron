@@ -47,6 +47,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombat)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legioncombatmk2)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/horsearmorlegion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/legionshield)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/steeltower)
+
 
 
 /datum/outfit/job/CaesarsLegion/Legionary
