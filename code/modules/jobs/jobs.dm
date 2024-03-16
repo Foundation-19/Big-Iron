@@ -256,7 +256,7 @@ GLOBAL_LIST_INIT(kebab_positions, list(
 	"Mercenary",
 	"Militia Commander",
 	"Militian",
-	"Bartender",
+	"Kebab Barkeep",
 	"Citizen",
 	"Radio Host",
 	"Kebab High Constable",
