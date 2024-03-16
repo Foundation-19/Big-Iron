@@ -1583,6 +1583,17 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_MISCCLOTHING
 
+/datum/crafting_recipe/radiogloves
+	name = "Translation Gloves"
+	result = /obj/item/clothing/gloves/radio
+	time = 15
+	reqs = list(/obj/item/clothing/gloves/color/black = 1,
+				/obj/item/stack/cable_coil = 2,
+				/obj/item/radio = 1)
+	tools = list(TOOL_WIRECUTTER)
+	category = CAT_CLOTHING
+	subcategory = CAT_MISCCLOTHING
+
 /*
 /datum/crafting_recipe/durathread_vest
 	name = "Makeshift Vest"
