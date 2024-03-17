@@ -42,11 +42,11 @@
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEHAIR
 
-	dog_fashion = //dog_fashion/head/helmet
+	dog_fashion = /datum/dog_fashion/head/helmet
 
 /obj/item/clothing/head/helmet/ComponentInitialize()
 	. = ..()
-	AddComponent(//component/wearertargeting/earprotection, list(SLOT_HEAD))*/
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_HEAD))*/
 
 //Raider
 /obj/item/clothing/head/helmet/f13/raider
@@ -67,7 +67,7 @@
 
 /obj/item/clothing/head/helmet/f13/raider/supafly/Initialize() //HQ parts reinforcement
 	. = ..()
-	AddComponent(//component/armor_plate)
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/raider/wastehound
 	name = "wastehound raider helmet"
@@ -636,7 +636,6 @@
 	flags_cover = HEADCOVERSEYES|HEADCOVERSMOUTH
 	armor = list("melee" = 70, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
-
 
 /obj/item/clothing/head/f13/ncr/steelpot_med
 	name = "NCR medic helmet"
