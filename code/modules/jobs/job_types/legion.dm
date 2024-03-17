@@ -248,7 +248,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m14mm = 2,
 		/obj/item/melee/unarmed/powerfist/goliath = 1,
-		/obj/item/book/granter/martial/cqc = 1
+		/obj/item/book/granter/martial/cqc = 1,
 		/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 2
 		)
 
@@ -581,7 +581,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/melee/unarmed/powerfist = 1,
 		/obj/item/melee/powered/ripper = 1,
-		/obj/item/book/granter/martial/berserker = 1
+		/obj/item/book/granter/martial/berserker = 1,
 		/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 3
 		)
 
