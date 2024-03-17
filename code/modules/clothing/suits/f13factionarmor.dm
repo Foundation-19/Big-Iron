@@ -499,6 +499,9 @@
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 	slowdown = 0.08	//0.22 with helmet
 
+/obj/item/clothing/suit/armor/f13/ncr/heavygunner/Initialize()
+	. = ..()
+	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	name = "NCR officer vest"
