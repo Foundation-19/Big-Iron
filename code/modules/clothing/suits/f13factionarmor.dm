@@ -487,6 +487,19 @@
 	allowed = list(/obj/item/gun, /obj/item/analyzer, /obj/item/stack/medical, /obj/item/dnainjector, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/syringe, /obj/item/reagent_containers/hypospray, /obj/item/healthanalyzer, /obj/item/flashlight/pen, /obj/item/reagent_containers/glass/bottle, /obj/item/reagent_containers/glass/beaker, /obj/item/reagent_containers/pill, /obj/item/storage/pill_bottle, /obj/item/paper, /obj/item/melee/classic_baton/telescopic, /obj/item/soap, /obj/item/sensor_device, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman)
 	salvage_loot = list() // It's a labcoat
 
+
+/obj/item/clothing/suit/armor/f13/ncr/heavygunner                        //NCR Trench Raider Armor
+    name = "\improper NCR Trench Raider Chestplates"
+    desc = "A heavily reinforced NCR vest. Rumors say that the leather for the lining comes from the best-fed Brahmins, and complete with extra armor padding."
+    icon = 'icons/fallout/clothing/armored_medium.dmi'
+    mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_medium.dmi'
+    icon_state = "steel_bib_ncra"
+    item_state = "steel_bib_ncra"
+    armor = list("melee" = 55, "bullet" = 45, "laser" = 35, "energy" = 15, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 0, "wound" = 45)
+    salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
+    slowdown = 0.08        //0.22 with helmet
+
+
 /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
 	name = "NCR officer vest"
 	desc = "A reinforced set of NCR mantle armour, with added padding on the groin, neck and shoulders. Intended for use by the officer class."
