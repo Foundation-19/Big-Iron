@@ -4,7 +4,7 @@
 	icon = 'icons/obj/pda.dmi' //Placeholder till ones sprited
 	icon_state = "pda" //Placeholder till ones sprited
 	item_flags = NOBLUDGEON
-	slot_flags = INV_SLOTBIT_BELT
+	slot_flags = BELT_SLOT
 	throwforce = 5
 	throw_speed = 3
 	throw_range = 5
