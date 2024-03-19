@@ -111,7 +111,7 @@
 	desc = "A prewar combat helmet issued to S.W.A.T. personnel."
 	icon_state = "swatsyndie"
 	item_state = "swatsyndie"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 25, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 55)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 35, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 55)
 
 
 /obj/item/clothing/head/helmet/f13/combat/environmental
