@@ -1,7 +1,6 @@
 GLOBAL_LIST_INIT(fish_rates, list(
 	/obj/item/fishy/carp		=9,
 	/obj/item/fishy/salmon		=9,
-	/obj/item/fishy/eel			=2,
 	/obj/item/fishy/lobster		=9,
 	/obj/item/fishy/shrimp		=9
 ))
