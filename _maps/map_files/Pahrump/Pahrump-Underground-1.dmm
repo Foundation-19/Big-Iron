@@ -901,8 +901,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/bunker)
 "aFa" = (
+/obj/machinery/vending/cola/starkist,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/gear_painter,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
 	},
@@ -933,6 +933,7 @@
 /obj/structure/simple_door/metal/barred,
 /obj/structure/decoration/rag,
 /obj/effect/decal/waste,
+/obj/structure/barricade/wooden/strong,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "aFN" = (
@@ -2829,12 +2830,6 @@
 /obj/structure/lattice/catwalk,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
-"bIb" = (
-/obj/effect/landmark/start/f13/dendoctor,
-/turf/open/floor/f13{
-	icon_state = "white"
-	},
-/area/f13/den)
 "bIc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -4844,6 +4839,7 @@
 	name = "skulls"
 	},
 /obj/structure/decoration/rag,
+/obj/structure/barricade/wooden/strong,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "cXP" = (
@@ -11546,6 +11542,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/rnd)
+"hqu" = (
+/obj/structure/simple_door/metal/barred,
+/obj/structure/decoration/rag,
+/obj/structure/barricade/wooden/strong,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
 "hsj" = (
 /obj/structure/sign/poster/contraband/ambrosia_vulgaris{
 	pixel_y = 32
@@ -12118,6 +12120,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
+"hOa" = (
+/obj/structure/simple_door/wood,
+/obj/structure/barricade/wooden/strong,
+/turf/open/floor/wood/f13/oak,
+/area/f13/building)
 "hOl" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -13802,11 +13809,7 @@
 /turf/closed/wall/rust,
 /area/f13/sewer)
 "iXZ" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Den Medical";
-	req_one_access_txt = "87"
-	},
+/obj/structure/simple_door/room,
 /turf/open/floor/f13{
 	icon_state = "neutralfull2"
 	},
@@ -21207,6 +21210,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/simple_door/wood,
 /obj/structure/decoration/rag,
+/obj/structure/barricade/wooden/strong,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "oyu" = (
@@ -22093,7 +22097,6 @@
 "pdF" = (
 /obj/structure/bed/wooden,
 /obj/effect/spawner/lootdrop/bedsheet,
-/obj/effect/landmark/start/f13/enforcer,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "pdH" = (
@@ -24231,6 +24234,7 @@
 	icon_state = "skulls";
 	name = "skulls"
 	},
+/obj/structure/barricade/wooden/strong,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "qFP" = (
@@ -28588,6 +28592,7 @@
 "tGa" = (
 /obj/structure/decoration/rag,
 /obj/structure/simple_door/metal/barred,
+/obj/structure/barricade/wooden/strong,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "tGj" = (
@@ -29188,11 +29193,7 @@
 	},
 /area/f13/den)
 "ucg" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Den Store";
-	req_one_access_txt = "87"
-	},
+/obj/structure/simple_door/metal/barred,
 /turf/open/floor/wood/f13,
 /area/f13/den)
 "udj" = (
@@ -29226,6 +29227,7 @@
 	name = "skulls"
 	},
 /obj/structure/decoration/rag,
+/obj/structure/barricade/wooden/strong,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -32329,7 +32331,6 @@
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
-/obj/effect/landmark/start/f13/mobboss,
 /turf/open/floor/carpet/royalblack,
 /area/f13/den)
 "whA" = (
@@ -34340,12 +34341,6 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood)
-"xCf" = (
-/obj/effect/landmark/start/f13/enforcer,
-/turf/open/floor/f13{
-	icon_state = "floorgrime"
-	},
-/area/f13/den)
 "xCg" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
@@ -34794,7 +34789,6 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
 	},
-/obj/effect/landmark/start/f13/dendoctor,
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
@@ -66667,7 +66661,7 @@ xio
 xio
 vKq
 ofP
-xCf
+wSf
 ofP
 kbz
 rrm
@@ -70784,7 +70778,7 @@ ylz
 ylz
 iFg
 tbg
-bIb
+tbg
 voL
 ylz
 tbg
@@ -83703,7 +83697,7 @@ vPg
 vPg
 vPg
 vPg
-vPg
+eLE
 vPg
 vPg
 eLE
@@ -83960,7 +83954,7 @@ pZt
 nBk
 rxO
 nBk
-vPg
+eLE
 vkp
 vPg
 vPg
@@ -85243,16 +85237,16 @@ eLE
 vPg
 vPg
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 aFv
-vPg
+eLE
 eLE
 vPg
 vPg
@@ -86271,11 +86265,11 @@ vPg
 vPg
 eLE
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 nBk
@@ -86532,7 +86526,7 @@ rGw
 rQP
 lnr
 qmE
-vPg
+eLE
 hQE
 bqO
 nBk
@@ -86790,7 +86784,7 @@ lnr
 lnr
 lnr
 lnr
-vPg
+eLE
 nBk
 nBk
 nBk
@@ -87047,7 +87041,7 @@ lnr
 lnr
 lnr
 lnr
-wHB
+hqu
 nBk
 nBk
 nBk
@@ -87057,7 +87051,7 @@ vPg
 qNx
 qNx
 nBk
-vPg
+eLE
 mPr
 rKO
 cyb
@@ -87304,7 +87298,7 @@ lnr
 lnr
 lnr
 lnr
-vPg
+eLE
 nBk
 nBk
 nBk
@@ -87314,7 +87308,7 @@ vPg
 wiz
 qNx
 vPg
-vPg
+eLE
 mPr
 xyk
 xyk
@@ -87322,10 +87316,10 @@ xyk
 qFr
 xyk
 xyk
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
 vPg
 eLE
 vPg
@@ -87560,7 +87554,7 @@ rQP
 qmE
 rQP
 lnr
-vPg
+eLE
 vPg
 vPg
 nBk
@@ -87571,14 +87565,14 @@ vPg
 nBk
 wkZ
 vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
 nBk
-vPg
-vPg
+eLE
+eLE
 vPg
 vPg
 vPg
@@ -87811,12 +87805,12 @@ eLE
 eLE
 eLE
 eLE
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 vPg
 vPg
@@ -88072,7 +88066,7 @@ fLU
 fLU
 fLU
 fLU
-vPg
+eLE
 vPg
 vPg
 vPg
@@ -88329,7 +88323,7 @@ dbx
 oPR
 dbx
 fLU
-vPg
+eLE
 vPg
 vPg
 nBk
@@ -88587,7 +88581,7 @@ oPR
 oPR
 fLU
 fLU
-vPg
+eLE
 nBk
 nBk
 nBk
@@ -88602,7 +88596,7 @@ nBk
 vPg
 vPg
 nBk
-wHB
+hqu
 nBk
 nBk
 nBk
@@ -88850,7 +88844,7 @@ nBk
 vPg
 vPg
 nBk
-wHB
+hqu
 sHo
 lsP
 gGG
@@ -89113,7 +89107,7 @@ sHo
 lnr
 eLE
 vPg
-wHB
+hqu
 vPg
 eLE
 eLE
@@ -89872,7 +89866,7 @@ oFM
 sNu
 sNu
 fLU
-vPg
+eLE
 vPg
 nBk
 vPg
@@ -90129,7 +90123,7 @@ fLU
 fLU
 fLU
 fLU
-vPg
+eLE
 vPg
 nBk
 vPg
@@ -90381,12 +90375,12 @@ oVe
 dbx
 oPR
 hQE
-vPg
-vPg
-aoj
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 vPg
 nBk
 vPg
@@ -91414,7 +91408,7 @@ rqc
 sYr
 rrZ
 rrZ
-vEd
+hOa
 nBk
 nBk
 nBk
@@ -91424,12 +91418,12 @@ vPg
 aoj
 aoj
 aoj
-vPg
+eLE
 bBc
-vPg
-vPg
-vPg
-vPg
+eLE
+eLE
+eLE
+eLE
 vPg
 eLE
 eLE
@@ -91681,9 +91675,9 @@ eLE
 eLE
 aoj
 aoj
-vPg
+eLE
 nBk
-vPg
+eLE
 aoj
 vPg
 vPg
@@ -92961,11 +92955,11 @@ eLE
 eLE
 eLE
 aoj
-aoj
-aoj
-aoj
-aoj
-vPg
+eLE
+eLE
+eLE
+eLE
+eLE
 nBk
 nBk
 nBk
@@ -93225,7 +93219,7 @@ aoj
 hQE
 atS
 nBk
-vPg
+eLE
 vPg
 nBk
 xSi
@@ -93482,7 +93476,7 @@ nKZ
 bbV
 nBk
 vPg
-vPg
+eLE
 vPg
 xSi
 xSi
