@@ -938,10 +938,10 @@
 
 /obj/item/clothing/suit/armor/f13/harpercoat
 	name = "outlaw coat"
-	desc = "An ugly looking combat duster"
+	desc = "A great looking combat duster"
 	icon_state = "harperduster"
-	armor = list("melee" = 25, "bullet" = 35, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 25)
-	slowdown = 0.07
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 25, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25, "wound" = 55)
+	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/f13/raider/reptiliatenebris
 	name = "Reptilia Tenebris"
