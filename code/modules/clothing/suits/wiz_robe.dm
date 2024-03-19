@@ -42,7 +42,7 @@
 /obj/item/clothing/head/wizard/fake
 	name = "wizard hat"
 	desc = "It has WIZZARD written across it in sequins. Comes with a cool beard."
-	icon_state = "wizard-fake"
+	icon_state = "wizard"
 	gas_transfer_coefficient = 1
 	permeability_coefficient = 1
 	resistance_flags = FLAMMABLE
@@ -144,7 +144,7 @@
 
 /obj/item/clothing/suit/wizrobe/fake
 	desc = "A rather dull blue robe meant to mimick real wizard robes."
-	icon_state = "wizard-fake"
+	icon_state = "wizard"
 	gas_transfer_coefficient = 1
 	permeability_coefficient = 1
 	resistance_flags = FLAMMABLE

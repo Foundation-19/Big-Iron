@@ -707,6 +707,13 @@
 	item_state = "hellfire"
 	armor = list("melee" = 90, "bullet" = 90, "laser" = 90, "energy" = 70, "bomb" = 80, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 90)
 
+/obj/item/clothing/suit/armor/f13/power_armor/clown
+	name = "Experimental C10wn Pranking Power Armor" //Pretty much admin power armor
+	desc = "The pinnacle of Clown technology, appropriated by the Clownhood of Steel. Commonly worn by Head Pranksters."
+	icon_state = "hardsuit-clown"
+	item_state = "hardsuit-clown"
+	armor = list("melee" = 90, "bullet" = 90, "laser" = 90, "energy" = 70, "bomb" = 80, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 90)
+
 /obj/item/clothing/suit/armor/f13/enclave/armorvest
 	name = "armored vest"
 	desc = "Efficient prewar design issued to Enclave personell."
@@ -1353,3 +1360,4 @@
 	item_state = "Bandit_duster"
 	slowdown = 0
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
+

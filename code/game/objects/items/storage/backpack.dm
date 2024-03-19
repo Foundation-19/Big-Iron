@@ -156,6 +156,28 @@
 	icon_state = "cultpack"
 	item_state = "backpack"
 
+/obj/item/storage/backpack/clown
+	name = "Giggles von Honkerton"
+	desc = "It's a backpack made by Honk! Co."
+	icon_state = "clownpack"
+	item_state = "clownpack"
+
+/obj/item/storage/backpack/mime
+	name = "Parcel Parceaux"
+	desc = "A silent backpack made for those silent workers. Made by Silence Co."
+	icon_state = "mimepack"
+	item_state = "mimepack"
+
+/obj/item/storage/backpack/duffelbag/clown
+	name = "clown's duffel bag"
+	desc = "A large duffel bag for holding lots of funny gags!"
+	icon_state = "duffel-clown"
+	item_state = "duffel-clown"
+
+/obj/item/storage/backpack/duffelbag/clown/cream_pie/PopulateContents()
+	for(var/i in 1 to 10)
+		new /obj/item/reagent_containers/food/snacks/pie/cream(src)
+
 /obj/item/storage/backpack/explorer
 	name = "explorer bag"
 	desc = "A robust backpack for stashing your loot."
