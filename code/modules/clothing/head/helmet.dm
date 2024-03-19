@@ -97,7 +97,7 @@
 	desc = "A bulletproof combat helmet that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent."
 	icon_state = "helmetalt"
 	item_state = "helmetalt"
-	armor = list("melee" = 30, "bullet" = 50, "laser" = 25, "energy" = 25, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 50)
+	armor = list("melee" = 40, "bullet" = 60, "laser" = 30, "energy" = 20, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10, "wound" = 50)
 	can_flashlight = 1
 	dog_fashion = null
 
