@@ -122,8 +122,8 @@
 	total_mass = TOTAL_MASS_MEDIEVAL_WEAPON
 	slot_flags = ITEM_SLOT_SUITSTORE | ITEM_SLOT_BELT
 	force = 10
-	wound_bonus = 15
-	block_chance = 5
+	wound_bonus = 25
+	block_chance = 15
 	throw_speed = 3
 	throw_range = 4
 	throwforce = 10
