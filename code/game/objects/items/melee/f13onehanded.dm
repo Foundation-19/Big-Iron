@@ -135,7 +135,7 @@
 	item_state = "tribalspear"
 	force = 20
 	throwforce = 40
-	armour_penetration = 0.30
+	armour_penetration = 0.15
 	max_reach = 2
 	embedding = list("pain_mult" = 4, "embed_chance" = 85, "fall_chance" = 8)
 	w_class = WEIGHT_CLASS_NORMAL
@@ -773,7 +773,7 @@
 	. = ..()
 	if(!istype(M))
 		return
-	M.apply_damage(25, STAMINA, "head", M.run_armor_check("head", "melee"))
+	M.apply_damage(15, STAMINA, "head", M.run_armor_check("head", "melee"))
 
 // Tiger claws		Keywords: Damage 31, Pointy, 0.1 AP
 /obj/item/melee/unarmed/tigerclaw
@@ -895,7 +895,8 @@
 	item_state = "trench"
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 35
-	armour_penetration = 0.2
+	armour_penetration = 0.1
+	wound_bonus = 10
 	throwforce = 15
 	toolspeed = 0.7
 	sharpness = SHARP_EDGED
