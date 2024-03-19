@@ -560,6 +560,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	loadout_options = list( // ALL: Binoculars, Bowie knife, Sequoia
 		/datum/outfit/loadout/vrclassic, // DKS
 		/datum/outfit/loadout/vrlite, // Brush
+		/datum/outfit/loadout/vrcqc, // Funny CQC Vet
 		/datum/outfit/loadout/vrshotgunner // Lever Action Shotgun
 		)
 
@@ -614,6 +615,13 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/shotgun/buck = 3
 		)
 
+/datum/outfit/loadout/vrcqc
+	name = "Big Boss Veteran Ranger"
+	backpack_contents = list(
+		/obj/item/book/granter/martial/cqc = 1,
+		/obj/item/storage/box/ration/ranger_dinner = 1
+		)
+
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -623,8 +631,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	ADD_TRAIT(H, TRAIT_SILENT_STEP, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
-	var/datum/martial_art/rangertakedown/RT = new
-	RT.teach(H)
+
 
 // NCR Ranger
 
