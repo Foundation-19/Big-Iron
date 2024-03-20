@@ -1067,6 +1067,25 @@
 	slowdown = 0.4
 	fire_delay = 6
 
+/obj/item/gun/ballistic/automatic/marksman/sniper/m14
+	name = "m14"
+	desc = "An ancient battle rifle, fitted with a 20 round magazine."
+	icon_prefix = "m14rifle"
+	icon_state = "m14rifle"
+	item_state = "m14rifle"
+	mag_type = /obj/item/ammo_box/magazine/m762/ext
+	extra_damage = 40
+	extra_penetration = 0.2
+	fire_delay = 2
+	burst_size = 1
+	slowdown = 0.2
+	semi_auto = TRUE
+	can_scope = FALSE
+	zoomable = FALSE
+	can_automatic = FALSE
+	can_bayonet = TRUE
+	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
+
 //////////////////
 //ASSAULT RIFLES//
 //////////////////
