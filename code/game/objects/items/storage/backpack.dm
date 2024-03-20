@@ -784,3 +784,27 @@
 	desc = "Not be used outside of Russia"
 	icon_state = "ScavPack"
 	item_state = "ScavPack" 
+
+/obj/item/storage/backpack/messenger
+	name = "black messenger bag"
+	desc = "A black messenger bag"
+	icon_state = "messenger"
+	item_state = "messenger"
+
+/obj/item/storage/backpack/messenger/explorer
+	name = "explorer messanger bag"
+	desc = "A messenger bag"
+	icon_state = "messenger_explorer"
+	item_state = "messenger_explorer"
+
+/obj/item/storage/backpack/messenger/security
+	name = "security messenger"
+	desc = "A security messenger bag"
+	icon_state = "messenger_security_black"
+	item_state = "messenger_security_black"
+
+/obj/item/storage/backpack/messenger/blue
+	name = "blueshield messanger"
+	desc = "A black messenger with dark blue accents"
+	icon_state = "messenger_blueshield"
+	item_state = "messenger_blueshield"
