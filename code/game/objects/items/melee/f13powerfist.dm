@@ -135,7 +135,7 @@
 	var/on_item_state = "ripper_on"
 	var/off_item_state = "ripper"
 	var/weight_class_on = WEIGHT_CLASS_HUGE
-	var/force_on = 43
+	var/force_on = 45
 	var/force_off = 10
 	var/on = FALSE
 	var/on_icon_state = "ripper_on"
