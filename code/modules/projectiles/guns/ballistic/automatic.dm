@@ -1070,9 +1070,9 @@
 /obj/item/gun/ballistic/automatic/marksman/sniper/m14
 	name = "m14"
 	desc = "An ancient battle rifle, fitted with a 20 round magazine."
-	icon_prefix = "m14rifle"
+	icon_prefix = "308"
 	icon_state = "m14rifle"
-	item_state = "m14rifle"
+	item_state = "rifle"
 	mag_type = /obj/item/ammo_box/magazine/m762/ext
 	extra_damage = 40
 	extra_penetration = 0.2
