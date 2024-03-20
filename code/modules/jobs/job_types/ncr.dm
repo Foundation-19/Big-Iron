@@ -327,7 +327,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gloves = /obj/item/clothing/gloves/f13/leather
 	ears = /obj/item/radio/headset/headset_ncr_com
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand
+	suit_store = /obj/item/gun/ballistic/automatic/marksman/sniper/m14
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
@@ -337,7 +337,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/book/manual/ncr/jobguide/regs = 1,
 		/obj/item/storage/box/ration/menu_eleven = 1,
-		/obj/item/ammo_box/magazine/garand308 = 4,
+		/obj/item/ammo_box/magazine/m762/ext = 2,
 		/obj/item/attachments/scope = 1,
 		/obj/item/storage/box/ration/menu_five = 1
 		)
