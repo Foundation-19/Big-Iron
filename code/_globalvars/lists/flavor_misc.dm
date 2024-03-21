@@ -161,13 +161,28 @@ GLOBAL_LIST_INIT(security_depts_prefs, list(SEC_DEPT_RANDOM, SEC_DEPT_NONE, SEC_
 #define DDUFFELBAG "Department Duffel Bag"
 GLOBAL_LIST_INIT(backbaglist, list(DBACKPACK, DSATCHEL, DDUFFELBAG, //everything after this point is a non-department backpack
 	"Hiking Backpack" = /obj/item/storage/backpack,
+	"Medical Backpack" = /obj/item/storage/backpack/medic,
 	"Service Backpack" = /obj/item/storage/backpack/enclave,
+	"Security Backpack" = /obj/item/storage/backpack/security,
+	"Trekkers Pack" = /obj/item/storage/backpack/trekker,
+	"Trophy Rack" = /obj/item/storage/backpack/cultpack,
+	"Explorer Bag" = /obj/item/storage/backpack/explorer,
 	"Grey Duffel Bag" = /obj/item/storage/backpack/duffelbag,
+	"Medical Duffel Bag" = /obj/item/storage/backpack/duffelbag/med,
+	"Security Duffel Bag" = /obj/item/storage/backpack/duffelbag/sec,
 	"Grey Satchel" = /obj/item/storage/backpack/satchel,
 	"Leather Satchel" = /obj/item/storage/backpack/satchel/leather,
 	"Bone Satchel" = /obj/item/storage/backpack/satchel/bone,
+	"Explorer Satchel" = /obj/item/storage/backpack/satchel/explorer,
+	"Medical Satchel" = /obj/item/storage/backpack/satchel/med,
 	"Old Satchel" = /obj/item/storage/backpack/satchel/old,
-	"Service Satchel" = /obj/item/storage/backpack/satchel/enclave
+	"Service Satchel" = /obj/item/storage/backpack/satchel/enclave,
+	"Security Satchel" = /obj/item/storage/backpack/satchel/sec,
+	"Trekkers Satchel" = /obj/item/storage/backpack/satchel/trekker,
+	"Messenger Bag" = /obj/item/storage/backpack/messenger,
+	"Explorer Messanger Bag" = /obj/item/storage/backpack/messenger/explorer,
+	"Security Messenger Bag" = /obj/item/storage/backpack/messenger/security,
+	"Blueshield Messenger Bag" = /obj/item/storage/backpack/messenger/blue,
 	))
 
 //Suit/Skirt
