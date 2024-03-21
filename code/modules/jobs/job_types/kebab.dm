@@ -476,7 +476,7 @@
 /*--------------------------------------------------------------*/
 
 /datum/job/kebab/f13bartender
-	title = "Bartender"
+	title = "Kebab Barkeep"
 	flag = F13BARTENDER
 	total_positions = 2
 	spawn_positions = 2
@@ -504,7 +504,7 @@
 	)
 
 /datum/outfit/job/kebab/f13bartender
-	name = "Barkeep"
+	name = "Kebab Barkeep"
 	jobtype = /datum/job/kebab/f13bartender
 	uniform = /obj/item/clothing/under/f13/bartenderalt
 	id = /obj/item/card/id/dogtag/town
@@ -832,13 +832,12 @@
 //Militian
 
 /datum/job/kebab/f13militian
-	title = "Town Militia"
+	title = "Militian"
 	flag = F13MILITIA
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "The Militia commander"
 	description = "You are a normal citizen that decided to take arms to defend the town."
-	outfit = /datum/outfit/job/kebab/f13militian
 
 	loadout_options = list(
 		/datum/outfit/loadout/f13militian/badasscop,
@@ -846,7 +845,7 @@
 		/datum/outfit/loadout/f13militian/vaultsec,
 		/datum/outfit/loadout/f13militian/bwcowboy,
 		/datum/outfit/loadout/f13militian/volunteer)
-
+	outfit = /datum/outfit/job/kebab/f13militian
 	access = list(ACCESS_MILITIA)
 	minimal_access = list(ACCESS_MILITIA)
 	matchmaking_allowed = list(

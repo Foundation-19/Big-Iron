@@ -883,8 +883,8 @@
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
-	extra_damage = 30
-	extra_penetration = 0.1
+	extra_damage = 33
+	extra_penetration = 0.2
 	extra_speed = 500
 	burst_size = 1
 	fire_delay = 4
@@ -943,8 +943,8 @@
 	force = 20
 	slowdown = 0.2
 	mag_type = /obj/item/ammo_box/magazine/garand308
-	extra_damage = 38
-	extra_penetration = 0.1
+	extra_damage = 40
+	extra_penetration = 0.2
 	fire_delay = 2
 	burst_size = 1
 	spread = 1
@@ -1080,12 +1080,13 @@
 	item_state = "R84"
 	icon_prefix = "r82"
 	extra_damage = 20
-	fire_delay = 2.5
+	fire_delay = 1
 	is_automatic = TRUE
 	slowdown = 0.4
 	automatic = 1
-	autofire_shot_delay = 3
-	spread = 10
+	autofire_shot_delay = 2
+	burst_shot_delay = 2.2
+	spread = 5
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
@@ -1484,7 +1485,7 @@
 	item_state = "sniper"
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m2mm
-	extra_damage = 40
+	extra_damage = 50
 	burst_size = 1
 	fire_delay = 10
 	zoomable = TRUE
