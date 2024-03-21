@@ -760,7 +760,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "Janitor"
 
 /obj/effect/landmark/start/f13/barkeep
-	name = "Barkeep"
+	name = "Kebab Barkeep"
 	icon_state = "Barkeep"
 
 // Wasteland

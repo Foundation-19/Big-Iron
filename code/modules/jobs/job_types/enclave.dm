@@ -16,7 +16,6 @@
 	backpack = /obj/item/storage/backpack/enclave
 	satchel = /obj/item/storage/backpack/satchel/enclave
 	ears = /obj/item/radio/headset/headset_enclave
-	glasses = /obj/item/clothing/glasses/night/f13/enclave
 	belt = /obj/item/storage/belt/military/assault/enclave
 	r_pocket = /obj/item/flashlight/seclite
 	shoes = /obj/item/clothing/shoes/f13/enclave/serviceboots
@@ -74,6 +73,7 @@
 	accessory = /obj/item/clothing/accessory/ncr/CPT
 	id = /obj/item/card/id/dogtag/enclave/officer
 	ears = /obj/item/radio/headset/headset_enclave/command
+	glasses = /obj/item/clothing/glasses/night/f13/enclave
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
@@ -122,6 +122,7 @@
 	accessory = /obj/item/clothing/accessory/ncr/LT1
 	id = /obj/item/card/id/dogtag/enclave/officer
 	ears = /obj/item/radio/headset/headset_enclave/command
+	glasses = /obj/item/clothing/glasses/night/f13/enclave
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
