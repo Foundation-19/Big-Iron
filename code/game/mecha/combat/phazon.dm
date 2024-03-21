@@ -347,8 +347,8 @@
 /obj/mecha/combat/phazon/vertibird/balloon
 	name = "\improper Legion Recon balloon"
 	desc = "The legion maybe doesn't have fancy birds, but will still by the will of Caesar, get wings... And hot air."
-	icon = 'icons/mecha/balloon.dmi'
-	icon_state = "balloon.dmi"
+	icon = 'icons/mecha/legionballoon.dmi'
+	icon_state = "legionballoon.dmi"
 	pixel_x = -138
 	pixel_y = 0
 	layer = ABOVE_MOB_LAYER
