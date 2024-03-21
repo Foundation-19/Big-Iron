@@ -102,9 +102,9 @@
 
 /obj/item/projectile/bullet/reusable/arrow/explosive
 	name = "explosive arrow"
-	desc = "An arrow with a pressure-activated explosive charge at the end. Cannot be reused."
-	armour_penetration = 0.2
-	damage = 5
+	desc = "An arrow with a pressure-activated explosive charge at the end. Meant for breaching or armored targets, but mildly effective against soft targets. Cannot be reused."
+	armour_penetration = 0.3
+	damage = 15
 	ammo_type = /obj/item/ammo_casing/caseless/arrow/explosive
 
 /obj/item/projectile/bullet/reusable/arrow/explosive/on_hit(atom/target, blocked=0)
@@ -113,7 +113,6 @@
 		explosion(target, 0, 0, 1, 1)
 		dropped = TRUE
 	else
-		explosion(target, 0, 0, 1, 1)
 		dropped = TRUE
 	new /obj/effect/temp_visual/explosion(get_turf(target))
 	return BULLET_ACT_HIT
