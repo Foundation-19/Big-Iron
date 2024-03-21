@@ -344,9 +344,14 @@
 	export_types = list(/obj/mecha/combat/durand)
 
 /datum/export/large/mech/phazon
-	cost = 35000 //Little over half due to needing a core
+	cost = 500 //Little over half due to needing a core
 	unit_name = "working phazon"
 	export_types = list(/obj/mecha/combat/phazon)
+
+/datum/export/large/mech/phazon/total_printout(datum/export_report/ex, notes = TRUE)
+	. = ..()
+	if(. && notes)
+		. += "We don't get it, why selling those cars and vehicules here when we do not want it while you can sell them from kebab for far more ? -Signed, train merchants."
 
 /datum/export/large/mech/marauder
 	cost = 15000 //Still a Combat class mech - CC tech as well! 150% "normal" boundy price.

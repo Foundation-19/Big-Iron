@@ -80,7 +80,7 @@
 	trash = /obj/item/reagent_containers/food/snacks/grown/bungopit
 	filling_color = "#E8C22F"
 	foodtype = FRUIT
-	juice_results = list(/datum/reagent/consumable/bungojuice = 0)
+	juice_results = list(/datum/reagent/consumable/bungojuice = 1)
 	tastes = list("bungo" = 2, "tropical fruitiness" = 1)
 	distill_reagent = null
 

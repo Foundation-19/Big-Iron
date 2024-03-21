@@ -133,7 +133,115 @@
 	return
 
 
+//////Passenger seat
 
+/obj/item/mecha_parts/mecha_equipment/seat
+	name = "Mounted seat"
+	desc = "A seat. Yup, looks hi-tec eh ? Well, its just a seat"
+	icon = 'icons/obj/bus.dmi'
+	icon_state = "backseat"
+	energy_drain = 5
+	range = MELEE
+	equip_cooldown = 20
+	var/mob/living/carbon/patient = null
+	salvageable = 0
+	mech_flags = EXOSUIT_MODULE_COMBAT
+
+/obj/item/mecha_parts/mecha_equipment/seat/Destroy()
+	for(var/atom/movable/AM in src)
+		AM.forceMove(get_turf(src))
+	return ..()
+
+/obj/item/mecha_parts/mecha_equipment/seat/Exit(atom/movable/O)
+	return 0
+
+/obj/item/mecha_parts/mecha_equipment/seat/action(mob/living/carbon/target)
+	if(!action_checks(target))
+		return
+	if(!istype(target))
+		return
+	if(!patient_insertion_check(target))
+		return
+	occupant_message("<span class='notice'>You start putting [target] into [src]...</span>")
+	chassis.visible_message("<span class='warning'>[chassis] starts putting [target] into \the [src].</span>")
+	if(do_after_cooldown(target))
+		if(!patient_insertion_check(target))
+			return
+		target.forceMove(src)
+		patient = target
+		START_PROCESSING(SSobj, src)
+		update_equip_info()
+		occupant_message("<span class='notice'>[target] successfully loaded into [src]. Life support functions engaged... I mean, the seatbelt.</span>")
+		chassis.visible_message("<span class='warning'>[chassis] loads [target] into [src].</span>")
+		mecha_log_message("[target] loaded. Seatbelt engaged.")
+
+/obj/item/mecha_parts/mecha_equipment/seat/proc/patient_insertion_check(mob/living/carbon/target)
+	if(target.buckled)
+		occupant_message("<span class='warning'>[target] will not fit into the seat because [target.p_theyre()] buckled to [target.buckled]!</span>")
+		return
+	if(target.has_buckled_mobs())
+		occupant_message("<span class='warning'>[target] will not fit into the seat because of the creatures attached to it!</span>")
+		return
+	if(patient)
+		occupant_message("<span class='warning'>The sleeper is already occupied!</span>")
+		return
+	return 1
+
+/obj/item/mecha_parts/mecha_equipment/seat/proc/go_out()
+	if(!patient)
+		return
+	patient.forceMove(get_turf(src))
+	occupant_message("[patient] is out, removing the seatbelt.")
+	mecha_log_message("[patient] ejected. Seatbelt disabled.")
+	STOP_PROCESSING(SSobj, src)
+	patient = null
+	update_equip_info()
+
+/obj/item/mecha_parts/mecha_equipment/seat/detach()
+	if(patient)
+		occupant_message("<span class='warning'>Unable to detach [src] - equipment occupied!</span>")
+		return
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
+/obj/item/mecha_parts/mecha_equipment/seat/get_equip_info()
+	var/output = ..()
+	if(output)
+		var/temp = ""
+		if(patient)
+			temp = "<br />\[Occupant: [patient] ([patient.stat > 1 ? "*DECEASED*" : "Health: [patient.health]%"])\]<br /><a href='?src=[REF(src)];view_stats=1'>View stats</a>|<a href='?src=[REF(src)];eject=1'>Eject</a>"
+		return "[output] [temp]"
+	return
+
+/obj/item/mecha_parts/mecha_equipment/seat/Topic(href,href_list)
+	..()
+	if(href_list["eject"])
+		go_out()
+		return
+	
+/obj/item/mecha_parts/mecha_equipment/seat/container_resist(mob/living/user)
+	go_out()
+
+/obj/item/mecha_parts/mecha_equipment/seat/process()
+	if(..())
+		return
+	if(!chassis.has_charge(energy_drain))
+		set_ready_state(1)
+		mecha_log_message("Deactivated.")
+		occupant_message("[src] deactivated - no power.")
+		STOP_PROCESSING(SSobj, src)
+		return
+	var/mob/living/carbon/M = patient
+	if(!M)
+		return
+	if(M.health > 0)
+		M.adjustOxyLoss(-1)
+	M.AdjustAllImmobility(-80)
+	M.AdjustUnconscious(-80)
+	if(M.reagents.get_reagent_amount(/datum/reagent/medicine/epinephrine) < 5)
+		M.reagents.add_reagent(/datum/reagent/medicine/epinephrine, 5)
+	chassis.use_power(energy_drain)
+	update_equip_info()
 
 //////////////////////////// ARMOR BOOSTER MODULES //////////////////////////////////////////////////////////
 

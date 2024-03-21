@@ -394,6 +394,8 @@
 
 /datum/config_entry/flag/allow_map_voting
 
+/datum/config_entry/flag/use_bccm
+
 /datum/config_entry/number/client_warn_version
 	config_entry_value = null
 	min_val = 500

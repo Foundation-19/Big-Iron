@@ -446,7 +446,24 @@
 	set name = "Move Down"
 	set category = "IC"
 
-	var/ventcrawling_flag = HAS_TRAIT(src, TRAIT_MOVE_VENTCRAWLING) ? ZMOVE_VENTCRAWLING : 0
-	if(zMove(DOWN, z_move_flags = ZMOVE_FLIGHT_FLAGS|ZMOVE_FEEDBACK|ventcrawling_flag))
-		to_chat(src, span_notice("You move down."))
+	if(zMove(DOWN, TRUE))
+		to_chat(src, "<span class='notice'>You move down.</span>")
+
+/mob/proc/zMove(dir, feedback = FALSE)	
+	if(dir != UP && dir != DOWN)	
+		return FALSE	
+	var/turf/target = get_step_multiz(src, dir)	
+	if(!target)	
+		if(feedback)	
+			to_chat(src, "<span class='warning'>There's nothing in that direction!</span>")	
+		return FALSE	
+	if(!canZMove(dir, target))	
+		if(feedback)	
+			to_chat(src, "<span class='warning'>You couldn't move there!</span>")	
+		return FALSE	
+	forceMove(target)	
+	return TRUE	
+
+
+/mob/proc/canZMove(direction, turf/target)	
 	return FALSE

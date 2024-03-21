@@ -53,15 +53,21 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Head Scribe", //Wasn't here before. Still technically command, I put it here - Kitsunemitsu
 
 	"NCR Captain",
+	"NCR Lieutenant",
 	"NCR Veteran Ranger",
+	"NCR Representative",
 
 	"Legion Centurion",
+	"Legion Veteran Decanus",
 
 	"Chief of Police",
 
+	"Enclave Captain",
 	"Enclave Lieutenant",
 
 	"Merchant",
+	"Militia Commander",
+	"Kebab High Constable",
 
 	"High Priest",
 
@@ -88,6 +94,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Knight",
 "Senior Scribe",
 "Scribe",
+"Lancer",
 "BoS Off-Duty",
 
 "Legion Centurion",
@@ -115,6 +122,7 @@ GLOBAL_LIST_INIT(faction_whitelist_positions, list(
 "Enclave Captain",
 "Enclave Lieutenant",
 "Enclave Gunnery Sergeant",
+"Enclave Pilot",
 "Enclave Sergeant",
 "Enclave Armored Infantry",
 "Enclave Specialist",
@@ -148,6 +156,7 @@ GLOBAL_LIST_INIT(brotherhood_positions, list(
 	"Knight",
 	"Senior Scribe",
 	"Scribe",
+	"Lancer",
 	"Initiate",
 	"BoS Off-Duty",
 ))
@@ -181,11 +190,13 @@ GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
 GLOBAL_LIST_INIT(ncr_positions, list(
 	"NCR Captain",
 	"NCR Lieutenant",
+	"NCR Staff Sergeant",
 	"NCR Veteran Ranger",
 	"NCR Representative",
 	"NCR Ranger",
 	"NCR Heavy Trooper",
 	"NCR Military Police",
+	"NCR Pilot",
 	"NCR Sergeant",
 	"NCR Corporal",
 	"NCR Combat Medic",
@@ -222,6 +233,7 @@ GLOBAL_LIST_INIT(enclave_positions, list(
 	"Enclave Captain",
 	"Enclave Lieutenant",
 	"Enclave Gunnery Sergeant",
+	"Enclave Pilot",
 	"Enclave Sergeant",
 	"Enclave Armored Infantry",
 	"Enclave Specialist",
@@ -245,9 +257,11 @@ GLOBAL_LIST_INIT(kebab_positions, list(
 	"Mercenary",
 	"Militia Commander",
 	"Militian",
-	"Bartender",
+	"Kebab Barkeep",
 	"Citizen",
 	"Radio Host",
+	"Kebab High Constable",
+	"Mechanic",
 ))
 
 GLOBAL_LIST_INIT(security_positions, list(

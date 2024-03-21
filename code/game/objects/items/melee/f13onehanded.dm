@@ -136,7 +136,7 @@
 	throwforce = 35
 	armour_penetration = 0.10
 	max_reach = 2
-	embedding = list("pain_mult" = 4, "embed_chance" = 65, "fall_chance" = 8)
+	embedding = list("pain_mult" = 4, "embed_chance" = 100, "fall_chance" = 8)
 	w_class = WEIGHT_CLASS_NORMAL
 
 
@@ -771,7 +771,7 @@
 		return
 	M.apply_damage(15, STAMINA, "head", M.run_armor_check("head", "melee"))
 
-// Tiger claws		Keywords: Damage 31, Pointy
+// Tiger claws		Keywords: Damage 31, Pointy, 0.1 AP
 /obj/item/melee/unarmed/tigerclaw
 	name = "tiger claws"
 	desc = "Gloves with short claws built into the palms."
@@ -781,6 +781,7 @@
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	sharpness = SHARP_POINTY
 	force = 31
+	armour_penetration = 0.1
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
 // Lacerator		Keywords: Damage 27, Edged, Wound bonus
@@ -796,7 +797,7 @@
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
-// Mace Glove		Keywords: Damage 30
+// Mace Glove		Keywords: Damage 30, 0.2 AP
 /obj/item/melee/unarmed/maceglove
 	name = "mace glove"
 	desc = "Weighted metal gloves that are covered in spikes.  Don't expect to grab things with this."
@@ -804,6 +805,7 @@
 	item_state = "mace_glove"
 	w_class = WEIGHT_CLASS_BULKY
 	force = 30
+	armour_penetration = 0.2
 	sharpness = SHARP_NONE
 
 // Punch Dagger		Keywords: Damage 29, Pointy
@@ -846,7 +848,7 @@
 	item_state = "deathclaw_g"
 	slot_flags = ITEM_SLOT_GLOVES
 	w_class = WEIGHT_CLASS_NORMAL
-	force = 20
+	force = 30
 	sharpness = SHARP_EDGED
 	attack_verb = list("slashed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'

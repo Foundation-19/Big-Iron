@@ -39,7 +39,7 @@
 	filling_color = "#FFA500"
 	bitesize_mod = 2
 	foodtype = FRUIT
-	juice_results = list(/datum/reagent/consumable/pumpkinjuice = 0)
+	juice_results = list(/datum/reagent/consumable/pumpkinjuice = 1.5)
 	wine_power = 20
 
 /obj/item/reagent_containers/food/snacks/grown/pumpkin/attackby(obj/item/W as obj, mob/user as mob, params)
@@ -71,7 +71,7 @@
 	filling_color = "#87CEFA"
 	bitesize_mod = 2
 	foodtype = FRUIT
-	juice_results = list(/datum/reagent/consumable/blumpkinjuice = 0)
+	juice_results = list(/datum/reagent/consumable/blumpkinjuice = 1.5)
 	wine_power = 50
 
 /obj/item/reagent_containers/food/snacks/grown/blumpkin/attackby(obj/item/W as obj, mob/user as mob, params)
