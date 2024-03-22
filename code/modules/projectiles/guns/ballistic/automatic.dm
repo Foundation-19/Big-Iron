@@ -767,15 +767,15 @@
 
 //Service rifle			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine, 25dmg
 /obj/item/gun/ballistic/automatic/service
-	name = "service rifle"
-	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
+	name = "service rifle mk2"
+	desc = "An upgraded 5.56x45 burst-fire service rifle manufactured by the NCR and issued to all combat personnel."
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
 	icon_prefix = "servicerifle"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	slowdown = 0.15
 	fire_delay = 1
-	burst_size = 1
+	burst_size = 3
 	spread = 1
 	extra_damage = 25
 	extra_penetration = 0.1
@@ -814,8 +814,7 @@
 	name = "scout carbine"
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
 	icon_state = "scout_carbine"
-	spread = 1.2
-	slowdown = 0.05
+	spread = 1
 	extra_damage = 30
 	extra_penetration = 0.1
 	can_scope = TRUE
