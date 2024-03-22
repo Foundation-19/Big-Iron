@@ -219,7 +219,9 @@ GLOBAL_LIST_INIT(vault_positions, list(
 
 GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Outlaw",
-	"Great Khan",
+	"Den Mob Boss",
+	"Den Mob Enforcer",
+	"Den Doctor",
 	"Faithful",
 	"Vigilante",
 	"Tribal",
