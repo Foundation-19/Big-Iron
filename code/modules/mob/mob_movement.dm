@@ -431,7 +431,14 @@
 	if(!above_turf)
 		to_chat(src, span_warning("There's nowhere to go in that direction!"))
 		return
-
+	if(istype(loc, /obj/mecha))
+		var/obj/mecha/transport = loc
+		if(!transport.movement_type == FLYING)
+			to_chat(src, span_warning("[transport] is is not capable of flight."))
+			return
+		if(transport.zMove(UP, TRUE))
+			to_chat(src, span_notice("You move upwards."))
+			return
 	if(canZMove(DOWN, above_turf, current_turf, ZMOVE_FALL_FLAGS|ventcrawling_flag)) //Will we fall down if we go up?
 		if(buckled)
 			to_chat(src, span_warning("[buckled] is is not capable of flight."))
@@ -439,13 +446,16 @@
 			to_chat(src, span_warning("You are not Superman."))
 		return
 
-	if(zMove(UP, z_move_flags = ZMOVE_FLIGHT_FLAGS|ZMOVE_FEEDBACK|ventcrawling_flag))
+	if(zMove(UP, TRUE))
 		to_chat(src, span_notice("You move upwards."))
 
 /mob/verb/down()
 	set name = "Move Down"
 	set category = "IC"
-
+	if(istype(loc, /obj/mecha))
+		var/obj/mecha/transport = loc
+		if(transport.zMove(DOWN, TRUE))
+			to_chat(src, "<span class='notice'>You move down.</span>")
 	if(zMove(DOWN, TRUE))
 		to_chat(src, "<span class='notice'>You move down.</span>")
 
@@ -463,7 +473,6 @@
 		return FALSE	
 	forceMove(target)	
 	return TRUE	
-
 
 /mob/proc/canZMove(direction, turf/target)	
 	return FALSE
