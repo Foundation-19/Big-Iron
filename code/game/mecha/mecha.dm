@@ -1030,7 +1030,7 @@
 /obj/mecha/proc/canZMove(dir, turf/target)
 	return can_zTravel(target, dir) && (movement_type & FLYING)
 
-obj/mecha/proc/zMove(dir, feedback = FALSE)	
+/obj/mecha/proc/zMove(dir, feedback = FALSE)	
 	if(dir != UP && dir != DOWN)	
 		return FALSE	
 	var/turf/target = get_step_multiz(src, dir)	
