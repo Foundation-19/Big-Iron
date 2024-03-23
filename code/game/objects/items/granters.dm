@@ -1024,6 +1024,9 @@
 			if("Desert Affinity")
 				granted_trait = TRAIT_HARD_YARDS
 				traitname = "trekking"
+			if("Brahmin Shaman")
+				granted_trait = TRAIT_CALCIUM_HEALER
+				traitname = "milk traditions"	
 		return ..()
 
 /obj/item/book/granter/trait/selection/tribal/Initialize()
