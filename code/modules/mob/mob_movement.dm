@@ -419,7 +419,7 @@
 	layer -= MOB_LAYER_SHIFT_INCREMENT
 	var/layer_priority = (layer - MOB_LAYER) * 100 // Just for text feedback
 	to_chat(src, span_notice("Your layer priority is now [layer_priority]."))
-	
+
 /mob/verb/up()
 	set name = "Move Upwards"
 	set category = "IC"
@@ -427,7 +427,6 @@
 	var/turf/current_turf = get_turf(src)
 	var/turf/above_turf = SSmapping.get_turf_above(current_turf)
 
-	var/ventcrawling_flag = HAS_TRAIT(src, TRAIT_MOVE_VENTCRAWLING) ? ZMOVE_VENTCRAWLING : 0
 	if(!above_turf)
 		to_chat(src, span_warning("There's nowhere to go in that direction!"))
 		return
@@ -439,7 +438,7 @@
 		if(transport.zMove(UP, TRUE))
 			to_chat(src, span_notice("You move upwards."))
 			return
-	if(canZMove(DOWN, above_turf, current_turf, ZMOVE_FALL_FLAGS|ventcrawling_flag)) //Will we fall down if we go up?
+	if(can_zFall(above_turf, target = current_turf, direction = DOWN )) //Will we fall down if we go up?
 		if(buckled)
 			to_chat(src, span_warning("[buckled] is is not capable of flight."))
 		else
