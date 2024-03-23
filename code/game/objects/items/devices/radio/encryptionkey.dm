@@ -208,11 +208,11 @@
 	independent = TRUE
 	channels = list(RADIO_CHANNEL_CENTCOM = 1)
 
-/obj/item/encryptionkey/headset_khans
-	name = "Khan radio encryption key"
-	desc = "An encryption key for a radio headset.  To access the Khan channel, use :a."
+/obj/item/encryptionkey/headset_den
+	name = "Den radio encryption key"
+	desc = "An encryption key for a radio headset. To access the Den channel, use :j."
 	icon_state = "cypherkey"
-	channels = list(RADIO_CHANNEL_KHANS = 1)
+	channels = list(RADIO_CHANNEL_DEN = 1)
 
 /obj/item/encryptionkey/headset_bw
 	name = "Blackwater radio encryption key"
