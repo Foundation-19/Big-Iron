@@ -620,6 +620,9 @@
 	icon_state = "gib2_flesh"
 	},
 /obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/railing{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -717,7 +720,8 @@
 	aggro_vision_range = 28;
 	faction = list("hostile","supermutant");
 	name = "Jorge";
-	health = 4000
+	health = 4000;
+	loot = list(/obj/item/keycard/swordfish)
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/subway{
@@ -2224,10 +2228,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
 "dBF" = (
-/obj/machinery/light{
-	dir = 1
+/obj/structure/railing{
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -2490,6 +2493,14 @@
 	icon_state = "horizontaltopbordertopright"
 	},
 /area/f13/wasteland)
+"dQO" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/tunnel)
 "dQV" = (
 /obj/structure/simple_door,
 /turf/open/indestructible/ground/outside/dirt,
@@ -4358,6 +4369,13 @@
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/bunker)
+"gHr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/tunnel)
 "gIm" = (
 /obj/structure/debris/v3{
 	pixel_x = -12
@@ -4867,12 +4885,12 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "hpU" = (
-/obj/effect/gibspawner/human,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	name = "metal plating"
+/obj/structure/lattice{
+	layer = 3
 	},
+/turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "hqm" = (
 /obj/machinery/shower{
@@ -6402,6 +6420,13 @@
 	icon_state = "plating"
 	},
 /area/f13/bunker)
+"jLn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/gibspawner/human,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/tunnel)
 "jLz" = (
 /obj/structure/barricade/tentclothcorner,
 /turf/open/indestructible/ground/outside/dirt{
@@ -8891,6 +8916,14 @@
 	},
 /turf/closed/indestructible/rock,
 /area/f13/underground/cave)
+"mNZ" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/tunnel)
 "mOi" = (
 /obj/structure/chair/right,
 /obj/effect/decal/cleanable/dirt,
@@ -10762,6 +10795,11 @@
 /area/f13/bunker)
 "pnl" = (
 /obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/railing{
+	dir = 6;
+	layer = 4.1
+	},
+/obj/structure/railing,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -10972,6 +11010,9 @@
 "pCg" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/railing{
+	dir = 4
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -11835,6 +11876,25 @@
 	icon_state = "reddirtyfull"
 	},
 /area/awaymission/caves)
+"qSh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/shuttle_manipulator{
+	desc = "You have no idea what this shows.";
+	icon_state = "hologram_on";
+	name = "old hologram";
+	pixel_y = -13
+	},
+/obj/machinery/shuttle_manipulator{
+	desc = "You have no idea what this shows.";
+	icon_state = "hologram_ship";
+	name = "old hologram";
+	pixel_x = -2
+	},
+/obj/structure/railing,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/tunnel)
 "qUi" = (
 /obj/structure/flora/junglebush/large,
 /obj/structure/flora/grass/jungle,
@@ -12305,15 +12365,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/bunker)
 "rFB" = (
-/obj/structure/simple_door/bunker,
-/obj/structure/table/reinforced,
-/obj/structure/barricade/concrete,
-/obj/structure/barricade/bars{
-	max_integrity = 800;
-	name = "strong metal bars";
-	obj_integrity = 800
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/keycard/swordfish,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/tunnel)
 "rFF" = (
@@ -13586,6 +13639,16 @@
 /obj/structure/barricade/wooden/planks,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
+"tGP" = (
+/obj/machinery/shuttle_manipulator{
+	desc = "You have no idea what this shows.";
+	name = "old hologram"
+	},
+/obj/structure/lattice{
+	layer = 3
+	},
+/turf/open/floor/plating/tunnel,
+/area/f13/tunnel)
 "tHQ" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
@@ -14491,8 +14554,10 @@
 /turf/open/floor/pod/dark,
 /area/f13/casino)
 "vhe" = (
-/obj/machinery/light,
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/bookcase/manuals,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -14826,6 +14891,12 @@
 /obj/structure/bed/old,
 /turf/open/floor/f13/wood,
 /area/awaymission/caves)
+"vCP" = (
+/obj/structure/bookcase/manuals,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/tunnel)
 "vDa" = (
 /obj/machinery/light{
 	dir = 8
@@ -14868,9 +14939,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
 "vGx" = (
-/obj/effect/mob_spawn/human/corpse/enclave/soldier{
-	pixel_x = -15
-	},
 /obj/item/paper{
 	icon_state = "paper_words";
 	name = "Enclave Orders";
@@ -14880,6 +14948,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/corpse/enclave/soldier,
 /turf/open/indestructible/ground/inside/subway{
 	name = "cave"
 	},
@@ -15286,6 +15355,16 @@
 "wxj" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/underground/cave)
+"wyf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/tunnel)
 "wyC" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/effect/decal/cleanable/dirt,
@@ -15846,19 +15925,31 @@
 /turf/open/floor/carpet/green,
 /area/f13/casino)
 "xwd" = (
-/obj/structure/simple_door/bunker,
-/turf/open/space/basic,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
 /area/f13/tunnel)
 "xws" = (
-/obj/machinery/porta_turret/centcom_shuttle/ballistic{
-	armor = list("melee"=95,"bullet"=95,"laser"=95,"energy"=95,"bomb"=95,"bio"=95,"rad"=0,"fire"=95,"acid"=40);
-	name = "Heavily reinforced turret";
-	desc = "A ballistic machine gun auto-turret, this one is built into the wall and has an abundence of external armor"
-	},
 /obj/machinery/light{
 	light_color = "#e8eaff"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/porta_turret/syndicate/vehicle_turret{
+	desc = " A heavy turret which seems to be a solid metal brick with two poles petrudding out at first glance that is until those metal poles start shooting at you and it flicks over to you.";
+	faction = list("supermutant");
+	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
+	name = "Heavy turret";
+	scan_range = 9;
+	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
+	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
+	throw_range = 9;
+	armor = list("melee" = 95, "bullet" = 95, "laser" = 95, "energy" = 95, "bomb" = 95, "bio" = 100, "rad" = 50, "fire" = 90, "acid" = 90)
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -16400,6 +16491,13 @@
 /obj/machinery/door/poddoor/preopen,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
+"yid" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bookcase/manuals,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	name = "metal plating"
+	},
+/area/f13/tunnel)
 "yiV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/poddoor/preopen,
@@ -37385,15 +37483,15 @@ ayr
 bXo
 eVO
 riA
-wUR
+yid
 wTI
 bXo
 bXo
 bUp
 tmF
 bXo
-bXo
-bXo
+vCP
+vCP
 xWz
 ayr
 bXo
@@ -37634,15 +37732,15 @@ heT
 heT
 heT
 ayr
-bXo
-bXo
-wTI
+dQO
+dQO
+wyf
 bXo
 ayr
 wUR
 eVO
 ayr
-aXW
+vhe
 wUR
 vrl
 vrl
@@ -37652,7 +37750,7 @@ bXo
 wUR
 wUR
 bXo
-xwd
+oGd
 bXo
 mzQ
 ayr
@@ -37892,21 +37990,21 @@ heT
 heT
 ayr
 bXo
-bXo
+dQO
 pCg
 bjz
 pnl
 ckF
 nlB
 ayr
-bXo
+vCP
 bXo
 wIZ
 vrl
 wIZ
 vrl
 bXo
-bXo
+dQO
 wUR
 fuq
 riA
@@ -38148,11 +38246,11 @@ heT
 heT
 heT
 ayr
-bXo
-wUR
-wUR
-bXo
-wUR
+dQO
+xwd
+xwd
+dQO
+gHr
 bXo
 wUR
 ayr
@@ -38160,11 +38258,11 @@ gVT
 bXo
 wUR
 bXo
+jLn
 wUR
-wUR
-wUR
-bXo
-wUR
+qSh
+tGP
+mNZ
 bXo
 riA
 riA
@@ -38419,9 +38517,9 @@ wUR
 wUR
 bXo
 bXo
-wUR
+gHr
 hpU
-wUR
+mNZ
 wUR
 bXo
 wUR
@@ -38670,14 +38768,14 @@ ayr
 ayr
 ayr
 ayr
-bXo
+vCP
 bXo
 hBQ
 vrl
 vrl
 wIZ
 wUR
-bXo
+dBF
 bXo
 wzz
 wUR
@@ -38927,7 +39025,7 @@ heT
 heT
 heT
 ayr
-aXW
+vhe
 wUR
 wIZ
 vrl
@@ -39184,25 +39282,25 @@ heT
 heT
 heT
 ayr
-wUR
+yid
 wUR
 bXo
 wUR
 bXo
 cGt
 bXo
-bXo
-bXo
+vCP
+vCP
 bXo
 ayr
 heT
 heT
 riA
-dBF
-bXo
-bXo
-bXo
-vhe
+jdx
+pvL
+tMR
+tMR
+nBv
 ayr
 heT
 heT
@@ -39455,11 +39553,11 @@ ayr
 heT
 heT
 ayr
-jdx
-pvL
-tMR
-tMR
-nBv
+ayr
+ayr
+ayr
+ayr
+ayr
 ayr
 heT
 heT
@@ -39711,13 +39809,13 @@ aiq
 aiq
 aiq
 aiq
-ayr
-ayr
-ayr
-riA
-riA
-ayr
-ayr
+heT
+heT
+heT
+heT
+aiq
+heT
+heT
 aiq
 heT
 heT
