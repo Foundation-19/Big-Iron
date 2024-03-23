@@ -268,6 +268,7 @@
 /obj/item/robot_module/standard
 	name = "Standard"
 	basic_modules = list(
+		/obj/item/assembly/flash/cyborg,
 		/obj/item/extinguisher/mini,
 		/obj/item/crowbar/cyborg,
 		/obj/item/reagent_containers/borghypo/epi,
@@ -293,6 +294,7 @@
 /obj/item/robot_module/medical
 	name = "Medical"
 	basic_modules = list(
+		/obj/item/assembly/flash/cyborg,
 		/obj/item/extinguisher/mini,
 		/obj/item/crowbar/cyborg,
 		/obj/item/healthanalyzer,
@@ -344,6 +346,7 @@
 /obj/item/robot_module/engineering
 	name = "Engineering"
 	basic_modules = list(
+		/obj/item/assembly/flash/cyborg,
 		/obj/item/borg/sight/meson,
 		/obj/item/construction/rcd/borg,
 		/obj/item/extinguisher,
@@ -372,6 +375,7 @@
 		/obj/item/construction/plumbing/cyborg,
 		/obj/item/construction/rld/cyborg,
 		/obj/item/stack/cable_coil/cyborg)
+	emag_modules = list(/obj/item/borg/stun)
 	ratvar_modules = list(
 		/obj/item/clockwork/slab/cyborg/engineer,
 		/obj/item/clockwork/replica_fabricator/cyborg)
@@ -399,9 +403,11 @@
 /obj/item/robot_module/security
 	name = "Security"
 	basic_modules = list(
+		/obj/item/assembly/flash/cyborg,
 		/obj/item/extinguisher/mini,
 		/obj/item/crowbar/cyborg,
 		/obj/item/restraints/handcuffs/cable/zipties,
+		/obj/item/melee/classic_baton/police,
 		/obj/item/gun/energy/disabler/cyborg,
 		/obj/item/clothing/mask/gas/sechailer/cyborg,
 		/obj/item/pinpointer/crew)
@@ -444,6 +450,7 @@
 /obj/item/robot_module/peacekeeper
 	name = "Peacekeeper"
 	basic_modules = list(
+		/obj/item/assembly/flash/cyborg,
 		/obj/item/extinguisher/mini,
 		/obj/item/crowbar/cyborg,
 		/obj/item/cookiesynth,
@@ -485,6 +492,7 @@
 /obj/item/robot_module/janitor
 	name = "Janitor"
 	basic_modules = list(
+		/obj/item/assembly/flash/cyborg,
 		/obj/item/screwdriver/cyborg,
 		/obj/item/crowbar/cyborg,
 		/obj/item/stack/tile/plasteel/cyborg,
@@ -517,6 +525,7 @@
 /obj/item/robot_module/butler
 	name = "Service"
 	basic_modules = list(
+		/obj/item/assembly/flash/cyborg,
 		/obj/item/extinguisher/mini,
 		/obj/item/crowbar/cyborg,
 		/obj/item/reagent_containers/food/drinks/drinkingglass,
@@ -609,6 +618,7 @@
 /obj/item/robot_module/miner
 	name = "Miner"
 	basic_modules = list(
+		/obj/item/assembly/flash/cyborg,
 		/obj/item/extinguisher/mini,
 		/obj/item/crowbar/cyborg,
 		/obj/item/borg/sight/meson,
@@ -657,11 +667,13 @@
 /obj/item/robot_module/gutsy
 	name = "Gutsy"
 	basic_modules = list( //Security borg
+		/obj/item/assembly/flash/cyborg,
 		/obj/item/extinguisher/mini,
 		/obj/item/crowbar/cyborg,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/borg/cyborghug,
 		/obj/item/megaphone,
+		/obj/item/melee/classic_baton/police,
 		/obj/item/gun/energy/laser/pistol/cyborg/gutsy,
 		/obj/item/clothing/mask/gas/sechailer/cyborg,
 		/obj/item/pinpointer/crew)
@@ -706,6 +718,7 @@
 /obj/item/robot_module/assaultron/medical
 	name = "Medical Assaultron"
 	basic_modules = list(
+		/obj/item/assembly/flash/cyborg,
 		/obj/item/extinguisher/mini,
 		/obj/item/crowbar/cyborg,
 		/obj/item/healthanalyzer,

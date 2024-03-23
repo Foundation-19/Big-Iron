@@ -4,7 +4,8 @@
 GLOBAL_LIST_INIT(gang_names, list ( \
 "raider", \
 "raiders", \
-"den", \
+"great khan", \
+"great khans", \
 "gang", \
 "gangs", \
 ))
@@ -78,6 +79,7 @@ GLOBAL_DATUM_INIT(greatkhans, /datum/gang/greatkhans, new)
 		/datum/gang_item/clothing/prostitute_dress,
 		/datum/gang_item/clothing/hat,
 		/datum/gang_item/clothing/glasses/sunglasses,
+		/datum/gang_item/equipment/greatkhanheadset
 	)
 
 /datum/gang/New(starting_members, starting_leader)

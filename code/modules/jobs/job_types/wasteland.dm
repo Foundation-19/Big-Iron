@@ -2,229 +2,112 @@
 	department_flag = WASTELAND
 
 ////////////////
-// 	   DEN 	  //
+// GREAT KHAN //
 ////////////////
 
-/datum/job/wasteland/f13enforcer
-	title = "Den Mob Enforcer"
-	flag = F13ENFORCER
+/datum/job/wasteland/f13pusher
+	title = "Great Khan"
+	flag = F13PUSHER
+	department_head = list("Captain")
+	head_announce = list("Security")
 	faction = FACTION_WASTELAND
-	social_faction = FACTION_RAIDERS
-	total_positions = 4
-	spawn_positions = 4
-	description = "The mob rules in Yuma. A hitman for the Den's Boss, you are a highly loyal enforcer charged with keeping order among the outlaw groups inhabiting the Den."
-	supervisors = "The Boss."
-	selection_color = "#ff4747"
-	exp_requirements = 600
-	exp_type = EXP_TYPE_WASTELAND
+	total_positions = 8
+	spawn_positions = 8
+	description = "You are no common raider or tribal settler, for you are a Great Khan. Your ancestry is that of fierce warriors and noble chieftans, whose rites and sagas tell of blood soaked battlefields and great sacrifice for your tribe. At least, this was once the case: after the massacre at Bitter Springs by the NCR, your people have lost much of their strength - now you and many other Khans travel west of Vegas through Red Rock Canyon in the hopes of settling in the region of Yuma."
+	supervisors = "your gang leadership"
+	selection_color = "#ff915e"
 
-	outfit = /datum/outfit/job/wasteland/f13enforcer
+	outfit = /datum/outfit/job/wasteland/f13pusher
 
-	access = list(ACCESS_DEN)
-	minimal_access = list(ACCESS_DEN)
+	access = list(ACCESS_KHAN, ACCESS_PUBLIC)
+	minimal_access = list(ACCESS_KHAN, ACCESS_PUBLIC)
 
 	loadout_options = list(
-		/datum/outfit/loadout/hitman,
-		/datum/outfit/loadout/bodyguard,
+		/datum/outfit/loadout/khanenforcer,
+		/datum/outfit/loadout/khanskirmisher,
+		/datum/outfit/loadout/khandrug
 		)
-
-/datum/outfit/job/wasteland/f13enforcer
-	name = "Den Mob Enforcer"
-	jobtype = /datum/job/wasteland/f13enforcer
-
-	id = /obj/item/card/id/denid
-	belt = /obj/item/storage/belt/military/assault
-	shoes = /obj/item/clothing/shoes/laceup
-	ears = /obj/item/radio/headset/headset_den
-	l_pocket = /obj/item/melee/onehanded/knife/switchblade
-	r_pocket = /obj/item/flashlight/seclite
-	uniform = /obj/item/clothing/under/f13/densuit
-	backpack =	/obj/item/storage/backpack/satchel
-	satchel =  /obj/item/storage/backpack/satchel
-	gloves =  /obj/item/clothing/gloves/color/white
-	head = /obj/item/clothing/head/beret/durathread
-	mask =  /obj/item/clothing/mask/bandana/durathread
-	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-		/obj/item/restraints/handcuffs = 1,
-		/obj/item/storage/bag/money/small/wastelander
-		)
-
-/datum/outfit/job/wasteland/f13enforcer/pre_equip(mob/living/carbon/human/H)
-	..()
-	r_hand = /obj/item/book/granter/trait/selection
-
-/datum/outfit/loadout/hitman
-	name = "Hitman"
-	r_hand = /obj/item/gun/ballistic/automatic/smg/mini_uzi
-	suit = /obj/item/clothing/suit/armor/vest
-	backpack_contents = list(
-						/obj/item/ammo_box/magazine/uzim9mm = 3,
-						/obj/item/suppressor = 1
-						)
-
-/datum/outfit/loadout/bodyguard
-	name = "Bodyguard"
-	r_hand = /obj/item/gun/ballistic/shotgun/police
-	suit = /obj/item/clothing/suit/armor/vest
-	backpack_contents = list(
-		/obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/melee/onehanded/knife/hunting = 1
-		)
-
-
-
-
-/datum/job/wasteland/f13mobboss
-	title = "Den Mob Boss"
-	flag = F13MOBBOSS
-	faction = FACTION_WASTELAND
-	social_faction = FACTION_RAIDERS
-	total_positions = 1
-	spawn_positions = 1
-	description = "The mob rules in Yuma, and you're on top. Keeping the loose association of Khans, outlaws, and other no-goods together you maintain order in The Den by force. Ensure that all inhabitants of the Den obey their rules, and spread your influence over the wasteland. Be careful though - even your own men can't be trusted."
-	supervisors = "The Overboss, God."
-	selection_color = "#ff4747"
-	exp_requirements = 1000
-	exp_type = EXP_TYPE_OUTLAW
-
-	outfit = /datum/outfit/job/wasteland/f13mobboss
-
-	access = list(ACCESS_DEN)
-	minimal_access = list(ACCESS_DEN)
 	matchmaking_allowed = list(
-		/datum/matchmaking_pref/rival = list(
-			/datum/job/kebab/f13highconstable,
-			/datum/job/kebab/f13militian,
-			/datum/job/kebab/f13militiacom,
+		/datum/matchmaking_pref/friend = list(
+			/datum/job/wasteland/f13raider,
+			/datum/job/wasteland/f13pusher,
 		),
-		/datum/matchmaking_pref/patron = list(
-			/datum/job/wasteland/f13wastelander,
+		/datum/matchmaking_pref/rival = list(
+			/datum/job/wasteland/f13raider,
+			/datum/job/wasteland/f13pusher,
 		),
 	)
 
-	loadout_options = list(
-		/datum/outfit/loadout/ncrrdenboss,
-		/datum/outfit/loadout/truedenmob
-		)
-
-/datum/outfit/job/wasteland/f13mobboss
-	name = "Den Mob Boss"
-	jobtype = /datum/job/wasteland/f13mobboss
-
-	id = /obj/item/card/id/denid
-	belt = /obj/item/storage/belt/military/assault
-	ears = /obj/item/radio/headset/headset_den
-	shoes = /obj/item/clothing/shoes/laceup
-	l_pocket = /obj/item/melee/onehanded/knife/switchblade
-	r_pocket = /obj/item/flashlight/seclite
-	uniform = /obj/item/clothing/under/f13/densuit
-	suit = /obj/item/clothing/suit/armor/f13/combat/mk2/raider
-	backpack =	/obj/item/storage/backpack/satchel
-	satchel = 	/obj/item/storage/backpack/satchel
-	gloves = /obj/item/clothing/gloves/color/white
-	head = /obj/item/clothing/head/caphat/beret/white
-	mask = /obj/item/clothing/mask/bandana/durathread
+/datum/outfit/job/wasteland/f13pusher
+	name = "Great Khan"
+	jobtype = /datum/job/wasteland/f13pusher
+	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+	id = /obj/item/card/id/khantattoo
+	ears = /obj/item/radio/headset/headset_khans
+	head = /obj/item/clothing/head/helmet/f13/khan
+	shoes = /obj/item/clothing/shoes/f13/military/khan
+	backpack =	/obj/item/storage/backpack/satchel/explorer
+	satchel = 	/obj/item/storage/backpack/satchel/old
+	uniform = /obj/item/clothing/under/f13/khan
+	r_hand = /obj/item/book/granter/trait/selection
+	r_pocket = /obj/item/flashlight/flare
+	l_pocket = /obj/item/storage/survivalkit_khan
+	gloves = /obj/item/melee/unarmed/brass/spiked
+	box = null
 	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-		/obj/item/restraints/handcuffs = 1,
-		/obj/item/storage/bag/money/small/raider/mobboss,
+		/obj/item/reagent_containers/pill/patch/jet = 2,
+		/obj/item/storage/bag/money/small/khan = 1
 		)
 
 
-/datum/outfit/loadout/ncrrdenboss
-	name = "Central Cali Den Boss"
-	backpack_contents = list(
-							/obj/item/ammo_box/tube/a357 = 4,
-							/obj/item/book/granter/trait/trekking = 1,
-							/obj/item/gun/ballistic/revolver/colt357/brassgun = 2,
-							/obj/item/book/granter/trait/gunslinger = 1
-							)
-
-/datum/outfit/loadout/truedenmob
-	name = "True Den Boss"
-	r_hand = /obj/item/gun/ballistic/automatic/smg/tommygun
-	backpack_contents = list(
-							/obj/item/ammo_box/magazine/tommygunm45/stick = 3
-							)
-
-/datum/job/wasteland/f13dendoctor
-	title = "Den Doctor"
-	flag = F13DENDOCTOR
-	faction = FACTION_WASTELAND
-	social_faction = FACTION_RAIDERS
-	total_positions = 4
-	spawn_positions = 4
-	description = "While you prioritize providing medical treatment in emergency situations, you are still trained in combat and have the additional role as a loyal combanteer to the Den."
-	supervisors = "The Boss."
-	selection_color = "#ff4747"
-	exp_requirements = 1000
-	exp_type = EXP_TYPE_OUTLAW
-
-	outfit = /datum/outfit/job/wasteland/f13dendoctor
-
-	access = list(ACCESS_DEN)
-	minimal_access = list(ACCESS_DEN)
-
-	loadout_options = list(
-		/datum/outfit/loadout/dencombatmedic,
-		/datum/outfit/loadout/denchemist,
-		)
-
-/datum/outfit/job/wasteland/f13dendoctor
-	name = "Den Doctor"
-	jobtype = /datum/job/wasteland/f13dendoctor
-
-	id = /obj/item/card/id/denid
-	belt = /obj/item/storage/belt/medical
-	shoes = /obj/item/clothing/shoes/laceup
-	ears = /obj/item/radio/headset/headset_den
-	r_pocket = /obj/item/flashlight/seclite
-	uniform = /obj/item/clothing/under/f13/densuit
-	backpack =	/obj/item/storage/backpack/medic
-	gloves =  /obj/item/clothing/gloves/color/white
-	head = /obj/item/clothing/head/beret/durathread
-	mask =  /obj/item/clothing/mask/bandana/durathread
-	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
-		/obj/item/healthanalyzer=1, \
-		/obj/item/storage/bag/money/small/wastelander)
-
-/datum/outfit/job/wasteland/f13dendoctor/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/wasteland/f13pusher/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
-	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
-	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
-	ADD_TRAIT(H, TRAIT_SURGERY_MID, src)
+
+	if(!H.gang)
+		var/datum/gang/greatkhans/GK = GLOB.greatkhans
+		GLOB.all_gangs |= GK
+		GK.add_member(H)
+		H.gang = GK
+
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/varmintrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/combatrifle)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_khanate)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/jet)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/turbo)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/psycho)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/medx)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/buffout)
 
-
-/datum/outfit/loadout/dencombatmedic
-	name = "Combat medic"
-	r_hand = /obj/item/gun/ballistic/automatic/smg/tommygun
-	suit = /obj/item/clothing/suit/toggle/labcoat/chemist
+/datum/outfit/loadout/khanenforcer
+	name = "Enforcer"
+	r_hand = /obj/item/twohanded/baseball/spiked
+	belt = /obj/item/storage/belt/bandolier
 	backpack_contents = list(
-							/obj/item/clothing/glasses/hud/health/f13 = 1,
-							/obj/item/ammo_box/magazine/tommygunm45/stick = 2
-							)
+		/obj/item/restraints/legcuffs/bola/tactical = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3
+		)
 
-/datum/outfit/loadout/denchemist
-	name = "Chemist"
-	r_hand = /obj/item/gun/ballistic/automatic/pistol/type17
-	suit = /obj/item/clothing/suit/toggle/labcoat/chemist
+/datum/outfit/loadout/khanskirmisher
+	name = "Skirmisher"
+	r_hand = /obj/item/gun/ballistic/automatic/smg/greasegun
 	backpack_contents = list(
-						/obj/item/ammo_box/magazine/m10mm_adv/simple = 1,
-						/obj/item/grenade/chem_grenade = 1,
-						/obj/item/clothing/mask/gas = 1,
-						/obj/item/reagent_containers/glass/beaker/large = 2
-						)
+		/obj/item/ammo_box/magazine/greasegun = 3,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/storage/belt/holster = 1,
+		/obj/item/book/granter/trait/trekking = 1
+		)
 
+/datum/outfit/loadout/khandrug
+	name = "Drug Pusher"
+	belt = /obj/item/storage/belt/bandolier
+	backpack_contents = list(
+		/obj/item/storage/pill_bottle/chem_tin/fixer = 1,
+		/obj/item/book/granter/trait/chemistry = 1,
+		/obj/item/reagent_containers/pill/patch/turbo = 2
+		)
 
 /*
 Raider
@@ -251,14 +134,10 @@ Raider
 	minimal_access = list(ACCESS_RAIDER, ACCESS_PUBLIC)
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
-			/datum/job/wasteland/f13dendoctor,
-			/datum/job/wasteland/f13enforcer,
-			/datum/job/wasteland/f13mobboss,
+			/datum/job/wasteland/f13pusher,
 		),
 		/datum/matchmaking_pref/rival = list(
-			/datum/job/wasteland/f13dendoctor,
-			/datum/job/wasteland/f13enforcer,
-			/datum/job/wasteland/f13mobboss,
+			/datum/job/wasteland/f13pusher,
 		),
 		/datum/matchmaking_pref/patron = list(
 			/datum/job/wasteland/f13raider,
@@ -289,7 +168,7 @@ Raider
 	/datum/outfit/loadout/quack_doctor,
 	/datum/outfit/loadout/raider_powder,
 	/datum/outfit/loadout/raider_tribal,
-	/datum/outfit/loadout/greatkhan
+	/datum/outfit/loadout/den
 	)
 
 
@@ -558,21 +437,21 @@ Raider
 		/obj/item/book/granter/trait/explosives = 1
 		)
 
-/datum/outfit/loadout/greatkhan
-	name = "Great Khan"
-	suit = /obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
-	id = /obj/item/card/id/khantattoo
-	ears = /obj/item/radio/headset
-	head = /obj/item/clothing/head/helmet/f13/khan
-	shoes = /obj/item/clothing/shoes/f13/military/khan
-	uniform = /obj/item/clothing/under/f13/khan
-	r_hand = /obj/item/book/granter/trait/selection
-	r_pocket = /obj/item/flashlight/flare
-	l_pocket = /obj/item/storage/survivalkit_khan
-	gloves = /obj/item/melee/unarmed/brass/spiked
+/datum/outfit/loadout/den
+	name = "Den Gangster"
+	suit = /obj/item/clothing/suit/armor/vest
+	uniform = /obj/item/clothing/under/f13/densuit
+	head = /obj/item/clothing/head/fedora
+	gloves = /obj/item/clothing/gloves/color/white
+	shoes = /obj/item/clothing/shoes/laceup
+	id = /obj/item/card/id/denid
 	backpack_contents = list(
-		/obj/item/reagent_containers/pill/patch/jet = 2,
-		/obj/item/storage/bag/money/small/khan = 1,
+		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
+		/obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
+		/obj/item/ammo_box/magazine/greasegun = 1,
+		/obj/item/radio/headset = 1,
+		/obj/item/clothing/mask/bandana/durathread = 1
 		)
 
 /datum/job/wasteland/f13wastelander
