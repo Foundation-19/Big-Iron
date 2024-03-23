@@ -150,5 +150,5 @@
 	path = /obj/item/clothing/shoes/f13/military/khan_pelt
 	cost = 2
 	subcategory = LOADOUT_SUBCATEGORY_SHOES_FACTIONS
-	restricted_desc = "Outlaw"
-	restricted_roles = list("Outlaw")
+	restricted_desc = "KHAN"
+	restricted_roles = list("Great Khan")
