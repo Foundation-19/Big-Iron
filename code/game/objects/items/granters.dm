@@ -1015,9 +1015,9 @@
 			if("Owl Ritual")
 				granted_trait = TRAIT_NIGHT_VISION
 				traitname = "night vision"
-			if("Hunter")
-				granted_trait = TRAIT_TRAPPER
-				traitname = "hunting"
+			if("Rite of Resiliance")
+				granted_trait = TRAIT_NOLIMBDISABLE
+				traitname = "endurance"
 			if("Basic Surgery")
 				granted_trait = TRAIT_SURGERY_LOW
 				traitname = "basic surgery"
