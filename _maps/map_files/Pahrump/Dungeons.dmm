@@ -138,7 +138,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "anP" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -960,7 +960,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/f13vaultrusted,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "bKE" = (
 /obj/structure/table/reinforced,
 /obj/item/trash/f13/mre{
@@ -3342,10 +3342,10 @@
 	},
 /area/awaymission/caves)
 "eXF" = (
-/obj/structure/showcase/horrific_experiment,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/sleeper,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "eXH" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/handy/assaultron,
@@ -4110,10 +4110,22 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
 "glG" = (
-/obj/structure/showcase/machinery/cloning_pod,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/radiation,
+/obj/item/clothing/head/bio_hood/f13/hazmat{
+	name = "CBRN hood";
+	armor = list("melee"=55,"bullet"=55,"laser"=55,"energy"=75,"bomb"=75,"bio"=100,"rad"=100,"fire"=100,"acid"=100);
+	desc = "A sleek hazmat suit reinforced with ballistic plastic for the faceshield and the hood to be made out of a kevlar like composite all while retaining its functionality to stop radiation and other uncommon threats, hell it even has a little bit of nightvision built in";
+	darkness_view = 0.3
+	},
+/obj/item/clothing/suit/bio_suit/f13/hazmat{
+	name = "CBRN suit";
+	armor = list("melee"=55,"bullet"=55,"laser"=55,"energy"=75,"bomb"=75,"bio"=100,"rad"=100,"fire"=100,"acid"=100);
+	desc = "A sleek yellow suit with integrated cooling and reinforced with protective composites";
+	slowdown = 0
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "glN" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/window/reinforced,
@@ -4187,8 +4199,21 @@
 	light_color = "#c1caff"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/melee/powered/ripper/prewar{
+	force_on = 75;
+	name = "The interrigator";
+	desc = "A hand-held, militarized chainsaw, popular with Army units requiring a compact engineering tool for cutting. Just what material is intended to be cut with the weapon remains open to debate, but not for this one, this one was commitioned by the CIA to cut into flesh and armor, countless innocent people have died by this weapons hand, but yet it thirsts for more";
+	armour_penetration = 0.3
+	},
+/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator{
+	extra_damage = 50;
+	name = "Assasins pride";
+	armour_penetration = 0.3;
+	slowdown = 0
+	},
+/obj/structure/closet/crate/secure/loot,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "grN" = (
 /obj/structure/table/booth,
 /obj/structure/spacevine{
@@ -5633,7 +5658,7 @@
 /obj/structure/table/optable,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "ivb" = (
 /obj/structure/fence/wooden{
 	dir = 4;
@@ -6001,25 +6026,16 @@
 	armor = list("melee"=60,"bullet"=60,"laser"=60,"energy"=40,"bio"=30,"rad"=20,"fire"=60,"acid"=0,"wound"=40)
 	},
 /obj/item/clothing/suit/toggle/armor/f13/rangercustomdark{
-	armor = list("melee"=60,"bullet"=60,"laser"=60,"energy"=40,"bio"=30,"rad"=20,"fire"=60,"acid"=0,"wound"=40)
+	armor = list("melee"=70,"bullet"=70,"laser"=70,"energy"=65,"bio"=30,"rad"=20,"fire"=60,"acid"=0,"wound"=40)
 	},
-/obj/item/melee/powered/ripper/prewar,
-/obj/item/clothing/accessory/cia_badge,
-/obj/item/clothing/glasses/hud/health/night,
-/obj/item/clothing/under/syndicate/combat,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/gloves/f13/military,
-/obj/item/radio/headset/headset_sec/alt{
-	desc = "This is a headset worn by operatives of the central intelligence agency before the war";
-	name = "CIA headset"
-	},
-/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
-/obj/item/storage/belt/military/assault,
-/obj/item/ammo_box/magazine/m556/rifle/extended/empty,
-/obj/item/ammo_box/magazine/m556/rifle/extended/empty,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom{
+	armor = list("melee"=70,"bullet"=70,"laser"=70,"energy"=65,"bio"=100,"rad"=85,"fire"=60,"acid"=0,"wound"=40);
+	name = "sleek riot helmet";
+	desc = "A riot helmet that was commitioned by the CIA to look creepier then normal riot armor, particularily this one was used for stalking and making people feel paranoid, however it is also fresh and untouched and incredibly advanced"
+	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "jdx" = (
 /obj/machinery/computer/arcade/battle,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -6655,8 +6671,27 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
 /area/f13/bunker)
 "jYJ" = (
-/turf/closed/indestructible/f13vaultrusted,
-/area/f13/underground/cave)
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/obj/item/clothing/under/syndicate/combat,
+/obj/item/radio/headset/headset_sec/alt{
+	desc = "This is a headset worn by operatives of the central intelligence agency before the war";
+	name = "CIA headset"
+	},
+/obj/item/clothing/gloves/f13/military,
+/obj/item/storage/belt/military/assault,
+/obj/item/clothing/glasses/hud/health/night,
+/obj/item/radio/headset/headset_sec/alt{
+	desc = "This is a headset worn by operatives of the central intelligence agency before the war";
+	name = "CIA headset"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/shoes/combat/coldres,
+/obj/structure/closet/crate/secure/loot,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/tunnel)
 "jYX" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/road{
@@ -7289,7 +7324,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "kXD" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plating/tunnel{
@@ -7878,7 +7913,7 @@
 "lGW" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "lHr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -8343,13 +8378,10 @@
 	},
 /area/f13/bunker)
 "mjm" = (
-/obj/structure/showcase/horrific_experiment{
-	desc = "Some sort of pod. Seems this one's maintanance panel is open, someone was working on this.";
-	icon_state = "pod_0_maintenance"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/showcase/horrific_experiment,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "mjV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -10503,7 +10535,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "oTz" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertop2"
@@ -12394,13 +12426,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/bunker)
 "rFB" = (
-/obj/structure/closet/acloset,
-/obj/structure/closet/body_bag/containment,
-/obj/structure/closet/body_bag/containment,
-/obj/structure/closet/body_bag/containment,
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/rack/shelf_metal,
+/obj/item/ammo_box/magazine/m556/rifle/extended,
+/obj/item/ammo_box/magazine/m556/rifle/extended,
+/obj/item/ammo_box/magazine/m556/rifle/extended,
+/obj/item/ammo_box/magazine/m556/rifle/extended,
+/obj/item/ammo_box/magazine/m556/rifle/extended,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "rFF" = (
 /obj/effect/decal/cleanable/glass,
 /obj/item/shard{
@@ -12492,7 +12525,7 @@
 /obj/item/card/data/disk,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "rIo" = (
 /obj/structure/simple_door/bunker,
 /turf/open/floor/pod/dark,
@@ -12696,6 +12729,15 @@
 	icon_state = "housewood2"
 	},
 /area/f13/casino)
+"rYc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/f13chair1{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/splats,
+/obj/machinery/light/floor,
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/tunnel)
 "rYh" = (
 /obj/item/ammo_casing/c9mm,
 /obj/machinery/light{
@@ -13260,7 +13302,7 @@
 /obj/machinery/door/keycard/swordfish,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "sSr" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
@@ -16081,10 +16123,13 @@
 	},
 /area/f13/casino)
 "xCH" = (
-/obj/machinery/sleeper,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/body_bag/containment,
+/obj/structure/closet/body_bag/containment,
+/obj/structure/closet/body_bag/containment,
+/obj/structure/closet/acloset,
 /turf/open/floor/plasteel/f13/vault_floor/white,
-/area/f13/underground/cave)
+/area/f13/tunnel)
 "xCN" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /obj/structure/closet/cabinet{
@@ -50879,13 +50924,13 @@ heT
 heT
 heT
 heT
-jYJ
+ayr
 glG
 oTc
 lGW
 oTc
 iup
-jYJ
+ayr
 heT
 heT
 heT
@@ -51136,13 +51181,13 @@ heT
 heT
 heT
 heT
-jYJ
+ayr
 xCH
 lGW
 lGW
 lGW
 all
-jYJ
+ayr
 heT
 heT
 heT
@@ -51393,13 +51438,13 @@ heT
 heT
 heT
 heT
-jYJ
+ayr
 eXF
 lGW
-lGW
+rYc
 lGW
 rIb
-jYJ
+ayr
 heT
 heT
 heT
@@ -51650,13 +51695,13 @@ heT
 heT
 heT
 heT
-jYJ
+ayr
 kXB
 lGW
 lGW
 lGW
 lGW
-jYJ
+ayr
 heT
 heT
 heT
@@ -51907,13 +51952,13 @@ heT
 heT
 heT
 heT
-jYJ
+ayr
 mjm
 grD
 jcV
-grD
-rFB
 jYJ
+rFB
+ayr
 heT
 heT
 heT
@@ -52164,13 +52209,13 @@ heT
 heT
 heT
 heT
-jYJ
-jYJ
-jYJ
-jYJ
-jYJ
-jYJ
-jYJ
+ayr
+ayr
+ayr
+ayr
+ayr
+ayr
+ayr
 heT
 heT
 heT
