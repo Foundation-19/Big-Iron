@@ -115,6 +115,14 @@
 	ME.attach(src)
 	max_ammo()
 
+/obj/mecha/combat/phazon/vertibird/domove(direction)
+	if(z != 5)
+		if(world.time - last_message > 20)
+			occupant_message("Unable to move while landed.")
+			last_message = world.time
+		return 0
+	. = ..()
+	
 ///NCR VERTIBIRD
 
 /obj/mecha/combat/phazon/vertibird/ncr
