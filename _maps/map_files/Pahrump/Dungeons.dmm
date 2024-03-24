@@ -14947,23 +14947,6 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/f13/medical/random_fev,
-/obj/effect/spawner/lootdrop/f13/medical/random_fev{
-	pixel_y = 8;
-	pixel_x = -7
-	},
-/obj/effect/spawner/lootdrop/f13/medical/random_fev{
-	pixel_y = 6;
-	pixel_x = 9
-	},
-/obj/effect/spawner/lootdrop/f13/medical/random_fev{
-	pixel_y = -8;
-	pixel_x = -7
-	},
-/obj/effect/spawner/lootdrop/f13/medical/random_fev{
-	pixel_y = -5;
-	pixel_x = 9
-	},
 /obj/structure/window/reinforced{
 	dir = 1
 	},
@@ -14977,6 +14960,27 @@
 	dir = 1
 	},
 /obj/structure/table,
+/obj/item/reagent_containers/glass/bottle/FEV_solution{
+	pixel_y = 7;
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/glass/bottle/FEV_solution{
+	pixel_y = 7;
+	pixel_x = 10
+	},
+/obj/item/reagent_containers/glass/bottle/FEV_solution{
+	pixel_y = -6;
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/glass/bottle/FEV_solution{
+	pixel_y = -8;
+	pixel_x = 10
+	},
+/obj/item/reagent_containers/glass/bottle/FEV_solution{
+	pixel_y = 7;
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/glass/bottle/FEV_solution,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
@@ -16042,7 +16046,8 @@
 	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
 	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
 	throw_range = 9;
-	armor = list("melee"=95,"bullet"=95,"laser"=95,"energy"=95,"bomb"=95,"bio"=100,"rad"=50,"fire"=90,"acid"=90)
+	armor = list("melee"=95,"bullet"=95,"laser"=95,"energy"=95,"bomb"=95,"bio"=100,"rad"=50,"fire"=90,"acid"=90);
+	max_integrity = 400
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
