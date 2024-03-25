@@ -165,7 +165,7 @@
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 
-/datum/outfit/loadout/proselytizer
+/datum/outfit/loadout/bulwark
 	name = "Bulwark of His Faith"
 	suit_store = /obj/item/twohanded/sledgehammer/atomsjudgement
 	backpack_contents = list(
@@ -175,8 +175,8 @@
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
 		)
 
-/datum/outfit/loadout/healer
-	name = "Soverign of His Grace"
+/datum/outfit/loadout/sovereign
+	name = "Sovereign of His Grace"
 	suit_store = /obj/item/gun/energy/laser/wattz2k
 	backpack_contents = list(
 		/obj/item/book/granter/trait/midsurgery = 1,
