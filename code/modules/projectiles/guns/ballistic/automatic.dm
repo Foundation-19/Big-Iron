@@ -1027,7 +1027,7 @@
 	mag_type = /obj/item/ammo_box/magazine/w308
 	fire_delay = 6
 	burst_size = 1
-	extra_speed = 600
+	extra_speed = 800
 	extra_penetration = 0.2
 	extra_damage = 45
 	slowdown = 0.4
