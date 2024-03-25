@@ -82,7 +82,7 @@
 	backpack_contents = list(
 		/obj/item/clothing/suit/armor/f13/harbingermantle = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 3,
-		/obj/item/reagent_containers/glass/bottle/FEV_solution/two = 2
+		/obj/item/reagent_containers/glass/bottle/FEV_solution/two = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 4
 		)
 
