@@ -24,6 +24,11 @@
 	access = list(ACCESS_COTC, ACCESS_COTC_ARMORY, ACCESS_COTC_SECRET)
 	minimal_access = list(ACCESS_COTC, ACCESS_COTC_ARMORY, ACCESS_COTC_SECRET)
 
+	loadout_options = list(
+		/datum/outfit/loadout/beckoner,		//
+		/datum/outfit/loadout/minister,	//
+		)
+
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/church,
@@ -71,6 +76,23 @@
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 
+/datum/outfit/loadout/beckoner
+	name = "Beckoner of His Truth"
+	suit_store = /obj/item/gun/energy/gammagun
+	backpack_contents = list(
+		/obj/item/clothing/suit/armor/f13/harbingermantle = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/reagent_containers/glass/bottle/FEV_solution/two = 2
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 4
+		)
+
+/datum/outfit/loadout/minister
+	name = "Minister of His Mercy"
+	suit_store = /obj/item/gun/energy/ionrifle
+	backpack_contents = list(
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/storage/box/medicine/stimpaks/stimpaks5 = 4
+		)
 
 /*--------------------------------------------------------------*/
 
@@ -92,6 +114,11 @@
 	access = list(ACCESS_COTC, ACCESS_COTC_ARMORY, ACCESS_COTC_SECRET)
 	minimal_access = list(ACCESS_COTC, ACCESS_COTC_ARMORY, ACCESS_COTC_SECRET)
 
+	loadout_options = list(
+		/datum/outfit/loadout/bulwark,		//
+		/datum/outfit/loadout/sovereign,	//
+		)
+
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/church,
@@ -108,7 +135,6 @@
 	id = /obj/item/card/id/yuma/cotc/brand
 	uniform = /obj/item/clothing/under/f13/chaplain
 	suit = /obj/item/clothing/suit/hooded/robes/cotc/servitor
-	suit_store = /obj/item/gun/energy/laser/wattz2k
 	ears = /obj/item/radio/headset/headset_church
 	backpack = /obj/item/storage/backpack/satchel/leather
 	satchel = /obj/item/storage/backpack/satchel/leather
@@ -120,11 +146,8 @@
 	backpack_contents = list(
 		/obj/item/book/manual/thebook = 1,
 		/obj/item/book/manual/ritualbook = 1,
-		/obj/item/melee/classic_baton = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/stack/medical/bruise_pack = 1,
 		/obj/item/restraints/handcuffs/cable = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2
 		)
 
 /datum/outfit/job/church/f13servitor/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -141,6 +164,27 @@
 	ADD_TRAIT(H, TRAIT_MEDICALEXPERT, src)
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
+
+/datum/outfit/loadout/proselytizer
+	name = "Bulwark of His Faith"
+	suit_store = /obj/item/twohanded/sledgehammer/atomsjudgement
+	backpack_contents = list(
+		/obj/item/melee/classic_baton = 1,
+		/obj/item/restraints/legcuffs/bola = 3,
+		/obj/item/clothing/suit/armored/heavy/recycled_power = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
+		)
+
+/datum/outfit/loadout/healer
+	name = "Soverign of His Grace"
+	suit_store = /obj/item/gun/energy/laser/wattz2k
+	backpack_contents = list(
+		/obj/item/book/granter/trait/midsurgery = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/clothing/suit/chaplain/witchhunter = 1,
+		/obj/item/clothing/head/helmet/chaplain/witchunter_hat = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 5
+		)
 
 /*--------------------------------------------------------------*/
 
@@ -203,24 +247,30 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/stimpak5)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/church)
+	ADD_TRAIT(H, TRAIT_TECHNOPHREAK, src)
+	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
+	ADD_TRAIT(H, TRAIT_MACHINE_SPIRITS, src)
 
 /datum/outfit/loadout/proselytizer
-	name = "Enforcer"
-	suit = /obj/item/clothing/suit/hooded/robes/cotc/proselytizer
+	name = "Enforcer of His Debts"
+	suit = /obj/item/clothing/suit/armor/riot/knight/tabard
 	suit_store = /obj/item/gun/energy/laser/aer9
 	backpack_contents = list(
+		/obj/item/clothing/suit/hooded/robes/cotc/acolyte = 1,
 		/obj/item/melee/classic_baton = 1,
+		/obj/item/melee/unarmed/sappers = 1,
 		/obj/item/restraints/legcuffs/bola = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
 		)
 
 /datum/outfit/loadout/healer
-	name = "Healer"
+	name = "Healer of His Vitality"
 	suit = /obj/item/clothing/suit/hooded/robes/cotc/acolyte
 	backpack_contents = list(
 		/obj/item/book/granter/trait/midsurgery = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
+		/obj/item/storage/box/medicine/stimpaks/stimpaks5 = 2
 		)
 
 /*--------------------------------------------------------------*/
