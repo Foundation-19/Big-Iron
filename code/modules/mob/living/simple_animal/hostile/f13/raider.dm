@@ -526,8 +526,8 @@
 	retreat_distance = 10
 	minimum_distance = 6
 	ranged_cooldown_time = 10
-	projectiletype = /obj/item/projectile/bullet/a762mm/simple/ap
-	projectilesound = 'sound/f13weapons/762rifle.ogg'
+	projectiletype = /obj/item/projectile/bullet/a762/sport/simple
+	projectilesound = 'sound/f13weapons/hunting_rifle.ogg'
 	loot = list(/obj/item/stack/f13Cash/random/high, /obj/effect/spawner/bundle/f13/remington, /obj/effect/spawner/lootdrop/f13/armor/random)
 	robust_searching = TRUE
 	speak = list("Come get some!", "I am the shadow!", "One shot, one kill.", "Adjusting my scope.", "Renegades represent!")
@@ -536,8 +536,8 @@
 
 // ADVANCED HEAVY RANGED VARIANT
 /mob/living/simple_animal/hostile/renegade/drifter/sniper
-	name = "Renegade Sniper"
-	desc = "A veteran of the Renegades, specializing in recon and long range engagements and equipped with old, stolen riot gear- with no regard for the safety of their comrades so long as their target went down."
+	name = "Enclave Sniper"
+	desc = "A stone-hearted killer. A marksman of the Enclave, armed with a DKS-501 sniper rifle and a red gleam in his eyes. You should probably start running."
 	armour_penetration = 0.2
 	check_friendly_fire = 0
 	health = 300
@@ -547,6 +547,7 @@
 	icon_state = "renegade_sniper"
 	icon_living = "renegade_sniper"
 	icon_dead = "renegade_sniper-dead"
+	speak = list("...", "That's that, and this is this.", "One shot, one kill.", "Adjusting my scope.", "That's just how this wasteland is.")
 
 // HEAVY SHOTGUN VARIANT
 /mob/living/simple_animal/hostile/renegade/guardian
@@ -603,8 +604,8 @@
 	attack_sound = 'sound/weapons/slam.ogg'
 	ranged_cooldown_time = 30
 	extra_projectiles = 5
-	projectiletype = /obj/item/projectile/bullet/a5mm/simple
-	projectilesound = 'sound/f13weapons/762lmg.ogg'
+	projectiletype = /obj/item/projectile/bullet/a556/match
+	projectilesound = 'sound/f13weapons/automaticrifle_BAR.ogg'
 	loot = list(/obj/item/stack/f13Cash/random/high, /obj/item/advanced_crafting_components/alloys, /obj/item/stack/sheet/plasteel/five)
 	speak = list("POWER TO THE ARMOR!", "I AM GOING TO BREAK YOU IN HALF!", "YEAH I COMPENSATE WITH BIG FUCKIN' GUNS", "DODGE THIS!", "PEAK RENEGADE PERFORMANCE!")
 	speak_emote = list("says")
@@ -667,8 +668,8 @@
 
 // THE BOSS. THE BIG ONE. THE BIG CHEESE
 /mob/living/simple_animal/hostile/raider/junker/boss/renegade
-	name = "Renegade Boss"
-	desc = "A Renegade boss, clad in hotrod power armor, and wielding a deadly rapid-fire shrapnel cannon. He's had enough of your shit."
+	name = "Enclave Gunnery Sergeant"
+	desc = "An Enclave sergeant, wielding USMC Marine Armour and a massive machinegun. He's had it with your shit."
 	faction = list("raider","wastebot","hostile","supermutant","ghoul")
 	aggro_vision_range = 15
 	armour_penetration = 0.8
@@ -686,3 +687,4 @@
 	icon_state = "renegade_boss"
 	icon_living = "renegade_boss"
 	icon_dead = "renegade_boss-dead"
+	speak = list("Your end is now.", "I'm going to crush you.", "+Judgement.+", "Die.", "You're weak.")
