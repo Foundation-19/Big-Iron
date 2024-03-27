@@ -130,7 +130,7 @@
 		to_chat(user, "<span class='danger'>The mine is already armed!</span>") //how did we get here
 	if(user.dropItemToGround(src))
 		anchored = TRUE
-		addtimer(CALLBACK(src, .proc/arm), 5 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(arm)), 5 SECONDS)
 		to_chat(user, "<span class='notice'>You drop the mine and activate the 5-second arming process.</span>")
 		return
 

@@ -4,7 +4,7 @@ SUBSYSTEM_DEF(grace)
 
 /datum/controller/subsystem/grace/fire()
 	if(allowed_firings)
-		addtimer(CALLBACK(src, .proc/announce_over), 30 MINUTES)
+		addtimer(CALLBACK(src, PROC_REF(announce_over)), 30 MINUTES)
 		allowed_firings = FALSE // unfuck this later.
 
 /datum/controller/subsystem/grace/proc/announce_over()

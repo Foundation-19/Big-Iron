@@ -143,7 +143,7 @@
 	do_animate("opening")
 	playsound(src.loc, 'sound/machines/windowdoor.ogg', 100, 1)
 	src.icon_state ="[src.base_state]open"
-	addtimer(CALLBACK(src, .proc/finish_opening), 10)
+	addtimer(CALLBACK(src, PROC_REF(finish_opening)), 10)
 	return TRUE
 
 /obj/machinery/door/window/proc/finish_opening()
@@ -173,7 +173,7 @@
 	density = TRUE
 	air_update_turf(1)
 	update_freelook_sight()
-	addtimer(CALLBACK(src, .proc/finish_closing), 10)
+	addtimer(CALLBACK(src, PROC_REF(finish_closing)), 10)
 	return TRUE
 
 /obj/machinery/door/window/proc/finish_closing()
@@ -224,7 +224,7 @@
 	operating = TRUE
 	flick("[src.base_state]spark", src)
 	playsound(src, "sparks", 75, 1)
-	addtimer(CALLBACK(src, .proc/open_windows_me), 6)
+	addtimer(CALLBACK(src, PROC_REF(open_windows_me)), 6)
 	return TRUE
 
 /obj/machinery/door/window/proc/open_windows_me()
@@ -342,11 +342,11 @@
 				return
 
 			if(density)
-				INVOKE_ASYNC(src, .proc/open)
+				INVOKE_ASYNC(src, PROC_REF(open))
 			else
-				INVOKE_ASYNC(src, .proc/close)
+				INVOKE_ASYNC(src, PROC_REF(close))
 		if("touch")
-			INVOKE_ASYNC(src, .proc/open_and_close)
+			INVOKE_ASYNC(src, PROC_REF(open_and_close))
 
 /obj/machinery/door/window/brigdoor
 	name = "secure door"
