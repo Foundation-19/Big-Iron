@@ -20,19 +20,8 @@
 		return
 	
 	if(istype(AM, /obj/vehicle/ridden/space/speedbike) && AM.buckled_mobs.len)
-		var/mob/living/H = AM.buckled_mobs[1]
-		H.adjustStaminaLoss(60)
-		playsound(src, 'sound/effects/bang.ogg', 40, TRUE)
-		if(!iscarbon(H) || H.getStaminaLoss() >= 100)
-			var/atom/throw_target = get_edge_target_turf(H, pick(GLOB.cardinals))
-			AM.unbuckle_mob(H)
-			H.throw_at(throw_target, 3, 2)
-			var/head_slot = H.get_item_by_slot(SLOT_HEAD)
-			if(!head_slot || !(istype(head_slot,/obj/item/clothing/head/helmet) || istype(head_slot,/obj/item/clothing/head/hardhat)))
-				H.adjustOrganLoss(ORGAN_SLOT_BRAIN, 5)
-				H.updatehealth()
-			AM.visible_message("<span class='danger'>[AM] crashes, sending [H] flying!</span>")
-			H.Knockdown(80)
+		var/obj/vehicle/ridden/space/speedbike/unfortunatebike = AM
+		unfortunatebike.crashing()
 
 	if(!prob(probability))
 		return

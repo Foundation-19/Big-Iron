@@ -32,14 +32,40 @@
 		new /obj/effect/temp_visual/dir_setting/speedbike_trail(loc,move_dir)
 	. = ..()
 
+/obj/vehicle/ridden/space/speedbike/proc/crashing(force = 5)
+	if(buckled_mobs.len)
+		for(var/mob/living/H in buckled_mobs)
+			H.adjustStaminaLoss(60)
+			playsound(src, 'sound/effects/bang.ogg', 40, TRUE)
+			var/atom/throw_target = get_edge_target_turf(H, pick(GLOB.cardinals))
+			unbuckle_mob(H)
+			H.throw_at(throw_target, force, force)
+			if(iscarbon(H))
+				var/head_slot = H.get_item_by_slot(SLOT_HEAD)
+				if(!head_slot || !(istype(head_slot,/obj/item/clothing/head/helmet) || istype(head_slot,/obj/item/clothing/head/hardhat)))
+					H.adjustOrganLoss(ORGAN_SLOT_BRAIN, 5)
+					H.updatehealth()
+				visible_message("<span class='danger'>[src] crashes, sending [H] flying!</span>")
+				H.Knockdown(80)
 /obj/vehicle/ridden/space/speedbike/red
 	icon_state = "speedbike_red"
 	overlay_state = "cover_red"
+
+/obj/item/offhand/handle
+	name = "Bike handle"
+	desc = "The handle of the bike, used to steer the vehicle on the round. Better get a grip on it"
+	icon_state = "bike_handle"
+	var/obj/vehicle/ridden/space/speedbike/attachedveh
+
+/obj/item/offhand/handle/dropped(mob/user)
+	. = ..()
+	attachedveh.crashing()
 
 /obj/vehicle/ridden/space/speedbike/f13
 	icon_state = "speedbike_f13"
 	overlay_state = "cover_f13"
 	key_type = /obj/item/key/custombike
+	var/obj/item/offhand/handle/steer = null
 
 /obj/vehicle/ridden/space/speedbike/f13/attackby(obj/item/I, mob/user, params)
 	var/obj/item/key/custombike/nkf = I
@@ -61,12 +87,26 @@
 	NK.keyfit = src
 
 /obj/vehicle/ridden/space/speedbike/f13/post_buckle_mob(mob/living/M)
+	var/obj/item/main_hand = M.get_active_held_item()
+	var/obj/item/other_item = M.get_inactive_held_item()
+	steer = new(M)
+	steer.name = "[src]'s handle"
+	steer.desc = "you are keeping control of the [src] with this hand."
+	steer.attachedveh = src
+	if(!main_hand)
+		M.put_in_active_hand(steer)
+	else if(other_item)
+		if(!M.dropItemToGround(other_item, force=FALSE)) //If you cannot remove the item in your hand, don't try and steer the bike.
+			to_chat(M, "<span class='notice'>You cannot seem to drop the item in your other hand!</span>")
+			return
+		M.put_in_inactive_hand(steer)
+	else
+		M.put_in_inactive_hand(steer)
 	. = ..()
-	ADD_TRAIT(M, TRAIT_NOGUNS, type)
 
 /obj/vehicle/ridden/space/speedbike/f13/post_unbuckle_mob(mob/living/M)
 	. = ..()
-	REMOVE_TRAIT(M, TRAIT_NOGUNS, type)
+	qdel(steer)
 	if(inserted_key)
 		if(!M.put_in_active_hand(inserted_key, FALSE, FALSE))
 			M.dropItemToGround(inserted_key)
