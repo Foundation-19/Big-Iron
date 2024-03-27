@@ -12,7 +12,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(GAS_O2, GAS_N2, GAS_CO2, GA
 
 // Also allows you to add new gases at runtime
 
-/proc/_auxtools_register_gas(datum/gas/gas) // makes sure auxtools knows stuff about this gas
+///proc/_auxtools_register_gas(datum/gas/gas) // makes sure auxtools knows stuff about this gas
 
 /datum/auxgm
 	var/done_initializing = FALSE
@@ -144,7 +144,7 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(GAS_O2, GAS_N2, GAS_CO2, GA
 			SSair.auxtools_update_reactions()
 		SEND_GLOBAL_SIGNAL(COMSIG_GLOB_NEW_GAS, g)
 
-/proc/finalize_gas_refs()
+///proc/finalize_gas_refs()
 
 /datum/auxgm/New()
 	src.supermatter[HEAT_PENALTY] = list()

@@ -70,7 +70,7 @@
 					(get_step(locate(x, y, z + z_traits["32"]), NONE)) : \
 				(null) : \
 			(get_step(src, direction))
-		
+
 		if(!isopenturf(current_turf)) // not interested in you brother
 			continue
 
@@ -135,7 +135,7 @@
 /turf/proc/set_sleeping(should_sleep)
 
 
-/turf/proc/__update_auxtools_turf_adjacency_info()
+///turf/proc/__update_auxtools_turf_adjacency_info()
 
 //returns a list of adjacent turfs that can share air with this one.
 //alldir includes adjacent diagonal tiles that can share

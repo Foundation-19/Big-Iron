@@ -133,7 +133,8 @@ Class Procs:
 	var/payment_department = ACCOUNT_ENG
 	var/barricade = TRUE //if true, acts as barricade
 	var/proj_pass_rate = 65 //percentage change for bullets to fly over, if barricade=1
-
+	///Boolean on whether this machines interact with atmos
+	var/atmos_processing = FALSE
 /obj/machinery/Initialize()
 	if(!armor)
 		armor = list("melee" = 25, "bullet" = 10, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 70)

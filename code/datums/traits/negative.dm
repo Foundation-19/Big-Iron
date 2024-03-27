@@ -324,7 +324,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	if(prob(85) || (istype(mind_check) && mind_check.mind))
 		return
 
-	addtimer(CALLBACK(GLOBAL_PROC,PROC_REF(to_chat), quirk_holder, "<span class='smallnotice'>You make eye contact with [A].</span>"), 3)
+	addtimer(CALLBACK(GLOBAL_PROC,GLOBAL_PROC_REF(to_chat), quirk_holder, "<span class='smallnotice'>You make eye contact with [A].</span>"), 3)
 
 /datum/quirk/social_anxiety/proc/eye_contact(datum/source, mob/living/other_mob, triggering_examiner)
 	if(prob(75))
@@ -347,7 +347,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 			msg += "causing you to freeze up!"
 
 	SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "anxiety_eyecontact", /datum/mood_event/anxiety_eyecontact)
-	addtimer(CALLBACK(GLOBAL_PROC,PROC_REF(to_chat), quirk_holder, "<span class='userdanger'>[msg]</span>"), 3) // so the examine signal has time to fire and this will print after
+	addtimer(CALLBACK(GLOBAL_PROC,GLOBAL_PROC_REF(to_chat), quirk_holder, "<span class='userdanger'>[msg]</span>"), 3) // so the examine signal has time to fire and this will print after
 	return COMSIG_BLOCK_EYECONTACT
 
 /datum/mood_event/anxiety_eyecontact

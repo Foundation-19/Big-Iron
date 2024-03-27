@@ -408,7 +408,7 @@
 		active = TRUE
 		playsound(src, 'sound/effects/pope_entry.ogg', 100)
 		Rumble()
-		addtimer(CALLBACK(src, PROC_REF(stopRumble)), 600)
+		addtimer(CALLBACK(src, .proc/stopRumble), 600)
 	else
 		to_chat(user, "[src] is already active.")
 
@@ -547,7 +547,7 @@
 
 /obj/effect/decal/cleanable/ash/snappop_phoenix/New()
 	. = ..()
-	addtimer(CALLBACK(src, PROC_REF(respawn)), respawn_time)
+	addtimer(CALLBACK(src, .proc/respawn), respawn_time)
 
 /obj/effect/decal/cleanable/ash/snappop_phoenix/proc/respawn()
 	new /obj/item/toy/snappop/phoenix(get_turf(src))
@@ -821,15 +821,14 @@
 	update_icon()
 
 /obj/item/toy/cards/deck/update_icon_state()
-	switch(cards.len)
-		if(original_size*0.5 to INFINITY)
-			icon_state = "deck_[deckstyle]_full"
-		if(original_size*0.25 to original_size*0.5)
-			icon_state = "deck_[deckstyle]_half"
-		if(1 to original_size*0.25)
-			icon_state = "deck_[deckstyle]_low"
-		else
-			icon_state = "deck_[deckstyle]_empty"
+	if(cards.len >= original_size*0.5)
+		icon_state = "deck_[deckstyle]_full"
+	if(cards.len < original_size*0.5 && cards.len >= original_size*0.25)
+		icon_state = "deck_[deckstyle]_half"
+	if(cards.len >= 1 && cards.len < original_size*0.25)
+		icon_state = "deck_[deckstyle]_low"
+	else
+		icon_state = "deck_[deckstyle]_empty"
 
 /obj/item/toy/cards/deck/attack_self(mob/user)
 	if(cooldown < world.time - 50)
@@ -908,7 +907,7 @@
 	if(!(cardUser.mobility_flags & MOBILITY_USE))
 		return
 	var/O = src
-	var/choice = show_radial_menu(usr,src, handradial, custom_check = CALLBACK(src, PROC_REF(check_menu), user), radius = 36, require_near = TRUE)
+	var/choice = show_radial_menu(usr,src, handradial, custom_check = CALLBACK(src, .proc/check_menu, user), radius = 36, require_near = TRUE)
 	if(!choice)
 		return FALSE
 	var/obj/item/toy/cards/singlecard/C = new/obj/item/toy/cards/singlecard(cardUser.loc)
