@@ -669,7 +669,7 @@
 	fire_delay = 3.5
 	burst_size = 1
 	spread = 0
-	extra_damage = 20
+	extra_damage = 25
 	extra_speed = 500
 	can_bayonet = FALSE
 	semi_auto = TRUE
@@ -816,7 +816,7 @@
 	icon_state = "scout_carbine"
 	spread = 1.2
 	slowdown = 0.05
-	extra_damage = 30
+	extra_damage = 25
 	extra_penetration = 0.1
 	can_scope = TRUE
 	scope_state = "scope_short"
@@ -883,11 +883,11 @@
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
-	extra_damage = 33
+	extra_damage = 30
 	extra_penetration = 0.2
-	extra_speed = 500
+	extra_speed = 600
 	burst_size = 1
-	fire_delay = 4
+	fire_delay = 3
 	slowdown = 0.4
 	spread = 1
 	automatic_burst_overlay = FALSE
@@ -1029,7 +1029,7 @@
 	burst_size = 1
 	extra_speed = 800
 	extra_penetration = 0.2
-	extra_damage = 35
+	extra_damage = 40
 	slowdown = 0.4
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -1064,7 +1064,7 @@
 /obj/item/gun/ballistic/automatic/marksman/sniper/sniperranger
 	name = "compact sniper rifle"
 	desc = "A DKS 501, chambered in .308 Winchester.  With a light polymer body, it's suited for long treks through the desert. This particular model is lighter and faster."
-	slowdown = 0.4
+	slowdown = 0.35
 	fire_delay = 6
 
 //////////////////
