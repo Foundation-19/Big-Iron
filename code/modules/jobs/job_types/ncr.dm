@@ -87,7 +87,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
 /datum/outfit/job/ncr/f13colonel	// Dress Uniform, Desert Eagle
-	name = "NCR Colonel"
+	name = "NCR Oberst"
 	jobtype = /datum/job/ncr/f13colonel
 	id = /obj/item/card/id/dogtag/ncrcolonel
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_dress
@@ -110,7 +110,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // PERSONAL AIDE		The Colonels flagbearer and personal aide, for events only to help the Colonel and add color.
 
 /datum/job/ncr/f13aide
-	title = "NCR Personal Aide"
+	title = "NCR Oberstleutnant"
 	flag = F13COLONEL
 	supervisors = "The Colonel"
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY)
@@ -127,7 +127,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/ncr/f13aide	// NCR Flag, Desert Eagle
-	name = "NCR Personal Aide"
+	name = "NCR Oberstleutnant"
 	jobtype = /datum/job/ncr/f13aide
 	id = /obj/item/card/id/dogtag/ncrsergeant
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_dress
@@ -152,7 +152,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // CAPTAIN
 
 /datum/job/ncr/f13captain
-	title = "NCR Captain"
+	title = "NCR Hauptmann"
 	flag = F13CAPTAIN
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN_NCR
 	exp_type = EXP_TYPE_NCRCOMMAND
@@ -174,7 +174,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/job/ncr/f13captain	// Binoculars, Trench knife
-	name = "NCR Captain"
+	name = "NCR Hauptmann"
 	jobtype = /datum/job/ncr/f13captain
 	id = /obj/item/card/id/dogtag/ncrcaptain
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
@@ -231,7 +231,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // LIEUTENANT
 
 /datum/job/ncr/f13lieutenant
-	title = "NCR Lieutenant"
+	title = "NCR Oberleutnant"
 	flag = F13LIEUTENANT
 	display_order = JOB_DISPLAY_ORDER_LIEUTENANT
 	exp_type = EXP_TYPE_NCRCOMMAND
@@ -251,7 +251,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/job/ncr/f13lieutenant		// Republic's Pride, Binoculars, Bayonet, 9mm pistol
-	name = "NCR Lieutenant"
+	name = "NCR Oberleutnant"
 	jobtype	= /datum/job/ncr/f13lieutenant
 	id = /obj/item/card/id/dogtag/ncrlieutenant
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
@@ -303,7 +303,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 //NCR STAFF SERGEANT
 /datum/job/ncr/f13staffsergeant
-	title = "NCR Staff Sergeant"
+	title = "NCR Feldwebel Wachtmeister"
 	flag = F13STAFFSERGEANT
 	display_order = JOB_DISPLAY_ORDER_STAFFSERGEANT
 	exp_type = EXP_TYPE_NCRCOMMAND
@@ -323,7 +323,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/job/ncr/f13staffsergeant	
-	name = "NCR Staff Sergeant"
+	name = "NCR Feldwebel Wachtmeister"
 	jobtype	= /datum/job/ncr/f13staffsergeant
 	id = /obj/item/card/id/dogtag/ncrlieutenant
 	uniform	= /obj/item/clothing/under/f13/ncr/ncr_officer
@@ -389,7 +389,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
 
 /datum/outfit/job/ncr/f13ncrpilot
-	name = "NCR Pilot"
+	name = "NCR Gefreiter"
 	jobtype = /datum/job/ncr/f13ncrpilot
 	id = /obj/item/card/id/dogtag/ncrsergeant
 	accessory = /obj/item/clothing/accessory/ncr/SGT
@@ -410,7 +410,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // SERGEANT
 
 /datum/job/ncr/f13sergeant
-	title = "NCR Sergeant"
+	title = "NCR Unterfeldwebel"
 	flag = F13SERGEANT
 	display_order = JOB_DISPLAY_ORDER_SERGEANT
 	total_positions = 2
@@ -428,7 +428,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/job/ncr/f13sergeant
-	name = "NCR Sergeant"
+	name = "NCR Unterfeldwebel"
 	jobtype = /datum/job/ncr/f13sergeant
 	id = /obj/item/card/id/dogtag/ncrsergeant
 	accessory = /obj/item/clothing/accessory/ncr/SGT
@@ -465,7 +465,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // REPRESENATIVE
 
 /datum/job/ncr/f13representative
-	title = "NCR Representative"
+	title = "NCR Reichsführer"
 	flag = F13REP
 	display_order = JOB_DISPLAY_ORDER_REPRESENTATIVE
 	total_positions = 1
@@ -486,7 +486,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/job/ncr/f13representative
-	name = "NCR Representative"
+	name = "NCR Reichsführer"
 	jobtype	= /datum/job/ncr/f13representative
 	id = /obj/item/card/id/dogtag/ncrrep
 	backpack = /obj/item/storage/backpack/satchel/leather
@@ -545,7 +545,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // VETERAN RANGER
 
 /datum/job/ncr/f13vetranger
-	title = "NCR Veteran Ranger"
+	title = "NCRSS-Obersturmführer"
 	flag = F13VETRANGER
 	display_order = JOB_DISPLAY_ORDER_VETRANGER
 	exp_type = EXP_TYPE_RANGER
@@ -567,7 +567,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	minimal_access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_CHANGE_IDS, ACCESS_NCR3, ACCESS_NCR4)
 
 /datum/outfit/job/ncr/f13vetranger
-	name = "NCR Veteran Ranger"
+	name = "NCRSS-Obersturmführer"
 	jobtype	= /datum/job/ncr/f13vetranger
 	id = /obj/item/card/id/dogtag/ncrvetranger
 	uniform = /obj/item/clothing/under/f13/ranger/vet
@@ -630,7 +630,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // NCR Ranger
 
 /datum/job/ncr/f13ranger
-	title = "NCR Ranger"
+	title = "NCR Jäger"
 	flag = F13RANGER
 	display_order = JOB_DISPLAY_ORDER_RANGER
 	total_positions = 3
@@ -648,7 +648,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	)
 
 /datum/outfit/job/ncr/f13ranger
-	name = "NCR Ranger"
+	name = "NCR Jäger"
 	jobtype	= /datum/job/ncr/f13ranger
 	id = /obj/item/card/id/dogtag/ncrranger
 	uniform	= /obj/item/clothing/under/f13/ranger/trail
@@ -726,7 +726,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 //HEAVY TROOPER
 
 /datum/job/ncr/f13heavytrooper
-	title = "NCR Heavy Trooper"
+	title = "NCR Panzerschütze"
 	flag = F13HEAVYTROOPER
 	display_order = JOB_DISPLAY_ORDER_HEAVYTROOPER
 	total_positions = 1
@@ -745,7 +745,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
 
 /datum/outfit/job/ncr/f13heavytrooper	// Mk. 23, Bayonet, Heavy armor
-	name = "NCR Heavy Trooper"
+	name = "NCR Panzerschütze"
 	jobtype	= /datum/job/ncr/f13heavytrooper
 	id = /obj/item/card/id/dogtag/ncrsergeant
 	uniform = /obj/item/clothing/under/f13/ncr
@@ -798,7 +798,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // COMBAT ENGINEER
 
 /datum/job/ncr/f13combatengineer
-	title = "NCR Combat Engineer"
+	title = "NCR Baupionier"
 	flag = F13COMBATENGINEER
 	display_order = JOB_DISPLAY_ORDER_COMBATENGINEER
 	total_positions = 2
@@ -817,7 +817,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
 
 /datum/outfit/job/ncr/f13combatengineer
-	name = "NCR Combat Engineer"
+	name = "NCR Baupionier"
 	jobtype = /datum/job/ncr/f13combatengineer
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	uniform = /obj/item/clothing/under/f13/ncr
@@ -835,7 +835,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/loadout/combatengineerflamethrower
-	name = "Flamethrower Unit"
+	name = "Flammenwerfer"
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/ninemil
 	backpack_contents = list(
 		/obj/item/storage/box/ration/menu_three = 1,
@@ -874,7 +874,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // MILITARY POLICE
 
 /datum/job/ncr/f13mp
-	title = "NCR Military Police"
+	title = "NCR Feldgendarm"
 	flag = F13MP
 	display_order = JOB_DISPLAY_ORDER_MILITARYPOLICE
 	total_positions = 2
@@ -886,7 +886,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13mp
 
 /datum/outfit/job/ncr/f13mp		// .45 Pistol, Beanbag Shotgun, Military baton
-	name = "NCR Military Police"
+	name = "NCR Feldgendarm"
 	jobtype	= /datum/job/ncr/f13mp
 	id = /obj/item/card/id/dogtag/ncrsergeant
 	neck = /obj/item/storage/belt/holster/legholster
@@ -920,7 +920,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // COMBAT MEDIC
 
 /datum/job/ncr/f13combatmedic
-	title = "NCR Combat Medic"
+	title = "NCR Sanitätssoldat"
 	flag = F13COMBATMEDIC
 	display_order = JOB_DISPLAY_ORDER_COMBATMEDIC
 	total_positions = 2
@@ -931,7 +931,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13combatmedic
 
 /datum/outfit/job/ncr/f13combatmedic
-	name = "NCR Combat Medic"
+	name = "NCR Sanitätssoldat"
 	jobtype = /datum/job/ncr/f13combatmedic
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/reinforced
@@ -967,7 +967,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // CORPORAL
 
 /datum/job/ncr/f13corporal
-	title = "NCR Corporal"
+	title = "NCR Obergefreiter"
 	flag = F13CORPORAL
 	display_order = JOB_DISPLAY_ORDER_CORPORAL
 	total_positions = 4
@@ -985,7 +985,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/job/ncr/f13corporal
-	name = "NCR Corporal"
+	name = "NCR Obergefreiter"
 	jobtype	= /datum/job/ncr/f13corporal
 	id = /obj/item/card/id/dogtag/ncrtrooper
 	accessory = /obj/item/clothing/accessory/ncr/CPL
@@ -1040,7 +1040,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // TROOPER
 
 /datum/job/ncr/f13trooper
-	title = "NCR Trooper"
+	title = "NCR Obersoldat"
 	flag = F13TROOPER
 	display_order = JOB_DISPLAY_ORDER_TROOPER
 	total_positions = 8
@@ -1058,7 +1058,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/job/ncr/f13trooper
-	name = "NCR Trooper"
+	name = "NCR Obersoldat"
 	jobtype	= /datum/job/ncr/f13trooper
 	accessory = /obj/item/clothing/accessory/ncr/TPR
 	id = /obj/item/card/id/dogtag/ncrtrooper
@@ -1127,7 +1127,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 // MEDICAL OFFICER
 
 /datum/job/ncr/f13medicalofficer
-	title = "NCR Medical Officer"
+	title = "NCR Sanitätsobersoldat"
 	flag = F13MEDICALOFFICER
 	display_order = JOB_DISPLAY_ORDER_MEDICALOFFICER
 	total_positions = 1
