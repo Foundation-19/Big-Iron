@@ -296,8 +296,8 @@
 				/obj/item/stack/sheet/mineral/titanium = 5,
 				/obj/item/stack/crafting/metalparts = 8,
 				/obj/item/stack/crafting/goodparts = 2,
-				/obj/item/stack/crafting/electronicparts = 15,
-				/obj/item/stack/ore/blackpowder = 8,
+				/obj/item/stack/crafting/electronicparts = 2,
+				/obj/item/stack/ore/blackpowder = 3,
 				/obj/item/assembly/igniter = 1
 	)
 	tools = list(TOOL_AWORKBENCH)
@@ -361,9 +361,9 @@
 	result = /obj/item/ammo_casing/caseless/rocket/big
 	reqs = list(
 		/obj/item/rocketshell = 1,
-		/obj/item/stack/crafting/electronicparts = 45,
-		/obj/item/stack/sheet/prewar = 20,
-		/obj/item/stack/ore/blackpowder = 45,
+		/obj/item/stack/crafting/electronicparts = 5,
+		/obj/item/stack/sheet/prewar = 10,
+		/obj/item/stack/ore/blackpowder = 15,
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 150
@@ -375,10 +375,9 @@
 	result = /obj/item/ammo_casing/caseless/rocket/incendiary
 	reqs = list(
 		/obj/item/rocketshell = 1,
-		/obj/item/stack/crafting/electronicparts = 25,
+		/obj/item/stack/crafting/electronicparts = 15,
 		/obj/item/stack/sheet/prewar = 10,
 		/obj/item/stack/ore/blackpowder = 15,
-		/datum/reagent/phlogiston = 200
 	)
 	tools = list(TOOL_AWORKBENCH)
 	time = 5

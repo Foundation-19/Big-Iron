@@ -205,62 +205,29 @@
 	path = /obj/item/modkit/khanbat
 	cost = 2
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_desc = "Outlaw"
+	restricted_roles = list("Outlaw")
 
 /datum/gear/backpack/khanbatreinforcedkit
 	name = "khanbat reinforced armor modkit"
 	path = /obj/item/modkit/khanbatreinforced
 	cost = 2
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_desc = "Outlaw"
+	restricted_roles = list("Outlaw")
 
 
 /// Backpacks
 
+/*			 Removed due to people backpack stacking like they are playing Tarkov, the only ones in this section are faction special ones, such as the legion flags.
 /datum/gear/backpack/bbackpack
 	name = "hiking backpack"
 	path = /obj/item/storage/backpack/old
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_BACKPACKS
 	cost = 3
+*/
 
-/datum/gear/backpack/bbackpack/duffel
-	name = "duffelbag"
-	path = /obj/item/storage/backpack/duffelbag
-
-/datum/gear/backpack/bbackpack/explorer
-	name = "explorer backpack"
-	path = /obj/item/storage/backpack/explorer
-
-/datum/gear/backpack/bbackpack/explorer/satchel
-	name = "explorer satchel"
-	path = /obj/item/storage/backpack/satchel/explorer
-
-/datum/gear/backpack/bbackpack/trekker
-	name = "trekker backpack"
-	path = /obj/item/storage/backpack/trekker
-
-/datum/gear/backpack/bbackpack/trekker/satchel
-	name = "trekker satchel"
-	path = /obj/item/storage/backpack/satchel/trekker
-
-/datum/gear/backpack/bbackpack/sec
-	name = "security backpack"
-	path = /obj/item/storage/backpack/security
-	cost = 4
-
-/datum/gear/backpack/bbackpack/sec/satchel
-	name = "security satchel"
-	path = /obj/item/storage/backpack/satchel/sec
-
-/datum/gear/backpack/bbackpack/trophy
-	name = "trophy rack"
-	path = /obj/item/storage/backpack/cultpack
-	cost = 3
-
-
-/datum/gear/backpack/bbackpack/legionr
+/datum/gear/backpack/bbackpack
 	name = "legion red cape backpack"
 	path = /obj/item/storage/backpack/legionr
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_BACKPACKS

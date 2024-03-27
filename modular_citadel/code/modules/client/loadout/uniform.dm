@@ -701,15 +701,15 @@
 	name = "great khans jorts"
 	path = /obj/item/clothing/under/f13/khan/shorts
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
-	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_desc = "Outlaw"
+	restricted_roles = list("Outlaw")
 
 /datum/gear/uniform/khans/booty
 	name = "great khans booty shorts"
 	path = /obj/item/clothing/under/f13/khan/booty
 	subcategory = LOADOUT_SUBCATEGORY_UNIFORM_FACTIONS
-	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_desc = "Outlaw"
+	restricted_roles = list("Outlaw")
 
 //Skirts
 
