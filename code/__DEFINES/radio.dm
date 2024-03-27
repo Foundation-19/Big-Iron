@@ -73,9 +73,9 @@
 #define RADIO_KEY_LEGION "l"
 #define RADIO_TOKEN_LEGION ":l"
 
-#define RADIO_CHANNEL_KHANS "Khans"
-#define RADIO_KEY_KHANS "a"
-#define RADIO_TOKEN_KHANS ":a"
+#define RADIO_CHANNEL_DEN "Den"
+#define RADIO_KEY_DEN "j"
+#define RADIO_TOKEN_DEN ":j"
 
 #define RADIO_CHANNEL_BW "Blackwater"
 #define RADIO_KEY_BW "q"
