@@ -206,6 +206,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	if(H.mind)
 		var/obj/effect/proc_holder/spell/terrifying_presence/S = new /obj/effect/proc_holder/spell/terrifying_presence
 		H.mind.AddSpell(S)
@@ -296,6 +297,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
 
 //NCR STAFF SERGEANT
@@ -314,6 +317,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_NCR3)
 
+	loadout_options = list(
+		/datum/outfit/loadout/staffsergeantsharpshooter,
+		/datum/outfit/loadout/staffsergeantmanatarms
+		)
+
 /datum/outfit/job/ncr/f13staffsergeant	
 	name = "NCR Staff Sergeant"
 	jobtype	= /datum/job/ncr/f13staffsergeant
@@ -327,28 +335,43 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	gloves = /obj/item/clothing/gloves/f13/leather
 	ears = /obj/item/radio/headset/headset_ncr_com
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/lieutenant
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand
 	r_pocket = /obj/item/binoculars
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/ammo_box/magazine/m9mmds = 3,
+		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
+		/obj/item/ammo_box/magazine/m45exp = 3,
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/book/manual/ncr/jobguide/regs = 1,
 		/obj/item/storage/box/ration/menu_eleven = 1,
-		/obj/item/ammo_box/magazine/garand308 = 4,
-		/obj/item/attachments/scope = 1,
 		/obj/item/storage/box/ration/menu_five = 1
 		)
 
-/datum/outfit/job/ncr/f13lieutenant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/loadout/staffsergeantsharpshooter
+	name = "Sharpshooter"
+	suit_store = /obj/item/gun/ballistic/automatic/m1garand
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/garand308 = 4,
+		/obj/item/melee/onehanded/knife/bowie = 1,
+		/obj/item/attachments/scope = 1
+		)
+	
+/datum/outfit/loadout/staffsergeantmanatarms
+	name = "Man-At-Arms"
+	suit_store = /obj/item/gun/ballistic/automatic/service/r82
+	backpack_contents = list(
+		/obj/item/ammo_box/magazine/m556/rifle = 3,
+		/obj/item/melee/onehanded/knife/bowie = 1
+		)
+
+/datum/outfit/job/ncr/f13staffsergeant/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_SELF_AWARE, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
 
 // SERGEANT PILOT
 
@@ -537,8 +560,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	loadout_options = list( // ALL: Binoculars, Bowie knife, Sequoia
 		/datum/outfit/loadout/vrclassic, // DKS
 		/datum/outfit/loadout/vrlite, // Brush
-		/datum/outfit/loadout/vrshotgunner, // Lever Action Shotgun
-		/datum/outfit/loadout/vrcqc // Funny CQC Vet
+		/datum/outfit/loadout/vrshotgunner // Lever Action Shotgun
 		)
 
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_CHANGE_IDS, ACCESS_NCR3, ACCESS_NCR4)
@@ -592,13 +614,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/shotgun/buck = 3
 		)
 
-/datum/outfit/loadout/vrcqc
-	name = "Big Boss Veteran Ranger"
-	backpack_contents = list(
-		/obj/item/book/granter/martial/cqc = 1,
-		/obj/item/storage/box/ration/ranger_dinner = 1
-		)
-
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
@@ -608,6 +623,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	ADD_TRAIT(H, TRAIT_SILENT_STEP, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
+	var/datum/martial_art/rangertakedown/RT = new
+	RT.teach(H)
+
 
 // NCR Ranger
 
@@ -719,8 +737,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
 
 	loadout_options = list(
-		/datum/outfit/loadout/shockht,	// citykiller
-		/datum/outfit/loadout/supportht // R84
+		/datum/outfit/loadout/shockht,	// BAR, nobody uses the citykiller lol
+		/datum/outfit/loadout/supportht, // R84
+		/datum/outfit/loadout/meleeht    // Rocket Sledge, lighter armor in exchange for mobility and melee
 		)
 
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
@@ -745,8 +764,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/shockht
 	name = "Shock Heavy Trooper"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 1,
-		/obj/item/ammo_box/shotgun/slug = 2,
+		/obj/item/gun/ballistic/automatic/bar = 1,
+		/obj/item/ammo_box/magazine/m762/ext = 2,
 		/obj/item/storage/box/ration/menu_four = 1
 		)
 
@@ -756,6 +775,16 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/box/ration/menu_six = 1,
 		/obj/item/gun/ballistic/automatic/r84 = 1,
 		/obj/item/ammo_box/magazine/lmg = 1
+		)
+
+/datum/outfit/loadout/meleeht
+	name = "Melee Heavy Trooper"
+	backpack_contents = list(
+		/obj/item/storage/box/ration/menu_six = 1,
+		/obj/item/clothing/head/helmet/f13/ncr/heavygunner = 1,
+		/obj/item/clothing/suit/armor/f13/ncr/heavygunner = 1,
+		/obj/item/book/granter/trait/bigleagues = 1,
+		/obj/item/twohanded/sledgehammer/rockethammer = 1
 		)
 
 /datum/outfit/job/ncr/f13heavytrooper/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -1000,10 +1029,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/corporalraider
 	name = "Prince of the Trenches"
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/m1911
 	backpack_contents = list(
-		/obj/item/clothing/head/f13/ncr/steelpot_goggles/trenchraider = 1,
-		/obj/item/ammo_box/magazine/m45 = 2,
+		/obj/item/clothing/head/helmet/f13/ncr/heavygunner = 1,
+		/obj/item/clothing/suit/armor/f13/ncr/heavygunner = 1,
 		/obj/item/shovel/trench = 1,
 		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/storage/box/ration/menu_seven = 1
