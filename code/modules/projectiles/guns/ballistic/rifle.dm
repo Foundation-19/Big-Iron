@@ -302,8 +302,8 @@
 /obj/item/gun/ballistic/rifle/mag/antimateriel
 	name = "anti-materiel rifle"
 	desc = "The Hecate II is a heavy, high-powered bolt action sniper rifle chambered in .50 caliber ammunition. Lacks an iron sight."
-	icon_state = "amr"
-	item_state = "amr"
+	icon_state = "sniper"
+	item_state = "sniper"
 	mag_type = /obj/item/ammo_box/magazine/amr
 	fire_delay = 12 //Heavy round, tiny bit slower
 	extra_damage = 50
@@ -311,7 +311,7 @@
 	recoil = 1
 	spread = 0
 	force = 10 //Big clumsy and sensitive scope, makes for a poor club
-	slowdown = 0.8
+	slowdown = 0.7
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
