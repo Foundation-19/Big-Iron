@@ -1032,10 +1032,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/den)
-"aJm" = (
-/obj/item/reagent_containers/glass/beaker/large,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "aJo" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Armory";
@@ -2925,12 +2921,6 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/enclave)
-"bLc" = (
-/obj/effect/decal/cleanable/blood{
-	icon_state = "floor2"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "bLj" = (
 /obj/structure/blacksmith/furnace,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -3050,11 +3040,6 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/tunnel)
-"bPu" = (
-/obj/effect/decal/remains/human,
-/obj/item/reagent_containers/glass/beaker/large,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "bPB" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -3084,6 +3069,12 @@
 /obj/machinery/vending/boozeomat/syndicate_access,
 /turf/closed/wall/r_wall/rust,
 /area/f13/den)
+"bQA" = (
+/obj/effect/mob_spawn/human/corpse/bs/paladin,
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "bQL" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -3852,6 +3843,12 @@
 /obj/structure/flora/grass/wasteland,
 /turf/open/floor/plating/dirt/dark,
 /area/f13/bunker)
+"coa" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor2"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "cod" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -3859,12 +3856,6 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/sewer)
-"con" = (
-/obj/effect/mob_spawn/human/corpse/bs/paladin,
-/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "coH" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/structure/table,
@@ -4246,9 +4237,7 @@
 /area/f13/building)
 "cCF" = (
 /obj/item/stock_parts/cell/ammo/mfc,
-/turf/open/floor/f13{
-	icon_state = "neutralrustyfull"
-	},
+/turf/open/water,
 /area/f13/sewer)
 "cCG" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
@@ -4325,6 +4314,10 @@
 /obj/effect/spawner/lootdrop/food,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
+"cFj" = (
+/obj/item/clothing/suit/f13/scribe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "cFn" = (
 /obj/structure/rack,
 /obj/item/storage/fancy/rollingpapers,
@@ -5012,10 +5005,6 @@
 "ddv" = (
 /turf/closed/wall/rust,
 /area/f13/sewer)
-"ddG" = (
-/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "ddR" = (
 /obj/effect/decal/cleanable/blood/gibs/human/core,
 /obj/effect/decal/cleanable/dirt,
@@ -5471,6 +5460,12 @@
 	icon_state = "darkyellowfull"
 	},
 /area/f13/brotherhood/operations)
+"dtK" = (
+/obj/item/stock_parts/cell/ammo/mfc,
+/turf/open/floor/f13{
+	icon_state = "neutralrustyfull"
+	},
+/area/f13/sewer)
 "dtY" = (
 /obj/item/radio/intercom{
 	frequency = 1379;
@@ -6244,6 +6239,15 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"dSK" = (
+/obj/effect/decal/remains/human,
+/mob/living/simple_animal/hostile/deathclaw{
+	name = "juvenile deathclaw";
+	health = 300;
+	mob_size = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "dSN" = (
 /obj/structure/reagent_dispensers/barrel/three,
 /obj/effect/decal/waste{
@@ -7052,6 +7056,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/bunker)
+"esL" = (
+/obj/effect/mob_spawn/human/corpse,
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "etd" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/indestructible/ground/inside/subway,
@@ -7599,11 +7608,7 @@
 /turf/closed/indestructible/rock,
 /area/f13/caves)
 "eLU" = (
-/mob/living/simple_animal/hostile/deathclaw{
-	name = "juvenile deathclaw";
-	health = 300;
-	mob_size = 2
-	},
+/obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "eLX" = (
@@ -7941,6 +7946,14 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"eXy" = (
+/obj/item/paper/crumpled/awaymissions/moonoutpost19/hastey_note{
+	name = "Orders";
+	info = "Under orders of Head Paladin Gromsky, Senior Paladin Artichoke, Paladin Wells, Senior Knight Pascell, Knight Alexander,  Knight Grey, Initiate Amador, Initiate Cherry, and Scribe Herring are to survery the sewers for advanced technology, with an additional goal of eliminating the deathclaw infestation that has proven harmful to our operations in the sewers."
+	},
+/obj/item/clothing/under/syndicate/brotherhood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "eXC" = (
 /obj/effect/decal/remains{
 	icon_state = "remains"
@@ -8187,9 +8200,8 @@
 	},
 /area/f13/enclave)
 "fgP" = (
-/obj/structure/spider/stickyweb{
-	icon_state = "stickyweb2"
-	},
+/obj/effect/decal/remains/human,
+/obj/item/clothing/suit/armor/f13/combat/brotherhood,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "fgT" = (
@@ -9391,10 +9403,6 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/building)
-"fTj" = (
-/obj/item/stock_parts/cell/ammo/mfc,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "fTB" = (
 /obj/structure/simple_door/brokenglass,
 /obj/structure/barricade/wooden/planks/pregame,
@@ -9408,10 +9416,6 @@
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
-"fTQ" = (
-/obj/item/stock_parts/cell/ammo/breeder,
-/turf/open/water,
-/area/f13/sewer)
 "fTR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/disposalpipe/segment,
@@ -9886,6 +9890,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
+"ghH" = (
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "ghK" = (
 /obj/structure/closet/crate/footlocker{
 	anchored = 1;
@@ -9925,9 +9933,7 @@
 /turf/open/floor/carpet/purple,
 /area/f13/cotc)
 "gjC" = (
-/obj/structure/nest/deathclaw{
-	max_mobs = 2
-	},
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "gkd" = (
@@ -10923,6 +10929,11 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/sewer)
+"gRj" = (
+/obj/effect/decal/remains/human,
+/obj/item/reagent_containers/glass/beaker/large,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "gRl" = (
 /obj/machinery/conveyor_switch/oneway{
 	id = "church"
@@ -11722,6 +11733,12 @@
 /obj/structure/simple_door/room,
 /turf/open/floor/carpet/black,
 /area/f13/den)
+"hwC" = (
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh,
+/obj/effect/mob_spawn/human/corpse,
+/obj/item/clothing/head/helmet/f13/combat/brotherhood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "hwD" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/sign/poster/prewar/poster62{
@@ -11783,10 +11800,6 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"hyO" = (
-/mob/living/simple_animal/hostile/deathclaw/mother,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "hyZ" = (
 /obj/item/ammo_casing/shotgun/buckshot,
 /turf/open/indestructible/ground/inside/subway,
@@ -13150,6 +13163,12 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/tunnel)
+"iwS" = (
+/obj/structure/nest/deathclaw{
+	max_mobs = 2
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "iwZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -13305,15 +13324,6 @@
 /area/f13/den)
 "iCA" = (
 /turf/open/floor/wood/f13/carpet,
-/area/f13/tunnel)
-"iCP" = (
-/obj/effect/decal/remains/human,
-/mob/living/simple_animal/hostile/deathclaw{
-	name = "juvenile deathclaw";
-	health = 300;
-	mob_size = 2
-	},
-/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "iDw" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -13484,6 +13494,13 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/enclave)
+"iKG" = (
+/obj/effect/decal/remains/human,
+/obj/effect/mob_spawn/human/corpse/bs/paladin,
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "iLg" = (
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/grimy,
@@ -14425,8 +14442,9 @@
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg{
 	pixel_y = -4
 	},
-/obj/effect/mob_spawn/human/corpse/bs,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
+/obj/effect/mob_spawn/human/corpse,
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "jpr" = (
@@ -15108,11 +15126,6 @@
 	dir = 5
 	},
 /area/f13/tcoms)
-"jQs" = (
-/obj/effect/mob_spawn/human/corpse/bs,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "jQN" = (
 /obj/structure/table,
 /turf/open/floor/f13{
@@ -15910,13 +15923,6 @@
 	slowdown = 0
 	},
 /area/f13/den)
-"ksn" = (
-/obj/item/paper/crumpled/awaymissions/moonoutpost19/hastey_note{
-	name = "Orders";
-	info = "Under orders of Head Paladin Gromsky, Senior Paladin Artichoke, Paladin Wells, Senior Knight Pascell, Knight Alexander,  Knight Grey, Initiate Amador, Initiate Cherry, and Scribe Herring are to survery the sewers for advanced technology, with an additional goal of eliminating the deathclaw infestation that has proven harmful to our operations in the sewers."
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "ksQ" = (
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
@@ -18042,6 +18048,14 @@
 	light_range = 4
 	},
 /area/f13/brotherhood/rnd)
+"lTB" = (
+/obj/effect/decal/cleanable/blood/gibs{
+	icon_state = "gibtorso"
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustyfull"
+	},
+/area/f13/sewer)
 "lUw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack/shelf_metal,
@@ -18105,12 +18119,9 @@
 	},
 /area/f13/bunker)
 "lWH" = (
-/obj/effect/decal/remains/human,
-/obj/effect/mob_spawn/human/corpse/bs/paladin,
-/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/obj/item/stock_parts/cell/ammo/mfc,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "lWW" = (
 /turf/open/floor/wood/f13/stage_t{
 	icon_state = "housewood_stage_bottom_right"
@@ -18353,6 +18364,10 @@
 	baseturfs = /turf/open/indestructible/ground/outside/desert
 	},
 /area/f13/caves)
+"mgB" = (
+/obj/item/stock_parts/cell/ammo/breeder,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "mhs" = (
 /obj/structure/wreck/trash/machinepile,
 /turf/open/floor/plasteel/f13/vault_floor/red,
@@ -18394,10 +18409,6 @@
 /obj/item/clothing/under/f13/bosformgold_f,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
-"mjp" = (
-/obj/effect/decal/cleanable/blood/splatter,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "mju" = (
 /mob/living/simple_animal/hostile/eyebot,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
@@ -18573,9 +18584,9 @@
 	},
 /area/f13/den)
 "mph" = (
-/obj/item/stock_parts/cell/ammo/breeder,
+/obj/item/clothing/under/syndicate/brotherhood,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/area/f13/tunnel)
 "mpo" = (
 /obj/structure/spider/stickyweb,
 /obj/effect/decal/cleanable/dirt,
@@ -18990,6 +19001,13 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/bunker)
+"mIw" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/obj/effect/mob_spawn/human/corpse,
+/obj/item/clothing/under/syndicate/brotherhood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "mJf" = (
 /obj/structure/bed/old,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
@@ -19015,6 +19033,10 @@
 "mKE" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
+"mKW" = (
+/obj/effect/mob_spawn/human/corpse,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "mLU" = (
 /obj/structure/cable{
@@ -19135,6 +19157,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"mRs" = (
+/obj/structure/spider/stickyweb{
+	icon_state = "stickyweb2"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "mRt" = (
 /obj/structure/railing{
 	dir = 8
@@ -19616,6 +19644,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/brotherhood/dorms)
+"niZ" = (
+/obj/item/reagent_containers/syringe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "njG" = (
 /obj/item/blacksmith/ingot/silver,
 /obj/structure/closet/crate,
@@ -20031,10 +20063,6 @@
 "nCl" = (
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/tunnel)
-"nCp" = (
-/obj/effect/decal/remains/human,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
 "nCF" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/tunnel)
@@ -20674,6 +20702,15 @@
 	icon_state = "greenrustychess"
 	},
 /area/f13/den)
+"oaX" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib2_flesh"
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/obj/effect/mob_spawn/human/corpse,
+/obj/item/clothing/under/syndicate/brotherhood,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "oaY" = (
 /obj/structure/barricade/sandbags,
 /obj/effect/decal/cleanable/dirt,
@@ -21324,6 +21361,12 @@
 	},
 /turf/open/floor/carpet/green,
 /area/f13/den)
+"oyA" = (
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
+/obj/effect/mob_spawn/human/corpse,
+/obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "oyB" = (
 /obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/plasteel/freezer,
@@ -22824,12 +22867,6 @@
 	icon_state = "greenrustyfull"
 	},
 /area/f13/clinic)
-"pzS" = (
-/mob/living/simple_animal/hostile/deathclaw/legendary{
-	name = "alpha deathclaw"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "pzW" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /turf/open/floor/f13{
@@ -23521,9 +23558,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/brotherhood)
 "qbo" = (
-/obj/effect/decal/remains/human,
-/obj/effect/mob_spawn/human/corpse/bs,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/mob/living/simple_animal/hostile/deathclaw{
+	name = "juvenile deathclaw";
+	health = 300;
+	mob_size = 2
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "qbJ" = (
@@ -23610,10 +23649,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/bunker)
-"qfl" = (
-/obj/effect/mob_spawn/human/corpse,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "qfs" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -23932,11 +23967,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2,
 /area/f13/bunker)
 "qrZ" = (
-/obj/effect/decal/cleanable/blood{
-	icon_state = "gib2_flesh"
+/obj/effect/decal/cleanable/oil/slippery,
+/obj/structure/spider/stickyweb{
+	icon_state = "stickyweb2"
 	},
-/obj/effect/mob_spawn/human/corpse/bs,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "qsi" = (
@@ -25407,13 +25441,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/building)
-"rsK" = (
-/obj/effect/decal/cleanable/blood{
-	icon_state = "gib2";
-	pixel_y = 4
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "rsT" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -27568,8 +27595,7 @@
 /turf/open/floor/carpet/red,
 /area/f13/den)
 "sPQ" = (
-/obj/effect/mob_spawn/human/corpse/bs,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
+/obj/item/reagent_containers/glass/beaker/large,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "sPV" = (
@@ -28033,6 +28059,12 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/brotherhood/chemistry)
+"tgC" = (
+/mob/living/simple_animal/hostile/deathclaw/legendary{
+	name = "alpha deathclaw"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "tgO" = (
 /obj/item/trash/f13/specialapples,
 /obj/effect/decal/cleanable/dirt{
@@ -28336,7 +28368,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "tru" = (
-/obj/item/reagent_containers/syringe,
+/obj/effect/mob_spawn/human/corpse/bs,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "trC" = (
@@ -28488,10 +28520,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/brotherhood/chemistry)
-"txE" = (
-/obj/item/stock_parts/cell/ammo/mfc,
-/turf/open/water,
-/area/f13/sewer)
 "txV" = (
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
@@ -28980,6 +29008,10 @@
 	icon_state = "whitedirtysolid"
 	},
 /area/f13/den)
+"tOK" = (
+/obj/item/stock_parts/cell/ammo/breeder,
+/turf/open/water,
+/area/f13/sewer)
 "tOX" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -30911,6 +30943,10 @@
 	color = "#e4e4e4"
 	},
 /area/f13/building)
+"vkM" = (
+/mob/living/simple_animal/hostile/deathclaw/mother,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "vkZ" = (
 /obj/structure/chair/booth{
 	icon_state = "booth_east_south"
@@ -31055,6 +31091,12 @@
 /obj/structure/barricade/wooden/strong,
 /turf/closed/indestructible/vaultdoor,
 /area/f13/bunker)
+"vql" = (
+/obj/structure/nest/deathclaw{
+	max_mobs = 3
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "vqv" = (
 /obj/machinery/door_timer{
 	id = "vaultc1";
@@ -33231,10 +33273,6 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/den)
-"wJM" = (
-/obj/effect/mob_spawn/human/corpse/bs,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "wKj" = (
 /obj/structure/chair/comfy/teal{
 	dir = 1
@@ -33733,12 +33771,6 @@
 /obj/effect/mob_spawn/human/corpse/vault,
 /turf/open/floor/plasteel/dark,
 /area/f13/bunker)
-"xby" = (
-/obj/structure/nest/deathclaw{
-	max_mobs = 3
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "xbH" = (
 /obj/machinery/light/fo13colored/Pink{
 	name = "light tube"
@@ -33947,13 +33979,12 @@
 /turf/open/floor/mineral/plastitanium,
 /area/f13/bunker)
 "xjD" = (
-/obj/effect/decal/cleanable/blood/gibs{
-	icon_state = "gibtorso"
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib2";
+	pixel_y = 4
 	},
-/turf/open/floor/f13{
-	icon_state = "neutralrustyfull"
-	},
-/area/f13/sewer)
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "xjL" = (
 /obj/machinery/door/window/brigdoor{
 	dir = 1;
@@ -34029,9 +34060,9 @@
 	},
 /area/f13/caves)
 "xkM" = (
-/obj/item/clothing/suit/f13/scribe,
+/obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "xla" = (
 /obj/structure/flora/rock/pile/largejungle,
 /obj/structure/flora/junglebush/b,
@@ -34102,6 +34133,10 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"xoC" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "xpg" = (
 /obj/structure/wreck/trash/engine,
 /obj/effect/decal/cleanable/glass,
@@ -35120,13 +35155,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/bunker)
-"xXJ" = (
-/obj/effect/decal/cleanable/oil/slippery,
-/obj/structure/spider/stickyweb{
-	icon_state = "stickyweb2"
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "xXT" = (
 /obj/item/reagent_containers/food/snacks/meat/slab/molerat,
 /obj/effect/decal/cleanable/blood,
@@ -38826,7 +38854,7 @@ eLE
 lnr
 lnr
 lnr
-xby
+vql
 lnr
 lnr
 lnr
@@ -38839,7 +38867,7 @@ aoj
 aoj
 tTy
 lnr
-eLU
+qbo
 gzQ
 ncl
 aoj
@@ -39096,8 +39124,8 @@ aoj
 ncl
 gzQ
 kGx
-lWH
-ddG
+iKG
+ghH
 sXM
 tTy
 aoj
@@ -39341,19 +39369,19 @@ lnr
 lnr
 kGx
 lnr
-jQs
+hwC
 lnr
 hts
 lnr
 lnr
 aoj
 lnr
-fgP
+mRs
 nvk
 lnr
 lnr
-hyO
-ksn
+vkM
+eXy
 jpi
 lnr
 gzQ
@@ -39599,7 +39627,7 @@ lnr
 ncl
 lnr
 lnr
-ncl
+fgP
 lnr
 lnr
 lnr
@@ -39611,8 +39639,8 @@ aoj
 lnr
 lnr
 lnr
-con
-ddG
+bQA
+ghH
 ncl
 aoj
 eLE
@@ -39854,9 +39882,9 @@ aoj
 aoj
 lnr
 lnr
-wJM
+esL
 lnr
-lnr
+mph
 lnr
 lnr
 tTy
@@ -39865,8 +39893,8 @@ eLE
 aoj
 aoj
 gzQ
-lnr
-qbo
+gjC
+mIw
 lnr
 hts
 gzQ
@@ -40121,10 +40149,10 @@ aoj
 eLE
 aoj
 gzQ
-iCP
+dSK
 lnr
 lnr
-xby
+vql
 gzQ
 aoj
 aoj
@@ -40626,7 +40654,7 @@ aoj
 aoj
 aoj
 nvk
-xXJ
+qrZ
 aoj
 aoj
 aoj
@@ -42170,7 +42198,7 @@ aoj
 aoj
 aoj
 aoj
-bLc
+coa
 lnr
 aoj
 aoj
@@ -42429,7 +42457,7 @@ lnr
 lnr
 lnr
 lnr
-bPu
+gRj
 aoj
 eLE
 aoj
@@ -42683,17 +42711,17 @@ aoj
 aoj
 lnr
 ncl
-gjC
-aJm
+iwS
+sPQ
 kGx
 tTy
 aoj
 aoj
 lnr
 lnr
-qrZ
+oaX
 hts
-xby
+vql
 lnr
 lnr
 aoj
@@ -43196,7 +43224,7 @@ aoj
 aoj
 aoj
 lnr
-qfl
+mKW
 hts
 lnr
 ncl
@@ -43206,7 +43234,7 @@ nvk
 lnr
 lnr
 ncl
-pzS
+tgC
 lnr
 lnr
 ncl
@@ -43453,12 +43481,12 @@ aoj
 aoj
 aoj
 aoj
-xkM
+cFj
 lnr
 lnr
 sXM
 lnr
-wJM
+tru
 aoj
 ncl
 lnr
@@ -43970,7 +43998,7 @@ eLE
 aoj
 tTy
 lnr
-tru
+niZ
 aoj
 aoj
 eLE
@@ -44740,7 +44768,7 @@ lnr
 lnr
 aoj
 aoj
-fgP
+mRs
 aoj
 aoj
 aoj
@@ -44751,7 +44779,7 @@ eLE
 aoj
 aoj
 aoj
-fgP
+mRs
 aoj
 aoj
 aoj
@@ -45507,7 +45535,7 @@ eLE
 lnr
 lnr
 lnr
-lnr
+eLU
 tTy
 lnr
 dOV
@@ -45522,7 +45550,7 @@ aoj
 aoj
 lnr
 lnr
-rsK
+xjD
 lnr
 lnr
 ncl
@@ -45763,9 +45791,9 @@ ddv
 eLE
 lnr
 ncl
-sPQ
+oyA
 lnr
-lnr
+mph
 kGx
 aoj
 aoj
@@ -45780,7 +45808,7 @@ lnr
 lnr
 ncl
 lnr
-gjC
+iwS
 kGx
 lnr
 lnr
@@ -46808,7 +46836,7 @@ aoj
 aoj
 aoj
 nvk
-fgP
+mRs
 aoj
 aoj
 aoj
@@ -47311,9 +47339,9 @@ ddv
 ddv
 ddv
 ddv
-mph
-mjp
-nCp
+mgB
+xoC
+xkM
 xVz
 bEp
 ncl
@@ -47565,15 +47593,15 @@ ovu
 cuI
 gGt
 ddv
-nCp
-fTj
+xkM
+lWH
 xVz
 xVz
 xVz
 xVz
 xVz
 bEp
-eLU
+qbo
 ncl
 lnr
 lnr
@@ -47824,11 +47852,11 @@ qml
 ddv
 wFD
 xVz
-nCp
+xkM
 xVz
 xVz
 xVz
-mjp
+xoC
 bEp
 vPg
 vPg
@@ -48079,13 +48107,13 @@ mpo
 rtG
 rtG
 ddv
-fTQ
+tOK
 wFD
-xjD
+lTB
 ddv
 xVz
-mph
-nCp
+mgB
+xkM
 bEp
 vPg
 eLE
@@ -48850,7 +48878,7 @@ jqn
 ddv
 ddv
 ddv
-txE
+cCF
 wWB
 vlu
 ddv
@@ -49366,7 +49394,7 @@ bVO
 wFD
 wFD
 wFD
-cCF
+dtK
 ddv
 ddv
 ddv
