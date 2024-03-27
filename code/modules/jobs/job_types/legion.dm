@@ -229,28 +229,27 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		)
 
 /datum/outfit/loadout/rangerhunter
-	name = "Ranger-Hunter Centurion"
-	suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
-	head = /obj/item/clothing/head/helmet/f13/legion/rangercent
-	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
-	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/hunting = 1,
-		/obj/item/ammo_box/magazine/amr = 2,
-		/obj/item/ammo_box/c4570 = 3,
-		/obj/item/melee/onehanded/machete/spatha = 1
-		)
+    name = "Ranger-Hunter Centurion"
+    suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
+    head = /obj/item/clothing/head/helmet/f13/legion/rangercent
+    suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
+    backpack_contents = list(
+        /obj/item/gun/ballistic/revolver/hunting = 1,
+        /obj/item/ammo_box/magazine/amr = 2,
+        /obj/item/ammo_box/c4570 = 3,
+        /obj/item/book/granter/martial/cqc = 1
+        )
 
 /datum/outfit/loadout/centurion
-	name = "Warlord Centurion"
-	suit = /obj/item/clothing/suit/armored/heavy/legion/centurion
-	head = /obj/item/clothing/head/helmet/f13/legion/centurion
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14
-	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m14mm = 2,
-		/obj/item/melee/unarmed/powerfist/goliath = 1,
-		/obj/item/book/granter/martial/cqc = 1,
-		/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 2
-		)
+    name = "Warlord Centurion"
+    suit = /obj/item/clothing/suit/armored/heavy/legion/centurion
+    head = /obj/item/clothing/head/helmet/f13/legion/centurion
+    suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14
+    backpack_contents = list(
+        /obj/item/ammo_box/magazine/m14mm = 2,
+        /obj/item/melee/unarmed/powerfist/goliath = 1,
+        /obj/item/reagent_containers/pill/patch/healingpowder/berserker = 2
+        )
 
 
 // ----------------- VETERAN DECANUS ---------------------
