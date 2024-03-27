@@ -476,7 +476,7 @@
 /*--------------------------------------------------------------*/
 
 /datum/job/kebab/f13bartender
-	title = "Bartender"
+	title = "Kebab Barkeep"
 	flag = F13BARTENDER
 	total_positions = 2
 	spawn_positions = 2
@@ -504,7 +504,7 @@
 	)
 
 /datum/outfit/job/kebab/f13bartender
-	name = "Barkeep"
+	name = "Kebab Barkeep"
 	jobtype = /datum/job/kebab/f13bartender
 	uniform = /obj/item/clothing/under/f13/bartenderalt
 	id = /obj/item/card/id/dogtag/town
