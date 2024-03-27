@@ -6026,11 +6026,11 @@
 	armor = list("melee"=60,"bullet"=60,"laser"=60,"energy"=40,"bio"=30,"rad"=20,"fire"=60,"acid"=0,"wound"=40)
 	},
 /obj/item/clothing/suit/toggle/armor/f13/rangercustomdark{
-	armor = list("melee"=70,"bullet"=70,"laser"=70,"energy"=65,"bio"=30,"rad"=20,"fire"=60,"acid"=0,"wound"=40)
+	armor = list("melee"=70,"bullet"=70,"laser"=70,"energy"=65,"bio"=30,"rad"=20,"fire"=60,"acid"=0, "wound" = 70)
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom{
-	armor = list("melee"=70,"bullet"=70,"laser"=70,"energy"=65,"bio"=100,"rad"=85,"fire"=60,"acid"=0,"wound"=40);
+	armor = list("melee"=70,"bullet"=70,"laser"=70,"energy"=65,"bio"=100,"rad"=85,"fire"=60,"acid"=0, "wound" = 70);
 	name = "sleek riot helmet";
 	desc = "A riot helmet that was commitioned by the CIA to look creepier then normal riot armor, particularily this one was used for stalking and making people feel paranoid, however it is also fresh and untouched and incredibly advanced"
 	},
@@ -14957,7 +14957,9 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 1;
+	max_integrity = 5000;
+	name = "Extremely reinforced window"
 	},
 /obj/structure/table,
 /obj/item/reagent_containers/glass/bottle/FEV_solution{
