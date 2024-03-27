@@ -73,6 +73,10 @@
 	icon_state = "dark"
 	},
 /area/f13/building)
+"acf" = (
+/obj/item/reagent_containers/syringe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "acG" = (
 /obj/structure/table/wood/settler,
 /obj/machinery/recharger,
@@ -1147,6 +1151,12 @@
 	icon_state = "bluerustyfull"
 	},
 /area/f13/enclave)
+"aMb" = (
+/obj/effect/mob_spawn/human/corpse/bs/paladin,
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/highmid,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "aMr" = (
 /obj/effect/spawner/lootdrop/f13/blueprintLowPartsWeighted,
 /turf/open/indestructible/ground/inside/mountain,
@@ -4224,7 +4234,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "cCF" = (
-/obj/effect/spawner/bundle/f13/armor/combat/mk2,
+/obj/effect/mob_spawn/human/corpse/bs,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "cCG" = (
@@ -7572,7 +7583,8 @@
 /turf/closed/indestructible/rock,
 /area/f13/caves)
 "eLU" = (
-/mob/living/simple_animal/hostile/stalker,
+/obj/effect/mob_spawn/human/corpse/bs,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "eLX" = (
@@ -8156,7 +8168,12 @@
 	},
 /area/f13/enclave)
 "fgP" = (
-/obj/effect/spawner/bundle/f13/armor/combat,
+/obj/effect/decal/remains/human,
+/mob/living/simple_animal/hostile/deathclaw{
+	name = "juvenile deathclaw";
+	health = 300;
+	mob_size = 2
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "fgT" = (
@@ -8994,6 +9011,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"fIL" = (
+/obj/item/stock_parts/cell/ammo/mfc,
+/turf/open/water,
+/area/f13/sewer)
 "fIR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/fans/tiny{
@@ -9065,6 +9086,12 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/caves)
+"fLG" = (
+/obj/effect/decal/remains/human,
+/obj/effect/mob_spawn/human/corpse/bs,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "fLK" = (
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
@@ -9274,6 +9301,12 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"fRH" = (
+/obj/item/stock_parts/cell/ammo/mfc,
+/turf/open/floor/f13{
+	icon_state = "neutralrustyfull"
+	},
+/area/f13/sewer)
 "fRK" = (
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess2"
@@ -9884,7 +9917,21 @@
 /turf/open/floor/carpet/purple,
 /area/f13/cotc)
 "gjC" = (
-/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
+/obj/item/reagent_containers/food/snacks/f13/deathclawegg{
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/food/snacks/f13/deathclawegg{
+	pixel_x = -3;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/food/snacks/f13/deathclawegg{
+	pixel_y = -4
+	},
+/mob/living/simple_animal/hostile/deathclaw{
+	name = "juvenile deathclaw";
+	health = 300;
+	mob_size = 2
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "gkd" = (
@@ -10981,6 +11028,10 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/f13/den)
+"gUh" = (
+/obj/item/clothing/suit/f13/scribe,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "gUn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/waste{
@@ -13677,6 +13728,10 @@
 /obj/structure/spider/stickyweb,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
+"iTU" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "iTZ" = (
 /turf/open/floor/carpet,
 /area/f13/brotherhood)
@@ -14366,7 +14421,11 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "jpi" = (
-/mob/living/simple_animal/hostile/deathclaw/legendary,
+/obj/item/reagent_containers/food/snacks/f13/deathclawegg{
+	pixel_y = -4
+	},
+/obj/effect/mob_spawn/human/corpse/bs,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "jpr" = (
@@ -16755,6 +16814,11 @@
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plating/tunnel,
 /area/f13/cotc)
+"lcJ" = (
+/obj/effect/decal/remains/human,
+/obj/item/reagent_containers/glass/beaker/large,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "ldw" = (
 /obj/machinery/computer/arcade/battle,
 /turf/open/floor/plasteel/grimy,
@@ -18033,8 +18097,7 @@
 	},
 /area/f13/bunker)
 "lWH" = (
-/obj/effect/decal/remains/human,
-/obj/structure/barricade/wooden/strong,
+/mob/living/simple_animal/hostile/deathclaw/mother,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "lWW" = (
@@ -18495,9 +18558,13 @@
 	},
 /area/f13/den)
 "mph" = (
-/obj/structure/timeddoor,
-/turf/closed/mineral/random/low_chance/underground,
-/area/f13/caves)
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib2_flesh"
+	},
+/obj/effect/mob_spawn/human/corpse/bs,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "mpo" = (
 /obj/structure/spider/stickyweb,
 /obj/effect/decal/cleanable/dirt,
@@ -18937,6 +19004,10 @@
 "mKE" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/indestructible/ground/inside/subway,
+/area/f13/tunnel)
+"mLj" = (
+/obj/effect/mob_spawn/human/corpse/bs,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "mLU" = (
 /obj/structure/cable{
@@ -19815,8 +19886,9 @@
 /turf/open/water,
 /area/f13/sewer)
 "nvk" = (
-/obj/structure/barricade/wooden/strong,
-/obj/structure/barricade/wooden/strong,
+/obj/effect/decal/cleanable/blood{
+	icon_state = "floor2"
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "nvR" = (
@@ -21116,6 +21188,13 @@
 /obj/effect/mob_spawn/human/corpse/vault,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/f13/bunker)
+"oug" = (
+/obj/effect/decal/cleanable/blood{
+	icon_state = "gib2";
+	pixel_y = 4
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "ouF" = (
 /obj/effect/turf_decal/box,
 /obj/structure/closet/crate,
@@ -23434,7 +23513,11 @@
 /turf/open/floor/plasteel/f13/vault_floor/red,
 /area/f13/brotherhood)
 "qbo" = (
-/obj/effect/spawner/lootdrop/f13/armor/tier5,
+/mob/living/simple_animal/hostile/deathclaw{
+	name = "juvenile deathclaw";
+	health = 300;
+	mob_size = 2
+	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "qbJ" = (
@@ -23839,9 +23922,9 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/yellowchess/yellowchess2,
 /area/f13/bunker)
 "qrZ" = (
-/obj/structure/timeddoor,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/item/stock_parts/cell/ammo/breeder,
+/turf/open/water,
+/area/f13/sewer)
 "qsi" = (
 /obj/structure/table/booth,
 /obj/effect/decal/cleanable/glass,
@@ -25889,6 +25972,10 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
+"rJx" = (
+/obj/effect/decal/remains/human,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "rJA" = (
 /obj/item/pickaxe,
 /turf/open/indestructible/ground/inside/mountain,
@@ -26171,6 +26258,12 @@
 	icon_state = "tealwhdirtycorner"
 	},
 /area/f13/den)
+"rSs" = (
+/obj/effect/mob_spawn/human/corpse/bs,
+/turf/open/floor/f13{
+	icon_state = "neutralrustyfull"
+	},
+/area/f13/sewer)
 "rSv" = (
 /obj/structure/chair/stool/retro/black,
 /turf/open/floor/f13{
@@ -27464,10 +27557,9 @@
 /turf/open/floor/carpet/red,
 /area/f13/den)
 "sPQ" = (
-/obj/effect/decal/remains/human,
-/mob/living/simple_animal/hostile/deathclaw/mother,
+/obj/item/stock_parts/cell/ammo/breeder,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/area/f13/caves)
 "sPV" = (
 /obj/effect/decal/remains{
 	icon_state = "remains"
@@ -28232,9 +28324,13 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "tru" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
+/obj/effect/decal/cleanable/blood/gibs{
+	icon_state = "gibtorso"
+	},
+/turf/open/floor/f13{
+	icon_state = "neutralrustyfull"
+	},
+/area/f13/sewer)
 "trC" = (
 /obj/structure/flora/junglebush/large,
 /obj/structure/flora/junglebush/b,
@@ -29509,6 +29605,10 @@
 /obj/item/organ/heart,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"uqz" = (
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/bos,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "uqD" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -29981,6 +30081,10 @@
 /obj/item/clothing/glasses/regular,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
+"uIx" = (
+/obj/item/stock_parts/cell/ammo/mfc,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/caves)
 "uII" = (
 /obj/structure/sign/poster/contraband/ambrosia_vulgaris,
 /turf/closed/wall/r_wall/rust,
@@ -33907,11 +34011,7 @@
 	},
 /area/f13/caves)
 "xkM" = (
-/mob/living/simple_animal/hostile/cazador{
-	desc = "These cazadors have found a mutually beneficial with a Deathclaw, guarding them even against other cazadors.";
-	faction = list("deathclaw");
-	name = "Deathclaw's pet cazador"
-	},
+/obj/item/reagent_containers/glass/beaker/large,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "xla" = (
@@ -34004,6 +34104,13 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
+/area/f13/tunnel)
+"xqn" = (
+/obj/effect/decal/remains/human,
+/obj/effect/mob_spawn/human/corpse/bs/paladin,
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/bos,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "xqs" = (
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -34103,6 +34210,10 @@
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"xtB" = (
+/obj/effect/mob_spawn/human/corpse,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "xtF" = (
 /obj/machinery/reagentgrinder{
 	pixel_y = 8
@@ -34711,6 +34822,12 @@
 /obj/structure/sign/barsign,
 /turf/closed/wall/f13/wood/interior,
 /area/f13/den)
+"xOb" = (
+/mob/living/simple_animal/hostile/deathclaw/legendary{
+	name = "alpha deathclaw"
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "xOg" = (
 /obj/item/reagent_containers/pill/patch/turbo,
 /turf/open/indestructible/ground/inside/mountain,
@@ -38190,8 +38307,8 @@ lnr
 lnr
 lnr
 lnr
-gpM
-fgP
+tTy
+lnr
 aoj
 aoj
 aoj
@@ -38442,13 +38559,13 @@ vPg
 eLE
 eLE
 eLE
-tru
-gpM
 lnr
 lnr
 lnr
+gIT
 lnr
-gpM
+lnr
+lnr
 aoj
 aoj
 aoj
@@ -38699,7 +38816,7 @@ vPg
 eLE
 eLE
 lnr
-gpM
+lnr
 lnr
 lnr
 lnr
@@ -38712,10 +38829,10 @@ aoj
 eLE
 aoj
 aoj
+tTy
 lnr
-lnr
-lnr
-xkM
+qbo
+gzQ
 ncl
 aoj
 aoj
@@ -38956,25 +39073,25 @@ vPg
 eLE
 eLE
 lnr
-lnr
+tTy
 lnr
 ncl
 sXM
 lnr
-lnr
+gIT
 ncl
 lnr
-nvk
-gpM
+lnr
+lnr
 eLE
 aoj
 ncl
-lnr
+gzQ
 kGx
-ncl
-lnr
+xqn
+uqz
 sXM
-gpM
+tTy
 aoj
 eLE
 aoj
@@ -39213,26 +39330,26 @@ vPg
 eLE
 eLE
 lnr
-lnr
+gIT
 kGx
 lnr
+cCF
 lnr
-jpi
 hts
 lnr
 lnr
 aoj
-gpM
 lnr
 lnr
 lnr
 lnr
 lnr
+lWH
 lnr
 jpi
-gpM
+lnr
 gjC
-lAL
+aoj
 eLE
 aoj
 vPg
@@ -39483,12 +39600,12 @@ eLE
 eLE
 aoj
 aoj
-xkM
 lnr
 lnr
 lnr
-lnr
-lWH
+aMb
+uqz
+ncl
 aoj
 eLE
 aoj
@@ -39729,22 +39846,22 @@ aoj
 aoj
 lnr
 lnr
+mLj
 lnr
 lnr
+gIT
 lnr
-lnr
-lnr
-lnr
+tTy
 aoj
 eLE
 aoj
 aoj
+gzQ
 lnr
-lnr
-ncl
+fLG
 lnr
 hts
-lnr
+gzQ
 aoj
 eLE
 eLE
@@ -39985,22 +40102,22 @@ eLE
 aoj
 aoj
 aoj
-gpM
-gpM
-gpM
-gpM
-gpM
+lnr
+lnr
+lnr
+lnr
+lnr
 aoj
 aoj
 aoj
 eLE
 aoj
+gzQ
+fgP
 lnr
-ncl
 lnr
 lnr
-lnr
-gpM
+gjC
 aoj
 aoj
 eLE
@@ -40243,8 +40360,8 @@ aoj
 aoj
 aoj
 aoj
-gpM
-gpM
+lnr
+lnr
 aoj
 aoj
 aoj
@@ -40255,10 +40372,10 @@ aoj
 lnr
 lnr
 gyS
+gzQ
 lnr
-gpM
-cCF
-lAL
+lnr
+aoj
 eLE
 eLE
 aoj
@@ -40509,12 +40626,12 @@ aoj
 eLE
 eLE
 aoj
-gpM
+tTy
 lnr
 lnr
-lnr
+qbo
 ncl
-lAL
+aoj
 aoj
 aoj
 eLE
@@ -40765,12 +40882,12 @@ aoj
 aoj
 eLE
 aoj
-lAL
-qbo
-gpM
+aoj
 lnr
-xkM
+gzQ
 lnr
+lnr
+gzQ
 aoj
 aoj
 aoj
@@ -41023,7 +41140,7 @@ aoj
 eLE
 aoj
 aoj
-lAL
+aoj
 aoj
 aoj
 aoj
@@ -41789,7 +41906,7 @@ aoj
 aoj
 aoj
 lnr
-eLU
+lnr
 aoj
 aoj
 eLE
@@ -42045,7 +42162,7 @@ aoj
 aoj
 aoj
 aoj
-lnr
+nvk
 lnr
 aoj
 aoj
@@ -42301,10 +42418,10 @@ aoj
 aoj
 aoj
 lnr
+gIT
 lnr
 lnr
-lnr
-ncl
+lcJ
 aoj
 eLE
 aoj
@@ -42313,7 +42430,7 @@ lnr
 lnr
 ncl
 lnr
-lnr
+tTy
 aoj
 aoj
 aoj
@@ -42559,17 +42676,17 @@ aoj
 lnr
 ncl
 lnr
-lnr
+xkM
 kGx
-lnr
+tTy
 aoj
 aoj
 lnr
 lnr
-lnr
+mph
 hts
 lnr
-lnr
+gIT
 lnr
 aoj
 aoj
@@ -42814,23 +42931,23 @@ aoj
 aoj
 lnr
 lzk
-eLU
-lnr
-xkM
 lnr
 lnr
-gpM
+lnr
+lnr
+gIT
+lnr
 aoj
 lnr
+gIT
 lnr
 lnr
 lnr
 lnr
 lnr
 lnr
-gzQ
-gpM
-gpM
+lnr
+tTy
 eLE
 vPg
 vPg
@@ -43071,23 +43188,23 @@ aoj
 aoj
 aoj
 lnr
-lnr
+xtB
 hts
 lnr
 ncl
 lnr
-gpM
-nvk
 lnr
 lnr
-sPQ
 lnr
-gzQ
+lnr
+ncl
+xOb
+lnr
 lnr
 ncl
 lnr
-gpM
-gpM
+lnr
+gIT
 eLE
 vPg
 vPg
@@ -43328,12 +43445,12 @@ aoj
 aoj
 aoj
 aoj
-lnr
+gUh
 lnr
 lnr
 sXM
 lnr
-nvk
+lnr
 aoj
 ncl
 lnr
@@ -43589,11 +43706,11 @@ aoj
 lnr
 ncl
 lnr
-gpM
-aoj
-aoj
-aoj
 lnr
+aoj
+aoj
+aoj
+tTy
 lnr
 lnr
 lnr
@@ -43843,9 +43960,9 @@ eLE
 eLE
 eLE
 aoj
+tTy
 lnr
-xkM
-lnr
+acf
 aoj
 aoj
 eLE
@@ -44094,7 +44211,7 @@ vPg
 vPg
 vPg
 eLE
-lnr
+tTy
 aoj
 aoj
 aoj
@@ -44111,7 +44228,7 @@ aoj
 aoj
 aoj
 lnr
-lnr
+sXM
 aoj
 aoj
 aoj
@@ -44358,7 +44475,7 @@ aoj
 aoj
 aoj
 aoj
-gpM
+lnr
 aoj
 aoj
 aoj
@@ -44615,7 +44732,7 @@ lnr
 lnr
 aoj
 aoj
-gpM
+lnr
 aoj
 aoj
 aoj
@@ -44883,7 +45000,7 @@ eLE
 aoj
 aoj
 aoj
-gpM
+lnr
 aoj
 aoj
 aoj
@@ -45123,7 +45240,7 @@ wFD
 ddv
 eLE
 iGN
-eLU
+lnr
 hts
 ncl
 aoj
@@ -45131,7 +45248,7 @@ aoj
 aoj
 lnr
 lnr
-gpM
+lnr
 aoj
 aoj
 eLE
@@ -45140,8 +45257,8 @@ aoj
 aoj
 aoj
 aoj
-nvk
-gpM
+lnr
+lnr
 aoj
 aoj
 aoj
@@ -45380,24 +45497,24 @@ bVO
 ddv
 eLE
 lnr
+gIT
 lnr
 lnr
-eLU
+tTy
 lnr
-gjC
 dOV
 aoj
 aoj
-gpM
+tTy
 aoj
 eLE
 eLE
 aoj
 aoj
 aoj
+gIT
 lnr
-lnr
-lnr
+oug
 lnr
 lnr
 ncl
@@ -45638,7 +45755,7 @@ ddv
 eLE
 jdt
 ncl
-lnr
+eLU
 lnr
 lnr
 kGx
@@ -45655,7 +45772,7 @@ lnr
 lnr
 ncl
 lnr
-lnr
+gIT
 kGx
 lnr
 lnr
@@ -45897,7 +46014,7 @@ aoj
 lnr
 lnr
 lnr
-jdt
+gIT
 dOV
 aoj
 aoj
@@ -45907,7 +46024,7 @@ aoj
 aoj
 aoj
 aoj
-lnr
+tTy
 lnr
 ncl
 lnr
@@ -46153,7 +46270,7 @@ eLE
 aoj
 aoj
 iGN
-eLU
+lnr
 xjD
 aoj
 aoj
@@ -46171,7 +46288,7 @@ hts
 lnr
 sXM
 lnr
-lnr
+tTy
 aoj
 eLE
 vPg
@@ -46420,7 +46537,7 @@ aoj
 aoj
 aoj
 aoj
-gpM
+lnr
 lnr
 ncl
 lnr
@@ -47186,11 +47303,11 @@ ddv
 ddv
 ddv
 ddv
-aoj
-aoj
-aoj
-vPg
-mph
+sPQ
+iTU
+rJx
+xVz
+bEp
 ncl
 lnr
 ncl
@@ -47440,15 +47557,15 @@ ovu
 cuI
 gGt
 ddv
-ncl
-vPg
-vPg
-vPg
-vPg
-vPg
-vPg
+rJx
+uIx
+xVz
+xVz
+xVz
+xVz
+xVz
 bEp
-lnr
+qbo
 ncl
 lnr
 lnr
@@ -47698,13 +47815,13 @@ wYz
 qml
 ddv
 wFD
-lnr
-ncl
-vPg
-vPg
-vPg
-vPg
-qrZ
+xVz
+rJx
+xVz
+xVz
+xVz
+iTU
+bEp
 vPg
 vPg
 vPg
@@ -47954,14 +48071,14 @@ mpo
 rtG
 rtG
 ddv
+qrZ
 wFD
-wFD
-vlu
+tru
 ddv
-vPg
-vPg
-vPg
-mph
+xVz
+sPQ
+rJx
+bEp
 vPg
 eLE
 eLE
@@ -48213,7 +48330,7 @@ gGt
 ddv
 wFD
 wFD
-vlu
+rSs
 ddv
 eLE
 eLE
@@ -48725,7 +48842,7 @@ jqn
 ddv
 ddv
 ddv
-wFD
+fIL
 wWB
 vlu
 ddv
@@ -49241,7 +49358,7 @@ bVO
 wFD
 wFD
 wFD
-vlu
+fRH
 ddv
 ddv
 ddv
