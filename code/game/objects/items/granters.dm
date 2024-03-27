@@ -994,7 +994,7 @@
 /obj/item/book/granter/trait/selection/tribal
 	name = "Book of Ancient Knowledge"
 	desc = "A compendium of knowledge passed down from the elders. It looks to be in poor condition."
-	choices = list("Hit Them With Sticks","Technophilia","Pugilist","Owl Ritual","Rite of Resiliance","Basic Surgery","Desert Affinity","Brahmin Shaman")
+	choices = list("Hit Them With Sticks","Technophilia","Pugilist","Nightstalker Ritual","Rite of Resiliance","Basic Surgery","Desert Affinity","Brahmin Shaman")
 
 /obj/item/book/granter/trait/selection/tribal/attack_self(mob/user)
 	if(!granted_trait)
@@ -1012,9 +1012,9 @@
 			if("Pugilist")
 				granted_trait = TRAIT_IRONFIST
 				traitname = "using your fists"
-			if("Owl Ritual")
-				granted_trait = TRAIT_NIGHT_VISION
-				traitname = "night vision"
+			if("Nightstalker Ritual")
+				granted_trait = TRAIT_TOXINLOVER
+				traitname = "toxin immunity"
 			if("Rite of Resiliance")
 				granted_trait = TRAIT_NOLIMBDISABLE
 				traitname = "endurance"
