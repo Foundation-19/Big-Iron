@@ -53,3 +53,4 @@ GLOBAL_LIST_EMPTY(money_piles)
 
 GLOBAL_LIST_EMPTY(mob_nests)						//list of all nests, 				/obj/structure/nest
 GLOBAL_LIST_EMPTY(lamppost)							//list of all lampposts
+GLOBAL_LIST_EMPTY_TYPED(radio_list, /obj/item/radio) //For the radio station. See radio_station.dm

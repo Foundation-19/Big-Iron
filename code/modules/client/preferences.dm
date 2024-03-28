@@ -664,6 +664,7 @@ Records disabled until a use for them is found
 			dat += "<br>"
 			dat += "<b>Play Admin MIDIs:</b> <a href='?_src_=prefs;preference=hear_midis'>[(toggles & SOUND_MIDI) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>Play Lobby Music:</b> <a href='?_src_=prefs;preference=lobby_music'>[(toggles & SOUND_LOBBY) ? "Enabled":"Disabled"]</a><br>"
+			dat += "<b>Stream radio music:</b> <a href='?_src_=prefs;preference=music_streaming'>[(toggles & MUSIC_RADIO) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<b>See Pull Requests:</b> <a href='?_src_=prefs;preference=pull_requests'>[(chat_toggles & CHAT_PULLR) ? "Enabled":"Disabled"]</a><br>"
 			dat += "<br>"
 			if(user.client)
@@ -2541,6 +2542,9 @@ Records disabled until a use for them is found
 
 				if("ghost_ears")
 					chat_toggles ^= CHAT_GHOSTEARS
+
+				if("music_streaming")
+					toggles ^= MUSIC_RADIO
 
 				if("ghost_sight")
 					chat_toggles ^= CHAT_GHOSTSIGHT
