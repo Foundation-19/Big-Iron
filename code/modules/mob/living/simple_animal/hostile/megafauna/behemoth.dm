@@ -6,17 +6,17 @@
 	icon_living = "behemoth_axe"
 	icon_dead = "behemoth_dead"
 
-	health = 3000
-	maxHealth = 3000
+	health = 2000
+	maxHealth = 2000
 	
-	armour_penetration = 0.7
+	armour_penetration = 0.5
 	melee_damage_lower = 40
 	melee_damage_upper = 50
 	vision_range = 9
 	aggro_vision_range = 18
-	speed = 8
+	speed = 1
 	move_to_delay = 8
-	rapid_melee = 16
+	rapid_melee = 4
 	melee_queue_distance = 20 // as far as possible really, need this because of charging
 	ranged = TRUE
 	pixel_x = -16
