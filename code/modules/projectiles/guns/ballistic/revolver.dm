@@ -201,7 +201,7 @@
 	desc = "The revolver here appears to be made out of number of Sequoia's once held by a Vet Ranger. It doesn't have the punch as it once did."
 	icon_state = "lucky"
 	item_state = "lucky"
-	w_class = WEIGHT_CLASS_SMALL
+	weapon_weight = WEAPON_LIGHT
 	extra_damage = 30
 	fire_delay = 3
 
@@ -230,7 +230,6 @@
 	item_state = "model29"
 	icon_state = "m29"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
-	weapon_weight = WEAPON_LIGHT
 	extra_damage = 35
 	extra_penetration = 0.1
 	recoil = 0.1
@@ -278,7 +277,6 @@
 	item_state = "44colt"
 	icon_state = "44colt"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
-	weapon_weight = WEAPON_LIGHT
 	fire_delay = 4.5
 	extra_damage = 35
 	spread = 0
@@ -289,7 +287,6 @@
 /obj/item/gun/ballistic/revolver/revolver44/desert_ranger
 	name = "desert ranger revolver"
 	desc = "I hadn't noticed, but there on his hip, was a really spiffy looking iron..."
-	weapon_weight = WEAPON_LIGHT
 	fire_delay = 4
 	extra_penetration = 0.1
 	extra_damage = 40
