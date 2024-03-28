@@ -607,11 +607,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/loadout/vrshotgunner
-	name = "Veteran Ranger Shotgunner"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
+	name = "Veteran Ranger Ocelot"
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
-		/obj/item/ammo_box/shotgun/buck = 3
+		/obj/item/gun/ballistic/revolver/sequoia = 1,
+		/obj/item/ammo_box/c4570 = 3
 		)
 
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
