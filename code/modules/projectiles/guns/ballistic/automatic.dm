@@ -380,7 +380,7 @@
 	icon_state = "uzi"
 	item_state = "uzi"
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
-	weapon_weight = WEAPON_LIGHT
+	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_SMALL
 	fire_delay = 3
 	burst_shot_delay = 2.2
@@ -388,7 +388,7 @@
 	automatic = 1
 	slowdown = 0.3
 	autofire_shot_delay = 2
-	spread = 60
+	spread = 40
 	extra_damage = 17
 	can_suppress = TRUE
 	can_attachments = TRUE
@@ -406,7 +406,7 @@
 			spread = 16
 			fire_delay = 3
 			recoil = 0.1
-			weapon_weight = WEAPON_LIGHT
+			weapon_weight = WEAPON_HEAVY
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 			enable_burst()
 		if(1)
@@ -414,7 +414,7 @@
 			automatic = 0
 			fire_delay = 3
 			spread = 3
-			weapon_weight = WEAPON_LIGHT
+			weapon_weight = WEAPON_MEDIUM
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
