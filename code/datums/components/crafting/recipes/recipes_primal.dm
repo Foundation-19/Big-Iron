@@ -327,6 +327,22 @@
 		)
 	category = CAT_TRIBAL
 	tools = list(TOOL_WORKBENCH)
+	
+/datum/crafting_recipe/tribalwar/arrowexplode
+	name = "Explosive Arrow"
+	result = /obj/item/ammo_casing/caseless/arrow/explosive
+	time = 15
+	reqs = list(
+		/obj/item/stack/rods = 1,
+		/obj/item/stack/sheet/plasteel = 1,
+		/obj/item/stack/crafting/goodparts = 1,
+		/obj/item/stack/crafting/electronicparts = 1,
+		/obj/item/stack/crafting/metalparts = 2,
+		/obj/item/stack/cable_coil = 5,
+		/obj/item/stack/ore/blackpowder = 3
+		)
+	category = CAT_TRIBAL
+	tools = list(TOOL_WORKBENCH)
 
 //MELEE
 
