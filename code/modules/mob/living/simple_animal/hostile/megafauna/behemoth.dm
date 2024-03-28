@@ -16,7 +16,7 @@
 	aggro_vision_range = 18
 	speed = 7
 	move_to_delay = 8
-	rapid_melee = 16
+	rapid_melee = 2
 	melee_queue_distance = 20 // as far as possible really, need this because of charging
 	ranged = TRUE
 	pixel_x = -16
