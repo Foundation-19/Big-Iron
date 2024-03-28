@@ -336,7 +336,30 @@
 	icon = 'icons/fallout/trash.dmi'
 	icon_state = "car_engine"
 
+/obj/item/mecha_parts/chassis/phazon/car/bos
+	name = "\improper Brotherhood Car chassis"
+	construct_type = /datum/component/construction/unordered/mecha_chassis/phazon/pickuptruck/bos
+/obj/item/mecha_parts/chassis/phazon/car/buggy
+	name = "\improper Buggy Car chassis"
+	construct_type = /datum/component/construction/unordered/mecha_chassis/phazon/pickuptruck/buggy
+/obj/item/mecha_parts/chassis/phazon/car/ncrtruck
+	name = "\improper Ncr Truck chassis"
+	construct_type = /datum/component/construction/unordered/mecha_chassis/phazon/pickuptruck/ncrtruck
+/obj/item/mecha_parts/chassis/phazon/car/highwayman
+	name = "\improper Highwayman car chassis"
+	construct_type = /datum/component/construction/unordered/mecha_chassis/phazon/pickuptruck/highwayman
+/obj/item/mecha_parts/chassis/phazon/car/coverage
+	name = "\improper Coverage car chassis"
+	construct_type = /datum/component/construction/unordered/mecha_chassis/phazon/pickuptruck/coverage
 
+
+////////// Bike
+/obj/item/mecha_parts/chassis/phazon/bike
+	name = "\improper Bike chassis"
+	construct_type = /datum/component/construction/unordered/mecha_chassis/phazon/bike
+	icon = 'icons/obj/vehicles/medium_vehicles.dmi'
+	icon_state = "bikechassis"
+	bound_width = 64
 ///////// Circuitboards
 
 /obj/item/circuitboard/mecha

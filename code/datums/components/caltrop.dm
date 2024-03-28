@@ -18,6 +18,10 @@
 	var/atom/A = parent
 	if(!A.has_gravity())
 		return
+	
+	if(istype(AM, /obj/vehicle/ridden/space/speedbike) && AM.buckled_mobs.len)
+		var/obj/vehicle/ridden/space/speedbike/unfortunatebike = AM
+		unfortunatebike.crashing()
 
 	if(!prob(probability))
 		return

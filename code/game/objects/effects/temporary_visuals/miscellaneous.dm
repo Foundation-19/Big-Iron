@@ -52,6 +52,9 @@
 	duration = 10
 	randomdir = 0
 
+/obj/effect/temp_visual/dir_setting/speedbike_trail/f13
+	name = "speedbike dust"
+	icon_state = "bite_za_dusto_fade"
 /obj/effect/temp_visual/dir_setting/firing_effect
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "firing_effect"
