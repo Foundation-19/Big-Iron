@@ -8,13 +8,13 @@
 
 	health = 3000
 	maxHealth = 3000
-	
-	armour_penetration = 0.7
+	stat_attack = UNCONSCIOUS
+	armour_penetration = 0.3
 	melee_damage_lower = 40
 	melee_damage_upper = 50
-	vision_range = 9
+	vision_range = 18
 	aggro_vision_range = 18
-	speed = 8
+	speed = 7
 	move_to_delay = 8
 	rapid_melee = 16
 	melee_queue_distance = 20 // as far as possible really, need this because of charging
