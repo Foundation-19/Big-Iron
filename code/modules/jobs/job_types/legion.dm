@@ -178,9 +178,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 
 	loadout_options = list(
-		/datum/outfit/loadout/palacent,		// M1919, Goliath, 10mm pistol
-		/datum/outfit/loadout/rangerhunter,	// Hunting revolver, Sniper, Spatha
-		/datum/outfit/loadout/centurion,	// City-Killer shotgun, 14mm pistol
+		/datum/outfit/loadout/palacent,		// BAR, 10mm pistol
+		/datum/outfit/loadout/rangerhunter,	// Unique sniper, hunting revolver, spatha
+		/datum/outfit/loadout/centurion,	// 14mm pistol, goliath
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionary/f13centurion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -221,9 +221,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Paladin-Slayer Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/palacent
 	head = /obj/item/clothing/head/helmet/f13/legion/palacent
-	suit_store = /obj/item/gun/ballistic/automatic/m1919
+	suit_store = /obj/item/gun/ballistic/automatic/bar
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m762 = 3,
+		/obj/item/ammo_box/magazine/m762/ext = 3,
 		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2
 		)
@@ -232,10 +232,10 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Ranger-Hunter Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
 	head = /obj/item/clothing/head/helmet/f13/legion/rangercent
-	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
+	suit_store =/obj/item/gun/ballistic/automatic/marksman/sniper/snipervenator
 	backpack_contents = list(
 		/obj/item/gun/ballistic/revolver/hunting = 1,
-		/obj/item/ammo_box/magazine/amr = 2,
+		/obj/item/ammo_box/magazine/w308 = 2,
 		/obj/item/ammo_box/c4570 = 3,
 		/obj/item/melee/onehanded/machete/spatha = 1
 		)
@@ -248,7 +248,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m14mm = 2,
 		/obj/item/melee/unarmed/powerfist/goliath = 1,
-		/obj/item/book/granter/martial/cqc = 1,
 		/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 2
 		)
 
@@ -661,9 +660,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/sniper
 	name = "Sniper"
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand/sks
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/sks = 3,
+		/obj/item/ammo_box/m44box = 2,
 		/obj/item/attachments/scope = 1,
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/grenade/smokebomb = 2

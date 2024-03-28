@@ -151,7 +151,7 @@
 	desc = "An old military grade pre war combat armor."
 	icon_state = "combat_armor"
 	item_state = "combat_armor"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 55)
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30, "wound" = 55)
 	slowdown = 0.12
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 5)
 
@@ -195,7 +195,7 @@
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "combat_armor_mk2"
 	item_state = "combat_armor_mk2"
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 35, "bomb" = 65, "bio" = 65, "rad" = 15, "fire" = 65, "acid" = 35, "wound" = 60)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 35, "bomb" = 65, "bio" = 65, "rad" = 15, "fire" = 65, "acid" = 35, "wound" = 60)
 	slowdown = 0.15
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 

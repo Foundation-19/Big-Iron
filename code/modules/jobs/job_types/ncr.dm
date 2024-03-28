@@ -441,7 +441,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 /datum/outfit/loadout/sergeantrifleman
 	name = "Lead Rifleman"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_rifle
+	suit_store = /obj/item/gun/ballistic/automatic/service/r82
 	head = /obj/item/clothing/head/f13/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	backpack_contents = list(
@@ -558,7 +558,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13vetranger
 
 	loadout_options = list( // ALL: Binoculars, Bowie knife, Sequoia
-		/datum/outfit/loadout/vrclassic, // DKS
+		/datum/outfit/loadout/vrclassic, // AMR
 		/datum/outfit/loadout/vrlite, // Brush
 		/datum/outfit/loadout/vrshotgunner // Lever Action Shotgun
 		)
@@ -572,7 +572,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	id = /obj/item/card/id/dogtag/ncrvetranger
 	uniform = /obj/item/clothing/under/f13/ranger/vet
 	suit = /obj/item/clothing/suit/armor/f13/rangercombat
-	suit_store = /obj/item/gun/ballistic/revolver/sequoia
 	head = /obj/item/clothing/head/helmet/f13/ncr/rangercombat
 	gloves = /obj/item/clothing/gloves/rifleman
 	shoes = /obj/item/clothing/shoes/f13/military/leather
@@ -607,11 +606,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		)
 
 /datum/outfit/loadout/vrshotgunner
-	name = "Veteran Ranger Shotgunner"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
+	name = "Veteran Ranger Gunslinger"
+	suit_store = /obj/item/gun/ballistic/revolver/sequoia
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
-		/obj/item/ammo_box/shotgun/buck = 3
+		/obj/item/ammo_box/c4570box = 2
 		)
 
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -700,7 +699,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	head = /obj/item/clothing/head/f13/ranger
 	uniform	= /obj/item/clothing/under/f13/ranger/patrol
 	belt = /obj/item/storage/belt/military/assault/ncr
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
 		/obj/item/ammo_box/shotgun/buck = 3,
@@ -737,7 +736,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
 
 	loadout_options = list(
-		/datum/outfit/loadout/shockht,	// BAR, nobody uses the citykiller lol
 		/datum/outfit/loadout/supportht, // R84
 		/datum/outfit/loadout/meleeht    // Rocket Sledge, lighter armor in exchange for mobility and melee
 		)
@@ -759,14 +757,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/ammo_box/magazine/m45exp = 2,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/storage/bag/money/small/ncrenlisted = 1
-		)
-
-/datum/outfit/loadout/shockht
-	name = "Shock Heavy Trooper"
-	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/bar = 1,
-		/obj/item/ammo_box/magazine/m762/ext = 2,
-		/obj/item/storage/box/ration/menu_four = 1
 		)
 
 /datum/outfit/loadout/supportht
