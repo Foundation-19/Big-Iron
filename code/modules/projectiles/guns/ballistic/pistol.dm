@@ -167,7 +167,7 @@
 	icon_state = "beretta"
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
 	weapon_weight = WEAPON_LIGHT
-	extra_damage = 20
+	extra_damage = 24
 	spread = 1
 	can_attachments = TRUE
 	can_suppress = "pistol_suppressor"
@@ -237,6 +237,7 @@
 	name = "M1911 Custom"
 	desc = "A well-maintained stainless-steel frame 1911, with genuine wooden grips."
 	icon_state = "m1911_custom"
+	weapon_weight = WEAPON_LIGHT
 	recoil = 0.05
 	fire_delay = 2
 
