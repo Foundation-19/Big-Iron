@@ -305,7 +305,6 @@
 	desc = "This large, double-action revolver is a trademark weapon of the New California Republic Rangers. It features a dark finish with intricate engravings etched all around the weapon. Engraved along the barrel are the words 'For Honorable Service,' and 'Against All Tyrants.' The hand grip bears the symbol of the NCR Rangers, a bear, and a brass plate attached to the bottom that reads '20 Years.' "
 	icon_state = "sequoia"
 	item_state = "sequoia"
-	weapon_weight = WEAPON_LIGHT
 	recoil = 0.2
 	fire_delay = 1
 	extra_damage = 40
@@ -358,6 +357,7 @@
 	item_state = "coltwalker"
 	icon_state = "peacemaker"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45/gunslinger
+	weapon_weight = WEAPON_LIGHT
 	extra_damage = 38
 	extra_penetration = 0.15
 	fire_delay = 4.5
