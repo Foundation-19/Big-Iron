@@ -56,7 +56,7 @@
 
 /mob/living/proc/update_turf_movespeed(turf/open/T)
 	if(isopenturf(T) && !HAS_TRAIT(src, TRAIT_HARD_YARDS))
-		add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/turf_slowdown, multiplicative_slowdown = T.slowdown)
+		add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/turf_slowdown)
 	else
 		remove_movespeed_modifier(/datum/movespeed_modifier/turf_slowdown)
 

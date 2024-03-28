@@ -327,12 +327,14 @@
 	desc = "Legion recruit armor is a common light armor, clearly inspired by gear worn by old world football players and baseball catchers, much of it restored ancient actual sports equipment, other newly made from mostly leather, tanned and boiled in oil."
 	icon_state = "legion_recruit"
 	armor = list("melee" = 30, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0)
+	slowdown = 0.03
 
 /obj/item/clothing/suit/armored/light/legion/prime
 	name = "legion prime armor"
 	desc = "It's a legion prime armor, the warrior has been granted some additional protective pieces to add to his suit."
 	icon_state = "legion_prime"
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0)
+	slowdown = 0.03
 
 /obj/item/clothing/suit/armored/light/legion/recruit/slavemaster
 	name = "slavemaster armor"
@@ -345,6 +347,7 @@
 	icon_state = "legion_explorer"
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/binocular
+	slowdown = 0.025
 
 
 /////////
@@ -360,7 +363,7 @@
 	permeability_coefficient = 0.9
 	heat_protection = CHEST | GROIN | LEGS
 	cold_protection = CHEST | GROIN | LEGS
-	armor = list("melee" = 12, "bullet" = 35, "laser" = 10, "energy" = 5, "bomb" = 5, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0)
+	armor = list("melee" = 15, "bullet" = 40, "laser" = 10, "energy" = 5, "bomb" = 5, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 0)
 
 /obj/item/clothing/suit/armored/light/rangerrig
 	name = "chest gear harness"
@@ -368,14 +371,15 @@
 	icon_state = "r_gear_rig"
 	item_state = "r_gear_rig"
 	heat_protection = CHEST | GROIN | LEGS| ARMS | HEAD
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 20, "rad" = 10, "fire" = 25, "acid" = 0)
+	armor = list("melee" = 25, "bullet" = 35, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 20, "rad" = 10, "fire" = 25, "acid" = 0)
 
 /obj/item/clothing/suit/armored/light/trailranger
 	name = "ranger vest"
 	desc = "A quaint little jacket and scarf worn by NCR trail rangers."
 	icon_state = "cowboyrang"
 	item_state = "cowboyrang"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 20, "rad" = 10, "fire" = 25, "acid" = 0)
+	armor = list("melee" = 25, "bullet" = 35, "laser" = 20, "energy" = 10, "bomb" = 10, "bio" = 20, "rad" = 10, "fire" = 25, "acid" = 0)
+	slowdown = 0.03
 
 
 ///////////////

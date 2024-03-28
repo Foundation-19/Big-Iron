@@ -224,14 +224,14 @@
 	desc = "Armor worn by veteran legionaries who have proven their combat prowess in many battles, its hardened leather is sturdier than that of previous ranks."
 	icon_state = "legion_veteran"
 	armor = list("melee" = 45, "bullet" = 30, "laser" = 20, "energy" = 15, "bomb" = 30, "bio" = 5, "rad" = 5, "fire" = 35, "acid" = 0)
-	slowdown = 0.075
+	slowdown = 0.06
 
 /obj/item/clothing/suit/armored/medium/vexil
 	name = "legion vexillarius armor"
 	desc = "The armor appears to be based off of a suit of Legion veteran armor, with the addition of circular metal plates attached to the torso, as well as a banner displaying the flag of the Legion worn on the back."
 	icon_state = "legion_vex"
 	armor = list("melee" = 45, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 35, "bio" = 5, "rad" = 5, "fire" = 35, "acid" = 0)
-	slowdown = 0.075
+	slowdown = 0.06
 
 /obj/item/clothing/suit/armored/medium/combat/legion
 	name = "Legion combat armor"
