@@ -693,7 +693,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
 	slowdown = 0.05
 	extra_damage = 22
-	extra_penetration = 0.05
+	extra_penetration = 0.1
 	fire_delay = 4
 	burst_size = 1
 	spread = 0
@@ -1290,7 +1290,7 @@
 	icon_state = "fnfal"
 	item_state = "fnfal"
 	force = 20
-	extra_damage = 28
+	extra_damage = 24
 	extra_penetration = 0.1
 	extra_speed = 400
 	fire_delay = 3.5
@@ -1316,7 +1316,7 @@
 	force = 24 //club
 	slowdown = 1.5 //really goddamn big
 	autofire_shot_delay = 2.3
-	extra_damage = 30
+	extra_damage = 28
 	extra_penetration = 0.2
 	spread = 10
 	recoil = 0.3
@@ -1484,7 +1484,7 @@
 	item_state = "sniper"
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m2mm
-	extra_damage = 50
+	extra_damage = 30
 	burst_size = 1
 	fire_delay = 10
 	zoomable = TRUE
