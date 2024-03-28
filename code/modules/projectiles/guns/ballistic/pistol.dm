@@ -110,6 +110,7 @@
 	desc = "Chinese military sidearm at the time of the Great War. The ones around are old and worn, but somewhat popular due to the long barrel and rechambered in 10mm after the original ammo ran dry decades ago."
 	icon_state = "chinapistol"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	weapon_weight = WEAPON_LIGHT
 	fire_delay = 1
 	extra_damage = 24
 	recoil = 0.1
@@ -198,14 +199,14 @@
 			burst_size = 2
 			spread = 9
 			recoil = 0.1
-			weapon_weight = WEAPON_HEAVY
+			weapon_weight = WEAPON_LIGHT
 			to_chat(user, "<span class='notice'>You switch to automatic fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 1
 			spread = 1
 			recoil = 0
-			weapon_weight = WEAPON_MEDIUM
+			weapon_weight = WEAPON_LIGHT
 			to_chat(user, "<span class='notice'>You switch to semi-auto.</span>")
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)
 	update_icon()
@@ -218,6 +219,7 @@
 	desc = "A classic .45 handgun with a small magazine capacity."
 	icon_state = "m1911"
 	item_state = "pistolchrome"
+	weapon_weight = WEAPON_LIGHT
 	w_class = WEIGHT_CLASS_NORMAL
 	fire_delay = 2
 	slowdown = 0.05
@@ -272,6 +274,7 @@
 	icon_state = "deagle"
 	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/m44
+	weapon_weight = WEAPON_LIGHT
 	fire_delay = 3
 	force = 15
 	extra_damage = 38
@@ -301,6 +304,7 @@
 	icon_state = "automag"
 	item_state = "deagle"
 	mag_type = /obj/item/ammo_box/magazine/automag
+	weapon_weight = WEAPON_LIGHT
 	fire_delay = 4
 	extra_damage = 41
 	extra_speed = 300
