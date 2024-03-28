@@ -152,6 +152,7 @@
 	item_state = "45revolver"
 	icon_state = "45revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev45
+	weapon_weight = WEAPON_LIGHT
 	extra_damage = 34
 	fire_delay = 4.5
 	spread = 1
@@ -211,6 +212,7 @@
 	icon_state = "police"
 	extra_damage = 28
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
+	weapon_weight = WEAPON_LIGHT
 	w_class = WEIGHT_CLASS_TINY
 	spread = 2
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
@@ -228,6 +230,7 @@
 	item_state = "model29"
 	icon_state = "m29"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
+	weapon_weight = WEAPON_LIGHT
 	extra_damage = 35
 	extra_penetration = 0.1
 	recoil = 0.1
@@ -263,6 +266,7 @@
 	desc = "A snubnose variant of the commonplace .44 magnum. An excellent holdout weapon for self defense."
 	icon_state = "m29_snub"
 	w_class = WEIGHT_CLASS_TINY
+	weapon_weight = WEAPON_LIGHT
 	extra_damage = 35
 	spread = 3
 
@@ -274,6 +278,7 @@
 	item_state = "44colt"
 	icon_state = "44colt"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev44
+	weapon_weight = WEAPON_LIGHT
 	fire_delay = 4.5
 	extra_damage = 35
 	spread = 0
@@ -284,6 +289,7 @@
 /obj/item/gun/ballistic/revolver/revolver44/desert_ranger
 	name = "desert ranger revolver"
 	desc = "I hadn't noticed, but there on his hip, was a really spiffy looking iron..."
+	weapon_weight = WEAPON_LIGHT
 	fire_delay = 4
 	extra_penetration = 0.1
 	extra_damage = 40
@@ -299,7 +305,7 @@
 	desc = "This large, double-action revolver is a trademark weapon of the New California Republic Rangers. It features a dark finish with intricate engravings etched all around the weapon. Engraved along the barrel are the words 'For Honorable Service,' and 'Against All Tyrants.' The hand grip bears the symbol of the NCR Rangers, a bear, and a brass plate attached to the bottom that reads '20 Years.' "
 	icon_state = "sequoia"
 	item_state = "sequoia"
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_LIGHT
 	recoil = 0.2
 	fire_delay = 1
 	extra_damage = 40
@@ -365,7 +371,7 @@
 	desc = "A strange pistol firing rifle ammunition, possibly damaging the users wrist and with poor accuracy."
 	icon_state = "thatgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/thatgun
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_LIGHT
 	extra_damage = 33
 	extra_penetration = 0.2
 	spread = 4
@@ -398,6 +404,7 @@
 	icon_state = "needler"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/revneedler
 	fire_sound = 'sound/weapons/gunshot_silenced.ogg'
+	weapon_weight = WEAPON_LIGHT
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/gun/ballistic/revolver/needler/ultra
