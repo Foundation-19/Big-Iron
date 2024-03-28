@@ -76,7 +76,7 @@
 					playsound(src, "gun_insert_full_magazine", 70, 1)
 					if(!chambered)
 						chamber_round()
-						addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, src, 'sound/weapons/gun_chamber_round.ogg', 100, 1), 3)
+						addtimer(CALLBACK(GLOBAL_PROC,GLOBAL_PROC_REF(playsound), src, 'sound/weapons/gun_chamber_round.ogg', 100, 1), 3)
 				else
 					playsound(src, "gun_insert_empty_magazine", 70, 1)
 				A.update_icon()
@@ -189,7 +189,7 @@
 				var/mob/living/carbon/C = user
 				var/list/blood_dna = C.get_blood_dna_list()
 				B.add_blood_DNA(blood_dna, C.diseases)
-			var/datum/callback/gibspawner = CALLBACK(user, /mob/living/proc/spawn_gibs, FALSE, B)
+			var/datum/callback/gibspawner = CALLBACK(user, TYPE_PROC_REF(/mob/living, spawn_gibs), FALSE, B)
 			B.throw_at(target, BRAINS_BLOWN_THROW_RANGE, BRAINS_BLOWN_THROW_SPEED, callback=gibspawner)
 			return(BRUTELOSS)
 		else

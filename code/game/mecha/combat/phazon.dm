@@ -95,7 +95,7 @@
 		M.dust()
 	playsound(src, 'sound//f13machines//vertibird_crash.ogg', 100, 0)
 	src.visible_message("<span class = 'userdanger'>The reactor has gone critical, its going to blow!</span>")
-	addtimer(CALLBACK(src,.proc/go_critical),breach_time)
+	addtimer(CALLBACK(src,PROC_REF(go_critical)),breach_time)
 
 /obj/mecha/combat/phazon/vertibird/proc/go_critical()
 	explosion(get_turf(loc), 3, 5, 10)
@@ -176,7 +176,7 @@
 		M.dust()
 	playsound(src, 'sound//f13machines//vertibird_crash.ogg', 100, 0)
 	src.visible_message("<span class = 'userdanger'>The reactor has gone critical, its going to blow!</span>")
-	addtimer(CALLBACK(src,.proc/go_critical),breach_time)
+	addtimer(CALLBACK(src,PROC_REF(go_critical)),breach_time)
 
 /obj/mecha/combat/phazon/vertibird/ncr/loaded/Initialize()
 	. = ..()
@@ -255,7 +255,7 @@
 		M.dust()
 	playsound(src, 'sound//f13machines//vertibird_crash.ogg', 100, 0)
 	src.visible_message("<span class = 'userdanger'>The reactor has gone critical, its going to blow!</span>")
-	addtimer(CALLBACK(src,.proc/go_critical),breach_time)
+	addtimer(CALLBACK(src,PROC_REF(go_critical)),breach_time)
 
 /obj/mecha/combat/phazon/vertibird/enclave/loaded/Initialize()
 	. = ..()
@@ -328,7 +328,7 @@
 		M.dust()
 	playsound(src, 'sound//f13machines//vertibird_crash.ogg', 100, 0)
 	src.visible_message("<span class = 'userdanger'>The reactor has gone critical, its going to blow!</span>")
-	addtimer(CALLBACK(src,.proc/go_critical),breach_time)
+	addtimer(CALLBACK(src,PROC_REF(go_critical)),breach_time)
 
 /obj/mecha/combat/phazon/vertibird/brotherhood/loaded/Initialize()
 	. = ..()

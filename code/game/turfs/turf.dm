@@ -124,7 +124,7 @@
 
 	ComponentInitialize()
 
-	RegisterSignal(src, COMSIG_ATOM_ENTERED, .proc/cleanbloatup)
+	RegisterSignal(src, COMSIG_ATOM_ENTERED, PROC_REF(cleanbloatup))
 
 	return INITIALIZE_HINT_NORMAL
 

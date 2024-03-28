@@ -248,7 +248,7 @@
 
 /obj/item/ammo_box/magazine/ammobelt/get_round() //Finally deletes itself.
 	. = ..()
-	addtimer(CALLBACK(src, .proc/delempty), 0)
+	addtimer(CALLBACK(src, PROC_REF(delempty)), 0)
 
 /obj/item/ammo_box/magazine/ammobelt/proc/delempty()
 	if(ammo_count() < 1)

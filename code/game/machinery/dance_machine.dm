@@ -402,7 +402,7 @@
 				glow.update_light()
 				continue
 		if(prob(2))  // Unique effects for the dance floor that show up randomly to mix things up
-			INVOKE_ASYNC(src, .proc/hierofunk)
+			INVOKE_ASYNC(src, PROC_REF(hierofunk))
 		sleep(selection.song_beat)
 
 #undef DISCO_INFENO_RANGE
@@ -678,7 +678,7 @@
 	src.visible_message("<span class='warning'> music library has been updated.")
 
 /obj/machinery/gramophone_recorder/proc/diskProcess() //its an old piece of tech and it takes it's time
-	addtimer(CALLBACK(src, .proc/burnDisk), 40)
+	addtimer(CALLBACK(src, PROC_REF(burnDisk)), 40)
 	inuse = TRUE
 	src.visible_message("<span class='warning'>your disk is being burned, please stand by.")
 

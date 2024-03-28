@@ -55,10 +55,10 @@
 		blast()
 	else
 		if(health > maxHealth/2 && !client)
-			INVOKE_ASYNC(src, .proc/charge)
+			INVOKE_ASYNC(src, PROC_REF(charge))
 			visible_message("<span class='colossus'>\"<b> FOR THE ENCLAVE!</b>\"</span>")
 		else
-			INVOKE_ASYNC(src, .proc/triple_charge)
+			INVOKE_ASYNC(src, PROC_REF(triple_charge))
 			visible_message("<span class='colossus'>\"<b>YOUR RIDE IS OVER MUTIE, TIME TO DIE!</b>\"</span>")
 
 /mob/living/simple_animal/hostile/enclave/captainarlem/do_attack_animation(atom/A, visual_effect_icon, obj/item/used_item, no_effect)
@@ -167,7 +167,7 @@
 
 /mob/living/simple_animal/hostile/enclave/captainarlem/death()
 	do_sparks(3, TRUE, src)
-	addtimer(CALLBACK(src, .proc/self_destruct), 4 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(self_destruct)), 4 SECONDS)
 	return ..()
 
 

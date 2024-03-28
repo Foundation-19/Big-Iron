@@ -16,13 +16,13 @@ What are the archived variables for?
 
 GLOBAL_LIST_INIT(auxtools_atmos_initialized,FALSE)
 
-/proc/auxtools_atmos_init()
+///proc/auxtools_atmos_init()
 
 /datum/gas_mixture/New(volume)
 	if (!isnull(volume))
 		initial_volume = volume
-	AUXTOOLS_CHECK(AUXMOS)
-	if(!GLOB.auxtools_atmos_initialized && auxtools_atmos_init())
+	//AUXTOOLS_CHECK(AUXMOS)
+	if(!GLOB.auxtools_atmos_initialized && auxtools_atmos_init(GLOB.gas_data))
 		GLOB.auxtools_atmos_initialized = TRUE
 	__gasmixture_register()
 	reaction_results = new
@@ -111,8 +111,8 @@ we use a hook instead
 	. = ..()
 	*/
 
-/datum/gas_mixture/proc/__gasmixture_unregister()
-/datum/gas_mixture/proc/__gasmixture_register()
+/*/datum/gas_mixture/proc/__gasmixture_unregister()
+/datum/gas_mixture/proc/__gasmixture_register()*/
 
 /proc/gas_types()
 	var/list/L = subtypesof(/datum/gas)
@@ -121,7 +121,7 @@ we use a hook instead
 		L[gt] = initial(G.specific_heat)
 	return L
 
-/datum/gas_mixture/proc/heat_capacity() //joules per kelvin
+/*/datum/gas_mixture/proc/heat_capacity() //joules per kelvin
 
 /datum/gas_mixture/proc/partial_heat_capacity(gas_type)
 
@@ -136,7 +136,7 @@ we use a hook instead
 /datum/gas_mixture/proc/set_volume(new_volume)
 /datum/gas_mixture/proc/get_moles(gas_type)
 /datum/gas_mixture/proc/get_by_flag(flag)
-/datum/gas_mixture/proc/set_moles(gas_type, moles)
+/datum/gas_mixture/proc/set_moles(gas_type, moles)*/
 
 // VV WRAPPERS - EXTOOLS HOOKED PROCS DO NOT TAKE ARGUMENTS FROM CALL() FOR SOME REASON.
 /datum/gas_mixture/proc/vv_set_moles(gas_type, moles)
@@ -150,15 +150,15 @@ we use a hook instead
 /datum/gas_mixture/proc/vv_react(datum/holder)
 	return react(holder)
 
-/datum/gas_mixture/proc/scrub_into(datum/gas_mixture/target, ratio, list/gases)
+/*datum/gas_mixture/proc/scrub_into(datum/gas_mixture/target, ratio, list/gases)
 /datum/gas_mixture/proc/mark_immutable()
 /datum/gas_mixture/proc/get_gases()
 /datum/gas_mixture/proc/add(amt)
 /datum/gas_mixture/proc/subtract(amt)
 /datum/gas_mixture/proc/multiply(factor)
-/datum/gas_mixture/proc/divide(factor)
+/datum/gas_mixture/proc/divide(factor)*/
 /datum/gas_mixture/proc/get_last_share()
-/datum/gas_mixture/proc/clear()
+/*/datum/gas_mixture/proc/clear()
 
 /datum/gas_mixture/proc/adjust_moles(gas_type, amt = 0)
 	set_moles(gas_type, clamp(get_moles(gas_type) + amt,0,INFINITY))
@@ -170,12 +170,13 @@ we use a hook instead
 /datum/gas_mixture/proc/return_volume() //liters
 
 /datum/gas_mixture/proc/thermal_energy() //joules
+*/
 
 /datum/gas_mixture/proc/archive()
 	//Update archived versions of variables
 	//Returns: 1 in all cases
 
-/datum/gas_mixture/proc/merge(datum/gas_mixture/giver)
+///datum/gas_mixture/proc/merge(datum/gas_mixture/giver)
 	//Merges all air from giver into self. giver is untouched.
 	//Returns: 1 if we are mutable, 0 otherwise
 
@@ -187,10 +188,10 @@ we use a hook instead
 	//Removes amount of gas from the gas mixture by flag
 	//Returns: gas_mixture with gases that match the flag removed
 
-/datum/gas_mixture/proc/transfer_to(datum/gas_mixture/target, amount)
+///datum/gas_mixture/proc/transfer_to(datum/gas_mixture/target, amount)
 	//Transfers amount of gas to target. Equivalent to target.merge(remove(amount)) but faster.
 
-/datum/gas_mixture/proc/transfer_ratio_to(datum/gas_mixture/target, ratio)
+///datum/gas_mixture/proc/transfer_ratio_to(datum/gas_mixture/target, ratio)
 	//Transfers ratio of gas to target. Equivalent to target.merge(remove_ratio(amount)) but faster.
 
 /datum/gas_mixture/proc/remove_ratio(ratio)
@@ -201,7 +202,7 @@ we use a hook instead
 	//Creates new, identical gas mixture
 	//Returns: duplicate gas mixture
 
-/datum/gas_mixture/proc/copy_from(datum/gas_mixture/sample)
+///datum/gas_mixture/proc/copy_from(datum/gas_mixture/sample)
 	//Copies variables from sample
 	//Returns: 1 if we are mutable, 0 otherwise
 
@@ -217,7 +218,7 @@ we use a hook instead
 	//Performs air sharing calculations between two gas_mixtures assuming only 1 boundary length
 	//Returns: amount of gas exchanged (+ if sharer received)
 
-/datum/gas_mixture/proc/temperature_share(datum/gas_mixture/sharer, conduction_coefficient,temperature=null,heat_capacity=null)
+/*/datum/gas_mixture/proc/temperature_share(datum/gas_mixture/sharer, conduction_coefficient,temperature=null,heat_capacity=null)
 	//Performs temperature sharing calculations (via conduction) between two gas_mixtures assuming only 1 boundary length
 	//Returns: new temperature of the sharer
 
@@ -247,7 +248,7 @@ we use a hook instead
 	//Makes every gas in the given list have the same pressure, temperature and gas proportions.
 	//Returns: null
 
-/datum/gas_mixture/proc/__remove_by_flag()
+/datum/gas_mixture/proc/__remove_by_flag()*/
 
 /datum/gas_mixture/remove_by_flag(flag, amount)
 	var/datum/gas_mixture/removed = new type
@@ -255,14 +256,14 @@ we use a hook instead
 
 	return removed
 
-/datum/gas_mixture/proc/__remove()
+///datum/gas_mixture/proc/__remove()
 /datum/gas_mixture/remove(amount)
 	var/datum/gas_mixture/removed = new type
 	__remove(removed, amount)
 
 	return removed
 
-/datum/gas_mixture/proc/__remove_ratio()
+///datum/gas_mixture/proc/__remove_ratio()
 /datum/gas_mixture/remove_ratio(ratio)
 	var/datum/gas_mixture/removed = new type
 	__remove_ratio(removed, ratio)
@@ -280,7 +281,7 @@ we use a hook instead
 	parse_gas_string(model.initial_gas_mix)
 	return 1
 
-/datum/gas_mixture/proc/__auxtools_parse_gas_string(gas_string)
+///datum/gas_mixture/proc/__auxtools_parse_gas_string(gas_string)
 
 /datum/gas_mixture/parse_gas_string(gas_string)
 	gas_string = SSair.preprocess_gas_string(gas_string)

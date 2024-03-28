@@ -59,17 +59,17 @@
 	..()
 	if(process)
 		if(interacts_with_air)
-			SSair.atmos_air_machinery += src
-		else
 			SSair.atmos_machinery += src
+		else
+			SSair.start_processing_machine(src)
 	SetInitDirections()
 
 /obj/machinery/atmospherics/Destroy()
 	for(var/i in 1 to device_type)
 		nullifyNode(i)
 
+	SSair.stop_processing_machine(src)
 	SSair.atmos_machinery -= src
-	SSair.atmos_air_machinery -= src
 	SSair.pipenets_needing_rebuilt -= src
 
 	dropContents()
