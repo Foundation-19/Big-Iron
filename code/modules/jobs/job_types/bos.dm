@@ -362,7 +362,8 @@ Paladin
 /datum/outfit/loadout/paladinc
 	name = "Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpackbal5mm = 1,
+		/obj/item/gun/ballistic/automatic/lsw = 1,
+		/obj/item/ammo_box/magazine/m556/rifle = 3,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
@@ -373,7 +374,8 @@ Paladin
 /datum/outfit/loadout/paladind
 	name = "Heavy Senior Paladin"
 	backpack_contents = list(
-		/obj/item/minigunpackbal5mm = 1,
+		/obj/item/gun/ballistic/automatic/lsw = 1,
+		/obj/item/ammo_box/magazine/m556/rifle = 3,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
