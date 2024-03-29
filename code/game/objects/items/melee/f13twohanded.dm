@@ -52,7 +52,7 @@
 /obj/item/twohanded/legionaxe/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 100, 80, 0 , hitsound) //axes are not known for being precision butchering tools
-	AddComponent(/datum/component/two_handed, force_unwielded=25, force_wielded=50, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded=25, force_wielded=56, icon_wielded="[icon_prefix]2")
 
 /obj/item/twohanded/legionaxe/suicide_act(mob/user)
 	user.visible_message("<span class='suicide'>[user] axes [user.p_them()]self from head to toe! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -136,7 +136,7 @@
 
 /obj/item/twohanded/fireaxe/boneaxe/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=25, force_wielded=40, icon_wielded="[icon_prefix]2")
+	AddComponent(/datum/component/two_handed, force_unwielded=25, force_wielded=50, icon_wielded="[icon_prefix]2")
 
 /obj/item/twohanded/fireaxe/boneaxe/afterattack(atom/A, mob/living/user, proximity)
 	. = ..()
@@ -298,10 +298,12 @@
 	icon_prefix = "lance"
 	inhand_x_dimension = 64
 	inhand_y_dimension = 64
+	armour_penetration = 0.10
+
 
 /obj/item/twohanded/spear/lance/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded=15, force_wielded=30, icon_wielded="[icon_prefix]_wield")
+	AddComponent(/datum/component/two_handed, force_unwielded=15, force_wielded=35, icon_wielded="[icon_prefix]_wield")
 
 
 // Scrap spear		Keywords: Damage 17/28, Reach, Throw bonus
@@ -748,8 +750,8 @@
 	icon_state = "chainsaw"
 	icon_prefix = "chainsaw"
 	force = 8
-	wound_bonus = 15
-	bare_wound_bonus = 15
+	wound_bonus = 40
+	bare_wound_bonus = 30
 	sharpness = SHARP_EDGED
 	resistance_flags = FIRE_PROOF
 	attack_verb = list("sawed", "shredded", "mauled")
