@@ -23577,10 +23577,9 @@
 /area/f13/brotherhood)
 "qbo" = (
 /mob/living/simple_animal/hostile/deathclaw{
+	resize = 0.5;
 	name = "infant deathclaw";
-	health = 200;
-	mob_size = 2;
-	resize = .5
+	health = 200
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
@@ -23929,6 +23928,14 @@
 	},
 /turf/open/indestructible/ground/outside/river,
 /area/f13/bunker)
+"qoa" = (
+/mob/living/simple_animal/hostile/deathclaw{
+	name = "juvenile deathclaw";
+	resize = 0.75;
+	health = 300
+	},
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "qow" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
@@ -40433,7 +40440,7 @@ lnr
 lnr
 gyS
 gzQ
-gIT
+lnr
 lnr
 eLE
 vPg
@@ -40946,7 +40953,7 @@ eLE
 lnr
 gzQ
 lnr
-lnr
+qbo
 gzQ
 eLE
 aoj
@@ -45318,7 +45325,7 @@ aoj
 eLE
 eLE
 lnr
-lnr
+qoa
 eLE
 eLE
 aoj
@@ -46343,7 +46350,7 @@ aoj
 eLE
 lnr
 lnr
-gIT
+lnr
 hts
 lnr
 sXM
@@ -47369,7 +47376,7 @@ xkM
 xVz
 bEp
 ncl
-qbo
+lnr
 ncl
 lnr
 wtK
@@ -47627,7 +47634,7 @@ xVz
 bEp
 lnr
 ncl
-lnr
+qoa
 lnr
 ncl
 eLE
