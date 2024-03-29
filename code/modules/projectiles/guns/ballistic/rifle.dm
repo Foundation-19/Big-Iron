@@ -161,8 +161,8 @@
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
-	fire_delay = 4
-	extra_damage = 37
+	fire_delay = 2
+	extra_damage = 42
 	extra_penetration = 0.20
 	extra_speed = 800
 	spread = 0
@@ -189,7 +189,7 @@
 	desc = "A militarized hunting rifle rechambered to 7.62. This one has had the barrel floated with shims to increase accuracy."
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/remington
 	fire_delay = 2
-	extra_damage = 39
+	extra_damage = 44
 	extra_speed = 800
 	force = 18
 
