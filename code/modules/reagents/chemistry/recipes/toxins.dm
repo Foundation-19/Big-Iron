@@ -141,7 +141,7 @@
 	name = "Mother Darkness"
 	id = /datum/reagent/toxin/motherdarkness
 	results = list(/datum/reagent/toxin/motherdarkness = 5)
-	required_reagents = list (/datum/reagent/toxin/radscorp = 3, /datum/reagent/toxin/cazador = 1, /datum/reagent/consumable/ethanol/daturatea = 1)
+	required_reagents = list (/datum/reagent/toxin/radscorp = 4, /datum/reagent/consumable/ethanol/daturatea = 1)
 	mix_message = "<span class='danger'>The mixture fizzes and bubbles as it darkens.</span>"
 
 /datum/chemical_reaction/darkdatura
