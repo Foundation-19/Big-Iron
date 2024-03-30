@@ -121,6 +121,7 @@
 	var/datum/action/innate/mecha/strafe/strafing_action = new
 	var/datum/action/innate/mecha/klaxon/klaxon_action = new
 	var/datum/action/innate/mecha/sirens/sirens_action = new
+	var/datum/action/innate/mecha/Landing/landing_action = new
 
 
 	//Action vars
@@ -145,6 +146,7 @@
 
 	var/occupant_sight_flags = 0 //sight flags to give to the occupant (e.g. mech mining scanner gives meson-like vision)
 	var/mouse_pointer
+	var/on_the_air = FALSE
 
 	hud_possible = list (DIAG_STAT_HUD, DIAG_BATT_HUD, DIAG_MECH_HUD, DIAG_TRACK_HUD)
 

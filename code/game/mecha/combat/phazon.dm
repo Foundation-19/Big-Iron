@@ -58,6 +58,7 @@
 	movement_type = FLYING
 	stepsound = 'sound/f13machines/vertibird_loop.ogg'
 	turnsound = 'sound/f13machines/vertibird_loop.ogg'
+	on_the_air = TRUE
 
 /obj/structure/mecha_wreckage/vertibird
 	name = "\improper Vertibird Wreck"
@@ -75,6 +76,7 @@
 	strafing_action.Grant(user, src)
 	zoom_action.Grant(user, src)
 	eject_action.Grant(user, src)
+	landing_action.Grant(user, src)
 	//rotorup_action.Grant(user, src)
 	//rotordown_action.Grant(user, src)
 
@@ -86,6 +88,7 @@
 	strafing_action.Remove(user)
 	zoom_action.Remove(user)
 	eject_action.Remove(user)
+	landing_action.Grant(user)
 	//rotorup_action.Remove(user)
 	//rotordown_action.Remove(user)
 
@@ -103,6 +106,8 @@
 
 /obj/mecha/combat/phazon/vertibird/loaded/Initialize()
 	. = ..()
+	if(z != 5)
+		on_the_air = FALSE
 	var/obj/item/mecha_parts/mecha_equipment/ME = new /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
 	ME.attach(src)
 	ME = new /obj/item/mecha_parts/mecha_equipment/seat
@@ -163,6 +168,7 @@
 	zoom_action.Grant(user, src)
 	eject_action.Grant(user, src)
 	smoke_action.Grant(user, src)
+	landing_action.Grant(user, src)
 	//rotorup_action.Grant(user, src)
 	//rotordown_action.Grant(user, src)
 
@@ -175,6 +181,7 @@
 	zoom_action.Remove(user)
 	eject_action.Remove(user)
 	smoke_action.Remove(user)
+	landing_action.Grant(user)
 	//rotorup_action.Remove(user)
 	//rotordown_action.Remove(user)
 
@@ -243,6 +250,7 @@
 	strafing_action.Grant(user, src)
 	zoom_action.Grant(user, src)
 	eject_action.Grant(user, src)
+	landing_action.Grant(user, src)
 	//rotorup_action.Grant(user, src)
 	//rotordown_action.Grant(user, src)
 
@@ -254,6 +262,7 @@
 	strafing_action.Remove(user)
 	zoom_action.Remove(user)
 	eject_action.Remove(user)
+	landing_action.Grant(user)
 	//rotorup_action.Remove(user)
 	//rotordown_action.Remove(user)
 
@@ -316,6 +325,7 @@
 	strafing_action.Grant(user, src)
 	zoom_action.Grant(user, src)
 	eject_action.Grant(user, src)
+	landing_action.Grant(user, src)
 	//rotorup_action.Grant(user, src)
 	//rotordown_action.Grant(user, src)
 
@@ -327,6 +337,7 @@
 	strafing_action.Remove(user)
 	zoom_action.Remove(user)
 	eject_action.Remove(user)
+	landing_action.Grant(user)
 	//rotorup_action.Remove(user)
 	//rotordown_action.Remove(user)
 
