@@ -1170,7 +1170,7 @@
 	value = REAGENT_VALUE_COMMON //Encouraging people to mix toxins for reasons beyond harming each other or mixing reagents such as pen acid.
 	toxpwr = 1.7
 	ghoulfriendly = TRUE
-	
+
 /datum/reagent/toxin/motherdarkness/on_mob_life(mob/living/carbon/M)
 	M.adjustStaminaLoss(REM * data, 0)
 	data = max(data - 1, 5)

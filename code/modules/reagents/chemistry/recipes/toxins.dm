@@ -149,4 +149,4 @@
 	id = /datum/reagent/toxin/darkdatura
 	results = list(/datum/reagent/toxin/darkdatura = 10)
 	required_reagents = list (/datum/reagent/consumable/ethanol/daturatea = 8, /datum/reagent/acetone = 2)
-	mix_message = "<span class='danger'>The mixture bubbles and gives off noxious fumes.</span>"	
+	mix_message = "<span class='danger'>The mixture bubbles and gives off noxious fumes.</span>"
