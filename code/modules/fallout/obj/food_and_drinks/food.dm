@@ -129,7 +129,7 @@
 	name = "cazador meat"
 	desc = "Meat extracted from the lean hide of cazador wasp."
 	icon_state = "mothmeat"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/toxin/carpotoxin = 3)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/toxin/cazador = 3)
 	filling_color = "#e5b73b"
 	bitesize = 2
 	tastes = list("insect guts" = 3, "sweet tangy liquid" = 1) //google says toxin is sweet anyway.
@@ -142,7 +142,7 @@
 	desc = "Meat from a radscorpion, still inside its chitin.  Going to need pliers for this."
 	icon = 'icons/fallout/objects/food&drinks/food.dmi'
 	icon_state = "radscorpion_meat"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3,  /datum/reagent/toxin  = 5, /datum/reagent/consumable/nutriment/vitamin = 2)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/toxin/radscorp = 5, /datum/reagent/consumable/nutriment/vitamin = 2)
 	filling_color = "#e5b73b"
 	bitesize = 4
 	tastes = list("insect guts" = 3, "sweet tangy liquid" = 2) //google says toxin is sweet anyway.
