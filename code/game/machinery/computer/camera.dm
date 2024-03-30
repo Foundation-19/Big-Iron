@@ -174,7 +174,7 @@
 			D["[C.c_tag]"] = C
 	return D
 
-obj/machinery/computer/security/attackby(obj/item/W, mob/user, params)
+/obj/machinery/computer/security/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/multitool))
 		var/obj/item/multitool/P = W
 		if(istype(P.buffer, camera_type))

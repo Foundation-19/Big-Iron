@@ -163,7 +163,7 @@
 
 /obj/machinery/camera/multitool_act(mob/living/user, obj/item/multitool/I)
 	if(!panel_open)
-		if (istype(I))
+		if(istype(I))
 			to_chat(user, "<span class='notice'>You log [src] in the multitool's buffer.</span>")
 			I.buffer = src
 			return TRUE
