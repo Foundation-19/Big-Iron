@@ -814,8 +814,7 @@
 	name = "scout carbine"
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
 	icon_state = "scout_carbine"
-	spread = 1.2
-	slowdown = 0.05
+	spread = 1
 	extra_damage = 25
 	extra_penetration = 0.1
 	can_scope = TRUE
