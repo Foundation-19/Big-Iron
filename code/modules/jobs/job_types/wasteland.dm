@@ -446,7 +446,7 @@ Raider
 	shoes = /obj/item/clothing/shoes/laceup
 	id = /obj/item/card/id/denid
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/type17 = 1,
+		/obj/item/gun/ballistic/revolver/chinese = 1,
 		/obj/item/ammo_box/magazine/m10mm_adv/simple = 3,
 		/obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
 		/obj/item/ammo_box/magazine/greasegun = 1,
@@ -893,7 +893,7 @@ Raider
 	outfit = /datum/outfit/job/wasteland/f13bwsettler
 	exp_requirements = 0
 	exp_type = EXP_TYPE_FALLOUT
-	
+
 	loadout_options = list(
 	/datum/outfit/loadout/settlermerchant,
 	/datum/outfit/loadout/settlerdoc,
@@ -903,7 +903,7 @@ Raider
 	/datum/outfit/loadout/settlerpoacher,
 	/datum/outfit/loadout/settlergambler,
 	)
-	
+
 	matchmaking_allowed = list(
 		/datum/matchmaking_pref/friend = list(
 			/datum/job/wasteland/f13bwsettler,
@@ -937,7 +937,7 @@ Raider
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/raider = 1,
 		)
-		
+
 
 /datum/outfit/job/wasteland/f13bwsettler/pre_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -1047,9 +1047,9 @@ Raider
 /datum/outfit/loadout/settlerbartender
 	name = "Saloon Bartender"
 	uniform = /obj/item/clothing/under/f13/bartenderalt
-	neck = /obj/item/clothing/neck/apron/bartender 
+	neck = /obj/item/clothing/neck/apron/bartender
 	suit_store = /obj/item/gun/ballistic/revolver/widowmaker
-	r_hand = /obj/item/reagent_containers/food/drinks/shaker 
+	r_hand = /obj/item/reagent_containers/food/drinks/shaker
 	l_hand = /obj/item/storage/box/drinkingglasses
 	backpack_contents =  list(/obj/item/storage/bag/money/small/wastelander = 1,
 							/obj/item/ammo_box/shotgun/improvised = 1,
@@ -1085,16 +1085,16 @@ Raider
 /datum/outfit/loadout/settlerprospector
 	name = "Wasteland Prospector"
 	uniform = /obj/item/clothing/under/f13/rustic
-	belt = /obj/item/storage/belt/utility/waster 
+	belt = /obj/item/storage/belt/utility/waster
 	glasses = /obj/item/clothing/glasses/welding
 	neck = /obj/item/storage/belt/holster/rugged
-	r_hand = /obj/item/storage/bag/salvage 
+	r_hand = /obj/item/storage/bag/salvage
 	l_hand = /obj/item/gun/ballistic/revolver/colt357
 	backpack_contents =  list(/obj/item/ammo_box/a357 = 1,
 		/obj/item/ammo_box/a357box/improvised = 1,
 		/obj/item/book/granter/trait/trekking = 1
 		)
-		
+
 /datum/outfit/loadout/settlerpoacher
 	name = "Wasteland Poacher"
 	suit = /obj/item/clothing/suit/armored/light/leathersuit
@@ -1106,11 +1106,11 @@ Raider
 		/obj/item/book/granter/trait/trekking = 1,
 		/obj/item/reagent_containers/food/snacks/meatsalted = 2
 		)
-		
+
 /datum/outfit/loadout/settlergambler
 	name = "Frontier Gambler"
 	uniform = /obj/item/clothing/under/f13/densuit
-	suit = /obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy 
+	suit = /obj/item/clothing/suit/armor/f13/brahmin_leather_duster/cowboy
 	head = /obj/item/clothing/head/f13/gambler
 	r_hand = /obj/item/gun/ballistic/revolver/detective
 	l_hand = /obj/item/storage/bag/money/small/wastelander
@@ -1136,7 +1136,7 @@ Raider
 
 	access = list(ACCESS_TOWN_SEC, ACCESS_PUBLIC)
 	minimal_access = list(ACCESS_TOWN_SEC, ACCESS_PUBLIC)
-	
+
 	outfit = /datum/outfit/job/wasteland/f13bwdeputy
 
 	matchmaking_allowed = list(

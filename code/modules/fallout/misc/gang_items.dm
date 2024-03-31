@@ -186,7 +186,7 @@
 	name = "Type 17 Pistol"
 	id = "type17"
 	cost = 50
-	item_path = /obj/item/gun/ballistic/automatic/pistol/type17
+	item_path = /obj/item/gun/ballistic/revolver/chinese
 
 /datum/gang_item/weapon/type93
 	name = "Worn Type 93"
@@ -250,7 +250,7 @@
 
 /datum/gang_item/equipment/greatkhanheadset
 	name = "Great Khan Headset"
-	cost = 10 
+	cost = 10
 	item_path = /obj/item/radio/headset/headset_khans
 
 

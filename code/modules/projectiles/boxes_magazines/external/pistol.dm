@@ -96,6 +96,16 @@
 /obj/item/ammo_box/magazine/m10mm_adv/ext/empty
 	start_empty = 1
 
+//10mm
+/obj/item/ammo_box/magazine/m10mm_strip
+	name = "10mm clip"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "zip"
+	ammo_type = /obj/item/ammo_casing/c10mm
+	caliber = "10mm"
+	max_ammo = 10
+	multiple_sprites = 2
+
 //.45
 /obj/item/ammo_box/magazine/m45
 	name = "handgun magazine (.45)"

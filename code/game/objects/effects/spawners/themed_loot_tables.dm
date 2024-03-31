@@ -196,7 +196,7 @@
 	name = "weaponspawner criminal"
 	loot = list(
 		/obj/item/gun/ballistic/automatic/autopipe = 18,
-		/obj/item/gun/ballistic/automatic/pistol/type17 = 16,
+		/obj/item/gun/ballistic/revolver/chinese = 16,
 		/obj/effect/spawner/bundle/f13/single_shotgun = 13,
 		/obj/item/gun/ballistic/revolver/thatgun = 8,
 		/obj/effect/spawner/bundle/f13/miniuzi = 4,
