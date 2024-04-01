@@ -1276,10 +1276,14 @@
 /obj/item/clothing/head/f13/chinese/officer
 	name = "PLA officer's cap"
 	desc = "A People's Liberation Army peaked cap, worn by officers."
-	icon = 'icons/fallout/clothing/hats.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "chinese_officer"
 	item_state = "chinese_officer"
+
+/obj/item/clothing/head/f13/chinese/militant
+	name = "PLA militant cap"
+	desc = "A People's Liberation Army peaked cap with marching bandana, worn by communist forces in the United States to conceal their identity."
+	icon_state = "chinese_militant"
+	item_state = "chinese_militant"
 
 //Old World Law Enforcement
 //Police and State Police

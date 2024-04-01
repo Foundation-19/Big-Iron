@@ -957,11 +957,14 @@
 /obj/item/clothing/under/f13/chinese/officer
 	name = "PLA officer's uniform"
 	desc = "An pre-war People's Liberation Army uniform, worn by officers."
-	icon = 'icons/fallout/clothing/uniforms.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothes/uniform.dmi'
 	icon_state = "chinese_officer"
 	item_state = "chinese_officer"
 
+/obj/item/clothing/under/f13/chinese/militant
+	name = "PLA militant uniform"
+	desc = "An pre-war People's Liberation Army uniform, intended to be worn by communist militants in the United States."
+	icon_state = "chinese_militant"
+	item_state = "chinese_militant"
 //Old World Law Enforcement
 //Police and State Police
 

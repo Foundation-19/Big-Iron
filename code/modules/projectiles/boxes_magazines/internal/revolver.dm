@@ -24,7 +24,7 @@
 	max_ammo = 12
 
 /obj/item/ammo_box/magazine/internal/cylinder/rev6520/china
-	name = "chinese 10mm cylinder"
+	name = "chinese internal magazine 10mm"
 	max_ammo = 10
 
 /obj/item/ammo_box/magazine/internal/cylinder/rev4570
