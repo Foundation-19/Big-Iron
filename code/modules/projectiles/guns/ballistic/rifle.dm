@@ -190,8 +190,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/remington
 	fire_delay = 2
 	extra_damage = 44
-	extra_penetration = 0.20
-	extra_speed = 900
+	extra_speed = 800
 	force = 18
 
 /obj/item/gun/ballistic/rifle/hunting/remington/attackby(obj/item/A, mob/user, params) //DO NOT BUBBA YOUR STANDARD ISSUE RIFLE SOLDIER!
