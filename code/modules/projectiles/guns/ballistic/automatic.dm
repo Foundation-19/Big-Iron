@@ -768,7 +768,7 @@
 //Service rifle			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine, 25dmg
 /obj/item/gun/ballistic/automatic/service
 	name = "service rifle"
-	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
+	desc = "An upgraded 5.56x45 service rifle manufactured by the NCR and issued to all combat personnel, now it can take attachments."
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
 	icon_prefix = "servicerifle"
@@ -799,7 +799,7 @@
 	burst_size = 2
 	spread = 1
 	extra_damage = 27
-	can_attachments = FALSE
+	can_attachments = TRUE
 	automatic_burst_overlay = FALSE
 	semi_auto = TRUE
 	can_bayonet = TRUE
@@ -1078,7 +1078,7 @@
 	icon_state = "R82"
 	item_state = "R84"
 	icon_prefix = "r82"
-	extra_damage = 20
+	extra_damage = 25
 	fire_delay = 1
 	is_automatic = TRUE
 	slowdown = 0.4
