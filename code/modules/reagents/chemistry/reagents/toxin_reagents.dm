@@ -1125,16 +1125,6 @@
 	toxpwr = 1.3
 	ghoulfriendly = TRUE
 
-/datum/reagent/toxin/cazador
-	name = "Cazador Venom"
-	description = "Venom extracted from a cazador."
-	color = "#8C4C18" // rgb: 140, 76, 24
-	taste_description = "tanginess"
-	taste_mult = 1.2
-	value = REAGENT_VALUE_COMMON //Encouraging people to mix toxins for reasons beyond harming each other or mixing reagents such as pen acid.
-	toxpwr = 1.8
-	ghoulfriendly = TRUE
-
 /datum/reagent/toxin/silversting
 	name = "Silver Sting"
 	description = "A poison made from adding silver dust to radscorpion venom."
@@ -1145,8 +1135,8 @@
 	toxpwr = 1.5
 	ghoulfriendly = TRUE
 
-/datum/reagent/toxin/silversting/on_mob_life(mob/living/carbon/M)
-	M.adjustStaminaLoss(REM * data, 0)
+/datum/reagent/toxin/silversting/on_mob_life(mob/living/M)
+	M.adjustStaminaLoss(REM * data, 1)
 	data = max(data - 1, 1)
 	..()
 	. = 1
@@ -1171,8 +1161,8 @@
 	toxpwr = 1.7
 	ghoulfriendly = TRUE
 
-/datum/reagent/toxin/motherdarkness/on_mob_life(mob/living/carbon/M)
-	M.adjustStaminaLoss(REM * data, 0)
+/datum/reagent/toxin/motherdarkness/on_mob_life(mob/living/M)
+	M.adjustStaminaLoss(REM * data, 2)
 	data = max(data - 1, 5)
 	..()
 	. = 1
@@ -1191,6 +1181,6 @@
 	toxpwr = 1.2
 	ghoulfriendly = TRUE
 
-/datum/reagent/toxin/darkdatura/on_mob_life(mob/living/carbon/M)
+/datum/reagent/toxin/darkdatura/on_mob_life(mob/living/M)
 	to_chat(M, "<span class='danger'>You can barely see!</span>")
 	M.blur_eyes(3)

@@ -134,7 +134,7 @@
 	name = "Bleak Venom"
 	id = /datum/reagent/toxin/bleakvenom
 	results = list(/datum/reagent/toxin/bleakvenom = 6)
-	required_reagents = list (/datum/reagent/toxin/radscorp = 3, /datum/reagent/toxin/cazador = 3)
+	required_reagents = list (/datum/reagent/toxin/radscorp = 3, /datum/reagent/toxin/cazador_venom = 3)
 	mix_message = "<span class='danger'>The mixture hisses and inspires hopelessness.</span>"
 
 /datum/chemical_reaction/motherdarkness

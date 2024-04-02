@@ -129,7 +129,7 @@
 	name = "cazador meat"
 	desc = "Meat extracted from the lean hide of cazador wasp."
 	icon_state = "mothmeat"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/toxin/cazador = 3)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/toxin/cazador_venom = 3)
 	filling_color = "#e5b73b"
 	bitesize = 2
 	tastes = list("insect guts" = 3, "sweet tangy liquid" = 1) //google says toxin is sweet anyway.
