@@ -1134,12 +1134,11 @@
 	value = REAGENT_VALUE_COMMON //Encouraging people to mix toxins for reasons beyond harming each other or mixing reagents such as pen acid.
 	toxpwr = 1.5
 	ghoulfriendly = TRUE
-
-/datum/reagent/toxin/silversting/on_mob_life(mob/living/M)
-	M.adjustStaminaLoss(REM * data, 1)
-	data = max(data - 1, 1)
+	
+/datum/reagent/toxin/silversting/on_mob_add(mob/living/carbon/human/M)
 	..()
-	. = 1
+	if(isliving(M))
+		M.adjustStaminaLoss(90)
 
 /datum/reagent/toxin/bleakvenom
 	name = "Bleak Venom"
@@ -1160,13 +1159,13 @@
 	value = REAGENT_VALUE_COMMON //Encouraging people to mix toxins for reasons beyond harming each other or mixing reagents such as pen acid.
 	toxpwr = 1.7
 	ghoulfriendly = TRUE
-
-/datum/reagent/toxin/motherdarkness/on_mob_life(mob/living/M)
-	M.adjustStaminaLoss(REM * data, 2)
-	data = max(data - 1, 5)
+	
+/datum/reagent/toxin/motherdarkness/on_mob_add(mob/living/carbon/human/M)
 	..()
-	. = 1
-	to_chat(M, "<span class='danger'>You can barely see!</span>")
+	if(isliving(M))
+		M.adjustStaminaLoss(75)
+
+/datum/reagent/toxin/motherdarkness/on_mob_life(mob/living/carbon/M)
 	M.blur_eyes(3)
 	M.hallucination += 5
 	return ..()
@@ -1181,6 +1180,6 @@
 	toxpwr = 1.2
 	ghoulfriendly = TRUE
 
-/datum/reagent/toxin/darkdatura/on_mob_life(mob/living/M)
-	to_chat(M, "<span class='danger'>You can barely see!</span>")
+/datum/reagent/toxin/darkdatura/on_mob_life(mob/living/carbon/M)
 	M.blur_eyes(3)
+	..()
