@@ -1106,7 +1106,7 @@
 	name = "chinese 10mm pistol and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/revolver/chinese,
-				/obj/item/ammo_box/magazine/m10mm_strip,
+				/obj/item/ammo_box/m10mm_strip,
 				)
 
 /obj/effect/spawner/bundle/f13/m1911
