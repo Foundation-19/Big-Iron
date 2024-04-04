@@ -248,12 +248,6 @@
 	cost = 75
 	item_path = /obj/item/grenade/f13/dynamite
 
-/datum/gang_item/equipment/greatkhanheadset
-	name = "Great Khan Headset"
-	cost = 10
-	item_path = /obj/item/radio/headset/headset_khans
-
-
 ///////////////////
 //EQUIPMENT
 ///////////////////
