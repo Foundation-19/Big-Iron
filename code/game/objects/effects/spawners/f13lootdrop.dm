@@ -869,6 +869,8 @@
 				/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/miniuzi,
 				/obj/effect/spawner/bundle/f13/auto5,
+				/obj/effect/spawner/bundle/f13/combat_rifle,
+				/obj/effect/spawner/bundle/f13/type93,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/m1garand,
 				/obj/effect/spawner/bundle/f13/deagle,
@@ -1015,7 +1017,8 @@
 				/obj/effect/spawner/bundle/f13/wattz2k,
 				/obj/effect/spawner/lootdrop/f13/weapon/revolver44variants,
 				/obj/effect/spawner/bundle/f13/mp5,
-				/obj/effect/spawner/bundle/f13/smg10mm
+				/obj/effect/spawner/bundle/f13/smg10mm,
+				/obj/effect/spawner/bundle/f13/combat_rifle
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4
@@ -1443,7 +1446,7 @@
 	name = "combat rifle and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/automatic/combat,
-				/obj/item/ammo_box/magazine/greasegun/
+				/obj/item/ammo_box/magazine/tommygunm45/stick
 				)
 
 /obj/effect/spawner/bundle/f13/rcw
