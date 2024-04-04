@@ -410,23 +410,6 @@
 	scope_y_offset = 20
 	equipsound = 'sound/f13weapons/equipsounds/aer9equip.ogg'
 
-/obj/item/gun/energy/laser/aer9/carbine
-	name = "\improper AER9 laser carbine"
-	desc = "A sturdy pre-war laser rifle That has been cut down to a pistol size. Power output and length are reduced. Maybe you can turn it back into a rifle."
-	icon_state = "laser"
-	item_state = "laser-rifle-aer9"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan)
-	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
-	slot_flags = ITEM_SLOT_BELT
-	fire_delay = 0.4 //slightly faster
-	slowdown = 0.1 //slightly less slowdoqwm
-	scope_state = "AEP7_scope"
-	scope_x_offset = 12
-	scope_y_offset = 20
-	equipsound = 'sound/f13weapons/equipsounds/aer9equip.ogg'
-
 /obj/item/gun/energy/laser/aer9/focused
 	name = "\improper Hot-wired AER9 laser rifle"
 	desc = "A sturdy pre-war laser rifle. Emits beams of concentrated light to kill targets. This one has been jury-rigged against common sense to dump more power into its shots."

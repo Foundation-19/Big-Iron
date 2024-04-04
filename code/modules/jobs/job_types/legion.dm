@@ -248,8 +248,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m14mm = 2,
 		/obj/item/melee/unarmed/powerfist/goliath = 1,
-		/obj/item/book/granter/martial/cqc = 1,
-		/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 2
+		/obj/item/book/granter/martial/cqc = 1
 		)
 
 
@@ -333,7 +332,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/c4570 = 3,
 		/obj/item/attachments/scope = 1,
-		/obj/item/melee/onehanded/machete/spatha = 1,
+		/obj/item/melee/onehanded/machete/spatha,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		)
 
@@ -579,20 +578,18 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/combvexil
 	neck = /obj/item/storage/belt/sabre/heavy
 	backpack_contents = list(
-		/obj/item/melee/unarmed/powerfist = 1,
+		/obj/item/melee/unarmed/tigerclaw = 1,
 		/obj/item/melee/powered/ripper = 1,
-		/obj/item/book/granter/martial/berserker = 1,
-		/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 3
+		/obj/item/book/granter/martial/berserker = 1
 		)
 
 /datum/outfit/loadout/vexfox
 	name = "Desert Fox"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/american180 = 1,
-		/obj/item/ammo_box/magazine/m22smg = 1,
-		/obj/item/gun/ballistic/revolver/contender = 1,
-		/obj/item/ammo_box/a45lcrev = 3
+		/obj/item/gun/ballistic/automatic/smg/cg45 = 1,
+		/obj/item/ammo_box/magazine/cg45 = 4,
+		/obj/item/melee/onehanded/machete/spatha = 1
 		)
 
 /datum/outfit/loadout/vexnight
@@ -661,12 +658,11 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/sniper
 	name = "Sniper"
-	suit_store = /obj/item/gun/ballistic/automatic/m1garand/sks
+	suit_store = /obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/sks = 3,
+		/obj/item/ammo_box/tube/m44 = 4,
 		/obj/item/attachments/scope = 1,
-		/obj/item/melee/onehanded/machete/gladius = 1,
-		/obj/item/grenade/smokebomb = 2
+		/obj/item/melee/onehanded/machete/gladius = 1
 		)
 
 /datum/outfit/loadout/skirmisher
@@ -675,7 +671,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/cg45 = 2,
 		/obj/item/melee/onehanded/machete/gladius = 1,
-		/obj/item/grenade/homemade/firebomb = 2
+		/obj/item/grenade/smokebomb = 2
 		)
 
 // ----------------- FRUMENTARIUS ---------------------
@@ -713,8 +709,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/binoculars = 1,
 		/obj/item/ammo_box/a357 = 2,
-		/obj/item/reagent_containers/pill/patch/bitterdrink = 2,
-		/obj/item/clothing/mask/infiltrator = 1
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 2
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionary/f13frumentarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

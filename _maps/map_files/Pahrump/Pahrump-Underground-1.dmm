@@ -901,8 +901,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/cmo,
 /area/f13/bunker)
 "aFa" = (
+/obj/machinery/vending/cola/starkist,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/gear_painter,
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkdirtysolid"
 	},
@@ -13809,11 +13809,7 @@
 /turf/closed/wall/rust,
 /area/f13/sewer)
 "iXZ" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Den Clinic";
-	req_one_access_txt = "87"
-	},
+/obj/structure/simple_door/room,
 /turf/open/floor/f13{
 	icon_state = "neutralfull2"
 	},
@@ -16304,15 +16300,6 @@
 	},
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
-"kII" = (
-/obj/effect/decal/cleanable/dirt{
-	color = "#363636"
-	},
-/obj/effect/landmark/start/f13/enforcer,
-/turf/open/floor/f13{
-	icon_state = "floorgrime"
-	},
-/area/f13/den)
 "kIS" = (
 /obj/structure/rack,
 /obj/item/pickaxe,
@@ -22110,7 +22097,6 @@
 "pdF" = (
 /obj/structure/bed/wooden,
 /obj/effect/spawner/lootdrop/bedsheet,
-/obj/effect/landmark/start/f13/enforcer,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "pdH" = (
@@ -22453,6 +22439,7 @@
 /obj/item/organ/stomach,
 /obj/item/organ/tongue,
 /obj/item/organ/heart,
+/obj/item/organ/genital/penis,
 /obj/structure/closet/crate/freezer,
 /turf/open/floor/f13{
 	icon_state = "white"
@@ -28677,11 +28664,6 @@
 	icon_state = "bluerustyfull"
 	},
 /area/f13/enclave)
-"tIt" = (
-/obj/item/flashlight,
-/obj/item/pickaxe,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "tIv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -29211,11 +29193,7 @@
 	},
 /area/f13/den)
 "ucg" = (
-/obj/machinery/door/unpowered/securedoor{
-	autoclose = 1;
-	name = "Den Store";
-	req_one_access_txt = "87"
-	},
+/obj/structure/simple_door/metal/barred,
 /turf/open/floor/wood/f13,
 /area/f13/den)
 "udj" = (
@@ -32353,7 +32331,6 @@
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
-/obj/effect/landmark/start/f13/mobboss,
 /turf/open/floor/carpet/royalblack,
 /area/f13/den)
 "whA" = (
@@ -34812,7 +34789,6 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
 	},
-/obj/effect/landmark/start/f13/dendoctor,
 /turf/open/floor/f13{
 	icon_state = "white"
 	},
@@ -35071,12 +35047,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood)
-"xZx" = (
-/obj/item/stack/ore/titanium{
-	amount = 6
-	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "xZy" = (
 /obj/item/bedsheet/random,
 /obj/effect/decal/cleanable/dirt,
@@ -59406,8 +59376,8 @@ vPg
 vPg
 vPg
 aoj
-lnr
-lnr
+aoj
+vPg
 lnr
 lnr
 lnr
@@ -59663,9 +59633,9 @@ vPg
 aoj
 vPg
 aoj
-lnr
-tIt
-lnr
+vPg
+aoj
+gpM
 gpM
 aoj
 aoj
@@ -59921,7 +59891,7 @@ aoj
 aoj
 vPg
 vPg
-xZx
+aoj
 vPg
 vPg
 vPg
@@ -66690,7 +66660,7 @@ axM
 xio
 xio
 vKq
-kII
+ofP
 wSf
 ofP
 kbz
@@ -74907,7 +74877,7 @@ ddv
 ddv
 vLK
 hQE
-hQE
+uPr
 hQE
 hQE
 hQE

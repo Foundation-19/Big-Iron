@@ -42,7 +42,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c22/rubber
 	name = ".22lr rubber bullet"
 	damage = 0
-	stamina = 5
+	stamina = 22
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -68,7 +68,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c38/rubber
 	name = ".38 rubber bullet"
 	damage = -28
-	stamina = 5
+	stamina = 32
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -126,7 +126,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c9mm/rubber
 	name = "9mm rubber bullet"
 	damage = -15
-	stamina = 5
+	stamina = 25
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -187,7 +187,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c10mm/rubber
 	name = "10mm rubber bullet"
 	damage = -15
-	stamina = 5
+	stamina = 26
 	wound_bonus = 0
 	sharpness = SHARP_NONE
 
@@ -226,7 +226,7 @@ Uranium, Contaminated
 /obj/item/projectile/bullet/c45/rubber
 	name = ".45 rubber bullet"
 	damage = -28
-	stamina = 5
+	stamina = 45
 	sharpness = SHARP_NONE
 	wound_bonus = 0
 

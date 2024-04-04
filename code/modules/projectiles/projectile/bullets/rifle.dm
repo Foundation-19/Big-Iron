@@ -59,7 +59,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /obj/item/projectile/bullet/a556/rubber
 	name = "5.56 rubber bullet"
 	damage = -21
-	stamina = 5
+	stamina = 30
 	sharpness = SHARP_NONE
 	armour_penetration = 0
 	wound_bonus = 0
@@ -109,7 +109,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /obj/item/projectile/bullet/a762/rubber
 	name = "7.62 rubber bullet"
 	damage = -30
-	stamina = 5
+	stamina = 30
 	sharpness = SHARP_NONE
 	armour_penetration = 0
 	wound_bonus = 0
@@ -170,7 +170,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /obj/item/projectile/bullet/a50MG/rubber
 	name = ".50 rubber bullet"
 	damage = -50
-	stamina = 40
+	stamina = 80
 	armour_penetration = 0
 	sharpness = SHARP_NONE
 
@@ -220,7 +220,7 @@ heavy rifle calibers (12.7, 14mm, 7.62): Uranium, Contaminated, Incin
 /obj/item/projectile/bullet/a473/rubber
 	name = "4.73 polyurethane bullet"
 	damage = -20
-	stamina = 5
+	stamina = 18
 	sharpness = SHARP_NONE
 	armour_penetration = 0.05
 	wound_bonus = 0

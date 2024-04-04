@@ -143,15 +143,13 @@
 
 #define WASTELAND		(1<<9)
 
-#define F13MOBBOSS		(1<<0)
-#define F13ENFORCER		(1<<1)
-#define F13DENDOCTOR    (1<<2)
-#define F13WASTELANDER	(1<<3)
-#define F13RAIDER		(1<<4)
-#define F13DETECTIVE	(1<<5)
-#define F13TRIBAL		(1<<6)
-#define F13BWSETTLER	(1<<7)
-#define F13BWDEPUTY		(1<<8)
+#define F13WASTELANDER	(1<<1)
+#define F13RAIDER		(1<<2)
+#define F13PUSHER		(1<<3)
+#define F13DETECTIVE	(1<<4)
+#define F13TRIBAL		(1<<5)
+#define F13BWSETTLER	(1<<6)
+#define F13BWDEPUTY		(1<<7)
 
 #define ENCLAVE			(1<<10)
 

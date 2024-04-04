@@ -56,7 +56,7 @@
 	lefthand_file = 'modular_BD2/legio_invicta/icons/onmob_legion_lefthand.dmi'
 	icon_state = "goliath"
 	item_state = "goliath"
-	force = 30
+	force = 25
 	throw_distance = 3
 
 
@@ -288,7 +288,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	item_flags = ABSTRACT  // don't put in storage
 	slot_flags = 0
-	force = 60
+	force = 55
 	damtype = "fire"
 	tool_behaviour = TOOL_WELDER
 	toolspeed = 0.3
