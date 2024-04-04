@@ -773,9 +773,16 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Outlaw"
 	icon_state = "Raider"
 
-/obj/effect/landmark/start/f13/pusher
-	name = "Great Khan"
-	icon_state = "Pusher"
+/obj/effect/landmark/start/f13/enforcer
+	name = "Den Mob Enforcer"
+	icon_state = "Enforcer"
+
+/obj/effect/landmark/start/f13/dendoctor
+	name = "Den Doctor"
+	icon_state = "Doctor"
+/obj/effect/landmark/start/f13/mobboss
+	name = "Den Mob Boss"
+	icon_state = "Boss"
 
 /obj/effect/landmark/start/f13/preacher
 	name = "Preacher"

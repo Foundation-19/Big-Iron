@@ -205,16 +205,16 @@
 	path = /obj/item/modkit/khanbat
 	cost = 2
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_desc = "Outlaw"
+	restricted_roles = list("Outlaw")
 
 /datum/gear/backpack/khanbatreinforcedkit
 	name = "khanbat reinforced armor modkit"
 	path = /obj/item/modkit/khanbatreinforced
 	cost = 2
 	subcategory = LOADOUT_SUBCATEGORY_BACKPACK_MODKITS
-	restricted_desc = "KHAN"
-	restricted_roles = list("Great Khan")
+	restricted_desc = "Outlaw"
+	restricted_roles = list("Outlaw")
 
 
 /// Backpacks
