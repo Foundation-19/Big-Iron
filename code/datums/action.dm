@@ -217,7 +217,7 @@
 	name = "Toggle Firemode"
 
 /datum/action/item_action/toggle_bipod
-	name = "Toggle Stability "
+	name = "Toggle Stability"
 
 /datum/action/item_action/toggle_moveshoot
 	name = "Toggle Wielding"
