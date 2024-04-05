@@ -37,7 +37,7 @@
 	start_empty = 1
 
 
-/obj/item/ammo_box/magazine/lmg
+/obj/item/ammo_box/magazine/lmg/small
 	name = "ammo box (5.56)"
 	icon_state = "r80"
 	ammo_type = /obj/item/ammo_casing/a556
