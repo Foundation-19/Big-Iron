@@ -303,10 +303,10 @@ Paladin
 	exp_requirements = 300
 
 	loadout_options = list(
-	/datum/outfit/loadout/paladina, // AER14
-	/datum/outfit/loadout/paladinb,	// AER14 SP
-	/datum/outfit/loadout/paladinc, // Tribeam
-	/datum/outfit/loadout/paladind,	// Tribeam SP
+	/datum/outfit/loadout/paladina, // AER12
+	/datum/outfit/loadout/paladinb,	// AER12 SP
+	/datum/outfit/loadout/paladinc, // RCW
+	/datum/outfit/loadout/paladind,	// RCW SP
 	/datum/outfit/loadout/paladine, // Pre-war Ripper
 	/datum/outfit/loadout/paladinf, // Pre-war Ripper SP
 	)
@@ -341,7 +341,7 @@ Paladin
 /datum/outfit/loadout/paladina
 	name = "Frontline Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer14 = 1,
+		/obj/item/gun/energy/laser/aer12 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
@@ -353,7 +353,7 @@ Paladin
 /datum/outfit/loadout/paladinb
 	name = "Frontline Senior Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer14 = 1,
+		/obj/item/gun/energy/laser/aer12 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
@@ -365,8 +365,8 @@ Paladin
 /datum/outfit/loadout/paladinc
 	name = "Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/gun/energy/laser/rcw = 1,
+		/obj/item/stock_parts/cell/ammo/ecp = 3,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
@@ -377,8 +377,8 @@ Paladin
 /datum/outfit/loadout/paladind
 	name = "Heavy Senior Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/gun/energy/laser/rcw = 1,
+		/obj/item/stock_parts/cell/ammo/ecp = 3,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,

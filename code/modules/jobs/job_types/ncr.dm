@@ -737,7 +737,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
 
 	loadout_options = list(
-		/datum/outfit/loadout/shockht,	// R91 + 30 round mag(s)
+		/datum/outfit/loadout/shockht,	// G11
 		/datum/outfit/loadout/supportht, // R84
 		/datum/outfit/loadout/meleeht    // Rocket Sledge, lighter armor in exchange for mobility and melee
 		)

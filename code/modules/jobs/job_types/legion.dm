@@ -1073,8 +1073,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/melee/onehanded/machete = 1,
 		/obj/item/reagent_containers/pill/patch/healingpowder = 3,
 		/obj/item/gun/ballistic/automatic/autopipe = 1,
-		/obj/item/ammo_box/magazine/autopipe  = 4,
-		/obj/item/book/granter/martial/berserker = 1
+		/obj/item/ammo_box/magazine/autopipe  = 4
 		)	
 
 
