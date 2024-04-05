@@ -231,7 +231,7 @@
 
 	loadout_options = list(
 		/datum/outfit/loadout/gysergeantshotgun, // citykiller + prewar ripper
-		/datum/outfit/loadout/gysergeantrifle // carbine, suppressor, ESDs
+		/datum/outfit/loadout/gysergeantrifle // ALR, 
 		)
 
 /datum/outfit/job/enclave/peacekeeper/f13gysergeant/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -268,7 +268,7 @@
 
 /datum/outfit/loadout/gysergeantrifle
 	name = "Support Sergeant"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/obj/item/gun/ballistic/automatic/service/alr 
+	suit_store = /obj/item/gun/ballistic/automatic/service/alr 
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle/assault = 2,
 		)
