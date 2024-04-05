@@ -86,3 +86,25 @@
 /obj/item/ammo_box/magazine/mm762/update_icon()
 	..()
 	icon_state = "762belt-[round(ammo_count(),20)]"
+
+/obj/item/ammo_box/magazine/lmg/large
+	name = "large ammo box (5.56mm)"
+	icon_state = "r120"
+	ammo_type = /obj/item/ammo_casing/a556
+	caliber = "a556"
+	max_ammo = 120
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/lmg/large/empty
+	start_empty = 1
+
+/obj/item/ammo_box/magazine/lmg/huge
+	name = "huge ammo box (5.56mm)"
+	icon_state = "r240"
+	ammo_type = /obj/item/ammo_casing/a556
+	caliber = "a556"
+	max_ammo = 240
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/lmg/huge/empty
+	start_empty = 1
