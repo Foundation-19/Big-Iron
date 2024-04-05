@@ -298,20 +298,18 @@
 	head = /obj/item/clothing/head/helmet/f13/power_armor/t51b/bos/hardened/enclave
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51green/enclave
 	accessory = /obj/item/clothing/accessory/enclave/specialist
-
-	loadout_options = list(
-		/datum/outfit/loadout/troopy, // 5MM Minigun
-		/datum/outfit/loadout/assaulttrooper, // Pre-war ripper + bulletpro shield + 2 supers
-		/datum/outfit/loadout/breacher, // 3 C4 + R91 + 2 30 mag
-		/datum/outfit/loadout/lasgun // AER12
-		)
-
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/grenade/flashbang = 1,
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1
+		)
+	loadout_options = list(
+		/datum/outfit/loadout/troopy, // 5MM Minigun
+		/datum/outfit/loadout/assaulttrooper, // Pre-war ripper + bulletpro shield + 2 supers
+		/datum/outfit/loadout/breacher, // 3 C4 + R91 + 2 30 mag
+		/datum/outfit/loadout/lasgun // AER12
 		)
 
 /datum/outfit/loadout/troopy
