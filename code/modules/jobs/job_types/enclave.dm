@@ -110,6 +110,11 @@
 	supervisors = "The Captain, and command."
 	outfit = /datum/outfit/job/enclave/peacekeeper/enclavelt
 	exp_requirements = 1000
+		
+	loadout_options = list(
+		/datum/outfit/loadout/gysergeantshotgun, // citykiller + prewar ripper
+		/datum/outfit/job/enclave/peacekeeper/enclavelt, // XL70E3 (LSW but powerful) + 2 HE nades + 2 Incind nades + 2x 50 round mags
+		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt
 	name = "Enclave Lieutenant"
@@ -118,7 +123,6 @@
 	head = /obj/item/clothing/head/helmet/f13/enclave/officer
 	uniform = /obj/item/clothing/under/f13/enclave/officer
 	suit = /obj/item/clothing/suit/armor/f13/enclavetrenchcoat
-	suit_store = /obj/item/gun/ballistic/automatic/fnfal
 	accessory = /obj/item/clothing/accessory/ncr/LT1
 	id = /obj/item/card/id/dogtag/enclave/officer
 	ears = /obj/item/radio/headset/headset_enclave/command
@@ -130,7 +134,34 @@
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
-		/obj/item/ammo_box/magazine/m762 = 2,
+		)
+
+/datum/outfit/job/enclave/peacekeeper/enclavelt
+	name = "Support Officer"
+	backpack_contents = list(
+		/obj/item/grenade/flashbang = 1,
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/gun/ballistic/automatic/smg/p90 = 1,
+		/obj/item/ammo_box/magazine/m10mm_p90 = 2,
+		)
+
+/datum/outfit/job/enclave/peacekeeper/enclavelt
+	name = "Front-Line Officer"
+	backpack_contents = list(
+		/obj/item/grenade/f13/he_grenade = 2,
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/gun/ballistic/automatic/fnfal = 1,
+		/obj/item/ammo_box/magazine/m762/ext = 2,
+		)
+
+/datum/outfit/job/enclave/peacekeeper/enclavelt
+	name = "Light Support Officer"
+	backpack_contents = list(
+		/obj/item/grenade/f13/he_grenade = 2,
+		/obj/item/grenade/f13/incendiary = 2,
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/gun/ballistic/automatic/xl70e3 = 1,
+		/obj/item/ammo_box/magazine/m556/rifle/extended = 2,
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -199,7 +230,7 @@
 	exp_requirements = 600
 
 	loadout_options = list(
-		/datum/outfit/loadout/gysergeantshotgun, // shotgun + ripper
+		/datum/outfit/loadout/gysergeantshotgun, // citykiller + prewar ripper
 		/datum/outfit/loadout/gysergeantrifle // carbine, suppressor, ESDs
 		)
 
@@ -237,11 +268,9 @@
 
 /datum/outfit/loadout/gysergeantrifle
 	name = "Support Sergeant"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/worn
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/obj/item/gun/ballistic/automatic/service/alr 
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m5mm = 4,
-		/obj/item/ammo_box/m5mmbox/shock = 1,
-		/obj/item/suppressor = 1
+		/obj/item/ammo_box/magazine/m556/rifle/assault = 2,
 		)
 
 //Armored Infantry
@@ -270,6 +299,13 @@
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51green/enclave
 	accessory = /obj/item/clothing/accessory/enclave/specialist
 
+	loadout_options = list(
+		/datum/outfit/loadout/troopy, // 5MM Minigun
+		/datum/outfit/loadout/assaulttrooper, // Pre-war ripper + bulletpro shield + 2 supers
+		/datum/outfit/loadout/breacher, // 3 C4 + R91 + 2 30 mag
+		/datum/outfit/loadout/lasgun // AER12
+		)
+
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
 		/obj/item/grenade/flashbang = 1,
@@ -279,10 +315,32 @@
 		)
 
 /datum/outfit/loadout/troopy
-	name = "Standard"
+	name = "Heavy Weapons Specialist"
 	backpack_contents = list(
-		/obj/item/minigunpack = 1,
-		/obj/item/stock_parts/cell/ammo/ecp = 2,
+		/obj/item/minigunpackbal5mm = 1
+		)
+
+/datum/outfit/loadout/assaulttrooper
+	name = "Assault Specialist"
+	backpack_contents = list(
+		/obj/item/melee/powered/ripper/prewar = 1,
+		/obj/item/shield/riot/bullet_proof = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 2
+		)		
+
+/datum/outfit/loadout/breacher
+	name = "Heavy Breacher"
+	backpack_contents = list(
+		/obj/item/grenade/plastic/c4 = 3,
+		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
+		/obj/item/ammo_box/magazine/m556/rifle/assault = 2
+		)
+
+/datum/outfit/loadout/lasgun
+	name = "Laser Support Officer"
+	backpack_contents = list(
+		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 4,
 		)
 
 /datum/outfit/job/enclave/peacekeeper/Armoredinfantry/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -317,12 +375,12 @@
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
-		/obj/item/grenade/frag = 1,
+		/obj/item/grenade/frag = 2,
 		/obj/item/pda = 1,
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1,
 		/obj/item/clothing/head/f13/enclave/peacekeeper = 1,
-		/obj/item/ammo_box/magazine/m5mm = 2,
+		/obj/item/ammo_box/magazine/m5mm = 4,
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavesgt/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)

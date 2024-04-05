@@ -265,10 +265,11 @@ Head Knight
 		)
 		
 /datum/outfit/loadout/hkc
-	name = "Backliner Head Knight"
+	name = "Explosives Head Knight"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/rcw = 1,
-		/obj/item/stock_parts/cell/ammo/ecp = 3
+		/obj/item/book/granter/trait/explosives_advanced = 1,
+		/obj/item/gun/ballistic/shotgun/automatic/combat/neostead = 1,
+		/obj/item/ammo_box/shotgun/buck = 3,
 		)
 
 /datum/outfit/job/bos/f13headknight/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -301,10 +302,12 @@ Paladin
 	exp_requirements = 300
 
 	loadout_options = list(
-	/datum/outfit/loadout/paladina, //Frontline P
-	/datum/outfit/loadout/paladinb,	//Frontline SP
-	/datum/outfit/loadout/paladinc, //Heavy P
-	/datum/outfit/loadout/paladind	//Heavy SP
+	/datum/outfit/loadout/paladina, // AER14
+	/datum/outfit/loadout/paladinb,	// AER14 SP
+	/datum/outfit/loadout/paladinc, // Tribeam
+	/datum/outfit/loadout/paladind,	// Tribeam SP
+	/datum/outfit/loadout/paladine, // Pre-war Ripper
+	/datum/outfit/loadout/paladinf, // Pre-war Ripper SP
 	)
 
 	outfit = /datum/outfit/job/bos/f13paladin
@@ -332,13 +335,12 @@ Paladin
 	neck =	/obj/item/clothing/neck/mantle/bos/paladin
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
-		/obj/item/melee/powered/ripper = 1,
 	)
 
 /datum/outfit/loadout/paladina
 	name = "Frontline Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/gun/energy/laser/aer14 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
@@ -350,7 +352,7 @@ Paladin
 /datum/outfit/loadout/paladinb
 	name = "Frontline Senior Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer12 = 1,
+		/obj/item/gun/energy/laser/aer14 = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 2,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
@@ -383,6 +385,29 @@ Paladin
 		/obj/item/clothing/accessory/bos/seniorpaladin = 1
 		)
 
+/datum/outfit/loadout/paladine
+	name = "CQC Paladin"
+	backpack_contents = list(
+		/obj/item/melee/powered/ripper/prewar = 1,
+		/obj/item/shield/riot/bullet_proof = 1,
+		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
+		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
+		/obj/item/clothing/accessory/bos/paladin = 1
+		)	
+
+/datum/outfit/loadout/paladinf
+	name = "Senior CQC Paladin"
+	backpack_contents = list(
+		/obj/item/melee/powered/ripper/prewar = 1,
+		/obj/item/shield/riot/bullet_proof = 1,
+		/obj/item/gun/energy/laser/wattz/magneto = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
+		/obj/item/clothing/head/helmet/f13/power_armor/t51b/bos = 1,
+		/obj/item/clothing/accessory/bos/paladin = 1
+		)		
 
 /datum/outfit/job/bos/f13paladin/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -479,7 +504,7 @@ Senior Knight
 	supervisors = "the Head Knight"
 	
 	loadout_options = list(
-	/datum/outfit/loadout/ska,	//AER9, MK23 pistol
+	/datum/outfit/loadout/ska,	//wattz2k, MK23 pistol
 	/datum/outfit/loadout/skb,	//Marksman Rifle, Sig pistol
 	/datum/outfit/loadout/skc	//Auto-5 Shotgun, MK23 pistol
 	)
@@ -517,9 +542,9 @@ Senior Knight
 		)
 
 /datum/outfit/loadout/ska
-	name = "Senior Knight-Footman"
+	name = "Senior Knight-Sniper"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer9 = 1,
+		/obj/item/gun/energy/laser/wattz2k = 1,
 		/obj/item/stock_parts/cell/ammo/mfc = 3,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2
@@ -539,8 +564,8 @@ Senior Knight
 	name = "Senior Knight-Engineer"
 	backpack_contents = list(
 		/obj/item/storage/belt/utility/full/engi = 1,
-		/obj/item/gun/ballistic/shotgun/automatic/combat/auto5 = 1,
-		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/gun/ballistic/automatic/shotgun/riot = 1,
+		/obj/item/ammo_box/magazine/d12g = 2,
 		/obj/item/gun/ballistic/automatic/pistol/mk23 = 1,
 		/obj/item/ammo_box/magazine/m45exp = 2
 		)
