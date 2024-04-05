@@ -1424,7 +1424,7 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode, /datum/action/item_action/toggle_bipod)
 	fire_sound = 'sound/weapons/gpmg.ogg'
 
-/obj/item/gun/ballistic/automatic/r88/ui_action_click(mob/user, action)
+/obj/item/gun/ballistic/automatic/R88/ui_action_click(mob/user, action)
 /*	if(istype(action, /datum/action/item_action/toggle_firemode))
 		if(is_automatic == FALSE)
 			burst_select()
@@ -1445,12 +1445,12 @@
 	else
 		return ..()
 
-/obj/item/gun/ballistic/automatic/r88/proc/bipod_on()
+/obj/item/gun/ballistic/automatic/R88/proc/bipod_on()
 	spread = 12
 	autofire_shot_delay = 1
 
 
-/obj/item/gun/ballistic/automatic/r88/proc/bipod_off()
+/obj/item/gun/ballistic/automatic/R88/proc/bipod_off()
 	spread = 45
 	autofire_shot_delay = 1.5
 
