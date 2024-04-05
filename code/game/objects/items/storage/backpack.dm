@@ -116,7 +116,7 @@
 /obj/item/storage/backpack/ammopack/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 7
+	STR.max_items = 12
 	STR.can_hold = typecacheof(list(/obj/item/ammo_box/magazine/lmg/huge, /obj/item/ammo_box/magazine/lmg/large, /obj/item/ammo_box/magazine/lmg/huge/empty, /obj/item/ammo_box/magazine/lmg/large/empty))
 
 /obj/item/storage/backpack/ammopack/PopulateContents()
