@@ -1361,7 +1361,7 @@
 	icon_state = "R84"
 	item_state = "R84"
 	slowdown = 1.5
-	mag_type = /obj/item/ammo_box/magazine/lmg
+	mag_type = /obj/item/ammo_box/magazine/lmg/small
 	extra_damage = 23
 	fire_delay = 6
 	burst_shot_delay = 2.5
