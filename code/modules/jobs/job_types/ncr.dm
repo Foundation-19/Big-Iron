@@ -810,7 +810,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 
 	loadout_options = list( // ALL: Trench tool, Limited blueprints
-		/datum/outfit/loadout/combatengineerflamethrower, // Flamethrower, 9mm pistol
+		/datum/outfit/loadout/combatengineermg, // R88, some ammo
 		/datum/outfit/loadout/combatengineerdestroyer // Hunting Shotgun, C4 Explosive, Extra Materials
 		)
 
@@ -834,16 +834,14 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
 		)
 
-/datum/outfit/loadout/combatengineerflamethrower
-	name = "Flamethrower Unit"
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/ninemil
+/datum/outfit/loadout/combatengineermg
+	name = "Machinegun Unit"
 	backpack_contents = list(
 		/obj/item/storage/box/ration/menu_three = 1,
-		/obj/item/m2flamethrowertank = 1,
-		/obj/item/ammo_box/magazine/m9mmds = 2,
-		/obj/item/stack/sheet/metal/fifty = 1,
-		/obj/item/stack/sheet/glass/fifty = 1
+		/obj/item/gun/ballistic/automatic/R88 = 1,
+		/obj/item/ammo_box/magazine/lmg/large = 1
 		)
+
 /datum/outfit/loadout/combatengineerdestroyer
 	name = "Explosives Expert"
 	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher
@@ -982,6 +980,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/datum/outfit/loadout/corporalcqc,					 // Hunting Shotgun
 		/datum/outfit/loadout/corporaldesignatedmarksman,	 // Hunting Rifle + Scope
 		/datum/outfit/loadout/corporalraider				 // Melee Monkey
+		/datum/outfit/loadout/ammobearer					 // LMG Support
 		)
 
 /datum/outfit/job/ncr/f13corporal
@@ -1036,6 +1035,17 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/book/granter/trait/bigleagues = 1,
 		/obj/item/storage/box/ration/menu_seven = 1
 		)
+
+/datum/outfit/loadout/ammobearer
+	name = "Ammobearer"
+	backpack_contents = list(
+		/obj/item/storage/backpack/ammopack = 1,
+		/obj/item/ammo_box/magazine/lmg/huge = 3,
+		/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
+		/obj/item/ammo_box/magazine/m45 = 2,
+		/obj/item/storage/box/ration/menu_seven = 1
+		)
+
 
 // TROOPER
 
