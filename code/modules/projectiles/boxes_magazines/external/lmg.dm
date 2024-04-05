@@ -106,7 +106,7 @@
 	caliber = "a556"
 	max_ammo = 240
 	multiple_sprites = 2
-	w_class = WEIGHT_CLASS_BULKY
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/ammo_box/magazine/lmg/huge/empty
 	start_empty = 1
