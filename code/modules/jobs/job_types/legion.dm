@@ -700,7 +700,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 
 	loadout_options = list(
-		/datum/outfit/loadout/NCR,	
+		/datum/outfit/loadout/ncr,	
 		/datum/outfit/loadout/Brotherhood,	
 		/datum/outfit/loadout/Townie,		
 		/datum/outfit/loadout/Church		
@@ -744,7 +744,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombat)
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
-/datum/outfit/loadout/NCR
+/datum/outfit/loadout/ncr
 	name = "NCR Spy"
 	suit_store = /obj/item/gun/ballistic/automatic/service
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
