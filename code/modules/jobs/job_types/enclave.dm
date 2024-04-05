@@ -290,6 +290,12 @@
 	loadout_options = list(
 	/datum/outfit/loadout/troopy,
 	)
+	loadout_options = list(
+		/datum/outfit/loadout/troopy, // 5MM Minigun
+		/datum/outfit/loadout/assaulttrooper, // Pre-war ripper + bulletpro shield + 2 supers
+		/datum/outfit/loadout/breacher, // 3 C4 + R91 + 2 30 mag
+		/datum/outfit/loadout/lasgun // AER12
+		)
 
 
 /datum/outfit/job/enclave/peacekeeper/Armoredinfantry
@@ -305,12 +311,7 @@
 		/obj/item/storage/bag/money/small/wastelander = 1,
 		/obj/item/melee/onehanded/knife/survival = 1
 		)
-	loadout_options = list(
-		/datum/outfit/loadout/troopy, // 5MM Minigun
-		/datum/outfit/loadout/assaulttrooper, // Pre-war ripper + bulletpro shield + 2 supers
-		/datum/outfit/loadout/breacher, // 3 C4 + R91 + 2 30 mag
-		/datum/outfit/loadout/lasgun // AER12
-		)
+
 
 /datum/outfit/loadout/troopy
 	name = "Heavy Weapons Specialist"
