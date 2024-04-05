@@ -699,6 +699,13 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 
+	loadout_options = list(
+		/datum/outfit/loadout/NCR,	
+		/datum/outfit/loadout/Brotherhood,	
+		/datum/outfit/loadout/Townie,		
+		/datum/outfit/loadout/Church		
+		)
+
 /datum/outfit/job/CaesarsLegion/Legionary/f13frumentarius	// .357 Revolver, Spatha
 	name = "Legion Frumentarius"
 	jobtype = /datum/job/CaesarsLegion/Legionary/f13frumentarius
@@ -725,9 +732,59 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_SILENT_STEP, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombat)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmet)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/horsearmorncr)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmet)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombat)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
+/datum/outfit/loadout/NCR
+	name = "NCR Spy"
+	suit_store = /obj/item/gun/ballistic/automatic/service
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
+	head = /obj/item/clothing/head/f13/ncr
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/ncr = 1,
+		/obj/item/storage/box/ration/menu_three = 1,
+		/obj/item/ammo_box/magazine/m556/rifle = 3
+		)
+
+/datum/outfit/loadout/Brotherhood
+	name = "Brotherhood Infiltrator"
+	suit_store = /obj/item/gun/energy/laser/aer9
+	suit = /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
+	head = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
+	backpack_contents = list(
+		/obj/item/clothing/under/syndicate/brotherhood = 1,
+		/obj/item/clothing/accessory/bos/initiateK = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3
+		)
+
+/datum/outfit/loadout/Townie
+	name = "Townie Bum"
+	uniform = /obj/item/clothing/under/f13/merchant
+	suit = /obj/item/clothing/suit/overalls/farmer
+	head = /obj/item/clothing/head/f13/ranger_hat/tan
+	suit_store = /obj/item/gun/ballistic/revolver/caravan_shotgun
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/stack/f13Cash/caps/onezerozero = 1
+		)
+
+/datum/outfit/loadout/Church
+	name = "Church Beggar"
+	suit = /obj/item/clothing/suit/hooded/robes/cotc
+	backpack_contents = list(
+		/obj/item/clothing/shoes/f13/rag = 1,
+		/obj/item/clothing/under/f13/settler = 1,
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 1,
+		)
 
 //......................//////////////////////////////////................................................
 						//								//
