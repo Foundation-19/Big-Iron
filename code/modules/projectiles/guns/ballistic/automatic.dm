@@ -1399,6 +1399,61 @@
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 
+//R88 Squad Support Weapon				Keywords: NCR, 5.56mm, Automatic, 60-120-240 rounds, Damage decrease (bullethose)
+/obj/item/gun/ballistic/automatic/R88
+	name = "R88 General Purpose Machine Gun"
+	desc = "A general purpose machine gun using several sizes of ammo boxes. Chambered in 5.56, use of a bipod is heavily advised. It seems to be able to mount a scope."
+	icon_state = "R88"
+	item_state = "R88"
+	slowdown = 1.7
+	mag_type = /obj/item/ammo_box/magazine/lmg
+	extra_damage = 18
+	extra_penetration = 0.1
+	fire_delay = 6
+	burst_shot_delay = 2.5
+	is_automatic = TRUE
+	automatic = 1
+	autofire_shot_delay = 1.5
+	spread = 40
+	can_attachments = TRUE
+	can_scope = FALSE
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	var/bipod = FALSE
+	actions_types = list(/datum/action/item_action/toggle_firemode, /datum/action/item_action/toggle_bipod)
+	fire_sound = 'sound/weapons/gpmg.ogg'
+
+/obj/item/gun/ballistic/automatic/t60/ui_action_click(mob/user, action)
+/*	if(istype(action, /datum/action/item_action/toggle_firemode))
+		if(is_automatic == FALSE)
+			burst_select()
+		if(is_automatic == TRUE)
+			auto_select()*/
+
+	if(istype(action, /datum/action/item_action/toggle_bipod))
+		if(bipod == FALSE)
+			bipod_on()
+			to_chat(user, "<span class='notice'>You deploy the bipod.</span>")
+			bipod = TRUE
+			return
+		if(bipod == TRUE)
+			bipod_off()
+			to_chat(user, "<span class='notice'>You fold up the bipod.</span>")
+			bipod = FALSE
+			return
+	else
+		return ..()
+
+/obj/item/gun/ballistic/automatic/t60/proc/bipod_on()
+	spread = 12
+	autofire_shot_delay = 1
+
+
+/obj/item/gun/ballistic/automatic/t60/proc/bipod_off()
+	spread = 45
+	autofire_shot_delay = 1.5
+
 
 //M1919 Machinegun				Keywords: LEGION, .308, Automatic, 80 round belt. Special modifiers: damage decrease bullethose
 /obj/item/gun/ballistic/automatic/m1919
