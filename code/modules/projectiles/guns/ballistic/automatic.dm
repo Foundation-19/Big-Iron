@@ -1406,7 +1406,7 @@
 	icon_state = "R88"
 	item_state = "R88"
 	slowdown = 1.7
-	mag_type = /obj/item/ammo_box/magazine/lmg
+	mag_type = /obj/item/ammo_box/magazine/lmg/large
 	extra_damage = 18
 	extra_penetration = 0.1
 	fire_delay = 6
@@ -1423,6 +1423,8 @@
 	var/bipod = FALSE
 	actions_types = list(/datum/action/item_action/toggle_firemode, /datum/action/item_action/toggle_bipod)
 	fire_sound = 'sound/weapons/gpmg.ogg'
+	slot_flags = ITEM_SLOT_BACK
+	w_class = WEIGHT_CLASS_HUGE
 
 /obj/item/gun/ballistic/automatic/R88/ui_action_click(mob/user, action)
 /*	if(istype(action, /datum/action/item_action/toggle_firemode))
@@ -1448,6 +1450,7 @@
 /obj/item/gun/ballistic/automatic/R88/proc/bipod_on()
 	spread = 12
 	autofire_shot_delay = 1
+	slowdown = 3
 
 
 /obj/item/gun/ballistic/automatic/R88/proc/bipod_off()
