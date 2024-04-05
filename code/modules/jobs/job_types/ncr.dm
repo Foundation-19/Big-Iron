@@ -764,8 +764,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/shockht
 	name = "Shock Heavy Trooper"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/assault_rifle = 1,
-		/obj/item/ammo_box/magazine/m556/rifle/assault  = 2,
+		/obj/item/gun/ballistic/automatic/g11 = 1,
+		/obj/item/ammo_box/magazine/m473  = 2,
 		/obj/item/storage/box/ration/menu_four = 1
 		)
 

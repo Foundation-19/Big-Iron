@@ -241,7 +241,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/gun/ballistic/revolver/hunting = 1,
 		/obj/item/ammo_box/magazine/amr = 2,
 		/obj/item/ammo_box/c4570 = 3,
-		/obj/item/melee/onehanded/machete/spatha = 1,
+		/obj/item/melee/onehanded/machete/spatha = 1
 		)
 
 /datum/outfit/loadout/centurion
@@ -791,7 +791,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 1,
-		/obj/item/stack/crafting/armor_plate = 5,
+		/obj/item/stack/crafting/armor_plate = 5
 		)
 
 /datum/outfit/loadout/vetaxe
@@ -885,7 +885,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legenlisted = 1,
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
-		/obj/item/gun/ballistic/revolver/revolver45 = 1,
+		/obj/item/gun/ballistic/revolver/revolver45 = 1
 		)
 
 /datum/outfit/loadout/primelancer

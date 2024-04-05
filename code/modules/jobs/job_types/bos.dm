@@ -40,7 +40,10 @@
 	H.mind.teach_crafting_recipe(/datum/crafting_recipe/gate_bos)
 
 /*
-Elder
+Elder 
+I fucking hate you this is an admin role
+don't re-add it you goblins
+admin role fuckers use it.
 */
 
 /datum/job/bos/f13elder
@@ -50,8 +53,8 @@ Elder
 	exp_type = EXP_TYPE_BROTHERHOODCOMMAND
 	head_announce = list("Security")
 	req_admin_notify = 1
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the Elder of this local chapter of the Brotherhood of Steel. You may be a veteran of warfare, an experienced commander or even a genius Scribe, and you command all the men within this bunker. Your main goals are to lead the Brotherhood, to solve conflicts inbetween castes and to manage the Head Paladin, Head Knight and Head Scribe."
 	supervisors = "the High Elders"
 	exp_requirements = 1200
@@ -92,7 +95,7 @@ Head Paladin
 	exp_requirements = 600
 	
 	loadout_options = list(
-	/datum/outfit/loadout/hpa, //Laser Gatling, Super Sledge
+	/datum/outfit/loadout/hpa, //Laser Gatling, 
 	/datum/outfit/loadout/hpb, //Tribeam, Powerfist
 	/datum/outfit/loadout/hpc //14mm pistol, Shield, Pre-war Ripper
 	)
@@ -124,17 +127,15 @@ Head Paladin
 /datum/outfit/loadout/hpa
 	name = "Heavy Weapons Head Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/m72 = 1,
-		/obj/item/ammo_box/magazine/m2mm = 2,
-		/obj/item/gun/energy/laser/wattz/magneto = 1,
-		/obj/item/stock_parts/cell/ammo/ec = 2
+		/obj/item/minigunpack = 1,
+		/obj/item/stock_parts/cell/ammo/ecp = 2
 		)
 
 /datum/outfit/loadout/hpb
 	name = "Refined Head Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/bozar = 1,
-		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/gun/energy/laser/scatter = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
@@ -269,7 +270,7 @@ Head Knight
 	backpack_contents = list(
 		/obj/item/book/granter/trait/explosives_advanced = 1,
 		/obj/item/gun/ballistic/shotgun/automatic/combat/neostead = 1,
-		/obj/item/ammo_box/shotgun/buck = 3,
+		/obj/item/ammo_box/shotgun/buck = 3
 		)
 
 /datum/outfit/job/bos/f13headknight/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -632,7 +633,7 @@ Knight
 	head = 			/obj/item/clothing/head/helmet/f13/combat/brotherhood
 	backpack_contents = list(
 		/obj/item/melee/onehanded/knife/survival  = 1,
-		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 1
 		)
 
 /datum/outfit/loadout/knighta
