@@ -86,7 +86,13 @@ SUBSYSTEM_DEF(throwing)
 	if (dist_travelled && hitcheck()) //to catch sneaky things moving on our tile while we slept
 		finalize()
 		return
-
+	var/turf/starting_turf = get_turf(AM)
+	if(AM.z < target_turf.z)
+		var/turf/new_turf = SSmapping.get_turf_above(starting_turf)
+		AM.forceMove(new_turf)
+	if(starting_turf.z > target_turf.z)
+		var/turf/new_turf = SSmapping.get_turf_below(starting_turf)
+		AM.forceMove(new_turf)
 	var/atom/step
 
 	last_move = world.time
