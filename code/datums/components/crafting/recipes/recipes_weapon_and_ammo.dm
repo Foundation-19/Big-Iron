@@ -762,7 +762,7 @@
 /datum/crafting_recipe/mech_ammo/srm8_missiles
 	name = "SRM-8 missile pack"
 	result = /obj/item/mecha_ammo/missiles_he
-	reqs = list(/obj/item/ammo_casing/caseless/rocket = 4,
+	reqs = list(/obj/item/ammo_casing/caseless/rocket = 3,
 	/obj/item/stack/sheet/metal = 10,
 	/obj/item/assembly/timer = 4)
 	tools = list(TOOL_WORKBENCH)
@@ -773,7 +773,7 @@
 /datum/crafting_recipe/mech_ammo/brm8_missiles
 	name = "BRM-8 missile pack"
 	result = /obj/item/mecha_ammo/missiles_he
-	reqs = list(/obj/item/ammo_casing/caseless/rocket = 3,
+	reqs = list(/obj/item/ammo_casing/caseless/rocket = 4,
 	/obj/item/stack/sheet/mineral/titanium = 20,
 	/obj/item/stack/crafting/powder = 10)
 	tools = list(TOOL_WORKBENCH)
@@ -781,7 +781,7 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_AMMO
 
-/datum/crafting_recipe/mech_ammo/brm8_missiles
+/datum/crafting_recipe/mech_ammo/minigun_ammo
 	name = "Minigun Ammo Pack"
 	result = /obj/item/mecha_ammo/minigun
 	reqs = list(/obj/item/ammo_box/magazine/ammobelt/m1919 = 3,
@@ -798,8 +798,7 @@
 	result = /obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster
 	reqs = list(/obj/item/shield/riot/tower = 2,
 	/obj/item/stack/cable_coil = 5,
-	/obj/item/stack/sheet/mineral/titanium = 20,
-	/obj/item/stack/crafting/powder = 30)
+	/obj/item/stack/sheet/mineral/titanium = 20)
 	tools = list(TOOL_WELDER)
 	time = 180
 	category = CAT_CARPARTS
@@ -810,8 +809,7 @@
 	result = /obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster
 	reqs = list(/obj/item/shield/riot/tower = 2,
 	/obj/item/stack/cable_coil = 5,
-	/obj/item/stack/sheet/mineral/titanium = 20,
-	/obj/item/stack/crafting/powder = 30)
+	/obj/item/stack/sheet/mineral/titanium = 20)
 	tools = list(TOOL_WELDER)
 	time = 180
 	category = CAT_CARPARTS
