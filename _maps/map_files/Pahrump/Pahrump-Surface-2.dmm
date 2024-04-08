@@ -17207,7 +17207,8 @@
 "gSH" = (
 /mob/living/simple_animal/hostile/deathclaw/mother{
 	speed = 0.45;
-	name = "alpha mother deathclaw"
+	name = "alpha mother deathclaw";
+	loot = list(/obj/item/keycard/cheese)
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
@@ -41244,13 +41245,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/legion)
 "qJs" = (
-/obj/item/gun/ballistic/revolver/revolver44/desert_ranger,
-/obj/structure/closet/secure_closet/goodies{
-	anchored = 1;
-	name = "ranger cache"
-	},
-/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5,
-/obj/item/clothing/head/helmet/f13/combat/rangerbroken,
+/obj/machinery/door/keycard/cheese,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "qJv" = (
@@ -55520,6 +55515,16 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/darkblue/corner,
 /area/f13/building)
+"wHz" = (
+/obj/structure/closet/secure_closet/goodies{
+	anchored = 1;
+	name = "ranger cache"
+	},
+/obj/item/clothing/head/helmet/f13/combat/rangerbroken,
+/obj/item/gun/ballistic/revolver/revolver44/desert_ranger,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "wHD" = (
 /obj/machinery/hydroponics/soil/plowed,
 /turf/open/indestructible/ground/inside/dirt/stamped/outside,
@@ -62520,7 +62525,7 @@ mwp
 gcK
 gcK
 mwp
-qJs
+mwp
 mwp
 uKC
 ktB
@@ -62777,7 +62782,7 @@ mwp
 gcK
 gcK
 mwp
-mwp
+xuY
 mwp
 suf
 oNa
@@ -63293,7 +63298,7 @@ mwp
 mwp
 mwp
 mwp
-xuY
+qJs
 ktB
 eYy
 tkY
@@ -63549,8 +63554,8 @@ opL
 gcK
 gcK
 gcK
-gcK
-mwp
+ktB
+wHz
 ktB
 eYy
 sjX
@@ -63806,8 +63811,8 @@ gcK
 gcK
 gcK
 gcK
-gcK
-gcK
+ktB
+ktB
 ktB
 eYy
 spx
@@ -64308,7 +64313,7 @@ gjP
 gcK
 gcK
 gcK
-gcK
+oKE
 mwp
 yax
 mwp
@@ -64564,9 +64569,9 @@ iTL
 ram
 gcK
 gcK
-gcK
+oKE
 ukY
-mwp
+sas
 mwp
 mwp
 gcK
@@ -64822,7 +64827,7 @@ gjP
 gcK
 gcK
 gcK
-gcK
+oKE
 gcK
 gcK
 gcK
