@@ -435,7 +435,7 @@
 	else
 		src.reset_perspective(T)
 		RegisterSignal(src, COMSIG_MOB_CLIENT_CHANGE_VIEW, .proc/stop_looking_up) //no binos/scops
-		RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/stop_looking_up)
+		//RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/stop_looking_up)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_KNOCKDOWN, .proc/stop_looking_up)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_PARALYZE, .proc/stop_looking_up)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_UNCONSCIOUS, .proc/stop_looking_up)
@@ -466,7 +466,7 @@
 			var/turf/nl = SSmapping.get_turf_below(nt)
 			src.reset_perspective(nl)
 			RegisterSignal(src, COMSIG_MOB_CLIENT_CHANGE_VIEW, .proc/stop_looking_down) //no binos/scops
-			RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/stop_looking_down)
+			//RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/stop_looking_down)
 			RegisterSignal(src, COMSIG_LIVING_STATUS_KNOCKDOWN, .proc/stop_looking_down)
 			RegisterSignal(src, COMSIG_LIVING_STATUS_PARALYZE, .proc/stop_looking_down)
 			RegisterSignal(src, COMSIG_LIVING_STATUS_UNCONSCIOUS, .proc/stop_looking_down)
@@ -475,7 +475,7 @@
 		var/turf/nl = SSmapping.get_turf_below(T)
 		src.reset_perspective(nl)
 		RegisterSignal(src, COMSIG_MOB_CLIENT_CHANGE_VIEW, .proc/stop_looking_down) //no binos/scops
-		RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/stop_looking_down)
+		//RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/stop_looking_down)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_KNOCKDOWN, .proc/stop_looking_down)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_PARALYZE, .proc/stop_looking_down)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_UNCONSCIOUS, .proc/stop_looking_down)
