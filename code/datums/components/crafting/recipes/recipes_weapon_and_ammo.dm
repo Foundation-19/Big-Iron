@@ -772,7 +772,7 @@
 
 /datum/crafting_recipe/mech_ammo/brm8_missiles
 	name = "BRM-8 missile pack"
-	result = /obj/item/mecha_ammo/missiles_he
+	result = /obj/item/mecha_ammo/missiles_br
 	reqs = list(/obj/item/ammo_casing/caseless/rocket = 4,
 	/obj/item/stack/sheet/mineral/titanium = 20,
 	/obj/item/stack/crafting/powder = 10)
