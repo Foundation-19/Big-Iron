@@ -113,7 +113,9 @@
 		
 	loadout_options = list(
 		/datum/outfit/loadout/gysergeantshotgun, // citykiller + prewar ripper
-		/datum/outfit/job/enclave/peacekeeper/enclavelt, // XL70E3 (LSW but powerful) + 2 HE nades + 2 Incind nades + 2x 50 round mags
+		/datum/outfit/job/enclave/peacekeeper/enclavesupp // P90 + Grenades
+		/datum/outfit/job/enclave/peacekeeper/enclavefront // FN Fal + Grenades
+		/datum/outfit/job/enclave/peacekeeper/enclavelso, // XL70E3 (LSW but powerful) + 2 HE nades + 2 Incind nades + 2x 50 round mags
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt
@@ -136,7 +138,7 @@
 		/obj/item/melee/onehanded/knife/survival = 1
 		)
 
-/datum/outfit/job/enclave/peacekeeper/enclavelt
+/datum/outfit/job/enclave/peacekeeper/enclavesupp
 	name = "Support Officer"
 	backpack_contents = list(
 		/obj/item/grenade/flashbang = 1,
@@ -145,7 +147,7 @@
 		/obj/item/ammo_box/magazine/m10mm_p90 = 2
 		)
 
-/datum/outfit/job/enclave/peacekeeper/enclavelt
+/datum/outfit/job/enclave/peacekeeper/enclavefront
 	name = "Front-Line Officer"
 	backpack_contents = list(
 		/obj/item/grenade/f13/he_grenade = 2,
@@ -154,7 +156,7 @@
 		/obj/item/ammo_box/magazine/m762/ext = 2
 		)
 
-/datum/outfit/job/enclave/peacekeeper/enclavelt
+/datum/outfit/job/enclave/peacekeeper/enclavelso
 	name = "Light Support Officer"
 	backpack_contents = list(
 		/obj/item/grenade/f13/he_grenade = 2,
