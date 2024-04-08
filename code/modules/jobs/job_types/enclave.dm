@@ -113,9 +113,9 @@
 		
 	loadout_options = list(
 		/datum/outfit/loadout/gysergeantshotgun, // citykiller + prewar ripper
-		/datum/outfit/job/enclave/peacekeeper/enclavesupp // P90 + Grenades
-		/datum/outfit/job/enclave/peacekeeper/enclavefront // FN Fal + Grenades
-		/datum/outfit/job/enclave/peacekeeper/enclavelso, // XL70E3 (LSW but powerful) + 2 HE nades + 2 Incind nades + 2x 50 round mags
+		/datum/outfit/job/enclave/peacekeeper/enclavesupp, // P90 + Grenades
+		/datum/outfit/job/enclave/peacekeeper/enclavefront, // FN Fal + Grenades
+		/datum/outfit/job/enclave/peacekeeper/enclavelso // XL70E3 (LSW but powerful) + 2 HE nades + 2 Incind nades + 2x 50 round mags
 		)
 
 /datum/outfit/job/enclave/peacekeeper/enclavelt
