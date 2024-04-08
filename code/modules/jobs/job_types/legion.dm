@@ -83,6 +83,10 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 	ADD_TRAIT(H, TRAIT_FEARLESS, src) //no phobias for the Legion!
 	ADD_TRAIT(H, TRAIT_BERSERKER, src)
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
+	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_IRONFIST, src)
+	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 
 /obj/item/storage/box/legate
 	name = "legate belongings"
@@ -141,7 +145,6 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	r_pocket = /obj/item/storage/bag/money/small/legion
 	l_pocket = /obj/item/flashlight/lantern
 	r_hand = /obj/item/melee/unarmed/powerfist/goliath
-	l_hand = /obj/item/tank/internals/oxygen
 	ears = /obj/item/radio/headset/headset_legion/cent
 	backpack_contents = list(
 		/obj/item/binoculars = 1,
@@ -178,9 +181,9 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 
 	loadout_options = list(
-		/datum/outfit/loadout/palacent,		// M1919, Goliath, 10mm pistol
-		/datum/outfit/loadout/rangerhunter,	// Hunting revolver, Sniper, Spatha
-		/datum/outfit/loadout/centurion,	// City-Killer shotgun, 14mm pistol
+		/datum/outfit/loadout/palacent,		// M1919, Goliath, Crusader Pistol
+		/datum/outfit/loadout/rangerhunter,	// Hunting revolver, AMR, Spatha
+		/datum/outfit/loadout/centurion,	// Goliath, CQC, 14mm pistol
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionary/f13centurion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -221,13 +224,14 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Paladin-Slayer Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/palacent
 	head = /obj/item/clothing/head/helmet/f13/legion/palacent
-	suit_store = /obj/item/gun/ballistic/automatic/m1919
+	suit_store = /obj/item/gun/ballistic/revolver/m29
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m762 = 3,
-		/obj/item/gun/ballistic/automatic/pistol/n99/crusader = 1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2
+		/obj/item/ammo_box/m44 = 3,
+		/obj/item/melee/unarmed/powerfist/goliath = 1,
+		/obj/item/book/granter/martial/cqc = 1,
+		/obj/item/restraints/legcuffs/bola/tactical = 1
 		)
-
+		
 /datum/outfit/loadout/rangerhunter
 	name = "Ranger-Hunter Centurion"
 	suit = /obj/item/clothing/suit/armor/f13/legion/rangercent
@@ -244,12 +248,11 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Warlord Centurion"
 	suit = /obj/item/clothing/suit/armored/heavy/legion/centurion
 	head = /obj/item/clothing/head/helmet/f13/legion/centurion
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/pistol14
+	suit_store = /obj/item/gun/ballistic/automatic/m1919
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m14mm = 2,
-		/obj/item/melee/unarmed/powerfist/goliath = 1,
-		/obj/item/book/granter/martial/cqc = 1,
-		/obj/item/reagent_containers/pill/patch/healingpowder/berserker = 2
+		/obj/item/ammo_box/magazine/m762 = 3,
+		/obj/item/gun/ballistic/revolver/m29/alt = 1,
+		/obj/item/ammo_box/m44 = 2
 		)
 
 
@@ -272,10 +275,10 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 
 	loadout_options = list(
-		/datum/outfit/loadout/decvetbull,	// Supersledge, 10mm SMG, Smokebomb
-		/datum/outfit/loadout/decvetwolf,	// Thermic lance, .45 revoler, Extra Bitter
-		/datum/outfit/loadout/decvetsnake, // Brush gun, Ripper, Extra Bitters
-		/datum/outfit/loadout/decvetbrave // Trench shotgun, .44 revolver, Ballistic fist
+		/datum/outfit/loadout/decvetbull,	// Supersledge, Reinf. Bola, Smokebomb
+		/datum/outfit/loadout/decvetwolf,	// Ripper, Extra Bitter
+		/datum/outfit/loadout/decvetsnake, // Brush gun, Scope, Spatha, Extra Bitters
+		/datum/outfit/loadout/decvetbrave // Carl Gustav, Ballistic Fist,
 		)
 
 /datum/outfit/job/CaesarsLegion/Legionary/f13decanvet/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -359,8 +362,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	supervisors = "the Veteran Decanus and the Centurion"
 
 	loadout_options = list(	
-		/datum/outfit/loadout/decprimfront,	//Grenade Launcher, Ballistic Fist, Bolas
-		/datum/outfit/loadout/decprimheavy	// 
+		/datum/outfit/loadout/decprimfront,	// legion lance, lever shotty, spatha + bolas
+		/datum/outfit/loadout/decprimheavy	// Grenade launcher, 44 Revolver, Explo Book
 		)
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13decan
@@ -424,11 +427,11 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	head = /obj/item/clothing/head/helmet/f13/legion/prime/decan
 	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/ballisticfist = 1,
 		/obj/item/restraints/legcuffs/bola = 1,
-		/obj/item/ammo_box/a40mm = 2,
+		/obj/item/ammo_box/a40mm = 3,
 		/obj/item/gun/ballistic/revolver/m29 = 1,
-		/obj/item/ammo_box/m44 = 3
+		/obj/item/ammo_box/m44 = 3,
+		/obj/item/book/granter/trait/explosives_advanced = 1
 		)
 
 // ----------------- RECRUIT DECANUS ---------------------
@@ -444,7 +447,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 	loadout_options = list(
 		/datum/outfit/loadout/recdeclegion,	// Uzi, Bumper sword, Smokebomb
-		/datum/outfit/loadout/recdectribal	// SKS, Throwing spears, Reinforced machete, Bottlecap mine
+		/datum/outfit/loadout/recdectribal	// SKS, Throwing spears, Reinforced machete, Bottlecap mine x2
 		)
 
 	outfit = /datum/outfit/job/CaesarsLegion/Legionary/f13decanrec
@@ -504,8 +507,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/sks = 3,
 		/obj/item/melee/onehanded/machete/forgedmachete = 1,
-		/obj/item/storage/backpack/spearquiver = 1,
-		/obj/item/bottlecap_mine = 1
+		/obj/item/bottlecap_mine = 2
 		)
 
 //......................//////////////////////////////////................................................
@@ -589,8 +591,8 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	name = "Desert Fox"
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/vexil
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smg/american180 = 1,
-		/obj/item/ammo_box/magazine/m22smg = 1,
+		/obj/item/gun/ballistic/automatic/smg/tommygun = 1,
+		/obj/item/ammo_box/magazine/tommygunm45 = 1,
 		/obj/item/gun/ballistic/revolver/contender = 1,
 		/obj/item/ammo_box/a45lcrev = 3
 		)
@@ -647,6 +649,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	id = /obj/item/card/id/dogtag/legion/prime
 	suit = /obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	head = /obj/item/clothing/head/helmet/f13/legion/vet/explorer
+	mask = /obj/item/clothing/mask/bandana/legion
 	neck = /obj/item/storage/belt/holster/rugged
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	neck = /obj/item/storage/belt/holster
@@ -684,7 +687,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	title = "Legion Frumentarius"
 	flag = F13FRUMENTARIUS
 	display_order = JOB_DISPLAY_ORDER_FRUMENTARIUS
-	description = "The Eyes and Ears of Caesar. Frumentarii cover a wide range of specializations, from Ambassadors to local Tribes, Infiltrators of enemy societies, Couriers, Intelligence Gatherers and the Secret Police of Legion Camps. Unlike the lesser Legionaries, a Frumentarius is given much unsupervised freedom to do as one pleases, so long as the Legion's goals are accomplished. You are one of these Frumentarius. Spread Caesar's Will, for Mars is watching."
+	description = "The Eyes and Ears of Caesar. Frumentarii cover a wide range of specializations, from Ambassadors to local Tribes, Infiltrators of enemy societies, Couriers, Intelligence Gatherers and the Secret Police of Legion Camps. Unlike the lesser Legionaries, a Frumentarius is given much unsupervised freedom to do as one pleases, so long as the Legion's goals are accomplished. You are one of these Frumentarius. Spread Caesar's Will, for Mars is watching. Do remember however, you are still required to esc and you're still required to paint your armor if you intend to fight in the legion main group."
 	supervisors = "the Vet Decanus"
 	selection_color = "#ffdddd"
 	total_positions = 2
@@ -695,6 +698,13 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 	access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
 	minimal_access = list(ACCESS_PUBLIC, ACCESS_LEGION, ACCESS_LEGION3, ACCESS_LEGION_COMMAND, ACCESS_LEGION2, ACCESS_CHANGE_IDS, ACCESS_LEGION1, ACCESS_LEGION4)
+
+	loadout_options = list(
+		/datum/outfit/loadout/ncr,	
+		/datum/outfit/loadout/Brotherhood,	
+		/datum/outfit/loadout/Townie,		
+		/datum/outfit/loadout/Church		
+		)
 
 /datum/outfit/job/CaesarsLegion/Legionary/f13frumentarius	// .357 Revolver, Spatha
 	name = "Legion Frumentarius"
@@ -722,9 +732,59 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
-	ADD_TRAIT(H, TRAIT_LIFEGIVER, src)
+	ADD_TRAIT(H, TRAIT_SILENT_STEP, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombat)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrcombathelmet)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedarmorconversion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/ncrsalvagedhelmetconversion)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/horsearmorncr)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombatarmor)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/boscombathelmet)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombat)
+	H.mind.teach_crafting_recipe(/datum/crafting_recipe/enclavecombathelmet)
 
+/datum/outfit/loadout/ncr
+	name = "NCR Spy"
+	suit_store = /obj/item/gun/ballistic/automatic/service
+	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
+	head = /obj/item/clothing/head/f13/ncr
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/ncr = 1,
+		/obj/item/storage/box/ration/menu_three = 1,
+		/obj/item/ammo_box/magazine/m556/rifle = 3
+		)
+
+/datum/outfit/loadout/Brotherhood
+	name = "Brotherhood Infiltrator"
+	suit_store = /obj/item/gun/energy/laser/aer9
+	suit = /obj/item/clothing/suit/armor/f13/combat/brotherhood/initiate
+	head = /obj/item/clothing/head/helmet/f13/combat/brotherhood/initiate
+	backpack_contents = list(
+		/obj/item/clothing/under/syndicate/brotherhood = 1,
+		/obj/item/clothing/accessory/bos/initiateK = 1,
+		/obj/item/stock_parts/cell/ammo/mfc = 3
+		)
+
+/datum/outfit/loadout/Townie
+	name = "Townie Bum"
+	uniform = /obj/item/clothing/under/f13/merchant
+	suit = /obj/item/clothing/suit/overalls/farmer
+	head = /obj/item/clothing/head/f13/ranger_hat/tan
+	suit_store = /obj/item/gun/ballistic/revolver/caravan_shotgun
+	backpack_contents = list(
+		/obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/stack/f13Cash/caps/onezerozero = 1
+		)
+
+/datum/outfit/loadout/Church
+	name = "Church Beggar"
+	suit = /obj/item/clothing/suit/hooded/robes/cotc
+	backpack_contents = list(
+		/obj/item/clothing/shoes/f13/rag = 1,
+		/obj/item/clothing/under/f13/settler = 1,
+		/obj/item/reagent_containers/pill/patch/bitterdrink = 1,
+		)
 
 //......................//////////////////////////////////................................................
 						//								//
@@ -745,7 +805,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 	loadout_options = list(	//ALL: Gladius
 		/datum/outfit/loadout/vetaxe,	// AXE AND FISTS AND NOTHING FUCKING ELSE
-		/datum/outfit/loadout/vetsmg, 		// 10mm SMG, .357 Revolver
+		/datum/outfit/loadout/vetsmg, 		// type 93 AR, .357 Revolver, poultice
 		/datum/outfit/loadout/vetberserker,	// Lever shotgun, Bola, Legion Lance
 		/datum/outfit/loadout/vetrifle		// Trail gun, .357 Revolver, Throwing knives
 		)
@@ -788,23 +848,22 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/restraints/handcuffs = 1,
 		/obj/item/melee/onehanded/machete/gladius = 1,
 		/obj/item/reagent_containers/pill/patch/bitterdrink = 1,
-		/obj/item/stack/crafting/armor_plate = 4,
+		/obj/item/stack/crafting/armor_plate = 5
 		)
 
 /datum/outfit/loadout/vetaxe
-	name = "Frontline"
+	name = "War-Hound"
 	suit_store = /obj/item/twohanded/legionaxe
 	backpack_contents = list(
-		/obj/item/melee/unarmed/tigerclaw = 1,
-		/obj/item/restraints/legcuffs/bola = 1,
+		/obj/item/restraints/legcuffs/bola = 2,
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2
 		)
 
 /datum/outfit/loadout/vetsmg
-	name = "Flanker"
-	suit_store = /obj/item/gun/ballistic/automatic/smg/smg10mm
+	name = "Front-line"
+	suit_store = /obj/item/gun/ballistic/automatic/type93/worn
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m10mm_adv/ext = 2,
+		/obj/item/ammo_box/magazine/m556/rifle = 2,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
 		/obj/item/ammo_box/a357 = 1,
 		/obj/item/melee/onehanded/machete/gladius = 1,
@@ -844,7 +903,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	supervisors = "the Decani and Centurion"
 
 	loadout_options = list(	//ALL: Forged Machete
-		/datum/outfit/loadout/primelancer,	// .357 revolver, Buckler, Bola
+		/datum/outfit/loadout/primelancer,	// .44 Revolver, Legion Shield, Bola
 		/datum/outfit/loadout/primerifle,	// Cowboy repeater, Firebomb
 		/datum/outfit/loadout/primebrave,	// Hunting shotgun, Throwing spears
 		/datum/outfit/loadout/primepila,		// Legion Lance, Extra Medicine
@@ -883,18 +942,19 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	backpack_contents = list(
 		/obj/item/storage/bag/money/small/legenlisted = 1,
 		/obj/item/reagent_containers/pill/patch/healpoultice = 2,
-		/obj/item/gun/ballistic/revolver/revolver45 = 1,
+		/obj/item/gun/ballistic/revolver/revolver45 = 1
 		)
 
 /datum/outfit/loadout/primelancer
-	name = "Guardian"
+	name = "Straight Outta Drymouth"
 	r_hand = /obj/item/shield/riot/legion
 	backpack_contents = list(
-		/obj/item/gun/ballistic/revolver/colt357 = 1,
-		/obj/item/ammo_box/a357 = 3,
 		/obj/item/restraints/legcuffs/bola = 1,
-		/obj/item/melee/onehanded/machete/gladius = 1
-		)
+		/obj/item/melee/onehanded/machete/gladius = 1,
+		/obj/item/reagent_containers/pill/patch/healingpowder = 3,
+		/obj/item/gun/ballistic/revolver/m29/snub = 1,
+		/obj/item/ammo_box/m44  = 2
+		)	
 
 /datum/outfit/loadout/primerifle
 	name = "Sharpshooter"
@@ -906,7 +966,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/primebrave
 	name = "Heart of the Bull"
-	suit_store = /obj/item/twohanded/fireaxe/bmprsword
+	suit_store = /obj/item/twohanded/sledgehammer/simple
 	backpack_contents = list(
 		/obj/item/storage/backpack/spearquiver = 1,
 		/obj/item/gun/ballistic/revolver/colt357 = 1,
@@ -951,7 +1011,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 	loadout_options = list(
 		/datum/outfit/loadout/recruittribal,	// Sledgehammer, bola, throwing spear quiver, trekking
 		/datum/outfit/loadout/recruitbowman, // Sturdy bow, bow autodraw, trekking, Extra Medicine
-		/datum/outfit/loadout/recruitlegion	// Caravan shotgun, 2 x prefilled Molotovs, Machete, Extra Medicine
+		/datum/outfit/loadout/recruitlegion	 // 2x 1911, Gladius, 3x Powder, 2 bolas
 		)
 
 	matchmaking_allowed = list(
@@ -989,7 +1049,7 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 
 /datum/outfit/loadout/recruittribal
 	name = "Tribal Recruit"
-	suit_store = /obj/item/twohanded/sledgehammer/simple
+	suit_store = /obj/item/twohanded/fireaxe/bmprsword
 	backpack_contents = list(
 		/obj/item/storage/backpack/spearquiver = 1,
 		/obj/item/restraints/legcuffs/bola = 1,
@@ -1005,16 +1065,17 @@ Weapons		Lever shotgun, Grease gun, Repeater carbines, Revolvers, simple guns al
 		/obj/item/warpaint_bowl = 1,
 		/obj/item/book/granter/trait/bowman = 1
 		)
-
+		
 /datum/outfit/loadout/recruitlegion
-	name = "Straight Outta Drymouth"
-	suit_store = /obj/item/melee/onehanded/machete
+	name = "Rehabilitated Tribal"
 	backpack_contents = list(
-		/obj/item/storage/backpack/spearquiver = 1,
-		/obj/item/reagent_containers/pill/patch/healingpowder = 2,
-		/obj/item/gun/ballistic/revolver/colt357 = 1,
-		/obj/item/ammo_box/a357 = 3
-		)
+		/obj/item/restraints/legcuffs/bola = 2,
+		/obj/item/melee/onehanded/machete = 1,
+		/obj/item/reagent_containers/pill/patch/healingpowder = 3,
+		/obj/item/gun/ballistic/automatic/autopipe = 1,
+		/obj/item/ammo_box/magazine/autopipe  = 4
+		)	
+
 
 //......................//////////////////////////////////................................................
 						//								//
