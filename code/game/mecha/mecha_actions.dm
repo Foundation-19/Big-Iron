@@ -298,5 +298,37 @@
 /datum/action/innate/mecha/sirens/Activate()
 	playsound(chassis,'sound/f13machines/police.ogg', 50, 1)
 
+/datum/action/innate/mecha/Landing
+	name = "Land"
+	button_icon_state = "mech_thrusters_on"
 
+/datum/action/innate/mecha/Landing/Activate()
+	if(chassis.on_the_air)
+		var/turf/target = get_step_multiz(chassis, DOWN)
+		if(!chassis.canZMove(DOWN, target))
+			chassis.occupant_message("You can't Move in that Direction!")
+			return
+		chassis.occupant_message("deploying gear and landing")
+		if(!do_after(chassis.occupant, 15, target = chassis))
+			return
+		chassis.zMove(DOWN, TRUE)
+		chassis.occupant_message("you hit the ground with the [src]'s rubber tires")
+		name = "Take Off"
+		button_icon_state = "mech_thrusters_off"
+		UpdateButtonIcon()
+		chassis.on_the_air = FALSE
+	else
+		var/turf/target = get_step_multiz(chassis, UP)
+		if(!chassis.canZMove(UP, target))
+			chassis.occupant_message("You can't Move in that Direction!")
+			return
+		chassis.occupant_message("starting rotors")
+		if(!do_after(chassis.occupant, 15, target = chassis))
+			return
+		chassis.zMove(UP, TRUE)
+		chassis.occupant_message("taking off!")
+		name = "Land"
+		button_icon_state = "mech_thrusters_on"
+		UpdateButtonIcon()
+		chassis.on_the_air = TRUE
 
