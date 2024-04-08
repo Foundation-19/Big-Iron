@@ -419,18 +419,31 @@
 	layer -= MOB_LAYER_SHIFT_INCREMENT
 	var/layer_priority = (layer - MOB_LAYER) * 100 // Just for text feedback
 	to_chat(src, span_notice("Your layer priority is now [layer_priority]."))
-	
+
 /mob/verb/up()
 	set name = "Move Upwards"
 	set category = "IC"
 
+	var/turf/current_turf = get_turf(src)
+	var/turf/above_turf = SSmapping.get_turf_above(current_turf)
+
+	if(!above_turf)
+		to_chat(src, span_warning("There's nowhere to go in that direction!"))
+		return
+	if(can_zFall(above_turf, target = current_turf, direction = DOWN )) //Will we fall down if we go up?
+		if(buckled)
+			to_chat(src, span_warning("[buckled] is is not capable of flight."))
+		else
+			to_chat(src, span_warning("You are not Superman."))
+		return
+
 	if(zMove(UP, TRUE))
-		to_chat(src, "<span class='notice'>You move upwards.</span>")
+		to_chat(src, span_notice("You move upwards."))
 
 /mob/verb/down()
 	set name = "Move Down"
 	set category = "IC"
-
+	 
 	if(zMove(DOWN, TRUE))
 		to_chat(src, "<span class='notice'>You move down.</span>")
 
@@ -448,7 +461,6 @@
 		return FALSE	
 	forceMove(target)	
 	return TRUE	
-
 
 /mob/proc/canZMove(direction, turf/target)	
 	return FALSE
