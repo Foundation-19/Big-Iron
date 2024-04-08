@@ -427,6 +427,9 @@
 	set category = "IC"
 	if(src.incapacitated())
 		to_chat(src, "<span class='warning'>You can't look up right now!</span>")
+	if(client.eye != src && !istype(client.eye, /obj/mecha))
+		stop_looking()
+		return
 	var/turf/T = SSmapping.get_turf_above(get_turf(src))
 	if(!istype(T, /turf/open/transparent/openspace))
 		if(istype(T, /turf/open) || istype(T, /turf/closed))
@@ -435,7 +438,9 @@
 	else
 		src.reset_perspective(T)
 		RegisterSignal(src, COMSIG_MOB_CLIENT_CHANGE_VIEW, .proc/stop_looking_up) //no binos/scops
-		//RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/stop_looking_up)
+		RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/followcameraup)
+		if(istype(loc, /obj/mecha))
+			RegisterSignal(loc, COMSIG_MOVABLE_MOVED, .proc/followcameraup)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_KNOCKDOWN, .proc/stop_looking_up)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_PARALYZE, .proc/stop_looking_up)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_UNCONSCIOUS, .proc/stop_looking_up)
@@ -455,6 +460,9 @@
 	set category = "IC"
 	if(src.incapacitated())
 		to_chat(src, "<span class='warning'>You can't look down right now!</span>")
+	if(client.eye != src && !istype(client.eye, /obj/mecha))
+		stop_looking()
+		return
 	var/turf/T = get_turf(src)
 	if(!istype(T, /turf/open/transparent/openspace))
 		var/turf/nt = get_step(T, dir)
@@ -466,7 +474,9 @@
 			var/turf/nl = SSmapping.get_turf_below(nt)
 			src.reset_perspective(nl)
 			RegisterSignal(src, COMSIG_MOB_CLIENT_CHANGE_VIEW, .proc/stop_looking_down) //no binos/scops
-			//RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/stop_looking_down)
+			RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/followcameradown)
+			if(istype(loc, /obj/mecha))
+				RegisterSignal(loc, COMSIG_MOVABLE_MOVED, .proc/followcameradown)
 			RegisterSignal(src, COMSIG_LIVING_STATUS_KNOCKDOWN, .proc/stop_looking_down)
 			RegisterSignal(src, COMSIG_LIVING_STATUS_PARALYZE, .proc/stop_looking_down)
 			RegisterSignal(src, COMSIG_LIVING_STATUS_UNCONSCIOUS, .proc/stop_looking_down)
@@ -475,7 +485,9 @@
 		var/turf/nl = SSmapping.get_turf_below(T)
 		src.reset_perspective(nl)
 		RegisterSignal(src, COMSIG_MOB_CLIENT_CHANGE_VIEW, .proc/stop_looking_down) //no binos/scops
-		//RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/stop_looking_down)
+		RegisterSignal(src, COMSIG_MOVABLE_MOVED, .proc/followcameradown)
+		if(istype(loc, /obj/mecha))
+			RegisterSignal(loc, COMSIG_MOVABLE_MOVED, .proc/followcameradown)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_KNOCKDOWN, .proc/stop_looking_down)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_PARALYZE, .proc/stop_looking_down)
 		RegisterSignal(src, COMSIG_LIVING_STATUS_UNCONSCIOUS, .proc/stop_looking_down)
@@ -485,6 +497,21 @@
 	reset_perspective(null)
 	UnregisterSignal(src, list(COMSIG_LIVING_STATUS_PARALYZE, COMSIG_LIVING_STATUS_UNCONSCIOUS, COMSIG_LIVING_STATUS_SLEEP, COMSIG_LIVING_STATUS_KNOCKDOWN, COMSIG_MOVABLE_MOVED, COMSIG_MOB_CLIENT_CHANGE_VIEW))
 
+/mob/living/proc/followcameraup()
+	var/turf/T = get_turf(src)
+	var/turf/nl = SSmapping.get_turf_above(T)
+	if(istype(nl, /turf/open/transparent/openspace))
+		reset_perspective(nl)
+	else
+		reset_perspective(null)
+
+/mob/living/proc/followcameradown()
+	var/turf/T = get_turf(src)
+	var/turf/nl = SSmapping.get_turf_below(T)
+	if(istype(T, /turf/open/transparent/openspace))
+		reset_perspective(nl)
+	else
+		reset_perspective(null)
 
 /mob/living/incapacitated(ignore_restraints = FALSE, ignore_grab = FALSE, check_immobilized = FALSE)
 	if(stat || IsUnconscious() || IsStun() || IsParalyzed() || (combat_flags & COMBAT_FLAG_HARD_STAMCRIT) || (check_immobilized && IsImmobilized()) || (!ignore_restraints && restrained(ignore_grab)))
