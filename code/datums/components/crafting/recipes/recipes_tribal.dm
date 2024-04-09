@@ -34,7 +34,7 @@
 	result = /obj/item/gun/syringe/blowgun
 	time = 50
 	reqs = list(/obj/item/stack/sheet/mineral/bamboo = 10)
-	always_available = FALSE
+	always_available = TRUE
 
 /datum/crafting_recipe/tribalwar/bow
 	name = "String Wooden Bow"

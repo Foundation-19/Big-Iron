@@ -823,7 +823,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "uspvt"
 
 /obj/effect/landmark/start/f13/uspilot
-	name = "Enclave Navy Pilot"
+	name = "Enclave Pilot"
 	icon_state = "uspvt"
 
 /obj/effect/landmark/start/f13/usremnant
