@@ -121,6 +121,7 @@
 	var/datum/action/innate/mecha/strafe/strafing_action = new
 	var/datum/action/innate/mecha/klaxon/klaxon_action = new
 	var/datum/action/innate/mecha/sirens/sirens_action = new
+	var/datum/action/innate/mecha/Landing/landing_action = new
 
 
 	//Action vars
@@ -145,6 +146,7 @@
 
 	var/occupant_sight_flags = 0 //sight flags to give to the occupant (e.g. mech mining scanner gives meson-like vision)
 	var/mouse_pointer
+	var/on_the_air = FALSE
 
 	hud_possible = list (DIAG_STAT_HUD, DIAG_BATT_HUD, DIAG_MECH_HUD, DIAG_TRACK_HUD)
 
@@ -1026,6 +1028,24 @@
 		L.update_mouse_pointer()
 		L.client.change_view(CONFIG_GET(string/default_view))
 		zoom_mode = 0
+
+/obj/mecha/proc/canZMove(dir, turf/target)
+	return can_zTravel(target, dir) && (movement_type & FLYING)
+
+/obj/mecha/proc/zMove(dir, feedback = FALSE)	
+	if(dir != UP && dir != DOWN)	
+		return FALSE	
+	var/turf/target = get_step_multiz(src, dir)	
+	if(!target)	
+		if(feedback)	
+			to_chat(src, "<span class='warning'>There's nothing in that direction!</span>")	
+		return FALSE	
+	if(!canZMove(dir, target))	
+		if(feedback)	
+			to_chat(src, "<span class='warning'>You couldn't move there!</span>")	
+		return FALSE	
+	forceMove(target)	
+	return TRUE	
 
 /////////////////////////
 ////// Access stuff /////
