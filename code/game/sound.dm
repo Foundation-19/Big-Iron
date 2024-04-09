@@ -103,7 +103,9 @@
 			dz = manual_y
 		S.z = dz * distance_multiplier
 		// The y value is for above your head, but there is no ceiling in 2d spessmens.
-		S.y = 1
+		var/dy = 0
+		dy = turf_source.z - T.z
+		S.y = dy * distance_multiplier
 		S.falloff = (falloff ? falloff : FALLOFF_SOUNDS)
 
 	SEND_SOUND(src, S)

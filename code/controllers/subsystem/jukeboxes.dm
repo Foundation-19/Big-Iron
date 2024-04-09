@@ -97,6 +97,14 @@ SUBSYSTEM_DEF(jukeboxes)
 		var/area/currentarea = get_area(jukebox)
 		var/turf/currentturf = get_turf(jukebox)
 		var/list/hearerscache = hearers(7, jukebox)
+		var/turf/currentturfabove = SSmapping.get_turf_above(currentturf)
+		if(istype(currentturf, /turf/open/transparent/openspace))
+			var/turf/belowturf = SSmapping.get_turf_below(currentturf)
+			hearerscache += hearers(7, belowturf)
+		if(istype(currentturfabove, /turf/open/transparent/openspace))
+			hearerscache += hearers(7, currentturfabove)
+		if(!isturf(jukebox.loc))
+			hearerscache += hearers(7, jukebox.loc)
 
 		song_played.falloff = jukeinfo[4]
 
@@ -108,12 +116,12 @@ SUBSYSTEM_DEF(jukeboxes)
 				continue
 
 			var/inrange = FALSE
-			if(jukebox.z == M.z)	//todo - expand this to work with mining planet z-levels when robust jukebox audio gets merged to master
-				song_played.status = SOUND_UPDATE
-				if(get_area(M) == currentarea)
-					inrange = TRUE
-				else if(M in hearerscache)
-					inrange = TRUE
+			//if(jukebox.z == M.z)	//todo - expand this to work with mining planet z-levels when robust jukebox audio gets merged to master
+			song_played.status = SOUND_UPDATE
+			if(get_area(M) == currentarea)
+				inrange = TRUE
+			else if(M in hearerscache)
+				inrange = TRUE
 			else
 				song_played.status = SOUND_MUTE | SOUND_UPDATE	//Setting volume = 0 doesn't let the sound properties update at all, which is lame.
 
