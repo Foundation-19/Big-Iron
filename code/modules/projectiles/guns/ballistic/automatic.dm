@@ -1309,6 +1309,7 @@
 	icon = 'icons/fallout/objects/guns/longguns.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	icon_state = "BAR"
+	is_automatic = TRUE
 	item_state = "BAR"
 	icon_prefix = "rifle"
 	automatic = 1

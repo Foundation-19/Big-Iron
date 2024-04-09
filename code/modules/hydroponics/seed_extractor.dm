@@ -96,6 +96,12 @@
 	if(istype(O, /obj/item/storage/bag/plants))
 		var/obj/item/storage/P = O
 		var/loaded = 0
+		for(var/obj/item/G in P.contents)
+			if(seedify(G, -1, src, user))
+				++loaded
+		if (loaded)
+			to_chat(user, "<span class='notice'>You put get as many seeds from the contents of \the [O.name] as you can.</span>")
+			return
 		for(var/obj/item/seeds/G in P.contents)
 			if(contents.len >= max_seeds)
 				break
