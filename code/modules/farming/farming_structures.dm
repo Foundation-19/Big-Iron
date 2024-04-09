@@ -350,6 +350,16 @@
 	else if(seedify(O,-1, src, user))
 		to_chat(user, SPAN_NOTICE("You extract some seeds."))
 		return
+	else if(istype(O,/obj/item/storage/bag/plants))
+		var/obj/item/storage/P = O
+		var/loaded = 0
+		for(var/obj/item/G in P.contents)
+			if(seedify(G, -1, src, user))
+				++loaded
+		if (loaded)
+			to_chat(user, "<span class='notice'>You put get as many seeds from the contents of \the [O.name] as you can.</span>")
+		else
+			to_chat(user, "<span class='notice'>There is nothing to process into seeds in \the [O.name].</span>")
 	else if(user.a_intent != INTENT_HARM)
 		to_chat(user, SPAN_WARNING("You can't extract any seeds from \the [O.name]!"))
 	else
