@@ -15,12 +15,6 @@
 	var/maxdistance = (world.view + extrarange)
 	var/z = turf_source.z
 	var/list/listeners = SSmobs.clients_by_zlevel[z]
-	if(istype(turf_source,/turf/open/transparent/openspace))
-		listeners += SSmobs.clients_by_zlevel[z-1]
-	if(z < 5)
-	var/turf/above_turf = SSmapping.get_turf_above(turf_source)
-	if(istype(above_turf,/turf/open/transparent/openspace))
-		listeners += SSmobs.clients_by_zlevel[z+1]
 	if(!ignore_walls) //these sounds don't carry through walls
 		listeners = listeners & hearers(maxdistance,turf_source)
 	for(var/P in listeners)
