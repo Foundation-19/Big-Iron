@@ -1590,7 +1590,7 @@
 	name = "r84 spawner"
 	items = list(
 		/obj/item/gun/ballistic/automatic/r84,
-		/obj/item/ammo_box/magazine/lmg/small
+		/obj/item/ammo_box/magazine/lmg
 	)
 
 /obj/effect/spawner/bundle/f13/bozar
