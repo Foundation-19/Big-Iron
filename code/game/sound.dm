@@ -16,12 +16,12 @@
 	var/z = turf_source.z
 	var/list/listeners = SSmobs.clients_by_zlevel[z]
 	var/list/turf/adjacent_air = get_adjacent_open_turfs(turf_source)
+	var/open_sound = FALSE
 	if(adjacent_air.len)
 		for(var/turf/I in adjacent_air)
 			if(istype(I,/turf/open/transparent/openspace ))
-				break
-			adjacent_air -= I
-	if(istype(turf_source,/turf/open/transparent/openspace) || adjacent_air.len)
+				open_sound = TRUE
+	if(istype(turf_source,/turf/open/transparent/openspace) || open_sound)
 		listeners += SSmobs.clients_by_zlevel[z-1]
 	if(!ignore_walls) //these sounds don't carry through walls
 		listeners = listeners & hearers(maxdistance,turf_source)
@@ -33,6 +33,7 @@
 		var/mob/M = P
 		if(get_dist(M, turf_source) <= maxdistance)
 			M.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, channel, pressure_affected, S, soundenvwet, soundenvdry)
+
 /mob/proc/playsound_local(turf/turf_source, soundin, vol as num, vary, frequency, falloff, channel = 0, pressure_affected = TRUE, sound/S, envwet = -10000, envdry = 0, manual_x, manual_y, distance_multiplier = 1)
 	if(audiovisual_redirect)
 		var/turf/T = get_turf(src)
