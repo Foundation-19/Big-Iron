@@ -51,11 +51,11 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 			heirloom_type = /obj/item/gun/ballistic/automatic/toy/pistol
 		if("BoS Off-Duty")
 			heirloom_type = /obj/item/toy/figure/borg
-		if("Sheriff")
+		if("Militia Commander")
 			heirloom_type = /obj/item/clothing/accessory/medal/silver
-		if("Deputy")
+		if("Militian")
 			heirloom_type = /obj/item/clothing/accessory/medal/bronze_heart
-		if("Shopkeeper")
+		if("Merchant")
 			heirloom_type = /obj/item/coin/plasma
 		if("Followers Doctor")
 			heirloom_type = pick(/obj/item/clothing/neck/stethoscope,/obj/item/toy/tragicthegarnering)
@@ -71,18 +71,8 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 			heirloom_type = /obj/item/card/id/dogtag/MDfakepermit
 		if("Farmer")
 			heirloom_type = pick(/obj/item/hatchet, /obj/item/shovel/spade, /obj/item/toy/plush/beeplushie)
-		if("Janitor")
-			heirloom_type = /obj/item/mop
-		if("Security Officer")
-			heirloom_type = /obj/item/clothing/accessory/medal/silver/valor
-		if("Scientist")
-			heirloom_type = /obj/item/toy/plush/slimeplushie
-		if("Assistant")
-			heirloom_type = /obj/item/clothing/gloves/cut/family
-		if("Chaplain")
-			heirloom_type = /obj/item/camera/spooky/family
-		if("Captain")
-			heirloom_type = /obj/item/clothing/accessory/medal/gold/captain/family
+		if("Tribal")
+			heirloom_type = /obj/item/clothing/accessory/skullcodpiece/fake 
 	if(!heirloom_type)
 		heirloom_type = pick(
 		/obj/item/toy/cards/deck,
@@ -90,8 +80,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 		/obj/item/card/id/rusted,
 		/obj/item/card/id/rusted/fadedvaultid,
 		/obj/item/clothing/gloves/ring/silver,
-		/obj/item/toy/figure/detective,
-		/obj/item/toy/tragicthegarnering,
 		)
 	heirloom = new heirloom_type(get_turf(quirk_holder))
 	GLOB.family_heirlooms += heirloom
