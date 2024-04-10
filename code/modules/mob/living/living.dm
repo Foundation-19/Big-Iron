@@ -452,6 +452,8 @@
 	src.stop_looking_up(null)
 
 /mob/living/proc/stop_looking_up()
+	if(istype(loc, /obj/mecha))
+		UnregisterSignal(loc, COMSIG_MOVABLE_MOVED)
 	reset_perspective(null)
 	UnregisterSignal(src, list(COMSIG_LIVING_STATUS_PARALYZE, COMSIG_LIVING_STATUS_UNCONSCIOUS, COMSIG_LIVING_STATUS_SLEEP, COMSIG_LIVING_STATUS_KNOCKDOWN, COMSIG_MOVABLE_MOVED, COMSIG_MOB_CLIENT_CHANGE_VIEW))
 
