@@ -15,14 +15,12 @@
 	var/maxdistance = (world.view + extrarange)
 	var/z = turf_source.z
 	var/list/listeners = SSmobs.clients_by_zlevel[z]
-	var/list/turf/adjacent_air = get_adjacent_open_turfs(turf_source)
-	var/open_sound = FALSE
-	if(adjacent_air.len)
-		for(var/turf/I in adjacent_air)
-			if(istype(I,/turf/open/transparent/openspace ))
-				open_sound = TRUE
-	if(istype(turf_source,/turf/open/transparent/openspace) || open_sound)
+	if(istype(turf_source,/turf/open/transparent/openspace))
 		listeners += SSmobs.clients_by_zlevel[z-1]
+	if(z < 5)
+	var/turf/above_turf = SSmapping.get_turf_above(turf_source)
+	if(istype(above_turf,/turf/open/transparent/openspace))
+		listeners += SSmobs.clients_by_zlevel[z+1]
 	if(!ignore_walls) //these sounds don't carry through walls
 		listeners = listeners & hearers(maxdistance,turf_source)
 	for(var/P in listeners)
@@ -104,9 +102,7 @@
 			dz = manual_y
 		S.z = dz * distance_multiplier
 		// The y value is for above your head, but there is no ceiling in 2d spessmens.
-		var/dy = 0
-		dy = turf_source.z - T.z
-		S.y = dy * distance_multiplier
+		S.y = 1
 		S.falloff = (falloff ? falloff : FALLOFF_SOUNDS)
 
 	SEND_SOUND(src, S)
