@@ -58,12 +58,21 @@
 	desc = "A basic workbench with a full set of tools for simple to intermediate projects."
 	resistance_flags = INDESTRUCTIBLE
 	density = TRUE
+	pass_flags = LETPASSTHROW
+	pass_flags_self = PASSTABLE
 	layer = BELOW_OBJ_LAYER
 	anchored = TRUE
 	machine_tool_behaviour = list(TOOL_WORKBENCH, TOOL_CROWBAR, TOOL_SCREWDRIVER, TOOL_WIRECUTTER, TOOL_WRENCH)
 	drag_delay = 0.4 SECONDS // Heavy, slow to drag
 	var/wrenchable = 1
 
+/obj/machinery/workbench/CanPass(atom/movable/mover, border_dir)
+	if(src.density == 0)
+		return 1
+	if(istype(mover) && (mover.pass_flags & pass_flags_self))
+		return 1
+	else
+		return 0
 
 /obj/machinery/workbench/can_be_unfasten_wrench(mob/user, silent)
 	if (!wrenchable)  // case also covered by NODECONSTRUCT checks in default_unfasten_wrench

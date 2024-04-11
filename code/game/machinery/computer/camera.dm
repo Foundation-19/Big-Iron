@@ -16,6 +16,7 @@
 	var/obj/screen/cam_screen
 	var/obj/screen/plane_master/lighting/cam_plane_master
 	var/obj/screen/background/cam_background
+	var/camera_type = /obj/machinery/camera
 
 /obj/machinery/computer/security/Initialize()
 	. = ..()
@@ -173,6 +174,16 @@
 			D["[C.c_tag]"] = C
 	return D
 
+/obj/machinery/computer/security/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/multitool))
+		var/obj/item/multitool/P = W
+		if(istype(P.buffer, camera_type))
+			to_chat(user, "<font color = #666633>-% Successfully linked [P.buffer] with [src] %-</font color>")
+			var/obj/machinery/camera/connectingcamera = P.buffer
+			network |= connectingcamera.network
+		return
+	else
+		return ..()
 // SECURITY MONITORS
 
 /obj/machinery/computer/security/wooden_tv
