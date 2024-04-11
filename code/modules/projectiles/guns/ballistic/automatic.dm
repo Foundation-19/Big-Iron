@@ -380,7 +380,7 @@
 	icon_state = "uzi"
 	item_state = "uzi"
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
-	fire_delay = 3
+	fire_delay = 3.2
 	burst_shot_delay = 2.2
 	is_automatic = TRUE
 	automatic = 1
@@ -514,7 +514,7 @@
 	automatic = 1
 	autofire_shot_delay = 2.15
 	burst_shot_delay = 2
-	extra_damage = 17
+	extra_damage = 18
 	suppressed = 1
 	recoil = 0.05
 	can_attachments = TRUE
@@ -1028,7 +1028,7 @@
 	burst_size = 1
 	extra_speed = 800
 	extra_penetration = 0.2
-	extra_damage = 35
+	extra_damage = 45
 	slowdown = 0.4
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -1154,7 +1154,7 @@
 	icon_state = "r93"
 	item_state = "r93"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 1
+	fire_delay = 1.5
 	spread = 1
 	extra_damage = 25
 	burst_size = 1
@@ -1385,12 +1385,12 @@
 	item_state = "lsw"
 	slowdown = 1
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 4.5
+	fire_delay = 5.2
 	burst_shot_delay = 2
 	is_automatic = TRUE
 	automatic = 1
 	extra_damage = 23
-	spread = 12
+	spread = 10
 	spawnwithmagazine = TRUE
 	zoomable = TRUE
 	zoom_amt = 10
@@ -1501,11 +1501,11 @@
 	icon_state = "xl70e3"
 	item_state = "xl70e3"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 2
+	fire_delay = 5.2
 	burst_shot_delay = 2
 	is_automatic = TRUE
 	automatic = 1
-	autofire_shot_delay = 2.5
+	autofire_shot_delay = 5.5
 	spawnwithmagazine = TRUE
 	extra_damage = 25
 	spread = 8
