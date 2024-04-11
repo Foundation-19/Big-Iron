@@ -266,6 +266,11 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/structure/ladder/unbreakable/transition{
+	id = "Event";
+	name = "indian pass mountains";
+	height = 2
+	},
 /turf/open/floor/plasteel/f13/vault_floor,
 /area/f13/enclave)
 "abc" = (
@@ -14479,6 +14484,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
+/obj/structure/timeddoor,
 /turf/open/floor/plasteel/f13/vault_floor,
 /area/f13/enclave)
 "hZI" = (
@@ -14677,6 +14683,10 @@
 	sunlight_state = 1
 	},
 /area/f13/brotherhood/surface)
+"kTK" = (
+/obj/structure/timeddoor,
+/turf/closed/wall/rust,
+/area/f13/enclave)
 "kYH" = (
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -14930,6 +14940,16 @@
 "ozv" = (
 /turf/open/floor/plating/f13/outside/roof/metal/corrugated/red,
 /area/f13/wasteland)
+"oHi" = (
+/obj/effect/turf_decal{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/timeddoor,
+/turf/open/floor/plasteel/f13/vault_floor,
+/area/f13/enclave)
 "oSj" = (
 /obj/structure/chair/wood/modern{
 	dir = 4
@@ -15327,6 +15347,10 @@
 /obj/mecha/combat/phazon/vertibird/ncr/loaded,
 /turf/open/floor/plating/f13/outside/roof/red,
 /area/f13/wasteland)
+"uCv" = (
+/obj/structure/timeddoor,
+/turf/open/floor/plasteel/f13/vault_floor,
+/area/f13/enclave)
 "uFw" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
@@ -36278,8 +36302,8 @@ ayt
 nTT
 aGP
 acJ
-aGP
-aGP
+oHi
+oHi
 hZy
 axQ
 xsH
@@ -36535,9 +36559,9 @@ ayt
 xsH
 xsH
 xsH
-xsH
+uCv
 aba
-xsH
+uCv
 xsH
 xsH
 xsH
@@ -36792,9 +36816,9 @@ sqK
 sqK
 sqK
 sqK
-sqK
-sqK
-sqK
+kTK
+kTK
+kTK
 sqK
 sqK
 sqK
