@@ -44,35 +44,31 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/family_heirloom/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	var/obj/item/heirloom_type
-	switch(quirk_holder.mind.assigned_role)
-		if("Scribe")
-			heirloom_type = pick(/obj/item/trash/f13/electronic/toaster, /obj/item/screwdriver/crude, /obj/item/toy/tragicthegarnering)
-		if("Knight")
-			heirloom_type = /obj/item/gun/ballistic/automatic/toy/pistol
-		if("BoS Off-Duty")
-			heirloom_type = /obj/item/toy/figure/borg
-		if("Militia Commander")
+	if(quirk_holder.mind.assigned_role)
+		if(H.faction == FACTION_BROTHERHOOD || (quirk_holder.mind.assigned_role in list("Elder", "Head Paladin", "Paladin", "Head Knight", "Senior Knight", "Knight", "Head Scribe", "Scribe", "Lancer", "Initiate", "BoS Off-Duty")))
+			heirloom_type = pick(/obj/item/card/id/rusted/brokenholodog, /obj/item/trash/f13/electronic/toaster)
+		if(H.faction == FACTION_ENCLAVE || (quirk_holder.mind.assigned_role in list("Enclave Lieutenant", "Enclave Gunnery Sergeant", "Enclave Pilot", "Enclave Sergeant", "Enclave Armored Infantry", "Enclave Specialist", "Enclave Scientist", "Enclave Private", "Enclave Bunker Duty")))
+			heirloom_type = pick(/obj/item/card/id/rusted/brokenholodog/enclave, /obj/item/reagent_containers/glass/bottle/mutagen, /obj/item/lighter, /obj/item/toy/cards/deck)
+		if(H.faction == FACTION_CHURCH || (quirk_holder.mind.assigned_role in list("High Priest", "Servitor", "Acolyte", "Neophyte")))
+			heirloom_type = pick(/obj/item/book/manual/thebook, /obj/item/book/manual/ritualbook)
+		if(H.faction == FACTION_NCR || (quirk_holder.mind.assigned_role in list("NCR Captain", "NCR Lieutenant", "NCR Staff Sergeant", "NCR Veteran Ranger", "NCR Representative", "NCR Ranger", "NCR Heavy Trooper", "NCR Military Police", "NCR Pilot", "NCR Sergeant", "NCR Corporal", "NCR Combat Medic", "NCR Combat Engineer", "NCR Trooper", "NCR Medical Officer", "NCR Off-Duty")))
+			heirloom_type = pick(/obj/item/melee/onehanded/knife/bayonet, /obj/item/lighter, /obj/item/toy/cards/deck, /obj/item/card/id/rusted)
+		if(H.faction == FACTION_LEGION || (quirk_holder.mind.assigned_role in list("Legion Centurion", "Legion Frumentarius", "Legion Veteran Decanus", "Legion Prime Decanus", "Legion Recruit Decanus", "Legion Vexillarius", "Legion Explorer", "Veteran Legionary", "Prime Legionary", "Recruit Legionary")))
+			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/card/id/rusted/rustedmedallion, /obj/item/clothing/accessory/talisman,/obj/item/clothing/accessory/skullcodpiece/fake, /obj/item/warpaint_bowl)
+		if(quirk_holder.mind.assigned_role == "Militia Commander")
 			heirloom_type = /obj/item/clothing/accessory/medal/silver
-		if("Militian")
+		if(quirk_holder.mind.assigned_role == "Militian")
 			heirloom_type = /obj/item/clothing/accessory/medal/bronze_heart
-		if("Merchant")
+		if(quirk_holder.mind.assigned_role == "Merchant")
 			heirloom_type = /obj/item/coin/plasma
-		if("Followers Doctor")
-			heirloom_type = pick(/obj/item/clothing/neck/stethoscope,/obj/item/toy/tragicthegarnering)
-		if("Followers Administrator")
-			heirloom_type = pick(/obj/item/toy/nuke, /obj/item/wrench/medical, /obj/item/clothing/neck/tie/horrible)
-		if("Prime Legionary")
-			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman, /obj/item/toy/plush/mr_buckety)
-		if("Recruit Legionary")
-			heirloom_type = pick(/obj/item/melee/onehanded/machete, /obj/item/melee/onehanded/club/warclub, /obj/item/clothing/accessory/talisman,/obj/item/clothing/accessory/skullcodpiece/fake)
-		if("Den Mob Boss")
+		if(quirk_holder.mind.assigned_role == "Den Mob Boss")
 			heirloom_type = /obj/item/lighter/gold
-		if("Den Doctor")
+		if(quirk_holder.mind.assigned_role == "Den Doctor")
 			heirloom_type = /obj/item/card/id/dogtag/MDfakepermit
-		if("Farmer")
+		if(quirk_holder.mind.assigned_role == "Farmer")
 			heirloom_type = pick(/obj/item/hatchet, /obj/item/shovel/spade, /obj/item/toy/plush/beeplushie)
-		if("Tribal")
-			heirloom_type = /obj/item/clothing/accessory/skullcodpiece/fake 
+		if(quirk_holder.mind.assigned_role == "Tribal")
+			heirloom_type = pick(/obj/item/clothing/accessory/skullcodpiece/fake, /obj/item/clothing/accessory/talisman, /obj/item/warpaint_bowl) 
 	if(!heirloom_type)
 		heirloom_type = pick(
 		/obj/item/toy/cards/deck,
