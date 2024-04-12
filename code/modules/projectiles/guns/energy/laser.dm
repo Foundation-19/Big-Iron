@@ -729,6 +729,12 @@
 	. = ..()
 	ammo_pack.attach_gun(user)
 
+/obj/item/gun/energy/minigun/Destroy()
+	ammo_pack.gun = null
+	ammo_pack = null
+	. = ..()
+
+
 
 //// BETA /// Obsolete
 /obj/item/gun/energy/laser/lasertesting
