@@ -17,3 +17,6 @@
 	desc = "A keyring with a small steel key, and a rubber nightstick accessory."
 	icon_state = "keysec"
 
+/obj/item/key/custombike
+	desc = "A keyring with a small steel bike accessory."
+	var/obj/vehicle/ridden/space/speedbike/keyfit = null
