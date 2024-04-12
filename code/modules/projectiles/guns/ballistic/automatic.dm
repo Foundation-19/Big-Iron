@@ -1422,7 +1422,7 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	var/bipod = FALSE
-	actions_types = list(/datum/action/item_action/toggle_firemode, /datum/action/item_action/toggle_bipod)
+	actions_types = list(/*/datum/action/item_action/toggle_firemode, *//datum/action/item_action/toggle_bipod)
 	fire_sound = 'sound/weapons/gpmg.ogg'
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_HUGE
@@ -1438,26 +1438,34 @@
 		if(bipod == FALSE)
 			bipod_on()
 			to_chat(user, "<span class='notice'>You deploy the bipod.</span>")
-			bipod = TRUE
-			return
-		if(bipod == TRUE)
+			RegisterSignal(user, COMSIG_MOVABLE_PRE_MOVE, .proc/stop_walk)
+		else
 			bipod_off()
 			to_chat(user, "<span class='notice'>You fold up the bipod.</span>")
-			bipod = FALSE
-			return
+			UnregisterSignal(user, COMSIG_MOVABLE_PRE_MOVE)
 	else
 		return ..()
 
 /obj/item/gun/ballistic/automatic/R88/proc/bipod_on()
 	spread = 12
 	autofire_shot_delay = 1
-	slowdown = 3
+	bipod = TRUE
 
 
 /obj/item/gun/ballistic/automatic/R88/proc/bipod_off()
 	spread = 45
 	autofire_shot_delay = 1.5
+	bipod = FALSE
 
+/obj/item/gun/ballistic/automatic/R88/proc/stop_walk(mob/dude)
+	to_chat(dude, "You can't walk while bipoded!")
+	return COMPONENT_MOVABLE_BLOCK_PRE_MOVE
+
+/obj/item/gun/ballistic/automatic/R88/dropped(mob/user)
+	. = ..()
+	UnregisterSignal(user, COMSIG_MOVABLE_PRE_MOVE)
+	if(bipod)
+		bipod_off()
 
 //M1919 Machinegun				Keywords: LEGION, .308, Automatic, 80 round belt. Special modifiers: damage decrease bullethose
 /obj/item/gun/ballistic/automatic/m1919
