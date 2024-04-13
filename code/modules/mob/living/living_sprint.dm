@@ -42,6 +42,9 @@
 /mob/living/proc/enable_intentional_sprint_mode()
 	if((combat_flags & COMBAT_FLAG_SPRINT_TOGGLED) && (combat_flags & COMBAT_FLAG_SPRINT_ACTIVE))
 		return
+	if(sprint_buffer <= (sprint_buffer_max / 4))
+		to_chat(src, "<span class='warning'>You are too tired to sprint!</span>")
+		return
 	ENABLE_BITFIELD(combat_flags, COMBAT_FLAG_SPRINT_TOGGLED)
 	if(!HAS_TRAIT(src, TRAIT_SPRINT_LOCKED) && !(combat_flags & COMBAT_FLAG_SPRINT_ACTIVE))
 		enable_sprint_mode(FALSE)

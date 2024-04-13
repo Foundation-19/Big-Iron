@@ -63,6 +63,9 @@
 			to_chat(user, "<span class='warning'>[src] cannot hold more syringes!</span>")
 	return FALSE
 
+/obj/item/gun/syringe/update_icon_state()
+	return
+
 /obj/item/gun/syringe/rapidsyringe
 	name = "rapid syringe gun"
 	desc = "A modification of the syringe gun design, using a rotating cylinder to store up to six syringes."
