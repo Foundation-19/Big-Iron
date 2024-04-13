@@ -305,12 +305,12 @@
 	item_state = "amr"
 	mag_type = /obj/item/ammo_box/magazine/amr
 	fire_delay = 12 //Heavy round, tiny bit slower
-	extra_damage = 37
+	extra_damage = 50
 	extra_penetration = 1
 	recoil = 1
 	spread = 0
 	force = 10 //Big clumsy and sensitive scope, makes for a poor club
-	slowdown = 0.2
+	slowdown = 0.7
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
