@@ -175,6 +175,12 @@
 	desc = "The juice of this fleshy plant soothes burns, but it also removes nutrients from the body."
 	produce = /obj/item/reagent_containers/food/snacks/grown/agave
 
+/obj/structure/flora/wasteplant/wild_windsown_weed
+	name = "Wild Windsown Weed"
+	icon_state = "wild_windsown_weed"
+	desc = "A weed known to travel far distances before settling down."
+	produce = /obj/item/reagent_containers/food/snacks/grown/wild_windsown_weed
+
 
 /////FALLOUT 13 TREES////
 /obj/structure/flora/tree/joshua
