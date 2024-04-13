@@ -105,6 +105,27 @@
 		to_chat(user, "<span class='notice'>There is nothing left in the quiver.</span>")
 	return TRUE
 
+/obj/item/storage/backpack/ammopack
+	name = "Ammobearer Backpack"
+	desc = "A sturdy, unwieldy backpack designed to store heavy munitions."
+	icon_state = "ammopack"
+	item_state = "ammopack"
+	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK
+
+/obj/item/storage/backpack/ammopack/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_items = 12
+	STR.can_hold = typecacheof(list(/obj/item/ammo_box/magazine/lmg/huge, /obj/item/ammo_box/magazine/lmg/large, /obj/item/ammo_box/magazine/lmg/huge/empty, /obj/item/ammo_box/magazine/lmg/large/empty))
+
+/obj/item/storage/backpack/ammopack/PopulateContents()
+	new /obj/item/ammo_box/magazine/lmg/huge
+	new /obj/item/ammo_box/magazine/lmg/huge
+	new /obj/item/ammo_box/magazine/lmg/huge
+	new /obj/item/ammo_box/magazine/lmg/huge
+	new /obj/item/ammo_box/magazine/lmg/huge
+
 /obj/item/storage/backpack/holding/satchel
 	name = "satchel of holding"
 	desc = "A satchel that opens into a localized pocket of Blue Space."

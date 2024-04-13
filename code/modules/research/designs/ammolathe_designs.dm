@@ -602,7 +602,21 @@
 	name = "empty ammo box (5.56)"
 	id = "lmg556"
 	materials = list(/datum/material/iron = 8000)
-	build_path = /obj/item/ammo_box/magazine/lmg/empty
+	build_path = /obj/item/ammo_box/magazine/lmg/small/empty
+	category = list("initial", "Advanced Magazines")
+
+/datum/design/ammolathe/lmg556large
+	name = "empty machinegun box (5.56)"
+	id = "lmg556large"
+	materials = list(/datum/material/iron = 12000)
+	build_path = /obj/item/ammo_box/magazine/lmg/large/empty
+	category = list("initial", "Advanced Magazines")
+
+/datum/design/ammolathe/lmg556huge
+	name = "empty extended machinegun box (5.56)"
+	id = "lmg556huge"
+	materials = list(/datum/material/iron = 18000)
+	build_path = /obj/item/ammo_box/magazine/lmg/huge/empty
 	category = list("initial", "Advanced Magazines")
 
 /datum/design/ammolathe/mm762
@@ -684,3 +698,5 @@
 	materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1000)
 	build_path = /obj/item/ammo_box/a357box/ricochet
 	category = list("initial", "Advanced Ammo")
+
+

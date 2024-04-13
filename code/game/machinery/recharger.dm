@@ -21,6 +21,9 @@
 		/obj/item/ammo_box/magazine/mws_mag,
 		/obj/item/electrostaff,
 		/obj/item/gun/ballistic/automatic/magrifle))
+	
+	var/static/list/forbidden_devices = typecacheof(list(
+		/obj/item/gun/energy/minigun))
 
 /obj/machinery/recharger/RefreshParts()
 	for(var/obj/item/stock_parts/capacitor/C in component_parts)
@@ -72,7 +75,13 @@
 		return
 
 	var/allowed = is_type_in_typecache(G, allowed_devices)
+	var/forbidden = is_type_in_typecache(G, forbidden_devices)
 
+	if(forbidden)
+		explosion(src, 0, 3, 3, 3, flame_range = 3)
+		to_chat(user, "<span class='notice'>[src] shortcircuits and explodes the [G]!</span>")
+		qdel(G)
+		return 0
 	if(allowed)
 		if(anchored)
 			if(charging || panel_open)
