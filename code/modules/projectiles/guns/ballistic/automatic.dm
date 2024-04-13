@@ -693,7 +693,7 @@
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
 	slowdown = 0.05
 	extra_damage = 22
-	extra_penetration = 0.05
+	extra_penetration = 0.1
 	fire_delay = 4
 	burst_size = 1
 	spread = 0
@@ -942,7 +942,7 @@
 	force = 20
 	slowdown = 0.2
 	mag_type = /obj/item/ammo_box/magazine/garand308
-	extra_damage = 40
+	extra_damage = 30
 	extra_penetration = 0.2
 	fire_delay = 2
 	burst_size = 1
@@ -983,8 +983,7 @@
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. Chambered in 7.62x51."
 	icon_state = "republics_pride"
 	item_state = "scoped308"
-	extra_damage = 45
-	extra_penetration = 0.3
+	extra_damage = 40
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -1003,8 +1002,8 @@
 	item_state = "sks"
 	mag_type = /obj/item/ammo_box/magazine/sks
 	fire_delay = 2
-	extra_damage = 40
-	extra_penetration = 0.1
+	extra_damage = 30
+	extra_penetration = 0.2
 	extra_speed = 100
 	bayonet_state = "bayonet"
 	knife_x_offset = 24
@@ -1029,7 +1028,7 @@
 	extra_speed = 800
 	extra_penetration = 0.2
 	extra_damage = 35
-	slowdown = 0.4
+	slowdown = 0.3
 	zoom_amt = 10
 	zoom_out_amt = 13
 	semi_auto = TRUE
@@ -1054,7 +1053,7 @@
 	icon_state = "venator_sniper"
 	item_state = "venator_sniper"
 	fire_delay = 6
-	slowdown = 0.3
+	slowdown = 0.2
 	zoom_amt = 15
 	zoom_out_amt = 17
 	extra_penetration = 0.2
@@ -1102,7 +1101,7 @@
 	fire_delay = 2.5
 	slowdown = 0.35
 	spread = 10
-	extra_damage = 25
+	extra_damage = 24
 	recoil = 0.1
 	is_automatic = TRUE
 	automatic = 1
@@ -1290,7 +1289,7 @@
 	icon_state = "fnfal"
 	item_state = "fnfal"
 	force = 20
-	extra_damage = 28
+	extra_damage = 24
 	extra_penetration = 0.1
 	extra_speed = 400
 	fire_delay = 3.5
@@ -1317,7 +1316,7 @@
 	force = 24 //club
 	slowdown = 1.5 //really goddamn big
 	autofire_shot_delay = 2.3
-	extra_damage = 30
+	extra_damage = 28
 	extra_penetration = 0.2
 	spread = 10
 	recoil = 0.3
@@ -1485,7 +1484,7 @@
 	item_state = "sniper"
 	slot_flags = SLOT_BACK
 	mag_type = /obj/item/ammo_box/magazine/m2mm
-	extra_damage = 50
+	extra_damage = 30
 	burst_size = 1
 	fire_delay = 10
 	zoomable = TRUE

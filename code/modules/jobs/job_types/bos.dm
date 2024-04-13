@@ -92,8 +92,8 @@ Head Paladin
 	exp_requirements = 600
 	
 	loadout_options = list(
-	/datum/outfit/loadout/hpa, //Laser Gatling, Super Sledge
-	/datum/outfit/loadout/hpb, //Tribeam, Powerfist
+	/datum/outfit/loadout/hpa, //Laser Gatling
+	/datum/outfit/loadout/hpb, //Bozar
 	/datum/outfit/loadout/hpc //14mm pistol, Shield, Pre-war Ripper
 	)
 
@@ -124,8 +124,8 @@ Head Paladin
 /datum/outfit/loadout/hpa
 	name = "Heavy Weapons Head Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/m72 = 1,
-		/obj/item/ammo_box/magazine/m2mm = 2,
+		/obj/item/minigunpack = 1,
+		/obj/item/stock_parts/cell/ammo/ecp = 3,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2
 		)
@@ -253,8 +253,8 @@ Head Knight
 /datum/outfit/loadout/hka
 	name = "Sniper Head Knight"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/rifle/mag/antimateriel = 1,
-		/obj/item/ammo_box/magazine/amr = 2
+		/obj/item/gun/ballistic/automatic/marksman/sniper = 1,
+		/obj/item/ammo_box/magazine/w308 = 2
 		)
 
 /datum/outfit/loadout/hkb
@@ -362,8 +362,8 @@ Paladin
 /datum/outfit/loadout/paladinc
 	name = "Heavy Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/gun/ballistic/automatic/lsw = 1,
+		/obj/item/ammo_box/magazine/m556/rifle = 3,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,
@@ -374,8 +374,8 @@ Paladin
 /datum/outfit/loadout/paladind
 	name = "Heavy Senior Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/scatter = 1,
-		/obj/item/stock_parts/cell/ammo/mfc = 3,
+		/obj/item/gun/ballistic/automatic/lsw = 1,
+		/obj/item/ammo_box/magazine/m556/rifle = 3,
 		/obj/item/gun/energy/laser/wattz/magneto = 1,
 		/obj/item/stock_parts/cell/ammo/ec = 2,
 		/obj/item/clothing/suit/armor/f13/power_armor/t51b/bos = 1,

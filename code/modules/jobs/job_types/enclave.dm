@@ -237,7 +237,7 @@
 
 /datum/outfit/loadout/gysergeantrifle
 	name = "Support Sergeant"
-	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine/worn
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m5mm = 4,
 		/obj/item/ammo_box/m5mmbox/shock = 1,
