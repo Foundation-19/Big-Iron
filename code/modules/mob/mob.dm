@@ -313,6 +313,9 @@
 //view() but with a signal, to allow blacklisting some of the otherwise visible atoms.
 /mob/proc/fov_view(dist = world.view)
 	. = view(dist, src)
+	if(client)
+		if(client.eye != src)
+			. = view(dist, client.eye)
 	SEND_SIGNAL(src, COMSIG_MOB_FOV_VIEW, .)
 
 /**
@@ -399,7 +402,7 @@
 	set name = "Point To"
 	set category = "Object"
 
-	if(!src || !isturf(src.loc) || !(A in view(src.loc)))
+	if(!src || !isturf(src.loc))
 		return FALSE
 	if(istype(A, /obj/effect/temp_visual/point))
 		return FALSE
