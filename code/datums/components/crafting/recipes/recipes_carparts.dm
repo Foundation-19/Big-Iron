@@ -23,6 +23,18 @@
 	category = CAT_CARPARTS
 	subcategory = CAT_CAREQUIP
 
+/datum/crafting_recipe/carpart/stereo
+	name = "Mounted Stereo"
+	result = /obj/item/mecha_parts/mecha_equipment/stereo
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+	/obj/item/stack/crafting/metalparts = 10,
+	/obj/item/circuitboard/machine/jukebox = 1,
+	/obj/item/stack/rods = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 90
+	category = CAT_CARPARTS
+	subcategory = CAT_CAREQUIP
+
 /datum/crafting_recipe/carpart/Car_engine
 	name = "Car Engine"
 	result = /obj/item/mecha_parts/part/Car_engine

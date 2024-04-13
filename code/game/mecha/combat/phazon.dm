@@ -88,7 +88,7 @@
 	strafing_action.Remove(user)
 	zoom_action.Remove(user)
 	eject_action.Remove(user)
-	landing_action.Grant(user)
+	landing_action.Remove(user)
 	//rotorup_action.Remove(user)
 	//rotordown_action.Remove(user)
 
@@ -181,7 +181,7 @@
 	zoom_action.Remove(user)
 	eject_action.Remove(user)
 	smoke_action.Remove(user)
-	landing_action.Grant(user)
+	landing_action.Remove(user)
 	//rotorup_action.Remove(user)
 	//rotordown_action.Remove(user)
 
@@ -262,7 +262,7 @@
 	strafing_action.Remove(user)
 	zoom_action.Remove(user)
 	eject_action.Remove(user)
-	landing_action.Grant(user)
+	landing_action.Remove(user)
 	//rotorup_action.Remove(user)
 	//rotordown_action.Remove(user)
 
@@ -337,7 +337,7 @@
 	strafing_action.Remove(user)
 	zoom_action.Remove(user)
 	eject_action.Remove(user)
-	landing_action.Grant(user)
+	landing_action.Remove(user)
 	//rotorup_action.Remove(user)
 	//rotordown_action.Remove(user)
 
@@ -401,6 +401,7 @@
 	zoom_action.Grant(user, src)
 	eject_action.Grant(user, src)
 	smoke_action.Grant(user, src)
+	landing_action.Grant(user, src)
 	//rotorup_action.Grant(user, src)
 	//rotordown_action.Grant(user, src)
 
@@ -413,6 +414,7 @@
 	zoom_action.Remove(user)
 	eject_action.Remove(user)
 	smoke_action.Remove(user)
+	landing_action.Remove(user, src)
 	//rotorup_action.Remove(user)
 	//rotordown_action.Remove(user)
 
