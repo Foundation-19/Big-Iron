@@ -169,8 +169,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_CHANGE_IDS, ACCESS_NCR3, ACCESS_NCR4)
 
 	loadout_options = list(
-		/datum/outfit/loadout/captainbackline,	// Commander's Coat
-		/datum/outfit/loadout/captainfrontline // Captain's Armor
+		/datum/outfit/loadout/captainbackline,	// R84
+		/datum/outfit/loadout/captainfrontline // Court Martial
 		)
 
 /datum/outfit/job/ncr/f13captain	// Binoculars, Trench knife
@@ -246,11 +246,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_NCR3)
 
 	loadout_options = list(
-		/datum/outfit/loadout/LTbackline,	// Commander's Coat
-		/datum/outfit/loadout/LTfrontline // Captain's Armor
+		/datum/outfit/loadout/LTbackline,	// NCR Golf-Club
+		/datum/outfit/loadout/LTfrontline // Republic Pride
 		)
 
-/datum/outfit/job/ncr/f13lieutenant		// Republic's Pride, Binoculars, Bayonet, 9mm pistol
+/datum/outfit/job/ncr/f13lieutenant		// Binoculars, Bayonet, 9mm pistol
 	name = "NCR Lieutenant"
 	jobtype	= /datum/job/ncr/f13lieutenant
 	id = /obj/item/card/id/dogtag/ncrlieutenant
@@ -423,8 +423,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
 
 	loadout_options = list(
-		/datum/outfit/loadout/sergeantrifleman,
-		/datum/outfit/loadout/sergeantscout
+		/datum/outfit/loadout/sergeantrifleman, // R91 + Bowie Knife
+		/datum/outfit/loadout/sergeantscout // Neostead + Bowie Knife
 		)
 
 /datum/outfit/job/ncr/f13sergeant
@@ -452,11 +452,11 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	
 /datum/outfit/loadout/sergeantscout
 	name = "Lead Scout"
-	suit_store = /obj/item/gun/ballistic/automatic/marksman
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
 	head = /obj/item/clothing/head/f13/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m556/rifle = 2,
+		/obj/item/ammo_box/shotgun/buck = 3,
 		/obj/item/storage/box/ration/menu_one = 1,
 		/obj/item/melee/onehanded/knife/bowie = 1,
 		/obj/item/binoculars = 1
@@ -560,7 +560,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	loadout_options = list( // ALL: Binoculars, Bowie knife, Sequoia
 		/datum/outfit/loadout/vrclassic, // DKS
 		/datum/outfit/loadout/vrlite, // Brush
-		/datum/outfit/loadout/vrshotgunner // Lever Action Shotgun
+		/datum/outfit/loadout/vrshotgunner // neostead Shotgun
 		)
 
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC, ACCESS_CHANGE_IDS, ACCESS_NCR3, ACCESS_NCR4)
@@ -737,7 +737,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	outfit = /datum/outfit/job/ncr/f13heavytrooper
 
 	loadout_options = list(
-		/datum/outfit/loadout/shockht,	// BAR, nobody uses the citykiller lol
+		/datum/outfit/loadout/shockht,	// G11
 		/datum/outfit/loadout/supportht, // R84
 		/datum/outfit/loadout/meleeht    // Rocket Sledge, lighter armor in exchange for mobility and melee
 		)
@@ -764,8 +764,8 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 /datum/outfit/loadout/shockht
 	name = "Shock Heavy Trooper"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/bar = 1,
-		/obj/item/ammo_box/magazine/m762/ext = 2,
+		/obj/item/gun/ballistic/automatic/g11 = 1,
+		/obj/item/ammo_box/magazine/m473  = 2,
 		/obj/item/storage/box/ration/menu_four = 1
 		)
 
@@ -811,7 +811,7 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	loadout_options = list( // ALL: Trench tool, Limited blueprints
 		/datum/outfit/loadout/combatengineerflamethrower, // Flamethrower, 9mm pistol
-		/datum/outfit/loadout/combatengineerdestroyer // Hunting Shotgun, C4 Explosive, Extra Materials
+		/datum/outfit/loadout/combatengineerdestroyer // Grenade Rifle, C4 Explosive, HE and Fag Nades, Bomb Book Basic
 		)
 
 	access = list(ACCESS_NCR, ACCESS_NCR_ARMORY, ACCESS_NCR1, ACCESS_NCR2, ACCESS_NCR_COMMAND, ACCESS_PUBLIC)
@@ -849,9 +849,10 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/revolver/grenadelauncher
 	backpack_contents = list(
 		/obj/item/storage/box/ration/menu_ten = 1,
-		/obj/item/ammo_box/a40mm = 2,
+		/obj/item/ammo_box/a40mm = 1,
 		/obj/item/grenade/plastic/c4 = 1,
-		/obj/item/book/granter/crafting_recipe/blueprint/trapper = 1,
+		/obj/item/grenade/f13/frag = 3,
+		/obj/item/grenade/f13/he_grenade = 4,
 		/obj/item/book/granter/trait/explosives = 1
 		)
 
@@ -979,9 +980,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	loadout_options = list(
 		/datum/outfit/loadout/corporalpathfinder,			 // Service Rifle
-		/datum/outfit/loadout/corporalcqc,					 // Hunting Shotgun
-		/datum/outfit/loadout/corporaldesignatedmarksman,	 // Hunting Rifle + Scope
-		/datum/outfit/loadout/corporalraider				 // Melee Monkey
+		/datum/outfit/loadout/corporalcqc,					 // Trench Shotgun
+		/datum/outfit/loadout/corporaldesignatedmarksman,	 // Scout Carbine + Scope
+		/datum/outfit/loadout/corporalraider				 // Big Leagues + trench shovel + armor
 		)
 
 /datum/outfit/job/ncr/f13corporal
@@ -1052,9 +1053,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 
 	loadout_options = list(
 		/datum/outfit/loadout/trooperrifleman, // Service Rifle, Bayonet 
-		/datum/outfit/loadout/troopermechanics,
-		/datum/outfit/loadout/trooperscout,
-		/datum/outfit/loadout/trooperconscript
+		/datum/outfit/loadout/troopermechanics, // trench shotgun, Bayo, toolbox, 30 sandbags
+		/datum/outfit/loadout/trooperscout, // hunting rifle, scope, bayo
+		/datum/outfit/loadout/trooperconscript // varmint, bayo
 		)
 
 /datum/outfit/job/ncr/f13trooper
@@ -1087,7 +1088,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 3,
 		/obj/item/melee/onehanded/knife/bayonet = 1,
-		/obj/item/ammo_box/shotgun/incendiary = 1,
 		/obj/item/clothing/under/f13/mechanic = 1,
 		/obj/item/storage/toolbox/mechanical = 1,
 		/obj/item/stack/sheet/mineral/sandbags = 30,
