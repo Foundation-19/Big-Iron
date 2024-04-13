@@ -65,8 +65,6 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 			heirloom_type = /obj/item/lighter/gold
 		if(quirk_holder.mind.assigned_role == "Den Doctor")
 			heirloom_type = /obj/item/card/id/dogtag/MDfakepermit
-		if(quirk_holder.mind.assigned_role == "Farmer")
-			heirloom_type = pick(/obj/item/hatchet, /obj/item/shovel/spade, /obj/item/toy/plush/beeplushie)
 		if(quirk_holder.mind.assigned_role == "Tribal")
 			heirloom_type = pick(/obj/item/clothing/accessory/skullcodpiece/fake, /obj/item/clothing/accessory/talisman, /obj/item/warpaint_bowl) 
 	if(!heirloom_type)
