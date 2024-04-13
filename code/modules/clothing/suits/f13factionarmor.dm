@@ -196,7 +196,7 @@
 /datum/component/storage/concrete/pockets/tiny/legion
 	max_items = 3
 
-/obj/item/clothing/suit/armor/f13/legion/Initialize()
+/obj/item/clothing/suit/armor/f13/legion/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
 
@@ -366,6 +366,8 @@
 	armor = list("melee" = 60, "bullet" = 50, "laser" = 55, "energy" = 15, "bomb" = 40, "bio" = 55, "rad" = 25, "fire" = 55, "acid" = 15, "wound" = 30)
 	slowdown = 1.5
 
+/obj/item/clothing/suit/armor/f13/legion/legionsalvaged/ComponentInitialize()
+	return
 /obj/item/clothing/suit/armor/f13/slavelabor
 	name = "old leather strips"
 	desc = "Worn leather strips, used as makeshift protection from chafing and sharp stones by labor slaves."
