@@ -216,10 +216,10 @@
 
 /datum/outfit/loadout/denchemist
 	name = "Chemist"
-	r_hand = /obj/item/gun/ballistic/automatic/pistol/type17
+	r_hand = /obj/item/gun/ballistic/revolver/chinese
 	suit = /obj/item/clothing/suit/toggle/labcoat/chemist
 	backpack_contents = list(
-						/obj/item/ammo_box/magazine/m10mm_adv/simple = 1,
+						/obj/item/ammo_box/m10mm_strip = 1,
 						/obj/item/grenade/chem_grenade = 1,
 						/obj/item/clothing/mask/gas = 1,
 						/obj/item/reagent_containers/glass/beaker/large = 2
@@ -1299,4 +1299,3 @@ Raider
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 */
-

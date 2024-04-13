@@ -104,12 +104,14 @@
 	can_automatic = FALSE
 
 
-//Type 17								Keywords: 10mm, Semi-auto, 12/24 round magazine. Special modifiers: damage +1, spread +1
-/obj/item/gun/ballistic/automatic/pistol/type17
+//Type 17								Keywords: 10mm, psuedo-revolver, loads from stripper clips, Special modifiers: damage +1, spread +1
+/obj/item/gun/ballistic/revolver/chinese
 	name = "chinese type-17 pistol"
 	desc = "Chinese military sidearm at the time of the Great War. The ones around are old and worn, but somewhat popular due to the long barrel and rechambered in 10mm after the original ammo ran dry decades ago."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "chinapistol"
-	mag_type = /obj/item/ammo_box/magazine/m10mm_adv/simple
+	casing_ejector = TRUE
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev6520/china
 	fire_delay = 1
 	extra_damage = 24
 	recoil = 0.1
@@ -117,6 +119,11 @@
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
 
+/obj/item/gun/ballistic/revolver/chinese/update_icon_state()
+	if(!magazine || !magazine.ammo_count(0))
+		icon_state = "[initial(icon_state)]-e"
+	else
+		icon_state = "[initial(icon_state)]"
 
 //Browning Hi-power						Keywords: 9mm, Semi-auto
 /obj/item/gun/ballistic/automatic/pistol/ninemil

@@ -143,12 +143,12 @@
 
 /obj/item/melee/onehanded/chinesesword //[low damage, low wounding, very high block]
 	name = "chinese officer's sword"
-	desc = "A sword usually issued to chinese officers during the great war. Despite being ntended for ceremonial use, it's still very well made and functional. Not very heavy but in trained hands its an incredibly agile weapon."
+	desc = "A sword usually issued to chinese officers during the great war. Despite being intended for ceremonial use, it's still very well made and functional. Not very heavy but in trained hands its an incredibly agile weapon."
 	icon = 'icons/fallout/objects/melee/melee.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/melee1h_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/melee1h_righthand.dmi'
 	icon_state = "chinasword"
-	item_state = "spathasmith" //placeholder
+	item_state = "spatha" //placeholder
 	force = 30 //worse than scrap sabre
 	wound_bonus = WOUNDING_BONUS_MODEST
 	block_chance = 25 //perfectly balanced

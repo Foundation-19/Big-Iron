@@ -577,6 +577,18 @@
 /obj/item/ammo_box/l10mm/empty
 	start_empty = 1
 
+/obj/item/ammo_box/m10mm_strip
+	name = "10mm clip"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "10mm_strip"
+	ammo_type = /obj/item/ammo_casing/c10mm
+	caliber = "10mm"
+	max_ammo = 10
+	multiple_sprites = 1
+
+/obj/item/ammo_box/m10mm_strip/empty
+	start_empty = 1
+
 
 //.357
 /obj/item/ammo_box/a357

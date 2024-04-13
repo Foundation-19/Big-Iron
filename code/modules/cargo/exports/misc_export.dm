@@ -33,7 +33,7 @@
 	unit_name = "light pistols"
 	export_types = list(
 		/obj/item/gun/ballistic/automatic/pistol/n99,
-		/obj/item/gun/ballistic/automatic/pistol/type17,
+		/obj/item/gun/ballistic/revolver/chinese,
 		/obj/item/gun/ballistic/automatic/pistol/ninemil,
 		/obj/item/gun/ballistic/automatic/pistol/pistol22,
 		/obj/item/gun/ballistic/automatic/pistol/beretta/automatic,
