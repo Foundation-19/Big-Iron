@@ -1114,3 +1114,72 @@
 		if(initial(liber.filterToxins))
 			liber.filterToxins = TRUE
 	L.metabolism_efficiency += metab_inibition
+
+/datum/reagent/toxin/radscorp
+	name = "Radscorpion Venom"
+	description = "Venom extracted from a radscorpion."
+	color = "#8C7918" // rgb: 140, 121, 24
+	taste_description = "sweetness"
+	taste_mult = 1.2
+	value = REAGENT_VALUE_COMMON //Encouraging people to mix toxins for reasons beyond harming each other or mixing reagents such as pen acid.
+	toxpwr = 1.3
+	ghoulfriendly = TRUE
+
+/datum/reagent/toxin/silversting
+	name = "Silver Sting"
+	description = "A poison made from adding silver dust to radscorpion venom."
+	color = "#F0DE97" // rgb: 240, 222, 151
+	taste_description = "metallic sweetness"
+	taste_mult = 1.2
+	value = REAGENT_VALUE_COMMON //Encouraging people to mix toxins for reasons beyond harming each other or mixing reagents such as pen acid.
+	toxpwr = 1.5
+	ghoulfriendly = TRUE
+	
+/datum/reagent/toxin/silversting/on_mob_add(mob/living/carbon/human/M)
+	..()
+	if(isliving(M))
+		M.adjustStaminaLoss(90)
+
+/datum/reagent/toxin/bleakvenom
+	name = "Bleak Venom"
+	description = "A concentrated and highly toxic poison made from radscorpion and cazador venoms."
+	color = "#3D2D18" // rgb: 61, 45, 24
+	taste_description = "bleakness"
+	taste_mult = 1.5
+	value = REAGENT_VALUE_COMMON //Encouraging people to mix toxins for reasons beyond harming each other or mixing reagents such as pen acid.
+	toxpwr = 2.7
+	ghoulfriendly = TRUE
+
+/datum/reagent/toxin/motherdarkness
+	name = "Mother Darkness"
+	description = "A hallucinogenic poison made by mixing radscorpion and cazador venoms with datura tea."
+	color = "#2E2236" // rgb: 46, 34, 54
+	taste_description = "numbing bitterness"
+	taste_mult = 4
+	value = REAGENT_VALUE_COMMON //Encouraging people to mix toxins for reasons beyond harming each other or mixing reagents such as pen acid.
+	toxpwr = 1.7
+	ghoulfriendly = TRUE
+	
+/datum/reagent/toxin/motherdarkness/on_mob_add(mob/living/carbon/human/M)
+	..()
+	if(isliving(M))
+		M.adjustStaminaLoss(75)
+
+/datum/reagent/toxin/motherdarkness/on_mob_life(mob/living/carbon/M)
+	M.blur_eyes(3)
+	M.hallucination += 5
+	return ..()
+
+/datum/reagent/toxin/darkdatura
+	name = "Dark Datura"
+	description = "A tribal poison made of datuta tea and acetone."
+	color = "#E3E0DA" // rgb: 227, 224, 218
+	taste_description = "dirt"
+	taste_mult = 1.2
+	value = REAGENT_VALUE_COMMON //Encouraging people to mix toxins for reasons beyond harming each other or mixing reagents such as pen acid.
+	toxpwr = 1.2
+	ghoulfriendly = TRUE
+
+/datum/reagent/toxin/darkdatura/on_mob_life(mob/living/carbon/M)
+	M.blur_eyes(3)
+	..()
