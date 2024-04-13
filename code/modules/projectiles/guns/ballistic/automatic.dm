@@ -1028,10 +1028,10 @@
 	burst_size = 1
 	extra_speed = 800
 	extra_penetration = 0.2
-	extra_damage = 35
+	extra_damage = 45
 	slowdown = 0.4
-	zoom_amt = 10
-	zoom_out_amt = 13
+	zoom_amt = 13
+	zoom_out_amt = 16
 	semi_auto = TRUE
 	can_automatic = FALSE
 	can_bayonet = FALSE
