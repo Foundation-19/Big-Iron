@@ -122,3 +122,31 @@
 	results = list(/datum/reagent/toxin/spewium = 5)
 	required_reagents = list (/datum/reagent/toxin/skewium = 1, /datum/reagent/consumable/ethanol/buffalo = 2, /datum/reagent/consumable/ethanol/yellowpulque = 2)
 	mix_message = "<span class='danger'>The mixture gives off a nauseating odor.</span>"
+
+/datum/chemical_reaction/silversting
+	name = "Silver Sting"
+	id = /datum/reagent/toxin/silversting
+	results = list(/datum/reagent/toxin/silversting = 3)
+	required_reagents = list (/datum/reagent/toxin/radscorp = 2, /datum/reagent/silver = 1)
+	mix_message = "<span class='danger'>The mixture shines in the light.</span>"
+
+/datum/chemical_reaction/bleakvenom
+	name = "Bleak Venom"
+	id = /datum/reagent/toxin/bleakvenom
+	results = list(/datum/reagent/toxin/bleakvenom = 6)
+	required_reagents = list (/datum/reagent/toxin/radscorp = 3, /datum/reagent/toxin/cazador_venom = 3)
+	mix_message = "<span class='danger'>The mixture hisses and inspires hopelessness.</span>"
+
+/datum/chemical_reaction/motherdarkness
+	name = "Mother Darkness"
+	id = /datum/reagent/toxin/motherdarkness
+	results = list(/datum/reagent/toxin/motherdarkness = 5)
+	required_reagents = list (/datum/reagent/toxin/radscorp = 4, /datum/reagent/consumable/ethanol/daturatea = 1)
+	mix_message = "<span class='danger'>The mixture fizzes and bubbles as it darkens.</span>"
+
+/datum/chemical_reaction/darkdatura
+	name = "Dark Datura"
+	id = /datum/reagent/toxin/darkdatura
+	results = list(/datum/reagent/toxin/darkdatura = 10)
+	required_reagents = list (/datum/reagent/consumable/ethanol/daturatea = 8, /datum/reagent/acetone = 2)
+	mix_message = "<span class='danger'>The mixture bubbles and gives off noxious fumes.</span>"
