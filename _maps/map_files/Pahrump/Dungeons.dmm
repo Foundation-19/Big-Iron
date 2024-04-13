@@ -12061,11 +12061,10 @@
 "iah" = (
 /obj/machinery/porta_turret/syndicate{
 	faction = list("SecretService");
-	projectilesound = 'sound/f13weapons/bozar_fire.ogg';
-	projectiletype = /obj/item/projectile/bullet/a556/ap/simple;
+	lethal_projectile_sound = 'sound/f13weapons/bozar_fire.ogg';
+	lethal_projectile = /obj/item/projectile/bullet/a556/ap/simple;
 	name = "Equalized Defensive Turret";
 	desc = "A ballistic burst-fire auto-turret, capable of penetrating armor with its 5.56 AP munitions. The plating is adjusted for all-around protection, whether it be physical impacts, ballistics, lasers or energy clots. The armor is not adjusted for explosive blasts.";
-	extra_projectiles = 1;
 	color = "#8a73ff";
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90)
 	},
@@ -12201,11 +12200,10 @@
 "iet" = (
 /obj/machinery/porta_turret/syndicate{
 	faction = list("SecretService");
-	projectilesound = 'sound/f13weapons/bozar_fire.ogg';
-	projectiletype = /obj/item/projectile/bullet/a556/ap/simple;
+	lethal_projectile_sound = 'sound/f13weapons/bozar_fire.ogg';
+	lethal_projectile = /obj/item/projectile/bullet/a556/ap/simple;
 	name = "Equalized Defensive Turret";
 	desc = "A ballistic burst-fire auto-turret, capable of penetrating armor with its 5.56 AP munitions. The plating is adjusted for all-around protection, whether it be physical impacts, ballistics, lasers or energy clots. The armor is not adjusted for explosive blasts.";
-	extra_projectiles = 1;
 	color = "#8a73ff";
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90)
 	},
@@ -28365,7 +28363,7 @@
 	pixel_y = 5;
 	icon_state = "paper_words";
 	name = "Unity History - 22XX";
-	info = "The Unity's history spans decades back. During its formative years, a massive outbreak of FEV was distributed throughout the western coast. Most members of The Unity were brought together under an individual dubbed "TheMaster." The Unity disbanded after its founders death, with no suitable replacement most of its members are without a clear goal."
+	info = "The Unity's history spans decades back. During its formative years, a massive outbreak of FEV was distributed throughout the western coast. Most members of The Unity were brought together under an individual dubbed \"TheMaster.\" The Unity disbanded after its founders death, with no suitable replacement most of its members are without a clear goal."
 	},
 /obj/item/paper{
 	pixel_x = 8;
