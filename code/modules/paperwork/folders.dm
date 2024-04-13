@@ -11,6 +11,15 @@
 	user.visible_message("<span class='suicide'>[user] begins filing an imaginary death warrant! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return OXYLOSS
 
+/obj/item/folder/Initialize()
+	. = ..()
+	var/turf/here = get_turf(src)
+	for(var/obj/item/paper/I in here)
+		if(istype(I, /obj/item/paper) || istype(I, /obj/item/photo) || istype(I, /obj/item/documents))
+			if(!I.forceMove(src))
+				return
+			update_icon()
+
 /obj/item/folder/blue
 	desc = "A blue folder."
 	icon_state = "folder_blue"
