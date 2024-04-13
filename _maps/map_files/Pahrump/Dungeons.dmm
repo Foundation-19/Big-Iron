@@ -349,6 +349,14 @@
 	icon_state = "reddirtyfull"
 	},
 /area/awaymission/caves)
+"ali" = (
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen/fourcolor,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
 "all" = (
 /obj/machinery/computer/operating{
 	dir = 1
@@ -356,6 +364,45 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/tunnel)
+"alw" = (
+/obj/machinery/light/broken{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/building)
+"alU" = (
+/obj/structure/table/reinforced,
+/obj/item/wrench{
+	pixel_x = 4
+	},
+/obj/item/screwdriver/power{
+	pixel_x = -13;
+	pixel_y = 6
+	},
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
+"alW" = (
+/obj/structure/barricade/sandbags,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "outerpavement";
+	dir = 4
+	},
+/area/f13/wasteland)
+"ank" = (
+/obj/structure/table/greyscale,
+/obj/item/pizzabox/meat{
+	pixel_y = 8
+	},
+/turf/open/floor/f13,
+/area/f13/building)
+"anv" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
 "anP" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -514,10 +561,49 @@
 	icon_state = "horizontaltopborderbottomright"
 	},
 /area/awaymission/caves)
+"aul" = (
+/obj/structure/chair/comfy/bench,
+/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/area/f13/building)
+"auw" = (
+/obj/machinery/light/broken{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant{
+	speak = list("I SHOOT THEM NOW!","I'LL FIGHT THEM!","GRRRRRR!","ARGH!","NNNNNGH!","HMPH!","ARRRRR!","FOR THE SERVER MEN!","I FIGHT YOU!","I PUT MANY HOLES IN YOU, HOOMEN!","HARHARHARRR RUN!");
+	faction = list("hostile","supermutant","SecretService");
+	extra_projectiles = 2;
+	name = "Unity Remnant Rifleman";
+	color = "#73dcff";
+	desc = "A blue variant of the standard Super Mutant, a nightkin equipped with stealthboys.  This one is holding an Assault Rifle."
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
+"avO" = (
+/obj/machinery/light,
+/obj/structure/closet,
+/obj/item/reagent_containers/glass/beaker/waterbottle/large,
+/obj/item/clothing/under/rank/prisoner,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
 "awb" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/rock,
 /area/f13/tunnel)
+"awo" = (
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = 70;
+	name = "hospital-office gate button";
+	pixel_y = 2;
+	pixel_x = -4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
 "awP" = (
 /obj/structure/debris/v3,
 /turf/open/floor/plating/tunnel,
@@ -1163,6 +1249,47 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/bunker)
+"aWn" = (
+/obj/structure/bookshelf,
+/obj/item/book/granter/trait/midsurgery,
+/turf/open/floor/carpet/blue,
+/area/f13/building)
+"aWA" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel/floorgrime{
+	color = "#cccccc"
+	},
+/area/f13/building)
+"aXy" = (
+/obj/structure/railing{
+	pixel_y = -2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
+"aXC" = (
+/turf/closed/indestructible/riveted,
+/area/f13/building)
+"aXF" = (
+/obj/machinery/door/poddoor{
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100);
+	id = 90;
+	name = "admin-lobby transition point";
+	max_integrity = 2500
+	},
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
+"aXM" = (
+/obj/structure/fluff/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/plasteel/floorgrime{
+	color = "#cccccc"
+	},
+/area/f13/building)
 "aXW" = (
 /obj/machinery/light{
 	dir = 1
@@ -1492,6 +1619,12 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"bjC" = (
+/obj/structure/closet/crate/footlocker{
+	pixel_x = 4
+	},
+/turf/open/floor/carpet/black,
+/area/f13/building)
 "bjK" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13{
@@ -1703,6 +1836,21 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"bpV" = (
+/obj/machinery/light/broken{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
+"bqf" = (
+/obj/structure/table/reinforced,
+/obj/item/electronic_assembly/large/terminal{
+	pixel_y = 8
+	},
+/turf/open/floor/f13,
+/area/f13/building)
 "bqi" = (
 /mob/living/simple_animal/hostile/megafauna/behemoth{
 	aggro_vision_range = 28;
@@ -2159,6 +2307,42 @@
 	icon_state = "verticaloutermaintop"
 	},
 /area/awaymission/caves)
+"bIp" = (
+/obj/structure/table/optable,
+/obj/item/tank/internals/anesthetic,
+/obj/item/tank/internals/oxygen,
+/turf/open/floor/plasteel/floorgrime{
+	color = "#cccccc"
+	},
+/area/f13/building)
+"bJM" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/floorgrime{
+	color = "#909090"
+	},
+/area/f13/building)
+"bJN" = (
+/obj/structure/closet/crate,
+/obj/item/stack/crafting/metalparts/five,
+/obj/item/stack/crafting/metalparts/three,
+/obj/item/stack/sheet/metal/five,
+/obj/item/stack/sheet/metal/five,
+/obj/item/stack/sheet/metal/ten,
+/obj/item/stack/ore/gold,
+/obj/item/stack/ore/gold,
+/obj/item/stack/ore/gold,
+/obj/item/stack/ore/gold,
+/obj/item/stack/ore/gold,
+/obj/item/stack/ore/gold,
+/obj/item/stack/ore/gold,
+/obj/item/stack/ore/coal,
+/obj/item/stack/ore/coal,
+/turf/open/floor/mineral/plastitanium{
+	name = "cargo floor"
+	},
+/area/f13/building)
 "bKh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/bars{
@@ -2169,6 +2353,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/tunnel)
+"bKp" = (
+/obj/effect/meteor/dust{
+	name = "rock debris"
+	},
+/turf/open/floor/plating/f13/outside/road,
+/area/f13/wasteland)
 "bKE" = (
 /obj/structure/table/reinforced,
 /obj/item/trash/f13/mre{
@@ -2180,6 +2370,25 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"bLq" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/gun/ballistic/automatic/g11,
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/obj/structure/fluff/railing/corner{
+	dir = 1;
+	desc = "Basic lighting mount intended to connect two different light tubes together.";
+	name = "lighting corner mount"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
 "bLt" = (
 /obj/structure/timeddoor,
 /obj/machinery/door/airlock/hatch,
@@ -2434,6 +2643,39 @@
 	},
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"bTl" = (
+/mob/living/simple_animal/hostile/raider/thief{
+	maxHealth = 200;
+	speak = list("Lets kite these motherfuckers!","Think you can tango with me?!","It takes two to tango, lets dance!","Ever had your throat slashed?","Forward pressure, come on!","How about a dozen stabs in the gut?!","Now!","Do it!","Closing in!","21 foot rule ain't savin' you!","Go for the arteries!","Come here, asshole!","SEMPER FI!","Where are you going, coward?!","You're a dead man!","I got 'em!");
+	speak_emote = list("assume striking stance","yells","shouts","calls out","battle cries");
+	speak_chance = 2;
+	speed = 0;
+	loot = list(/obj/item/melee/onehanded/knife/survival,/obj/effect/mob_spawn/human/corpse/syndicatesoldier);
+	faction = list("SecretService");
+	health = 200;
+	icon = 'icons/mob/simple_human.dmi';
+	icon_dead = "syndicate_dead";
+	icon_gib = "syndicate_gib";
+	icon_living = "syndicate_stormtrooper_knife";
+	icon_state = "syndicate_stormtrooper_knife";
+	name = "Secret Service Skirmisher";
+	desc = "He wants it up close and personal. That's how he'll have it.";
+	melee_damage_upper = 35;
+	melee_damage_lower = 28;
+	bare_wound_bonus = 10;
+	attack_verb_continuous = "slashes";
+	attack_verb_simple = "slash";
+	del_on_death = 1;
+	emote_taunt_sound = list('sound/f13npc/secretserviceknife/attack1.ogg','sound/f13npc/secretserviceknife/attack2.ogg','sound/f13npc/secretserviceknife/attack3.ogg','sound/f13npc/secretserviceknife/attack4.ogg','sound/f13npc/secretserviceknife/attack5.ogg','sound/f13npc/secretserviceknife/attack6.ogg','sound/f13npc/secretserviceknife/attack7.ogg','sound/f13npc/secretserviceknife/attack8.ogg','sound/f13npc/secretserviceknife/attack9.ogg','sound/f13npc/secretserviceknife/attack10.ogg','sound/f13npc/secretserviceknife/attack11.ogg','sound/f13npc/secretserviceknife/attack12.ogg','sound/f13npc/secretserviceknife/attack13.ogg','sound/f13npc/secretserviceknife/attack14.ogg','sound/f13npc/secretserviceknife/attack15.ogg','sound/f13npc/secretserviceknife/attack16.ogg','sound/f13npc/secretserviceknife/attack17.ogg','sound/f13npc/secretserviceknife/attack18.ogg','sound/f13npc/secretserviceknife/attack19.ogg','sound/f13npc/secretserviceknife/attack20.ogg','sound/f13npc/secretserviceknife/attack21.ogg','sound/f13npc/secretserviceknife/attack22.ogg');
+	idlesound = list('sound/f13npc/secretserviceknife/idle1.ogg','sound/f13npc/secretserviceknife/idle2.ogg','sound/f13npc/secretserviceknife/idle3.ogg','sound/f13npc/secretserviceknife/idle4.ogg','sound/f13npc/secretserviceknife/idle5.ogg','sound/f13npc/secretserviceknife/idle6.ogg','sound/f13npc/secretserviceknife/idle7.ogg','sound/f13npc/secretserviceknife/idle8.ogg','sound/f13npc/secretserviceknife/idle9.ogg','sound/f13npc/secretserviceknife/idle10.ogg,'sound/f13npc/secretserviceknife/idle11.ogg','sound/f13npc/secretserviceknife/idle12.ogg','sound/f13npc/secretserviceknife/idle13.ogg','sound/f13npc/secretserviceknife/idle14.ogg','sound/f13npc/secretserviceknife/idle15.ogg);
+	death_sound = list('sound/f13npc/secretserviceknife/death1.ogg','sound/f13npc/secretserviceknife/death2.ogg','sound/f13npc/secretserviceknife/death3.ogg','sound/f13npc/secretserviceknife/death4.ogg');
+	move_resist = 2500;
+	move_to_delay = 2.1
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/building)
 "bTp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2485,6 +2727,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
+"bUk" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/cargocrate,
+/turf/open/floor/plating/f13/outside/road,
+/area/f13/wasteland)
 "bUp" = (
 /mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
@@ -2493,6 +2742,54 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"bUN" = (
+/obj/structure/table,
+/obj/item/flashlight/lamp{
+	pixel_y = 5
+	},
+/turf/open/floor/carpet/black,
+/area/f13/building)
+"bUV" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 24
+	},
+/obj/structure/table/rolling,
+/turf/open/floor/plasteel/darkyellow{
+	name = "floor"
+	},
+/area/f13/building)
+"bVp" = (
+/obj/item/radio/intercom{
+	frequency = 1465;
+	freqlock = 1;
+	pixel_x = -31;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
+"bVG" = (
+/obj/item/radio/intercom{
+	pixel_y = 28;
+	frequency = 1465;
+	freqlock = 1
+	},
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#706891"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
+"bVI" = (
+/obj/machinery/camera/emp_proof{
+	dir = 4;
+	pixel_y = -10
+	},
+/turf/open/floor/f13,
+/area/f13/building)
 "bVP" = (
 /turf/closed/indestructible/rock,
 /area/f13/caves)
@@ -2525,6 +2822,21 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
+"bXi" = (
+/obj/structure/table/wood,
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#706891"
+	},
+/turf/open/floor/plasteel/floorgrime,
+/area/f13/building)
+"bXm" = (
+/obj/machinery/light/broken,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
 "bXo" = (
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
@@ -2774,6 +3086,18 @@
 	},
 /turf/closed/indestructible/rock,
 /area/f13/bunker)
+"cjf" = (
+/obj/item/kirbyplants{
+	icon_state = "plant-06"
+	},
+/turf/open/floor/wood/f13/carpet,
+/area/f13/building)
+"cjJ" = (
+/obj/machinery/door/airlock/security/glass{
+	name = "shooting range"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/area/f13/building)
 "ckF" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/old{
@@ -3139,9 +3463,21 @@
 	icon_state = "housewood3-broken"
 	},
 /area/awaymission/caves)
+"cyd" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
 "cyD" = (
 /turf/closed/indestructible/rock,
 /area/f13/tunnel)
+"cze" = (
+/obj/machinery/vending/snack/blue,
+/turf/open/floor/plasteel/f13/vault_floor/misc/cmo{
+	name = "pristine tiled floor"
+	},
+/area/f13/building)
 "cAt" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -3306,6 +3642,33 @@
 /obj/item/reagent_containers/food/snacks/f13/deathclawegg,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/cave)
+"cGi" = (
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#706891"
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
+"cGq" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/gun/ballistic/automatic/assault_carbine{
+	slowdown = 0.25;
+	name = "lightweight assault carbine";
+	desc = "The U.S. army carbine version of the R91, made by Colt and issued to special forces. Modfications to the weapon frame reduces weapon weight, but adds a slight increase to spread.";
+	spread = 15;
+	extra_damage = 20
+	},
+/obj/item/suppressor,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
 "cGt" = (
 /obj/machinery/light{
 	dir = 4;
@@ -3315,6 +3678,46 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"cGu" = (
+/obj/structure/wreck/trash/four_barrels{
+	pixel_x = 1
+	},
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
+"cGY" = (
+/obj/structure/closet/crate,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/ammo_box/c45,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/building)
+"cHk" = (
+/obj/structure/chair/office,
+/turf/open/floor/plasteel/floorgrime,
+/area/f13/building)
+"cHn" = (
+/obj/structure/fluff/railing/corner{
+	dir = 1;
+	desc = "Basic lighting mount intended to connect two different light tubes together.";
+	name = "lighting corner mount"
+	},
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
+"cIo" = (
+/obj/structure/barricade/sandbags,
+/turf/open/floor/f13,
+/area/f13/building)
 "cIH" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -4833,11 +5236,32 @@
 	icon_state = "dirt"
 	},
 /area/f13/bunker)
+"dIc" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite{
+	name = "floor"
+	},
+/area/f13/building)
+"dIh" = (
+/obj/structure/mirror{
+	pixel_x = -26;
+	pixel_y = -1
+	},
+/turf/open/floor/plating/f13/outside/road,
+/area/f13/building)
 "dIn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
+"dJb" = (
+/obj/structure/chair/folding{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
 "dJe" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/pill/patch/healingpowder,
@@ -5114,6 +5538,22 @@
 	icon_state = "horizontaltopbordertopright"
 	},
 /area/f13/wasteland)
+"dQK" = (
+/obj/structure/cargocrate{
+	pixel_y = 11
+	},
+/turf/open/floor/plating/f13/outside/road,
+/area/f13/wasteland)
+"dQM" = (
+/obj/item/radio/intercom{
+	pixel_y = 28;
+	frequency = 1465;
+	freqlock = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/building)
 "dQO" = (
 /obj/structure/railing{
 	dir = 4
@@ -6046,6 +6486,17 @@
 	name = "cave"
 	},
 /area/f13/tunnel)
+"ews" = (
+/obj/item/radio/intercom{
+	pixel_y = -35;
+	frequency = 1465;
+	freqlock = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
 "ewI" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticaloutermain0"
@@ -6842,6 +7293,16 @@
 /obj/effect/decal/remains/human,
 /turf/open/floor/plating/tunnel,
 /area/f13/building)
+"eVf" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/plasteel/floorgrime,
+/area/f13/building)
+"eVl" = (
+/turf/closed/wall,
+/area/f13/building)
 "eVO" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -6868,6 +7329,48 @@
 	icon_state = "redrustyfull"
 	},
 /area/awaymission/caves)
+"eXa" = (
+/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged{
+	extra_projectiles = 1;
+	faction = list("SecretService");
+	health = 225;
+	icon_state = "syndicate_stormtrooper_smg";
+	icon_living = "syndicate_stormtrooper_smg";
+	icon = 'icons/mob/simple_human.dmi';
+	loot = list(/obj/effect/mob_spawn/human/corpse/syndicatesoldier);
+	attack_sound = 'sound/weapons/punch1.ogg';
+	attack_verb_continuous = "punches";
+	attack_verb_simple = "punch";
+	speak_chance = 2;
+	speak = list("Send ghosts to our position, Cartier!","We've got incoming!","Engaging!","Hard contact!","Where the hell are those ghosts at?!","Cartier, send support ASAP!","Open fire!","That's them!","U.S. military inbound, engage!","Attacking!","Watch my back!","Come on, you sons of bitches!","Open season!","Laying down suppressive fire.","This place is about to get swarmed...","Enemies advancing!","Shut 'em down!","No room for error, lets do it!","I see 'em!");
+	speed = 2;
+	speak_emote = list("aims down the sights of the PDW","yells","shouts","calls out","notifies","reports");
+	maxHealth = 225;
+	name = "Secret Service Minigunner";
+	icon_dead = "syndicate_dead";
+	icon_gib = "syndicate_gib";
+	desc = "Not armed to the teeth but still dangerous. Carries a two-round burst PDW chambered in .45 +P.";
+	melee_damage_upper = 10;
+	melee_damage_lower = 10;
+	projectilesound = 'sound/weapons/gunshot_smg.ogg';
+	aggrosound = 'sound/f13weapons/equipsounds/riflequip.ogg';
+	robust_searching = 1;
+	del_on_death = 1;
+	ranged_cooldown_time = 15;
+	emote_taunt_sound = list('sound/f13npc/secretserviceinf/attack1.ogg','sound/f13npc/secretserviceinf/attack2.ogg','sound/f13npc/secretserviceinf/attack3.ogg','sound/f13npc/secretserviceinf/attack4.ogg','sound/f13npc/secretserviceinf/attack5.ogg','sound/f13npc/secretserviceinf/attack6.ogg','sound/f13npc/secretserviceinf/attack7.ogg','sound/f13npc/secretserviceinf/attack8.ogg','sound/f13npc/secretserviceinf/attack9.ogg','sound/f13npc/secretserviceinf/attack10.ogg','sound/f13npc/secretserviceinf/attack11.ogg','sound/f13npc/secretserviceinf/attack12.ogg','sound/f13npc/secretserviceinf/attack13.ogg','sound/f13npc/secretserviceinf/attack14.ogg','sound/f13npc/secretserviceinf/attack15.ogg','sound/f13npc/secretserviceinf/attack16.ogg','sound/f13npc/secretserviceinf/attack17.ogg','sound/f13npc/secretserviceinf/attack18.ogg','sound/f13npc/secretserviceinf/attack19.ogg','sound/f13npc/secretserviceinf/attack20.ogg');
+	idlesound = list('sound/f13npc/secretserviceinf/idle1.ogg','sound/f13npc/secretserviceinf/idle2.ogg','sound/f13npc/secretserviceinf/idle3.ogg','sound/f13npc/secretserviceinf/idle4.ogg','sound/f13npc/secretserviceinf/idle5.ogg','sound/f13npc/secretserviceinf/idle6.ogg','sound/f13npc/secretserviceinf/idle7.ogg','sound/f13npc/secretserviceinf/idle8.ogg','sound/f13npc/secretserviceinf/idle9.ogg','sound/f13npc/secretserviceinf/idle10.ogg,'sound/f13npc/secretserviceinf/idle11.ogg','sound/f13npc/secretserviceinf/idle12.ogg','sound/f13npc/secretserviceinf/idle13.ogg','sound/f13npc/secretserviceinf/idle14.ogg');
+	death_sound = list('sound/f13npc/secretserviceinf/death1.ogg','sound/f13npc/secretserviceinf/death2.ogg','sound/f13npc/secretserviceinf/death3.ogg','sound/f13npc/secretserviceinf/death4.ogg','sound/f13npc/secretserviceinf/death5.ogg','sound/f13npc/secretserviceinf/death6.ogg','sound/f13npc/secretserviceinf/death7.ogg');
+	move_to_delay = 2.7;
+	move_resist = 2500
+	},
+/turf/open/floor/f13,
+/area/f13/building)
+"eXq" = (
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
 "eXF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/sleeper,
@@ -7130,6 +7633,18 @@
 /obj/machinery/light/small,
 /obj/structure/wreck/trash/two_barrels,
 /turf/open/floor/plating/tunnel,
+/area/f13/building)
+"fef" = (
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 2
+	},
+/obj/effect/turf_decal/arrows/red{
+	dir = 1
+	},
+/turf/open/floor/plasteel/darkyellow{
+	name = "floor"
+	},
 /area/f13/building)
 "fff" = (
 /obj/structure/chair/f13chair1{
@@ -7472,6 +7987,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/vaultdoor,
 /area/f13/bunker)
+"fuo" = (
+/obj/machinery/vending/coffee,
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "fuq" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
@@ -7548,10 +8069,82 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"fxg" = (
+/obj/structure/table/reinforced,
+/obj/machinery/camera/emp_proof{
+	dir = 10;
+	pixel_x = -11
+	},
+/turf/open/floor/f13{
+	icon_state = "redrustyfull"
+	},
+/area/f13/building)
 "fxL" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
+"fxN" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 10
+	},
+/obj/structure/mirror{
+	pixel_x = 24;
+	pixel_y = 2
+	},
+/obj/machinery/light/small,
+/turf/open/floor/f13,
+/area/f13/building)
+"fyf" = (
+/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged{
+	extra_projectiles = 2;
+	faction = list("SecretService");
+	health = 150;
+	icon_state = "russianrangedelite";
+	icon_living = "russianrangedelite";
+	icon = 'icons/mob/simple_human.dmi';
+	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged/trooper,/obj/item/gun/ballistic/automatic/smg/tommygun,/obj/item/ammo_box/magazine/tommygunm45);
+	attack_sound = 'sound/weapons/punch1.ogg';
+	attack_verb_continuous = "punches";
+	attack_verb_simple = "punch";
+	speak_chance = 2;
+	speak = list("We have contact!","Targets in my sight!","Suppressing!","Engaging!","Attacking targets!","We've got intruders!","Hard contact!","Opening fire!","Holding the line!","Cartiers orders, take 'em out!","Well isn't this interesting?!","Hostile contact!");
+	speed = 2;
+	speak_emote = list("aims the thompson SMG","speaks","yells","shouts","notifies","informs","radios in","reports");
+	maxHealth = 150;
+	name = "Site Security Operator";
+	icon_dead = "russianmelee_dead";
+	icon_gib = "syndicate_gib";
+	desc = "Government personnel or private security? You wouldn't be able to tell by their weapons and uniform.";
+	melee_damage_upper = 10;
+	melee_damage_lower = 10;
+	projectilesound = 'sound/weapons/gunshot_smg.ogg';
+	check_friendly_fire = 0;
+	color = "#c8c8c8";
+	projectiletype = /obj/item/projectile/bullet/c45/simple;
+	del_on_death = 1;
+	emote_taunt_sound = list('sound/f13npc/securityoperator/attack1.ogg','sound/f13npc/securityoperator/attack2.ogg','sound/f13npc/securityoperator/attack3.ogg','sound/f13npc/securityoperator/attack4.ogg','sound/f13npc/securityoperator/attack5.ogg','sound/f13npc/securityoperator/attack6.ogg','sound/f13npc/securityoperator/attack7.ogg','sound/f13npc/securityoperator/attack8.ogg','sound/f13npc/securityoperator/attack9.ogg','sound/f13npc/securityoperator/attack10.ogg','sound/f13npc/securityoperator/attack11.ogg','sound/f13npc/securityoperator/attack12.ogg','sound/f13npc/securityoperator/attack13.ogg','sound/f13npc/securityoperator/attack14.ogg','sound/f13npc/securityoperator/attack15.ogg','sound/f13npc/securityoperator/attack16.ogg','sound/f13npc/securityoperator/attack17.ogg','sound/f13npc/securityoperator/attack18.ogg','sound/f13npc/securityoperator/attack19.ogg','sound/f13npc/securityoperator/attack20.ogg','sound/f13npc/securityoperator/attack21.ogg','sound/f13npc/securityoperator/attack22.ogg','sound/f13npc/securityoperator/attack23.ogg','sound/f13npc/securityoperator/attack24.ogg','sound/f13npc/securityoperator/attack25.ogg','sound/f13npc/securityoperator/attack26.ogg','sound/f13npc/securityoperator/attack27.ogg','sound/f13npc/securityoperator/attack28.ogg','sound/f13npc/securityoperator/attack29.ogg','sound/f13npc/securityoperator/attack30.ogg','sound/f13npc/securityoperator/attack31.ogg','sound/f13npc/securityoperator/attack32.ogg','sound/f13npc/securityoperator/attack33.ogg');
+	idlesound = list('sound/f13npc/securityoperator/idle1.ogg','sound/f13npc/securityoperator/idle2.ogg','sound/f13npc/securityoperator/idle3.ogg','sound/f13npc/securityoperator/idle4.ogg','sound/f13npc/securityoperator/idle5.ogg','sound/f13npc/securityoperator/idle6.ogg','sound/f13npc/securityoperator/idle7.ogg','sound/f13npc/securityoperator/idle8.ogg','sound/f13npc/securityoperator/idle9.ogg','sound/f13npc/securityoperator/idle10.ogg,'sound/f13npc/securityoperator/idle11.ogg','sound/f13npc/securityoperator/idle12.ogg','sound/f13npc/securityoperator/idle13.ogg');
+	death_sound = list('sound/f13npc/securityoperator/death1.ogg','sound/f13npc/securityoperator/death2.ogg','sound/f13npc/securityoperator/death3.ogg','sound/f13npc/securityoperator/death4.ogg','sound/f13npc/securityoperator/death5.ogg');
+	aggrosound = 'sound/f13weapons/equipsounds/riflequip.ogg';
+	obj_damage = 5
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
+"fyh" = (
+/obj/structure/table/reinforced,
+/obj/item/weldingtool/experimental,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
+"fyn" = (
+/obj/structure/target_stake,
+/obj/item/target,
+/turf/open/floor/f13{
+	icon_state = "redrustyfull"
+	},
+/area/f13/building)
 "fyx" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor/floorsolid,
@@ -8839,6 +9432,18 @@
 	icon_state = "reddirtyfull"
 	},
 /area/awaymission/caves)
+"gqB" = (
+/obj/structure/table/optable{
+	color = "#74f4ff"
+	},
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
+	name = "floor"
+	},
+/area/f13/building)
 "grD" = (
 /obj/machinery/light{
 	dir = 4;
@@ -9175,6 +9780,13 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"gEB" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/plasteel/dark,
+/area/f13/building)
 "gED" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/waste{
@@ -9313,6 +9925,40 @@
 /obj/structure/reagent_dispensers/barrel/dangerous,
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/bunker)
+"gGU" = (
+/mob/living/simple_animal/hostile/raider/thief{
+	maxHealth = 200;
+	speak = list("Lets kite these motherfuckers!","Think you can tango with me?!","It takes two to tango, lets dance!","Ever had your throat slashed?","Forward pressure, come on!","How about a dozen stabs in the gut?!","Now!","Do it!","Closing in!","21 foot rule ain't savin' you!","Go for the arteries!","Come here, asshole!","SEMPER FI!","Where are you going, coward?!","You're a dead man!","I got 'em!");
+	speak_emote = list("assume striking stance","yells","shouts","calls out","battle cries");
+	speak_chance = 2;
+	speed = 0;
+	loot = list(/obj/item/melee/onehanded/knife/survival,/obj/effect/mob_spawn/human/corpse/syndicatesoldier);
+	faction = list("SecretService");
+	health = 200;
+	icon = 'icons/mob/simple_human.dmi';
+	icon_dead = "syndicate_dead";
+	icon_gib = "syndicate_gib";
+	icon_living = "syndicate_stormtrooper_knife";
+	icon_state = "syndicate_stormtrooper_knife";
+	name = "Secret Service Skirmisher";
+	desc = "He wants it up close and personal. That's how he'll have it.";
+	melee_damage_upper = 35;
+	melee_damage_lower = 28;
+	bare_wound_bonus = 10;
+	attack_verb_continuous = "slashes";
+	attack_verb_simple = "slash";
+	del_on_death = 1;
+	emote_taunt_sound = list('sound/f13npc/secretserviceknife/attack1.ogg','sound/f13npc/secretserviceknife/attack2.ogg','sound/f13npc/secretserviceknife/attack3.ogg','sound/f13npc/secretserviceknife/attack4.ogg','sound/f13npc/secretserviceknife/attack5.ogg','sound/f13npc/secretserviceknife/attack6.ogg','sound/f13npc/secretserviceknife/attack7.ogg','sound/f13npc/secretserviceknife/attack8.ogg','sound/f13npc/secretserviceknife/attack9.ogg','sound/f13npc/secretserviceknife/attack10.ogg','sound/f13npc/secretserviceknife/attack11.ogg','sound/f13npc/secretserviceknife/attack12.ogg','sound/f13npc/secretserviceknife/attack13.ogg','sound/f13npc/secretserviceknife/attack14.ogg','sound/f13npc/secretserviceknife/attack15.ogg','sound/f13npc/secretserviceknife/attack16.ogg','sound/f13npc/secretserviceknife/attack17.ogg','sound/f13npc/secretserviceknife/attack18.ogg','sound/f13npc/secretserviceknife/attack19.ogg','sound/f13npc/secretserviceknife/attack20.ogg','sound/f13npc/secretserviceknife/attack21.ogg','sound/f13npc/secretserviceknife/attack22.ogg');
+	idlesound = list('sound/f13npc/secretserviceknife/idle1.ogg','sound/f13npc/secretserviceknife/idle2.ogg','sound/f13npc/secretserviceknife/idle3.ogg','sound/f13npc/secretserviceknife/idle4.ogg','sound/f13npc/secretserviceknife/idle5.ogg','sound/f13npc/secretserviceknife/idle6.ogg','sound/f13npc/secretserviceknife/idle7.ogg','sound/f13npc/secretserviceknife/idle8.ogg','sound/f13npc/secretserviceknife/idle9.ogg','sound/f13npc/secretserviceknife/idle10.ogg,'sound/f13npc/secretserviceknife/idle11.ogg','sound/f13npc/secretserviceknife/idle12.ogg','sound/f13npc/secretserviceknife/idle13.ogg','sound/f13npc/secretserviceknife/idle14.ogg','sound/f13npc/secretserviceknife/idle15.ogg);
+	death_sound = list('sound/f13npc/secretserviceknife/death1.ogg','sound/f13npc/secretserviceknife/death2.ogg','sound/f13npc/secretserviceknife/death3.ogg','sound/f13npc/secretserviceknife/death4.ogg');
+	move_to_delay = 2.1;
+	move_resist = 2500
+	},
+/turf/open/floor/f13{
+	dir = 9;
+	icon_state = "neutralrusty"
+	},
+/area/f13/building)
 "gHr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing,
@@ -10162,6 +10808,26 @@
 	icon_state = "mountain2"
 	},
 /area/f13/bunker)
+"hiW" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/meson/night,
+/obj/item/clothing/glasses/meson/night,
+/obj/item/clothing/glasses/hud/health/night/syndicate,
+/obj/item/clothing/glasses/hud/health/night/syndicate,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#cccccc"
+	},
+/area/f13/building)
+"hiZ" = (
+/obj/structure/chair/office{
+	dir = 4;
+	color = "#909090"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "hja" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 1
@@ -10175,6 +10841,24 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"hjo" = (
+/obj/item/radio/intercom{
+	pixel_y = -35;
+	frequency = 1465;
+	freqlock = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite{
+	name = "floor"
+	},
+/area/f13/building)
+"hjr" = (
+/obj/machinery/vending/wallmed{
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
 "hkl" = (
 /obj/structure/lattice,
 /turf/open/floor/plating/tunnel,
@@ -10438,6 +11122,15 @@
 	icon_state = "housewood3-broken"
 	},
 /area/f13/bunker)
+"hri" = (
+/obj/machinery/camera/emp_proof{
+	dir = 10;
+	pixel_x = -12
+	},
+/obj/structure/closet,
+/obj/item/clothing/under/rank/prisoner,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
 "hrH" = (
 /obj/effect/decal/cleanable/blood/old{
 	pixel_x = 12
@@ -10707,6 +11400,12 @@
 	icon_state = "plating"
 	},
 /area/f13/bunker)
+"hBM" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel/floorgrime{
+	color = "#e5e5e4"
+	},
+/area/f13/building)
 "hBQ" = (
 /obj/structure/chair/f13chair1{
 	dir = 1
@@ -10986,6 +11685,24 @@
 "hKS" = (
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
+"hLa" = (
+/obj/structure/closet/anchored{
+	color = "#cc9999";
+	name = "equipment closet"
+	},
+/obj/item/stealthboy{
+	icon = 'icons/obj/pda.dmi';
+	icon_state = "pda"
+	},
+/obj/item/stealthboy{
+	icon = 'icons/obj/pda.dmi';
+	icon_state = "pda"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
 "hLj" = (
 /mob/living/simple_animal/hostile/deathclaw/legendary,
 /turf/open/floor/plating/f13/inside/mountain{
@@ -11075,6 +11792,53 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"hPk" = (
+/obj/machinery/camera/emp_proof{
+	pixel_x = 12
+	},
+/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged{
+	extra_projectiles = 1;
+	faction = list("SecretService");
+	health = 225;
+	icon_state = "syndicate_stormtrooper_smg";
+	icon_living = "syndicate_stormtrooper_smg";
+	icon = 'icons/mob/simple_human.dmi';
+	loot = list(/obj/effect/mob_spawn/human/corpse/syndicatesoldier);
+	attack_sound = 'sound/weapons/punch1.ogg';
+	attack_verb_continuous = "punches";
+	attack_verb_simple = "punch";
+	speak_chance = 2;
+	speak = list("Send ghosts to our position, Cartier!","We've got incoming!","Engaging!","Hard contact!","Where the hell are those ghosts at?!","Cartier, send support ASAP!","Open fire!","That's them!","U.S. military inbound, engage!","Attacking!","Watch my back!","Come on, you sons of bitches!","Open season!","Laying down suppressive fire.","This place is about to get swarmed...","Enemies advancing!","Shut 'em down!","No room for error, lets do it!","I see 'em!");
+	speed = 2;
+	speak_emote = list("aims down the sights of the PDW","yells","shouts","calls out","notifies","reports");
+	maxHealth = 225;
+	name = "Secret Service Minigunner";
+	icon_dead = "syndicate_dead";
+	icon_gib = "syndicate_gib";
+	desc = "Not armed to the teeth but still dangerous. Carries a two-round burst PDW chambered in .45 +P.";
+	melee_damage_upper = 10;
+	melee_damage_lower = 10;
+	projectilesound = 'sound/weapons/gunshot_smg.ogg';
+	aggrosound = 'sound/f13weapons/equipsounds/riflequip.ogg';
+	robust_searching = 1;
+	del_on_death = 1;
+	ranged_cooldown_time = 15;
+	emote_taunt_sound = list('sound/f13npc/secretserviceinf/attack1.ogg','sound/f13npc/secretserviceinf/attack2.ogg','sound/f13npc/secretserviceinf/attack3.ogg','sound/f13npc/secretserviceinf/attack4.ogg','sound/f13npc/secretserviceinf/attack5.ogg','sound/f13npc/secretserviceinf/attack6.ogg','sound/f13npc/secretserviceinf/attack7.ogg','sound/f13npc/secretserviceinf/attack8.ogg','sound/f13npc/secretserviceinf/attack9.ogg','sound/f13npc/secretserviceinf/attack10.ogg','sound/f13npc/secretserviceinf/attack11.ogg','sound/f13npc/secretserviceinf/attack12.ogg','sound/f13npc/secretserviceinf/attack13.ogg','sound/f13npc/secretserviceinf/attack14.ogg','sound/f13npc/secretserviceinf/attack15.ogg','sound/f13npc/secretserviceinf/attack16.ogg','sound/f13npc/secretserviceinf/attack17.ogg','sound/f13npc/secretserviceinf/attack18.ogg','sound/f13npc/secretserviceinf/attack19.ogg','sound/f13npc/secretserviceinf/attack20.ogg');
+	idlesound = list('sound/f13npc/secretserviceinf/idle1.ogg','sound/f13npc/secretserviceinf/idle2.ogg','sound/f13npc/secretserviceinf/idle3.ogg','sound/f13npc/secretserviceinf/idle4.ogg','sound/f13npc/secretserviceinf/idle5.ogg','sound/f13npc/secretserviceinf/idle6.ogg','sound/f13npc/secretserviceinf/idle7.ogg','sound/f13npc/secretserviceinf/idle8.ogg','sound/f13npc/secretserviceinf/idle9.ogg','sound/f13npc/secretserviceinf/idle10.ogg,'sound/f13npc/secretserviceinf/idle11.ogg','sound/f13npc/secretserviceinf/idle12.ogg','sound/f13npc/secretserviceinf/idle13.ogg','sound/f13npc/secretserviceinf/idle14.ogg');
+	death_sound = list('sound/f13npc/secretserviceinf/death1.ogg','sound/f13npc/secretserviceinf/death2.ogg','sound/f13npc/secretserviceinf/death3.ogg','sound/f13npc/secretserviceinf/death4.ogg','sound/f13npc/secretserviceinf/death5.ogg','sound/f13npc/secretserviceinf/death6.ogg','sound/f13npc/secretserviceinf/death7.ogg');
+	move_to_delay = 2.7;
+	move_resist = 2500
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
+"hPS" = (
+/obj/structure/rack/shelf_metal,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
 "hQh" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib6-old";
@@ -11837,11 +12601,38 @@
 	icon_state = "tunnelrusty"
 	},
 /area/awaymission/caves)
+"itW" = (
+/obj/structure/chair/office/light{
+	dir = 8;
+	name = "office chair"
+	},
+/turf/open/floor/f13,
+/area/f13/building)
 "iup" = (
 /obj/structure/table/optable,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/tunnel)
+"iuS" = (
+/obj/structure/sign/barsign{
+	pixel_y = -30
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
+"iuX" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plasteel/f13/vault_floor/blue/white,
+/area/f13/building)
+"iuZ" = (
+/obj/structure/chair/office{
+	dir = 4
+	},
+/turf/open/floor/plasteel/floorgrime,
+/area/f13/building)
 "ivb" = (
 /obj/structure/fence/wooden{
 	dir = 4;
@@ -12723,12 +13514,39 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/tunnel)
+"jdc" = (
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
 "jdx" = (
 /obj/machinery/computer/arcade/battle,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"jeg" = (
+/obj/structure/table/reinforced,
+/obj/item/crafting/coffee_pot{
+	pixel_y = 8;
+	pixel_x = 7
+	},
+/obj/item/reagent_containers/food/drinks/coffee{
+	pixel_y = 7;
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/food/drinks/coffee{
+	pixel_x = -4;
+	pixel_y = 1
+	},
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
 "jfl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/remains/human{
@@ -13944,6 +14762,15 @@
 	name = "cave"
 	},
 /area/f13/tunnel)
+"jVZ" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/obj/structure/table/reinforced,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg,
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
 "jWi" = (
 /obj/structure/chair/booth{
 	dir = 4
@@ -14050,6 +14877,12 @@
 /obj/structure/closet/crate/secure/loot,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/tunnel)
+"jYW" = (
+/obj/structure/fluff/railing/corner,
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
 "jYX" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/road{
@@ -14468,6 +15301,12 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"knP" = (
+/obj/machinery/door/airlock/grunge{
+	name = "restroom stall"
+	},
+/turf/open/floor/plating/f13/outside/road,
+/area/f13/building)
 "knT" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old{
@@ -15351,9 +16190,54 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"kVo" = (
+/obj/structure/reagent_dispensers/barrel/four,
+/turf/open/floor/plating/f13/outside/road,
+/area/f13/wasteland)
+"kVw" = (
+/obj/machinery/door/airlock/medical{
+	name = "hospital restroom"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite{
+	name = "floor"
+	},
+/area/f13/building)
 "kVV" = (
 /turf/open/water,
 /area/f13/tunnel)
+"kWH" = (
+/mob/living/simple_animal/hostile/raider/thief{
+	maxHealth = 200;
+	speak = list("Lets kite these motherfuckers!","Think you can tango with me?!","It takes two to tango, lets dance!","Ever had your throat slashed?","Forward pressure, come on!","How about a dozen stabs in the gut?!","Now!","Do it!","Closing in!","21 foot rule ain't savin' you!","Go for the arteries!","Come here, asshole!","SEMPER FI!","Where are you going, coward?!","You're a dead man!","I got 'em!");
+	speak_emote = list("assume striking stance","yells","shouts","calls out","battle cries");
+	speak_chance = 2;
+	speed = 0;
+	loot = list(/obj/item/melee/onehanded/knife/survival,/obj/effect/mob_spawn/human/corpse/syndicatesoldier);
+	faction = list("SecretService");
+	health = 200;
+	icon = 'icons/mob/simple_human.dmi';
+	icon_dead = "syndicate_dead";
+	icon_gib = "syndicate_gib";
+	icon_living = "syndicate_stormtrooper_knife";
+	icon_state = "syndicate_stormtrooper_knife";
+	name = "Secret Service Skirmisher";
+	desc = "He wants it up close and personal. That's how he'll have it.";
+	melee_damage_upper = 35;
+	melee_damage_lower = 28;
+	bare_wound_bonus = 10;
+	attack_verb_continuous = "slashes";
+	attack_verb_simple = "slash";
+	del_on_death = 1;
+	emote_taunt_sound = list('sound/f13npc/secretserviceknife/attack1.ogg','sound/f13npc/secretserviceknife/attack2.ogg','sound/f13npc/secretserviceknife/attack3.ogg','sound/f13npc/secretserviceknife/attack4.ogg','sound/f13npc/secretserviceknife/attack5.ogg','sound/f13npc/secretserviceknife/attack6.ogg','sound/f13npc/secretserviceknife/attack7.ogg','sound/f13npc/secretserviceknife/attack8.ogg','sound/f13npc/secretserviceknife/attack9.ogg','sound/f13npc/secretserviceknife/attack10.ogg','sound/f13npc/secretserviceknife/attack11.ogg','sound/f13npc/secretserviceknife/attack12.ogg','sound/f13npc/secretserviceknife/attack13.ogg','sound/f13npc/secretserviceknife/attack14.ogg','sound/f13npc/secretserviceknife/attack15.ogg','sound/f13npc/secretserviceknife/attack16.ogg','sound/f13npc/secretserviceknife/attack17.ogg','sound/f13npc/secretserviceknife/attack18.ogg','sound/f13npc/secretserviceknife/attack19.ogg','sound/f13npc/secretserviceknife/attack20.ogg','sound/f13npc/secretserviceknife/attack21.ogg','sound/f13npc/secretserviceknife/attack22.ogg');
+	idlesound = list('sound/f13npc/secretserviceknife/idle1.ogg','sound/f13npc/secretserviceknife/idle2.ogg','sound/f13npc/secretserviceknife/idle3.ogg','sound/f13npc/secretserviceknife/idle4.ogg','sound/f13npc/secretserviceknife/idle5.ogg','sound/f13npc/secretserviceknife/idle6.ogg','sound/f13npc/secretserviceknife/idle7.ogg','sound/f13npc/secretserviceknife/idle8.ogg','sound/f13npc/secretserviceknife/idle9.ogg','sound/f13npc/secretserviceknife/idle10.ogg,'sound/f13npc/secretserviceknife/idle11.ogg','sound/f13npc/secretserviceknife/idle12.ogg','sound/f13npc/secretserviceknife/idle13.ogg','sound/f13npc/secretserviceknife/idle14.ogg','sound/f13npc/secretserviceknife/idle15.ogg);
+	death_sound = list('sound/f13npc/secretserviceknife/death1.ogg','sound/f13npc/secretserviceknife/death2.ogg','sound/f13npc/secretserviceknife/death3.ogg','sound/f13npc/secretserviceknife/death4.ogg');
+	move_to_delay = 2.1;
+	move_resist = 2500
+	},
+/turf/open/floor/f13{
+	icon_state = "greenrustychess"
+	},
+/area/f13/building)
 "kXB" = (
 /obj/structure/showcase/horrific_experiment{
 	icon_state = "pod_1"
@@ -15592,6 +16476,17 @@
 	},
 /turf/open/floor/f13/wood,
 /area/awaymission/caves)
+"ldD" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "pharmacy"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
+"ldG" = (
+/turf/closed/wall/mineral/titanium/survival{
+	name = "storage wall"
+	},
+/area/f13/building)
 "lee" = (
 /obj/effect/mob_spawn/human/corpse/enclavescientist{
 	pixel_y = 5;
@@ -16543,10 +17438,21 @@
 	icon_state = "outermaincornerouter"
 	},
 /area/awaymission/caves)
+"lGA" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "pharmacy synthesis lab"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "lGW" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/tunnel)
+"lHq" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/brigdoor/security/holding/eastleft,
+/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/area/f13/building)
 "lHr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -17488,6 +18394,12 @@
 	icon_state = "plating"
 	},
 /area/f13/bunker)
+"miW" = (
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/wood/f13/carpet,
+/area/f13/building)
 "mjm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/showcase/horrific_experiment,
@@ -18047,6 +18959,15 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"mAn" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/f13,
+/area/f13/building)
 "mAs" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "99";
@@ -19038,6 +19959,14 @@
 	icon_state = "horizontaltopborderbottom2"
 	},
 /area/awaymission/caves)
+"nll" = (
+/obj/structure/ladder/unbreakable/transition{
+	id = "Event";
+	name = "exfil point";
+	height = 1
+	},
+/turf/open/floor/plating/f13/outside/road,
+/area/f13/wasteland)
 "nlB" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/tracks{
@@ -19052,6 +19981,20 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"nlH" = (
+/obj/machinery/camera/emp_proof{
+	pixel_x = 20
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
+"nmf" = (
+/obj/machinery/door/airlock/grunge{
+	name = "ghost cryopod chambers"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
+/area/f13/building)
 "nmk" = (
 /obj/structure/closet/cabinet,
 /turf/open/floor/f13/wood,
@@ -19296,6 +20239,58 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"ntk" = (
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/obj/machinery/light/broken{
+	dir = 4
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel/floorgrime,
+/area/f13/building)
+"ntA" = (
+/obj/machinery/camera/emp_proof{
+	dir = 5;
+	pixel_y = 10;
+	pixel_x = -1
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/building)
+"ntE" = (
+/obj/machinery/button/door{
+	id = 47;
+	name = "secure cargo button";
+	pixel_x = -30
+	},
+/obj/item/paper{
+	icon_state = "paper_words";
+	name = "WARNING - DEATHCLAWS INSIDE";
+	info = "2 DEATHCLAWS"
+	},
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
+"ntR" = (
+/obj/item/radio/intercom{
+	pixel_y = -35;
+	frequency = 1465;
+	freqlock = 1
+	},
+/turf/open/floor/plasteel/darkyellow{
+	name = "floor"
+	},
+/area/f13/building)
+"nub" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
 "nuv" = (
 /obj/structure/table/reinforced,
 /obj/item/trash/f13/mre{
@@ -19547,12 +20542,64 @@
 	icon_state = "horizontaltopborderbottom2right"
 	},
 /area/awaymission/caves)
+"nAj" = (
+/obj/machinery/door/airlock/command{
+	color = "#c8c8c8";
+	name = "agent living space"
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/building)
+"nAQ" = (
+/obj/structure/closet/cabinet/anchored,
+/turf/open/floor/carpet/royalblack,
+/area/f13/building)
 "nBv" = (
 /obj/machinery/computer/arcade/orion_trail,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"nBK" = (
+/obj/structure/table/reinforced{
+	color = "#cccccc"
+	},
+/obj/machinery/computer/terminal{
+	dir = 8;
+	termtag = "Site Director Avec Cartier";
+	doc_title_1 = "Project Ghostmen Update";
+	doc_content_1 = "Our researchers have made breakthroughs, improving the physical capabilities of our ghosts. This is a milestone we celebrate and while there is more to do, I am certain that one day our ghosts will become the pinnacle of bioengineering in post-war America. HADES might see this accomplishment as something that surpasses all previous efforts of bioengineering but this is for the next century. For the ghosts, genetic modication and FEV has made them who they are today. They possess what humans and super mutants do not.";
+	doc_title_2 = "AUTOMATED SYSTEMS ALERT";
+	doc_content_2 = "Radio jamming systems have encounter an unexpected error.";
+	doc_title_3 = "MESSAGE SENT TO HADES";
+	doc_content_3 = "TO HADES: Our facility is under attack and I am unable to open the emergency doors behind me. Can you help me!?";
+	doc_title_4 = "MESSAGE SENT TO HADES";
+	doc_content_4 = "TO HADES: HADES. I need you to respond! The emergency blast doors are stuck and the button does not work, I need you to open them!";
+	doc_title_5 = "MESSAGE SENT TO HADES";
+	doc_content_5 = "TO HADES: They've made it to Administration, HADES! Come in! Are you online!? I believe the military has shut off access to the doors! I need your help!";
+	name = "site directors terminal"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
+"nBP" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/gun/energy/beam_rifle{
+	projectile_damage = 75;
+	aoe_mob_damage = 75;
+	aoe_structure_damage = 25;
+	impact_structure_damage = 50;
+	name = "experimental particle rifle";
+	desc = "An energy-based anti material marksman rifle that uses highly charged particle beams moving at extreme velocities to decimate whatever is unfortunate enough to be targeted by one. The weapon has to be charged before firing, the only way to reload the weapon is through a weapon recharger. If the cell is taken out, it can't be placed back in."
+	},
+/obj/item/firing_pin,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
 "nBS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
@@ -19717,6 +20764,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
 /area/f13/bunker)
+"nHy" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/gun/energy/laser/plasma,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
 "nHH" = (
 /obj/structure/chair/f13chair1,
 /obj/effect/decal/cleanable/dirt,
@@ -20825,6 +21880,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
+"ouR" = (
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#706891"
+	},
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
 "ouW" = (
 /obj/structure/table/reinforced,
 /obj/structure/barricade/bars{
@@ -20996,6 +22061,30 @@
 	icon_state = "yellowrustyfull"
 	},
 /area/f13/bunker)
+"ozl" = (
+/obj/machinery/door/airlock/medical{
+	name = "surgery wing"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
+"ozr" = (
+/obj/structure/simple_door/blast,
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
+"ozu" = (
+/obj/structure/railing{
+	dir = 4;
+	pixel_x = 2
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
+"ozy" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/f13/building)
 "ozE" = (
 /obj/machinery/water_purifier,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -21025,6 +22114,19 @@
 	name = "cave"
 	},
 /area/f13/tunnel)
+"oAE" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8;
+	color = "#909090"
+	},
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
+"oAF" = (
+/obj/machinery/door/airlock/grunge{
+	name = "specialist dormitories"
+	},
+/turf/open/floor/carpet/black,
+/area/f13/building)
 "oAN" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/armor/random,
@@ -21106,12 +22208,40 @@
 	icon_state = "darkrusty"
 	},
 /area/awaymission/caves)
+"oFi" = (
+/obj/structure/sign/departments/medbay/alt{
+	pixel_x = -32
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
+"oFz" = (
+/obj/structure/reagent_dispensers/barrel{
+	pixel_x = 10;
+	pixel_y = -6
+	},
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
 "oGd" = (
 /obj/structure/simple_door/bunker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"oGL" = (
+/obj/structure/showcase/cyborg/old{
+	name = "automaton shell";
+	desc = "The shell of an unfinished automaton. What could've been in development here?"
+	},
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/f13/building)
 "oGS" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaltopbordertop1"
@@ -21459,6 +22589,45 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/bunker)
+"oSv" = (
+/mob/living/simple_animal/hostile/securitron/sentrybot{
+	health = 300;
+	faction = list("SecretService");
+	color = "#8a73ff";
+	speak = list("Unauthorized personnel detected.","Intruder alert!","Security condition elevated. Notifying HADES.");
+	speed = 3;
+	maxHealth = 300;
+	speak_emote = list("boldly states","announces in a monotone vox","coldy notifies");
+	melee_damage_lower = 50;
+	melee_damage_upper = 50;
+	name = "Reinforced Sentry Bot"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
+"oSz" = (
+/obj/structure/filingcabinet/filingcabinet{
+	pixel_x = 2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
+"oSZ" = (
+/obj/machinery/shower{
+	dir = 1
+	},
+/obj/structure/decoration/vent,
+/turf/open/floor/plasteel/floorgrime{
+	color = "#e5e5e4"
+	},
+/area/f13/building)
+"oTb" = (
+/obj/structure/chair/comfy/purple{
+	dir = 1;
+	color = "#605060"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "oTc" = (
 /obj/machinery/light{
 	dir = 8;
@@ -21467,6 +22636,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/tunnel)
+"oTq" = (
+/mob/living/simple_animal/hostile/securitron{
+	name = "Reinforced Securitron";
+	desc = "A pre-war era securitron with reinforced plating. Engages with 5.56 FMJ instead of regular 9MM.";
+	color = "#8a73ff";
+	speak = list("Unauthorized personnel detected.","Alert!","Security condition elevated. Notifying HADES.");
+	speed = 2;
+	faction = list("SecretService");
+	health = 200;
+	maxHealth = 200;
+	speak_emote = list("coldly emits","chats clearly","notifies with monotony");
+	projectiletype = /obj/item/projectile/bullet/a556/simple
+	},
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "oTz" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertop2"
@@ -21615,6 +22799,23 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
+"oYa" = (
+/obj/structure/closet{
+	base_storage_capacity = 10;
+	storage_capacity = 10;
+	name = "lockup closet"
+	},
+/obj/item/clothing/under/f13/enclave/peacekeeper,
+/obj/item/clothing/accessory/enclave/sergeant,
+/obj/item/card/id/dogtag/enclave/trooper,
+/obj/item/clothing/glasses/night/f13/enclave,
+/obj/item/clothing/head/f13/enclave/hood,
+/obj/item/clothing/suit/armor/vest,
+/obj/item/storage/backpack/enclave,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
 "oYm" = (
 /obj/item/stack/cable_coil,
 /obj/structure/table,
@@ -22225,6 +23426,46 @@
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/underground/cave)
+"pvy" = (
+/obj/structure/closet/anchored{
+	color = "#ff4141";
+	name = "armor closet"
+	},
+/obj/item/clothing/head/helmet/alt{
+	color = "#909090";
+	desc = "A ballistic combat helmet that excels in protecting the wearer against traditional projectile weaponry and physical trauma to a considerable extent. Laser and energy weapons will still injure the user at a greater rate than its bulletproof counterpart.";
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 10, "energy" = 15, "bomb" = 55, "bio" = 40, "rad" = 10, "fire" = 50, "acid" = 10, "wound" = 50);
+	name = "ballistic helmet"
+	},
+/obj/item/clothing/suit/armor/bulletproof{
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 20, "energy" = 20, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 50, "acid" = 10, "wound" = 50);
+	desc = "The fusion of ceramics and steel in this plate carrier provides the user additional resistance against traditional projectile weaponry, blunt trauma and explosives to a significant extent. The armor will not hold up well against laser and energy fire.";
+	name = "ballistics armor";
+	color = "#909090"
+	},
+/obj/item/clothing/head/helmet/alt{
+	color = "#909090";
+	desc = "A ballistic combat helmet that excels in protecting the wearer against traditional projectile weaponry and physical trauma to a considerable extent. Laser and energy weapons will still injure the user at a greater rate than its bulletproof counterpart.";
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 10, "energy" = 15, "bomb" = 55, "bio" = 40, "rad" = 10, "fire" = 50, "acid" = 10, "wound" = 50);
+	name = "ballistic helmet"
+	},
+/obj/item/clothing/suit/armor/bulletproof{
+	armor = list("melee" = 55, "bullet" = 55, "laser" = 20, "energy" = 20, "bomb" = 50, "bio" = 40, "rad" = 10, "fire" = 50, "acid" = 10, "wound" = 50);
+	desc = "The fusion of ceramics and steel in this plate carrier provides the user additional resistance against traditional projectile weaponry, blunt trauma and explosives to a significant extent. The armor will not hold up well against laser and energy fire.";
+	name = "ballistics armor";
+	color = "#909090"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
+"pvA" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "pvL" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/reagent_containers/food/snacks/f13/mre,
@@ -22235,6 +23476,13 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"pvV" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/mechanical{
+	pixel_y = 5
+	},
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
 "pvX" = (
 /obj/structure/simple_door/metal/ventilation,
 /turf/open/floor/plating/tunnel,
@@ -22339,6 +23587,12 @@
 	name = "cave"
 	},
 /area/f13/tunnel)
+"pAr" = (
+/obj/structure/closet/crate/freezer/surplus_limbs,
+/turf/open/floor/mineral/plastitanium{
+	name = "cargo floor"
+	},
+/area/f13/building)
 "pAO" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood4-broken"
@@ -22769,6 +24023,16 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"pPA" = (
+/obj/structure/closet/crate/mortar_shells{
+	name = "mortar crate";
+	desc = "Specialised in delivering ordnance from afar."
+	},
+/obj/item/mortar_kit,
+/turf/open/floor/mineral/plastitanium{
+	name = "cargo floor"
+	},
+/area/f13/building)
 "pPC" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/f13/wood{
@@ -22936,6 +24200,41 @@
 	name = "cave"
 	},
 /area/f13/tunnel)
+"pUR" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	dir = 8;
+	pixel_y = 3;
+	doc_content_1 = "[TERMINAL LOCKED]";
+	doc_title_1 = "Login";
+	termtag = "Office"
+	},
+/turf/open/floor/plasteel/floorgrime,
+/area/f13/building)
+"pVc" = (
+/obj/structure/showcase/cyborg/old{
+	name = "automaton shell";
+	desc = "The shell of an unfinished automaton. What could've been in development here?"
+	},
+/turf/open/floor/engine,
+/area/f13/building)
+"pVd" = (
+/obj/structure/table/optable{
+	color = "#74f4ff"
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite/rarecyan{
+	name = "floor"
+	},
+/area/f13/building)
+"pVw" = (
+/obj/structure/wreck/trash/five_tires,
+/turf/open/floor/mineral/plastitanium{
+	name = "cargo floor"
+	},
+/area/f13/building)
 "pVC" = (
 /obj/machinery/door/airlock/science,
 /obj/effect/decal/cleanable/dirt,
@@ -23839,6 +25138,12 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"qyB" = (
+/obj/machinery/door/airlock/security{
+	name = "security desk"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/area/f13/building)
 "qyH" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
@@ -24251,6 +25556,23 @@
 	icon_state = "reddirtyfull"
 	},
 /area/awaymission/caves)
+"qSf" = (
+/obj/effect/decal/cleanable/glass,
+/obj/item/shard,
+/obj/item/stack/sheet/metal,
+/turf/open/floor/f13{
+	icon_state = "greenrustychess"
+	},
+/area/f13/building)
+"qSg" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
 "qSh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/shuttle_manipulator{
@@ -24270,6 +25592,27 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"qSy" = (
+/obj/machinery/workbench/advanced,
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/plasteel/floorgrime{
+	color = "#909090"
+	},
+/area/f13/building)
+"qTW" = (
+/obj/structure/closet{
+	base_storage_capacity = 10;
+	storage_capacity = 10;
+	name = "lockup closet"
+	},
+/obj/item/gun/ballistic/automatic/r93,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
 "qUi" = (
 /obj/structure/flora/junglebush/large,
 /obj/structure/flora/grass/jungle,
@@ -24738,6 +26081,41 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/tunnel)
+"riD" = (
+/obj/structure/obstacle/barbedwire{
+	dir = 8
+	},
+/turf/open/floor/plasteel/floorgrime{
+	color = "#cccccc"
+	},
+/area/f13/building)
+"rjc" = (
+/obj/machinery/light,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/building)
+"rjf" = (
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/plasteel/darkyellow{
+	name = "floor"
+	},
+/area/f13/building)
+"rjk" = (
+/obj/machinery/door/airlock/grunge{
+	name = "checkpoint pillbox entry"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white,
+/area/f13/building)
+"rjl" = (
+/obj/machinery/camera/emp_proof{
+	dir = 10;
+	pixel_x = -12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "rjt" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/black,
@@ -24746,6 +26124,22 @@
 /obj/structure/sink/well,
 /turf/open/indestructible/ground/outside/dirt,
 /area/awaymission/caves)
+"rjK" = (
+/obj/structure/table/greyscale,
+/obj/machinery/camera/emp_proof{
+	dir = 10;
+	pixel_x = -12
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
+"rjS" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/building)
 "rkd" = (
 /obj/item/paper{
 	name = "A note to the ghosts, VERY IMPORTANT READ DESCRIPTION";
@@ -24872,6 +26266,81 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"rpl" = (
+/mob/living/simple_animal/hostile/raider/ranged/sulphiteranged{
+	extra_projectiles = 2;
+	faction = list("SecretService");
+	health = 150;
+	icon_state = "russianrangedelite";
+	icon_living = "russianrangedelite";
+	icon = 'icons/mob/simple_human.dmi';
+	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged/trooper,/obj/item/gun/ballistic/automatic/smg/tommygun,/obj/item/ammo_box/magazine/tommygunm45);
+	attack_sound = 'sound/weapons/punch1.ogg';
+	attack_verb_continuous = "punches";
+	attack_verb_simple = "punch";
+	speak_chance = 2;
+	speak = list("We have contact!","Targets in my sight!","Suppressing!","Engaging!","Attacking targets!","We've got intruders!","Hard contact!","Opening fire!","Holding the line!","Cartiers orders, take 'em out!","Well isn't this interesting?!","Hostile contact!");
+	speed = 2;
+	speak_emote = list("aims the thompson SMG","speaks","yells","shouts","notifies","informs","radios in","reports");
+	maxHealth = 150;
+	name = "Site Security Operator";
+	icon_dead = "russianmelee_dead";
+	icon_gib = "syndicate_gib";
+	desc = "Government personnel or private security? You wouldn't be able to tell by their weapons and uniform.";
+	melee_damage_upper = 10;
+	melee_damage_lower = 10;
+	projectilesound = 'sound/weapons/gunshot_smg.ogg';
+	check_friendly_fire = 0;
+	color = "#c8c8c8";
+	projectiletype = /obj/item/projectile/bullet/c45/simple;
+	del_on_death = 1;
+	emote_taunt_sound = list('sound/f13npc/securityoperator/attack1.ogg','sound/f13npc/securityoperator/attack2.ogg','sound/f13npc/securityoperator/attack3.ogg','sound/f13npc/securityoperator/attack4.ogg','sound/f13npc/securityoperator/attack5.ogg','sound/f13npc/securityoperator/attack6.ogg','sound/f13npc/securityoperator/attack7.ogg','sound/f13npc/securityoperator/attack8.ogg','sound/f13npc/securityoperator/attack9.ogg','sound/f13npc/securityoperator/attack10.ogg','sound/f13npc/securityoperator/attack11.ogg','sound/f13npc/securityoperator/attack12.ogg','sound/f13npc/securityoperator/attack13.ogg','sound/f13npc/securityoperator/attack14.ogg','sound/f13npc/securityoperator/attack15.ogg','sound/f13npc/securityoperator/attack16.ogg','sound/f13npc/securityoperator/attack17.ogg','sound/f13npc/securityoperator/attack18.ogg','sound/f13npc/securityoperator/attack19.ogg','sound/f13npc/securityoperator/attack20.ogg','sound/f13npc/securityoperator/attack21.ogg','sound/f13npc/securityoperator/attack22.ogg','sound/f13npc/securityoperator/attack23.ogg','sound/f13npc/securityoperator/attack24.ogg','sound/f13npc/securityoperator/attack25.ogg','sound/f13npc/securityoperator/attack26.ogg','sound/f13npc/securityoperator/attack27.ogg','sound/f13npc/securityoperator/attack28.ogg','sound/f13npc/securityoperator/attack29.ogg','sound/f13npc/securityoperator/attack30.ogg','sound/f13npc/securityoperator/attack31.ogg','sound/f13npc/securityoperator/attack32.ogg','sound/f13npc/securityoperator/attack33.ogg');
+	idlesound = list('sound/f13npc/securityoperator/idle1.ogg','sound/f13npc/securityoperator/idle2.ogg','sound/f13npc/securityoperator/idle3.ogg','sound/f13npc/securityoperator/idle4.ogg','sound/f13npc/securityoperator/idle5.ogg','sound/f13npc/securityoperator/idle6.ogg','sound/f13npc/securityoperator/idle7.ogg','sound/f13npc/securityoperator/idle8.ogg','sound/f13npc/securityoperator/idle9.ogg','sound/f13npc/securityoperator/idle10.ogg,'sound/f13npc/securityoperator/idle11.ogg','sound/f13npc/securityoperator/idle12.ogg','sound/f13npc/securityoperator/idle13.ogg');
+	death_sound = list('sound/f13npc/securityoperator/death1.ogg','sound/f13npc/securityoperator/death2.ogg','sound/f13npc/securityoperator/death3.ogg','sound/f13npc/securityoperator/death4.ogg','sound/f13npc/securityoperator/death5.ogg');
+	aggrosound = 'sound/f13weapons/equipsounds/riflequip.ogg';
+	move_resist = 2500;
+	aggro_vision_range = 12;
+	vision_range = 12
+	},
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
+"rpB" = (
+/obj/structure/reagent_dispensers/barrel{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
+"rpU" = (
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/f13/building)
+"rpW" = (
+/obj/structure/closet/crate,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/stock_parts/cell/ammo/mfc,
+/obj/item/ammo_box/c45,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/building)
+"rpZ" = (
+/mob/living/simple_animal/hostile/supermutant/nightkin{
+	faction = list("hostile","supermutant","SecretService");
+	speak = list("I PUT HEAD IN JAR!","HOOMAN GO OUT!","I FIGHT FOR SECRET SERVICES!","HYAAAARGH!","ARRRRR!","YOU CAN'T HAVE MY STEALTHIES!","YOU CAN'T HAVE IT!","I SMASH AND CRASH YOU APART!","YOU! GET OUT NOW!","I WILL BEAT YOU AND CRUSH YOU!","GO AWAY!","HURRGH!","NO MORE STATES PEOPLE!");
+	name = "Unity Remnant";
+	color = "#73dcff"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
 "rqh" = (
 /obj/effect/decal/cleanable/robot_debris/old{
 	icon_state = "gib3"
@@ -25559,7 +27028,7 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/securitron/sentrybot/chew/strong{
 	faction = list("raider");
-	loot = list(/obj/effect/decal/cleanable/robot_debris,/obj/item/stack/crafting/electronicparts/five,/obj/item/keycard/nml1,/obj/item/stock_parts/cell/ammo/mfc)
+	loot = list(/obj/effect/decal/cleanable/robot_debris,/obj/item/stack/crafting/electronicparts/five,/obj/item/keycard/nml1,obj/item/stock_parts/cell/ammo/mfc)
 	},
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
@@ -25847,6 +27316,17 @@
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/tunnel)
+"rYe" = (
+/obj/structure/janitorialcart,
+/obj/item/mop,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/item/reagent_containers/glass/bucket/plastic,
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
 "rYh" = (
 /obj/item/ammo_casing/c9mm,
 /obj/machinery/light{
@@ -26019,6 +27499,42 @@
 	icon_state = "horizontalbottombordertop2"
 	},
 /area/awaymission/caves)
+"seT" = (
+/obj/machinery/light/broken{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/renegade/grunt{
+	speak_emote = list("racks his N99","yells","shouts","calls out","notifies","reports","speaks");
+	speak = list("Hold positions!","Enemy front!","Open fire!","I have a visual on the targets!","HADES, enemies on my location!","Cartier, send ghost support to us!","Do not let them flank you!","Hold the line!","Stay put!","Hostile contact inbound!","Keep on defense!","Aim for the center mass!");
+	name = "Secret Service Officer";
+	loot = list(/obj/effect/mob_spawn/human/corpse/syndicatesoldier,/obj/item/gun/ballistic/automatic/pistol/n99);
+	icon_state = "syndicate_stormtrooper_pistol";
+	icon_living = "syndicate_stormtrooper_pistol";
+	icon = 'icons/mob/simple_human.dmi';
+	icon_gib = "syndicate_gib";
+	icon_dead = "syndicate_dead";
+	extra_projectiles = 0;
+	faction = list("SecretService");
+	speak_chance = 2;
+	speed = 1;
+	desc = "This one commands respect from their colleagues, also giving status updates and orders.";
+	melee_damage_lower = 5;
+	melee_damage_upper = 5;
+	attack_verb_continuous = "punches";
+	attack_verb_simple = "punch";
+	attack_sound = 'sound/weapons/punch1.ogg';
+	del_on_death = 1;
+	obj_damage = 40;
+	aggrosound = 'sound/f13weapons/equipsounds/pistolequip.ogg';
+	projectilesound = 'sound/f13weapons/10mm_fire_02.ogg';
+	emote_taunt_sound = list('sound/f13npc/secretserviceofficer/attack1.ogg','sound/f13npc/secretserviceofficer/attack2.ogg','sound/f13npc/secretserviceofficer/attack3.ogg','sound/f13npc/secretserviceofficer/attack4.ogg','sound/f13npc/secretserviceofficer/attack5.ogg','sound/f13npc/secretserviceofficer/attack6.ogg','sound/f13npc/secretserviceofficer/attack7.ogg','sound/f13npc/secretserviceofficer/attack8.ogg','sound/f13npc/secretserviceofficer/attack9.ogg','sound/f13npc/secretserviceofficer/attack10.ogg','sound/f13npc/secretserviceofficer/attack11.ogg','sound/f13npc/secretserviceofficer/attack12.ogg','sound/f13npc/secretserviceofficer/attack13.ogg','sound/f13npc/secretserviceofficer/attack14.ogg','sound/f13npc/secretserviceofficer/attack15.ogg','sound/f13npc/secretserviceofficer/attack16.ogg','sound/f13npc/secretserviceofficer/attack17.ogg','sound/f13npc/secretserviceofficer/attack18.ogg','sound/f13npc/secretserviceofficer/attack19.ogg','sound/f13npc/secretserviceofficer/attack20.ogg');
+	idlesound = list('sound/f13npc/secretserviceofficer/idle1.ogg','sound/f13npc/secretserviceofficer/idle2.ogg','sound/f13npc/secretserviceofficer/idle3.ogg','sound/f13npc/secretserviceofficer/idle4.ogg','sound/f13npc/secretserviceofficer/idle5.ogg','sound/f13npc/secretserviceofficer/idle6.ogg','sound/f13npc/secretserviceofficer/idle7.ogg','sound/f13npc/secretserviceofficer/idle8.ogg','sound/f13npc/secretserviceofficer/idle9.ogg','sound/f13npc/secretserviceofficer/idle10.ogg');
+	death_sound = list('sound/f13npc/secretserviceofficer/death1.ogg','sound/f13npc/secretserviceofficer/death2.ogg','sound/f13npc/secretserviceofficer/death3.ogg','sound/f13npc/secretserviceofficer/death4.ogg');
+	move_to_delay = 2.25;
+	move_resist = 2500
+	},
+/turf/open/floor/f13,
+/area/f13/building)
 "sfl" = (
 /obj/item/flashlight/lantern{
 	on = 1;
@@ -26030,6 +27546,12 @@
 	name = "cave"
 	},
 /area/f13/tunnel)
+"sgi" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "sgj" = (
 /obj/structure/nest/raider{
 	max_mobs = 1;
@@ -27559,6 +29081,13 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"tmM" = (
+/obj/structure/bed,
+/obj/item/bedsheet/black,
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
 "tmU" = (
 /obj/structure/table,
 /obj/machinery/button/door{
@@ -28179,6 +29708,34 @@
 	},
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
+"tGU" = (
+/mob/living/simple_animal/hostile/ghoul/wyomingghost{
+	faction = list("SecretService");
+	name = "Secret Service Ghost";
+	speed = -1;
+	desc = "Someone in Enclave combat armor who stands mostly silent except for the slight wheezing coming from them, a dark orange and black liquid pumps through a clear tube into the gas mask. The armor they wear seems to be sealed to their skin. Thanks to biological or technology functions, they are transparent and may blend into their surroundings.";
+	speak = list("...","The traitors are here!","Horrigan sends his regards!","They won't find your bodies!","Traitors...","Boo!","HADES imbue us...","For the secret service...","Traitors remorse? The cure is death!","Semper fi!","You aren't worthy of trust!","Feeling a lack of confidence?!","It'll all be over soon!","For America!","I see you...","We run in the shadows!","We walk behind you...","Surprised yet?!","There you are...","You'll never win...","HADES imbue me!","Can't stop progress...","Vengeance for our fallen!","We are many!");
+	speak_emote = list("readies their wrist blades","wheezes","hacks","mutters","rambles","ventilates","threatens");
+	melee_damage_lower = 25;
+	melee_damage_upper = 25;
+	attack_verb_continuous = "slashes";
+	attack_verb_simple = "slash";
+	attack_sound = 'sound/weapons/bladeslice.ogg';
+	rapid_melee = 2;
+	deathmessage = "gurgles and goes limp, their eyes cease to glow.";
+	alpha = 85;
+	emote_taunt_sound = list('sound/f13npc/secretserviceghost/attack1.ogg','sound/f13npc/secretserviceghost/attack2.ogg','sound/f13npc/secretserviceghost/attack3.ogg','sound/f13npc/secretserviceghost/attack4.ogg','sound/f13npc/secretserviceghost/attack5.ogg','sound/f13npc/secretserviceghost/attack6.ogg','sound/f13npc/secretserviceghost/attack7.ogg','sound/f13npc/secretserviceghost/attack8.ogg','sound/f13npc/secretserviceghost/attack9.ogg');
+	idlesound = list('sound/f13npc/secretserviceghost/idle1.ogg','sound/f13npc/secretserviceghost/idle2.ogg','sound/f13npc/secretserviceghost/idle3.ogg','sound/f13npc/secretserviceghost/idle4.ogg','sound/f13npc/secretserviceghost/idle5.ogg','sound/f13npc/secretserviceghost/idle6.ogg','sound/f13npc/secretserviceghost/idle7.ogg','sound/f13npc/secretserviceghost/idle8.ogg','sound/f13npc/secretserviceghost/idle9.ogg','sound/f13npc/secretserviceghost/idle10.ogg','sound/f13npc/secretserviceghost/idle11.ogg','sound/f13npc/secretserviceghost/idle12.ogg');
+	death_sound = 'sound/f13npc/secretserviceghost/death1.ogg';
+	move_to_delay = 1.8;
+	speak_chance = 1;
+	health = 170;
+	maxHealth = 170
+	},
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
 "tHQ" = (
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
@@ -28341,6 +29898,29 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"tMT" = (
+/obj/structure/sink{
+	dir = 8;
+	icon_state = "sink";
+	pixel_x = -11;
+	pixel_y = 0
+	},
+/obj/structure/mirror{
+	pixel_x = -24;
+	pixel_y = 2
+	},
+/obj/machinery/light/small,
+/turf/open/floor/f13,
+/area/f13/building)
+"tMZ" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
 "tNe" = (
 /obj/item/ammo_box/magazine/w308/empty,
 /obj/effect/decal/cleanable/dirt,
@@ -28648,6 +30228,14 @@
 	icon_state = "housewood2"
 	},
 /area/f13/casino)
+"tWf" = (
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
 "tWi" = (
 /obj/structure/chair/f13chair1,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -28835,6 +30423,14 @@
 	name = "cave"
 	},
 /area/f13/tunnel)
+"uaz" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/building)
 "uaT" = (
 /obj/structure/frame/machine,
 /obj/item/stack/cable_coil/cut/random,
@@ -30399,6 +31995,24 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/dark,
 /area/f13/casino)
+"vgQ" = (
+/turf/closed/wall{
+	color = "#909090"
+	},
+/area/f13/wasteland)
+"vgV" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/obj/item/radio/intercom{
+	frequency = 1465;
+	freqlock = 1;
+	pixel_x = 32;
+	pixel_y = -3
+	},
+/turf/open/indestructible/ground/outside/road,
+/area/f13/building)
 "vhe" = (
 /obj/machinery/light{
 	dir = 1
@@ -30828,6 +32442,31 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/bunker)
+"vra" = (
+/mob/living/simple_animal/hostile/renegade/drifter/sniper{
+	desc = "A marksman of the Secret Service branch in the Enclave, armed with a DKS-501 sniper rifle but conditioned riot armor. A force to be reckoned with in groups.";
+	maxHealth = 250;
+	health = 250;
+	name = "Secret Service Sniper";
+	color = "#a3c39f";
+	speed = 2.5;
+	speak = list("...","Scoping in!","Engaged in hospital!","In my sights...","Lay into them!","Damn it!","They're closing in on in the hospital sector!");
+	faction = list("SecretService");
+	speak_emote = list("says","notes","talks","conveys");
+	melee_damage_lower = 0;
+	melee_damage_upper = 0;
+	check_friendly_fire = 1;
+	loot = list(/obj/item/gun/ballistic/automatic/marksman/sniper,/obj/item/ammo_box/magazine/w308);
+	icon = 'icons/fallout/mobs/humans/renegade_updated.dmi';
+	emote_taunt_sound = list('sound/f13npc/secretservicesniper/attack1.ogg','sound/f13npc/secretservicesniper/attack2.ogg','sound/f13npc/secretservicesniper/attack3.ogg','sound/f13npc/secretservicesniper/attack4.ogg','sound/f13npc/secretservicesniper/attack5.ogg','sound/f13npc/secretservicesniper/attack6.ogg','sound/f13npc/secretservicesniper/attack7.ogg','sound/f13npc/secretservicesniper/attack8.ogg','sound/f13npc/secretservicesniper/attack9.ogg','sound/f13npc/secretservicesniper/attack10.ogg','sound/f13npc/secretservicesniper/attack11.ogg','sound/f13npc/secretservicesniper/attack12.ogg','sound/f13npc/secretservicesniper/attack13.ogg','sound/f13npc/secretservicesniper/attack14.ogg','sound/f13npc/secretservicesniper/attack15.ogg','sound/f13npc/secretservicesniper/attack16.ogg','sound/f13npc/secretservicesniper/attack17.ogg','sound/f13npc/secretservicesniper/attack18.ogg','sound/f13npc/secretservicesniper/attack19.ogg','sound/f13npc/secretservicesniper/attack20.ogg','sound/f13npc/secretservicesniper/attack21.ogg','sound/f13npc/secretservicesniper/attack22.ogg','sound/f13npc/secretservicesniper/attack23.ogg','sound/f13npc/secretservicesniper/attack24.ogg','sound/f13npc/secretservicesniper/attack25.ogg');
+	idlesound = list('sound/f13npc/secretservicesniper/idle1.ogg','sound/f13npc/secretservicesniper/idle2.ogg','sound/f13npc/secretservicesniper/idle3.ogg','sound/f13npc/secretservicesniper/idle4.ogg','sound/f13npc/secretservicesniper/idle5.ogg','sound/f13npc/secretservicesniper/idle6.ogg','sound/f13npc/secretservicesniper/idle7.ogg','sound/f13npc/secretservicesniper/idle8.ogg','sound/f13npc/secretservicesniper/idle9.ogg','sound/f13npc/secretservicesniper/idle10.ogg,'sound/f13npc/secretservicesniper/idle11.ogg','sound/f13npc/secretservicesniper/idle12.ogg','sound/f13npc/secretservicesniper/idle13.ogg','sound/f13npc/secretservicesniper/idle14.ogg','sound/f13npc/secretservicesniper/idle15.ogg');
+	death_sound = list('sound/f13npc/secretservicesniper/death1.ogg','sound/f13npc/secretservicesniper/death2.ogg','sound/f13npc/secretservicesniper/death3.ogg','sound/f13npc/secretservicesniper/death4.ogg');
+	obj_damage = 5;
+	aggro_vision_range = 18;
+	vision_range = 18
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "vrj" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "gib2";
@@ -30846,6 +32485,29 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"vrp" = (
+/obj/structure/closet{
+	base_storage_capacity = 10;
+	storage_capacity = 10;
+	name = "lockup closet"
+	},
+/obj/item/clothing/under/f13/enclave/peacekeeper,
+/obj/item/card/id/dogtag/enclave/trooper,
+/obj/item/clothing/accessory/enclave/private_firstclass,
+/obj/item/clothing/glasses/night/f13/enclave,
+/obj/item/clothing/suit/armor/vest,
+/obj/item/storage/backpack/enclave,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
+"vrr" = (
+/obj/structure/bed,
+/obj/item/bedsheet/black,
+/turf/open/floor/f13{
+	icon_state = "neutralrustyfull"
+	},
+/area/f13/building)
 "vrV" = (
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/underground/cave)
@@ -31134,6 +32796,11 @@
 /obj/structure/chair/bench,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/underground/cave)
+"vCt" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/grille,
+/turf/open/floor/carpet/blue,
+/area/f13/building)
 "vCC" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -31182,6 +32849,17 @@
 /obj/structure/bed/old,
 /turf/open/floor/f13/wood,
 /area/awaymission/caves)
+"vCL" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/ammo_box/magazine/w308,
+/obj/item/ammo_box/magazine/w308,
+/obj/item/ammo_box/magazine/w308,
+/obj/item/ammo_box/magazine/w308,
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
 "vCP" = (
 /obj/structure/bookcase/manuals,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -31296,6 +32974,22 @@
 /mob/living/simple_animal/hostile/supermutant/legendary,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/bunker)
+"vGm" = (
+/obj/item/radio/intercom{
+	frequency = 1465;
+	freqlock = 1;
+	pixel_x = 32;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
+"vGp" = (
+/obj/structure/flora/tree/oak_three,
+/turf/open/floor/grass,
+/area/f13/building)
 "vGx" = (
 /obj/item/paper{
 	icon_state = "paper_words";
@@ -31311,6 +33005,41 @@
 	name = "cave"
 	},
 /area/f13/tunnel)
+"vHb" = (
+/obj/structure/railing{
+	dir = 8;
+	pixel_x = -2
+	},
+/mob/living/simple_animal/hostile/renegade/meister/heavy{
+	name = "Secret Service Machinegunner";
+	health = 500;
+	maxHealth = 500;
+	color = "#a3c39f";
+	faction = list("SecretService");
+	speak = list("Cartier, we got men down in offices!","Don't take any chances!","Hostiles have breached the medical sector!","Hostile forces are breaching west into medical!","Shit! So much for those ghosts!","We have heavy contact, suppressing!","HADES, give us an ETA on our reinforcements!","Damn it, Rawlins...","You're gonna pay for taking our men out!");
+	speed = 7.5;
+	speak_emote = list("shouts","states","speaks");
+	check_friendly_fire = 1;
+	desc = "This member of the Secret Service utilizes a custom set of heavy armor. Parts of T-45d and USMC combat armor allows him to shrug off most small arms weapons. His 7.62 belt fed machine gun is a force to be reckoned with.";
+	melee_damage_lower = 10;
+	melee_damage_upper = 10;
+	rapid_melee = 1;
+	projectiletype = /obj/item/projectile/bullet/a762/sport/simple;
+	loot = list(/obj/item/gun/ballistic/automatic/m1919);
+	projectilesound = 'sound/f13weapons/assaultrifle_fire.ogg';
+	icon = 'icons/fallout/mobs/humans/renegade_updated.dmi';
+	death_sound = list('sound/f13npc/secretserviceheavy/death1.ogg','sound/f13npc/secretserviceheavy/death2.ogg','sound/f13npc/secretserviceheavy/death3.ogg','sound/f13npc/secretserviceheavy/death4.ogg','sound/f13npc/secretserviceheavy/death5.ogg','sound/f13npc/secretserviceheavy/death6.ogg','sound/f13npc/secretserviceheavy/death7.ogg');
+	emote_taunt_sound = list('sound/f13npc/secretserviceheavy/attack1.ogg','sound/f13npc/secretserviceheavy/attack2.ogg','sound/f13npc/secretserviceheavy/attack3.ogg','sound/f13npc/secretserviceheavy/attack4.ogg','sound/f13npc/secretserviceheavy/attack5.ogg','sound/f13npc/secretserviceheavy/attack6.ogg','sound/f13npc/secretserviceheavy/attack7.ogg','sound/f13npc/secretserviceheavy/attack8.ogg','sound/f13npc/secretserviceheavy/attack9.ogg','sound/f13npc/secretserviceheavy/attack10.ogg','sound/f13npc/secretserviceheavy/attack11.ogg','sound/f13npc/secretserviceheavy/attack12.ogg','sound/f13npc/secretserviceheavy/attack13.ogg','sound/f13npc/secretserviceheavy/attack14.ogg','sound/f13npc/secretserviceheavy/attack15.ogg','sound/f13npc/secretserviceheavy/attack16.ogg','sound/f13npc/secretserviceheavy/attack17.ogg','sound/f13npc/secretserviceheavy/attack18.ogg'');
+	idlesound = list('sound/f13npc/secretserviceheavy/idle1.ogg','sound/f13npc/secretserviceheavy/idle2.ogg','sound/f13npc/secretserviceheavy/idle3.ogg','sound/f13npc/secretserviceheavy/idle4.ogg','sound/f13npc/secretserviceheavy/idle5.ogg','sound/f13npc/secretserviceheavy/idle6.ogg','sound/f13npc/secretserviceheavy/idle7.ogg','sound/f13npc/secretserviceheavy/idle8.ogg','sound/f13npc/secretserviceheavy/idle9.ogg','sound/f13npc/secretserviceheavy/idle10.ogg);
+	aggrosound = 'sound/f13weapons/equipsounds/riflequip.ogg';
+	move_to_delay = 8;
+	extra_projectiles = 6;
+	obj_damage = 20;
+	move_resist = 22500;
+	aggro_vision_range = 15
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
 "vHm" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /obj/effect/decal/fakelattice,
@@ -31362,6 +33091,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/dark,
 /area/f13/casino)
+"vIC" = (
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/obj/structure/closet/crate/bin/trash_fallout{
+	pixel_y = 5
+	},
+/turf/open/floor/f13/wood,
+/area/f13/building)
 "vIN" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -32458,6 +34196,52 @@
 "wxj" = (
 /turf/closed/mineral/random/high_chance,
 /area/f13/underground/cave)
+"wxo" = (
+/obj/item/stack/sheet/metal,
+/obj/item/stack/rods,
+/obj/item/stack/rods,
+/mob/living/simple_animal/hostile/renegade/grunt{
+	speak_emote = list("racks his N99","yells","shouts","calls out","notifies","reports","speaks");
+	speak = list("Hold positions!","Enemy front!","Open fire!","I have a visual on the targets!","HADES, enemies on my location!","Cartier, send ghost support to us!","Do not let them flank you!","Hold the line!","Stay put!","Hostile contact inbound!","Keep on defense!","Aim for the center mass!");
+	name = "Secret Service Officer";
+	loot = list(/obj/effect/mob_spawn/human/corpse/syndicatesoldier,/obj/item/gun/ballistic/automatic/pistol/n99);
+	icon_state = "syndicate_stormtrooper_pistol";
+	icon_living = "syndicate_stormtrooper_pistol";
+	icon = 'icons/mob/simple_human.dmi';
+	icon_gib = "syndicate_gib";
+	icon_dead = "syndicate_dead";
+	extra_projectiles = 0;
+	faction = list("SecretService");
+	speak_chance = 2;
+	speed = 1;
+	desc = "This one commands respect from their colleagues, also giving status updates and orders.";
+	melee_damage_lower = 5;
+	melee_damage_upper = 5;
+	attack_verb_continuous = "punches";
+	attack_verb_simple = "punch";
+	attack_sound = 'sound/weapons/punch1.ogg';
+	del_on_death = 1;
+	obj_damage = 40;
+	aggrosound = 'sound/f13weapons/equipsounds/pistolequip.ogg';
+	projectilesound = 'sound/f13weapons/10mm_fire_02.ogg';
+	emote_taunt_sound = list('sound/f13npc/secretserviceofficer/attack1.ogg','sound/f13npc/secretserviceofficer/attack2.ogg','sound/f13npc/secretserviceofficer/attack3.ogg','sound/f13npc/secretserviceofficer/attack4.ogg','sound/f13npc/secretserviceofficer/attack5.ogg','sound/f13npc/secretserviceofficer/attack6.ogg','sound/f13npc/secretserviceofficer/attack7.ogg','sound/f13npc/secretserviceofficer/attack8.ogg','sound/f13npc/secretserviceofficer/attack9.ogg','sound/f13npc/secretserviceofficer/attack10.ogg','sound/f13npc/secretserviceofficer/attack11.ogg','sound/f13npc/secretserviceofficer/attack12.ogg','sound/f13npc/secretserviceofficer/attack13.ogg','sound/f13npc/secretserviceofficer/attack14.ogg','sound/f13npc/secretserviceofficer/attack15.ogg','sound/f13npc/secretserviceofficer/attack16.ogg','sound/f13npc/secretserviceofficer/attack17.ogg','sound/f13npc/secretserviceofficer/attack18.ogg','sound/f13npc/secretserviceofficer/attack19.ogg','sound/f13npc/secretserviceofficer/attack20.ogg');
+	idlesound = list('sound/f13npc/secretserviceofficer/idle1.ogg','sound/f13npc/secretserviceofficer/idle2.ogg','sound/f13npc/secretserviceofficer/idle3.ogg','sound/f13npc/secretserviceofficer/idle4.ogg','sound/f13npc/secretserviceofficer/idle5.ogg','sound/f13npc/secretserviceofficer/idle6.ogg','sound/f13npc/secretserviceofficer/idle7.ogg','sound/f13npc/secretserviceofficer/idle8.ogg','sound/f13npc/secretserviceofficer/idle9.ogg','sound/f13npc/secretserviceofficer/idle10.ogg');
+	death_sound = list('sound/f13npc/secretserviceofficer/death1.ogg','sound/f13npc/secretserviceofficer/death2.ogg','sound/f13npc/secretserviceofficer/death3.ogg','sound/f13npc/secretserviceofficer/death4.ogg');
+	move_to_delay = 2.25;
+	move_resist = 2500
+	},
+/turf/open/floor/plasteel/f13/vault_floor/plating,
+/area/f13/building)
+"wxv" = (
+/obj/structure/chair/comfy/bench,
+/obj/machinery/camera/emp_proof{
+	dir = 10;
+	pixel_x = -12
+	},
+/turf/open/floor/plasteel/dark{
+	name = "floor"
+	},
+/area/f13/building)
 "wyf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -32500,6 +34284,13 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"wzF" = (
+/obj/machinery/vending/coffee,
+/obj/machinery/light/broken{
+	dir = 1
+	},
+/turf/open/floor/f13,
+/area/f13/building)
 "wzJ" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
@@ -32725,6 +34516,15 @@
 	},
 /turf/open/water,
 /area/f13/bunker)
+"wIF" = (
+/obj/item/paper{
+	pixel_x = -24;
+	name = "Cargo Note - VACANT";
+	info = "EMPTY CARGO BOX.";
+	icon_state = "paper_words"
+	},
+/turf/open/floor/plating/f13/outside/road,
+/area/f13/wasteland)
 "wIZ" = (
 /obj/structure/chair/f13chair1{
 	dir = 1
@@ -32734,6 +34534,34 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"wJa" = (
+/obj/structure/railing{
+	pixel_y = -2
+	},
+/turf/open/floor/plasteel/f13/vault_floor/white,
+/area/f13/building)
+"wJh" = (
+/obj/structure/table,
+/obj/machinery/computer/terminal{
+	dir = 4;
+	pixel_y = 3;
+	doc_title_1 = "secret service ghosts";
+	doc_content_1 = "HADES has requested that I look into outfitting the ghosts with cybernetic enhancements. This is an epic feat to accomplish for the reasons of their physiological state, more specifically the texture of their skin. It's difficult to implant wires into without cracking apart the necrotic flesh. It was easier for bioengineers to give the ghosts invisibility and quicker movement, why don't we just end there? It is a dangerous idea to give these ghosts cybernetics when they're already under the effects of stealth boys, they don't even have these devices on them yet can cloak at will. I will not be surprised when they begin showing signs of mental deterioration.";
+	doc_title_2 = "pulse supportron";
+	doc_content_2 = "I have modified some of our assaultrons, outfitting them with pulse weaponry to disable enemy vehicles and weapons. There is nothing to worry about, the supportron has EMP resistant plating, it can and will survive its own pulse shots. If the Brotherhood were a force to be reckoned with, they won't be the second they get pulsed.";
+	doc_title_3 = "nightkin problems";
+	doc_content_3 = "I am sick and tired of the nightkin we keep around in the weapons development wing. I look in the direction of one of these cloaked freaks and they scream at me, acting as though I was the one intentionally looking at them! The scientists with offices in that wing are sick of the constant meltdowns from these mutants. These 10 foot indigo children obsessed with stealth boys were a mistake to shelter, I don't care what excuses Cartier makes up.";
+	doc_title_4 = "maintenance";
+	doc_content_4 = "I don't understand why I am given an arcade machine and a jukebox to run maintenance on. I am a systems engineer for military equipment and computers for christ sake.";
+	doc_title_5 = "MESSAGE SENT TO AVEC CARTIER";
+	doc_content_5 = "TO AVEC CARTIER: I hope you understand the implications of your actions, Avec. I don't even know you anymore, it's as if you've completely lost your sense of right and wrong. We've been friends for years but I could not inspire you to see reason. You put blind faith in automated systems, seeking to phase out humanity in lieu of systems relying on exponential learning algorithms. You don't see anything wrong with this, so I don't see any reason for me to stay. I'm done here.";
+	termtag = "Professor Daniel Oxford"
+	},
+/obj/machinery/light/broken{
+	dir = 8
+	},
+/turf/open/floor/carpet/royalblack,
+/area/f13/building)
 "wJl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/security,
@@ -32968,6 +34796,19 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/bunker)
+"wTc" = (
+/obj/structure/closet/secure_closet/security,
+/turf/open/floor/plasteel/f13/vault_floor/red/white,
+/area/f13/building)
+"wTh" = (
+/obj/machinery/door/airlock/science{
+	color = "#c03131";
+	name = "WDW offices"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	name = "floor"
+	},
+/area/f13/building)
 "wTI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -33029,6 +34870,17 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/vaultdoor,
 /area/f13/bunker)
+"wWt" = (
+/obj/machinery/door/poddoor{
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100);
+	id = 90;
+	name = "admin-lobby transition point";
+	max_integrity = 2500
+	},
+/turf/open/floor/f13{
+	icon_state = "darkdirtysolid"
+	},
+/area/f13/building)
 "wWz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -33817,6 +35669,18 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"xwj" = (
+/obj/item/radio/intercom{
+	frequency = 1465;
+	freqlock = 1;
+	pixel_x = -31;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/f13/vault_floor/red/white{
+	color = "#909090";
+	name = "floor"
+	},
+/area/f13/building)
 "xws" = (
 /obj/machinery/light{
 	light_color = "#e8eaff"
@@ -33844,6 +35708,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/indestructible/rock,
 /area/f13/underground/cave)
+"xwG" = (
+/obj/machinery/light/broken{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/blue/white{
+	name = "floor"
+	},
+/area/f13/building)
 "xwV" = (
 /obj/structure/chair/wood,
 /obj/effect/decal/cleanable/dirt,
@@ -34242,6 +36114,17 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"xME" = (
+/obj/item/radio/intercom{
+	pixel_y = 28;
+	frequency = 1465;
+	freqlock = 1;
+	pixel_x = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "bluedirtychess2"
+	},
+/area/f13/building)
 "xNs" = (
 /obj/structure/timeddoor/sixtyminute,
 /turf/closed/wall/f13/tunnel,
@@ -34489,6 +36372,12 @@
 	name = "metal plating"
 	},
 /area/f13/tunnel)
+"xXd" = (
+/obj/structure/fluff/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/f13,
+/area/f13/building)
 "xXj" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall/f13vault{
@@ -34829,6 +36718,12 @@
 /obj/machinery/door/poddoor/preopen,
 /turf/open/floor/carpet/green,
 /area/f13/casino)
+"yhZ" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/floorgrime,
+/area/f13/building)
 "yid" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bookcase/manuals,
