@@ -209,7 +209,7 @@
 	fire_delay = 0
 	slowdown = 0.2
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_LIGHT
 	slot_flags = ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
@@ -223,6 +223,7 @@
 	fire_delay = 0
 	item_state = "laser-pistol"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/magneto/hitscan)
+	weapon_weight = WEAPON_LIGHT
 
 /obj/item/gun/energy/laser/wattz/recharger
 	name = "Recharger Pistol"
@@ -232,7 +233,7 @@
 	selfcharge = 1
 	icon_state = "rechargerpistol"
 	w_class = WEIGHT_CLASS_SMALL
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_LIGHT
 	slot_flags = ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/recharger/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/breeder
@@ -246,7 +247,7 @@
 	icon_state = "AEP7"
 	item_state = "laser-pistol"
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_LIGHT
 	slot_flags = ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/hitscan)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
@@ -555,7 +556,7 @@
 	icon_state = "ultra_pistol"
 	item_state = "laser-pistol"
 	w_class = WEIGHT_CLASS_NORMAL
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_LIGHT
 	slot_flags = ITEM_SLOT_BELT
 	ammo_type = list(/obj/item/ammo_casing/energy/gammagun)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc

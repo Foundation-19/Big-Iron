@@ -380,6 +380,8 @@
 	icon_state = "uzi"
 	item_state = "uzi"
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
+	weapon_weight = WEAPON_MEDIUM
+	w_class = WEIGHT_CLASS_SMALL
 	fire_delay = 3
 	burst_shot_delay = 2.2
 	is_automatic = TRUE

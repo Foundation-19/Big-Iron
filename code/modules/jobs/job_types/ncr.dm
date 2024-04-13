@@ -572,7 +572,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	id = /obj/item/card/id/dogtag/ncrvetranger
 	uniform = /obj/item/clothing/under/f13/ranger/vet
 	suit = /obj/item/clothing/suit/armor/f13/rangercombat
-	suit_store = /obj/item/gun/ballistic/revolver/sequoia
 	head = /obj/item/clothing/head/helmet/f13/ncr/rangercombat
 	gloves = /obj/item/clothing/gloves/rifleman
 	shoes = /obj/item/clothing/shoes/f13/military/leather
@@ -587,7 +586,6 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 		/obj/item/storage/bag/money/small/ncrofficers = 1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak = 3,
 		/obj/item/grenade/smokebomb = 1,
-		/obj/item/ammo_box/c4570 = 3
 		)
 
 /datum/outfit/loadout/vrclassic
@@ -595,7 +593,9 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/rifle/mag/antimateriel
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_dinner = 1,
-		/obj/item/ammo_box/magazine/amr = 2
+		/obj/item/ammo_box/magazine/amr = 2,
+		/obj/item/ammo_box/c4570 = 3,
+		/obj/item/gun/ballistic/revolver/sequoia = 1
 		)
 
 /datum/outfit/loadout/vrlite
@@ -603,15 +603,17 @@ Weapons		Service Rifle, Grease Gun, 9mm pistol, all good.
 	suit_store = /obj/item/gun/ballistic/rifle/repeater/brush
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_lunch = 1,
-		/obj/item/ammo_box/tube/c4570 = 3
+		/obj/item/ammo_box/tube/c4570 = 3,
+		/obj/item/ammo_box/c4570 = 3,
+		/obj/item/gun/ballistic/revolver/sequoia = 1
 		)
 
 /datum/outfit/loadout/vrshotgunner
-	name = "Veteran Ranger Shotgunner"
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead
+	name = "Veteran Ranger Ocelot"
 	backpack_contents = list(
 		/obj/item/storage/box/ration/ranger_breakfast = 1,
-		/obj/item/ammo_box/shotgun/buck = 3
+		/obj/item/gun/ballistic/revolver/revolver45/gunslinger = 2,
+		/obj/item/ammo_box/magazine/internal/cylinder/rev45/gunslinger = 4
 		)
 
 /datum/outfit/job/ncr/f13vetranger/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
