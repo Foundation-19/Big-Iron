@@ -146,7 +146,7 @@
 		to_chat(user, "<span class='notice'>You lean quietly toward [target] and secretly draw out your fangs...</span>")
 	else
 		to_chat(user, "<span class='warning'>You pull [target] close to you and draw out your fangs...</span>")
-	if(!do_mob(user, target, feed_time, 0, 1, extra_checks = CALLBACK(src, .proc/ContinueActive, user, target)))//sleep(10)
+	if(!do_mob(user, target, feed_time, 0, 1, extra_checks = CALLBACK(src, PROC_REF(ContinueActive), user, target)))//sleep(10)
 		to_chat(user, "<span class='warning'>Your feeding was interrupted.</span>")
 		//DeactivatePower(user,target)
 		return
@@ -207,7 +207,7 @@
 	//user.mobility_flags &= ~MOBILITY_MOVE // user.canmove = 0 // Prevents spilling blood accidentally.
 
 		// Abort? A bloody mistake.
-		if(!do_mob(user, target, 20, 0, 0, extra_checks=CALLBACK(src, .proc/ContinueActive, user, target)))
+		if(!do_mob(user, target, 20, 0, 0, extra_checks=CALLBACK(src, PROC_REF(ContinueActive), user, target)))
 			// May have disabled Feed during do_mob
 			if(!active || !ContinueActive(user, target))
 				break
@@ -294,7 +294,7 @@
 		user.visible_message("<span class='warning'>[user] unclenches their teeth from [target]'s neck.</span>", \
 							"<span class='warning'>You retract your fangs and release [target] from your bite.</span>")
 
-	// /proc/log_combat(atom/user, atom/target, what_done, atom/object=null, addition=null)
+	// GLOBAL_PROC_REF(log_combat)(atom/user, atom/target, what_done, atom/object=null, addition=null)
 	log_combat(owner, target, "fed on blood", addition="(and took [amount_taken] blood)")
 
 	// Killed Target?

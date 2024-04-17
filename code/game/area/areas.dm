@@ -124,7 +124,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 		if (picked && is_station_level(picked.z))
 			GLOB.teleportlocs[AR.name] = AR
 
-	sortTim(GLOB.teleportlocs, /proc/cmp_text_dsc)
+	sortTim(GLOB.teleportlocs, GLOBAL_PROC_REF(cmp_text_dsc))
 
 // ===
 
@@ -236,7 +236,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 				A.power_light = FALSE
 				A.power_equip = FALSE
 				A.power_environ = FALSE
-			INVOKE_ASYNC(A, .proc/power_change)
+			INVOKE_ASYNC(A, PROC_REF(power_change))
 	STOP_PROCESSING(SSobj, src)
 	return ..()
 
@@ -556,7 +556,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 		if(!L.client.played)
 			SEND_SOUND(L, sound(sound, repeat = 0, wait = 0, volume = 25, channel = CHANNEL_AMBIENCE))
 			L.client.played = TRUE
-			addtimer(CALLBACK(L.client, /client/proc/ResetAmbiencePlayed), 600)
+			addtimer(CALLBACK(L.client, TYPE_PROC_REF(/client, ResetAmbiencePlayed)), 600)
 /* MARKED FOR DEATH, part of emergency delagging, removes the whole system to evaluate
 ///Divides total beauty in the room by roomsize to allow us to get an average beauty per tile.
 /area/proc/update_beauty()

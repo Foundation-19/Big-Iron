@@ -25,7 +25,7 @@ PROCESSING_SUBSYSTEM_DEF(weather)
 			run_weather(W, list(text2num(z)), initial(W.weather_duration_upper))
 		eligible_zlevels -= z
 		var/randTime = rand(15000, 18000)
-		addtimer(CALLBACK(src, .proc/make_eligible, z, possible_weather), randTime + initial(W.weather_duration_upper), TIMER_UNIQUE) //Around 25-30 minutes between weathers
+		addtimer(CALLBACK(src, PROC_REF(make_eligible), z, possible_weather), randTime + initial(W.weather_duration_upper), TIMER_UNIQUE) //Around 25-30 minutes between weathers
 		next_hit_by_zlevel["[z]"] = world.time + randTime + initial(W.telegraph_duration)
 	if(!weather_on_start)
 		weather_on_start = TRUE
